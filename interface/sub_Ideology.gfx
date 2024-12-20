@@ -1,0 +1,111 @@
+	spriteTypes = {
+	spriteType = {
+		name = "GFX_ideology_Chinese_Socialism_jiang"
+		texturefile = "gfx/Ideology/Chinese_Socialism_jiang.png"
+	}
+spriteType = {
+		name = "GFX_ideology_juche"
+		texturefile = "gfx/Ideology/juche_group.png"
+	}	
+	spriteType = {
+		name = "GFX_ideology_Chinese_Socialism"
+		texturefile = "gfx/Ideology/Market_Socialism.png"
+	}	
+	spriteType = {
+		name = "GFX_ideology_Neutral_Reform_Communism"
+		texturefile = "gfx/Ideology/Market_Socialism.png"
+	}	
+	spriteType = {
+		name = "GFX_ideology_Reform_Communism"
+		texturefile = "gfx/Ideology/Market_Socialism.png"
+	}		
+		spriteType = {
+		name = "GFX_ideology_Chinese_Socialism_mao"
+		texturefile = "gfx/Ideology/maoism.png"
+	}		
+
+	spriteType = {
+		name = "GFX_ideology_trotskyism"
+		texturefile = "gfx/Ideology/trotskyism.png"
+	}
+		spriteType = {
+		name = "GFX_ideology_Communist-State"
+		texturefile = "gfx/Ideology/communism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_Neutral_Communism"
+		texturefile = "gfx/Ideology/communism.dds"
+	}
+		spriteType = {
+		name = "GFX_ideology_socialism"
+		texturefile = "gfx/Ideology/social_democrat.dds"
+	}
+		spriteType = {
+		name = "GFX_ideology_neutral_Social"
+		texturefile = "gfx/Ideology/social_democrat.dds"
+	}
+				spriteType = {
+		name = "GFX_ideology_anarchist_communism"
+		texturefile = "gfx/Ideology/anarchist_communism2.png"
+	}
+			spriteType = {
+		name = "GFX_ideology_liberalism"
+		texturefile = "gfx/Ideology/liberalism.dds"
+	}
+				spriteType = {
+		name = "GFX_ideology_Neutral_Libertarian"
+		texturefile = "gfx/Ideology/liberalism.dds"
+	}
+		spriteType = {
+		name = "GFX_ideology_conservatism"
+		texturefile = "gfx/Ideology/conservatism.dds"
+	}
+			spriteType = {
+		name = "GFX_ideology_Neutral_conservatism"
+		texturefile = "gfx/Ideology/conservatism.dds"
+	}
+			spriteType = {
+		name = "GFX_ideology_Conservative"
+		texturefile = "gfx/Ideology/Conservative.dds"
+	}
+		spriteType = {
+		name = "GFX_ideology_Western_Autocracy"
+		texturefile = "gfx/Ideology/Autocracy.dds"
+	}
+		spriteType = {
+		name = "GFX_ideology_Autocracy"
+		texturefile = "gfx/Ideology/Autocracy.dds"
+	}
+			spriteType = {
+		name = "GFX_ideology_Neutral_Autocracy"
+		texturefile = "gfx/Ideology/Autocracy.dds"
+	}
+			spriteType = {
+		name = "GFX_ideology_Monarchist"
+		texturefile = "gfx/Ideology/absolute_monarchy.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_Nat_Fascism"
+		texturefile = "gfx/Ideology/fascism_group.dds"
+	}
+				spriteType = {
+		name = "GFX_ideology_Nat_Autocracy"
+		texturefile = "gfx/Ideology/natpop_warlordism_group.png"
+	}
+				spriteType = {
+		name = "GFX_ideology_Vilayat_e_Faqih"
+		texturefile = "gfx/Ideology/nation_of_islam_group.png"
+	}
+				spriteType = {
+		name = "GFX_ideology_Mod_Vilayat_e_Faqih"
+		texturefile = "gfx/Ideology/socdem_islamic_socialism_group.png"
+	}
+				spriteType = {
+		name = "GFX_ideology_Nat_Populism"
+		texturefile = "gfx/Ideology/national_populist_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_Neutral_green"
+		texturefile = "gfx/Ideology/Neutral_green.png"
+	}
+	}

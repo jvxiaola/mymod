@@ -1,0 +1,4114 @@
+
+ideas = {
+
+	country = {	
+PRC_sy = {
+			picture = skull
+		allowed = {
+			}
+			
+allowed_civil_war = {
+always = yes
+}
+			modifier = {
+Chinese_people_support_to_china_government_modifier = 1.0
+power_balance_weekly = -1
+production_speed_buildings_factor = 10
+production_factory_efficiency_gain_factor = 1
+production_factory_max_efficiency_factor = 1
+research_speed_factor = 15
+consumer_goods_expected_value = -1
+production_factory_start_efficiency_factor = 1
+}
+}	
+		USA_Anti_Communist_china_Jihad = {
+			picture = democracy
+		allowed = {
+		
+			}
+	available = {
+						custom_trigger_tooltip = {
+NOT = {
+OR = {
+					is_in_array = { ruling_party = 5 }
+					is_in_array = { ruling_party = 4 }
+
+}}
+					tooltip = CHI_not_left
+}
+	}		
+ 	
+			modifier = {
+send_volunteer_size = 3
+send_volunteer_factor = 0.3
+send_volunteers_tension = -1
+send_volunteer_divisions_required = -0.8
+}
+}
+	MDARD_npc = {
+			picture = generic_purge
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+conscription_factor = -1 
+industrial_capacity_dockyard = -1
+industrial_capacity_factory = -1
+}
+}
+PRC_Pacific_Naval_Bases = {
+			picture = liberty_ships
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+navy_org_factor = 0.15
+convoy_raiding_efficiency_factor = 0.20
+experience_gain_navy_unit = 0.02
+naval_has_potf_in_combat_attack = 0.2
+industrial_capacity_dockyard = 0.35
+
+}
+}
+PRC_terminator_of_capitalism = {
+			picture = communism9
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+stability_factor = 1.0
+political_power_gain = 1.0
+stability_weekly = 0.10
+army_attack_factor = 0.7
+war_support_factor = 1.0
+army_armor_attack_factor = 0.3
+army_armor_speed_factor = 0.3
+army_defence_factor = 0.3
+army_org_factor = 0.3
+}
+}
+CHI_The_great_rejuvenation_of_the_Chinese_nation = {
+			picture = ceremony_khentii
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+Chinese_people_support_to_china_government_modifier = 0.2
+political_power_gain = 1.0
+stability_weekly = 0.0050
+war_support_factor = 0.5
+
+}
+}						
+	PRC_Dual_track_military_system_1 = {
+			picture = communist_army
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+                war_support_factor = 0.20
+				max_command_power = 50
+				training_time_army_factor = -0.15
+				command_power_gain_mult = 0.3
+				planning_speed = 0.15			
+army_attack_factor = 0.10
+army_org_factor = -0.05
+army_defence_factor = 0.10
+Chinese_people_support_to_china_government_modifier = 0.01
+}
+}	
+
+PRC_Dual_track_military_system_2 = {
+			picture = communist_army
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+                war_support_factor = 0.30
+				max_command_power = 50
+				training_time_army_factor = -0.15
+				command_power_gain_mult = 0.3
+				planning_speed = 0.15			
+army_attack_factor = 0.20
+army_org_factor = -0.10
+conscription_factor = 0.10
+army_defence_factor = 0.20
+Chinese_people_support_to_china_government_modifier = 0.05
+}
+}	
+PRC_Dual_track_military_system_3 = {
+			picture = communist_army
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+                war_support_factor = 0.4
+				max_command_power = 50
+				training_time_army_factor = -0.15
+				command_power_gain_mult = 0.3
+				planning_speed = 0.15	
+army_org_regain = 0.10				
+army_attack_factor = 0.3
+army_org_factor = -0.20
+conscription_factor = 0.15
+army_defence_factor = 0.30
+Chinese_people_support_to_china_government_modifier = 0.08
+}
+}	
+	PRC_The_Second_Great_Proletarian_Cultural_Revolution_1 = {
+			picture = generic_purge
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+political_power_factor = 0.10
+stability_factor = -0.10
+war_support_factor = 0.10
+Chinese_people_support_to_china_government_modifier = 0.01
+}
+}	
+	PRC_The_Second_Great_Proletarian_Cultural_Revolution_2 = {
+			picture = generic_purge
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+political_power_factor = 0.15
+stability_factor = -0.20
+war_support_factor = 0.15
+Chinese_people_support_to_china_government_modifier = 0.05
+}
+}	
+PRC_The_Second_Great_Proletarian_Cultural_Revolution_3 = {
+			picture = generic_purge
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+political_power_factor = 0.25
+stability_factor = -0.30
+war_support_factor = 0.25
+Chinese_people_support_to_china_government_modifier = 0.08
+}
+}	
+	USA_Anti_Communist_Jihad = {
+			picture = generic_purge
+		allowed = {
+		
+			}
+	available = {
+						custom_trigger_tooltip = {
+NOT = {
+OR = {
+					is_in_array = { ruling_party = 5 }
+					is_in_array = { ruling_party = 4 }
+
+}}
+					tooltip = CHI_not_left
+}
+	}		
+ 	
+			modifier = {
+send_volunteer_size = 5
+send_volunteer_factor = 0.3
+send_volunteers_tension = -0.5
+send_volunteer_divisions_required = -0.50
+}
+}
+	CHI_Liberator_of_Africa_afr = {
+			picture = spr_international_brigades
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+production_speed_buildings_factor = 0.5
+consumer_goods_factor = -0.25
+industrial_capacity_factory = 0.15
+
+}
+}
+CHI_Liberator_of_Africa = {
+			picture = red_revolutionary_army
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+Chinese_people_support_to_china_government_modifier = 0.15
+stability_factor = 0.2
+war_support_factor = 0.2
+political_power_gain = 1.0
+}
+}
+USA_Fiasco_in_Africa = {
+			picture = low_popular_support
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+stability_factor = -0.35
+war_support_factor = -0.25
+stability_weekly = -0.005
+political_power_gain = -1.0
+communism_drift = 0.10
+}
+}
+USA_Loss_of_raw_material_sources_in_Africa = {
+			picture = great_depression2
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+production_speed_buildings_factor = -0.5
+consumer_goods_factor = 0.20
+		economic_cycles_cost_factor = 1
+		econ_cycle_upg_cost_multiplier_modifier = 1
+		interest_rate_multiplier_modifier = 0.5
+}
+}
+	SOV_china_COOP = {
+			picture = china_factory
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+consumer_goods_factor = -0.10
+research_speed_factor = 0.10
+production_factory_start_efficiency_factor = 0.10
+production_factory_max_efficiency_factor = 0.10
+production_factory_efficiency_gain_factor = 0.10
+production_speed_buildings_factor = 0.30
+}
+}
+afc_china_COOP = {
+			picture = china_factory
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+consumer_goods_factor = -0.20
+research_speed_factor = 0.10
+production_factory_start_efficiency_factor = 0.10
+production_factory_max_efficiency_factor = 0.10
+production_factory_efficiency_gain_factor = 0.10
+production_speed_buildings_factor = 0.1
+communism_drift = 0.10
+}
+}
+afc_china_COOP_chi = {
+			picture = china_factory
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+consumer_goods_factor = -0.15
+production_factory_max_efficiency_factor = 0.10
+production_factory_efficiency_gain_factor = 0.10
+industrial_capacity_factory = 0.10
+local_resources_factor  = 0.10
+}
+}
+PRC_worker_factory_idea = {
+picture = production_bonus
+modifier = {
+Chinese_people_support_to_china_government_modifier = 0.01
+production_factory_efficiency_gain_factor = 0.10
+production_factory_max_efficiency_factor = 0.1
+production_factory_start_efficiency_factor = 0.1
+production_speed_buildings_factor = 0.2
+civ_facs_worker_requirement_modifier = 0.2
+				mil_facs_worker_requirement_modifier = 0.15
+				offices_worker_requirement_modifier = 0.15
+				
+}
+
+}
+ETH_Socialism_with_Ethiopian_characteristics_idea = {
+picture = production_bonus
+modifier = {
+production_factory_efficiency_gain_factor = 0.10
+production_factory_max_efficiency_factor = 0.1
+production_factory_start_efficiency_factor = 0.1
+production_speed_buildings_factor = 0.2
+civ_facs_worker_requirement_modifier = 0.1
+mil_facs_worker_requirement_modifier = 0.1
+offices_worker_requirement_modifier = 0.1
+				
+}
+}
+CHI_Exporting_the_Revolution = {
+			picture = communism11
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+send_volunteer_size = 5
+send_volunteer_factor = 0.3
+send_volunteers_tension = -0.30
+
+send_volunteer_divisions_required = -0.50
+operative_slot = 10
+}
+}
+
+
+	
+PRC_afcan_work = {
+	allowed_civil_war = {
+always = yes
+}
+			picture = central_management
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+				production_speed_buildings_factor  = 0.15
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+PRC_afcan_work2 = {
+allowed_civil_war = {
+always = yes
+}
+			picture = central_management
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+				production_speed_buildings_factor  = 0.2
+				local_resources_factor = 0.10
+				production_factory_max_efficiency_factor = 0.20
+				consumer_goods_factor = 0.10
+			}
+		}
+CHI_work_01 = {
+allowed_civil_war = {
+always = yes
+}
+name = chi_work
+			picture = production_bonus
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+production_speed_buildings_factor = 0.4
+Chinese_people_support_to_china_government_modifier = -0.10
+conscription_factor = -0.05
+stability_factor = -0.15
+monthly_population = -0.5
+communism_drift = -0.01
+			civ_facs_worker_requirement_modifier = 0.1
+				mil_facs_worker_requirement_modifier = 0.1
+				offices_worker_requirement_modifier = 0.1
+			political_power_gain = -0.25
+consumer_goods_factor = -0.05
+			}
+		}
+CHI_work_02 = {
+allowed_civil_war = {
+always = yes
+}
+name = chi_work
+			picture = production_bonus
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+production_speed_buildings_factor = 0.3
+conscription_factor = -0.05
+monthly_population = -0.4
+stability_factor = -0.10
+communism_drift = -0.01
+Chinese_people_support_to_china_government_modifier = -0.07
+
+				political_power_gain = -0.15
+consumer_goods_factor = -0.05
+civ_facs_worker_requirement_modifier = 0.15
+				mil_facs_worker_requirement_modifier = 0.15
+				offices_worker_requirement_modifier = 0.15
+			}
+		}
+CHI_work_03 = {
+allowed_civil_war = {
+always = yes
+}
+name = chi_work
+			picture = production_bonus
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+production_speed_buildings_factor = 0.2
+stability_factor = -0.05
+monthly_population = -0.3
+communism_drift = -0.01
+Chinese_people_support_to_china_government_modifier = -0.05
+				political_power_gain = -0.1
+consumer_goods_factor = -0.03
+civ_facs_worker_requirement_modifier = 0.05
+				mil_facs_worker_requirement_modifier = 0.05
+				offices_worker_requirement_modifier = 0.05
+			}
+		}
+CHI_work_04 = {
+allowed_civil_war = {
+always = yes
+}
+name = chi_work
+			picture = production_bonus
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+production_speed_buildings_factor = 0.1
+communism_drift = -0.01
+monthly_population = -0.2
+research_speed_factor = -0.05
+				political_power_gain = -0.1
+consumer_goods_factor = -0.01
+civ_facs_worker_requirement_modifier = 0.05
+Chinese_people_support_to_china_government_modifier = -0.01
+				mil_facs_worker_requirement_modifier = 0.05
+				offices_worker_requirement_modifier = 0.05
+			}
+		}
+CHI_work5 = {
+allowed_civil_war = {
+always = yes
+}
+name = chi_work
+			picture = production_bonus
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+production_speed_buildings_factor = 0.6
+Chinese_people_support_to_china_government_modifier = -0.12
+conscription_factor = -0.10
+stability_factor = -0.25
+monthly_population = -0.6
+communism_drift = -0.03
+research_speed_factor = -0.1
+				political_power_gain = -0.35
+consumer_goods_factor = -0.08
+civ_facs_worker_requirement_modifier = 0.25
+				mil_facs_worker_requirement_modifier = 0.25
+				offices_worker_requirement_modifier = 0.25
+			}
+		}
+CHI_work6 = {
+allowed_civil_war = {
+always = yes
+}
+name = chi_work
+			picture = production_bonus
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+production_speed_buildings_factor = 0.8
+conscription_factor = -0.15
+stability_factor = -0.35
+monthly_population = -0.7
+communism_drift = -0.05
+Chinese_people_support_to_china_government_modifier = -0.15
+research_speed_factor = -0.2
+				political_power_gain = -0.45
+consumer_goods_factor = -0.10
+civ_facs_worker_requirement_modifier = 0.3
+				mil_facs_worker_requirement_modifier = 0.3
+				offices_worker_requirement_modifier = 0.3
+			}
+		}
+CHI_work7 = {
+allowed_civil_war = {
+always = yes
+}
+name = chi_work
+			picture = production_bonus
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+production_speed_buildings_factor = 1.0
+conscription_factor = -0.15
+monthly_population = -0.8
+stability_factor = -0.40
+communism_drift = -0.05
+research_speed_factor = -0.3
+				political_power_gain = -0.45
+				Chinese_people_support_to_china_government_modifier = -0.20
+consumer_goods_factor = -0.15
+civ_facs_worker_requirement_modifier = 0.5
+				mil_facs_worker_requirement_modifier = 0.5
+				offices_worker_requirement_modifier = 0.5
+			}
+		}
+PRC_Hack_Internet= {
+allowed = { original_tag = CHI }
+allowed_civil_war = {
+always = yes
+}
+			picture = com_armenia
+
+			modifier = {
+operative_slot	 = 30
+own_operative_detection_chance = -10
+decryption_factor = 0.70
+intel_network_gain = 2
+subversive_activites_upkeep = -0.5
+			}
+		}		
+PRC_aigov= {
+allowed = { original_tag = CHI }
+allowed_civil_war = {
+always = yes
+}
+			picture = puppet_master
+
+			modifier = {
+production_speed_buildings_factor = 0.3
+consumer_goods_factor = -0.3			}
+		}		
+		PRC_totalitarian_government = {
+allowed = { original_tag = CHI }
+allowed_civil_war = {
+always = yes
+}
+			picture = political_censorship
+
+			modifier = {
+communism_drift = 1
+stability_factor = 0.1
+party_popularity_stability_factor = 0.2
+war_support_factor = 0.15
+political_power_gain = -0.20
+			}
+		}	
+		PRC_reboot = {
+allowed = { original_tag = CHI }
+allowed_civil_war = {
+always = yes
+}
+			picture = cartels
+
+			modifier = {
+monthly_population = -4
+army_attack_factor = 1
+war_support_factor = -0.5
+stability_factor = -1
+army_org_factor = 1
+army_defence_factor = 1
+production_speed_buildings_factor = 0.4
+			}
+		}	
+		PRC_reboot2 = {
+allowed = { original_tag = CHI }
+allowed_civil_war = {
+always = yes
+}
+			picture = cartels
+
+			modifier = {
+monthly_population = 2
+army_attack_factor = 1
+army_org_factor = 1
+army_defence_factor = 1
+production_speed_buildings_factor = 1
+			}
+		}		
+		PRC_Dafang_satellite = {
+allowed = { original_tag = CHI }
+allowed_civil_war = {
+always = yes
+}
+			picture = chabuduo
+
+			modifier = {
+consumer_goods_factor = -0.2
+production_speed_buildings_factor = -0.3
+
+			}
+		}	
+		PRC_Virus_weapons = {
+allowed = { original_tag = CHI }
+allowed_civil_war = {
+always = yes
+}
+			picture = opium
+
+			modifier = {
+monthly_population = -2
+production_speed_buildings_factor = -0.5
+			}
+		}				
+CHI_jdjs1 = {
+allowed_civil_war = {
+always = yes
+}
+name = chi_jdjs
+			picture = split_pla
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+army_org_factor = -0.15
+army_attack_factor = -0.15
+consumer_goods_factor = -0.05
+nationalist_drift = 0.05
+army_defence_factor = -0.15
+political_power_gain = -0.10
+			}
+		}
+CHI_jdjs2 = {
+allowed_civil_war = {
+always = yes
+}
+name = chi_jdjs
+			picture = split_pla
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+			army_attack_factor = -0.05
+			army_defence_factor = -0.05
+		army_org_factor = -0.05
+				political_power_gain = -0.05
+			}
+		}
+CHI_CPC_left1 = {
+name = "社会主义改造计划"
+allowed = { original_tag = CHI }
+allowed_civil_war = {
+always = yes
+}
+			picture = Communist_patry_of_china_flagideas
+
+			cancel = {
+				NOT = { has_government = communism }
+			}
+
+			modifier = {
+				political_power_factor = -0.10
+				communism_drift = 0.02
+				consumer_goods_factor = 0.10
+				production_speed_buildings_factor = -0.30
+				research_speed_factor = -0.30
+				stability_factor = -0.25
+	power_balance_weekly = -0.01
+	civ_facs_worker_requirement_modifier = 0.1
+				mil_facs_worker_requirement_modifier = 0.1
+				offices_worker_requirement_modifier = 0.1
+				civilian_factories_productivity = 0.1
+				military_factories_productivity = 0.1
+								agriculture_workers_modifier = 0.10
+			}
+		}	
+CHI_CPC_left2 = {
+name = "社会主义改造计划"
+			allowed = { original_tag = CHI }
+allowed_civil_war = {
+always = yes
+}
+			picture = Communist_patry_of_china_flagideas
+
+			cancel = {
+				NOT = { has_government = communism }
+			}
+
+			modifier = {
+				political_power_factor = 0.05
+				communism_drift = 0.05
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = -0.20
+				research_speed_factor = -0.20
+				stability_factor = 0.10
+	power_balance_weekly = -0.02
+civ_facs_worker_requirement_modifier = 0.2
+				mil_facs_worker_requirement_modifier = 0.2
+				offices_worker_requirement_modifier = 0.2
+				civilian_factories_productivity = 0.3
+				military_factories_productivity = 0.3
+								agriculture_workers_modifier = 0.10			
+			}
+
+		}	
+CHI_CPC_left3 = {
+name = "社会主义改造计划"
+			allowed = { original_tag = CHI }
+allowed_civil_war = {
+always = yes
+}
+			picture = Communist_patry_of_china_flagideas
+
+			cancel = {
+				NOT = { has_government = communism }
+			}
+
+			modifier = {
+				political_power_factor = 0.10
+				communism_drift = 0.08
+				consumer_goods_factor = 0.02
+				production_speed_buildings_factor = -0.10
+				research_speed_factor = -0.10
+				stability_factor = 0.20
+				corruption_cost_factor = -0.20
+	power_balance_weekly = -0.03
+	civ_facs_worker_requirement_modifier = 0.3
+				mil_facs_worker_requirement_modifier = 0.3
+				offices_worker_requirement_modifier = 0.3
+				civilian_factories_productivity = 0.3
+				military_factories_productivity = 0.3
+								agriculture_workers_modifier = 0.2
+			}
+
+		}	
+CHI_CPC_left4 = {
+name = "社会主义改造计划"
+			allowed = { original_tag = CHI }
+allowed_civil_war = {
+always = yes
+}
+			picture = Communist_patry_of_china_flagideas
+
+			cancel = {
+				NOT = { has_government = communism }
+			}
+
+			modifier = {
+				political_power_factor = 0.15
+				communism_drift = 0.10
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.05
+				stability_factor = 0.25
+				corruption_cost_factor = -0.20
+				education_budget_cost_factor = -0.25
+				health_budget_cost_factor = -0.25
+				social_budget_cost_factor = -0.25
+	power_balance_weekly = -0.05
+	civ_facs_worker_requirement_modifier = 0.4
+				mil_facs_worker_requirement_modifier = 0.4
+				offices_worker_requirement_modifier = 0.4
+				civilian_factories_productivity = 0.5
+				military_factories_productivity = 0.5
+								agriculture_workers_modifier = 0.2
+			}
+
+		}	
+CHI_CPC_left5 = {
+name = "chongqing_model"
+			allowed = { original_tag = CHI }
+allowed_civil_war = {
+always = yes
+}
+			picture = Communist_patry_of_china_flagideas
+
+			cancel = {
+				NOT = { has_government = communism }
+			}
+
+			modifier = {
+				political_power_factor = 0.25
+				communism_drift = 0.15
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.10
+				research_speed_factor = 0.10
+				stability_factor = 0.30
+				corruption_cost_factor = -0.20
+				education_budget_cost_factor = -0.5
+				health_budget_cost_factor = -0.5
+				social_budget_cost_factor = -0.5
+	power_balance_weekly = -0.08
+civ_facs_worker_requirement_modifier = 0.2
+				mil_facs_worker_requirement_modifier = 0.6
+				offices_worker_requirement_modifier = 0.6
+				civilian_factories_productivity = 0.6
+				military_factories_productivity = 0.6
+								agriculture_workers_modifier = 0.10	
+								Chinese_people_support_to_china_government_modifier = 0.10
+			}
+		}	
+CHI_CPC_right1 = {
+name = "私有化计划"
+allowed = { original_tag = CHI }
+allowed_civil_war = {
+always = yes
+}
+			picture = high_society
+
+			modifier = {
+				democratic_drift = 0.02
+				nationalist_drift = 0.02
+				neutrality_drift = 0.02
+				consumer_goods_factor = -0.02
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.05
+				stability_factor = -0.10
+				corruption_cost_factor = 0.20
+	power_balance_weekly = 0.01
+			}
+		}	
+CHI_CPC_right2 = {
+name = "私有化计划"
+allowed = { original_tag = CHI }
+allowed_civil_war = {
+always = yes
+}
+			picture = high_society
+
+			modifier = {
+				democratic_drift = 0.02
+				nationalist_drift = 0.02
+				neutrality_drift = 0.02
+				consumer_goods_factor = -0.02
+				production_speed_buildings_factor = 0.10
+				research_speed_factor = 0.10
+				stability_factor = -0.15
+				corruption_cost_factor = 0.20
+	power_balance_weekly = 0.03
+			}
+		}
+CHI_CPC_right3 = {
+name = "私有化计划"
+allowed = { original_tag = CHI }
+allowed_civil_war = {
+always = yes
+}
+			picture = high_society
+
+			modifier = {
+				political_power_factor = -0.25
+				democratic_drift = 0.05
+				nationalist_drift = 0.05
+				neutrality_drift = 0.05
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.10
+				research_speed_factor = 0.10
+				stability_factor = -0.20
+				corruption_cost_factor = 0.40
+	power_balance_weekly = 0.03
+			}
+		}	
+CHI_CPC_right4 = {
+name = "私有化计划"
+allowed = { original_tag = CHI }
+allowed_civil_war = {
+always = yes
+}
+			picture = high_society
+
+			modifier = {
+				trade_opinion_factor = 0.50
+				political_power_factor = -0.25
+				democratic_drift = 0.05
+				nationalist_drift = 0.05
+				neutrality_drift = 0.05
+				consumer_goods_factor = -0.10
+				monthly_population = -0.20
+				production_speed_buildings_factor = 0.20
+				research_speed_factor = 0.15
+				stability_factor = -0.25
+				corruption_cost_factor = 0.40
+	power_balance_weekly = 0.05
+			}
+		}
+	CHI_CPC_right5 = {
+name = "广东模式"
+allowed = { original_tag = CHI }
+allowed_civil_war = {
+always = yes
+}
+			picture = high_society
+
+			modifier = {
+				trade_opinion_factor = 0.70
+				political_power_factor = -0.30
+				democratic_drift = 0.10
+				nationalist_drift = 0.10
+				neutrality_drift = 0.05
+				consumer_goods_factor = -0.15
+				monthly_population = -0.30
+				production_speed_buildings_factor = 0.25
+				research_speed_factor = 0.20
+				stability_factor = -0.30
+				corruption_cost_factor = 0.30
+	power_balance_weekly = 0.05
+			}
+		}	
+CHI_freemarket= {
+allowed = { original_tag = CHI }
+allowed_civil_war = {
+always = yes
+}
+			picture = market_liberalism
+
+			modifier = {
+				trade_opinion_factor = 0.5
+				political_power_factor = -0.1
+				democratic_drift = 0.10
+				neutrality_drift = 0.05
+				consumer_goods_factor = -0.10
+				monthly_population = -0.10
+				power_balance_weekly = 0.003
+				production_speed_buildings_factor = 0.30
+				research_speed_factor = 0.05
+				corruption_cost_factor = 0.5
+			}
+		}	
+CHI_lib4= {
+allowed = { original_tag = CHI }
+allowed_civil_war = {
+always = yes
+}
+			picture = democracy
+
+			modifier = {
+				trade_opinion_factor = 0.7
+				political_power_factor = -0.15
+				democratic_drift = 0.20
+				neutrality_drift = 0.07
+				consumer_goods_factor = -0.15
+				monthly_population = -0.30
+				production_speed_buildings_factor = 0.30
+				research_speed_factor = 0.10
+				corruption_cost_factor = 0.5
+				power_balance_weekly = 0.008
+			}
+		}	
+CHI_three_people1= {
+allowed = { original_tag = CHI }
+allowed_civil_war = {
+always = yes
+}
+			picture = democratic_socialism
+
+			modifier = {
+political_power_gain = 0.25
+production_factory_efficiency_gain_factor = 0.10
+production_factory_start_efficiency_factor = 0.10
+production_speed_buildings_factor = 0.10
+consumer_goods_factor = 0.025
+power_balance_weekly = -0.005
+			}
+		}	
+CHI_three_people2 = {
+allowed = { original_tag = CHI }
+allowed_civil_war = {
+always = yes
+}
+			picture = democratic_socialism
+
+			modifier = {
+political_power_gain = 0.25
+production_factory_efficiency_gain_factor = 0.10
+production_factory_start_efficiency_factor = 0.10
+production_speed_buildings_factor = 0.10
+consumer_goods_factor = 0.025
+stability_factor = 0.2
+communism_drift = 0.10
+neutrality_drift = 0.10	
+power_balance_weekly = -0.005
+Chinese_people_support_to_china_government_modifier = 0.10
+		}
+		}	
+CHI_three_people3 = {
+allowed = { original_tag = CHI }
+allowed_civil_war = {
+always = yes
+}
+			picture = democratic_socialism
+
+			modifier = {
+political_power_gain = 0.5
+production_factory_efficiency_gain_factor = 0.10
+production_factory_start_efficiency_factor = 0.10
+production_speed_buildings_factor = 0.10
+consumer_goods_factor = 0.025
+stability_factor = 0.2
+communism_drift = 0.10
+neutrality_drift = 0.20
+party_popularity_stability_factor = 0.3
+power_balance_weekly = -0.005
+Chinese_people_support_to_china_government_modifier = 0.15
+		}
+		}		
+CHI_dppgov1 = {
+allowed = { original_tag = CHI }
+allowed_civil_war = {
+always = yes
+}
+			picture = democratic_socialism
+
+			modifier = {
+political_power_gain = 0.5
+production_factory_efficiency_gain_factor = 0.10
+production_factory_start_efficiency_factor = 0.10
+neutrality_drift = 0.10
+power_balance_weekly = -0.005
+		}
+		}		
+CHI_dppgov2 = {
+allowed = { original_tag = CHI }
+allowed_civil_war = {
+always = yes
+}
+name = CHI_dppgov1
+			picture = democratic_socialism
+
+			modifier = {
+political_power_gain = 0.5
+production_factory_efficiency_gain_factor = 0.10
+production_factory_start_efficiency_factor = 0.10
+conscription_factor = 0.10
+production_speed_buildings_factor = 0.1
+monthly_population = -0.20
+neutrality_drift = 0.10
+party_popularity_stability_factor = 0.15
+power_balance_weekly = -0.005
+Chinese_people_support_to_china_government_modifier = 0.05
+		}
+		}		
+CHI_eight= {
+allowed = { original_tag = CHI }
+allowed_civil_war = {
+always = yes
+}
+			picture = armor
+
+			modifier = {
+political_power_gain = -0.25
+army_armor_speed_factor = 0.1
+army_armor_attack_factor = 0.15			}
+		}	
+CHI_eight2 = {
+allowed = { original_tag = CHI }
+allowed_civil_war = {
+always = yes
+}
+			picture = chinese_gateway
+
+			modifier = {
+political_power_gain = 0.25
+production_factory_efficiency_gain_factor = -0.20
+production_factory_start_efficiency_factor = -0.30
+monthly_population = 0.20
+production_speed_buildings_factor = 0.20
+production_speed_offices_factor = -0.50
+power_balance_weekly = 0.003
+consumer_goods_factor = -0.1
+stability_factor = 0.25
+research_speed_factor = -0.20
+nationalist_drift = 0.2
+Chinese_people_support_to_china_government_modifier = 0.1
+			}
+		}			
+CHI_1900= {
+allowed = { original_tag = CHI }
+allowed_civil_war = {
+always = yes
+}
+			picture = armor
+
+			modifier = {
+political_power_gain = -0.25
+army_attack_factor = 0.15
+army_defence_factor = 0.15
+production_speed_buildings_factor = -0.15
+production_speed_arms_factory_factor = 0.8
+			}
+		}	
+CHI_xuetong = {
+			allowed = { original_tag = CHI }
+allowed_civil_war = {
+always = yes
+}
+			picture = subvert_commie_control
+
+			cancel = {
+				NOT = { has_government = communism }
+			}
+
+			modifier = {
+				political_power_factor = 0.25
+				neutrality_drift = 0.1
+				stability_factor = 0.20
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = -0.1
+			}
+
+		}		
+	CHI_maocommunist23 = {
+			allowed = { original_tag = CHI }
+allowed_civil_war = {
+always = yes
+}
+			picture = subvert_commie_control
+
+			cancel = {
+				NOT = { has_government = communism }
+			}
+
+			modifier = {
+				political_power_factor = 0.25
+				neutrality_drift = 0.20
+				stability_factor = 0.30
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = -0.15
+			}
+
+		}			
+PRC_Make_Taiwan_an_isolated_island_idea = {
+	allowed_civil_war = {
+always = yes
+}
+			picture = purge_kmt
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+				stability_factor  = -0.25
+				war_support_factor = -0.25
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = -0.55
+				communism_drift = -0.3
+				political_power_gain = -0.25
+conscription = -0.005
+			}
+		}
+CHI_shaosuminzu1 = {
+	allowed_civil_war = {
+always = yes
+}
+name = chi_fenlie
+			picture = segregation
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+				stability_factor  = -0.1
+				political_power_gain = -0.25
+conscription = -0.005
+			}
+		}
+	CHI_shaosuminzu2 = {
+	allowed_civil_war = {
+always = yes
+}
+name = chi_fenlie
+			picture = segregation
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+				stability_factor  = -0.1
+				political_power_gain = -0.15
+conscription = -0.005
+			}
+		}
+	CHI_shaosuminzu3 = {
+	allowed_civil_war = {
+always = yes
+}
+name = chi_fenlie
+			picture = segregation
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+				stability_factor  = -0.05
+				political_power_gain = -0.05
+conscription = -0.005
+			}
+		}		
+	patry_fenlie = {
+	allowed_civil_war = {
+always = yes
+}
+			picture = split_CPC
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+				stability_factor  = -0.50
+				political_power_gain = -0.50
+conscription_factor = -0.10
+								custom_modifier_tooltip = cannot_train_units_tt
+
+			}
+						on_add = {
+				country_lock_all_division_template = yes
+			}
+		}		
+			PRC_people_dec = {
+	allowed_civil_war = {
+always = yes
+}
+			picture = Communist_patry_of_china_flagideas
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.05
+			}
+		}
+PRC_zjdec = {
+	allowed_civil_war = {
+always = yes
+}
+			picture = communism10
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+				political_power_gain = -0.15
+				stability_factor = 0.15
+			}
+		}
+PRC_historical_cycle = {
+	allowed_civil_war = {
+always = yes
+}
+			picture = historical_cycle
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+			custom_modifier_tooltip = PRC_historical_cycle_dynamic_modifier_tooltip 
+			}
+		}		
+	PRC_jjdz = {
+	allowed_civil_war = {
+always = yes
+}
+			picture = destroy_capitalism
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+conscription_factor = 0.10
+			}
+		}
+	CHI_mzzj = {
+	allowed_civil_war = {
+always = yes
+}
+			picture = popular_front
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+				stability_factor  = 0.05
+				political_power_gain = 0.05
+conscription_factor = -0.05
+			}
+		}		
+	CHI_Economic_stimulus1 = {
+	allowed_civil_war = {
+always = yes
+}
+name = CHI_Economic_stimulus
+			picture = foreign_capital
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+			corruption_cost_factor = 0.10
+			consumer_goods_factor = -0.05
+	power_balance_weekly = 0.002
+			}
+		}	
+	CHI_Economic_stimulus2 = {
+	allowed_civil_war = {
+always = yes
+}
+name = CHI_Economic_stimulus
+			picture = foreign_capital
+			allowed = {
+			}
+			
+ 
+			modifier = {
+			corruption_cost_factor = 0.20
+			monthly_population = -0.15
+			consumer_goods_factor = -0.10
+	power_balance_weekly = 0.003
+			}
+		}	
+	CHI_Economic_stimulus3 = {
+	allowed_civil_war = {
+always = yes
+}
+name = CHI_Economic_stimulus
+			picture = foreign_capital
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+			corruption_cost_factor = 0.25
+			monthly_population = -0.20
+			production_speed_infrastructure_factor = 0.10
+			production_speed_rail_way_factor = 0.10
+			production_speed_supply_node_factor = 0.10
+			consumer_goods_factor = -0.10
+	power_balance_weekly = 0.003
+			}
+		}	
+	CHI_Economic_stimulus4 = {
+	allowed_civil_war = {
+always = yes
+}
+name = CHI_Economic_stimulus
+			picture = foreign_capital
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+			corruption_cost_factor = 0.25
+			monthly_population = -0.20
+			production_speed_infrastructure_factor = 0.10
+			production_speed_rail_way_factor = 0.10
+			production_speed_supply_node_factor = 0.10
+			consumer_goods_factor = -0.15
+	power_balance_weekly = 0.003
+			}
+		}	
+	CHI_Economic_stimulus5 = {
+	allowed_civil_war = {
+always = yes
+}
+name = CHI_Economic_stimulus
+			picture = foreign_capital
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+			corruption_cost_factor = 0.25
+			monthly_population = -0.25
+			production_speed_infrastructure_factor = 0.10
+			production_speed_rail_way_factor = 0.10
+			production_speed_buildings_factor = 0.10
+			production_speed_supply_node_factor = 0.10
+			consumer_goods_factor = -0.15
+	power_balance_weekly = 0.005
+			}
+		}	
+	CHI_Economic_stimulus6_xi = {
+	allowed_civil_war = {
+always = yes
+}
+name = CHI_Economic_stimulus
+			picture = foreign_capital
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+			corruption_cost_factor = 0.30
+			monthly_population = -0.40
+			production_speed_infrastructure_factor = 0.10
+			production_speed_rail_way_factor = 0.10
+			production_speed_buildings_factor = 0.10
+			production_speed_supply_node_factor = 0.10
+			consumer_goods_factor = -0.20
+	power_balance_weekly = 0.015
+	Chinese_people_support_to_china_government_modifier = -0.05
+			}
+		}	
+				CHI_Socialist_Market_Economy = {
+		
+			name = CHI_Socialist_Market_Economy
+		allowed_civil_war = {
+always = yes
+}		
+			picture = well_balanced
+			
+			modifier = {
+				research_speed_factor = -0.02
+				production_factory_efficiency_gain_factor = -0.02
+				production_speed_industrial_complex_factor = 0.02
+				production_speed_offices_factor = 0.02
+				trade_opinion_factor = -0.02
+				consumer_goods_factor = -0.02
+				production_speed_arms_factory_factor = -0.02
+				drift_defence_factor = 0.02
+				corruption_cost_factor = 0.02
+	power_balance_weekly = 0.005
+						civ_facs_worker_requirement_modifier = -0.5
+				mil_facs_worker_requirement_modifier = -0.5
+				offices_worker_requirement_modifier = -0.5
+				civilian_factories_productivity = 0.1
+				military_factories_productivity = -0.5
+				agriculture_workers_modifier = -0.15
+			}
+		}
+	
+		CHI_Socialist_Market_Economy_free_1 = {
+			allowed_civil_war = {
+always = yes
+}
+			name = CHI_Socialist_Market_Economy
+			
+			picture = slightly_reformist
+			
+			modifier = {
+				research_speed_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_offices_factor = 0.05
+				
+				trade_opinion_factor = 0.02
+			monthly_population = -0.10
+				consumer_goods_factor = -0.05
+				production_speed_arms_factory_factor = -0.05
+				drift_defence_factor = -0.02
+				corruption_cost_factor = 0.05
+	power_balance_weekly = 0.008
+						civ_facs_worker_requirement_modifier = -0.7
+				mil_facs_worker_requirement_modifier = -0.7
+				offices_worker_requirement_modifier = -0.7
+				civilian_factories_productivity = 0.1
+				military_factories_productivity = 0.2
+								agriculture_workers_modifier = -0.20
+			}
+		}
+		
+		CHI_Socialist_Market_Economy_free_2 = {
+			allowed_civil_war = {
+always = yes
+}
+			name = CHI_Socialist_Market_Economy
+			
+			picture = slightly_reformist
+			
+			modifier = {
+				research_speed_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.10
+				production_speed_industrial_complex_factor = 0.10
+				production_speed_offices_factor = 0.10
+				trade_opinion_factor = 0.10
+			    monthly_population = -0.15
+				stability_factor = -0.02
+				consumer_goods_factor = -0.05
+				production_speed_arms_factory_factor = -0.10
+				drift_defence_factor = -0.10
+				corruption_cost_factor = 0.10
+	power_balance_weekly = 0.01
+						civ_facs_worker_requirement_modifier = -0.9
+				mil_facs_worker_requirement_modifier = -0.9
+				offices_worker_requirement_modifier = -0.9
+				civilian_factories_productivity = 0.1
+				military_factories_productivity = 0.4
+								agriculture_workers_modifier = -0.3
+			}
+		}
+		
+		CHI_Free_Market_Economy = {
+		allowed_civil_war = {
+always = yes
+}	
+			picture = modern_reformist
+			
+			modifier = {
+				research_speed_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_offices_factor = 0.15
+				
+				monthly_population = -0.20
+				trade_opinion_factor = 0.2
+				stability_factor = -0.05
+				consumer_goods_factor = -0.1
+				production_speed_arms_factory_factor = -0.15
+				drift_defence_factor = -0.15
+				corruption_cost_factor = 0.15
+	power_balance_weekly = 0.015
+						civ_facs_worker_requirement_modifier = -1.2
+				mil_facs_worker_requirement_modifier = -1.2
+				offices_worker_requirement_modifier = -1.2
+				civilian_factories_productivity = 0.4
+				military_factories_productivity = 0.4
+				agriculture_workers_modifier = -0.50		
+		}
+		}
+		
+		CHI_Socialist_Market_Economy_planned_1 = {
+	allowed_civil_war = {
+always = yes
+}		
+			name = niaolong
+			
+			picture = slightly_radical
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.05
+				production_speed_industrial_complex_factor = 0.02
+				production_speed_offices_factor = -0.05
+production_factory_max_efficiency_factor = 0.05
+production_factory_start_efficiency_factor = 0.05				
+				trade_opinion_factor = 0.05
+				consumer_goods_factor = 0.02
+				production_speed_arms_factory_factor = 0.05
+				drift_defence_factor = 0.05
+				corruption_cost_factor = -0.05
+	power_balance_weekly = 0.002
+					civ_facs_worker_requirement_modifier = -0.40
+				mil_facs_worker_requirement_modifier = -0.4
+				offices_worker_requirement_modifier = -0.45
+				civilian_factories_productivity = 0.1
+				military_factories_productivity = -0.4
+								agriculture_workers_modifier = -0.10
+	}
+		}
+		
+		CHI_Socialist_Market_Economy_planned_2 = {
+		allowed_civil_war = {
+always = yes
+}	
+			name = niaolong
+			
+			picture = slightly_radical
+		
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.10
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_offices_factor = -0.10
+production_factory_max_efficiency_factor = 0.10
+production_factory_start_efficiency_factor = 0.10				
+				consumer_goods_factor = 0.05
+				production_speed_arms_factory_factor = 0.10
+				drift_defence_factor = 0.10
+				corruption_cost_factor = -0.05
+	power_balance_weekly = 0.001
+					civ_facs_worker_requirement_modifier = -0.2
+				mil_facs_worker_requirement_modifier = -0.2
+				offices_worker_requirement_modifier = -0.2
+				civilian_factories_productivity = 0.1
+				military_factories_productivity = -0.2
+								agriculture_workers_modifier = 0.10
+		}
+		}
+		
+		CHI_Planned_Economy = {
+	allowed_civil_war = {
+always = yes
+}		
+			picture = radical_leftist
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.15
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_offices_factor = -0.2
+production_factory_max_efficiency_factor = 0.15
+production_factory_start_efficiency_factor = 0.15			
+				trade_opinion_factor = 0.05
+				consumer_goods_factor = 0.10
+				production_speed_arms_factory_factor = 0.15
+				drift_defence_factor = 0.5
+				corruption_cost_factor = -0.10
+	power_balance_weekly = -0.005
+					civ_facs_worker_requirement_modifier = 0.20
+				mil_facs_worker_requirement_modifier = 0.2
+				offices_worker_requirement_modifier = 0.2
+				civilian_factories_productivity = 0.1
+				military_factories_productivity = 0.1
+						agriculture_workers_modifier = 0.20
+			}
+		}
+			CHI_worker_cooperative = {
+	allowed_civil_war = {
+always = yes
+}		
+			picture = production_bonus
+			
+			modifier = {
+production_factory_efficiency_gain_factor = 0.1
+production_factory_max_efficiency_factor = 0.1
+production_factory_start_efficiency_factor = 0.1
+production_speed_arms_factory_factor = -0.25
+production_speed_industrial_complex_factor = 0.25
+consumer_goods_factor = -0.05
+power_balance_weekly = -0.005
+civ_facs_worker_requirement_modifier = 0.2
+				mil_facs_worker_requirement_modifier = 0.2
+				offices_worker_requirement_modifier = 0.2
+				civilian_factories_productivity = 0.3
+				military_factories_productivity = 0.3
+								agriculture_workers_modifier = 0.10
+}
+}	
+			CHI_Stateowned_enterprise_monopoly = {
+	allowed_civil_war = {
+always = yes
+}		
+			picture = puppet_industry
+			
+			modifier = {
+research_speed_factor = 0.1
+production_speed_arms_factory_factor = 0.25
+production_speed_industrial_complex_factor = -0.25
+production_speed_offices_factor = -0.25
+consumer_goods_factor = -0.10
+power_balance_weekly = 0.003
+}
+}			
+				CHI_selfemployed_small_cities = {
+	allowed_civil_war = {
+always = yes
+}		
+			picture = inflation
+			
+			modifier = {
+stability_factor = 0.05
+				tax_gain_multiplier_modifier = 0.10
+consumer_goods_factor = -0.05
+power_balance_weekly = 0.003
+
+}
+}	
+CHI_basic_service = {
+	allowed_civil_war = {
+always = yes
+}		
+			picture = inflation
+			
+			modifier = {
+stability_factor = 0.1
+tax_gain_multiplier_modifier = 0.15
+war_support_factor = 0.1
+consumer_goods_factor = -0.03
+power_balance_weekly = -0.003
+civ_facs_worker_requirement_modifier = 0.1
+				mil_facs_worker_requirement_modifier = 0.1
+				offices_worker_requirement_modifier = 0.1
+				civilian_factories_productivity = 0.15
+				military_factories_productivity = 0.15
+Chinese_people_support_to_china_government_modifier = 0.1
+custom_modifier_tooltip = CHI_basic_service_TT
+
+}
+}		
+		CHI_party_before_guns = {
+			picture = communism7
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+			stability_factor = 0.10
+		communism_drift = 0.50
+			}
+		}
+		CHI_xijinpingsixiang1 = {
+			picture = Communist_patry_of_china_flagideas
+			name = "习近平新时代中国特色社会主义思想"
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+			stability_factor = 0.10
+		communism_drift = 0.10
+			}
+		}
+		CHI_xijinpingsixiang2 = {
+			picture = Communist_patry_of_china_flagideas
+			name = "习近平新时代中国特色社会主义思想"
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+			stability_factor = 0.20
+			consumer_goods_factor = -0.05
+			nationalist_drift = 0.10
+		communism_drift = 0.15
+Chinese_people_support_to_china_government_modifier = 0.05		
+			}
+		}
+CHI_onepatry = {
+			picture = communism8
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+			stability_factor = -0.05
+			political_power_gain = 0.15
+			communism_drift = 0.50
+			}
+		}
+CHI_sr = {
+			picture = neo_comunista
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+			monthly_population = 0.1
+			research_speed_factor = 0.1
+			stability_factor = -0.15
+			political_power_gain = 1
+				communism_drift = 0.50
+			}
+		}
+CHI_grmz = {
+			picture = communism10
+name = Workers_democracy		
+		allowed = {
+			}
+	available = {
+				custom_trigger_tooltip = {
+					is_in_array = { ruling_party = 4 }
+					tooltip = has_communist_state_government_TT
+				}
+
+}		
+ 	
+			modifier = {
+defensive_war_stability_factor = 0.3
+war_stability_factor = 0.3
+ party_popularity_stability_factor = 0.3
+			}
+		}
+CHI_grmz1 = {
+			picture = communism10
+name = Workers_democracy		
+		allowed = {
+			}
+			
+ 	available = {
+				custom_trigger_tooltip = {
+					is_in_array = { ruling_party = 4 }
+					tooltip = has_communist_state_government_TT
+				}
+
+}
+			modifier = {
+defensive_war_stability_factor = 0.3
+war_stability_factor = 0.3
+ party_popularity_stability_factor = 0.3
+ consumer_goods_factor = -0.05
+ corruption_cost_factor = -0.25
+ industrial_capacity_factory = -0.05
+ industrial_capacity_dockyard = -0.05 
+ }
+		}
+CHI_grmz2 = {
+			picture = communism10
+name = Workers_democracy		
+		allowed = {
+			}
+			
+ 	available = {
+				custom_trigger_tooltip = {
+					is_in_array = { ruling_party = 4 }
+					tooltip = has_communist_state_government_TT
+				}
+
+}
+			modifier = {
+defensive_war_stability_factor = 0.3
+war_stability_factor = 0.3
+ party_popularity_stability_factor = 0.3
+ consumer_goods_factor = -0.05
+ corruption_cost_factor = -0.25
+  production_factory_efficiency_gain_factor = 0.15
+
+ industrial_capacity_factory = -0.05
+ industrial_capacity_dockyard = -0.05
+
+ }
+		}
+CHI_grmz3 = {
+			picture = communism10
+name = Workers_democracy		
+		allowed = {
+			}
+			
+ 	available = {
+				custom_trigger_tooltip = {
+					is_in_array = { ruling_party = 4 }
+					tooltip = has_communist_state_government_TT
+				}
+
+}
+			modifier = {
+defensive_war_stability_factor = 0.3
+war_stability_factor = 0.3
+ party_popularity_stability_factor = 0.3
+ consumer_goods_factor = -0.05
+ corruption_cost_factor = -0.25
+ production_factory_max_efficiency_factor = 0.15
+ production_factory_efficiency_gain_factor = 0.15
+ 
+ industrial_capacity_factory = -0.10
+ industrial_capacity_dockyard = -0.10
+
+ }
+		}
+CHI_grmz4 = {
+			picture = communism10
+name = Workers_democracy		
+		allowed = {
+			}
+			
+ 	available = {
+				custom_trigger_tooltip = {
+					is_in_array = { ruling_party = 4 }
+					tooltip = has_communist_state_government_TT
+				}
+
+}
+			modifier = {
+defensive_war_stability_factor = 0.5
+war_stability_factor = 0.5
+ party_popularity_stability_factor = 0.5
+ consumer_goods_factor = -0.05
+  production_factory_max_efficiency_factor = 0.15
+  production_factory_start_efficiency_factor = 0.15
+ production_factory_efficiency_gain_factor = 0.15
+ monthly_population = 0.20
+ research_speed_factor = 0.1
+ production_speed_buildings_factor = 0.15
+ industrial_capacity_factory = -0.2
+ industrial_capacity_dockyard = -0.20
+ stability_weekly = 0.03
+communism_drift = 0.10
+Chinese_people_support_to_china_government_modifier = 0.05
+ }
+		}
+CHI_gyjj = {
+			picture = communism6
+name = State_economy	
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+production_speed_buildings_factor = 0.10
+consumer_goods_factor = 0.05
+			}
+		}
+CHI_gyjj1 = {
+			picture = communism6
+name = State_economy	
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+production_speed_buildings_factor = 0.20
+consumer_goods_factor = 0.10
+production_factory_efficiency_gain_factor = -0.10
+corruption_cost_factor = 0.25
+			}
+		}
+CHI_gyjj2 = {
+			picture = communism6
+name = State_economy	
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+production_speed_buildings_factor = 0.30
+consumer_goods_factor = 0.10
+production_factory_max_efficiency_factor = 0.10
+production_factory_efficiency_gain_factor = -0.10
+corruption_cost_factor = 0.25
+			}
+		}
+		CHI_gyjj3 = {
+			picture = communism6
+name = State_economy	
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+production_speed_buildings_factor = 0.30
+local_resources_factor = 0.10
+consumer_goods_factor = 0.10
+production_factory_max_efficiency_factor = 0.10
+production_factory_efficiency_gain_factor = -0.10
+corruption_cost_factor = 0.25
+			}
+		}
+		CHI_gyjj4 = {
+			picture = communism6
+name = State_economy	
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+production_speed_buildings_factor = 0.40
+local_resources_factor = 0.10
+consumer_goods_factor = 0.10
+monthly_population = -0.20
+production_factory_max_efficiency_factor = 0.10
+production_factory_efficiency_gain_factor = -0.20
+industrial_capacity_factory = 0.10
+corruption_cost_factor = 0.25
+communism_drift = -0.10
+			}
+		}
+CHI_angangxfa = {
+			picture = communism8
+name = angangxianfa	
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+
+
+				production_factory_efficiency_gain_factor = 0.05
+
+
+production_capacity_factory = 0.10
+industrial_capacity_dockyard = 0.10
+research_speed_factor = 0.01
+			}
+		}
+CHI_angangxfa1 = {
+			picture = communism8
+name = angangxianfa	
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.07
+industrial_capacity_factory = 0.10
+industrial_capacity_dockyard = 0.10
+stability_factor = 0.10
+production_factory_max_efficiency_factor = 0.05
+production_factory_start_efficiency_factor = 0.10
+research_speed_factor = 0.02
+			}
+		}
+CHI_angangxfa2 = {
+			picture = communism8
+name = angangxianfa	
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.08
+industrial_capacity_factory = 0.15
+industrial_capacity_dockyard = 0.15
+stability_factor = 0.05
+production_factory_max_efficiency_factor = 0.06
+production_factory_start_efficiency_factor = 0.15
+research_speed_factor = 0.04
+			}
+		}
+CHI_angangxfa3 = {
+			picture = communism8
+name = angangxianfa	
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.10
+industrial_capacity_factory = 0.15
+industrial_capacity_dockyard = 0.15
+stability_factor = 0.05
+production_factory_max_efficiency_factor = 0.07
+production_factory_start_efficiency_factor = 0.15
+local_resources_factor = 0.15
+research_speed_factor = 0.07
+			}
+		}
+		CHI_angangxfa4 = {
+			picture = communism8
+name = angangxianfa	
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.12
+industrial_capacity_factory = 0.15
+industrial_capacity_dockyard = 0.15
+stability_factor = 0.20
+production_factory_max_efficiency_factor = 0.08
+production_factory_start_efficiency_factor = 0.15
+local_resources_factor = 0.20
+consumer_goods_factor = -0.03
+communism_drift = 0.1
+research_speed_factor = 0.09
+
+			}
+		}
+
+CHI_Socialist_Market = {
+			picture = communism10
+name = Socialist_Market	
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+consumer_goods_factor = 0.05
+production_factory_start_efficiency_factor = 0.10
+			}
+		}
+CHI_Socialist_Market1 = {
+			picture = communism10
+name = Socialist_Market	
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+consumer_goods_factor = 0.05
+production_factory_start_efficiency_factor = 0.10
+production_factory_efficiency_gain_factor = 0.10
+stability_factor = 0.10
+			}
+		}
+CHI_Socialist_Market2 = {
+			picture = communism10
+name = Socialist_Market	
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+consumer_goods_factor = 0.03
+production_factory_start_efficiency_factor = 0.10
+production_factory_efficiency_gain_factor = 0.10
+stability_factor = 0.10
+production_speed_buildings_factor = 0.10
+			}
+		}
+CHI_Socialist_Market3 = {
+			picture = communism10
+name = Socialist_Market	
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+consumer_goods_factor = -0.02
+production_factory_start_efficiency_factor = 0.10
+production_factory_efficiency_gain_factor = 0.10
+stability_factor = 0.10
+local_resources_factor = 0.20
+equipment_conversion_speed = 0.20
+
+production_speed_buildings_factor = 0.10
+		}
+		}
+CHI_gyz1 = {
+			picture = communism5
+name = china_gyz		
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+CHI_gyz2 = {
+			picture = communism5
+name = china_gyz		
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+political_power_gain = -0.1
+production_speed_buildings_factor = 0.05
+production_factory_efficiency_gain_factor = 0.10
+			}
+		}
+CHI_gyz3 = {
+			picture = communism5
+name = china_gyz		
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+political_power_gain = -0.15
+production_speed_buildings_factor = 0.10
+production_factory_efficiency_gain_factor = 0.15
+global_building_slots_factor = 0.05
+industrial_capacity_factory = 0.05
+
+			}
+		}
+CHI_gyz4 = {
+			picture = communism5
+name = china_gyz		
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+political_power_gain = -0.20
+production_speed_buildings_factor = 0.15
+production_factory_efficiency_gain_factor = 0.15
+global_building_slots_factor = 0.10
+industrial_capacity_factory = 0.10
+
+			}
+		}
+CHI_gyz5 = {
+			picture = communism5
+name = china_gyz		
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+research_speed_factor = 0.05
+political_power_gain = -0.2
+production_speed_buildings_factor = 0.15
+production_factory_efficiency_gain_factor = 0.25
+global_building_slots_factor = 0.10
+industrial_capacity_factory = 0.10
+consumer_goods_factor = 0.05
+			}
+		}
+				CHI_gosplan = { 
+			allowed = { always = no }
+			picture = local_self_management
+			modifier = {
+				global_building_slots_factor = 0.10
+				production_speed_buildings_factor = 0.1
+				production_factory_max_efficiency_factor = 0.15
+			}
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+			}
+		}
+CHI_GGKF = {
+
+			picture = party_of_progress
+
+			allowed = { original_tag = CHI }
+
+			removal_cost = -1
+						modifier = {
+local_resources_factor = 0.10
+production_speed_industrial_complex_factor = 0.4
+production_factory_start_efficiency_factor = -0.1
+production_speed_offices_factor = 0.4
+production_speed_arms_factory_factor = -0.2
+corruption_cost_factor = 0.30
+	power_balance_weekly = 0.008
+
+				   }
+
+				   available = {
+
+NOT = {
+	
+	has_idea = CHI_Planned_Economy
+
+}
+
+
+}
+
+		}
+	CHI_dev_Helium3 = {
+
+			picture = resource_production
+		allowed_civil_war = {
+always = yes
+}
+			allowed = { original_tag = CHI }
+
+			removal_cost = -1
+						modifier = {
+local_resources_factor = 0.1
+research_speed_factor = 0.10
+industrial_capacity_factory = 0.1
+
+
+				   }
+
+		}	
+		CHI_kra_isthmus_canal_prc = {
+
+			picture = tiger_economy
+		allowed_civil_war = {
+always = yes
+}
+			allowed = { original_tag = CHI }
+available = {NOT = {
+has_war_with = SIA
+}
+}
+			removal_cost = -1
+						modifier = {
+						local_resources_factor = 0.2
+political_power_gain = 1
+production_speed_buildings_factor = 0.25
+consumer_goods_factor = -0.05
+		economic_cycles_cost_factor = -0.15
+		econ_cycle_upg_cost_multiplier_modifier = -0.15
+	trade_opinion_factor = 0.3
+	fuel_gain = 500
+
+
+				   }
+
+		}		
+PRC_hero_mother = {
+
+			picture = party_of_progress
+
+			allowed = { original_tag = CHI }
+
+			removal_cost = -1
+						modifier = {
+consumer_goods_factor = 0.10
+monthly_population = 0.50
+stability_factor = 0.10
+				   }
+
+
+		}
+PRC_beishui = {
+
+			picture = party_of_progress
+
+			allowed = { original_tag = CHI }
+
+			removal_cost = -1
+						modifier = {
+consumer_goods_factor = 0.05
+industrial_capacity_factory = 0.10
+conscription_factor = 0.25
+monthly_population = 0.25 
+stability_factor = -0.25
+
+				   }
+
+
+		}
+CHI_kkhjb = {
+
+			picture = economic_increase
+
+			allowed = { original_tag = CHI }
+
+			removal_cost = -1
+						modifier = {
+local_resources_factor = 1.0
+industrial_capacity_factory = 0.3
+monthly_population = 0.25 
+production_speed_buildings_factor = 0.5
+production_factory_start_efficiency_factor = 1
+production_factory_max_efficiency_factor =1
+production_factory_efficiency_gain_factor = 1 
+				   }
+
+
+		}
+CHI_nongyejitihua1 = {
+
+			picture = agriculture
+ 				name = CHI_nongyejitihua
+
+			allowed = { original_tag = CHI }
+
+			removal_cost = -1
+						modifier = {
+consumer_goods_factor = -0.05
+industrial_capacity_factory = 0.1
+global_building_slots_factor = 0.05 
+
+				   }
+
+
+		}
+CHI_nongyejitihua2 = {
+
+			picture = agriculture
+ 				name = CHI_nongyejitihua
+
+			allowed = { original_tag = CHI }
+
+			removal_cost = -1
+						modifier = {
+consumer_goods_factor = -0.05
+industrial_capacity_factory = 0.1
+monthly_population = 0.01
+global_building_slots_factor = 0.05
+production_speed_buildings_factor = 0.1 
+
+				   }
+
+
+		}
+CHI_nongyejitihua3 = {
+
+			picture = agriculture
+ 				name = CHI_nongyejitihua
+
+			allowed = { original_tag = CHI }
+
+			removal_cost = -1
+						modifier = {
+consumer_goods_factor = -0.10
+industrial_capacity_factory = 0.1
+monthly_population = 0.05
+global_building_slots_factor = 0.10
+production_speed_buildings_factor = 0.1 
+
+				   }
+
+
+		}
+CHI_unification_of_china= {
+
+			picture = end_of_khalkha
+
+			allowed = { original_tag = CHI }
+
+			removal_cost = -1
+						modifier = {
+Chinese_people_support_to_china_government_modifier = 0.03
+political_power_gain = 0.25
+war_support_factor = 0.1
+party_popularity_stability_factor = 0.3
+
+				   }
+
+
+		}
+CHI_oldman = {
+
+			picture = great_depression
+
+			allowed = { original_tag = CHI }
+
+			removal_cost = -1
+						modifier = {
+consumer_goods_factor = 0.10
+monthly_population = -0.20
+industrial_capacity_factory = -0.10
+production_speed_buildings_factor = -0.10
+
+				   }
+
+
+		}
+CHI_wto = {
+
+			picture = high_society
+
+			modifier = {
+				trade_opinion_factor = 0.25
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+				research_speed_factor = 0.05
+			}
+		}
+CHI_big_layoff1 = {
+name = "CHI_big_layoff"
+			picture = great_depression
+
+			modifier = {
+			Chinese_people_support_to_china_government_modifier = -0.05
+				stability_weekly = -0.001
+				war_support_factor = -0.25
+				industrial_capacity_factory = -0.10
+				communism_drift = -0.10
+				monthly_population = -0.25
+				civ_facs_worker_requirement_modifier = -0.50
+				mil_facs_worker_requirement_modifier = -0.5
+				offices_worker_requirement_modifier = -0.5
+				civilian_factories_productivity = 0.1
+				military_factories_productivity = -0.5
+				dockyard_productivity = 0.1
+				offices_productivity = 0.1
+				production_speed_buildings_factor = 0.10
+				production_speed_arms_factory_factor = -0.10
+				production_speed_industrial_complex_factor = 0.10
+			}
+		}
+CHI_big_layoff2 = {
+name = "CHI_big_layoff"
+			picture = great_depression2
+
+			modifier = {
+				Chinese_people_support_to_china_government_modifier = -0.02
+		
+				stability_weekly = -0.0001
+				war_support_factor = -0.30
+				production_speed_buildings_factor = 0.10
+				communism_drift = -0.05
+				monthly_population = -0.40
+				civ_facs_worker_requirement_modifier = -0.30
+				mil_facs_worker_requirement_modifier = -0.3
+				offices_worker_requirement_modifier = -0.3
+				civilian_factories_productivity = 0.1
+				military_factories_productivity = -0.1
+				dockyard_productivity = 0.1
+				offices_productivity = 0.1
+				production_speed_buildings_factor = 0.15
+				production_speed_arms_factory_factor = -0.15
+				production_speed_industrial_complex_factor = 0.20				
+			}
+		}
+CHI_sars = {
+			picture = factory_strikes
+
+			modifier ={
+				production_speed_buildings_factor = -0.25
+				monthly_population = -0.02
+			}
+		}
+CHI_jiefangsixiang = {
+			picture = crush_the_revolution
+
+			allowed = { original_tag = CHI }
+
+			removal_cost = -1
+						modifier = {
+stability_factor = -0.10
+research_speed_factor  = 0.10
+nationalist_drift = 0.05
+neutrality_drift = 0.03
+democratic_drift = 0.10
+
+ drift_defence_factor = -0.25  
+}
+
+
+
+}
+
+CHI_shipinganquanwenti = {
+			picture = opium
+
+			allowed = { original_tag = CHI }
+			allowed_civil_war = {
+always = yes
+}
+available = {
+	NOT={
+		has_idea = CHI_Planned_Economy
+	}
+}
+			removal_cost = -1
+						modifier = {
+stability_factor = -0.10
+communism_drift = -0.01
+monthly_population = -0.20
+conscription_factor = -0.05
+research_speed_factor  = -0.05
+consumer_goods_factor = 0.05
+
+   
+}
+
+
+
+}
+
+
+CHI_jihuashengyu = {
+allowed_civil_war = {
+always = yes
+}
+
+
+			picture = one_child_policy
+
+			allowed = { original_tag = CHI }
+
+			removal_cost = -1
+						modifier = {
+consumer_goods_factor = -0.05
+stability_factor = -0.05
+monthly_population = -0.6
+
+}
+}
+CHI_jihuashengyu2 = {
+
+
+
+
+			picture = one_child_policy
+
+			allowed = { original_tag = CHI }
+
+			removal_cost = -1
+						modifier = {
+
+consumer_goods_factor = -0.03
+monthly_population = -0.40
+
+}
+}
+CHI_zibenjia = {
+
+
+
+
+			picture = communism8
+
+			allowed = { original_tag = CHI }
+
+			removal_cost = -1
+						modifier = {
+
+stability_factor = 0.10
+consumer_goods_factor = -0.05		
+industrial_capacity_factory = 0.05
+industrial_capacity_dockyard = 0.05
+Chinese_people_support_to_china_government_modifier = 0.01
+
+}
+}
+CHI_gjcgg = {
+
+
+
+
+			picture = central_management
+
+			allowed = { original_tag = CHI }
+
+			removal_cost = -1
+						modifier = {
+
+stability_factor = 0.10
+production_speed_buildings_factor = 0.1
+industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = 0.1
+
+
+}
+}
+CHI_china_wangluo = {
+
+
+
+
+			picture = chabuduo
+
+			allowed = { original_tag = CHI }
+
+			removal_cost = -1
+						modifier = {
+consumer_goods_factor = 0.05
+				research_speed_factor  = 0.05
+political_power_gain = -0.05
+
+}
+}
+CHI_zibenjia2 = {
+
+
+
+
+			picture = zhonghua
+
+			allowed = { original_tag = CHI }
+
+			removal_cost = -1
+						modifier = {
+stability_factor = -0.5
+war_support_factor = -0.1
+
+
+}
+}
+CHI_996 = {
+
+
+
+
+			picture = BOT_BDP_stronghold
+
+			allowed = { original_tag = CHI }
+
+			removal_cost = -1
+						modifier = {
+consumer_goods_factor = -0.05
+industrial_capacity_factory = 0.10
+monthly_population = -0.40
+production_speed_buildings_factor = 0.2
+
+
+}
+}
+CHI_gongpindejzhj = {
+
+
+
+
+			picture = social_06
+
+			allowed = { original_tag = CHI }
+
+			removal_cost = -1
+						modifier = {
+political_power_gain = 0.10
+consumer_goods_factor = 0.02		
+				production_speed_buildings_factor = 0.05
+
+
+
+}
+}
+CHI_new_socialist_economy = {
+	allowed_civil_war = {
+always = yes
+}	
+
+
+
+			picture = communism11
+
+			allowed = { original_tag = CHI }
+
+			removal_cost = -1
+						modifier = {
+
+stability_factor = 0.15
+consumer_goods_factor = 0.02
+production_factory_efficiency_gain_factor =0.1
+production_speed_buildings_factor = 0.2 
+industrial_capacity_factory = 0.10
+drift_defence_factor = 0.25
+industrial_capacity_dockyard = 0.10
+
+}
+}
+CHI_not_nongyesui = {
+
+
+	allowed_civil_war = {
+always = yes
+}		
+
+			picture = agriculture
+
+			allowed = { original_tag = CHI }
+
+			removal_cost = -1
+						modifier = {
+
+stability_factor = -0.15
+consumer_goods_factor = -0.05		
+monthly_population = -0.10
+industrial_capacity_factory = -0.1
+production_speed_industrial_complex_factor = 0.10
+				agriculture_workers_modifier = 0.3
+custom_modifier_tooltip = CHI_not_nongyesui_tt
+
+}
+}
+CHI_People_Commune = {
+
+
+	allowed_civil_war = {
+always = yes
+}		
+
+			picture = agriculture
+
+			allowed = { original_tag = CHI }
+
+			removal_cost = -1
+						modifier = {
+
+stability_factor = -0.05
+monthly_population = -0.2
+consumer_goods_factor = -0.05		
+industrial_capacity_factory = -0.05
+production_speed_industrial_complex_factor = 0.15
+				agriculture_workers_modifier = 0.5
+custom_modifier_tooltip = CHI_People_Commune_tt
+
+}
+}
+CHI_state_farm = {
+
+
+	allowed_civil_war = {
+always = yes
+}		
+
+			picture = agriculture
+
+			allowed = { original_tag = CHI }
+
+			removal_cost = -1
+						modifier = {
+
+consumer_goods_factor = 0.05		
+global_building_slots_factor = 0.10
+local_resources_factor = 0.10
+production_speed_buildings_factor = 0.2
+				agriculture_workers_modifier = 0.15
+custom_modifier_tooltip = CHI_state_farm_tt
+
+}
+}
+CHI_fanghuoqiang = {
+
+
+
+
+			picture = generic_purge
+
+			allowed = { original_tag = CHI }
+
+			removal_cost = -1
+						modifier = {
+
+stability_factor = 0.15
+communism_drift = 0.10
+							research_speed_factor  = -0.05
+
+}
+}
+CHI_ziyoudewangluo  = {
+
+
+
+
+			picture = free_press
+
+			allowed = { original_tag = CHI }
+
+			removal_cost = -1
+						modifier = {
+
+stability_factor = -0.05
+			decryption = 0.5
+							research_speed_factor  = 0.01
+
+}
+}
+CHI_xianfengdang = {
+
+
+
+
+			picture = destroy_capitalism
+
+			allowed = { original_tag = CHI }
+
+			removal_cost = -1
+						modifier = {
+Chinese_people_support_to_china_government_modifier = 0.03
+communism_drift = 0.05
+stability_factor = 0.10
+production_factory_max_efficiency_factor = 0.10
+line_change_production_efficiency_factor = 0.10
+}
+}
+		CHI_Bide = {
+			picture = disbanded_army
+available = {
+OR = {
+		is_in_array = { ruling_party = 2 }
+		is_in_array = { ruling_party = 3 }
+		is_in_array = { ruling_party = 6 }
+
+}
+
+}
+			modifier = {
+				stability_factor = 0.15
+production_speed_buildings_factor = 0.20
+production_speed_arms_factory_factor = -1.0
+production_factory_efficiency_gain_factor = 0.15
+production_factory_max_efficiency_factor = 0.15
+defensive_war_stability_factor = 0.5
+political_power_factor = 0.1
+ai_focus_peaceful_factor = 0.5
+opinion_gain_monthly_factor = 0.3
+
+			}
+			rule = {
+				can_not_declare_war = yes
+				can_puppet = no
+			can_only_justify_war_on_threat_country = no
+			can_send_volunteers = no
+			can_boost_other_ideologies = no
+			can_guarantee_other_ideologies = no
+
+			
+			}
+		}
+		maolegacy = {
+			picture = maoism
+		allowed_civil_war = {
+always = yes
+}
+			
+ 	
+			modifier = {
+				stability_factor = 0.15
+				communism_drift = 0.05
+				Chinese_people_support_to_china_government_modifier = 0.01
+			}
+		}
+		CHI_maocommunist4 = {
+			picture = communism
+		allowed_civil_war = {
+always = yes
+}
+			
+ 	
+			modifier = {
+				stability_factor = 0.15
+				neutrality_drift = 0.10
+			}
+		}		
+		CHI_som_dec2 = {
+			picture = social_democracy
+		allowed_civil_war = {
+always = yes
+}
+			
+ 	
+			modifier = {
+				stability_factor = 0.15
+				democratic_drift = 0.10
+				consumer_goods_factor = -0.05
+				production_factory_max_efficiency_factor = 0.10
+			}
+		}	
+		CHI_som_dec3 = {
+			picture = social_democracy
+		allowed_civil_war = {
+always = yes
+}
+			
+ 	
+			modifier = {
+				stability_factor = 0.15
+				democratic_drift = 0.10
+				consumer_goods_factor = -0.10
+				power_balance_weekly = -0.005
+				party_popularity_stability_factor = 0.3
+				production_speed_industrial_complex_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				Chinese_people_support_to_china_government_modifier = 0.10
+			}
+		}	
+		CHI_ns2 = {
+			picture = puppet_industry
+		allowed_civil_war = {
+always = yes
+}
+			
+ 	
+			modifier = {
+				stability_factor = -0.15
+				conscription_factor = -0.15
+				consumer_goods_factor = -0.10
+monthly_population = -0.40
+				production_speed_buildings_factor = 0.60
+				production_factory_max_efficiency_factor = -0.30
+				production_factory_efficiency_gain_factor = -0.30
+				Chinese_people_support_to_china_government_modifier = 0.05
+			}
+		}	
+		CHI_ns3 = {
+			picture = generic_oppression
+		allowed_civil_war = {
+always = yes
+}
+			
+ 	
+			modifier = {
+				stability_factor = 0.25
+				war_support_factor = 0.20
+				nationalist_drift = 0.20
+research_speed_factor = -0.15
+Chinese_people_support_to_china_government_modifier = 0.10
+			}
+		}
+		CHI_xunzhen = {
+			picture = political_reform
+		allowed_civil_war = {
+always = yes
+}
+			
+ 	
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = -0.20
+				democratic_drift = 0.20
+				communism_drift = -0.10
+			}
+		}
+		PRC_raj_rev = {
+			picture = communism9
+
+			
+ 	
+			modifier = {
+				stability_factor = -0.10
+								drift_defence_factor = -0.5
+				communism_drift = 0.70
+			}
+		}
+		denglegacy = {
+			picture = DengTheory
+			allowed = {
+			}
+				allowed_civil_war = {
+always = yes
+}	
+ 	available = {
+						custom_trigger_tooltip = {
+NOT = {
+OR = {
+					is_in_array = { ruling_party = 5 }
+					is_in_array = { ruling_party = 4 }
+
+}}
+					tooltip = CHI_not_left
+}
+	}
+			modifier = {
+				stability_factor = 0.15
+				communism_drift = 0.10
+				production_factory_efficiency_gain_factor = -0.10
+				production_speed_industrial_complex_factor = 0.30
+				production_speed_offices_factor = 0.3
+				corruption_cost_factor = 0.20
+				Chinese_people_support_to_china_government_modifier = 0.01
+			}		
+		}
+	china_war = {
+	allowed_civil_war = {
+always = yes
+}
+						picture = chinese_gateway
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+				conscription_factor = 0.15
+war_support_factor = 0.15
+stability_factor = 0.10
+defensive_war_stability_factor = 0.3
+					internal_factions_cost_factor = 10
+communism_drift = 0.01
+nationalist_drift = 0.01
+			}
+		}
+
+	red_weidui1 = {
+			picture = soviet_advisors
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+				conscription = 0.05
+				communism_drift = 0.1
+				max_command_power = 10
+				planning_speed = -0.10
+
+			}
+		}
+		PRC_nvquan = {
+						picture = land_of_the_free
+			allowed = {
+			}
+			
+			modifier = {
+				conscription_factor = 0.10
+				monthly_population = -0.15
+stability_factor = 0.10
+war_support_factor = 0.15
+industrial_capacity_factory = 0.10
+
+industrial_capacity_dockyard = 0.10
+Chinese_people_support_to_china_government_modifier = 0.05
+hidden_modifier = {
+	
+
+	chuanyu_people_support_to_china_government_modifier = 0.05
+			}
+
+
+			}
+		}
+		PRC_lgbt = {
+						picture = land_of_the_free
+			allowed = {
+			}
+			
+			modifier = {
+			monthly_population = -0.05
+				conscription_factor = 0.05
+stability_factor = -0.05
+
+
+Chinese_people_support_to_china_government_modifier = 0.01
+
+hidden_modifier = {
+	chuanyu_people_support_to_china_government_modifier = 0.01
+}
+			}
+		}
+		PRC_socfuy = {
+						picture = land_of_the_free
+			allowed = {
+			}
+			
+			modifier = {
+			monthly_population = 0.1
+stability_factor = -0.05
+			}
+		}
+	PRC_wr = {
+						picture = communism
+			allowed = {
+			}
+			
+			modifier = {
+communism_drift = 0.10
+stability_factor = -0.15
+drift_defence_factor = -0.25
+			}
+		}
+	usa_sl	= {
+						picture = communism
+			allowed = {
+			}
+			
+			modifier = {
+nationalist_drift = 0.05
+communism_drift = 0.10
+				army_attack_factor = -0.10
+war_support_factor = -0.20
+				army_org_factor = -0.1
+stability_factor = -0.10
+production_speed_buildings_factor = -0.5
+			}
+		}
+	PRC_new_family = {
+						picture = land_of_the_free
+			allowed = {
+			}
+			
+			modifier = {
+			monthly_population = 0.10
+			research_speed_factor = 0.10
+stability_factor = 0.10
+Chinese_people_support_to_china_government_modifier = 0.03
+			}
+		}
+	PRC_erjianzi = {
+			picture = land_of_the_free
+			allowed = {
+			}
+			
+			modifier = {
+			research_speed_factor = -0.10
+stability_factor = -0.10
+			}
+		}
+			PRC_lading = {
+			picture = land_of_the_free
+			allowed = {
+			}
+			
+			modifier = {
+			research_speed_factor = 0.10
+stability_factor = -0.15
+			}
+		}
+PRC_computer_syetem1 = {
+			picture = Communist_ogas
+			allowed = {
+			}
+			
+ 				name = computer_syetem
+
+			modifier = {
+research_speed_factor = 0.10
+party_popularity_stability_factor = 0.2
+production_factory_efficiency_gain_factor = 0.2
+political_power_gain = -0.2
+monthly_population = 0.25
+stability_factor = -0.1
+production_speed_buildings_factor = 0.1
+			}
+		}
+PRC_communsim_soc = {
+			picture = Communist_ogas
+			allowed = {
+			}
+			
+
+			modifier = {
+research_speed_factor = 0.10
+party_popularity_stability_factor = 0.3
+stability_weekly = 0.005 
+war_support_factor = 0.2
+political_power_gain = -0.15
+production_factory_efficiency_gain_factor = 0.1
+line_change_production_efficiency_factor = 0.1
+production_factory_start_efficiency_factor = 0.1
+production_factory_max_efficiency_factor = 0.1
+stability_factor = -0.10			
+			}
+		}
+PRC_bank_privatization = {
+			picture = positive_gold
+			allowed = {
+			}
+			
+
+			modifier = {
+consumer_goods_factor = 0.05
+political_power_factor = 0.10
+stability_factor = -0.25
+power_balance_weekly = 0.03
+production_speed_buildings_factor = 0.20 
+
+			}
+		}
+PRC_Reward = {
+			picture = production_bonus
+			allowed = {
+			}
+			
+
+			modifier = {
+research_speed_factor = 0.3
+production_factory_efficiency_gain_factor = -0.2
+production_factory_max_efficiency_factor = -0.2
+production_factory_start_efficiency_factor = 0.10
+production_speed_industrial_complex_factor = 0.5
+production_speed_arms_factory_factor = -0.5
+production_speed_buildings_factor = 0.3
+industrial_capacity_dockyard = 0.2
+industrial_capacity_factory = 0.2
+stability_factor= -0.2
+monthly_population = -0.5
+Chinese_people_support_to_china_government_modifier = -0.1
+			}
+		}
+		PRC_ban_game = {
+			picture = masters_of_our_fate
+			allowed = {
+			}
+			
+
+			modifier = {
+monthly_population = 0.05
+political_power_gain = 0.15
+stability_factor = -0.15
+production_speed_buildings_factor = 0.10
+
+			}
+		}
+		PRC_nationalist_education = {
+			picture = fascism2
+			allowed = {
+			}
+			
+
+			modifier = {
+nationalist_drift = 0.05
+communism_drift = 0.05
+democratic_drift = -0.1
+neutrality_drift = -0.10
+stability_factor = 0.6
+stability_weekly = -0.001
+war_support_factor = 0.3
+conscription_factor = 0.2
+production_speed_buildings_factor = -0.20
+political_power_gain = -0.2
+Chinese_people_support_to_china_government_modifier = 0.10
+
+			}
+		}		
+		PRC_party_state_capitalism = {
+			picture = Communist_patry_of_china_flagideas
+			allowed = {
+			}
+			
+
+			modifier = {
+consumer_goods_factor = -0.05
+corruption_cost_factor = 0.3
+power_balance_weekly = 0.005
+production_speed_arms_factory_factor = 0.2
+production_speed_industrial_complex_factor = -0.5
+production_speed_buildings_factor = 0.2
+Chinese_people_support_to_china_government_modifier = 0.04
+		}
+		}				
+PRC_working_life = {
+			picture = communism10
+			allowed = {
+			}
+			
+			modifier = {
+research_speed_factor = 0.20
+production_factory_efficiency_gain_factor = 0.2
+production_factory_max_efficiency_factor = 0.2
+production_factory_start_efficiency_factor = 0.2
+industrial_capacity_factory = -0.1
+industrial_capacity_dockyard = -0.1
+production_speed_buildings_factor = 0.4
+Chinese_people_support_to_china_government_modifier = 0.1
+			}
+		}
+PRC_computer_syetem4 = {
+			picture = research_bonus
+			allowed = {
+			}
+			
+ 				name = computer_syetem
+
+			modifier = {
+consumer_goods_factor = 0.15
+research_speed_factor = 0.25
+			}
+		}
+PRC_computer_syetem5 = {
+			picture = research_bonus
+			allowed = {
+			}
+			
+ 				name = computer_syetem
+
+			modifier = {
+consumer_goods_factor = 0.20
+research_speed_factor = 0.30
+				stability_weekly = -0.05
+industrial_capacity_factory = 0.10
+production_speed_buildings_factor = 0.10
+			}
+		}
+PRC_computer_syetem6 = {
+			picture = research_bonus
+			allowed = {
+			}
+			
+ 				name = computer_syetem
+
+			modifier = {
+consumer_goods_factor = 0.30
+research_speed_factor = 0.35
+				stability_weekly = -0.10
+industrial_capacity_factory = 0.15
+production_speed_buildings_factor = 0.15			}
+		}	
+PRC_computer_syetem7 = {
+			picture = research_bonus
+			allowed = {
+			}
+			
+ 				name = computer_syetem
+
+			modifier = {
+consumer_goods_factor = -0.10
+research_speed_factor = 0.40
+				stability_weekly = 0.10
+industrial_capacity_factory = 0.20
+production_speed_buildings_factor = 0.20
+			}
+		}	
+PRC_computer_syetem8 = {
+			picture = research_bonus
+			allowed = {
+			}
+			
+ 				name = computer_syetem
+
+			modifier = {
+consumer_goods_factor = -0.10
+research_speed_factor = 0.40
+				stability_weekly = 0.10
+industrial_capacity_factory = 0.25
+production_speed_buildings_factor = 0.30
+			}
+		}	
+PRC_1984 = {
+			picture = Big_Brother
+			allowed = {
+			}
+			
+
+			modifier = {
+consumer_goods_factor = -0.2
+stability_factor = 0.1
+production_speed_buildings_factor = 0.2
+Chinese_people_support_to_china_government_modifier = -0.03
+			}
+		}		
+PRC_dzhb = {
+			picture = Communist_patry_of_china_flagideas
+			allowed = {
+			}
+			
+
+			modifier = {
+consumer_goods_factor = 0.05
+industrial_capacity_dockyard = 0.10
+industrial_capacity_factory = 0.10
+			}
+		}	
+PRC_fcjc = {
+			picture = Communist_patry_of_china_flagideas
+			allowed = {
+			}
+			
+
+			modifier = {
+stability_factor = 0.25
+production_speed_buildings_factor = 0.1
+			}
+		}					
+	red_amry = {
+						picture = soviet_advisors
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+				conscription = 0.03
+				max_command_power = 30
+				command_power_gain_mult = 0.15
+				planning_speed = 0.05
+
+			}
+		}
+		red_amry1 = {
+						picture = soviet_advisors
+			allowed = {
+			}
+			
+ 				name = red_amry
+
+			modifier = {
+			Chinese_people_support_to_china_government_modifier = 0.03
+				conscription = 0.05
+				army_attack_factor = 0.05
+war_support_factor = 0.15
+				max_command_power = 40 
+				command_power_gain_mult = 0.3
+				planning_speed = 0.15
+
+			}
+		}
+		red_amry2 = {
+						picture = soviet_advisors
+			allowed = {
+			}
+			
+ 				name = red_amry
+
+			modifier = {
+				conscription = 0.05
+				conscription_factor = 0.25
+				army_attack_factor = 0.05
+                war_support_factor = 0.20
+				max_command_power = 50
+				training_time_army_factor = -0.15
+				command_power_gain_mult = 0.3
+				planning_speed = 0.15
+Chinese_people_support_to_china_government_modifier = 0.05
+army_armor_speed_factor = 0.10
+army_armor_attack_factor = 0.10
+breakthrough_factor	= 0.10
+			}
+		}
+		PRC_gmwz = {
+						picture = soviet_advisors
+			allowed = {
+			}
+			modifier = {
+							conscription = 0.10
+				conscription_factor = 0.50
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				max_command_power = 50
+				army_org_factor = -0.1 
+				training_time_army_factor = -0.20
+				command_power_gain_mult = 0.3
+				Chinese_people_support_to_china_government_modifier = 0.10
+
+			}
+		}
+		PRC_gjsn = {
+						picture = democratic_socialism
+			allowed = {
+			}
+			modifier = {
+		production_speed_buildings_factor = 1
+		production_speed_industrial_complex_factor = 0.10
+industrial_capacity_factory = 0.20
+research_speed_factor = 0.20
+consumer_goods_factor = 0.20
+			}
+		}
+		PRC_communist_society = {
+						picture = democratic_socialism
+			allowed = {
+			}
+			modifier = {
+industrial_capacity_factory = 0.10
+research_speed_factor = 0.10
+political_power_gain =0.5
+production_speed_industrial_complex_factor = 0.2
+production_factory_efficiency_gain_factor = 0.1
+production_factory_max_efficiency_factor = 0.1
+production_factory_start_efficiency_factor = 0.1
+power_balance_weekly = -0.025
+Chinese_people_support_to_china_government_modifier = 0.05
+			}
+		}		
+		PRC_cbleder = {
+						picture = nationalist_outlook
+			allowed = {
+			}
+			modifier = {
+		production_speed_buildings_factor = 1
+		stability_factor = 0.20
+		political_power_gain = 0.1
+			}
+		}
+		PRC_sodec = {
+						picture = social_democracy
+			allowed = {
+			}
+			modifier = {
+		stability_factor = 0.20
+		political_power_gain = -0.1
+			}
+		}
+		PRC_sodec1 = {
+			picture = social_democracy
+			allowed = {
+			}
+			modifier = {
+	monthly_population = 0.4
+consumer_goods_factor = -0.1
+			}
+		}
+houqing = {
+
+			allowed = { always = no }
+			picture = morale_bonus
+
+modifier = {
+attrition = -0.1
+} 
+			}
+
+	people_amry1 = {
+			picture = pla
+			allowed = {
+			}
+			 				name = people_amry
+ 	
+			modifier = {
+				conscription = 0.003
+				max_command_power = 50
+				command_power_gain_mult = 0.3
+				planning_speed = 0.10
+
+			}
+		}
+	people_amry2 = {
+			picture = red_revolutionary_army
+			allowed = {
+			}
+			 				name = people_amry
+ 	
+			modifier = {
+				conscription = 0.010
+				max_command_power = 50
+				command_power_gain_mult = 0.3
+				planning_speed = 0.15
+
+
+
+army_org_factor = 0.10
+
+Chinese_people_support_to_china_government_modifier = 0.03
+
+			}
+		}
+	people_amry3 = {
+			picture = red_revolutionary_army
+			allowed = {
+			}
+			 				name = people_amry
+ 	
+			modifier = {
+			army_org_factor = 0.15
+				conscription = 0.015
+				max_command_power = 100
+				command_power_gain_mult = 0.5
+				planning_speed = 0.35
+				Chinese_people_support_to_china_government_modifier = 0.06
+			}
+		}
+		CHI_war_communism = {
+			allowed = { always = no }
+			picture = morale_bonus
+			modifier = {
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.10
+				local_resources_factor = 0.2
+				political_power_gain = -1.0
+				production_speed_arms_factory_factor = 0.1
+				stability_factor = -0.15
+				war_support_factor = -0.1
+				monthly_population = -0.4
+				Chinese_people_support_to_china_government_modifier = 0.25
+				communism_drift = 0.1
+			}
+		}
+			CHI_aftermath_of_the_civil_war_1 = {
+			allowed = { always = no }
+			name = CHI_aftermath_of_the_civil_war
+			picture = great_depression
+			modifier = {
+				conscription_factor = -0.30
+				consumer_goods_factor = 0.25
+				war_support_factor = -0.30
+				stability_factor = -0.30
+				industrial_capacity_factory = -0.30
+				Chinese_people_support_to_china_government_modifier = -0.05
+			}
+		}
+		CHI_aftermath_of_the_civil_war_2 = {
+			allowed = { always = no }
+			name = CHI_aftermath_of_the_civil_war
+			picture = great_depression
+			modifier = {
+				conscription_factor = -0.25
+				consumer_goods_factor = 0.20
+				war_support_factor = -0.25
+				stability_factor = -0.25
+				industrial_capacity_factory = -0.25
+								Chinese_people_support_to_china_government_modifier = -0.05
+
+			}
+		}
+		CHI_aftermath_of_the_civil_war_3 = {
+			allowed = { always = no }
+			name = CHI_aftermath_of_the_civil_war
+			picture = great_depression
+			modifier = {
+				conscription_factor = -0.20
+				consumer_goods_factor = 0.15
+				war_support_factor = -0.20
+				stability_factor = -0.20
+				industrial_capacity_factory = -0.20
+				Chinese_people_support_to_china_government_modifier = -0.03
+
+			}
+		}
+		CHI_aftermath_of_the_civil_war_4 = {
+			allowed = { always = no }
+			name = CHI_aftermath_of_the_civil_war
+			picture = great_depression
+			modifier = {
+				conscription_factor = -0.15
+				consumer_goods_factor = 0.10
+				war_support_factor = -0.15
+				stability_factor = -0.15
+				industrial_capacity_factory = -0.15
+								Chinese_people_support_to_china_government_modifier = -0.025
+			}
+		}
+		CHI_aftermath_of_the_civil_war_5 = {
+			allowed = { always = no }
+			name = CHI_aftermath_of_the_civil_war
+			picture = great_depression
+			modifier = {
+				conscription_factor = -0.10
+				consumer_goods_factor = 0.05
+				war_support_factor = -0.10
+				stability_factor = -0.10
+				industrial_capacity_factory = -0.10
+								Chinese_people_support_to_china_government_modifier = -0.01
+			}
+		}	
+		
+china_maozedongsim = {
+						picture = maoism
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+
+				Chinese_people_support_to_china_government_modifier = 0.05
+
+				consumer_goods_factor = 0.05
+				stability_factor = 0.35
+				communism_drift = 0.80
+
+			}
+		}
+		
+china_redbingwar = {
+						picture = communism2
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+				conscription_factor = 0.05
+				communism_drift = 0.20
+stability_factor = -0.05
+
+			}
+		}
+china_juxugm = {
+						picture = communism9
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+				drift_defence_factor = 0.50
+				communism_drift = 0.20
+stability_factor = -0.20
+
+
+			}
+		}
+china_buduangm = {
+						picture = communism9
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+				drift_defence_factor = 0.80
+				research_speed_factor  = 0.05
+				communism_drift = 0.20
+stability_factor = -0.20
+
+
+			}
+		}
+chi_dapokex = {
+						picture = vladimir_lenin
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+		research_speed_factor  = 0.10
+
+
+
+			}
+		}
+CHI_dyahz = {
+						picture = flexible_foreign_policy
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+stability_factor = -0.35
+monthly_population = 0.20
+production_speed_buildings_factor = 0.10
+
+
+
+			}
+		}
+CHI_polduoy = {
+						picture = political_freedom
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+stability_factor = -0.10
+democratic_drift = 0.03
+neutrality_drift = 0.01
+
+			}
+		}
+CHI_gulitai = {
+						picture = embargo
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+stability_factor = -0.35
+industrial_capacity_factory = -0.20
+production_speed_buildings_factor = -0.10
+nationalist_drift = 0.10
+
+			}
+		}
+east_asia_yuan = {
+						picture = gold
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+consumer_goods_factor = -0.10
+industrial_capacity_factory = 0.10
+production_factory_efficiency_gain_factor = 0.10
+
+
+
+			}
+		}
+east_asia_ziyou_CHINA = {
+						picture = trade
+			allowed = {
+			}
+			name = CHI_east_asia_tradefree_q
+ 	
+			modifier = {
+		research_speed_factor  = 0.05
+			}
+						targeted_modifier = {
+				tag = JAP
+				extra_trade_to_target_factor = 0.10
+				}
+						targeted_modifier = {
+				tag = KOR
+				extra_trade_to_target_factor = 0.10
+				}				
+				
+		}
+east_asia_ziyou_MON = {
+						picture = trade
+			allowed = {
+			}
+			
+ 				name = CHI_east_asia_tradefree_q
+
+			modifier = {
+		research_speed_factor  = 0.05
+			}
+						targeted_modifier = {
+				tag = JAP
+				extra_trade_to_target_factor = 0.10
+				}
+						targeted_modifier = {
+				tag = CHI
+				extra_trade_to_target_factor = 0.10
+				}		
+						targeted_modifier = {
+				tag = KOR
+				extra_trade_to_target_factor = 0.10
+				}		
+				
+				
+		}
+east_asia_ziyou_KOR = {
+						picture = trade
+			allowed = {
+			}
+			
+ 				name = CHI_east_asia_tradefree_q
+
+			modifier = {
+		research_speed_factor  = 0.05
+			}
+						targeted_modifier = {
+				tag = JAP
+				extra_trade_to_target_factor = 0.10
+				}
+						targeted_modifier = {
+				tag = CHI
+				extra_trade_to_target_factor = 0.10
+				}				
+				
+		}
+east_asia_ziyou_JAP = {
+						picture = trade
+			allowed = {
+			}
+					name = CHI_east_asia_tradefree_q
+	
+ 	
+			modifier = {
+		research_speed_factor  = 0.05
+			}
+						targeted_modifier = {
+				tag = CHI
+				extra_trade_to_target_factor = 0.10
+				}
+						targeted_modifier = {
+				tag = KOR
+				extra_trade_to_target_factor = 0.10
+				}				
+				
+		}
+		china_dream = {
+			picture = party_before_country
+			
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+
+			industrial_capacity_factory = 0.10
+			industrial_capacity_dockyard = 0.10
+			production_speed_arms_factory_factor = 0.10
+war_support_factor = 0.10
+stability_factor = 0.1
+			join_faction_tension = -0.30
+nationalist_drift = 0.03
+communism_drift = 0.05			
+party_popularity_stability_factor = 0.25							
+			}
+		}
+				china_war_wtt = {
+			picture = generic_manpower_bonus
+			
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.02
+				production_speed_buildings_factor = 0.1
+				stability_factor = -0.25
+				industrial_capacity_factory = 0.10
+				generate_wargoal_tension = -1.00
+				consumer_goods_factor = -0.05
+
+			}
+		}
+china_gongyouhua_jihua = {
+			picture = alawite_high_command
+			
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+			global_building_slots_factor = 0.10
+
+			}
+		}
+china_anti_you = {
+			picture = vladimir_lenin
+			
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.10
+				political_power_gain = 0.10
+
+			}
+		}
+china_communism = {
+			picture = all_allowed_trade_unions
+			
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.15
+				consumer_goods_factor = 0.05
+				stability_factor = 0.2
+				political_power_gain = 0.25
+
+			}
+		}
+		china_communism_dexd = {
+			picture = all_allowed_trade_unions
+available = {
+emerging_communist_state_in_power_or_coalition = YES
+
+
+}			
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.2
+				political_power_gain = 0.10
+
+			}
+		}
+				china_communism_dex = {
+			picture = fourth_international
+			
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+emerging_communist_state_in_power_or_coalition = YES
+
+
+}
+			modifier = {
+				war_support_factor = 0.10
+				political_power_gain = 0.10
+			justify_war_goal_time = -0.2
+							foreign_subversive_activites = -0.3
+			}
+		}
+CHI_World_Revolution = {
+			picture = vladimir_lenin
+			
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+war_support_factor = 0.10
+justify_war_goal_time = -1.0
+foreign_subversive_activites = -0.5
+lend_lease_tension = -1.0
+send_volunteers_tension = -1.0
+guarantee_tension = -1.0
+annex_cost_factor = -0.5
+
+			}
+		}
+
+
+
+		CHI_zzgs = {
+			picture = vladimir_lenin
+
+allowed = {
+}
+
+
+modifier = {
+
+
+
+	Chinese_people_support_to_china_government_modifier = 0.05
+
+	consumer_goods_factor = 0.05
+	stability_factor = 0.1
+	communism_drift = 0.50
+	hidden_modifier = {
+		chuanyu_people_support_to_china_government_modifier = 0.05
+	}
+
+}
+}
+
+CHI_zzgs1 = {
+	picture = vladimir_lenin
+
+allowed = {
+}
+
+
+modifier = {
+
+
+	hidden_modifier = {
+		chuanyu_people_support_to_china_government_modifier = 0.07
+	}
+	Chinese_people_support_to_china_government_modifier = 0.07
+consumer_goods_factor = 0.05
+stability_factor = 0.15
+communism_drift = 0.60
+
+}
+}
+
+CHI_zzgs2 = {
+	picture = vladimir_lenin
+
+allowed = {
+}
+
+
+modifier = {
+
+
+	hidden_modifier = {
+		chuanyu_people_support_to_china_government_modifier = 0.1
+	}
+	Chinese_people_support_to_china_government_modifier = 0.1
+consumer_goods_factor = 0.06
+stability_factor = 0.20
+communism_drift = 0.70
+
+}
+}
+
+
+
+
+	}
+
+}

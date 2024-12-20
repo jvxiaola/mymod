@@ -1,0 +1,12 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_rd_CHI_bop_equality"
+		texturefile = "gfx/interface/bop/Common_prosperity_idea.png"
+	}
+	
+	spriteType = {
+		name = "GFX_rd_CHI_bop_differentiation"
+		texturefile = "gfx/interface/bop/China class.png"
+	}
+}

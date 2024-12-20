@@ -1,0 +1,159 @@
+add_namespace = soviet_russia
+country_event = {
+	id = soviet_russia.1
+	title = soviet_russia.1.t
+	desc = soviet_russia.1.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	}
+country_event = {
+	id = soviet_russia.2
+	title = soviet_russia.2.t
+	desc = soviet_russia.2.d
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+	name = soviet_russia.2.a
+	BLC = {
+	transfer_state = 416	
+					set_country_flag = no_leader_change
+
+	set_popularities = {
+		democratic = 15.0
+		communism = 62.0
+		fascism = 0.0
+		neutrality = 10.0
+		nationalist = 13.0
+	}
+	set_politics = {
+
+		ruling_party = communism
+		last_election = "1997.1.1"
+		election_frequency = 60
+		elections_allowed = no
+	}
+							start_politics_input = yes
+					add_to_array = { ruling_party = 4 } 
+					set_variable = { party_pop_array^4 = 0.82 } 
+					startup_politics = yes
+	clr_country_flag = no_leader_change
+
+	}
+	puppet = BLC
+	PAK = {
+				declare_war_on = {
+				target = SOV
+				type = annex_everything
+			}		
+	}
+			ai_chance = {
+			base = 60
+		}
+	}
+		option = {
+	name = soviet_russia.2.b	
+	PAK = {
+				declare_war_on = {
+				target = SOV
+				type = annex_everything
+			}
+}			
+RAJ = {						
+						declare_war_on = {
+				target = PAK
+				type = annex_everything
+			}	
+	}
+			ai_chance = {
+			base = 60
+		}
+	}
+	}
+country_event = {
+	id = soviet_russia.3
+	title = soviet_russia.3.t
+	desc = soviet_russia.3.d
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+	name = soviet_russia.3.a
+	RAJ = {
+	add_ideas = SOV_raj
+	add_5_western_social_democrat = yes
+	}
+			ai_chance = {
+			base = 60
+		}
+	}
+		option = {
+	name = soviet_russia.3.b
+	RAJ = {
+					add_10_emerging_communist = yes
+
+add_ideas = SOV_Support_the_Communist_Party
+	
+	}
+			ai_chance = {
+			base = 60
+		}
+	}
+	}
+	
+	#中国问题
+	country_event = {
+	id = soviet_russia.4
+	title = soviet_russia.4.t
+	desc = soviet_russia.4.d
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+	name = soviet_russia.4.a
+	set_country_flag = SOV_china_yh
+
+			ai_chance = {
+			base = 60
+		}
+	}
+		option = {
+	name = soviet_russia.4.b
+	set_country_flag = SOV_china_rev
+
+			ai_chance = {
+			base = 60
+		}
+	}
+	}
+	country_event = {
+	id = soviet_russia.5
+	title = soviet_russia.5.t
+	desc = soviet_russia.5.d
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+	name = soviet_russia.5.a
+	NKO = {
+	complete_national_focus = NKO_offer_negotiations
+	}
+			ai_chance = {
+			base = 60
+		}
+	}
+		option = {
+	name = soviet_russia.5.b	
+	NKO = {
+	complete_national_focus = NKO_all_out_war
+	}		
+	create_wargoal = {
+				type = annex_everything
+				target = KOR
+			}
+			ai_chance = {
+			base = 60
+		}
+	}
+	}

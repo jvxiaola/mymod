@@ -1,0 +1,264 @@
+
+CHI_power_balance = {
+	initial_value = 0.65
+	left_side = rd_CHI_equality_side
+	right_side = rd_CHI_differentiation_side
+	decision_category = China_gbrp_category
+	range = {
+		id = rd_CHI_equality_equality
+		min = -0.15
+		max = 0.15
+		modifier = {
+production_speed_buildings_factor = 0.10
+Chinese_people_support_to_china_government_modifier = 0.05
+		}
+	}
+	side = {
+		id = rd_CHI_equality_side
+		icon = GFX_rd_CHI_bop_equality
+		range = {
+			id = rd_CHI_equality_side_1
+			min = -0.5
+			max = -0.15
+			modifier = {
+			army_attack_factor = 0.05
+			army_defence_factor = 0.05
+			army_org_factor = 0.01
+consumer_goods_factor = -0.10
+							foreign_influence_defense_modifier = 0.1
+conscription_factor = 0.01
+monthly_population = 0.01
+war_support_factor = 0.10
+stability_factor = 0.10
+			political_power_gain = 0.01
+			industrial_capacity_factory = 0.01
+			industrial_capacity_dockyard = 0.01
+			research_speed_factor = 0.01
+			production_factory_efficiency_gain_factor = 0.01
+			production_factory_max_efficiency_factor = 0.01
+			production_factory_start_efficiency_factor = 0.01
+			production_speed_buildings_factor = -0.01
+master_ideology_drift = 0.02
+war_stability_factor = 0.01
+		economic_cycles_cost_factor = -0.01
+		econ_cycle_upg_cost_multiplier_modifier = -0.01
+			foreign_influence_modifier = 0.1
+Chinese_people_support_to_china_government_modifier = 0.08			
+			}
+		}
+		
+		range = {
+			id = rd_CHI_equality_side_2
+			min = -0.8
+			max = -0.5
+			modifier = {
+			army_core_attack_factor = 0.1
+			army_core_defence_factor = 0.10
+			army_org_factor = 0.05
+consumer_goods_factor = -0.20
+conscription_factor = 0.05
+monthly_population = 0.05
+war_support_factor = 0.15
+stability_factor = 0.15
+			political_power_gain = 0.05
+			industrial_capacity_factory = 0.05
+			industrial_capacity_dockyard = 0.05
+			research_speed_factor = 0.05
+			production_factory_efficiency_gain_factor = 0.05
+			production_factory_max_efficiency_factor = 0.05
+			production_factory_start_efficiency_factor = 0.05
+			production_speed_buildings_factor = -0.05
+			compliance_gain = 0.01
+master_ideology_drift = 0.05
+war_stability_factor = 0.05
+							foreign_influence_defense_modifier = 0.25
+		economic_cycles_cost_factor = -0.05
+		econ_cycle_upg_cost_multiplier_modifier = -0.05
+		interest_rate_multiplier_modifier = -0.1
+			foreign_influence_modifier = 0.25
+			Chinese_people_support_to_china_government_modifier = 0.10
+			}
+		}
+		
+		range = {
+			id = rd_CHI_equality_side_3
+			min = -0.95
+			max = -0.8
+			modifier = {
+			army_core_attack_factor = 0.2
+			army_core_defence_factor = 0.20
+			army_org_factor = 0.10
+consumer_goods_factor = -0.25
+conscription_factor = 0.10
+monthly_population = 0.10
+war_support_factor = 0.2
+stability_factor = 0.2
+			political_power_gain = 0.10
+			industrial_capacity_factory = 0.10
+			industrial_capacity_dockyard = 0.10
+			research_speed_factor = 0.1
+			production_factory_efficiency_gain_factor = 0.10
+			production_factory_max_efficiency_factor = 0.10
+			production_factory_start_efficiency_factor = 0.10
+			production_speed_buildings_factor = -0.10
+			compliance_gain = 0.05
+master_ideology_drift = 0.1
+war_stability_factor = 0.10
+		economic_cycles_cost_factor = -0.10
+		econ_cycle_upg_cost_multiplier_modifier = -0.1
+		interest_rate_multiplier_modifier = -0.5
+			foreign_influence_modifier = 0.5
+										foreign_influence_defense_modifier = 0.5
+Chinese_people_support_to_china_government_modifier = 0.15			
+			}
+		}
+		
+		range = {
+			id = rd_CHI_equality_side_4
+			min = -1
+			max = -0.95
+			modifier = {
+			army_core_attack_factor = 0.3
+			army_core_defence_factor = 0.30
+			army_org_factor = 0.20
+consumer_goods_factor = -0.35
+conscription_factor = 0.20
+monthly_population = 0.20
+war_support_factor = 0.3
+stability_factor = 0.3
+			political_power_gain = 2
+			industrial_capacity_factory = 0.20
+			industrial_capacity_dockyard = 0.20
+			research_speed_factor = 0.20
+			production_factory_efficiency_gain_factor = 0.20
+			production_factory_max_efficiency_factor = 0.20
+			production_factory_start_efficiency_factor = 0.20
+			production_speed_buildings_factor = -0.20
+			compliance_gain = 0.15
+master_ideology_drift = 0.2
+war_stability_factor = 0.15
+		economic_cycles_cost_factor = -0.25
+		econ_cycle_upg_cost_multiplier_modifier = -0.25
+		interest_rate_multiplier_modifier = -1
+			foreign_influence_modifier = 1
+										foreign_influence_defense_modifier = 1
+	Chinese_people_support_to_china_government_modifier = 0.2
+			}
+		}
+	}
+	side = {
+		id = rd_CHI_differentiation_side
+		icon = GFX_rd_CHI_bop_differentiation
+		range = {
+			id = rd_CHI_differentiation_side_1
+			min = 0.15
+			max = 0.5
+			modifier = {
+consumer_goods_factor = -0.05
+conscription_factor = 0.05
+stability_factor = -0.10
+war_support_factor = -0.1
+							foreign_influence_defense_modifier = -0.10
+
+			political_power_gain = -0.10
+			industrial_capacity_factory = -0.05
+			industrial_capacity_dockyard = -0.05
+			research_speed_factor = -0.05
+			production_factory_efficiency_gain_factor = -0.05
+			production_factory_max_efficiency_factor = -0.05
+			production_factory_start_efficiency_factor = -0.05
+			production_speed_buildings_factor = 0.10
+master_ideology_drift = -0.05
+war_stability_factor = -0.05
+		economic_cycles_cost_factor = 0.05
+		econ_cycle_upg_cost_multiplier_modifier = 0.05
+			foreign_influence_modifier = -0.05	
+						monthly_population = -0.1
+Chinese_people_support_to_china_government_modifier = 0.01
+			}
+		}
+		
+		range = {
+			id = rd_CHI_differentiation_side_2
+			min = 0.5
+			max = 0.8
+			modifier = {
+consumer_goods_factor = -0.10
+conscription_factor = 0.10
+stability_factor = -0.20
+war_support_factor = -0.2
+			political_power_gain = -0.15
+										foreign_influence_defense_modifier = -0.15
+			industrial_capacity_factory = -0.10
+			industrial_capacity_dockyard = -0.1
+			research_speed_factor = -0.05
+			production_factory_efficiency_gain_factor = -0.1
+			production_factory_max_efficiency_factor = -0.1
+			production_factory_start_efficiency_factor = -0.1
+			production_speed_buildings_factor = 0.2
+master_ideology_drift = -0.10
+war_stability_factor = -0.10
+		economic_cycles_cost_factor = 0.15
+		econ_cycle_upg_cost_multiplier_modifier = 0.15
+			foreign_influence_modifier = -0.15
+					monthly_population = -0.3	
+			Chinese_people_support_to_china_government_modifier = -0.05
+			}
+		}
+		
+		range = {
+			id = rd_CHI_differentiation_side_3
+			min = 0.8
+			max = 0.95
+			modifier = {
+	consumer_goods_factor = 0.15
+conscription_factor = -0.10
+stability_factor = -0.3
+war_support_factor = -0.3
+			political_power_gain = -0.40
+										foreign_influence_defense_modifier = -0.25
+			industrial_capacity_factory = -0.2
+			industrial_capacity_dockyard = -0.2
+			research_speed_factor = -0.10
+			production_factory_efficiency_gain_factor = -0.2
+			production_factory_max_efficiency_factor = -0.2
+			production_factory_start_efficiency_factor = -0.2
+			production_speed_buildings_factor = 0.3
+master_ideology_drift = -0.20
+war_stability_factor = -0.25
+		economic_cycles_cost_factor = 0.3
+		econ_cycle_upg_cost_multiplier_modifier = 0.3
+			foreign_influence_modifier = -0.3
+			monthly_population = -0.5
+Chinese_people_support_to_china_government_modifier = -0.1			
+			}
+		}
+	}
+range = {
+			id = rd_CHI_differentiation_side_4
+			min = 0.95
+			max = 1
+			modifier = {
+	consumer_goods_factor = 0.2
+conscription_factor = -0.2
+stability_factor = -0.5
+			political_power_gain = -1
+			industrial_capacity_factory = -0.3
+			industrial_capacity_dockyard = -0.3
+			research_speed_factor = -0.2
+			production_factory_efficiency_gain_factor = -0.3
+			production_factory_max_efficiency_factor = -0.3
+			production_factory_start_efficiency_factor = -0.3
+			production_speed_buildings_factor = 0.5
+master_ideology_drift = -0.25
+war_stability_factor = -0.35
+war_support_factor = -0.4
+		economic_cycles_cost_factor = 0.5
+		econ_cycle_upg_cost_multiplier_modifier = 0.5
+			foreign_influence_modifier = -0.5
+							foreign_influence_defense_modifier = -0.5
+			monthly_population = -0.8
+Chinese_people_support_to_china_government_modifier = -0.15
+			}
+		}
+	}

@@ -1,0 +1,928 @@
+
+focus_tree = {
+	id = DSC_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = DSC
+	}
+
+
+
+		}
+	
+	default = no
+
+
+
+
+
+
+
+
+	focus = {
+		id = DSC_JGBD
+		icon = irredentism
+		x = 5
+
+		y = 0
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+
+		}
+		allow_branch={
+			NOT={
+				has_country_flag=qyxd
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+			NOT={
+			582 = { is_owned_by = CHI }
+			}
+		
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+
+
+
+	focus = {
+		id = DSC_ZHONGLI
+		icon = defense
+		x = 4
+
+		y = 1
+
+		cost = 5
+
+		prerequisite = {
+			focus = DSC_JGBD
+		 }
+		 mutually_exclusive = {focus =DSC_FUCONGZHIHUI  }
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+		completion_reward = {
+			country_event = chuanyu.1
+		}
+	}
+
+
+
+
+
+	focus = {
+		id = DSC_FUCONGZHIHUI
+		icon = become_puppet
+		x = 6
+
+		y = 1
+
+		cost = 5
+
+		prerequisite = {
+			focus = DSC_JGBD
+		 }
+		 mutually_exclusive = {focus =DSC_ZHONGLI  }
+
+		ai_will_do = {
+			factor = 100
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+		completion_reward = {
+			country_event = chuanyu.2
+		}
+	}
+
+	focus = {
+		id = DSC_DONGYUAN
+		icon = military_mission2
+		x = 4
+
+		y = 2
+
+		cost = 5
+
+		prerequisite = {
+			focus = DSC_ZHONGLI
+		 }
+
+
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+		completion_reward = {
+			division_template = {
+				name = "川渝民兵"
+	regiments = {
+	Militia_Bat = { x = 0 y = 0 }
+	Militia_Bat = { x = 0 y = 1 }
+	Militia_Bat = { x = 0 y = 2 }
+	Militia_Bat = { x = 0 y = 3 }
+	Militia_Bat = { x = 1 y = 0 }
+	Militia_Bat = { x = 1 y = 1 }
+	Militia_Bat = { x = 1 y = 2 }
+	Militia_Bat = { x = 1 y = 3 }
+
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 583 }
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 6999
+				}
+
+
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 6999
+				}
+
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 4925
+				}
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 4925
+				}
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 4925
+				}
+
+
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 4925
+				}
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 4925
+				}
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 4925
+				}
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 4925
+				}
+
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 4925
+				}
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 4925
+				}
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 4925
+				}
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 4925
+				}
+	}
+}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	focus = {
+		id = DSC_ZHENGSHUI
+		icon = economic_crisis
+		x = 4
+
+		y = 3
+
+		cost = 5
+
+		prerequisite = {
+			focus = DSC_DONGYUAN
+		 }
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+		completion_reward = {
+			set_temp_variable = { treasury_change = 20 }
+			modify_treasury_effect = yes
+			country_event = chuanyu.3
+			custom_effect_tooltip = "等待一段时间，将会有翻天覆地的变化"
+		}
+	}
+
+
+
+
+
+
+
+	focus = {
+		id = DSC_QIYI
+		icon = communist_factories
+		x = 7
+
+		y = 0
+
+		cost = 5
+
+		prerequisite = {
+
+		 }
+		 allow_branch = {
+			has_country_flag = qyxd
+		 }
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+		completion_reward = {
+############################
+
+set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.02 }
+change_DSC_Socialist_Construction_dynamic1 = yes
+add_political_power = 100
+
+
+		}
+	}
+
+
+
+
+
+
+
+	focus = {
+		id = DSC_people_amry
+		icon = peoples_liberation_army
+		x = 6
+		y = 1
+		prerequisite = {focus = DSC_QIYI}
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		hidden_effect = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+				add_to_variable = {
+					var = party_pop_array^5
+					value = 0.05
+				}
+				recalculate_party = yes
+			}add_ideas = CHI_party_before_guns
+add_ideas = people_amry1
+remove_ideas = red_weidui1
+		}
+		}
+
+		focus = {
+			id = DSC_ANFURENMIN
+			icon = PRC_Second_time_going_to_the_countryside
+			x = 8
+			y = 1
+			prerequisite = {focus = DSC_QIYI}
+	
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 5
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+			
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			completion_reward = {
+				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.04 }
+				change_DSC_Socialist_Construction_dynamic1 = yes
+				set_temp_variable = { temp_DSC_people_support = 0.1 }
+				change_DSC_people_support = yes
+
+			add_stability=0.05
+			}
+	
+		}
+
+
+
+		focus = {
+			id = DSC_dongyuanrenmin
+			icon = 		CPC_China_War_of_Liberation
+
+			x = 7
+			y = 2
+
+			prerequisite = {	
+				focus=DSC_people_amry
+			} 
+	
+			 prerequisite = {
+				focus = DSC_ANFURENMIN
+			 }
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 5
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+			
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			completion_reward = {
+				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.04 }
+				change_DSC_Socialist_Construction_dynamic1 = yes
+				set_temp_variable = { temp_DSC_people_support = 0.2 }
+				change_DSC_people_support = yes
+
+
+			add_timed_idea = {
+				idea=gmjingsheng
+				days = 700
+						}
+
+
+
+			}
+	
+		}
+
+
+
+
+
+
+	focus = {
+		id = DSC_JIEFNQUANZHONGGUO
+		icon = one_china_policy
+		x = 7
+
+		y = 3
+
+		cost = 5
+
+
+		prerequisite = {	
+			focus=DSC_dongyuanrenmin
+		} 
+
+
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+		completion_reward = {
+
+
+
+			every_state = {		
+				limit = {
+											is_core_of = CHI
+						}					
+
+
+
+
+								add_core_of = DSC
+								}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							}
+
+
+
+
+
+
+
+		}
+
+
+
+
+
+
+
+
+		focus = {
+			id = DSC_duijunzhengfu
+			icon = PRC_army_modernization
+			x = 6
+	
+			y = 4
+	
+			cost = 3
+	
+			prerequisite = {
+				focus = DSC_JIEFNQUANZHONGGUO
+	
+			}
+
+	
+			ai_will_do = {
+				factor = 10
+			}
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			available = {
+	
+			}
+			completion_reward = {
+	
+	
+	
+
+
+				random_country={
+					limit={
+						NOT={tag = CHI}
+						 has_cosmetic_tag=CHI_REB_S
+					}
+					declare_war_on = {
+
+						target = DSC
+						type = annex_everything
+					}		
+				
+				
+
+					}
+	
+	
+	
+	
+	
+	
+			}
+
+		}
+			focus = {
+				id = DSC_duilaozuopai
+				icon = focus_Deng_Liqun
+				x = 8
+		
+				y = 4
+		
+				cost = 3
+		
+				prerequisite = {
+					focus = DSC_JIEFNQUANZHONGGUO
+		
+				}
+	
+		
+				ai_will_do = {
+					factor = 10
+				}
+				bypass = {
+		
+				}
+		
+				cancel_if_invalid = yes
+				continue_if_invalid = no
+				available_if_capitulated = no
+				available = {
+		
+				}
+				completion_reward = {
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+
+		
+					create_wargoal = {
+		
+											target = CHI
+											type = annex_everything
+										}		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+									}
+		
+		
+		
+		
+		
+		
+		
+				}
+	
+
+
+	
+	
+	
+	
+	
+	
+		focus = {
+			id = DSC_QINGSUANFENLIESHILI
+			icon = islamophobia2
+			x = 7
+	
+			y = 5
+	
+			cost = 5
+			available = {
+
+				
+			}
+
+
+			prerequisite = {
+				focus = DSC_duijunzhengfu
+			 }
+	
+			 prerequisite = {
+				focus = DSC_duilaozuopai
+			 }
+
+	
+			ai_will_do = {
+				factor = 10
+			}
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			available = {
+	
+			}
+			completion_reward = {
+
+
+				create_wargoal = {
+
+					target = XIN
+					type = annex_everything
+				}	
+
+				create_wargoal = {
+
+					target = XIZ
+					type = annex_everything
+				}	
+
+				create_wargoal = {
+
+					target = HKG
+					type = annex_everything
+				}	
+				create_wargoal = {
+
+					target = MAC
+					type = annex_everything
+				}	
+
+	
+			}
+		}
+	
+	
+	
+		focus = {
+			id = DSC_NEIZHANJIESHU
+			icon = peace
+			x = 7
+	
+			y = 6
+	
+			cost = 5
+			available = {
+				has_war = no
+				547 = { is_owned_by = DSC }
+				
+			}
+			prerequisite = {
+				focus = DSC_QINGSUANFENLIESHILI
+			 }
+
+			ai_will_do = {
+				factor = 10
+			}
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			available = {
+	
+			}
+			completion_reward = {
+				hidden_effect = {
+					every_state = {		
+						limit = {
+													is_core_of = CHI
+								}					
+		
+		
+		
+		
+										remove_core_of = CHI
+										}
+
+										every_state = {		
+											limit = {
+																		is_core_of = XIZ
+													}					
+							
+							
+							
+							
+															remove_core_of = XIZ
+															}
+
+															every_state = {		
+																limit = {
+																							is_core_of = XIN
+																		}					
+												
+												
+												
+												
+																				remove_core_of = XIN
+																				}
+					set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.30 }
+					change_DSC_Socialist_Construction_dynamic1 = yes
+				}
+
+	
+				set_capital = {state=547}
+				set_cosmetic_tag = DSC_GMG
+					load_focus_tree = communsim_PRC_focus
+	
+			}
+		}
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,210 @@
+spriteTypes = {
+		spriteType = {
+		name = "putinandylq"
+		texturefile = "gfx/interface/event/putinandylq.dds"
+		}	
+		spriteType = {
+		name = "putinandylq"
+		texturefile = "gfx/interface/event/putinandylq.dds"
+		}		
+	spriteType = {
+		name = "hongkang_demonstration"
+		texturefile = "gfx/interface/event/hongkang_demonstration.dds"
+		}	
+	spriteType = {
+		name = "news_american_zombie"
+		texturefile = "gfx/interface/event/news_american_zombie.dds"
+		}			
+	spriteType = {
+		name = "Bury_Mao_Zedong"
+		texturefile = "gfx/interface/event/Bury_Mao_Zedong.dds"
+		}	
+		spriteType = {
+		name = "GFX_news_putin_inauguration"
+		texturefile = "gfx/interface/event/news_putin_inauguration.dds"
+		}	
+		spriteType = {
+		name = "GFX_news_zhonghua_inauguration"
+		texturefile = "gfx/interface/event/news_zhonghua_inauguration.dds"
+		}	
+		spriteType = {
+		name = "GFX_China_Aerospace_Science_Industry_Corporation"
+		texturefile = "gfx/interface/ideas/companies/China_Aerospace_Science_Industry_Corporation.dds"
+		}			
+			spriteType = {
+		name = "news_china_moon_base"
+		texturefile = "gfx/interface/event/news_china_moon_base.dds"
+		}		
+	spriteType = {
+		name = "news_mars_homo"
+		texturefile = "gfx/interface/event/news_mars_homo.dds"
+		}			
+		spriteType = {
+		name = "CHI_Socialist_Construction_dynamic_desc_pic"
+		texturefile = "gfx/interface/ideas/CHI_Socialist_Construction_dynamic_desc_pic.png"
+		legacy_lazy_load = no
+	}
+spriteType = {
+		name = "GFX_CHI_people_support_dynamic_dynamic_desc_right_pic"
+		texturefile = "gfx/interface/ideas/CHI_people_support_dynamic_dynamic_desc_right_pic.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CHI_people_support_dynamic_dynamic_desc_left_picture"
+		texturefile = "gfx/interface/ideas/CHI_people_support_dynamic_dynamic_desc_left_picture.png"
+		legacy_lazy_load = no
+	}
+	
+spriteType = {
+		name = "GFX_RUS_usdp"
+		texturefile = "gfx/texticons/parties_icons/SOV/Russian_United_Social_Democratic_Party.dds"
+		legacy_lazy_load = no
+	}
+spriteType = {
+		name = "GFX_RUS_rwp"
+		texturefile = "gfx/texticons/parties_icons/SOV/rwp.dds"
+		legacy_lazy_load = no
+	}
+spriteType = {
+		name = "GFX_cpsu"
+		texturefile = "gfx/texticons/parties_icons/SOV/cpsu.dds"
+		legacy_lazy_load = no
+	}
+spriteType = {
+		name = "GFX_CHI_neutral_Libertarian"
+		texturefile = "gfx/texticons/parties_icons/china/CHI_anarchists.dds"
+		legacy_lazy_load = no
+	}
+spriteType = {
+		name = "GFX_CHI_left"
+		texturefile = "gfx/texticons/parties_icons/china/cpc_left.dds"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_CHI_communism"
+		texturefile = "gfx/texticons/parties_icons/china/CHI_communism.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CHI_Conservative"
+		texturefile = "gfx/texticons/parties_icons/china/CHI_communism.dds"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_CHI_Nat_Fascism"
+		texturefile = "gfx/texticons/parties_icons/china/CHI_communism.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CHI_conservative"
+		texturefile = "gfx/texticons/parties_icons/china/CHI_conservatism.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_CHI_left_wing_radical"
+		texturefile = "gfx/texticons/parties_icons/china/CHI_left_wing_radical.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_CHI_liberal"
+		texturefile = "gfx/texticons/parties_icons/china/CHI_liberal.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_CHI_military_junta"
+		texturefile = "gfx/texticons/parties_icons/china/CHI_military_junta.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_CHI_monarchism"
+		texturefile = "gfx/texticons/parties_icons/china/CHI_monarchism.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_CHI_neutral_communism"
+		texturefile = "gfx/texticons/parties_icons/china/CHI_neutral_communism.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_CHI_neutral_social_democrat"
+		texturefile = "gfx/texticons/parties_icons/china/CHI_neutral_social_democrat.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_CHI_pro_emerging_autocrat"
+		texturefile = "gfx/texticons/parties_icons/china/CHI_pro_emerging_autocrat.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_CHI_salafist_jihadism"
+		texturefile = "gfx/texticons/parties_icons/china/CHI_salafist_jihadism.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_CHI_social_democrat"
+		texturefile = "gfx/texticons/parties_icons/china/CHI_social_democrat.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CHI_Revolutionary_Committee_of_the_Chinese_Kuomintang"
+		texturefile = "gfx/texticons/parties_icons/china/Revolutionary_Committee_of_the_Chinese_Kuomintang.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+	name = "GFX_idea_Communist_patry_of_china_flagideas"
+	texturefile = "gfx/interface/ideas/Communist_patry_of_china_flagideas.dds"			
+	}
+	SpriteType = {
+	name = "GFX_idea_split_CPC"
+	texturefile = "gfx/interface/ideas/split_CPC.dds"			
+	}
+	SpriteType = {
+	name = "GFX_idea_split_pla"
+	texturefile = "gfx/interface/ideas/split_pla.dds"			
+	}
+	SpriteType = {
+	name = "GFX_idea_China_class"
+	texturefile = "gfx/interface/ideas/China class.png"			
+	}	
+	SpriteType = {
+	name = "GFX_idea_DengTheory"
+	texturefile = "gfx/interface/ideas/Deng Xiaoping Theory.dds"			
+	}
+SpriteType = {
+	name = "GFX_idea_maoism"
+	texturefile = "gfx/interface/ideas/maoism.dds"			
+	}
+SpriteType = {
+	name = "GFX_idea_historical_cycle"
+	texturefile = "gfx/interface/ideas/historical_cycle.png"			
+	}	
+SpriteType = {
+	name = "GFX_idea_Communist_ogas"
+	texturefile = "gfx/interface/ideas/Communist_ogas.dds"			
+	}
+SpriteType = {
+	name = "GFX_idea_Big_Brother"
+	texturefile = "gfx/interface/ideas/Big_Brother.dds"			
+	}
+SpriteType = {
+	name = "GFX_idea_red_revolutionary_army"
+	texturefile = "gfx/interface/ideas/red_revolutionary_army.dds"			
+	}
+SpriteType = {
+	name = "GFX_idea_rus_split"
+	texturefile = "gfx/interface/ideas/rus_split.dds"			
+	}
+SpriteType = {
+	name = "GFX_idea_SOV_flags"
+	texturefile = "gfx/interface/ideas/SOV_flags.dds"			
+	}
+}

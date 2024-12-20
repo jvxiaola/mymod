@@ -1,0 +1,159 @@
+ideas = {
+
+	country = {
+UKR_nyjth = {
+			picture = agricultural_reforms
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+industrial_capacity_factory = 0.15
+consumer_goods_factor = -0.05
+local_resources_factor = 0.15
+			}
+		}
+UKR_fast_inc = {
+			picture = industrial_focus
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+industrial_capacity_factory = 0.1
+consumer_goods_factor = -0.10
+production_factory_efficiency_gain_factor = -0.20
+stability_factor = -0.15
+production_speed_buildings_factor = 0.30			}
+		}	
+	UKR_chukou = {
+			picture = industrial_focus
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+industrial_capacity_factory = 0.1
+consumer_goods_factor = -0.05
+production_factory_efficiency_gain_factor = 0.10
+stability_factor = -0.15
+production_speed_buildings_factor = 0.10			}
+		}
+UKR_wcjjzz = {
+			picture = communism10		
+name = Workers_democracy
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+							communism_drift = 0.20
+defensive_war_stability_factor = 0.3
+war_stability_factor = 0.3
+ party_popularity_stability_factor = 0.3
+			}
+		}
+UKR_wcjjzz2 = {
+			picture = communism10		
+name = Workers_democracy
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+communism_drift = 0.20
+production_factory_efficiency_gain_factor = 0.10
+production_speed_buildings_factor = 0.10
+consumer_goods_factor = -0.05						
+defensive_war_stability_factor = 0.5
+war_stability_factor = 0.5
+stability_weekly = 0.02
+ party_popularity_stability_factor = 0.5
+			}
+		}
+UKR_zyjth = {
+			picture = agricultural_reforms
+		name = nygg
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+industrial_capacity_factory = 0.10
+consumer_goods_factor = -0.03
+local_resources_factor = 0.10
+			}
+		}
+UKR_zyjth2 = {
+			picture = agricultural_reforms
+		name = nygg
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+industrial_capacity_factory = 0.10
+production_speed_buildings_factor = 0.10
+				monthly_population = 0.20
+consumer_goods_factor = -0.05
+local_resources_factor = 0.10
+			}
+		}
+UKR_leninist = {
+			picture = vladimir_lenin
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+communism_drift = 0.10
+production_factory_efficiency_gain_factor = 0.10
+ production_factory_max_efficiency_factor = 0.15
+production_factory_start_efficiency_factor = 0.10
+nationalist_drift = -0.20
+democratic_drift = -0.20
+neutrality_drift = -0.20
+research_speed_factor = 0.05
+				drift_defence_factor = 0.50
+								corruption_cost_factor = -0.80	}
+		}	
+UKR_ganbu = {
+			picture = communism8
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+communism_drift = 0.10
+production_speed_buildings_factor = 0.05
+consumer_goods_factor = -0.05
+research_speed_factor = -0.05
+drift_defence_factor = 0.50
+}
+}		
+UKR_china = {
+			picture = industrial_focus
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+communism_drift = 0.10
+production_speed_buildings_factor = 0.1
+consumer_goods_factor = -0.05
+research_speed_factor = 0.05
+}
+}	
+UKR_china_chi = {
+			picture = agricultural_reforms
+		allowed = {
+			}
+			
+ 	
+			modifier = {
+consumer_goods_factor = -0.08
+research_speed_factor = 0.05
+}
+}
+	}
+}

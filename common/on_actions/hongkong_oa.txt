@@ -1,0 +1,138 @@
+on_actions = {
+
+
+	on_monthly_HKG = {
+	
+		effect = {
+			set_temp_variable = {
+				var=Final_hongkong_people_support_to_china_government_modifier
+				value=modifier@hongkong_people_support_to_china_government_modifier
+			}
+			divide_temp_variable={
+				Final_hongkong_people_support_to_china_government_modifier=10
+			}
+			add_to_variable = { HKG_people_support = Final_hongkong_people_support_to_china_government_modifier }
+	
+		
+		if = {
+					limit = {
+					HKG = {
+		OR = {			
+		has_dynamic_modifier = {
+			modifier = HKG_people_support_dynamic_left
+		}
+		has_dynamic_modifier = {
+		modifier = HKG_people_support_dynamic_right
+		}
+		}
+		}
+		}
+		
+		HKG = {clamp_variable  = {
+			var = HKG_people_support
+			min = 0
+		max = 1
+		}
+		HKG_people_support_dynamic_scriptes = yes
+		
+		}
+		}
+				if = {
+					limit = {
+					HKG = {
+		has_dynamic_modifier = {
+			modifier = HKG_people_support_dynamic_left
+		}
+		
+					OR = {
+HKG={
+	OR={
+
+has_country_flag=xggm
+}
+} 
+						}
+		}
+		}
+		HKG_people_support_dynamic_scriptes_left = yes
+		}
+		}
+		
+	}
+	on_startup = {
+		  effect = { # NEVER FORGET! Important to include this line to distinguish it from random_events = { ... }
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+	country_event = welcome_event.1
+				}
+				HKG = {
+	HKG_people_support_dynamic_scriptes = yes
+	
+				}
+			}
+	
+	}
+	on_daily_HKG = {
+	effect = {
+			if = {
+				limit = {
+				HKG = {
+	has_dynamic_modifier = {
+		modifier = HKG_people_support_dynamic
+	}
+	}
+	}
+	HKG = {clamp_variable  = {
+		var = HKG_people_support
+		min = 0
+	max = 1
+	}
+	HKG_people_support_dynamic_scriptes = yes
+	
+	}
+	}
+			if = {
+				limit = {
+				HKG = {
+	has_dynamic_modifier = {
+		modifier = HKG_people_support_dynamic
+	}
+	
+	HKG={
+		OR={
+	
+has_country_flag=xggm
+	}
+	} 
+	}
+	}
+	HKG_people_support_dynamic_scriptes_left = yes
+	}
+			if = {
+				limit = {
+				HKG = {
+	NOT = {
+	has_dynamic_modifier = {
+		modifier = HKG_Socialist_Construction_dynamic
+	}
+	} 
+	OR = {
+		has_country_flag = chi_work_rev
+		has_country_flag = chi_left 
+		has_country_flag = CHI_trotskyism
+		has_country_flag=xggm
+	}
+	
+	}
+}
+	add_dynamic_modifier = {
+		modifier = HKG_Socialist_Construction_dynamic
+	}
+	
+	
+	}
+	}
+	}
+	}

@@ -1,0 +1,770 @@
+change_DSC_Socialist_Construction_dynamic1 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic1 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic1_tt
+#革命热情
+}
+change_DSC_Socialist_Construction_dynamic2 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic2 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic2_tt
+#正当化战争所需时间
+}
+change_DSC_Socialist_Construction_dynamic3 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic3 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic3_tt
+#生产效率获得
+}
+change_DSC_Socialist_Construction_dynamic4 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic4 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic4_tt
+#最大生产效率
+}
+change_DSC_Socialist_Construction_dynamic5 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic5 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic5_tt
+#基础生产效率
+}
+change_DSC_Socialist_Construction_dynamic6 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic6 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic6_tt
+#建造速度
+}
+change_DSC_Socialist_Construction_dynamic7 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic7 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic7_tt
+#民用工厂所需劳动力
+}
+change_DSC_Socialist_Construction_dynamic8 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic8 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic8_tt
+#军用工厂所需劳动力
+}
+change_DSC_Socialist_Construction_dynamic9 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic9 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic9_tt
+#办公园区所需劳动力
+}
+change_DSC_Socialist_Construction_dynamic10 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic10 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic10_tt
+#官僚开支修正
+}
+change_DSC_Socialist_Construction11_dynamic11 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic11 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic11_tt
+#警察开支修正
+}
+change_DSC_Socialist_Construction_dynamic12 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic12 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic12_tt
+#教育开支修正
+}
+change_DSC_Socialist_Construction_dynamic13 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic13 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic13_tt
+#健保开支修正
+}
+change_DSC_Socialist_Construction_dynamic14 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic14 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic14_tt
+#福利开支修正
+}
+change_DSC_Socialist_Construction_dynamic15 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic15 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic15_tt
+#劳动力规模
+}
+change_DSC_Socialist_Construction_dynamic16 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic16 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic16_tt
+#生产率和就业的综合效应
+}
+change_DSC_Socialist_Construction_dynamic17 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic17 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic17_tt
+#省份生产力增长
+}
+change_DSC_Socialist_Construction_dynamic18 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic18 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic18_tt
+#最高失业率
+}
+change_DSC_Socialist_Construction_dynamic19 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic19 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic19_tt
+#社会消费品基础期望
+}
+change_DSC_Socialist_Construction_dynamic20 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic20 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic20_tt
+#新兴主义每日增长率
+}
+change_DSC_Socialist_Construction21_dynamic = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic21 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic21_tt
+#民族主义每日增长率
+}
+change_DSC_Socialist_Construction_dynamic22 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic22 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic22_tt
+#不结盟主义每日增长率
+}
+change_DSC_Socialist_Construction_dynamic23 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic23 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic23_tt
+#西方主义每日增长率
+}
+change_DSC_Socialist_Construction_dynamic24 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic24 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic24_tt
+#吞并花费分数
+}
+change_DSC_Socialist_Construction_dynamic25 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic25 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic25_tt
+#志愿军部队
+}
+change_DSC_Socialist_Construction_dynamic26 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic26 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic26_tt
+#志愿军部队修正（百分比）
+}
+change_DSC_Socialist_Construction_dynamic27 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic27 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic27_tt
+#派出志愿军所需紧张度
+}
+change_DSC_Socialist_Construction_dynamic28 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic28 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic28_tt
+#可以派遣武装干涉的师数下限
+}
+change_DSC_Socialist_Construction_dynamic29 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic29 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic29_tt
+#颠覆活动成本
+}
+change_DSC_Socialist_Construction_dynamic30 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic30 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic30_tt
+#资源获取修正
+}
+change_DSC_Socialist_Construction_dynamic31 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic31 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic31_tt
+#外国影响乘数
+}
+change_DSC_Socialist_Construction_dynamic32 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic32 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic32_tt
+#受到外国影响乘数
+}
+change_DSC_Socialist_Construction_dynamic33 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic33 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic33_tt
+#月度人力增长
+}
+change_DSC_Socialist_Construction_dynamic34 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic34 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic34_tt
+#研究速度
+}
+change_DSC_Socialist_Construction_dynamic35 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic35 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic35_tt
+#工厂产出
+}
+change_DSC_Socialist_Construction_dynamic36 = {
+		add_to_variable = { DSC_Socialist_Construction_dynamic36 = temp_DSC_Socialist_Construction_dynamic }
+custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic36_tt
+#贫富分化
+}
+change_DSC_people_support = {
+		add_to_variable = { DSC_people_support = temp_DSC_people_support }
+clamp_variable  = {
+    var = DSC_people_support
+    min = 0
+max = 1
+}		
+		
+custom_effect_tooltip = change_DSC_people_support_tt
+#革命热情
+}
+DSC_people_support_dynamic_scriptes = {
+
+
+
+
+
+
+
+
+
+
+
+
+if = {
+limit = {
+check_variable = {
+    DSC_people_support > 0.01
+}
+check_variable = {
+	DSC_people_support < 0.09
+
+}
+
+}
+  set_variable = { DSC_people_support_dynamic1 = 0.3 }
+  set_variable = { DSC_people_support_dynamic2 = -1 }
+  set_variable = { DSC_people_support_dynamic3 = -0.5 }
+  set_variable = { DSC_people_support_dynamic4 = -1 }
+  set_variable = { DSC_people_support_dynamic5 = -1 }
+  set_variable = { DSC_people_support_dynamic6 = 1 }
+  set_variable = { DSC_people_support_dynamic7 = -1 }
+  set_variable = { DSC_people_support_dynamic8 = -1 }
+  set_variable = { DSC_people_support_dynamic9 = -0.5 }
+  set_variable = { DSC_people_support_dynamic10 = -1 }
+  set_variable = { DSC_people_support_dynamic11 = -0.5 }
+  set_variable = { DSC_people_support_dynamic12 = -0.5 }
+  set_variable = { DSC_people_support_dynamic13 = -0.5 }
+  set_variable = { DSC_people_support_dynamic14 = -0.5 }
+  set_variable = { DSC_people_support_dynamic15 = 1 }
+  set_variable = { DSC_people_support_dynamic16 = 1 }
+  set_variable = { DSC_people_support_dynamic17 = 1 }
+  set_variable = { DSC_people_support_dynamic18 = 1 }
+  set_variable = { DSC_people_support_dynamic19 = -1 }
+  set_variable = { DSC_people_support_dynamic20 = -1000 }
+  set_variable = { DSC_people_support_dynamic21 = -0.5 }
+  set_variable = { DSC_people_support_dynamic22 = -0.5 }
+  set_variable = { DSC_people_support_dynamic23 = -0.5 }
+  set_variable = { DSC_people_support_dynamic24 = -1 }
+}
+else_if = {
+limit = {
+check_variable = {
+    DSC_people_support > 0.09
+	}
+	check_variable = {
+	DSC_people_support < 0.19
+}
+}
+  set_variable = { DSC_people_support_dynamic1 = 0.20 }
+  set_variable = { DSC_people_support_dynamic2 = -0.8 }
+  set_variable = { DSC_people_support_dynamic3 = -0.4 }
+  set_variable = { DSC_people_support_dynamic4 = -0.8 }
+  set_variable = { DSC_people_support_dynamic5 = -0.8 }
+  set_variable = { DSC_people_support_dynamic6 = 0.8 }
+  set_variable = { DSC_people_support_dynamic7 = -0.8 }
+  set_variable = { DSC_people_support_dynamic8 = -0.8 }
+  set_variable = { DSC_people_support_dynamic9 = -0.4 }
+  set_variable = { DSC_people_support_dynamic10 = -0.8 }
+  set_variable = { DSC_people_support_dynamic11 = -0.4 }
+  set_variable = { DSC_people_support_dynamic12 = -0.4 }
+  set_variable = { DSC_people_support_dynamic13 = -0.4 }
+  set_variable = { DSC_people_support_dynamic14 = -0.4 }
+  set_variable = { DSC_people_support_dynamic15 = 0.8 }
+  set_variable = { DSC_people_support_dynamic16 = 0.8 }
+  set_variable = { DSC_people_support_dynamic17 = 0.8 }
+  set_variable = { DSC_people_support_dynamic18 = 0.8 }
+  set_variable = { DSC_people_support_dynamic19 = -0.8 }
+  set_variable = { DSC_people_support_dynamic20 = -800 }
+  set_variable = { DSC_people_support_dynamic21 = -0.4 }
+  set_variable = { DSC_people_support_dynamic22 = -0.4 }
+  set_variable = { DSC_people_support_dynamic23 = -0.4 }
+  set_variable = { DSC_people_support_dynamic24 = -0.8 }
+}
+else_if = {
+limit = {
+check_variable = {
+    DSC_people_support > 0.19
+	}
+	check_variable = {
+	DSC_people_support < 0.29
+}
+}
+  set_variable = { DSC_people_support_dynamic1 = 0.15 }
+  set_variable = { DSC_people_support_dynamic2 = -0.6 }
+  set_variable = { DSC_people_support_dynamic3 = -0.3 }
+  set_variable = { DSC_people_support_dynamic4 = -0.6 }
+  set_variable = { DSC_people_support_dynamic5 = -0.6 }
+  set_variable = { DSC_people_support_dynamic6 = 0.6 }
+  set_variable = { DSC_people_support_dynamic7 = -0.6 }
+  set_variable = { DSC_people_support_dynamic8 = -0.6 }
+  set_variable = { DSC_people_support_dynamic9 = -0.3 }
+  set_variable = { DSC_people_support_dynamic10 = -0.3 }
+  set_variable = { DSC_people_support_dynamic11 = -0.3 }
+  set_variable = { DSC_people_support_dynamic12 = -0.3 }
+  set_variable = { DSC_people_support_dynamic13 = -0.3 }
+  set_variable = { DSC_people_support_dynamic14 = -0.3 }
+  set_variable = { DSC_people_support_dynamic15 = 0.6 }
+  set_variable = { DSC_people_support_dynamic16 = 0.6 }
+  set_variable = { DSC_people_support_dynamic17 = 0.6 }
+  set_variable = { DSC_people_support_dynamic18 = 0.6 }
+  set_variable = { DSC_people_support_dynamic19 = -0.6 }
+  set_variable = { DSC_people_support_dynamic20 = -600 }
+  set_variable = { DSC_people_support_dynamic21 = -0.3 }
+  set_variable = { DSC_people_support_dynamic22 = -0.3 }
+  set_variable = { DSC_people_support_dynamic23 = -0.3 }
+  set_variable = { DSC_people_support_dynamic24 = -0.6 }
+}
+else_if = {
+limit = {
+check_variable = {
+    DSC_people_support > 0.29
+	}
+	check_variable = {
+	DSC_people_support < 0.39
+}
+}
+  set_variable = { DSC_people_support_dynamic1 = 0.10 }
+  set_variable = { DSC_people_support_dynamic2 = -0.4 }
+  set_variable = { DSC_people_support_dynamic3 = -0.2 }
+  set_variable = { DSC_people_support_dynamic4 = -0.4 }
+  set_variable = { DSC_people_support_dynamic5 = -0.4 }
+  set_variable = { DSC_people_support_dynamic6 = 0.4 }
+  set_variable = { DSC_people_support_dynamic7 = -0.4 }
+  set_variable = { DSC_people_support_dynamic8 = -0.4 }
+  set_variable = { DSC_people_support_dynamic9 = -0.2 }
+  set_variable = { DSC_people_support_dynamic10 = -0.2 }
+  set_variable = { DSC_people_support_dynamic11 = -0.2 }
+  set_variable = { DSC_people_support_dynamic12 = -0.2 }
+  set_variable = { DSC_people_support_dynamic13 = -0.2 }
+  set_variable = { DSC_people_support_dynamic14 = -0.2 }
+  set_variable = { DSC_people_support_dynamic15 = 0.4 }
+  set_variable = { DSC_people_support_dynamic16 = 0.4 }
+  set_variable = { DSC_people_support_dynamic17 = 0.4 }
+  set_variable = { DSC_people_support_dynamic18 = 0.4 }
+  set_variable = { DSC_people_support_dynamic19 = -0.4 }
+  set_variable = { DSC_people_support_dynamic20 = -400 }
+  set_variable = { DSC_people_support_dynamic21 = -0.2 }
+  set_variable = { DSC_people_support_dynamic22 = -0.2 }
+  set_variable = { DSC_people_support_dynamic23 = -0.2 }
+  set_variable = { DSC_people_support_dynamic24 = -0.4 }
+}
+else_if = {
+limit = {
+check_variable = {
+    DSC_people_support > 0.39
+	}
+	check_variable = {
+	DSC_people_support < 0.49
+}
+}
+  set_variable = { DSC_people_support_dynamic1 = 0.05 }
+  set_variable = { DSC_people_support_dynamic2 = -0.2 }
+  set_variable = { DSC_people_support_dynamic3 = -0.1 }
+  set_variable = { DSC_people_support_dynamic4 = -0.2 }
+  set_variable = { DSC_people_support_dynamic5 = -0.2 }
+  set_variable = { DSC_people_support_dynamic6 = 0.2 }
+  set_variable = { DSC_people_support_dynamic7 = -0.2 }
+  set_variable = { DSC_people_support_dynamic8 = -0.2 }
+  set_variable = { DSC_people_support_dynamic9 = -0.1 }
+  set_variable = { DSC_people_support_dynamic10 = -0.1 }
+  set_variable = { DSC_people_support_dynamic11 = -0.1 }
+  set_variable = { DSC_people_support_dynamic12 = -0.1 }
+  set_variable = { DSC_people_support_dynamic13 = -0.1 }
+  set_variable = { DSC_people_support_dynamic14 = -0.1 }
+  set_variable = { DSC_people_support_dynamic15 = 0.2 }
+  set_variable = { DSC_people_support_dynamic16 = 0.2 }
+  set_variable = { DSC_people_support_dynamic17 = 0.2 }
+  set_variable = { DSC_people_support_dynamic18 = 0.2 }
+  set_variable = { DSC_people_support_dynamic19 = -0.2 }
+  set_variable = { DSC_people_support_dynamic20 = -200 }
+  set_variable = { DSC_people_support_dynamic21 = -0.1 }
+  set_variable = { DSC_people_support_dynamic22 = -0.1 }
+  set_variable = { DSC_people_support_dynamic23 = -0.10 }
+  set_variable = { DSC_people_support_dynamic24 = -0.2 }
+}
+else_if = {
+limit = {
+check_variable = {
+    DSC_people_support > 0.49
+	}
+	check_variable = {
+	DSC_people_support < 0.59
+}
+}
+  set_variable = { DSC_people_support_dynamic1 = 0.03 }
+  set_variable = { DSC_people_support_dynamic2 = -0.1 }
+  set_variable = { DSC_people_support_dynamic3 = -0.05 }
+  set_variable = { DSC_people_support_dynamic4 = -0.1 }
+  set_variable = { DSC_people_support_dynamic5 = -0.1 }
+  set_variable = { DSC_people_support_dynamic6 = 0.1 }
+  set_variable = { DSC_people_support_dynamic7 = -0.1 }
+  set_variable = { DSC_people_support_dynamic8 = -0.1 }
+  set_variable = { DSC_people_support_dynamic9 = -0.05 }
+  set_variable = { DSC_people_support_dynamic10 = -0.1 }
+  set_variable = { DSC_people_support_dynamic11 = -0.1 }
+  set_variable = { DSC_people_support_dynamic12 = -0.1 }
+  set_variable = { DSC_people_support_dynamic13 = -0.1 }
+  set_variable = { DSC_people_support_dynamic14 = -0.1 }
+  set_variable = { DSC_people_support_dynamic15 = 0.1 }
+  set_variable = { DSC_people_support_dynamic16 = 0.1 }
+  set_variable = { DSC_people_support_dynamic17 = 0.1 }
+  set_variable = { DSC_people_support_dynamic18 = 0.1 }
+  set_variable = { DSC_people_support_dynamic19 = -0.1 }
+  set_variable = { DSC_people_support_dynamic20 = -100 }
+  set_variable = { DSC_people_support_dynamic21 = -0.1 }
+  set_variable = { DSC_people_support_dynamic22 = -0.1 }
+  set_variable = { DSC_people_support_dynamic23 = -0.10 }
+  set_variable = { DSC_people_support_dynamic24 = -0.1 }
+}
+else_if = {
+limit = {
+check_variable = {
+    DSC_people_support > 0.59
+	}
+	check_variable = {
+	DSC_people_support < 0.69
+}
+}
+  set_variable = { DSC_people_support_dynamic1 = 0.0 }
+  set_variable = { DSC_people_support_dynamic2 = 0.1 }
+  set_variable = { DSC_people_support_dynamic3 = 0.05 }
+  set_variable = { DSC_people_support_dynamic4 = 0.05 }
+  set_variable = { DSC_people_support_dynamic5 = 0.1 }
+  set_variable = { DSC_people_support_dynamic6 = -0.1 }
+  set_variable = { DSC_people_support_dynamic7 = 0.1 }
+  set_variable = { DSC_people_support_dynamic8 = 0.1 }
+  set_variable = { DSC_people_support_dynamic9 = 0.05 }
+  set_variable = { DSC_people_support_dynamic10 = 0.1 }
+  set_variable = { DSC_people_support_dynamic11 = 0.1 }
+  set_variable = { DSC_people_support_dynamic12 = 0.1 }
+  set_variable = { DSC_people_support_dynamic13 = 0.1 }
+  set_variable = { DSC_people_support_dynamic14 = 0.1 }
+  set_variable = { DSC_people_support_dynamic15 = -0.1 }
+  set_variable = { DSC_people_support_dynamic16 = -0.1 }
+  set_variable = { DSC_people_support_dynamic17 = -0.1 }
+  set_variable = { DSC_people_support_dynamic18 = -0.1 }
+  set_variable = { DSC_people_support_dynamic19 = 0.1 }
+  set_variable = { DSC_people_support_dynamic20 = 0 }
+  set_variable = { DSC_people_support_dynamic21 = 0.1 }
+  set_variable = { DSC_people_support_dynamic22 = 0.1 }
+  set_variable = { DSC_people_support_dynamic23 = 0.10 }
+  set_variable = { DSC_people_support_dynamic24 = 0.1 }
+}
+else_if = {
+limit = {
+check_variable = {
+    DSC_people_support > 0.69
+	}
+	check_variable = {
+	DSC_people_support < 0.79
+}
+}
+  set_variable = { DSC_people_support_dynamic1 = -0.05 }
+  set_variable = { DSC_people_support_dynamic2 = 0.15 }
+  set_variable = { DSC_people_support_dynamic3 = 0.10 }
+  set_variable = { DSC_people_support_dynamic4 = 0.10 }
+  set_variable = { DSC_people_support_dynamic5 = 0.15 }
+  set_variable = { DSC_people_support_dynamic6 = -0.15 }
+  set_variable = { DSC_people_support_dynamic7 = 0.15 }
+  set_variable = { DSC_people_support_dynamic8 = 0.15 }
+  set_variable = { DSC_people_support_dynamic9 = 0.1 }
+  set_variable = { DSC_people_support_dynamic10 = 0.15 }
+  set_variable = { DSC_people_support_dynamic11 = 0.15 }
+  set_variable = { DSC_people_support_dynamic12 = 0.15 }
+  set_variable = { DSC_people_support_dynamic13 = 0.15 }
+  set_variable = { DSC_people_support_dynamic14 = 0.15 }
+  set_variable = { DSC_people_support_dynamic15 = -0.15 }
+  set_variable = { DSC_people_support_dynamic16 = -0.15 }
+  set_variable = { DSC_people_support_dynamic17 = -0.15 }
+  set_variable = { DSC_people_support_dynamic18 = -0.15 }
+  set_variable = { DSC_people_support_dynamic19 = 0.15 }
+  set_variable = { DSC_people_support_dynamic20 = 100 }
+  set_variable = { DSC_people_support_dynamic21 = 0.15 }
+  set_variable = { DSC_people_support_dynamic22 = 0.15 }
+  set_variable = { DSC_people_support_dynamic23 = 0.15 }
+  set_variable = { DSC_people_support_dynamic24 = 0.15 }
+}
+else_if = {
+limit = {
+check_variable = {
+    DSC_people_support > 0.79
+	}
+	check_variable = {
+	DSC_people_support < 0.89
+}
+}
+  set_variable = { DSC_people_support_dynamic1 = -0.10 }
+  set_variable = { DSC_people_support_dynamic2 = 0.2 }
+  set_variable = { DSC_people_support_dynamic3 = 0.20 }
+  set_variable = { DSC_people_support_dynamic4 = 0.20 }
+  set_variable = { DSC_people_support_dynamic5 = 0.20 }
+  set_variable = { DSC_people_support_dynamic6 = -0.2 }
+  set_variable = { DSC_people_support_dynamic7 = 0.2 }
+  set_variable = { DSC_people_support_dynamic8 = 0.2 }
+  set_variable = { DSC_people_support_dynamic9 = 0.2 }
+  set_variable = { DSC_people_support_dynamic10 = 0.2 }
+  set_variable = { DSC_people_support_dynamic11 = 0.2 }
+  set_variable = { DSC_people_support_dynamic12 = 0.2 }
+  set_variable = { DSC_people_support_dynamic13 = 0.2 }
+  set_variable = { DSC_people_support_dynamic14 = 0.2 }
+  set_variable = { DSC_people_support_dynamic15 = -0.2 }
+  set_variable = { DSC_people_support_dynamic16 = -0.2 }
+  set_variable = { DSC_people_support_dynamic17 = -0.2 }
+  set_variable = { DSC_people_support_dynamic18 = -0.2 }
+  set_variable = { DSC_people_support_dynamic19 = 0.2 }
+  set_variable = { DSC_people_support_dynamic20 = 500 }
+  set_variable = { DSC_people_support_dynamic21 = 0.2 }
+  set_variable = { DSC_people_support_dynamic22 = 0.2 }
+  set_variable = { DSC_people_support_dynamic23 = 0.2 }
+  set_variable = { DSC_people_support_dynamic24 = 0.2 }
+}
+else_if = {
+limit = {
+check_variable = {
+    DSC_people_support > 0.89
+	}
+	check_variable = {
+	DSC_people_support < 1.01
+}
+}
+  set_variable = { DSC_people_support_dynamic1 = -0.3 }
+  set_variable = { DSC_people_support_dynamic2 = 0.3 }
+  set_variable = { DSC_people_support_dynamic3 = 0.3 }
+  set_variable = { DSC_people_support_dynamic4 = 0.3 }
+  set_variable = { DSC_people_support_dynamic5 = 0.5 }
+  set_variable = { DSC_people_support_dynamic6 = -0.5 }
+  set_variable = { DSC_people_support_dynamic7 = 0.5 }
+  set_variable = { DSC_people_support_dynamic8 = 0.5 }
+  set_variable = { DSC_people_support_dynamic9 = 0.3 }
+  set_variable = { DSC_people_support_dynamic10 = 0.3 }
+  set_variable = { DSC_people_support_dynamic11 = 0.3 }
+  set_variable = { DSC_people_support_dynamic12 = 0.3 }
+  set_variable = { DSC_people_support_dynamic13 = 0.3 }
+  set_variable = { DSC_people_support_dynamic14 = 0.3 }
+  set_variable = { DSC_people_support_dynamic15 = -0.4 }
+  set_variable = { DSC_people_support_dynamic16 = -0.4 }
+  set_variable = { DSC_people_support_dynamic17 = -0.4 }
+  set_variable = { DSC_people_support_dynamic18 = -0.4 }
+  set_variable = { DSC_people_support_dynamic19 = 0.2 }
+  set_variable = { DSC_people_support_dynamic20 = 1000 }
+  set_variable = { DSC_people_support_dynamic21 = 0.3 }
+  set_variable = { DSC_people_support_dynamic22 = 0.3 }
+  set_variable = { DSC_people_support_dynamic23 = 0.3 }
+  set_variable = { DSC_people_support_dynamic24 = 0.3 }
+}
+
+}
+DSC_people_support_dynamic_scriptes_left = {
+if = {
+limit = {
+check_variable = {
+    DSC_people_support > 0.0
+	}
+	check_variable = {
+	DSC_people_support < 0.19
+}
+}
+  set_variable = { DSC_people_support_dynamic25 = -0.5 }
+  set_variable = { DSC_people_support_dynamic26 = -0.5 }
+    set_variable = { DSC_people_support_dynamic27 = -0.5 }
+
+
+}
+else_if = {
+limit = {
+check_variable = {
+    DSC_people_support > 0.19
+	}
+	check_variable = {
+	DSC_people_support < 0.29
+}
+}  
+set_variable = { DSC_people_support_dynamic25 = -0.3 }
+  set_variable = { DSC_people_support_dynamic26 = -0.3 }
+    set_variable = { DSC_people_support_dynamic27 = -0.3 }
+}
+else_if = {
+limit = {
+check_variable = {
+    DSC_people_support > 0.29
+	}
+	check_variable = {
+	DSC_people_support < 0.39
+}
+}
+  set_variable = { DSC_people_support_dynamic25 = -0.2 }
+  set_variable = { DSC_people_support_dynamic26 = -0.2 }
+    set_variable = { DSC_people_support_dynamic27 = -0.2 }
+}
+else_if = {
+limit = {
+check_variable = {
+    DSC_people_support > 0.39
+	}
+	check_variable = {
+	DSC_people_support < 0.49
+}
+}
+  set_variable = { DSC_people_support_dynamic25 = -0.1 }
+  set_variable = { DSC_people_support_dynamic26 = -0.1 }
+    set_variable = { DSC_people_support_dynamic27 = -0.1 }
+}
+else_if = {
+limit = {
+check_variable = {
+    DSC_people_support > 0.49
+	}
+	check_variable = {
+	DSC_people_support < 0.59
+}
+}
+  set_variable = { DSC_people_support_dynamic25 = 0.1 }
+  set_variable = { DSC_people_support_dynamic26 = 0.1}
+    set_variable = { DSC_people_support_dynamic27 = 0.1 } 
+}
+else_if = {
+limit = {
+check_variable = {
+    DSC_people_support > 0.59
+	}
+	check_variable = {
+	DSC_people_support < 0.69
+}
+}
+}
+else_if = {
+limit = {
+check_variable = {
+    DSC_people_support > 0.69
+	}
+	check_variable = {
+	DSC_people_support < 0.79
+}
+}
+  set_variable = { DSC_people_support_dynamic25 = 0.2}
+  set_variable = { DSC_people_support_dynamic26 = 0.2 }
+    set_variable = { DSC_people_support_dynamic27 = 0.2 }
+}
+else_if = {
+limit = {
+check_variable = {
+    DSC_people_support > 0.79
+	}
+	check_variable = {
+	DSC_people_support < 0.89
+}
+}
+  set_variable = { DSC_people_support_dynamic25 = 0.3 }
+  set_variable = { DSC_people_support_dynamic26 = 0.3 }
+    set_variable = { DSC_people_support_dynamic27 = 0.3 }
+}
+else_if = {
+limit = {
+check_variable = {
+    DSC_people_support > 0.89
+	}
+	check_variable = {
+	DSC_people_support < 1.01
+}
+}
+  set_variable = { DSC_people_support_dynamic25 = 0.4 }
+  set_variable = { DSC_people_support_dynamic26 = 0.4 }
+    set_variable = { DSC_people_support_dynamic27 = 0.4 }
+}
+
+
+
+}
+CHI_work_up = {
+	if = {
+		limit = { has_idea = CHI_work7 }
+		swap_ideas = {
+			remove_idea = CHI_work7
+			add_idea = CHI_work6
+		}
+	}
+	else_if = {
+		limit = { has_idea = CHI_work6 }
+		swap_ideas = {
+			remove_idea = CHI_work6
+			add_idea = CHI_work5
+		}
+	}
+	else_if = {
+		limit = { has_idea = CHI_work5 }
+		swap_ideas = {
+			remove_idea = CHI_work5
+			add_idea = CHI_work_01
+		}
+	}
+	else_if = {
+		limit = { has_idea = CHI_work_01 }
+		swap_ideas = {
+			remove_idea = CHI_work_01
+			add_idea = CHI_work_02
+		}
+	}
+		else_if = {
+		limit = { has_idea = CHI_work_02 }
+		swap_ideas = {
+			remove_idea = CHI_work_02
+			add_idea = CHI_work_03
+		}
+	}	else_if = {
+		limit = { has_idea = CHI_work_03 }
+		swap_ideas = {
+			remove_idea = CHI_work_03
+			add_idea = CHI_work_04
+		}
+	}
+	} 
+	CHI_work_down = {
+	if = {
+		limit = { 
+		NOT = {
+		has_idea = CHI_work_01
+		has_idea = CHI_work_02
+		has_idea = CHI_work_03
+		has_idea = CHI_work_04
+		has_idea = CHI_work5
+		has_idea = CHI_work6
+		has_idea = CHI_work7
+		}
+		}
+			add_ideas = CHI_work_04
+		}
+	else_if = {
+		limit = { has_idea = CHI_work_04 }
+		swap_ideas = {
+			remove_idea = CHI_work_04
+			add_idea = CHI_work_03
+		}
+	}
+	else_if = {
+		limit = { has_idea = CHI_work_03 }
+		swap_ideas = {
+			remove_idea = CHI_work_03
+			add_idea = CHI_work_02
+		}
+	}
+		else_if = {
+		limit = { has_idea = CHI_work_02 }
+		swap_ideas = {
+			remove_idea = CHI_work_02
+			add_idea = CHI_work_01
+		}
+	}
+	else_if = {
+		limit = { has_idea = CHI_work_01 }
+		swap_ideas = {
+			remove_idea = CHI_work_01
+			add_idea = CHI_work5
+		}
+	}
+	else_if = {
+		limit = { has_idea = CHI_work5 }
+		swap_ideas = {
+			remove_idea = CHI_work5
+			add_idea = CHI_work6
+		}
+	}
+		else_if = {
+		limit = { has_idea = CHI_work6 }
+		swap_ideas = {
+			remove_idea = CHI_work6
+			add_idea = CHI_work7
+		}
+	}
+	}

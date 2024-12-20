@@ -1,0 +1,2437 @@
+spriteTypes = {
+		SpriteType = {
+		name = "CPC_Rebuilding_Southeast_China"
+		texturefile = "gfx/interface/goals/lor/CPC/重建东南.png"
+	}		
+		SpriteType = {
+		name = "CPC_Transforming_Bureaucratic_Capitalist_Economy"
+		texturefile = "gfx/interface/goals/lor/CPC/改造官僚资本主义.png"
+	}		
+		SpriteType = {
+		name = "CPC_Default_Nine_Nation_Pact"
+		texturefile = "gfx/interface/goals/lor/CPC/默认公约.png"
+	}		
+		SpriteType = {
+		name = "CPC_Simplify_foreign_investment_access"
+		texturefile = "gfx/interface/goals/lor/CPC/简化外资准入.png"
+	}		
+		SpriteType = {
+		name = "CPC_Participate_in_international_markets"
+		texturefile = "gfx/interface/goals/lor/CPC/参与全球市场.png"
+	}			
+			SpriteType = {
+		name = "CPC_nationalized_foreign_enterprise"
+		texturefile = "gfx/interface/goals/lor/CPC/国有化外国资产.png"
+	}		
+		SpriteType = {
+		name = "CPC_third_international_aid"
+		texturefile = "gfx/interface/goals/lor/CPC/法国援助.png"
+	}		
+		SpriteType = {
+		name = "CPC_self_reliance"
+		texturefile = "gfx/interface/goals/lor/CPC/自立根生.png"
+	}		
+		SpriteType = {
+		name = "CPC_trust"
+		texturefile = "gfx/interface/goals/lor/CPC/成立托拉斯.png"
+	}		
+		SpriteType = {
+		name = "CPC_Ministry_of_Foreign_Affairs"
+		texturefile = "gfx/interface/goals/lor/CPC/外事局.png"
+	}			
+			SpriteType = {
+		name = "CPC_Support_liberation_of_Indochina"
+		texturefile = "gfx/interface/goals/lor/CPC/支援印度支那.png"
+	}		
+		SpriteType = {
+		name = "CPC_East_Asia_Liberation_Front"
+		texturefile = "gfx/interface/goals/lor/CPC/领导亚洲革命.png"
+	}		
+		SpriteType = {
+		name = "CPC_Five_Principles_Peaceful_Coexistence"
+		texturefile = "gfx/interface/goals/lor/CPC/和平共处五项原则.png"
+	}		
+		SpriteType = {
+		name = "CPC_german_friends"
+		texturefile = "gfx/interface/goals/lor/CPC/与德国战略合作.png"
+	}		
+		SpriteType = {
+		name = "CPC_Down_with_all_imperialism"
+		texturefile = "gfx/interface/goals/lor/CPC/打倒帝国主义.png"
+	}			
+			SpriteType = {
+		name = "CPC_Leading_the_Asian_Revolution"
+		texturefile = "gfx/interface/goals/lor/CPC/资助东亚解放1.png"
+	}		
+		SpriteType = {
+		name = "CPC_Leading_the_Asian_Revolution_phiins"
+		texturefile = "gfx/interface/goals/lor/CPC/资助东亚解放.png"
+	}		
+		SpriteType = {
+		name = "CPC_Propaganda_Department"
+		texturefile = "gfx/interface/goals/lor/CPC/宣传部.png"
+	}		
+		SpriteType = {
+		name = "CPC_Revolutionary_Historical_View"
+		texturefile = "gfx/interface/goals/lor/CPC/革命史观.png"
+	}		
+		SpriteType = {
+		name = "CPC_socialist_realism"
+		texturefile = "gfx/interface/goals/lor/CPC/社会主义先锋主义.png"
+	}		
+		SpriteType = {
+		name = "CPC_Shanghai_Rectification"
+		texturefile = "gfx/interface/goals/lor/CPC/上海整风.png"
+	}			
+			SpriteType = {
+		name = "CPC_May_4th_spirit_continues"
+		texturefile = "gfx/interface/goals/lor/CPC/延续五四精神.png"
+	}		
+		SpriteType = {
+		name = "CPC_people_party_communism"
+		texturefile = "gfx/interface/goals/lor/CPC/党，人民，社会主义.png"
+	}		
+		SpriteType = {
+		name = "CPC_The_Second_National_Revolution"
+		texturefile = "gfx/interface/goals/lor/CPC/CPC_The_Second_National_Revolution.dds"
+	}		
+
+			SpriteType = {
+		name = "CPC_Cooperation_with_Kuomintang"
+		texturefile = "gfx/interface/goals/lor/CPC/CPC_Cooperation_with_Kuomintang.dds"
+	}		
+			SpriteType = {
+		name = "CPC_Take_over_workers_council"
+		texturefile = "gfx/interface/goals/lor/CPC/CPC_Take_over_workers_council.dds"
+	}		
+			SpriteType = {
+		name = "CPC_Building_socialism_in_one_city"
+		texturefile = "gfx/interface/goals/lor/CPC/CPC_Building_socialism_in_one_city.dds"
+	}		
+			SpriteType = {
+		name = "CPC_farmers_association"
+		texturefile = "gfx/interface/goals/lor/CPC/CPC_farmers_association.dds"
+	}		
+			SpriteType = {
+		name = "CPC_proletarian_cultural_hegemony"
+		texturefile = "gfx/interface/goals/lor/CPC/CPC_proletarian_cultural_hegemony.dds"
+	}		
+			SpriteType = {
+		name = "CPC_revolution_of_all_classes"
+		texturefile = "gfx/interface/goals/lor/CPC/CPC_revolution_of_all_classes.dds"
+	}		
+		SpriteType = {
+		name = "Fight_for_the_power_of_National_Government"
+		texturefile = "gfx/interface/goals/lor/CPC/Fight_for_the_power_of_National_Government.dds"
+	}		
+		SpriteType = {
+		name = "CPC_Cooperation_with_Kuomintang_Provisional_Action_Committee"
+		texturefile = "gfx/interface/goals/lor/CPC/CPC_Cooperation_with_Kuomintang_Provisional_Action_Committee.dds"
+	}		
+			SpriteType = {
+		name = "CPC_Infiltrating_the_National_Revolutionary_Army"
+		texturefile = "gfx/interface/goals/lor/CPC/CPC_Infiltrating_the_National_Revolutionary_Army.dds"
+	}		
+				SpriteType = {
+		name = "CPC_strengthen_party_building"
+		texturefile = "gfx/interface/goals/lor/CPC/CPC_strengthen_party_building.dds"
+	}		
+				SpriteType = {
+		name = "CPC_workers_strike"
+		texturefile = "gfx/interface/goals/lor/CPC/CPC_workers_strike.dds"
+	}		
+				SpriteType = {
+		name = "CPC_rural_guerrillas"
+		texturefile = "gfx/interface/goals/lor/CPC/CPC_rural_guerrillas.dds"
+	}		
+				SpriteType = {
+		name = "CPC_unified_republic_of_china"
+		texturefile = "gfx/interface/goals/lor/CPC/CPC_unified_republic_of_china.dds"
+	}		
+				SpriteType = {
+		name = "CPC_studen_movement"
+		texturefile = "gfx/interface/goals/lor/CPC/CPC_studen_movement.dds"
+	}		
+				SpriteType = {
+		name = "CPC_united_democratic_parties"
+		texturefile = "gfx/interface/goals/lor/CPC/CPC_united_democratic_parties.dds"
+	}	
+				SpriteType = {
+		name = "CPC_end_tutelage"
+		texturefile = "gfx/interface/goals/lor/CPC/CPC_end_tutelage.dds"
+	}		
+				SpriteType = {
+		name = "CPC_China_War_of_Liberation"
+		texturefile = "gfx/interface/goals/lor/CPC/CPC_China_War_of_Liberation.dds"
+	}		
+				SpriteType = {
+		name = "CPC_Integrate_left_wing_parties"
+		texturefile = "gfx/interface/goals/lor/CPC/CPC_Integrate_left_wing_parties.dds"
+	}		
+				SpriteType = {
+		name = "CPC_Run_for_governor_of_province"
+		texturefile = "gfx/interface/goals/lor/CPC/CPC_Run_for_governor_of_province.dds"
+	}		
+				SpriteType = {
+		name = "CPC_President_election"
+		texturefile = "gfx/interface/goals/lor/CPC/CPC_President_election.dds"
+	}		
+				SpriteType = {
+		name = "CPC_victory_of_new_democracy"
+		texturefile = "gfx/interface/goals/lor/CPC/CPC_victory_of_new_democracy.dds"
+	}		
+			SpriteType = {
+		name = "CPC_convene_National_People_Congress"
+		texturefile = "gfx/interface/goals/lor/CPC/CPC_convene_National_People_Congress.dds"
+	}		
+				SpriteType = {
+		name = "CPC_lidazhao_President_of_the_Executive_Yuan"
+		texturefile = "gfx/interface/goals/lor/CPC/CPC_lidazhao_President_of_the_Executive_Yuan.dds"
+	}		
+	SpriteType = {
+		name = "CPC_road_to_socialism"
+		texturefile = "gfx/interface/goals/lor/CPC/CPC_road_to_socialism.dds"
+	}		
+SpriteType = {
+		name = "CPC_Complete_land_reform"
+		texturefile = "gfx/interface/goals/lor/CPC/CPC_Complete_land_reform.dds"
+	}		
+	
+SpriteType = {
+		name = "CPC_agricultural_cooperative"
+		texturefile = "gfx/interface/goals/lor/CPC/CPC_agricultural_cooperative.dds"
+	}		
+SpriteType = {
+		name = "CPC_industrial_redemption"
+		texturefile = "gfx/interface/goals/lor/CPC/CPC_industrial_redemption.dds"
+	}		
+SpriteType = {
+		name = "CPC_dictatorship_of_the_working_class"
+		texturefile = "gfx/interface/goals/lor/CPC/CPC_dictatorship_of_the_working_class.dds"
+	}		
+	SpriteType = {
+		name = "CPC_xizongxun_President_of_the_Executive_Yuan"
+		texturefile = "gfx/interface/goals/lor/CPC/CPC_xizongxun_President_of_the_Executive_Yuan.dds"
+	}		
+SpriteType = {
+		name = "CPC_Three_People_Principles_of_the_New_Era"
+		texturefile = "gfx/interface/goals/lor/CPC/CPC_Three_People_Principles_of_the_New_Era.dds"
+	}		
+SpriteType = {
+		name = "CPC_Expand_state_owned_enterprises"
+		texturefile = "gfx/interface/goals/lor/CPC/CPC_Expand_state_owned_enterprises.dds"
+	}		
+SpriteType = {
+		name = "CPC_whole_process_peoples_democracy"
+		texturefile = "gfx/interface/goals/lor/CPC/CPC_whole_process_peoples_democracy.dds"
+	}		
+		SpriteType = {
+		name = "pengpai_chairman"
+		texturefile = "gfx/interface/goals/lor/CPC/PengPai/pengpai_chairman.png"
+	}		
+		SpriteType = {
+		name = "Abolition_of_people_communes"
+		texturefile = "gfx/interface/goals/lor/CPC/PengPai/Abolition_of_people_communes.png"
+	}		
+		SpriteType = {
+		name = "Subsidized_agricultural_cooperatives"
+		texturefile = "gfx/interface/goals/lor/CPC/PengPai/Subsidized_agricultural_cooperatives.png"
+	}		
+		SpriteType = {
+		name = "rural_democratic_reform"
+		texturefile = "gfx/interface/goals/lor/CPC/PengPai/rural_democratic_reform.png"
+	}		
+		SpriteType = {
+		name = "Lower_the_indicator"
+		texturefile = "gfx/interface/goals/lor/CPC/PengPai/Lower_the_indicator.png"
+	}			
+			SpriteType = {
+		name = "Pay_attention_tractor_industry"
+		texturefile = "gfx/interface/goals/lor/CPC/PengPai/Pay_attention_tractor_industry.png"
+	}		
+		SpriteType = {
+		name = "Learn_from_Sicilian_fascists"
+		texturefile = "gfx/interface/goals/lor/CPC/PengPai/Learn_from_Sicilian_fascists.png"
+	}		
+		SpriteType = {
+		name = "participatory_democracy"
+		texturefile = "gfx/interface/goals/lor/CPC/PengPai/participatory_democracy.png"
+	}		
+		SpriteType = {
+		name = "Promote_socialist_Christianity"
+		texturefile = "gfx/interface/goals/lor/CPC/PengPai/Promote_socialist_Christianity.png"
+	}		
+		SpriteType = {
+		name = "Organize_city_communes"
+		texturefile = "gfx/interface/goals/lor/CPC/PengPai/Organize_city_communes.png"
+	}			
+			SpriteType = {
+		name = "Cooperation_between_workers_peasants"
+		texturefile = "gfx/interface/goals/lor/CPC/PengPai/Cooperation_between_workers_peasants.png"
+	}		
+		SpriteType = {
+		name = "Peasants_and_Workers_Republic"
+		texturefile = "gfx/interface/goals/lor/CPC/PengPai/Peasants_and_Workers_Republic.png"
+	}		
+
+		SpriteType = {
+		name = "xiaxi_chairman"
+		texturefile = "gfx/interface/goals/lor/CPC/Xia_Xi/xiaxi_chairman.png"
+	}		
+		SpriteType = {
+		name = "One_Strike_Three_Anti_Campaign"
+		texturefile = "gfx/interface/goals/lor/CPC/Xia_Xi/One_Strike_Three_Anti_Campaign.png"
+	}		
+		SpriteType = {
+		name = "Disband_Communist_Party"
+		texturefile = "gfx/interface/goals/lor/CPC/Xia_Xi/Disband_Communist_Party.png"
+	}		
+		SpriteType = {
+		name = "massacre_of_intellectuals"
+		texturefile = "gfx/interface/goals/lor/CPC/Xia_Xi/massacre_of_intellectuals.png"
+	}		
+		SpriteType = {
+		name = "Disband_the_army"
+		texturefile = "gfx/interface/goals/lor/CPC/Xia_Xi/Disband_the_army.png"
+	}			
+			SpriteType = {
+		name = "Strengthen_mss"
+		texturefile = "gfx/interface/goals/lor/CPC/Xia_Xi/Strengthen_mss.png"
+	}		
+		SpriteType = {
+		name = "The_line_of_socialism_with_Chinese_characteristics"
+		texturefile = "gfx/interface/goals/lor/CPC/Xia_Xi/The_line_of_socialism_with_Chinese_characteristics.png"
+	}		
+		SpriteType = {
+		name = "Sending_to_countryside_movement"
+		texturefile = "gfx/interface/goals/lor/CPC/Xia_Xi/Sending_to_countryside_movement.png"
+	}		
+		SpriteType = {
+		name = "Destroy_city_industry"
+		texturefile = "gfx/interface/goals/lor/CPC/Xia_Xi/Destroy_city_industry.png"
+	}		
+		SpriteType = {
+		name = "Xuanyuan_Sect"
+		texturefile = "gfx/interface/goals/lor/CPC/Xia_Xi/Xuanyuan_Sect.png"
+	}			
+			SpriteType = {
+		name = "festival_of_people"
+		texturefile = "gfx/interface/goals/lor/CPC/Xia_Xi/festival_of_people.png"
+	}		
+		SpriteType = {
+		name = "primitive_communism"
+		texturefile = "gfx/interface/goals/lor/CPC/Xia_Xi/primitive_communism.png"
+	}	
+	SpriteType = {
+		name = "Communist_Youth_League_of_China"
+		texturefile = "gfx/interface/goals/lor/CPC/Communist_Youth_League_of_China.png"
+	}	
+
+		SpriteType = {
+		name = "linbiao_corp"
+		texturefile = "gfx/interface/goals/lor/CPC/Linbiao/linbiao_corp.png"
+	}	
+		SpriteType = {
+		name = "Control_Communist_Party"
+		texturefile = "gfx/interface/goals/lor/CPC/Linbiao/Control_Communist_Party.png"
+	}	
+		SpriteType = {
+		name = "Purge_capitalist_roaders"
+		texturefile = "gfx/interface/goals/lor/CPC/Linbiao/Purge_capitalist_roaders.png"
+	}	
+		SpriteType = {
+		name = "Control_army"
+		texturefile = "gfx/interface/goals/lor/CPC/Linbiao/Control_army.png"
+	}	
+		SpriteType = {
+		name = "linbiaosiling"
+		texturefile = "gfx/interface/goals/lor/CPC/Linbiao/linbiaosiling.png"
+	}	
+		SpriteType = {
+		name = "proposing_the_theory_of_genius"
+		texturefile = "gfx/interface/goals/lor/CPC/Linbiao/proposing_the_theory_of_genius.png"
+	}	
+		SpriteType = {
+		name = "blood_theory"
+		texturefile = "gfx/interface/goals/lor/CPC/Linbiao/blood_theory.png"
+	}	
+		SpriteType = {
+		name = "class_segregation"
+		texturefile = "gfx/interface/goals/lor/CPC/Linbiao/class_segregation.png"
+	}	
+		SpriteType = {
+		name = "revolutionary_nationalism"
+		texturefile = "gfx/interface/goals/lor/CPC/Linbiao/revolutionary_nationalism.png"
+	}	
+		SpriteType = {
+		name = "real_Marxism_Leninism"
+		texturefile = "gfx/interface/goals/lor/CPC/Linbiao/real_Marxism_Leninism.png"
+	}	
+		SpriteType = {
+		name = "emperor_of_the_proletariat"
+		texturefile = "gfx/interface/goals/lor/CPC/Linbiao/emperor_of_the_proletariat.png"
+	}	
+		SpriteType = {
+		name = "Zhouenlai_chairman"
+		texturefile = "gfx/interface/goals/lor/CPC/Zhouenlai/Zhouenlai_chairman.png"
+	}	
+			SpriteType = {
+		name = "Politburo_Authority"
+		texturefile = "gfx/interface/goals/lor/CPC/Zhouenlai/Politburo_Authority.png"
+	}	
+			SpriteType = {
+		name = "CPC_anti_corruption"
+		texturefile = "gfx/interface/goals/lor/CPC/Zhouenlai/anti_corruption.png"
+	}	
+			SpriteType = {
+		name = "CPC_four_obedience"
+		texturefile = "gfx/interface/goals/lor/CPC/Zhouenlai/CPC_four_obedience.png"
+	}	
+			SpriteType = {
+		name = "farmers_plot"
+		texturefile = "gfx/interface/goals/lor/CPC/Zhouenlai/farmers_plot.png"
+	}	
+			SpriteType = {
+		name = "contract_system"
+		texturefile = "gfx/interface/goals/lor/CPC/Zhouenlai/contract_system.png"
+	}	
+			SpriteType = {
+		name = "ZhouEnlai_thought"
+		texturefile = "gfx/interface/goals/lor/CPC/Zhouenlai/ZhouEnlai_thought.png"
+	}	
+			SpriteType = {
+		name = "Anti_liberalization"
+		texturefile = "gfx/interface/goals/lor/CPC/Zhouenlai/Anti_liberalization.png"
+	}	
+			SpriteType = {
+		name = "Great_Rejuvenation"
+		texturefile = "gfx/interface/goals/lor/CPC/Zhouenlai/Great_Rejuvenation.png"
+	}	
+			SpriteType = {
+		name = "Restructuring_Planning_Committee"
+		texturefile = "gfx/interface/goals/lor/CPC/Zhouenlai/Restructuring_Planning_Committee.png"
+	}	
+			SpriteType = {
+		name = "market_planned_economy"
+		texturefile = "gfx/interface/goals/lor/CPC/Zhouenlai/market_planned_economy.png"
+	}	
+			SpriteType = {
+		name = "dictatorship_of_saints"
+		texturefile = "gfx/interface/goals/lor/CPC/Zhouenlai/dictatorship_of_saints.png"
+	}	
+	SpriteType = {
+		name = "fusion_science"
+		texturefile = "gfx/interface/goals/lor/CPC/posadas/fusion_science.dds"
+	}	
+	
+	SpriteType = {
+		name = "Mao_Zedong_chairman_communist"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Communist/Mao_Zedong_chairman_communist.png"
+	}	
+			SpriteType = {
+		name = "agricultural_socialism"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Communist/agricultural_socialism.png"
+	}	
+			SpriteType = {
+		name = "peasant_revolution"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Communist/peasant_revolution.png"
+	}	
+			SpriteType = {
+		name = "Neo_Marxism"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Communist/Neo_Marxism.png"
+	}	
+			SpriteType = {
+		name = "Subsidize_rural"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Communist/Subsidize_rural.png"
+	}	
+			SpriteType = {
+		name = "Peoples_Commune"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Communist/Peoples_Commune.png"
+	}	
+			SpriteType = {
+		name = "agricultural_revolution"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Communist/agricultural_revolution.png"
+	}	
+			SpriteType = {
+		name = "Poor_Peasant_Culture"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Communist/Poor_Peasant_Culture.png"
+	}	
+			SpriteType = {
+		name = "educate_intellectuals"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Communist/educate_intellectuals.png"
+	}	
+			SpriteType = {
+		name = "beware_city"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Communist/beware_city.png"
+	}	
+			SpriteType = {
+		name = "cancel_scissors_difference"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Communist/cancel_scissors_difference.png"
+	}	
+			SpriteType = {
+		name = "fraternity_classes"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Communist/fraternity_classes.png"
+	}		
+	
+	SpriteType = {
+		name = "Zhengchaolin_chairman"
+		texturefile = "gfx/interface/goals/lor/CPC/Zhengchaolin/Zhengchaolin_chairman.png"
+	}	
+			SpriteType = {
+		name = "consolidate_workers_dictatorship"
+		texturefile = "gfx/interface/goals/lor/CPC/Zhengchaolin/consolidate_workers_dictatorship.png"
+	}	
+			SpriteType = {
+		name = "anti_cadreism"
+		texturefile = "gfx/interface/goals/lor/CPC/Zhengchaolin/anti_cadreism.png"
+	}	
+			SpriteType = {
+		name = "Strengthening_Inner_Party_Democracy"
+		texturefile = "gfx/interface/goals/lor/CPC/Zhengchaolin/Strengthening_Inner_Party_Democracy.png"
+	}	
+			SpriteType = {
+		name = "guide_small_production"
+		texturefile = "gfx/interface/goals/lor/CPC/Zhengchaolin/guide_small_production.png"
+	}	
+			SpriteType = {
+		name = "rapid_industrialization"
+		texturefile = "gfx/interface/goals/lor/CPC/Zhengchaolin/rapid_industrialization.png"
+	}	
+			SpriteType = {
+		name = "anti_oligarchy"
+		texturefile = "gfx/interface/goals/lor/CPC/Zhengchaolin/anti_oligarchy.png"
+	}	
+			SpriteType = {
+		name = "encourage_militia"
+		texturefile = "gfx/interface/goals/lor/CPC/Zhengchaolin/encourage_militia.png"
+	}	
+			SpriteType = {
+		name = "productive_democracy"
+		texturefile = "gfx/interface/goals/lor/CPC/Zhengchaolin/productive_democracy.png"
+	}	
+			SpriteType = {
+		name = "Cultivate_people_management_ability"
+		texturefile = "gfx/interface/goals/lor/CPC/Zhengchaolin/Cultivate_people_management_ability.png"
+	}	
+			SpriteType = {
+		name = "abolish_bureaucracy"
+		texturefile = "gfx/interface/goals/lor/CPC/Zhengchaolin/abolish_bureaucracy.png"
+	}	
+			SpriteType = {
+		name = "transitional_phase"
+		texturefile = "gfx/interface/goals/lor/CPC/Zhengchaolin/transitional_phase.png"
+	}		
+		SpriteType = {
+		name = "Xiangjingyu_chairman"
+		texturefile = "gfx/interface/goals/lor/CPC/Xiangjingyu/Xiangjingyu_chairman.png"
+	}	
+			SpriteType = {
+		name = "socialist_values"
+		texturefile = "gfx/interface/goals/lor/CPC/Xiangjingyu/socialist_values.png"
+	}	
+			SpriteType = {
+		name = "Chinese_feminism"
+		texturefile = "gfx/interface/goals/lor/CPC/Xiangjingyu/Chinese_feminism.png"
+	}	
+			SpriteType = {
+		name = "equal_pay_equal_work"
+		texturefile = "gfx/interface/goals/lor/CPC/Xiangjingyu/equal_pay_equal_work.png"
+	}	
+			SpriteType = {
+		name = "Literary_freedom"
+		texturefile = "gfx/interface/goals/lor/CPC/Xiangjingyu/Literary_freedom.png"
+	}	
+			SpriteType = {
+		name = "against_patriarchy"
+		texturefile = "gfx/interface/goals/lor/CPC/Xiangjingyu/against_patriarchy.png"
+	}	
+			SpriteType = {
+		name = "marxist_feminism"
+		texturefile = "gfx/interface/goals/lor/CPC/Xiangjingyu/marxist_feminism.png"
+	}	
+			SpriteType = {
+		name = "love_freedom"
+		texturefile = "gfx/interface/goals/lor/CPC/Xiangjingyu/love_freedom.png"
+	}	
+			SpriteType = {
+		name = "economic_equality"
+		texturefile = "gfx/interface/goals/lor/CPC/Xiangjingyu/economic_equality.png"
+	}	
+			SpriteType = {
+		name = "socialist_nursery_school"
+		texturefile = "gfx/interface/goals/lor/CPC/Xiangjingyu/socialist_nursery_school.png"
+	}	
+			SpriteType = {
+		name = "liberate_the_family"
+		texturefile = "gfx/interface/goals/lor/CPC/Xiangjingyu/liberate_the_family.png"
+	}	
+			SpriteType = {
+		name = "fraternal_people"
+		texturefile = "gfx/interface/goals/lor/CPC/Xiangjingyu/fraternal_people.png"
+	}		
+		SpriteType = {
+		name = "Liushaoqi_chairman"
+		texturefile = "gfx/interface/goals/lor/CPC/Liushaoqi/Liushaoqi_chairman.png"
+	}	
+			SpriteType = {
+		name = "Descendants_of_Kautsky"
+		texturefile = "gfx/interface/goals/lor/CPC/Liushaoqi/Descendants_of_Kautsky.png"
+	}	
+			SpriteType = {
+		name = "sound_law"
+		texturefile = "gfx/interface/goals/lor/CPC/Liushaoqi/sound_law.png"
+	}	
+			SpriteType = {
+		name = "separation_of_party_and_government"
+		texturefile = "gfx/interface/goals/lor/CPC/Liushaoqi/separation_of_party_and_government.png"
+	}	
+			SpriteType = {
+		name = "limited_liberalization"
+		texturefile = "gfx/interface/goals/lor/CPC/Liushaoqi/limited_liberalization.png"
+	}	
+			SpriteType = {
+		name = "Encourage_small_and_micro_enterprises"
+		texturefile = "gfx/interface/goals/lor/CPC/Liushaoqi/Encourage_small_and_micro_enterprises.png"
+	}	
+			SpriteType = {
+		name = "Build_a_welfare_state"
+		texturefile = "gfx/interface/goals/lor/CPC/Liushaoqi/Build_a_welfare_state.png"
+	}	
+			SpriteType = {
+		name = "six_eggs"
+		texturefile = "gfx/interface/goals/lor/CPC/Liushaoqi/six_eggs.png"
+	}	
+			SpriteType = {
+		name = "Equal_Opportunity"
+		texturefile = "gfx/interface/goals/lor/CPC/Liushaoqi/Equal_Opportunity.png"
+	}	
+			SpriteType = {
+		name = "compulsory_higher_education"
+		texturefile = "gfx/interface/goals/lor/CPC/Liushaoqi/compulsory_higher_education.png"
+	}	
+			SpriteType = {
+		name = "nation_of_intellectuals"
+		texturefile = "gfx/interface/goals/lor/CPC/Liushaoqi/nation_of_intellectuals.png"
+	}	
+			SpriteType = {
+		name = "cradle_to_grave"
+		texturefile = "gfx/interface/goals/lor/CPC/Liushaoqi/cradle_to_grave.png"
+	}		
+	
+		SpriteType = {
+		name = "Wangshouhua_chairman"
+		texturefile = "gfx/interface/goals/lor/CPC/Syndicalism/syndicatism/Wangshouhua_chairman.png"
+	}	
+			SpriteType = {
+		name = "Lilisan_chairman"
+		texturefile = "gfx/interface/goals/lor/CPC/Syndicalism/syndicatism/Lilisan_chairman.png"
+	}	
+			SpriteType = {
+		name = "communal_syndicalism"
+		texturefile = "gfx/interface/goals/lor/CPC/Syndicalism/syndicatism/communal_syndicalism.png"
+	}	
+			SpriteType = {
+		name = "Principles_of_the_Paris_Commune"
+		texturefile = "gfx/interface/goals/lor/CPC/Syndicalism/syndicatism/Principles_of_the_Paris_Commune.png"
+	}	
+			SpriteType = {
+		name = "unionized_production"
+		texturefile = "gfx/interface/goals/lor/CPC/Syndicalism/syndicatism/unionized_production.png"
+	}	
+			SpriteType = {
+		name = "Syndicalization_of_state_owned_enterprises"
+		texturefile = "gfx/interface/goals/lor/CPC/Syndicalism/syndicatism/Syndicalization_of_state_owned_enterprises.png"
+	}	
+			SpriteType = {
+		name = "labor_rights"
+		texturefile = "gfx/interface/goals/lor/CPC/Syndicalism/syndicatism/labor_rights.png"
+	}	
+			SpriteType = {
+		name = "Power_goes_to_trade_unions"
+		texturefile = "gfx/interface/goals/lor/CPC/Syndicalism/syndicatism/Power_goes_to_trade_unions.png"
+	}	
+			SpriteType = {
+		name = "abolish_the_government"
+		texturefile = "gfx/interface/goals/lor/CPC/Syndicalism/syndicatism/abolish_the_government.png"
+	}	
+			SpriteType = {
+		name = "AFL_Representation_Specialization"
+		texturefile = "gfx/interface/goals/lor/CPC/Syndicalism/syndicatism/AFL_Representation_Specialization.png"
+	}	
+			SpriteType = {
+		name = "recognition_of_private_ownership"
+		texturefile = "gfx/interface/goals/lor/CPC/Syndicalism/syndicatism/recognition_of_private_ownership.png"
+	}	
+			SpriteType = {
+		name = "labor_economy"
+		texturefile = "gfx/interface/goals/lor/CPC/Syndicalism/syndicatism/labor_economy.png"
+	}
+			SpriteType = {
+		name = "Syndical_Socialism"
+		texturefile = "gfx/interface/goals/lor/CPC/Syndicalism/syndicatism/Syndical_Socialism.png"
+	}
+		SpriteType = {
+		name = "Lixiaotang_chairman"
+		texturefile = "gfx/interface/goals/lor/CPC/Syndicalism/anarchy_com/Lixiaotang_chairman.png"
+	}	
+			SpriteType = {
+		name = "anarchy_com"
+		texturefile = "gfx/interface/goals/lor/CPC/Syndicalism/anarchy_com/anarchy_com.png"
+	}	
+			SpriteType = {
+		name = "citizen_armed"
+		texturefile = "gfx/interface/goals/lor/CPC/Syndicalism/anarchy_com/citizen_armed.png"
+	}	
+			SpriteType = {
+		name = "CHI_self_management"
+		texturefile = "gfx/interface/goals/lor/CPC/Syndicalism/anarchy_com/self_management.png"
+	}	
+			SpriteType = {
+		name = "Ownership_the_whole_people"
+		texturefile = "gfx/interface/goals/lor/CPC/Syndicalism/anarchy_com/Ownership_the_whole_people.png"
+	}	
+			SpriteType = {
+		name = "vertical_management"
+		texturefile = "gfx/interface/goals/lor/CPC/Syndicalism/anarchy_com/vertical_management.png"
+	}	
+			SpriteType = {
+		name = "people_mutual_aid"
+		texturefile = "gfx/interface/goals/lor/CPC/Syndicalism/anarchy_com/people_mutual_aid.png"
+	}	
+			SpriteType = {
+		name = "self_organization"
+		texturefile = "gfx/interface/goals/lor/CPC/Syndicalism/anarchy_com/self_organization.png"
+	}	
+			SpriteType = {
+		name = "abolish_the_state"
+		texturefile = "gfx/interface/goals/lor/CPC/Syndicalism/anarchy_com/abolish_the_state.png"
+	}	
+			SpriteType = {
+		name = "abolition_private_ownership"
+		texturefile = "gfx/interface/goals/lor/CPC/Syndicalism/anarchy_com/abolition_private_ownership.png"
+	}	
+			SpriteType = {
+		name = "each_according_his_ability_each_according_his_need"
+		texturefile = "gfx/interface/goals/lor/CPC/Syndicalism/anarchy_com/each_according_his_ability_each_according_his_need.png"
+	}	
+			SpriteType = {
+		name = "Utopia"
+		texturefile = "gfx/interface/goals/lor/CPC/Syndicalism/anarchy_com/Utopia.png"
+	}		
+	
+		SpriteType = {
+		name = "trotsky_chairman"
+		texturefile = "gfx/interface/goals/lor/CPC/Trotsky/trotsky_chairman.png"
+	}	
+			SpriteType = {
+		name = "permanent_revolution"
+		texturefile = "gfx/interface/goals/lor/CPC/Trotsky/permanent_revolution.png"
+	}	
+			SpriteType = {
+		name = "House_Administration_Consolidation"
+		texturefile = "gfx/interface/goals/lor/CPC/Trotsky/House_Administration_Consolidation.png"
+	}	
+			SpriteType = {
+		name = "Sovietization"
+		texturefile = "gfx/interface/goals/lor/CPC/Trotsky/Sovietization.png"
+	}	
+			SpriteType = {
+		name = "Strengthen_Workers_Peasants_Alliance"
+		texturefile = "gfx/interface/goals/lor/CPC/Trotsky/Strengthen_Workers_Peasants_Alliance.png"
+	}	
+			SpriteType = {
+		name = "agricultural_industrialization"
+		texturefile = "gfx/interface/goals/lor/CPC/Trotsky/agricultural_industrialization.png"
+	}	
+			SpriteType = {
+		name = "dictatorship_of_working_class"
+		texturefile = "gfx/interface/goals/lor/CPC/Trotsky/dictatorship_of_working_class.png"
+	}	
+			SpriteType = {
+		name = "Anti_bureaucracy"
+		texturefile = "gfx/interface/goals/lor/CPC/Trotsky/Anti_bureaucracy.png"
+	}	
+			SpriteType = {
+		name = "time_economy"
+		texturefile = "gfx/interface/goals/lor/CPC/Trotsky/time_economy.png"
+	}	
+			SpriteType = {
+		name = "production_revolution"
+		texturefile = "gfx/interface/goals/lor/CPC/Trotsky/production_revolution.png"
+	}	
+			SpriteType = {
+		name = "encourage_creation"
+		texturefile = "gfx/interface/goals/lor/CPC/Trotsky/encourage_creation.png"
+	}	
+			SpriteType = {
+		name = "World_Proletarian_Revolution"
+		texturefile = "gfx/interface/goals/lor/CPC/Trotsky/World_Proletarian_Revolution.png"
+	}		
+	
+SpriteType = {
+		name = "Lidazhao_chairman"
+		texturefile = "gfx/interface/goals/lor/CPC/Lidazhao/Lidazhao_chairman.png"
+	}	
+			SpriteType = {
+		name = "The_road_of_Marxism_Leninism"
+		texturefile = "gfx/interface/goals/lor/CPC/Lidazhao/The_road_of_Marxism_Leninism.png"
+	}	
+			SpriteType = {
+		name = "intensification_of_class_struggle"
+		texturefile = "gfx/interface/goals/lor/CPC/Lidazhao/intensification_of_class_struggle.png"
+	}	
+			SpriteType = {
+		name = "proletarian_vanguard_party"
+		texturefile = "gfx/interface/goals/lor/CPC/Lidazhao/proletarian_vanguard_party.png"
+	}	
+			SpriteType = {
+		name = "Freedom_of_Political_Speech"
+		texturefile = "gfx/interface/goals/lor/CPC/Lidazhao/Freedom_of_Political_Speech.png"
+	}	
+			SpriteType = {
+		name = "proletarian_freedom"
+		texturefile = "gfx/interface/goals/lor/CPC/Lidazhao/proletarian_freedom.png"
+	}	
+			SpriteType = {
+		name = "Constitution_Dictatorship_Proletariat"
+		texturefile = "gfx/interface/goals/lor/CPC/Lidazhao/Constitution_Dictatorship_Proletariat.png"
+	}	
+			SpriteType = {
+		name = "against_revisionism"
+		texturefile = "gfx/interface/goals/lor/CPC/Lidazhao/against_revisionism.png"
+	}	
+			SpriteType = {
+		name = "Encourage_innovation"
+		texturefile = "gfx/interface/goals/lor/CPC/Lidazhao/Encourage_innovation.png"
+	}	
+			SpriteType = {
+		name = "against_syndicalism"
+		texturefile = "gfx/interface/goals/lor/CPC/Lidazhao/against_syndicalism.png"
+	}	
+			SpriteType = {
+		name = "four_modernizations"
+		texturefile = "gfx/interface/goals/lor/CPC/Lidazhao/four_modernizations.png"
+	}	
+			SpriteType = {
+		name = "Three_Worlds_Theory"
+		texturefile = "gfx/interface/goals/lor/CPC/Lidazhao/Three_Worlds_Theory.png"
+	}		
+	
+	SpriteType = {
+		name = "tot_Maozedong_chairman"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/new_democracy/tot_Maozedong_chairman.png"
+	}	
+			SpriteType = {
+		name = "stability_over_all"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/new_democracy/stability_over_all.png"
+	}	
+			SpriteType = {
+		name = "local_survey"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/new_democracy/local_survey.png"
+	}	
+			SpriteType = {
+		name = "Four_Cleansing_Movement"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/new_democracy/Four_Cleansing_Movement.png"
+	}	
+			SpriteType = {
+		name = "Control_Ministry_of_Public_Security"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/new_democracy/Control_Ministry_of_Public_Security.png"
+	}	
+			SpriteType = {
+		name = "Reorganization_of_Central_Special_Branch"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/new_democracy/Reorganization_of_Central_Special_Branch.png"
+	}	
+			SpriteType = {
+		name = "state_capitalism"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/new_democracy/state_capitalism.png"
+	}	
+			SpriteType = {
+		name = "launch_the_cultural_revolution"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/new_democracy/launch_the_cultural_revolution.png"
+	}	
+			SpriteType = {
+		name = "Smash_cauldron"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/new_democracy/Smash_cauldron.png"
+	}	
+			SpriteType = {
+		name = "encourage_private_enterprise"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/new_democracy/encourage_private_enterprise.png"
+	}	
+			SpriteType = {
+		name = "dissolve_the_people_communes"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/new_democracy/dissolve_the_people_communes.png"
+	}	
+			SpriteType = {
+		name = "speed_urbanization"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/new_democracy/speed_urbanization.png"
+	}	
+			SpriteType = {
+		name = "Believe_in_market_economy"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/new_democracy/Believe_in_market_economy.png"
+	}		
+	
+		SpriteType = {
+		name = "the_cultural_revolution_end"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/the_cultural_revolution_end.png"
+	}	
+			SpriteType = {
+		name = "abolish_president_of_state"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/abolish_president_of_state.png"
+	}	
+			SpriteType = {
+		name = "communist_party_of_china_congress"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/communist_party_of_china_congress.png"
+	}		
+	
+	SpriteType = {
+		name = "chairmanmao"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/anarchism/chairmanmao.png"
+	}	
+			SpriteType = {
+		name = "smash_big_country"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/anarchism/smash_big_country.png"
+	}	
+			SpriteType = {
+		name = "Provincial_Constitution"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/anarchism/Provincial_Constitution.png"
+	}	
+			SpriteType = {
+		name = "local_elections"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/anarchism/local_elections.png"
+	}	
+			SpriteType = {
+		name = "Break_up_Communist_Party"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/anarchism/Break_up_Communist_Party.png"
+	}	
+			SpriteType = {
+		name = "twenty_seven_countries"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/anarchism/twenty_seven_countries.png"
+	}	
+			SpriteType = {
+		name = "split_Han"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/anarchism/split_Han.png"
+	}	
+			SpriteType = {
+		name = "protection_of_minorities"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/anarchism/protection_of_minorities.png"
+	}	
+			SpriteType = {
+		name = "Build_small_China"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/anarchism/Build_small_China.png"
+	}	
+			SpriteType = {
+		name = "Let_a_hundred_flowers_bloom"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/anarchism/Let_a_hundred_flowers_bloom.png"
+	}	
+			SpriteType = {
+		name = "self_determination_of_the_people"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/anarchism/self_determination_of_the_people.png"
+	}	
+
+		SpriteType = {
+		name = "buddhist_communist"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/Buddhism/buddhist_communist.png"
+	}	
+			SpriteType = {
+		name = "Questioning_Leninism"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/Buddhism/Questioning_Leninism.png"
+	}	
+			SpriteType = {
+		name = "Shakyamuni_Marxism"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/Buddhism/Shakyamuni_Marxism.png"
+	}	
+			SpriteType = {
+		name = "Dialogue_with_Buddha"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/Buddhism/Dialogue_with_Buddha.png"
+	}	
+			SpriteType = {
+		name = "Unity_of_thought"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/Buddhism/Unity_of_thought.png"
+	}	
+			SpriteType = {
+		name = "Reincarnation_of_Manjushri"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/Buddhism/Reincarnation_of_Manjushri.png"
+	}	
+			SpriteType = {
+		name = "Purdue_sentient_beings"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/Buddhism/Purdue_sentient_beings.png"
+	}	
+			SpriteType = {
+		name = "people_savior"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/Buddhism/people_savior.png"
+	}	
+			SpriteType = {
+		name = "reincarnation"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/Buddhism/reincarnation.png"
+	}	
+			SpriteType = {
+		name = "Eliminate_karma"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/Buddhism/Eliminate_karma.png"
+	}	
+			SpriteType = {
+		name = "Nirvana"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/Buddhism/Nirvana.png"
+	}	
+	
+	SpriteType = {
+		name = "Zhangchunqiao_chairman"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/Zhangchunqiao/Zhangchunqiao_chairman.png"
+	}	
+			SpriteType = {
+		name = "total_dictatorship_of_the_proletariat"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/Zhangchunqiao/total_dictatorship_of_the_proletariat.png"
+	}	
+			SpriteType = {
+		name = "abolish_the_democratic_parties"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/Zhangchunqiao/abolish_the_democratic_parties.png"
+	}	
+			SpriteType = {
+		name = "Dictatorship_of_the_Vanguard_Party"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/Zhangchunqiao/Dictatorship_of_the_Vanguard_Party.png"
+	}	
+			SpriteType = {
+		name = "proletarian_hegemony"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/Zhangchunqiao/proletarian_hegemony.png"
+	}	
+			SpriteType = {
+		name = "proletarian_culture"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/Zhangchunqiao/proletarian_culture.png"
+	}	
+			SpriteType = {
+		name = "total_dictatorship_over_the_bourgeoisie"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/Zhangchunqiao/total_dictatorship_over_the_bourgeoisie.png"
+	}	
+			SpriteType = {
+		name = "critical_economism"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/Zhangchunqiao/critical_economism.png"
+	}	
+			SpriteType = {
+		name = "Abolish_the_eight_level_salary_system"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/Zhangchunqiao/Abolish_the_eight_level_salary_system.png"
+	}	
+			SpriteType = {
+		name = "against_nationalism"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/Zhangchunqiao/against_nationalism.png"
+	}	
+			SpriteType = {
+		name = "proletarian_legalist_thought"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/Zhangchunqiao/proletarian_legalist_thought.png"
+	}	
+			SpriteType = {
+		name = "Continuous_Cultural_Revolution"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/Zhangchunqiao/Continuous_Cultural_Revolution.png"
+	}		
+
+		SpriteType = {
+		name = "PengShuzhi_chairman"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/PengShuzhi/PengShuzhi_chairman.png"
+	}	
+			SpriteType = {
+		name = "outright_democracy"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/PengShuzhi/outright_democracy.png"
+	}	
+			SpriteType = {
+		name = "Down_autocratic_bureaucracy"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/PengShuzhi/Down_autocratic_bureaucracy.png"
+	}	
+			SpriteType = {
+		name = "bureaucratic_electoral_system"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/PengShuzhi/bureaucratic_electoral_system.png"
+	}	
+			SpriteType = {
+		name = "encourage_civic_groups"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/PengShuzhi/encourage_civic_groups.png"
+	}	
+			SpriteType = {
+		name = "democratization_of_social_organizations"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/PengShuzhi/democratization_of_social_organizations.png"
+	}	
+			SpriteType = {
+		name = "universal_suffrage_for_people_congresses"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/PengShuzhi/universal_suffrage_for_people_congresses.png"
+	}	
+			SpriteType = {
+		name = "protect_freedom"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/PengShuzhi/protect_freedom.png"
+	}	
+			SpriteType = {
+		name = "china_socialist_democracy"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/PengShuzhi/china_socialist_democracy.png"
+	}	
+			SpriteType = {
+		name = "social_ownership"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/PengShuzhi/social_ownership.png"
+	}	
+			SpriteType = {
+		name = "Criticize_Confucius"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/PengShuzhi/Criticize_Confucius.png"
+	}	
+			SpriteType = {
+		name = "Working_People_China"
+		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/PengShuzhi/Working_People_China.png"
+	}	
+	
+		SpriteType = {
+		name = "Yejianying_chairman"
+		texturefile = "gfx/interface/goals/lor/CPC/Yejianying/Yejianying_chairman.png"
+	}	
+			SpriteType = {
+		name = "national_emergency_committee"
+		texturefile = "gfx/interface/goals/lor/CPC/Yejianying/national_emergency_committee.png"
+	}	
+			SpriteType = {
+		name = "Liquidate_three_people"
+		texturefile = "gfx/interface/goals/lor/CPC/Yejianying/Liquidate_three_people.png"
+	}	
+			SpriteType = {
+		name = "Uphold_Marxism_Leninism"
+		texturefile = "gfx/interface/goals/lor/CPC/Yejianying/Uphold_Marxism_Leninism.png"
+	}	
+			SpriteType = {
+		name = "Learn_from_Red_Army"
+		texturefile = "gfx/interface/goals/lor/CPC/Yejianying/Learn_from_Red_Army.png"
+	}	
+			SpriteType = {
+		name = "Pay_attention_to_production"
+		texturefile = "gfx/interface/goals/lor/CPC/Yejianying/Pay_attention_to_production.png"
+	}	
+			SpriteType = {
+		name = "Chinese_military_government"
+		texturefile = "gfx/interface/goals/lor/CPC/Yejianying/Chinese_military_government.png"
+	}	
+			SpriteType = {
+		name = "Party_government_military_integration"
+		texturefile = "gfx/interface/goals/lor/CPC/Yejianying/Party_government_military_integration.png"
+	}	
+			SpriteType = {
+		name = "clear_mental_pollution"
+		texturefile = "gfx/interface/goals/lor/CPC/Yejianying/clear_mental_pollution.png"
+	}	
+			SpriteType = {
+		name = "get_rich_people"
+		texturefile = "gfx/interface/goals/lor/CPC/Yejianying/get_rich_people.png"
+	}	
+			SpriteType = {
+		name = "efficiency_is_life"
+		texturefile = "gfx/interface/goals/lor/CPC/Yejianying/efficiency_is_life.png"
+	}	
+			SpriteType = {
+		name = "serve_the_people"
+		texturefile = "gfx/interface/goals/lor/CPC/Yejianying/serve_the_people.png"
+	}	
+			SpriteType = {
+		name = "reaffirm_the_party_state"
+		texturefile = "gfx/interface/goals/lor/CPC/Yejianying/reaffirm_the_party_state.png"
+	}	
+		SpriteType = {
+		name = "Dengxiaoping_chairman"
+		texturefile = "gfx/interface/goals/lor/CPC/Dengxiaoping/Dengxiaoping_chairman.png"
+	}	
+			SpriteType = {
+		name = "Party_system_reform"
+		texturefile = "gfx/interface/goals/lor/CPC/Dengxiaoping/Party_system_reform.png"
+	}	
+			SpriteType = {
+		name = "against_the_left"
+		texturefile = "gfx/interface/goals/lor/CPC/Dengxiaoping/against_the_left.png"
+	}	
+			SpriteType = {
+		name = "prevent_right_leaning"
+		texturefile = "gfx/interface/goals/lor/CPC/Dengxiaoping/prevent_right_leaning.png"
+	}	
+			SpriteType = {
+		name = "Enterprise_self_management"
+		texturefile = "gfx/interface/goals/lor/CPC/Dengxiaoping/Enterprise_self_management.png"
+	}	
+			SpriteType = {
+		name = "Cadres_in_business"
+		texturefile = "gfx/interface/goals/lor/CPC/Dengxiaoping/Cadres_in_business.png"
+	}	
+			SpriteType = {
+		name = "four_basic_principles"
+		texturefile = "gfx/interface/goals/lor/CPC/Dengxiaoping/four_basic_principles.png"
+	}	
+			SpriteType = {
+		name = "Cultivate_Socialist_Successors"
+		texturefile = "gfx/interface/goals/lor/CPC/Dengxiaoping/Cultivate_Socialist_Successors.png"
+	}	
+			SpriteType = {
+		name = "provide_loans"
+		texturefile = "gfx/interface/goals/lor/CPC/Dengxiaoping/provide_loans.png"
+	}	
+			SpriteType = {
+		name = "capitalists_join_party"
+		texturefile = "gfx/interface/goals/lor/CPC/Dengxiaoping/capitalists_join_party.png"
+	}	
+			SpriteType = {
+		name = "two_hundred_years"
+		texturefile = "gfx/interface/goals/lor/CPC/Dengxiaoping/two_hundred_years.png"
+	}	
+		SpriteType = {
+		name = "China_election_victory"
+		texturefile = "gfx/interface/goals/lor/CPC/China_election_victory.png"
+	}	
+			SpriteType = {
+		name = "Reconcile_with_KMT"
+		texturefile = "gfx/interface/goals/lor/CPC/Reconcile_with_KMT.png"
+	}	
+			SpriteType = {
+		name = "Chinese_People_Front"
+		texturefile = "gfx/interface/goals/lor/CPC/Chinese_People_Front.png"
+	}	
+			SpriteType = {
+		name = "new_democratic_order"
+		texturefile = "gfx/interface/goals/lor/CPC/new_democratic_order.png"
+	}	
+			SpriteType = {
+		name = "march_towards_socialism"
+		texturefile = "gfx/interface/goals/lor/CPC/march_towards_socialism.png"
+	}	
+			SpriteType = {
+		name = "compensation_to_landlords"
+		texturefile = "gfx/interface/goals/lor/CPC/compensation_to_landlords.png"
+	}	
+			SpriteType = {
+		name = "Encourage_Chinese_national_bourgeois_enterprises"
+		texturefile = "gfx/interface/goals/lor/CPC/Encourage_Chinese_national_bourgeois_enterprises.png"
+	}	
+			SpriteType = {
+		name = "nationalization_of_the_military"
+		texturefile = "gfx/interface/goals/lor/CPC/nationalization_of_the_military.png"
+	}	
+			SpriteType = {
+		name = "recognition_of_unequal_treaties"
+		texturefile = "gfx/interface/goals/lor/CPC/recognition_of_unequal_treaties.png"
+	}	
+			SpriteType = {
+		name = "develop_a_new_capitalism"
+		texturefile = "gfx/interface/goals/lor/CPC/develop_a_new_capitalism.png"
+	}	
+			SpriteType = {
+		name = "Force_KMT_to_merge"
+		texturefile = "gfx/interface/goals/lor/CPC/Force_KMT_to_merge.png"
+	}	
+			SpriteType = {
+		name = "organized_workers_militia"
+		texturefile = "gfx/interface/goals/lor/CPC/organized_workers_militia.png"
+	}	
+		SpriteType = {
+		name = "Assassination_of_Wu_Peifu"
+		texturefile = "gfx/interface/goals/lor/CPC/Assassination_of_Wu_Peifu.png"
+	}	
+			SpriteType = {
+		name = "control_of_the_national_government"
+		texturefile = "gfx/interface/goals/lor/CPC/control_of_the_national_government.png"
+	}	
+			SpriteType = {
+		name = "dissolve_parliament"
+		texturefile = "gfx/interface/goals/lor/CPC/dissolve_parliament.png"
+	}	
+
+		SpriteType = {
+		name = "anti_buddhist_communist"
+		texturefile = "gfx/interface/goals/lor/CPC/posadas/anti_buddhist_communist.png"
+	}	
+			SpriteType = {
+		name = "antimatter"
+		texturefile = "gfx/interface/goals/lor/CPC/posadas/antimatter.png"
+	}	
+			SpriteType = {
+		name = "clean_earth"
+		texturefile = "gfx/interface/goals/lor/CPC/posadas/clean_earth.png"
+	}	
+			SpriteType = {
+		name = "Communist_Interstellar"
+		texturefile = "gfx/interface/goals/lor/CPC/posadas/Communist_Interstellar.png"
+	}	
+			SpriteType = {
+		name = "Communist_society"
+		texturefile = "gfx/interface/goals/lor/CPC/posadas/Communist_society.png"
+	}	
+			SpriteType = {
+		name = "light_speed_ship"
+		texturefile = "gfx/interface/goals/lor/CPC/posadas/light_speed_ship.png"
+	}	
+			SpriteType = {
+		name = "posadas"
+		texturefile = "gfx/interface/goals/lor/CPC/posadas/posadas.png"
+	}	
+			SpriteType = {
+		name = "stars"
+		texturefile = "gfx/interface/goals/lor/CPC/posadas/stars.png"
+	}	
+			SpriteType = {
+		name = "abolish_state_apparatus"
+		texturefile = "gfx/interface/goals/lor/CPC/posadas/abolish_state_apparatus.png"
+	}	
+
+	SpriteType = {
+		name = "red_eu"
+		texturefile ="gfx/interface/goals/lor/red_eu.dds"
+	}	
+	SpriteType = {
+		name = "literacy_campaign"
+		texturefile = "gfx/interface/goals/lor/CPC/literacy_campaign.png"
+	}	
+	SpriteType = {
+		name = "socialism_welfare"
+		texturefile = "gfx/interface/goals/lor/CPC/socialism_welfare.png"
+	}	
+	SpriteType = {
+		name = "affirmative_action"
+		texturefile = "gfx/interface/goals/lor/CPC/affirmative_action.png"
+	}	
+	SpriteType = {
+		name = "China_red_army"
+		texturefile = "gfx/interface/goals/lor/CPC/China_red_army.png"
+	}	
+	SpriteType = {
+		name = "Revolutionary_Military_Council"
+		texturefile = "gfx/interface/goals/lor/CPC/Revolutionary_Military_Council.png"
+	}	
+	SpriteType = {
+		name = "political_commissar"
+		texturefile = "gfx/interface/goals/lor/CPC/political_commissar.png"
+	}	
+	SpriteType = {
+		name = "Soldiers_Committee"
+		texturefile = "gfx/interface/goals/lor/CPC/Soldiers_Committee.png"
+	}	
+	SpriteType = {
+		name = "regularized_army"
+		texturefile = "gfx/interface/goals/lor/CPC/regularized_army.png"
+	}	
+	SpriteType = {
+		name = "decentralized"
+		texturefile = "gfx/interface/goals/lor/CPC/decentralized.png"
+	}			
+	SpriteType = {
+		name = "training_red_guards"
+		texturefile = "gfx/interface/goals/lor/CPC/training_red_guards.png"
+	}	
+	SpriteType = {
+		name = "elected_officers"
+		texturefile = "gfx/interface/goals/lor/CPC/elected_officers.png"
+	}	
+	SpriteType = {
+		name = "Chinese_militia"
+		texturefile = "gfx/interface/goals/lor/CPC/Chinese_militia.png"
+	}	
+	SpriteType = {
+		name = "air_cra"
+		texturefile = "gfx/interface/goals/lor/CPC/air_cra.png"
+	}	
+	SpriteType = {
+		name = "amateur_pilots"
+		texturefile = "gfx/interface/goals/lor/CPC/amateur_pilots.png"
+	}	
+	SpriteType = {
+		name = "ecole_air"
+		texturefile = "gfx/interface/goals/lor/CPC/ecole_air.png"
+	}		
+	SpriteType = {
+		name = "air_bases"
+		texturefile = "gfx/interface/goals/lor/CPC/air_bases.png"
+	}	
+	SpriteType = {
+		name = "valin_doctrine"
+		texturefile = "gfx/interface/goals/lor/CPC/valin_doctrine.png"
+	}	
+	SpriteType = {
+		name = "china_fighters"
+		texturefile = "gfx/interface/goals/lor/CPC/china_fighters.png"
+	}		
+	SpriteType = {
+		name = "china_bombers"
+		texturefile = "gfx/interface/goals/lor/CPC/china_bombers.png"
+	}	
+	SpriteType = {
+		name = "strat_bombers"
+		texturefile = "gfx/interface/goals/lor/CPC/strat_bombers.png"
+	}	
+	SpriteType = {
+		name = "china_paratroopers"
+		texturefile = "gfx/interface/goals/lor/CPC/china_paratroopers.png"
+	}	
+	SpriteType = {
+		name = "china_rocket_development"
+		texturefile = "gfx/interface/goals/lor/CPC/china_rocket_development.png"
+	}	
+	SpriteType = {
+		name = "Navy_cra"
+		texturefile = "gfx/interface/goals/lor/CPC/Navy_cra.png"
+	}	
+	SpriteType = {
+		name = "china_naval_dockyard"
+		texturefile = "gfx/interface/goals/lor/CPC/china_naval_dockyard.png"
+	}	
+	SpriteType = {
+		name = "navy_maiyi"
+		texturefile = "gfx/interface/goals/lor/CPC/navy_maiyi.png"
+	}	
+	SpriteType = {
+		name = "navy_qianting"
+		texturefile = "gfx/interface/goals/lor/CPC/navy_qianting.png"
+	}	
+	SpriteType = {
+		name = "navy_frajiu"
+		texturefile = "gfx/interface/goals/lor/CPC/navy_frajiu.png"
+	}	
+		SpriteType = {
+		name = "navy_dmwa"
+		texturefile = "gfx/interface/goals/lor/CPC/navy_dmwa.png"
+	}			
+	
+	
+	
+	
+	
+	
+	SpriteType = {
+		name = "EmpoweringUnion"
+		texturefile = "gfx/interface/goals/lor/CPC/EmpoweringUnion.png"
+	}
+	SpriteType = {
+		name = "workers_self-government"
+		texturefile = "gfx/interface/goals/lor/CPC/workers_self-government.png"
+	}	
+	
+	SpriteType = {
+		name = "FederationSyndicalists"
+		texturefile = "gfx/interface/goals/lor/CPC/FederationSyndicalists.png"
+	}		
+			SpriteType = {
+		name = "ruralcommune"
+		texturefile = "gfx/interface/goals/lor/CPC/ruralcommune.png"
+	}	
+		SpriteType = {
+		name = "freework"
+		texturefile = "gfx/interface/goals/lor/CPC/freework.png"
+	}		
+			SpriteType = {
+		name = "laborcollective"
+		texturefile = "gfx/interface/goals/lor/CPC/laborcollective.png"
+	}	
+			SpriteType = {
+		name = "agricultural_worker"
+		texturefile = "gfx/interface/goals/lor/CPC/agricultural_worker.png"
+	}	
+			SpriteType = {
+		name = "proletariat_first"
+		texturefile = "gfx/interface/goals/lor/CPC/proletariat_first.png"
+	}	
+      SpriteType = {
+		name = "planning_committee"
+		texturefile = "gfx/interface/goals/lor/CPC/planning_committee.png"
+	}	
+		SpriteType = {
+		name = "socialist_market"
+		texturefile = "gfx/interface/goals/lor/CPC/socialist_market.png"
+	}	
+			SpriteType = {
+		name = "national_bourgeoisie"
+		texturefile = "gfx/interface/goals/lor/CPC/national_bourgeoisie.png"
+	}	
+			SpriteType = {
+		name = "Household_contract_responsibility_system"
+		texturefile = "gfx/interface/goals/lor/CPC/Household_contract_responsibility_system.png"
+	}	
+		SpriteType = {
+		name = "special_economic_zone"
+		texturefile = "gfx/interface/goals/lor/CPC/special_economic_zone.png"
+	}		
+			SpriteType = {
+		name = "Privatization_of_state-owned_enterprises"
+		texturefile = "gfx/interface/goals/lor/CPC/Privatization_of_state-owned_enterprises.png"
+	}	
+			SpriteType = {
+		name = "market_allocation"
+		texturefile = "gfx/interface/goals/lor/CPC/market_allocation.png"
+	}	
+		SpriteType = {
+		name = "anticommie_society"
+		texturefile = "gfx/interface/goals/lor/CPC/anticommie_society.png"
+	}		
+		SpriteType = {
+		name = "worker_negotiation"
+		texturefile = "gfx/interface/goals/lor/CPC/worker_negotiation.png"
+	}		
+			SpriteType = {
+		name = "full_nationalization"
+		texturefile = "gfx/interface/goals/lor/CPC/full_nationalization.png"
+	}	
+			SpriteType = {
+		name = "speed_collectivization"
+		texturefile = "gfx/interface/goals/lor/CPC/speed_collectivization.png"
+	}	
+			SpriteType = {
+		name = "Socialist_transformation"
+		texturefile = "gfx/interface/goals/lor/CPC/Socialist_transformation.png"
+	}	
+			SpriteType = {
+		name = "Household_registration_system"
+		texturefile = "gfx/interface/goals/lor/CPC/Household_registration_system.png"
+	}	
+			SpriteType = {
+		name = "Go_the_countryside"
+		texturefile = "gfx/interface/goals/lor/CPC/Go_the_countryside.png"
+	}	
+		SpriteType = {
+		name = "Great_Leap_Forward"
+		texturefile = "gfx/interface/goals/lor/CPC/Great_Leap_Forward.png"
+	}		
+			SpriteType = {
+		name = "workers_democracy"
+		texturefile = "gfx/interface/goals/lor/CPC/workers_democracy.png"
+	}	
+			SpriteType = {
+		name = "production_cooperatives"
+		texturefile = "gfx/interface/goals/lor/CPC/production_cooperatives.png"
+	}	
+		SpriteType = {
+		name = "Agriculture_mechanization"
+		texturefile = "gfx/interface/goals/lor/CPC/Agriculture_mechanization.png"
+	}		
+		SpriteType = {
+		name = "Ownership_by_the_whole_people"
+		texturefile = "gfx/interface/goals/lor/CPC/Ownership_by_the_whole_people.png"
+	}		
+			SpriteType = {
+		name = "Socialist_primitive_accumulation"
+		texturefile = "gfx/interface/goals/lor/CPC/Socialist_primitive_accumulation.png"
+	}	
+			SpriteType = {
+		name = "Introduced_fertilizer_production_line"
+		texturefile = "gfx/interface/goals/lor/CPC/Introduced_fertilizer_production_line.png"
+	}	
+		SpriteType = {
+		name = "Three_Antis_Movement"
+		texturefile = "gfx/interface/goals/lor/CPC/Three_Antis_Movement.png"
+	}	
+			SpriteType = {
+		name = "one_five_plan"
+		texturefile = "gfx/interface/goals/lor/CPC/one_five_plan.png"
+	}	
+			SpriteType = {
+		name = "confiscation_of_imperialist_capital"
+		texturefile = "gfx/interface/goals/lor/CPC/confiscation_of_imperialist_capital.png"
+	}	
+		SpriteType = {
+		name = "Nanjing_event"
+		texturefile = "gfx/interface/goals/lor/CPC/Nanjing_event.png"
+	}		
+			SpriteType = {
+		name = "Collaborate_with_the_LKMT"
+		texturefile = "gfx/interface/goals/lor/CPC/Collaborate_with_the_LKMT.png"
+	}	
+			SpriteType = {
+		name = "Anti-bandit_Movement"
+		texturefile = "gfx/interface/goals/lor/CPC/Anti-bandit_Movement.png"
+	}	
+		SpriteType = {
+		name = "Anti-drug"
+		texturefile = "gfx/interface/goals/lor/CPC/Anti-drug.png"
+	}		
+		SpriteType = {
+		name = "Recruit_hero"
+		texturefile = "gfx/interface/goals/lor/CPC/Recruit_hero.png"
+	}		
+			SpriteType = {
+		name = "Drug_foreign_trade"
+		texturefile = "gfx/interface/goals/lor/CPC/Drug_foreign_trade.png"
+	}	
+			SpriteType = {
+		name = "Chinese_Land_Law"
+		texturefile = "gfx/interface/goals/lor/CPC/Chinese_Land_Law.png"
+	}	
+			SpriteType = {
+		name = "land_socialization"
+		texturefile = "gfx/interface/goals/lor/CPC/land_socialization.png"
+	}	
+			SpriteType = {
+		name = "farmers_association"
+		texturefile = "gfx/interface/goals/lor/CPC/farmers_association.png"
+	}	
+			SpriteType = {
+		name = "China_land_reform"
+		texturefile = "gfx/interface/goals/lor/CPC/land_reform.png"
+	}	
+		SpriteType = {
+		name = "four_freedoms"
+		texturefile = "gfx/interface/goals/lor/CPC/four_freedoms.png"
+	}		
+			SpriteType = {
+		name = "Socialist_New_Squire"
+		texturefile = "gfx/interface/goals/lor/CPC/Socialist_New_Squire.png"
+	}	
+			SpriteType = {
+		name = "Crush_the_patriarchal_system"
+		texturefile = "gfx/interface/goals/lor/CPC/Crush_the_patriarchal_system.png"
+	}	
+		SpriteType = {
+		name = "war_liberation"
+		texturefile = "gfx/interface/goals/lor/CPC/war_liberation.png"
+	}		
+		SpriteType = {
+		name = "People_Democratic_Dictatorship"
+		texturefile = "gfx/interface/goals/lor/CPC/People_Democratic_Dictatorship.png"
+	}		
+			SpriteType = {
+		name = "national_united_front"
+		texturefile = "gfx/interface/goals/lor/CPC/national_united_front.png"
+	}	
+			SpriteType = {
+		name = "Infiltrate_Zhili"
+		texturefile = "gfx/interface/goals/lor/CPC/Infiltrate_Zhili.png"
+	}	
+		SpriteType = {
+		name = "democratic_election"
+		texturefile = "gfx/interface/goals/lor/CPC/democratic_election.png"
+	}	
+			SpriteType = {
+		name = "China_federation"
+		texturefile = "gfx/interface/goals/lor/CPC/federation.png"
+	}	
+			SpriteType = {
+		name = "minority_republic"
+		texturefile = "gfx/interface/goals/lor/CPC/minority_republic.png"
+	}	
+		SpriteType = {
+		name = "regional_ethnic_autonomy"
+		texturefile = "gfx/interface/goals/lor/CPC/regional_ethnic_autonomy.png"
+	}		
+			SpriteType = {
+		name = "China_national_unity"
+		texturefile = "gfx/interface/goals/lor/CPC/national_unity.png"
+	}	
+			SpriteType = {
+		name = "unitary_system"
+		texturefile = "gfx/interface/goals/lor/CPC/unitary_system.png"
+	}	
+		SpriteType = {
+		name = "labor_congress"
+		texturefile = "gfx/interface/goals/lor/CPC/labor_congress.png"
+	}		
+		SpriteType = {
+		name = "dissolve_the_party"
+		texturefile = "gfx/interface/goals/lor/CPC/dissolve_the_party.png"
+	}		
+			SpriteType = {
+		name = "China_Commune"
+		texturefile = "gfx/interface/goals/lor/CPC/China_Commune.png"
+	}	
+			SpriteType = {
+		name = "All_powers_vest_in_the_committee"
+		texturefile = "gfx/interface/goals/lor/CPC/All_powers_vest_in_the_committee.png"
+	}	
+			SpriteType = {
+		name = "legal_referendum"
+		texturefile = "gfx/interface/goals/lor/CPC/legal_referendum.png"
+	}	
+			SpriteType = {
+		name = "proletarian_democracy"
+		texturefile = "gfx/interface/goals/lor/CPC/proletarian_democracy.png"
+	}	
+			SpriteType = {
+		name = "Formation_of_the_Politburo"
+		texturefile = "gfx/interface/goals/lor/CPC/Formation_of_the_Politburo.png"
+	}	
+		SpriteType = {
+		name = "party_state"
+		texturefile = "gfx/interface/goals/lor/CPC/party_state.png"
+	}		
+			SpriteType = {
+		name = "Political_Consultative_Conference"
+		texturefile = "gfx/interface/goals/lor/CPC/Political_Consultative_Conference.png"
+	}	
+			SpriteType = {
+		name = "communist_diplomatic"
+		texturefile = "gfx/interface/goals/lor/CPC/communist_diplomatic.png"
+	}	
+		SpriteType = {
+		name = "one-sided"
+		texturefile = "gfx/interface/goals/lor/CPC/one-sided.png"
+	}		
+		SpriteType = {
+		name = "Join_Farrenstein_International"
+		texturefile = "gfx/interface/goals/lor/CPC/Join_Farrenstein_International.png"
+	}		
+			SpriteType = {
+		name = "156project"
+		texturefile = "gfx/interface/goals/lor/CPC/156project.png"
+	}	
+			SpriteType = {
+		name = "new_camp"
+		texturefile = "gfx/interface/goals/lor/CPC/new_camp.png"
+	}	
+		SpriteType = {
+		name = "Decolonization_of_Southeast_Asia"
+		texturefile = "gfx/interface/goals/lor/CPC/Decolonization_of_Southeast_Asia.png"
+	}	
+			SpriteType = {
+		name = "anti_russia"
+		texturefile = "gfx/interface/goals/lor/CPC/anti_russia.png"
+	}	
+			SpriteType = {
+		name = "Support_Indian_Revolution"
+		texturefile = "gfx/interface/goals/lor/CPC/Support_Indian_Revolution.png"
+	}	
+			SpriteType = {
+		name = "unite_marxists"
+		texturefile = "gfx/interface/goals/lor/CPC/unite_marxists.png"
+	}	
+
+
+
+
+
+	
+	
+	SpriteType = {
+		name = "mon"
+		texturefile = "gfx/interface/goals/china/mon.dds"
+	}	
+	SpriteType = {
+		name = "tu_antirev"
+		texturefile = "gfx/interface/goals/china/tu_antirev.dds"
+	}
+	SpriteType = {
+		name = "dongbei"
+		texturefile = "gfx/interface/goals/china/dongbei.dds"
+	}
+		SpriteType = {
+		name = "hunan"
+		texturefile = "gfx/interface/goals/china/hunan.dds"
+	}
+		SpriteType = {
+		name = "liangguang"
+		texturefile = "gfx/interface/goals/china/liangguang.dds"
+	}
+		SpriteType = {
+		name = "new_china"
+		texturefile = "gfx/interface/goals/china/new_china.dds"
+	}
+		SpriteType = {
+		name = "shanxi"
+		texturefile = "gfx/interface/goals/china/shanxi.dds"
+	}
+			SpriteType = {
+		name = "mss"
+		texturefile = "gfx/interface/goals/china/mss.dds"
+	}
+	SpriteType = {
+		name = "cpcone"
+		texturefile = "gfx/interface/goals/china/cpc_one.dds"
+	}	
+	SpriteType = {
+		name = "lnzy"
+		texturefile = "gfx/interface/goals/china/CPC_lnzy.dds"
+	}
+			SpriteType = {
+		name = "wcjjxfd"
+		texturefile = "gfx/interface/goals/china/CPC_wcjjxfd.dds"
+	}
+			SpriteType = {
+		name = "xishoukmt"
+		texturefile = "gfx/interface/goals/china/CPC_xishoukmt.dds"
+	}
+			SpriteType = {
+		name = "chinasociali"
+		texturefile = "gfx/interface/goals/china/CPC_chinasociali.dds"
+	}
+			SpriteType = {
+		name = "chinagh"
+		texturefile = "gfx/interface/goals/china/CPC_chinagh.dds"
+	}
+			SpriteType = {
+		name = "gtzyyz"
+		texturefile = "gfx/interface/goals/china/CPC_gtzyyz.dds"
+	}
+		SpriteType = {
+		name = "tibet_war"
+		texturefile = "gfx/interface/goals/china/tibet_war.dds"
+	}
+		SpriteType = {
+		name = "xibei"
+		texturefile = "gfx/interface/goals/china/xibei.dds"
+	}
+		SpriteType = {
+		name = "xinan"
+		texturefile = "gfx/interface/goals/china/xinan.dds"
+	}
+		SpriteType = {
+		name = "zhili"
+		texturefile = "gfx/interface/goals/china/zhili.dds"
+	}
+	SpriteType = {
+		name = "Down_with_the_great_powers"
+		texturefile = "gfx/interface/goals/china/Down with the great powers.dds"
+	}
+	SpriteType = {
+		name = "Revolutionary_Workers_and_Peasants_Government_of_China"
+		texturefile = "gfx/interface/goals/china/Revolutionary Workers and Peasants Government of China.dds"
+	}
+		SpriteType = {
+		name = "shanghai_revolution_goverment"
+		texturefile = "gfx/interface/goals/china/shanghai_revolution_goverment.dds"
+	}
+		SpriteType = {
+		name = "Workers_and_Peasants_Union"
+		texturefile = "gfx/interface/goals/china/Workers_and_Peasants_Union.dds"
+	}
+		SpriteType = {
+		name = "chiang_kai_shek"
+		texturefile = "gfx/interface/goals/china/chiang_kai_shek.dds"
+	}
+	SpriteType = {
+		name = "Peoples_Liberation_Navy"
+		texturefile = "gfx/interface/goals/china/Peoples_Liberation_Navy.dds"
+	}
+
+	SpriteType = {
+		name = "Peoples_Liberation_Army_2"
+		texturefile = "gfx/interface/goals/china/Peoples_Liberation_Army_2.dds"
+	}
+	SpriteType = {
+		name = "Peoples_Liberation_Air_Force"
+		texturefile = "gfx/interface/goals/china/Peoples_Liberation_Air_Force.dds"
+	}
+	
+	#Japan
+		SpriteType = {
+		name = "constitutional_convention"
+		texturefile = "gfx/interface/goals/lor/JSR/constitutional_convention.png"
+	}	
+			SpriteType = {
+		name = "parliamentary_democracy"
+		texturefile = "gfx/interface/goals/lor/JSR/parliamentary_democracy.png"
+	}	
+			SpriteType = {
+		name = "social_popular_party"
+		texturefile = "gfx/interface/goals/lor/JSR/social_popular_party.png"
+	}	
+		SpriteType = {
+		name = "Universal_suffrage"
+		texturefile = "gfx/interface/goals/lor/JSR/Universal_suffrage.png"
+	}		
+			SpriteType = {
+		name = "Abolish_nobility"
+		texturefile = "gfx/interface/goals/lor/JSR/Abolish_nobility.png"
+	}	
+			SpriteType = {
+		name = "Liberal_civil_rights_movement"
+		texturefile = "gfx/interface/goals/lor/JSR/Liberal_civil_rights_movement.png"
+	}	
+		SpriteType = {
+		name = "Grassroot_democracy"
+		texturefile = "gfx/interface/goals/lor/JSR/Grassroot_democracy.png"
+	}		
+		SpriteType = {
+		name = "Eliteculture"
+		texturefile = "gfx/interface/goals/lor/JSR/Eliteculture.png"
+	}		
+			SpriteType = {
+		name = "kulak"
+		texturefile = "gfx/interface/goals/lor/JSR/kulak.png"
+	}	
+			SpriteType = {
+		name = "Agricultural_Intensive"
+		texturefile = "gfx/interface/goals/lor/JSR/Agricultural_Intensive.png"
+	}	
+			SpriteType = {
+		name = "Specialization_in_agriculture"
+		texturefile = "gfx/interface/goals/lor/JSR/Specialization_in_agriculture.png"
+	}	
+	SpriteType = {
+		name = "Mixed_economy"
+		texturefile = "gfx/interface/goals/lor/JSR/Mixed_economy.png"
+	}	
+			SpriteType = {
+		name = "Split_the_chaebols"
+		texturefile = "gfx/interface/goals/lor/JSR/Split_the_chaebols.png"
+	}	
+		SpriteType = {
+		name = "Smallandmicroenterprises"
+		texturefile = "gfx/interface/goals/lor/JSR/Smallandmicroenterprises.png"
+	}		
+			SpriteType = { 
+		name = "Ford_system"
+		texturefile = "gfx/interface/goals/lor/JSR/Ford_system.png"
+	}	
+			SpriteType = {
+		name = "Economic_liberalization"
+		texturefile = "gfx/interface/goals/lor/JSR/Economic_liberalization.png"
+	}	
+		SpriteType = {
+		name = "Social_capitalism"
+		texturefile = "gfx/interface/goals/lor/JSR/Social_capitalism.png"
+	}		
+		SpriteType = {
+		name = "Agrarian_socialism"
+		texturefile = "gfx/interface/goals/lor/JSR/Agrarian_socialism.png"
+	}		
+			SpriteType = {
+		name = "Revolutionary_democracy"
+		texturefile = "gfx/interface/goals/lor/JSR/Revolutionary_democracy.png"
+	}	
+			SpriteType = {
+		name = "Unionofworkersandpeasants"
+		texturefile = "gfx/interface/goals/lor/JSR/Unionofworkersandpeasants.png"
+	}		
+			SpriteType = {
+		name = "Japan_United_front"
+		texturefile = "gfx/interface/goals/lor/JSR/Japan_United_front.png"
+	}	
+			SpriteType = {
+		name = "Grassroots_democratization"
+		texturefile = "gfx/interface/goals/lor/JSR/Grassroots_democratization.png"
+	}	
+			SpriteType = {
+		name = "People_Guard"
+		texturefile = "gfx/interface/goals/lor/JSR/People_Guard.png"
+	}	
+		SpriteType = {
+		name = "Land_redistribution"
+		texturefile = "gfx/interface/goals/lor/JSR/Land_redistribution.png"
+	}		
+			SpriteType = {
+		name = "Suppression_ofShintoism"
+		texturefile = "gfx/interface/goals/lor/JSR/Suppression_ofShintoism.png"
+	}	
+			SpriteType = {
+		name = "Revolutionary_women"
+		texturefile = "gfx/interface/goals/lor/JSR/Revolutionary_women.png"
+	}	
+		SpriteType = {
+		name = "Agricultural_mechanization"
+		texturefile = "gfx/interface/goals/lor/JSR/Agricultural_mechanization.png"
+	}		
+		SpriteType = {
+		name = "Rural_modernization"
+		texturefile = "gfx/interface/goals/lor/JSR/Rural_modernization.png"
+	}		
+			SpriteType = {
+		name = "Japan_Federation_of_Trade_Unions"
+		texturefile = "gfx/interface/goals/lor/JSR/Japan_Federation_of_Trade_Unions.png"
+	}	
+			SpriteType = {
+		name = "Class_cooperation"
+		texturefile = "gfx/interface/goals/lor/JSR/Class_cooperation.png"
+	}	
+			SpriteType = {
+		name = "japan_Socialist"
+		texturefile = "gfx/interface/goals/lor/JSR/japan_Socialist.png"
+	}	
+			SpriteType = {
+		name = "Land_redmption"
+		texturefile = "gfx/interface/goals/lor/JSR/Land_redmption.png"
+	}	
+			SpriteType = {
+		name = "Liberal_japan"
+		texturefile = "gfx/interface/goals/lor/JSR/Liberal_japan.png"
+	}	
+		SpriteType = {
+		name = "Commune_autonomy"
+		texturefile = "gfx/interface/goals/lor/JSR/Commune_autonomy.png"
+	}		
+			SpriteType = {
+		name = "religious_socialism"
+		texturefile = "gfx/interface/goals/lor/JSR/religious_socialism.png"
+	}	
+			SpriteType = {
+		name = "Proletarian_intellectuals"
+		texturefile = "gfx/interface/goals/lor/JSR/Proletarian_intellectuals.png"
+	}	
+		SpriteType = {
+		name = "Anarcho_patriotism"
+		texturefile = "gfx/interface/goals/lor/JSR/Anarcho_patriotism.png"
+	}		
+		SpriteType = {
+		name = "Japan_for_workers"
+		texturefile = "gfx/interface/goals/lor/JSR/Japan_for_workers.png"
+	}		
+			SpriteType = {
+		name = "Socialization_of_the_land"
+		texturefile = "gfx/interface/goals/lor/JSR/Socialization_of_the_land.png"
+	}	
+			SpriteType = {
+		name = "culturerev"
+		texturefile = "gfx/interface/goals/lor/JSR/culturerev.png"
+	}	
+		SpriteType = {
+		name = "helppeasants"
+		texturefile = "gfx/interface/goals/lor/JSR/helppeasants.png"
+	}	
+			SpriteType = {
+		name = "Agricultural_coop"
+		texturefile = "gfx/interface/goals/lor/JSR/Agricultural_coop.png"
+	}	
+			SpriteType = {
+		name = "Ruralindustrialization"
+		texturefile = "gfx/interface/goals/lor/JSR/Ruralindustrialization.png"
+	}	
+		SpriteType = {
+		name = "Mutualisteconomy"
+		texturefile = "gfx/interface/goals/lor/JSR/Mutualisteconomy.png"
+	}		
+			SpriteType = {
+		name = "Down_management"
+		texturefile = "gfx/interface/goals/lor/JSR/Down_management.png"
+	}	
+			SpriteType = {
+		name = "Trade_unions_organize_production"
+		texturefile = "gfx/interface/goals/lor/JSR/Trade_unions_organize_production.png"
+	}	
+		SpriteType = {
+		name = "Assign_demand"
+		texturefile = "gfx/interface/goals/lor/JSR/Assign_demand.png"
+	}		
+		SpriteType = {
+		name = "Eliminate_private"
+		texturefile = "gfx/interface/goals/lor/JSR/Eliminate_private.png"
+	}		
+			SpriteType = {
+		name = "Bakunin"
+		texturefile = "gfx/interface/goals/lor/JSR/Bakunin.png"
+	}	
+			SpriteType = {
+		name = "Honor_the_emperor"
+		texturefile = "gfx/interface/goals/lor/JSR/Honor_the_emperor.png"
+	}	
+			SpriteType = {
+		name = "National_revolution"
+		texturefile = "gfx/interface/goals/lor/JSR/National_revolution.png"
+	}	
+			SpriteType = {
+		name = "Kita_Kazuki_thought"
+		texturefile = "gfx/interface/goals/lor/JSR/Kita_Kazuki_thought.png"
+	}	
+			SpriteType = {
+		name = "Abolish_the_nobility"
+		texturefile = "gfx/interface/goals/lor/JSR/Abolish_the_nobility.png"
+	}	
+		SpriteType = {
+		name = "deliberation"
+		texturefile = "gfx/interface/goals/lor/JSR/deliberation.png"
+	}		
+			SpriteType = {
+		name = "Universal_male_suffrage"
+		texturefile = "gfx/interface/goals/lor/JSR/Universal_male_suffrage.png"
+	}	
+			SpriteType = {
+		name = "Protect_the_family"
+		texturefile = "gfx/interface/goals/lor/JSR/Protect_the_family.png"
+	}	
+		SpriteType = {
+		name = "Japaneseization_of_Marxism"
+		texturefile = "gfx/interface/goals/lor/JSR/Japaneseization_of_Marxism.png"
+	}		
+		SpriteType = {
+		name = "traditionalism"
+		texturefile = "gfx/interface/goals/lor/JSR/traditionalism.png"
+	}		
+			SpriteType = {
+		name = "red_aristocrat"
+		texturefile = "gfx/interface/goals/lor/JSR/red_aristocrat.png"
+	}	
+			SpriteType = {
+		name = "bushido"
+		texturefile = "gfx/interface/goals/lor/JSR/bushido.png"
+	}		
+		SpriteType = {
+		name = "Conquest_of_the_Great_General"
+		texturefile = "gfx/interface/goals/lor/JSR/Conquest_of_the_Great_General.png"
+	}	
+			SpriteType = {
+		name = "series_of_eternity"
+		texturefile = "gfx/interface/goals/lor/JSR/series_of_eternity.png"
+	}	
+			SpriteType = {
+		name = "Great_revival"
+		texturefile = "gfx/interface/goals/lor/JSR/Great_revival.png"
+	}	
+		SpriteType = {
+		name = "self_sufficiency"
+		texturefile = "gfx/interface/goals/lor/JSR/self_sufficiency.png"
+	}		
+			SpriteType = {
+		name = "buy_land"
+		texturefile = "gfx/interface/goals/lor/JSR/buy_land.png"
+	}	
+			SpriteType = {
+		name = "field"
+		texturefile = "gfx/interface/goals/lor/JSR/field.png"
+	}	
+		SpriteType = {
+		name = "Prohibition_of_land_sales"
+		texturefile = "gfx/interface/goals/lor/JSR/Prohibition_of_land_sales.png"
+	}		
+		SpriteType = {
+		name = "support_richpeasants"
+		texturefile = "gfx/interface/goals/lor/JSR/support_richpeasants.png"
+	}		
+			SpriteType = {
+		name = "Household_joint_production_contract_responsibility_system"
+		texturefile = "gfx/interface/goals/lor/JSR/Household_joint_production_contract_responsibility_system.png"
+	}	
+			SpriteType = {
+		name = "Food_safety"
+		texturefile = "gfx/interface/goals/lor/JSR/Food_safety.png"
+	}	
+			SpriteType = {
+		name = "corporatist_economy"
+		texturefile = "gfx/interface/goals/lor/JSR/corporatist_economy.png"
+	}	
+			SpriteType = {
+		name = "class_reconcile"
+		texturefile = "gfx/interface/goals/lor/JSR/class_reconcile.png"
+	}	
+			SpriteType = {
+		name = "labor_front"
+		texturefile = "gfx/interface/goals/lor/JSR/labor_front.png"
+	}	
+		SpriteType = {
+		name = "Nationalization_of_Plutocrats"
+		texturefile = "gfx/interface/goals/lor/JSR/Nationalization_of_Plutocrats.png"
+	}		
+			SpriteType = {
+		name = "unified_market"
+		texturefile = "gfx/interface/goals/lor/JSR/unified_market.png"
+	}	
+			SpriteType = {
+		name = "three_representatives"
+		texturefile = "gfx/interface/goals/lor/JSR/three_representatives.png"
+	}	
+		SpriteType = {
+		name = "road_confidence"
+		texturefile = "gfx/interface/goals/lor/JSR/road_confidence.png"
+	}		
+		SpriteType = {
+		name = "communist_party_of_japan"
+		texturefile = "gfx/interface/goals/lor/JSR/communist_party_of_japan.png"
+	}		
+			SpriteType = {
+		name = "communist_party_Congress"
+		texturefile = "gfx/interface/goals/lor/JSR/communist_party_Congress.png"
+	}	
+			SpriteType = {
+		name = "proletariat_dictatorship"
+		texturefile = "gfx/interface/goals/lor/JSR/proletariat_dictatorship.png"
+	}		
+		SpriteType = {
+		name = "Parliamentary_administration_unity"
+		texturefile = "gfx/interface/goals/lor/JSR/Parliamentary_administration_unity.png"
+	}	
+			SpriteType = {
+		name = "Electoral_bureaucracy"
+		texturefile = "gfx/interface/goals/lor/JSR/Electoral_bureaucracy.png"
+	}	
+			SpriteType = {
+		name = "Legal_referendum"
+		texturefile = "gfx/interface/goals/lor/JSR/Legal_referendum.png"
+	}	
+		SpriteType = {
+		name = "Proletarian_multiparty_system"
+		texturefile = "gfx/interface/goals/lor/JSR/Proletarian_multiparty_system.png"
+	}		
+			SpriteType = {
+		name = "people_dictatorship"
+		texturefile = "gfx/interface/goals/lor/JSR/people_dictatorship.png"
+	}	
+			SpriteType = {
+		name = "Political_consultation"
+		texturefile = "gfx/interface/goals/lor/JSR/Political_consultation.png"
+	}	
+		SpriteType = {
+		name = "Monopoly_power"
+		texturefile = "gfx/interface/goals/lor/JSR/Monopoly_power.png"
+	}		
+		SpriteType = {
+		name = "Politburo_of_Communist_Party"
+		texturefile = "gfx/interface/goals/lor/JSR/Politburo_of_Communist_Party.png"
+	}		
+			SpriteType = {
+		name = "Four_obedience"
+		texturefile = "gfx/interface/goals/lor/JSR/Four_obedience.png"
+	}	
+			SpriteType = {
+		name = "Great_unity"
+		texturefile = "gfx/interface/goals/lor/JSR/Great_unity.png"
+	}	
+			SpriteType = {
+		name = "Declaration_Freedom_and_Democracy"
+		texturefile = "gfx/interface/goals/lor/JSR/Declaration_Freedom_and_Democracy.png"
+	}	
+			SpriteType = {
+		name = "End_the_class_struggle"
+		texturefile = "gfx/interface/goals/lor/JSR/End_the_class_struggle.png"
+	}	
+			SpriteType = {
+		name = "State_for_all"
+		texturefile = "gfx/interface/goals/lor/JSR/State_for_all.png"
+	}	
+		SpriteType = {
+		name = "Socialist_freedom"
+		texturefile = "gfx/interface/goals/lor/JSR/Socialist_freedom.png"
+	}		
+			SpriteType = {
+		name = "Hundred_Flowers_Campaign"
+		texturefile = "gfx/interface/goals/lor/JSR/Hundred_Flowers_Campaign.png"
+	}	
+			SpriteType = {
+		name = "Socialist_democracy"
+		texturefile = "gfx/interface/goals/lor/JSR/Socialist_democracy.png"
+	}	
+		SpriteType = {
+		name = "State_Planning_Commission"
+		texturefile = "gfx/interface/goals/lor/JSR/State_Planning_Commission.png"
+	}		
+		SpriteType = {
+		name = "Agrarian_revolution"
+		texturefile = "gfx/interface/goals/lor/JSR/Agrarian_revolution.png"
+	}		
+			SpriteType = {
+		name = "Agrarian_mechanization"
+		texturefile = "gfx/interface/goals/lor/JSR/Agrarian_mechanization.png"
+	}	
+			SpriteType = {
+		name = "Agrarian_collectivization"
+		texturefile = "gfx/interface/goals/lor/JSR/Agrarian_collectivization.png"
+	}		
+		SpriteType = {
+		name = "Village_Hospital"
+		texturefile = "gfx/interface/goals/lor/JSR/Village_Hospital.png"
+	}	
+			SpriteType = {
+		name = "Common_prosperity"
+		texturefile = "gfx/interface/goals/lor/JSR/Common_prosperity.png"
+	}	
+			SpriteType = {
+		name = "Comprehensive_modernization"
+		texturefile = "gfx/interface/goals/lor/JSR/Comprehensive_modernization.png"
+	}	
+		SpriteType = {
+		name = "planned_economy"
+		texturefile = "gfx/interface/goals/lor/JSR/planned_economy.png"
+	}		
+			SpriteType = {
+		name = "Japan_Workers_democracy"
+		texturefile = "gfx/interface/goals/lor/JSR/Japan_Workers_democracy.png"
+	}	
+			SpriteType = {
+		name = "Six-hour_workday"
+		texturefile = "gfx/interface/goals/lor/JSR/Six-hour_workday.png"
+	}	
+		SpriteType = {
+		name = "Technological_revolution"
+		texturefile = "gfx/interface/goals/lor/JSR/Technological_revolution.png"
+	}		
+		SpriteType = {
+		name = "Workers_commission"
+		texturefile = "gfx/interface/goals/lor/JSR/Workers_commission.png"
+	}		
+			SpriteType = {
+		name = "Basic_income"
+		texturefile = "gfx/interface/goals/lor/JSR/Basic_income.png"
+	}	
+			SpriteType = {
+		name = "worker_communist"
+		texturefile = "gfx/interface/goals/lor/JSR/worker_communist.png"
+	}	
+			SpriteType = {
+		name = "Japan_Workers_negotiate"
+		texturefile = "gfx/interface/goals/lor/JSR/Japan_Workers_negotiate.png"
+	}	
+			SpriteType = {
+		name = "Nationalization_trade_unions"
+		texturefile = "gfx/interface/goals/lor/JSR/Nationalization_trade_unions.png"
+	}	
+			SpriteType = {
+		name = "Labor_discipline"
+		texturefile = "gfx/interface/goals/lor/JSR/Labor_discipline.png"
+	}	
+		SpriteType = {
+		name = "Taylorism"
+		texturefile = "gfx/interface/goals/lor/JSR/Taylorism.png"
+	}		
+			SpriteType = {
+		name = "wages"
+		texturefile = "gfx/interface/goals/lor/JSR/wages.png"
+	}	
+			SpriteType = {
+		name = "Socialist_realism"
+		texturefile = "gfx/interface/goals/lor/JSR/Socialist_realism.png"
+	}	
+		SpriteType = {
+		name = "Japan_Workers_autonomy"
+		texturefile = "gfx/interface/goals/lor/JSR/Japan_Workers_autonomy.png"
+	}		
+		SpriteType = {
+		name = "Nationalization_enterprises"
+		texturefile = "gfx/interface/goals/lor/JSR/Nationalization_enterprises.png"
+	}		
+			SpriteType = {
+		name = "Worker_supervision"
+		texturefile = "gfx/interface/goals/lor/JSR/Worker_supervision.png"
+	}	
+			SpriteType = {
+		name = "technology_communist"
+		texturefile = "gfx/interface/goals/lor/JSR/technology_communist.png"
+	}		
+		SpriteType = {
+		name = "Profit_oriented"
+		texturefile = "gfx/interface/goals/lor/JSR/Profit_oriented.png"
+	}	
+			SpriteType = {
+		name = "Market_socialism"
+		texturefile = "gfx/interface/goals/lor/JSR/Market_socialism.png"
+	}	
+			SpriteType = {
+		name = "Chairman_Tsushima_loyal"
+		texturefile = "gfx/interface/goals/lor/JSR/Chairman_Tsushima_loyal.png"
+	}	
+		SpriteType = {
+		name = "Chairman_Tokuda_Tsukuichi"
+		texturefile = "gfx/interface/goals/lor/JSR/Chairman_Tokuda_Tsukuichi.png"
+	}		
+			SpriteType = {
+		name = "Chairman_Nosaka_Sanzo"
+		texturefile = "gfx/interface/goals/lor/JSR/Chairman_Nosaka_Sanzo.png"
+	}	
+			SpriteType = {
+		name = "Further_army_reform"
+		texturefile = "gfx/interface/goals/lor/JSR/Further_army_reform.png"
+	}	
+		SpriteType = {
+		name = "JSR_Navy"
+		texturefile = "gfx/interface/goals/lor/JSR/JSR_Navy.png"
+	}		
+		SpriteType = {
+		name = "Will_reigns_supreme"
+		texturefile = "gfx/interface/goals/lor/JSR/Will_reigns_supreme.png"
+	}		
+			SpriteType = {
+		name = "JSR_MIL_MASS"
+		texturefile = "gfx/interface/goals/lor/JSR/JSR_MIL_MASS.png"
+	}	
+			SpriteType = {
+		name = "JSR_tank"
+		texturefile = "gfx/interface/goals/lor/JSR/JSR_tank.png"
+	}	
+			SpriteType = {
+		name = "JSR_guns"
+		texturefile = "gfx/interface/goals/lor/JSR/JSR_guns.png"
+	}	
+			SpriteType = {
+		name = "JSR_navy2"
+		texturefile = "gfx/interface/goals/lor/JSR/JSR_navy2.png"
+	}	
+			SpriteType = {
+		name = "JSR_red_diplomacy"
+		texturefile = "gfx/interface/goals/lor/JSR/JSR_red_diplomacy.png"
+	}	
+		SpriteType = {
+		name = "Accession_to_the_Third_International"
+		texturefile = "gfx/interface/goals/lor/JSR/Accession_to_the_Third_International.png"
+	}		
+			SpriteType = {
+		name = "Asian_Liberation_Front"
+		texturefile = "gfx/interface/goals/lor/JSR/Asian_Liberation_Front.png"
+	}	
+			SpriteType = {
+		name = "Establishment_of_the_Fourth_International"
+		texturefile = "gfx/interface/goals/lor/JSR/Establishment_of_the_Fourth_International.png"
+	}	
+		SpriteType = {
+		name = "east_Asian_rev"
+		texturefile = "gfx/interface/goals/lor/JSR/east_Asian_rev.png"
+	}		
+		SpriteType = {
+		name = "Liberation_of_Korea"
+		texturefile = "gfx/interface/goals/lor/JSR/Liberation_of_Korea.png"
+	}		
+			SpriteType = {
+		name = "Support_Chinese_revolution"
+		texturefile = "gfx/interface/goals/lor/JSR/Support_Chinese_revolution.png"
+	}	
+			SpriteType = {
+		name = "Intervene_in_China"
+		texturefile = "gfx/interface/goals/lor/JSR/Intervene_in_China.png"
+	}		
+			SpriteType = {
+		name = "Unite_East_Asia"
+		texturefile = "gfx/interface/goals/lor/JSR/Unite_East_Asia.png"
+	}		
+			SpriteType = {
+		name = "Aid_without_compensation"
+		texturefile = "gfx/interface/goals/lor/JSR/Aid_without_compensation.png"
+	}	
+			SpriteType = {
+		name = "Economic_co_prosperity"
+		texturefile = "gfx/interface/goals/lor/JSR/Economic_co_prosperity.png"
+	}		
+			SpriteType = {
+		name = "Unify_the_army"
+		texturefile = "gfx/interface/goals/lor/JSR/Unify_the_army.png"
+	}		
+			SpriteType = {
+		name = "Federation_of_the_Socialist_Republic_of_East_Asia"
+		texturefile = "gfx/interface/goals/lor/JSR/Federation_of_the_Socialist_Republic_of_East_Asia.png"
+	}	
+			SpriteType = {
+		name = "Mutual_aid"
+		texturefile = "gfx/interface/goals/lor/JSR/Mutual_aid.png"
+	}		
+			SpriteType = {
+		name = "Development_resources"
+		texturefile = "gfx/interface/goals/lor/JSR/Development_resources.png"
+	}		
+			SpriteType = {
+		name = "International_division_of_labor"
+		texturefile = "gfx/interface/goals/lor/JSR/International_division_of_labor.png"
+	}	
+			SpriteType = {
+		name = "Socialism_in_japan"
+		texturefile = "gfx/interface/goals/lor/JSR/Socialism_in_japan.png"
+	}		
+			SpriteType = {
+		name = "JSR_Decolonization"
+		texturefile = "gfx/interface/goals/lor/JSR/JSR_Decolonization.png"
+	}		
+			SpriteType = {
+		name = "JSR_Support_for_the_Vietnam_Independence_League"
+		texturefile = "gfx/interface/goals/lor/JSR/JSR_Support_for_the_Vietnam_Independence_League.png"
+	}	
+			SpriteType = {
+		name = "JSR_Indonesia"
+		texturefile = "gfx/interface/goals/lor/JSR/JSR_Indonesia.png"
+	}		
+			SpriteType = {
+		name = "JSR_Philippines"
+		texturefile = "gfx/interface/goals/lor/JSR/JSR_Philippines.png"
+	}		
+			SpriteType = {
+		name = "JSR_Indian_Commune"
+		texturefile = "gfx/interface/goals/lor/JSR/JSR_Indian_Commune.png"
+	}	
+			SpriteType = {
+		name = "JSR_Attack_imperialism"
+		texturefile = "gfx/interface/goals/lor/JSR/JSR_Attack_imperialism.png"
+	}		
+				SpriteType = {
+		name = "old_shogunate"
+		texturefile = "gfx/interface/goals/lor/JSR/old_shogunate.png"
+	}		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}

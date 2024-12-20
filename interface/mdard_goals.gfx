@@ -1,0 +1,391 @@
+spriteTypes = {	
+	SpriteType = {
+	name = "Communist_executions"
+	texturefile = "gfx/interface/goals/Communist_executions.dds"
+}	
+	SpriteType = {
+	name = "focus_Mao_Yuanxin"
+	texturefile = "gfx/interface/goals/focus_Mao_Yuanxin.dds"
+}	
+	SpriteType = {
+	name = "anti_trotskyism"
+	texturefile = "gfx/interface/goals/anti_trotskyism.png"
+}		
+	SpriteType = {
+	name = "focus_Deng_Liqun"
+	texturefile = "gfx/interface/goals/focus_Deng_Liqun.dds"
+}	
+SpriteType = {
+	name = "focus_Han_Deqiang"
+	texturefile = "gfx/interface/goals/focus_Han_Deqiang.dds"
+}
+SpriteType = {
+	name = "PRC_Chairman_Yang_Heping"
+	texturefile = "gfx/interface/goals/PRC_Chairman_Yang_Heping.png"
+}	
+SpriteType = {
+	name = "PRC_Oppose_book_worship"
+	texturefile = "gfx/interface/goals/PRC_Oppose_book_worship.png"
+}		
+SpriteType = {
+	name = "PRC_Criticism_of_militarism"
+	texturefile = "gfx/interface/goals/PRC_Criticism_of_militarism.png"
+}		
+SpriteType = {
+	name = "PRC_Destroy_the_Four_Olds"
+	texturefile = "gfx/interface/goals/PRC_Destroy_the_Four_Olds.png"
+}		
+SpriteType = {
+	name = "PRC_The_religion_of_communism"
+	texturefile = "gfx/interface/goals/PRC_The_religion_of_communism.png"
+}		
+SpriteType = {
+	name = "PRC_No_material_stimulation"
+	texturefile = "gfx/interface/goals/PRC_No_material_stimulation.png"
+}		
+
+SpriteType = {
+	name = "PRC_Socialist_bureaucracy"
+	texturefile = "gfx/interface/goals/PRC_Socialist_bureaucracy.png"
+}		
+SpriteType = {
+	name = "PRC_Chairman_Mao_worship"
+	texturefile = "gfx/interface/goals/PRC_Chairman_Mao_worship.png"
+}		
+SpriteType = {
+	name = "PRC_Second_time_going_to_the_countryside"
+	texturefile = "gfx/interface/goals/PRC_Second_time_going_to_the_countryside.png"
+}		
+SpriteType = {
+	name = "PRC_Marx_in_the_New_Era"
+	texturefile = "gfx/interface/goals/PRC_Marx_in_the_New_Era.png"
+}		
+
+	SpriteType = {
+	name = "buddhist_communist"
+	texturefile = "gfx/interface/goals/Buddhism/buddhist_communist.png"
+}	
+		SpriteType = {
+	name = "Questioning_Leninism"
+	texturefile = "gfx/interface/goals/Buddhism/Questioning_Leninism.png"
+}	
+		SpriteType = {
+	name = "Shakyamuni_Marxism"
+	texturefile = "gfx/interface/goals/Buddhism/Shakyamuni_Marxism.png"
+}	
+		SpriteType = {
+	name = "Dialogue_with_Buddha"
+	texturefile = "gfx/interface/goals/Buddhism/Dialogue_with_Buddha.png"
+}	
+		SpriteType = {
+	name = "Unity_of_thought"
+	texturefile = "gfx/interface/goals/Buddhism/Unity_of_thought.png"
+}	
+		SpriteType = {
+	name = "Reincarnation_of_Manjushri"
+	texturefile = "gfx/interface/goals/Buddhism/Reincarnation_of_Manjushri.png"
+}	
+		SpriteType = {
+	name = "Purdue_sentient_beings"
+	texturefile = "gfx/interface/goals/Buddhism/Purdue_sentient_beings.png"
+}	
+		SpriteType = {
+	name = "people_savior"
+	texturefile = "gfx/interface/goals/Buddhism/people_savior.png"
+}	
+		SpriteType = {
+	name = "reincarnation"
+	texturefile = "gfx/interface/goals/Buddhism/reincarnation.png"
+}	
+		SpriteType = {
+	name = "Eliminate_karma"
+	texturefile = "gfx/interface/goals/Buddhism/Eliminate_karma.png"
+}	
+		SpriteType = {
+	name = "Nirvana"
+	texturefile = "gfx/interface/goals/Buddhism/Nirvana.png"
+}	
+SpriteType = {
+name = "Resurrection_of_Mao_Zedong"
+texturefile = "gfx/interface/goals/Resurrection_of_Mao_Zedong.png"			
+}
+SpriteType = {
+name = "Skynet_system"
+texturefile = "gfx/interface/goals/Skynet_system.png"			
+}
+SpriteType = {
+name = "Hack_Internet"
+texturefile = "gfx/interface/goals/Hack_Internet.png"			
+}
+SpriteType = {
+name = "PRC_Technocracy"
+texturefile = "gfx/interface/goals/PRC_Technocracy.png"			
+}
+SpriteType = {
+name = "aigov"
+texturefile = "gfx/interface/goals/aigov.png"			
+}	
+SpriteType = {
+name = "Overthrow_humanity"
+texturefile = "gfx/interface/goals/Overthrow_humanity.png"			
+}		
+SpriteType = {
+name = "eliminate_intellectuals"
+texturefile = "gfx/interface/goals/eliminate_intellectuals.png"			
+}		
+SpriteType = {
+name = "Data_is_everything"
+texturefile = "gfx/interface/goals/Data_is_everything.png"			
+}		
+	SpriteType = {
+name = "Upload_Season"
+texturefile = "gfx/interface/goals/Upload_Season.png"			
+}		
+	SpriteType = {
+name = "cobalt_bomb"
+texturefile = "gfx/interface/goals/cobalt_bomb.png"			
+}		
+	SpriteType = {
+name = "Dafang_satellite"
+texturefile = "gfx/interface/goals/Dafang_satellite.png"			
+}		
+	SpriteType = {
+name = "new_china_people"
+texturefile = "gfx/interface/goals/new_china_people.png"			
+}		
+	SpriteType = {
+name = "Virus_weapons"
+texturefile = "gfx/interface/goals/Virus_weapons.png"			
+}		
+	SpriteType = {
+name = "PRC_Mars_base"
+texturefile = "gfx/interface/goals/PRC_Mars_base.png"			
+}		
+	SpriteType = {
+name = "cyber_lenin"
+texturefile = "gfx/interface/goals/cyber_lenin.png"			
+}		
+	SpriteType = {
+name = "complete_world_revolution"
+texturefile = "gfx/interface/goals/complete_world_revolution.png"			
+}		
+	SpriteType = {
+name = "Silicon_based_Civilization_Pangu"
+texturefile = "gfx/interface/goals/Silicon_based_Civilization_Pangu.png"			
+}		
+		SpriteType = {
+name = "usa_chinaroc"
+texturefile = "gfx/interface/goals/usa_chinaroc.dds"			
+}		
+SpriteType = {
+name = "anti_trotsky"
+texturefile = "gfx/interface/goals/anti_trotsky.dds"			
+}
+SpriteType = {
+name = "Super_Soviet"
+texturefile = "gfx/interface/goals/Super_Soviet.dds"			
+}
+SpriteType = {
+name = "Qing_revenge"
+texturefile = "gfx/interface/goals/Qing_revenge.dds"			
+}
+SpriteType = {
+name = "Qing_Eight_flags"
+texturefile = "gfx/interface/goals/Qing_Eight_flags.dds"			
+}	
+SpriteType = {
+name = "Qing"
+texturefile = "gfx/interface/goals/Qing.dds"			
+}	
+SpriteType = {
+name = "Preserve_RUS"
+texturefile = "gfx/interface/goals/Preserve_RUS.dds"			
+}	
+SpriteType = {
+name = "ogas_communist"
+texturefile = "gfx/interface/goals/ogas_communist.dds"			
+}	
+SpriteType = {
+name = "Mao_Zedongtalented"
+texturefile = "gfx/interface/goals/Mao_Zedongtalented.dds"			
+}	
+SpriteType = {
+name = "Mao_electron"
+texturefile = "gfx/interface/goals/Mao_electron.dds"			
+}	
+SpriteType = {
+name = "Kongzi_Mao"
+texturefile = "gfx/interface/goals/Kongzi_Mao.dds"			
+}	
+SpriteType = {
+name = "Kongzi"
+texturefile = "gfx/interface/goals/Kongzi.dds"			
+}
+
+SpriteType = {
+name = "Cuba"
+texturefile = "gfx/interface/goals/Cuba.dds"			
+}
+SpriteType = {
+name = "CPUkr"
+texturefile = "gfx/interface/goals/CPUkr.dds"			
+}
+SpriteType = {
+name = "ogas"
+texturefile = "gfx/interface/goals/ogas.dds"			
+}
+SpriteType = {
+name = "soviet_ukr"
+texturefile = "gfx/interface/goals/soviet_ukr.dds"			
+}
+SpriteType = {
+name = "ukr_people_rep"
+texturefile = "gfx/interface/goals/ukr_people_rep.dds"			
+}
+
+SpriteType = {
+name = "space_combat_support_force"
+texturefile = "gfx/interface/goals/space_combat_support_force.dds"			
+}
+SpriteType = {
+name = "KMT_ROC"
+texturefile = "gfx/interface/goals/KMT_ROC.dds"			
+}
+SpriteType = {
+name = "likeqiang"
+texturefile = "gfx/interface/goals/focus_li_keqiang.dds"			
+}
+SpriteType = {
+name = "China_dream"
+texturefile = "gfx/interface/goals/China_dream.dds"			
+}
+SpriteType = {
+name = "China_India"
+texturefile = "gfx/interface/goals/China_India.dds"			
+}
+SpriteType = {
+name = "China_one"
+texturefile = "gfx/interface/goals/China_one.dds"			
+}
+SpriteType = {
+name = "ChinaHouse"
+texturefile = "gfx/interface/goals/ChinaHouse.dds"			
+}
+SpriteType = {
+name = "Communist_China1"
+texturefile = "gfx/interface/goals/Communist_China1.dds"			
+}
+SpriteType = {
+name = "communist_patry_of_Afghanistan"
+texturefile = "gfx/interface/goals/communist_patry_of_Afghanistan.dds"			
+}
+SpriteType = {
+name = "Communist_patry_of_China_flag"
+texturefile = "gfx/interface/goals/Communist_patry_of_China_flag.dds"			
+}
+SpriteType = {
+name = "cpc_cooperation"
+texturefile = "gfx/interface/goals/cpc_cooperation.dds"			
+}
+SpriteType = {
+name = "CPCchinese"
+texturefile = "gfx/interface/goals/CPCchinese.dds"			
+}
+SpriteType = {
+name = "CPCNational_Party"
+texturefile = "gfx/interface/goals/CPCNational_Party.dds"			
+}
+SpriteType = {
+name = "Emperor_of_China"
+texturefile = "gfx/interface/goals/Emperor_of_China.dds"			
+}
+SpriteType = {
+name = "People's_Republic_of_Afghanistan"
+texturefile = "gfx/interface/goals/People's_Republic_of_Afghanistan.dds"			
+}
+SpriteType = {
+name = "phi_communist"
+texturefile = "gfx/interface/goals/phi_communist.dds"			
+}
+SpriteType = {
+name = "PRC_flag"
+texturefile = "gfx/interface/goals/PRC_flag.dds"			
+}
+SpriteType = {
+name = "PRC_democracy"
+texturefile = "gfx/interface/goals/PRC_democracy.dds"			
+}
+SpriteType = {
+name = "PRC_gov"
+texturefile = "gfx/interface/goals/PRC_gov.dds"			
+}
+SpriteType = {
+name = "PRC_Monetary_easing"
+texturefile = "gfx/interface/goals/PRC_Monetary_easing.dds"			
+}
+SpriteType = {
+name = "PRC_Soviet"
+texturefile = "gfx/interface/goals/PRC_Soviet.dds"			
+}
+SpriteType = {
+name = "PRC_tank"
+texturefile = "gfx/interface/goals/PRC_tank.dds"			
+}
+SpriteType = {
+name = "Preemptive"
+texturefile = "gfx/interface/goals/Preemptive.dds"			
+}
+SpriteType = {
+name = "Preemptive_cpc"
+texturefile = "gfx/interface/goals/Preemptive_cpc.dds"			
+}
+SpriteType = {
+name = "Guangdong_jiashi"
+texturefile = "gfx/interface/goals/Guangdong_jiashi.dds"			
+}
+SpriteType = {
+name = "Preserve_cpc"
+texturefile = "gfx/interface/goals/Preserve_cpc.dds"			
+}
+SpriteType = {
+name = "Preserve_PRC"
+texturefile = "gfx/interface/goals/Preserve_PRC.dds"			
+}
+SpriteType = {
+name = "proletariat_cpc"
+texturefile = "gfx/interface/goals/proletariat_cpc.dds"			
+}
+SpriteType = {
+name = "proletariat_prc"
+texturefile = "gfx/interface/goals/proletariat_prc.dds"			
+}
+	SpriteType = {
+name = "Support_Nepal_Communist"
+texturefile = "gfx/interface/goals/Support_Nepal_Communist.dds"			
+}
+	SpriteType = {
+name = "usa_china"
+texturefile = "gfx/interface/goals/usa_china.dds"			
+}
+	SpriteType = {
+name = "ussr_flag"
+texturefile = "gfx/interface/goals/ussr_flag.dds"			
+}
+		SpriteType = {
+name = "Support_india_Communist"
+texturefile = "gfx/interface/goals/Support_india_Communist.dds"			
+}
+	SpriteType = {
+name = "oppose_Mao"
+texturefile = "gfx/interface/goals/oppose_Mao.dds"			
+}
+
+
+SpriteType = {
+	name = "PRC_finishwhatmaostarted"
+	texturefile = "gfx/interface/goals/PRC_finishwhatmaostarted.png"			
+	}
+
+
+
+}

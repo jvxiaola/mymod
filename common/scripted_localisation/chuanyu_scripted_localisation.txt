@@ -1,0 +1,223 @@
+defined_text = {
+	name = Communist_Party_of_china_Line
+	text = {
+		trigger = {
+		is_in_array = { ruling_party = 6 }
+		}
+		localization_key = "CPC_Socialism_with_Chinese_Characteristics"
+	}
+	text = {
+		trigger = {
+		is_in_array = { ruling_party = 5 }
+		}
+		localization_key = "CPC_Marxism_Leninism"
+	}
+	text = {
+		trigger = {
+OR  = {
+		is_in_array = { ruling_party = 2 }
+		is_in_array = { ruling_party = 3 }
+
+}		}
+
+		localization_key = "CPC_democracy"
+	}
+		text = {
+		trigger = {
+		is_in_array = { ruling_party = 7 }
+		}
+
+		localization_key = "习近平新时代中国特色社会主义"
+	}
+}
+defined_text = {
+	name = Chairman_of_the_Central_Military_Commission_of_Communist_Party_of_China
+	text = {
+		trigger = {
+has_country_flag = DSC_Jiangzemin
+		}
+		localization_key = "江泽民"
+	}
+	text = {
+		trigger = {
+has_country_flag = CPC_Hujintao
+		}
+		localization_key = "胡锦涛"
+	}
+	text = {
+		trigger = {
+has_country_flag = 	CPC_Zhao_Ziyang
+		}
+		localization_key = "赵紫阳"
+	}	
+	text = {
+		trigger = {
+has_country_flag = 	CPC_Boxilai
+		}
+		localization_key = "薄熙来"
+	}		
+	text = {
+		trigger = {
+has_country_flag = 	CPC_Xijingping
+		}
+		localization_key = "习近平"
+	}	
+	text = {
+		trigger = {
+has_country_flag = 	CPC_Likeqiang
+		}
+		localization_key = "李克强"
+	}	
+	text = {
+		trigger = {
+has_country_flag = 	CPC_Dengliqun
+		}
+		localization_key = "邓力群"
+	}	
+	text = {
+		trigger = {
+has_country_flag = 	CPC_Maoyuanxin
+		}
+		localization_key = "毛远新"
+	}		
+}
+
+
+
+
+defined_text = {
+	name = One_Belt_One_Road_dynamic
+	text = {
+		trigger = {
+NOT = {
+OR = {
+					is_in_array = { ruling_party = 5 }
+					is_in_array = { ruling_party = 4 }
+				neutrality_neutral_communism_in_power_or_coalition = YES
+
+}}
+}
+		localization_key = "一带一路领导国"
+	}
+		text = {
+		trigger = {
+OR = {
+					is_in_array = { ruling_party = 5 }
+					is_in_array = { ruling_party = 4 }
+				neutrality_neutral_communism_in_power_or_coalition = YES
+
+}			}
+		localization_key = "人类命运共同体领导国"
+	}
+	}
+defined_text = {
+	name = One_Belt_One_Road_foucus
+	text = {
+	
+	trigger = {
+DSC = {
+NOT = {
+					is_in_array = { ruling_party = 4 }
+}
+}
+	}		localization_key = "一带一路倡议"
+}
+		text = {
+		trigger = {
+DSC = {
+					is_in_array = { ruling_party = 4 }			}
+}
+		localization_key = "恩格斯倡议"
+	}
+	}	
+defined_text = {
+	name = One_Belt_One_Road_foucus_desc
+	text = {
+		trigger = {
+NOT = {
+					is_in_array = { ruling_party = 4 }
+}
+}
+		localization_key = One_Belt_One_Road_foucus_desc_cat
+	}
+		text = {
+		trigger = {
+is_in_array = { ruling_party = 4 }	
+
+}
+		localization_key = One_Belt_One_Road_foucus_desc_communism
+	}
+	}		
+	defined_text = {
+	name = DSC_people_support_dynamic_name
+	text = {
+	
+	trigger = {
+
+DSC = {
+
+
+	has_cosmetic_tag=DSC_JGQ
+
+	
+}
+
+
+
+	}
+
+		localization_key = DSC_people_support_dynamic_right
+
+	
+
+	}
+
+	
+		text = {
+		trigger = {
+
+DSC = {
+	OR={
+	has_cosmetic_tag=DSC_GMQ
+		has_cosmetic_tag=DSC_GMG
+
+			}
+		}
+
+
+		
+}
+		localization_key = DSC_people_support_dynamic_left
+	}
+	}	
+		defined_text = {
+	name = DSC_people_support_dynamic_dynamic_desc
+	text = {
+	
+	trigger = {
+DSC = {
+	has_cosmetic_tag=DSC_JGQ
+}
+}
+		localization_key = DSC_people_support_dynamic_dynamic_desc_right
+	}
+		text = {
+		trigger = {
+
+
+DSC = {
+	OR={
+	has_cosmetic_tag=DSC_GMQ
+		has_cosmetic_tag=DSC_GMG
+
+}
+		}
+
+
+
+
+		
+}
+		localization_key = DSC_people_support_dynamic_dynamic_desc_left
+	}
+	}	

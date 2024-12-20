@@ -1,0 +1,82 @@
+ideas = {
+	economic_cycles = {
+		law = yes
+		use_list_view = yes
+	Socialist_Economy = {
+			cost = 350
+			removal_cost = -1
+			level = 1
+		picture = 	collective_soceity
+visible = {
+		OR = {
+				custom_trigger_tooltip = {
+					is_in_array = { ruling_party = 4 }
+					tooltip = has_communist_state_government_TT
+				}
+								custom_trigger_tooltip = {
+					is_in_array = { ruling_party = 5 }
+					tooltip = has_anarchist_communism_government_TT
+				}
+				custom_trigger_tooltip = {
+					is_in_array = { ruling_party = 19 }
+					tooltip = has_neutral_communism_government_TT
+				}
+			}
+}
+			available = {
+	
+			custom_trigger_tooltip = {
+				tooltip = 25_per_capita_or_more_tt
+				check_variable = { gdp_per_capita > 24.999 }
+			}
+				if = {
+					limit = { original_tag = CHI }
+				power_balance_value = {
+    id = CHI_power_balance
+    value < -0.5
+}
+				}			
+
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea economic_boom"
+
+			}
+			modifier = {
+				production_speed_buildings_factor = 1
+				stability_factor = 0.25
+				productivity_growth_modifier = 5
+				maximum_migration_rate_value = 0.25
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = { # Low GDP nations more likely to want higher economic growth rates
+					factor = 15
+					has_idea = stable_growth
+					check_variable = { gdp_per_capita < 4.000 }
+				}
+				modifier = {
+					factor = 5
+					has_idea = stable_growth
+					check_variable = { gdp_per_capita > 6.999 }
+					check_variable = { gdp_per_capita < 15.000 }
+				}
+				modifier = {
+					factor = 5
+					has_political_power > 500
+				}
+				modifier = { # Don't bother with economic growth if at war
+					factor = 0.2
+					has_idea = fast_growth
+					has_war = yes
+				}
+				#killswitch
+				modifier = {
+					factor = 0
+					check_variable = { pp_cost_economic > 100 }
+				}
+			}
+			cancel_if_invalid = no
+		}
+}
+}		

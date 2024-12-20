@@ -1,0 +1,16 @@
+has_socialist_government = {
+	custom_trigger_tooltip = {
+		tooltip = "有一个共产主义政府"
+			OR = {
+					is_in_array = { ruling_party = 5 }
+					is_in_array = { ruling_party = 4 }
+				neutrality_neutral_communism_in_power_or_coalition = YES
+ 
+}}
+}
+not_has_socialist_government = {
+	custom_trigger_tooltip = {
+		tooltip = "有一个共产主义政府"
+
+}
+}

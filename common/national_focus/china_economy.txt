@@ -1,0 +1,6979 @@
+	##ECONOMY TREE##
+	shared_focus = {
+		id = CHI_The_Untapped_Market
+		icon = prc_currency_reform
+		x = 72
+		y = 14
+
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available = { has_war = no }
+
+		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_The_Untapped_Market executed"
+			add_political_power = 100
+		}
+
+		ai_will_do = { base = 5 }
+	}
+
+	shared_focus = {
+		id = CHI_Smash_the_Iron_Rice_Bowl
+		icon = iron_rice_bowl
+
+		x = -3
+		y = 1
+		relative_position_id = CHI_The_Untapped_Market
+
+		cost = 5
+
+		prerequisite = { focus = CHI_The_Untapped_Market }
+		mutually_exclusive = { focus = CHI_Socialist_Reconstruction }
+
+		search_filters = { FOCUS_FILTER_EXPENDITURE }
+
+		available = {
+			NOT={
+				OR={
+					has_country_flag=xggm
+					has_country_flag=qyxd
+					has_country_flag = laozuo
+				}
+			}
+
+
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_start_date < 2016.01.01 }
+				decrease_social_spending = yes
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Smash_the_Iron_Rice_Bowl executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Ratification_of_WTO
+		icon = wto
+
+		x = -3
+		y = 2
+		relative_position_id = CHI_The_Untapped_Market
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Smash_the_Iron_Rice_Bowl }
+
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+
+		available = {
+			has_war = no
+
+			custom_trigger_tooltip = {
+				tooltip = CHI_aggression_less_0_tt
+				check_variable = { chinese_aggression < 1 }
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_start_date < 2016.01.01 }
+				add_timed_idea = {
+					idea = recently_acceded_to_wto
+					days = 30
+				}
+				news_event = china_news.6
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Ratification_of_WTO executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Encourage_Foreign_Investment
+		icon = united_states_dollar
+
+		x = -4
+		y = 3
+		relative_position_id = CHI_The_Untapped_Market
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Ratification_of_WTO }
+		mutually_exclusive = { focus = CHI_Protect_State_Owned_Businesses }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		available = {
+			has_war = no
+
+		}
+
+		completion_reward = {
+			set_temp_variable = { temp_opinion = -5 }
+			change_industrial_conglomerates_opinion = yes
+			add_timed_idea = {
+				idea = CHI_foreign_investment
+				days = 60
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Encourage_Foreign_Investment executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Protect_State_Owned_Businesses
+		icon = defense
+
+		x = -2
+		y = 3
+		relative_position_id = CHI_The_Untapped_Market
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Ratification_of_WTO }
+		mutually_exclusive = { focus = CHI_Encourage_Foreign_Investment }
+		search_filters = { FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			set_temp_variable = { temp_opinion = 5 }
+			change_industrial_conglomerates_opinion = yes
+			add_stability = 0.01
+			log = "[GetDateText]: [This.GetName]: focus CHI_Protect_State_Owned_Businesses executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Adopt_Western_Patent_Laws
+		icon = USA_CHI_research_treaty
+
+		x = -9
+		y = 4
+		relative_position_id = CHI_The_Untapped_Market
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Encourage_Foreign_Investment focus = CHI_Protect_State_Owned_Businesses }
+
+		available = {
+
+			if = {
+				limit = { has_idea = industrial_conglomerates }
+				industrial_conglomerates_at_least_enthusiastic_opinion = yes
+			}
+		}
+
+		completion_reward = {
+			add_political_power = -50
+			USA = {
+				remove_opinion_modifier = {
+					target = CHI
+					modifier = does_not_respect_intellectual_property
+				}
+			}
+			set_temp_variable = { temp_opinion = -5 }
+			change_industrial_conglomerates_opinion = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_Adopt_Western_Patent_Laws executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_SOE_Privatization_Initiative
+		icon = intelligence_exchange
+
+		x = -9
+		y = 5
+		relative_position_id = CHI_The_Untapped_Market
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Adopt_Western_Patent_Laws }
+
+		search_filters = { FOCUS_FILTER_EXPENDITURE FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+
+		available = {
+		}
+
+		completion_reward = {
+			add_political_power = -100
+			swap_ideas = {
+				remove_idea = CHI_Socialist_Market_Economy
+				add_idea = CHI_Socialist_Market_Economy_free_1
+			}
+			swap_ideas = {
+				remove_idea = industrial_conglomerates
+				add_idea = small_medium_business_owners
+			}
+			set_variable = { small_medium_business_owners_opinion = 75 }
+			set_temp_variable = { treasury_change = 10 }
+			modify_treasury_effect = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_SOE_Privatization_Initiative executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Free_Direct_Investment
+		icon = generic_banks
+
+		x = -9
+		y = 6
+		relative_position_id = CHI_The_Untapped_Market
+
+		cost = 5
+
+		prerequisite = { focus = CHI_SOE_Privatization_Initiative }
+
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+
+		available = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = CHI_Socialist_Market_Economy_free_1
+				add_idea = CHI_Socialist_Market_Economy_free_2
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Free_Direct_Investment executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Expand_the_Special_Economic_Zones
+		icon = industry
+
+		x = -10
+		y = 7
+		relative_position_id = CHI_The_Untapped_Market
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Free_Direct_Investment }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		available = {
+
+		}
+
+		completion_reward = {
+			532 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			538 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			541 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			435 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_temp_variable = { treasury_change = -30 }
+			modify_treasury_effect = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_Expand_the_Special_Economic_Zones executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Promote_Innovation
+		icon = research3
+
+		x = -8
+		y = 7
+		relative_position_id = CHI_The_Untapped_Market
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Free_Direct_Investment }
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Promote_Innovation executed"
+			add_political_power = 50
+			add_ideas = CHI_promoting_innovation
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Liberalize_the_Market
+		icon = economic_prosperity2
+
+		x = -9
+		y = 8
+		relative_position_id = CHI_The_Untapped_Market
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Promote_Innovation }
+		prerequisite = { focus = CHI_Expand_the_Special_Economic_Zones }
+
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+
+		available = {
+
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = CHI_Socialist_Market_Economy_free_2
+				add_idea = CHI_Free_Market_Economy
+			}
+			news_event = china_news.7
+			log = "[GetDateText]: [This.GetName]: focus CHI_Liberalize_the_Market executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Chinese_Model_of_Manufacturing
+		icon = industry_communism
+
+		x = -3
+		y = 4
+		relative_position_id = CHI_The_Untapped_Market
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Encourage_Foreign_Investment focus = CHI_Protect_State_Owned_Businesses }
+
+		search_filters = { FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			four_random_industrial_complex = yes
+			set_temp_variable = { temp_opinion = 5 }
+			change_industrial_conglomerates_opinion = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_Chinese_Model_of_Manufacturing executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Korean_Joint_Ventures
+		icon = align_to_south_korea
+
+		x = -7
+		y = 5
+		relative_position_id = CHI_The_Untapped_Market
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Chinese_Model_of_Manufacturing }
+		mutually_exclusive = { focus = CHI_German_Joint_Ventures }
+		mutually_exclusive = { focus = CHI_American_Joint_Ventures }
+		mutually_exclusive = { focus = CHI_Japanese_Joint_Ventures }
+
+		available = {
+			has_war = no
+			KOR = {
+				has_opinion = {
+					target = CHI
+					value > -1
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = CHI_aggression_less_5_tt
+				check_variable = { chinese_aggression < 6 }
+			}
+		}
+
+		completion_reward = {
+			add_opinion_modifier = { target = KOR modifier = large_commercial_relations }
+			KOR = {
+				add_opinion_modifier = { target = CHI modifier = large_commercial_relations }
+			}
+			custom_effect_tooltip = CHI_KOR_ventures_tt
+			log = "[GetDateText]: [This.GetName]: focus CHI_Korean_Joint_Ventures executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_German_Joint_Ventures
+		icon = align_to_germany
+
+		x = -5
+		y = 5
+		relative_position_id = CHI_The_Untapped_Market
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Chinese_Model_of_Manufacturing }
+		mutually_exclusive = { focus = CHI_Japanese_Joint_Ventures }
+		mutually_exclusive = { focus = CHI_American_Joint_Ventures }
+		mutually_exclusive = { focus = CHI_Korean_Joint_Ventures }
+
+		available = {
+			has_war = no
+			GER = {
+				has_opinion = {
+					target = CHI
+					value > -1
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = CHI_aggression_less_5_tt
+				check_variable = { chinese_aggression < 6 }
+			}
+		}
+
+		completion_reward = {
+			add_opinion_modifier = { target = GER modifier = large_commercial_relations }
+			GER = {
+				add_opinion_modifier = { target = CHI modifier = large_commercial_relations }
+			}
+			custom_effect_tooltip = CHI_GER_ventures_tt
+			log = "[GetDateText]: [This.GetName]: focus CHI_German_Joint_Ventures executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_American_Joint_Ventures
+		icon = align_to_america
+
+		x = -3
+		y = 5
+		relative_position_id = CHI_The_Untapped_Market
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Chinese_Model_of_Manufacturing }
+		mutually_exclusive = { focus = CHI_German_Joint_Ventures }
+		mutually_exclusive = { focus = CHI_Japanese_Joint_Ventures }
+		mutually_exclusive = { focus = CHI_Korean_Joint_Ventures }
+
+		available = {
+			has_war = no
+			USA = {
+				has_opinion = {
+					target = CHI
+					value > -1
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = CHI_aggression_less_5_tt
+				check_variable = { chinese_aggression < 6 }
+			}
+		}
+
+		completion_reward = {
+			add_opinion_modifier = { target = USA modifier = large_commercial_relations }
+			USA = {
+				add_opinion_modifier = { target = CHI modifier = large_commercial_relations }
+			}
+			custom_effect_tooltip = CHI_USA_ventures_tt
+			log = "[GetDateText]: [This.GetName]: focus CHI_American_Joint_Ventures executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Japanese_Joint_Ventures
+		icon = align_to_japan
+
+		x = -1
+		y = 5
+		relative_position_id = CHI_The_Untapped_Market
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Chinese_Model_of_Manufacturing }
+		mutually_exclusive = { focus = CHI_German_Joint_Ventures }
+		mutually_exclusive = { focus = CHI_American_Joint_Ventures }
+		mutually_exclusive = { focus = CHI_Korean_Joint_Ventures }
+
+		available = {
+			has_war = no
+			JAP = {
+				has_opinion = {
+					target = CHI
+					value > -1
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = CHI_aggression_less_5_tt
+				check_variable = { chinese_aggression < 6 }
+			}
+		}
+
+		completion_reward = {
+			add_opinion_modifier = { target = JAP modifier = large_commercial_relations }
+			JAP = {
+				add_opinion_modifier = { target = CHI modifier = large_commercial_relations }
+			}
+			custom_effect_tooltip = CHI_JAP_ventures_tt
+			log = "[GetDateText]: [This.GetName]: focus CHI_Japanese_Joint_Ventures executed"
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 100
+			}
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Export_Driven_Economy
+		icon = trade
+
+		x = -3
+		y = 6
+		relative_position_id = CHI_The_Untapped_Market
+
+		cost = 5
+
+		prerequisite = { focus = CHI_American_Joint_Ventures focus = CHI_German_Joint_Ventures focus = CHI_Japanese_Joint_Ventures focus = CHI_Korean_Joint_Ventures }
+		bypass = { has_idea = globalized_trade_economy }
+		completion_reward = {
+			increase_exports = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_Export_Driven_Economy executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Factory_of_the_World
+		icon = prc_industrialization
+
+		x = -3
+		y = 7
+		relative_position_id = CHI_The_Untapped_Market
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Export_Driven_Economy focus = CHI_Free_Direct_Investment }
+
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_timed_idea = {
+				idea = factory_of_the_world
+				days = 180
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Factory_of_the_World executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Socialist_Reconstruction
+		icon = communist_party_of_china
+
+		x = 3
+		y = 1
+		relative_position_id = CHI_The_Untapped_Market
+
+		cost = 5
+
+		prerequisite = { focus = CHI_The_Untapped_Market }
+		mutually_exclusive = { focus = CHI_Smash_the_Iron_Rice_Bowl }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available = {
+			has_government = communism
+			OR = {
+has_country_flag=xggm
+has_country_flag=qyxd
+has_country_flag = laozuo
+				}
+		}
+
+		completion_reward = {
+			add_political_power = 150
+			log = "[GetDateText]: [This.GetName]: focus CHI_Socialism_with_Maoist_Characteristics executed"
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				is_historical_focus_on = no
+			}
+		}
+	}
+
+shared_focus = {		id = CHI_general_route
+		icon = forceful_treaty
+
+		x = 0
+		y = 1
+		relative_position_id = CHI_Socialist_Reconstruction
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Socialist_Reconstruction }
+
+		available = {
+		}
+
+		completion_reward = {
+			add_stability = -0.01
+			set_temp_variable = { temp_opinion = 10 }
+			change_industrial_conglomerates_opinion = yes
+
+		}
+
+		ai_will_do = { base = 1 }
+	}
+
+	shared_focus = {		
+	id = CHI_Problems_capitalist_industry_commerce
+		icon = BRA_libertarian_economics
+
+		x = -1
+		y = 2
+		relative_position_id = CHI_Socialist_Reconstruction
+
+		cost = 5
+
+		prerequisite = { focus = CHI_general_route }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available = {
+		}
+
+		completion_reward = {
+add_political_power = 100
+		}
+
+		ai_will_do = { base = 1 }
+	}
+
+	shared_focus = {
+	id = CHI_redemption
+		icon = communism4
+
+		x = -2
+		y = 3
+		relative_position_id = CHI_Socialist_Reconstruction
+		mutually_exclusive = { focus = CHI_confiscated }
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Problems_capitalist_industry_commerce }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available = {  }
+
+		completion_reward = {set_temp_variable = { treasury_change = -100 }
+			modify_treasury_effect = yes
+			add_political_power = 50
+			set_temp_variable = { temp_opinion = 10 }
+			change_industrial_conglomerates_opinion = yes
+		}
+
+		ai_will_do = { base = 1 }
+	}
+
+	shared_focus = {		id = CHI_confiscated
+		icon = cash_grap
+
+		x = 0
+		y = 3
+		relative_position_id = CHI_Socialist_Reconstruction
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Problems_capitalist_industry_commerce }
+		mutually_exclusive = { focus = CHI_redemption }
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_CORRUPTION FOCUS_FILTER_INDUSTRY }
+
+		available = {}
+
+		completion_reward = {
+	add_ideas = depression
+add_political_power = 100
+			set_temp_variable = { temp_opinion = 10 }
+			change_communist_cadres_opinion = yes
+					set_temp_variable = { treasury_change = 300 }
+			modify_treasury_effect = yes
+}
+		ai_will_do = { base = 1 }
+	}
+
+	shared_focus = {		
+	id = CHI_state_ownership
+		icon = central_planned_economy2
+
+		x = -2
+		y = 4
+		relative_position_id = CHI_Socialist_Reconstruction
+		mutually_exclusive = { focus = CHI_worker_ownership }
+
+		cost = 5
+
+		prerequisite = { focus = CHI_confiscated focus = CHI_redemption }
+
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+
+		available = {
+			OR = {
+
+								custom_trigger_tooltip = {
+					is_in_array = { ruling_party = 5 }
+					tooltip = has_anarchist_communism_government_TT
+				}
+				custom_trigger_tooltip = {
+					is_in_array = { ruling_party = 19 }
+					tooltip = has_neutral_communism_government_TT
+				}
+				}
+		}
+
+		completion_reward = {	
+		add_ideas = CHI_Stateowned_enterprise_monopoly
+		add_power_balance_value = {
+				id = CHI_power_balance
+				value = 0.05
+			}
+		}
+
+		ai_will_do = { base = 1 }
+	}
+
+	shared_focus = {		id = CHI_worker_ownership
+		icon = union_negotiations
+
+		x = 0
+		y = 4
+		relative_position_id = CHI_Socialist_Reconstruction
+		prerequisite = { focus = CHI_confiscated focus = CHI_redemption }
+		mutually_exclusive = { focus = CHI_state_ownership }
+
+		cost = 5
+
+
+		available = {
+	
+		custom_trigger_tooltip = {
+OR = {	
+has_country_flag=xggm
+
+				}		
+		tooltip = CHI_communist_marx
+
+	}
+	}
+
+		completion_reward = {		add_ideas = CHI_worker_cooperative
+add_power_balance_value = {
+				id = CHI_power_balance
+				value = -0.2
+			}
+		}
+
+		ai_will_do = { base = 1 }
+	}
+
+	shared_focus = {
+	id = CHI_Consolidation_public_ownership
+		icon = chinese_licenses
+
+		x = -1
+		y = 5
+		relative_position_id = CHI_Socialist_Reconstruction
+
+		cost = 5
+
+		prerequisite = { focus = CHI_state_ownership focus = CHI_worker_ownership }
+
+
+		available = {
+custom_trigger_tooltip = {
+NOT = {
+OR = {
+has_idea = CHI_Socialist_Market_Economy_free_1
+has_idea = CHI_Socialist_Market_Economy_free_2
+has_idea = CHI_Free_Market_Economy
+}
+}
+tooltip = CHI_economic_model_liberalization_economy_tt
+}
+		}
+
+		completion_reward = {if = {
+limit = {has_idea = CHI_Socialist_Market_Economy }
+swap_ideas = {
+add_idea = CHI_Socialist_Market_Economy_planned_1
+remove_idea =  CHI_Socialist_Market_Economy
+
+}
+}
+else_if = {
+limit = { has_idea = CHI_Socialist_Market_Economy_planned_1 }
+swap_ideas = {
+add_idea = CHI_Socialist_Market_Economy_planned_2
+remove_idea =  CHI_Socialist_Market_Economy_planned_1
+
+}
+			}
+else_if = {
+limit = { has_idea = CHI_Socialist_Market_Economy_planned_2 }
+swap_ideas = {
+add_idea = CHI_Planned_Economy
+remove_idea =  CHI_Socialist_Market_Economy_planned_2
+
+}
+			}			
+		}
+
+		ai_will_do = { base = 1 }
+	}
+	shared_focus = {		
+	id = CHI_selfemployed_problem
+		icon = sustainable_development
+
+		x = 3
+		y = 2
+		relative_position_id = CHI_Socialist_Reconstruction
+
+		cost = 5
+
+		prerequisite = { focus = CHI_general_route }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available = {
+		}
+
+		completion_reward = {
+add_stability = 0.05
+		}
+
+		ai_will_do = { base = 1 }
+	}
+
+	shared_focus = {
+	id = CHI_allowed_to_exist
+		icon = slow_inovations
+
+		x = -1
+		y = 1
+		relative_position_id = CHI_selfemployed_problem
+		mutually_exclusive = { focus = CHI_get_organized }
+
+		cost = 5
+
+		prerequisite = { focus = CHI_selfemployed_problem }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available = {  }
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.10
+	add_power_balance_value = {
+				id = CHI_power_balance
+				value = 0.10
+			}		
+		}
+
+		ai_will_do = { base = 1 }
+	}
+
+	shared_focus = {		id = CHI_get_organized
+		icon = central_planned_economy3
+
+		x = 1
+		y = 1
+		relative_position_id = CHI_selfemployed_problem
+
+		cost = 5
+
+		prerequisite = { focus = CHI_selfemployed_problem }
+		mutually_exclusive = { focus = CHI_allowed_to_exist }
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_CORRUPTION FOCUS_FILTER_INDUSTRY }
+
+		available = {}
+
+		completion_reward = {
+add_stability = -0.05
+		add_political_power = -100
+add_power_balance_value = {
+				id = CHI_power_balance
+				value = -0.1
+			}
+		}
+
+		ai_will_do = { base = 1 }
+	}
+
+	shared_focus = {		
+	id = CHI_limit_accumulation
+		icon = Preserve_cpc
+
+		x = -1
+		y = 2
+		relative_position_id = CHI_selfemployed_problem
+
+		cost = 5
+
+		prerequisite = {  focus = CHI_allowed_to_exist }
+
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+
+		available = {
+
+		}
+
+		completion_reward = {
+		add_ideas = CHI_selfemployed_small_cities
+		}
+
+		ai_will_do = { base = 1 }
+	}
+
+	shared_focus = {		id = CHI_city_mutual_aid
+		icon = generic_communism_focus
+
+		x = 1
+		y = 2
+		relative_position_id = CHI_selfemployed_problem
+		prerequisite = { focus = CHI_get_organized }
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Mao_Zedong_Thought }
+
+		available = {
+
+		}
+
+		completion_reward = {
+		add_ideas = CHI_basic_service
+		}
+
+		ai_will_do = { base = 1 }
+	}
+
+	shared_focus = {
+	id = CHI_Efficient_and_economical
+		icon = worker_paradise
+
+		x = 0
+		y = 3
+		relative_position_id = CHI_selfemployed_problem
+
+		cost = 5
+
+		prerequisite = { focus = CHI_limit_accumulation focus = CHI_city_mutual_aid }
+
+
+		available = {
+custom_trigger_tooltip = {
+NOT = {
+OR = {
+has_idea = CHI_Socialist_Market_Economy_free_1
+has_idea = CHI_Socialist_Market_Economy_free_2
+has_idea = CHI_Free_Market_Economy
+}
+}
+tooltip = CHI_economic_model_liberalization_economy_tt
+}
+		}
+
+		completion_reward = {if = {
+limit = {has_idea = CHI_Socialist_Market_Economy }
+swap_ideas = {
+add_idea = CHI_Socialist_Market_Economy_planned_1
+remove_idea =  CHI_Socialist_Market_Economy
+
+}
+}
+else_if = {
+limit = { has_idea = CHI_Socialist_Market_Economy_planned_1 }
+swap_ideas = {
+add_idea = CHI_Socialist_Market_Economy_planned_2
+remove_idea =  CHI_Socialist_Market_Economy_planned_1
+
+}
+			}
+else_if = {
+limit = { has_idea = CHI_Socialist_Market_Economy_planned_2 }
+swap_ideas = {
+add_idea = CHI_Planned_Economy
+remove_idea =  CHI_Socialist_Market_Economy_planned_2
+
+}
+			}
+		}
+
+		ai_will_do = { base = 1 }
+	}
+	shared_focus = {		
+	id = CHI_agricultural_issues
+		icon = agriculture
+
+		x = 7
+		y = 2
+		relative_position_id = CHI_Socialist_Reconstruction
+
+		cost = 5
+
+		prerequisite = { focus = CHI_general_route }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available = {
+		}
+
+		completion_reward = {
+add_political_power = 50
+		}
+
+		ai_will_do = { base = 1 }
+	}
+
+	shared_focus = {
+	id = CHI_Negative_contract_system
+		icon = ChinaHouse
+
+		x = 2
+		y = 1
+		relative_position_id = CHI_agricultural_issues
+
+		cost = 5
+
+		prerequisite = { focus = CHI_agricultural_issues }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available = {  }
+
+		completion_reward = {
+			add_political_power = 50
+remove_ideas = CHI_not_nongyesui
+		}
+
+		ai_will_do = { base = 1 }
+	}
+
+	shared_focus = {		id = CHI_People_Commune
+		icon = anarchist_economy
+
+		x = 1
+		y = 2
+		relative_position_id = CHI_agricultural_issues
+
+		cost = 5
+
+		prerequisite = { focus = CHI_agricultural_issues}
+		mutually_exclusive = { focus = CHI_state_farm }
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_CORRUPTION FOCUS_FILTER_INDUSTRY }
+
+		available = {}
+
+		completion_reward = {
+add_ideas = CHI_People_Commune
+add_political_power = 100
+		}
+
+		ai_will_do = { base = 1 }
+	}
+
+shared_focus = {		id = CHI_state_farm
+		icon = Farm_national_movement
+
+		x = -1
+		y = 2
+		relative_position_id = CHI_agricultural_issues
+
+		cost = 5
+
+		prerequisite = { focus = CHI_agricultural_issues }
+		mutually_exclusive = { focus = CHI_People_Commune }
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_CORRUPTION FOCUS_FILTER_INDUSTRY }
+
+		available = {
+				custom_trigger_tooltip = {
+					has_country_flag=xggm
+
+				}}
+
+		completion_reward = {
+add_ideas = CHI_state_farm
+
+		}
+
+		ai_will_do = { base = 1 }
+	}
+
+	shared_focus = {		id = CHI_Revitalize_the_countryside
+		icon = agriculture2
+
+		x = 0
+		y = 3
+		relative_position_id = CHI_agricultural_issues
+		prerequisite = { focus = CHI_state_farm focus = CHI_People_Commune }
+
+		cost = 5
+
+
+		available = {
+custom_trigger_tooltip = {
+NOT = {
+OR = {
+has_idea = CHI_Socialist_Market_Economy_free_1
+has_idea = CHI_Socialist_Market_Economy_free_2
+has_idea = CHI_Free_Market_Economy
+}
+}
+tooltip = CHI_economic_model_liberalization_economy_tt
+}
+		}
+
+		completion_reward = {if = {
+limit = {has_idea = CHI_Socialist_Market_Economy }
+swap_ideas = {
+add_idea = CHI_Socialist_Market_Economy_planned_1
+remove_idea =  CHI_Socialist_Market_Economy
+
+}
+}
+else_if = {
+limit = { has_idea = CHI_Socialist_Market_Economy_planned_1 }
+swap_ideas = {
+add_idea = CHI_Socialist_Market_Economy_planned_2
+remove_idea =  CHI_Socialist_Market_Economy_planned_1
+
+}
+			}
+else_if = {
+limit = { has_idea = CHI_Socialist_Market_Economy_planned_2 }
+swap_ideas = {
+add_idea = CHI_Planned_Economy
+remove_idea =  CHI_Socialist_Market_Economy_planned_2
+
+}
+			}
+		}
+
+		ai_will_do = { base = 1 }
+	}
+
+
+
+	shared_focus = {		id = CHI_Chinese_Industrial_Explosion
+		icon = Generic_Workers_Democracy
+
+		x = 3
+		y = 7
+		relative_position_id = CHI_The_Untapped_Market
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Revitalize_the_countryside }
+prerequisite = {focus = CHI_Efficient_and_economical }
+prerequisite = { focus = CHI_Consolidation_public_ownership }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+if = {
+limit = {
+has_idea = CHI_Stateowned_enterprise_monopoly
+}
+			add_timed_idea = {
+				idea = a_new_leap_forward
+				days = 1053
+			}
+		}
+else_if = {
+limit = {
+has_idea = CHI_worker_cooperative
+}
+add_ideas = CHI_new_socialist_economy
+
+}
+custom_effect_tooltip = CHI_Chinese_Industrial_Explosion21_tt
+}
+		ai_will_do = { base = 1 }
+	}
+
+	shared_focus = {
+		id = CHI_Chinese_Megaprojects
+		icon = communism19
+
+		x = -3
+		y = 8
+		relative_position_id = CHI_The_Untapped_Market
+
+		cost = 4
+
+		prerequisite = { focus = CHI_Factory_of_the_World focus = CHI_Chinese_Industrial_Explosion }
+
+		search_filters = { FOCUS_FILTER_INTERNAL_FACTION }
+
+		available = { num_of_civilian_factories > 75 }
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+			set_temp_variable = { temp_opinion = 5 }
+			change_industrial_conglomerates_opinion = yes
+			add_political_power = 50
+			add_stability = 0.025
+			set_temp_variable = { arg_popularity = 0.01 }
+			add_ruling_outlook_popularity = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_Chinese_Megaprojects executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Chinese_High_Speed_Rail_System
+		icon = china_railway
+
+		x = 0
+		y = 1
+		relative_position_id = CHI_Chinese_Megaprojects
+
+		cost = 4.4
+
+		prerequisite = { focus = CHI_Chinese_Megaprojects }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			custom_effect_tooltip = CHI_build_high_speed_railway_TT
+			log = "[GetDateText]: [This.GetName]: focus CHI_Chinese_High_Speed_Rail_System executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Korail
+		icon = korail
+
+		x = -3
+		y = 2
+		relative_position_id = CHI_Chinese_Megaprojects
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Chinese_High_Speed_Rail_System }
+		mutually_exclusive = { focus = CHI_Deutsche_Bahn }
+		mutually_exclusive = { focus = CHI_Union_Pacific }
+		mutually_exclusive = { focus = CHI_Japan_Railway_Group }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		available = {
+			has_war = no
+			NOT = { has_idea = closed_nation }
+			KOR = {
+				has_opinion = {
+					target = CHI
+					value > -1
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = CHI_aggression_less_5_tt
+				check_variable = { chinese_aggression < 6 }
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_completed_focus = CHI_Korean_Joint_Ventures }
+				set_temp_variable = { treasury_change = -17.5 }
+				modify_treasury_effect = yes
+			}
+			else = {
+				set_temp_variable = { treasury_change = -35 }
+				modify_treasury_effect = yes
+			}
+			CHI_five_state_infrastructure_via_focus = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_Korail executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Deutsche_Bahn
+		icon = deutsche_bahn
+
+		x = -1
+		y = 2
+		relative_position_id = CHI_Chinese_Megaprojects
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Chinese_High_Speed_Rail_System }
+		mutually_exclusive = { focus = CHI_Korail }
+		mutually_exclusive = { focus = CHI_Union_Pacific }
+		mutually_exclusive = { focus = CHI_Japan_Railway_Group }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		available = {
+			has_war = no
+			NOT = { has_idea = closed_nation }
+			GER = {
+				has_opinion = {
+					target = CHI
+					value > -1
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = CHI_aggression_less_5_tt
+				check_variable = { chinese_aggression < 6 }
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_completed_focus = CHI_German_Joint_Ventures }
+				set_temp_variable = { treasury_change = -17.5 }
+				modify_treasury_effect = yes
+			}
+			else = {
+				set_temp_variable = { treasury_change = -35 }
+				modify_treasury_effect = yes
+			}
+			CHI_five_state_infrastructure_via_focus = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_Deutsche_Bahn executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Union_Pacific
+		icon = amtrak
+
+		x = 1
+		y = 2
+		relative_position_id = CHI_Chinese_Megaprojects
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Chinese_High_Speed_Rail_System }
+		mutually_exclusive = { focus = CHI_Korail }
+		mutually_exclusive = { focus = CHI_Deutsche_Bahn }
+		mutually_exclusive = { focus = CHI_Japan_Railway_Group }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		available = {
+			has_war = no
+			NOT = { has_idea = closed_nation }
+			USA = {
+				has_opinion = {
+					target = CHI
+					value > -1
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = CHI_aggression_less_5_tt
+				check_variable = { chinese_aggression < 6 }
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_completed_focus = CHI_American_Joint_Ventures }
+				set_temp_variable = { treasury_change = -17.5 }
+				modify_treasury_effect = yes
+			}
+			else = {
+				set_temp_variable = { treasury_change = -35 }
+				modify_treasury_effect = yes
+			}
+			CHI_five_state_infrastructure_via_focus = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_Union_Pacific executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Japan_Railway_Group
+		icon = japan_railways
+
+		x = 3
+		y = 2
+		relative_position_id = CHI_Chinese_Megaprojects
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Chinese_High_Speed_Rail_System }
+		mutually_exclusive = { focus = CHI_Korail }
+		mutually_exclusive = { focus = CHI_Deutsche_Bahn }
+		mutually_exclusive = { focus = CHI_Union_Pacific }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		available = {
+			has_war = no
+			NOT = { has_idea = closed_nation }
+			JAP = {
+				has_opinion = {
+					target = CHI
+					value > -1
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = CHI_aggression_less_5_tt
+				check_variable = { chinese_aggression < 6 }
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_completed_focus = CHI_Japanese_Joint_Ventures }
+				set_temp_variable = { treasury_change = -17.5 }
+				modify_treasury_effect = yes
+			}
+			else = {
+				set_temp_variable = { treasury_change = -35 }
+				modify_treasury_effect = yes
+			}
+			CHI_five_state_infrastructure_via_focus = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_Japan_Railway_Group executed"
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 100
+			}
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Belt_and_Road_Initiative
+		icon = china_bri
+
+		x = 0
+		y = 3
+		relative_position_id = CHI_Chinese_Megaprojects
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Korail focus = CHI_Deutsche_Bahn focus = CHI_Union_Pacific focus = CHI_Japan_Railway_Group }
+
+		available = { has_war = no }
+
+		completion_reward = {
+			every_other_country = {
+				country_event = {
+					id = prc1.87
+				}
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Belt_and_Road_Initiative executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Begin_CCWAEC
+		icon = align_to_kazakhstan
+
+		x = -6
+		y = 4
+		relative_position_id = CHI_Chinese_Megaprojects
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Belt_and_Road_Initiative }
+
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+
+		available = {
+			has_war = no
+			custom_trigger_tooltip = {
+				tooltip = CHI_aggression_less_10_tt
+				check_variable = { chinese_aggression < 11 }
+			}
+			KAZ = {
+				has_war = no
+				has_opinion = { target = CHI value > -1 }
+				has_country_flag = signed_CHI_E
+			}
+			if = {
+				limit = { is_ai = no }
+				custom_trigger_tooltip = {
+					tooltip = CHI_KAZ_railway_tt
+					719 = {
+						infrastructure > 2
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = { is_ai = yes }
+				719 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			KAZ = {
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative
+				}
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative_trade
+				}
+				 
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = CHI }
+			set_temp_variable = { influence_target = KAZ }
+			change_influence_percentage = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_African_Railway_Projects executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_The_Uzbek_Link
+		icon = align_to_uzbekistan
+
+		x = -7
+		y = 5
+		relative_position_id = CHI_Chinese_Megaprojects
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Begin_CCWAEC }
+
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+
+		available = {
+			has_war = no
+			custom_trigger_tooltip = {
+				tooltip = CHI_aggression_less_10_tt
+				check_variable = { chinese_aggression < 11 }
+			}
+			UZB = {
+				has_war = no
+				has_opinion = { target = CHI value > -1 }
+				has_country_flag = signed_CHI_E
+			}
+			if = {
+				limit = { is_ai = no }
+				custom_trigger_tooltip = {
+					tooltip = CHI_UZB_railway_tt
+					725 = {
+						infrastructure > 2
+					}
+					726 = {
+						infrastructure > 2
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = { is_ai = yes }
+				725 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				726 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			UZB = {
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative
+				}
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative_trade
+				}
+				 
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = CHI }
+			set_temp_variable = { influence_target = UZB }
+			change_influence_percentage = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_African_Railway_Projects executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_The_Kyrgyz_Link
+		icon = align_to_kyrgyzstan
+
+		x = -5
+		y = 5
+		relative_position_id = CHI_Chinese_Megaprojects
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Begin_CCWAEC }
+
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+
+		available = {
+			has_war = no
+			custom_trigger_tooltip = {
+				tooltip = CHI_aggression_less_10_tt
+				check_variable = { chinese_aggression < 11 }
+			}
+			KYR = {
+				has_war = no
+				has_opinion = { target = CHI value > -1 }
+				has_country_flag = signed_CHI_E
+			}
+			if = {
+				limit = { is_ai = no }
+				custom_trigger_tooltip = {
+					tooltip = CHI_KYR_railway_tt
+					720 = {
+						infrastructure > 2
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = { is_ai = yes }
+				720 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			KYR = {
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative
+				}
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative_trade
+				}
+				 
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = CHI }
+			set_temp_variable = { influence_target = KYR }
+			change_influence_percentage = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_African_Railway_Projects executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_The_Turkmen_Link
+		icon = align_to_turkmenistan
+
+		x = -7
+		y = 6
+		relative_position_id = CHI_Chinese_Megaprojects
+
+		cost = 5
+
+		prerequisite = { focus = CHI_The_Kyrgyz_Link focus = CHI_The_Uzbek_Link }
+
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+
+		available = {
+			has_war = no
+			custom_trigger_tooltip = {
+				tooltip = CHI_aggression_less_10_tt
+				check_variable = { chinese_aggression < 11 }
+			}
+			TRK = {
+				has_war = no
+				has_opinion = { target = CHI value > -1 }
+				has_country_flag = signed_CHI_E
+			}
+			if = {
+				limit = { is_ai = no }
+				custom_trigger_tooltip = {
+					tooltip = CHI_TRK_railway_tt
+					728 = {
+						infrastructure > 2
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = { is_ai = yes }
+				728 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			TRK = {
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative
+				}
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative_trade
+				}
+				 
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = CHI }
+			set_temp_variable = { influence_target = TRK }
+			change_influence_percentage = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_African_Railway_Projects executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_The_Tajik_Link
+		icon = align_to_tajikistan
+
+		x = -5
+		y = 6
+		relative_position_id = CHI_Chinese_Megaprojects
+
+		cost = 5
+
+		prerequisite = { focus = CHI_The_Kyrgyz_Link focus = CHI_The_Uzbek_Link }
+
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+
+		available = {
+			has_war = no
+			custom_trigger_tooltip = {
+				tooltip = CHI_aggression_less_10_tt
+				check_variable = { chinese_aggression < 11 }
+			}
+			TAJ = {
+				has_war = no
+				has_opinion = { target = CHI value > -1 }
+				has_country_flag = signed_CHI_E
+			}
+			if = {
+				limit = { is_ai = no }
+				custom_trigger_tooltip = {
+					tooltip = CHI_TAJ_railway_tt
+					723 = {
+						infrastructure > 2
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = { is_ai = yes }
+				723 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			TAJ = {
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative
+				}
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative_trade
+				}
+				 
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = CHI }
+			set_temp_variable = { influence_target = TAJ }
+			change_influence_percentage = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_African_Railway_Projects executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_The_Persian_Link
+		icon = align_to_iran
+
+		x = -6
+		y = 7
+		relative_position_id = CHI_Chinese_Megaprojects
+
+		cost = 5
+
+		prerequisite = { focus = CHI_The_Tajik_Link focus = CHI_The_Turkmen_Link }
+
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+
+		available = {
+			has_war = no
+			custom_trigger_tooltip = {
+				tooltip = CHI_aggression_less_20_tt
+				check_variable = { chinese_aggression < 21 }
+			}
+			PER = {
+				has_war = no
+				has_opinion = { target = CHI value > -1 }
+				has_country_flag = signed_CHI_E
+			}
+			if = {
+				limit = { is_ai = no }
+				custom_trigger_tooltip = {
+					tooltip = CHI_PER_railway_tt
+					402 = {
+						infrastructure > 2
+					}
+					405 = {
+						infrastructure > 2
+					}
+					407 = {
+						infrastructure > 2
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = { is_ai = yes }
+				402 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				405 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				407 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			PER = {
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative
+				}
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative_trade
+				}
+				 
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = CHI }
+			set_temp_variable = { influence_target = PER }
+			change_influence_percentage = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_African_Railway_Projects executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_The_Turkish_Link
+		icon = align_to_turkey
+
+		x = -6
+		y = 8
+		relative_position_id = CHI_Chinese_Megaprojects
+
+		cost = 5
+
+		prerequisite = { focus = CHI_The_Tajik_Link focus = CHI_The_Turkmen_Link }
+
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+
+		available = {
+			has_war = no
+			custom_trigger_tooltip = {
+				tooltip = CHI_aggression_less_0_tt
+				check_variable = { chinese_aggression < 1 }
+			}
+			TUR = {
+				has_war = no
+				has_opinion = { target = CHI value > -1 }
+				has_country_flag = signed_CHI_E
+			}
+			if = {
+				limit = { is_ai = no }
+				custom_trigger_tooltip = {
+					tooltip = CHI_TUR_railway_tt
+					935 = {
+						infrastructure > 2
+					}
+					159 = {
+						infrastructure > 2
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = { is_ai = yes }
+				935 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				159 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			TUR = {
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative
+				}
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative_trade
+				}
+				 
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = CHI }
+			set_temp_variable = { influence_target = TUR }
+			change_influence_percentage = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_African_Railway_Projects executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_African_Railway_Projects
+		icon = africa_rail
+
+		x = -3
+		y = 4
+		relative_position_id = CHI_Chinese_Megaprojects
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Belt_and_Road_Initiative }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available = {
+			has_war = no
+			custom_trigger_tooltip = {
+				tooltip = CHI_aggression_less_10_tt
+				check_variable = { chinese_aggression < 11 }
+			}
+		}
+
+		completion_reward = {
+			add_political_power = 25
+			log = "[GetDateText]: [This.GetName]: focus CHI_African_Railway_Projects executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Addis_Ababa_Djibouti_Railway
+		icon = align_to_ethiopia
+
+		x = -3
+		y = 6
+		relative_position_id = CHI_Chinese_Megaprojects
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Mombasa_Nairobi_Standard_Gauge_Railway focus = CHI_Abuja_Kaduna_Railway_Line }
+
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+
+		available = {
+			has_war = no
+			custom_trigger_tooltip = {
+				tooltip = CHI_aggression_less_10_tt
+				check_variable = { chinese_aggression < 11 }
+			}
+			DJI = {
+				has_war = no
+				has_opinion = { target = CHI value > -1 }
+				has_country_flag = signed_CHI_E
+			}
+			ETH = {
+				has_war = no
+				has_opinion = { target = CHI value > -1 }
+				has_country_flag = signed_CHI_E
+			}
+			if = {
+				limit = { is_ai = no }
+				custom_trigger_tooltip = {
+					tooltip = CHI_DJI_railway_tt
+					233 = {
+						infrastructure > 2
+					}
+					230 = {
+						infrastructure > 2
+					}
+					236 = {
+						infrastructure > 2
+					}
+					234 = {
+						infrastructure > 2
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = { is_ai = yes }
+				233 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				230 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				236 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				234 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			every_other_country = {
+				limit = { OR = { original_tag = ETH original_tag = DJI } }
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative
+				}
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative_trade
+				}
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = CHI }
+				set_temp_variable = { influence_target = THIS }
+				change_influence_percentage = yes
+				 
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Addis_Ababa_Djibouti_Railway executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Mombasa_Nairobi_Standard_Gauge_Railway
+		icon = align_to_kenya
+
+		x = -3
+		y = 5
+		relative_position_id = CHI_Chinese_Megaprojects
+
+		cost = 5
+
+		prerequisite = { focus = CHI_African_Railway_Projects }
+
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+
+		available = {
+			has_war = no
+			custom_trigger_tooltip = {
+				tooltip = CHI_aggression_less_10_tt
+				check_variable = { chinese_aggression < 11 }
+			}
+			KEN = {
+				has_war = no
+				has_opinion = { target = CHI value > -1 }
+				has_country_flag = signed_CHI_E
+			}
+			if = {
+				limit = { is_ai = no }
+				custom_trigger_tooltip = {
+					tooltip = CHI_KEN_railway_tt
+					241 = {
+						infrastructure > 2
+					}
+					242 = {
+						infrastructure > 2
+					}
+				}
+			}
+
+		}
+
+		completion_reward = {
+			if = {
+				limit = { is_ai = yes }
+				241 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				242 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			KEN = {
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative
+				}
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative_trade
+				}
+				 
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = CHI }
+			set_temp_variable = { influence_target = KEN }
+			change_influence_percentage = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_Mombasa_Nairobi_Standard_Gauge_Railway executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Abuja_Kaduna_Railway_Line
+		icon = align_to_nigeria
+
+		x = -1
+		y = 5
+		relative_position_id = CHI_Chinese_Megaprojects
+
+		cost = 5
+
+		prerequisite = { focus = CHI_African_Railway_Projects }
+
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+
+		available = {
+			has_war = no
+			custom_trigger_tooltip = {
+				tooltip = CHI_aggression_less_10_tt
+				check_variable = { chinese_aggression < 11 }
+			}
+			NIG = {
+				has_war = no
+				has_opinion = { target = CHI value > -1 }
+				has_country_flag = signed_CHI_E
+			}
+			if = {
+				limit = { is_ai = no }
+				custom_trigger_tooltip = {
+					tooltip = CHI_NIG_railway_tt
+					334 = {
+						infrastructure > 2
+					}
+					337 = {
+						infrastructure > 2
+					}
+					339 = {
+						infrastructure > 2
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = { is_ai = yes }
+				334 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				337 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				339 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			NIG = {
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative
+				}
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative_trade
+				}
+				 
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = CHI }
+			set_temp_variable = { influence_target = NIG }
+			change_influence_percentage = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_Abuja_Kaduna_Railway_Line executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_The_China_Pakistan_Economic_Corridor
+		icon = align_to_pakistan
+
+		x = -1
+		y = 4
+		relative_position_id = CHI_Chinese_Megaprojects
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Belt_and_Road_Initiative }
+
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+
+		available = {
+			has_war = no
+			custom_trigger_tooltip = {
+				tooltip = CHI_aggression_less_20_tt
+				check_variable = { chinese_aggression < 21 }
+			}
+			NOT = { has_completed_focus = CHI_Disengage_from_Pakistan }
+			PAK = {
+				has_war = no
+				has_opinion = { target = CHI value > -1 }
+				has_country_flag = signed_CHI_E
+			}
+			if = {
+				limit = { is_ai = no }
+				custom_trigger_tooltip = {
+					tooltip = CHI_PAK_railway_tt
+					418 = {
+						infrastructure > 2
+					}
+					573 = {
+						infrastructure > 2
+					}
+					563 = {
+						infrastructure > 2
+					}
+					426 = {
+						infrastructure > 2
+					}
+					422 = {
+						infrastructure > 2
+					}
+					421 = {
+						infrastructure > 2
+					}
+					420 = {
+						infrastructure > 2
+					}
+					419 = {
+						infrastructure > 2
+					}
+					417 = {
+						infrastructure > 2
+					}
+					416 = {
+						infrastructure > 2
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -1 }
+			modify_treasury_effect = yes
+			416 = {
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					instant_build = yes
+					province = 12774
+				}
+			}
+			if = {
+				limit = { is_ai = yes }
+				418 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				573 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				563 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				426 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				422 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				421 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				420 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				419 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				417 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				416 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			PAK = {
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative
+				}
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative_trade
+				}
+				 
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = CHI }
+			set_temp_variable = { influence_target = PAK }
+			change_influence_percentage = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_Gwadar_Port_Expansion executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Hambantota_Port_Expansion
+		icon = align_to_sri_lanka
+
+		x = 1
+		y = 4
+		relative_position_id = CHI_Chinese_Megaprojects
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Belt_and_Road_Initiative }
+
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+
+		available = {
+			has_war = no
+			custom_trigger_tooltip = {
+				tooltip = CHI_aggression_less_20_tt
+				check_variable = { chinese_aggression < 21 }
+			}
+			SRI = {
+				has_war = no
+				has_opinion = { target = CHI value > -1 }
+				has_country_flag = signed_CHI_E
+			}
+		}
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -1 }
+			modify_treasury_effect = yes
+			483 = {
+				add_building_construction = {
+					type = naval_base
+					level = 3
+					instant_build = yes
+					province = 4219
+				}
+			}
+			SRI = {
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative
+				}
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative_trade
+				}
+				 
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = CHI }
+			set_temp_variable = { influence_target = SRI }
+			change_influence_percentage = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_Hambantota_Port_Expansion executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_The_Hambantota_Port_Lease
+		icon = dangerous_deal
+
+		x = 1
+		y = 5
+		relative_position_id = CHI_Chinese_Megaprojects
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Hambantota_Port_Expansion }
+
+		available = {
+			has_war = no
+			custom_trigger_tooltip = {
+				tooltip = CHI_aggression_less_20_tt
+				check_variable = { chinese_aggression < 21 }
+			}
+			SRI = {
+				has_war = no
+				has_opinion = { target = CHI value > 19 }
+				has_country_flag = signed_CHI_E
+				influence_higher_30 = yes
+				custom_trigger_tooltip = {
+					tooltip = 30_billion_debt_tt
+					check_variable = { debt > 29 }
+				}
+			}
+		}
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -1 }
+			modify_treasury_effect = yes
+			SRI = {
+				set_temp_variable = { treasury_change = 1 }
+				modify_treasury_effect = yes
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = CHI }
+			set_temp_variable = { influence_target = SRI }
+			change_influence_percentage = yes
+			CHI = {
+				diplomatic_relation = {
+					country = SRI
+					relation = military_access
+				}
+			}
+			news_event = china_news.10
+			set_temp_variable = { modify_chinese_aggression = 1 }
+			CHI_modify_chinese_aggression = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_The_Hambantota_Port_Lease executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Piraeus_Port_Expansion
+		icon = align_to_greece
+
+		x = 3
+		y = 4
+		relative_position_id = CHI_Chinese_Megaprojects
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Belt_and_Road_Initiative }
+
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+
+		available = {
+			has_war = no
+			custom_trigger_tooltip = {
+				tooltip = CHI_aggression_less_5_tt
+				check_variable = { chinese_aggression < 6 }
+			}
+			GRE = {
+				has_war = no
+				has_opinion = { target = CHI value > -1 }
+				has_country_flag = signed_CHI_E
+			}
+		}
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -1 }
+			modify_treasury_effect = yes
+			141 = {
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					instant_build = yes
+					province = 4109
+				}
+			}
+			GRE = {
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative
+				}
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative_trade
+				}
+				 
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = CHI }
+			set_temp_variable = { influence_target = GRE }
+			change_influence_percentage = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_Piraeus_Port_Expansion executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_The_Pan_Asia_Railway_Network
+		icon = align_to_asean
+
+		x = 5
+		y = 4
+		relative_position_id = CHI_Chinese_Megaprojects
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Belt_and_Road_Initiative }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available = {
+			has_war = no
+			custom_trigger_tooltip = {
+				tooltip = CHI_aggression_less_5_tt
+				check_variable = { chinese_aggression < 6 }
+			}
+		}
+
+		completion_reward = {
+			add_political_power = 25
+			log = "[GetDateText]: [This.GetName]: focus CHI_The_Pan_Asia_Railway_Network executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Western_Route
+		icon = align_to_myanmar2
+
+		x = 3
+		y = 5
+		relative_position_id = CHI_Chinese_Megaprojects
+
+		cost = 5
+
+		prerequisite = { focus = CHI_The_Pan_Asia_Railway_Network }
+
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+
+		available = {
+			has_war = no
+			custom_trigger_tooltip = {
+				tooltip = CHI_aggression_less_20_tt
+				check_variable = { chinese_aggression < 21 }
+			}
+			BRM = {
+				has_war = no
+				has_opinion = { target = CHI value > -1 }
+				has_country_flag = signed_CHI_E
+			}
+			BRM = {
+				OR = {
+					has_completed_focus = BRM_announce_the_china_myanmar_economic_corridor
+					has_completed_focus = BRM_promote_chinese_investment
+				}
+			}
+			if = {
+				limit = { is_ai = no }
+				custom_trigger_tooltip = {
+					tooltip = CHI_BRM_railway_tt
+					930 = {
+						infrastructure > 2
+					}
+					505 = {
+						infrastructure > 2
+					}
+					504 = {
+						infrastructure > 2
+					}
+					503 = {
+						infrastructure > 2
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = { is_ai = yes }
+				930 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				505 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				504 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				503 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			BRM = {
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative
+				}
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative_trade
+				}
+				 
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = CHI }
+			set_temp_variable = { influence_target = BRM }
+			change_influence_percentage = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_Western_Route executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Central_Route_Laos
+		icon = align_to_laos
+
+		x = 5
+		y = 5
+		relative_position_id = CHI_Chinese_Megaprojects
+
+		cost = 5
+
+		prerequisite = { focus = CHI_The_Pan_Asia_Railway_Network }
+
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+
+		available = {
+			has_war = no
+			custom_trigger_tooltip = {
+				tooltip = CHI_aggression_less_20_tt
+				check_variable = { chinese_aggression < 21 }
+			}
+			LAO = {
+				has_war = no
+				has_opinion = { target = CHI value > -1 }
+				has_country_flag = signed_CHI_E
+			}
+			if = {
+				limit = { is_ai = no }
+				custom_trigger_tooltip = {
+					tooltip = CHI_LAO_railway_tt
+					515 = {
+						infrastructure > 2
+					}
+					516 = {
+						infrastructure > 2
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = { is_ai = yes }
+				515 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				516 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			LAO = {
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative
+				}
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative_trade
+				}
+				 
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = CHI }
+			set_temp_variable = { influence_target = LAO }
+			change_influence_percentage = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_Central_Route executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Central_Route_Thailand
+		icon = align_to_thailand
+
+		x = 5
+		y = 6
+		relative_position_id = CHI_Chinese_Megaprojects
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Central_Route_Laos }
+
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+
+		available = {
+			has_war = no
+			custom_trigger_tooltip = {
+				tooltip = CHI_aggression_less_10_tt
+				check_variable = { chinese_aggression < 11 }
+			}
+			SIA = {
+				has_war = no
+				has_opinion = { target = CHI value > -1 }
+				has_country_flag = signed_CHI_E
+			}
+			if = {
+				limit = { is_ai = no }
+				custom_trigger_tooltip = {
+					tooltip = CHI_SIA_railway_tt
+					506 = {
+						infrastructure > 2
+					}
+					508 = {
+						infrastructure > 2
+					}
+					509 = {
+						infrastructure > 2
+					}
+					510 = {
+						infrastructure > 2
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = { is_ai = yes }
+				506 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				508 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				509 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				510 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			SIA = {
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative
+				}
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative_trade
+				}
+				 
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = CHI }
+			set_temp_variable = { influence_target = SIA }
+			change_influence_percentage = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_Central_Route_Thailand executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Central_Route_Malaysia
+		icon = align_to_malaysia
+
+		x = 5
+		y = 7
+		relative_position_id = CHI_Chinese_Megaprojects
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Central_Route_Thailand }
+
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+
+		available = {
+			has_war = no
+			custom_trigger_tooltip = {
+				tooltip = CHI_aggression_less_10_tt
+				check_variable = { chinese_aggression < 11 }
+			}
+			MAY = {
+				has_war = no
+				has_opinion = { target = CHI value > -1 }
+				has_country_flag = signed_CHI_E
+			}
+			SIN = {
+				has_war = no
+				has_opinion = { target = CHI value > -1 }
+				has_country_flag = signed_CHI_E
+			}
+			if = {
+				limit = { is_ai = no }
+				custom_trigger_tooltip = {
+					tooltip = CHI_MAY_railway_tt
+					528 = {
+						infrastructure > 2
+					}
+					527 = {
+						infrastructure > 2
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = { is_ai = yes }
+				528 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				527 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			every_other_country = {
+				limit = { OR = { original_tag = MAY original_tag = SIN } }
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative
+				}
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative_trade
+				}
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = CHI }
+				set_temp_variable = { influence_target = THIS }
+				change_influence_percentage = yes
+				 
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Central_Route_Malaysia executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Eastern_Route
+		icon = align_to_vietnam
+
+		x = 7
+		y = 5
+		relative_position_id = CHI_Chinese_Megaprojects
+
+		cost = 5
+
+		prerequisite = { focus = CHI_The_Pan_Asia_Railway_Network }
+
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+
+		available = {
+			has_war = no
+			custom_trigger_tooltip = {
+				tooltip = CHI_aggression_less_0_tt
+				check_variable = { chinese_aggression < 1 }
+			}
+			CBD = {
+				has_war = no
+				has_opinion = { target = CHI value > -1 }
+				has_country_flag = signed_CHI_E
+			}
+			VIE = {
+				has_war = no
+				has_opinion = { target = CHI value > -1 }
+				has_country_flag = signed_CHI_E
+			}
+			if = {
+				limit = { is_ai = no }
+				custom_trigger_tooltip = {
+					tooltip = CHI_VIE_railway_tt
+					524 = {
+						infrastructure > 2
+					}
+					522 = {
+						infrastructure > 2
+					}
+					521 = {
+						infrastructure > 2
+					}
+					519 = {
+						infrastructure > 2
+					}
+					514 = {
+						infrastructure > 2
+					}
+					513 = {
+						infrastructure > 2
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = CHI_VIE_disputes_tt
+				has_country_flag = spratlys_deal_VIE
+				has_country_flag = paracel_deal
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = { is_ai = yes }
+				524 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				522 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				521 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				519 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				514 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				513 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			every_other_country = {
+				limit = { OR = { original_tag = VIE original_tag = CBD } }
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative
+				}
+				add_opinion_modifier = {
+					target = CHI
+					modifier = belt_and_road_initiative_trade
+				}
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = CHI }
+				set_temp_variable = { influence_target = THIS }
+				change_influence_percentage = yes
+				 
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Eastern_Route executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_North_South_Water_Transfer
+		icon = construction
+
+		x = -6
+		y = 1
+		relative_position_id = CHI_Chinese_Megaprojects
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Chinese_Megaprojects }
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			CHI_water_shortages_decrease = yes
+			set_temp_variable = { treasury_change = -80 }
+			modify_treasury_effect = yes
+			add_stability = -0.02
+			log = "[GetDateText]: [This.GetName]: focus CHI_North_South_Water_Transfer executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Ecological_Preservation_Movement
+		icon = sustainable_development
+
+		x = -1
+		y = 1
+		relative_position_id = CHI_North_South_Water_Transfer
+
+		cost = 5
+
+		prerequisite = { focus = CHI_North_South_Water_Transfer }
+		mutually_exclusive = { focus = CHI_Yarlung_Tsangpo_Diversion_Project }
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+			add_stability = 0.05
+			log = "[GetDateText]: [This.GetName]: focus CHI_Ecological_Preservation_Movement executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Yarlung_Tsangpo_Diversion_Project
+		icon = construction3
+
+		x = 1
+		y = 1
+		relative_position_id = CHI_North_South_Water_Transfer
+
+		cost = 5
+
+		prerequisite = { focus = CHI_North_South_Water_Transfer }
+		mutually_exclusive = { focus = CHI_Ecological_Preservation_Movement }
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY }
+
+		available = {
+			OR = {
+				owns_state = 589
+				TIB = { is_subject_of = CHI }
+			}
+		}
+
+		completion_reward = {
+			CHI_water_shortages_decrease = yes
+			set_temp_variable = { treasury_change = -50 }
+			modify_treasury_effect = yes
+			add_stability = -0.01
+			every_other_country = {
+				limit = { OR = { original_tag = RAJ original_tag = BAN } }
+				add_opinion_modifier = {
+					target = CHI
+					modifier = yarlung_tsangpo_diversion_project
+				}
+				add_stability = -0.05
+
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Yarlung_Tsangpo_Diversion_Project executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Water_Conservation_Projects
+		icon = water_conservation
+
+		x = 0
+		y = 2
+		relative_position_id = CHI_North_South_Water_Transfer
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Yarlung_Tsangpo_Diversion_Project focus = CHI_Ecological_Preservation_Movement }
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			CHI_water_shortages_decrease = yes
+			set_temp_variable = { treasury_change = -30 }
+			modify_treasury_effect = yes
+			add_stability = 0.02
+			log = "[GetDateText]: [This.GetName]: focus CHI_Water_Conservation_Projects executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Renewable_Strategy
+		icon = hydroelectric
+
+		x = -11
+		y = 1
+		relative_position_id = CHI_Chinese_Megaprojects
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Chinese_Megaprojects }
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			set_temp_variable = { treasury_change = -15 }
+			modify_treasury_effect = yes
+			add_stability = 0.05
+			custom_effect_tooltip = CHI_southwest_hydroelectricity_dev_TT
+			log = "[GetDateText]: [This.GetName]: focus CHI_Renewable_Strategy executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Golden_Sun_Initiative
+		icon = generic_solar
+
+		x = -2
+		y = 1
+		relative_position_id = CHI_Renewable_Strategy
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Renewable_Strategy }
+		mutually_exclusive = { focus = CHI_Nuclear_Boom }
+		mutually_exclusive = { focus = CHI_Cheap_Coal_Supremacy }
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			set_temp_variable = { treasury_change = -7.5 }
+			modify_treasury_effect = yes
+			one_random_synthetic_refinery = yes
+			add_timed_idea = {
+				idea = CHI_solar_power
+				days = 180
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Golden_Sun_Initiative executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Export_Photovoltaic_Systems
+		icon = money
+
+		x = -2
+		y = 2
+		relative_position_id = CHI_Renewable_Strategy
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Golden_Sun_Initiative }
+
+		search_filters = { FOCUS_FILTER_EXPENDITURE }
+
+		available = {
+			has_war = no
+			OR = {
+				has_idea = export_economy
+				has_idea = globalized_trade_economy
+			}
+			NOT = { has_idea = closed_nation }
+		}
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = 25 }
+			modify_treasury_effect = yes
+			every_other_country = {
+				limit = {
+					NOT = {
+						has_idea = Non_State_Actor
+						has_idea = Lacks_International_Recognition
+						has_idea = rival_government
+					}
+					check_variable = { THIS.gdp_total > 100 }
+				}
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = CHI }
+				set_temp_variable = { influence_target = THIS }
+				change_influence_percentage = yes
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Global_South_Photovoltaic_Aid executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Nuclear_Boom
+		icon = nuclear_science
+
+		x = 0
+		y = 1
+		relative_position_id = CHI_Renewable_Strategy
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Renewable_Strategy }
+		mutually_exclusive = { focus = CHI_Golden_Sun_Initiative }
+		mutually_exclusive = { focus = CHI_Cheap_Coal_Supremacy }
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			set_temp_variable = { treasury_change = -5 }
+			modify_treasury_effect = yes
+			add_ideas = CHI_nuclear_power
+			set_temp_variable = { arg_popularity = -0.05 }
+			add_ruling_outlook_popularity = yes
+			CHI_water_shortages_increase = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_Nuclear_Boom executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Construct_Nuclear_Waste_Repository
+		icon = prc_electricity
+
+		x = 0
+		y = 2
+		relative_position_id = CHI_Renewable_Strategy
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Nuclear_Boom }
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+			add_stability = 0.05
+			log = "[GetDateText]: [This.GetName]: focus CHI_Radiation_Translation executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Cheap_Coal_Supremacy
+		icon = prc_coal
+
+		x = 2
+		y = 1
+		relative_position_id = CHI_Renewable_Strategy
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Renewable_Strategy }
+		mutually_exclusive = { focus = CHI_Golden_Sun_Initiative }
+		mutually_exclusive = { focus = CHI_Nuclear_Boom }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = CHI_coal
+			CHI_water_shortages_increase = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_Cheap_Coal_Supremacy executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Mass_Coal_Oil_Conversion_Project
+		icon = oil_trade
+
+		x = 2
+		y = 2
+		relative_position_id = CHI_Renewable_Strategy
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Cheap_Coal_Supremacy }
+
+		search_filters = { FOCUS_FILTER_RESOURCE FOCUS_FILTER_EXPENDITURE }
+		completion_reward = {
+			set_temp_variable = { treasury_change = -37.5 }
+			modify_treasury_effect = yes
+			swap_ideas = {
+				remove_idea = CHI_coal
+				add_idea = CHI_coal2
+			}
+			add_resource = {
+				type = oil
+				amount = 10
+				state = 549
+			}
+			add_resource = {
+				type = oil
+				amount = 10
+				state = 556
+			}
+			add_resource = {
+				type = oil
+				amount = 10
+				state = 1097
+			}
+			add_resource = {
+				type = oil
+				amount = 10
+				state = 559
+			}
+			add_resource = {
+				type = oil
+				amount = 10
+				state = 560
+			}
+			if = { limit = { OR = { is_outer_mongolia_state_owned = yes
+									MON = { is_subject_of = CHI }
+								 }
+						   }
+			add_resource = {
+				type = oil
+				amount = 10
+				state = 596
+			}
+			add_resource = {
+				type = oil
+				amount = 10
+				state = 597
+			}
+			}
+			CHI_water_shortages_increase = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_Mass_Coal_Oil_Conversion_Project executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_First_Tier_Megacity_Development
+		icon = production
+
+		x = -17
+		y = 1
+		relative_position_id = CHI_Chinese_Megaprojects
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Chinese_Megaprojects }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EXPENDITURE }
+		completion_reward = {
+			add_timed_idea = {
+				idea = CHI_megacity_development
+				days = 90
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_First_Tier_Megacity_Development executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Jing_Jin_Ji_Megacity
+		icon = industry3
+
+		x = -2
+		y = 1
+		relative_position_id = CHI_First_Tier_Megacity_Development
+
+		cost = 5
+
+		prerequisite = { focus = CHI_First_Tier_Megacity_Development }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EXPENDITURE }
+
+		available = {
+			controls_state = 434
+			controls_state = 547
+			controls_state = 548
+		}
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -50 }
+			modify_treasury_effect = yes
+			434 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			547 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			548 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Jing_Jin_Ji_Megacity executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Pearl_River_Megalopolis
+		icon = industry
+
+		x = -2
+		y = 2
+		relative_position_id = CHI_First_Tier_Megacity_Development
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Jing_Jin_Ji_Megacity }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EXPENDITURE }
+
+		available = {
+			controls_state = 532
+			controls_state = 534
+			OR = { AND = { controls_state = 595
+						   controls_state = 1106 }
+				   AND = { HKG = { is_subject_of = CHI }
+						   MAC = { is_subject_of = CHI }
+						 }
+				}
+		}
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -55 }
+			modify_treasury_effect = yes
+			532 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			534 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			595 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			1106 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Pearl_River_Megalopolis executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Four_Provinces_of_Mountains_and_Rivers
+		icon = factory_complex
+
+		x = 0
+		y = 1
+		relative_position_id = CHI_First_Tier_Megacity_Development
+
+		cost = 5
+
+		prerequisite = { focus = CHI_First_Tier_Megacity_Development }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EXPENDITURE }
+
+		available = {
+			controls_state = 558
+			controls_state = 567
+			controls_state = 544
+			controls_state = 435
+			controls_state = 549
+		}
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -70 }
+			modify_treasury_effect = yes
+			558 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			567 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			544 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			435 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			549 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Four_Provinces_of_Mountains_and_Rivers executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Northeast_Industry_Base
+		icon = industry_military
+
+		x = 0
+		y = 2
+		relative_position_id = CHI_First_Tier_Megacity_Development
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Four_Provinces_of_Mountains_and_Rivers }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EXPENDITURE }
+
+		available = {
+			controls_state = 552
+			controls_state = 554
+			controls_state = 555
+			controls_state = 1095
+			controls_state = 1096
+		}
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -60 }
+			modify_treasury_effect = yes
+			552 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			554 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			555 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			1095 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			1096 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Northeast_Industry_Base executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Yangtze_River_Midreaches_Megacity
+		icon = industry2
+
+		x = 2
+		y = 1
+		relative_position_id = CHI_First_Tier_Megacity_Development
+
+		cost = 5
+
+		prerequisite = { focus = CHI_First_Tier_Megacity_Development }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EXPENDITURE }
+
+		available = {
+			controls_state = 562
+			controls_state = 570
+			controls_state = 572
+		}
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -50 }
+			modify_treasury_effect = yes
+			562 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			570 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			572 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Yangtze_River_Midreaches_Megacity executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Yangtze_River_Delta_Megacity
+		icon = industry_civilian
+
+		x = 2
+		y = 2
+		relative_position_id = CHI_First_Tier_Megacity_Development
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Yangtze_River_Midreaches_Megacity }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EXPENDITURE }
+
+		available = {
+			controls_state = 538
+			controls_state = 540
+			controls_state = 541
+			controls_state = 564
+		}
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -80 }
+			modify_treasury_effect = yes
+			538 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			540 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			541 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			564 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Yangtze_River_Delta_Megacity executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+
+	shared_focus = {
+		id = CHI_zhejiang_megacity
+		icon = pearl_river_megacity
+		x = 0
+		y = 3
+		relative_position_id = CHI_First_Tier_Megacity_Development
+		cost = 5
+
+		available = {
+			date > 2010.1.1
+			controls_state = 538
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = CHI_Pearl_River_Megalopolis }
+		prerequisite = { focus = CHI_Yangtze_River_Delta_Megacity }
+		prerequisite = { focus = CHI_Northeast_Industry_Base }
+		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_zhejiang_megacity executed"
+			set_temp_variable = { treasury_change = -100 }
+			modify_treasury_effect = yes
+
+			538 = {
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = internet_station
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = fuel_silo
+					level = 2
+					instant_build = yes
+				}
+			}
+			set_temp_variable = { arg_popularity = 0.03 }
+			add_ruling_outlook_popularity = yes
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Taiwan_Megalopolis
+		icon = centralization
+
+		x = 0
+		y = 4
+		relative_position_id = CHI_First_Tier_Megacity_Development
+
+		cost = 4
+
+		prerequisite = { focus = CHI_zhejiang_megacity }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EXPENDITURE }
+
+		available = {
+			OR = {
+				is_taiwan_area_state_owned = yes
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Taiwan_Megalopolis executed"
+			set_temp_variable = { treasury_change = -45 }
+			modify_treasury_effect = yes
+			598 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			599 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			600 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			1155 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			1156 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			1157 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			1158 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Western_Development_Strategy
+		icon = wheat_field
+
+		x = -23
+		y = 1
+		relative_position_id = CHI_Chinese_Megaprojects
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Chinese_Megaprojects }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INSURGENCY }
+		completion_reward = {
+			add_timed_idea = {
+				idea = CHI_western_development
+				days = 180
+			}
+			set_temp_variable = { modify_uighur_opinion = 10 }
+			CHI_modify_uighur_opinion = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_Western_Development_Strategy executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Qinghai_Tibet_Railway
+		icon = prc_railroad
+
+		x = 2
+		y = 1
+		relative_position_id = CHI_Western_Development_Strategy
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Western_Development_Strategy }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EXPENDITURE }
+
+		available = {
+			OR = {
+				AND = {
+					owns_state = 588
+					owns_state = 589
+				}
+				has_country_flag = TIB_sar_exec
+			}
+		}
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -21 }
+			modify_treasury_effect = yes
+			588 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			589 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Qinghai_Tibet_Railway executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_New_Eurasian_Land_Bridge_Railway
+		icon = prc_railroad
+
+		x = -2
+		y = 1
+		relative_position_id = CHI_Western_Development_Strategy
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Western_Development_Strategy }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EXPENDITURE }
+
+		available = {
+			OR = {
+				AND = {
+					owns_state = 560
+					owns_state = 591
+					owns_state = 592
+					owns_state = 1072
+				}
+				has_country_flag = ETK_sar_exec
+			}
+		}
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -25 }
+			modify_treasury_effect = yes
+			560 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			592 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			1072 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_New_Eurasian_Land_Bridge_Railway executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Southwest_Railway
+		icon = prc_railroad
+
+		x = 0
+		y = 1
+		relative_position_id = CHI_Western_Development_Strategy
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Western_Development_Strategy }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EXPENDITURE }
+
+		available = {
+			controls_state = 574
+			controls_state = 578
+			controls_state = 582
+		}
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -22 }
+			modify_treasury_effect = yes
+			574 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			578 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			582 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Southwest_Railway executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_West_Triangle_Economic_Zone
+		icon = money
+
+		x = 0
+		y = 2
+		relative_position_id = CHI_Western_Development_Strategy
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Qinghai_Tibet_Railway }
+		prerequisite = { focus = CHI_New_Eurasian_Land_Bridge_Railway }
+		prerequisite = { focus = CHI_Southwest_Railway }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EXPENDITURE }
+
+		available = {
+			controls_state = 559
+			controls_state = 583
+			controls_state = 585
+			controls_state = 586
+		}
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -45 }
+			modify_treasury_effect = yes
+			559 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			583 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			585 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			586 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_West_Triangle_Economic_Zone executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Qinghai_Tibet_Development_Plan
+		icon = smiling_buddha
+
+		x = 2
+		y = 3
+		relative_position_id = CHI_Western_Development_Strategy
+
+		cost = 5
+
+		prerequisite = { focus = CHI_West_Triangle_Economic_Zone }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INSURGENCY FOCUS_FILTER_EXPENDITURE }
+
+		available = {
+			OR = {
+				AND = {
+					owns_state = 588
+					owns_state = 589
+				}
+			}
+		}
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -50 }
+			modify_treasury_effect = yes
+			588 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			589 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+		limit = { has_idea = CHI_shaosuminzu1 }
+		swap_ideas = {
+			remove_idea = CHI_shaosuminzu1
+			add_idea = CHI_shaosuminzu2
+		}
+	}
+	else_if = {
+		limit = { has_idea = CHI_shaosuminzu2 }
+		swap_ideas = {
+			remove_idea = CHI_shaosuminzu2
+			add_idea = CHI_shaosuminzu3
+		}
+	}
+	else_if = {
+		limit = { has_idea = CHI_shaosuminzu3 }
+			remove_ideas = CHI_shaosuminzu3
+	}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Qinghai_Tibet_Development_Plan executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Xinjiang_Development_Plan
+		icon = sunni_government
+
+		x = -2
+		y = 3
+		relative_position_id = CHI_Western_Development_Strategy
+
+		cost = 5
+
+		prerequisite = { focus = CHI_West_Triangle_Economic_Zone }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INSURGENCY FOCUS_FILTER_EXPENDITURE }
+
+		available = {
+			OR = {
+				AND = {
+					owns_state = 591
+					owns_state = 592
+				}
+			}
+		}
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -44 }
+			modify_treasury_effect = yes
+			591 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			592 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+if = {
+		limit = { has_idea = CHI_shaosuminzu1 }
+		swap_ideas = {
+			remove_idea = CHI_shaosuminzu1
+			add_idea = CHI_shaosuminzu2
+		}
+	}
+	else_if = {
+		limit = { has_idea = CHI_shaosuminzu2 }
+		swap_ideas = {
+			remove_idea = CHI_shaosuminzu2
+			add_idea = CHI_shaosuminzu3
+		}
+	}
+	else_if = {
+		limit = { has_idea = CHI_shaosuminzu3 }
+			remove_ideas = CHI_shaosuminzu3
+	}			
+
+			log = "[GetDateText]: [This.GetName]: focus CHI_Xinjiang_Development_Plan executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Southwest_Development_Plan
+		icon = allow_pagans
+
+		x = 0
+		y = 3
+		relative_position_id = CHI_Western_Development_Strategy
+
+		cost = 5
+
+		prerequisite = { focus = CHI_West_Triangle_Economic_Zone }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INSURGENCY FOCUS_FILTER_EXPENDITURE }
+
+		available = {
+			controls_state = 574
+			controls_state = 578
+			controls_state = 582
+		}
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -60 }
+			modify_treasury_effect = yes
+			574 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			578 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			582 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+		limit = { has_idea = CHI_shaosuminzu1 }
+		swap_ideas = {
+			remove_idea = CHI_shaosuminzu1
+			add_idea = CHI_shaosuminzu2
+		}
+	}
+	else_if = {
+		limit = { has_idea = CHI_shaosuminzu2 }
+		swap_ideas = {
+			remove_idea = CHI_shaosuminzu2
+			add_idea = CHI_shaosuminzu3
+		}
+	}
+	else_if = {
+		limit = { has_idea = CHI_shaosuminzu3 }
+			remove_ideas = CHI_shaosuminzu3
+	}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Southwest_Development_Plan executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_A_Complete_Prairie
+		icon = focus_generic_horse_studs
+
+		x = -27
+		y = 1
+		relative_position_id = CHI_Chinese_Megaprojects
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Chinese_Megaprojects }
+
+		available = {
+			OR = {
+				AND = {
+					owns_state = 556
+					owns_state = 596
+					owns_state = 597
+					owns_state = 1097
+				}
+									any_other_country = {
+is_subject_of = CHI					
+				
+			AND = {
+					owns_state = 596
+					owns_state = 597
+				}					}
+			}
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_timed_idea = {
+				idea = CHI_new_boundary
+				days = 240
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_A_Complete_Prairie executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Northern_New_Artery
+		icon = prc_railroad
+
+		x = 0
+		y = 1
+
+		relative_position_id = CHI_A_Complete_Prairie
+
+		prerequisite = { focus = CHI_A_Complete_Prairie }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EXPENDITURE }
+
+		cancel_if_invalid = no
+
+
+		available = {
+			OR = {
+				AND = {
+					owns_state = 556
+					owns_state = 596
+					owns_state = 597
+					owns_state = 1097
+				}
+									any_other_country = {
+is_subject_of = CHI					
+				
+			AND = {
+					owns_state = 596
+					owns_state = 597
+				}					}
+			}
+		}
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+			build_railway = {
+				level = 1
+				path = { 10612 14428 4792 13945 10708 14432 7885 7823 1961 13960 4801 13958 13973 14274 14273 13983 1798 13979 1728 12675 12544 10563 14279 1774 13988 4849 4823 }
+			}
+			596 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+				}
+			}
+			597 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+				}
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Northern_New_Artery executed"
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Mongolia_Ore_Production
+		icon = coal_mining
+		x = 0
+		y = 2
+		relative_position_id = CHI_A_Complete_Prairie
+		cost = 5
+
+		prerequisite = { focus = CHI_Northern_New_Artery }
+
+		search_filters = { FOCUS_FILTER_RESOURCE FOCUS_FILTER_EXPENDITURE }
+
+		available = {
+			OR = {
+				AND = {
+					owns_state = 556
+					owns_state = 596
+					owns_state = 597
+					owns_state = 1097
+				}
+									any_other_country = {
+is_subject_of = CHI					
+				
+			AND = {
+					owns_state = 596
+					owns_state = 597
+				}					}
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus CHI_Mongolia_Ore_Production executed"
+			556 = { add_resource = { type = tungsten amount = 6 } }
+			596 = { add_resource = { type = oil amount = 10 } }
+			597 = { add_resource = { type = chromium amount = 7 } }
+			1097 = { add_resource = { type = oil amount = 10 } }
+			set_temp_variable = { treasury_change = -16 }
+			modify_treasury_effect = yes
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Mongolia_Development_Plan
+		icon = buddhism
+
+		x = 0
+		y = 3
+		relative_position_id = CHI_A_Complete_Prairie
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Mongolia_Ore_Production }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EXPENDITURE }
+
+		available = {
+
+			OR = {
+				AND = {
+					owns_state = 556
+					owns_state = 596
+					owns_state = 597
+					owns_state = 1097
+				}
+									any_other_country = {
+is_subject_of = CHI					
+				
+			AND = {
+					owns_state = 596
+					owns_state = 597
+				}					}
+			}
+		}
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -45 }
+			modify_treasury_effect = yes
+			CHI_water_shortages_decrease = yes
+			556 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			596 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			597 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			1097 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Mongolia_Development_Plan executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Prosperous_Borderland
+		icon = one_china_policy_prc
+
+		x = -1
+		y = 4
+		relative_position_id = CHI_Western_Development_Strategy
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Mongolia_Development_Plan }
+		prerequisite = { focus = CHI_Xinjiang_Development_Plan }
+		prerequisite = { focus = CHI_Qinghai_Tibet_Development_Plan }
+		prerequisite = { focus = CHI_Southwest_Development_Plan }
+
+		search_filters = { FOCUS_FILTER_EXPENDITURE }
+
+		available = {
+			owns_state = 574
+			owns_state = 578
+			owns_state = 582
+			owns_state = 556
+			owns_state = 588
+			owns_state = 589
+			owns_state = 592
+			owns_state = 1097
+			OR = {
+				is_outer_mongolia_state_owned = yes
+				MON = { is_subject_of = CHI }
+			}
+		}
+
+		completion_reward = {
+			add_political_power = 120
+			CHI_water_shortages_decrease = yes
+			if = {
+				limit = { has_idea = chinese_khalkha }
+				swap_ideas = {
+				remove_idea = chinese_khalkha
+				add_idea = prosperity_of_borderland
+			}
+			}
+			else = {
+			add_ideas = prosperity_of_borderland
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Prosperous_Borderland executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Strategic_Industries
+		icon = communism18
+
+		x = 3
+		y = 8
+		relative_position_id = CHI_The_Untapped_Market
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Factory_of_the_World focus = CHI_Chinese_Industrial_Explosion }
+
+		search_filters = { FOCUS_FILTER_EXPENDITURE }
+
+		available = {
+			num_of_military_factories > 50
+			num_of_civilian_factories > 75
+			custom_trigger_tooltip = {
+				tooltip = 7_total_gdp_tt
+				check_variable = { gdp_total > 6999 }
+			}
+		}
+
+		completion_reward = {
+			increase_military_spending = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_Strategic_Industries executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Norinco_Projects
+		icon = norinco
+
+		x = 0
+		y = 1
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Strategic_Industries }
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Norinco_Projects executed"
+			set_temp_variable = { treasury_change = -3 }
+			modify_treasury_effect = yes
+			if = {
+				limit = { has_idea = Generic_tank_manufacturer }
+				swap_ideas = {
+					remove_idea = Generic_tank_manufacturer
+					add_idea = CHI_norinco_tank_manufacturer
+				}
+			}
+			else_if = {
+				limit = { NOT = { has_idea = CHI_norinco_tank_manufacturer has_idea = CHI_inner_mongolia_first_machinery_tank_manufacturer } }
+				add_ideas = { CHI_norinco_tank_manufacturer }
+			}
+			if = {
+				limit = { has_idea = Generic_materiel_manufacturer }
+				swap_ideas = {
+					remove_idea = Generic_materiel_manufacturer
+					add_idea = CHI_norinco_materiel_manufacturer
+				}
+			}
+			else_if = {
+				limit = { NOT = { has_idea = CHI_norinco_materiel_manufacturer has_idea = CHI_china_south_industries_group_materiel_manufacturer } }
+				add_ideas = { CHI_norinco_materiel_manufacturer }
+			}
+			set_temp_variable = { temp_opinion = 5 }
+			change_defense_industry_opinion = yes
+			change_the_military_opinion = yes
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Small_Arms_Development
+		icon = small_arms5
+
+		x = -1
+		y = 2
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Norinco_Projects }
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			set_temp_variable = { treasury_change = -2 }
+			modify_treasury_effect = yes
+			add_tech_bonus = {
+				name = CHI_Small_Arms_Development
+				bonus = 0.25
+				uses = 2
+				category = CAT_inf_wep
+			}
+			set_temp_variable = { temp_opinion = 5 }
+			change_defense_industry_opinion = yes
+			change_the_military_opinion = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_Small_Arms_Development executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Air_Burst_Weapons
+		icon = zh05
+
+		x = -1
+		y = 3
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Small_Arms_Development }
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = 7_per_capita_or_more_tt
+				check_variable = { gdp_per_capita > 6.999 }
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Air_Burst_Weapons executed"
+			set_temp_variable = { treasury_change = -4 }
+			modify_treasury_effect = yes
+			add_tech_bonus = {
+				name = CHI_Air_Burst_Weapons
+				bonus = 0.5
+				uses = 1
+				technology = infantry_weapons5
+			}
+			set_temp_variable = { temp_opinion = 5 }
+			change_defense_industry_opinion = yes
+			change_the_military_opinion = yes
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Armored_Vehicles
+		icon = apc
+
+		x = 1
+		y = 2
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Norinco_Projects }
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Armored_Vehicles executed"
+			set_temp_variable = { treasury_change = -4 }
+			modify_treasury_effect = yes
+			add_tech_bonus = {
+				name = CHI_Armored_Vehicles
+				bonus = 0.25
+				uses = 2
+				category = CAT_afv
+			}
+			set_temp_variable = { temp_opinion = 5 }
+			change_defense_industry_opinion = yes
+			change_the_military_opinion = yes
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Advanced_MBTs
+		icon = t90
+
+		x = 1
+		y = 3
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Armored_Vehicles }
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = 7_per_capita_or_more_tt
+				check_variable = { gdp_per_capita > 6.999 }
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Advanced_MBTs executed"
+			set_temp_variable = { treasury_change = -6 }
+			modify_treasury_effect = yes
+			add_tech_bonus = {
+				name = CHI_Advanced_MBTs
+				bonus = 0.5
+				uses = 1
+				category = CAT_mbt
+			}
+			set_temp_variable = { temp_opinion = 5 }
+			change_defense_industry_opinion = yes
+			change_the_military_opinion = yes
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Automotive_Industry
+		icon = motorized
+
+		x = 6
+		y = 1
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Strategic_Industries }
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			set_temp_variable = { treasury_change = -2 }
+			modify_treasury_effect = yes
+			add_tech_bonus = {
+				name = CHI_Automotive_Industry
+				bonus = 0.2
+				uses = 1
+				category = CAT_util
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Automotive_Industry executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Domestic_Development
+		icon = IND_expander
+
+		x = 3
+		y = 2
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Automotive_Industry }
+		mutually_exclusive = { focus = CHI_Bid_for_Foreign_Investments }
+
+		search_filters = { FOCUS_FILTER_INFLUENCE FOCUS_FILTER_INTERNAL_FACTION }
+		completion_reward = {
+			set_temp_variable = { treasury_change = -3 }
+			modify_treasury_effect = yes
+			set_temp_variable = { percent_change = 2 }
+			change_domestic_influence_percentage = yes
+			set_temp_variable = { temp_opinion = 5 }
+			change_industrial_conglomerates_opinion = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_Domestic_Development executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Improve_RD
+		icon = socialist_science
+
+		x = 3
+		y = 3
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 4
+
+		prerequisite = { focus = CHI_Domestic_Development }
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			set_temp_variable = { treasury_change = -5 }
+			modify_treasury_effect = yes
+			add_ideas = CHI_improving_rd
+			log = "[GetDateText]: [This.GetName]: focus CHI_Improve_RD executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Implement_Safety_Standards
+		icon = defense
+
+		x = 3
+		y = 4
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Improve_RD }
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_stability = 0.02
+			log = "[GetDateText]: [This.GetName]: focus CHI_Implement_Safety_Standards executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Develop_World_Class_Cars
+		icon = global_community
+
+		x = 3
+		y = 5
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Implement_Safety_Standards }
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = 7_per_capita_or_more_tt
+				check_variable = { gdp_per_capita > 6.999 }
+			}
+		}
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+			add_tech_bonus = {
+				name = CHI_Develop_World_Class_Cars
+				bonus = 0.25
+				uses = 2
+				category = CAT_util
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Develop_World_Class_Cars executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Bid_for_Foreign_Investments
+		icon = improve_relations
+
+		x = 9
+		y = 2
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Automotive_Industry }
+		mutually_exclusive = { focus = CHI_Domestic_Development }
+
+		available = {
+			has_war = no
+			NOT = { has_idea = closed_nation }
+		}
+
+		completion_reward = {
+			set_temp_variable = { temp_opinion = -5 }
+			change_industrial_conglomerates_opinion = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_Bid_for_Foreign_Investments executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Hyundai
+		icon = hyundai
+
+		x = 5
+		y = 3
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Bid_for_Foreign_Investments }
+		mutually_exclusive = { focus = CHI_Volkswagen }
+		mutually_exclusive = { focus = CHI_General_Motors }
+		mutually_exclusive = { focus = CHI_Toyota }
+
+		available = {
+			has_war = no
+			NOT = { has_idea = closed_nation }
+			KOR = {
+				has_opinion = {
+					target = CHI
+					value > -1
+				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = { NOT = { has_completed_focus = CHI_Korean_Joint_Ventures }	}
+				set_temp_variable = { treasury_change = -6 }
+				modify_treasury_effect = yes
+			}
+			else_if = {
+				limit = { has_completed_focus = CHI_Korean_Joint_Ventures }
+				set_temp_variable = { treasury_change = -3 }
+				modify_treasury_effect = yes
+			}
+			add_ideas = { CHI_Hyundai_Partnership }
+			log = "[GetDateText]: [This.GetName]: focus CHI_Volkswagen executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Volkswagen
+		icon = volkswagen
+
+		x = 7
+		y = 3
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Bid_for_Foreign_Investments }
+		mutually_exclusive = { focus = CHI_Hyundai }
+		mutually_exclusive = { focus = CHI_General_Motors }
+		mutually_exclusive = { focus = CHI_Toyota }
+
+		available = {
+			has_war = no
+			NOT = { has_idea = closed_nation }
+			GER = {
+				has_opinion = {
+					target = CHI
+					value > -1
+				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = { NOT = { has_completed_focus = CHI_German_Joint_Ventures } }
+				set_temp_variable = { treasury_change = -6 }
+				modify_treasury_effect = yes
+			}
+			else_if = {
+				limit = { has_completed_focus = CHI_German_Joint_Ventures }
+				set_temp_variable = { treasury_change = -3 }
+				modify_treasury_effect = yes
+			}
+			add_ideas = { CHI_Volkswagen_Partnership }
+			log = "[GetDateText]: [This.GetName]: focus CHI_Volkswagen executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Toyota
+		icon = toyota
+
+		x = 11
+		y = 3
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Bid_for_Foreign_Investments }
+		mutually_exclusive = { focus = CHI_Hyundai }
+		mutually_exclusive = { focus = CHI_General_Motors }
+		mutually_exclusive = { focus = CHI_Volkswagen }
+
+		available = {
+			has_war = no
+			NOT = { has_idea = closed_nation }
+			JAP = {
+				has_opinion = {
+					target = CHI
+					value > -1
+				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = { NOT = { has_completed_focus = CHI_Japanese_Joint_Ventures } }
+				set_temp_variable = { treasury_change = -6 }
+				modify_treasury_effect = yes
+			}
+			else_if = {
+				limit = { has_completed_focus = CHI_Japanese_Joint_Ventures }
+				set_temp_variable = { treasury_change = -3 }
+				modify_treasury_effect = yes
+			}
+			add_ideas = { CHI_Toyota_Partnership }
+			log = "[GetDateText]: [This.GetName]: focus CHI_Toyota executed"
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 100
+			}
+		}
+	}
+
+	shared_focus = {
+		id = CHI_General_Motors
+		icon = general_motors
+
+		x = 9
+		y = 3
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Bid_for_Foreign_Investments }
+		mutually_exclusive = { focus = CHI_Hyundai }
+		mutually_exclusive = { focus = CHI_Toyota }
+		mutually_exclusive = { focus = CHI_Volkswagen }
+
+		available = {
+			has_war = no
+			NOT = { has_idea = closed_nation }
+			USA = {
+				has_opinion = {
+					target = CHI
+					value > -1
+				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = { NOT = { has_completed_focus = CHI_American_Joint_Ventures } }
+				set_temp_variable = { treasury_change = -6 }
+				modify_treasury_effect = yes
+			}
+			else_if = {
+				limit = { has_completed_focus = CHI_American_Joint_Ventures }
+				set_temp_variable = { treasury_change = -3 }
+				modify_treasury_effect = yes
+			}
+			add_ideas = { CHI_GM_Partnership }
+			log = "[GetDateText]: [This.GetName]: focus CHI_General_Motors executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Joint_Venture_Mass_Production
+		icon = production2
+
+		x = 9
+		y = 4
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 4
+
+		prerequisite = { focus = CHI_Hyundai focus = CHI_General_Motors focus = CHI_Toyota focus = CHI_Volkswagen }
+
+		available = {
+			has_war = no
+			NOT = { has_idea = closed_nation }
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = CHI_Hyundai_Partnership }
+				swap_ideas = {
+					remove_idea = CHI_Hyundai_Partnership
+					add_idea = CHI_Hyundai_Partnership1
+				}
+			}
+			else_if = {
+				limit = { has_idea = CHI_Volkswagen_Partnership }
+				swap_ideas = {
+					remove_idea = CHI_Volkswagen_Partnership
+					add_idea = CHI_Volkswagen_Partnership1
+				}
+			}
+			else_if = {
+				limit = { has_idea = CHI_Toyota_Partnership }
+				swap_ideas = {
+					remove_idea = CHI_Toyota_Partnership
+					add_idea = CHI_Toyota_Partnership1
+				}
+			}
+			else_if = {
+				limit = { has_idea = CHI_GM_Partnership }
+				swap_ideas = {
+					remove_idea = CHI_GM_Partnership
+					add_idea = CHI_GM_Partnership1
+				}
+			}
+			else = {
+				custom_effect_tooltip = CHI_Partnership_tt
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Joint_Venture_Mass_Production executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Foreign_Tech_Acquisitions
+		icon = intelligence_exchange
+
+		x = 9
+		y = 5
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 4
+
+		prerequisite = { focus = CHI_Joint_Venture_Mass_Production }
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		available = {
+			has_war = no
+			NOT = { has_idea = closed_nation }
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CHI_Foreign_Tech_Acquisitions
+				bonus = 0.25
+				uses = 2
+				category = CAT_util
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Foreign_Tech_Acquisitions executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Electric_Car_Project
+		icon = electric_car
+
+		x = 5
+		y = 6
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Foreign_Tech_Acquisitions focus = CHI_Develop_World_Class_Cars }
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = 7_per_capita_or_more_tt
+				check_variable = { gdp_per_capita > 6.999 }
+			}
+		}
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -50 }
+			modify_treasury_effect = yes
+			add_stability = 0.02
+			if = {
+				limit = { has_completed_focus = CHI_Xiaomi }
+				add_ideas = CHI_electric_car_project_idea_1
+			}
+			else_if = {
+				limit = { NOT = { has_completed_focus = CHI_Xiaomi } }
+				add_ideas = CHI_electric_car_project_idea
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Electric_Car_Project executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Expand_Abroad
+		icon = trade_with_china
+
+		x = 7
+		y = 6
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Foreign_Tech_Acquisitions focus = CHI_Develop_World_Class_Cars }
+
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+
+		available = {
+			has_war = no
+			OR = {
+				has_idea = export_economy
+				has_idea = globalized_trade_economy
+			}
+			NOT = { has_idea = closed_nation }
+			custom_trigger_tooltip = {
+				tooltip = 7_per_capita_or_more_tt
+				check_variable = { gdp_per_capita > 6.999 }
+			}
+		}
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -15 }
+			modify_treasury_effect = yes
+			every_other_country = {
+				limit = {
+					NOT = {
+						has_idea = Non_State_Actor
+						has_idea = Lacks_International_Recognition
+						has_idea = rival_government
+					}
+				}
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = CHI }
+				set_temp_variable = { influence_target = THIS }
+				change_influence_percentage = yes
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Expand_Abroad executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Expand_CSIC
+		icon = submarines
+
+		x = 14
+		y = 1
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Strategic_Industries }
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			set_temp_variable = { treasury_change = -4 }
+			modify_treasury_effect = yes
+			if = {
+				limit = { has_idea = Generic_naval_manufacturer }
+				swap_ideas = {
+					remove_idea = Generic_naval_manufacturer
+					add_idea = CHI_china_shipbuilding_industry_corporation_naval_manufacturer
+				}
+			}
+			else_if = {
+				limit = { NOT = { has_idea = CHI_china_shipbuilding_industry_corporation_naval_manufacturer } }
+				add_ideas = { CHI_china_shipbuilding_industry_corporation_naval_manufacturer }
+			}
+			set_temp_variable = { temp_opinion = 5 }
+			change_maritime_industry_opinion = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_Expand_CSIC executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Tianjin_Drydocks
+		icon = navy2
+
+		x = 12
+		y = 2
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Expand_CSIC }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		available = { controls_state = 548 }
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -7.5 }
+			modify_treasury_effect = yes
+			548 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Tianjin_Drydocks executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Bohai_Shipyard
+		icon = battleships
+
+		x = 14
+		y = 2
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Expand_CSIC }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		available = { controls_state = 434 }
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -7.5 }
+			modify_treasury_effect = yes
+			434 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Bohai_Shipyard executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Qingdao_Dockyards
+		icon = navy
+
+		x = 12
+		y = 4
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Tianjin_Drydocks }
+		prerequisite = { focus = CHI_Bohai_Shipyard }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		available = { controls_state = 435 }
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -15 }
+			modify_treasury_effect = yes
+			435 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Qingdao_Dockyards executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Dalian_Shipbuilding
+		icon = naval_dockyard
+
+		x = 13
+		y = 3
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Tianjin_Drydocks }
+		prerequisite = { focus = CHI_Bohai_Shipyard }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		available = { controls_state = 552 }
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -15 }
+			modify_treasury_effect = yes
+			552 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Dalian_Shipbuilding executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Jiangnan_Shipbuilding
+		icon = cruisers
+
+		x = 14
+		y = 4
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Tianjin_Drydocks }
+		prerequisite = { focus = CHI_Bohai_Shipyard }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -20 }
+			modify_treasury_effect = yes
+			540 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Jiangnan_Shipbuilding executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Global_Shipyard
+		icon = battleships2
+
+		x = 13
+		y = 5
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Dalian_Shipbuilding }
+		prerequisite = { focus = CHI_Jiangnan_Shipbuilding }
+		prerequisite = { focus = CHI_Qingdao_Dockyards }
+
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+
+		available = {
+			has_war = no
+			OR = {
+				has_idea = export_economy
+				has_idea = globalized_trade_economy
+			}
+			NOT = { has_idea = closed_nation }
+			custom_trigger_tooltip = {
+				tooltip = 7_per_capita_or_more_tt
+				check_variable = { gdp_per_capita > 6.999 }
+			}
+		}
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -15 }
+			modify_treasury_effect = yes
+			every_other_country = {
+				limit = {
+					has_navy_size = { size > 0 }
+					NOT = {
+						has_idea = Non_State_Actor
+						has_idea = Lacks_International_Recognition
+						has_idea = rival_government
+					}
+				}
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = CHI }
+				set_temp_variable = { influence_target = THIS }
+				change_influence_percentage = yes
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Global_Shipyard executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Aerospace_Industry
+		icon = modern_bomber
+
+		x = 19
+		y = 1
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Strategic_Industries }
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			set_temp_variable = { treasury_change = -4 }
+			modify_treasury_effect = yes
+			set_temp_variable = { temp_opinion = 5 }
+			change_defense_industry_opinion = yes
+			add_tech_bonus = {
+				name = CHI_Expand_CSIC
+				bonus = 0.2
+				uses = 1
+				category = CAT_air_eqp
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Expand_CSIC executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Mobile_Launcher_Platforms
+		icon = rocketry
+
+		x = 16
+		y = 2
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Aerospace_Industry }
+		prerequisite = { focus = CHI_Expand_CSIC }
+		completion_reward = {
+			set_temp_variable = { treasury_change = -1.5 }
+			modify_treasury_effect = yes
+			custom_effect_tooltip = CHI_reduce_space_tt
+			log = "[GetDateText]: [This.GetName]: focus CHI_Mobile_Launcher_Platforms executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Seaborne_Spaceflight
+		icon = orbit_moon
+
+		x = 16
+		y = 3
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Mobile_Launcher_Platforms }
+		completion_reward = {
+			set_temp_variable = { treasury_change = -2 }
+			modify_treasury_effect = yes
+			custom_effect_tooltip = CHI_reduce_space_tt
+			log = "[GetDateText]: [This.GetName]: focus CHI_Seaborne_Spaceflight executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Bolster_the_CNSA
+		icon = generic_space
+
+		x = 18
+		y = 2
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Aerospace_Industry }
+		mutually_exclusive = { focus = CHI_Private_Endeavors }
+
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = { has_completed_focus = CHI_Mobile_Launcher_Platforms }
+					NOT = { has_completed_focus = CHI_Seaborne_Spaceflight }
+				}
+				set_temp_variable = { treasury_change = -10 }
+				modify_treasury_effect = yes
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = CHI_Mobile_Launcher_Platforms
+					NOT = { has_completed_focus = CHI_Seaborne_Spaceflight }
+				}
+				set_temp_variable = { treasury_change = -6 }
+				modify_treasury_effect = yes
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = CHI_Mobile_Launcher_Platforms
+					has_completed_focus = CHI_Seaborne_Spaceflight
+				}
+				set_temp_variable = { treasury_change = -2 }
+				modify_treasury_effect = yes
+			}
+			add_ideas = Public_Sector_Space_Program
+			log = "[GetDateText]: [This.GetName]: focus CHI_Bolster_the_CNSA executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_State_Sponsored_Space_Endeavors
+		icon = international_space_station
+
+		x = 18
+		y = 3
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Bolster_the_CNSA }
+
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = { has_completed_focus = CHI_Mobile_Launcher_Platforms }
+					NOT = { has_completed_focus = CHI_Seaborne_Spaceflight }
+				}
+				set_temp_variable = { treasury_change = -10 }
+				modify_treasury_effect = yes
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = CHI_Mobile_Launcher_Platforms
+					NOT = { has_completed_focus = CHI_Seaborne_Spaceflight }
+				}
+				set_temp_variable = { treasury_change = -6 }
+				modify_treasury_effect = yes
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = CHI_Mobile_Launcher_Platforms
+					has_completed_focus = CHI_Seaborne_Spaceflight
+				}
+				set_temp_variable = { treasury_change = -2 }
+				modify_treasury_effect = yes
+			}
+			swap_ideas = {
+				remove_idea = Public_Sector_Space_Program
+				add_idea = Public_Sector_Space_Program1
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_State_Sponsored_Space_Endeavors executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Private_Endeavors
+		icon = mars
+
+		x = 20
+		y = 2
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Aerospace_Industry }
+		mutually_exclusive = { focus = CHI_Bolster_the_CNSA }
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		available = {}
+
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = { has_completed_focus = CHI_Mobile_Launcher_Platforms }
+					NOT = { has_completed_focus = CHI_Seaborne_Spaceflight }
+				}
+				set_temp_variable = { treasury_change = -10 }
+				modify_treasury_effect = yes
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = CHI_Mobile_Launcher_Platforms
+					NOT = { has_completed_focus = CHI_Seaborne_Spaceflight }
+				}
+				set_temp_variable = { treasury_change = -6 }
+				modify_treasury_effect = yes
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = CHI_Mobile_Launcher_Platforms
+					has_completed_focus = CHI_Seaborne_Spaceflight
+				}
+				set_temp_variable = { treasury_change = -2 }
+				modify_treasury_effect = yes
+			}
+			add_ideas = Private_Sector_Space_Program
+			log = "[GetDateText]: [This.GetName]: focus CHI_Private_Endeavors executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Space_Outsourcing
+		icon = moon_relax
+
+		x = 20
+		y = 3
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Private_Endeavors }
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		available = {}
+
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = { has_completed_focus = CHI_Mobile_Launcher_Platforms }
+					NOT = { has_completed_focus = CHI_Seaborne_Spaceflight }
+				}
+				set_temp_variable = { treasury_change = -10 }
+				modify_treasury_effect = yes
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = CHI_Mobile_Launcher_Platforms
+					NOT = { has_completed_focus = CHI_Seaborne_Spaceflight }
+				}
+				set_temp_variable = { treasury_change = -6 }
+				modify_treasury_effect = yes
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = CHI_Mobile_Launcher_Platforms
+					has_completed_focus = CHI_Seaborne_Spaceflight
+				}
+				set_temp_variable = { treasury_change = -2 }
+				modify_treasury_effect = yes
+			}
+			swap_ideas = {
+				remove_idea = Private_Sector_Space_Program
+				add_idea = Private_Sector_Space_Program1
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Space_Outsourcing executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Invest_in_AVIC
+		icon = money
+
+		x = 22
+		y = 2
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Aerospace_Industry }
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			set_temp_variable = { treasury_change = -6 }
+			modify_treasury_effect = yes
+			add_tech_bonus = {
+				name = CHI_Invest_in_AVIC
+				bonus = 0.3
+				uses = 1
+				category = CAT_air_eqp
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Invest_in_AVIC executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Aircraft_Improvements
+		icon = air_production
+
+		x = 22
+		y = 3
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Invest_in_AVIC }
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			set_temp_variable = { treasury_change = -8 }
+			modify_treasury_effect = yes
+			add_tech_bonus = {
+				name = CHI_Aircraft_Improvements
+				bonus = 0.25
+				uses = 2
+				category = CAT_fixed_wing
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Aircraft_Improvements executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Develop_Stealth_Fighters
+		icon = modern_fighter
+
+		x = 22
+		y = 4
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Aircraft_Improvements }
+		prerequisite = { focus = CHI_Chinese_Tech_Dominance }
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = 7_per_capita_or_more_tt
+				check_variable = { gdp_per_capita > 6.999 }
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Develop_Stealth_Fighters executed"
+			set_temp_variable = { treasury_change = -15 }
+			modify_treasury_effect = yes
+			if = {
+				limit = { has_dlc = "By Blood Alone" }
+				add_tech_bonus = {
+					name = CHI_Develop_Stealth_Fighters
+					bonus = 0.25
+					uses = 2
+					technology = stealth_tech_1
+					technology = stealth_tech_2
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = CHI_Develop_Stealth_Fighters
+					bonus = 0.25
+					uses = 2
+					technology = MR_Fighter4
+					technology = MR_Fighter5
+					technology = MR_Fighter6
+					technology = MR_Fighter7
+					technology = AS_Fighter4
+					technology = AS_Fighter5
+					technology = AS_Fighter6
+					technology = AS_Fighter7
+				}
+			}
+			set_temp_variable = { temp_opinion = 10 }
+			change_the_military_opinion = yes
+			change_defense_industry_opinion = yes
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Electronic_Industry
+		icon = electricity
+
+		x = 26
+		y = 1
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = { focus = CHI_Strategic_Industries }
+
+		search_filters = { FOCUS_FILTER_INTERNAL_FACTION }
+		completion_reward = {
+			set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+			set_temp_variable = { temp_opinion = 5 }
+			change_industrial_conglomerates_opinion = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_Electronic_Industry executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Lenovo
+		icon = lenovo
+
+		x = 24
+		y = 2
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 4
+
+		prerequisite = { focus = CHI_Electronic_Industry }
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+			add_tech_bonus = {
+				name = CHI_Lenovo
+				bonus = 0.25
+				uses = 1
+				category = CAT_computing_tech
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Lenovo executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Huawei
+		icon = huawei
+
+		x = 26
+		y = 2
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 4
+
+		prerequisite = { focus = CHI_Electronic_Industry }
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+			add_tech_bonus = {
+				name = CHI_Huawei
+				bonus = 0.25
+				uses = 1
+				category = CAT_internet_tech
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Huawei executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Xiaomi
+		icon = xiaomi
+
+		x = 28
+		y = 2
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 4
+
+		prerequisite = { focus = CHI_Electronic_Industry }
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+			add_tech_bonus = {
+				name = CHI_Xiaomi
+				bonus = 0.25
+				uses = 1
+				category = CAT_computing_tech
+			}
+			add_tech_bonus = {
+				name = CHI_Xiaomi_Vehicle
+				bonus = 0.25
+				uses = 1
+				category = CAT_afv
+			}
+			if = {
+				limit = { has_idea = CHI_electric_car_project_idea }
+				swap_ideas = {
+					remove_idea = CHI_electric_car_project_idea
+					add_idea = CHI_electric_car_project_idea_1
+				}
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Xiaomi executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Chinese_Tech_Dominance
+		icon = prc_influence
+
+		x = 26
+		y = 3
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 4
+
+		prerequisite = { focus = CHI_Lenovo }
+		prerequisite = { focus = CHI_Huawei }
+		prerequisite = { focus = CHI_Xiaomi }
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = 7_per_capita_or_more_tt
+				check_variable = { gdp_per_capita > 6.999 }
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Chinese_Tech_Dominance executed"
+			add_tech_bonus = {
+				name = CHI_Chinese_Tech_Dominance
+				bonus = 0.2
+				uses = 2
+				category = CAT_computing_tech
+			}
+			add_ideas = CHI_dominant_tech_industry
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Cheaper_Production
+		icon = economic_prosperity
+
+		x = 24
+		y = 4
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 4
+
+		mutually_exclusive = { focus = CHI_Quality_Engineering }
+		prerequisite = { focus = CHI_Chinese_Tech_Dominance }
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			set_temp_variable = { treasury_change = -4 }
+			modify_treasury_effect = yes
+			add_tech_bonus = {
+				name = CHI_Cheaper_Production
+				bonus = 0.25
+				uses = 1
+				category = CAT_3d
+			}
+			swap_ideas = {
+				add_idea = CHI_low_end_manufacturing_2
+				remove_idea = CHI_low_end_manufacturing
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Cheaper_Production executed"
+		}
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 10
+				is_ai = yes
+			}
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Superior_Transistors
+		icon = cryptography
+
+		x = 28
+		y = 4
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 4
+
+		prerequisite = { focus = CHI_Chinese_Tech_Dominance }
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			set_temp_variable = { treasury_change = -4 }
+			modify_treasury_effect = yes
+			add_tech_bonus = {
+				name = CHI_Superior_Transistors
+				bonus = 0.1
+				uses = 3
+				category = CAT_computing_tech
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Superior_Transistors executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	shared_focus = {
+		id = CHI_Quality_Engineering
+		icon = consumer_goods
+
+		x = 26
+		y = 4
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		mutually_exclusive = { focus = CHI_Cheaper_Production }
+		prerequisite = { focus = CHI_Chinese_Tech_Dominance }
+
+		search_filters = { FOCUS_FILTER_CORRUPTION FOCUS_FILTER_RESEARCH FOCUS_FILTER_RESOURCE }
+		completion_reward = {
+			set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+			remove_ideas = CHI_low_end_manufacturing
+			add_tech_bonus = {
+				name = CHI_Quality_Engineering
+				bonus = 0.25
+				uses = 1
+				category = CAT_3d
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Quality_Engineering executed"
+		}
+
+		ai_will_do = { base = 0 }
+	}
+	shared_focus = {		id = CHI_manned_moon_landing
+		icon = lunar_launch
+
+		x = 19
+		y = 4
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = {
+focus = CHI_State_Sponsored_Space_Endeavors
+		focus = CHI_Space_Outsourcing }
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		available = {
+		custom_trigger_tooltip = {
+has_tech = CHI_OLV6
+tooltip = "已研发长征五号"
+		}
+		}
+
+		completion_reward = {
+		set_temp_variable = {arg_popularity = 0.1 }
+add_ruling_outlook_popularity = yes
+add_political_power = 150
+			set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+						every_other_country = {
+						set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = CHI }
+				set_temp_variable = { influence_target = THIS }
+				change_influence_percentage = yes	
+	news_event = {id =  mdardchina_news.54 days = 10 }		
+			}
+		}
+
+		ai_will_do = { base = 1 }
+	}
+	shared_focus = {		id = CHI_Helium3
+		icon = nuclear_science
+
+		x = 20
+		y = 5
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = {
+focus = CHI_manned_moon_landing }
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		available = {		custom_trigger_tooltip = {
+has_tech = CHI_OLV7
+tooltip = "已研发长征六号"
+		} }
+
+		completion_reward = {
+add_ideas = CHI_dev_Helium3
+		}
+
+		ai_will_do = { base = 1 }
+	}
+	shared_focus = {		id = CHI_Landing_on_Mars
+		icon = mars
+
+		x = 18
+		y = 5
+		relative_position_id = CHI_Strategic_Industries
+
+		cost = 5
+
+		prerequisite = {
+focus = CHI_manned_moon_landing }
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		available = {		custom_trigger_tooltip = {
+has_tech = CHI_OLV7
+tooltip = "已研发长征六号"
+		} }
+
+		completion_reward = {
+		set_temp_variable = {arg_popularity = 0.1 }
+add_ruling_outlook_popularity = yes
+add_political_power = 150
+			set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+			every_other_country = {
+						set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = CHI }
+				set_temp_variable = { influence_target = THIS }
+				change_influence_percentage = yes	
+				news_event = {id =  mdardchina_news.55 days = 10 }		
+
+			}
+		}
+
+		ai_will_do = { base = 1 }
+	}	

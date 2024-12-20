@@ -1,0 +1,18 @@
+focus_tree = {
+	id = China_economy
+	country = {
+		factor = 0
+
+		}
+		default = no
+		shared_focus = CHI_Chinese_Model_of_Manufacturing
+	}
+focus_tree = {
+	id = China_ogas
+	country = {
+		factor = 0
+
+		}
+		default = no
+		shared_focus = PRC_computer
+	}

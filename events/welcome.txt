@@ -1,0 +1,18 @@
+add_namespace = welcome_event
+country_event = {
+	id = welcome_event.1
+	title = welcome_event.1.t
+	desc = welcome_event.1.d
+	
+	is_triggered_only = yes
+		immediate = {
+		}
+
+
+	option = { 
+		name = welcome_event.1.o1
+
+		}
+
+
+	}

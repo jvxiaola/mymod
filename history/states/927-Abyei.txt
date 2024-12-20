@@ -1,0 +1,25 @@
+state = {
+	id = 927
+	name = "STATE_927"
+	resources = {
+		oil = 1
+	}
+
+	history = {
+		owner = SUD
+		victory_points = {
+			11049 3
+		}
+		add_claim_by = SSU
+		add_core_of = SUD
+		2017.1.1 = {
+			add_manpower = 324
+		}
+	}
+	provinces = {
+		11049
+	}
+	manpower = 105874
+	buildings_max_level_factor = 1.000
+	state_category = state_01
+}

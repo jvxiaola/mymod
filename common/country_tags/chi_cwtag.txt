@@ -1,0 +1,9 @@
+HNN = "countries/Hunan.txt"#湖南湖北
+GUZ = "countries/Guizhou.txt" #贵州
+GXC = "countries/Liangguang.txt"#广西广东
+DQG = "countries/Manzhou.txt"#东北
+YUN = "countries/Yunnan.txt"#云南
+CQQ = "countries/Chongqing.txt"#重庆四川
+SIK = "countries/Xinjiang.txt"#新疆生产建设兵团
+CHF =  "countries/falungong.txt"#法轮功
+JXI = "countries/Jiangxi.txt"#江西

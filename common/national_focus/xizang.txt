@@ -1,0 +1,23 @@
+
+focus_tree = {
+	id = XIZ_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = XIZ
+	}
+
+
+
+		}
+	
+	default = no
+
+
+
+
+
+
+	}

@@ -1,0 +1,1952 @@
+add_namespace = sco
+add_namespace = chi_moon
+add_namespace = chi_mars
+add_namespace = china_news
+
+###CHINA regular news events
+
+#19th National Congress of CCP
+news_event = {
+	id = china_news.1
+	title = china_news.1.t
+	desc = china_news.1.d
+	picture = GFX_china_19th_national_congress
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = CHI
+		date > 2017.10.18
+		date < 2017.10.24
+		NOT = { has_global_flag = chi_19_ncccp }
+	}
+	immediate = {
+		set_global_flag = chi_19_ncccp
+	}
+
+	major = yes
+
+	option = {
+		name = china_news.1.a
+		trigger = { original_tag = CHI }
+		log = "[GetDateText]: [This.GetName]: china_news.1.a executed"
+		add_stability = 0.05
+	}
+
+	option = {
+		name = china_news.1.b
+		trigger = { NOT = { original_tag = CHI } }
+		log = "[GetDateText]: [This.GetName]: china_news.1.b executed"
+	}
+}
+
+# 90th PLA Anniversary
+news_event = {
+	id = china_news.2
+	title = china_news.2.t
+	desc = china_news.2.d
+	picture = GFX_china_90th_pla_anniversary
+	is_triggered_only = yes
+	major = yes
+	trigger = {
+		NOT = { has_global_flag = chi_pla_90 }
+	}
+	immediate = {
+		set_global_flag = chi_pla_90
+	}
+
+	option = {
+		name = china_news.2.a
+		trigger = { original_tag = CHI }
+		log = "[GetDateText]: [This.GetName]: china_news.2.a executed"
+		add_war_support = 0.05
+	}
+
+	option = {
+		name = china_news.2.b
+		trigger = { NOT = { original_tag = CHI } }
+		log = "[GetDateText]: [This.GetName]: china_news.2.b executed"
+	}
+}
+
+# Bo Xilai Falls from Grace
+news_event = {
+	id = china_news.3
+	title = china_news.3.t
+	desc = china_news.3.d
+	picture = GFX_CHI_bo_xilai_downfall
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = china_news.3.a
+		log = "[GetDateText]: [This.GetName]: china_news.3.a executed"
+	}
+}
+
+# Catching Tigers and Flies
+news_event = {
+	id = china_news.4
+	title = china_news.4.t
+	desc = china_news.4.d
+	picture = GFX_chinese_flag
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = china_news.4.a
+		log = "[GetDateText]: [This.GetName]: china_news.4.a executed"
+	}
+}
+
+# China Institutes "Democracy with Chinese Characteristics"
+news_event = {
+	id = china_news.5
+	title = china_news.5.t
+	desc = china_news.5.d
+
+	picture = GFX_news_election_rally
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = china_news.5.a
+		log = "[GetDateText]: [This.GetName]: china_news.5.a executed"
+	}
+}
+
+# China Joins the World Trade Organization
+news_event = {
+	id = china_news.6
+	title = china_news.6.t
+	desc = china_news.6.d
+
+	picture = GFX_trade_agreement
+
+	is_triggered_only = yes
+
+	major = yes
+
+	# China continues to open up to the world!
+	option = {
+		name = china_news.6.a
+		log = "[GetDateText]: [This.GetName]: china_news.6.a executed"
+	}
+}
+
+#China Completes its Transition towards a Free-Market Economy
+news_event = {
+	id = china_news.7
+	title = china_news.7.t
+	desc = china_news.7.d
+
+	picture = GFX_news_press_conference
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = china_news.7.a #There is nothing holding back China's development now...
+		log = "[GetDateText]: [This.GetName]: china_news.7.a executed"
+	}
+}
+
+#[CHI.GetLeader] Denounces Deng Xiaoping
+news_event = {
+	id = china_news.8
+	title = china_news.8.t
+	desc = china_news.8.d
+
+	picture = GFX_china_19th_national_congress
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = china_news.8.a #The People's Republic returns to its roots.
+		log = "[GetDateText]: [This.GetName]: china_news.8.a executed"
+	}
+}
+
+#China Declares the Fifth International
+news_event = {
+	id = china_news.9
+	title = china_news.9.t
+	desc = china_news.9.d
+
+	picture = GFX_china_19th_national_congress
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = china_news.9.a #Communism is once again a force to be reckoned with...
+		log = "[GetDateText]: [This.GetName]: china_news.9.a executed"
+	}
+}
+
+#China Gains Control of Sri Lankan Port
+news_event = {
+	id = china_news.10
+	title = china_news.10.t
+	desc = china_news.10.d
+
+	picture = GFX_united_states_navy
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		trigger = { NOT = { has_government = democratic } }
+		name = china_news.10.a #This is a good day for China.
+		log = "[GetDateText]: [This.GetName]: china_news.10.a executed"
+	}
+
+	option = {
+		trigger = { has_government = democratic }
+		name = china_news.10.b #Sri Lankan sovereignty has been eroded!
+		log = "[GetDateText]: [This.GetName]: china_news.10.b executed"
+	}
+}
+
+#China Expels Foreign Interests
+news_event = {
+	id = china_news.11
+	title = china_news.11.t
+	desc = china_news.11.d
+
+	picture = GFX_china_19th_national_congress
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		trigger = { NOT = { original_tag = CHI } }
+		name = china_news.11.a #The Chinese have lost their senses!
+		log = "[GetDateText]: [This.GetName]: china_news.11.a executed"
+	}
+
+	option = {
+		trigger = { original_tag = CHI }
+		name = china_news.11.b #The Chinese people are once again free from foreign oppression!
+		log = "[GetDateText]: [This.GetName]: china_news.11.b executed"
+	}
+}
+
+#[CHI.GetLeader] Pledges to Hold Elections!
+news_event = {
+
+	id = china_news.12
+	title = china_news.12.t
+	desc = china_news.12.d
+
+	picture = GFX_china_19th_national_congress
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = china_news.12.a #The CCP will not give up power that easily...
+		log = "[GetDateText]: [This.GetName]: china_news.12.a executed"
+	}
+}
+
+#uighur knife attack news event
+news_event = {
+	id = china_news.13
+	title = china_news.13.t
+	desc = china_news.13.d
+
+	picture = GFX_news_rise_of_taliban
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = china_news.13.a
+		log = "[GetDateText]: [This.GetName]: china_news.13.a executed"
+	}
+}
+
+#uighur bombing news event
+news_event = {
+	id = china_news.14
+	title = china_news.14.t
+	desc = china_news.14.d
+
+	picture = GFX_news_rocket_explosion
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = china_news.14.a
+		log = "[GetDateText]: [This.GetName]: china_news.14.a executed"
+	}
+}
+
+#The Dalai Lama Returns to Tibet
+news_event = {
+	id = china_news.15
+	title = china_news.15.t
+	desc = china_news.15.d
+
+	picture = GFX_dalai_lama
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = china_news.15.a
+		log = "[GetDateText]: [This.GetName]: china_news.15.a executed"
+	}
+}
+
+#The Xinjiang Special Administrative Region is Established
+news_event = {
+	id = china_news.16
+	title = china_news.16.t
+	desc = china_news.16.d
+
+	picture = GFX_chinese_flag
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = china_news.16.a
+		log = "[GetDateText]: [This.GetName]: china_news.16.a executed"
+	}
+}
+
+#The Tibetan Special Administrative Region is Established
+news_event = {
+	id = china_news.17
+	title = china_news.17.t
+	desc = china_news.17.d
+
+	picture = GFX_chinese_flag
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = china_news.17.a
+		log = "[GetDateText]: [This.GetName]: china_news.17.a executed"
+	}
+}
+
+#China aim to recover Outer Mongolian back
+news_event = {
+	id = china_news.18
+	title = china_news.18.t
+	desc = china_news.18.d
+
+	picture = GFX_CHI_target_outer_mongolia
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = china_news.18.a
+		log = "[GetDateText]: [This.GetName]: china_news.18.a executed"
+	}
+}
+
+#The Outer Mongolian Special Administrative Region is Established
+news_event = {
+	id = china_news.19
+	title = china_news.19.t
+	desc = china_news.19.d
+
+	picture = GFX_CHI_took_outer_mongolia
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = china_news.19.a
+		log = "[GetDateText]: [This.GetName]: china_news.19.a executed"
+	}
+}
+
+#China Drops its Opposition to the Prospect of Taiwanese Independence
+news_event = {
+	id = china_news.20
+	title = china_news.20.t
+	desc = china_news.20.d
+
+	picture = GFX_news_press_conference
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = china_news.20.a
+		log = "[GetDateText]: [This.GetName]: china_news.20.a executed"
+	}
+}
+
+#The PRC's "Roadmap to Reunification" Released
+news_event = {
+	id = china_news.21
+	title = china_news.21.t
+	desc = china_news.21.d
+
+	picture = GFX_news_press_conference
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = china_news.21.a
+		trigger = { NOT = { original_tag = TAI } }
+		log = "[GetDateText]: [This.GetName]: china_news.21.a executed"
+	}
+
+	option = {
+		name = china_news.21.b
+		trigger = { original_tag = TAI }
+		log = "[GetDateText]: [This.GetName]: china_news.21.b executed"
+	}
+}
+
+#China Blockades Taiwanese Islands
+news_event = {
+	id = china_news.22
+	title = china_news.22.t
+	desc = china_news.22.d
+
+	picture = GFX_united_states_navy
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = china_news.22.a
+		trigger = { NOT = { original_tag = TAI original_tag = CHI } }
+		log = "[GetDateText]: [This.GetName]: china_news.22.a executed"
+	}
+
+	option = {
+		name = china_news.22.b
+		trigger = { original_tag = TAI }
+		log = "[GetDateText]: [This.GetName]: china_news.22.b executed"
+	}
+
+	option = {
+		name = china_news.22.c
+		trigger = { original_tag = CHI }
+		log = "[GetDateText]: [This.GetName]: china_news.22.b executed"
+	}
+
+}
+
+#China Shells Kinmen and Matsu
+news_event = {
+	id = china_news.23
+	title = china_news.23.t
+	desc = china_news.23.d
+
+	picture = GFX_news_rocket_explosion
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = china_news.23.a
+		log = "[GetDateText]: [This.GetName]: china_news.23.a executed"
+	}
+
+}
+
+#Taiwan SAR establish
+news_event = {
+	id = china_news.24
+	title = china_news.24.t
+
+	desc = {
+		text = china_news.24.d #non-coup SAR
+		trigger = {
+			TAI = { NOT = { has_country_flag = TAI_coup_success } }
+			CHI = { NOT = { has_completed_focus = CHI_Resume_the_Civil_War } }
+		}
+	}
+
+	desc = {
+		text = china_news.24.d_coup #coup SAR
+		trigger = {
+			TAI = { has_country_flag = TAI_coup_success }
+		}
+	}
+
+	desc = {
+		text = china_news.24.d_war #war SAR
+		trigger = {
+			TAI = { NOT = { has_country_flag = TAI_coup_success } }
+			CHI = { has_completed_focus = CHI_Resume_the_Civil_War }
+		}
+	}
+
+	picture = GFX_chinese_flag
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = china_news.24.a
+		log = "[GetDateText]: [This.GetName]: china_news.24.a executed"
+	}
+}
+
+#Repubic of China Government ceases operations
+news_event = {
+	id = china_news.25
+	title = china_news.25.t
+	desc = china_news.25.d
+
+	picture = GFX_chinese_flag
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = china_news.25.a
+		log = "[GetDateText]: [This.GetName]: china_news.25.a executed"
+	}
+
+}
+
+# The Varyag trigger
+news_event = {
+	id = china_news.26
+	title = china_news.26.t
+	desc = china_news.26.d
+
+	picture = GFX_CHI_varyag
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = china_news.26.a
+		log = "[GetDateText]: [This.GetName]: china_news.26.a executed"
+		hidden_effect = {
+			TUR = { country_event = { id = china.33 days = 90 } }
+		}
+	}
+}
+
+#Disaster In Istanbul!
+news_event = {
+	id = china_news.27
+	title = china_news.27.t
+	desc = china_news.27.d
+
+	picture = GFX_CHI_varyag_lost
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = china_news.27.a
+		log = "[GetDateText]: [This.GetName]: china_news.27.a executed"
+		hidden_effect = {
+			TUR = {
+				country_event = china.39
+			}
+		}
+	}
+}
+
+#At Last
+news_event = {
+	id = china_news.28
+	title = china_news.28.t
+	desc = china_news.28.d
+
+	picture = GFX_CHI_varyag
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = china_news.28.a
+		trigger = { original_tag = CHI }
+		log = "[GetDateText]: [This.GetName]: china_news.28.a executed"
+		add_political_power = 5
+	}
+
+	option = {
+		name = china_news.28.b
+		trigger = { NOT = { original_tag = CHI } }
+		log = "[GetDateText]: [This.GetName]: china_news.28.b executed"
+	}
+}
+
+#Wenchuan Earthquake
+news_event = {
+	id = china_news.29
+	title = china_news.29.t
+	desc = china_news.29.d
+	picture = GFX_CHI_wenchuan
+	is_triggered_only = yes
+	major = yes
+
+	trigger = {
+		country_exists = CHI
+		NOT = { has_global_flag = wenchuan_earthquake }
+	}
+	immediate = {
+		set_global_flag = wenchuan_earthquake
+	}
+
+	option = {
+		name = china_news.29.a
+		trigger = { original_tag = CHI }
+		subtract_from_variable = {
+			var = treasury
+			value = 5.5
+		}
+		add_political_power = -200
+		add_stability = -0.02
+		585 = {
+			add_manpower = -87510
+		}
+		585 = { damage_building = { type = infrastructure damage = 4 } damage_building = { type = industrial_complex damage = 2 } }
+		log = "[GetDateText]: [This.GetName]: china_news.29.a executed"
+	}
+	option = {
+		name = china_news.29.b
+		trigger = { NOT = { original_tag = CHI } }
+		log = "[GetDateText]: [This.GetName]: china_news.29.b executed"
+	}
+}
+
+# Beijing 2008 Olympic Games
+news_event = {
+	id = china_news.30
+	immediate = { log = "[GetDateText]: [Root.GetName]: news_event china_news.30" }
+	title = china_news.30.t
+	desc = china_news.30.d
+	picture = GFX_CHI_beijing_olympic_2008
+	is_triggered_only = yes
+	major = yes
+
+	trigger = {
+		country_exists = CHI
+		NOT = { has_global_flag = olympics_2008 }
+		CHI = { has_war = no }
+	}
+	immediate = {
+		set_global_flag = olympics_2008
+	}
+
+	option = {
+		name = china_news.30.a
+		trigger = { NOT = { original_tag = CHI } }
+		log = "[GetDateText]: [This.GetName]: china_news.30.a executed"
+	}
+	option = {
+		name = china_news.30.b
+		log = "[GetDateText]: [This.GetName]: china_news.30.b executed"
+		trigger = { original_tag = CHI }
+		add_political_power = 200
+		add_stability = 0.05
+	}
+}
+
+#China and America clash in the South China Sea
+news_event = {
+	id = china_news.31
+	title = china_news.31.t
+	desc = china_news.31.d
+
+	picture = GFX_united_states_navy
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = china_news.31.a #Truly a clash of titans.
+		trigger = { NOT = { original_tag = USA } }
+		log = "[GetDateText]: [This.GetName]: china_news.31.a executed"
+	}
+
+	option = {
+		name = china_news.31.b #Truly a clash of titans.
+		trigger = { original_tag = USA }
+		log = "[GetDateText]: [This.GetName]: china_news.31.b executed"
+	}
+}
+
+#War over Taiwan Second Public Constitution
+news_event = {
+	id = china_news.32
+	title = china_news.32.t
+	desc = china_news.32.d
+	picture = GFX_CHI_chinese_soldiers_news
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = { #Prepare for the worst
+		name = china_news.32.a
+		log = "[GetDateText]: [This.GetName]: china_news.32.a executed"
+		trigger = {
+			OR = {
+				tag = JAP
+				tag = USA
+				is_in_faction_with = USA
+			}
+		}
+	}
+
+	option = { #There is no other course
+		name = china_news.32.b
+		log = "[GetDateText]: [This.GetName]: china_news.32.b executed"
+		trigger = {
+			OR = {
+				is_in_faction_with = CHI
+				tag = CHI
+			}
+		}
+	}
+
+	option = { #Millions will die for old conflict
+		name = china_news.32.c
+		log = "[GetDateText]: [This.GetName]: china_news.32.c executed"
+		trigger = {
+			NOT = { AND = { tag = USA
+						   is_in_faction_with = USA } }
+			NOT = { AND = { tag = CHI
+						   is_in_faction_with = CHI } }
+		}
+	}
+}
+
+#War preparation over Taiwan Second Public Constitution
+news_event = {
+	id = china_news.33
+	title = china_news.33.t
+	desc = china_news.33.d
+	picture = GFX_CHI_chinese_soldiers_news
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = { #Prepare for the worst
+		name = china_news.33.a
+		log = "[GetDateText]: [This.GetName]: china_news.33.a executed"
+		trigger = {
+			OR = {
+				tag = JAP
+				tag = USA
+				is_in_faction_with = USA
+			}
+		}
+	}
+
+	option = { #There is no other course
+		name = china_news.33.b
+		log = "[GetDateText]: [This.GetName]: china_news.33.b executed"
+		trigger = {
+			OR = {
+				is_in_faction_with = CHI
+				tag = CHI
+			}
+		}
+	}
+
+	option = { #Millions will die for old conflict
+		name = china_news.33.c
+		log = "[GetDateText]: [This.GetName]: china_news.33.c executed"
+		trigger = {
+			NOT = { AND = { tag = USA
+						   is_in_faction_with = USA } }
+			NOT = { AND = { tag = CHI
+						   is_in_faction_with = CHI } }
+		}
+	}
+}
+
+#War over Taiwan Declare Independent
+news_event = {
+	id = china_news.34
+	title = china_news.34.t
+	desc = china_news.34.d
+	picture = GFX_CHI_chinese_soldiers_news
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = { #Prepare for the worst
+		name = china_news.34.a
+		log = "[GetDateText]: [This.GetName]: china_news.34.a executed"
+		trigger = {
+			OR = {
+				tag = JAP
+				tag = USA
+				is_in_faction_with = USA
+			}
+		}
+	}
+
+	option = { #There is no other course
+		name = china_news.34.b
+		log = "[GetDateText]: [This.GetName]: china_news.34.b executed"
+		trigger = {
+			OR = {
+				is_in_faction_with = CHI
+				tag = CHI
+			}
+		}
+	}
+
+	option = { #Millions will die for old conflict
+		name = china_news.34.c
+		log = "[GetDateText]: [This.GetName]: china_news.34.c executed"
+		trigger = {
+			NOT = { AND = { tag = USA
+						   is_in_faction_with = USA } }
+			NOT = { AND = { tag = CHI
+						   is_in_faction_with = CHI } }
+		}
+	}
+}
+
+#War preparation over Taiwan Declare Independent
+news_event = {
+	id = china_news.35
+	title = china_news.35.t
+	desc = china_news.35.d
+	picture = GFX_CHI_chinese_soldiers_news
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = { #Prepare for the worst
+		name = china_news.35.a
+		log = "[GetDateText]: [This.GetName]: china_news.35.a executed"
+		trigger = {
+			OR = {
+				tag = JAP
+				tag = USA
+				is_in_faction_with = USA
+			}
+		}
+	}
+
+	option = { #There is no other course
+		name = china_news.35.b
+		log = "[GetDateText]: [This.GetName]: china_news.35.b executed"
+		trigger = {
+			OR = {
+				is_in_faction_with = CHI
+				tag = CHI
+			}
+		}
+	}
+
+	option = { #Millions will die for old conflict
+		name = china_news.35.c
+		log = "[GetDateText]: [This.GetName]: china_news.35.c executed"
+		trigger = {
+			NOT = { AND = { tag = USA
+						   is_in_faction_with = USA } }
+			NOT = { AND = { tag = CHI
+						   is_in_faction_with = CHI } }
+		}
+	}
+}
+
+#War over Taiwan Join NATO
+news_event = {
+	id = china_news.36
+	title = china_news.36.t
+	desc = china_news.36.d
+	picture = GFX_CHI_chinese_soldiers_news2
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = { #Prepare for the worst
+		name = china_news.36.a
+		log = "[GetDateText]: [This.GetName]: china_news.36.a executed"
+		trigger = {
+			OR = {
+				tag = JAP
+				tag = USA
+				is_in_faction_with = USA
+			}
+		}
+	}
+
+	option = { #There is no other course
+		name = china_news.36.b
+		log = "[GetDateText]: [This.GetName]: china_news.36.b executed"
+		trigger = {
+			OR = {
+				is_in_faction_with = CHI
+				tag = CHI
+			}
+		}
+	}
+
+	option = { #Millions will die for old conflict
+		name = china_news.36.c
+		log = "[GetDateText]: [This.GetName]: china_news.36.c executed"
+		trigger = {
+			NOT = { AND = { tag = USA
+						   is_in_faction_with = USA } }
+			NOT = { AND = { tag = CHI
+						   is_in_faction_with = CHI } }
+		}
+	}
+}
+
+#War preparation over Taiwan Join NATO
+news_event = {
+	id = china_news.37
+	title = china_news.37.t
+	desc = china_news.37.d
+	picture = GFX_CHI_chinese_soldiers_news
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = { #Prepare for the worst
+		name = china_news.37.a
+		log = "[GetDateText]: [This.GetName]: china_news.37.a executed"
+		trigger = {
+			OR = {
+				tag = JAP
+				tag = USA
+				is_in_faction_with = USA
+			}
+		}
+	}
+
+	option = { #There is no other course
+		name = china_news.37.b
+		log = "[GetDateText]: [This.GetName]: china_news.37.b executed"
+		trigger = {
+			OR = {
+				is_in_faction_with = CHI
+				tag = CHI
+			}
+		}
+	}
+
+	option = { #Millions will die for old conflict
+		name = china_news.37.c
+		log = "[GetDateText]: [This.GetName]: china_news.37.c executed"
+		trigger = {
+			NOT = { AND = { tag = USA
+						   is_in_faction_with = USA } }
+			NOT = { AND = { tag = CHI
+						   is_in_faction_with = CHI } }
+		}
+	}
+}
+
+#Genshin Impact, Start!
+news_event = {
+	id = china_news.38
+	title = china_news.38.t
+	desc = china_news.38.d
+	picture = GFX_genshin_impact
+
+
+	is_triggered_only = yes
+
+	option = { #China
+		name = china_news.38.a
+		log = "[GetDateText]: [This.GetName]: china_news.38.a executed"
+		trigger = {
+			NOT = {
+				tag = CHI
+			}
+		}
+	}
+
+	option = { #Other Tag
+		name = china_news.38.b
+		log = "[GetDateText]: [This.GetName]: china_news.38.b executed"
+		trigger = {
+				tag = CHI
+		}
+	}
+}
+
+#The Wandering Earth series
+news_event = {
+	id = china_news.39
+	title = china_news.39.t
+	desc = china_news.39.d
+	picture = GFX_the_wandering_earth
+
+
+	is_triggered_only = yes
+
+	option = { #China
+		name = china_news.39.a
+		log = "[GetDateText]: [This.GetName]: china_news.39.a executed"
+		trigger = {
+			NOT = {
+				tag = CHI
+			}
+		}
+	}
+
+	option = { #Other Tag
+		name = china_news.39.b
+		log = "[GetDateText]: [This.GetName]: china_news.39.b executed"
+		trigger = {
+				tag = CHI
+		}
+	}
+}
+country_event = {
+	id = chi_moon.1
+	title = chi_moon.1.1.t
+	desc = chi_moon.1.1.d
+	picture = GFX_cnsa_rocket #alles passt außer das
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #Launch!
+		name = chi_moon.1.1.o1
+		log = "[GetDateText]: [This.GetName]: chi_moon.1.1.o1 executed"
+		hidden_effect = {
+			country_event = { id = donald_trump.27 days = 20 random = 480 }
+		}
+	}
+}
+
+#Moonbase Alpha
+country_event = {
+	id = chi_moon.2
+	title = chi_moon.2.t
+	desc = chi_moon.2.d
+	picture = GFX_moonbase_construction
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #Science!
+		name = chi_moon.2.o1
+		log = "[GetDateText]: [This.GetName]: chi_moon.2.o1 executed"
+		add_political_power = -10
+		add_0_25_Republican_popularity = yes
+		add_0_25_Nat_Populism_popularity = yes
+		advance_moon_base = yes
+	}
+}
+
+#Colony Progresses
+country_event = {
+	id = chi_moon.3
+	title = chi_moon.3.t
+	desc = chi_moon.3.d
+	picture = GFX_moonbase_construction
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #We're good at being pioneers
+		name = chi_moon.3.o1
+		log = "[GetDateText]: [This.GetName]: chi_moon.3.o1 executed"
+		add_political_power = 20
+		add_0_25_Nat_Populism_popularity = yes
+		advance_moon_base = yes
+		swap_ideas = {
+			remove_idea = continued_space_efforts5
+			add_idea = continued_space_efforts6
+		}
+	}
+}
+
+#Crisis on the Moon
+country_event = {
+	id = chi_moon.4
+	title = chi_moon.4.t
+	desc = chi_moon.4.d
+	picture = GFX_moonbase
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #Send emergency aid!
+		name = chi_moon.4.o1
+		log = "[GetDateText]: [This.GetName]: chi_moon.4.o1 executed"
+		add_political_power = -75
+		subtract_0_5_Republican_popularity = yes
+		subtract_1_Nat_Populism_popularity = yes
+		advance_moon_base = yes
+	}
+	option = { #Abandon the project. It's not meant for us
+		name = chi_moon.4.o2
+		log = "[GetDateText]: [This.GetName]: chi_moon.4.o2 executed"
+		add_political_power = 25
+		subtract_0_25_Republican_popularity = yes
+		subtract_1_Nat_Populism_popularity = yes
+	}
+}
+
+#Colony Progresses Further
+country_event = {
+	id = chi_moon.5
+	title = chi_moon.5.t
+	desc = chi_moon.5.d
+	picture = GFX_moonbase_construction
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #Life continues on
+		name = chi_moon.5.o1
+		log = "[GetDateText]: [This.GetName]: chi_moon.5.o1 executed"
+		add_political_power = 30
+		add_0_25_Nat_Populism_popularity = yes
+		advance_moon_base = yes
+		swap_ideas = {
+			remove_idea = continued_space_efforts6
+			add_idea = continued_space_efforts7
+		}
+	}
+}
+
+#Another Crisis on the Moon
+country_event = {
+	id = chi_moon.6
+	title = chi_moon.6.t
+	desc = chi_moon.6.d
+	picture = GFX_moonbase
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #Send more emergency aid!
+		name = chi_moon.6.o1
+		log = "[GetDateText]: [This.GetName]: chi_moon.6.o1 executed"
+		add_political_power = -100
+		set_temp_variable = { treasury_change = -5 }
+		modify_treasury_effect = yes
+		subtract_0_5_Republican_popularity = yes
+		subtract_1_Nat_Populism_popularity = yes
+		advance_moon_base = yes
+	}
+	option = { #We can't continue doing things like this.
+		name = chi_moon.6.o2
+		log = "[GetDateText]: [This.GetName]: chi_moon.6.o2 executed"
+		add_political_power = 50
+		subtract_0_25_Republican_popularity = yes
+		subtract_1_Nat_Populism_popularity = yes
+	}
+}
+
+#Moonbase Beta
+country_event = {
+	id = chi_moon.7
+	title = chi_moon.7.t
+	desc = chi_moon.7.d
+	picture = GFX_moonbase
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #Huzzah!
+		name = chi_moon.7.o1
+		log = "[GetDateText]: [This.GetName]: chi_moon.7.o1 executed"
+		add_political_power = 50
+		add_0_5_Republican_popularity = yes
+		add_1_Nat_Populism_popularity = yes
+		swap_ideas = {
+			remove_idea = continued_space_efforts7
+			add_idea = continued_space_efforts8
+		}
+		add_research_slot = 1
+		custom_effect_tooltip = moonbase_chain_end_tt
+	}
+}
+
+
+
+
+
+
+
+
+
+
+#Rover Mars Mission
+country_event = {
+	id = chi_mars.1
+	title = chi_mars.1.t
+	desc = chi_mars.1.d
+	picture = GFX_mars_mission
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #Launch!
+		name = chi_mars.1.1.o1
+		log = "[GetDateText]: [This.GetName]: chi_mars.1.o1 executed"
+		hidden_effect = {
+			country_event = { id = chi_mars.2 days = 20 random = 480 }
+		}
+	}
+}
+
+#Mars Colony Event Chain
+#Launch
+country_event = {
+	id = chi_mars.2
+	title = chi_mars.2.t
+	desc = chi_mars.2.d
+	picture = GFX_mars_colony_2
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #Launch!
+		name = chi_mars.2.o1
+		log = "[GetDateText]: [This.GetName]: chi_mars.2.o1 executed"
+		hidden_effect = {
+		random_list = {
+            60 = {
+			hidden_effect = {
+			country_event = { id = chi_mars.3 days = 20 random = 480 }
+					}
+				}
+            40 = {
+			hidden_effect = {
+			country_event = { id = chi_mars.6 days = 20 random = 480 }
+					}
+				}
+            }
+		}
+	}
+}
+country_event = {
+	id = chi_mars.3
+	title = chi_mars.3.t
+	desc = chi_mars.3.d
+	picture = GFX_mars_colony_3
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #
+		name = chi_mars.3.o1
+		log = "[GetDateText]: [This.GetName]: chi_mars.3.o1 executed"
+		hidden_effect = {
+			country_event = { id = chi_mars.4 days = 20 random = 480 }
+		}
+	}
+}
+country_event = {
+	id = chi_mars.4
+	title = chi_mars.4.t
+	desc = chi_mars.4.d
+	picture = GFX_mars_colony_4
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #Launch!
+		name = chi_mars.4.o1
+		log = "[GetDateText]: [This.GetName]: chi_mars.4.o1 executed"
+		hidden_effect = {
+			country_event = { id = chi_mars.5 days = 20 random = 480 }
+		}
+	}
+}
+country_event = {
+	id = chi_mars.5
+	title = chi_mars.5.t
+	desc = chi_mars.5.d
+	picture = GFX_mars_colony_5
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #Launch!
+		name = chi_mars.5.o1
+		log = "[GetDateText]: [This.GetName]: chi_mars.5.o1 executed"
+		hidden_effect = {
+			country_event = { id = chi_mars.7 days = 20 random = 480 }
+		}
+	}
+}
+country_event = {
+	id = chi_mars.6
+	title = chi_mars.6.t
+	desc = chi_mars.6.d
+	picture = GFX_mars_colony_6
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #Launch!
+		name = chi_mars.6.o1
+		log = "[GetDateText]: [This.GetName]: chi_mars.6.1.o1 executed"
+		hidden_effect = {
+			country_event = { id = chi_mars.7 days = 20 random = 480 }
+		}
+	}
+}
+country_event = {
+	id = chi_mars.7
+	title = chi_mars.7.t
+	desc = chi_mars.7.d
+	picture = GFX_mars_colony_7
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #Launch!
+		name = chi_mars.7.o1
+		log = "[GetDateText]: [This.GetName]: chi_mars.7.1.o1 executed"
+		hidden_effect = {
+			country_event = { id = chi_mars.8 days = 20 random = 480 }
+		}
+	}
+}
+country_event = {
+	id = chi_mars.8
+	title = chi_mars.8.t
+	desc = chi_mars.8.d
+	picture = GFX_mars_colony_8
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #Launch!
+		name = chi_mars.8.o1
+		log = "[GetDateText]: [This.GetName]: chi_mars.8.o1 executed"
+		hidden_effect = {
+			country_event = { id = chi_mars.9 days = 20 random = 480 }
+		}
+	}
+}
+country_event = {
+	id = chi_mars.9
+	title = chi_mars.9.t
+	desc = chi_mars.9.d
+	picture = GFX_mars_colony_9
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #Launch!
+		name = chi_mars.9.o1
+		log = "[GetDateText]: [This.GetName]: chi_mars.9.o1 executed"
+		hidden_effect = {
+			country_event = { id = chi_mars.10 days = 20 random = 480 }
+		}
+	}
+}
+country_event = {
+	id = chi_mars.10
+	title = chi_mars.10.t
+	desc = chi_mars.10.d
+	picture = GFX_mars_colony_10
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #Launch!
+		name = chi_mars.10.o1
+		log = "[GetDateText]: [This.GetName]: chi_mars.10.o1 executed"
+		hidden_effect = {
+			country_event = { id = chi_mars.11 days = 20 random = 480 }
+		}
+	}
+}
+country_event = {
+	id = chi_mars.11
+	title = chi_mars.11.t
+	desc = chi_mars.11.d
+	picture = GFX_mars_colony_11
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #Launch!
+		name = chi_mars.11.o1
+		log = "[GetDateText]: [This.GetName]: chi_mars.11.o1 executed"
+		hidden_effect = {
+			country_event = { id = chi_mars.12 days = 20 random = 480 }
+		}
+	}
+
+}
+country_event = {
+	id = chi_mars.12
+	title = chi_mars.12.t
+	desc = chi_mars.12.d
+	picture = GFX_mars_colony_12
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #Evacuate
+		name = chi_mars.12.o1
+		log = "[GetDateText]: [This.GetName]: chi_mars.12.o1 executed"
+		hidden_effect = {
+			country_event = { id = chi_mars.13 days = 20 random = 480 }
+		}
+	}
+	option = { #Fix Base
+		name = chi_mars.12.o2
+		log = "[GetDateText]: [This.GetName]: chi_mars.12.o2 executed"
+		hidden_effect = {
+			country_event = { id = chi_mars.14 days = 20 random = 480 }
+		}
+	}
+}
+country_event = {
+	id = chi_mars.13
+	title = chi_mars.13.t
+	desc = chi_mars.13.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #Launch!
+		name = chi_mars.13.o1
+		log = "[GetDateText]: [This.GetName]: chi_mars.13.o1 executed"
+		hidden_effect = {
+			country_event = { id = chi_mars.3 days = 20 random = 480 }
+		}
+	}
+}
+country_event = {
+	id = chi_mars.14
+	title = chi_mars.14.t
+	desc = chi_mars.14.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #Launch!
+		name = chi_mars.14.o1
+		log = "[GetDateText]: [This.GetName]: chi_mars.14.o1 executed"
+		hidden_effect = {
+			country_event = { id = chi_mars.15 days = 20 random = 480 }
+		}
+	}
+}
+country_event = {
+	id = chi_mars.15
+	title = chi_mars.15.t
+	desc = chi_mars.15.d
+	picture = GFX_mars_colony_15
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #Yes
+		name = chi_mars.15.o1
+		log = "[GetDateText]: [This.GetName]: chi_mars.15.o1 executed"
+		hidden_effect = {
+			country_event = { id = chi_mars.17 days = 20 random = 480 }
+		}
+	}
+	option = { #No
+		name = chi_mars.15.o2
+		log = "[GetDateText]: [This.GetName]: chi_mars.15.o2 executed"
+		hidden_effect = {
+			country_event = { id = chi_mars.16 days = 20 random = 480 }
+		}
+	}
+}
+country_event = {
+	id = chi_mars.16
+	title = chi_mars.16.t
+	desc = chi_mars.16.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #Launch!
+		name = chi_mars.16.o1
+		log = "[GetDateText]: [This.GetName]: chi_mars.16.o1 executed"
+		hidden_effect = {
+			country_event = { id = chi_mars.18 days = 20 random = 480 }
+		}
+	}
+}
+country_event = {
+	id = chi_mars.17
+	title = chi_mars.17.t
+	desc = chi_mars.17.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #Launch!
+		name = chi_mars.17.o1
+		log = "[GetDateText]: [This.GetName]: chi_mars.17.o1 executed"
+		hidden_effect = {
+			country_event = { id = chi_mars.15 days = 20 random = 480 }
+		}
+	}
+}
+country_event = {
+	id = chi_mars.18
+	title = chi_mars.18.t
+	desc = chi_mars.18.d
+	picture = GFX_mars_colony_18
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #Launch!
+		name = chi_mars.18.o1
+		log = "[GetDateText]: [This.GetName]: chi_mars.18.o1 executed"
+		hidden_effect = {
+			country_event = { id = chi_mars.15 days = 20 random = 480 }
+		}
+	}
+}
+###SCO
+#[FROM.GetName] has submitted an application for SCO observer status
+country_event = {
+	id = sco.1
+	title = sco.1.t
+	desc = sco.1.d
+
+	picture = GFX_politics_negotiations
+
+	is_triggered_only = yes
+
+	option = {
+		name = sco.1.a #We see no reason why their request should not be granted.
+		log = "[GetDateText]: [This.GetName]: sco.1.a executed"
+	}
+
+	option = {
+		name = sco.1.b #We cannot grant them this status!
+		FROM = { set_country_flag = SCO_observer_status_rejected }
+		log = "[GetDateText]: [This.GetName]: sco.1.b executed"
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#[FROM.GetName] has submitted an application for SCO member status
+country_event = {
+	id = sco.2
+	title = sco.2.t
+	desc = sco.2.d
+
+	picture = GFX_politics_negotiations
+
+	is_triggered_only = yes
+
+	option = {
+		name = sco.2.a #We see no reason why their request should not be granted.
+		log = "[GetDateText]: [This.GetName]: sco.1.a executed"
+	}
+
+	option = {
+		name = sco.2.b #We cannot grant them this status!
+		FROM = { set_country_flag = SCO_membership_rejected }
+		log = "[GetDateText]: [This.GetName]: sco.2.b executed"
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#[FROM.GetName] is offering to conduct joint military exercises with us
+country_event = {
+	id = sco.3
+	title = sco.3.t
+	desc = sco.3.d
+
+	picture = GFX_politics_negotiations
+
+	is_triggered_only = yes
+
+	option = {
+		name = sco.3.a #This is a welcome opportunity for our troops to hone their skills!
+		set_country_flag = SCO_joint_exercises_accepted
+		FROM = { country_event = { days = 1 id = sco.4 } }
+		log = "[GetDateText]: [This.GetName]: sco.1.a executed"
+		ai_chance = {
+			factor = 40
+		}
+	}
+
+	option = {
+		name = sco.3.b #Cooperation with [FROM.Getname] is impossible.
+		FROM = {
+			clr_country_flag = SCO_joint_exercises_offered
+			country_event = { days = 1 id = sco.5 }
+		}
+		log = "[GetDateText]: [This.GetName]: sco.3.b executed"
+		ai_chance = {
+			factor = 0
+			modifier = {
+				add = 40
+				has_opinion = {
+					target = FROM
+					value < 0
+				}
+			}
+			modifier = {
+				add = 40
+				has_opinion = {
+					target = FROM
+					value < -50
+				}
+			}
+		}
+	}
+}
+
+#[FROM.GetName] has accepted our offer!
+country_event = {
+	id = sco.4
+	title = sco.4.t
+	desc = sco.4.d
+
+	picture = GFX_politics_talks
+
+	is_triggered_only = yes
+
+	option = {
+		name = sco.4.a #Let the games begin!
+		log = "[GetDateText]: [This.GetName]: sco.4.a executed"
+	}
+}
+
+#[FROM.GetName] has rejected our offer!
+country_event = {
+	id = sco.5
+	title = sco.5.t
+	desc = sco.5.d
+
+	picture = GFX_treaty_rejected
+
+	is_triggered_only = yes
+
+	option = {
+		name = sco.5.a #Their loss...
+		log = "[GetDateText]: [This.GetName]: sco.5.a executed"
+	}
+}
+
+#SCO Launches Large-Scale Military Exercises
+news_event = {
+	id = sco.6
+	title = sco.6.t
+	desc = sco.6.d
+
+	picture = GFX_generic_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		trigger = { has_government = democratic }
+		name = sco.6.a #Are these threatening drills meant for our benefit?
+		log = "[GetDateText]: [This.GetName]: sco.6.a executed"
+	}
+
+	option = {
+		trigger = { has_government = communism }
+		name = sco.6.b #Only terrorists have anything to fear from this!
+		log = "[GetDateText]: [This.GetName]: sco.6.b executed"
+	}
+
+	option = {
+		trigger = { NOT = { has_government = communism has_government = democratic } }
+		name = sco.6.c #An interesting development.
+		log = "[GetDateText]: [This.GetName]: sco.6.c executed"
+	}
+}
+
+#[FROM.GetName] Gains SCO Membership
+news_event = {
+	id = sco.7
+	title = sco.7.t
+	desc = sco.7.d
+
+	picture = GFX_trade_agreement
+
+	is_triggered_only = yes
+
+	option = {
+		trigger = { has_government = democratic }
+		name = sco.7.a #The Chinese threat continues to grow...
+		log = "[GetDateText]: [This.GetName]: sco.6.a executed"
+	}
+
+	option = {
+		trigger = { NOT = { has_government = democratic } }
+		name = sco.7.b #A good day for diplomacy!
+		log = "[GetDateText]: [This.GetName]: sco.7.b executed"
+	}
+}
+
+#[FROM.GetName] Leaves the SCO
+news_event = {
+	id = sco.8
+	title = sco.8.t
+	desc = sco.8.d
+
+	picture = GFX_news_press_conference
+
+	is_triggered_only = yes
+
+	option = {
+		trigger = { has_government = democratic }
+		name = sco.8.a #Chinese aggression has alienated this nation.
+		log = "[GetDateText]: [This.GetName]: sco.8.a executed"
+	}
+
+	option = {
+		trigger = { NOT = { has_government = democratic } }
+		name = sco.8.b #A sad day for international cooperation...
+		log = "[GetDateText]: [This.GetName]: sco.8.b executed"
+	}
+}
+
+#China Seizes the Reins of Power over the SCO from Russia
+news_event = {
+	id = sco.9
+	title = sco.9.t
+	desc = sco.9.d
+
+	picture = GFX_china_90th_pla_anniversary
+
+	is_triggered_only = yes
+
+	option = {
+		name = sco.9.a #China is not willing to share the spotlight...
+		log = "[GetDateText]: [This.GetName]: sco.9.a executed"
+	}
+}
+
+#China is demanding that we choose a side
+country_event = {
+	id = sco.10
+	title = sco.10.t
+	desc = sco.10.d
+
+	picture = GFX_CHI_generic
+
+	is_triggered_only = yes
+
+	option = {
+		name = sco.10.a #We are nothing if not loyal!
+		if = {
+			limit = { has_idea = sco_member }
+			remove_ideas = sco_member
+		}
+		if = {
+			limit = { has_idea = sco_member_econ }
+			remove_ideas = sco_member_econ
+		}
+		if = {
+			limit = { has_idea = sco_member_pol }
+			remove_ideas = sco_member_pol
+		}
+		if = {
+			limit = { has_idea = sco_member_mil }
+			remove_ideas = sco_member_mil
+		}
+		CHI = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = resisted_territorial_ambition
+			}
+		}
+		SOV = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = has_expressed_loyalty
+			}
+		}
+		log = "[GetDateText]: [This.GetName]: sco.10.a executed"
+		ai_chance = {
+			factor = 40
+		}
+	}
+
+	option = {
+		name = sco.10.b #Time to leave this sinking ship...
+		CHI = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = diplomatic_support
+			}
+		}
+		SOV = {
+			diplomatic_relation = {
+				country = ROOT
+				relation = guarantee
+				active = no
+			}
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = diplomatic_disloyalty
+			}
+		}
+		log = "[GetDateText]: [This.GetName]: sco.10.b executed"
+		ai_chance = {
+			factor = 0
+			modifier = {
+				add = 20
+				has_opinion = {
+					target = CHI
+					value > 50
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+					target = CHI
+					value > 100
+				}
+			}
+			modifier = {
+				add = 20
+				set_temp_variable = { temp_idx = -1 }
+				any_of = {
+					array = influence_array
+					value = v
+					index = i
+					if = {
+						limit = { var:v = { tag = CHI } }
+						set_temp_variable = { temp_idx = i }
+						always = yes
+					}
+					else = { always = no }
+				}
+				check_variable = { temp_idx > -1 }
+				check_variable = { influence_array_calc^temp_idx > 0.2 }
+			}
+			modifier = {
+				add = 20
+				set_temp_variable = { temp_idx = -1 }
+				any_of = {
+					array = influence_array
+					value = v
+					index = i
+					if = {
+						limit = { var:v = { tag = CHI } }
+						set_temp_variable = { temp_idx = i }
+						always = yes
+					}
+					else = { always = no }
+				}
+				check_variable = { temp_idx > -1 }
+				check_variable = { influence_array_calc^temp_idx > 0.3 }
+			}
+			modifier = {
+				add = 20
+				set_temp_variable = { temp_idx = -1 }
+				any_of = {
+					array = influence_array
+					value = v
+					index = i
+					if = {
+						limit = { var:v = { tag = CHI } }
+						set_temp_variable = { temp_idx = i }
+						always = yes
+					}
+					else = { always = no }
+				}
+				check_variable = { temp_idx > -1 }
+				check_variable = { influence_array_calc^temp_idx > 0.4 }
+			}
+		}
+	}
+}
+
+#[FROM.GetName] is Providing us with Development Assistance!
+country_event = {
+	id = sco.11
+	title = sco.11.t
+	desc = sco.11.d
+
+	picture = GFX_generic_factory
+
+	is_triggered_only = yes
+
+	option = {
+		name = sco.11.a #We are grateful for the help!
+		effect_tooltip = {
+			add_timed_idea = {
+				idea = SCO_development_assistance
+				days = 90
+			}
+		}
+		log = "[GetDateText]: [This.GetName]: sco.11.a executed"
+	}
+}

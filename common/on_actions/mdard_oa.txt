@@ -1,0 +1,369 @@
+on_actions = {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	on_monthly_DSC = {
+	
+		effect = {
+			set_temp_variable = {
+				var=Final_chuanyu_people_support_to_china_government_modifier
+				value=modifier@chuanyu_people_support_to_china_government_modifier
+			}
+			divide_temp_variable={
+				Final_chuanyu_people_support_to_china_government_modifier=10
+			}
+			add_to_variable = { DSC_people_support = Final_chuanyu_people_support_to_china_government_modifier }
+	
+		
+		if = {
+					limit = {
+					DSC = {
+		OR = {			
+		has_dynamic_modifier = {
+			modifier = DSC_people_support_dynamic_left
+		}
+		has_dynamic_modifier = {
+		modifier = DSC_people_support_dynamic_right
+		}
+		}
+		}
+		}
+		
+		DSC = {clamp_variable  = {
+			var = DSC_people_support
+			min = 0
+		max = 1
+		}
+		DSC_people_support_dynamic_scriptes = yes
+		
+		}
+		}
+				if = {
+					limit = {
+					DSC = {
+		has_dynamic_modifier = {
+			modifier = DSC_people_support_dynamic_left
+		}
+		
+		DSC={
+			OR={
+		
+				has_cosmetic_tag =DSC_GMQ
+			has_cosmetic_tag =DSC_GMG
+		}
+		} 
+		}
+		}
+		DSC_people_support_dynamic_scriptes_left = yes
+		}
+		}
+		
+	}
+	on_startup = {
+		  effect = { # NEVER FORGET! Important to include this line to distinguish it from random_events = { ... }
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+	country_event = welcome_event.1
+				}
+				DSC = {
+	DSC_people_support_dynamic_scriptes = yes
+	
+				}
+			}
+	
+	}
+	on_daily_DSC = {
+	effect = {
+			if = {
+				limit = {
+				DSC = {
+	has_dynamic_modifier = {
+		modifier = DSC_people_support_dynamic
+	}
+	}
+	}
+	DSC = {clamp_variable  = {
+		var = DSC_people_support
+		min = 0
+	max = 1
+	}
+	DSC_people_support_dynamic_scriptes = yes
+	
+	}
+	}
+			if = {
+				limit = {
+				DSC = {
+	has_dynamic_modifier = {
+		modifier = DSC_people_support_dynamic
+	}
+	
+	DSC={
+		OR={
+	
+			has_cosmetic_tag =DSC_GMQ
+		has_cosmetic_tag =DSC_GMG
+	}
+	} 
+	}
+	}
+	DSC_people_support_dynamic_scriptes_left = yes
+	}
+			if = {
+				limit = {
+				DSC = {
+	NOT = {
+	has_dynamic_modifier = {
+		modifier = DSC_Socialist_Construction_dynamic
+	}
+	} 
+	OR = {
+		has_country_flag = chi_work_rev
+		has_country_flag = chi_left 
+		has_country_flag = CHI_trotskyism
+		has_cosmetic_tag = DSC_GMQ
+			has_cosmetic_tag = DSC_GMG
+	}
+	
+	}
+}
+	add_dynamic_modifier = {
+		modifier = DSC_Socialist_Construction_dynamic
+	}
+	
+	
+	}
+	}
+	}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+on_monthly_CHI = {
+effect = {
+
+	set_temp_variable = {
+		var=Final_Chinese_people_support_to_china_government_modifier
+		value=modifier@Chinese_people_support_to_china_government_modifier
+	}
+	divide_temp_variable={
+		Final_Chinese_people_support_to_china_government_modifier=10
+	}
+
+	
+	add_to_variable = { CHI_people_support =Final_Chinese_people_support_to_china_government_modifier }
+
+
+if = {
+			limit = {
+			CHI = {
+OR = {			
+has_dynamic_modifier = {
+    modifier = CHI_people_support_dynamic_left
+}
+has_dynamic_modifier = {
+modifier = CHI_people_support_dynamic_right
+}
+}
+}
+}
+
+CHI = {clamp_variable  = {
+    var = CHI_people_support
+    min = 0
+max = 1
+}
+CHI_people_support_dynamic_scriptes = yes
+
+}
+}
+		if = {
+			limit = {
+			CHI = {
+has_dynamic_modifier = {
+    modifier = CHI_people_support_dynamic_left
+}
+
+			OR = {
+				custom_trigger_tooltip = {
+					is_in_array = { ruling_party = 4 }
+					tooltip = has_communist_state_government_TT
+				}
+								custom_trigger_tooltip = {
+					is_in_array = { ruling_party = 5 }
+					tooltip = has_anarchist_communism_government_TT
+				}
+				custom_trigger_tooltip = {
+					is_in_array = { ruling_party = 19 }
+					tooltip = has_neutral_communism_government_TT
+				}
+				}
+}
+}
+CHI_people_support_dynamic_scriptes_left = yes
+}
+}
+
+}
+on_startup = {
+      effect = { # NEVER FORGET! Important to include this line to distinguish it from random_events = { ... }
+            every_country = {
+                limit = {
+                    is_ai = no
+                }
+                country_event = welcome_event.1
+            }
+            CHI = {
+CHI_people_support_dynamic_scriptes = yes
+refresh_pie_chart_cpc_patry_icon = yes
+            }
+            every_country = {
+add_dynamic_modifier = {
+    modifier = Private_capital_contracting_dynamic
+}
+add_dynamic_modifier = {
+    modifier = Private_capital_contracting_gui_dynamic
+}
+Private_capital_contracting_var_se = yes
+            }      
+	  }
+
+}
+on_daily_CHI = {
+effect = {
+CHI_Legal_amendments_dynamic_scriptes = yes
+
+		if = {
+			limit = {
+			CHI = {
+NOT = {
+has_dynamic_modifier = {
+    modifier = CHI_Socialist_Construction_dynamic
+}
+} 
+OR = {
+has_country_flag = chi_work_rev
+has_country_flag = chi_left 
+has_country_flag = CHI_trotskyism
+}
+
+}
+}
+add_dynamic_modifier = {
+    modifier = CHI_Socialist_Construction_dynamic
+}
+
+}
+if = {
+			limit = {
+			CHI = {
+NOT = {
+has_dynamic_modifier = {
+    modifier = CHI_people_support_dynamic_left
+}
+has_country_flag = PRC_World_Revolution
+} 
+OR = {
+has_country_flag = chi_work_rev
+has_country_flag = chi_left 
+has_country_flag = CHI_trotskyism
+}
+			OR = {
+				custom_trigger_tooltip = {
+					is_in_array = { ruling_party = 4 }
+					tooltip = has_communist_state_government_TT
+				}
+								custom_trigger_tooltip = {
+					is_in_array = { ruling_party = 5 }
+					tooltip = has_anarchist_communism_government_TT
+				}
+				custom_trigger_tooltip = {
+					is_in_array = { ruling_party = 19 }
+					tooltip = has_neutral_communism_government_TT
+				}
+				}
+}
+}
+
+add_dynamic_modifier = {
+    modifier = CHI_people_support_dynamic_left
+}
+remove_dynamic_modifier = {
+    modifier = CHI_people_support_dynamic_right
+
+}		
+}
+if = {
+			limit = {
+			CHI = {
+NOT = {
+has_dynamic_modifier = {
+    modifier = CHI_people_support_dynamic_right
+}
+has_country_flag = PRC_World_Revolution
+} 
+OR = {
+has_country_flag = chi_work_rev
+has_country_flag = chi_left 
+has_country_flag = CHI_trotskyism
+}
+NOT = {
+			OR = {
+				custom_trigger_tooltip = {
+					is_in_array = { ruling_party = 4 }
+					tooltip = has_communist_state_government_TT
+				}
+								custom_trigger_tooltip = {
+					is_in_array = { ruling_party = 5 }
+					tooltip = has_anarchist_communism_government_TT
+				}
+				custom_trigger_tooltip = {
+					is_in_array = { ruling_party = 19 }
+					tooltip = has_neutral_communism_government_TT
+				}
+					is_in_array = { ruling_party = 21 }
+				}
+}
+}
+}
+
+add_dynamic_modifier = {
+    modifier = CHI_people_support_dynamic_right
+}
+remove_dynamic_modifier = {
+    modifier = CHI_people_support_dynamic_left
+
+}		
+}
+refresh_pie_chart_cpc_patry_icon = yes
+}
+}
+}

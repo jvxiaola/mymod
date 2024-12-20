@@ -1,0 +1,125 @@
+
+
+
+
+
+
+add_namespace = hongkong1
+country_event = {
+	id = hongkong1.0
+	title = hongkong1.0.t
+	desc = hongkong1.0.d
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = hongkong1.1.a 
+
+		
+
+
+		
+
+		}
+		}
+
+country_event = {
+	id = hongkong1.1
+	title = hongkong1.1.t
+	desc = hongkong1.1.d
+
+	is_triggered_only = yes
+immediate = {
+	random_other_country = {
+
+		limit = {
+		original_tag = CHI
+		NOT = { TAG = CHI }
+				}
+
+				end_puppet = HKG
+			}
+	
+
+
+
+	create_country_leader = {
+		name = "Tung Chee-hwa"
+		picture = "tung_cheehwa.dds"
+		ideology = liberalism
+		traits = {
+		}
+	}
+	add_to_array = { ruling_party = 1 }
+	set_popularities = {
+		democratic = 100
+		communism = 0.0
+		fascism = 0.0
+		neutrality = 0.0
+		nationalist = 0.0
+	}
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1996.12.11"
+		election_frequency = 60
+		elections_allowed = no
+	}
+
+	startup_politics = yes
+
+
+
+	recalculate_party=yes
+}
+
+	option = {
+		name = hongkong1.1.a 
+
+
+
+
+		
+
+		}
+		}
+
+
+
+
+
+
+		country_event = {
+			id = hongkong1.2
+			title = hongkong1.2.t
+			desc = hongkong1.2.d
+		
+			is_triggered_only = yes
+			immediate = {
+				
+			}
+		
+			option = {
+				name = hongkong1.2.a 
+		
+				CHI = {
+					annex_country = {
+			    target = ROOT
+			    transfer_troops = yes
+			}
+			}
+			every_unit_leader = {
+				set_nationality = CHI
+			}
+				
+		
+				}
+
+
+				}
+
+
+
+
+
+							

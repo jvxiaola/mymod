@@ -1,0 +1,8 @@
+Chinese_people_support_to_china_government_modifier = {
+	color_type = good
+	value_type = number
+	precision = 3
+	postfix = monthly
+	
+	category = country
+}

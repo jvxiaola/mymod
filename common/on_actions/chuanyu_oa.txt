@@ -1,0 +1,142 @@
+
+on_actions = {
+
+
+	on_monthly_DSC = {
+	
+		effect = {
+			set_temp_variable = {
+				var=Final_chuanyu_people_support_to_china_government_modifier
+				value=modifier@chuanyu_people_support_to_china_government_modifier
+			}
+			divide_temp_variable={
+				Final_chuanyu_people_support_to_china_government_modifier=10
+			}
+			add_to_variable = { DSC_people_support = Final_chuanyu_people_support_to_china_government_modifier }
+	
+		
+		if = {
+					limit = {
+					DSC = {
+		OR = {			
+		has_dynamic_modifier = {
+			modifier = DSC_people_support_dynamic_left
+		}
+		has_dynamic_modifier = {
+		modifier = DSC_people_support_dynamic_right
+		}
+		}
+		}
+		}
+		
+		DSC = {clamp_variable  = {
+			var = DSC_people_support
+			min = 0
+		max = 1
+		}
+		DSC_people_support_dynamic_scriptes = yes
+		
+		}
+		}
+				if = {
+					limit = {
+					DSC = {
+		has_dynamic_modifier = {
+			modifier = DSC_people_support_dynamic_left
+		}
+		
+					OR = {
+DSC={
+	OR={
+
+		has_cosmetic_tag =DSC_GMQ
+	has_cosmetic_tag =DSC_GMG
+}
+} 
+						}
+		}
+		}
+		DSC_people_support_dynamic_scriptes_left = yes
+		}
+		}
+		
+	}
+	on_startup = {
+		  effect = { # NEVER FORGET! Important to include this line to distinguish it from random_events = { ... }
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+	country_event = welcome_event.1
+				}
+				DSC = {
+	DSC_people_support_dynamic_scriptes = yes
+	
+				}
+			}
+	
+	}
+	on_daily_DSC = {
+	effect = {
+			if = {
+				limit = {
+				DSC = {
+	has_dynamic_modifier = {
+		modifier = DSC_people_support_dynamic
+	}
+	}
+	}
+	DSC = {clamp_variable  = {
+		var = DSC_people_support
+		min = 0
+	max = 1
+	}
+	DSC_people_support_dynamic_scriptes = yes
+	
+	}
+	}
+			if = {
+				limit = {
+				DSC = {
+	has_dynamic_modifier = {
+		modifier = DSC_people_support_dynamic
+	}
+	
+	DSC={
+		OR={
+	
+			has_cosmetic_tag =DSC_GMQ
+		has_cosmetic_tag =DSC_GMG
+	}
+	} 
+	}
+	}
+	DSC_people_support_dynamic_scriptes_left = yes
+	}
+			if = {
+				limit = {
+				DSC = {
+	NOT = {
+	has_dynamic_modifier = {
+		modifier = DSC_Socialist_Construction_dynamic
+	}
+	} 
+	OR = {
+		has_country_flag = chi_work_rev
+		has_country_flag = chi_left 
+		has_country_flag = CHI_trotskyism
+		has_cosmetic_tag = DSC_GMQ
+			has_cosmetic_tag = DSC_GMG
+	}
+	
+	}
+}
+	add_dynamic_modifier = {
+		modifier = DSC_Socialist_Construction_dynamic
+	}
+	
+	
+	}
+	}
+	}
+	}

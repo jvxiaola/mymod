@@ -1,0 +1,389 @@
+ideologies = {
+	#西方主义
+	democratic = {
+color = { 0 0 255}
+		types = {
+	democraticism = {
+	}	
+			conservatism = { color = { 0 0 135 } 
+			can_be_randomly_selected = no}
+			liberalism = { color = { 255 165 0	 } 
+			can_be_randomly_selected = no }
+			socialism = { color = { 255 20 147	 } 
+			can_be_randomly_selected = no}
+			Western_Autocracy = { color = { 135 206 235	 } 
+			can_be_randomly_selected = no}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+
+		rules = {
+			can_create_collaboration_government = no #Turn it off for now?
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+			can_create_factions = no
+			can_boost_other_ideologies = yes
+		}
+
+		war_impact_on_world_tension = 1.0
+		faction_impact_on_world_tension = 1.0
+
+		modifiers = {
+			generate_wargoal_tension = 0.00
+			join_faction_tension = 0.00
+			lend_lease_tension = 0.00
+			send_volunteers_tension = 0.00
+			guarantee_tension = 0.00
+			annex_cost_factor = 0.0
+			puppet_cost_factor = 0.0
+			justify_war_goal_when_in_major_war_time = -0.20
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 5
+				Private_capital_contracting_modifier = 0.15
+				Investment_Pool_Modification_modifier = 0.2
+				Civilian_construction_cycle_modifier = -0.15
+				Civilian_factory_input_efficiency_modifier = 0.15
+				Investment_pool_utilization_efficiency_modifier = 0.15		}
+
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+
+		can_be_boosted = yes
+
+		ai_democratic = yes # uses the democratic AI behaviour
+		ai_ideology_wanted_units_factor = 1.0 # multiplies threat impact on number of desired units by this value, defaults to 1.0. If at war, the larger of this value and NDefines::NAI::WANTED_UNITS_WAR_THREAT_FACTOR will be used instead
+	}
+
+	#新兴主义
+	communism = {
+color = { 0 179 60 } 
+		types = {
+communismism = {}		
+			Communist-State = { color = { 255 0 0 }
+			can_be_randomly_selected = no}
+			trotskyism = { color = { 255 0 0 } 
+			can_be_randomly_selected = no}
+			juche = { color = { 238 121 66	 }
+			can_be_randomly_selected = no}
+Reform_Communism = {color = {219 112 147 }
+can_be_randomly_selected = no
+
+}
+			Conservative = { color = { 205 201 201	 } 
+			can_be_randomly_selected = no }
+			Chinese_Socialism_jiang = { color = { 139 26 26 }
+			can_be_randomly_selected = no }
+			Chinese_Socialism = { color = { 255 192 203 }
+			can_be_randomly_selected = no }
+			Chinese_Socialism_mao = { color = { 238 59 59	 }
+			can_be_randomly_selected = no }
+
+			Autocracy = { color = { 205 205 193 } can_be_randomly_selected = no}
+
+			Vilayat_e_Faqih = { 
+color = { 144 238 144 }
+can_be_randomly_selected = no
+ }
+
+			Mod_Vilayat_e_Faqih = { 
+color = { 144 238 144 }
+can_be_randomly_selected = no
+ }
+
+			anarchist_communism = { color = { 219 112 147	 }
+			can_be_randomly_selected = no}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_COMMUNIST_1"
+			"FACTION_NAME_COMMUNIST_2"
+			"FACTION_NAME_COMMUNIST_3"
+			"FACTION_NAME_COMMUNIST_4"
+			"FACTION_NAME_COMMUNIST_5"
+		}
+
+		ai_communist = yes # uses the commie AI behaviour
+		ai_ideology_wanted_units_factor = 1.0
+		rules = {
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = no
+			can_only_justify_war_on_threat_country = no
+			can_guarantee_other_ideologies = yes
+			can_create_factions = no
+			can_boost_other_ideologies = yes
+		}
+
+		war_impact_on_world_tension = 1.0
+		faction_impact_on_world_tension = 1.0
+
+		modifiers = {
+			generate_wargoal_tension = 0.00
+			join_faction_tension = 0.00
+			lend_lease_tension = 0.00
+			send_volunteers_tension = 0.00
+			guarantee_tension = 0.00
+			annex_cost_factor = 0.0
+			puppet_cost_factor = 0.0
+			justify_war_goal_when_in_major_war_time = -0.20
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 5
+				Investment_Pool_Modification_modifier = 0.15
+				Civilian_construction_cycle_modifier = -0.10
+				Civilian_factory_input_efficiency_modifier = 0.10
+				Investment_pool_utilization_efficiency_modifier = 0.10		}
+
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+
+		can_be_boosted = yes
+
+	}
+
+	#Salafist
+	fascism = {
+color = { 0 0 0 }
+		types = {
+
+			Kingdom = { 
+			}
+
+			Caliphate = { 
+			}
+
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_FASCIST_1"
+			"FACTION_NAME_FASCIST_2"
+			"FACTION_NAME_FASCIST_3"
+			"FACTION_NAME_FASCIST_4"
+			"FACTION_NAME_FASCIST_5"
+		}
+
+		war_impact_on_world_tension = 1.5
+		faction_impact_on_world_tension = 1.5
+
+		rules = {
+			can_create_collaboration_government = no #Turn it off for now?
+			can_declare_war_on_same_ideology = yes
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = no
+			can_only_justify_war_on_threat_country = no
+			can_guarantee_other_ideologies = yes
+			can_create_factions = no
+			can_boost_other_ideologies = yes
+		}
+
+		modifiers = {
+			generate_wargoal_tension = 0.0
+			join_faction_tension = 0.00
+			lend_lease_tension = 0.00
+			send_volunteers_tension = 0.0
+			guarantee_tension = 0.0
+			annex_cost_factor = 0.0
+			puppet_cost_factor = 0.0
+			justify_war_goal_when_in_major_war_time = -0.20
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 5
+		}
+
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+
+		can_be_boosted = yes
+
+		ai_fascist = yes # uses the fascist AI behaviour
+		ai_ideology_wanted_units_factor = 1.0
+	}
+
+	neutrality = {
+        color = { 95 95 95 }
+		types = {
+neutralityism = {}
+			Neutral_conservatism = { color = { 72 61 139 }
+			can_be_randomly_selected = no}
+
+			oligarchism = { color = { 130 130 130 } 
+			can_be_randomly_selected = no}
+
+			neutral_Social = {color = { 176 48 96 }
+			can_be_randomly_selected = no}
+
+			Neutral_Libertarian = { color = { 255 165 0	 } 
+			can_be_randomly_selected = no}
+
+			Neutral_Autocracy = { color = { 75 75 75 } 
+			can_be_randomly_selected = no}
+Neutral_Reform_Communism = {color = {176 48 96	 }
+can_be_randomly_selected = no
+
+}
+			Neutral_Communism = { color = { 139 35 35		 } 
+			can_be_randomly_selected = no
+}
+			Neutral_Muslim_Brotherhood = { 
+color = {144 238 144} 
+can_be_randomly_selected = no
+}
+
+			Neutral_green = {
+ color = { 0 255 0 } 
+can_be_randomly_selected = no
+}
+
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_NONALIGNED_1"
+			"FACTION_NAME_NONALIGNED_2"
+			"FACTION_NAME_NONALIGNED_3"
+			"FACTION_NAME_NONALIGNED_4"
+			"FACTION_NAME_NONALIGNED_5"
+		}
+
+
+		rules = {
+			can_create_collaboration_government = no #Turn it off for now?
+			can_declare_war_on_same_ideology = yes
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = no
+			can_only_justify_war_on_threat_country = no
+			can_guarantee_other_ideologies = yes
+			can_create_factions = no
+			can_boost_other_ideologies = yes
+		}
+
+		war_impact_on_world_tension = 0.50
+		faction_impact_on_world_tension = 0.50
+
+		modifiers = {
+			generate_wargoal_tension = 0.00
+			join_faction_tension = 0.00
+			lend_lease_tension = 0.00
+			send_volunteers_tension = 0.00
+			guarantee_tension = 0.00
+			annex_cost_factor = 0.0
+			puppet_cost_factor = 0.0
+			justify_war_goal_when_in_major_war_time = -0.20
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 5
+				Private_capital_contracting_modifier = 0.18
+				Investment_Pool_Modification_modifier = 0.18
+				Civilian_construction_cycle_modifier = -0.18
+				Civilian_factory_input_efficiency_modifier = 0.17
+				Investment_pool_utilization_efficiency_modifier = 0.17
+		}
+
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+
+		can_be_boosted = yes
+
+		ai_neutral = yes #
+		ai_ideology_wanted_units_factor = 1.0
+	}
+
+	nationalist = {
+color = { 132 50 0 } 
+		types = {
+nationalist_sub = {}
+			Nat_Autocracy = { color = { 35 35 35 }
+			can_be_randomly_selected = no }
+
+			Nat_Fascism = { color = { 132 50 0 } 
+			can_be_randomly_selected = no}
+
+			Nat_Populism = { color = { 80 50 0 }
+			can_be_randomly_selected = no}
+
+			Monarchist = { color = { 55 55 55 }
+			can_be_randomly_selected = no }
+
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_NATIONALIST_1"
+			"FACTION_NAME_NATIONALIST_2"
+			"FACTION_NAME_NATIONALIST_3"
+			"FACTION_NAME_NATIONALIST_4"
+		}
+
+
+		rules = {
+			can_create_collaboration_government = no #Turn it off for now?
+			can_declare_war_on_same_ideology = yes
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = no
+			can_only_justify_war_on_threat_country = no
+			can_guarantee_other_ideologies = yes
+			can_create_factions = no
+			can_boost_other_ideologies = yes
+
+		}
+
+		war_impact_on_world_tension = 1.5
+		faction_impact_on_world_tension = 1.5
+
+		modifiers = {
+			generate_wargoal_tension = 0.00
+			join_faction_tension = 0.00
+			lend_lease_tension = 0.00
+			send_volunteers_tension = 0.00
+			guarantee_tension = 0.00
+			annex_cost_factor = 0.0
+			puppet_cost_factor = 0.0
+			justify_war_goal_when_in_major_war_time = -0.20
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 5
+				Private_capital_contracting_modifier = 0.10
+				Investment_Pool_Modification_modifier = 0.1
+				Civilian_construction_cycle_modifier = -0.1
+				Civilian_factory_input_efficiency_modifier = 0.1
+				Investment_pool_utilization_efficiency_modifier = 0.1
+		}
+
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+
+		can_be_boosted = yes
+
+		ai_communist = yes #
+		ai_ideology_wanted_units_factor = 1.0
+	}
+}

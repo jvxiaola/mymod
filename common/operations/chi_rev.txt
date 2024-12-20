@@ -1,0 +1,4341 @@
+CHI_Support_the_Communist_Party_of_Central_Asia = { ### 1/25
+	icon = GFX_operations_make_resistance_contacts
+	map_icon = GFX_operations_make_resistance_contacts_map
+	name = CHI_Support_the_Communist_Party_of_Central_Asia
+	desc = CHI_Support_the_Communist_Party_of_Central_Asia_desc
+	days = 30
+
+	allowed = {
+		original_tag = CHI
+	}
+	available = { 
+	}
+	visible = {
+	has_completed_focus = PRC_Central_Asian_Revolution 
+		FROM = {
+		OR = {
+			original_tag = KAZ
+			original_tag = KYR
+			original_tag = TAJ
+			original_tag = UZB
+			original_tag = TRK
+			}
+NOT = {	OR = {
+					is_in_array = { ruling_party = 5 }
+					is_in_array = { ruling_party = 4 }
+					is_in_array = { ruling_party = 19 }
+ }		}	
+		}			
+	}
+	operatives = 1
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 30
+
+	requirements = { #SCOPE_COUNTRY
+	}
+	
+	equipment = {
+		support_equipment = 100
+	}
+
+	on_start = {  # SCOPE_OPERATION
+		set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+	}
+
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+	outcome_potential = {
+	random_list = {
+				33 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+}
+}
+			67 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+add_5_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+
+}	
+				}
+}
+	}
+	risk_chance = 0.2
+	outcome_extra_chance = 0.30
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+random_list = {
+				33 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+}
+}
+			67 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+add_5_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+
+}	
+				}
+}
+
+	}	
+	# This is where all the separate phases are defined
+	# Each phase for an operation may have a single actual phase assigned to it, which is determined here
+	phases = { #infiltration 
+		infiltration_submarine = { base = 33 } 
+		infiltration_paradrop = { 
+			base = 33 
+			modifier = {
+				ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+				factor = 0.1
+			}
+		} 
+		infiltration_diplomatic = { base = 33 } 
+	}
+	phases = { 
+		lar_communist_uprising_organise_cells = { base = 33 }
+		lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+		lar_communist_uprising_organize_strikes = { base = 33 }
+	}
+	phases = { 
+		lar_communist_uprising_train_workers_militia = { base = 25 }
+	}
+}
+CHI_Support_the_Communist_Party_of_Central_Asia_coups = { ### 1/25
+	icon = GFX_operations_make_resistance_contacts
+	map_icon = GFX_operations_make_resistance_contacts_map
+	name = CHI_Support_the_Communist_Party_of_Central_Asia_coups
+	desc = CHI_Support_the_Communist_Party_of_Central_Asia_coups_desc
+	days = 120
+
+	allowed = {
+		original_tag = CHI
+	}
+	available = { 		FROM = {
+			custom_trigger_tooltip = {
+			check_variable = { party_pop_array^4 > 0.40 } 
+			tooltip = "共产主义支持率高于40%"
+			
+			} 	
+		}	
+	}
+	visible = {
+	has_completed_focus = PRC_Central_Asian_Revolution 
+		FROM = {
+		OR = {
+			original_tag = KAZ
+			original_tag = KYR
+			original_tag = TAJ
+			original_tag = UZB
+			original_tag = TRK
+			}
+NOT = {	OR = {
+					is_in_array = { ruling_party = 5 }
+					is_in_array = { ruling_party = 4 }
+					is_in_array = { ruling_party = 19 }
+ }		}	
+		}			
+	}
+	operatives = 1
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 40
+
+	requirements = { #SCOPE_COUNTRY
+	}
+	
+	equipment = {
+		support_equipment = 100
+	}
+
+	on_start = {  # SCOPE_OPERATION
+		set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+	}
+outcome_potential = {
+	add_to_faction = FROM				
+	country_event = prc1.112
+
+					FROM = {
+
+					add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+					kill_country_leader = yes
+						set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+				}
+				add_popularity = {
+						ideology = communism
+						popularity = 0.5
+				}
+				hidden_effect = {
+					start_politics_input = yes
+					add_to_array = { ruling_party = 4 } #communism
+					set_variable = { party_pop_array^4 = 0.9 } #generate the rest
+					startup_politics = yes
+				}
+				#Switch to commie leader
+				set_country_flag = set_Communist-State
+				set_leader = yes
+}				
+	}
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+	risk_chance = 0.4
+	outcome_extra_chance = 0.30
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+
+
+	}	
+	# This is where all the separate phases are defined
+	# Each phase for an operation may have a single actual phase assigned to it, which is determined here
+	phases = { #infiltration 
+		infiltration_submarine = { base = 33 } 
+		infiltration_paradrop = { 
+			base = 33 
+			modifier = {
+				ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+				factor = 0.1
+			}
+		} 
+		infiltration_diplomatic = { base = 33 } 
+	}
+	phases = { 
+		lar_communist_uprising_organise_cells = { base = 33 }
+		lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+		lar_communist_uprising_organize_strikes = { base = 33 }
+	}
+	phases = { 
+		lar_communist_uprising_train_workers_militia = { base = 25 }
+	}
+}
+CHI_Support_the_Communist_Party_of_AFG = { ### 1/25
+	icon = GFX_operations_make_resistance_contacts
+	map_icon = GFX_operations_make_resistance_contacts_map
+	name = CHI_Support_the_Communist_Party_of_AFG
+	desc = CHI_Support_the_Communist_Party_of_AFG_desc
+	days = 60
+
+	allowed = {
+		original_tag = CHI
+	}
+	available = { 
+	}
+	visible = {
+	has_completed_focus = PRC_Afghanistan_Revolution 
+		FROM = {
+			original_tag = AFG
+NOT = {	OR = {
+					is_in_array = { ruling_party = 5 }
+					is_in_array = { ruling_party = 4 }
+					is_in_array = { ruling_party = 19 }
+ }		}	
+		}			
+	}
+	operatives = 1
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 30
+
+	requirements = { #SCOPE_COUNTRY
+	}
+	
+	equipment = {
+		support_equipment = 100
+	}
+
+	on_start = {  # SCOPE_OPERATION
+		set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+	}
+
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+	outcome_potential = {
+	random_list = {
+				33 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+}
+}
+			67 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+add_5_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+
+}	
+				}
+}
+	}
+	risk_chance = 0.2
+	outcome_extra_chance = 0.30
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+random_list = {
+				33 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+}
+}
+			67 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+add_5_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+
+}	
+				}
+}
+
+	}	
+	# This is where all the separate phases are defined
+	# Each phase for an operation may have a single actual phase assigned to it, which is determined here
+	phases = { #infiltration 
+		infiltration_submarine = { base = 33 } 
+		infiltration_paradrop = { 
+			base = 33 
+			modifier = {
+				ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+				factor = 0.1
+			}
+		} 
+		infiltration_diplomatic = { base = 33 } 
+	}
+	phases = { 
+		lar_communist_uprising_organise_cells = { base = 33 }
+		lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+		lar_communist_uprising_organize_strikes = { base = 33 }
+	}
+	phases = { 
+		lar_communist_uprising_train_workers_militia = { base = 25 }
+	}
+}
+CHI_Support_the_Communist_Party_of_AFG_coups = { ### 1/25
+	icon = GFX_operations_make_resistance_contacts
+	map_icon = GFX_operations_make_resistance_contacts_map
+	name = CHI_Support_the_Communist_Party_of_AFG_coups
+	desc = CHI_Support_the_Communist_Party_of_AFG_coups_desc
+	days = 120
+
+	allowed = {
+		original_tag = CHI
+	}
+	available = { 		FROM = {
+			custom_trigger_tooltip = {
+			check_variable = { party_pop_array^4 > 0.40 } 
+			tooltip = "共产主义支持率高于40%"
+			
+			} 	
+		}	
+	}
+	visible = {
+	has_completed_focus = PRC_Afghanistan_Revolution 
+		FROM = {
+			original_tag = AFG
+NOT = {	OR = {
+					is_in_array = { ruling_party = 5 }
+					is_in_array = { ruling_party = 4 }
+					is_in_array = { ruling_party = 19 }
+ }		}	
+		}			
+	}
+	operatives = 1
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 40
+
+	requirements = { #SCOPE_COUNTRY
+	}
+	
+	equipment = {
+		support_equipment = 100
+	}
+
+	on_start = {  # SCOPE_OPERATION
+		set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+	}
+
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+	outcome_potential = {	country_event = prc1.112
+
+	add_to_faction = FROM
+					FROM = {
+					add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+					kill_country_leader = yes
+						set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+				}
+				add_popularity = {
+						ideology = communism
+						popularity = 0.5
+				}
+				hidden_effect = {
+					start_politics_input = yes
+					add_to_array = { ruling_party = 4 } #communism
+					set_variable = { party_pop_array^4 = 0.9 } #generate the rest
+					startup_politics = yes
+				}
+				#Switch to commie leader
+				set_country_flag = set_Communist-State
+				set_leader = yes
+}				
+	}
+	risk_chance = 0.4
+	outcome_extra_chance = 0.30
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+
+
+	}	
+	# This is where all the separate phases are defined
+	# Each phase for an operation may have a single actual phase assigned to it, which is determined here
+	phases = { #infiltration 
+		infiltration_submarine = { base = 33 } 
+		infiltration_paradrop = { 
+			base = 33 
+			modifier = {
+				ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+				factor = 0.1
+			}
+		} 
+		infiltration_diplomatic = { base = 33 } 
+	}
+	phases = { 
+		lar_communist_uprising_organise_cells = { base = 33 }
+		lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+		lar_communist_uprising_organize_strikes = { base = 33 }
+	}
+	phases = { 
+		lar_communist_uprising_train_workers_militia = { base = 25 }
+	}
+}
+CHI_Support_the_Communist_Party_of_per = { ### 1/25
+	icon = GFX_operations_make_resistance_contacts
+	map_icon = GFX_operations_make_resistance_contacts_map
+	name = CHI_Support_the_Communist_Party_of_per
+	desc = CHI_Support_the_Communist_Party_of_per_desc
+	days = 60
+
+	allowed = {
+		original_tag = CHI
+	}
+	available = { 
+	}
+	visible = {
+	has_completed_focus = PRC_Overthrow_of_theocracy 
+		FROM = {
+			original_tag = PER
+NOT = {	OR = {
+					is_in_array = { ruling_party = 5 }
+					is_in_array = { ruling_party = 4 }
+					is_in_array = { ruling_party = 19 }
+ }		}	
+		}			
+	}
+	operatives = 1
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 30
+
+	requirements = { #SCOPE_COUNTRY
+	}
+	
+	equipment = {
+		support_equipment = 100
+	}
+
+	on_start = {  # SCOPE_OPERATION
+		set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+	}
+
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+	outcome_potential = {
+	random_list = {
+				33 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+}
+}
+			67 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+add_5_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+
+}	
+				}
+}
+	}
+	risk_chance = 0.2
+	outcome_extra_chance = 0.30
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+random_list = {
+				33 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+}
+}
+			67 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+add_5_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+
+}	
+				}
+}
+
+	}	
+	# This is where all the separate phases are defined
+	# Each phase for an operation may have a single actual phase assigned to it, which is determined here
+	phases = { #infiltration 
+		infiltration_submarine = { base = 33 } 
+		infiltration_paradrop = { 
+			base = 33 
+			modifier = {
+				ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+				factor = 0.1
+			}
+		} 
+		infiltration_diplomatic = { base = 33 } 
+	}
+	phases = { 
+		lar_communist_uprising_organise_cells = { base = 33 }
+		lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+		lar_communist_uprising_organize_strikes = { base = 33 }
+	}
+	phases = { 
+		lar_communist_uprising_train_workers_militia = { base = 25 }
+	}
+}
+CHI_Support_the_Communist_Party_of_per_coups = { ### 1/25
+	icon = GFX_operations_make_resistance_contacts
+	map_icon = GFX_operations_make_resistance_contacts_map
+	name = CHI_Support_the_Communist_Party_of_per_coups
+	desc = PRC_Overthrow_of_theocracy_desc
+	days = 120
+
+	allowed = {
+		original_tag = CHI
+	}
+	available = { 		FROM = {
+			custom_trigger_tooltip = {			check_variable = { party_pop_array^4 > 0.20 } 
+
+			tooltip = "共产主义支持率高于20%"
+			
+			} 	
+		}	
+	}
+	visible = {
+	has_completed_focus = PRC_Overthrow_of_theocracy 
+		FROM = {
+			original_tag = PER
+NOT = {	OR = {
+					is_in_array = { ruling_party = 5 }
+					is_in_array = { ruling_party = 4 }
+					is_in_array = { ruling_party = 19 }
+ }		}	
+		}			
+	}
+	operatives = 2
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 50
+
+	requirements = { #SCOPE_COUNTRY
+	}
+	
+	equipment = {
+		support_equipment = 100
+	}
+
+	on_start = {  # SCOPE_OPERATION
+		set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+	}
+
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+	outcome_potential = {	country_event = prc1.112
+
+				FROM = {
+					add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+					kill_country_leader = yes
+				#Release copy of existing
+				set_country_flag = no_leader_change
+				if = {
+					limit = {
+						has_government = nationalist
+					}
+					start_civil_war = {
+						ideology = nationalist
+						size = 0.5
+					}
+				}
+				else_if = {
+					limit = {
+						has_government = communism
+					}
+					start_civil_war = {
+						ideology = communism
+						size = 0.5
+					}
+				}
+				else_if = {
+					limit = {
+						has_government = democratic
+					}
+					start_civil_war = {
+						ideology = democratic
+						size = 0.5
+					}
+				}
+				else_if = {
+					limit = {
+						has_government = neutrality
+					}
+					start_civil_war = {
+						ideology = neutrality
+						size = 0.5
+					}
+				}
+				else_if = {
+					limit = {
+						has_government = fascism
+					}
+					start_civil_war = {
+						ideology = fascism
+						size = 0.5
+					}
+				}
+				clr_country_flag = no_leader_change
+				
+				#replicating current politics
+				random_other_country = {
+					limit = {
+						original_tag = PREV
+						NOT = { TAG = PREV }
+					}
+					set_temp_variable = { temp_democratic = PREV.party_popularity@democratic }
+					multiply_temp_variable = { temp_democratic = 100 }
+					set_temp_variable = { temp_total = temp_democratic }
+					set_temp_variable = { temp_communism = PREV.party_popularity@communism }
+					multiply_temp_variable = { temp_communism = 100 }
+					add_to_temp_variable = { temp_total = temp_communism }
+					set_temp_variable = { temp_neutrality = PREV.party_popularity@neutrality }
+					multiply_temp_variable = { temp_neutrality = 100 }
+					add_to_temp_variable = { temp_total = temp_neutrality }
+					set_temp_variable = { temp_fascism = PREV.party_popularity@fascism }
+					multiply_temp_variable = { temp_fascism = 100 }
+					add_to_temp_variable = { temp_total = temp_fascism }
+					set_temp_variable = { temp_nationalist = PREV.party_popularity@nationalist }
+					multiply_temp_variable = { temp_nationalist = 100 }
+					add_to_temp_variable = { temp_total = temp_nationalist }
+					subtract_from_temp_variable = { temp_total = 100 }
+					multiply_temp_variable = { temp_total = -1 }
+					add_to_temp_variable = { temp_nationalist = temp_total }
+					
+					set_popularities = {
+						democratic = temp_democratic
+						communism = temp_communism
+						neutrality = temp_neutrality
+						fascism = temp_fascism
+						nationalist = temp_nationalist
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = -0.1
+					}
+					start_politics_input = yes
+					#copy politics
+					for_loop_effect = {
+						end = party_pop_array^num
+						value = v
+						set_variable = { party_pop_array^v = PREV.party_pop_array^v }
+					}
+					add_to_array = { ruling_party = PREV.ruling_party^0 }
+					for_loop_effect = {
+						end = gov_coalition_array^num
+						value = v
+						add_to_array = { gov_coalition_array = PREV.gov_coalition_array^v }
+					}
+					set_variable = { party_pop_array^4 = 0.01 } #all moved to fight ;) 
+					set_variable = { party_pop_elect_array^4 = 0 } #made illegal
+					add_up_party_totals = yes
+					set_party_positions = yes
+					startup_politics = yes
+					
+					#VARIABLES
+					set_variable = { tax_rate = PREV.tax_rate }
+					set_variable = { treasury = PREV.treasury }
+					
+					#don't get values of original yet - REMINDER -> add it on_civil_war_end
+					set_variable = { debt = 0 }
+					set_variable = { int_investments = 0 }
+					
+					#influence
+					set_variable = { domestic_influence_amount = PREV.domestic_influence_amount }
+					#just copy all
+					for_loop_effect = {
+						end = PREV.influence_array^num
+						value = v
+						
+						add_to_array = { influence_array = PREV.influence_array^v }
+						add_to_array = { influence_array_val = PREV.influence_array_val^v }
+					}
+					recalculate_influence = yes
+					
+					#GAME VARIABLES
+					add_political_power = PREV.political_power
+					add_political_power = 400 #bonus
+					
+					#LAWS
+					set_variable = { gdp_capita = PREV.gdp_capita }
+					meta_effect = {
+						text = {
+							add_ideas = gdp_[GDP_LEVEL]
+						}
+						GDP_LEVEL = "[?gdp_capita|0]"
+					}
+					set_variable = { bureaucracy = PREV.bureaucracy }
+					meta_effect = {
+						text = {
+							add_ideas = bureau_0[BUREAU_LEVEL]
+						}
+						BUREAU_LEVEL = "[?bureaucracy|0]"
+					}
+					set_variable = { crime_fighting = PREV.crime_fighting }
+					meta_effect = {
+						text = {
+							add_ideas = police_0[POLICE_LEVEL]
+						}
+						POLICE_LEVEL = "[?crime_fighting|0]"
+					}
+					set_variable = { education_budget = PREV.education_budget }
+					meta_effect = {
+						text = {
+							add_ideas = edu_0[EDU_LEVEL]
+						}
+						EDU_LEVEL = "[?education_budget|0]"
+					}
+					set_variable = { health_budget = PREV.health_budget }
+					meta_effect = {
+						text = {
+							add_ideas = health_0[HEALTH_LEVEL]
+						}
+						HEALTH_LEVEL = "[?health_budget|0]"
+					}
+					set_variable = { social_budget = PREV.social_budget }
+					meta_effect = {
+						text = {
+							add_ideas = social_0[WELFARE_LEVEL]
+						}
+						WELFARE_LEVEL = "[?social_budget|0]"
+					}
+					
+					set_variable = { Military_Spending = PREV.Military_Spending }
+					subtract_from_variable = { Military_Spending = 1 }
+					meta_effect = {
+						text = {
+							add_ideas = defence_0[DEFENCE_LEVEL]
+						}
+						DEFENCE_LEVEL = "[?Military_Spending|0]"
+					}
+					set_variable = { Military_Spending = PREV.Military_Spending }
+					
+					set_variable = { economic_cycles = PREV.economic_cycles }
+					if = { limit = { check_variable = { economic_cycles = 6 } }
+						add_ideas = depression
+					}
+					else_if = { limit = { check_variable = { economic_cycles = 5 } }
+						add_ideas = recession
+					}
+					else_if = { limit = { check_variable = { economic_cycles = 4 } }
+						add_ideas = stagnation
+					}
+					else_if = { limit = { check_variable = { economic_cycles = 3 } }
+						add_ideas = stable_growth
+					}
+					else_if = { limit = { check_variable = { economic_cycles = 2 } }
+						add_ideas = fast_growth
+					}
+					else_if = { limit = { check_variable = { economic_cycles = 1 } }
+						add_ideas = economic_boom
+					}
+					
+					if = { limit = { PREV = { has_idea = paralyzing_corruption } }
+						add_ideas = paralyzing_corruption
+					}
+					else_if = { limit = { PREV = { has_idea = crippling_corruption } }
+						add_ideas = crippling_corruption
+					}
+					else_if = { limit = { PREV = { has_idea = rampant_corruption } }
+						add_ideas = rampant_corruption
+					}
+					else_if = { limit = { PREV = { has_idea = unrestrained_corruption } }
+						add_ideas = unrestrained_corruption
+					}
+					else_if = { limit = { PREV = { has_idea = systematic_corruption } }
+						add_ideas = systematic_corruption
+					}
+					else_if = { limit = { PREV = { has_idea = widespread_corruption } }
+						add_ideas = widespread_corruption
+					}
+					else_if = { limit = { PREV = { has_idea = medium_corruption } }
+						add_ideas = medium_corruption
+					}
+					else_if = { limit = { PREV = { has_idea = modest_corruption } }
+						add_ideas = modest_corruption
+					}
+					else_if = { limit = { PREV = { has_idea = slight_corruption } }
+						add_ideas = slight_corruption
+					}
+					else_if = { limit = { PREV = { has_idea = negligible_corruption } }
+						add_ideas = negligible_corruption
+					}
+					
+					if = { limit = { PREV = { has_idea = consumption_economy } }
+						add_ideas = consumption_economy
+					}
+					else_if = { limit = { PREV = { has_idea = mixed_economy } }
+						add_ideas = mixed_economy
+					}
+					else_if = { limit = { PREV = { has_idea = export_economy } }
+						add_ideas = export_economy
+					}
+					
+					if = { limit = { PREV = { has_idea = no_military } }
+						add_ideas = no_military
+					}
+					else_if = { limit = { PREV = { has_idea = volunteer_army } }
+						add_ideas = volunteer_army
+					}
+					else_if = { limit = { PREV = { has_idea = partial_draft_army } }
+						add_ideas = partial_draft_army
+					}
+					else_if = { limit = { PREV = { has_idea = draft_army } }
+						add_ideas = draft_army
+					}
+					
+					if = { limit = { PREV = { has_idea = no_women_in_military } }
+						add_ideas = no_women_in_military
+					}
+					else_if = { limit = { PREV = { has_idea = volunteer_women } }
+						add_ideas = volunteer_women
+					}
+					else_if = { limit = { PREV = { has_idea = drafted_women } }
+						add_ideas = drafted_women
+					}
+					
+					if = { limit = { PREV = { has_idea = intervention_isolation } }
+						add_ideas = intervention_isolation
+					}
+					else_if = { limit = { PREV = { has_idea = intervention_local_security } }
+						add_ideas = intervention_local_security
+					}
+					else_if = { limit = { PREV = { has_idea = intervention_limited_interventionism } }
+						add_ideas = intervention_limited_interventionism
+					}
+					else_if = { limit = { PREV = { has_idea = intervention_regional_interventionism } }
+						add_ideas = intervention_regional_interventionism
+					}
+					else_if = { limit = { PREV = { has_idea = intervention_global_interventionism } }
+						add_ideas = intervention_global_interventionism
+					}
+					else_if = { limit = { PREV = { has_idea = intervention_neo_imperialism } }
+						add_ideas = intervention_neo_imperialism
+					}
+					
+					if = { limit = { PREV = { has_idea = officer_baptism_by_fire } }
+						add_ideas = officer_baptism_by_fire
+					}
+					else_if = { limit = { PREV = { has_idea = officer_basic_training } }
+						add_ideas = officer_basic_training
+					}
+					else_if = { limit = { PREV = { has_idea = officer_advanced_training } }
+						add_ideas = officer_advanced_training
+					}
+					else_if = { limit = { PREV = { has_idea = officer_military_school } }
+						add_ideas = officer_military_school
+					}
+					else_if = { limit = { PREV = { has_idea = officer_military_academy } }
+						add_ideas = officer_military_academy
+					}
+					else_if = { limit = { PREV = { has_idea = officer_international_education } }
+						add_ideas = officer_international_education
+					}
+					
+					### Internal factions
+					if = { limit = { PREV = { has_idea = small_medium_business_owners } }
+						add_ideas = small_medium_business_owners
+					}
+					if = { limit = { PREV = { has_idea = international_bankers } }
+						add_ideas = international_bankers
+					}
+					if = { limit = { PREV = { has_idea = fossil_fuel_industry } }
+						add_ideas = fossil_fuel_industry
+					}
+					if = { limit = { PREV = { has_idea = industrial_conglomerates } }
+						add_ideas = industrial_conglomerates
+					}
+					if = { limit = { PREV = { has_idea = oligarchs } }
+						add_ideas = oligarchs
+					}
+					if = { limit = { PREV = { has_idea = maritime_industry } }
+						add_ideas = maritime_industry
+					}
+					if = { limit = { PREV = { has_idea = defense_industry } }
+						add_ideas = defense_industry
+					}
+					if = { limit = { PREV = { has_idea = the_military } }
+						add_ideas = the_military
+					}
+					if = { limit = { PREV = { has_idea = intelligence_community } }
+						add_ideas = intelligence_community
+					}
+					if = { limit = { PREV = { has_idea = labour_unions } }
+						add_ideas = labour_unions
+					}
+					if = { limit = { PREV = { has_idea = landowners } }
+						add_ideas = landowners
+					}
+					if = { limit = { PREV = { has_idea = farmers } }
+						add_ideas = farmers
+					}
+					if = {
+						limit = { 
+							PREV = {
+								has_idea = communist_cadres
+								ROOT = {
+									OR = {
+										is_in_array = { ruling_party = 4 }
+										is_in_array = { ruling_party = 19 }
+									}
+								}
+							}
+						}
+						add_ideas = communist_cadres
+					}
+					if = { limit = { PREV = { has_idea = the_priesthood } }
+						add_ideas = the_priesthood
+					}
+					if = { limit = { PREV = { has_idea = The_Ulema } }
+						add_ideas = The_Ulema
+					}
+					if = { limit = { PREV = { has_idea = The_Clergy } }
+						add_ideas = The_Clergy
+					}
+					if = { limit = { PREV = { has_idea = wahabi_ulema } }
+						add_ideas = wahabi_ulema
+					}
+					if = { limit = { PREV = { has_idea = the_donju } }
+						add_ideas = the_donju
+					}
+					if = { limit = { PREV = { has_idea = the_bazaar } }
+						add_ideas = the_bazaar
+					}
+					if = {
+						limit = { 
+							PREV = {
+								has_idea = saudi_royal_family
+								ROOT = {
+									OR = {
+										is_in_array = { ruling_party = 10 }
+										is_in_array = { ruling_party = 23 }
+										is_in_array = { ruling_party = 0 }
+									}
+								}
+							}
+						}
+						add_ideas = saudi_royal_family
+					}
+					if = {
+						limit = { 
+							PREV = {
+								has_idea = irgc
+								ROOT = {
+									NOT = {
+										OR = {
+											has_government = democratic
+											has_government = fascism
+										}
+									}
+								}
+							}
+						}
+						add_ideas = irgc
+					}
+					if = {
+						limit = { 
+							PREV = {
+								has_idea = iranian_quds_force
+								ROOT = {
+									NOT = {
+										OR = {
+											has_government = democratic
+											has_government = fascism
+										}
+									}
+								}
+							}
+						}
+						add_ideas = iranian_quds_force
+					}
+					if = {
+						limit = { 
+							PREV = {
+								has_idea = vevak
+								ROOT = {
+									NOT = {
+										OR = {
+											has_government = democratic
+											has_government = fascism
+										}
+									}
+								}
+							}
+						}
+						add_ideas = vevak
+					}
+					if = {
+						limit = { 
+							PREV = {
+								has_idea = foreign_jihadis
+								ROOT = {
+									OR = {
+										is_in_array = { ruling_party = 11 }
+									}
+								}
+							}
+						}
+						add_ideas = foreign_jihadis
+					}
+					if = { limit = { PREV = { has_idea = isi_pakistan } }
+						add_ideas = isi_pakistan
+					}
+					if = { limit = { PREV = { has_idea = wall_street } }
+						add_ideas = wall_street
+					}
+					if = { limit = { PREV = { has_idea = chaebols } }
+						add_ideas = chaebols
+					}
+					
+					calculate_influence_percentage = yes #set alignment drifts from influence
+					setup_init_factions = yes 	#flags for int. factions
+					init_neighbor_drift_1 = yes #drift from neighbor
+					init_neighbor_drift_2 = yes #drift from neighbor
+					
+					country_event = { id = brotherhood.0 } #Sets muslim_brotherhood relations
+					country_event = { id = brotherhood.2 }
+				}
+				
+				#copy leader throughput
+					set_variable = { Western_Autocracy_leader = PREV.Western_Autocracy_leader?0 }
+					set_variable = { conservatism_leader = PREV.conservatism_leader?0 }
+					set_variable = { liberalism_leader = PREV.liberalism_leader?0 }
+					set_variable = { socialism_leader = PREV.socialism_leader?0 }
+					
+					set_variable = { Communist-State_leader = PREV.Communist-State_leader?0 }
+					set_variable = { anarchist_communism_leader = PREV.anarchist_communism_leader?0 }
+					set_variable = { Conservative_leader = PREV.Conservative_leader?0 }
+					set_variable = { Autocracy_leader = PREV.Autocracy_leader?0 }
+					set_variable = { Mod_Vilayat_e_Faqih_leader = PREV.Mod_Vilayat_e_Faqih_leader?0 }
+					set_variable = { Vilayat_e_Faqih_leader = PREV.Vilayat_e_Faqih_leader?0 }
+					
+					set_variable = { Kingdom_leader = PREV.Kingdom_leader?0 }
+					set_variable = { Caliphate_leader = PREV.Caliphate_leader?0 }
+					
+					set_variable = { Neutral_Muslim_Brotherhood_leader = PREV.Neutral_Muslim_Brotherhood_leader?0 }
+					set_variable = { Neutral_Autocracy_leader = PREV.Neutral_Autocracy_leader?0 }
+					set_variable = { Neutral_conservatism_leader = PREV.Neutral_conservatism_leader?0 }
+					set_variable = { oligarchism_leader = PREV.oligarchism_leader?0 }
+					set_variable = { Neutral_Libertarian_leader = PREV.Neutral_Libertarian_leader?0 }
+					set_variable = { Neutral_green_leader = PREV.Neutral_green_leader?0 }
+					set_variable = { neutral_Social_leader = PREV.neutral_Social_leader?0 }
+					set_variable = { Neutral_Communism_leader = PREV.Neutral_Communism_leader?0 }
+					set_variable = { Nat_Populism_leader = PREV.Nat_Populism_leader?0 }
+					set_variable = { Nat_Fascism_leader = PREV.Nat_Fascism_leader?0 }
+					set_variable = { Nat_Autocracy_leader = PREV.Nat_Autocracy_leader?0 }
+					set_variable = { Monarchist_leader = PREV.Monarchist_leader?0 }					
+					
+	hidden_effect = {
+							set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				
+	}	
+clr_country_flag = 	PER_hide_focuses_ir
+						set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+				}
+				add_popularity = {
+						ideology = communism
+						popularity = 0.5
+				}
+				hidden_effect = {
+					start_politics_input = yes
+					add_to_array = { ruling_party = 4 } #communism
+					set_variable = { party_pop_array^4 = 0.9 } #generate the rest
+					startup_politics = yes
+				}
+				#Switch to commie leader
+				set_country_flag = set_Communist-State
+				set_leader = yes
+
+}}				
+	risk_chance = 0.4
+	outcome_extra_chance = 0.30
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+	
+
+	}	
+	# This is where all the separate phases are defined
+	# Each phase for an operation may have a single actual phase assigned to it, which is determined here
+	phases = { #infiltration 
+		infiltration_submarine = { base = 33 } 
+		infiltration_paradrop = { 
+			base = 33 
+			modifier = {
+				ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+				factor = 0.1
+			}
+		} 
+		infiltration_diplomatic = { base = 33 } 
+	}
+	phases = { 
+		lar_communist_uprising_organise_cells = { base = 33 }
+		lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+		lar_communist_uprising_organize_strikes = { base = 33 }
+	}
+	phases = { 
+		lar_communist_uprising_train_workers_militia = { base = 25 }
+	}
+}
+CHI_Support_the_Communist_Party_of_arabic = { ### 1/25
+	icon = GFX_operations_make_resistance_contacts
+	map_icon = GFX_operations_make_resistance_contacts_map
+	name = CHI_Support_the_Communist_Party_of_arabic
+	desc = CHI_Support_the_Communist_Party_of_arabic_desc
+	days = 60
+
+	allowed = {
+		original_tag = CHI
+	}
+	available = { 
+	}
+	visible = {
+	has_completed_focus = PRC_pugre_musilin 
+		FROM = {
+is_arabic_nation = yes
+NOT = {	
+original_tag = ALG
+OR = {
+					is_in_array = { ruling_party = 5 }
+					is_in_array = { ruling_party = 4 }
+					is_in_array = { ruling_party = 19 }
+ }		}	
+		}			
+	}
+	operatives = 1
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 30
+
+	requirements = { #SCOPE_COUNTRY
+	}
+	
+	equipment = {
+		support_equipment = 100
+	}
+
+	on_start = {  # SCOPE_OPERATION
+		set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+	}
+
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+	outcome_potential = {
+	random_list = {
+				33 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+}
+}
+			67 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+add_5_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+
+}	
+				}
+}
+	}
+	risk_chance = 0.2
+	outcome_extra_chance = 0.30
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+random_list = {
+				33 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+}
+}
+			67 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+add_5_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+
+}	
+				}
+}
+
+	}	
+	# This is where all the separate phases are defined
+	# Each phase for an operation may have a single actual phase assigned to it, which is determined here
+	phases = { #infiltration 
+		infiltration_submarine = { base = 33 } 
+		infiltration_paradrop = { 
+			base = 33 
+			modifier = {
+				ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+				factor = 0.1
+			}
+		} 
+		infiltration_diplomatic = { base = 33 } 
+	}
+	phases = { 
+		lar_communist_uprising_organise_cells = { base = 33 }
+		lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+		lar_communist_uprising_organize_strikes = { base = 33 }
+	}
+	phases = { 
+		lar_communist_uprising_train_workers_militia = { base = 25 }
+	}
+}
+CHI_Support_the_Communist_Party_of_arabic_coups = { ### 1/25
+	icon = GFX_operations_make_resistance_contacts
+	map_icon = GFX_operations_make_resistance_contacts_map
+	name = CHI_Support_the_Communist_Party_of_arabic_coups
+	desc = CHI_Support_the_Communist_Party_of_arabic_coups_desc
+	days = 120
+
+	allowed = {
+		original_tag = CHI
+	}
+	available = { 		FROM = {
+			custom_trigger_tooltip = {
+			check_variable = { party_pop_array^4 > 0.40 } 
+			tooltip = "共产主义支持率高于40%"
+			
+			} 	
+		}	
+	}
+	visible = {
+	has_completed_focus = PRC_pugre_musilin 
+		FROM = {
+is_arabic_nation = yes
+NOT = {
+original_tag = ALG
+	OR = {
+					is_in_array = { ruling_party = 5 }
+					is_in_array = { ruling_party = 4 }
+					is_in_array = { ruling_party = 19 }
+ }		}	
+		}			
+	}
+	operatives = 1
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 50
+
+	requirements = { #SCOPE_COUNTRY
+	}
+	
+	equipment = {
+		support_equipment = 100
+	}
+
+	on_start = {  # SCOPE_OPERATION
+		set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+	}
+
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+	outcome_potential = {	country_event = prc1.112
+
+	add_to_faction = FROM
+					FROM = {
+					add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+					kill_country_leader = yes
+						set_politics = {
+					ruling_party = communism
+					elections_allowed = yes
+				}
+				add_popularity = {
+						ideology = communism
+						popularity = 0.5
+				}
+				hidden_effect = {
+					start_politics_input = yes
+					add_to_array = { ruling_party = 4 } #communism
+					set_variable = { party_pop_array^4 = 0.9 } #generate the rest
+					startup_politics = yes
+				}
+				#Switch to commie leader
+				set_country_flag = set_Communist-State
+				set_leader = yes
+}				
+	}
+	risk_chance = 0.4
+	outcome_extra_chance = 0.30
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+
+
+	}	
+	# This is where all the separate phases are defined
+	# Each phase for an operation may have a single actual phase assigned to it, which is determined here
+	phases = { #infiltration 
+		infiltration_submarine = { base = 33 } 
+		infiltration_paradrop = { 
+			base = 33 
+			modifier = {
+				ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+				factor = 0.1
+			}
+		} 
+		infiltration_diplomatic = { base = 33 } 
+	}
+	phases = { 
+		lar_communist_uprising_organise_cells = { base = 33 }
+		lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+		lar_communist_uprising_organize_strikes = { base = 33 }
+	}
+	phases = { 
+		lar_communist_uprising_train_workers_militia = { base = 25 }
+	}
+}
+
+CHI_Support_the_Communist_Party_of_ALG = { ### 1/25
+	icon = GFX_operations_make_resistance_contacts
+	map_icon = GFX_operations_make_resistance_contacts_map
+	name = CHI_Support_the_Communist_Party_of_ALG
+	desc = CHI_Support_the_Communist_Party_of_ALG_desc
+	days = 60
+
+	allowed = {
+		original_tag = CHI
+	}
+	available = { 
+	}
+	visible = {
+	has_completed_focus = PRC_pugre_musilin 
+		FROM = {
+			original_tag = ALG
+NOT = {	OR = {
+					is_in_array = { ruling_party = 5 }
+					is_in_array = { ruling_party = 4 }
+					is_in_array = { ruling_party = 19 }
+ }		}	
+		}			
+	}
+	operatives = 1
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 30
+
+	requirements = { #SCOPE_COUNTRY
+	}
+	
+	equipment = {
+		support_equipment = 100
+	}
+
+	on_start = {  # SCOPE_OPERATION
+		set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+	}
+
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+	outcome_potential = {
+	random_list = {
+				33 = {
+FROM = {
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.10
+				}
+add_10_neutrality_neutral_communism = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+}
+}
+			67 = {
+FROM = {
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.05
+				}
+add_5_neutrality_neutral_communism = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+
+}	
+				}
+}
+	}
+	risk_chance = 0.2
+	outcome_extra_chance = 0.30
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+random_list = {
+				33 = {
+FROM = {
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.10
+				}
+add_10_neutrality_neutral_communism = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+}
+}
+			67 = {
+FROM = {
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.05
+				}
+add_5_neutrality_neutral_communism = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+
+}	
+				}
+}
+
+	}	
+	# This is where all the separate phases are defined
+	# Each phase for an operation may have a single actual phase assigned to it, which is determined here
+	phases = { #infiltration 
+		infiltration_submarine = { base = 33 } 
+		infiltration_paradrop = { 
+			base = 33 
+			modifier = {
+				ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+				factor = 0.1
+			}
+		} 
+		infiltration_diplomatic = { base = 33 } 
+	}
+	phases = { 
+		lar_communist_uprising_organise_cells = { base = 33 }
+		lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+		lar_communist_uprising_organize_strikes = { base = 33 }
+	}
+	phases = { 
+		lar_communist_uprising_train_workers_militia = { base = 25 }
+	}
+}
+CHI_Support_the_Communist_Party_of_ALG_coups = { ### 1/25
+	icon = GFX_operations_make_resistance_contacts
+	map_icon = GFX_operations_make_resistance_contacts_map
+	name = CHI_Support_the_Communist_Party_of_ALG_coups
+	desc = CHI_Support_the_Communist_Party_of_ALG_coups_desc
+	days = 60
+
+	allowed = {
+		original_tag = CHI
+	}
+	available = { 		FROM = {
+			custom_trigger_tooltip = {
+			check_variable = { party_pop_array^19 > 0.40 } 
+			tooltip = "共产主义支持率高于40%"
+			
+			} 	
+		}	
+	}
+	visible = {
+	has_completed_focus = PRC_pugre_musilin 
+		FROM = {
+			original_tag = ALG
+NOT = {	OR = {
+					is_in_array = { ruling_party = 5 }
+					is_in_array = { ruling_party = 4 }
+					is_in_array = { ruling_party = 19 }
+ }		}	
+		}			
+	}
+	operatives = 1
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 50
+
+	requirements = { #SCOPE_COUNTRY
+	}
+	
+	equipment = {
+		support_equipment = 100
+	}
+
+	on_start = {  # SCOPE_OPERATION
+		set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+	}
+
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+	outcome_potential = {	country_event = prc1.112
+
+	add_to_faction = FROM
+					FROM = {
+					add_10_neutrality_neutral_communism = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+					kill_country_leader = yes
+						set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				add_popularity = {
+						ideology = neutrality
+						popularity = 0.5
+				}
+				hidden_effect = {
+					start_politics_input = yes
+					add_to_array = { ruling_party = 19 } #communism
+					set_variable = { party_pop_array^19 = 0.4 } #generate the rest
+					startup_politics = yes
+				}
+					create_country_leader = {
+				name = "Louisa Hanoune"
+				picture = "louisa_hanoune.dds"
+				ideology = Neutral_Communism
+				traits = {
+					neutrality_Neutral_Communism
+			tuolsim
+			}
+			}		
+}				
+	}
+	risk_chance = 0.4
+	outcome_extra_chance = 0.30
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+
+
+	}	
+	# This is where all the separate phases are defined
+	# Each phase for an operation may have a single actual phase assigned to it, which is determined here
+	phases = { #infiltration 
+		infiltration_submarine = { base = 33 } 
+		infiltration_paradrop = { 
+			base = 33 
+			modifier = {
+				ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+				factor = 0.1
+			}
+		} 
+		infiltration_diplomatic = { base = 33 } 
+	}
+	phases = { 
+		lar_communist_uprising_organise_cells = { base = 33 }
+		lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+		lar_communist_uprising_organize_strikes = { base = 33 }
+	}
+	phases = { 
+		lar_communist_uprising_train_workers_militia = { base = 25 }
+	}
+}
+CHI_Support_the_Communist_Party_of_RAJ = { ### 1/25
+	icon = GFX_operations_make_resistance_contacts
+	map_icon = GFX_operations_make_resistance_contacts_map
+	name = CHI_Support_the_Communist_Party_of_RAJ
+	desc = CHI_Support_the_Communist_Party_of_RAJ_desc
+	days = 60
+
+	allowed = {
+		original_tag = CHI
+	}
+	available = { 
+	}
+	visible = {
+	has_completed_focus = PRC_raj_rev 
+		FROM = {
+			original_tag = RAJ
+NOT = {	OR = {
+					is_in_array = { ruling_party = 5 }
+					is_in_array = { ruling_party = 4 }
+					is_in_array = { ruling_party = 19 }
+ }		}	
+		}			
+	}
+	operatives = 1
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 30
+
+	requirements = { #SCOPE_COUNTRY
+	}
+	
+	equipment = {
+		support_equipment = 100
+	}
+
+	on_start = {  # SCOPE_OPERATION
+		set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+	}
+
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+	outcome_potential = {
+	random_list = {
+				33 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+}
+}
+			67 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+add_5_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+
+}	
+				}
+}
+	}
+	risk_chance = 0.2
+	outcome_extra_chance = 0.30
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+random_list = {
+				33 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+}
+}
+			67 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+add_5_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+
+}	
+				}
+}
+
+	}	
+	# This is where all the separate phases are defined
+	# Each phase for an operation may have a single actual phase assigned to it, which is determined here
+	phases = { #infiltration 
+		infiltration_submarine = { base = 33 } 
+		infiltration_paradrop = { 
+			base = 33 
+			modifier = {
+				ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+				factor = 0.1
+			}
+		} 
+		infiltration_diplomatic = { base = 33 } 
+	}
+	phases = { 
+		lar_communist_uprising_organise_cells = { base = 33 }
+		lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+		lar_communist_uprising_organize_strikes = { base = 33 }
+	}
+	phases = { 
+		lar_communist_uprising_train_workers_militia = { base = 25 }
+	}
+}
+CHI_Support_the_Communist_Party_of_RAJ_coups = { ### 1/25
+	icon = GFX_operations_make_resistance_contacts
+	map_icon = GFX_operations_make_resistance_contacts_map
+	name = CHI_Support_the_Communist_Party_of_RAJ_coups
+	desc = CHI_Support_the_Communist_Party_of_RAJ_coups_desc
+	days = 120
+
+	allowed = {
+		original_tag = CHI
+	}
+	available = { 		FROM = {
+			custom_trigger_tooltip = {
+			check_variable = { party_pop_array^4 > 0.40 } 
+			tooltip = "共产主义支持率高于40%"
+			
+			} 	
+		}	
+	}
+	visible = {
+	has_completed_focus = PRC_rajcw 
+		FROM = {
+			original_tag = RAJ
+NOT = {	OR = {
+					is_in_array = { ruling_party = 5 }
+					is_in_array = { ruling_party = 4 }
+					is_in_array = { ruling_party = 19 }
+ }		}	
+		}			
+	}
+	operatives = 2
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 50
+
+	requirements = { #SCOPE_COUNTRY
+	}
+	
+	equipment = {
+		support_equipment = 100
+	}
+
+	on_start = {  # SCOPE_OPERATION
+		set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+	}
+
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+	outcome_potential = {	country_event = prc1.112
+
+		transfer_state = 475
+		transfer_state = 591
+		add_state_core = 475
+
+RAJ = {
+remove_ideas = {		india_divided
+		commonwealth_of_nations_member
+}
+				set_country_flag = no_leader_change
+				if = {
+					limit = {
+						has_government = nationalist
+					}
+					start_civil_war = {
+						ideology = nationalist
+						size = 0.5
+					}
+				}
+				else_if = {
+					limit = {
+						has_government = communism
+					}
+					start_civil_war = {
+						ideology = communism
+						size = 0.5
+					}
+				}
+				else_if = {
+					limit = {
+						has_government = democratic
+					}
+					start_civil_war = {
+						ideology = democratic
+						size = 0.5
+					}
+				}
+				else_if = {
+					limit = {
+						has_government = neutrality
+					}
+					start_civil_war = {
+						ideology = neutrality
+						size = 0.5
+					}
+				}
+				else_if = {
+					limit = {
+						has_government = fascism
+					}
+					start_civil_war = {
+						ideology = fascism
+						size = 0.5
+					}
+				}
+				clr_country_flag = no_leader_change
+				
+				#replicating current politics
+				random_other_country = {
+					limit = {
+						original_tag = PREV
+						NOT = { TAG = PREV }
+					}
+					set_temp_variable = { temp_democratic = PREV.party_popularity@democratic }
+					multiply_temp_variable = { temp_democratic = 100 }
+					set_temp_variable = { temp_total = temp_democratic }
+					set_temp_variable = { temp_communism = PREV.party_popularity@communism }
+					multiply_temp_variable = { temp_communism = 100 }
+					add_to_temp_variable = { temp_total = temp_communism }
+					set_temp_variable = { temp_neutrality = PREV.party_popularity@neutrality }
+					multiply_temp_variable = { temp_neutrality = 100 }
+					add_to_temp_variable = { temp_total = temp_neutrality }
+					set_temp_variable = { temp_fascism = PREV.party_popularity@fascism }
+					multiply_temp_variable = { temp_fascism = 100 }
+					add_to_temp_variable = { temp_total = temp_fascism }
+					set_temp_variable = { temp_nationalist = PREV.party_popularity@nationalist }
+					multiply_temp_variable = { temp_nationalist = 100 }
+					add_to_temp_variable = { temp_total = temp_nationalist }
+					subtract_from_temp_variable = { temp_total = 100 }
+					multiply_temp_variable = { temp_total = -1 }
+					add_to_temp_variable = { temp_nationalist = temp_total }
+					
+					set_popularities = {
+						democratic = temp_democratic
+						communism = temp_communism
+						neutrality = temp_neutrality
+						fascism = temp_fascism
+						nationalist = temp_nationalist
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = -0.1
+					}
+					start_politics_input = yes
+					#copy politics
+					for_loop_effect = {
+						end = party_pop_array^num
+						value = v
+						set_variable = { party_pop_array^v = PREV.party_pop_array^v }
+					}
+					add_to_array = { ruling_party = PREV.ruling_party^0 }
+					for_loop_effect = {
+						end = gov_coalition_array^num
+						value = v
+						add_to_array = { gov_coalition_array = PREV.gov_coalition_array^v }
+					}
+					set_variable = { party_pop_array^4 = 0.01 } #all moved to fight ;) 
+					set_variable = { party_pop_elect_array^4 = 0 } #made illegal
+					add_up_party_totals = yes
+					set_party_positions = yes
+					startup_politics = yes
+					
+					#VARIABLES
+					set_variable = { tax_rate = PREV.tax_rate }
+					set_variable = { treasury = PREV.treasury }
+					
+					#don't get values of original yet - REMINDER -> add it on_civil_war_end
+					set_variable = { debt = 0 }
+					set_variable = { int_investments = 0 }
+					
+					#influence
+					set_variable = { domestic_influence_amount = PREV.domestic_influence_amount }
+					#just copy all
+					for_loop_effect = {
+						end = PREV.influence_array^num
+						value = v
+						
+						add_to_array = { influence_array = PREV.influence_array^v }
+						add_to_array = { influence_array_val = PREV.influence_array_val^v }
+					}
+					recalculate_influence = yes
+					
+					#GAME VARIABLES
+					add_political_power = PREV.political_power
+					add_political_power = 400 #bonus
+					
+					#LAWS
+					set_variable = { gdp_capita = PREV.gdp_capita }
+					meta_effect = {
+						text = {
+							add_ideas = gdp_[GDP_LEVEL]
+						}
+						GDP_LEVEL = "[?gdp_capita|0]"
+					}
+					set_variable = { bureaucracy = PREV.bureaucracy }
+					meta_effect = {
+						text = {
+							add_ideas = bureau_0[BUREAU_LEVEL]
+						}
+						BUREAU_LEVEL = "[?bureaucracy|0]"
+					}
+					set_variable = { crime_fighting = PREV.crime_fighting }
+					meta_effect = {
+						text = {
+							add_ideas = police_0[POLICE_LEVEL]
+						}
+						POLICE_LEVEL = "[?crime_fighting|0]"
+					}
+					set_variable = { education_budget = PREV.education_budget }
+					meta_effect = {
+						text = {
+							add_ideas = edu_0[EDU_LEVEL]
+						}
+						EDU_LEVEL = "[?education_budget|0]"
+					}
+					set_variable = { health_budget = PREV.health_budget }
+					meta_effect = {
+						text = {
+							add_ideas = health_0[HEALTH_LEVEL]
+						}
+						HEALTH_LEVEL = "[?health_budget|0]"
+					}
+					set_variable = { social_budget = PREV.social_budget }
+					meta_effect = {
+						text = {
+							add_ideas = social_0[WELFARE_LEVEL]
+						}
+						WELFARE_LEVEL = "[?social_budget|0]"
+					}
+					
+					set_variable = { Military_Spending = PREV.Military_Spending }
+					subtract_from_variable = { Military_Spending = 1 }
+					meta_effect = {
+						text = {
+							add_ideas = defence_0[DEFENCE_LEVEL]
+						}
+						DEFENCE_LEVEL = "[?Military_Spending|0]"
+					}
+					set_variable = { Military_Spending = PREV.Military_Spending }
+					
+					set_variable = { economic_cycles = PREV.economic_cycles }
+					if = { limit = { check_variable = { economic_cycles = 6 } }
+						add_ideas = depression
+					}
+					else_if = { limit = { check_variable = { economic_cycles = 5 } }
+						add_ideas = recession
+					}
+					else_if = { limit = { check_variable = { economic_cycles = 4 } }
+						add_ideas = stagnation
+					}
+					else_if = { limit = { check_variable = { economic_cycles = 3 } }
+						add_ideas = stable_growth
+					}
+					else_if = { limit = { check_variable = { economic_cycles = 2 } }
+						add_ideas = fast_growth
+					}
+					else_if = { limit = { check_variable = { economic_cycles = 1 } }
+						add_ideas = economic_boom
+					}
+					
+					if = { limit = { PREV = { has_idea = paralyzing_corruption } }
+						add_ideas = paralyzing_corruption
+					}
+					else_if = { limit = { PREV = { has_idea = crippling_corruption } }
+						add_ideas = crippling_corruption
+					}
+					else_if = { limit = { PREV = { has_idea = rampant_corruption } }
+						add_ideas = rampant_corruption
+					}
+					else_if = { limit = { PREV = { has_idea = unrestrained_corruption } }
+						add_ideas = unrestrained_corruption
+					}
+					else_if = { limit = { PREV = { has_idea = systematic_corruption } }
+						add_ideas = systematic_corruption
+					}
+					else_if = { limit = { PREV = { has_idea = widespread_corruption } }
+						add_ideas = widespread_corruption
+					}
+					else_if = { limit = { PREV = { has_idea = medium_corruption } }
+						add_ideas = medium_corruption
+					}
+					else_if = { limit = { PREV = { has_idea = modest_corruption } }
+						add_ideas = modest_corruption
+					}
+					else_if = { limit = { PREV = { has_idea = slight_corruption } }
+						add_ideas = slight_corruption
+					}
+					else_if = { limit = { PREV = { has_idea = negligible_corruption } }
+						add_ideas = negligible_corruption
+					}
+					
+					if = { limit = { PREV = { has_idea = consumption_economy } }
+						add_ideas = consumption_economy
+					}
+					else_if = { limit = { PREV = { has_idea = mixed_economy } }
+						add_ideas = mixed_economy
+					}
+					else_if = { limit = { PREV = { has_idea = export_economy } }
+						add_ideas = export_economy
+					}
+					
+					if = { limit = { PREV = { has_idea = no_military } }
+						add_ideas = no_military
+					}
+					else_if = { limit = { PREV = { has_idea = volunteer_army } }
+						add_ideas = volunteer_army
+					}
+					else_if = { limit = { PREV = { has_idea = partial_draft_army } }
+						add_ideas = partial_draft_army
+					}
+					else_if = { limit = { PREV = { has_idea = draft_army } }
+						add_ideas = draft_army
+					}
+					
+					if = { limit = { PREV = { has_idea = no_women_in_military } }
+						add_ideas = no_women_in_military
+					}
+					else_if = { limit = { PREV = { has_idea = volunteer_women } }
+						add_ideas = volunteer_women
+					}
+					else_if = { limit = { PREV = { has_idea = drafted_women } }
+						add_ideas = drafted_women
+					}
+					
+					if = { limit = { PREV = { has_idea = intervention_isolation } }
+						add_ideas = intervention_isolation
+					}
+					else_if = { limit = { PREV = { has_idea = intervention_local_security } }
+						add_ideas = intervention_local_security
+					}
+					else_if = { limit = { PREV = { has_idea = intervention_limited_interventionism } }
+						add_ideas = intervention_limited_interventionism
+					}
+					else_if = { limit = { PREV = { has_idea = intervention_regional_interventionism } }
+						add_ideas = intervention_regional_interventionism
+					}
+					else_if = { limit = { PREV = { has_idea = intervention_global_interventionism } }
+						add_ideas = intervention_global_interventionism
+					}
+					else_if = { limit = { PREV = { has_idea = intervention_neo_imperialism } }
+						add_ideas = intervention_neo_imperialism
+					}
+					
+					if = { limit = { PREV = { has_idea = officer_baptism_by_fire } }
+						add_ideas = officer_baptism_by_fire
+					}
+					else_if = { limit = { PREV = { has_idea = officer_basic_training } }
+						add_ideas = officer_basic_training
+					}
+					else_if = { limit = { PREV = { has_idea = officer_advanced_training } }
+						add_ideas = officer_advanced_training
+					}
+					else_if = { limit = { PREV = { has_idea = officer_military_school } }
+						add_ideas = officer_military_school
+					}
+					else_if = { limit = { PREV = { has_idea = officer_military_academy } }
+						add_ideas = officer_military_academy
+					}
+					else_if = { limit = { PREV = { has_idea = officer_international_education } }
+						add_ideas = officer_international_education
+					}
+					
+					### Internal factions
+					if = { limit = { PREV = { has_idea = small_medium_business_owners } }
+						add_ideas = small_medium_business_owners
+					}
+					if = { limit = { PREV = { has_idea = international_bankers } }
+						add_ideas = international_bankers
+					}
+					if = { limit = { PREV = { has_idea = fossil_fuel_industry } }
+						add_ideas = fossil_fuel_industry
+					}
+					if = { limit = { PREV = { has_idea = industrial_conglomerates } }
+						add_ideas = industrial_conglomerates
+					}
+					if = { limit = { PREV = { has_idea = oligarchs } }
+						add_ideas = oligarchs
+					}
+					if = { limit = { PREV = { has_idea = maritime_industry } }
+						add_ideas = maritime_industry
+					}
+					if = { limit = { PREV = { has_idea = defense_industry } }
+						add_ideas = defense_industry
+					}
+					if = { limit = { PREV = { has_idea = the_military } }
+						add_ideas = the_military
+					}
+					if = { limit = { PREV = { has_idea = intelligence_community } }
+						add_ideas = intelligence_community
+					}
+					if = { limit = { PREV = { has_idea = labour_unions } }
+						add_ideas = labour_unions
+					}
+					if = { limit = { PREV = { has_idea = landowners } }
+						add_ideas = landowners
+					}
+					if = { limit = { PREV = { has_idea = farmers } }
+						add_ideas = farmers
+					}
+					if = {
+						limit = { 
+							PREV = {
+								has_idea = communist_cadres
+								ROOT = {
+									OR = {
+										is_in_array = { ruling_party = 4 }
+										is_in_array = { ruling_party = 19 }
+									}
+								}
+							}
+						}
+						add_ideas = communist_cadres
+					}
+					if = { limit = { PREV = { has_idea = the_priesthood } }
+						add_ideas = the_priesthood
+					}
+					if = { limit = { PREV = { has_idea = The_Ulema } }
+						add_ideas = The_Ulema
+					}
+					if = { limit = { PREV = { has_idea = The_Clergy } }
+						add_ideas = The_Clergy
+					}
+					if = { limit = { PREV = { has_idea = wahabi_ulema } }
+						add_ideas = wahabi_ulema
+					}
+					if = { limit = { PREV = { has_idea = the_donju } }
+						add_ideas = the_donju
+					}
+					if = { limit = { PREV = { has_idea = the_bazaar } }
+						add_ideas = the_bazaar
+					}
+					if = {
+						limit = { 
+							PREV = {
+								has_idea = saudi_royal_family
+								ROOT = {
+									OR = {
+										is_in_array = { ruling_party = 10 }
+										is_in_array = { ruling_party = 23 }
+										is_in_array = { ruling_party = 0 }
+									}
+								}
+							}
+						}
+						add_ideas = saudi_royal_family
+					}
+					if = {
+						limit = { 
+							PREV = {
+								has_idea = irgc
+								ROOT = {
+									NOT = {
+										OR = {
+											has_government = democratic
+											has_government = fascism
+										}
+									}
+								}
+							}
+						}
+						add_ideas = irgc
+					}
+					if = {
+						limit = { 
+							PREV = {
+								has_idea = iranian_quds_force
+								ROOT = {
+									NOT = {
+										OR = {
+											has_government = democratic
+											has_government = fascism
+										}
+									}
+								}
+							}
+						}
+						add_ideas = iranian_quds_force
+					}
+					if = {
+						limit = { 
+							PREV = {
+								has_idea = vevak
+								ROOT = {
+									NOT = {
+										OR = {
+											has_government = democratic
+											has_government = fascism
+										}
+									}
+								}
+							}
+						}
+						add_ideas = vevak
+					}
+					if = {
+						limit = { 
+							PREV = {
+								has_idea = foreign_jihadis
+								ROOT = {
+									OR = {
+										is_in_array = { ruling_party = 11 }
+									}
+								}
+							}
+						}
+						add_ideas = foreign_jihadis
+					}
+					if = { limit = { PREV = { has_idea = isi_pakistan } }
+						add_ideas = isi_pakistan
+					}
+					if = { limit = { PREV = { has_idea = wall_street } }
+						add_ideas = wall_street
+					}
+					if = { limit = { PREV = { has_idea = chaebols } }
+						add_ideas = chaebols
+					}
+					
+					calculate_influence_percentage = yes #set alignment drifts from influence
+					setup_init_factions = yes 	#flags for int. factions
+					init_neighbor_drift_1 = yes #drift from neighbor
+					init_neighbor_drift_2 = yes #drift from neighbor
+					
+					country_event = { id = brotherhood.0 } #Sets muslim_brotherhood relations
+					country_event = { id = brotherhood.2 }
+				}
+				
+				#copy leader throughput
+					set_variable = { Western_Autocracy_leader = PREV.Western_Autocracy_leader?0 }
+					set_variable = { conservatism_leader = PREV.conservatism_leader?0 }
+					set_variable = { liberalism_leader = PREV.liberalism_leader?0 }
+					set_variable = { socialism_leader = PREV.socialism_leader?0 }
+					
+					set_variable = { Communist-State_leader = PREV.Communist-State_leader?0 }
+					set_variable = { anarchist_communism_leader = PREV.anarchist_communism_leader?0 }
+					set_variable = { Conservative_leader = PREV.Conservative_leader?0 }
+					set_variable = { Autocracy_leader = PREV.Autocracy_leader?0 }
+					set_variable = { Mod_Vilayat_e_Faqih_leader = PREV.Mod_Vilayat_e_Faqih_leader?0 }
+					set_variable = { Vilayat_e_Faqih_leader = PREV.Vilayat_e_Faqih_leader?0 }
+					
+					set_variable = { Kingdom_leader = PREV.Kingdom_leader?0 }
+					set_variable = { Caliphate_leader = PREV.Caliphate_leader?0 }
+					
+					set_variable = { Neutral_Muslim_Brotherhood_leader = PREV.Neutral_Muslim_Brotherhood_leader?0 }
+					set_variable = { Neutral_Autocracy_leader = PREV.Neutral_Autocracy_leader?0 }
+					set_variable = { Neutral_conservatism_leader = PREV.Neutral_conservatism_leader?0 }
+					set_variable = { oligarchism_leader = PREV.oligarchism_leader?0 }
+					set_variable = { Neutral_Libertarian_leader = PREV.Neutral_Libertarian_leader?0 }
+					set_variable = { Neutral_green_leader = PREV.Neutral_green_leader?0 }
+					set_variable = { neutral_Social_leader = PREV.neutral_Social_leader?0 }
+					set_variable = { Neutral_Communism_leader = PREV.Neutral_Communism_leader?0 }
+					set_variable = { Nat_Populism_leader = PREV.Nat_Populism_leader?0 }
+					set_variable = { Nat_Fascism_leader = PREV.Nat_Fascism_leader?0 }
+					set_variable = { Nat_Autocracy_leader = PREV.Nat_Autocracy_leader?0 }
+					set_variable = { Monarchist_leader = PREV.Monarchist_leader?0 }
+				
+				#For player:
+				
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+				}
+				add_popularity = {
+						ideology = communism
+						popularity = 0.5
+				}
+				hidden_effect = {
+					start_politics_input = yes
+					add_to_array = { ruling_party = 4 } #communism
+					set_variable = { party_pop_array^4 = 0.9 } #generate the rest
+					startup_politics = yes
+				}
+				#Switch to commie leader
+				set_country_flag = set_Communist-State
+				set_leader = yes
+}				
+	}
+	risk_chance = 0.4
+	outcome_extra_chance = 0.30
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+
+
+	}	
+	# This is where all the separate phases are defined
+	# Each phase for an operation may have a single actual phase assigned to it, which is determined here
+	phases = { #infiltration 
+		infiltration_submarine = { base = 33 } 
+		infiltration_paradrop = { 
+			base = 33 
+			modifier = {
+				ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+				factor = 0.1
+			}
+		} 
+		infiltration_diplomatic = { base = 33 } 
+	}
+	phases = { 
+		lar_communist_uprising_organise_cells = { base = 33 }
+		lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+		lar_communist_uprising_organize_strikes = { base = 33 }
+	}
+	phases = { 
+		lar_communist_uprising_train_workers_militia = { base = 25 }
+	}
+}
+CHI_Support_the_Communist_Party_of_taiwan = { ### 1/25
+	icon = GFX_operations_make_resistance_contacts
+	map_icon = GFX_operations_make_resistance_contacts_map
+	name = CHI_Support_the_Communist_Party_of_taiwan
+	desc = CHI_Support_the_Communist_Party_of_taiwan_desc
+	days = 60
+
+	allowed = {
+		original_tag = CHI
+	}
+	available = { 
+	}
+	visible = {
+	has_completed_focus = PRC_taiwan_rev 
+		FROM = {
+			original_tag = TAI
+NOT = {	OR = {
+					is_in_array = { ruling_party = 5 }
+					is_in_array = { ruling_party = 4 }
+					is_in_array = { ruling_party = 19 }
+ }		}	
+		}			
+	}
+	operatives = 1
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 30
+
+	requirements = { #SCOPE_COUNTRY
+	}
+	
+	equipment = {
+		support_equipment = 100
+	}
+
+	on_start = {  # SCOPE_OPERATION
+		set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+	}
+
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+	outcome_potential = {
+	random_list = {
+				33 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+}
+}
+			67 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+add_5_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+
+}	
+				}
+}
+	}
+	risk_chance = 0.2
+	outcome_extra_chance = 0.30
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+random_list = {
+				33 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+}
+}
+			67 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+add_5_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+
+}	
+				}
+}
+
+	}	
+	# This is where all the separate phases are defined
+	# Each phase for an operation may have a single actual phase assigned to it, which is determined here
+	phases = { #infiltration 
+		infiltration_submarine = { base = 33 } 
+		infiltration_paradrop = { 
+			base = 33 
+			modifier = {
+				ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+				factor = 0.1
+			}
+		} 
+		infiltration_diplomatic = { base = 33 } 
+	}
+	phases = { 
+		lar_communist_uprising_organise_cells = { base = 33 }
+		lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+		lar_communist_uprising_organize_strikes = { base = 33 }
+	}
+	phases = { 
+		lar_communist_uprising_train_workers_militia = { base = 25 }
+	}
+}
+CHI_Support_the_Communist_Party_of_vie = { ### 1/25
+	icon = GFX_operations_make_resistance_contacts
+	map_icon = GFX_operations_make_resistance_contacts_map
+	name = CHI_Support_the_Communist_Party_of_vie
+	desc = CHI_Support_the_Communist_Party_of_vie_desc
+	days = 60
+
+	allowed = {
+		original_tag = CHI
+	}
+	available = { 
+	}
+	visible = {
+	has_completed_focus = PRC_Supporting_the_pro-China_faction_in_Vietnam 
+		FROM = {
+			original_tag = VIE
+NOT = {	
+					is_in_array = { ruling_party = 5 }		}
+		}			
+	}
+	operatives = 1
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 30
+
+	requirements = { #SCOPE_COUNTRY
+	}
+	
+	equipment = {
+		support_equipment = 100
+	}
+
+	on_start = {  # SCOPE_OPERATION
+		set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+	}
+
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+	outcome_potential = {
+	random_list = {
+				33 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+add_10_emerging_left_wing_radical = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+}
+}
+			67 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+add_5_emerging_left_wing_radical = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+
+}	
+				}
+}
+	}
+	risk_chance = 0.2
+	outcome_extra_chance = 0.30
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+random_list = {
+				33 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+}
+}
+			67 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+add_5_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+
+}	
+				}
+}
+
+	}	
+	# This is where all the separate phases are defined
+	# Each phase for an operation may have a single actual phase assigned to it, which is determined here
+	phases = { #infiltration 
+		infiltration_submarine = { base = 33 } 
+		infiltration_paradrop = { 
+			base = 33 
+			modifier = {
+				ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+				factor = 0.1
+			}
+		} 
+		infiltration_diplomatic = { base = 33 } 
+	}
+	phases = { 
+		lar_communist_uprising_organise_cells = { base = 33 }
+		lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+		lar_communist_uprising_organize_strikes = { base = 33 }
+	}
+	phases = { 
+		lar_communist_uprising_train_workers_militia = { base = 25 }
+	}
+}
+CHI_Support_the_Communist_Party_of_Vie_coups = { ### 1/25
+	icon = GFX_operations_make_resistance_contacts
+	map_icon = GFX_operations_make_resistance_contacts_map
+	name = CHI_Support_the_Communist_Party_of_vie_coups
+	desc = CHI_Support_the_Communist_Party_of_vie_coups_desc
+	days = 120
+
+	allowed = {
+		original_tag = CHI
+	}
+	available = { 		FROM = {
+			custom_trigger_tooltip = {
+			check_variable = { party_pop_array^5 > 0.40 } 
+			tooltip = "越共亲华派支持率高于40%"
+			
+			} 	
+		}	
+	}
+	visible = {
+	has_completed_focus = PRC_Supporting_the_pro-China_faction_in_Vietnam 
+		FROM = {
+			original_tag = VIE
+NOT = {	
+					is_in_array = { ruling_party = 5 }
+ }		
+		}			
+	}
+	operatives = 1
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 40
+
+	requirements = { #SCOPE_COUNTRY
+	}
+	
+	equipment = {
+		support_equipment = 100
+	}
+
+	on_start = {  # SCOPE_OPERATION
+		set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+	}
+
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+	outcome_potential = {
+	add_to_faction = FROM
+					FROM = {
+					add_10_emerging_left_wing_radical = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+					kill_country_leader = yes
+						set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+				}
+				add_popularity = {
+						ideology = communism
+						popularity = 0.5
+				}
+				hidden_effect = {
+					start_politics_input = yes
+					add_to_array = { ruling_party = 4 } #communism
+					set_variable = { party_pop_array^4 = 0.9 } #generate the rest
+					startup_politics = yes
+				}
+	create_country_leader = {
+		name = "Nguyen PhuTrong"
+		picture = "Nguyen_Phu_Trong.dds"
+		expire = "2222.1.1"
+		ideology = anarchist_communism
+		traits = {
+		emerging_anarchist_communism
+		man_of_steel
+		}
+	}
+}				
+	}
+	risk_chance = 0.4
+	outcome_extra_chance = 0.30
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+
+
+	}	
+	# This is where all the separate phases are defined
+	# Each phase for an operation may have a single actual phase assigned to it, which is determined here
+	phases = { #infiltration 
+		infiltration_submarine = { base = 33 } 
+		infiltration_paradrop = { 
+			base = 33 
+			modifier = {
+				ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+				factor = 0.1
+			}
+		} 
+		infiltration_diplomatic = { base = 33 } 
+	}
+	phases = { 
+		lar_communist_uprising_organise_cells = { base = 33 }
+		lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+		lar_communist_uprising_organize_strikes = { base = 33 }
+	}
+	phases = { 
+		lar_communist_uprising_train_workers_militia = { base = 25 }
+	}
+}
+CHI_Support_the_Communist_Party_of_japan = { ### 1/25
+	icon = GFX_operations_make_resistance_contacts
+	map_icon = GFX_operations_make_resistance_contacts_map
+	name = CHI_Support_the_Communist_Party_of_japan
+	desc = CHI_Support_the_Communist_Party_of_japan_desc
+	days = 60
+
+	allowed = {
+		original_tag = CHI
+	}
+	available = { 
+	}
+	visible = {
+	has_completed_focus = PRC_jap_rev 
+		FROM = {
+			original_tag = JAP
+NOT = {	OR = {
+					is_in_array = { ruling_party = 5 }
+					is_in_array = { ruling_party = 4 }
+					is_in_array = { ruling_party = 19 }
+ }		}	
+		}			
+	}
+	operatives = 1
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 30
+
+	requirements = { #SCOPE_COUNTRY
+	}
+	
+	equipment = {
+		support_equipment = 100
+	}
+
+	on_start = {  # SCOPE_OPERATION
+		set_temp_variable = { treasury_change = -20 }
+			modify_treasury_effect = yes
+	}
+
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+	outcome_potential = {
+	random_list = {
+				33 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+}
+}
+			67 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+add_5_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+
+}	
+				}
+}
+	}
+	risk_chance = 0.2
+	outcome_extra_chance = 0.30
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+random_list = {
+				33 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+}
+}
+			67 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+add_5_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+
+}	
+				}
+}
+
+	}	
+	# This is where all the separate phases are defined
+	# Each phase for an operation may have a single actual phase assigned to it, which is determined here
+	phases = { #infiltration 
+		infiltration_submarine = { base = 33 } 
+		infiltration_paradrop = { 
+			base = 33 
+			modifier = {
+				ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+				factor = 0.1
+			}
+		} 
+		infiltration_diplomatic = { base = 33 } 
+	}
+	phases = { 
+		lar_communist_uprising_organise_cells = { base = 33 }
+		lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+		lar_communist_uprising_organize_strikes = { base = 33 }
+	}
+	phases = { 
+		lar_communist_uprising_train_workers_militia = { base = 25 }
+	}
+}
+CHI_Support_the_Communist_Party_of_japan_coups = { ### 1/25
+	icon = GFX_operations_make_resistance_contacts
+	map_icon = GFX_operations_make_resistance_contacts_map
+	name = CHI_Support_the_Communist_Party_of_japan_coups
+	desc = CHI_Support_the_Communist_Party_of_japan_coups_desc
+	days = 120
+
+	allowed = {
+		original_tag = CHI
+	}
+	available = { 		FROM = {
+			custom_trigger_tooltip = {
+			check_variable = { party_pop_array^4 > 0.40 } 
+			tooltip = "共产主义支持率高于40%"
+			
+			} 	
+		}	
+	}
+	visible = {
+	has_completed_focus = PRC_jap_rev 
+		FROM = {
+			original_tag = JAP
+NOT = {	OR = {
+					is_in_array = { ruling_party = 5 }
+					is_in_array = { ruling_party = 4 }
+					is_in_array = { ruling_party = 19 }
+ }		}	
+		}			
+	}
+	operatives = 1
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 40
+
+	requirements = { #SCOPE_COUNTRY
+	}
+	
+	equipment = {
+		support_equipment = 100
+	}
+
+	on_start = {  # SCOPE_OPERATION
+		set_temp_variable = { treasury_change = -50 }
+			modify_treasury_effect = yes
+	}
+
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+	outcome_potential = {	country_event = prc1.112
+
+	add_to_faction = FROM
+					FROM = {
+					transfer_state = 827
+					add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+					kill_country_leader = yes
+						set_politics = {
+					ruling_party = communism
+					elections_allowed = yes
+				}
+				add_popularity = {
+						ideology = communism
+						popularity = 0.5
+				}
+				hidden_effect = {
+					start_politics_input = yes
+					add_to_array = { ruling_party = 4 } #communism
+					set_variable = { party_pop_array^4 = 0.9 } #generate the rest
+					startup_politics = yes
+				}
+				#Switch to commie leader
+				set_country_flag = set_Communist-State
+				set_leader = yes
+}				
+	}
+	risk_chance = 0.4
+	outcome_extra_chance = 0.30
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+
+
+	}	
+	# This is where all the separate phases are defined
+	# Each phase for an operation may have a single actual phase assigned to it, which is determined here
+	phases = { #infiltration 
+		infiltration_submarine = { base = 33 } 
+		infiltration_paradrop = { 
+			base = 33 
+			modifier = {
+				ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+				factor = 0.1
+			}
+		} 
+		infiltration_diplomatic = { base = 33 } 
+	}
+	phases = { 
+		lar_communist_uprising_organise_cells = { base = 33 }
+		lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+		lar_communist_uprising_organize_strikes = { base = 33 }
+	}
+	phases = { 
+		lar_communist_uprising_train_workers_militia = { base = 25 }
+	}
+}
+CHI_communist_russia = { ### 1/25
+	icon = GFX_operations_make_resistance_contacts
+	map_icon = GFX_operations_make_resistance_contacts_map
+	name = CHI_communist_russia
+	desc = CHI_communist_russia_desc
+	days = 60
+
+	allowed = {
+		original_tag = CHI
+	}
+	available = { 
+	}
+	visible = {
+	has_completed_focus = PRC_soppt_cpru 
+		FROM = {
+			original_tag = SOV
+NOT = {	OR = {
+					is_in_array = { ruling_party = 5 }
+					is_in_array = { ruling_party = 4 }
+					is_in_array = { ruling_party = 19 }
+ }		}	
+		}			
+	}
+	operatives = 1
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 30
+
+	requirements = { #SCOPE_COUNTRY
+	}
+	
+	equipment = {
+		support_equipment = 100
+	}
+
+	on_start = {  # SCOPE_OPERATION
+		set_temp_variable = { treasury_change = -20 }
+			modify_treasury_effect = yes
+	}
+
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+	outcome_potential = {
+	random_list = {
+				33 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+}
+}
+			67 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+add_5_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+
+}	
+				}
+}
+	}
+	risk_chance = 0.2
+	outcome_extra_chance = 0.30
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+random_list = {
+				33 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+}
+}
+			67 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+add_5_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+
+}	
+				}
+}
+
+	}	
+	# This is where all the separate phases are defined
+	# Each phase for an operation may have a single actual phase assigned to it, which is determined here
+	phases = { #infiltration 
+		infiltration_submarine = { base = 33 } 
+		infiltration_paradrop = { 
+			base = 33 
+			modifier = {
+				ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+				factor = 0.1
+			}
+		} 
+		infiltration_diplomatic = { base = 33 } 
+	}
+	phases = { 
+		lar_communist_uprising_organise_cells = { base = 33 }
+		lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+		lar_communist_uprising_organize_strikes = { base = 33 }
+	}
+	phases = { 
+		lar_communist_uprising_train_workers_militia = { base = 25 }
+	}
+}
+CHI_Support_the_Communist_Party_of_russia_coups = { ### 1/25
+	icon = GFX_operations_make_resistance_contacts
+	map_icon = GFX_operations_make_resistance_contacts_map
+	name = CHI_Support_the_Communist_Party_of_russia_coups
+	desc = CHI_Support_the_Communist_Party_of_russia_coups_desc
+	days = 120
+
+	allowed = {
+		original_tag = CHI
+	}
+	available = { 		FROM = {
+			custom_trigger_tooltip = {
+			check_variable = { party_pop_array^4 > 0.40 } 
+			tooltip = "共产主义支持率高于40%"
+			
+			} 	
+		}	
+	}
+	visible = {
+	has_completed_focus = PRC_soppt_cpru 
+		FROM = {
+			original_tag = SOV
+NOT = {	OR = {
+					is_in_array = { ruling_party = 5 }
+					is_in_array = { ruling_party = 4 }
+					is_in_array = { ruling_party = 19 }
+ }		}	
+		}			
+	}
+	operatives = 1
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 40
+
+	requirements = { #SCOPE_COUNTRY
+	}
+	
+	equipment = {
+		support_equipment = 100
+	}
+
+	on_start = {  # SCOPE_OPERATION
+		set_temp_variable = { treasury_change = -50 }
+			modify_treasury_effect = yes
+	}
+
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+	outcome_potential = {	country_event = prc1.112
+
+					FROM = {
+					add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+					kill_country_leader = yes
+						set_politics = {
+					ruling_party = communism
+					elections_allowed = yes
+				}
+				add_popularity = {
+						ideology = communism
+						popularity = 0.5
+				}
+				hidden_effect = {
+					start_politics_input = yes
+					add_to_array = { ruling_party = 4 } #communism
+					set_variable = { party_pop_array^4 = 0.9 } #generate the rest
+					startup_politics = yes
+				}
+				#Switch to commie leader
+				set_country_flag = set_Communist-State
+				set_leader = yes
+}				
+	}
+	risk_chance = 0.4
+	outcome_extra_chance = 0.30
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+
+
+	}	
+	# This is where all the separate phases are defined
+	# Each phase for an operation may have a single actual phase assigned to it, which is determined here
+	phases = { #infiltration 
+		infiltration_submarine = { base = 33 } 
+		infiltration_paradrop = { 
+			base = 33 
+			modifier = {
+				ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+				factor = 0.1
+			}
+		} 
+		infiltration_diplomatic = { base = 33 } 
+	}
+	phases = { 
+		lar_communist_uprising_organise_cells = { base = 33 }
+		lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+		lar_communist_uprising_organize_strikes = { base = 33 }
+	}
+	phases = { 
+		lar_communist_uprising_train_workers_militia = { base = 25 }
+	}
+}
+CHI_Support_the_Communist_Party_of_Eastern_Europe = { ### 1/25
+	icon = GFX_operations_make_resistance_contacts
+	map_icon = GFX_operations_make_resistance_contacts_map
+	name = CHI_Support_the_Communist_Party_of_Eastern_Europe
+	desc = CHI_Support_the_Communist_Party_of_Eastern_Europe_desc
+	days = 30
+
+	allowed = {
+		original_tag = CHI
+	}
+	available = { 
+	}
+	visible = {
+	has_completed_focus = PRC_The_Second_Eastern_European_Revolution 
+		FROM = {
+		OR = {
+						original_tag = EST
+						original_tag = LAT
+				original_tag = ALB
+						original_tag = HUN
+						original_tag = LIT
+						original_tag = SLO
+						original_tag = GRE
+						original_tag = POL
+						original_tag = BUL
+						original_tag = ROM
+						original_tag = CZE
+			
+			}
+NOT = {	OR = {
+					is_in_array = { ruling_party = 5 }
+					is_in_array = { ruling_party = 4 }
+					is_in_array = { ruling_party = 19 }
+ }		}	
+		}			
+	}
+	operatives = 1
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 30
+
+	requirements = { #SCOPE_COUNTRY
+	}
+	
+	equipment = {
+		support_equipment = 100
+	}
+
+	on_start = {  # SCOPE_OPERATION
+		set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+	}
+
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+	outcome_potential = {
+	random_list = {
+				33 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+}
+}
+			67 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+add_5_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+
+}	
+				}
+}
+	}
+	risk_chance = 0.2
+	outcome_extra_chance = 0.30
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+random_list = {
+				33 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+}
+}
+			67 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+add_5_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+
+}	
+				}
+}
+
+	}	
+	# This is where all the separate phases are defined
+	# Each phase for an operation may have a single actual phase assigned to it, which is determined here
+	phases = { #infiltration 
+		infiltration_submarine = { base = 33 } 
+		infiltration_paradrop = { 
+			base = 33 
+			modifier = {
+				ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+				factor = 0.1
+			}
+		} 
+		infiltration_diplomatic = { base = 33 } 
+	}
+	phases = { 
+		lar_communist_uprising_organise_cells = { base = 33 }
+		lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+		lar_communist_uprising_organize_strikes = { base = 33 }
+	}
+	phases = { 
+		lar_communist_uprising_train_workers_militia = { base = 25 }
+	}
+}
+CHI_Support_the_Communist_Party_of_Eastern_Europe_coups = { ### 1/25
+	icon = GFX_operations_make_resistance_contacts
+	map_icon = GFX_operations_make_resistance_contacts_map
+	name = CHI_Support_the_Communist_Party_of_Eastern_Europe_coups
+	desc = CHI_Support_the_Communist_Party_of_Eastern_Europe_coups_desc
+	days = 120
+
+	allowed = {
+		original_tag = CHI
+	}
+	available = { 		FROM = {
+			custom_trigger_tooltip = {
+			check_variable = { party_pop_array^4 > 0.40 } 
+			tooltip = "共产主义支持率高于40%"
+			
+			} 	
+		}	
+	}
+	visible = {
+	has_completed_focus = PRC_The_Second_Eastern_European_Revolution 
+		FROM = {
+		OR = {
+						original_tag = EST
+						original_tag = LAT
+				original_tag = ALB
+						original_tag = HUN
+						original_tag = LIT
+						original_tag = SLO
+						original_tag = GRE
+						original_tag = POL
+						original_tag = BUL
+						original_tag = CZE
+						original_tag = ROM
+			}
+NOT = {	OR = {
+					is_in_array = { ruling_party = 5 }
+					is_in_array = { ruling_party = 4 }
+					is_in_array = { ruling_party = 19 }
+ }		}	
+		}			
+	}
+	operatives = 1
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 40
+
+	requirements = { #SCOPE_COUNTRY
+	}
+	
+	equipment = {
+		support_equipment = 100
+	}
+
+	on_start = {  # SCOPE_OPERATION
+		set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+	}
+outcome_potential = {	country_event = prc1.112
+
+	add_to_faction = FROM
+					FROM = {
+					remove_ideas = NATO_member
+					add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+					kill_country_leader = yes
+						set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+				}
+				add_popularity = {
+						ideology = communism
+						popularity = 0.5
+				}
+				hidden_effect = {
+					start_politics_input = yes
+					add_to_array = { ruling_party = 4 } #communism
+					set_variable = { party_pop_array^4 = 0.9 } #generate the rest
+					startup_politics = yes
+				}
+				#Switch to commie leader
+				set_country_flag = set_Communist-State
+				set_leader = yes
+}				
+	}
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+	risk_chance = 0.4
+	outcome_extra_chance = 0.30
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+
+
+	}	
+	# This is where all the separate phases are defined
+	# Each phase for an operation may have a single actual phase assigned to it, which is determined here
+	phases = { #infiltration 
+		infiltration_submarine = { base = 33 } 
+		infiltration_paradrop = { 
+			base = 33 
+			modifier = {
+				ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+				factor = 0.1
+			}
+		} 
+		infiltration_diplomatic = { base = 33 } 
+	}
+	phases = { 
+		lar_communist_uprising_organise_cells = { base = 33 }
+		lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+		lar_communist_uprising_organize_strikes = { base = 33 }
+	}
+	phases = { 
+		lar_communist_uprising_train_workers_militia = { base = 25 }
+	}
+}
+CHI_Support_the_Communist_Party_of_Greece = { ### 1/25
+	icon = GFX_operations_make_resistance_contacts
+	map_icon = GFX_operations_make_resistance_contacts_map
+	name = CHI_Support_the_Communist_Party_of_Greece
+	desc = CHI_Support_the_Communist_Party_of_Greece_desc
+	days = 30
+
+	allowed = {
+		original_tag = CHI
+	}
+	available = { 
+	}
+	visible = {
+	has_completed_focus = PRC_Taking_advantage_of_the_Greek_debt_crisis 
+		FROM = {
+						original_tag = GRE
+NOT = {	OR = {
+					is_in_array = { ruling_party = 5 }
+					is_in_array = { ruling_party = 4 }
+					is_in_array = { ruling_party = 19 }
+ }		}	
+		}			
+	}
+	operatives = 1
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 30
+
+	requirements = { #SCOPE_COUNTRY
+	}
+	
+	equipment = {
+		support_equipment = 100
+	}
+
+	on_start = {  # SCOPE_OPERATION
+		set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+	}
+
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+	outcome_potential = {
+	random_list = {
+				33 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+}
+}
+			67 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+add_5_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+
+}	
+				}
+}
+	}
+	risk_chance = 0.2
+	outcome_extra_chance = 0.30
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+random_list = {
+				33 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+}
+}
+			67 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+add_5_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+
+}	
+				}
+}
+
+	}	
+	# This is where all the separate phases are defined
+	# Each phase for an operation may have a single actual phase assigned to it, which is determined here
+	phases = { #infiltration 
+		infiltration_submarine = { base = 33 } 
+		infiltration_paradrop = { 
+			base = 33 
+			modifier = {
+				ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+				factor = 0.1
+			}
+		} 
+		infiltration_diplomatic = { base = 33 } 
+	}
+	phases = { 
+		lar_communist_uprising_organise_cells = { base = 33 }
+		lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+		lar_communist_uprising_organize_strikes = { base = 33 }
+	}
+	phases = { 
+		lar_communist_uprising_train_workers_militia = { base = 25 }
+	}
+}
+CHI_Support_the_Communist_Party_of_Greece_coups = { ### 1/25
+	icon = GFX_operations_make_resistance_contacts
+	map_icon = GFX_operations_make_resistance_contacts_map
+	name = CHI_Support_the_Communist_Party_of_Greece_coups
+	desc = CHI_Support_the_Communist_Party_of_Greece_coups_desc
+	days = 120
+
+	allowed = {
+		original_tag = CHI
+	}
+	available = { 		FROM = {
+			custom_trigger_tooltip = {
+			check_variable = { party_pop_array^4 > 0.40 } 
+			tooltip = "共产主义支持率高于40%"
+			
+			} 	
+		}	
+	}
+	visible = {
+	has_completed_focus = PRC_Taking_advantage_of_the_Greek_debt_crisis 
+		FROM = {
+						original_tag = GRE
+NOT = {	OR = {
+					is_in_array = { ruling_party = 5 }
+					is_in_array = { ruling_party = 4 }
+					is_in_array = { ruling_party = 19 }
+ }		}	
+		}			
+	}
+	operatives = 1
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 40
+
+	requirements = { #SCOPE_COUNTRY
+	}
+	
+	equipment = {
+		support_equipment = 100
+	}
+
+	on_start = {  # SCOPE_OPERATION
+		set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+	}
+outcome_potential = {	country_event = prc1.112
+
+	add_to_faction = FROM
+					FROM = {
+					remove_ideas = NATO_member
+					complete_national_focus = GRE_new_greece_old_ways
+					complete_national_focus = GRE_kke
+					add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+					kill_country_leader = yes
+						set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+				}
+				add_popularity = {
+						ideology = communism
+						popularity = 0.5
+				}
+				hidden_effect = {
+					start_politics_input = yes
+					add_to_array = { ruling_party = 4 } #communism
+					set_variable = { party_pop_array^4 = 0.9 } #generate the rest
+					startup_politics = yes
+				}
+				#Switch to commie leader
+				set_country_flag = set_Communist-State
+				set_leader = yes
+}				
+	}
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+	risk_chance = 0.4
+	outcome_extra_chance = 0.30
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+
+
+	}	
+	# This is where all the separate phases are defined
+	# Each phase for an operation may have a single actual phase assigned to it, which is determined here
+	phases = { #infiltration 
+		infiltration_submarine = { base = 33 } 
+		infiltration_paradrop = { 
+			base = 33 
+			modifier = {
+				ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+				factor = 0.1
+			}
+		} 
+		infiltration_diplomatic = { base = 33 } 
+	}
+	phases = { 
+		lar_communist_uprising_organise_cells = { base = 33 }
+		lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+		lar_communist_uprising_organize_strikes = { base = 33 }
+	}
+	phases = { 
+		lar_communist_uprising_train_workers_militia = { base = 25 }
+	}
+}
+CHI_Support_the_Communist_Party_of_Yugoslavia = { ### 1/25
+	icon = GFX_operations_make_resistance_contacts
+	map_icon = GFX_operations_make_resistance_contacts_map
+	name = CHI_Support_the_Communist_Party_of_Yugoslavia
+	desc = CHI_Support_the_Communist_Party_of_Yugoslavia_desc
+	days = 30
+
+	allowed = {
+		original_tag = CHI
+	}
+	available = { 
+	}
+	visible = {
+	has_completed_focus = PRC_Rekindling_the_Yugoslav_Socialist_Paradigm 
+		FROM = {
+		OR = {
+						original_tag = SER
+						original_tag = KOS
+				original_tag = FYR
+						original_tag = BOS
+						original_tag = CRO
+						original_tag = SLV
+			}
+NOT = {	OR = {
+					is_in_array = { ruling_party = 5 }
+					is_in_array = { ruling_party = 4 }
+					is_in_array = { ruling_party = 19 }
+ }		}	
+		}			
+	}
+	operatives = 1
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 30
+
+	requirements = { #SCOPE_COUNTRY
+	}
+	
+	equipment = {
+		support_equipment = 100
+	}
+
+	on_start = {  # SCOPE_OPERATION
+		set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+	}
+
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+	outcome_potential = {
+	random_list = {
+				33 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+}
+}
+			67 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+add_5_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+
+}	
+				}
+}
+	}
+	risk_chance = 0.2
+	outcome_extra_chance = 0.30
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+random_list = {
+				33 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+}
+}
+			67 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+add_5_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+
+}	
+				}
+}
+
+	}	
+	# This is where all the separate phases are defined
+	# Each phase for an operation may have a single actual phase assigned to it, which is determined here
+	phases = { #infiltration 
+		infiltration_submarine = { base = 33 } 
+		infiltration_paradrop = { 
+			base = 33 
+			modifier = {
+				ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+				factor = 0.1
+			}
+		} 
+		infiltration_diplomatic = { base = 33 } 
+	}
+	phases = { 
+		lar_communist_uprising_organise_cells = { base = 33 }
+		lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+		lar_communist_uprising_organize_strikes = { base = 33 }
+	}
+	phases = { 
+		lar_communist_uprising_train_workers_militia = { base = 25 }
+	}
+}
+CHI_Support_the_Communist_Party_of_Yugoslavia_coups = { ### 1/25
+	icon = GFX_operations_make_resistance_contacts
+	map_icon = GFX_operations_make_resistance_contacts_map
+	name = CHI_Support_the_Communist_Party_of_Yugoslavia_coups
+	desc = CHI_Support_the_Communist_Party_of_Yugoslavia_coups_desc
+	days = 120
+
+	allowed = {
+		original_tag = CHI
+	}
+	available = { 		FROM = {
+			custom_trigger_tooltip = {
+			check_variable = { party_pop_array^4 > 0.40 } 
+			tooltip = "共产主义支持率高于40%"
+			
+			} 	
+		}	
+	}
+	visible = {
+	has_completed_focus = PRC_Rekindling_the_Yugoslav_Socialist_Paradigm 
+		FROM = {
+		OR = {
+						original_tag = SER
+						original_tag = KOS
+				original_tag = FYR
+						original_tag = BOS
+						original_tag = CRO
+						original_tag = SLV
+			}
+NOT = {	OR = {
+					is_in_array = { ruling_party = 5 }
+					is_in_array = { ruling_party = 4 }
+					is_in_array = { ruling_party = 19 }
+ }		}	
+		}			
+	}
+	operatives = 1
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 40
+
+	requirements = { #SCOPE_COUNTRY
+	}
+	
+	equipment = {
+		support_equipment = 100
+	}
+
+	on_start = {  # SCOPE_OPERATION
+		set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+	}
+outcome_potential = {	country_event = prc1.112
+
+	add_to_faction = FROM
+					FROM = {
+					remove_ideas = NATO_member
+					add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+					kill_country_leader = yes
+						set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+				}
+				add_popularity = {
+						ideology = communism
+						popularity = 0.5
+				}
+				hidden_effect = {
+					start_politics_input = yes
+					add_to_array = { ruling_party = 4 } #communism
+					set_variable = { party_pop_array^4 = 0.9 } #generate the rest
+					startup_politics = yes
+				}
+				#Switch to commie leader
+				set_country_flag = set_Communist-State
+				set_leader = yes
+}				
+	}
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+	risk_chance = 0.4
+	outcome_extra_chance = 0.30
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+
+
+	}	
+	# This is where all the separate phases are defined
+	# Each phase for an operation may have a single actual phase assigned to it, which is determined here
+	phases = { #infiltration 
+		infiltration_submarine = { base = 33 } 
+		infiltration_paradrop = { 
+			base = 33 
+			modifier = {
+				ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+				factor = 0.1
+			}
+		} 
+		infiltration_diplomatic = { base = 33 } 
+	}
+	phases = { 
+		lar_communist_uprising_organise_cells = { base = 33 }
+		lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+		lar_communist_uprising_organize_strikes = { base = 33 }
+	}
+	phases = { 
+		lar_communist_uprising_train_workers_militia = { base = 25 }
+	}
+}
+CHI_Support_the_Communist_Party_of_Central_and_Western_Europe = { ### 1/25
+	icon = GFX_operations_make_resistance_contacts
+	map_icon = GFX_operations_make_resistance_contacts_map
+	name = CHI_Support_the_Communist_Party_of_Central_and_Western_Europe
+	desc = CHI_Support_the_Communist_Party_of_Central_and_Western_Europe_desc
+	days = 30
+
+	allowed = {
+		original_tag = CHI
+	}
+	available = { 
+	}
+	visible = {
+	has_completed_focus = PRC_Dramatic_changes_in_Central_and_Western_Europe 
+		FROM = {
+		OR = {						original_tag = FRA
+						original_tag = ENG
+						original_tag = SPR
+						original_tag = POR
+						original_tag = LUX
+						original_tag = BEL
+						original_tag = HOL
+						original_tag = IRE
+						original_tag = GER
+												original_tag = DEN
+						original_tag = AUS
+						original_tag = SWI
+						original_tag = ITA
+			}
+NOT = {	OR = {
+					is_in_array = { ruling_party = 5 }
+					is_in_array = { ruling_party = 4 }
+					is_in_array = { ruling_party = 19 }
+ }		}	
+		}			
+	}
+	operatives = 1
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 30
+
+	requirements = { #SCOPE_COUNTRY
+	}
+	
+	equipment = {
+		support_equipment = 100
+	}
+
+	on_start = {  # SCOPE_OPERATION
+		set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+	}
+
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+	outcome_potential = {
+	random_list = {
+				33 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+}
+}
+			67 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+add_5_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+
+}	
+				}
+}
+	}
+	risk_chance = 0.2
+	outcome_extra_chance = 0.30
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+random_list = {
+				33 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+}
+}
+			67 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+add_5_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+
+}	
+				}
+}
+
+	}	
+	# This is where all the separate phases are defined
+	# Each phase for an operation may have a single actual phase assigned to it, which is determined here
+	phases = { #infiltration 
+		infiltration_submarine = { base = 33 } 
+		infiltration_paradrop = { 
+			base = 33 
+			modifier = {
+				ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+				factor = 0.1
+			}
+		} 
+		infiltration_diplomatic = { base = 33 } 
+	}
+	phases = { 
+		lar_communist_uprising_organise_cells = { base = 33 }
+		lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+		lar_communist_uprising_organize_strikes = { base = 33 }
+	}
+	phases = { 
+		lar_communist_uprising_train_workers_militia = { base = 25 }
+	}
+}
+CHI_Support_the_Communist_Party_of_Central_and_Western_Europe_coups = { ### 1/25
+	icon = GFX_operations_make_resistance_contacts
+	map_icon = GFX_operations_make_resistance_contacts_map
+	name = CHI_Support_the_Communist_Party_of_Central_and_Western_Europe_coups
+	desc = CHI_Support_the_Communist_Party_of_Central_and_Western_Europe_coups_desc
+	days = 120
+
+	allowed = {
+		original_tag = CHI
+	}
+	available = { 		FROM = {
+			custom_trigger_tooltip = {
+			check_variable = { party_pop_array^4 > 0.40 } 
+			tooltip = "共产主义支持率高于40%"
+			
+			} 	
+		}	
+	}
+	visible = {
+	has_completed_focus = PRC_Dramatic_changes_in_Central_and_Western_Europe 
+		FROM = {
+		OR = {						original_tag = FRA
+						original_tag = ENG
+						original_tag = SPR
+						original_tag = POR
+						original_tag = LUX
+						original_tag = BEL
+						original_tag = HOL
+						original_tag = IRE
+						original_tag = GER
+												original_tag = DEN
+						original_tag = AUS
+						original_tag = SWI
+						original_tag = ITA
+			}
+NOT = {	OR = {
+					is_in_array = { ruling_party = 5 }
+					is_in_array = { ruling_party = 4 }
+					is_in_array = { ruling_party = 19 }
+ }		}	
+		}			
+	}
+	operatives = 1
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 40
+
+	requirements = { #SCOPE_COUNTRY
+	}
+	
+	equipment = {
+		support_equipment = 100
+	}
+
+	on_start = {  # SCOPE_OPERATION
+		set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+	}
+outcome_potential = {	country_event = prc1.112
+
+	add_to_faction = FROM
+					FROM = {
+					remove_ideas = NATO_member
+					add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+					kill_country_leader = yes
+						set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+				}
+				add_popularity = {
+						ideology = communism
+						popularity = 0.5
+				}
+				hidden_effect = {
+					start_politics_input = yes
+					add_to_array = { ruling_party = 4 } #communism
+					set_variable = { party_pop_array^4 = 0.9 } #generate the rest
+					startup_politics = yes
+				}
+				#Switch to commie leader
+				set_country_flag = set_Communist-State
+				set_leader = yes
+}				
+	}
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+	risk_chance = 0.4
+	outcome_extra_chance = 0.30
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+
+
+	}	
+	# This is where all the separate phases are defined
+	# Each phase for an operation may have a single actual phase assigned to it, which is determined here
+	phases = { #infiltration 
+		infiltration_submarine = { base = 33 } 
+		infiltration_paradrop = { 
+			base = 33 
+			modifier = {
+				ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+				factor = 0.1
+			}
+		} 
+		infiltration_diplomatic = { base = 33 } 
+	}
+	phases = { 
+		lar_communist_uprising_organise_cells = { base = 33 }
+		lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+		lar_communist_uprising_organize_strikes = { base = 33 }
+	}
+	phases = { 
+		lar_communist_uprising_train_workers_militia = { base = 25 }
+	}
+}
+CHI_Support_the_Communist_Party_of_Africa = { ### 1/25
+	icon = GFX_operations_make_resistance_contacts
+	map_icon = GFX_operations_make_resistance_contacts_map
+	name = CHI_Support_the_Communist_Party_of_Africa
+	desc = CHI_Support_the_Communist_Party_of_Africa_desc
+	days = 30
+
+	allowed = {
+		original_tag = CHI
+	}
+	available = { 
+	}
+	visible = {
+	has_completed_focus = PRC_PanAfrican_Communist_Party 
+		FROM = {
+		is_african_nation = yes
+NOT = {	OR = {
+					is_in_array = { ruling_party = 5 }
+					is_in_array = { ruling_party = 4 }
+					is_in_array = { ruling_party = 19 }
+ }		}	
+		}			
+	}
+	operatives = 1
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 30
+
+	requirements = { #SCOPE_COUNTRY
+	}
+	
+	equipment = {
+		support_equipment = 100
+	}
+
+	on_start = {  # SCOPE_OPERATION
+		set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+	}
+
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+	outcome_potential = {
+	random_list = {
+				33 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+}
+}
+			67 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+add_5_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+
+}	
+				}
+}
+	}
+	risk_chance = 0.2
+	outcome_extra_chance = 0.30
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+random_list = {
+				33 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+}
+}
+			67 = {
+FROM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+add_5_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+
+}	
+				}
+}
+
+	}	
+	# This is where all the separate phases are defined
+	# Each phase for an operation may have a single actual phase assigned to it, which is determined here
+	phases = { #infiltration 
+		infiltration_submarine = { base = 33 } 
+		infiltration_paradrop = { 
+			base = 33 
+			modifier = {
+				ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+				factor = 0.1
+			}
+		} 
+		infiltration_diplomatic = { base = 33 } 
+	}
+	phases = { 
+		lar_communist_uprising_organise_cells = { base = 33 }
+		lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+		lar_communist_uprising_organize_strikes = { base = 33 }
+	}
+	phases = { 
+		lar_communist_uprising_train_workers_militia = { base = 25 }
+	}
+}
+CHI_Support_the_Communist_Party_of_Africa_coups = { ### 1/25
+	icon = GFX_operations_make_resistance_contacts
+	map_icon = GFX_operations_make_resistance_contacts_map
+	name = CHI_Support_the_Communist_Party_of_Africa_coups
+	desc = CHI_Support_the_Communist_Party_of_Africa_coups_desc
+	days = 120
+
+	allowed = {
+		original_tag = CHI
+	}
+	available = { 		FROM = {
+			custom_trigger_tooltip = {
+			check_variable = { party_pop_array^4 > 0.40 } 
+			tooltip = "共产主义支持率高于40%"
+			
+			} 	
+		}	
+	}
+	visible = {
+	has_completed_focus = PRC_PanAfrican_Communist_Party 
+		FROM = {
+		is_african_nation = yes
+
+NOT = {	
+original_tag = NGR
+OR = {
+					is_in_array = { ruling_party = 5 }
+					is_in_array = { ruling_party = 4 }
+					is_in_array = { ruling_party = 19 }
+ }		}	
+		}			
+	}
+	operatives = 1
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 40
+
+	requirements = { #SCOPE_COUNTRY
+	}
+	
+	equipment = {
+		support_equipment = 100
+	}
+
+	on_start = {  # SCOPE_OPERATION
+		set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+	}
+outcome_potential = {	country_event = prc1.112
+
+	add_to_faction = FROM
+					FROM = {
+					remove_ideas = NATO_member
+					add_10_emerging_communist = yes 
+								generic_grant_3_percent_influence_of_CHI = yes
+					kill_country_leader = yes
+						set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+				}
+				add_popularity = {
+						ideology = communism
+						popularity = 0.5
+				}
+				hidden_effect = {
+					start_politics_input = yes
+					add_to_array = { ruling_party = 4 } #communism
+					set_variable = { party_pop_array^4 = 0.9 } #generate the rest
+					startup_politics = yes
+				}
+				#Switch to commie leader
+				set_country_flag = set_Communist-State
+				set_leader = yes
+}				
+	}
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+	risk_chance = 0.4
+	outcome_extra_chance = 0.30
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+
+
+	}	
+	# This is where all the separate phases are defined
+	# Each phase for an operation may have a single actual phase assigned to it, which is determined here
+	phases = { #infiltration 
+		infiltration_submarine = { base = 33 } 
+		infiltration_paradrop = { 
+			base = 33 
+			modifier = {
+				ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+				factor = 0.1
+			}
+		} 
+		infiltration_diplomatic = { base = 33 } 
+	}
+	phases = { 
+		lar_communist_uprising_organise_cells = { base = 33 }
+		lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+		lar_communist_uprising_organize_strikes = { base = 33 }
+	}
+	phases = { 
+		lar_communist_uprising_train_workers_militia = { base = 25 }
+	}
+}

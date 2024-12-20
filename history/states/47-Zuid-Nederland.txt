@@ -1,0 +1,37 @@
+state = {
+	id = 47
+	name = "STATE_47" #
+	manpower = 3358005
+
+	state_category = state_04
+
+	resources = {
+		steel = 8
+	}
+
+	history = {
+		owner = HOL
+		victory_points = { 6496 2 } #Eindhoven
+		victory_points = { 3262 1 } #Breda
+		victory_points = { 11562 2 } #Maastricht
+		add_dynamic_modifier = { modifier = renewable_capacity_factor_dyn_mod }
+		set_variable = { state_renewable_capacity_factor_modifier_var = 0.30 }		
+		add_core_of = HOL
+		buildings = {
+			infrastructure = 3
+			internet_station = 2
+			arms_factory = 2
+			synthetic_refinery = 1
+			offices = 3
+			industrial_complex = 3
+			nuclear_reactor = 1
+			6496 = {
+				land_facility = 1
+			}
+		}
+	}
+
+	provinces = {
+		3262 6496 6500 11562
+	}
+}

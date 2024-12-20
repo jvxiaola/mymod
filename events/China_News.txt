@@ -1,0 +1,1806 @@
+﻿add_namespace = mdardchina_news
+news_event = { 
+	id = mdardchina_news.47
+	title = mdardchina_news.47.t
+	desc = mdardchina_news.47.d
+	picture = GFX_CAN_cptpp_trade_agreement
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Where does this end?
+		name = mdardchina_news.47.o1
+		trigger = { 
+			OR = {
+				original_tag = CHI 
+				is_in_faction_with = CHI 
+			}
+		}
+	}
+
+	
+	option = { #Incredible!
+		name = mdardchina_news.47.o2
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+	
+}
+#Taiwan Puppet
+news_event = { 
+	id = mdardchina_news.1
+	title = mdardchina_news.1.t
+	desc = mdardchina_news.1.d
+	picture = GFX_chinese_flag
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Where does this end?
+		name = mdardchina_news.1.o1
+		trigger = { 
+			OR = {
+				original_tag = USA 
+				is_in_faction_with = USA 
+			}
+		}
+	}
+	
+	option = { #One China on the horizon!
+		name = mdardchina_news.1.o2
+		trigger = {
+			is_in_faction_with = CHI
+			original_tag = CHI
+		}
+	}
+	
+	option = { #Incredible!
+		name = mdardchina_news.1.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+	
+}
+
+#Taiwan Refused
+news_event = { 
+	id = mdardchina_news.2
+	title = mdardchina_news.2.t
+	desc = mdardchina_news.2.d
+	picture = GFX_TAI_taiwan
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Democracy Endures.
+		name = mdardchina_news.2.o1
+		trigger = { 
+			OR = {
+				original_tag = USA 
+				is_in_faction_with = USA 
+			}
+		}
+	}
+	
+	option = { #Treasonous Fools.
+		name = mdardchina_news.2.o2
+		trigger = {
+			is_in_faction_with = CHI
+			original_tag = CHI }
+		
+	}
+	
+	option = { #Interesting.
+		name = mdardchina_news.2.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+	
+}
+
+#Dalai Lama Surrendered
+news_event = { 
+	id = mdardchina_news.3
+	title = mdardchina_news.3.t
+	desc = mdardchina_news.3.d
+	picture = GFX_chinese_flag
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Shameful
+		name = mdardchina_news.3.o1
+		trigger = { 
+			OR = {
+				original_tag = USA
+				is_in_faction_with = USA
+			}
+		}
+	}
+	
+	option = { #Another foreign puppet
+		name = mdardchina_news.3.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = CHI
+				original_tag = CHI
+			}
+		}
+	}
+	
+	option = { #Poor old man
+		name = mdardchina_news.3.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+}
+
+#India Refused
+news_event = { 
+	id = mdardchina_news.4
+	title = mdardchina_news.4.t
+	desc = mdardchina_news.4.d
+	picture = GFX_news_event_dalai_lama
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Honorable
+		name = mdardchina_news.4.o1
+		trigger = { 
+			OR = {
+				original_tag = USA
+				is_in_faction_with = USA
+			}
+		}
+	}
+	
+	option = { #We won't forget this
+		name = mdardchina_news.4.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = CHI
+				original_tag = CHI
+			}
+		}
+		
+	}
+	
+	option = { #Good for them
+		name = mdardchina_news.4.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+}
+
+#Senkakus Surrendered
+news_event = { 
+	id = mdardchina_news.5
+	title = mdardchina_news.5.t
+	desc = mdardchina_news.5.d
+	picture = GFX_news_event_senkakus
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #More Chinese Agression
+		name = mdardchina_news.5.o1
+		trigger = { 
+			OR = {
+				original_tag = USA
+				is_in_faction_with = USA
+			}
+		}
+	}
+	
+	option = { #As it should be
+		name = mdardchina_news.5.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = CHI
+				original_tag = CHI
+			}
+		}
+		
+	}
+	
+	option = { #War is averted
+		name = mdardchina_news.5.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+}
+
+#Japan Refused
+news_event = { 
+	id = mdardchina_news.6
+	title = mdardchina_news.6.t
+	desc = mdardchina_news.6.d
+	picture = GFX_news_event_senkakus
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Rightfully so
+		name = mdardchina_news.6.o1
+		trigger = {
+			OR = {
+				is_in_faction_with = USA
+				original_tag = USA
+			}
+		}
+	}
+	
+	option = { #Outrageous
+		name = mdardchina_news.6.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = CHI
+				original_tag = CHI
+			}
+		}
+		
+	}
+	
+	option = { #Let us hope for peace
+		name = mdardchina_news.6.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+}
+
+#War over Senkakus
+news_event = { 
+	id = mdardchina_news.7
+	title = mdardchina_news.7.t
+	desc = mdardchina_news.7.d
+	picture = GFX_news_event_chinese_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Prepare for the worst
+		name = mdardchina_news.7.o1
+		trigger = { 
+			OR = {
+				original_tag = JAP
+				original_tag = USA 
+				is_in_faction_with = USA 
+			}
+		}
+	}
+	
+	option = { #There is no other course
+		name = mdardchina_news.7.o2
+		trigger = {
+			OR ={
+				is_in_faction_with = CHI
+				original_tag = CHI 
+			}
+		}
+	}
+	
+	option = { #Millions will die for worthless rocks
+		name = mdardchina_news.7.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+}
+
+#Paracels Ceded
+news_event = { 
+	id = mdardchina_news.8
+	title = mdardchina_news.8.t
+	desc = mdardchina_news.8.d
+	picture = GFX_news_event_chinese_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #More Chinese Agression
+		name = mdardchina_news.8.o1
+		trigger = { 
+			OR = {
+				original_tag = USA
+				is_in_faction_with = USA
+			}
+		}
+	}
+	
+	option = { #As it should be
+		name = mdardchina_news.8.o2
+		trigger = { 
+			OR = {
+				original_tag = CHI
+				is_in_faction_with = CHI
+			}
+		}
+		
+	}
+	
+	option = { #War is averted
+		name = mdardchina_news.8.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+}
+
+#Vietnam Refused
+news_event = { 
+	id = mdardchina_news.9
+	title = mdardchina_news.9.t
+	desc = mdardchina_news.9.d
+	picture = GFX_news_event_chinese_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Rightfully so
+		name = mdardchina_news.9.o1
+		trigger = { original_tag = USA 
+		is_in_faction_with = USA }
+	}
+	
+	option = { #Outrageous
+		name = mdardchina_news.9.o2
+		trigger = {
+			is_in_faction_with = CHI
+			original_tag = CHI }
+		
+	}
+	
+	option = { #Let us hope for peace
+		name = mdardchina_news.9.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+}
+
+#Taiwan Annexed
+news_event = { 
+	id = mdardchina_news.10
+	title = mdardchina_news.10.t
+	desc = mdardchina_news.10.d
+	picture = GFX_news_event_taiwan_puppet
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Unfortunate
+		name = mdardchina_news.10.o1
+		trigger = { 
+			OR = {
+				original_tag = USA 
+				is_in_faction_with = USA 
+			}
+		}
+	}
+	
+	option = { #Finally
+		name = mdardchina_news.10.o2
+		trigger = {
+			is_in_faction_with = CHI
+			original_tag = CHI }
+		
+	}
+	
+	option = { #War is Averted
+		name = mdardchina_news.10.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+}
+
+#Taiwan Resists
+news_event = { 
+	id = mdardchina_news.11
+	title = mdardchina_news.11.t
+	desc = mdardchina_news.11.d
+	picture = GFX_news_event_taiwan_resist
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Rightfully So
+		name = mdardchina_news.11.o1
+		trigger = { 
+			OR = {
+				original_tag = USA 
+				is_in_faction_with = USA 
+			}
+		}
+	}
+	
+	option = { #Outrageous
+		name = mdardchina_news.11.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = CHI
+				original_tag = CHI 
+			}
+		}
+		
+	}
+	
+	option = { #Let us hope for the best
+		name = mdardchina_news.11.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+}
+
+#Fourth Taiwan Strait Crisis
+news_event = { 
+	id = mdardchina_news.12
+	title = mdardchina_news.12.t
+	desc = mdardchina_news.12.d
+	picture = GFX_news_nato
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Dangerous Moves
+		name = mdardchina_news.12.o1
+		trigger = {
+			OR = {
+				is_in_faction_with = USA
+				original_tag = USA
+			}
+		}
+	}
+	
+	option = { #They'd better
+		name = mdardchina_news.12.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = CHI
+				original_tag = CHI
+			}
+		}
+		
+	}
+	
+	option = { #Hope for Peace
+		name = mdardchina_news.12.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+}
+
+#China Backs off Taiwan
+news_event = { 
+	id = mdardchina_news.13
+	title = mdardchina_news.13.t
+	desc = mdardchina_news.13.d
+	picture = GFX_news_event_united_states_navy
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Crisis Averted
+		name = mdardchina_news.13.o1
+		trigger = { 
+			OR = {
+				original_tag = USA 
+				is_in_faction_with = USA 
+			}
+		}
+	}
+	
+	option = { #We can afford patience
+		name = mdardchina_news.13.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = CHI
+				original_tag = CHI
+			}
+		}
+		
+	}
+	
+	option = { #We're all lucky
+		name = mdardchina_news.13.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+}
+
+#Invasion of Taiwan
+news_event = { 
+	id = mdardchina_news.14
+	title = mdardchina_news.14.t
+	desc = mdardchina_news.14.d
+	picture = GFX_news_event_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Prepare for the worst
+		name = mdardchina_news.14.o1
+		trigger = {
+			OR = {
+				is_in_faction_with = USA
+				original_tag = USA
+			}
+		}
+	}
+	
+	option = { #There is no other course
+		name = mdardchina_news.14.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = CHI
+				original_tag = CHI
+			}
+		}
+		
+	}
+	
+	option = { #Prepare for the Worst
+		name = mdardchina_news.14.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+}
+
+#US Backs Taiwan
+news_event = { 
+	id = mdardchina_news.15
+	title = mdardchina_news.15.t
+	desc = mdardchina_news.15.d
+	picture = GFX_news_event_united_states_navy
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #We Stand by our Allies
+		name = mdardchina_news.15.o1
+		trigger = {
+			OR = {
+				is_in_faction_with = USA
+				original_tag = USA
+			}
+		}
+	}
+	
+	option = { #Filthy Imperialists
+		name = mdardchina_news.15.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = CHI
+				original_tag = CHI
+			}
+		}
+		
+	}
+	
+	option = { #The Stage is Set
+		name = mdardchina_news.15.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+}
+
+#US Abandons Taiwan
+news_event = { 
+	id = mdardchina_news.16
+	title = mdardchina_news.16.t
+	desc = mdardchina_news.16.d
+	picture = GFX_news_event_united_states_navy
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #A necessary Sacrifice
+		name = mdardchina_news.16.o1
+		trigger = {
+			OR = {
+				is_in_faction_with = USA
+				original_tag = USA
+			}
+		}
+	}
+	
+	option = { #Perfect
+		name = mdardchina_news.16.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = CHI
+				original_tag = CHI
+			}
+		}
+		
+	}
+	
+	option = { #The Stage is Set
+		name = mdardchina_news.16.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+}
+
+#China Civil War
+news_event = { 
+	id = mdardchina_news.17
+	title = mdardchina_news.17.t
+	desc = mdardchina_news.17.d
+	picture = GFX_news_event_chinese_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #A battle of ideas
+		name = mdardchina_news.17.o1
+	}
+}
+
+#Move To Democracy
+news_event = { 
+	id = mdardchina_news.18
+	title = mdardchina_news.18.t
+	desc = mdardchina_news.18.d
+	picture = GFX_china_19th_national_congress
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Good luck!
+		name = mdardchina_news.18.o1
+		trigger = { 
+			has_government = democratic
+		}
+	}
+	
+	option = { #Worrisome
+		name = mdardchina_news.18.o2
+		trigger = {
+has_government = communism		}
+	}
+}
+
+#Restored Republic
+news_event = { 
+	id = mdardchina_news.19
+	title = mdardchina_news.19.t
+	desc = mdardchina_news.19.d
+	picture = GFX_news_event_chinese_protestors
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Good luck!
+		name = mdardchina_news.19.o1
+		trigger = { 
+			has_democratic_form_of_government = yes
+		}
+	}
+	
+	option = { #Worrisome
+		name = mdardchina_news.19.o2
+		trigger = {
+			has_democratic_form_of_government = no
+		}
+	}
+	
+}
+
+#New Republic
+news_event = { 
+	id = mdardchina_news.20
+	title = mdardchina_news.20.t
+	desc = mdardchina_news.20.d
+	picture = GFX_news_event_chinese_protestors
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Good luck!
+		name = mdardchina_news.20.o1
+		trigger = { 
+			OR = {
+				has_government = democratic
+			}
+		}
+	}
+	
+	option = { #Worrisome
+		name = mdardchina_news.20.o2
+		trigger = {
+			has_government = communism
+			has_government = nationalist
+		}
+	}
+	
+}
+
+#Accept Chinese Protection
+news_event = { 
+	id = mdardchina_news.21
+	title = mdardchina_news.21.t
+	desc = mdardchina_news.21.d
+	picture = GFX_news_event_chinese_soldiers
+	
+	is_triggered_only = yes
+	
+	option = { #Worrisome
+		name = mdardchina_news.21.o1
+		trigger = {
+			OR = {
+				original_tag = USA
+				is_in_faction_with = USA
+			}
+		}
+	}
+	
+	option = { #Very Well
+		name = mdardchina_news.21.o2
+		trigger = {
+			OR = {
+				original_tag = USA
+				is_in_faction_with = USA
+			}
+		}
+		
+	}
+	
+	option = { #Interesting
+		name = mdardchina_news.21.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+}
+
+#Refuse Chinese Protection
+news_event = { 
+	id = mdardchina_news.22
+	title = mdardchina_news.22.t
+	desc = mdardchina_news.22.d
+	picture = GFX_news_event_chinese_soldiers
+
+	
+	is_triggered_only = yes
+	
+	option = { #Good
+		name = mdardchina_news.22.o1
+		trigger = {
+			OR = {
+				original_tag = USA
+				is_in_faction_with = USA
+			}
+		}
+	}
+	
+	option = { #Ufortunate
+		name = mdardchina_news.22.o2
+		trigger = {
+			OR = {
+				original_tag = CHI
+				is_in_faction_with = CHI
+			}
+		}
+	}
+	
+	option = { #Interesting
+		name = mdardchina_news.22.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+}
+
+#Vietnam gives up Paracels
+news_event = { 
+	id = mdardchina_news.23
+	title = mdardchina_news.23.t
+	desc = mdardchina_news.23.d
+	picture = GFX_news_event_taiwan_resist
+	
+	is_triggered_only = yes
+
+	option = { #Interesting
+		name = mdardchina_news.23.o1
+	}
+}
+
+#China gives up Paracels
+news_event = { 
+	id = mdardchina_news.24
+	title = mdardchina_news.24.t
+	desc = mdardchina_news.24.d
+	picture = GFX_news_event_taiwan_resist
+	
+	is_triggered_only = yes
+
+	option = { #Interesting
+		name = mdardchina_news.24.o1
+	}
+}
+
+#Paracel Negotiations Fail
+news_event = { 
+	id = mdardchina_news.25
+	title = mdardchina_news.25.t
+	desc = mdardchina_news.25.d
+	picture = GFX_news_event_chinese_soldiers
+	
+	is_triggered_only = yes
+
+	option = { #Interesting
+		name = mdardchina_news.25.o1
+	}
+}
+
+#The Reunification of China
+news_event = { 
+	id = mdardchina_news.26
+	title = mdardchina_news.26.t
+	desc = mdardchina_news.26.d
+	picture = GFX_news_event_china_and_taiwan
+	
+	is_triggered_only = yes
+
+	option = { #Interesting
+		name = mdardchina_news.26.o1
+	}
+}
+news_event = { 
+	id = mdardchina_news.27
+	title = mdardchina_news.27.t
+	desc = mdardchina_news.27.d
+	picture = GFX_chinese_flag
+	
+	is_triggered_only = yes
+
+	option = { #Interesting
+		name = mdardchina_news.27.o1
+	}
+}
+#Western Spratlies Ceded - VIN
+news_event = { 
+	id = mdardchina_news.29
+	title = mdardchina_news.29.t
+	desc = mdardchina_news.29.d
+	picture = GFX_news_event_chinese_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #More Chinese Agression
+		name = mdardchina_news.29.o1
+		trigger = { 
+			OR = {
+				original_tag = USA
+				is_in_faction_with = USA
+			}
+		}
+	}
+	
+	option = { #As it should be
+		name = mdardchina_news.29.o2
+		trigger = { 
+			OR = {
+				original_tag = CHI
+				is_in_faction_with = CHI
+			}
+		}
+		
+	}
+	
+	option = { #War is averted
+		name = mdardchina_news.29.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+}
+
+#Vietnam Refused
+news_event = { 
+	id = mdardchina_news.30
+	title = mdardchina_news.30.t
+	desc = mdardchina_news.30.d
+	picture = GFX_news_event_chinese_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Rightfully so
+		name = mdardchina_news.30.o1
+		trigger = { original_tag = USA 
+		is_in_faction_with = USA }
+	}
+	
+	option = { #Outrageous
+		name = mdardchina_news.30.o2
+		trigger = {
+			is_in_faction_with = CHI
+			original_tag = CHI }
+		
+	}
+	
+	option = { #Let us hope for peace
+		name = mdardchina_news.30.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+}
+
+#Eastern Spratlies Ceded - PHI
+news_event = { 
+	id = mdardchina_news.31
+	title = mdardchina_news.31.t
+	desc = mdardchina_news.31.d
+	picture = GFX_news_event_chinese_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #More Chinese Agression
+		name = mdardchina_news.31.o1
+		trigger = { 
+			OR = {
+				original_tag = USA
+				is_in_faction_with = USA
+			}
+		}
+	}
+	
+	option = { #As it should be
+		name = mdardchina_news.31.o2
+		trigger = { 
+			OR = {
+				original_tag = CHI
+				is_in_faction_with = CHI
+			}
+		}
+		
+	}
+	
+	option = { #War is averted
+		name = mdardchina_news.31.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+}
+
+#Philipins Refused
+news_event = { 
+	id = mdardchina_news.32
+	title = mdardchina_news.32.t
+	desc = mdardchina_news.32.d
+	picture = GFX_news_event_chinese_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Rightfully so
+		name = mdardchina_news.32.o1
+		trigger = { original_tag = USA 
+		is_in_faction_with = USA }
+	}
+	
+	option = { #Outrageous
+		name = mdardchina_news.32.o2
+		trigger = {
+			is_in_faction_with = CHI
+			original_tag = CHI }
+		
+	}
+	
+	option = { #Let us hope for peace
+		name = mdardchina_news.32.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+}
+
+#Southern Spratlies Ceded - MAY
+news_event = { 
+	id = mdardchina_news.33
+	title = mdardchina_news.33.t
+	desc = mdardchina_news.33.d
+	picture = GFX_news_event_chinese_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #More Chinese Agression
+		name = mdardchina_news.33.o1
+		trigger = { 
+			OR = {
+				original_tag = USA
+				is_in_faction_with = USA
+			}
+		}
+	}
+	
+	option = { #As it should be
+		name = mdardchina_news.33.o2
+		trigger = { 
+			OR = {
+				original_tag = CHI
+				is_in_faction_with = CHI
+			}
+		}
+		
+	}
+	
+	option = { #War is averted
+		name = mdardchina_news.33.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+}
+
+#Malaysia Refused
+news_event = { 
+	id = mdardchina_news.34
+	title = mdardchina_news.34.t
+	desc = mdardchina_news.34.d
+	picture = GFX_news_event_chinese_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Rightfully so
+		name = mdardchina_news.34.o1
+		trigger = { original_tag = USA 
+		is_in_faction_with = USA }
+	}
+	
+	option = { #Outrageous
+		name = mdardchina_news.34.o2
+		trigger = {
+			is_in_faction_with = CHI
+			original_tag = CHI }
+		
+	}
+	
+	option = { #Let us hope for peace
+		name = mdardchina_news.34.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+}
+
+#Southern Spratlies drop - BRU
+news_event = { 
+	id = mdardchina_news.35
+	title = mdardchina_news.35.t
+	desc = mdardchina_news.35.d
+	picture = GFX_news_event_chinese_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #More Chinese Agression
+		name = mdardchina_news.35.o1
+		trigger = { 
+			OR = {
+				original_tag = USA
+				is_in_faction_with = USA
+			}
+		}
+	}
+	
+	option = { #As it should be
+		name = mdardchina_news.35.o2
+		trigger = { 
+			OR = {
+				original_tag = CHI
+				is_in_faction_with = CHI
+			}
+		}
+		
+	}
+	
+	option = { #War is averted
+		name = mdardchina_news.35.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+}
+
+#Brunei Refused
+news_event = { 
+	id = mdardchina_news.36
+	title = mdardchina_news.36.t
+	desc = mdardchina_news.36.d
+	picture = GFX_news_event_chinese_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Rightfully so
+		name = mdardchina_news.36.o1
+		trigger = { original_tag = USA 
+		is_in_faction_with = USA }
+	}
+	
+	option = { #Outrageous
+		name = mdardchina_news.36.o2
+		trigger = {
+			is_in_faction_with = CHI
+			original_tag = CHI }
+		
+	}
+	
+	option = { #Let us hope for peace
+		name = mdardchina_news.36.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+}
+
+#Mongolia Puppet
+news_event = { 
+	id = mdardchina_news.37
+	title = mdardchina_news.37.t
+	desc = mdardchina_news.37.d
+	picture = GFX_news_event_khalkha_puppet
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Where does this end?
+		name = mdardchina_news.37.o1
+		trigger = { 
+			OR = {
+				original_tag = SOV
+				is_in_faction_with = SOV 
+			}
+		}
+	}
+	
+	option = { #One China on the horizon!
+		name = mdardchina_news.37.o2
+		trigger = {
+			is_in_faction_with = CHI
+			original_tag = CHI 
+		}
+	}
+	
+	option = { #Incredible!
+		name = mdardchina_news.37.o3
+		trigger = {
+			NOT = { is_in_faction_with = SOV }
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+	
+}
+
+#Mongolia Refused
+news_event = { 
+	id = mdardchina_news.28
+	title = mdardchina_news.28.t
+	desc = mdardchina_news.28.d
+	picture = GFX_news_event_khalkha
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Democracy Endures.
+		name = mdardchina_news.28.o1
+		trigger = { 
+			OR = {
+				original_tag = SOV 
+				is_in_faction_with = SOV 
+			}
+		}
+	}
+	
+	option = { #Treasonous Fools.
+		name = mdardchina_news.28.o2
+		trigger = {
+			is_in_faction_with = CHI
+			original_tag = CHI }
+		
+	}
+	
+	option = { #Interesting.
+		name = mdardchina_news.28.o3
+		trigger = {
+			NOT = { is_in_faction_with = SOV }
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+	
+}
+
+#Ryukyu Surrendered
+news_event = { 
+	id = mdardchina_news.38
+	title = mdardchina_news.38.t
+	desc = mdardchina_news.38.d
+	picture = GFX_news_event_ryukyu
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #More Chinese Agression
+		name = mdardchina_news.38.o1
+		trigger = { 
+			OR = {
+				original_tag = USA
+				is_in_faction_with = USA
+			}
+		}
+	}
+	
+	option = { #As it should be
+		name = mdardchina_news.38.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = CHI
+				original_tag = CHI
+			}
+		}
+		
+	}
+	
+	option = { #War is averted
+		name = mdardchina_news.38.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+}
+
+#Japan Refused
+news_event = { 
+	id = mdardchina_news.39
+	title = mdardchina_news.39.t
+	desc = mdardchina_news.39.d
+	picture = GFX_news_event_ryukyu
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Rightfully so
+		name = mdardchina_news.39.o1
+		trigger = {
+			OR = {
+				is_in_faction_with = USA
+				original_tag = USA
+			}
+		}
+	}
+	
+	option = { #Outrageous
+		name = mdardchina_news.39.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = CHI
+				original_tag = CHI
+			}
+		}
+		
+	}
+	
+	option = { #Let us hope for peace
+		name = mdardchina_news.39.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+}
+
+#War over Ryukyu
+news_event = { 
+	id = mdardchina_news.40
+	title = mdardchina_news.40.t
+	desc = mdardchina_news.40.d
+	picture = GFX_news_event_chinese_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Prepare for the worst
+		name = mdardchina_news.40.o1
+		trigger = { 
+			OR = {
+				original_tag = JAP
+				original_tag = USA 
+				is_in_faction_with = USA 
+			}
+		}
+	}
+	
+	option = { #There is no other course
+		name = mdardchina_news.40.o2
+		trigger = {
+			OR ={
+				is_in_faction_with = CHI
+				original_tag = CHI 
+			}
+		}
+	}
+	
+	option = { #Millions will die for worthless rocks
+		name = mdardchina_news.40.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+}
+
+#Mongolia Annexed
+news_event = { 
+	id = mdardchina_news.41
+	title = mdardchina_news.41.t
+	desc = mdardchina_news.41.d
+	picture = GFX_news_event_khalkha_puppet
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Unfortunate
+		name = mdardchina_news.41.o1
+		trigger = { 
+			NOT = { is_in_faction_with = CHI }
+			}
+		}
+	
+	
+	option = { #Finally
+		name = mdardchina_news.41.o2
+		trigger = {
+			is_in_faction_with = CHI
+			original_tag = CHI }
+		
+	}
+	
+}
+
+#Mongolia Resists
+news_event = { 
+	id = mdardchina_news.42
+	title = mdardchina_news.42.t
+	desc = mdardchina_news.42.d
+	picture = GFX_news_event_mon_navy
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Rightfully So
+		name = mdardchina_news.42.o1
+		trigger = { 
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+	
+	option = { #Outrageous
+		name = mdardchina_news.42.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = CHI
+				original_tag = CHI 
+			}
+		}
+		
+	}
+	
+}
+
+#Invasion of Mongolia
+news_event = { 
+	id = mdardchina_news.43
+	title = mdardchina_news.43.t
+	desc = mdardchina_news.43.d
+	picture = GFX_news_event_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Prepare for the worst
+		name = mdardchina_news.43.o1
+		trigger = {
+			NOT = { is_in_faction_with = CHI }
+			}
+		}
+	
+	
+	option = { #There is no other course
+		name = mdardchina_news.43.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = CHI
+				original_tag = CHI
+			}
+		}
+		
+	}
+	
+}
+
+#Taiwan Annexed
+news_event = { 
+	id = mdardchina_news.44
+	title = mdardchina_news.44.t
+	desc = mdardchina_news.44.d
+	picture = GFX_news_event_taiwan_puppet
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Unfortunate
+		name = mdardchina_news.44.o1
+		trigger = { 
+			NOT = { is_in_faction_with = CHI }
+			}
+		}
+	
+	
+	option = { #Finally
+		name = mdardchina_news.44.o2
+		trigger = {
+			is_in_faction_with = CHI
+			original_tag = CHI }
+		
+	}
+	
+}
+
+#Taiwan Resists
+news_event = { 
+	id = mdardchina_news.45
+	title = mdardchina_news.45.t
+	desc = mdardchina_news.45.d
+	picture = GFX_news_event_taiwan_resist
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Rightfully So
+		name = mdardchina_news.45.o1
+		trigger = { 
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+	
+	option = { #Outrageous
+		name = mdardchina_news.45.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = CHI
+				original_tag = CHI 
+			}
+		}
+		
+	}
+	
+}
+
+#Invasion of Taiwan
+news_event = { 
+	id = mdardchina_news.46
+	title = mdardchina_news.46.t
+	desc = mdardchina_news.46.d
+	picture = GFX_news_event_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Prepare for the worst
+		name = mdardchina_news.46.o1
+		trigger = {
+			NOT = { is_in_faction_with = CHI }
+			}
+		}
+	
+	
+	option = { #There is no other course
+		name = mdardchina_news.46.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = CHI
+				original_tag = CHI
+			}
+		}
+		
+	}
+	
+}
+news_event = { 
+	id = mdardchina_news.50
+	title = mdardchina_news.50.t
+	desc = mdardchina_news.50.d
+	picture = GFX_news_zhonghua_inauguration
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+
+	
+	option = { #Outrageous
+		name = mdardchina_news.50.o1
+		
+	}
+	}
+news_event = { 
+	id = mdardchina_news.51
+	title = mdardchina_news.51.t
+	desc = mdardchina_news.51.d
+	picture = Bury_Mao_Zedong
+	
+	major = yes
+	
+	is_triggered_only = yes
+		option = { #Outrageous
+		name = mdardchina_news.51.o1
+		CHI = {
+		remove_ideas = maolegacy
+	}
+	}
+	}
+	news_event = { 
+	id = mdardchina_news.52
+	title = mdardchina_news.52.t
+	desc = mdardchina_news.52.d
+	picture = news_american_zombie
+	
+	major = yes
+	
+	is_triggered_only = yes
+		option = { 
+		name = mdardchina_news.52.o1
+			trigger = {
+			OR = {
+				is_in_faction_with = CHI
+				original_tag = CHI
+			}
+		}
+	}
+			option = { 
+		name = mdardchina_news.52.o2
+			trigger = {
+NOT = {			OR = {
+				is_in_faction_with = CHI
+				original_tag = CHI
+			}
+		}
+		}
+	}
+	}
+	news_event = { 
+	id = mdardchina_news.53
+	title = mdardchina_news.53.t
+	desc = mdardchina_news.53.d
+	picture = GFX_china_19th_national_congress
+	
+	major = yes
+	
+	is_triggered_only = yes
+		option = { 
+		name = mdardchina_news.53.o1
+			trigger = {
+			OR = {
+				is_in_faction_with = CHI
+				original_tag = CHI
+			}
+		}
+	}
+			option = { 
+		name = mdardchina_news.53.o2
+			trigger = {
+NOT = {			OR = {
+				is_in_faction_with = CHI
+				original_tag = CHI
+			}
+		}
+		}
+	}
+	}	
+		news_event = { 
+	id = mdardchina_news.54
+	title = mdardchina_news.54.t
+	desc = mdardchina_news.54.d
+	picture = news_china_moon_base
+	
+	major = yes
+	
+	is_triggered_only = yes
+		option = { 
+		name = mdardchina_news.54.o1
+			trigger = {
+			OR = {
+				is_in_faction_with = CHI
+				original_tag = CHI
+			}
+		}
+	}
+			option = { 
+		name = mdardchina_news.54.o2
+			trigger = {
+NOT = {			OR = {
+				is_in_faction_with = CHI
+				original_tag = CHI
+			}
+		}
+		}
+	}
+	}	
+	news_event = { 
+	id = mdardchina_news.55
+	title = mdardchina_news.55.t
+	desc = mdardchina_news.55.d
+	picture = news_mars_homo
+	
+	major = yes
+	
+	is_triggered_only = yes
+		option = { 
+		name = mdardchina_news.55.o1
+			trigger = {
+			OR = {
+				is_in_faction_with = CHI
+				original_tag = CHI
+			}
+		}
+	}
+			option = { 
+		name = mdardchina_news.55.o2
+			trigger = {
+NOT = {			OR = {
+				is_in_faction_with = CHI
+				original_tag = CHI
+			}
+		}
+		}
+	}
+	}		
+	news_event = { 
+	id = mdardchina_news.56
+	title = mdardchina_news.56.t
+	desc = mdardchina_news.56.d
+	picture = GFX_american_flag
+	
+	major = yes
+	
+	is_triggered_only = yes
+		option = { 
+		name = mdardchina_news.56.o1
+			trigger = {
+			OR = {
+				is_in_faction_with = CHI
+				original_tag = CHI
+			}
+		}
+	}
+			option = { 
+		name = mdardchina_news.56.o2
+			trigger = {
+NOT = {			OR = {
+				is_in_faction_with = CHI
+				original_tag = CHI
+			}
+		}
+		}
+	}
+	}		
+	news_event = { 
+	id = mdardchina_news.57
+	title = mdardchina_news.57.t
+	desc = mdardchina_news.57.d
+	picture = hongkang_demonstration
+	
+	major = yes
+	
+	is_triggered_only = yes
+		option = { 
+		name = mdardchina_news.57.o1
+			trigger = {
+			OR = {
+				is_in_faction_with = CHI
+				original_tag = CHI
+			}
+		}
+	}
+			option = { 
+		name = mdardchina_news.57.o2
+			trigger = {
+NOT = {			OR = {
+				is_in_faction_with = CHI
+				original_tag = CHI
+			}
+		}
+		}
+	}
+	}			
