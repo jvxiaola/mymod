@@ -1409,7 +1409,19 @@ ideas = {
 			army_defence_factor = 0.2
 		}
 	}
-
+	CHI_Strict_military_control = {
+		picture = un_intervention
+		cancel = {
+			always = no
+		}
+		modifier = {
+			political_power_gain = 0.1
+			experience_gain_army = -0.1
+			army_attack_factor = -0.15 
+			army_defence_factor = 0.15 
+			army_org_factor = -0.05
+		}
+	}
 
 
 	}
