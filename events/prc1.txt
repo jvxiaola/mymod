@@ -7655,13 +7655,14 @@ option = {	#We accept!
 	id = prc1.159
 	title = prc1.159.t
 	desc = prc1.159.d
-												
+	#CW前经济异动											
 	is_triggered_only = yes
 											
 	option = { 
 	name = prc1.159.a																															
 	ai_chance = { factor = 95 }
-											
+	
+	add_ideas = CHI_capital_withdrawal1
 	news_event = {
 	hours = 6
 	id = prc1.159
