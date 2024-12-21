@@ -572,13 +572,13 @@ bypass = {}
 		y = 7
 		cost = 5
 		relative_position_id = CHI_zhengzhigaige		
-bypass = {}
-allow_branch = {
-		NOT = {
-has_country_flag = CPC_Rehabilitation_of_Zhao_Ziyang
-}
-has_completed_focus = CHI_break_term_limits
-}
+		bypass = {}
+		allow_branch = {
+			NOT = {
+			has_country_flag = CPC_Rehabilitation_of_Zhao_Ziyang
+				}
+		has_completed_focus = CHI_break_term_limits
+		}
 
 				prerequisite = {
 			focus = CHI_break_term_limits
@@ -598,6 +598,7 @@ has_completed_focus = CHI_break_term_limits
 			hidden_effect = {
 				country_event ={id =  prc1.158 days = 10 }
 				country_event ={id =  prc1.82 days = 20 }
+				country_event ={id =  prc1.159 days = 25 }
 			}
 			country_event=prc1.157
 
@@ -1134,8 +1135,11 @@ country_event = {id= prc1.57 days = 3 }
 		cost = 5
 		relative_position_id = CHI_zhengzhigaige		
 			mutually_exclusive = {focus = CHI_break_term_limits}
-	
-bypass = {}
+			available = {
+				date > 2002.6.1
+				date < 2002.12.1
+			}
+			bypass = {}
 				prerequisite = {
 					focus = CHI_zuzhiguoqigaige
 					focus = CHI_china_wangluo
@@ -1146,10 +1150,10 @@ bypass = {}
 			factor = 5
 		}
 		allow_branch = {
-OR={
-has_country_leader = { name = "Jiang Zemin" }
-has_country_leader = { name = "Quanlizhengkong" }
-}
+		OR={
+			has_country_leader = { name = "Jiang Zemin" }
+			has_country_leader = { name = "Quanlizhengkong" }
+			}
 			
 		}
 
@@ -1157,8 +1161,8 @@ has_country_leader = { name = "Quanlizhengkong" }
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-add_political_power = 100
-		country_event = {id = prc1.26 days = 10}
+			add_political_power = 100
+			country_event = {id = prc1.26 days = 10}
 
 		}
 		}		
@@ -7576,7 +7580,7 @@ release_puppet = ETK
 set_autonomy = {
 				target = ETK
 				autonomy_state = autonomy_special_administrative_region
-			}.
+			}
 release_puppet = HKG
 set_autonomy = {
 				target = HKG
