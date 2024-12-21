@@ -1415,9 +1415,10 @@ ideas = {
 			always = no
 		}
 		modifier = {
+			conscription_factor = -0.15
 			political_power_gain = 0.1
 			experience_gain_army = -0.1
-			army_attack_factor = -0.15 
+			army_attack_factor = -0.10
 			army_defence_factor = 0.15 
 			army_org_factor = -0.05
 		}
