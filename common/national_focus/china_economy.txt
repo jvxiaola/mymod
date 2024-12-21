@@ -845,8 +845,7 @@
 
 		cost = 5
 
-		prerequisite = { focus = CHI_The_Untapped_Market }
-		mutually_exclusive = { focus = CHI_Smash_the_Iron_Rice_Bowl }
+		
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		allow_branch = {
