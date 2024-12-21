@@ -7651,3 +7651,21 @@ option = {	#We accept!
 											ai_chance = {factor = 10 }
 											}
 											}									
+	country_event = {
+	id = prc1.159
+	title = prc1.159.t
+	desc = prc1.159.d
+												
+	is_triggered_only = yes
+											
+	option = { 
+	name = prc1.159.a																															
+	ai_chance = { factor = 95 }
+											
+	news_event = {
+	hours = 6
+	id = prc1.159
+		}
+	}
+}
+											
