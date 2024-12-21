@@ -898,7 +898,7 @@ remove_ideas = red_weidui1
 				set_capital = {state=547}
 				set_cosmetic_tag = DSC_GMG
 					load_focus_tree = communsim_PRC_focus
-	
+					mark_focus_tree_layout_dirty = yes
 			}
 		}
 
