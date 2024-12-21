@@ -6,7 +6,7 @@ focus_tree = {
 
 	}
 		default = no
-	shared_focus = CHI_The_Untapped_Market
+	shared_focus = CHI_Socialist_Reconstruction
 		shared_focus = PRC_computer
 
 				focus = {
