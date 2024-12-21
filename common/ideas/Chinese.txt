@@ -1460,6 +1460,7 @@ ideas = {
 			productivity_growth_modifier = -0.10
 			energy_gain_multiplier = -0.10
 			corporate_tax_income_multiplier_modifier = -0.15
+			industry_free_repair_factor = -0.15
 		}
 	}
 	CHI_capital_withdrawal4 = {
@@ -1473,6 +1474,8 @@ ideas = {
 			productivity_growth_modifier = -0.15
 			energy_gain_multiplier = -0.15
 			corporate_tax_income_multiplier_modifier = -0.35
+			army_org_factor = -0.05
+			industry_free_repair_factor = -0.75
 		}
 	}
 	}
