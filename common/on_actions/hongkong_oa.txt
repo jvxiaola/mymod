@@ -65,7 +65,7 @@ has_country_flag=xggm
 					limit = {
 						is_ai = no
 					}
-	country_event = welcome_event.1
+	#country_event = welcome_event.1
 				}
 				HKG = {
 	HKG_people_support_dynamic_scriptes = yes

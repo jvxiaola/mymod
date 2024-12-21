@@ -67,7 +67,7 @@ DSC={
 					limit = {
 						is_ai = no
 					}
-	country_event = welcome_event.1
+	#country_event = welcome_event.1
 				}
 				DSC = {
 	DSC_people_support_dynamic_scriptes = yes

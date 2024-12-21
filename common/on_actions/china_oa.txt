@@ -85,7 +85,7 @@ on_startup = {
                 limit = {
                     is_ai = no
                 }
-country_event = welcome_event.1
+#country_event = welcome_event.1
             }
             CHI = {
 CHI_people_support_dynamic_scriptes = yes
