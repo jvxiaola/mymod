@@ -1,4 +1,4 @@
-	##ECONOMY TREE##
+##ECONOMY TREE##
 	shared_focus = {
 		id = CHI_The_Untapped_Market
 		icon = prc_currency_reform
@@ -12,7 +12,6 @@
 				has_country_flag = qyxd
 				has_country_flag = laozuo
 			}
-				has_completed_focus =  CHI_paving_the_way_for_successors
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -26,6 +25,7 @@
 		ai_will_do = { base = 5 }
 	}
 
+
 	shared_focus = {
 		id = CHI_Smash_the_Iron_Rice_Bowl
 		icon = iron_rice_bowl
@@ -37,7 +37,6 @@
 		cost = 5
 
 		prerequisite = { focus = CHI_The_Untapped_Market }
-		mutually_exclusive = { focus = CHI_Socialist_Reconstruction }
 		allow_branch = {
 			NOT = {
 				has_country_flag = xggm
@@ -846,7 +845,6 @@
 		cost = 5
 
 
-		mutually_exclusive = { focus = CHI_Smash_the_Iron_Rice_Bowl }
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		allow_branch = {
