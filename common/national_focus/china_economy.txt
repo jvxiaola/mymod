@@ -1,4 +1,4 @@
-##ECONOMY TREE##
+	##ECONOMY TREE##
 	shared_focus = {
 		id = CHI_The_Untapped_Market
 		icon = prc_currency_reform
@@ -1350,7 +1350,7 @@ add_political_power = 50
 	id = CHI_Negative_contract_system
 		icon = ChinaHouse
 
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = CHI_agricultural_issues
 
@@ -1359,9 +1359,13 @@ add_political_power = 50
 			x = -1
 			y = 0
 			trigger = {
-						has_country_flag = qyxd
+						OR = { 
+							has_country_flag = qyxd 
+							has_country_flag = laozuo
+						}
 			}
 		}
+	
 		prerequisite = { focus = CHI_agricultural_issues }
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
