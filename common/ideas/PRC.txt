@@ -2740,6 +2740,43 @@ industrial_capacity_dockyard = 0.10
 
 }
 }
+
+
+
+
+
+CHI_guoyouhua = {
+	allowed_civil_war = {
+always = yes
+}	
+
+
+
+			picture = communism11
+
+			allowed = { original_tag = CHI }
+
+			removal_cost = -1
+						modifier = {
+
+stability_factor = -0.2
+consumer_goods_factor = 0.04
+production_factory_efficiency_gain_factor =-0.2
+production_speed_buildings_factor = -0.4 
+industrial_capacity_factory = -0.20
+industrial_capacity_dockyard = -0.20
+
+}
+}
+
+
+
+
+
+
+
+
+
 CHI_not_nongyesui = {
 
 

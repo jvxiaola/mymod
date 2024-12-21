@@ -869,7 +869,7 @@
 			OR = {
 				has_country_flag=xggm
 				has_country_flag=qyxd
-				has_country_flag = laozuo
+				has_country_flag=PRC_left_cpc
 				}
 		}
 
@@ -1027,7 +1027,12 @@ add_political_power = 100
 		}
 
 		completion_reward = {	
-		add_ideas = CHI_Stateowned_enterprise_monopoly
+			add_timed_idea = {
+				idea=CHI_guoyouhua
+				days = 100
+						}
+
+
 		}
 
 		ai_will_do = { base = 1 }
@@ -1084,6 +1089,12 @@ add_power_balance_value = {
 
 
 		available = {
+
+			NOT={
+has_idea=CHI_guoyouhua
+
+		}
+
 custom_trigger_tooltip = {
 NOT = {
 OR = {
@@ -1096,7 +1107,11 @@ tooltip = CHI_economic_model_liberalization_economy_tt
 }
 		}
 
-		completion_reward = {if = {
+		completion_reward = {
+
+
+					add_ideas = CHI_Stateowned_enterprise_monopoly
+			if = {
 limit = {has_idea = CHI_Socialist_Market_Economy }
 swap_ideas = {
 add_idea = CHI_Socialist_Market_Economy_planned_1
