@@ -1,4 +1,4 @@
-	##ECONOMY TREE##
+##ECONOMY TREE##
 	shared_focus = {
 		id = CHI_The_Untapped_Market
 		icon = prc_currency_reform
@@ -845,7 +845,8 @@
 
 		cost = 5
 
-		
+
+		mutually_exclusive = { focus = CHI_Smash_the_Iron_Rice_Bowl }
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		allow_branch = {
@@ -1349,14 +1350,14 @@ add_political_power = 50
 	id = CHI_Negative_contract_system
 		icon = ChinaHouse
 
-		x = 0
-		y = 2
+		x = -1
+		y = 1
 		relative_position_id = CHI_agricultural_issues
 
 		cost = 5
 		offset = {
 			x = -1
-			y = -1
+			y = 0
 			trigger = {
 						has_country_flag = qyxd
 			}
@@ -1380,9 +1381,18 @@ add_political_power = 50
 		icon = anarchist_economy
 
 		x = 1
-		y = 1
+		y = 2
 		relative_position_id = CHI_agricultural_issues
-
+		offset = {
+			x = -1
+			y = 0
+			trigger = {
+				OR = { 
+					has_country_flag = qyxd 
+					has_country_flag = laozuo 
+				}
+			}
+		}
 		cost = 5
 
 		prerequisite = { focus = CHI_agricultural_issues}
@@ -1407,7 +1417,7 @@ shared_focus = {
 		icon = Farm_national_movement
 
 		x = -1
-		y = 1
+		y = 2
 		relative_position_id = CHI_agricultural_issues
 
 		cost = 5
@@ -1437,12 +1447,10 @@ shared_focus = {
 	shared_focus = {		
 		id = CHI_Revitalize_the_countryside
 		icon = agriculture2
-
 		x = 0
 		y = 3
 		relative_position_id = CHI_agricultural_issues
 		prerequisite = { focus = CHI_state_farm focus = CHI_People_Commune }
-		prerequisite = { focus = CHI_Negative_contract_system }
 		cost = 5
 
 
