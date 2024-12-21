@@ -1,4 +1,4 @@
-﻿add_namespace = prc1
+add_namespace = prc1
 
 ###############
 #Contents:
@@ -1378,7 +1378,7 @@ country_event = {
 				}	
 	
 	}
-			}
+			
 	#USA - Support Taiwan?
 	
 	country_event = {
@@ -1514,11 +1514,12 @@ create_country_leader = {
 				
 				#replicating current politics
 				random_other_country = {
-
+				#设置战争对手
 			limit = {
 			original_tag = CHI
 			NOT = { TAG = CHI }
 					}
+			add_ideas = CHI_Strict_military_control
 	set_cosmetic_tag = CHI_REB_S
 	puppet = HKG
 		puppet = MAC
@@ -1570,7 +1571,7 @@ create_country_leader={
 	Mot_Inf_Bat = { x = 0 y = 3 }
 			}
 			}
-	
+			mark_focus_tree_layout_dirty = yes#刷新国策树
 
 
 
