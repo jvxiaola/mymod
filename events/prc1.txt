@@ -1420,7 +1420,16 @@ country_event = {
 	
 		immediate = {
 			hidden_effect = {
+				every_country = { 
+				limit = { 
+					OR = {
+						original_tag = CHI
+						tag = DSC
+						tag = HKG
+				}
+			}
 				country_event = {id= prc1.161 days = 3 }
+				}
 				start_politics_input = yes
 				XIZ = {
 		create_country_leader = {
