@@ -2932,108 +2932,42 @@ change_CHI_people_support = yes
 
 
 CHI_Civil_war_decisions = {
-	CHI_Yangheping_corp = {
+
+	CHI_economic_deterioration = {
 		icon = eng_trade_unions_demand
 
-		allowed = { always = no } #manually activated
+		visible = { 
+			OR = {
+				has_idea = CHI_capital_withdrawal2 
+				has_idea = CHI_capital_withdrawal3
+				}
+				has_civil_war = yes 
+			}
 
 		available = {
-has_completed_focus = PRC_anti_usa
-		USA = {
-OR = {
-custom_trigger_tooltip = {
-		OR = {
-		
-				is_in_array = { ruling_party = 5 }
-		is_in_array = { ruling_party = 4 }
-		is_in_array = { ruling_party = 19 }
-		}
-tooltip = "是左翼政党执政"
-}
-is_puppet_with = CHI		
-exists = no
-		
-		}}
-		
-		}
+			OR = {
+				NOT = {
+					has_idea = CHI_capital_withdrawal2 
+					has_idea = CHI_capital_withdrawal3
+				}
+					has_civil_war = yes 
+				}
+			}
 
 		is_good = no
-		days_mission_timeout = 1038
+		days_mission_timeout = 180
 
-		ai_will_do = { factor = 1000 }
-
-		complete_effect = {
-add_stability = 0.15
-		}
+		complete_effect = {	}
 
 		timeout_effect = {
-country_event = prc1.98
-		}
-	}
-CHI_Resurrection_of_Mao_Zedong = {
-		ai_will_do = {
-			factor = 20
-		}
-		fire_only_once = yes
-
-		days_remove = 1000
-
-		cost = 200
-visible = {
-
-						has_country_leader = {  name = "阳和平" }
-
-}
-available = {
-has_tech = computing4
-has_tech = advanced_ai
-}
-		modifier = {
-		production_speed_buildings_factor = -8
-			consumer_goods_factor = 8
-		 research_speed_factor = 2
-		  monthly_population = -2
-
-	
-		}
-remove_effect = {
-if = {
-limit = {
-has_tech = human_imitation_ai
-}
-country_event = prc1.95
-
-}
-custom_effect_tooltip = "在此期间要研究完仿人型人工智能，此决议才能复活毛泽东"
-add_stability = -0.3
-}		
-}
-	CHI_cw = {
-		icon = eng_trade_unions_demand
-
-		allowed = { always = no } #manually activated
-
-		available = {
-OR = {
-NOT = {has_idea = patry_fenlie }
-has_civil_war = yes }
+		country_event = prc1.162
+			}
 		}
 
-		is_good = no
-		days_mission_timeout = 380
-
-		ai_will_do = { factor = 1000 }
-
-		complete_effect = {
-add_stability = 0.10		}
-
-		timeout_effect = {
-country_event = prc1.57
-		}
-	}
 CHI_difangredamry = {
 		icon = GFX_decision_generic_form_nation
 		available = {
+			is_ai = no
 		}
 
 		ai_will_do = {
@@ -3088,75 +3022,9 @@ has_idea = CHI_war_communism
 			}
 		}
 	}
-CHI_Ensure_control = {
-		icon = GFX_decision_generic_china
-		available = {
-		NOT = {
-		has_country_flag = CHI_Secure_province
-		}
-					FROM = {
-				NOT = {
-				has_state_flag = CHI_Left_State 
-				}
-				is_owned_by = ROOT}
-		}
 
-		ai_will_do = {
-			factor = 20
-		}
-		cost = 100
-
-		fire_only_once = yes
-
-		days_remove = 31
-
-		modifier = {
-			stability_factor = -0.10
-		}
-		state_target = yes
-
-
-		target_array = controlled_states
-				target_trigger = {
-			FROM = {
-				is_owned_by = ROOT
-			}
-		}
-		visible = {
-has_idea = patry_fenlie
-has_country_flag = chi_left
-			FROM = {
-			any_neighbor_state = { has_state_flag = CHI_Left_State } 
-				is_owned_by = ROOT}
-		}
-		complete_effect = {
-		set_country_flag = CHI_Secure_province
-		}
-
-		remove_effect = {
-clr_country_flag = CHI_Secure_province
-custom_effect_tooltip = CHI_Ensure_control_State_tt
-			FROM = {	
-			set_state_flag = CHI_Left_State 
-			}
-}
-}		
+}	
 		
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
 
 
 

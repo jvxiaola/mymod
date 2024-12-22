@@ -7651,7 +7651,7 @@ country_event = {
 		every_country = {
 		limit = { 
 			 original_tag = CHI 
-			 has_ideas = CHI_capital_withdrawal1
+			 has_idea = CHI_capital_withdrawal1
 			}
 			swap_ideas = {
 				add_idea = CHI_capital_withdrawal2
@@ -7666,6 +7666,34 @@ country_event = {
 			}
 			add_idea = CHI_capital_withdrawal2
 			}
+		}
+	}
+}			
+
+country_event = {
+	id = prc1.162
+	title = prc1.162.t
+	desc = prc1.162.d
+	#CW经济恶化									
+	is_triggered_only = yes
+											
+	option = { 
+	name = prc1.162.a																															
+	ai_chance = { factor = 95 }
+	decrease_economic_growth = yes
+	if = {
+		limit = { has_idea = CHI_capital_withdrawal2 }
+		swap_ideas = {
+			add_idea = CHI_capital_withdrawal3
+			remove_idea = CHI_capital_withdrawal2
+			}
+		}
+	else_if = {
+			limit = { has_idea = CHI_capital_withdrawal3 }
+			swap_ideas = {
+				add_idea = CHI_capital_withdrawal4
+				remove_idea = CHI_capital_withdrawal3
+				}
 		}
 	}
 }			
