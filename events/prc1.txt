@@ -7628,7 +7628,7 @@ country_event = {
 	id = prc1.160
 	title = prc1.160.t
 	desc = prc1.160.d
-	#CW前小事件:农民进城											
+	#CW前小事件:学生									
 	is_triggered_only = yes
 											
 	option = { 
