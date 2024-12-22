@@ -2934,8 +2934,8 @@ change_CHI_people_support = yes
 CHI_Civil_war_decisions = {
 
 	CHI_economic_deterioration = {
-		icon = eng_trade_unions_demand
-
+		icon = GFX_decision_AFG_van_icon
+		
 		visible = { 
 			OR = {
 				has_idea = CHI_capital_withdrawal2 

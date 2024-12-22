@@ -6,7 +6,7 @@ CHI_Civil_war_decisions = {
 			tag = HkG
 	}
 }
-		icon = GFX_decision_category_connection_kom
+		icon = GFX_decision_CUB_train_chi
 
 	visible = {
 	}
