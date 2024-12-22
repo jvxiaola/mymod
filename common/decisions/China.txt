@@ -2937,22 +2937,38 @@ CHI_Civil_war_decisions = {
 		icon = GFX_decision_AFG_van_icon
 		
 		visible = { 
-			OR = {
-				has_idea = CHI_capital_withdrawal2 
-				has_idea = CHI_capital_withdrawal3
-				}
-				has_civil_war = yes 
-			}
-
-		available = {
-			OR = {
-				NOT = {
+			custom_trigger_tooltip = {
+				tooltip = CHI_economic_deterioration_tt
+				OR = {
 					has_idea = CHI_capital_withdrawal2 
 					has_idea = CHI_capital_withdrawal3
-				}
+					}
+				OR = {
+					CHI = {
 					has_civil_war = yes 
+						}
+	
+					AND = { 
+						country_exists = DSC
+						country_exists = CHI
+					}
+	
+	
+					AND = { 
+						country_exists = HKG
+						country_exists = CHI
+					}
+					
+					AND = { 
+						country_exists = DSC
+						country_exists = HKG
+					}
 				}
 			}
+			
+		}
+
+	
 
 		is_good = no
 		days_mission_timeout = 180

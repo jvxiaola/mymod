@@ -10,4 +10,4 @@ CHI_Civil_war_decisions = {
 
 	visible = {
 	}
-	}
+}

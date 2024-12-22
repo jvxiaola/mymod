@@ -1426,9 +1426,9 @@ country_event = {
 						original_tag = CHI
 						tag = DSC
 						tag = HKG
+					}
 				}
-			}
-				country_event = {id= prc1.161 days = 3 }
+				country_event = { id = prc1.161 }
 				}
 				start_politics_input = yes
 				XIZ = {
@@ -7629,7 +7629,7 @@ option = {	#We accept!
 	ai_chance = { factor = 95 }
 	
 	add_ideas = CHI_capital_withdrawal1
-	country_event = {id= prc1.160 days = 10 }
+	country_event = {id = prc1.160 days = 10 }
 	}
 }
 
@@ -7672,6 +7672,15 @@ country_event = {
 		every_country = {
 		limit = {
 			original_tag = HkG
+			}
+			add_idea = CHI_capital_withdrawal1
+			}
+		}
+	else_if = {
+		every_country = {
+		limit = {
+			original_tag = CHI
+			NOT = { has_idea = CHI_capital_withdrawal1 }
 			}
 			add_idea = CHI_capital_withdrawal2
 			}
