@@ -1424,7 +1424,7 @@ ideas = {
 		}
 	}
 	CHI_capital_withdrawal1 = {
-		picture = GFX_idea_poor_economy
+		picture = poor_economy
 		cancel = {
 			always = no
 		}
@@ -1437,7 +1437,7 @@ ideas = {
 		}
 	}
 	CHI_capital_withdrawal2 = {
-		picture = GFX_idea_poor_economy
+		picture = poor_economy
 		cancel = {
 			always = no
 		}
@@ -1450,7 +1450,7 @@ ideas = {
 		}
 	}
 	CHI_capital_withdrawal3 = {
-		picture = GFX_idea_ineffecient_industry
+		picture = ineffecient_industry
 		cancel = {
 			always = no
 		}
@@ -1464,7 +1464,7 @@ ideas = {
 		}
 	}
 	CHI_capital_withdrawal4 = {
-		picture = GFX_idea_ineffecient_industry
+		picture = ineffecient_industry #picture要加“GFX_idea”前缀
 		cancel = {
 			always = no
 		}
