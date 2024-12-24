@@ -1428,7 +1428,8 @@ country_event = {
 						tag = HKG
 					}
 				}
-				country_event = { id = prc1.161 }
+				set_country_flag = Ccw #军事冲突状态
+				country_event = { id = prc1.161 days = 3 }
 				}
 				start_politics_input = yes
 				XIZ = {
@@ -7712,6 +7713,35 @@ country_event = {
 				add_idea = CHI_capital_withdrawal4
 				remove_idea = CHI_capital_withdrawal3
 				}
+		}
+	}
+}			
+
+country_event = {
+	id = prc1.163
+	title = prc1.163.t
+	desc = prc1.163.d
+	#CW地区损坏修正								
+	
+	
+	trigger = {
+		OR = {
+			original_tag = CHI
+			original_tag = DSC
+			original_tag = HKG
+		}
+		has_country_flag = Ccw
+		any_controlled_state = {
+			has_state_flag = CHI_ruined_state
+		}
+	}
+
+
+	option = { 
+	name = prc1.163.a																															
+	
+	every_controlled_state = {
+		clr_state_flag = CHI_ruined_state
 		}
 	}
 }			
