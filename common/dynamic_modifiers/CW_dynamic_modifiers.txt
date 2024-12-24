@@ -1,5 +1,5 @@
 
-CW_ruin = {
+CW_ruins = {
 	enable = {always = yes}
 	icon = GFX_idea_dpr_ruins
 	
@@ -14,3 +14,4 @@ CW_ruin = {
 	state_productivity_growth_modifier = -0.25
 	local_factory_sabotage = 0.03
 }
+
