@@ -29,8 +29,8 @@ on_actions = {
 							}
 							NOT = { has_dynamic_modifier = { modifier = CW_ruins } }
 					} 
-					add_dynamic_modifier = { modifier = CW_ruins }
-					set_state_flag = CHI_ruined_state
+					save_event_target_as = CHI_ruined_state
+					ROOT = { country_event = { id = prc1.163 days = 1 } }
 				}
 			}
 		}

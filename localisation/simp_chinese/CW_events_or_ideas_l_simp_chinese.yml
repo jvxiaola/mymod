@@ -31,7 +31,10 @@
  prc1.162.t: "经济继续下滑"
  prc1.162.d: "“坦克仍在轰鸣，机群仍在盘旋，街道已为废墟，繁华化作灰烬，血肉付作焦炭。”"
  prc1.162.a: "........"
-
+ prc1.163: "军事冲突在[CHI_ruined_state.GetName]造成破坏！"
+ prc1.163.t: "军事冲突在[CHI_ruined_state.GetName]造成破坏！"
+ prc1.163.d: " "
+ prc1.163.a: "“[CHI_ruined_state.GetName]的基础设施与建筑遭到严重破坏”"
 
 #决议
 CHI_economic_deterioration: "§R经济正在崩溃§!"

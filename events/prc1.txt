@@ -7722,7 +7722,7 @@ country_event = {
 	title = prc1.163.t
 	desc = prc1.163.d
 	#CW地区损坏修正								
-	
+	is_triggered_only = yes
 	
 	trigger = {
 		OR = {
@@ -7731,17 +7731,12 @@ country_event = {
 			original_tag = HKG
 		}
 		has_country_flag = Ccw
-		any_controlled_state = {
-			has_state_flag = CHI_ruined_state
-		}
+		
 	}
 
 
 	option = { 
-	name = prc1.163.a																															
-	
-	every_controlled_state = {
-		clr_state_flag = CHI_ruined_state
-		}
+	name = prc1.163.a	
+	add_dynamic_modifier = { modifier = CW_ruins }																											
 	}
 }			
