@@ -2937,8 +2937,6 @@ CHI_Civil_war_decisions = {
 		icon = GFX_decision_AFG_van_icon
 		
 		visible = { 
-			custom_trigger_tooltip = {
-				tooltip = CHI_economic_deterioration_tt
 				OR = {
 					has_idea = CHI_capital_withdrawal2 
 					has_idea = CHI_capital_withdrawal3
@@ -2964,11 +2962,15 @@ CHI_Civil_war_decisions = {
 						country_exists = HKG
 					}
 				}
-			}
+			
 			
 		}
 
-	
+		available = { 
+			custom_trigger_tooltip = {
+				tooltip = CHI_economic_deterioration_tt
+			}
+		}
 
 		is_good = no
 		days_mission_timeout = 180
