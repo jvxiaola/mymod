@@ -2936,41 +2936,136 @@ CHI_Civil_war_decisions = {
 	CHI_economic_deterioration = {
 		icon = GFX_decision_AFG_van_icon
 		
-		visible = { 
+		activation = {
+			OR = {
+				has_idea = CHI_capital_withdrawal2 
+				has_idea = CHI_capital_withdrawal3
+				}
 				OR = {
-					has_idea = CHI_capital_withdrawal2 
-					has_idea = CHI_capital_withdrawal3
-					}
-				OR = {
-					CHI = {
-					has_civil_war = yes 
+					AND = { 
+						CHI = {
+						has_civil_war = yes 
+							}
+						ROOT = {
+							original_tag = CHI
+							}
 						}
-	
 					AND = { 
 						country_exists = DSC
 						country_exists = CHI
+						OR = {
+							ROOT = {
+								tag = DSC
+								tag = CHI
+							}
+						}
+						OR = {
+							has_war_with = DSC
+							has_war_with = CHI
+						}
 					}
-	
-	
+
+
 					AND = { 
 						country_exists = HKG
 						country_exists = CHI
+						OR = {
+							ROOT = {
+								tag = HKG
+								tag = CHI
+							}
+						}
+						OR = {
+							has_war_with = HKG
+							has_war_with = CHI
+						}
 					}
-					
+				
 					AND = { 
 						country_exists = DSC
 						country_exists = HKG
+						OR = {
+							ROOT = {
+								tag = DSC
+								tag = HKG
+							}
+						}
+						OR = {
+							has_war_with = DSC
+							has_war_with = HKG
+						}
 					}
 				}
-			
-			
 		}
 
 		available = { 
 			custom_trigger_tooltip = {
 				tooltip = CHI_economic_deterioration_tt
 			}
+			NOT = {
+				OR = {
+					has_idea = CHI_capital_withdrawal2 
+					has_idea = CHI_capital_withdrawal3
+				}
+			}
+			NOT = {
+				OR = {
+					AND = { 
+						CHI = {
+						has_civil_war = yes 
+							}
+						ROOT = {
+							original_tag = CHI
+							}
+						}
+					AND = { 
+						country_exists = DSC
+						country_exists = CHI
+						OR = {
+							ROOT = {
+								tag = DSC
+								tag = CHI
+							}
+						}
+						OR = {
+							has_war_with = DSC
+							has_war_with = CHI
+						}
+					}
+
+
+					AND = { 
+						country_exists = HKG
+						country_exists = CHI
+						OR = {
+							ROOT = {
+								tag = HKG
+								tag = CHI
+							}
+						}
+						OR = {
+							has_war_with = HKG
+							has_war_with = CHI
+						}
+					}
+				
+					AND = { 
+						country_exists = DSC
+						country_exists = HKG
+						OR = {
+							ROOT = {
+								tag = DSC
+								tag = HKG
+							}
+						}
+						OR = {
+							has_war_with = DSC
+							has_war_with = HKG
+						}
+					}
+			}
 		}
+	}
 
 		is_good = no
 		days_mission_timeout = 180

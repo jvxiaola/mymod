@@ -7737,6 +7737,6 @@ country_event = {
 
 	option = { 
 	name = prc1.163.a	
-	add_dynamic_modifier = { modifier = CW_ruins }																											
+																											
 	}
 }			
