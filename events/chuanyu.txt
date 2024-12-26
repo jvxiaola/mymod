@@ -59,113 +59,167 @@ country_event = {
 
 
 
+		country_event = {
+		id = Chuanyu.3
+		title = Chuanyu.3.t
+		desc = Chuanyu.3.d
+				
+		is_triggered_only = yes
+				
+				
+		option = {
+			name = Chuanyu.3.a 
+			country_event ={id =  chuanyu.4 days = 15 }
+						
+				
+			}
+		}
+
+			country_event = {
+			id = chuanyu.4
+			title = chuanyu.4.t
+			desc = chuanyu.4.d
+						
+			is_triggered_only = yes
+						
+						
+			option = {
+				name = chuanyu.4.a 
+				country_event ={id =  chuanyu.5 days = 15 }
+								
+						
+				}
+			}
+
 				country_event = {
-					id = Chuanyu.3
-					title = Chuanyu.3.t
-					desc = Chuanyu.3.d
-				
-					is_triggered_only = yes
-				
-				
-					option = {
-						name = Chuanyu.3.a 
-						country_event ={id =  chuanyu.4 days = 15 }
+				id = chuanyu.5
+				title = chuanyu.5.t
+				desc = chuanyu.5.d
+								
+				is_triggered_only = yes
+								
+								
+				option = {
+				name = chuanyu.5.a 
+
+				country_event = {id=chuanyu.6 days=15}
+
+								
+					}
+				}
+
+
+
+				country_event = {
+				id = chuanyu.6
+				title = chuanyu.6.t
+				desc = chuanyu.6.d
 						
-				
+				is_triggered_only = yes
+						
+						
+				option = {
+				name = chuanyu.6.a 
+						
+				remove_dynamic_modifier = {
+					modifier = DSC_people_support_dynamic_right
+				}
+					add_dynamic_modifier = {
+					modifier = DSC_people_support_dynamic_left
+					}
+						set_popularities = {
+						democratic = 0.0
+						communism = 100
+						fascism = 0.0
+						neutrality = 0.0
+						nationalist = 0.0
 						}
-						}
-
-						country_event = {
-							id = chuanyu.4
-							title = chuanyu.4.t
-							desc = chuanyu.4.d
-						
-							is_triggered_only = yes
-						
-						
-							option = {
-								name = chuanyu.4.a 
-								country_event ={id =  chuanyu.5 days = 15 }
-								
-						
-								}
-								}
-
-								country_event = {
-									id = chuanyu.5
-									title = chuanyu.5.t
-									desc = chuanyu.5.d
-								
-									is_triggered_only = yes
-								
-								
-									option = {
-										name = chuanyu.5.a 
-
-										country_event = {id=chuanyu.6 days=15}
-
-								
-										}
-										}
-
-
-
-						country_event = {
-							id = chuanyu.6
-							title = chuanyu.6.t
-							desc = chuanyu.6.d
-						
-							is_triggered_only = yes
-						
-						
-							option = {
-								name = chuanyu.6.a 
-						
-								remove_dynamic_modifier = {
-									modifier = DSC_people_support_dynamic_right
-								}
-								add_dynamic_modifier = {
-									modifier = DSC_people_support_dynamic_left
-								}
-											set_popularities = {
-												democratic = 0.0
-												communism = 100
-												fascism = 0.0
-												neutrality = 0.0
-												nationalist = 0.0
-											}
 										
 								
-											set_politics = {
-												ruling_party = communism
-												last_election = "1996.12.11"
-												election_frequency = 60
-												elections_allowed = no
-											}
-											set_cosmetic_tag = DSC_GMQ
+						set_politics = {
+						ruling_party = communism
+						last_election = "1996.12.11"
+						election_frequency = 60
+						elections_allowed = no
+						}
+						set_cosmetic_tag = DSC_GMQ
 								
 								
-											start_politics_input = yes
-											add_to_array = { ruling_party = 5 } #social_democracy
+						start_politics_input = yes
+						add_to_array = { ruling_party = 5 } #social_democracy
 								
 								
-												set_variable = { party_pop_array^5 = 0.40 } #social_democracy
+						set_variable = { party_pop_array^5 = 0.40 } #social_democracy
 								
 								
-											startup_politics = yes
+						startup_politics = yes
 								
-											create_country_leader = {
-												name = "Mao Yuanxin"
-												picture = "Mao_Yuanxin.dds"
-												ideology = Chinese_Socialism_mao
-												traits = {
+						create_country_leader = {
+						name = "Mao Yuanxin"
+						picture = "Mao_Yuanxin.dds"
+						ideology = Chinese_Socialism_mao
+						traits = {
+							
+								}
+						}
 								
-												}
-											}
-								
-											mark_focus_tree_layout_dirty = yes
-																		set_country_flag = qyxd
+						mark_focus_tree_layout_dirty = yes
+						set_country_flag = qyxd
 																		
 						
 								}
 							}
+
+country_event = {
+id = Chuanyu.7
+title = Chuanyu.7.t
+desc = Chuanyu.7.d
+fire_only_once = yes					
+trigger = {
+	tag = HKG
+	tag = DSC
+	536 = { is_fully_controlled_by = DSC }
+}
+mean_time_to_happen = {
+    days = 1
+}							
+							
+option = {
+name = Chuanyu.7.a 
+if = {
+	every_country = {
+	limit = { 
+		 original_tag = CHI 
+		 has_idea = CHI_capital_withdrawal2
+		}
+	ROOT = {
+		add_ideas = CHI_capital_withdrawal2
+				}
+			}
+		}												
+else_if = {
+	every_country = {
+	limit = { 
+		 original_tag = CHI 
+		 has_idea = CHI_capital_withdrawal3
+		}
+	ROOT = {
+		add_ideas = CHI_capital_withdrawal3
+				}
+			}
+		}	
+		
+else_if = {
+	every_country = {
+	limit = { 
+		 original_tag = CHI 
+		 has_idea = CHI_capital_withdrawal4
+		}
+	ROOT = {
+		add_ideas = CHI_capital_withdrawal4
+				}
+			}
+		}	
+
+	}
+}
