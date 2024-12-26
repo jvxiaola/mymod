@@ -3102,6 +3102,31 @@ CHI_Civil_war_decisions = {
 			}
 		}
 
+		CHI_CHI_NEW_people_war1 = {
+			icon = GFX_decision_generic_form_nation
+			available = {
+				is_ai = no
+				OR = { 
+					has_completed_focus = DSC_people_amry
+					has_completed_focus = HKG_people_amry
+				}
+			}
+	
+			cost = 100
+	
+			fire_only_once = yes
+			visible = {
+				OR = { 
+					has_completed_focus = DSC_dongyuanrenmin
+					has_completed_focus = HKG_people_amry
+				}
+			}
+	
+			complete_effect = {
+				add_ideas = CHI_NEW_people_war1
+			}
+		}
+
 CHI_difangredamry = {
 		icon = GFX_decision_generic_form_nation
 		available = {

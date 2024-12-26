@@ -1524,6 +1524,20 @@ ideas = {
 		}
 	}
 
-	
+	CHI_NEW_people_war1 = {
+		
+		allowed = { 
+			OR = { tag = DSC tag = HKG tag = CHI } 
+		}
+		picture = red_revolutionary_army
+		modifier = {
+			army_org_factor = 0.05
+			army_speed_factor = 0.10
+			supply_consumption_factor = -0.15
+			supply_factor = 0.05
+			supply_node_range = 0.10
+		}
+	}
+
 	}
 }

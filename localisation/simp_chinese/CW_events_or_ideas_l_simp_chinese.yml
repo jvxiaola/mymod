@@ -14,6 +14,8 @@
  CW_ruins_desc: "世上没有天堂，过去的繁荣不属于你，属于你的只有现在的残垣断壁，所以这一切都值得吗？......§R“我不知道值不值得，我只知道这一切终究会来到，或是现在，或是以后。”§!"
  CHI_No_guns_cannons_ask_enemy_for_us: "没有枪，没有炮，敌人给我们造"
  CHI_No_guns_cannons_ask_enemy_for_us_desc: "虽然我们有着革命的精神，但物质条件的匮乏仍是一个大问题。如何解决这个问题，或许我们可以从以前的经验中找到答案。"
+ CHI_NEW_people_war1: "§G新人民战争:萌芽§!"
+ CHI_NEW_people_war1: "战争使得大多数地区的基础设施遭到破坏，为此我们将运用以前的经验：依靠人民群众。"
 
 
 #事件
@@ -44,3 +46,5 @@ CHI_economic_deterioration_desc: "由于战争原因，大量工人逃离工厂�
 CHI_economic_deterioration_tt: "§O我们的经济已彻底崩溃或中国主要战场不存在割据势力。§!"
 CHI_CHI_No_guns_cannons_ask_enemy_for_us: "§T“没有枪，没有炮，敌人给我们造”§!"
 CHI_CHI_No_guns_cannons_ask_enemy_for_us_desc: "虽然我们有着革命的精神，但物质条件的匮乏仍是一个大问题。如何解决这个问题，或许我们可以从以前的经验中找到答案。"
+CHI_CHI_NEW_people_war1: "回归人民战争"
+CHI_CHI_NEW_people_war1_desc: "由于众所周知的原因，我们的作战理论体系已成为唯武器论，无论是在理论层面还是在现实条件上都不合情理。回归人民战争是我们重新构建作战理论体系的第一步。"

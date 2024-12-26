@@ -39,7 +39,8 @@ focus_tree = {
 		}
 		allow_branch={
 			NOT={
-				has_country_flag=qyxd
+				has_country_flag = qyxd
+				has_country_flag = rehabilitate_economy
 			}
 		}
 
@@ -451,9 +452,10 @@ add_political_power = 100
 			}
 	add_ideas = CHI_party_before_guns
 	add_ideas = people_amry1
+	unlock_decision_tooltip = CHI_CHI_NEW_people_war1
 	remove_ideas = red_weidui1
 		}
-		}
+	}
 
 		focus = {
 			id = DSC_ANFURENMIN
@@ -486,7 +488,7 @@ add_political_power = 100
 				change_DSC_Socialist_Construction_dynamic1 = yes
 				set_temp_variable = { temp_DSC_people_support = 0.1 }
 				change_DSC_people_support = yes
-
+				unlock_decision_tooltip = CHI_CHI_No_guns_cannons_ask_enemy_for_us
 			add_stability=0.05
 			}
 	
@@ -835,16 +837,112 @@ add_political_power = 100
 	
 				set_capital = {state=547}
 				set_cosmetic_tag = DSC_GMG
+				set_country_flag = rehabilitate_economy
 					load_focus_tree = communsim_PRC_focus
 					mark_focus_tree_layout_dirty = yes
 			}
 		}
 
 
+		focus = {
+			id = DSC_rubble
+			icon = money_on_fire
+			x = 5
+	
+			y = 0
+	
+			cost = 1
+	
+			prerequisite = {
+	
+			 }
+			 allow_branch = {
+				has_country_flag = rehabilitate_economy
+			 }
+	
+			ai_will_do = {
+				factor = 10
+			}
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			available = {
+	
+			}
+			completion_reward = {
+				custom_effect_tooltip = DSC_rubble_tt
+	
+			}
+		}
+	
+		focus = {
+			id = DSC_Save_economy
+			icon = money_on_fire
+			x = -3
+	
+			y = 1
+	
+			cost = 1
+			relative_position_id = DSC_rubble
+			prerequisite = {
+				focus = DSC_rubble
+			 }
+		
+			ai_will_do = {
+				factor = 10
+			}
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			available = {
+	
+			}
+			completion_reward = {
+				custom_effect_tooltip = DSC_Save_economy_tt
+	
+			}
+		}
 
-
-
-	}
+		focus = {
+			id = DSC_restart_industry
+			icon = money_on_fire
+			x = 3
+	
+			y = 1
+	
+			cost = 1
+			relative_position_id = DSC_rubble
+			prerequisite = {
+				focus = DSC_rubble
+			 }
+		
+			ai_will_do = {
+				factor = 10
+			}
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			available = {
+	
+			}
+			completion_reward = {
+				custom_effect_tooltip = DSC_restart_industry_tt
+	
+			}
+		}
+}
 
 
 
