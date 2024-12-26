@@ -1430,6 +1430,12 @@ country_event = {
 				}
 				set_country_flag = Ccw #军事冲突状态
 				country_event = { id = prc1.161 days = 3 }
+				DSC = {
+					country_event = { id = prc1.161 days = 3 }
+				}
+				HKG = {
+					country_event = { id = prc1.161 days = 3 }
+				}
 				}
 				start_politics_input = yes
 				XIZ = {

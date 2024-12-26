@@ -12,6 +12,8 @@
  CHI_capital_withdrawal4_desc: "“.....炮火摧毁了一切....头顶上传来嗡嗡的声音，好像是飞机，上面还有三色旗....上次我看到，那些金发碧眼的禽兽....但我必须出去，去找.....找到什么都好，半个馒头，一块面包屑，一粒米...”\n§R“遗忘的后果”§!"
  CW_ruins: "残垣断壁!"
  CW_ruins_desc: "世上没有天堂，过去的繁荣不属于你，属于你的只有现在的残垣断壁，所以这一切都值得吗？......§R“我不知道值不值得，我只知道这一切终究会来到，或是现在，或是以后。”§!"
+ CHI_No_guns_cannons_ask_enemy_for_us: "没有枪，没有炮，敌人给我们造"
+ CHI_No_guns_cannons_ask_enemy_for_us_desc: "虽然我们有着革命的精神，但物质条件的匮乏仍是一个大问题。如何解决这个问题，或许我们可以从以前的经验中找到答案。"
 
 
 #事件
@@ -40,3 +42,5 @@
 CHI_economic_deterioration: "§R经济正在崩溃§!"
 CHI_economic_deterioration_desc: "由于战争原因，大量工人逃离工厂，大小企业争相离开，如果我们任无所作为，§R我们的经济将万劫不复！§!"
 CHI_economic_deterioration_tt: "§O我们的经济已彻底崩溃或中国主要战场不存在割据势力。§!"
+CHI_CHI_No_guns_cannons_ask_enemy_for_us: "§T“没有枪，没有炮，敌人给我们造”§!"
+CHI_CHI_No_guns_cannons_ask_enemy_for_us_desc: "虽然我们有着革命的精神，但物质条件的匮乏仍是一个大问题。如何解决这个问题，或许我们可以从以前的经验中找到答案。"

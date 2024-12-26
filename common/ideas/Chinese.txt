@@ -1490,5 +1490,40 @@ ideas = {
 			industry_free_repair_factor = -0.75
 		}
 	}
+
+	CHI_Strict_military_control = {
+		picture = un_intervention
+		cancel = {
+			always = no
+		}
+		modifier = {
+			conscription_factor = -0.15
+			political_power_gain = 0.1
+			experience_gain_army = -0.1
+			army_attack_factor = -0.10
+			army_defence_factor = 0.15 
+			army_org_factor = -0.05
+		}
+	}
+	CHI_No_guns_cannons_ask_enemy_for_us = {
+		
+		allowed = { 
+			OR = { tag = DSC tag = HKG } 
+			NOT = {
+				OR = {
+					has_completed_focus = DSC_NEIZHANJIESHU
+					has_completed_focus = HKG_NEIZHANJIESHU
+					
+				}
+			}
+		}
+		picture = army_corruptions
+		modifier = {
+			equipment_capture = 0.10
+			unit_upkeep_attrition_factor = -0.30
+		}
+	}
+
+	
 	}
 }

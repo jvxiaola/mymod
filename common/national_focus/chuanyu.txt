@@ -448,9 +448,10 @@ add_political_power = 100
 					value = 0.05
 				}
 				recalculate_party = yes
-			}add_ideas = CHI_party_before_guns
-add_ideas = people_amry1
-remove_ideas = red_weidui1
+			}
+	add_ideas = CHI_party_before_guns
+	add_ideas = people_amry1
+	remove_ideas = red_weidui1
 		}
 		}
 
@@ -584,41 +585,12 @@ remove_ideas = red_weidui1
 
 			every_state = {		
 				limit = {
-											is_core_of = CHI
+						is_core_of = CHI
 						}					
-
-
-
-
-								add_core_of = DSC
-								}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-							}
-
-
-
-
-
-
-
-		}
+						add_core_of = DSC
+					}
+				}
+			}
 
 
 
@@ -667,14 +639,10 @@ remove_ideas = red_weidui1
 						 has_cosmetic_tag=CHI_REB_S
 					}
 					declare_war_on = {
-
 						target = DSC
 						type = annex_everything
 					}		
-				
-				
-
-					}
+				}
 	
 	
 	
@@ -713,41 +681,11 @@ remove_ideas = red_weidui1
 		
 				}
 				completion_reward = {
-		
-		
-		
-		
-
-		
-		
-		
-		
-		
-		
-
-		
-					create_wargoal = {
-		
-											target = CHI
-											type = annex_everything
-										}		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-									}
-		
-		
-		
-		
-		
-		
-		
+					declare_war_on = {
+						target = CHI
+						type = annex_everything
+						}		
+					}
 				}
 	
 
