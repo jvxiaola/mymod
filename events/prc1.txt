@@ -1430,6 +1430,13 @@ country_event = {
 				}
 				set_country_flag = Ccw #军事冲突状态
 				country_event = { id = prc1.161 days = 3 }
+				every_country = {
+					limit = {
+						original_tag = CHI
+						has_cosmetic_tag=CHI_REB_S
+					}
+					country_event = { id = prc1.161 days = 3 }
+				}
 				DSC = {
 					country_event = { id = prc1.161 days = 3 }
 				}
