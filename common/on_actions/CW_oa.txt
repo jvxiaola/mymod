@@ -2,28 +2,28 @@
 on_actions = {
 
 
-	on_state_control_changed = {
+	on_daily_CHI = {
 		effect = {
 			if = {
 				limit = {
 					ROOT = {
 						has_country_flag = Ccw
 					}
-					FROM = {
+					DSC = {
 						has_country_flag = Ccw
 					}
-					OR = { 
-						 FROM = { original_tag = CHI  } 
-					 	 FROM = { original_tag = DSC  } 
-						 FROM = { original_tag = HKG  } 
-						} 
-					OR = { 
-						 ROOT = { original_tag = CHI  }
-						 ROOT = { original_tag = DSC  }
-						 ROOT = { original_tag = HKG  }
-						} 
+					HKG - {
+						has_country_flag = Ccw
 					}
-					FROM.FROM = { 
+					every_country = {
+						limit = {
+							original_tag = CHI
+							has_cosmetic_tag=CHI_REB_S
+						}
+						has_country_flag = Ccw
+					}
+				}
+				every_controlled_state = { 
 						limit = {
 							OR = { 
 							state = 434 state = 435 state = 526 state = 531 state = 532 state = 534 state = 536 state = 537 
@@ -34,12 +34,95 @@ on_actions = {
 							state = 1095 state = 1096 state = 1097
 							}
 							NOT = { has_dynamic_modifier = { modifier = CW_ruins } }
+							NOT = { is_owned_by = ROOT }
 					} 
 					add_dynamic_modifier = { modifier = CW_ruins }	
-					save_event_target_as = CHI_ruined_state
-					ROOT = { country_event = { id = prc1.163 days = 1 } }
+		
 				}
 			}
 		}
 	}
+
+	on_daily_DSC = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						has_country_flag = Ccw
+					}
+					DSC = {
+						has_country_flag = Ccw
+					}
+					HKG - {
+						has_country_flag = Ccw
+					}
+					every_country = {
+						limit = {
+							original_tag = CHI
+							has_cosmetic_tag=CHI_REB_S
+						}
+						has_country_flag = Ccw
+					}
+				}
+				every_controlled_state = { 
+						limit = {
+							OR = { 
+							state = 434 state = 435 state = 526 state = 531 state = 532 state = 534 state = 536 state = 537 
+							state = 538 state = 540 state = 541 state = 544 state = 547 state = 548 state = 549 state = 552 
+							state = 554 state = 555 state = 556 state = 558 state = 559 state = 560 state = 562 state = 564 
+							state = 567 state = 570 state = 572 state = 574 state = 578 state = 582 state = 583 state = 585 
+							state = 586 state = 588 state = 589 state = 591 state = 592 state = 813 state = 943 state = 1072 
+							state = 1095 state = 1096 state = 1097
+							}
+							NOT = { has_dynamic_modifier = { modifier = CW_ruins } }
+							NOT = { is_owned_by = ROOT }
+					} 
+					add_dynamic_modifier = { modifier = CW_ruins }	
+		
+				}
+			}
+		}
+	}
+
+	on_daily_HKG = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						has_country_flag = Ccw
+					}
+					DSC = {
+						has_country_flag = Ccw
+					}
+					HKG - {
+						has_country_flag = Ccw
+					}
+					every_country = {
+						limit = {
+							original_tag = CHI
+							has_cosmetic_tag=CHI_REB_S
+						}
+						has_country_flag = Ccw
+					}
+				}
+				every_controlled_state = { 
+						limit = {
+							OR = { 
+							state = 434 state = 435 state = 526 state = 531 state = 532 state = 534 state = 536 state = 537 
+							state = 538 state = 540 state = 541 state = 544 state = 547 state = 548 state = 549 state = 552 
+							state = 554 state = 555 state = 556 state = 558 state = 559 state = 560 state = 562 state = 564 
+							state = 567 state = 570 state = 572 state = 574 state = 578 state = 582 state = 583 state = 585 
+							state = 586 state = 588 state = 589 state = 591 state = 592 state = 813 state = 943 state = 1072 
+							state = 1095 state = 1096 state = 1097
+							}
+							NOT = { has_dynamic_modifier = { modifier = CW_ruins } }
+							NOT = { is_owned_by = ROOT }
+					} 
+					add_dynamic_modifier = { modifier = CW_ruins }	
+		
+				}
+			}
+		}
+	}
+
 }
