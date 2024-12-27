@@ -2,7 +2,7 @@
 on_actions = {
 
 
-	on_daily_CHI = {
+	on_weekly_CHI = {
 		effect = {
 			if = {
 				limit = {
@@ -43,7 +43,7 @@ on_actions = {
 		}
 	}
 
-	on_daily_DSC = {
+	on_weekly_DSC = {
 		effect = {
 			if = {
 				limit = {
@@ -84,7 +84,7 @@ on_actions = {
 		}
 	}
 
-	on_daily_HKG = {
+	on_weekly_HKG = {
 		effect = {
 			if = {
 				limit = {
