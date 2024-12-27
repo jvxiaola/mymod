@@ -768,3 +768,26 @@ CHI_work_up = {
 		}
 	}
 	}
+
+  CHI_ruin_industry_add = {
+    #添加工厂损毁精神
+    set_temp_variable = { ruined_state_num = global.ruined_state^num }
+    ROOT = {
+      limit = {
+        check_variable = { 2 > ruined_state_num > 0 }
+      }
+      add_ideas = Industrial_damage1
+      limit = {
+        check_variable = { 5 > ruined_state_num > 3 }
+      }
+      add_ideas = Industrial_damage2
+      limit = {
+        check_variable = { 9 > ruined_state_num > 6 }
+      }
+      add_ideas = Industrial_damage3
+      limit = {
+        check_variable = { 11 > ruined_state_num > 10 }
+      }
+      add_ideas = Industrial_damage4
+    }
+  }

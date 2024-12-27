@@ -7740,7 +7740,7 @@ country_event = {
 	id = prc1.163
 	title = prc1.163.t
 	desc = prc1.163.d
-	#CW地区损坏修正								
+	#CW							
 	is_triggered_only = yes
 	
 	trigger = {

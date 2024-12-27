@@ -790,38 +790,27 @@ add_political_power = 100
 			}
 			completion_reward = {
 				hidden_effect = {
+					every_country = {
+						clr_country_flag = Ccw
+					}
 					every_state = {		
 						limit = {
-													is_core_of = CHI
+							is_core_of = CHI
 								}					
-		
-		
-		
-		
-										remove_core_of = CHI
-										}
-
-										every_state = {		
-											limit = {
-																		is_core_of = XIZ
-													}					
-							
-							
-							
-							
-															remove_core_of = XIZ
-															}
-
-															every_state = {		
-																limit = {
-																							is_core_of = XIN
-																		}					
-												
-												
-												
-												
-																				remove_core_of = XIN
-																				}
+						remove_core_of = CHI
+							}
+						every_state = {		
+							limit = {
+								is_core_of = XIZ
+								}					
+						remove_core_of = XIZ
+							}
+						every_state = {		
+							limit = {
+							is_core_of = XIN
+							}					
+							remove_core_of = XIN
+						}
 					set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.30 }
 					change_DSC_Socialist_Construction_dynamic1 = yes
 				}
@@ -874,7 +863,7 @@ add_political_power = 100
 		focus = {
 			id = DSC_Save_economy
 			icon = economic_prosperity2
-			x = -3
+			x = -5
 	
 			y = 1
 	
@@ -1065,7 +1054,7 @@ completion_reward = {
 		focus = {
 			id = DSC_restart_industry
 			icon = central_planned_economy
-			x = 3
+			x = 5
 	
 			y = 1
 	
@@ -1255,12 +1244,11 @@ completion_reward = {
 		icon = farming_sector
 		x = 0
 	
-		y = 5
+		y = 2
 	
 		cost = 1
 		relative_position_id = DSC_rubble
-		prerequisite = { focus = DSC_economic_stability }
-		prerequisite = { focus = DSC_Factory_lighting }
+		prerequisite = { focus = DSC_rubble }
 		ai_will_do = {
 			factor = 10
 		}
@@ -1341,16 +1329,80 @@ completion_reward = {
 	}
 
 	focus = {
-		id = DSC_New_peak
-		icon = focus_SMB_a_land_of_mountains
-		x = -2
+		id = DSC_Free_distribute_agricultural_supplies
+		icon = mechanized_agriculture
+		x = 0
 	
 		y = 1
 	
 		cost = 1
-		relative_position_id = DSC_Hiring_refugees
-		prerequisite = { focus = DSC_Hiring_refugees }
+		relative_position_id = DSC_Temporary_agricultural_subsidies
+		prerequisite = { focus = DSC_Temporary_agricultural_subsidies }
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+	
+		}
+		completion_reward = {
+			custom_effect_tooltip = DSC_restart_industry_tt
+	
+		}
+	}
+
+	focus = {
+		id = DSC_wheat_waves
+		icon = agriculture2
+		x = 0
+	
+		y = 1
+	
+		cost = 1
+		relative_position_id = DSC_Free_distribute_agricultural_supplies
+		prerequisite = { focus = DSC_Free_distribute_agricultural_supplies }
 		prerequisite = { focus = DSC_state_monopoly_purchase }
+		prerequisite = { focus = DSC_Hiring_refugees }
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+	
+		}
+		completion_reward = {
+			custom_effect_tooltip = DSC_restart_industry_tt
+	
+		}
+	}
+
+
+	focus = {
+		id = DSC_New_peak
+		icon = focus_SMB_a_land_of_mountains
+		x = 0
+	
+		y = 1
+	
+		cost = 1
+		relative_position_id = DSC_wheat_waves
+		prerequisite = { focus = DSC_wheat_waves }
+		prerequisite = { focus = DSC_economic_stability }
+		prerequisite = { focus = DSC_Factory_lighting }
 		ai_will_do = {
 			factor = 10
 		}

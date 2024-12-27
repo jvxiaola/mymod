@@ -37,8 +37,11 @@ on_actions = {
 							NOT = { is_owned_by = ROOT }
 					} 
 					add_dynamic_modifier = { modifier = CW_ruins }	
-		
+					add_to_array = {
+						array = global.ruined_state
+					}
 				}
+				CHI_ruin_industry_add = yes
 			}
 		}
 	}
@@ -78,8 +81,11 @@ on_actions = {
 							NOT = { is_owned_by = ROOT }
 					} 
 					add_dynamic_modifier = { modifier = CW_ruins }	
-		
+					add_to_array = {
+						array = global.ruined_state
+					}
 				}
+				CHI_ruin_industry_add = yes
 			}
 		}
 	}
@@ -119,8 +125,11 @@ on_actions = {
 							NOT = { is_owned_by = ROOT }
 					} 
 					add_dynamic_modifier = { modifier = CW_ruins }	
-		
+					add_to_array = {
+						array = global.ruined_state
+					}
 				}
+				CHI_ruin_industry_add = yes
 			}
 		}
 	}
