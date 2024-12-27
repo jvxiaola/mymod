@@ -370,6 +370,7 @@ focus_tree = {
 		 }
 		 allow_branch = {
 			has_country_flag = qyxd
+			NOT = { has_country_flag = rehabilitate_economy }
 		 }
 
 		ai_will_do = {
@@ -828,6 +829,7 @@ add_political_power = 100
 	
 				set_capital = {state=547}
 				set_cosmetic_tag = DSC_GMG
+
 				set_country_flag = rehabilitate_economy
 				mark_focus_tree_layout_dirty = yes
 			}

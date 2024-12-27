@@ -1428,7 +1428,7 @@ country_event = {
 						tag = HKG
 					}
 				}
-				set_country_flag = Ccw #军事冲突状态
+
 				country_event = { id = prc1.161 days = 3 }
 				every_country = {
 					limit = {
@@ -7670,12 +7670,16 @@ country_event = {
 	option = { 
 	name = prc1.161.a																															
 	ai_chance = { factor = 95 }
+	DSC = {
+		set_country_flag = Ccw #军事冲突状态
+	}
 	if = {
 		every_country = {
 		limit = { 
 			 original_tag = CHI 
 			 has_idea = CHI_capital_withdrawal1
 			}
+			set_country_flag = Ccw #军事冲突状态
 			swap_ideas = {
 				add_idea = CHI_capital_withdrawal2
 				remove_idea =  CHI_capital_withdrawal1
@@ -7687,6 +7691,7 @@ country_event = {
 		limit = {
 			original_tag = HkG
 			}
+			set_country_flag = Ccw #军事冲突状态
 			add_idea = CHI_capital_withdrawal1
 			}
 		}
@@ -7696,6 +7701,7 @@ country_event = {
 			original_tag = CHI
 			NOT = { has_idea = CHI_capital_withdrawal1 }
 			}
+			set_country_flag = Ccw #军事冲突状态
 			add_idea = CHI_capital_withdrawal2
 			}
 		}
