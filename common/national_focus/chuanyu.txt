@@ -638,7 +638,7 @@ add_political_power = 100
 				random_country={
 					limit={
 						NOT={tag = CHI}
-						 has_cosmetic_tag=CHI_REB_S
+						 has_cosmetic_tag = CHI_REB_S
 					}
 					declare_war_on = {
 						target = DSC

@@ -52,3 +52,17 @@ CHI_CHI_No_guns_cannons_ask_enemy_for_us: "§T“没有枪，没有炮，敌人�
 CHI_CHI_No_guns_cannons_ask_enemy_for_us_desc: "虽然我们有着革命的精神，但物质条件的匮乏仍是一个大问题。如何解决这个问题，或许我们可以从以前的经验中找到答案。"
 CHI_CHI_NEW_people_war1: "回归人民战争"
 CHI_CHI_NEW_people_war1_desc: "由于众所周知的原因，我们的作战理论体系已成为唯武器论，无论是在理论层面还是在现实条件上都不合情理。回归人民战争是我们重新构建作战理论体系的第一步。"
+
+#focus
+DSC_rubble: "§R一片废墟§!"
+DSC_Save_economy: "§G拯救经济§!"
+DSC_material_control: "§Y物资管控§!"
+DSC_Imported_essential_goods: "§Y进口生活必需品§!"
+DSC_Crack_speculation: "§Y打击投机行为§!"
+DSC_Confiscate_stolen_funds: "§R追缴赃款§!"
+DSC_restart_industry: "§G重启工业§!"
+DSC_Organize_emergency_repairs: "§Y组织抢修§!"
+DSC_Factory_starts_construction: "§Y工厂开工§!"
+DSC_Produce_essential_goods: "§Y专注生产生活必需品§!"
+DSC_Nationalized_bureaucratic_capital: "§R官僚资本再国有化§!"
+DSC_Temporary_agricultural_subsidies: "§G临时农业补贴§!"
