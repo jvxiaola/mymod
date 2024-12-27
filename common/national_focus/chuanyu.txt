@@ -8,17 +8,8 @@ focus_tree = {
 			add = 10
 			tag = DSC
 	}
-
-
-
 		}
-	
 	default = no
-
-
-
-
-
 
 
 
@@ -847,7 +838,7 @@ add_political_power = 100
 		focus = {
 			id = DSC_rubble
 			icon = money_on_fire
-			x = 5
+			x = 8
 	
 			y = 0
 	
@@ -1009,6 +1000,36 @@ completion_reward = {
 
 
 focus = {
+	id = DSC_economic_stability
+	icon = economic_prosperity
+	x = 0
+
+	y = 1
+
+cost = 3
+relative_position_id = DSC_Confiscate_stolen_funds
+prerequisite = { focus = DSC_Confiscate_stolen_funds }
+
+ai_will_do = {
+	factor = 10
+}
+bypass = {
+
+}
+
+cancel_if_invalid = yes
+continue_if_invalid = no
+available_if_capitulated = no
+available = {
+
+}
+completion_reward = {
+	custom_effect_tooltip = DSC_Save_economy_tt
+
+	}
+}
+
+focus = {
 	id = DSC_Confiscate_stolen_funds
 	icon = cash_grap
 	x = -2
@@ -1106,7 +1127,7 @@ completion_reward = {
 
 	focus = {
 		id = DSC_Factory_starts_construction
-		icon = Generic_Socialist_Industry
+		icon = focus_CHL_enlarge_the_textile_industries
 		x = 0
 	
 		y = 1
@@ -1200,16 +1221,15 @@ completion_reward = {
 	}
 	
 	focus = {
-		id = DSC_Temporary_agricultural_subsidies
-		icon = focus_DEN_schleswigian_farmers
+		id = DSC_Factory_lighting
+		icon = modern_refinery_industry
 		x = 0
 	
-		y = 4
+		y = 1
 	
 		cost = 1
-		relative_position_id = DSC_rubble
+		relative_position_id = DSC_Nationalized_bureaucratic_capital
 		prerequisite = { focus = DSC_Nationalized_bureaucratic_capital }
-		prerequisite = { focus = DSC_Confiscate_stolen_funds }
 		ai_will_do = {
 			factor = 10
 		}
@@ -1228,7 +1248,127 @@ completion_reward = {
 	
 		}
 	}
+
+	focus = {
+		id = DSC_Temporary_agricultural_subsidies
+		icon = farming_sector
+		x = 0
 	
+		y = 5
+	
+		cost = 1
+		relative_position_id = DSC_rubble
+		prerequisite = { focus = DSC_economic_stability }
+		prerequisite = { focus = DSC_Factory_lighting }
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+	
+		}
+		completion_reward = {
+			custom_effect_tooltip = DSC_restart_industry_tt
+	
+		}
+	}
+
+	focus = {
+		id = DSC_state_monopoly_purchase
+		icon = South_ossetia_barn
+		x = -2
+	
+		y = 1
+	
+		cost = 1
+		relative_position_id = DSC_Temporary_agricultural_subsidies
+		prerequisite = { focus = DSC_Temporary_agricultural_subsidies }
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+	
+		}
+		completion_reward = {
+			custom_effect_tooltip = DSC_restart_industry_tt
+	
+		}
+	}
+
+	focus = {
+		id = DSC_Hiring_refugees
+		icon = focus_generic_workers_and_farmers_rise
+		x = 2
+	
+		y = 1
+	
+		cost = 1
+		relative_position_id = DSC_Temporary_agricultural_subsidies
+		prerequisite = { focus = DSC_Temporary_agricultural_subsidies }
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+	
+		}
+		completion_reward = {
+			custom_effect_tooltip = DSC_restart_industry_tt
+	
+		}
+	}
+
+	focus = {
+		id = DSC_New_peak
+		icon = focus_SMB_a_land_of_mountains
+		x = -2
+	
+		y = 1
+	
+		cost = 1
+		relative_position_id = DSC_Hiring_refugees
+		prerequisite = { focus = DSC_Hiring_refugees }
+		prerequisite = { focus = DSC_state_monopoly_purchase }
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+	
+		}
+		completion_reward = {
+			custom_effect_tooltip = DSC_restart_industry_tt
+	
+		}
+	}
+
 }
 
 
