@@ -1482,6 +1482,7 @@ ideas = {
 			energy_gain_multiplier = -0.10
 			corporate_tax_income_multiplier_modifier = -0.15
 			industry_free_repair_factor = -0.15
+			interest_rate_multiplier_modifier = 0.25
 		}
 	}
 	CHI_capital_withdrawal4 = {
@@ -1500,7 +1501,152 @@ ideas = {
 			corporate_tax_income_multiplier_modifier = -0.35
 			army_org_factor = -0.05
 			industry_free_repair_factor = -0.75
+			interest_rate_multiplier_modifier = 0.75
 		}
+	}
+
+	CHI_economic_recovery1  = {
+		picture = economic_increase #icon要加“GFX_idea”前缀,picture不能加。
+		cancel = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+			}
+		modifier = {
+			consumer_goods_factor = 0.35
+			production_speed_buildings_factor = -0.20
+			productivity_growth_modifier = -0.10
+			energy_gain_multiplier = -0.05
+			corporate_tax_income_multiplier_modifier = -0.20
+			interest_rate_multiplier_modifier = 0.25
+		}
+	}
+
+	CHI_economic_recovery2  = {
+		picture = economic_increase #icon要加“GFX_idea”前缀,picture不能加。
+		cancel = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+			}
+		modifier = {
+			consumer_goods_factor = 0.20
+			production_speed_buildings_factor = -0.05
+			productivity_growth_modifier = -0.05
+			corporate_tax_income_multiplier_modifier = -0.20
+		}
+	}
+
+	CHI_economic_recovery3  = {
+		picture = economic_increase #icon要加“GFX_idea”前缀,picture不能加。
+		cancel = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+			}
+		modifier = {
+			consumer_goods_factor = 0.25
+			production_speed_buildings_factor = 0.10
+			productivity_growth_modifier = 0.05
+			corporate_tax_income_multiplier_modifier = -0.05
+			interest_rate_multiplier_modifier = -0.02
+		}
+	}
+
+	CHI_economic_recovery_end  = {
+		picture = pmr_china_economic_idea #icon要加“GFX_idea”前缀,picture不能加。
+		cancel = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+			}
+		modifier = {
+			consumer_goods_factor = 0.10
+			production_speed_buildings_factor = 0.15
+			productivity_growth_modifier = 0.10
+			energy_gain_multiplier = 0.05
+			interest_rate_multiplier_modifier = -0.05
+		}
+	}
+
+	Industrial_damage1 = {
+		picture = ineffecient_industry #icon要加“GFX_idea”前缀,picture不能加。
+		cancel = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+			}
+		modifier = {
+			production_speed_buildings_factor = -0.15
+			productivity_growth_modifier = -0.10
+			energy_gain_multiplier = -0.05
+			global_building_slots_factor = -0.05
+			local_resources_factor = -0.05
+			industrial_capacity_factory = -0.10
+			corporate_tax_income_multiplier_modifier = -0.05
+		}
+	}
+
+	Industrial_damage2 = {
+		picture = ineffecient_industry #icon要加“GFX_idea”前缀,picture不能加。
+		cancel = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+			}
+			modifier = {
+				production_speed_buildings_factor = -0.25
+				productivity_growth_modifier = -0.15
+				energy_gain_multiplier = -0.10
+				global_building_slots_factor = -0.15
+				local_resources_factor = -0.10
+				industrial_capacity_factory = -0.15
+				corporate_tax_income_multiplier_modifier = -0.15
+			}
+	}
+
+	Industrial_damage3 = {
+		picture = ineffecient_industry #icon要加“GFX_idea”前缀,picture不能加。
+		cancel = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+			}
+			modifier = {
+				production_speed_buildings_factor = -0.45
+				productivity_growth_modifier = -0.35
+				energy_gain_multiplier = -0.25
+				global_building_slots_factor = -0.20
+				local_resources_factor = -0.15
+				industrial_capacity_factory = -0.20
+				corporate_tax_income_multiplier_modifier = -0.20
+			}
+	}
+
+	Industrial_damage4 = {
+		picture = ineffecient_industry #icon要加“GFX_idea”前缀,picture不能加。
+		cancel = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+			}
+			modifier = {
+				production_speed_buildings_factor = -0.80
+				productivity_growth_modifier = -0.50
+				energy_gain_multiplier = -0.50
+				global_building_slots_factor = -0.50
+				local_resources_factor = -0.35
+				industrial_capacity_factory = -0.35
+				corporate_tax_income_multiplier_modifier = -0.45
+			}
 	}
 
 	CHI_Strict_military_control = {
