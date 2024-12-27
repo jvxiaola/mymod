@@ -829,8 +829,7 @@ add_political_power = 100
 				set_capital = {state=547}
 				set_cosmetic_tag = DSC_GMG
 				set_country_flag = rehabilitate_economy
-					load_focus_tree = communsim_PRC_focus
-					mark_focus_tree_layout_dirty = yes
+				mark_focus_tree_layout_dirty = yes
 			}
 		}
 
@@ -1364,7 +1363,8 @@ completion_reward = {
 	
 		}
 		completion_reward = {
-			custom_effect_tooltip = DSC_restart_industry_tt
+			load_focus_tree = communsim_PRC_focus
+			mark_focus_tree_layout_dirty = yes
 	
 		}
 	}
