@@ -12,7 +12,7 @@ on_actions = {
 					DSC = {
 						has_country_flag = Ccw
 					}
-					HKG - {
+					HKG = {
 						has_country_flag = Ccw
 					}
 					every_country = {
@@ -25,22 +25,21 @@ on_actions = {
 				}
 				every_controlled_state = { 
 						limit = {
-							OR = { 
-							state = 434 state = 435 state = 526 state = 531 state = 532 state = 534 state = 536 state = 537 
-							state = 538 state = 540 state = 541 state = 544 state = 547 state = 548 state = 549 state = 552 
-							state = 554 state = 555 state = 556 state = 558 state = 559 state = 560 state = 562 state = 564 
-							state = 567 state = 570 state = 572 state = 574 state = 578 state = 582 state = 583 state = 585 
-							state = 586 state = 588 state = 589 state = 591 state = 592 state = 813 state = 943 state = 1072 
-							state = 1095 state = 1096 state = 1097
-							}
+							is_CHI_CONTROL = yes
 							NOT = { has_dynamic_modifier = { modifier = CW_ruins } }
 							NOT = { is_owned_by = ROOT }
 					} 
 					add_dynamic_modifier = { modifier = CW_ruins }	
-					add_to_array = {
-						array = global.ruined_state
-					}
 				}
+				every_controlled_state = { 
+					limit = {
+						is_CHI_CONTROL = yes
+						has_dynamic_modifier = { modifier = CW_ruins } 
+							} 
+						add_to_array = {
+							array = global.ruined_state
+						}
+					}
 				CHI_ruin_industry_add = yes
 			}
 		}
@@ -53,10 +52,10 @@ on_actions = {
 					ROOT = {
 						has_country_flag = Ccw
 					}
-					DSC = {
+					CHI = {
 						has_country_flag = Ccw
 					}
-					HKG - {
+					HKG = {
 						has_country_flag = Ccw
 					}
 					every_country = {
@@ -69,22 +68,21 @@ on_actions = {
 				}
 				every_controlled_state = { 
 						limit = {
-							OR = { 
-							state = 434 state = 435 state = 526 state = 531 state = 532 state = 534 state = 536 state = 537 
-							state = 538 state = 540 state = 541 state = 544 state = 547 state = 548 state = 549 state = 552 
-							state = 554 state = 555 state = 556 state = 558 state = 559 state = 560 state = 562 state = 564 
-							state = 567 state = 570 state = 572 state = 574 state = 578 state = 582 state = 583 state = 585 
-							state = 586 state = 588 state = 589 state = 591 state = 592 state = 813 state = 943 state = 1072 
-							state = 1095 state = 1096 state = 1097
-							}
+							is_CHI_CONTROL = yes
 							NOT = { has_dynamic_modifier = { modifier = CW_ruins } }
 							NOT = { is_owned_by = ROOT }
 					} 
 					add_dynamic_modifier = { modifier = CW_ruins }	
-					add_to_array = {
-						array = global.ruined_state
-					}
 				}
+				every_controlled_state = { 
+					limit = {
+						is_CHI_CONTROL = yes
+						has_dynamic_modifier = { modifier = CW_ruins } 
+							} 
+						add_to_array = {
+							array = global.ruined_state
+						}
+					}
 				CHI_ruin_industry_add = yes
 			}
 		}
@@ -100,7 +98,7 @@ on_actions = {
 					DSC = {
 						has_country_flag = Ccw
 					}
-					HKG - {
+					CHI = {
 						has_country_flag = Ccw
 					}
 					every_country = {
@@ -113,22 +111,21 @@ on_actions = {
 				}
 				every_controlled_state = { 
 						limit = {
-							OR = { 
-							state = 434 state = 435 state = 526 state = 531 state = 532 state = 534 state = 536 state = 537 
-							state = 538 state = 540 state = 541 state = 544 state = 547 state = 548 state = 549 state = 552 
-							state = 554 state = 555 state = 556 state = 558 state = 559 state = 560 state = 562 state = 564 
-							state = 567 state = 570 state = 572 state = 574 state = 578 state = 582 state = 583 state = 585 
-							state = 586 state = 588 state = 589 state = 591 state = 592 state = 813 state = 943 state = 1072 
-							state = 1095 state = 1096 state = 1097
-							}
+							is_CHI_CONTROL = yes
 							NOT = { has_dynamic_modifier = { modifier = CW_ruins } }
 							NOT = { is_owned_by = ROOT }
 					} 
 					add_dynamic_modifier = { modifier = CW_ruins }	
-					add_to_array = {
-						array = global.ruined_state
-					}
 				}
+				every_controlled_state = { 
+					limit = {
+						is_CHI_CONTROL = yes
+						has_dynamic_modifier = { modifier = CW_ruins } 
+							} 
+						add_to_array = {
+							array = global.ruined_state
+						}
+					}
 				CHI_ruin_industry_add = yes
 			}
 		}

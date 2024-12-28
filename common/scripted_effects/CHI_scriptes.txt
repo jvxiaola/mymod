@@ -771,6 +771,24 @@ CHI_work_up = {
 
   CHI_ruin_industry_add = {
     #添加工厂损毁精神
+    limit = {
+       ROOT = {
+        has_country_flag = Ccw
+      }
+       DSC = {
+        has_country_flag = Ccw
+       }
+       HKG - {
+         has_country_flag = Ccw
+       }
+       every_country = {
+         limit = {
+           original_tag = CHI
+           has_cosmetic_tag=CHI_REB_S
+          }
+          has_country_flag = Ccw
+         }
+       }
     set_temp_variable = { ruined_state_num = global.ruined_state^num }
     ROOT = {
       limit = {
@@ -786,7 +804,7 @@ CHI_work_up = {
       }
       add_ideas = Industrial_damage3
       limit = {
-        check_variable = { 11 > ruined_state_num > 10 }
+        check_variable = { ruined_state_num > 10 }
       }
       add_ideas = Industrial_damage4
     }
