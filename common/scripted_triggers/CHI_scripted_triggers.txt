@@ -15,7 +15,7 @@ not_has_socialist_government = {
 }
 }
 
-is_CHI_CONTROL = {
+is_CHI_control = {
 	OR = {
 	state = 434 state = 435 state = 526 state = 531 state = 532 state = 534 state = 536 state = 537 
 	state = 538 state = 540 state = 541 state = 544 state = 547 state = 548 state = 549 state = 552 
