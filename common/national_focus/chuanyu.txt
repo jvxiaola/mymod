@@ -574,21 +574,20 @@ add_political_power = 100
 
 		}
 		completion_reward = {
-
-
-
+			custom_effect_tooltip = DSC_foward_whole_country_tt
+			hidden_effect = {
 			every_state = {		
+				
 				limit = {
 						is_core_of = CHI
 						}					
 						add_core_of = DSC
 					}
+					add_state_core = 595
+					add_state_core = 1106
+					}
 				}
 			}
-
-
-
-
 
 
 
@@ -810,10 +809,11 @@ add_political_power = 100
 							}					
 							remove_core_of = XIN
 						}
+						
 					set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.30 }
 					change_DSC_Socialist_Construction_dynamic1 = yes
 				}
-
+				clear_array = global.ruined_state
 	
 				set_capital = {state=547}
 				set_cosmetic_tag = DSC_GMG
@@ -1416,6 +1416,7 @@ completion_reward = {
 	
 		}
 		completion_reward = {
+			
 			load_focus_tree = communsim_PRC_focus
 			mark_focus_tree_layout_dirty = yes
 	

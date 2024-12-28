@@ -94,4 +94,54 @@ on_actions = {
 		}
 	}
 
+	on_weekly_XIN = {
+		effect = {
+
+			DSC = {
+				limit = { has_global_flag = Ccw }
+				every_controlled_state = { 
+					limit = {
+						is_agriculture_state = yes
+						has_dynamic_modifier = { modifier = CW_ruins } 
+							} 
+						add_to_array = {
+							array = global.ruined_agriculture_state
+						}
+						CHI_ruin_agriculture_add = yes
+					}
+				clear_array = global.ruined_agriculture_state
+				}
+
+			HKG = {
+				limit = { has_global_flag = Ccw }
+				every_controlled_state = { 
+					limit = {
+						is_core_of = CHI
+						has_dynamic_modifier = { modifier = CW_ruins } 
+							} 
+						add_to_array = {
+							array = global.ruined_agriculture_state
+						}
+						CHI_ruin_agriculture_add = yes
+					}
+				clear_array = global.ruined_agriculture_state
+			}
+
+			every_country = {
+				limit = { original_tag = CHI }
+				every_controlled_state = { 
+					limit = {
+						is_core_of = CHI
+						has_dynamic_modifier = { modifier = CW_ruins } 
+							} 
+						add_to_array = {
+							array = global.ruined_agriculture_state
+						}
+						CHI_ruin_agriculture_add = yes
+					}
+				clear_array = global.ruined_agriculture_state
+			}
+
+		}
+	}
 }

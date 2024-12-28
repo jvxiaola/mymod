@@ -14,3 +14,10 @@ not_has_socialist_government = {
 
 }
 }
+
+is_agriculture_state = {
+	OR = {
+		state = 567		state = 544		state = 435		state = 583		state = 586		state = 555		state = 1096	state = 572
+		state = 541		state = 536		state = 549		state = 434		state = 570		state = 534		state = 532		state = 574
+	}
+}
