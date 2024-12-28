@@ -9,5 +9,10 @@ CHI_Civil_war_decisions = {
 		icon = GFX_decision_CUB_train_chi
 
 	visible = {
+		OR = { 
+			original_tag = CHI 
+			tag = DSC
+			tag = HkG
+		}
 	}
 }

@@ -772,40 +772,44 @@ CHI_work_up = {
   CHI_ruin_industry_add = {
     #添加工厂损毁精神
     limit = {
-       ROOT = {
-        has_country_flag = Ccw
-      }
-       DSC = {
-        has_country_flag = Ccw
-       }
-       HKG = {
-         has_country_flag = Ccw
-       }
-       every_country = {
-         limit = {
-           original_tag = CHI
-           has_cosmetic_tag=CHI_REB_S
-          }
-          has_country_flag = Ccw
-         }
+          has_global_flag = Ccw
        }
     set_temp_variable = { ruined_state_num = global.ruined_state^num }
     ROOT = {
-      limit = {
-        check_variable = { 2 > ruined_state_num > 0 }
+      if = {
+        limit = {
+         check_variable = { 2 > ruined_state_num > 0 }
+        }
+        add_ideas = Industrial_damage1
       }
-      add_ideas = Industrial_damage1
+
+    else_if = {
       limit = {
         check_variable = { 5 > ruined_state_num > 3 }
       }
-      add_ideas = Industrial_damage2
+      swap_ideas = {
+        remove_idea = Industrial_damage1
+        add_idea = Industrial_damage2
+      }
+    }
+
+    else_if = {
       limit = {
         check_variable = { 9 > ruined_state_num > 6 }
       }
-      add_ideas = Industrial_damage3
+        remove_ideas = Industrial_damage1
+        remove_ideas = Industrial_damage2
+        add_ideas = Industrial_damage3
+    }
+
+    else_if = {
       limit = {
         check_variable = { ruined_state_num > 10 }
       }
+      remove_ideas = Industrial_damage1
+      remove_ideas = Industrial_damage2
+      remove_ideas = Industrial_damage3
       add_ideas = Industrial_damage4
     }
   }
+}

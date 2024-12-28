@@ -9,7 +9,7 @@
 		allow_branch = {
 			NOT = {
 				has_country_flag = xggm
-				has_country_flag = qyxd
+				tag = DSC
 				has_country_flag = laozuo
 			}
 		}
@@ -40,7 +40,7 @@
 		allow_branch = {
 			NOT = {
 				has_country_flag = xggm
-				has_country_flag = qyxd
+				tag = DSC
 				has_country_flag = laozuo
 			}
 		}
@@ -52,7 +52,7 @@
 				NOT={
 					OR={
 						has_country_flag = xggm
-						has_country_flag = qyxd
+						tag = DSC
 						has_country_flag = laozuo
 					}
 				}
@@ -850,7 +850,7 @@
 		allow_branch = {
 			OR = {
 				has_country_flag = xggm
-				has_country_flag = qyxd
+				tag = DSC
 				has_country_flag = laozuo
 				}
 		 }
@@ -859,7 +859,7 @@
 			trigger = {
 					OR = { 
 						has_country_flag = xggm
-						has_country_flag = qyxd
+						tag = DSC
 						has_country_flag = laozuo
 					}
 			}
@@ -1174,7 +1174,7 @@ add_stability = 0.05
 
 		cost = 5
 		allow_branch = {
-		NOT = {	has_country_flag = qyxd }
+		NOT = {	tag = DSC }
 		OR = {
 			has_country_flag = xggm
 			has_country_flag = laozuo
@@ -1213,7 +1213,7 @@ add_stability = 0.05
 		offset = {
 			x = -1
 			trigger = {
-						has_country_flag = qyxd
+						tag = DSC
 			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_CORRUPTION FOCUS_FILTER_INDUSTRY }
@@ -1373,7 +1373,7 @@ add_political_power = 50
 			y = 0
 			trigger = {
 						OR = { 
-							has_country_flag = qyxd 
+							tag = DSC 
 							has_country_flag = laozuo
 						}
 			}
@@ -1405,7 +1405,7 @@ add_political_power = 50
 			y = 0
 			trigger = {
 				OR = { 
-					has_country_flag = qyxd 
+					tag = DSC 
 					has_country_flag = laozuo 
 				}
 			}
@@ -1566,7 +1566,7 @@ custom_effect_tooltip = CHI_Chinese_Industrial_Explosion21_tt
 			trigger = {
 					OR = { 
 						has_country_flag = xggm
-						has_country_flag = qyxd
+						tag = DSC
 						has_country_flag = laozuo
 					}
 			}
@@ -5461,7 +5461,7 @@ is_subject_of = CHI
 			trigger = {
 					OR = { 
 						has_country_flag = xggm
-						has_country_flag = qyxd
+						tag = DSC
 						has_country_flag = laozuo
 					}
 			}
