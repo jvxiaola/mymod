@@ -69,7 +69,7 @@ country_event = {
 				
 		option = {
 			name = Chuanyu.3.a 
-			country_event ={id =  chuanyu.4 days = 15 }
+			country_event ={id =  chuanyu.4 days = 7 }
 						
 				
 			}
@@ -85,7 +85,7 @@ country_event = {
 						
 			option = {
 				name = chuanyu.4.a 
-				country_event ={id =  chuanyu.5 days = 15 }
+				country_event ={id =  chuanyu.5 days = 7 }
 								
 						
 				}
@@ -102,7 +102,7 @@ country_event = {
 				option = {
 				name = chuanyu.5.a 
 
-				country_event = {id=chuanyu.6 days=15}
+				country_event = { id = chuanyu.6 days = 7 }
 
 								
 					}
@@ -192,50 +192,50 @@ mean_time_to_happen = {
 option = {
 name = Chuanyu.7.a 
 if = {
-	every_country = {
+	any_country = {
 	limit = { 
 		 original_tag = CHI 
 		 has_idea = CHI_capital_withdrawal2
 		}
+	}
 	ROOT = {
 		add_ideas = CHI_capital_withdrawal2
 				}
-			}
 		}												
 else_if = {
-	every_country = {
+	any_country = {
 	limit = { 
 		 original_tag = CHI 
 		 has_idea = CHI_capital_withdrawal3
 		}
+	}
 	ROOT = {
 		add_ideas = CHI_capital_withdrawal3
 				}
-			}
 		}	
 		
 else_if = {
-	every_country = {
+	any_country = {
 	limit = { 
 		 original_tag = CHI 
 		 has_idea = CHI_capital_withdrawal4
 		}
+	}
 	ROOT = {
 		add_ideas = CHI_capital_withdrawal4
 				}
-			}
 		}	
 else_if = {
-	every_country = {
+	any_country = {
 	limit = { 
 		 original_tag = CHI 
 		 has_idea = CHI_capital_withdrawal4
 		 
 		}
+	}
 	ROOT = {
 		add_ideas = CHI_capital_withdrawal4
 				}
-			}
-		}	
+			}	
 	}
 }

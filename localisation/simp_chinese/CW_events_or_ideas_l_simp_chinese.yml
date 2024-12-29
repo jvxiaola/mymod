@@ -56,21 +56,23 @@
  Chuanyu.7.d: "当重组后的人民解放军开进南京城后，摆在他们眼前的是一片破败的南京。没有一处完好的街道，没有一座完好的建筑。紫峰大厦已被拦腰截断，长江大桥多处断裂，更惨不忍睹的是城内红十字会收容的流民...."
  Chuanyu.7.a: "任重道远"
 
-#决议
+#决议    #战间
 CHI_economic_deterioration: "§R经济正在崩溃§!"
 CHI_economic_deterioration_desc: "由于战争原因，大量工人逃离工厂，大小企业争相离开，如果我们任无所作为，§R我们的经济将万劫不复！§!"
-CHI_economic_deterioration_tt: "§O我们的经济已彻底崩溃或中国主要战场不存在割据势力。§!"
 CHI_CHI_No_guns_cannons_ask_enemy_for_us: "§T“没有枪，没有炮，敌人给我们造”§!"
 CHI_CHI_No_guns_cannons_ask_enemy_for_us_desc: "虽然我们有着革命的精神，但物质条件的匮乏仍是一个大问题。如何解决这个问题，或许我们可以从以前的经验中找到答案。"
 CHI_CHI_NEW_people_war1: "回归人民战争"
 CHI_CHI_NEW_people_war1_desc: "由于众所周知的原因，我们的作战理论体系已成为唯武器论，无论是在理论层面还是在现实条件上都不合情理。回归人民战争是我们重新构建作战理论体系的第一步。"
+#恢复
+Collecting_materials: "征收补给援助"
+Collecting_materials_desc: "目前我们已经进行了物资管制，通过征收物资援助，并将其发送给受灾严重地区，我们可以更快稳定当地的物价。"
+Distribute_supply_assistance: "征收补给援助"
+Distribute_supply_assistance_desc: "征收物资援助只是援助行动的第一步，接下来就是将其运输至受灾地区。"
+
 
 #focus
-DSC_foward_whole_country_tt: "§R我们已经准备好了！向全国进军！前进！前进！前进！§!"
 DSC_rubble: "§R一片废墟§!"
 DSC_Save_economy: "§G拯救经济§!"
-
-DSC_Save_economy_tt: "§T我们将执行恢复经济的计划，根据内战中的经济受损程度转化为对应的恢复阶段。§!"
 DSC_material_control: "§Y物资管控§!"
 DSC_Imported_essential_goods: "§Y进口生活必需品§!"
 DSC_Crack_speculation: "§Y打击投机行为§!"

@@ -480,8 +480,8 @@ add_political_power = 100
 				change_DSC_Socialist_Construction_dynamic1 = yes
 				set_temp_variable = { temp_DSC_people_support = 0.1 }
 				change_DSC_people_support = yes
+				add_stability=0.05
 				unlock_decision_tooltip = CHI_CHI_No_guns_cannons_ask_enemy_for_us
-			add_stability=0.05
 			}
 	
 		}
@@ -574,7 +574,7 @@ add_political_power = 100
 
 		}
 		completion_reward = {
-			custom_effect_tooltip = DSC_foward_whole_country_tt
+			custom_effect_tooltip = "§R我们已经准备好了！向全国进军！前进！前进！前进！§!"
 			hidden_effect = {
 			every_state = {		
 				
@@ -855,7 +855,7 @@ add_political_power = 100
 	
 			}
 			completion_reward = {
-				custom_effect_tooltip = DSC_rubble_tt
+				custom_effect_tooltip = "§G我们将开始着手重建经济、工业、农业体系§!"
 	
 			}
 		}
@@ -885,7 +885,7 @@ add_political_power = 100
 			available_if_capitulated = no
 			available = {
 				custom_trigger_tooltip = {
-					tooltip = No_other_plans_in_progress_tt
+					tooltip = "§Y没有在执行其它重建计划§"
 					NOT = {
 						OR = {
 							has_power_balance = {
@@ -896,7 +896,7 @@ add_political_power = 100
 				}
 			}
 			completion_reward = {
-				custom_effect_tooltip = DSC_Save_economy_tt
+				custom_effect_tooltip = "§T我们将执行恢复经济的计划，根据内战中的经济受损程度转化为对应的恢复阶段。§!"
 				set_power_balance = {
 					id = Economic_recovery_progress_balance
 				}
@@ -961,8 +961,9 @@ add_political_power = 100
 	
 		}
 		completion_reward = {
-			custom_effect_tooltip = DSC_Save_economy_tt
-	
+			unlock_decision_tooltip = Collecting_materials
+			unlock_decision_tooltip = Distribute_supply_assistance
+			add_ideas = CHI_material_control
 		}
 	}
 

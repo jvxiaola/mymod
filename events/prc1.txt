@@ -1522,9 +1522,9 @@ country_event = {
 			NOT = { TAG = CHI }
 					}
 			add_ideas = CHI_Strict_military_control
-	set_cosmetic_tag = CHI_REB_S
-	puppet = HKG
-		puppet = MAC
+			set_cosmetic_tag = CHI_REB_S
+			puppet = HKG
+			puppet = MAC
 			load_focus_tree = CHI_focus
 		XIN = {
 			create_country_leader={
@@ -1934,6 +1934,22 @@ country_event = {
 						}
 						add_ideas = foreign_jihadis
 					}
+
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { 
+									has_dynamic_modifier = {
+									modifier = DSC_people_support_dynamic_right 
+									}
+								}
+							}
+						}
+						add_dynamic_modifier = {
+					modifier = DSC_people_support_dynamic_right
+				}
+					}
+
 					if = { limit = { PREV = { has_idea = isi_pakistan } }
 						add_ideas = isi_pakistan
 					}

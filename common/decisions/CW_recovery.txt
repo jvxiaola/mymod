@@ -1,0 +1,95 @@
+China_erp_category = {
+	Collecting_materials = {
+		icon = GFX_decision_generic_construction
+		visible = {
+			has_completed_focus = DSC_Save_economy
+			NOT = { has_completed_focus = DSC_economic_stability }
+		}
+		cost = 20
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "§R未有物资援助待送达被摧毁地区§!"
+				NOT = { has_country_flag = a_supply_aid_is_ready }
+			}
+		}
+		complete_effect = {
+			add_stability = -0.001	
+		}
+		days_remove = 20
+		remove_effect = {
+			custom_effect_tooltip = "§T将在富余地区组织一次征收物资援助行动§!"
+			set_country_flag = a_supply_aid_is_ready
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Distribute_supply_assistance = {
+		icon = GFX_decision_generic_construction
+
+		visible = {
+			has_completed_focus = DSC_Save_economy
+			NOT = { has_completed_focus = DSC_economic_stability }
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "§T已有补给援助待送达被摧毁地区§!"
+				 has_country_flag = a_supply_aid_is_ready
+			}
+		}
+		cost = 20
+		days_remove = 20
+		remove_effect = {
+			add_stability = 0.005
+			add_power_balance_value = {
+				id = Economic_recovery_progress_balance
+				value = 0.25
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ollecting_materials = {
+		icon = GFX_decision_generic_construction
+
+		visible = {
+			has_completed_focus = DSC_Save_economy
+			NOT = { has_completed_focus = DSC_economic_stability }
+		}
+
+		custom_cost_trigger = {
+			check_variable = { treasury > 6.1 }
+		}
+
+		custom_cost_text = cost_6_0
+
+		complete_effect = {
+			set_temp_variable = { treasury_change = -6 }
+			modify_treasury_effect = yes
+			log = "[GetDateText]: [This.GetName]: decision construction_jinshajiang_dam executed"
+		}
+
+		days_remove = 420
+
+		remove_effect = {
+			custom_effect_tooltip = CHI_jinshajiang_dam_TT
+			set_country_flag = jinshajiang_dam_built
+			585 = {
+				set_variable = { hydroelectric_energy_production_var = 7.5 }
+				set_variable = { hydroelectric_energy_storage_var = 0 }
+				add_dynamic_modifier = {
+					modifier = hydroelectric_infrastructure_in_state
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}
