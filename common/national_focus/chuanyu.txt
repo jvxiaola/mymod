@@ -789,6 +789,7 @@ add_political_power = 100
 			}
 			completion_reward = {
 				hidden_effect = {
+					remove_ideas = CHI_Socialist_Market_Economy
 						clr_global_flag = Ccw
 						clr_country_flag = qyxd
 					every_state = {		
@@ -883,11 +884,53 @@ add_political_power = 100
 			continue_if_invalid = no
 			available_if_capitulated = no
 			available = {
-	
+				custom_trigger_tooltip = {
+					tooltip = No_other_plans_in_progress_tt
+					NOT = {
+						OR = {
+							has_power_balance = {
+								id = Economic_recovery_progress_balance
+							}
+						}
+					}
+				}
 			}
 			completion_reward = {
 				custom_effect_tooltip = DSC_Save_economy_tt
-	
+				set_power_balance = {
+					id = Economic_recovery_progress_balance
+				}
+				hidden_effect = {
+				if = {
+					limit = { 
+						has_idea = CHI_capital_withdrawal4 
+						}
+					swap_ideas = {
+						remove_idea = CHI_capital_withdrawal4
+						add_idea = CHI_economic_recovery1
+						}
+					}
+
+				else_if = {
+					limit = { 
+						OR = {
+							has_idea = CHI_capital_withdrawal3
+							has_idea = CHI_capital_withdrawal2
+							}
+						}
+							remove_ideas = CHI_capital_withdrawal2
+							remove_ideas = CHI_capital_withdrawal3
+							add_ideas = CHI_economic_recovery2
+						}
+
+				else_if = {
+					limit = { 
+							has_idea = CHI_capital_withdrawal1
+						}
+							remove_ideas = CHI_capital_withdrawal1
+							add_ideas = CHI_economic_recovery3
+						}
+				}
 			}
 		}
 
@@ -1416,10 +1459,11 @@ completion_reward = {
 	
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+			add_ideas = CHI_Socialist_Market_Economy
 			load_focus_tree = communsim_PRC_focus
 			mark_focus_tree_layout_dirty = yes
-	
+			}
 		}
 	}
 

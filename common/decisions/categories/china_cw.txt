@@ -16,3 +16,22 @@ CHI_Civil_war_decisions = {
 		}
 	}
 }
+
+China_erp_category = {
+	allowed = { 
+		OR = { 
+			original_tag = CHI 
+			tag = DSC
+			tag = HkG
+	}
+}
+		icon = GFX_decision_CUB_train_chi
+
+	visible = {
+		OR = { 
+			original_tag = CHI 
+			tag = DSC
+			tag = HkG
+		}
+	}
+}

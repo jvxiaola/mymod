@@ -771,21 +771,19 @@ CHI_work_up = {
 
   CHI_ruin_industry_add = {
     #添加工厂损毁精神
-    limit = {
-          has_global_flag = Ccw
-       }
+
     set_temp_variable = { ruined_state_num = global.ruined_state^num }
     ROOT = {
       if = {
         limit = {
-         check_variable = { 4 > ruined_state_num > 2 }
+         check_variable = { 5 > ruined_state_num > 2 }
         }
         add_ideas = Industrial_damage1
       }
 
     else_if = {
       limit = {
-        check_variable = { 8 > ruined_state_num > 5 }
+        check_variable = { 8 > ruined_state_num > 4 }
       }
       swap_ideas = {
         remove_idea = Industrial_damage1
@@ -795,7 +793,7 @@ CHI_work_up = {
 
     else_if = {
       limit = {
-        check_variable = { 12 > ruined_state_num > 9 }
+        check_variable = { 12 > ruined_state_num > 6 }
       }
         remove_ideas = Industrial_damage1
         remove_ideas = Industrial_damage2
@@ -804,7 +802,7 @@ CHI_work_up = {
 
     else_if = {
       limit = {
-        check_variable = { ruined_state_num > 13 }
+        check_variable = { ruined_state_num > 11 }
       }
       remove_ideas = Industrial_damage1
       remove_ideas = Industrial_damage2
@@ -816,21 +814,19 @@ CHI_work_up = {
 
 CHI_ruin_agriculture_add = {
   #添加农业损毁精神
-  limit = {
-        has_global_flag = Ccw
-     }
+  
   set_temp_variable = { ruined_agriculture_state_num = global.ruined_agriculture_state^num }
   ROOT = {
     if = {
       limit = {
-       check_variable = { 5 > ruined_agriculture_state_num > 3 }
+       check_variable = { 5 > ruined_agriculture_state_num > 2 }
       }
       add_ideas = Poor_agriculture1
     }
 
   else_if = {
     limit = {
-      check_variable = { 8 > ruined_agriculture_state_num > 6 }
+      check_variable = { 8 > ruined_agriculture_state_num > 4 }
     }
     swap_ideas = {
       remove_idea = Poor_agriculture1
@@ -840,7 +836,7 @@ CHI_ruin_agriculture_add = {
 
   else_if = {
     limit = {
-      check_variable = { 11 > ruined_agriculture_state_num > 9 }
+      check_variable = { 11 > ruined_agriculture_state_num > 7 }
     }
       remove_ideas = Poor_agriculture1
       remove_ideas = Poor_agriculture2
@@ -849,7 +845,7 @@ CHI_ruin_agriculture_add = {
 
   else_if = {
     limit = {
-      check_variable = { ruined_agriculture_state_num > 12 }
+      check_variable = { ruined_agriculture_state_num > 10 }
     }
     remove_ideas = Poor_agriculture1
     remove_ideas = Poor_agriculture2

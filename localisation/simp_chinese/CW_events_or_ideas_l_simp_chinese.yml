@@ -69,6 +69,8 @@ CHI_CHI_NEW_people_war1_desc: "由于众所周知的原因，我们的作战理�
 DSC_foward_whole_country_tt: "§R我们已经准备好了！向全国进军！前进！前进！前进！§!"
 DSC_rubble: "§R一片废墟§!"
 DSC_Save_economy: "§G拯救经济§!"
+
+DSC_Save_economy_tt: "§T我们将执行恢复经济的计划，根据内战中的经济受损程度转化为对应的恢复阶段。§!"
 DSC_material_control: "§Y物资管控§!"
 DSC_Imported_essential_goods: "§Y进口生活必需品§!"
 DSC_Crack_speculation: "§Y打击投机行为§!"
@@ -86,3 +88,10 @@ DSC_economic_stability: "§G经济稳定§!"
 DSC_Factory_lighting: "§G工厂通明§!"
 DSC_wheat_waves: "§G麦浪金涛§!"
 DSC_New_peak: "§C新高峰§!"
+
+#blance
+Economic_recovery_progress_balance: "经济阶段化恢复进度"
+erp_acting_side: "经济恢复中"
+erp_acting_side_1: "经济恢复中"
+erp_staged_finsh_side: "下一阶段"
+erp_staged_finsh_side_1: "该阶段经济恢复完成"

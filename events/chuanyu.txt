@@ -181,8 +181,8 @@ trigger = {
 	tag = DSC
 }
 	OR = {
-	536 = { is_fully_controlled_by = DSC }
-	536 = { is_fully_controlled_by = HKG }
+	536 = { is_controlled_by = DSC }
+	536 = { is_controlled_by = HKG }
 	}
 }
 mean_time_to_happen = {
@@ -225,6 +225,17 @@ else_if = {
 				}
 			}
 		}	
-
+else_if = {
+	every_country = {
+	limit = { 
+		 original_tag = CHI 
+		 has_idea = CHI_capital_withdrawal4
+		 
+		}
+	ROOT = {
+		add_ideas = CHI_capital_withdrawal4
+				}
+			}
+		}	
 	}
 }

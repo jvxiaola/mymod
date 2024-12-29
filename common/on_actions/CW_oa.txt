@@ -1,10 +1,32 @@
 
 on_actions = {
-	on_weekly_XIN = {
+	on_weekly_DSC = {
 		effect = {
 			if = {
 				limit = { has_global_flag = Ccw }
-				DSC = {
+				every_controlled_state = { 
+						limit = {
+							NOT = { has_dynamic_modifier = { modifier = CW_ruins } }
+							NOT = { is_owned_by = ROOT }
+							is_core_of = CHI
+						}
+				add_dynamic_modifier = { modifier = CW_ruins }	
+					}
+				every_owned_state = {
+					limit = {
+						NOT = { has_dynamic_modifier = { modifier = CW_ruins } }
+						NOT = { is_controlled_by = ROOT }
+						is_core_of = CHI
+					}
+				add_dynamic_modifier = { modifier = CW_ruins }	
+					}
+				}
+			}
+		}
+	on_weekly_HKG = {
+		effect = {
+			if = {
+				limit = { has_global_flag = Ccw }
 				every_controlled_state = { 
 						limit = {
 							NOT = { has_dynamic_modifier = { modifier = CW_ruins } }
@@ -13,40 +35,45 @@ on_actions = {
 						}
 					add_dynamic_modifier = { modifier = CW_ruins }	
 					}
+				every_owned_state = {
+					limit = {
+						NOT = { has_dynamic_modifier = { modifier = CW_ruins } }
+						NOT = { is_controlled_by = ROOT }
+						is_core_of = CHI
+					}
+				add_dynamic_modifier = { modifier = CW_ruins }	
+					}
 				}
-
-				HKG = {
-					every_controlled_state = { 
-							limit = {
-								NOT = { has_dynamic_modifier = { modifier = CW_ruins } }
-								NOT = { is_owned_by = ROOT }
-								is_core_of = CHI
+			}
+		}
+	on_weekly_CHI = {
+		effect = {
+			if = {
+				limit = { has_global_flag = Ccw }
+				every_controlled_state = {
+						limit = {
+							NOT = { has_dynamic_modifier = { modifier = CW_ruins } }
+							NOT = { is_owned_by = ROOT }
+							is_core_of = CHI
 							}
-						add_dynamic_modifier = { modifier = CW_ruins }	
-						}
-					}
-
-				every_country = {
-					limit = { original_tag = CHI }
-					every_controlled_state = { 
-						limit = {
-							NOT = { has_dynamic_modifier = { modifier = CW_ruins } }
-							NOT = { is_owned_by = ROOT }
-							is_core_of = CHI
-						}
 					add_dynamic_modifier = { modifier = CW_ruins }	
 					}
+				every_owned_state = {
+					limit = {
+						NOT = { has_dynamic_modifier = { modifier = CW_ruins } }
+						NOT = { is_controlled_by = ROOT }
+						is_core_of = CHI
+					}
+				add_dynamic_modifier = { modifier = CW_ruins }	
+					}
 				}
 			}
 		}
-	}
 
-
-
-	on_weekly_XIN = {
+#添加工业损伤修正
+	on_weekly_DSC = {
 		effect = {
 
-			DSC = {
 				limit = { has_global_flag = Ccw }
 				every_controlled_state = { 
 					limit = {
@@ -59,9 +86,10 @@ on_actions = {
 						CHI_ruin_industry_add = yes
 					}
 				clear_array = global.ruined_state
-				}
-
-			HKG = {
+		}
+	}
+	on_weekly_HKG = {
+		effect = {
 				limit = { has_global_flag = Ccw }
 				every_controlled_state = { 
 					limit = {
@@ -75,29 +103,29 @@ on_actions = {
 					}
 				clear_array = global.ruined_state
 			}
-
-			every_country = {
-				limit = { original_tag = CHI }
-				every_controlled_state = { 
-					limit = {
-						is_core_of = CHI
-						has_dynamic_modifier = { modifier = CW_ruins } 
-							} 
-						add_to_array = {
-							array = global.ruined_state
-						}
-						CHI_ruin_industry_add = yes
+		}
+	on_weekly_CHI = {
+		effect = {
+		every_country = {
+			limit = { original_tag = CHI }
+			every_controlled_state = { 
+				limit = {
+					is_core_of = CHI
+					has_dynamic_modifier = { modifier = CW_ruins } 
+						} 
+					add_to_array = {
+						array = global.ruined_state
 					}
-				clear_array = global.ruined_state
+					CHI_ruin_industry_add = yes
+				}
+			clear_array = global.ruined_state
 			}
-
 		}
 	}
-
-	on_weekly_XIN = {
+	
+#添加农业损伤修正
+	on_weekly_DSC = {
 		effect = {
-
-			DSC = {
 				limit = { has_global_flag = Ccw }
 				every_controlled_state = { 
 					limit = {
@@ -110,13 +138,14 @@ on_actions = {
 						CHI_ruin_agriculture_add = yes
 					}
 				clear_array = global.ruined_agriculture_state
-				}
-
-			HKG = {
+			}
+		}
+	on_weekly_HKG = {
+		effect = {
 				limit = { has_global_flag = Ccw }
 				every_controlled_state = { 
 					limit = {
-						is_core_of = CHI
+						is_agriculture_state = yes
 						has_dynamic_modifier = { modifier = CW_ruins } 
 							} 
 						add_to_array = {
@@ -126,12 +155,14 @@ on_actions = {
 					}
 				clear_array = global.ruined_agriculture_state
 			}
-
+		}
+	on_weekly_CHI = {
+		effect = {
 			every_country = {
 				limit = { original_tag = CHI }
 				every_controlled_state = { 
 					limit = {
-						is_core_of = CHI
+						is_agriculture_state = yes
 						has_dynamic_modifier = { modifier = CW_ruins } 
 							} 
 						add_to_array = {

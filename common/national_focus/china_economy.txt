@@ -12,6 +12,7 @@
 				tag = DSC
 				has_country_flag = laozuo
 			}
+			has_completed_focus = CHI_paving_the_way_for_successors
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -37,13 +38,6 @@
 		cost = 5
 
 		prerequisite = { focus = CHI_The_Untapped_Market }
-		allow_branch = {
-			NOT = {
-				has_country_flag = xggm
-				tag = DSC
-				has_country_flag = laozuo
-			}
-		}
 		search_filters = { FOCUS_FILTER_EXPENDITURE }
 
 		offset = {
@@ -96,7 +90,6 @@
 				NOT={
 					OR={
 						has_country_flag=xggm
-						has_country_flag=qyxd
 						has_country_flag = laozuo
 					}
 				}
@@ -149,7 +142,6 @@
 				NOT={
 					OR={
 						has_country_flag=xggm
-						has_country_flag=qyxd
 						has_country_flag = laozuo
 					}
 				}
@@ -194,7 +186,6 @@
 				NOT={
 					OR={
 						has_country_flag=xggm
-						has_country_flag=qyxd
 						has_country_flag = laozuo
 					}
 				}
@@ -228,7 +219,6 @@
 				NOT={
 					OR={
 						has_country_flag=xggm
-						has_country_flag=qyxd
 						has_country_flag = laozuo
 					}
 				}
@@ -279,7 +269,6 @@
 				NOT={
 					OR={
 						has_country_flag=xggm
-						has_country_flag=qyxd
 						has_country_flag = laozuo
 					}
 				}
@@ -328,7 +317,6 @@
 				NOT={
 					OR={
 						has_country_flag=xggm
-						has_country_flag=qyxd
 						has_country_flag = laozuo
 					}
 				}
@@ -373,7 +361,6 @@
 				NOT={
 					OR={
 						has_country_flag=xggm
-						has_country_flag=qyxd
 						has_country_flag = laozuo
 					}
 				}
@@ -439,7 +426,6 @@
 				NOT={
 					OR={
 						has_country_flag=xggm
-						has_country_flag=qyxd
 						has_country_flag = laozuo
 					}
 				}
@@ -486,7 +472,6 @@
 				NOT={
 					OR={
 						has_country_flag=xggm
-						has_country_flag=qyxd
 						has_country_flag = laozuo
 					}
 				}
@@ -527,7 +512,6 @@
 				NOT={
 					OR={
 						has_country_flag=xggm
-						has_country_flag=qyxd
 						has_country_flag = laozuo
 					}
 				}
@@ -561,7 +545,6 @@
 				NOT={
 					OR={
 						has_country_flag=xggm
-						has_country_flag=qyxd
 						has_country_flag = laozuo
 					}
 				}
@@ -615,7 +598,6 @@
 				NOT={
 					OR={
 						has_country_flag=xggm
-						has_country_flag=qyxd
 						has_country_flag = laozuo
 					}
 				}
@@ -669,7 +651,6 @@
 				NOT={
 					OR={
 						has_country_flag=xggm
-						has_country_flag=qyxd
 						has_country_flag = laozuo
 					}
 				}
@@ -723,7 +704,7 @@
 				NOT={
 					OR={
 						has_country_flag=xggm
-						has_country_flag=qyxd
+
 						has_country_flag = laozuo
 					}
 				}
@@ -780,7 +761,6 @@
 				NOT={
 					OR={
 						has_country_flag=xggm
-						has_country_flag=qyxd
 						has_country_flag = laozuo
 					}
 				}
@@ -813,7 +793,6 @@
 				NOT={
 					OR={
 						has_country_flag=xggm
-						has_country_flag=qyxd
 						has_country_flag = laozuo
 					}
 				}
