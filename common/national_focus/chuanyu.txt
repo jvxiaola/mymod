@@ -574,7 +574,7 @@ add_political_power = 100
 
 		}
 		completion_reward = {
-			custom_effect_tooltip = "§R我们已经准备好了！向全国进军！前进！前进！前进！§!"
+			custom_effect_tooltip = DSC_forward_tt
 			hidden_effect = {
 			every_state = {		
 				
@@ -855,7 +855,7 @@ add_political_power = 100
 	
 			}
 			completion_reward = {
-				custom_effect_tooltip = "§G我们将开始着手重建经济、工业、农业体系§!"
+				custom_effect_tooltip = DSC_rubble_tt 
 	
 			}
 		}
@@ -885,7 +885,7 @@ add_political_power = 100
 			available_if_capitulated = no
 			available = {
 				custom_trigger_tooltip = {
-					tooltip = "§Y没有在执行其它重建计划§"
+					tooltip = DSC_Save_economy_trigger_tt 
 					NOT = {
 						OR = {
 							has_power_balance = {
@@ -896,7 +896,7 @@ add_political_power = 100
 				}
 			}
 			completion_reward = {
-				custom_effect_tooltip = "§T我们将执行恢复经济的计划，根据内战中的经济受损程度转化为对应的恢复阶段。§!"
+				custom_effect_tooltip = DSC_Save_economy_effect_tt
 				set_power_balance = {
 					id = Economic_recovery_progress_balance
 				}

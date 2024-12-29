@@ -8,7 +8,7 @@ China_erp_category = {
 		cost = 20
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = "§R未有物资援助待送达被摧毁地区§!"
+				tooltip = Collecting_materials_trigger_tt
 				NOT = { has_country_flag = a_supply_aid_is_ready }
 			}
 		}
@@ -17,7 +17,7 @@ China_erp_category = {
 		}
 		days_remove = 20
 		remove_effect = {
-			custom_effect_tooltip = "§T将在富余地区组织一次征收物资援助行动§!"
+			custom_effect_tooltip = Collecting_materials_effect_tt
 			set_country_flag = a_supply_aid_is_ready
 		}
 		ai_will_do = {
@@ -35,7 +35,7 @@ China_erp_category = {
 
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = "§T已有补给援助待送达被摧毁地区§!"
+				tooltip = Distribute_supply_assistance_trigger_tt
 				 has_country_flag = a_supply_aid_is_ready
 			}
 		}

@@ -1,4 +1,14 @@
 ﻿l_simp_chinese:
+
+#tooltip:
+DSC_forward_tt: "§R我们已经准备好了！向全国进军！前进！前进！前进！§!"
+DSC_rubble_tt: "§G我们将开始着手重建经济、工业、农业体系§!"
+DSC_Save_economy_trigger_tt: "§Y没有在执行其它重建计划§"
+DSC_Save_economy_effect_tt: "§T我们将执行恢复经济的计划，根据内战中的经济受损程度转化为对应的恢复阶段。§!"
+Collecting_materials_trigger_tt: "§R未有物资援助待送达被摧毁地区§!"
+Collecting_materials_effect_tt: "§T将在富余地区组织一次征收物资援助行动§!"
+Distribute_supply_assistance_trigger_tt: "§T已有补给援助待送达被摧毁地区§!"
+
 #精神
  CHI_Strict_military_control: "严格军管"
  CHI_Strict_military_control_desc: "在局势愈演愈烈时，军政府决定实现更加严格的军事管理，以期加强对地方的掌控力。\n尽管该政治实体对地方的掌控力稍有加强，但同时也消耗了大量兵力。"

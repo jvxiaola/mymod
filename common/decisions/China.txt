@@ -2972,7 +2972,7 @@ CHI_Civil_war_decisions = {
 			available = {
 				is_ai = no
 				OR = { 
-					has_completed_focus = DSC_dongyuanrenmin
+					has_completed_focus = DSC_ANFURENMIN
 					has_completed_focus = HKG_ANFURENMIN
 				}
 			}
@@ -2982,7 +2982,7 @@ CHI_Civil_war_decisions = {
 			fire_only_once = yes
 			visible = {
 				OR = { 
-					has_completed_focus = DSC_dongyuanrenmin
+					has_completed_focus = DSC_ANFURENMIN
 					has_completed_focus = HKG_ANFURENMIN
 				}
 			}
@@ -3007,7 +3007,7 @@ CHI_Civil_war_decisions = {
 			fire_only_once = yes
 			visible = {
 				OR = { 
-					has_completed_focus = DSC_dongyuanrenmin
+					has_completed_focus = DSC_people_amry
 					has_completed_focus = HKG_people_amry
 				}
 			}
