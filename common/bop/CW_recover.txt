@@ -31,6 +31,13 @@ Economic_recovery_progress_balance = {
 				}
 
 				if = { 
+					limit = { has_idea = CHI_capital_withdrawal4 }
+					swap_ideas = {
+						remove_idea = CHI_capital_withdrawal4
+						add_idea = CHI_economic_recovery1
+						}
+					}
+				else_if = { 
 					limit = { has_idea = CHI_economic_recovery1 }
 					swap_ideas = {
 						remove_idea = CHI_economic_recovery1

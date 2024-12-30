@@ -27,12 +27,10 @@ China_erp_category = {
 
 	Distribute_supply_assistance = {
 		icon = GFX_decision_generic_construction
-
 		visible = {
 			has_completed_focus = DSC_material_control
 			NOT = { has_completed_focus = DSC_economic_stability }
 		}
-
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = Distribute_supply_assistance_trigger_tt
@@ -66,7 +64,6 @@ China_erp_category = {
 		complete_effect = {
 			set_temp_variable = { treasury_change = -1 }
 			modify_treasury_effect = yes
-			log = "[GetDateText]: [This.GetName]: decision construction_jinshajiang_dam executed"
 		}
 		days_remove = 30
 		remove_effect = {
@@ -106,4 +103,75 @@ China_erp_category = {
 			factor = 1
 		}
 	}
+
+	Confiscate_stolen_funds = {
+		icon = GFX_decision_generic_construction
+		visible = {
+			has_completed_focus = DSC_Confiscate_stolen_funds
+			NOT = { has_completed_focus = DSC_economic_stability }
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = Confiscate_stolen_funds_tt
+				check_variable = { Confiscate_stolen_funds_times < 5 }
+			}
+		}
+		cost = 10
+		complete_effect = {
+			set_temp_variable = { treasury_change = 300 }
+			modify_treasury_effect = yes
+		
+		}
+		days_remove = 15
+		remove_effect = {
+			add_power_balance_value = {
+				id = Economic_recovery_progress_balance
+				value = 0.15
+			}
+			hidden_effect = {
+				if = {
+					limit = { NOT = { has_variable = Confiscate_stolen_funds_times } }
+					set_variable = {
+						var = Confiscate_stolen_funds_times
+						value = 1
+					}
+				}
+				else = {
+					add_to_variable = {
+						var = Confiscate_stolen_funds_times
+						value = 1
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Organize_large_scale_aid = {
+		icon = GFX_decision_generic_construction
+		visible = {
+			has_completed_focus = DSC_Confiscate_stolen_funds
+			NOT = { has_completed_focus = DSC_economic_stability }
+		}
+		cost = 100
+		complete_effect = {
+			set_temp_variable = { treasury_change = -50 }
+			modify_treasury_effect = yes
+		
+		}
+		days_remove = 60
+		remove_effect = {
+			add_stability = 0.025
+			add_power_balance_value = {
+				id = Economic_recovery_progress_balance
+				value = 0.75
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 }

@@ -123,6 +123,7 @@ country_event = {
 						
 				hidden_effect = {
 					remove_ideas = CHI_GGKF
+					remove_ideas = CHI_Socialist_Market_Economy
 					remove_dynamic_modifier = {
 						modifier = DSC_people_support_dynamic_right
 					}

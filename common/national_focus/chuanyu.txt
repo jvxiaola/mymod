@@ -789,7 +789,6 @@ add_political_power = 100
 			}
 			completion_reward = {
 				hidden_effect = {
-					remove_ideas = CHI_Socialist_Market_Economy
 						clr_global_flag = Ccw
 						clr_country_flag = qyxd
 					every_state = {		
@@ -813,11 +812,38 @@ add_political_power = 100
 						
 					set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.30 }
 					change_DSC_Socialist_Construction_dynamic1 = yes
-				}
+					clear_array = global.ruined_state
+					set_cosmetic_tag = DSC_GMG
+				#添加工业体系损伤精神
+					limit = { has_global_flag = Ccw }
+				every_controlled_state = { 
+					limit = {
+						is_core_of = CHI
+						has_dynamic_modifier = { modifier = CW_ruins }
+							} 
+						add_to_array = {
+							array = global.ruined_state
+						}
+						CHI_ruin_industry_add = yes
+					}
 				clear_array = global.ruined_state
+				#添加农业损伤精神
+				limit = { has_global_flag = Ccw }
+				every_controlled_state = { 
+					limit = {
+						is_agriculture_state = yes
+						has_dynamic_modifier = { modifier = CW_ruins } 
+							} 
+						add_to_array = {
+							array = global.ruined_agriculture_state
+						}
+						CHI_ruin_agriculture_add = yes
+					}
+				clear_array = global.ruined_agriculture_state
+				}
+				
 	
 				set_capital = {state=547}
-				set_cosmetic_tag = DSC_GMG
 
 				set_country_flag = rehabilitate_economy
 				mark_focus_tree_layout_dirty = yes
@@ -901,18 +927,12 @@ add_political_power = 100
 					id = Economic_recovery_progress_balance
 				}
 				hidden_effect = {
-				if = {
-					limit = { 
-						has_idea = CHI_capital_withdrawal4 
-						}
-					swap_ideas = {
-						remove_idea = CHI_capital_withdrawal4
-						add_idea = CHI_economic_recovery1
-						}
+					add_power_balance_value = {
+						id = Economic_recovery_progress_balance
+						value = -1
 					}
-
-				else_if = {
-					limit = { 
+				if = {
+					limit = {
 						OR = {
 							has_idea = CHI_capital_withdrawal3
 							has_idea = CHI_capital_withdrawal2
@@ -920,16 +940,9 @@ add_political_power = 100
 						}
 							remove_ideas = CHI_capital_withdrawal2
 							remove_ideas = CHI_capital_withdrawal3
-							add_ideas = CHI_economic_recovery2
+							add_ideas = CHI_economic_recovery1
 						}
 
-				else_if = {
-					limit = { 
-							has_idea = CHI_capital_withdrawal1
-						}
-							remove_ideas = CHI_capital_withdrawal1
-							add_ideas = CHI_economic_recovery3
-						}
 				}
 			}
 		}
@@ -1070,6 +1083,7 @@ completion_reward = {
 			remove_idea = CHI_economic_recovery3
 			add_idea = CHI_economic_recovery_end
 			}
+			clear_variable = Confiscate_stolen_funds_times 
 		}
 	}
 }
@@ -1098,10 +1112,12 @@ cancel_if_invalid = yes
 continue_if_invalid = no
 available_if_capitulated = no
 available = {
-
+	
 }
 completion_reward = {
-	custom_effect_tooltip = DSC_Save_economy_tt
+	unlock_decision_tooltip = Confiscate_stolen_funds
+	unlock_decision_tooltip = Organize_large_scale_aid
+	add_ideas = DSC_Confiscate_stolen_funds
 
 	}
 }
