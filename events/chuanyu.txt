@@ -196,20 +196,16 @@ name = Chuanyu.7.a
 if = {
 	any_country = {
 	limit = { 
-		 original_tag = CHI 
-		 has_cosmetic_tag = CHI_REB_S
-		 has_idea = CHI_capital_withdrawal2
+		 has_idea = CHI_capital_withdrawal4
 		}
 	}
 	ROOT = {
-		add_ideas = CHI_capital_withdrawal2
+		add_ideas = CHI_capital_withdrawal4
 				}
 		}												
 else_if = {
 	any_country = {
 	limit = { 
-		 original_tag = CHI 
-		 has_cosmetic_tag = CHI_REB_S
 		 has_idea = CHI_capital_withdrawal3
 		}
 	}
@@ -220,13 +216,11 @@ else_if = {
 else_if = {
 	any_country = {
 	limit = { 
-		 original_tag = CHI 
-		 has_cosmetic_tag = CHI_REB_S
-		 has_idea = CHI_capital_withdrawal4
+		 has_idea = CHI_capital_withdrawal2
 		}
 	}
 	ROOT = {
-		add_ideas = CHI_capital_withdrawal4
+		add_ideas = CHI_capital_withdrawal2
 				}
 		}	
 else = {
