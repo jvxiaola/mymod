@@ -1534,7 +1534,7 @@ ideas = {
 			}
 		modifier = {
 			consumer_goods_factor = 0.20
-			production_speed_buildings_factor = -0.05
+			production_speed_buildings_factor = -0.10
 			productivity_growth_modifier = -0.05
 			corporate_tax_income_multiplier_modifier = -0.20
 		}
@@ -1550,8 +1550,6 @@ ideas = {
 			}
 		modifier = {
 			consumer_goods_factor = 0.25
-			production_speed_buildings_factor = 0.10
-			productivity_growth_modifier = 0.05
 			corporate_tax_income_multiplier_modifier = -0.05
 			interest_rate_multiplier_modifier = -0.02
 		}
@@ -1566,9 +1564,9 @@ ideas = {
 			always = yes
 			}
 		modifier = {
-			consumer_goods_factor = 0.10
-			production_speed_buildings_factor = 0.15
-			productivity_growth_modifier = 0.10
+			consumer_goods_factor = 0.05
+			production_speed_buildings_factor = 0.05
+			productivity_growth_modifier = 0.05
 			energy_gain_multiplier = 0.05
 			interest_rate_multiplier_modifier = -0.05
 		}
@@ -1650,6 +1648,73 @@ ideas = {
 				corporate_tax_income_multiplier_modifier = -0.45
 			}
 	}
+
+#工业重建
+Industrial_rebuild1 = {
+	picture = blr_good_agroindustry #icon要加“GFX_idea”前缀,picture不能加。
+	cancel = {
+		always = no
+	}
+	allowed_civil_war = {
+		always = yes
+		}
+		modifier = {
+			production_speed_buildings_factor = -0.40
+			productivity_growth_modifier = -0.15
+			energy_gain_multiplier = -0.10
+			global_building_slots_factor = -0.15
+			local_resources_factor = -0.35
+			industrial_capacity_factory = -0.35
+			corporate_tax_income_multiplier_modifier = -0.25
+		}
+}
+
+Industrial_rebuild2 = {
+	picture = blr_good_agroindustry #icon要加“GFX_idea”前缀,picture不能加。
+	cancel = {
+		always = no
+	}
+	allowed_civil_war = {
+		always = yes
+		}
+		modifier = {
+			production_speed_buildings_factor = -0.15
+			local_resources_factor = -0.15
+			industrial_capacity_factory = -0.10
+			corporate_tax_income_multiplier_modifier = -0.05
+		}
+}
+
+Industrial_rebuild3 = {
+	picture = blr_good_agroindustry #icon要加“GFX_idea”前缀,picture不能加。
+	cancel = {
+		always = no
+	}
+	allowed_civil_war = {
+		always = yes
+		}
+		modifier = {
+			local_resources_factor = -0.05
+			corporate_tax_income_multiplier_modifier = 0.05
+		}
+}
+
+Industrial_rebuild_end = {
+	picture = GENERIC_public_works #icon要加“GFX_idea”前缀,picture不能加。
+	cancel = {
+		always = no
+	}
+	allowed_civil_war = {
+		always = yes
+		}
+		modifier = {
+			production_speed_buildings_factor = 0.10
+			local_resources_factor = 0.05
+			industrial_capacity_factory = 0.10
+			corporate_tax_income_multiplier_modifier = 0.05
+		}
+}
+
 
 	CHI_Strict_military_control = {
 		picture = un_intervention
@@ -1762,6 +1827,63 @@ ideas = {
 			supply_node_range = -0.30
 			}
 		}
+
+#农业重整
+Agricultural_restructuring1 = {
+		
+	allowed = { 
+		OR = { tag = DSC tag = HKG tag = CHI } 
+	}
+	picture = CUB_revived_agro
+	modifier = {
+		army_org_factor = -0.05
+		army_speed_factor = -0.10
+		agriculture_district_worker_requirement_modifier = -0.10
+		production_speed_agriculture_district_factor = -0.75
+		supply_node_range = -0.10
+		}
+	}
+
+	Agricultural_restructuring2 = {
+		
+		allowed = { 
+			OR = { tag = DSC tag = HKG tag = CHI } 
+		}
+		picture = CUB_revived_agro
+		modifier = {
+			agriculture_district_worker_requirement_modifier = 0.05
+			production_speed_agriculture_district_factor = -0.30
+			}
+		}
+
+	Agricultural_restructuring3 = {
+		
+		allowed = { 
+			OR = { tag = DSC tag = HKG tag = CHI } 
+		}
+		picture = CUB_revived_agro
+		modifier = {
+			army_speed_factor = 0.02
+			agriculture_district_worker_requirement_modifier = 0.05
+			production_speed_agriculture_district_factor = -0.10
+			supply_node_range = 0.05
+			}
+		}
+
+	Agricultural_restructuring_end = {
+		
+		allowed = { 
+			OR = { tag = DSC tag = HKG tag = CHI } 
+		}
+		picture = agrarian_economy_idea
+		modifier = {
+			army_speed_factor = 0.05
+			agriculture_district_worker_requirement_modifier = 0.10
+			production_speed_agriculture_district_factor = 0.10
+			supply_node_range = 0.10
+			supply_factor = 0.05
+			}
+		}	
 	}
 
 	hidden_ideas = {
