@@ -1766,18 +1766,55 @@ ideas = {
 
 	hidden_ideas = {
 		#经济恢复
-		CHI_material_control = {
-			name = "物资管控"
+		DSC_material_control = {
+			
 			cancel = {
 				has_completed_focus = DSC_economic_stability
 			}
 			
 			modifier = {
+				political_power_gain = -0.03
+				power_balance_daily = 0.02
+			}
+		}
+
+		DSC_Imported_essential_goods = {
+			
+			cancel = {
+				has_completed_focus = DSC_economic_stability
+			}
+			
+			modifier = {
+				
+				power_balance_daily = 0.03
+			}
+		}
+
+		DSC_Crack_speculation = {
+			
+			cancel = {
+				has_completed_focus = DSC_economic_stability
+			}
+			
+			modifier = {
+				stability_weekly_factor = 0.001
+				political_power_gain = -0.05
+				power_balance_daily = 0.03
+			}
+		}
+
+		DSC_Confiscate_stolen_funds = {
+			
+			cancel = {
+				has_completed_focus = DSC_economic_stability
+			}
+			
+			modifier = {
+				tax_gain_multiplier_modifier = 0.10
 				political_power_gain = -0.05
 				power_balance_daily = 0.01
 			}
 		}
 
-		
 	}
 }

@@ -2946,7 +2946,7 @@ CHI_Civil_war_decisions = {
 
 		available = { 
 			custom_trigger_tooltip = {
-				tooltip =  "§O我们的经济已彻底崩溃或中国主要战场不存在割据势力。§!"
+				tooltip =  CHI_economic_deterioration_trigger_tt
 			NOT = {
 				OR = {
 					has_idea = CHI_capital_withdrawal2 
@@ -2958,7 +2958,7 @@ CHI_Civil_war_decisions = {
 		}
 
 		is_good = no
-		days_mission_timeout = 180
+		days_mission_timeout = 140
 
 		complete_effect = {	}
 

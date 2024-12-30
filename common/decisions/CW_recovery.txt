@@ -2,7 +2,7 @@ China_erp_category = {
 	Collecting_materials = {
 		icon = GFX_decision_generic_construction
 		visible = {
-			has_completed_focus = DSC_Save_economy
+			has_completed_focus = DSC_material_control
 			NOT = { has_completed_focus = DSC_economic_stability }
 		}
 		cost = 20
@@ -29,7 +29,7 @@ China_erp_category = {
 		icon = GFX_decision_generic_construction
 
 		visible = {
-			has_completed_focus = DSC_Save_economy
+			has_completed_focus = DSC_material_control
 			NOT = { has_completed_focus = DSC_economic_stability }
 		}
 
@@ -53,43 +53,57 @@ China_erp_category = {
 		}
 	}
 
-	ollecting_materials = {
+	Imported_essential_goods = {
 		icon = GFX_decision_generic_construction
-
 		visible = {
-			has_completed_focus = DSC_Save_economy
+			has_completed_focus = DSC_Imported_essential_goods
 			NOT = { has_completed_focus = DSC_economic_stability }
 		}
-
 		custom_cost_trigger = {
-			check_variable = { treasury > 6.1 }
+			check_variable = { treasury > 1.0 }
 		}
-
-		custom_cost_text = cost_6_0
-
+		custom_cost_text = cost_1_0
 		complete_effect = {
-			set_temp_variable = { treasury_change = -6 }
+			set_temp_variable = { treasury_change = -1 }
 			modify_treasury_effect = yes
 			log = "[GetDateText]: [This.GetName]: decision construction_jinshajiang_dam executed"
 		}
-
-		days_remove = 420
-
+		days_remove = 30
 		remove_effect = {
-			custom_effect_tooltip = CHI_jinshajiang_dam_TT
-			set_country_flag = jinshajiang_dam_built
-			585 = {
-				set_variable = { hydroelectric_energy_production_var = 7.5 }
-				set_variable = { hydroelectric_energy_storage_var = 0 }
-				add_dynamic_modifier = {
-					modifier = hydroelectric_infrastructure_in_state
-				}
+			add_power_balance_value = {
+				id = Economic_recovery_progress_balance
+				value = 0.45
 			}
 		}
-
 		ai_will_do = {
 			factor = 1
 		}
 	}
 
+	Crack_speculation = {
+		icon = GFX_decision_generic_construction
+
+		visible = {
+			has_completed_focus = DSC_Crack_speculation
+			NOT = { has_completed_focus = DSC_economic_stability }
+		}
+
+		available = {
+			
+		}
+		cost = 100
+		days_remove = 100
+		complete_effect = {
+			add_stability = -0.005
+		}
+		modifier = {
+			power_balance_daily = 0.02
+		}
+		remove_effect = {
+			add_stability = 0.010
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

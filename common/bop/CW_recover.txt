@@ -43,7 +43,12 @@ Economic_recovery_progress_balance = {
 						remove_idea = CHI_economic_recovery2
 						add_idea = CHI_economic_recovery3
 						}
+					remove_power_balance = {
+						id = Economic_recovery_progress_balance
+						}
+
 					}
+				
 			}
 		}
 	}

@@ -3,11 +3,13 @@
 #tooltip:
 DSC_forward_tt: "§R我们已经准备好了！向全国进军！前进！前进！前进！§!"
 DSC_rubble_tt: "§G我们将开始着手重建经济、工业、农业体系§!"
-DSC_Save_economy_trigger_tt: "§Y没有在执行其它重建计划§"
+DSC_recover_begin_trigger_tt: "§Y没有在执行其它重建计划§"
 DSC_Save_economy_effect_tt: "§T我们将执行恢复经济的计划，根据内战中的经济受损程度转化为对应的恢复阶段。§!"
 Collecting_materials_trigger_tt: "§R未有物资援助待送达被摧毁地区§!"
 Collecting_materials_effect_tt: "§T将在富余地区组织一次征收物资援助行动§!"
 Distribute_supply_assistance_trigger_tt: "§T已有补给援助待送达被摧毁地区§!"
+CHI_economic_deterioration_trigger_tt: "§O我们的经济已彻底崩溃或中国主要战场不存在割据势力。§!"
+DSC_economic_stability_trigger_tt: "§C经济重建已基本完成§!"
 
 #精神
  CHI_Strict_military_control: "严格军管"
@@ -78,7 +80,8 @@ Collecting_materials: "征收补给援助"
 Collecting_materials_desc: "目前我们已经进行了物资管制，通过征收物资援助，并将其发送给受灾严重地区，我们可以更快稳定当地的物价。"
 Distribute_supply_assistance: "征收补给援助"
 Distribute_supply_assistance_desc: "征收物资援助只是援助行动的第一步，接下来就是将其运输至受灾地区。"
-
+Imported_essential_goods: "进口急缺生活必需品"
+Imported_essential_goods_desc: "目前生活必需品的生产量还没能恢复至战前，为此我们将从外国进口生活必需品，以补足当前的短缺，进而稳定物价。"
 
 #focus
 DSC_rubble: "§R一片废墟§!"

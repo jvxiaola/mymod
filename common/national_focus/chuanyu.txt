@@ -885,7 +885,7 @@ add_political_power = 100
 			available_if_capitulated = no
 			available = {
 				custom_trigger_tooltip = {
-					tooltip = DSC_Save_economy_trigger_tt 
+					tooltip = DSC_recover_begin_trigger_tt 
 					NOT = {
 						OR = {
 							has_power_balance = {
@@ -963,7 +963,7 @@ add_political_power = 100
 		completion_reward = {
 			unlock_decision_tooltip = Collecting_materials
 			unlock_decision_tooltip = Distribute_supply_assistance
-			add_ideas = CHI_material_control
+			add_ideas = DSC_material_control
 		}
 	}
 
@@ -994,8 +994,8 @@ add_political_power = 100
 
 	}
 	completion_reward = {
-		custom_effect_tooltip = DSC_Save_economy_tt
-
+		unlock_decision_tooltip = Imported_essential_goods
+		add_ideas = DSC_Imported_essential_goods
 	}
 }
 
@@ -1026,8 +1026,8 @@ available = {
 
 }
 completion_reward = {
-	custom_effect_tooltip = DSC_Save_economy_tt
-
+	unlock_decision_tooltip = Crack_speculation
+	add_ideas = DSC_Crack_speculation
 	}
 }
 
@@ -1054,11 +1054,23 @@ cancel_if_invalid = yes
 continue_if_invalid = no
 available_if_capitulated = no
 available = {
-
-}
+	custom_trigger_tooltip = {
+		tooltip = DSC_economic_stability_trigger_tt 
+		NOT = {
+				has_power_balance = {
+					id = Economic_recovery_progress_balance
+				}
+			}
+		}
+	}
 completion_reward = {
-	custom_effect_tooltip = DSC_Save_economy_tt
-
+	custom_effect_tooltip = DSC_economic_stability_tt
+	hidden_effect = {
+		swap_ideas = {
+			remove_idea = CHI_economic_recovery3
+			add_idea = CHI_economic_recovery_end
+			}
+		}
 	}
 }
 
