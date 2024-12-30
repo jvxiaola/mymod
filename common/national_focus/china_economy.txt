@@ -838,9 +838,15 @@
 			trigger = {
 					OR = { 
 						has_country_flag = xggm
-						tag = DSC
 						has_country_flag = laozuo
 					}
+			}
+		}
+		offset = {
+			x = -68
+			y = -7
+			trigger = {
+			tag = DSC
 			}
 		}
 		available = {

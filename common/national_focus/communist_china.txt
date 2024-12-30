@@ -26,7 +26,8 @@ has_civil_war = yes
 		}
 allow_branch={
 	NOT={
-		has_cosmetic_tag=DSC_GMG
+		tag = DSC
+		has_country_flag = xggm
 	}	
 		
 	}
@@ -1036,10 +1037,8 @@ add_resource = { type = steel amount = 10 state = 586 }
 }		
 		}
 
-		focus = 
-		{
-		id=
-		PRC_gjjhwth
+		focus = {
+		id = PRC_gjjhwth
 		icon = communist_scientists
 		x = 0
 		y = 4
@@ -1077,7 +1076,8 @@ country_event = prc1.58
 		
 		}
 		}
-focus = { id= PRC_shzygg
+focus = { 
+	id= PRC_shzygg
 		icon = judiciary
 		x = 12
 		y = 0
@@ -1086,7 +1086,12 @@ focus = { id= PRC_shzygg
 		ai_will_do = {
 			factor = 5
 		}
-
+		offset = {
+			x = -18
+			trigger = {
+			tag = DSC
+			}
+		}
 		available = {
 		has_civil_war = no
 				custom_trigger_tooltip = {
@@ -2014,7 +2019,11 @@ cost = 5
 		y = 2
 		prerequisite = {focus = PRC_socgg }
 		relative_position_id = PRC_shzygg	
-cost = 5
+		cost = 5
+		allow_branch = {
+			NOT = { tag = DSC }
+			}
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -6605,7 +6614,13 @@ cost = 5
 		ai_will_do = {
 			factor = 5
 		}
-
+		offset = {
+			x = -60
+			y = 15
+			trigger = {
+			tag = DSC
+			}
+		}
 		available = {
 					is_in_faction = no
 
@@ -6629,7 +6644,15 @@ cost = 5
 		x = 0
 		y = 1
 		relative_position_id = PRC_jjdz
-
+		offset = {
+			x = -2
+			trigger = {
+				OR = {
+					tag = DSC
+					has_country_flag = laozuo
+					}
+			}
+		}
 prerequisite = { focus = PRC_jjdz }
 mutually_exclusive = { focus = PRC_1co_communist }
 cost = 5
@@ -6734,14 +6757,22 @@ add_stability = 0.10
 
 				}
 				}
-							focus = {
+
+focus = {
 		id = PRC_communist_inte4
 		icon = fourth_international
 		x = -2
 		y = 1
 relative_position_id = PRC_jjdz
 prerequisite = {  focus = PRC_jjdz }
-
+allow_branch = {
+	NOT = {
+		OR = {
+			tag = DSC
+			has_country_flag = laozuo
+			}
+	 }
+	}
 cost = 5
 		ai_will_do = {
 			factor = 5
@@ -6790,7 +6821,9 @@ add_5_emerging_communist = yes
 
 				}
 				}
-						focus = {
+						
+				
+focus = {
 		id = PRC_asian_rev
 		icon = asia
 		x = -6
@@ -10451,14 +10484,20 @@ add_core_of = ROOT
 		focus = {
 			id = PRC_Chairman_Mao_Yuanxin
 			icon = focus_Mao_Yuanxin
-			x = 36
+			x = 18
 			y = 0
 	cost = 5
 			ai_will_do = {
 				factor = 5
 			}
 			allow_branch = {
-	has_country_leader = {name = "Mao Yuanxin"  }
+				tag = DSC
+			NOT = {
+				OR = { 
+					has_completed_focus = PRC_Proletarian_leader
+					has_completed_focus = PRC_jitilingdao
+				}
+			}
 	}
 			available = {
 	has_country_leader = {name = "Mao Yuanxin"  }
@@ -10742,8 +10781,9 @@ add_core_of = ROOT
 	
 			completion_reward = {
 	add_country_leader_trait = Chinese_Helmsman
+	mark_focus_tree_layout_dirty = yes
 			}	
-			}
+		}
 
 
 
@@ -11043,13 +11083,21 @@ add_stability=0.05
 		focus = {
 			id = PRC_Lasting_Cultural_Revolution
 			icon = Continuous_Cultural_Revolution
-			x = 45
+			x = 30
 			y = 0
 			allow_branch={
-				has_country_flag=jixuwenge
+				has_country_flag = jixuwenge
 			}
 
-	
+			offset = {
+				x = -12
+				trigger = {
+					OR = { 
+						has_completed_focus = PRC_Proletarian_leader
+						has_completed_focus = PRC_jitilingdao
+					}
+				}
+			}
 			cost = 5
 	
 			ai_will_do = {
