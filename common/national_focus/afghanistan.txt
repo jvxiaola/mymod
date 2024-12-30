@@ -3428,7 +3428,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AFG_people_republic
-		icon = People's_Republic_of_Afghanistan
+		icon = Peoples_Republic_of_Afghanistan
 
 		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
 

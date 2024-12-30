@@ -6779,7 +6779,7 @@ has_idea = CHI_aftermath_of_the_civil_war_5
 		available_if_capitulated = no
 
 		completion_reward = {
-				create_faction = 第四国际
+				create_faction = "第四国际"
 		CHI = { country_event = { id = prc1.55 }}
 add_ideas = CHI_Exporting_the_Revolution
 every_other_country = {
@@ -6855,7 +6855,7 @@ custom_effect_tooltip = "解锁在中亚发起革命的行动"
 			
 focus = {
 		id = PRC_Afghanistan_Revolution
-		icon = People's_Republic_of_Afghanistan
+		icon = Peoples_Republic_of_Afghanistan
 		x = -9
 		y = 2
 relative_position_id = PRC_asian_rev
@@ -7761,7 +7761,7 @@ cost = 5		ai_will_do = {
 												      VIE = { exists = yes
 				custom_trigger_tooltip = {
 					is_in_array = { ruling_party = 5 }
-					tooltip = has_anarchist_communism_government_TT = yes
+					tooltip = has_anarchist_communism_government_TT 
 				}
 													  }
 			custom_trigger_tooltip = {
@@ -10546,6 +10546,7 @@ add_core_of = ROOT
 			}
 			}
 			}
+
 	focus = {
 			id = PRC_Revolutionizing_the_Army
 			icon = Party_government_military_integration
@@ -10583,6 +10584,7 @@ add_core_of = ROOT
 			}
 			}
 			}
+
 	focus = {
 			id = PRC_The_real_two_whatevers
 			icon = maoism
@@ -10623,6 +10625,7 @@ add_core_of = ROOT
 	add_country_leader_trait = Chairman_Mao_successor
 			}
 			}
+			
 	focus = {
 			id = PRC_Continue_the_Cultural_Revolution
 			icon = maoism2

@@ -300,7 +300,7 @@ name = "Emperor_of_China"
 texturefile = "gfx/interface/goals/Emperor_of_China.dds"			
 }
 SpriteType = {
-name = "People's_Republic_of_Afghanistan"
+name = "Peoples_Republic_of_Afghanistan"
 texturefile = "gfx/interface/goals/People's_Republic_of_Afghanistan.dds"			
 }
 SpriteType = {

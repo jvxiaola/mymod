@@ -121,21 +121,24 @@ country_event = {
 				option = {
 				name = chuanyu.6.a 
 						
-				remove_dynamic_modifier = {
-					modifier = DSC_people_support_dynamic_right
-				}
-					add_dynamic_modifier = {
-					modifier = DSC_people_support_dynamic_left
+				hidden_effect = {
+					remove_ideas = CHI_GGKF
+					remove_dynamic_modifier = {
+						modifier = DSC_people_support_dynamic_right
 					}
-						set_popularities = {
-						democratic = 0.0
-						communism = 100
-						fascism = 0.0
-						neutrality = 0.0
-						nationalist = 0.0
+
+					add_dynamic_modifier = {
+						modifier = DSC_people_support_dynamic_left
 						}
-										
-								
+							set_popularities = {
+							democratic = 0.0
+							communism = 100
+							fascism = 0.0
+							neutrality = 0.0
+							nationalist = 0.0
+							}
+				}
+					
 						set_politics = {
 						ruling_party = communism
 						last_election = "1996.12.11"
@@ -166,7 +169,6 @@ country_event = {
 						mark_focus_tree_layout_dirty = yes
 						set_country_flag = qyxd
 																		
-						
 								}
 							}
 
@@ -195,6 +197,7 @@ if = {
 	any_country = {
 	limit = { 
 		 original_tag = CHI 
+		 has_cosmetic_tag = CHI_REB_S
 		 has_idea = CHI_capital_withdrawal2
 		}
 	}
@@ -206,6 +209,7 @@ else_if = {
 	any_country = {
 	limit = { 
 		 original_tag = CHI 
+		 has_cosmetic_tag = CHI_REB_S
 		 has_idea = CHI_capital_withdrawal3
 		}
 	}
@@ -213,11 +217,11 @@ else_if = {
 		add_ideas = CHI_capital_withdrawal3
 				}
 		}	
-		
 else_if = {
 	any_country = {
 	limit = { 
 		 original_tag = CHI 
+		 has_cosmetic_tag = CHI_REB_S
 		 has_idea = CHI_capital_withdrawal4
 		}
 	}
@@ -225,17 +229,11 @@ else_if = {
 		add_ideas = CHI_capital_withdrawal4
 				}
 		}	
-else_if = {
-	any_country = {
-	limit = { 
-		 original_tag = CHI 
-		 has_idea = CHI_capital_withdrawal4
-		 
-		}
-	}
+else = {
 	ROOT = {
 		add_ideas = CHI_capital_withdrawal4
 				}
 			}	
+
 	}
 }

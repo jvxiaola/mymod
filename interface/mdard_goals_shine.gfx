@@ -2273,7 +2273,7 @@ spriteTypes = {
 			legacy_lazy_load = no
 		}
 			SpriteType = {
-			name = "People's_Republic_of_Afghanistan_shine"
+			name = "Peoples_Republic_of_Afghanistan_shine"
 			texturefile = "gfx/interface/goals/People's_Republic_of_Afghanistan.dds"
 			effectFile = "gfx/FX/buttonstate.lua"
 			animation = {
