@@ -1,6 +1,6 @@
 China_erp_category = {
 	Collecting_materials = {
-		icon = GFX_decision_generic_construction
+		icon = GFX_decision_minotor_button
 		visible = {
 			has_completed_focus = DSC_material_control
 			NOT = { has_completed_focus = DSC_economic_stability }
@@ -26,7 +26,7 @@ China_erp_category = {
 	}
 
 	Distribute_supply_assistance = {
-		icon = GFX_decision_generic_construction
+		icon = GFX_decision_hol_drain_water_lines
 		visible = {
 			has_completed_focus = DSC_material_control
 			NOT = { has_completed_focus = DSC_economic_stability }
@@ -52,7 +52,7 @@ China_erp_category = {
 	}
 
 	Imported_essential_goods = {
-		icon = GFX_decision_generic_construction
+		icon = GFX_decision_generic_break_treaty
 		visible = {
 			has_completed_focus = DSC_Imported_essential_goods
 			NOT = { has_completed_focus = DSC_economic_stability }
@@ -78,7 +78,7 @@ China_erp_category = {
 	}
 
 	Crack_speculation = {
-		icon = GFX_decision_generic_construction
+		icon = GFX_decision_generic_brainwash
 
 		visible = {
 			has_completed_focus = DSC_Crack_speculation
@@ -105,7 +105,7 @@ China_erp_category = {
 	}
 
 	Confiscate_stolen_funds = {
-		icon = GFX_decision_generic_construction
+		icon = GFX_decision_generic_arrest
 		visible = {
 			has_completed_focus = DSC_Confiscate_stolen_funds
 			NOT = { has_completed_focus = DSC_economic_stability }
@@ -117,13 +117,11 @@ China_erp_category = {
 			}
 		}
 		cost = 10
-		complete_effect = {
-			set_temp_variable = { treasury_change = 300 }
-			modify_treasury_effect = yes
 		
-		}
 		days_remove = 15
 		remove_effect = {
+			set_temp_variable = { treasury_change = 300 }
+			modify_treasury_effect = yes
 			add_power_balance_value = {
 				id = Economic_recovery_progress_balance
 				value = 0.15
@@ -150,7 +148,7 @@ China_erp_category = {
 	}
 
 	Organize_large_scale_aid = {
-		icon = GFX_decision_generic_construction
+		icon = GFX_decision_attract_foreign_investor
 		visible = {
 			has_completed_focus = DSC_Confiscate_stolen_funds
 			NOT = { has_completed_focus = DSC_economic_stability }
@@ -173,5 +171,293 @@ China_erp_category = {
 			factor = 1
 		}
 	}
+
+}
+
+China_irp_category = {
+	Organize_emergency_repairs = {
+		icon = GFX_decision_minotor_button
+		visible = {
+			has_completed_focus = DSC_Organize_emergency_repairs
+			NOT = { has_completed_focus = DSC_Factory_lighting }
+		}
+		cost = 45
+		available = {
+			
+		}
+		complete_effect = {
+			add_manpower = -2000000
+		}
+		days_remove = 40
+		remove_effect = {
+			add_manpower = 2000000
+			add_power_balance_value = {
+				id = industry_recovery_progress_balance
+				value = 0.45
+			}
+			random_list = {
+				7 = { 
+					random_owned_state = {
+						limit = {
+							has_dynamic_modifier = {
+							modifier = CW_ruins
+						}
+					}
+					remove_dynamic_modifier = { modifier = CW_ruins }
+					}
+				}
+				3 = { 
+					random_owned_state = {
+						limit = {
+							free_building_slots = {
+								building = infrastructure
+								size > 0
+								include_locked = no
+							}
+						}
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	aid_construction = {
+		icon = GFX_decision_generic_break_treaty
+		visible = {
+			has_completed_focus = DSC_Organize_emergency_repairs
+			NOT = { has_completed_focus = DSC_Factory_lighting }
+		}
+		modifier = {
+			civilian_factory_use = 20
+		}
+		days_remove = 50
+		remove_effect = {
+			add_power_balance_value = {
+				id = industry_recovery_progress_balance
+				value = 0.60
+			}
+
+			random_owned_state = {
+				limit = {
+					has_dynamic_modifier = {
+					modifier = CW_ruins
+				}
+			}
+			remove_dynamic_modifier = { modifier = CW_ruins }
+				}
+
+			random_owned_state = {
+				limit = {
+					has_dynamic_modifier = {
+					modifier = CW_ruins
+				}
+			}
+			remove_dynamic_modifier = { modifier = CW_ruins }
+				}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Factory_starts_construction = {
+		icon = GFX_decision_hol_drain_water_lines
+		visible = {
+			has_completed_focus = DSC_Factory_starts_construction
+			NOT = { has_completed_focus = DSC_Factory_lighting }
+		}
+		available = {
+		}
+		cost = 40
+		days_remove = 30
+		complete_effect = {
+			add_manpower = -2000
+		}
+		remove_effect = {
+			add_stability = 0.005
+			add_manpower = 2000
+			add_power_balance_value = {
+				id = industry_recovery_progress_balance
+				value = 0.25
+			}
+		random_list = {
+			2 = { 
+				random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = no
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		8 = { 
+			random_owned_state = {
+				limit = {
+					has_dynamic_modifier = {
+					modifier = CW_ruins
+				}
+			}
+			remove_dynamic_modifier = { modifier = CW_ruins }
+				}
+			}
+		}
+	}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Produce_essential_goods = {
+		icon = GFX_decision_generic_break_treaty
+		visible = {
+			has_completed_focus = DSC_Produce_essential_goods
+			NOT = { has_completed_focus = DSC_Factory_lighting }
+		}
+		modifier = {
+			civilian_factory_use = 20
+		}
+		days_remove = 30
+		remove_effect = {
+			set_temp_variable = { treasury_change = 20 }
+			modify_treasury_effect = yes
+			add_power_balance_value = {
+				id = industry_recovery_progress_balance
+				value = 0.10
+			}
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Financial_aid_construction = {
+		icon = GFX_decision_generic_break_treaty
+		visible = {
+			has_completed_focus = DSC_Produce_essential_goods
+			NOT = { has_completed_focus = DSC_Factory_lighting }
+		}
+		custom_cost_trigger = {
+			check_variable = { treasury > 10.0 }
+		}
+		custom_cost_text = cost_10_0
+		complete_effect = {
+			set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+		}
+		days_remove = 30
+		remove_effect = {
+			add_power_balance_value = {
+				id = industry_recovery_progress_balance
+				value = 0.45
+			}
+			random_owned_state = {
+				limit = {
+					has_dynamic_modifier = {
+					modifier = CW_ruins
+				}
+			}
+			remove_dynamic_modifier = { modifier = CW_ruins }
+				}
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Nationalized_bureaucratic_capital = {
+		icon = GFX_decision_generic_arrest
+		visible = {
+			has_completed_focus = DSC_Nationalized_bureaucratic_capital
+			NOT = { has_completed_focus = DSC_economic_stability }
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = Nationalized_bureaucratic_capital_tt
+				check_variable = { Nationalized_bureaucratic_capital_times < 3 }
+			}
+		}
+		cost = 10
+		
+		days_remove = 15
+		remove_effect = {
+			set_temp_variable = { treasury_change = 200 }
+			modify_treasury_effect = yes
+			add_power_balance_value = {
+				id = industry_recovery_progress_balance
+				value = 0.80
+			}
+
+			random_owned_state = {
+				limit = {
+					has_dynamic_modifier = {
+					modifier = CW_ruins
+				}
+			}
+			remove_dynamic_modifier = { modifier = CW_ruins }
+			}
+			
+			random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = no
+				}
+				free_building_slots = {
+					building = offices
+					size > 0
+					include_locked = no
+				}
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = offices
+				level = 1
+				instant_build = yes
+			}
+		}
+		
+			hidden_effect = {
+				if = {
+					limit = { NOT = { has_variable = Nationalized_bureaucratic_capital_times } }
+					set_variable = {
+						var = Nationalized_bureaucratic_capital_times
+						value = 1
+					}
+				}
+				else = {
+					add_to_variable = {
+						var = Nationalized_bureaucratic_capital_times
+						value = 1
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 
 }
