@@ -530,11 +530,16 @@ bypass = {}
 	
 	
 					prerequisite = {
+						
 				focus = CHI_condemn_United_States
 				focus = CHI_Support_the_War_on_Terror
 				
 				}
-	
+	available = {
+		NOT={
+			has_idea = CHI_zibenjia 
+		}
+	}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
@@ -4853,52 +4858,7 @@ is_puppet = no
 			factor = 10
 		}
    }
-       focus = {
-      id = CHI_east_asia_feb
-      icon = race_relations2
-      x = 16
-      y = 7
-      cost = 8
-		relative_position_id = CHI_diplomatic_initatives
-
-      prerequisite = {
-         focus = CHI_budiaoyiz
-      }
-      prerequisite = {
-         focus = CHI_tycmb
-      }
-
-      completion_reward = {
-	  
-	  set_cosmetic_tag = eastaisa_feb
-news_event = mdardchina_news.47
-remove_ideas = east_asia_ziyou_CHINA
-add_ideas =	CHI_polduoy
-	every_state = {					
-			limit = {OR = {
-						is_core_of = KOR
-			is_core_of = JAP
-						is_core_of = MON
-}
-				}					
-						add_core_of = ROOT
-						}
-		  every_country = { 			
-	limit = {
-	OR = {
-tag = KOR
-tag = JAP
-tag = MON
-}
-}
-country_event = prc1.76
-}
-      }
-
-		ai_will_do = {
-			factor = 10
-		}
-   }
+   
    
    ############################################################################################################################################################################
    #中华民族伟大复兴
