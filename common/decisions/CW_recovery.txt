@@ -148,7 +148,7 @@ China_erp_category = {
 	}
 
 	Organize_large_scale_aid = {
-		icon = GFX_decision_attract_foreign_investor
+		icon = GFX_decision_AFG_van_icon
 		visible = {
 			has_completed_focus = DSC_Confiscate_stolen_funds
 			NOT = { has_completed_focus = DSC_economic_stability }
@@ -176,7 +176,7 @@ China_erp_category = {
 
 China_irp_category = {
 	Organize_emergency_repairs = {
-		icon = GFX_decision_minotor_button
+		icon = GFX_decision_eng_blackshirt_march
 		visible = {
 			has_completed_focus = DSC_Organize_emergency_repairs
 			NOT = { has_completed_focus = DSC_Factory_lighting }
@@ -230,7 +230,7 @@ China_irp_category = {
 	}
 
 	aid_construction = {
-		icon = GFX_decision_generic_break_treaty
+		icon = GFX_decision_political_discourse
 		visible = {
 			has_completed_focus = DSC_Organize_emergency_repairs
 			NOT = { has_completed_focus = DSC_Factory_lighting }
@@ -269,7 +269,7 @@ China_irp_category = {
 	}
 
 	Factory_starts_construction = {
-		icon = GFX_decision_hol_drain_water_lines
+		icon = GFX_decision_generic_factory
 		visible = {
 			has_completed_focus = DSC_Factory_starts_construction
 			NOT = { has_completed_focus = DSC_Factory_lighting }
@@ -323,7 +323,7 @@ China_irp_category = {
 	}
 
 	Produce_essential_goods = {
-		icon = GFX_decision_generic_break_treaty
+		icon = GFX_decision_generic_factory
 		visible = {
 			has_completed_focus = DSC_Produce_essential_goods
 			NOT = { has_completed_focus = DSC_Factory_lighting }
@@ -347,7 +347,7 @@ China_irp_category = {
 	}
 
 	Financial_aid_construction = {
-		icon = GFX_decision_generic_break_treaty
+		icon = GFX_decision_attract_foreign_investor
 		visible = {
 			has_completed_focus = DSC_Produce_essential_goods
 			NOT = { has_completed_focus = DSC_Factory_lighting }
@@ -382,7 +382,7 @@ China_irp_category = {
 	}
 
 	Nationalized_bureaucratic_capital = {
-		icon = GFX_decision_generic_arrest
+		icon = GFX_decision_gre_investment_decisions
 		visible = {
 			has_completed_focus = DSC_Nationalized_bureaucratic_capital
 			NOT = { has_completed_focus = DSC_economic_stability }
@@ -393,7 +393,6 @@ China_irp_category = {
 				check_variable = { Nationalized_bureaucratic_capital_times < 3 }
 			}
 		}
-		cost = 10
 		
 		days_remove = 15
 		remove_effect = {
@@ -451,6 +450,243 @@ China_irp_category = {
 						var = Nationalized_bureaucratic_capital_times
 						value = 1
 					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+}
+
+China_arp_category = {
+	Temporary_agricultural_subsidies = {
+		icon = GFX_decision_ger_mefo_bills
+		visible = {
+			has_completed_focus = DSC_Temporary_agricultural_subsidies
+			NOT = { has_completed_focus = DSC_wheat_waves }
+		}
+		available = {
+		}
+		days_remove = 30
+		custom_cost_trigger = {
+			check_variable = { treasury > 0.5 }
+		}
+		custom_cost_text = cost_0_5
+		complete_effect = {
+			set_temp_variable = { treasury_change = -0.5 }
+			modify_treasury_effect = yes
+		}
+		remove_effect = {
+			add_power_balance_value = {
+				id = agriculture_recovery_progress_balance
+				value = 0.45
+			}
+		random_list = {
+			2 = { 
+				random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = agriculture_district
+						size > 2
+						include_locked = no
+					}
+				}
+				add_building_construction = {
+					type = agriculture_district
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		8 = { 
+			random_owned_state = {
+				limit = {
+					has_dynamic_modifier = {
+					modifier = CW_ruins
+				}
+			}
+			remove_dynamic_modifier = { modifier = CW_ruins }
+				}
+			}
+		}
+	}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	state_monopoly_purchase = {
+		icon = GFX_decision_eng_ally_imperialist_coup
+		visible = {
+			has_completed_focus = DSC_state_monopoly_purchase
+			NOT = { has_completed_focus = DSC_wheat_waves }
+		}
+		custom_cost_trigger = {
+			check_variable = { treasury > 0.7 }
+		}
+		custom_cost_text = cost_0_7
+		complete_effect = {
+			set_temp_variable = { treasury_change = -0.7 }
+			modify_treasury_effect = yes
+		}
+		days_remove = 30
+		remove_effect = {
+			add_power_balance_value = {
+				id = agriculture_recovery_progress_balance
+				value = 0.65
+			}
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Raise_price_of_grain = {
+		icon = GFX_decision_eng_trade_unions_demand
+		visible = {
+			has_completed_focus = DSC_state_monopoly_purchase
+			NOT = { has_completed_focus = DSC_wheat_waves }
+		}
+		custom_cost_trigger = {
+			check_variable = { treasury > 1 }
+		}
+		custom_cost_text = cost_1_0
+		complete_effect = {
+			set_temp_variable = { treasury_change = -1 }
+			modify_treasury_effect = yes
+		}
+		days_remove = 50
+		remove_effect = {
+			add_power_balance_value = {
+				id = agriculture_recovery_progress_balance
+				value = 0.80
+			}
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Free_distribute_agricultural_supplies = {
+		icon = GFX_decision_hol_drain_water_lines
+		visible = {
+			has_completed_focus = DSC_Free_distribute_agricultural_supplies
+			NOT = { has_completed_focus = DSC_wheat_waves }
+		}
+		custom_cost_trigger = {
+			check_variable = { treasury > 1 }
+		}
+		custom_cost_text = cost_1_0
+		complete_effect = {
+			set_temp_variable = { treasury_change = -1 }
+			modify_treasury_effect = yes
+		}
+		days_remove = 50
+		remove_effect = {
+			add_power_balance_value = {
+				id = agriculture_recovery_progress_balance
+				value = 0.65
+			}
+			random_list = {
+				8 = { 
+				random_owned_state = {
+					add_to_variable = { productivity_state_var = 5 }
+					}
+				}
+				2 = { 
+					random_owned_state = {
+						limit = {
+							has_dynamic_modifier = {
+							modifier = CW_ruins
+						}
+					}
+					remove_dynamic_modifier = { modifier = CW_ruins }
+						}
+				}
+			}
+			if = {
+				limit = { NOT = { has_country_flag = DSC_send_agricultural_supplies } }
+				set_country_flag = DSC_send_agricultural_supplies
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Organize_learning_campaign_for_agricultural_machinery = {
+		icon = GFX_decision_generic_political_rally
+		visible = {
+			has_completed_focus = DSC_Free_distribute_agricultural_supplies
+			NOT = { has_completed_focus = DSC_wheat_waves }
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = Organize_learning_campaign_for_agricultural_machinery_tt
+				has_country_flag = DSC_send_agricultural_supplies
+			}
+		}
+		cost = 30
+		days_remove = 50
+		remove_effect = {
+			add_power_balance_value = {
+				id = agriculture_recovery_progress_balance
+				value = 0.80
+			}
+			random_owned_state = {
+				add_to_variable = { productivity_state_var = 10 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Hiring_refugees = {
+		icon = GFX_decision_eng_trade_unions_support
+		visible = {
+			has_completed_focus = DSC_Hiring_refugees
+			NOT = { has_completed_focus = DSC_wheat_waves }
+		}
+		cost = 45
+		available = {
+			
+		}
+		complete_effect = {
+			add_manpower = -20000
+		}
+		days_remove = 40
+		remove_effect = {
+			add_manpower = 20000
+			add_power_balance_value = {
+				id = industry_recovery_progress_balance
+				value = 0.80
+			}
+			random_owned_state = {
+				limit = {
+					has_dynamic_modifier = {
+					modifier = CW_ruins
+				}
+			}
+			remove_dynamic_modifier = { modifier = CW_ruins }
+			}
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = agriculture_district
+						size > 2
+						include_locked = no
+					}
+				}
+				add_building_construction = {
+					type = agriculture_district
+					level = 3
+					instant_build = yes
 				}
 			}
 		}

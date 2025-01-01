@@ -924,7 +924,10 @@ add_political_power = 100
 								id = Economic_recovery_progress_balance
 							}
 							has_power_balance = {
-								id = irp_staged_finsh_side
+								id = agriculture_recovery_progress_balance
+							}
+							has_power_balance = {
+								id = industry_recovery_progress_balance
 							}
 						}
 					}
@@ -1087,14 +1090,46 @@ available = {
 	}
 completion_reward = {
 	custom_effect_tooltip = DSC_economic_stability_tt
-	hidden_effect = {
-		swap_ideas = {
-			remove_idea = CHI_economic_recovery3
-			add_idea = CHI_economic_recovery_end
+	swap_ideas = {
+		remove_idea = CHI_economic_recovery3
+		add_idea = CHI_economic_recovery_end
+		}
+
+		if = {
+			limit = {
+				any_owned_state = { has_dynamic_modifier = { modifier = CW_ruins } }
 			}
+			random_owned_state = {
+				limit = { has_dynamic_modifier = { modifier = CW_ruins } }
+				remove_dynamic_modifier = { modifier = CW_ruins }
+			}
+		}
+
+		if = {
+			limit = {
+				any_owned_state = { has_dynamic_modifier = { modifier = CW_ruins } }
+			}
+			random_owned_state = {
+				limit = { has_dynamic_modifier = { modifier = CW_ruins } }
+				remove_dynamic_modifier = { modifier = CW_ruins }
+			}
+		}
+
+		if = {
+			limit = {
+				any_owned_state = { has_dynamic_modifier = { modifier = CW_ruins } }
+			}
+			random_owned_state = {
+				limit = { has_dynamic_modifier = { modifier = CW_ruins } }
+				remove_dynamic_modifier = { modifier = CW_ruins }
+			}
+		}
+
+	hidden_effect = {
 			clear_variable = Confiscate_stolen_funds_times 
 		}
 	}
+
 }
 
 focus = {
@@ -1155,7 +1190,22 @@ completion_reward = {
 			continue_if_invalid = no
 			available_if_capitulated = no
 			available = {
-	
+				custom_trigger_tooltip = {
+					tooltip = DSC_recover_begin_trigger_tt 
+					NOT = {
+						OR = {
+							has_power_balance = {
+								id = Economic_recovery_progress_balance
+							}
+							has_power_balance = {
+								id = agriculture_recovery_progress_balance
+							}
+							has_power_balance = {
+								id = industry_recovery_progress_balance
+							}
+						}
+					}
+				}
 			}
 			completion_reward = {
 				custom_effect_tooltip = DSC_restart_industry_tt
@@ -1356,21 +1406,50 @@ completion_reward = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = DSC_Factory_lighting_effect_tt
-			hidden_effect = {
 				swap_ideas = {
 				remove_idea = Industrial_rebuild3
 				add_idea = Industrial_rebuild_end
+			}
+
+			if = {
+				limit = {
+					any_owned_state = { has_dynamic_modifier = { modifier = CW_ruins } }
+				}
+				random_owned_state = {
+					limit = { has_dynamic_modifier = { modifier = CW_ruins } }
+					remove_dynamic_modifier = { modifier = CW_ruins }
 				}
 			}
+
+			if = {
+				limit = {
+					any_owned_state = { has_dynamic_modifier = { modifier = CW_ruins } }
+				}
+				random_owned_state = {
+					limit = { has_dynamic_modifier = { modifier = CW_ruins } }
+					remove_dynamic_modifier = { modifier = CW_ruins }
+				}
+			}
+
+			if = {
+				limit = {
+					any_owned_state = { has_dynamic_modifier = { modifier = CW_ruins } }
+				}
+				random_owned_state = {
+					limit = { has_dynamic_modifier = { modifier = CW_ruins } }
+					remove_dynamic_modifier = { modifier = CW_ruins }
+				}
+			}
+
 		}
 	}
 
 	focus = {
-		id = DSC_Temporary_agricultural_subsidies
-		icon = farming_sector
+		id = DSC_Agricultural_reconstruction
+		icon = right-wing_agrarianism
 		x = 0
 	
-		y = 2
+		y = 1
 	
 		cost = 1
 		relative_position_id = DSC_rubble
@@ -1386,11 +1465,84 @@ completion_reward = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		available = {
+			custom_trigger_tooltip = {
+				tooltip = DSC_recover_begin_trigger_tt 
+				NOT = {
+					OR = {
+						has_power_balance = {
+							id = Economic_recovery_progress_balance
+						}
+						has_power_balance = {
+							id = agriculture_recovery_progress_balance
+						}
+						has_power_balance = {
+							id = industry_recovery_progress_balance
+						}
+					}
+				}
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = DSC_Agricultural_reconstruction_tt
+			set_power_balance = {
+				id = agriculture_recovery_progress_balance
+			}
+			hidden_effect = {
+				add_power_balance_value = {
+					id = agriculture_recovery_progress_balance
+					value = -1
+				}
+			if = {
+				limit = {
+					OR = {
+						has_idea = Poor_agriculture3
+						has_idea = Poor_agriculture2
+						}
+					}
+						remove_ideas = Poor_agriculture3
+						remove_ideas = Poor_agriculture2
+						add_ideas = Agricultural_restructuring1
+					}
+			else_if = {
+				limit = {
+					OR = {
+						has_idea = Poor_agriculture1
+						}
+					}
+						remove_ideas = Poor_agriculture1
+						add_ideas = Agricultural_restructuring2
+					}
+	
+			}
+		}
+	}
+
+	focus = {
+		id = DSC_Temporary_agricultural_subsidies
+		icon = farming_sector
+		x = 0
+	
+		y = 1
+	
+		cost = 1
+		relative_position_id = DSC_Agricultural_reconstruction
+		prerequisite = { focus = DSC_Agricultural_reconstruction }
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
 	
 		}
 		completion_reward = {
-			custom_effect_tooltip = DSC_restart_industry_tt
-	
+			unlock_decision_tooltip = Temporary_agricultural_subsidies
+			add_ideas = DSC_Temporary_agricultural_subsidies
 		}
 	}
 
@@ -1419,8 +1571,8 @@ completion_reward = {
 	
 		}
 		completion_reward = {
-			custom_effect_tooltip = DSC_restart_industry_tt
-	
+			unlock_decision_tooltip = state_monopoly_purchase
+			unlock_decision_tooltip = Raise_price_of_grain
 		}
 	}
 
@@ -1449,8 +1601,8 @@ completion_reward = {
 	
 		}
 		completion_reward = {
-			custom_effect_tooltip = DSC_restart_industry_tt
-	
+			unlock_decision_tooltip = Hiring_refugees
+			add_ideas = DSC_Hiring_refugees
 		}
 	}
 
@@ -1479,8 +1631,8 @@ completion_reward = {
 	
 		}
 		completion_reward = {
-			custom_effect_tooltip = DSC_restart_industry_tt
-	
+			unlock_decision_tooltip = Free_distribute_agricultural_supplies
+			unlock_decision_tooltip = Organize_learning_campaign_for_agricultural_machinery
 		}
 	}
 
@@ -1508,11 +1660,55 @@ completion_reward = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		available = {
-	
+			custom_trigger_tooltip = {
+				tooltip = DSC_wheat_waves_trigger_tt 
+				NOT = {
+						has_power_balance = {
+							id = agriculture_recovery_progress_balance
+						}
+					}
+				}
 		}
 		completion_reward = {
-			custom_effect_tooltip = DSC_restart_industry_tt
-	
+			custom_effect_tooltip = DSC_wheat_waves_tt
+			swap_ideas = {
+				remove_idea = Agricultural_restructuring3
+				add_idea = Agricultural_restructuring_end
+			}
+
+			if = {
+				limit = {
+					any_owned_state = { has_dynamic_modifier = { modifier = CW_ruins } }
+				}
+				random_owned_state = {
+					limit = { has_dynamic_modifier = { modifier = CW_ruins } }
+					remove_dynamic_modifier = { modifier = CW_ruins }
+				}
+			}
+			
+			if = {
+				limit = {
+					any_owned_state = { has_dynamic_modifier = { modifier = CW_ruins } }
+				}
+				random_owned_state = {
+					limit = { has_dynamic_modifier = { modifier = CW_ruins } }
+					remove_dynamic_modifier = { modifier = CW_ruins }
+				}
+			}
+
+			if = {
+				limit = {
+					any_owned_state = { has_dynamic_modifier = { modifier = CW_ruins } }
+				}
+				random_owned_state = {
+					limit = { has_dynamic_modifier = { modifier = CW_ruins } }
+					remove_dynamic_modifier = { modifier = CW_ruins }
+				}
+			}
+
+			hidden_effect = {
+				clr_country_flag = DSC_send_agricultural_supplies 
+			}
 		}
 	}
 
@@ -1540,14 +1736,26 @@ completion_reward = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		available = {
-	
+			every_owned_state = { NOT = { has_dynamic_modifier = { modifier = CW_ruins } } }
 		}
 		completion_reward = {
+			custom_effect_tooltip = Joint_production_system_tt
+			add_ideas = Joint_production_system
 			hidden_effect = {
-			add_ideas = CHI_Socialist_Market_Economy
+			if = {
+				limit = {
+					has_idea = CHI_economic_recovery_end
+					has_idea = Agricultural_restructuring_end
+					has_idea = Industrial_rebuild_end
+				}
+				remove_ideas = CHI_economic_recovery_end
+				remove_ideas = Agricultural_restructuring_end
+				remove_ideas = Industrial_rebuild_end
+			}
 			load_focus_tree = communsim_PRC_focus
 			mark_focus_tree_layout_dirty = yes
 			}
+
 		}
 	}
 
