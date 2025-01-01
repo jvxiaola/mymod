@@ -11,7 +11,9 @@ focus_tree = {
 	}
 	default = no
 	shared_focus = CHI_The_Untapped_Market
-			shared_focus = PRC_computer
+	shared_focus = PRC_computer
+	shared_focus = CHI_Chinese_Megaprojects
+	shared_focus = CHI_Strategic_Industries
 
 	@national_interests_tree = 30
 	@tibet_tree = 28

@@ -832,6 +832,7 @@
 				tag = DSC
 				has_country_flag = laozuo
 				}
+			NOT ={ has_completed_focus = CHI_Chinese_Industrial_Explosion }
 		 }
 		 offset = {
 			x = -3
@@ -1533,6 +1534,7 @@ add_ideas = CHI_new_socialist_economy
 
 }
 custom_effect_tooltip = CHI_Chinese_Industrial_Explosion21_tt
+mark_focus_tree_layout_dirty = yes
 }
 		ai_will_do = { base = 1 }
 	}
@@ -1541,9 +1543,15 @@ custom_effect_tooltip = CHI_Chinese_Industrial_Explosion21_tt
 		id = CHI_Chinese_Megaprojects
 		icon = communism19
 
-		x = -3
-		y = 8
-		relative_position_id = CHI_The_Untapped_Market
+		x = 69
+		y = 22
+		
+		allow_branch = {
+			OR = {
+				has_completed_focus = CHI_Chinese_Industrial_Explosion
+				has_completed_focus = CHI_Factory_of_the_World
+			}
+		 }
 
 		cost = 4
 		offset = {
@@ -1556,7 +1564,13 @@ custom_effect_tooltip = CHI_Chinese_Industrial_Explosion21_tt
 					}
 			}
 		}
-		prerequisite = { focus = CHI_Factory_of_the_World focus = CHI_Chinese_Industrial_Explosion }
+		offset = {
+			x = -50
+			y = -10
+			trigger = {
+				tag = DSC
+			}
+		}
 
 		search_filters = { FOCUS_FILTER_INTERNAL_FACTION }
 
@@ -1818,7 +1832,9 @@ custom_effect_tooltip = CHI_Chinese_Industrial_Explosion21_tt
 		relative_position_id = CHI_Chinese_Megaprojects
 
 		cost = 5
-
+		allow_branch = {
+				has_completed_focus = CHI_Factory_of_the_World
+		 }
 		prerequisite = { focus = CHI_Korail focus = CHI_Deutsche_Bahn focus = CHI_Union_Pacific focus = CHI_Japan_Railway_Group }
 
 		available = { has_war = no }
@@ -5434,13 +5450,16 @@ is_subject_of = CHI
 		id = CHI_Strategic_Industries
 		icon = communism18
 
-		x = 3
-		y = 8
-		relative_position_id = CHI_The_Untapped_Market
+		x = 75
+		y = 22
 
 		cost = 5
-
-		prerequisite = { focus = CHI_Factory_of_the_World focus = CHI_Chinese_Industrial_Explosion }
+		allow_branch = {
+			OR = {
+				has_completed_focus = CHI_Chinese_Industrial_Explosion
+				has_completed_focus = CHI_Factory_of_the_World
+			}
+		 }
 		offset = {
 			x = -3
 			trigger = {
@@ -5449,6 +5468,13 @@ is_subject_of = CHI
 						tag = DSC
 						has_country_flag = laozuo
 					}
+			}
+		}
+		offset = {
+			x = -50
+			y = -10
+			trigger = {
+				tag = DSC
 			}
 		}
 		search_filters = { FOCUS_FILTER_EXPENDITURE }

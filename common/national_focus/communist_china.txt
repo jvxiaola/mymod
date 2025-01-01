@@ -6,7 +6,9 @@ focus_tree = {
 
 	}
 		default = no
-	shared_focus = CHI_Socialist_Reconstruction
+		shared_focus = CHI_Socialist_Reconstruction
+		shared_focus = CHI_Chinese_Megaprojects
+		shared_focus = CHI_Strategic_Industries
 		shared_focus = PRC_computer
 
 				focus = {
@@ -6610,13 +6612,13 @@ change_HKG_Socialist_Construction_dynamic24 = yes
 		icon = communism5
 		x = 70
 		y = 0
-cost = 5
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
 		offset = {
-			x = -60
-			y = 15
+			x = -50
+			y = 18
 			trigger = {
 			tag = DSC
 			}
