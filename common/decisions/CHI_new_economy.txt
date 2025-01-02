@@ -1,0 +1,183 @@
+CHI_new_social_economy_decisions = {
+	ruins_rebuild = {
+		icon = GFX_decision_generic_construction
+		activation = {
+			custom_trigger_tooltip = {
+				tooltip = ruins_rebuild_trigger_tt
+				NOT = { has_global_flag = Ccw }
+				any_owned_state = { has_dynamic_modifier = { modifier = CW_ruins } }
+			}
+		}
+		available = { 
+			custom_trigger_tooltip = {
+				tooltip =  ruins_rebuild_finish_trigger_tt
+				every_owned_state = { NOT = { has_dynamic_modifier = { modifier = CW_ruins } } }
+			}
+		}
+		complete_effect = {
+			add_stability = 0.10
+			add_offsite_building = { type = industrial_complex level = 3 }
+		}
+		selectable_mission = no
+		days_mission_timeout = 90
+		
+		highlight_states = { highlight_states_trigger = { has_dynamic_modifier = { modifier = CW_ruins } } }
+		timeout_effect = {
+			random_owned_state = {
+				limit = { has_dynamic_modifier = { modifier = CW_ruins } }
+				remove_dynamic_modifier = { modifier = CW_ruins }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Distribute_supply_assistance = {
+		icon = GFX_decision_hol_drain_water_lines
+		visible = {
+			has_completed_focus = DSC_material_control
+			NOT = { has_completed_focus = DSC_economic_stability }
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = Distribute_supply_assistance_trigger_tt
+				 has_country_flag = a_supply_aid_is_ready
+			}
+		}
+		cost = 20
+		days_remove = 20
+		remove_effect = {
+			add_stability = 0.005
+			add_power_balance_value = {
+				id = Economic_recovery_progress_balance
+				value = 0.25
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Imported_essential_goods = {
+		icon = GFX_decision_generic_break_treaty
+		visible = {
+			has_completed_focus = DSC_Imported_essential_goods
+			NOT = { has_completed_focus = DSC_economic_stability }
+		}
+		custom_cost_trigger = {
+			check_variable = { treasury > 1.0 }
+		}
+		custom_cost_text = cost_1_0
+		complete_effect = {
+			set_temp_variable = { treasury_change = -1 }
+			modify_treasury_effect = yes
+		}
+		days_remove = 30
+		remove_effect = {
+			add_power_balance_value = {
+				id = Economic_recovery_progress_balance
+				value = 0.45
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Crack_speculation = {
+		icon = GFX_decision_generic_brainwash
+
+		visible = {
+			has_completed_focus = DSC_Crack_speculation
+			NOT = { has_completed_focus = DSC_economic_stability }
+		}
+
+		available = {
+			
+		}
+		cost = 100
+		days_remove = 100
+		complete_effect = {
+			add_stability = -0.005
+		}
+		modifier = {
+			power_balance_daily = 0.02
+		}
+		remove_effect = {
+			add_stability = 0.010
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Confiscate_stolen_funds = {
+		icon = GFX_decision_generic_arrest
+		visible = {
+			has_completed_focus = DSC_Confiscate_stolen_funds
+			NOT = { has_completed_focus = DSC_economic_stability }
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = Confiscate_stolen_funds_tt
+				check_variable = { Confiscate_stolen_funds_times < 5 }
+			}
+		}
+		cost = 10
+		
+		days_remove = 15
+		remove_effect = {
+			set_temp_variable = { treasury_change = 300 }
+			modify_treasury_effect = yes
+			add_power_balance_value = {
+				id = Economic_recovery_progress_balance
+				value = 0.15
+			}
+			hidden_effect = {
+				if = {
+					limit = { NOT = { has_variable = Confiscate_stolen_funds_times } }
+					set_variable = {
+						var = Confiscate_stolen_funds_times
+						value = 1
+					}
+				}
+				else = {
+					add_to_variable = {
+						var = Confiscate_stolen_funds_times
+						value = 1
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Organize_large_scale_aid = {
+		icon = GFX_decision_AFG_van_icon
+		visible = {
+			has_completed_focus = DSC_Confiscate_stolen_funds
+			NOT = { has_completed_focus = DSC_economic_stability }
+		}
+		cost = 100
+		complete_effect = {
+			set_temp_variable = { treasury_change = -50 }
+			modify_treasury_effect = yes
+		
+		}
+		days_remove = 60
+		remove_effect = {
+			add_stability = 0.025
+			add_power_balance_value = {
+				id = Economic_recovery_progress_balance
+				value = 0.75
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

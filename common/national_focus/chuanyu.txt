@@ -1736,7 +1736,10 @@ completion_reward = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		available = {
-			every_owned_state = { NOT = { has_dynamic_modifier = { modifier = CW_ruins } } }
+			custom_trigger_tooltip = {
+				tooltip =  ruins_rebuild_finish_trigger_tt
+				every_owned_state = { NOT = { has_dynamic_modifier = { modifier = CW_ruins } } }
+			}
 		}
 		completion_reward = {
 			custom_effect_tooltip = Joint_production_system_tt

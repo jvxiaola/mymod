@@ -939,7 +939,7 @@ add_political_power = 100
 
 		available = {  }
 
-		completion_reward = {set_temp_variable = { treasury_change = -100 }
+		completion_reward = { set_temp_variable = { treasury_change = -100 }
 			modify_treasury_effect = yes
 			add_political_power = 50
 			set_temp_variable = { temp_opinion = 10 }
@@ -981,7 +981,7 @@ add_political_power = 100
 
 	shared_focus = {		
 	id = CHI_state_ownership
-		icon = central_planned_economy2
+		icon = import_economy
 
 		x = -5
 		y = 4
@@ -1015,10 +1015,8 @@ add_political_power = 100
 		}
 
 		completion_reward = {	
-			add_timed_idea = {
-				idea=CHI_guoyouhua
-				days = 100
-						}
+			add_ideas = CHI_guoyouhua
+						
 
 
 		}
@@ -1188,7 +1186,7 @@ add_stability = 0.05
 
 	shared_focus = {		
 		id = CHI_get_organized
-		icon = central_planned_economy3
+		icon = national_unity_red
 
 		x = 1
 		y = 1

@@ -6,7 +6,7 @@ CHI_new_social_economy_decisions = {
 			tag = HkG
 	}
 }
-		icon = GFX_decision_CUB_train_chi
+		icon = GFX_decision_generic_china
 
 	visible = {
 		OR = { 

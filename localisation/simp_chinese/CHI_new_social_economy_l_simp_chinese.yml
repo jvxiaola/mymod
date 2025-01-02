@@ -1,0 +1,11 @@
+﻿l_simp_chinese:
+
+#tooltip:
+ruins_rebuild_trigger_tt: "§R仍有地区等待重建§!"
+ruins_rebuild_finish_trigger_tt: "§C所有地区重建均已完成§!"
+
+#决议
+CHI_new_social_economy_decisions: "新社会主义经济"
+CHI_new_social_economy_decisions_desc: "在经历了近二十年的经济停滞，又经过惨烈内战后，原有的经济体系被§R彻底撕碎§!，但从某种意义上来讲，这也是一个§G重建公有制经济§!的§Y机会§!"
+ruins_rebuild: "§I正在重建地区§!"
+ruins_rebuild_desc: "长时间的战争已经使各地千疮百孔，重建工作任重道远。"
