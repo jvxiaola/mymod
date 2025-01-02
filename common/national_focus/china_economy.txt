@@ -845,7 +845,7 @@
 		}
 		offset = {
 			x = -68
-			y = -7
+			y = -5
 			trigger = {
 			tag = DSC
 			}
@@ -944,6 +944,7 @@ add_political_power = 100
 			add_political_power = 50
 			set_temp_variable = { temp_opinion = 10 }
 			change_industrial_conglomerates_opinion = yes
+			unlock_decision_tooltip = Redemption_assets
 		}
 
 		ai_will_do = { base = 1 }
