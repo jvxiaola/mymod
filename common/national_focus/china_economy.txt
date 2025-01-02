@@ -966,7 +966,10 @@ add_political_power = 100
 		available = {}
 
 		completion_reward = {
-		add_ideas = depression
+			add_timed_idea = {
+				idea = depression
+				days = 102
+			}
 			add_political_power = 100
 			set_temp_variable = { temp_opinion = 10 }
 			change_communist_cadres_opinion = yes
@@ -1000,8 +1003,7 @@ add_political_power = 100
 		}
 		available = {
 			OR = {
-
-								custom_trigger_tooltip = {
+				custom_trigger_tooltip = {
 					is_in_array = { ruling_party = 5 }
 					tooltip = has_anarchist_communism_government_TT
 				}
@@ -1009,7 +1011,7 @@ add_political_power = 100
 					is_in_array = { ruling_party = 19 }
 					tooltip = has_neutral_communism_government_TT
 				}
-				}
+			}
 		}
 
 		completion_reward = {	

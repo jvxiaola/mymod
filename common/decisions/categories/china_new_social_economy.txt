@@ -1,0 +1,19 @@
+CHI_new_social_economy_decisions = {
+	allowed = { 
+		OR = { 
+			original_tag = CHI 
+			tag = DSC
+			tag = HkG
+	}
+}
+		icon = GFX_decision_CUB_train_chi
+
+	visible = {
+		OR = { 
+			original_tag = CHI 
+			tag = DSC
+			tag = HkG
+		}
+	}
+}
+
