@@ -854,3 +854,35 @@ CHI_ruin_agriculture_add = {
   }
 }
 }
+
+CHI_ruin_economy_remove = {
+
+  if = { 
+    limit = { has_idea = CHI_capital_withdrawal4 }
+    swap_ideas = {
+      remove_idea = CHI_capital_withdrawal4
+      add_idea = CHI_economic_recovery1
+      }
+    }
+  else_if = { 
+    limit = { has_idea = CHI_economic_recovery1 }
+    swap_ideas = {
+      remove_idea = CHI_economic_recovery1
+      add_idea = CHI_economic_recovery2
+      }
+    }
+  else_if = { 
+    limit = { has_idea = CHI_economic_recovery2 }
+    swap_ideas = {
+      remove_idea = CHI_economic_recovery2
+      add_idea = CHI_economic_recovery3
+      }
+    }
+   else_if = { 
+     limit = { has_idea = CHI_economic_recovery3 }
+     swap_ideas = {
+      remove_idea = CHI_economic_recovery3
+      add_idea = CHI_economic_recovery_end
+      } 
+      }
+}

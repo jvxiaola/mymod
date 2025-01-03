@@ -1756,6 +1756,7 @@ completion_reward = {
 				remove_ideas = Agricultural_restructuring_end
 				remove_ideas = Industrial_rebuild_end
 			}
+			clr_country_flag = rehabilitate_economy
 			load_focus_tree = communsim_PRC_focus
 			mark_focus_tree_layout_dirty = yes
 			}

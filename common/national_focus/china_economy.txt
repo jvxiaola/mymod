@@ -1111,7 +1111,6 @@ limit = { has_idea = CHI_Socialist_Market_Economy_planned_1 }
 swap_ideas = {
 add_idea = CHI_Socialist_Market_Economy_planned_2
 remove_idea =  CHI_Socialist_Market_Economy_planned_1
-
 }
 			}
 else_if = {
@@ -1119,9 +1118,10 @@ limit = { has_idea = CHI_Socialist_Market_Economy_planned_2 }
 swap_ideas = {
 add_idea = CHI_Planned_Economy
 remove_idea =  CHI_Socialist_Market_Economy_planned_2
-
-}
-			}			
+	}
+}	
+			
+CHI_ruin_economy_remove = yes
 		}
 
 		ai_will_do = { base = 1 }
@@ -1294,14 +1294,14 @@ tooltip = CHI_economic_model_liberalization_economy_tt
 }
 		}
 
-		completion_reward = {if = {
-limit = {has_idea = CHI_Socialist_Market_Economy }
-swap_ideas = {
-add_idea = CHI_Socialist_Market_Economy_planned_1
-remove_idea =  CHI_Socialist_Market_Economy
-
-}
-}
+		completion_reward = {
+			if = {
+				limit = { has_idea = CHI_Socialist_Market_Economy }
+					swap_ideas = {
+						add_idea = CHI_Socialist_Market_Economy_planned_1
+						remove_idea =  CHI_Socialist_Market_Economy
+					}
+				}
 else_if = {
 limit = { has_idea = CHI_Socialist_Market_Economy_planned_1 }
 swap_ideas = {
@@ -1318,6 +1318,7 @@ remove_idea =  CHI_Socialist_Market_Economy_planned_2
 
 }
 			}
+			CHI_ruin_economy_remove = yes
 		}
 
 		ai_will_do = { base = 1 }
@@ -1471,7 +1472,8 @@ tooltip = CHI_economic_model_liberalization_economy_tt
 }
 		}
 
-		completion_reward = {if = {
+		completion_reward = {
+			if = {
 limit = {has_idea = CHI_Socialist_Market_Economy }
 swap_ideas = {
 add_idea = CHI_Socialist_Market_Economy_planned_1
@@ -1495,6 +1497,7 @@ remove_idea =  CHI_Socialist_Market_Economy_planned_2
 
 }
 			}
+		CHI_ruin_economy_remove = yes
 		}
 
 		ai_will_do = { base = 1 }
@@ -1513,30 +1516,26 @@ remove_idea =  CHI_Socialist_Market_Economy_planned_2
 		cost = 5
 
 		prerequisite = { focus = CHI_Revitalize_the_countryside }
-prerequisite = {focus = CHI_Efficient_and_economical }
-prerequisite = { focus = CHI_Consolidation_public_ownership }
+		prerequisite = {focus = CHI_Efficient_and_economical }
+		prerequisite = { focus = CHI_Consolidation_public_ownership }
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-if = {
-limit = {
-has_idea = CHI_Stateowned_enterprise_monopoly
-}
-			add_timed_idea = {
-				idea = a_new_leap_forward
-				days = 1053
-			}
+			CHI_ruin_economy_remove = yes
+		if = {
+			limit = { has_idea = CHI_Stateowned_enterprise_monopoly }
+				add_ideas = a_new_leap_forward
 		}
-else_if = {
-limit = {
-has_idea = CHI_worker_cooperative
-}
-add_ideas = CHI_new_socialist_economy
+		else_if = {
+			limit = {
+				has_idea = CHI_worker_cooperative
+			}
+			add_ideas = CHI_new_socialist_economy
 
-}
-custom_effect_tooltip = CHI_Chinese_Industrial_Explosion21_tt
-mark_focus_tree_layout_dirty = yes
-}
+		}
+			custom_effect_tooltip = CHI_Chinese_Industrial_Explosion21_tt
+			mark_focus_tree_layout_dirty = yes
+		}
 		ai_will_do = { base = 1 }
 	}
 
