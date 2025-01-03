@@ -829,7 +829,7 @@
 		id = CHI_Socialist_Reconstruction
 		icon = communist_party_of_china
 
-		x = 72
+		x = 90
 		y = 15
 
 		cost = 5
@@ -1554,7 +1554,7 @@ remove_idea =  CHI_Socialist_Market_Economy_planned_2
 		id = CHI_Chinese_Megaprojects
 		icon = communism19
 
-		x = 69
+		x = 84
 		y = 22
 		
 		allow_branch = {
@@ -5461,7 +5461,7 @@ is_subject_of = CHI
 		id = CHI_Strategic_Industries
 		icon = communism18
 
-		x = 75
+		x = 90
 		y = 22
 
 		cost = 5
