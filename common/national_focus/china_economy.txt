@@ -813,6 +813,10 @@
 				idea = factory_of_the_world
 				days = 180
 			}
+			every_owned_state = {
+				limit = { has_dynamic_modifier = { modifier = CW_ruins } }
+				remove_dynamic_modifier = { modifier = CW_ruins }
+			}
 			log = "[GetDateText]: [This.GetName]: focus CHI_Factory_of_the_World executed"
 		}
 
