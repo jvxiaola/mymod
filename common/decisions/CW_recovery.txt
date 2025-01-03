@@ -671,7 +671,7 @@ China_arp_category = {
 		remove_effect = {
 			add_manpower = 20000
 			add_power_balance_value = {
-				id = industry_recovery_progress_balance
+				id = agriculture_recovery_progress_balance
 				value = 0.80
 			}
 			random_owned_state = {

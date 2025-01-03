@@ -21,3 +21,11 @@ is_agriculture_state = {
 		state = 541		state = 536		state = 549		state = 434		state = 570		state = 534		state = 532		state = 574
 	}
 }
+
+CHI_Organize_state_enterprises_states_trigger = {
+	OR = {
+		state = 534		state = 532		state = 541		state = 536		state = 435		state = 544		state = 538		state = 567
+		state = 1095		state = 552		state = 434		state = 549		state = 585		state = 586		state = 583		state = 537
+		state = 570		state = 540		state = 547		state = 548
+	}
+}
