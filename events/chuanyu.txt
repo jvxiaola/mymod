@@ -225,3 +225,50 @@ else = {
 
 	}
 }
+
+country_event = {
+	id = Chuanyu.8
+	title = Chuanyu.8.t
+	desc = Chuanyu.8.d
+	fire_only_once = yes					
+	is_triggered_only = yes				
+								
+	option = {
+	name = Chuanyu.8.a 
+	#添加工业体系损伤精神
+	if = {
+		limit = { has_global_flag = Ccw }
+	every_controlled_state = { 
+		limit = {
+			is_core_of = DSC
+			has_dynamic_modifier = { modifier = CW_ruins }
+				} 
+			add_to_array = {
+				array = global.ruined_state
+			}
+			CHI_ruin_industry_add = yes
+		}
+	clear_array = global.ruined_state
+	}
+	#添加农业损伤精神
+	if = {
+		limit = { has_global_flag = Ccw }
+	every_controlled_state = { 
+		limit = {
+			is_agriculture_state = yes
+			has_dynamic_modifier = { modifier = CW_ruins } 
+				} 
+			add_to_array = {
+				array = global.ruined_agriculture_state
+			}
+			CHI_ruin_agriculture_add = yes
+		}
+		clear_array = global.ruined_agriculture_state
+	}
+	custom_effect_tooltip = change_rebuild_focus_tree_tt
+	hidden_effect = {
+		set_country_flag = rehabilitate_economy
+		mark_focus_tree_layout_dirty = yes
+	}
+		}
+	}

@@ -814,44 +814,11 @@ add_political_power = 100
 					set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.30 }
 					change_DSC_Socialist_Construction_dynamic1 = yes
 					set_cosmetic_tag = DSC_GMG
-				#添加工业体系损伤精神
-				if = {
-					limit = { has_global_flag = Ccw }
-				every_controlled_state = { 
-					limit = {
-						is_core_of = DSC
-						has_dynamic_modifier = { modifier = CW_ruins }
-							} 
-						add_to_array = {
-							array = global.ruined_state
-						}
-						CHI_ruin_industry_add = yes
-					}
-				clear_array = global.ruined_state
-				}
-				#添加农业损伤精神
-				if = {
-					limit = { has_global_flag = Ccw }
-				every_controlled_state = { 
-					limit = {
-						is_agriculture_state = yes
-						has_dynamic_modifier = { modifier = CW_ruins } 
-							} 
-						add_to_array = {
-							array = global.ruined_agriculture_state
-						}
-						CHI_ruin_agriculture_add = yes
-					}
-				}
-				clear_array = global.ruined_agriculture_state
 				}
 				clr_global_flag = Ccw
 				clr_country_flag = qyxd
-	
-				set_capital = {state=547}
-
-				set_country_flag = rehabilitate_economy
-				mark_focus_tree_layout_dirty = yes
+				country_event = { id = Chuanyu.8 }
+				set_capital = { state = 547 }
 
 			}
 		}
