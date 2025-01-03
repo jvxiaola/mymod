@@ -2,16 +2,14 @@ CHI_new_social_economy_decisions = {
 	ruins_rebuild = {
 		icon = GFX_decision_generic_construction
 		activation = {
-			custom_trigger_tooltip = {
-				tooltip = ruins_rebuild_trigger_tt
 				NOT = { has_global_flag = Ccw }
 				any_owned_state = { has_dynamic_modifier = { modifier = CW_ruins } }
-			}
 		}
 		available = { 
 			custom_trigger_tooltip = {
 				tooltip =  ruins_rebuild_finish_trigger_tt
-				every_owned_state = { NOT = { has_dynamic_modifier = { modifier = CW_ruins } } }
+				all_owned_state = { NOT = { has_dynamic_modifier = { modifier = CW_ruins } } }
+				#对于state范围，all是用于判定范围，any用于效果添加
 			}
 		}
 		cancel_trigger = {
