@@ -12,7 +12,10 @@
 				tag = DSC
 				has_country_flag = laozuo
 			}
-			has_completed_focus = CHI_paving_the_way_for_successors
+			OR = {	
+				has_completed_focus = CHI_paving_the_way_for_successors
+				has_country_flag = CPC_Rehabilitation_of_Zhao_Ziyang
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -119,6 +122,7 @@
 				}
 				news_event = china_news.6
 			}
+			CHI_ruin_economy_remove = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Ratification_of_WTO executed"
 		}
 
@@ -519,6 +523,7 @@
 		}
 		search_filters = { FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			CHI_ruin_economy_remove = yes
 			four_random_industrial_complex = yes
 			set_temp_variable = { temp_opinion = 5 }
 			change_industrial_conglomerates_opinion = yes
@@ -769,6 +774,7 @@
 		prerequisite = { focus = CHI_American_Joint_Ventures focus = CHI_German_Joint_Ventures focus = CHI_Japanese_Joint_Ventures focus = CHI_Korean_Joint_Ventures }
 		bypass = { has_idea = globalized_trade_economy }
 		completion_reward = {
+			CHI_ruin_economy_remove = yes
 			increase_exports = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Export_Driven_Economy executed"
 		}
@@ -791,7 +797,7 @@
 			x = 3
 			trigger = {
 				NOT={
-					OR={
+					OR = {
 						has_country_flag=xggm
 						has_country_flag = laozuo
 					}
@@ -802,6 +808,7 @@
 
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			CHI_ruin_economy_remove = yes
 			add_timed_idea = {
 				idea = factory_of_the_world
 				days = 180
