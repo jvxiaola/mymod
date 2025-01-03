@@ -102,7 +102,7 @@ CHI_CHI_NEW_people_war1_desc: "由于众所周知的原因，我们的作战理�
 #恢复
 Collecting_materials: "征收补给援助"
 Collecting_materials_desc: "目前我们已经进行了物资管制，通过征收物资援助，并将其发送给受灾严重地区，我们可以更快稳定当地的物价。"
-Distribute_supply_assistance: "征收补给援助"
+Distribute_supply_assistance: "运送援助"
 Distribute_supply_assistance_desc: "征收物资援助只是援助行动的第一步，接下来就是将其运输至受灾地区。"
 Imported_essential_goods: "进口急缺生活必需品"
 Imported_essential_goods_desc: "目前生活必需品的生产量还没能恢复至战前，为此我们将从外国进口生活必需品，以补足当前的短缺，进而稳定物价。"

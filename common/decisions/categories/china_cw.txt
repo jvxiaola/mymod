@@ -1,4 +1,5 @@
 CHI_Civil_war_decisions = {
+	priority = { base = 1000 }
 	allowed = { 
 		OR = { 
 			original_tag = CHI 

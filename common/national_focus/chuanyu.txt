@@ -1744,6 +1744,7 @@ completion_reward = {
 		completion_reward = {
 			custom_effect_tooltip = Joint_production_system_tt
 			add_ideas = Joint_production_system
+			add_research_slot = 2
 			hidden_effect = {
 			if = {
 				limit = {

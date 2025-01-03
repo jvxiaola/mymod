@@ -1934,7 +1934,7 @@ Agricultural_restructuring1 = {
 			
 			modifier = {
 				
-				power_balance_daily = 0.02
+				power_balance_daily = 0.01
 			}
 		}
 
@@ -1947,7 +1947,7 @@ Agricultural_restructuring1 = {
 			modifier = {
 				stability_weekly_factor = 0.001
 				political_power_gain = -0.05
-				power_balance_daily = 0.015
+				power_balance_daily = 0.005
 			}
 		}
 
@@ -1973,7 +1973,7 @@ Agricultural_restructuring1 = {
 			modifier = {
 				conscription_factor = -0.50
 				political_power_gain = -0.05
-				power_balance_daily = 0.015
+				power_balance_daily = 0.005
 			}
 		}
 
@@ -1987,7 +1987,7 @@ Agricultural_restructuring1 = {
 				production_speed_buildings_factor = 0.45
 				tax_gain_multiplier_modifier = 0.25
 				political_power_gain = -0.10
-				power_balance_daily = 0.025
+				power_balance_daily = 0.015
 			}
 		}
 		#农业恢复
@@ -2000,7 +2000,7 @@ Agricultural_restructuring1 = {
 			modifier = {
 				production_speed_agriculture_district_factor = 0.25
 				agriculture_tax_modifier = -0.10
-				power_balance_daily = 0.04
+				power_balance_daily = 0.03
 			}
 		}
 
@@ -2012,7 +2012,7 @@ Agricultural_restructuring1 = {
 			
 			modifier = {
 				conscription_factor = -0.50
-				power_balance_daily = 0.03
+				power_balance_daily = 0.02
 			}
 		}
 

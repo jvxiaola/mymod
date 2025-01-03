@@ -1,4 +1,5 @@
 CHI_new_social_economy_decisions = {
+	priority = { base = 1000 }
 	allowed = { 
 		OR = { 
 			original_tag = CHI 
