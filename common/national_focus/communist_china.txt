@@ -1496,7 +1496,7 @@ mutually_exclusive = {focus = PRC_guoyouhua focus = PRC_Workersdemocracy focus =
 		available = {
 
 
-	has_completed_focus = CHI_state_ownership
+	has_completed_focus = CHI_Organize_state_enterprises
 
 	OR ={
 		has_country_leader = {  name = "Jiang Zemin" }

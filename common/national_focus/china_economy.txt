@@ -995,7 +995,7 @@ shared_focus = {
 	}
 
 	shared_focus = {		
-	id = CHI_state_ownership
+	id = CHI_Organize_state_enterprises
 		icon = import_economy
 
 		x = -5
@@ -1047,7 +1047,7 @@ shared_focus = {
 		y = 4
 		relative_position_id = CHI_Socialist_Reconstruction
 		prerequisite = { focus = CHI_confiscated focus = CHI_redemption }
-		mutually_exclusive = { focus = CHI_state_ownership }
+		mutually_exclusive = { focus = CHI_Organize_state_enterprises }
 
 		cost = 5
 
@@ -1086,7 +1086,7 @@ add_power_balance_value = {
 
 		cost = 5
 
-		prerequisite = { focus = CHI_state_ownership focus = CHI_worker_ownership }
+		prerequisite = { focus = CHI_Organize_state_enterprises focus = CHI_worker_ownership }
 
 
 		available = {

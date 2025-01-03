@@ -81,8 +81,8 @@ Economic_recovery_progress_balance = {
 
 industry_recovery_progress_balance = {
 	initial_value = -1
-	left_side = erp_acting_side
-	right_side = erp_staged_finsh_side
+	left_side = irp_acting_side
+	right_side = irp_staged_finsh_side
 	decision_category = China_irp_category
 	
 	side = {
