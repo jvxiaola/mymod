@@ -1031,6 +1031,10 @@ shared_focus = {
 
 		completion_reward = {	
 			add_ideas = CHI_guoyouhua
+			every_owned_state = {
+				limit = { CHI_Organize_state_enterprises_states_trigger = yes }
+				CHI_state_add_Organize_state_enterprises_modifier = yes
+			}
 						
 
 

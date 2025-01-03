@@ -886,3 +886,12 @@ CHI_ruin_economy_remove = {
       } 
       }
 }
+
+CHI_state_add_Organize_state_enterprises_modifier = {
+  set_variable = { COSEM_lbs = -0.05 }
+	set_variable = { COSEM_sb = -0.05 }
+	set_variable = { COSEM_otsb = 0 }
+	set_variable = { COSEM_pm = -0.05 }
+	set_variable = { COSEM_pm = 0 }
+	add_dynamic_modifier = { modifier = CHI_Organize_state_enterprises_modifier }
+}
