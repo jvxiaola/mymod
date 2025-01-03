@@ -120,6 +120,7 @@ capital = 583
 			CHI_low_end_manufacturing
 			p5_member
 			nuclear_power
+			nuclear_power_def
 			semi_consumption_economy
 			defence_02
 			edu_02

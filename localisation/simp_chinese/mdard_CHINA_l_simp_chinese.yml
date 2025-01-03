@@ -2432,12 +2432,21 @@ CHI_annex_Hon_desc:"正如中央所一直宣传的，我们在港澳实施的制
 
  
   DSC_JGQ: "川渝军管区"
+  DSC_JGQ_ADJ: "川渝"
+  DSC_JGQ_DEF: "川渝"
   DSC_GMQ: "川渝革命政府"
+  DSC_GMQ_ADJ: "川渝"
+  DSC_GMQ_DEF: "川渝"
   HKG_GMQ: "香港革命政府"
   TIB_JUNQU: "驻西藏部队"
+  TIB_JUNQU_ADJ: "西藏军区"
+  TIB_JUNQU_DEF: "西藏军区"
   ETK_JUNQU: "驻新疆部队"
+  ETK_JUNQU_ADH: "新疆军区"
+  ETK_JUNQU_DEF: "新疆军区"
   DSC_GMG: "中华人民共和国"
-
+  DSC_GMG_ADJ: "中国"
+  DSC_GMG_DEF: "中国"
 
 
 

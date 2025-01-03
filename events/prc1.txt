@@ -1455,6 +1455,15 @@ country_event = {
 				}		
 				transfer_state = 589
 				transfer_state = 591
+					591 = {
+						add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+								}
+					add_core_of = XIZ
+						}
 					589 = {
 						add_extra_state_shared_building_slots = 10
 							add_building_construction = {
@@ -1462,7 +1471,7 @@ country_event = {
 								level = 5
 								instant_build = yes
 								}
-			
+					add_core_of = XIZ
 						}
 						set_cosmetic_tag = TIB_JUNQU
 
@@ -1551,7 +1560,7 @@ country_event = {
 		}
 	
 		start_politics_input = yes
-				 division_template = {
+			 division_template = {
 			name = "XIN"
 			division_names_group = SOV_GAR_01
 			regiments = {
@@ -1564,7 +1573,7 @@ country_event = {
 			mark_focus_tree_layout_dirty = yes#刷新国策树
 	}
 	transfer_units_fraction= {
-		target = 	XIN
+		target = XIN
 		size = 0.01
 		stockpile_ratio = 0.1
 		army_ratio = 0.1
@@ -1589,9 +1598,7 @@ country_event = {
 		peoplefuhao	
 				}
 			}
-			add_ideas = 
-			{denglegacy
-			CHI_jdjs1 }
+			add_ideas = {denglegacy CHI_jdjs1 }
 			
 
 					add_ideas = p5_member

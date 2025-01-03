@@ -18,7 +18,7 @@ country_event = {
 	option = {
 		name = Chuanyu.1.a 
 
-		CHI={end_puppet = DSC}
+		CHI={ end_puppet = DSC }
 
 
 		
@@ -85,7 +85,7 @@ country_event = {
 						
 			option = {
 				name = chuanyu.4.a 
-				country_event ={id =  chuanyu.5 days = 7 }
+				country_event ={id =  chuanyu.5 days = 1 }
 								
 						
 				}
@@ -102,7 +102,7 @@ country_event = {
 				option = {
 				name = chuanyu.5.a 
 
-				country_event = { id = chuanyu.6 days = 7 }
+				country_event = { id = chuanyu.6 days = 1 }
 
 								
 					}
@@ -138,6 +138,9 @@ country_event = {
 							neutrality = 0.0
 							nationalist = 0.0
 							}
+					add_to_array = { ruling_party = 5 } #social_democracy								
+					set_variable = { party_pop_array^5 = 0.40 } #social_democracy	
+					startup_politics = yes
 				}
 					
 						set_politics = {
@@ -147,17 +150,7 @@ country_event = {
 						elections_allowed = no
 						}
 						set_cosmetic_tag = DSC_GMQ
-								
-								
 						start_politics_input = yes
-						add_to_array = { ruling_party = 5 } #social_democracy
-								
-								
-						set_variable = { party_pop_array^5 = 0.40 } #social_democracy
-								
-								
-						startup_politics = yes
-								
 						create_country_leader = {
 						name = "Mao Yuanxin"
 						picture = "Mao_Yuanxin.dds"
