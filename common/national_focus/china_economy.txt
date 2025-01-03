@@ -927,7 +927,7 @@ shared_focus = {
 		}
 
 		completion_reward = {
-add_political_power = 100
+			add_political_power = 100
 		}
 
 		ai_will_do = { base = 1 }
@@ -950,7 +950,8 @@ add_political_power = 100
 
 		available = {  }
 
-		completion_reward = { set_temp_variable = { treasury_change = -100 }
+		completion_reward = { 
+			set_temp_variable = { treasury_change = -100 }
 			modify_treasury_effect = yes
 			add_political_power = 50
 			set_temp_variable = { temp_opinion = 10 }
@@ -961,7 +962,8 @@ add_political_power = 100
 		ai_will_do = { base = 1 }
 	}
 
-	shared_focus = {		id = CHI_confiscated
+	shared_focus = {		
+		id = CHI_confiscated
 		icon = cash_grap
 
 		x = -3
@@ -980,13 +982,14 @@ add_political_power = 100
 		completion_reward = {
 			add_timed_idea = {
 				idea = depression
-				days = 102
+				days = 180
 			}
 			add_political_power = 100
 			set_temp_variable = { temp_opinion = 10 }
 			change_communist_cadres_opinion = yes
-					set_temp_variable = { treasury_change = 300 }
+			set_temp_variable = { treasury_change = 300 }
 			modify_treasury_effect = yes
+			unlock_decision_tooltip = confiscated_assets
 }
 		ai_will_do = { base = 1 }
 	}

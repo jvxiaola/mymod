@@ -1,0 +1,38 @@
+defined_text = {
+	name = CHI_new_social_economy_decisions_goal
+	text = {
+		trigger = {
+			has_completed_focus = CHI_redemption
+		}
+		localization_key = "CHI_redemption_goals"#显示赎买进度
+	}
+	text = {
+		trigger = {
+			has_completed_focus = CHI_confiscated
+		}
+		localization_key = "CHI_confiscated_goals"#显示强制国有化进度
+	}
+	text = {
+		trigger = {
+			OR  = {
+				NOT = { has_completed_focus = CHI_redemption }
+				NOT = { has_completed_focus = CHI_confiscated }
+			}		
+		}
+		localization_key = "NOT_sign"
+	}
+	text = {
+		trigger = {
+			has_completed_focus = CHI_redemption
+			check_variable = { Redemption_assets_times = 3 }
+		}
+		localization_key = "CHI_redemption_goals_achieve"#赎买完成
+	}
+	text = {
+		trigger = {
+			has_completed_focus = CHI_confiscated
+			check_variable = { confiscated_assets_times = 5 }
+		}
+		localization_key = "CHI_confiscated_goals_achieve"#强制国有化完成
+	}
+}

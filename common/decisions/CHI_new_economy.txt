@@ -38,12 +38,12 @@ CHI_new_social_economy_decisions = {
 		icon = GFX_decision_gre_investment_decisions
 		visible = {
 			has_completed_focus = CHI_redemption
-			check_variable = { Redemption_assets_times < 3 }
+			check_variable = { Redemption_assets_times < 4 }
 		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = Redemption_assets_trigger_tt
-				check_variable = { Redemption_assets_times < 3 }
+				check_variable = { Redemption_assets_times < 4 }
 			}
 		}
 		custom_cost_trigger = {
@@ -109,6 +109,79 @@ CHI_new_social_economy_decisions = {
 		}
 	}
 
-	
+	confiscated_assets = {
+		icon = GFX_decision_gre_investment_decisions
+		visible = {
+			has_completed_focus = CHI_redemption
+			check_variable = { confiscated_assets_times < 6 }
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = confiscated_assets_trigger_tt
+				check_variable = { confiscated_assets_times < 6 }
+			}
+		}
+		cost = 50
+		complete_effect = {
+			add_stability = -0.02
+		}
+		days_remove = 20
+		remove_effect = {
+			modify_timed_idea = {
+				idea = CHI_confiscated
+				days = 20
+			}
+			random_owned_state = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = no
+						}
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				else_if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size = 0
+							include_locked = no
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+
+			hidden_effect = {
+				if = {
+					limit = { NOT = { has_variable = confiscated_assets_times } }
+					set_variable = {
+						var = confiscated_assets_times
+						value = 1
+					}
+				}
+				else = {
+					add_to_variable = {
+						var = confiscated_assets_times
+						value = 1
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
 }
