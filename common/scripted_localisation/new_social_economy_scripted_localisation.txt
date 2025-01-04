@@ -36,3 +36,4 @@ defined_text = {
 		localization_key = "CHI_confiscated_goals_achieve"#强制国有化完成
 	}
 }
+

@@ -900,8 +900,6 @@ state_enterprises_build_effect = {
     }
     modify_state_flag = { flag = state_enterprises_times value = 1 }
   }
-  
-
 
   if = { 
     limit = { 
