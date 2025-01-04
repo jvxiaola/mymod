@@ -166,16 +166,10 @@ CHI_new_social_economy_decisions = {
 			hidden_effect = {
 				if = {
 					limit = { NOT = { has_variable = confiscated_assets_times } }
-					set_variable = {
-						var = confiscated_assets_times
-						value = 1
-					}
+					set_variable = { confiscated_assets_times = 1 }
 				}
 				else = {
-					add_to_variable = {
-						var = confiscated_assets_times
-						value = 1
-					}
+					add_to_variable = { confiscated_assets_times = 1 }
 				}
 			}
 		}
@@ -183,5 +177,28 @@ CHI_new_social_economy_decisions = {
 			factor = 1
 		}
 	}
+
+}
+#国企决议，只显示在地图上
+CHI_state_enterprises_decisions = {
+	guangdong_state_enterprises = {
+		icon = GFX_decision_generic_construction
+		available = { 
+			has_completed_focus = CHI_Organize_state_enterprises
+		}
+		cost = 35
+		complete_effect = {
+			
+		}
+		highlight_states = { highlight_states_trigger = { state = 534 state = 532 } }
+		on_map_mode = map_only
+		remove_effect = {
+			state_enterprises_build_effect = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 
 }

@@ -888,10 +888,90 @@ CHI_ruin_economy_remove = {
 }
 
 CHI_state_add_Organize_state_enterprises_modifier = {
-  set_variable = { COSEM_lbs = -0.05 }
-	set_variable = { COSEM_sb = -0.05 }
-	set_variable = { COSEM_otsb = 0 }
-	set_variable = { COSEM_pm = -0.05 }
-	set_variable = { COSEM_pm = 0 }
+  set_variable = { COSEM_lbs = -0.05 }  set_variable = { COSEM_lrs = -0.05 } set_variable = { COSEM_sb = -0.05 }
+	set_variable = { COSEM_otsb = 0 } set_variable = { COSEM_pm = -0.05 } set_variable = { COSEM_pm = 0 }
 	add_dynamic_modifier = { modifier = CHI_Organize_state_enterprises_modifier }
+}
+
+state_enterprises_build_effect = {
+  if= {
+    limit = { 
+      has_state_flag = { flag = state_enterprises_times }
+    }
+    modify_state_flag = { flag = state_enterprises_times value = 1 }
+  }
+  
+
+
+  if = { 
+    limit = { 
+    NOT = { has_state_flag = { flag = state_enterprises_times } }
+    }
+    #第一次执行效果
+    set_state_flag = { flag = state_enterprises_times value = 1 }
+    set_temp_variable = { COSEM_lbs_add = 0.05 } set_temp_variable = { COSEM_lrs_add = 0.05 } set_temp_variable = { COSEM_sb_add = 0.05 }
+    custom_effect_tooltip = state_enterprises_1_tt 
+    add_to_variable = { COSEM_lbs = COSEM_lbs_add } add_to_variable = { COSEM_lrs = COSEM_lrs_add } add_to_variable = { COSEM_sb = COSEM_sb_add }
+  }
+
+  else_if = { 
+    limit = { 
+      has_state_flag = { flag = state_enterprises_times value = 1 }
+    }
+    #第二次执行效果
+    set_temp_variable = { COSEM_sb_add = 0.05 } set_temp_variable = { COSEM_pm_add = 0.05 }
+    custom_effect_tooltip = state_enterprises_2_tt
+    add_to_variable = { COSEM_sb = COSEM_sb_add } add_to_variable = { COSEM_sb = COSEM_pm_add }
+  }
+
+  else_if = { 
+    limit = { 
+      has_state_flag = { flag = state_enterprises_times value = 2 }
+    }
+    #第三次执行效果
+    set_temp_variable = { COSEM_lrs_add = 0.05 } set_temp_variable = { COSEM_lbs_add = 0.02 }
+    custom_effect_tooltip = state_enterprises_3_tt
+    add_to_variable = { COSEM_lrs = COSEM_lrs_add } add_to_variable = { COSEM_lbs = COSEM_lbs_add }
+  }
+
+  else_if = { 
+    limit = { 
+      has_state_flag = { flag = state_enterprises_times value = 3 }
+    }
+    #第四次执行效果
+    set_temp_variable = { COSEM_egm_add = 0.05 } set_temp_variable = { COSEM_pm_add = 0.02 } set_temp_variable = { COSEM_lbs_add = 0.03 }
+    custom_effect_tooltip = state_enterprises_4_tt
+    add_to_variable = { COSEM_egm = COSEM_egm_add } add_to_variable = { COSEM_pm = COSEM_pm_add } add_to_variable = { COSEM_lbs = COSEM_lbs_add }
+  }
+
+  else_if = { 
+    limit = { 
+      has_state_flag = { flag = state_enterprises_times value = 4 }
+    }
+    #第五次执行效果
+    set_temp_variable = { COSEM_pm_add = 0.03 } set_temp_variable = { COSEM_sb_add = 0.02 }
+    custom_effect_tooltip = state_enterprises_5_tt
+    add_to_variable = { COSEM_pm = COSEM_pm_add } add_to_variable = { COSEM_sb = COSEM_sb_add }
+  }
+
+  else_if = { 
+    limit = { 
+      has_state_flag = { flag = state_enterprises_times value = 5 }
+    }
+    #第六次执行效果
+    set_temp_variable = { COSEM_sb_add = 0.03 } set_temp_variable = { COSEM_pm_add = 0.03 } set_temp_variable = { COSEM_otsb_add = 0.05 }
+    custom_effect_tooltip = state_enterprises_6_tt
+    add_to_variable = { COSEM_sb = COSEM_sb_add } add_to_variable = { COSEM_pm = COSEM_pm_add } add_to_variable = { COSEM_otsb = COSEM_otsb_add }
+  } 
+
+  else_if = { 
+    limit = { 
+      has_state_flag = { flag = state_enterprises_times value = 6 }
+    }
+    #第七次执行效果
+    set_temp_variable = { COSEM_pm_add = 0.07 } set_temp_variable = { COSEM_sb_add = 0.05 } set_temp_variable = { COSEM_egm_add = 0.05 }
+    custom_effect_tooltip = state_enterprises_7_tt
+    add_to_variable = { COSEM_pm = COSEM_pm_add } add_to_variable = { COSEM_sb = COSEM_sb_add } add_to_variable = { COSEM_egm = COSEM_egm_add }
+  }
+
 }

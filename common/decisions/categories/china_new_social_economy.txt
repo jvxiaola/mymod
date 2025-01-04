@@ -7,6 +7,35 @@ CHI_new_social_economy_decisions = {
 			tag = HkG
 	}
 }
+	icon = GFX_decision_generic_china
+	on_map_area = {
+		targets = { all_owned_state = { limit = { state = { CHI_Organize_state_enterprises_states_trigger = yes } } } }
+			name = CHI_Organize_state_enterprises_states_map
+			zoom = 850
+	
+		target_trigger = {
+			has_completed_focus = CHI_Organize_state_enterprises
+		}
+	}
+
+	visible = {
+		OR = { 
+			original_tag = CHI 
+			tag = DSC
+			tag = HkG
+		}
+	}
+}
+
+CHI_Organize_state_enterprises_decisions = {
+	priority = { base = 1000 }
+	allowed = { 
+		OR = { 
+			original_tag = CHI 
+			tag = DSC
+			tag = HkG
+	}
+}
 		icon = GFX_decision_generic_china
 
 	visible = {
@@ -15,6 +44,7 @@ CHI_new_social_economy_decisions = {
 			tag = DSC
 			tag = HkG
 		}
+		has_completed_focus = CHI_Organize_state_enterprises
 	}
 }
 
