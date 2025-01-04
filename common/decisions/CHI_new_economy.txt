@@ -183,17 +183,23 @@ CHI_new_social_economy_decisions = {
 CHI_state_enterprises_decisions = {
 	guangdong_state_enterprises = {
 		icon = GFX_decision_generic_construction
-		available = { 
+		visible = {
 			has_completed_focus = CHI_Organize_state_enterprises
+			OR = { tag = DSC tag = CHI }
+		}
+		available = { 
+			
 		}
 		cost = 35
 		complete_effect = {
 			
 		}
+		days_remove = 30
+		days_re_enable = 45
 		highlight_states = { highlight_states_trigger = { state = 534 state = 532 } }
 		on_map_mode = map_only
 		remove_effect = {
-			state_enterprises_build_effect = yes
+			534 = { state_enterprises_build_effect = yes } 532 = { state_enterprises_build_effect = yes }
 		}
 		ai_will_do = {
 			factor = 1
