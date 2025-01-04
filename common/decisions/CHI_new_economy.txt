@@ -221,11 +221,70 @@ CHI_new_social_economy_decisions = {
 
 				if = {
 					limit = { check_variable = { Promote_nationalization_strategic_industries_progress = 100 } }
-					set_temp_variable = { COSEM_gbs_add = 0.15 } set_temp_variable = { COSEM_lrs_add = 0.20 } 
+					set_temp_variable = { COSEM_gbs_add = 0.15 } set_temp_variable = { COSEM_lrs_add = 0.10 } 
 					set_temp_variable = { COSEM_gm_add = 0.05 } set_temp_variable = { COSEM_egm_add = 0.05 } 
 					custom_effect_tooltip = Promote_nationalization_strategic_industries_end_effect_tt 
 					add_to_variable = { COSEM_gbs = COSEM_gbs_add } add_to_variable = { COSEM_lrs = COSEM_lrs_add } 
 					add_to_variable = { COSEM_gm = COSEM_gm_add } add_to_variable = { COSEM_egm = COSEM_egm_add } 
+					#完成战略行业国有化效果
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Nationalize_construction_and_chemical_industries = {
+		icon = GFX_decision_gre_investment_decisions
+		visible = {
+			has_completed_focus = CHI_Organize_state_enterprises
+			check_variable = { Nationalize_construction_and_chemical_industries_progress < 100 }
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = Redemption_assets_trigger_tt
+				check_variable = { Nationalize_construction_and_chemical_industries_progress < 100 }
+			}
+		}
+		custom_cost_trigger = {
+			check_variable = { treasury > 10.0 }
+			has_political_power > 49
+		}
+		custom_cost_text = cost_10_0
+		complete_effect = {
+			set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes
+			add_political_power = -50
+		}
+		days_remove = 50
+		remove_effect = {
+			Nationalize_construction_and_chemical_industries_progress_progress_effect_tt
+			hidden_effect = {
+				if = {
+					limit = { NOT = { has_variable = Nationalize_construction_and_chemical_industries_progress } }
+					set_variable = {
+						var = Nationalize_construction_and_chemical_industries_progress
+						value = 20
+					}
+				}
+				else_if = {
+					limit = { has_variable = Nationalize_construction_and_chemical_industries_progress } 
+					add_to_variable = {
+						var = Nationalize_construction_and_chemical_industries_progress
+						value = 20
+					}
+				}
+
+				if = {
+					limit = { check_variable = { Nationalize_construction_and_chemical_industries_progress = 100 } }
+					set_temp_variable = { COSEM_gbs_add = 0.05 } set_temp_variable = { COSEM_lrs_add = 0.10 } 
+					set_temp_variable = { COSEM_gm_add = 0.05 } set_temp_variable = { COSEM_sb_add = 0.20 } 
+					set_temp_variable = { COSEM_egm_add = 0.05 } set_temp_variable = { COSEM_otsb_add = 0.05 } 
+					custom_effect_tooltip = Nationalize_construction_and_chemical_industries_end_effect_tt 
+					add_to_variable = { COSEM_gbs = COSEM_gbs_add } add_to_variable = { COSEM_lrs = COSEM_lrs_add } 
+					add_to_variable = { COSEM_gm = COSEM_gm_add } add_to_variable = { COSEM_sb = COSEM_sb_add } 
+					add_to_variable = { COSEM_egm = COSEM_egm_add } add_to_variable = { COSEM_otsb = COSEM_otsb_add }
 					#完成战略行业国有化效果
 				}
 			}

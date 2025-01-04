@@ -8,14 +8,16 @@ CHI_Organize_state_enterprises_modifier: "§Y国企构建§!"
 
 #决议
 CHI_new_social_economy_decisions: "新社会主义经济"
-CHI_new_social_economy_decisions_desc: "在经历了近二十年的经济停滞，又经过惨烈内战后，原有的经济体系被§R彻底撕碎§!，但从某种意义上来讲，这也是一个§G重建公有制经济§!的§Y机会§!\n\n\n[CHI_new_social_economy_decisions_goal]\n[CHI_Promote_nationalization_strategic_industries_decisions_goal]"
+CHI_new_social_economy_decisions_desc: "在经历了近二十年的经济停滞，又经过惨烈内战后，原有的经济体系被§R彻底撕碎§!，但从某种意义上来讲，这也是一个§G重建公有制经济§!的§Y机会§!\n\n\n[CHI_new_social_economy_decisions_goal]\n\n[CHI_Promote_nationalization_strategic_industries_decisions_goal]\n[CHI_Nationalize_construction_and_chemical_industries_decisions_goal]"
 CHI_redemption_goals: "正在以§O赎买§!方式进行§C国有化§!,目前进度为：[?Redemption_assets_times|Y0]次/§03§!次。"
 CHI_confiscated_goals: "正在以§R强制没收§!方式进行§C国有化§!,目前进度为：[?confiscated_assets_times|Y0]次/§05§!次。"
 NOT_sign: "§g尚未决定政策§!"
-CHI_redemption_goals_achieve: "§7政策§!§O赎买§!§C国有化§!§7已完成！§!"
+CHI_redemption_goals_achieve: "§7政策§!§I赎买§!§C国有化§!§7已完成！§!"
 CHI_confiscated_goals_achieve: "§7政策§!§R强制§!§C国有化§!§7已完成！§!"
 CHI_Organize_state_enterprises_goals: "正在进行§O战略资源及相关冶炼产业§!§C国有化§!,目前进度为：[?Promote_nationalization_strategic_industries_progress|Y0]§Y%§!"
 CHI_Organize_state_enterprises_goals_achieve: "§7政策§!§O战略资源及相关冶炼产业§!§C国有化§!§7已完成！§!"
+CHI_Nationalize_construction_and_chemical_industries_goal: "正在进行§O建造业及化工产业国有化§!§C国有化§!,目前进度为：[?Nationalize_construction_and_chemical_industries_progress|Y0]§Y%§!"
+CHI_Nationalize_construction_and_chemical_industries_goals_achieve: "§7政策§!§O建造业及化工产业国有化§!§C国有化§!§7已完成！§!"
 ruins_rebuild: "§I正在重建地区§!"
 ruins_rebuild_desc: "长时间的战争已经使各地千疮百孔，重建工作任重道远。"
 Redemption_assets: "赎买资产"
@@ -27,8 +29,10 @@ confiscated_assets_trigger_tt: "§R最多强制国有化五次私人企业§!，
 Promote_nationalization_strategic_industries_progress_effect_tt: "§7战略资源及相关冶炼产业国有化§!将推进§Y20%§!的§C进度§!，目前进度为：[?Promote_nationalization_strategic_industries_progress|Y]%。"
 Promote_nationalization_strategic_industries: "§7战略资源及相关冶炼产业§!国有化"
 Promote_nationalization_strategic_industries_desc: "§7战略资源及相关冶炼产业§!是一个国家的命脉。在前政府时期，相关资源被贱卖，造成了巨大损失。我们工作的第一步，就是将§7战略资源及相关冶炼产业§!国有化。"
-Promote_nationalization_strategic_industries_end_effect_tt: "§Y国企构建§!修正效果添加:\n$global_building_slots_factor$:[?COSEM_lbs_add|=%+]\n$local_resources_factor$:[?COSEM_lrs_add|=%+]\n$productivity_growth_modifier$:[?COSEM_gm_add|=%+]\n$energy_gain_multiplier$:[?COSEM_egm_add|=%+]"
-
+Promote_nationalization_strategic_industries_end_effect_tt: "§Y国企构建§!修正效果添加:\n$global_building_slots_factor$:[?COSEM_gbs_add|=%+]\n$local_resources_factor$:[?COSEM_lrs_add|=%+]\n$productivity_growth_modifier$:[?COSEM_gm_add|=%+]\n$energy_gain_multiplier$:[?COSEM_egm_add|=%+]"
+Nationalize_construction_and_chemical_industries: "§7建造业及化工产业§!国有化"
+Nationalize_construction_and_chemical_industries_progress_progress_effect_tt: "§7建造业及化工产业国有化§!将推进§Y20%§!的§C进度§!，目前进度为：[?Nationalize_construction_and_chemical_industries_progress|Y]%。"
+Nationalize_construction_and_chemical_industries_end_effect_tt: "§Y国企构建§!修正效果添加:\n$global_building_slots_factor$:[?COSEM_gbs_add|=%+]\n$local_resources_factor$:[?COSEM_lrs_add|=%+]\n$productivity_growth_modifier$:[?COSEM_gm_add|=%+]\n$energy_gain_multiplier$:[?COSEM_egm_add|=%+]\n$production_speed_buildings_factor$:[?COSEM_sb_add|=%+]\n$production_speed_infrastructure_factor$:[?COSEM_otsb_add|=%+]\n$production_speed_offices_factor$:[?COSEM_otsb_add|=%+]\n$production_speed_industrial_complex_factor$:[?COSEM_otsb_add|=%+]\n$production_arms_factory_factor$:[?COSEM_otsb_add|=%+]\n$production_speed_supply_node_factor$:[?COSEM_otsb_add|=%+]\n$production_speed_rail_way_factor$:[?COSEM_otsb_add|=%+]"
 
 
 

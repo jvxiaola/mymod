@@ -59,3 +59,26 @@ defined_text = {
 		localization_key = "CHI_Organize_state_enterprises_goals_achieve"#战略产业国有化完成
 	}
 }
+
+defined_text = {
+	name = CHI_Nationalize_construction_and_chemical_industries_decisions_goal
+	text = {
+		trigger = {
+			has_completed_focus = CHI_Organize_state_enterprises
+		}
+		localization_key = "CHI_Nationalize_construction_and_chemical_industries_goal"#显示战略产业国有化进度
+	}
+	text = {
+		trigger = {
+				NOT = { has_completed_focus = CHI_Organize_state_enterprises }
+		}
+		localization_key = "NOT_sign"
+	}
+	text = {
+		trigger = {
+			has_completed_focus = CHI_Organize_state_enterprises
+			check_variable = { Promote_nationalization_strategic_industries_progress = 100 }
+		}
+		localization_key = "CHI_Nationalize_construction_and_chemical_industries_goals_achieve"#战略产业国有化完成
+	}
+}
