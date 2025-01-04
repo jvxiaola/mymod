@@ -16,19 +16,20 @@ CW_ruins = {
 }
 
 CHI_Organize_state_enterprises_modifier = {
-	enable = {always = yes}
+	enable = { always = yes }
 	icon = GFX_idea_economy_housing
 	
 	
-	local_building_slots_factor = COSEM_lbs #建筑槽:开始为-0.05
-	local_resources_factor = COSEM_lrs #当地资源:开始为-0.05
-	state_production_speed_buildings_factor = COSEM_sb #建造速度:开始为-0.05
-	state_production_speed_infrastructure_factor = COSEM_otsb #其它建造速度:开始为0
-	state_production_speed_industrial_complex_factor = COSEM_otsb
-	state_production_arms_factory_factor = COSEM_otsb
-	state_production_speed_supply_node_factor = COSEM_otsb
-	state_production_speed_rail_way_factor = COSEM_otsb
-	state_productivity_growth_modifier = COSEM_pm #生产力:开始为-0.05
+	global_building_slots_factor = COSEM_gbs #建筑槽:开始为-0.05
+	local_resources_factor = COSEM_lrs #资源:开始为-0.05
+	production_speed_buildings_factor = COSEM_sb #建造速度:开始为-0.05
+	production_speed_infrastructure_factor = COSEM_otsb #其它建造速度:开始为0
+	production_speed_offices_factor = COSEM_otsb
+	production_speed_industrial_complex_factor = COSEM_otsb
+	production_arms_factory_factor = COSEM_otsb
+	production_speed_supply_node_factor = COSEM_otsb
+	production_speed_rail_way_factor = COSEM_otsb
+	productivity_growth_modifier = COSEM_gm #生产力:开始为-0.05
 	energy_gain_multiplier = COSEM_egm #能源获取:开始为0
 
 }
