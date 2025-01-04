@@ -1023,6 +1023,39 @@ completion_reward = {
 	}
 }
 
+focus = {
+	id = DSC_Confiscate_stolen_funds
+	icon = cash_grap
+	x = -2
+
+	y = 1
+
+cost = 3
+relative_position_id = DSC_Crack_speculation
+prerequisite = { focus = DSC_Crack_speculation }
+prerequisite = { focus = DSC_Imported_essential_goods }
+prerequisite = { focus = DSC_material_control }
+
+ai_will_do = {
+	factor = 10
+}
+bypass = {
+
+}
+
+cancel_if_invalid = yes
+continue_if_invalid = no
+available_if_capitulated = no
+available = {
+	
+}
+completion_reward = {
+	unlock_decision_tooltip = Confiscate_stolen_funds
+	unlock_decision_tooltip = Organize_large_scale_aid
+	add_ideas = DSC_Confiscate_stolen_funds
+
+	}
+}
 
 focus = {
 	id = DSC_economic_stability
@@ -1099,39 +1132,7 @@ completion_reward = {
 
 }
 
-focus = {
-	id = DSC_Confiscate_stolen_funds
-	icon = cash_grap
-	x = -2
 
-	y = 1
-
-cost = 3
-relative_position_id = DSC_Crack_speculation
-prerequisite = { focus = DSC_Crack_speculation }
-prerequisite = { focus = DSC_Imported_essential_goods }
-prerequisite = { focus = DSC_material_control }
-
-ai_will_do = {
-	factor = 10
-}
-bypass = {
-
-}
-
-cancel_if_invalid = yes
-continue_if_invalid = no
-available_if_capitulated = no
-available = {
-	
-}
-completion_reward = {
-	unlock_decision_tooltip = Confiscate_stolen_funds
-	unlock_decision_tooltip = Organize_large_scale_aid
-	add_ideas = DSC_Confiscate_stolen_funds
-
-	}
-}
 
 		focus = {
 			id = DSC_restart_industry
