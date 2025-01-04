@@ -815,8 +815,6 @@ add_political_power = 100
 					change_DSC_Socialist_Construction_dynamic1 = yes
 					set_cosmetic_tag = DSC_GMG
 				}
-				clr_global_flag = Ccw
-				clr_country_flag = qyxd
 				country_event = { id = Chuanyu.8 }
 				set_capital = { state = 547 }
 

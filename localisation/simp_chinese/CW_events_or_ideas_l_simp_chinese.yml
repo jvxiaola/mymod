@@ -63,8 +63,10 @@ Joint_production_system_tt: "§C将会把三个恢复精神替换为以下精神
  CW_ruins_desc: "“繁荣已逝，唯余残烬，所以这一切都值得吗？逝去那么多生命，浪费那么多财物，哪里有什么......”\n§R“所以呢？不革命，生命就不会逝去了？不革命，财物就不会浪费了？有哪个重大历史进步是无人牺牲的？至于值不值得.....我不知道值不值得，这只有时间知道。我只知道这一切终究会来到，或是现在，或是一百年后。”§!"
  CHI_No_guns_cannons_ask_enemy_for_us: "没有枪，没有炮，敌人给我们造"
  CHI_No_guns_cannons_ask_enemy_for_us_desc: "虽然我们有着革命的精神，但物质条件的匮乏仍是一个大问题。如何解决这个问题，或许我们可以从以前的经验中找到答案。"
- CHI_NEW_people_war1: "新人民战争:§G萌芽§!"
+ CHI_NEW_people_war1: "新人民战争:§G第一阶段§!"
+ CHI_NEW_people_war2: "新人民战争:§Y第二阶段§!"
  CHI_NEW_people_war1_desc: "战争使得大多数地区的基础设施遭到破坏，为此我们将运用以前的经验：依靠人民群众。"
+ CHI_NEW_people_war2_desc: "战争使得大多数地区的基础设施遭到破坏，为此我们将运用以前的经验：依靠人民群众。"
 
 
 #事件
@@ -105,6 +107,8 @@ CHI_CHI_No_guns_cannons_ask_enemy_for_us: "§T“没有枪，没有炮，敌人�
 CHI_CHI_No_guns_cannons_ask_enemy_for_us_desc: "虽然我们有着革命的精神，但物质条件的匮乏仍是一个大问题。如何解决这个问题，或许我们可以从以前的经验中找到答案。"
 CHI_CHI_NEW_people_war1: "回归人民战争"
 CHI_CHI_NEW_people_war1_desc: "由于众所周知的原因，我们的作战理论体系已成为唯武器论，无论是在理论层面还是在现实条件上都不合情理。回归人民战争是我们重新构建作战理论体系的第一步。"
+CHI_CHI_NEW_people_war2: "总结空袭教训"
+CHI_CHI_NEW_people_war2_desc: "由于军政府获得了北约联军的空中援助，我们几乎丧失了制空权。在惨烈的空袭下，我们总结了一套应对空袭的临时办法，现在是时候将它体系化并推广了。"
 #恢复
 Collecting_materials: "征收补给援助"
 Collecting_materials_desc: "目前我们已经进行了物资管制，通过征收物资援助，并将其发送给受灾严重地区，我们可以更快稳定当地的物价。"

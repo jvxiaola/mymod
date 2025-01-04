@@ -269,6 +269,8 @@ country_event = {
 	hidden_effect = {
 		set_country_flag = rehabilitate_economy
 		mark_focus_tree_layout_dirty = yes
+		clr_global_flag = Ccw
+		clr_country_flag = qyxd
 	}
 		}
 	}
