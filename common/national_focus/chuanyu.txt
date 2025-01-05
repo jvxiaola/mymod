@@ -599,7 +599,7 @@ add_political_power = 100
 	
 			y = 4
 	
-			cost = 3
+			cost = 1
 	
 			prerequisite = {
 				focus = DSC_JIEFNQUANZHONGGUO
@@ -627,8 +627,8 @@ add_political_power = 100
 
 
 				random_country={
-					limit={
-						NOT={tag = CHI}
+					limit = {
+						NOT = { tag = CHI}
 						 has_cosmetic_tag = CHI_REB_S
 					}
 					declare_war_on = {
@@ -652,7 +652,7 @@ add_political_power = 100
 		
 				y = 4
 		
-				cost = 3
+				cost = 1
 		
 				prerequisite = {
 					focus = DSC_JIEFNQUANZHONGGUO
@@ -723,7 +723,17 @@ add_political_power = 100
 			continue_if_invalid = no
 			available_if_capitulated = no
 			available = {
-	
+				custom_trigger_tooltip = {
+					tooltip = "主要地区军事冲突已结束"
+					random_country = {
+						limit = {
+							NOT = { tag = CHI}
+							 has_cosmetic_tag = CHI_REB_S
+						}
+						exists = no
+					}
+					CHI = { exists = no }
+				}
 			}
 			completion_reward = {
 
@@ -769,9 +779,20 @@ add_political_power = 100
 	
 			cost = 5
 			available = {
-				has_war = no
-				547 = { is_owned_by = DSC }
-				
+				custom_trigger_tooltip = {
+					tooltip = "中国已重归一统"
+					random_country = {
+						limit = {
+							NOT = { tag = CHI}
+							 has_cosmetic_tag = CHI_REB_S
+						}
+						exists = no
+					}
+					CHI = { exists = no }
+					547 = { is_owned_by = DSC }
+					XIN = { exists = no }
+					XIZ = { exists = no }
+				}			
 			}
 			prerequisite = {
 				focus = DSC_QINGSUANFENLIESHILI
@@ -780,15 +801,13 @@ add_political_power = 100
 			ai_will_do = {
 				factor = 10
 			}
-			bypass = {
-	
-			}
+			
 	
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
 			available = {
-	
+				
 			}
 			completion_reward = {
 				hidden_effect = {
@@ -877,9 +896,6 @@ add_political_power = 100
 	
 			}
 	
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = DSC_recover_begin_trigger_tt 
@@ -898,6 +914,12 @@ add_political_power = 100
 					}
 				}
 			}
+
+
+
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
 			completion_reward = {
 				custom_effect_tooltip = DSC_Save_economy_effect_tt
 				set_power_balance = {
@@ -1152,9 +1174,6 @@ completion_reward = {
 	
 			}
 	
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = DSC_recover_begin_trigger_tt 
@@ -1173,6 +1192,12 @@ completion_reward = {
 					}
 				}
 			}
+
+
+
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
 			completion_reward = {
 				custom_effect_tooltip = DSC_restart_industry_tt
 				set_power_balance = {
@@ -1427,9 +1452,6 @@ completion_reward = {
 	
 		}
 	
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = DSC_recover_begin_trigger_tt 
@@ -1448,6 +1470,11 @@ completion_reward = {
 				}
 			}
 		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			custom_effect_tooltip = DSC_Agricultural_reconstruction_tt
 			set_power_balance = {
