@@ -19,7 +19,7 @@ CHI_Organize_state_enterprises_modifier = {
 	enable = { always = yes }
 	icon = GFX_idea_economy_housing
 	
-	
+	political_power_factor = COSEM_pp#政治点:开始为0
 	global_building_slots_factor = COSEM_gbs #建筑槽:开始为-0.05
 	local_resources_factor = COSEM_lrs #资源:开始为-0.05
 	production_speed_buildings_factor = COSEM_sb #建造速度:开始为-0.05
@@ -32,4 +32,7 @@ CHI_Organize_state_enterprises_modifier = {
 	productivity_growth_modifier = COSEM_gm #生产力:开始为-0.05
 	energy_gain_multiplier = COSEM_egm #能源获取:开始为0
 	industrial_capacity_factory = COSEM_icf #军事工业产出:开始为0
+	civ_facs_worker_requirement_modifier = COSEM_iwr #所有工业建筑劳动力需求:开始为0
+	mil_facs_worker_requirement_modifier = COSEM_iwr
+	total_workforce_modifier = COSEM_twm #生产规模加成:开始为0
 }

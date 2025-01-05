@@ -887,20 +887,27 @@ CHI_ruin_economy_remove = {
       }
 }
 
-CHI_state_add_Organize_state_enterprises_modifier = {
-    set_variable = { COSEM_gbs = -0.05 }  set_variable = { COSEM_lrs = -0.05 } set_variable = { COSEM_sb = -0.05 }
-  	set_variable = { COSEM_otsb = 0 } set_variable = { COSEM_pm = -0.05 } set_variable = { COSEM_egm = 0 } set_variable = { COSEM_icf = 0 }
+CHI_add_Organize_state_enterprises_modifier = {
+    set_variable = { COSEM_gbs = -0.05 }  set_variable = { COSEM_lrs = -0.05 } set_variable = { COSEM_sb = -0.05 } set_variable = { COSEM_iwr = 0 } set_variable = { COSEM_twm = 0 }
+  	set_variable = { COSEM_otsb = 0 } set_variable = { COSEM_pm = -0.05 } set_variable = { COSEM_egm = 0 } set_variable = { COSEM_icf = 0 } set_variable = { COSEM_pp = 0 }
   	add_dynamic_modifier = { modifier = CHI_Organize_state_enterprises_modifier }
   }
 
-
-#这是国企废案
-#CHI_state_add_Organize_state_enterprises_modifier = {
-#  set_variable = { COSEM_lbs = -0.05 }  set_variable = { COSEM_lrs = -0.05 } set_variable = { COSEM_sb = -0.05 }
-#	set_variable = { COSEM_otsb = 0 } set_variable = { COSEM_pm = -0.05 } set_variable = { COSEM_pm = 0 }
-#	add_dynamic_modifier = { modifier = CHI_Organize_state_enterprises_modifier }
-#}
-
+  CHI_remove_Organize_state_enterprises_modifier = {
+    remove_dynamic_modifier = {
+      modifier = CHI_Organize_state_enterprises_modifier
+    }
+    clear_variable = COSEM_pp
+    clear_variable = COSEM_gbs
+    clear_variable = COSEM_lrs
+    clear_variable = COSEM_sb
+    clear_variable = COSEM_otsb
+    clear_variable = COSEM_gm
+    clear_variable = COSEM_egm
+    clear_variable = COSEM_icf
+    clear_variable = COSEM_iwr
+    clear_variable = COSEM_twm
+  }
 #state_enterprises_build_effect = {
  # if= {
  #   limit = { 

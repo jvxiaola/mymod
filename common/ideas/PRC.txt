@@ -1681,26 +1681,7 @@ civ_facs_worker_requirement_modifier = 0.2
 				military_factories_productivity = 0.3
 								agriculture_workers_modifier = 0.10
 }
-}	
-			CHI_Stateowned_enterprise_monopoly = {
-	allowed_civil_war = {
-always = yes
 }		
-			picture = puppet_industry
-			
-			modifier = {
-				research_speed_factor = 0.1 #研究速度
-				production_speed_arms_factory_factor = 0.10 #军工建设速度
-				production_speed_industrial_complex_factor = 0.10 #民工建设速度
-				consumer_goods_factor = -0.10
-				civ_facs_worker_requirement_modifier = 0.1
-				mil_facs_worker_requirement_modifier = 0.1
-				offices_worker_requirement_modifier = 0.1
-				civilian_factories_productivity = 0.15
-				military_factories_productivity = 0.15
-
-}
-}			
 				CHI_selfemployed_small_cities = {
 	allowed_civil_war = {
 always = yes
@@ -2548,9 +2529,7 @@ CHI_shipinganquanwenti = {
 always = yes
 }
 available = {
-	NOT={
-		has_idea = CHI_Planned_Economy
-	}
+	always = yes
 }
 			removal_cost = -1
 						modifier = {
@@ -2568,6 +2547,42 @@ consumer_goods_factor = 0.05
 
 }
 
+CHI_BETTER_FOOD_SAFTY = {
+		picture = agrarian_economy_idea
+
+		allowed = { original_tag = CHI }
+		allowed_civil_war = {
+			always = yes
+		}
+		available = {
+			always = yes
+		}
+		on_add = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		removal_cost = -1
+		modifier = {
+			stability_factor = 0.10
+			communism_drift = 0.05
+			research_speed_factor = 0.05
+			health_cost_multiplier_modifier = -0.03
+			social_cost_multiplier_modifier = -0.02
+		}
+	}
 
 CHI_jihuashengyu = {
 allowed_civil_war = {
@@ -2745,28 +2760,21 @@ industrial_capacity_dockyard = 0.10
 
 
 
-CHI_guoyouhua = {
+CHI_nationalizing = {
 	allowed_civil_war = {
-always = yes
-}	
-
-
-
+		always = yes
+		}	
 			picture = communism11
-
 			allowed = { original_tag = CHI }
-
 			removal_cost = -1
-						modifier = {
-
-stability_factor = -0.2
-consumer_goods_factor = 0.04
-production_factory_efficiency_gain_factor =-0.2
-production_speed_buildings_factor = -0.4 
-industrial_capacity_factory = -0.20
-industrial_capacity_dockyard = -0.20
-
-}
+				modifier = {
+		stability_factor = -0.2
+		consumer_goods_factor = 0.04
+		production_factory_efficiency_gain_factor =-0.2
+		production_speed_buildings_factor = -0.4 
+		industrial_capacity_factory = -0.20
+		social_cost_multiplier_modifier = 0.10
+	}
 }
 
 

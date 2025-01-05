@@ -37,7 +37,7 @@ CHI_new_social_economy_decisions = {
 	Redemption_assets = {
 		icon = GFX_decision_gre_investment_decisions
 		visible = {
-			has_completed_focus = CHI_redemption
+			has_completed_focus = CHI_redemption NOT = { has_completed_focus = CHI_Chinese_Industrial_Explosion }
 			check_variable = { Redemption_assets_times < 4 }
 		}
 		available = {
@@ -112,7 +112,7 @@ CHI_new_social_economy_decisions = {
 	confiscated_assets = {
 		icon = GFX_decision_gre_investment_decisions
 		visible = {
-			has_completed_focus = CHI_redemption
+			has_completed_focus = CHI_redemption NOT = { has_completed_focus = CHI_Chinese_Industrial_Explosion }
 			check_variable = { confiscated_assets_times < 6 }
 		}
 		available = {
@@ -125,12 +125,14 @@ CHI_new_social_economy_decisions = {
 		complete_effect = {
 			add_stability = -0.02
 		}
-		days_remove = 20
+		days_remove = 10
 		remove_effect = {
 			modify_timed_idea = {
 				idea = CHI_confiscated
-				days = 20
+				days = -20
 			}
+			set_temp_variable = { treasury_change = 100 }
+			modify_treasury_effect = yes
 			random_owned_state = {
 				if = {
 					limit = {
@@ -178,15 +180,15 @@ CHI_new_social_economy_decisions = {
 		}
 	}
 	
-	Promote_nationalization_strategic_industries = {
+	Promote_nationalization_strategic_industries = { #战略行业国有化
 		icon = GFX_decision_gre_investment_decisions
 		visible = {
-			has_completed_focus = CHI_Organize_state_enterprises
+			has_completed_focus = CHI_Organize_state_enterprises NOT = { has_completed_focus = CHI_Chinese_Industrial_Explosion }
 			check_variable = { Promote_nationalization_strategic_industries_progress < 100 }
 		}
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = Redemption_assets_trigger_tt
+				tooltip = Promote_nationalization_strategic_industries_progress_trigger_tt
 				check_variable = { Promote_nationalization_strategic_industries_progress < 100 }
 			}
 		}
@@ -221,13 +223,13 @@ CHI_new_social_economy_decisions = {
 
 				if = {
 					limit = { check_variable = { Promote_nationalization_strategic_industries_progress = 100 } }
-					set_temp_variable = { COSEM_gbs_add = 0.15 } set_temp_variable = { COSEM_lrs_add = 0.10 } 
-					set_temp_variable = { COSEM_gm_add = 0.05 } set_temp_variable = { COSEM_egm_add = 0.05 } 
-					set_temp_variable = { COSEM_icf_add = 0.05 } 
+					set_temp_variable = { COSEM_gbs_add = 0.15 } set_temp_variable = { COSEM_lrs_add = 0.10 } set_temp_variable = { COSEM_gm_add = 0.05 } 
+					set_temp_variable = { COSEM_egm_add = 0.05 } set_temp_variable = { COSEM_icf_add = 0.05 } set_temp_variable = { COSEM_iwr_add = 0.01 } 
+					set_temp_variable = { COSEM_twm_add = 0.01 } 
 					custom_effect_tooltip = Promote_nationalization_strategic_industries_end_effect_tt 
-					add_to_variable = { COSEM_gbs = COSEM_gbs_add } add_to_variable = { COSEM_lrs = COSEM_lrs_add } 
-					add_to_variable = { COSEM_gm = COSEM_gm_add } add_to_variable = { COSEM_egm = COSEM_egm_add } 
-					add_to_variable = { COSEM_icf = COSEM_icf_add } 
+					add_to_variable = { COSEM_gbs = COSEM_gbs_add } add_to_variable = { COSEM_lrs = COSEM_lrs_add } add_to_variable = { COSEM_gm = COSEM_gm_add } 
+					add_to_variable = { COSEM_egm = COSEM_egm_add } add_to_variable = { COSEM_icf = COSEM_icf_add } add_to_variable = { COSEM_iwr = COSEM_iwr_add } 
+					add_to_variable = { COSEM_twm = COSEM_twm_add } 
 					#完成战略行业国有化效果
 				}
 			}
@@ -237,15 +239,15 @@ CHI_new_social_economy_decisions = {
 		}
 	}
 
-	Nationalize_construction_and_chemical_industries = {
+	Nationalize_construction_and_chemical_industries = { #建筑与化工行业国有化效果
 		icon = GFX_decision_gre_investment_decisions
 		visible = {
-			has_completed_focus = CHI_Organize_state_enterprises
+			has_completed_focus = CHI_Organize_state_enterprises NOT = { has_completed_focus = CHI_Chinese_Industrial_Explosion }
 			check_variable = { Nationalize_construction_and_chemical_industries_progress < 100 }
 		}
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = Redemption_assets_trigger_tt
+				tooltip = Nationalize_construction_and_chemical_industries_progress_trigger_tt
 				check_variable = { Nationalize_construction_and_chemical_industries_progress < 100 }
 			}
 		}
@@ -280,14 +282,14 @@ CHI_new_social_economy_decisions = {
 
 				if = {
 					limit = { check_variable = { Nationalize_construction_and_chemical_industries_progress = 100 } }
-					set_temp_variable = { COSEM_gbs_add = 0.05 } set_temp_variable = { COSEM_lrs_add = 0.10 } 
-					set_temp_variable = { COSEM_gm_add = 0.05 } set_temp_variable = { COSEM_sb_add = 0.20 } 
-					set_temp_variable = { COSEM_egm_add = 0.05 } set_temp_variable = { COSEM_otsb_add = 0.05 } 
+					set_temp_variable = { COSEM_gbs_add = 0.05 } set_temp_variable = { COSEM_lrs_add = 0.10 } set_temp_variable = { COSEM_gm_add = 0.05 } 
+					set_temp_variable = { COSEM_sb_add = 0.20 } set_temp_variable = { COSEM_egm_add = 0.05 } set_temp_variable = { COSEM_otsb_add = 0.05 } 
+					set_temp_variable = { COSEM_iwr_add = 0.01 } set_temp_variable = { COSEM_twm_add = 0.01 } 
 					custom_effect_tooltip = Nationalize_construction_and_chemical_industries_end_effect_tt 
-					add_to_variable = { COSEM_gbs = COSEM_gbs_add } add_to_variable = { COSEM_lrs = COSEM_lrs_add } 
-					add_to_variable = { COSEM_gm = COSEM_gm_add } add_to_variable = { COSEM_sb = COSEM_sb_add } 
-					add_to_variable = { COSEM_egm = COSEM_egm_add } add_to_variable = { COSEM_otsb = COSEM_otsb_add }
-					#完成战略行业国有化效果
+					add_to_variable = { COSEM_gbs = COSEM_gbs_add } add_to_variable = { COSEM_lrs = COSEM_lrs_add } add_to_variable = { COSEM_gm = COSEM_gm_add } 
+					add_to_variable = { COSEM_sb = COSEM_sb_add } add_to_variable = { COSEM_egm = COSEM_egm_add } add_to_variable = { COSEM_otsb = COSEM_otsb_add }
+					add_to_variable = { COSEM_iwr = COSEM_iwr_add } add_to_variable = { COSEM_twm = COSEM_twm_add } 
+					#建筑与化工行业国有化效果
 				}
 			}
 		}
@@ -296,7 +298,146 @@ CHI_new_social_economy_decisions = {
 		}
 	}
 
+	Partial_nationalize_light_manufacturing_industry = { #部分轻工业、制造业国有化效果
+	icon = GFX_decision_gre_investment_decisions
+	visible = {
+		has_completed_focus = CHI_Organize_state_enterprises NOT = { has_completed_focus = CHI_Chinese_Industrial_Explosion }
+		check_variable = { Partial_nationalize_light_manufacturing_industry_progress < 100 }
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = Partial_nationalize_light_manufacturing_industry_progress_trigger_tt
+			check_variable = { Partial_nationalize_light_manufacturing_industry_progress < 100 }
+		}
+	}
+	custom_cost_trigger = {
+		check_variable = { treasury > 10.0 }
+		has_political_power > 49
+	}
+	custom_cost_text = cost_10_0
+	complete_effect = {
+		set_temp_variable = { treasury_change = -10 }
+		modify_treasury_effect = yes
+		add_political_power = -50
+	}
+	days_remove = 50
+	remove_effect = {
+		Partial_nationalize_light_manufacturing_industry_progress_progress_effect_tt
+		hidden_effect = {
+			if = {
+				limit = { NOT = { has_variable = Partial_nationalize_light_manufacturing_industry_progress } }
+				set_variable = {
+					var = Partial_nationalize_light_manufacturing_industry_progress
+					value = 20
+				}
+			}
+			else_if = {
+				limit = { has_variable = Partial_nationalize_light_manufacturing_industry_progress } 
+				add_to_variable = {
+					var = Partial_nationalize_light_manufacturing_industry_progress
+					value = 20
+				}
+			}
+
+			if = {
+				limit = { check_variable = { Partial_nationalize_light_manufacturing_industry_progress = 100 } }
+				set_temp_variable = { COSEM_add = 0.05 } set_temp_variable = { COSEM_iwr_add = 0.01 } set_temp_variable = { COSEM_twm_add = 0.01 } 
+				custom_effect_tooltip = Partial_nationalize_light_manufacturing_industry_progress_end_effect_tt 
+				add_to_variable = { COSEM_gbs = COSEM_add } add_to_variable = { COSEM_gm = COSEM_add } add_to_variable = { COSEM_egm = COSEM_add } 
+				add_to_variable = { COSEM_otsb = COSEM_add } add_to_variable = { COSEM_icf = COSEM_add } add_to_variable = { COSEM_iwr = COSEM_iwr_add } 
+				add_to_variable = { COSEM_twm = COSEM_twm_add } 
+				set_country_flag = Partial_nationalize_light_manufacturing_industry_end
+				#部分轻工业、制造业国有化效果
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	}
+
+	Organize_breakthroughs_food_industry = { #组织食品、药品制造业技术攻关运动
+	icon = GFX_decision_gre_investment_decisions
+	visible = {
+		check_variable = { Partial_nationalize_light_manufacturing_industry_progress = 100 }
+		has_idea = CHI_shipinganquanwenti
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = CHI_Partial_nationalize_light_manufacturing_industry_goal_achieve_tt
+			check_variable = { Partial_nationalize_light_manufacturing_industry_progress = 100 }
+		}
+	}
+	custom_cost_trigger = {
+		check_variable = { treasury > 20.0 }
+		has_political_power > 49
+	}
+	custom_cost_text = cost_20_0
+	complete_effect = {
+		set_temp_variable = { treasury_change = -20 }
+		modify_treasury_effect = yes
+		add_political_power = -50
+	}
+	days_remove = 120
+	remove_effect = {
+		swap_ideas = {
+			remove_idea = CHI_shipinganquanwenti
+			add_idea = CHI_BETTER_FOOD_SAFTY
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	}
+
+	Raise_worker_salaries_benefits = { #提高工人薪资待遇
+	icon = GFX_decision_gre_investment_decisions
+	visible = {
+		check_variable = { Partial_nationalize_light_manufacturing_industry_progress = 100 }
+		check_variable = { Nationalize_construction_and_chemical_industries_progress = 100 }
+		check_variable = { Promote_nationalization_strategic_industries_progress = 100 }
+		has_idea = CHI_shipinganquanwenti
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = CHI_Raise_worker_salaries_benefits_trigger_tt
+			check_variable = { Partial_nationalize_light_manufacturing_industry_progress = 100 }
+			check_variable = { Nationalize_construction_and_chemical_industries_progress = 100 }
+			check_variable = { Promote_nationalization_strategic_industries_progress = 100 }
+		}
+	}
+	custom_cost_trigger = {
+		check_variable = { treasury > 50.0 }
+		has_political_power > 9
+	}
+	custom_cost_text = cost_50_0
+	complete_effect = {
+		set_temp_variable = { treasury_change = -50 }
+		modify_treasury_effect = yes
+		add_political_power = -10
+	}
+	days_remove = 60
+	remove_effect = {
+		CHI_work_up = yes
+		if = {
+			limit = { check_variable = { COSEM_pp = 0.10 } }
+			set_temp_variable = { COSEM_pp_add = 0.05 } set_temp_variable = { COSEM_iwr_add = 0.01 } set_temp_variable = { COSEM_twm_add = 0.01 }
+			custom_effect_tooltip = COSEM_add_effect_tt 
+			add_to_variable = { COSEM_pp = COSEM_pp_add } add_to_variable = { COSEM_iwr = COSEM_iwr_add } add_to_variable = { COSEM_twm = COSEM_twm_add } 
+		}
+		if = {
+			limit = { has_idea = CHI_work_04 }
+			remove_ideas = CHI_work_04
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	}
+
 }
+
+
 #这是被否决的内容：国企决议，只显示在地图上
 #CHI_state_enterprises_decisions = {
 
