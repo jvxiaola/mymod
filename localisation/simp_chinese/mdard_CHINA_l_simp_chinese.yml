@@ -1301,7 +1301,7 @@ Chinese_people_support_to_china_government_modifier: "£stability_texticon 政�
 
 PRC_Revolutionary_Enthusiasm_tt: "§Y政府合法性§!动态修正将被替换为§Y革命热情§!。\n此动态修正与外交、政治、经济挂钩。"
 
-DSC_people_support_dynamic_left_desc: "\n\n\n\n\n£GFX_CHI_people_support_dynamic_dynamic_desc_left_picture \n\n\n\n\n\n\n经过残酷的战争，中国人民又一次站在历史舞台中央。可形势仍不容乐观：外面的豺狼固然凶险，内部流传几千年的政治冷淡才更令人毛骨悚然————如果连自己都不关心自己的利益，又有谁能来保护他们呢？\n但另一方面，主观能动性也并非无所不能，正如老话“欲速则不达”，过度的主观能动往往变成盲目，在别有用心者的有意推波助澜下酿成大祸....\n不管如何，历史的船舵已在他们手中。§Y而这次他们能否掌好舵§!，那就§R只有天知道了§!。\n\n §Y人民的革命热情为§!： £stability_texticon [?DSC_people_support|%+2]。\n受到民族精神或法律影响，每月变化(本mod已将变化缩小10倍)：[?Final_chuanyu_people_support_to_china_government_modifier|%+2]"
+DSC_people_support_dynamic_left_desc: "\n\n\n\n\n£GFX_CHI_people_support_dynamic_dynamic_desc_left_picture \n\n\n\n\n\n\n经过残酷的战争，中国人民又一次站在历史舞台中央。可形势仍不容乐观：外面的豺狼固然凶险，内部流传几千年的政治冷淡才更令人毛骨悚然————如果连自己都不关心自己的利益，又有谁能来保护他们呢？\n但另一方面，主观能动性也并非无所不能，正如老话“欲速则不达”，过度的主观能动往往变成盲目，在别有用心者的有意推波助澜下酿成大祸....\n不管如何，历史的船舵已在他们手中。§Y而这次他们能否掌好舵§!，那就§R只有天知道了§!。\n\n §Y群众平均主观能动性量化百分比为§!： £stability_texticon [?DSC_people_support|%+2]。\n受到民族精神或法律影响，每月变化(本mod已将变化缩小10倍)：[?Final_chuanyu_people_support_to_china_government_modifier|%+2]"
 DSC_people_support_dynamic_right_desc: "\n\n£GFX_CHI_people_support_dynamic_dynamic_desc_right_pic \n\n\n\n中国人民自古以来就是不愿意做奴隶的人民，上千年的历史数千次起义，说明了中国的历史就是一部悲壮的阶级斗争史，如果政府不让人民活了，那么人民就会抛弃该政府。\n §R王侯将相，宁有种乎？§!\n\n §Y政府合法性为§!： £stability_texticon [?DSC_people_support|%+2]\n受到修正影响，每月变化(本mod已将变化缩小10倍)：[?Final_chuanyu_people_support_to_china_government_modifier|%+2]"
 DSC_people_support_dynamic_left: "主观能动性"
 DSC_people_support_dynamic_right: "政府合法性"
