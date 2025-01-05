@@ -223,9 +223,11 @@ CHI_new_social_economy_decisions = {
 					limit = { check_variable = { Promote_nationalization_strategic_industries_progress = 100 } }
 					set_temp_variable = { COSEM_gbs_add = 0.15 } set_temp_variable = { COSEM_lrs_add = 0.10 } 
 					set_temp_variable = { COSEM_gm_add = 0.05 } set_temp_variable = { COSEM_egm_add = 0.05 } 
+					set_temp_variable = { COSEM_icf_add = 0.05 } 
 					custom_effect_tooltip = Promote_nationalization_strategic_industries_end_effect_tt 
 					add_to_variable = { COSEM_gbs = COSEM_gbs_add } add_to_variable = { COSEM_lrs = COSEM_lrs_add } 
 					add_to_variable = { COSEM_gm = COSEM_gm_add } add_to_variable = { COSEM_egm = COSEM_egm_add } 
+					add_to_variable = { COSEM_icf = COSEM_icf_add } 
 					#完成战略行业国有化效果
 				}
 			}

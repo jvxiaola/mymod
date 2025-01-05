@@ -31,5 +31,5 @@ CHI_Organize_state_enterprises_modifier = {
 	production_speed_rail_way_factor = COSEM_otsb
 	productivity_growth_modifier = COSEM_gm #生产力:开始为-0.05
 	energy_gain_multiplier = COSEM_egm #能源获取:开始为0
-
+	industrial_capacity_factory = COSEM_icf #军事工业产出:开始为0
 }
