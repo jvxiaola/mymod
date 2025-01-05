@@ -1303,11 +1303,11 @@ PRC_Revolutionary_Enthusiasm_tt: "§Y政府合法性§!动态修正将被替换�
 
 DSC_people_support_dynamic_left_desc: "\n\n\n\n\n£GFX_CHI_people_support_dynamic_dynamic_desc_left_picture \n\n\n\n\n\n\n中国革命群众经过各种斗争，最终掌握了中国的政权，不过，这并不是革命的结束，而仅仅是开始！中国人民必须考虑自身与外国无产阶级的联系，考虑自身的建设，万万不可重蹈无产阶级文化大革命后期人民对革命失望的覆辙，不然的话，资产阶级与官僚主义反革命极有可能再次推翻革命政权。\n\n §Y人民的革命热情为§!： £stability_texticon [?DSC_people_support|%+2]。\n受到民族精神或法律影响，每月变化(本mod已将变化缩小10倍)：[?Final_chuanyu_people_support_to_china_government_modifier|%+2]"
 DSC_people_support_dynamic_right_desc: "\n\n£GFX_CHI_people_support_dynamic_dynamic_desc_right_pic \n\n\n\n中国人民自古以来就是不愿意做奴隶的人民，上千年的历史数千次起义，说明了中国的历史就是一部悲壮的阶级斗争史，如果政府不让人民活了，那么人民就会抛弃该政府。\n §R王侯将相，宁有种乎？§!\n\n §Y政府合法性为§!： £stability_texticon [?DSC_people_support|%+2]\n受到修正影响，每月变化(本mod已将变化缩小10倍)：[?Final_chuanyu_people_support_to_china_government_modifier|%+2]"
-DSC_people_support_dynamic_left: "革命热情"
+DSC_people_support_dynamic_left: "主观能动性"
 DSC_people_support_dynamic_right: "政府合法性"
-chuanyu_people_support_to_china_government_modifier: "£stability_texticon 政府合法性或革命热情每月变化"
+chuanyu_people_support_to_china_government_modifier: "£stability_texticon 政府合法性或主观能动性每月变化"
 
-DSC_Revolutionary_Enthusiasm_tt: "§Y政府合法性§!动态修正将被替换为§Y革命热情§!。\n此动态修正与外交、政治、经济挂钩。"
+DSC_Revolutionary_Enthusiasm_tt: "§Y政府合法性§!动态修正将被替换为§Y主观能动性§!。\n此动态修正与外交、政治、经济挂钩。"
 
 
 
@@ -1358,8 +1358,8 @@ change_CHI_people_support_tt: "[CHI_people_support_dynamic_name]变化：[?|+%]\
 
 
 
-DSC_Socialist_Construction_dynamic: "红色之梦"
-DSC_Socialist_Construction_dynamic_desc: "\n\n\n\n\n£CHI_Socialist_Construction_dynamic_desc_pic \n\n\n\n\n\n\n在中国左派重新获得政权之后，必须领导革命群众进行社会主义建设，与官僚主义作斗争，防止资产阶级复辟。\n§R这是最后的斗争，团结起来到明天，英特纳雄奈尔，就一定要实现！§!"
+DSC_Socialist_Construction_dynamic: "§O未竟之事§!"
+DSC_Socialist_Construction_dynamic_desc: "\n\n\n\n\n£CHI_Socialist_Construction_dynamic_desc_pic \n\n\n\n\n\n\n在经过§O近二十年的兜兜转转§!之后，中国人民发现他们回到了§R起点§!。这条已经§C走过而还未走完§!的路究竟会§I通向何方§!，还是一个§Y未知数§!.....\n驶向何方，掌握在§G每个人§!手中。"
 DSC_Socialist_Construction_dynamic_tt: "§H§!追加效果：\n"
 change_DSC_Socialist_Construction_dynamic1_tt: "[DSC_people_support_dynamic_name]每月变化：[?temp_DSC_Socialist_Construction_dynamic|+]\n"
 change_DSC_Socialist_Construction_dynamic2_tt: "正当化战争所需时间：[?temp_DSC_Socialist_Construction_dynamic|-%]\n"
