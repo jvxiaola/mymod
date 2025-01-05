@@ -402,7 +402,7 @@ CHI_new_social_economy_decisions = {
 	remove_effect = {
 		CHI_work_up = yes
 		if = {
-			limit = { check_variable = { COSEM_pp = 0.10 } }
+			limit = { check_variable = { COSEM_pp < 0.10 } }
 			set_temp_variable = { COSEM_pp_add = 0.05 } set_temp_variable = { COSEM_iwr_add = 0.01 } set_temp_variable = { COSEM_twm_add = 0.01 }
 			custom_effect_tooltip = COSEM_add_effect_tt 
 			add_to_variable = { COSEM_pp = COSEM_pp_add } add_to_variable = { COSEM_iwr = COSEM_iwr_add } add_to_variable = { COSEM_twm = COSEM_twm_add } 

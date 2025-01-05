@@ -702,12 +702,17 @@ CHI_work_up = {
 			remove_idea = CHI_work_02
 			add_idea = CHI_work_03
 		}
-	}	else_if = {
+	}	
+  else_if = {
 		limit = { has_idea = CHI_work_03 }
 		swap_ideas = {
 			remove_idea = CHI_work_03
 			add_idea = CHI_work_04
 		}
+	}
+  else_if = {
+		limit = { has_idea = CHI_work_04 }
+			remove_ideas = CHI_work_04
 	}
 	} 
 	CHI_work_down = {
