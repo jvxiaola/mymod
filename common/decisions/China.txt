@@ -3024,7 +3024,7 @@ CHI_Civil_war_decisions = {
 				has_idea = CHI_NEW_people_war1
 			}
 			custom_cost_trigger = {
-				check_variable = { has_army_experience > 20.0 }
+				has_army_experience > 20
 				has_political_power > 99
 			}
 			custom_cost_text = army_xp_20_AND_potical_power_100
@@ -3039,7 +3039,7 @@ CHI_Civil_war_decisions = {
 					remove_idea = CHI_NEW_people_war1
 					add_idea = CHI_NEW_people_war2
 				}
-				hidden_effect = { army_experience = -20 }
+				hidden_effect = { army_experience = -20 add_political_power = -100 }
 			}
 		}
 

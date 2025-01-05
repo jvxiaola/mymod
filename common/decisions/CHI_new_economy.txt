@@ -38,12 +38,12 @@ CHI_new_social_economy_decisions = {
 		icon = GFX_decision_gre_investment_decisions
 		visible = {
 			has_completed_focus = CHI_redemption NOT = { has_completed_focus = CHI_Chinese_Industrial_Explosion }
-			check_variable = { Redemption_assets_times < 4 }
+			check_variable = { Redemption_assets_times < 3 }
 		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = Redemption_assets_trigger_tt
-				check_variable = { Redemption_assets_times < 4 }
+				check_variable = { Redemption_assets_times < 3 }
 			}
 		}
 		custom_cost_trigger = {
@@ -113,12 +113,12 @@ CHI_new_social_economy_decisions = {
 		icon = GFX_decision_gre_investment_decisions
 		visible = {
 			has_completed_focus = CHI_confiscated NOT = { has_completed_focus = CHI_Chinese_Industrial_Explosion }
-			check_variable = { confiscated_assets_times < 6 }
+			check_variable = { confiscated_assets_times < 5 }
 		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = confiscated_assets_trigger_tt
-				check_variable = { confiscated_assets_times < 6 }
+				check_variable = { confiscated_assets_times < 5 }
 			}
 		}
 		cost = 50
