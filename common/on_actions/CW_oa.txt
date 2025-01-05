@@ -76,9 +76,10 @@ on_actions = {
 					limit = { 
 						has_global_flag = Ccw 
 						FROM = { tag = DSC }
+						NOT = { country_exists = CHI }
 						ROOT = {
 								original_tag = CHI
-								has_cosmetic_tag=CHI_REB_S
+								has_cosmetic_tag = CHI_REB_S
 						}
 					}
 					FROM = {

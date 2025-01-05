@@ -112,7 +112,7 @@ CHI_new_social_economy_decisions = {
 	confiscated_assets = {
 		icon = GFX_decision_gre_investment_decisions
 		visible = {
-			has_completed_focus = CHI_redemption NOT = { has_completed_focus = CHI_Chinese_Industrial_Explosion }
+			has_completed_focus = CHI_confiscated NOT = { has_completed_focus = CHI_Chinese_Industrial_Explosion }
 			check_variable = { confiscated_assets_times < 6 }
 		}
 		available = {
@@ -204,7 +204,7 @@ CHI_new_social_economy_decisions = {
 		}
 		days_remove = 50
 		remove_effect = {
-			Promote_nationalization_strategic_industries_progress_effect_tt
+			custom_effect_tooltip = Promote_nationalization_strategic_industries_progress_effect_tt
 			hidden_effect = {
 				if = {
 					limit = { NOT = { has_variable = Promote_nationalization_strategic_industries_progress } }
@@ -263,7 +263,7 @@ CHI_new_social_economy_decisions = {
 		}
 		days_remove = 50
 		remove_effect = {
-			Nationalize_construction_and_chemical_industries_progress_progress_effect_tt
+			custom_effect_tooltip = Nationalize_construction_and_chemical_industries_progress_progress_effect_tt
 			hidden_effect = {
 				if = {
 					limit = { NOT = { has_variable = Nationalize_construction_and_chemical_industries_progress } }
@@ -322,7 +322,7 @@ CHI_new_social_economy_decisions = {
 	}
 	days_remove = 50
 	remove_effect = {
-		Partial_nationalize_light_manufacturing_industry_progress_progress_effect_tt
+		custom_effect_tooltip = Partial_nationalize_light_manufacturing_industry_progress_progress_effect_tt
 		hidden_effect = {
 			if = {
 				limit = { NOT = { has_variable = Partial_nationalize_light_manufacturing_industry_progress } }

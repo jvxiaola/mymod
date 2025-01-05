@@ -832,7 +832,7 @@
 		x = 90
 		y = 15
 
-		cost = 5
+		cost = 2
 
 
 
@@ -865,7 +865,7 @@
 			has_government = communism
 			OR = {
 				has_country_flag=xggm
-				has_country_flag=qyxd
+				tag = DSC
 				has_country_flag=PRC_left_cpc
 				}
 		}
@@ -892,7 +892,7 @@ shared_focus = {
 		y = 1
 		relative_position_id = CHI_Socialist_Reconstruction
 
-		cost = 5
+		cost = 2
 
 		prerequisite = { focus = CHI_Socialist_Reconstruction }
 

@@ -953,7 +953,7 @@ add_political_power = 100
 	
 			y = 1
 	
-		cost = 3
+		cost = 1
 		relative_position_id = DSC_Save_economy
 		prerequisite = {
 			focus = DSC_Save_economy
@@ -986,7 +986,7 @@ add_political_power = 100
 
 		y = 1
 
-	cost = 3
+	cost = 1
 	relative_position_id = DSC_Save_economy
 	prerequisite = {
 		focus = DSC_Save_economy
@@ -1018,7 +1018,7 @@ focus = {
 
 	y = 1
 
-cost = 3
+cost = 1
 relative_position_id = DSC_Save_economy
 prerequisite = {
 	focus = DSC_Save_economy
@@ -1050,7 +1050,7 @@ focus = {
 
 	y = 1
 
-cost = 3
+cost = 1
 relative_position_id = DSC_Crack_speculation
 prerequisite = { focus = DSC_Crack_speculation }
 prerequisite = { focus = DSC_Imported_essential_goods }
@@ -1084,7 +1084,7 @@ focus = {
 
 	y = 1
 
-cost = 3
+cost = 1
 relative_position_id = DSC_Confiscate_stolen_funds
 prerequisite = { focus = DSC_Confiscate_stolen_funds }
 
