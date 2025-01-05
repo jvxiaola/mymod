@@ -9,7 +9,7 @@ CHI_Organize_state_enterprises_modifier: "§Y国企构建§!"
 CHI_nationalizing_end_other_modifier_tt: "£construction_speed_texticon §Y基建、工厂、办公园区及补给站与铁路§!建造速度:§G+15%\n工厂及办公园区劳动力需求:§G+15%"
 #决议
 CHI_new_social_economy_decisions: "新社会主义经济"
-CHI_new_social_economy_decisions_desc: "在经历了近二十年的经济停滞，又经过惨烈内战后，原有的经济体系被§R彻底撕碎§!，但从某种意义上来讲，这也是一个§G重建公有制经济§!的§Y机会§!\n\n[CHI_new_social_economy_decisions_goal]\n\n[CHI_Promote_nationalization_strategic_industries_decisions_goal]\n[CHI_Nationalize_construction_and_chemical_industries_decisions_goal]\n[CHI_Partial_nationalize_light_manufacturing_industry_decisions_goal]"
+CHI_new_social_economy_decisions_desc: "在经历了近二十年的经济停滞，又经过惨烈内战后，原有的经济体系被§R彻底撕碎§!，但从某种意义上来讲，这也是一个§G重建公有制经济§!的§Y机会§!\n\n[CHI_new_social_economy_decisions_goal]\n[CHI_Promote_nationalization_strategic_industries_decisions_goal]\n[CHI_Nationalize_construction_and_chemical_industries_decisions_goal]\n[CHI_Partial_nationalize_light_manufacturing_industry_decisions_goal]\n[CHI_Organize_breakthroughs_food_industry_decisions_goal]\n[CHI_Raise_worker_salaries_benefits_decisions_goal]"
 CHI_redemption_goals: "正在以§O赎买§!方式进行§C国有化§!,目前进度为：[?Redemption_assets_times|Y0]次/§03§!次。"
 CHI_confiscated_goals: "正在以§R强制没收§!方式进行§C国有化§!,目前进度为：[?confiscated_assets_times|Y0]次/§05§!次。"
 NOT_sign: "§g尚未决定政策§!"
@@ -22,6 +22,10 @@ CHI_Nationalize_construction_and_chemical_industries_goals_achieve: "§G政策§
 CHI_Partial_nationalize_light_manufacturing_industry_goal: "正在进行§O部分轻工业、制造业§!§C国有化§!,目前进度为：[?Partial_nationalize_light_manufacturing_industry_progress|Y0]§Y%§!"
 CHI_Partial_nationalize_light_manufacturing_industry_goal_achieve: "§G政策§!§O部分轻工业、制造业§!§C国有化§!§G已完成！§!"
 CHI_Partial_nationalize_light_manufacturing_industry_goal_achieve_tt: "§G政策§!§O部分轻工业、制造业§!§C国有化§!§G已完成！§!"
+CHI_Organize_breakthroughs_food_industry_goal: "正在§T解决食品、药品安全§!§Y问题§!"
+CHI_Organize_breakthroughs_food_industry_goal_achieve: "§G政策§!§T解决食品、药品安全§!§Y问题§!§G已完成！§!"
+CHI_Raise_worker_salaries_benefits_goal: "正在§T改善劳动待遇§!"
+CHI_Raise_worker_salaries_benefits_goal_achieve: "§G政策§!§T改善劳动待遇§!§G已完成！§!"
 ruins_rebuild: "§I正在重建地区§!"
 ruins_rebuild_desc: "长时间的战争已经使各地千疮百孔，重建工作任重道远。"
 Redemption_assets: "赎买资产"
@@ -53,11 +57,12 @@ Raise_worker_salaries_benefits_desc: "在经济领域取得公有制改革的一
 #idea
 CHI_BETTER_FOOD_SAFTY: "高质量§G食/药品§!"
 CHI_BETTER_FOOD_SAFTY_desc: "在经过§O艰苦的攻关§!之后，我们终于研究出物美价廉的§G食/药品§!，这将大大提高人民对我们的支持。同时，在§O攻关运动§!中成长起的一批§C农产品研究机构§!与§7国营食品加工厂§!也为我国经济发展增添了动力。"
-CHI_Raise_worker_salaries_benefits_trigger_tt: "三大§7国有化政策§!§G已全部完成§7"
+CHI_Raise_worker_salaries_benefits_trigger_tt: "三大§7国有化政策§!§G已全部完成§!"
 CHI_nationalizing: "国有化开支"
 CHI_nationalizing_desc: "建设国有企业，购买先进设备、组织工人培训需要大量开支。"
-
-
+CHI_nationalizing_end: "§O国企§!§Y主导§!§G公有制§!"
+CHI_nationalizing_end_desc: "花费大量资金，动用大量干部后，§7国有化率§!已经达到§R近二十年§!的§G最高值§!，依托大量国有企业支柱，我们成功改善了§C劳动者待遇§!，初步达成§I公有制建设目标§!。"
+CHI_nationalizing_end_tt: "§O国企建设§!与§I公有制建设§!已§C初步完成§!"
 
 
 

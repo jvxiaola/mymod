@@ -1095,6 +1095,7 @@ add_power_balance_value = {
 			custom_trigger_tooltip = { 
 				tooltip = CHI_nationalizing_end_tt 
 				has_idea = CHI_nationalizing
+				has_idea = CHI_BETTER_FOOD_SAFTY
 				OR = { 
 					check_variable = { Redemption_assets_times = 4 }
 					check_variable = { confiscated_assets_times = 6 }
@@ -1102,15 +1103,23 @@ add_power_balance_value = {
 				check_variable = { Partial_nationalize_light_manufacturing_industry_progress = 100 }
 				check_variable = { Nationalize_construction_and_chemical_industries_progress = 100 }
 				check_variable = { Promote_nationalization_strategic_industries_progress = 100 }
-
+				NOT = { 
+					OR = { 
+						has_idea = CHI_work7 has_idea = CHI_work6 has_idea = CHI_work5 has_idea = CHI_work_01 
+						has_idea = CHI_work_02 has_idea = CHI_work_03 has_idea = CHI_work_04 
+					} 
+				}
 			}
 		
 		}
 
 		completion_reward = {
 			remove_ideas = CHI_nationalizing
-			CHI_remove_Organize_state_enterprises_modifier = yes
-			add_ideas = CHI_nationalizing_end
+			if = {
+				limit = { tag = DSC }
+				CHI_remove_Organize_state_enterprises_modifier = yes
+				add_ideas = CHI_nationalizing_end
+			}
 		if = {
 			limit = { has_idea = CHI_Socialist_Market_Economy }
 			swap_ideas = {

@@ -378,7 +378,7 @@ CHI_new_social_economy_decisions = {
 		check_variable = { Partial_nationalize_light_manufacturing_industry_progress = 100 }
 		check_variable = { Nationalize_construction_and_chemical_industries_progress = 100 }
 		check_variable = { Promote_nationalization_strategic_industries_progress = 100 }
-		has_idea = CHI_shipinganquanwenti
+		OR = { has_idea = CHI_work7 has_idea = CHI_work6 has_idea = CHI_work5 has_idea = CHI_work_01 has_idea = CHI_work_02 has_idea = CHI_work_03 has_idea = CHI_work_04 }
 	}
 	available = {
 		custom_trigger_tooltip = {
@@ -398,7 +398,7 @@ CHI_new_social_economy_decisions = {
 		modify_treasury_effect = yes
 		add_political_power = -10
 	}
-	days_remove = 60
+	days_remove = 30
 	remove_effect = {
 		CHI_work_up = yes
 		if = {
@@ -406,10 +406,6 @@ CHI_new_social_economy_decisions = {
 			set_temp_variable = { COSEM_pp_add = 0.05 } set_temp_variable = { COSEM_iwr_add = 0.01 } set_temp_variable = { COSEM_twm_add = 0.01 }
 			custom_effect_tooltip = COSEM_add_effect_tt 
 			add_to_variable = { COSEM_pp = COSEM_pp_add } add_to_variable = { COSEM_iwr = COSEM_iwr_add } add_to_variable = { COSEM_twm = COSEM_twm_add } 
-		}
-		if = {
-			limit = { has_idea = CHI_work_04 }
-			remove_ideas = CHI_work_04
 		}
 	}
 	ai_will_do = {
