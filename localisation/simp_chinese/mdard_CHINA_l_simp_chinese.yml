@@ -1301,7 +1301,7 @@ Chinese_people_support_to_china_government_modifier: "£stability_texticon 政�
 
 PRC_Revolutionary_Enthusiasm_tt: "§Y政府合法性§!动态修正将被替换为§Y革命热情§!。\n此动态修正与外交、政治、经济挂钩。"
 
-DSC_people_support_dynamic_left_desc: "\n\n\n\n\n£GFX_CHI_people_support_dynamic_dynamic_desc_left_picture \n\n\n\n\n\n\n中国革命群众经过各种斗争，最终掌握了中国的政权，不过，这并不是革命的结束，而仅仅是开始！中国人民必须考虑自身与外国无产阶级的联系，考虑自身的建设，万万不可重蹈无产阶级文化大革命后期人民对革命失望的覆辙，不然的话，资产阶级与官僚主义反革命极有可能再次推翻革命政权。\n\n §Y人民的革命热情为§!： £stability_texticon [?DSC_people_support|%+2]。\n受到民族精神或法律影响，每月变化(本mod已将变化缩小10倍)：[?Final_chuanyu_people_support_to_china_government_modifier|%+2]"
+DSC_people_support_dynamic_left_desc: "\n\n\n\n\n£GFX_CHI_people_support_dynamic_dynamic_desc_left_picture \n\n\n\n\n\n\n经过残酷的战争，中国人民又一次站在历史舞台中央。可形势仍不容乐观：外面的豺狼固然凶险，内部流传几千年的政治冷淡才更令人毛骨悚然————如果连自己都不关心自己的利益，又有谁能来保护他们呢？\n但另一方面，主观能动性也并非无所不能，正如老话“欲速则不达”，过度的主观能动往往变成盲目，在别有用心者的有意推波助澜下酿成大祸....\n不管如何，历史的船舵已在他们手中。§Y而这次他们能否掌好舵§!，那就§R只有天知道了§!。\n\n §Y人民的革命热情为§!： £stability_texticon [?DSC_people_support|%+2]。\n受到民族精神或法律影响，每月变化(本mod已将变化缩小10倍)：[?Final_chuanyu_people_support_to_china_government_modifier|%+2]"
 DSC_people_support_dynamic_right_desc: "\n\n£GFX_CHI_people_support_dynamic_dynamic_desc_right_pic \n\n\n\n中国人民自古以来就是不愿意做奴隶的人民，上千年的历史数千次起义，说明了中国的历史就是一部悲壮的阶级斗争史，如果政府不让人民活了，那么人民就会抛弃该政府。\n §R王侯将相，宁有种乎？§!\n\n §Y政府合法性为§!： £stability_texticon [?DSC_people_support|%+2]\n受到修正影响，每月变化(本mod已将变化缩小10倍)：[?Final_chuanyu_people_support_to_china_government_modifier|%+2]"
 DSC_people_support_dynamic_left: "主观能动性"
 DSC_people_support_dynamic_right: "政府合法性"
@@ -2467,7 +2467,7 @@ CHI_annex_Hon_desc:"正如中央所一直宣传的，我们在港澳实施的制
   DSC_FUCONGZHIHUI_desc: "北方政府成功缓解了经济崩溃，并成功取得了广大中下民众的支持，同时他们也许诺我们....\n不管如何,军管区司令部已经决定，宣布北方政府为“共和国唯一合法政府”。"
 
     DSC_DONGYUAN: "动员民兵"
-  DSC_DONGYUAN_desc: "目前形势相当不妙，西边高原地区对西四川虎视眈眈，西北的西域也妄图发动“生站”，近日东边的南方军政府也开始进行军事试探....\n冲突前流串到军管区的级做分子也开始煽动不明真相的农民与工人，军管区司令部已经召开会议，决定大量征招民兵，以应对内外的不稳定局势。"
+  DSC_DONGYUAN_desc: "目前形势相当不妙，西边西藏军区对我们虎视眈眈，西北的新疆军区近日也动作频发，近日东边的南方军政府也开始进行军事试探....\n冲突前流串到军管区的极左分子也开始煽动不明真相的农民与工人，军管区司令部已经召开会议，决定大量征招民兵，以应对内外的不稳定局势。"
 
    DSC_ZHENGSHUI: "大规模征税"
   DSC_ZHENGSHUI_desc: "大量扩充的军队导致军管区军费开支暴增！我们必须对市民收取战争税来补充军费开支"
@@ -2479,8 +2479,8 @@ CHI_annex_Hon_desc:"正如中央所一直宣传的，我们在港澳实施的制
   DSC_JIEFNQUANZHONGGUO:"宣称全中国"
   DSC_JIEFNQUANZHONGGUO_desc:"无产阶级将会拿回他们的国家"
 
-  DSC_NEIZHANJIESHU:"内战结束"
-  DSC_NEIZHANJIESHU_desc:"内战结束了，我们胜利了"
+  DSC_NEIZHANJIESHU: "内战结束"
+  DSC_NEIZHANJIESHU_desc: "经过长时间的军事冲突，自川渝而来的革命者取得了最终的胜利，他们的故事也就此开始....."
 
   DSC_QINGSUANFENLIESHILI:"清算分裂势力"
   DSC_QINGSUANFENLIESHILI_desc:"我们将用武力收回我们的领土"
