@@ -100,25 +100,19 @@ capital = 583
 		denglegacy
 		CHI_jiefangsixiang
 		CHI_GGKF
-		CHI_Bide
 		CHI_jihuashengyu
-		CHI_jdjs1
-
 		CHI_not_nongyesui
 		CHI_Socialist_Market_Economy
 		CHI_shipinganquanwenti
-		
 		CHI_shaosuminzu1
-		
 		CHI_work_01	  
-			multi_ethnic_state_idea
-			economic_boom
-			unrestrained_corruption
-			pluralist
-			censored_nation_01
-			water_shortages_3
+		multi_ethnic_state_idea
+		recession
+		unrestrained_corruption
+		pluralist
+		water_shortages_3
 			CHI_low_end_manufacturing
-			p5_member
+			
 			nuclear_power
 			nuclear_power_def
 			semi_consumption_economy
