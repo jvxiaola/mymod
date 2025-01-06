@@ -427,7 +427,7 @@ CHI_new_social_economy_decisions = {
 	}
 	on_map_mode = map_only
 	highlight_states = {
-        highlight_states_trigger = {
+        highlight_state_targets = {
            state = 534 state = 532
         }
     }
@@ -460,7 +460,7 @@ CHI_new_social_economy_decisions = {
 	}
 	on_map_mode = map_only
 	highlight_states = {
-        highlight_states_trigger = {
+        highlight_state_targets = {
            state = 541 state = 536
         }
     }
@@ -493,7 +493,7 @@ CHI_new_social_economy_decisions = {
 	}
 	on_map_mode = map_only
 	highlight_states = {
-        highlight_states_trigger = {
+        highlight_state_targets = {
            state = 435 state = 544
         }
     }
@@ -526,7 +526,7 @@ CHI_new_social_economy_decisions = {
 	}
 	on_map_mode = map_only
 	highlight_states = {
-        highlight_states_trigger = {
+        highlight_state_targets = {
            state = 538
         }
     }
