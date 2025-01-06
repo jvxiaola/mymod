@@ -1154,7 +1154,7 @@ add_power_balance_value = {
 		y = 2
 		relative_position_id = CHI_Socialist_Reconstruction
 
-		cost = 5
+		cost = 2
 
 		prerequisite = { focus = CHI_general_route }
 
@@ -1213,7 +1213,7 @@ add_stability = 0.05
 		y = 1
 		relative_position_id = CHI_selfemployed_problem
 
-		cost = 5
+		cost = 2
 
 		prerequisite = { focus = CHI_selfemployed_problem }
 		mutually_exclusive = { focus = CHI_allowed_to_exist }
@@ -1228,7 +1228,7 @@ add_stability = 0.05
 		available = {}
 
 		completion_reward = {
-		
+			custom_effect_tooltip = CHI_state_Oofb_start_tt 
 		}
 
 		ai_will_do = { base = 1 }
@@ -1268,7 +1268,7 @@ add_stability = 0.05
 		relative_position_id = CHI_get_organized
 		prerequisite = { focus = CHI_get_organized }
 
-		cost = 5
+		cost = 2
 
 
 
@@ -1291,7 +1291,7 @@ add_stability = 0.05
 		y = 3
 		relative_position_id = CHI_selfemployed_problem
 
-		cost = 5
+		cost = 4
 
 		prerequisite = { focus = CHI_limit_accumulation focus = CHI_city_mutual_aid }
 
@@ -1346,7 +1346,7 @@ remove_idea =  CHI_Socialist_Market_Economy_planned_2
 		y = 2
 		relative_position_id = CHI_Socialist_Reconstruction
 
-		cost = 5
+		cost = 2
 
 		prerequisite = { focus = CHI_general_route }
 
@@ -1370,15 +1370,15 @@ add_political_power = 50
 		y = 1
 		relative_position_id = CHI_agricultural_issues
 
-		cost = 5
+		cost = 3
 		offset = {
 			x = -1
 			y = 0
 			trigger = {
-						OR = { 
-							tag = DSC 
-							has_country_flag = laozuo
-						}
+				OR = { 
+					tag = DSC 
+					has_country_flag = laozuo
+				}
 			}
 		}
 	
@@ -1413,7 +1413,7 @@ add_political_power = 50
 				}
 			}
 		}
-		cost = 5
+		cost = 2
 
 		prerequisite = { focus = CHI_agricultural_issues}
 		mutually_exclusive = { focus = CHI_state_farm }
@@ -1471,7 +1471,7 @@ shared_focus = {
 		y = 3
 		relative_position_id = CHI_agricultural_issues
 		prerequisite = { focus = CHI_state_farm focus = CHI_People_Commune }
-		cost = 5
+		cost = 2
 
 
 		available = {

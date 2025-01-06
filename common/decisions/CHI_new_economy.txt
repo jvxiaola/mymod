@@ -413,7 +413,7 @@ CHI_new_social_economy_decisions = {
 	}
 	}
 	#组织各地个体户“官方论坛”地图决议
-	Oofb_guangdong = { #(1)广东
+	Oofb_guangdong = { #(1)广东及珠江地区
 	icon = GFX_decision_hol_exchange_intelligence_data
 	visible = {
 		has_completed_focus = CHI_get_organized
@@ -428,7 +428,7 @@ CHI_new_social_economy_decisions = {
 	on_map_mode = map_only
 	highlight_states = {
         highlight_state_targets = {
-           state = 534 state = 532
+           state = 534 state = 532 state = 595 state = 1106
         }
     }
 	custom_cost_trigger = {
@@ -441,7 +441,8 @@ CHI_new_social_economy_decisions = {
 	}
 	days_remove = 30
 	remove_effect = {
-		534 = { STATE_ADD_State_Collaboration = yes } 532 = { STATE_ADD_State_Collaboration = yes }
+		534 = { STATE_ADD_State_Collaboration = yes } 532 = { STATE_ADD_State_Collaboration = yes } 595 = { STATE_ADD_State_Collaboration = yes }
+		1106 = { STATE_ADD_State_Collaboration = yes }
 	}
 	ai_will_do = { factor = 1 }
 	}
@@ -541,6 +542,240 @@ CHI_new_social_economy_decisions = {
 	days_remove = 30
 	remove_effect = {
 		538 = { STATE_ADD_State_Collaboration = yes }
+	}
+	ai_will_do = { factor = 1 }
+	}
+
+	Oofb_henan = { #(5)河南
+	icon = GFX_decision_hol_exchange_intelligence_data
+	visible = {
+		has_completed_focus = CHI_get_organized
+		567 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = CHI_Oofb_henan_trigger_tt
+			567 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+		}
+	}
+	on_map_mode = map_only
+	highlight_states = {
+        highlight_state_targets = {
+           state = 567
+        }
+    }
+	custom_cost_trigger = {
+		check_variable = { treasury > 10.0 }
+	}
+	custom_cost_text = cost_10_0
+	complete_effect = {
+		set_temp_variable = { treasury_change = -10 }
+		modify_treasury_effect = yes
+	}
+	days_remove = 30
+	remove_effect = {
+		567 = { STATE_ADD_State_Collaboration = yes }
+	}
+	ai_will_do = { factor = 1 }
+	}
+
+	Oofb_liaoning = { #(6)辽宁
+	icon = GFX_decision_hol_exchange_intelligence_data
+	visible = {
+		has_completed_focus = CHI_get_organized
+		1095 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 552 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = CHI_Oofb_liaoning_trigger_tt
+			1095 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 552 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+		}
+	}
+	on_map_mode = map_only
+	highlight_states = {
+        highlight_state_targets = {
+           state = 1095 state = 552
+        }
+    }
+	custom_cost_trigger = {
+		check_variable = { treasury > 10.0 }
+	}
+	custom_cost_text = cost_10_0
+	complete_effect = {
+		set_temp_variable = { treasury_change = -10 }
+		modify_treasury_effect = yes
+	}
+	days_remove = 30
+	remove_effect = {
+		1095 = { STATE_ADD_State_Collaboration = yes } 552 = { STATE_ADD_State_Collaboration = yes }
+	}
+	ai_will_do = { factor = 1 }
+	}
+
+	Oofb_hebei = { #(7)京津冀
+	icon = GFX_decision_hol_exchange_intelligence_data
+	visible = {
+		has_completed_focus = CHI_get_organized
+		434 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 549 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+		547 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 548 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = CHI_Oofb_hebei_trigger_tt
+			434 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 549 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+			547 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 548 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 
+		}
+	}
+	on_map_mode = map_only
+	highlight_states = {
+        highlight_state_targets = {
+           state = 434 state = 549 state = 547 state = 548 
+        }
+    }
+	custom_cost_trigger = {
+		check_variable = { treasury > 30.0 }
+	}
+	custom_cost_text = cost_30_0
+	complete_effect = {
+		set_temp_variable = { treasury_change = -30 }
+		modify_treasury_effect = yes
+	}
+	days_remove = 30
+	remove_effect = {
+		434 = { STATE_ADD_State_Collaboration = yes } 549 = { STATE_ADD_State_Collaboration = yes } 547 = { STATE_ADD_State_Collaboration = yes } 
+		548 = { STATE_ADD_State_Collaboration = yes }
+	}
+	ai_will_do = { factor = 1 }
+	}
+
+	Oofb_sichuan = { #(8)四川
+	icon = GFX_decision_hol_exchange_intelligence_data
+	visible = {
+		has_completed_focus = CHI_get_organized
+		585 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 586 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 583 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = CHI_Oofb_sichuan_trigger_tt
+			585 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 586 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 583 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+		}
+	}
+	on_map_mode = map_only
+	highlight_states = {
+        highlight_state_targets = {
+           state = 585 state = 586 state - 583
+        }
+    }
+	custom_cost_trigger = {
+		check_variable = { treasury > 20.0 }
+	}
+	custom_cost_text = cost_20_0
+	complete_effect = {
+		set_temp_variable = { treasury_change = -20 }
+		modify_treasury_effect = yes
+	}
+	days_remove = 30
+	remove_effect = {
+		585 = { STATE_ADD_State_Collaboration = yes } 586 = { STATE_ADD_State_Collaboration = yes } 583 = { STATE_ADD_State_Collaboration = yes }
+	}
+	ai_will_do = { factor = 1 }
+	}
+
+	Oofb_fujian = { #(9)福建
+	icon = GFX_decision_hol_exchange_intelligence_data
+	visible = {
+		has_completed_focus = CHI_get_organized
+		537 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = CHI_Oofb_fujian_trigger_tt
+			537 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+		}
+	}
+	on_map_mode = map_only
+	highlight_states = {
+        highlight_state_targets = {
+           state = 537
+        }
+    }
+	custom_cost_trigger = {
+		check_variable = { treasury > 10.0 }
+	}
+	custom_cost_text = cost_10_0
+	complete_effect = {
+		set_temp_variable = { treasury_change = -10 }
+		modify_treasury_effect = yes
+	}
+	days_remove = 30
+	remove_effect = {
+		537 = { STATE_ADD_State_Collaboration = yes }
+	}
+	ai_will_do = { factor = 1 }
+	}
+
+	Oofb_hubei = { #(10)湖北
+	icon = GFX_decision_hol_exchange_intelligence_data
+	visible = {
+		has_completed_focus = CHI_get_organized
+		570 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = CHI_Oofb_hubei_trigger_tt
+			570 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+		}
+	}
+	on_map_mode = map_only
+	highlight_states = {
+        highlight_state_targets = {
+           state = 570
+        }
+    }
+	custom_cost_trigger = {
+		check_variable = { treasury > 10.0 }
+	}
+	custom_cost_text = cost_10_0
+	complete_effect = {
+		set_temp_variable = { treasury_change = -10 }
+		modify_treasury_effect = yes
+	}
+	days_remove = 30
+	remove_effect = {
+		570 = { STATE_ADD_State_Collaboration = yes }
+	}
+	ai_will_do = { factor = 1 }
+	}
+
+	Oofb_shanghai = { #(11)上海
+	icon = GFX_decision_hol_exchange_intelligence_data
+	visible = {
+		has_completed_focus = CHI_get_organized
+		540 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = CHI_Oofb_shanghai_trigger_tt
+			540 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+		}
+	}
+	on_map_mode = map_only
+	highlight_states = {
+        highlight_state_targets = {
+           state = 540
+        }
+    }
+	custom_cost_trigger = {
+		check_variable = { treasury > 10.0 }
+	}
+	custom_cost_text = cost_10_0
+	complete_effect = {
+		set_temp_variable = { treasury_change = -10 }
+		modify_treasury_effect = yes
+	}
+	days_remove = 30
+	remove_effect = {
+		540 = { STATE_ADD_State_Collaboration = yes }
 	}
 	ai_will_do = { factor = 1 }
 	}

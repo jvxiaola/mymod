@@ -10,7 +10,7 @@ CHI_new_social_economy_decisions = {
 visible_when_empty = yes
 	icon = GFX_decision_generic_china
 	on_map_area = {
-		targets = { 534	532	541	536	435	544	538	567 1095 552 434 549 585 586 583 537 570 540 547 548 }
+		targets = { 534	532	541	536	435	544	538	567 1095 552 434 549 585 586 583 537 570 540 547 548 595 1106 }
 			name = Organize_official_forums_individual_businesses
 			zoom = 250
 	
