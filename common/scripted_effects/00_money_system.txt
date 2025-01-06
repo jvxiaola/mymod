@@ -578,7 +578,12 @@ calculate_additional_income_rate = {
 		}
 	}
 	if = {
-		limit = { original_tag = CHI }
+		limit = { 
+			OR = { 
+				original_tag = CHI 
+				tag = DSC tag = HKG
+			}
+		}
 		if = {
 			limit = { has_idea = CHI_not_nongyesui }
 			set_variable = { additional_income_CHI_not_nongyesui = population_total }
@@ -2940,8 +2945,13 @@ calculate_additional_expense_rate = {
 			add_to_variable = { additional_expenses_rate = additional_expense_iraq_war_compensation_two }
 		}
 	}
-			if = {
-		limit = { original_tag = CHI }
+	if = {
+		limit = { 
+			OR = {
+				original_tag = CHI 
+				tag = DSC tag = HKG
+			}
+		}
 		if = {
 			limit = { has_idea = CHI_basic_service }
 			set_variable = { additional_expense_CHI_basic_service = population_total }
