@@ -412,45 +412,138 @@ CHI_new_social_economy_decisions = {
 		factor = 1
 	}
 	}
-
-	Organize_official_forums_individual_businesses = { #组织各地个体户“官方论坛”
-	icon = GFX_decision_ger_mefo_bills
+	#组织各地个体户“官方论坛”地图决议
+	Oofb_guangdong = { #(1)广东
+	icon = GFX_decision_hol_exchange_intelligence_data
 	visible = {
 		has_completed_focus = CHI_get_organized
+		534 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 532 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
 	}
 	available = {
 		custom_trigger_tooltip = {
-			tooltip = CHI_Raise_worker_salaries_benefits_trigger_tt
-			check_variable = { Partial_nationalize_light_manufacturing_industry_progress = 100 }
-			check_variable = { Nationalize_construction_and_chemical_industries_progress = 100 }
-			check_variable = { Promote_nationalization_strategic_industries_progress = 100 }
+			tooltip = CHI_Oofb_guangdong_trigger_tt
+			534 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 532 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
 		}
 	}
+	on_map_mode = map_only
+	highlight_states = {
+        highlight_states_trigger = {
+           state = 534 state = 532
+        }
+    }
 	custom_cost_trigger = {
-		check_variable = { treasury > 50.0 }
-		has_political_power > 9
+		check_variable = { treasury > 10.0 }
 	}
-	custom_cost_text = cost_50_0_AND_political_power_10
+	custom_cost_text = cost_10_0
 	complete_effect = {
-		set_temp_variable = { treasury_change = -50 }
+		set_temp_variable = { treasury_change = -10 }
 		modify_treasury_effect = yes
-		add_political_power = -10
 	}
 	days_remove = 30
 	remove_effect = {
-		CHI_work_up = yes
-		if = {
-			limit = { check_variable = { COSEM_pp < 0.10 } }
-			set_temp_variable = { COSEM_pp_add = 0.05 } set_temp_variable = { COSEM_iwr_add = 0.01 } set_temp_variable = { COSEM_twm_add = 0.01 }
-			custom_effect_tooltip = COSEM_add_effect_tt 
-			add_to_variable = { COSEM_pp = COSEM_pp_add } add_to_variable = { COSEM_iwr = COSEM_iwr_add } add_to_variable = { COSEM_twm = COSEM_twm_add } 
-		}
+		534 = { STATE_ADD_State_Collaboration = yes } 532 = { STATE_ADD_State_Collaboration = yes }
 	}
-	ai_will_do = {
-		factor = 1
-	}
+	ai_will_do = { factor = 1 }
 	}
 
+	Oofb_jiangsu = { #(2)江苏
+	icon = GFX_decision_hol_exchange_intelligence_data
+	visible = {
+		has_completed_focus = CHI_get_organized
+		541 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 536 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = CHI_Oofb_jiangsu_trigger_tt
+			541 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 536 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+		}
+	}
+	on_map_mode = map_only
+	highlight_states = {
+        highlight_states_trigger = {
+           state = 541 state = 536
+        }
+    }
+	custom_cost_trigger = {
+		check_variable = { treasury > 10.0 }
+	}
+	custom_cost_text = cost_10_0
+	complete_effect = {
+		set_temp_variable = { treasury_change = -10 }
+		modify_treasury_effect = yes
+	}
+	days_remove = 30
+	remove_effect = {
+		541 = { STATE_ADD_State_Collaboration = yes } 536 = { STATE_ADD_State_Collaboration = yes }
+	}
+	ai_will_do = { factor = 1 }
+	}
+
+	Oofb_shandong = { #(3)山东
+	icon = GFX_decision_hol_exchange_intelligence_data
+	visible = {
+		has_completed_focus = CHI_get_organized
+		435 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 544 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = CHI_Oofb_shandong_trigger_tt
+			435 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 544 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+		}
+	}
+	on_map_mode = map_only
+	highlight_states = {
+        highlight_states_trigger = {
+           state = 435 state = 544
+        }
+    }
+	custom_cost_trigger = {
+		check_variable = { treasury > 10.0 }
+	}
+	custom_cost_text = cost_10_0
+	complete_effect = {
+		set_temp_variable = { treasury_change = -10 }
+		modify_treasury_effect = yes
+	}
+	days_remove = 30
+	remove_effect = {
+		435 = { STATE_ADD_State_Collaboration = yes } 544 = { STATE_ADD_State_Collaboration = yes }
+	}
+	ai_will_do = { factor = 1 }
+	}
+
+	Oofb_zhejiang = { #(4)浙江
+	icon = GFX_decision_hol_exchange_intelligence_data
+	visible = {
+		has_completed_focus = CHI_get_organized
+		538 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = CHI_Oofb_zhejiang_trigger_tt
+			538 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+		}
+	}
+	on_map_mode = map_only
+	highlight_states = {
+        highlight_states_trigger = {
+           state = 538
+        }
+    }
+	custom_cost_trigger = {
+		check_variable = { treasury > 10.0 }
+	}
+	custom_cost_text = cost_10_0
+	complete_effect = {
+		set_temp_variable = { treasury_change = -10 }
+		modify_treasury_effect = yes
+	}
+	days_remove = 30
+	remove_effect = {
+		538 = { STATE_ADD_State_Collaboration = yes }
+	}
+	ai_will_do = { factor = 1 }
+	}
 }
 
 
