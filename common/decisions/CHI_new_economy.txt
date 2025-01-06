@@ -110,7 +110,7 @@ CHI_new_social_economy_decisions = {
 	}
 
 	confiscated_assets = {
-		icon = GFX_decision_gre_investment_decisions
+		icon = GFX_decision_generic_assassination
 		visible = {
 			has_completed_focus = CHI_confiscated NOT = { has_completed_focus = CHI_Chinese_Industrial_Explosion }
 			check_variable = { confiscated_assets_times < 5 }
@@ -181,7 +181,7 @@ CHI_new_social_economy_decisions = {
 	}
 	
 	Promote_nationalization_strategic_industries = { #战略行业国有化
-		icon = GFX_decision_gre_investment_decisions
+		icon = GFX_decision_refinery_dec
 		visible = {
 			has_completed_focus = CHI_Organize_state_enterprises NOT = { has_completed_focus = CHI_Chinese_Industrial_Explosion }
 			check_variable = { Promote_nationalization_strategic_industries_progress < 100 }
@@ -196,7 +196,7 @@ CHI_new_social_economy_decisions = {
 			check_variable = { treasury > 10.0 }
 			has_political_power > 49
 		}
-		custom_cost_text = cost_10_0
+		custom_cost_text = cost_10_0_potical_power_50
 		complete_effect = {
 			set_temp_variable = { treasury_change = -10 }
 			modify_treasury_effect = yes
@@ -234,7 +234,7 @@ CHI_new_social_economy_decisions = {
 	}
 
 	Nationalize_construction_and_chemical_industries = { #建筑与化工行业国有化效果
-		icon = GFX_decision_gre_investment_decisions
+		icon = GFX_decision_generic_construction
 		visible = {
 			has_completed_focus = CHI_Organize_state_enterprises NOT = { has_completed_focus = CHI_Chinese_Industrial_Explosion }
 			check_variable = { Nationalize_construction_and_chemical_industries_progress < 100 }
@@ -249,7 +249,7 @@ CHI_new_social_economy_decisions = {
 			check_variable = { treasury > 10.0 }
 			has_political_power > 49
 		}
-		custom_cost_text = cost_10_0
+		custom_cost_text = cost_10_0_potical_power_50
 		complete_effect = {
 			set_temp_variable = { treasury_change = -10 }
 			modify_treasury_effect = yes
@@ -287,7 +287,7 @@ CHI_new_social_economy_decisions = {
 	}
 
 	Partial_nationalize_light_manufacturing_industry = { #部分轻工业、制造业国有化效果
-	icon = GFX_decision_gre_investment_decisions
+	icon = GFX_decision_generic_factory
 	visible = {
 		has_completed_focus = CHI_Organize_state_enterprises NOT = { has_completed_focus = CHI_Chinese_Industrial_Explosion }
 		check_variable = { Partial_nationalize_light_manufacturing_industry_progress < 100 }
@@ -302,7 +302,7 @@ CHI_new_social_economy_decisions = {
 		check_variable = { treasury > 10.0 }
 		has_political_power > 49
 	}
-	custom_cost_text = cost_10_0
+	custom_cost_text = cost_10_0_potical_power_50
 	complete_effect = {
 		set_temp_variable = { treasury_change = -10 }
 		modify_treasury_effect = yes
@@ -339,7 +339,7 @@ CHI_new_social_economy_decisions = {
 	}
 
 	Organize_breakthroughs_food_industry = { #组织食品、药品制造业技术攻关运动
-	icon = GFX_decision_gre_investment_decisions
+	icon = GFX_decision_generic_research
 	visible = {
 		check_variable = { Partial_nationalize_light_manufacturing_industry_progress = 100 }
 		has_idea = CHI_shipinganquanwenti
@@ -354,7 +354,7 @@ CHI_new_social_economy_decisions = {
 		check_variable = { treasury > 20.0 }
 		has_political_power > 49
 	}
-	custom_cost_text = cost_20_0
+	custom_cost_text = cost_20_0_potical_power_50
 	complete_effect = {
 		set_temp_variable = { treasury_change = -20 }
 		modify_treasury_effect = yes
@@ -373,7 +373,7 @@ CHI_new_social_economy_decisions = {
 	}
 
 	Raise_worker_salaries_benefits = { #提高工人薪资待遇
-	icon = GFX_decision_gre_investment_decisions
+	icon = GFX_decision_ger_mefo_bills
 	visible = {
 		check_variable = { Partial_nationalize_light_manufacturing_industry_progress = 100 }
 		check_variable = { Nationalize_construction_and_chemical_industries_progress = 100 }
@@ -392,7 +392,7 @@ CHI_new_social_economy_decisions = {
 		check_variable = { treasury > 50.0 }
 		has_political_power > 9
 	}
-	custom_cost_text = cost_50_0
+	custom_cost_text = cost_50_0_AND_political_power_10
 	complete_effect = {
 		set_temp_variable = { treasury_change = -50 }
 		modify_treasury_effect = yes

@@ -54,6 +54,16 @@ Organize_breakthroughs_food_industry: "组织§Y食品、药品制造业技术§
 Organize_breakthroughs_food_industry_desc: "在国有化了一批§Y食品、药品企业§!后，我们终于可以利用政府组织力，集中攻关其技术了。"
 Raise_worker_salaries_benefits: "提高§Y工人薪资待遇§!"
 Raise_worker_salaries_benefits_desc: "在经济领域取得公有制改革的一系列成功之后，我们终于可以着手进行最后的改革，也是我们的核心目标之一——§G提高工人薪资待遇§!"
+cost_50_0_AND_political_power_10: "£treasury  50£political_power_texticon    §H10§!"
+cost_50_0_AND_political_power_10_blocked: "£treasury  §R50§!£political_power_texticon    §R10§!"
+cost_50_0_AND_political_power_10_tooltip: "执行该决议将花费£treasury  §Y50§!和£political_power_texticon    §Y10§!"
+cost_20_0_potical_power_50: "£treasury  20£political_power_texticon    §H50§!"
+cost_20_0_potical_power_50_blocked: "£treasury  §R20§!£political_power_texticon    §R50§!"
+cost_20_0_potical_power_50_tooltip: "执行该决议将花费£treasury  §Y20§!和£political_power_texticon    §Y50§!"
+cost_10_0_potical_power_50: "£treasury  10£political_power_texticon    §H50§!"
+cost_10_0_potical_power_50_blocked: "£treasury  §R10§!£political_power_texticon    §R50§!"
+cost_10_0_potical_power_50_tooltip: "执行该决议将花费£treasury  §Y20§!和£political_power_texticon    §Y50§!"
+
 #idea
 CHI_BETTER_FOOD_SAFTY: "高质量§G食/药品§!"
 CHI_BETTER_FOOD_SAFTY_desc: "在经过§O艰苦的攻关§!之后，我们终于研究出物美价廉的§G食/药品§!，这将大大提高人民对我们的支持。同时，在§O攻关运动§!中成长起的一批§C农产品研究机构§!与§7国营食品加工厂§!也为我国经济发展增添了动力。"

@@ -25,7 +25,7 @@ DSC_wheat_waves_trigger_tt: "§C农业重建已基本完成§!"
 Joint_production_system_tt: "§C将会把三个恢复精神替换为以下精神：§!"
 army_xp_20_AND_potical_power_100: "£army_experience    §H20§!£political_power_texticon    §H100§!"
 army_xp_20_AND_potical_power_100_blocked: "£army_experience    §R20§!£political_power_texticon    §R100§!"
-army_xp_20_AND_potical_power_100_tooltip: "执行该决议将花费£army_experience 20和£political_power_texticon    100"
+army_xp_20_AND_potical_power_100_tooltip: "执行该决议将花费£army_experience 20和£political_power_texticon    §Y100§!"
 
 #精神
  CHI_Strict_military_control: "严格军管"
