@@ -6,7 +6,7 @@ CHI_nationalizing_start_tt: "§Y将正式开始进行国有化工作§!"
 
 #加成
 CHI_Organize_state_enterprises_modifier: "§Y国企构建§!"
-CHI_nationalizing_end_other_modifier_tt: "£construction_speed_texticon §Y基建、工厂、办公园区及补给站与铁路§!建造速度:§G+15%\n工厂及办公园区劳动力需求:§G+15%"
+CHI_nationalizing_end_other_modifier_tt: "£construction_speed_texticon §Y基建、工厂、办公园区及补给站与铁路§!建造速度:§G+15%§!\n§!工厂及办公园区劳动力需求§!:§G+15%§!"
 State_Collaboration: "§C合作化构建§!"
 #决议
 Organize_official_forums_individual_businesses: "§G构建§!§R城市合作社§!的§Y目标§!§C(经济较发达地区)§!"
@@ -88,7 +88,7 @@ CHI_Oofb_sichuan_trigger_tt: "§Y四川地区§!暂未开设§C“个体户官�
 CHI_Oofb_fujian_trigger_tt: "§Y福建地区§!暂未开设§C“个体户官方合作论坛”§!"
 CHI_Oofb_hubei_trigger_tt: "§Y湖北地区§!暂未开设§C“个体户官方合作论坛”§!"
 CHI_Oofb_shanghai_trigger_tt: "§上海市§!暂未开设§C“个体户官方合作论坛”§!"
-
+Launch_cooperation_initiatives_at_forums: "在§C各地合作论坛§!§G发出合作倡议§!"
 
 
 #idea

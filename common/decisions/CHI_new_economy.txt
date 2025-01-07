@@ -412,6 +412,9 @@ CHI_new_social_economy_decisions = {
 		factor = 1
 	}
 	}
+
+
+
 	#组织各地个体户“官方论坛”地图决议
 	Oofb_guangdong = { #(1)广东及珠江地区
 	icon = GFX_decision_hol_exchange_intelligence_data
@@ -779,159 +782,47 @@ CHI_new_social_economy_decisions = {
 	}
 	ai_will_do = { factor = 1 }
 	}
+
+	Launch_cooperation_initiatives_at_forums = { #在各地合作论坛发出合作倡议
+	icon = GFX_decision_ger_mefo_bills
+	visible = {
+		all_owned_state = {
+			limit = { CHI_Organize_state_enterprises_states_trigger = yes }
+			has_dynamic_modifier = { modifier = State_Collaboration } 
+		}
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = CHI_Launch_cooperation_initiatives_at_forums_tt
+			all_owned_state = {
+				limit = { CHI_Organize_state_enterprises_states_trigger = yes }
+				has_dynamic_modifier = { modifier = State_Collaboration } 
+			}
+		}
+	}
+	custom_cost_trigger = {
+		check_variable = { treasury > 50.0 }
+		has_political_power > 9
+	}
+	custom_cost_text = cost_50_0_AND_political_power_10
+	complete_effect = {
+		set_temp_variable = { treasury_change = -50 }
+		modify_treasury_effect = yes
+		add_political_power = -10
+	}
+	days_remove = 30
+	remove_effect = {
+		every_owned_state = {
+			limit = { has_dynamic_modifier = { modifier = State_Collaboration } }
+			set_temp_variable = { sc_spsic_add = 0.05 } set_temp_variable = { sc_lbs_add = 0.02 } set_temp_variable = { sc_spg_add = 0.02 } 
+			custom_effect_tooltip = Launch_cooperation_initiatives_at_forums_effect_tt 
+			add_to_variable = { sc_spsic = sc_spsic_add } add_to_variable = { sc_lbs = sc_lbs_add } add_to_variable = { sc_spg = sc_spg_add } 
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	}
 }
 
 
-#这是被否决的内容：国企决议，只显示在地图上
-#CHI_state_enterprises_decisions = {
-
-	#guangdong_state_enterprises = { #1.广东
-		#icon = GFX_decision_generic_construction
-		#visible = {
-		#	has_completed_focus = CHI_Organize_state_enterprises
-		#	OR = { tag = DSC tag = CHI }
-	#	}
-	#	available = { 
-			
-		#}
-	#	custom_cost_trigger = {
-		#	if = { 
-		#		limit = { 534 = { NOT = { has_state_flag = { flag = state_enterprises_times } } } 532 = { NOT = { has_state_flag = { flag = state_enterprises_times } } } }
-		#		check_variable = { treasury > 1 }
-		#	}
-		#	else_if = { 
-		#		limit = { 534 = { has_state_flag = { flag = state_enterprises_times value = 1 } } 532 = { has_state_flag = { flag = state_enterprises_times value = 1 } } }
-		#		has_political_power > 34
-		#	}
-		#	else_if = { 
-		#		limit = { OR = { AND = { 534 = { has_state_flag = { flag = state_enterprises_times value = 2 } } 532 = { has_state_flag = { flag = state_enterprises_times value = 2 } } } AND = { 534 = { has_state_flag = { flag = state_enterprises_times value = 3 } } 532 = { has_state_flag = { flag = state_enterprises_times value = 3 } } } } }
-		#		has_political_power > 34 check_variable = { treasury > 2 }
-		#	}
-		#	else_if = {
-		#		limit = { 534 = { has_state_flag = { flag = state_enterprises_times value = 4 } } 532 = { has_state_flag = { flag = state_enterprises_times value = 4 } } }
-		#		has_political_power > 49
-		#	}
-		#	else_if = {
-		#		limit = { 534 = { has_state_flag = { flag = state_enterprises_times value = 5 } } 532 = { has_state_flag = { flag = state_enterprises_times value = 5 } } }
-		#		has_political_power > 49 check_variable = { treasury > 2 }
-		#	}
-		#	else_if = {
-		#		limit = { 534 = { has_state_flag = { flag = state_enterprises_times value = 6 } } 532 = { has_state_flag = { flag = state_enterprises_times value = 6 } } }
-		#		has_political_power > 49 check_variable = { treasury > 5 }
-		#	}
-		#}
-		#complete_effect = {
-		#	custom_effect_tooltip = CHI_state_enterprises_decisions_cost_effect_tt
-		#	if = { 
-		#		limit = { 534 = { NOT = { has_state_flag = { flag = state_enterprises_times } } } 532 = { NOT = { has_state_flag = { flag = state_enterprises_times } } } }
-		#		set_temp_variable = { treasury_change = -1 } modify_treasury_effect = yes
-		#	}
-		#	else_if = { 
-		#		limit = { 534 = { has_state_flag = { flag = state_enterprises_times value = 1 } } 532 = { has_state_flag = { flag = state_enterprises_times value = 1 } } }
-		#		add_political_power = -35
-		#	}
-		#	else_if = { 
-		#		limit = { OR = { AND = { 534 = { has_state_flag = { flag = state_enterprises_times value = 2 } } 532 = { has_state_flag = { flag = state_enterprises_times value = 2 } } } AND = { 534 = { has_state_flag = { flag = state_enterprises_times value = 3 } } 532 = { has_state_flag = { flag = state_enterprises_times value = 3 } } } } }
-		#		add_political_power = -35 set_temp_variable = { treasury_change = -2 } modify_treasury_effect = yes
-		#	}
-		#	else_if = {
-		#		limit = { 534 = { has_state_flag = { flag = state_enterprises_times value = 4 } } 532 = { has_state_flag = { flag = state_enterprises_times value = 4 } } }
-		#		add_political_power = 50
-		#	}
-		#	else_if = {
-		#		limit = { 534 = { has_state_flag = { flag = state_enterprises_times value = 5 } } 532 = { has_state_flag = { flag = state_enterprises_times value = 5 } } }
-		#		add_political_power = 50 set_temp_variable = { treasury_change = -2 } modify_treasury_effect = yes
-		#	}
-		#	else_if = {
-		#		limit = { 534 = { has_state_flag = { flag = state_enterprises_times value = 6 } } 532 = { has_state_flag = { flag = state_enterprises_times value = 6 } } }
-		#		add_political_power = 50 set_temp_variable = { treasury_change = -5 } modify_treasury_effect = yes
-		#	}
-	#	}
-	#	days_remove = 30
-	#	days_re_enable = 45
-	#	highlight_states = { highlight_states_trigger = { state = 534 state = 532 } }
-	#	on_map_mode = map_only
-	#	remove_effect = {
-	#		534 = { state_enterprises_build_effect = yes } 532 = { state_enterprises_build_effect = yes }
-	#	}
-	#	ai_will_do = {
-	#		factor = 1
-	#	}
-	#}
-
-#jiangsu_state_enterprises = {#2.江苏
-	#	icon = GFX_decision_generic_construction
-	#	visible = {
-	#		has_completed_focus = CHI_Organize_state_enterprises
-	#		OR = { tag = DSC tag = CHI }
-	#	}
-	#	available = { 
-	#		
-	#	}
-	#	custom_cost_trigger = {
-	#		if = { 
-	#			limit = { 541 = { NOT = { has_state_flag = { flag = state_enterprises_times } } } 536 = { NOT = { has_state_flag = { flag = state_enterprises_times } } } }
-	#			check_variable = { treasury > 1 }
-	#		}
-	#		else_if = { 
-	#			limit = { 541 = { has_state_flag = { flag = state_enterprises_times value = 1 } } 536 = { has_state_flag = { flag = state_enterprises_times value = 1 } } }
-	#			has_political_power > 34
-	#		}
-	#		else_if = { 
-	#			limit = { OR = { AND = { 541 = { has_state_flag = { flag = state_enterprises_times value = 2 } } 536 = { has_state_flag = { flag = state_enterprises_times value = 2 } } } AND = { 541 = { has_state_flag = { flag = state_enterprises_times value = 3 } } 536 = { has_state_flag = { flag = state_enterprises_times value = 3 } } } } }
-	#			has_political_power > 34 check_variable = { treasury > 2 }
-	#		}
-	#		else_if = {
-	#			limit = { 541 = { has_state_flag = { flag = state_enterprises_times value = 4 } } 536 = { has_state_flag = { flag = state_enterprises_times value = 4 } } }
-	#			has_political_power > 49
-	#		}
-	#		else_if = {
-	#			limit = { 541 = { has_state_flag = { flag = state_enterprises_times value = 5 } } 536 = { has_state_flag = { flag = state_enterprises_times value = 5 } } }
-	#			has_political_power > 49 check_variable = { treasury > 2 }
-	#		}
-	#		else_if = {
-	#			limit = { 541 = { has_state_flag = { flag = state_enterprises_times value = 6 } } 536 = { has_state_flag = { flag = state_enterprises_times value = 6 } } }
-	#			has_political_power > 49 check_variable = { treasury > 5 }
-	#		}
-	#	}
-	#	complete_effect = {
-	#		custom_effect_tooltip = CHI_state_enterprises_decisions_cost_effect_tt
-	#		if = { 
-	#			limit = { 541 = { NOT = { has_state_flag = { flag = state_enterprises_times } } } 536 = { NOT = { has_state_flag = { flag = state_enterprises_times } } } }
-	#			set_temp_variable = { treasury_change = -1 } modify_treasury_effect = yes
-	#		}
-	#		else_if = { 
-	#			limit = { 541 = { has_state_flag = { flag = state_enterprises_times value = 1 } } 536 = { has_state_flag = { flag = state_enterprises_times value = 1 } } }
-	#			add_political_power = -35
-	#		}
-	#		else_if = { 
-	#			limit = { OR = { AND = { 541 = { has_state_flag = { flag = state_enterprises_times value = 2 } } 536 = { has_state_flag = { flag = state_enterprises_times value = 2 } } } AND = { 541 = { has_state_flag = { flag = state_enterprises_times value = 3 } } 536 = { has_state_flag = { flag = state_enterprises_times value = 3 } } } } }
-	#			add_political_power = -35 set_temp_variable = { treasury_change = -2 } modify_treasury_effect = yes
-	#		}
-	#		else_if = {
-	#			limit = { 541 = { has_state_flag = { flag = state_enterprises_times value = 4 } } 536 = { has_state_flag = { flag = state_enterprises_times value = 4 } } }
-	#			add_political_power = 50
-	#		}
-	#		else_if = {
-	#			limit = { 541 = { has_state_flag = { flag = state_enterprises_times value = 5 } } 536 = { has_state_flag = { flag = state_enterprises_times value = 5 } } }
-	#			add_political_power = 50 set_temp_variable = { treasury_change = -2 } modify_treasury_effect = yes
-	#		}
-	#		else_if = {
-	#			limit = { 541 = { has_state_flag = { flag = state_enterprises_times value = 6 } } 536 = { has_state_flag = { flag = state_enterprises_times value = 6 } } }
-	#			add_political_power = 50 set_temp_variable = { treasury_change = -5 } modify_treasury_effect = yes
-	#		}
-	#	}
-	#	days_remove = 30
-	#	days_re_enable = 45
-	#	highlight_states = { highlight_states_trigger = { state = 534 state = 532 } }
-	#	on_map_mode = map_only
-	#	remove_effect = {
-	#		541 = { state_enterprises_build_effect = yes } 536 = { state_enterprises_build_effect = yes }
-	#	}
-		#ai_will_do = {
-		#	factor = 1
-	#	}
-	#}
-
-
-#}
