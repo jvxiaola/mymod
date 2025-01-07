@@ -810,7 +810,7 @@ CHI_new_social_economy_decisions = {
 		modify_treasury_effect = yes
 		add_political_power = -10
 	}
-	days_remove = 30
+	days_remove = 50
 	remove_effect = {
 		every_owned_state = {
 			limit = { has_dynamic_modifier = { modifier = State_Collaboration } }
