@@ -166,3 +166,238 @@ defined_text = {
 		localization_key = "CHI_Raise_worker_salaries_benefits_goal_achieve" #改善劳动待遇完成
 	}
 }
+
+defined_text = {
+	name = CHI_State_Collaboration_decisions_goal
+	text = {
+		trigger = {
+			has_completed_focus = CHI_get_organized
+			all_owned_state = {
+				limit = { CHI_Organize_state_enterprises_states_trigger = yes }
+				has_dynamic_modifier = { modifier = State_Collaboration } 
+			}
+		}
+		localization_key = "CHI_State_Collaboration_goal_achieve" #地方组建合作社完成
+	}
+	text = {
+		trigger = {
+			has_completed_focus = CHI_get_organized
+		}
+		localization_key = "CHI_State_Collaboration_goal" #显示地方组建合作社进度
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_completed_focus = CHI_get_organized
+			}
+		}
+		localization_key = "NOT_sign"
+	}
+}
+
+defined_text = {
+	name = CHI_State_guangdong_goal #珠江地区
+	text = {
+		trigger = {
+			534 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 532 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 
+			595 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 1106 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+		}
+		localization_key = "guangdong_goal_red" #地方组建合作社未完成
+	}
+	text = {
+		trigger = {
+			534 = { has_dynamic_modifier = { modifier = State_Collaboration } } 532 = { has_dynamic_modifier = { modifier = State_Collaboration } } 
+			595 = { has_dynamic_modifier = { modifier = State_Collaboration } } 1106 = { has_dynamic_modifier = { modifier = State_Collaboration } }
+		}
+		localization_key = "guangdong_goal_green" #地方组建合作社已完成
+	}
+}
+defined_text = {
+	name = CHI_State_jiangsu_goal #江苏地区
+	text = {
+		trigger = {
+			541 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 536 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 
+		}
+		localization_key = "jiangsu_goal_red" #地方组建合作社未完成
+	}
+	text = {
+		trigger = {
+			541 = { has_dynamic_modifier = { modifier = State_Collaboration } } 536 = { has_dynamic_modifier = { modifier = State_Collaboration } } 
+		}
+		localization_key = "jiangsu_goal_green" #地方组建合作社已完成
+	}
+}
+defined_text = {
+	name = CHI_State_shandong_goal #山东地区
+	text = {
+		trigger = {
+			435 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 544 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 
+		}
+		localization_key = "shandong_goal_red" #地方组建合作社未完成
+	}
+	text = {
+		trigger = {
+			435 = { has_dynamic_modifier = { modifier = State_Collaboration } } 544 = { has_dynamic_modifier = { modifier = State_Collaboration } } 
+		}
+		localization_key = "shandong_goal_green" #地方组建合作社已完成
+	}
+}
+defined_text = {
+	name = CHI_State_zhejiang_goal #浙江地区
+	text = {
+		trigger = {
+			538 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 
+		}
+		localization_key = "zhejiang_goal_red" #地方组建合作社未完成
+	}
+	text = {
+		trigger = {
+			538 = { has_dynamic_modifier = { modifier = State_Collaboration } } 
+		}
+		localization_key = "zhejiang_goal_green" #地方组建合作社已完成
+	}
+}
+defined_text = {
+	name = CHI_State_henan_goal #浙江地区
+	text = {
+		trigger = {
+			567 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 
+		}
+		localization_key = "henan_goal_red" #地方组建合作社未完成
+	}
+	text = {
+		trigger = {
+			567 = { has_dynamic_modifier = { modifier = State_Collaboration } } 
+		}
+		localization_key = "henan_goal_green" #地方组建合作社已完成
+	}
+}
+defined_text = {
+	name = CHI_State_liaoning_goal #辽宁地区
+	text = {
+		trigger = {
+			1095 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 552 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 
+		}
+		localization_key = "liaoning_goal_red" #地方组建合作社未完成
+	}
+	text = {
+		trigger = {
+			1095 = { has_dynamic_modifier = { modifier = State_Collaboration } } 552 = { has_dynamic_modifier = { modifier = State_Collaboration } } 
+		}
+		localization_key = "liaoning_goal_green" #地方组建合作社已完成
+	}
+}
+defined_text = {
+	name = CHI_State_hebei_goal #京津冀地区
+	text = {
+		trigger = {
+			434 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 549 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 
+			547 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 548 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+		}
+		localization_key = "hebei_goal_red" #地方组建合作社未完成
+	}
+	text = {
+		trigger = {
+			434 = { has_dynamic_modifier = { modifier = State_Collaboration } } 549 = { has_dynamic_modifier = { modifier = State_Collaboration } } 
+			547 = { has_dynamic_modifier = { modifier = State_Collaboration } } 548 = { has_dynamic_modifier = { modifier = State_Collaboration } }
+		}
+		localization_key = "hebei_goal_green" #地方组建合作社已完成
+	}
+}
+defined_text = {
+	name = CHI_State_sichuan_goal #四川地区
+	text = {
+		trigger = {
+			585 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 586 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 
+			583 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 
+		}
+		localization_key = "sichuan_goal_red" #地方组建合作社未完成
+	}
+	text = {
+		trigger = {
+			585 = { has_dynamic_modifier = { modifier = State_Collaboration } } 586 = { has_dynamic_modifier = { modifier = State_Collaboration } } 
+			583 = { has_dynamic_modifier = { modifier = State_Collaboration } } 
+		}
+		localization_key = "sichuan_goal_green" #地方组建合作社已完成
+	}
+}
+defined_text = {
+	name = CHI_State_fujian_goal #福建地区
+	text = {
+		trigger = {
+			537 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 
+		}
+		localization_key = "fujian_goal_red" #地方组建合作社未完成
+	}
+	text = {
+		trigger = {
+			537 = { has_dynamic_modifier = { modifier = State_Collaboration } } 
+		}
+		localization_key = "fujian_goal_green" #地方组建合作社已完成
+	}
+}
+defined_text = {
+	name = CHI_State_hubei_goal #湖北地区
+	text = {
+		trigger = {
+			570 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 
+		}
+		localization_key = "hubei_goal_red" #地方组建合作社未完成
+	}
+	text = {
+		trigger = {
+			570 = { has_dynamic_modifier = { modifier = State_Collaboration } } 
+		}
+		localization_key = "hubei_goal_green" #地方组建合作社已完成
+	}
+}
+defined_text = {
+	name = CHI_State_shanghai_goal #上海地区
+	text = {
+		trigger = {
+			540 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 
+		}
+		localization_key = "shanghai_goal_red" #地方组建合作社未完成
+	}
+	text = {
+		trigger = {
+			540 = { has_dynamic_modifier = { modifier = State_Collaboration } } 
+		}
+		localization_key = "shanghai_goal_green" #地方组建合作社已完成
+	}
+}
+
+defined_text = {
+	name = CHI_Launch_cooperation_initiatives_at_forums_decisions_goal
+	text = {
+		trigger = {
+			all_owned_state = {
+				limit = { CHI_Organize_state_enterprises_states_trigger = yes }
+				has_dynamic_modifier = { modifier = State_Collaboration } 
+				check_variable = { sc_spsic = 0.05 }
+			}
+		}
+		localization_key = "CHI_Launch_cooperation_initiatives_at_forums_goal" #显示发出合作倡议国策
+	}
+	text = {
+		trigger = {
+			NOT = {
+				all_owned_state = {
+					limit = { CHI_Organize_state_enterprises_states_trigger = yes }
+					has_dynamic_modifier = { modifier = State_Collaboration } 
+				}
+			}
+		}
+		localization_key = "NOT_sign"
+	}
+	text = {
+		trigger = {
+			all_owned_state = {
+				limit = { CHI_Organize_state_enterprises_states_trigger = yes }
+				has_dynamic_modifier = { modifier = State_Collaboration } 
+				check_variable = { sc_spsic = 0.10 }
+			}
+		}
+		localization_key = "CHI_Launch_cooperation_initiatives_at_forums_goal_achieve" #发出合作倡议完成
+	}
+}

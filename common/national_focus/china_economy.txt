@@ -917,7 +917,7 @@ shared_focus = {
 		y = 2
 		relative_position_id = CHI_Socialist_Reconstruction
 
-		cost = 2
+		cost = 0.2
 
 		prerequisite = { focus = CHI_general_route }
 
@@ -1154,7 +1154,7 @@ add_power_balance_value = {
 		y = 2
 		relative_position_id = CHI_Socialist_Reconstruction
 
-		cost = 2
+		cost = 0.2
 
 		prerequisite = { focus = CHI_general_route }
 
@@ -1164,7 +1164,7 @@ add_power_balance_value = {
 		}
 
 		completion_reward = {
-add_stability = 0.05
+			add_stability = 0.05
 		}
 
 		ai_will_do = { base = 1 }
@@ -1261,7 +1261,7 @@ add_stability = 0.05
 
 	shared_focus = {		
 		id = CHI_city_mutual_aid
-		icon = generic_communism_focus
+		icon = BRA_public_housing_programs
 
 		x = 0
 		y = 1
@@ -1273,11 +1273,17 @@ add_stability = 0.05
 
 
 		available = {
-
+			custom_trigger_tooltip = {
+				tooltip = CHI_city_mutual_aid_trigger_tt
+				every_owned_state = {
+					limit = { has_dynamic_modifier = { modifier = State_Collaboration } }
+					check_variable = { sc_spsic = 0.10 }
+				}
+			}
 		}
 
 		completion_reward = {
-		add_ideas = CHI_basic_service
+			CHI_add_CHI_Collaboration_internet_modifier = yes
 		}
 
 		ai_will_do = { base = 1 }
@@ -1297,16 +1303,16 @@ add_stability = 0.05
 
 
 		available = {
-custom_trigger_tooltip = {
-NOT = {
-OR = {
-has_idea = CHI_Socialist_Market_Economy_free_1
-has_idea = CHI_Socialist_Market_Economy_free_2
-has_idea = CHI_Free_Market_Economy
-}
-}
-tooltip = CHI_economic_model_liberalization_economy_tt
-}
+			custom_trigger_tooltip = {
+				NOT = {
+					OR = {
+						has_idea = CHI_Socialist_Market_Economy_free_1
+						has_idea = CHI_Socialist_Market_Economy_free_2
+						has_idea = CHI_Free_Market_Economy
+					}
+				}
+			tooltip = CHI_economic_model_liberalization_economy_tt
+			}
 		}
 
 		completion_reward = {
@@ -1317,21 +1323,19 @@ tooltip = CHI_economic_model_liberalization_economy_tt
 						remove_idea =  CHI_Socialist_Market_Economy
 					}
 				}
-else_if = {
-limit = { has_idea = CHI_Socialist_Market_Economy_planned_1 }
-swap_ideas = {
-add_idea = CHI_Socialist_Market_Economy_planned_2
-remove_idea =  CHI_Socialist_Market_Economy_planned_1
-
-}
+			else_if = {
+				limit = { has_idea = CHI_Socialist_Market_Economy_planned_1 }
+					swap_ideas = {
+					add_idea = CHI_Socialist_Market_Economy_planned_2
+					remove_idea =  CHI_Socialist_Market_Economy_planned_1
+					}
 			}
-else_if = {
-limit = { has_idea = CHI_Socialist_Market_Economy_planned_2 }
-swap_ideas = {
-add_idea = CHI_Planned_Economy
-remove_idea =  CHI_Socialist_Market_Economy_planned_2
-
-}
+			else_if = {
+				limit = { has_idea = CHI_Socialist_Market_Economy_planned_2 }
+					swap_ideas = {
+					add_idea = CHI_Planned_Economy
+					remove_idea =  CHI_Socialist_Market_Economy_planned_2
+				}
 			}
 			CHI_ruin_economy_remove = yes
 		}
@@ -1346,7 +1350,7 @@ remove_idea =  CHI_Socialist_Market_Economy_planned_2
 		y = 2
 		relative_position_id = CHI_Socialist_Reconstruction
 
-		cost = 2
+		cost = 0.2
 
 		prerequisite = { focus = CHI_general_route }
 
@@ -1356,7 +1360,7 @@ remove_idea =  CHI_Socialist_Market_Economy_planned_2
 		}
 
 		completion_reward = {
-add_political_power = 50
+			add_political_power = 50
 		}
 
 		ai_will_do = { base = 1 }
@@ -1537,19 +1541,26 @@ remove_idea =  CHI_Socialist_Market_Economy_planned_2
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			CHI_ruin_economy_remove = yes
-		if = {
-			limit = { has_idea = CHI_Stateowned_enterprise_monopoly }
-				add_ideas = a_new_leap_forward
-		}
-		else_if = {
-			limit = {
-				has_idea = CHI_worker_cooperative
+			if = {
+				limit = { has_idea = CHI_Stateowned_enterprise_monopoly }
+					add_ideas = a_new_leap_forward
 			}
-			add_ideas = CHI_new_socialist_economy
+			else_if = {
+				limit = {
+					has_idea = CHI_worker_cooperative
+				}
+				add_ideas = CHI_new_socialist_economy
 
-		}
+			}
 			custom_effect_tooltip = CHI_Chinese_Industrial_Explosion21_tt
 			mark_focus_tree_layout_dirty = yes
+			hidden_effect = {
+				clear_variable = Redemption_assets_times
+				clear_variable = confiscated_assets_times
+				clear_variable = Promote_nationalization_strategic_industries_progress
+				clear_variable = Nationalize_construction_and_chemical_industries_progress
+				clear_variable = Partial_nationalize_light_manufacturing_industry_progress
+			}
 		}
 		ai_will_do = { base = 1 }
 	}

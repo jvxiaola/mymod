@@ -1216,12 +1216,12 @@ defined_text = {
 
 #Tooltip summary for additional incomes and expense
 defined_text = {
-	name = additional_expense_summary_additional_expense_CHI_basic_service
+	name = additional_expense_summary_additional_expense_CHI_Collaboration_internet
 	text = {
 		trigger = {
 			has_idea = CHI_basic_service
 		}
-		localization_key = "CHI_basic_service_tte"
+		localization_key = "CHI_Collaboration_internet_tte"
 	}
 	text = {
 		trigger = {

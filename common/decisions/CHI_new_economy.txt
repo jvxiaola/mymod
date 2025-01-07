@@ -91,16 +91,10 @@ CHI_new_social_economy_decisions = {
 			hidden_effect = {
 				if = {
 					limit = { NOT = { has_variable = Redemption_assets_times } }
-					set_variable = {
-						var = Redemption_assets_times
-						value = 1
-					}
+					set_variable = { Redemption_assets_times = 1 }
 				}
 				else = {
-					add_to_variable = {
-						var = Redemption_assets_times
-						value = 1
-					}
+					add_to_variable = { Redemption_assets_times = 1 }
 				}
 			}
 		}
@@ -645,8 +639,8 @@ CHI_new_social_economy_decisions = {
 	}
 	days_remove = 30
 	remove_effect = {
-		434 = { STATE_ADD_State_Collaboration = yes } 549 = { STATE_ADD_State_Collaboration = yes } 547 = { STATE_ADD_State_Collaboration = yes } 
-		548 = { STATE_ADD_State_Collaboration = yes }
+		434 = { STATE_ADD_State_Collaboration = yes } 549 = { STATE_ADD_State_Collaboration = yes } 
+		547 = { STATE_ADD_State_Collaboration = yes } 548 = { STATE_ADD_State_Collaboration = yes }
 	}
 	ai_will_do = { factor = 1 }
 	}
@@ -823,6 +817,41 @@ CHI_new_social_economy_decisions = {
 		factor = 1
 	}
 	}
+#地区合作社化
+	CHI_Collaboralize_guangdong = { #(1)广东及珠江地区
+	icon = GFX_decision_generic_factory
+	visible = {
+		has_completed_focus = CHI_city_mutual_aid
+		534 = { has_dynamic_modifier = { modifier = State_Collaboration } } 532 = { has_dynamic_modifier = { modifier = State_Collaboration } }
+	}
+	available = {
+		always = yes
+	}
+	on_map_mode = map_only
+	highlight_states = {
+        highlight_state_targets = {
+           state = 534 state = 532 state = 595 state = 1106
+        }
+    }
+	custom_cost_trigger = {
+		check_variable = { treasury > 20.0 }
+		has_political_power > 49
+	}
+	custom_cost_text = cost_20_0_potical_power_50
+	complete_effect = {
+		set_temp_variable = { treasury_change = -20 }
+		modify_treasury_effect = yes
+		add_political_power = -50
+	}
+	days_remove = 30
+	remove_effect = {
+		CHI_Collaboralize = yes
+		534 = { STATE_Collaboralize = yes } 532 = { STATE_Collaboralize = yes } 595 = { STATE_Collaboralize = yes }
+		1106 = { STATE_Collaboralize = yes }
+	}
+	ai_will_do = { factor = 1 }
+	}
+
 }
 
 

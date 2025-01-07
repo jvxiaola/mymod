@@ -39,10 +39,27 @@ State_Collaboration = {
 	enable = {always = yes}
 	icon = GFX_idea_dpr_ruins
 	state_production_speed_industrial_complex_factor = sc_spsic #地区民用工厂建筑速度
+	state_production_speed_offices_factor = sc_spsic #地区办公园区建筑速度
 	state_production_synthetic_refinery_factor = sc_spsrf #地区可再生能源建造速度
 	local_building_slots_factor = sc_lbs #地区建筑槽
 	state_production_speed_buildings_factor = sc_spsbf #地区建造速度
 	state_productivity_growth_modifier = sc_spg #地区生产力
 	local_supplies = sc_ls #地区补给
 	state_renewable_energy_generation_modifier = sc_regm #省份可再生能源系数
+}
+
+CHI_Collaboration_internet = {
+	allowed_civil_war = { always = yes }		
+	picture = inflation
+	modifier = {
+	tax_gain_multiplier_modifier = CI_tg
+	production_speed_offices_factor = CI_pso #办公园区建设速度
+	Chinese_people_support_to_china_government_modifier = CI_cpstc
+	hidden_modifier = {
+		civ_facs_worker_requirement_modifier = CI_cmowr
+		mil_facs_worker_requirement_modifier = CI_cmowr
+		offices_worker_requirement_modifier = CI_cmowr
+	}
+	custom_modifier_tooltip = CHI_Collaboration_internet_end_other_modifier_tt
+	}
 }

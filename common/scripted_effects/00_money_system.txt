@@ -2953,12 +2953,12 @@ calculate_additional_expense_rate = {
 			}
 		}
 		if = {
-			limit = { has_idea = CHI_basic_service }
-			set_variable = { additional_expense_CHI_basic_service = population_total }
-			divide_variable = { additional_expense_CHI_basic_service = 10 }	#Millions of people
-			multiply_variable = { additional_expense_CHI_basic_service = 0.10 } #per million
-			multiply_variable = { additional_expense_CHI_basic_service = 0.50 }	#weekly
-			add_to_variable = { additional_expenses_rate = additional_expense_CHI_basic_service}
+			limit = { has_idea = CHI_Collaboration_internet }
+			set_variable = { additional_expense_CHI_Collaboration_internet = population_total }
+			divide_variable = { additional_expense_CHI_Collaboration_internet = 10 }	#Millions of people
+			multiply_variable = { additional_expense_CHI_Collaboration_internet = 0.10 } #per million
+			multiply_variable = { additional_expense_CHI_Collaboration_internet = 0.50 }	#weekly
+			add_to_variable = { additional_expenses_rate = additional_expense_CHI_Collaboration_internet}
 		}
 	}		
 	# Iran

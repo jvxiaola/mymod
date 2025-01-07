@@ -1147,6 +1147,10 @@ completion_reward = {
 
 	hidden_effect = {
 			clear_variable = Confiscate_stolen_funds_times 
+			remove_ideas = DSC_material_control
+			remove_ideas = DSC_Imported_essential_goods
+			remove_ideas = DSC_Crack_speculation
+			remove_ideas = DSC_Confiscate_stolen_funds
 		}
 	}
 
@@ -1262,8 +1266,7 @@ completion_reward = {
 		completion_reward = {
 			unlock_decision_tooltip = Organize_emergency_repairs
 			unlock_decision_tooltip = aid_construction
-			add_ideas = DSC_Organize_emergency_repairs 
-
+			add_ideas = DSC_Organize_emergency_repairs
 		}
 	}
 
@@ -1295,7 +1298,6 @@ completion_reward = {
 		}
 		completion_reward = {
 			unlock_decision_tooltip = Factory_starts_construction
-	
 		}
 	}
 
@@ -1328,8 +1330,6 @@ completion_reward = {
 		completion_reward = {
 			unlock_decision_tooltip = Produce_essential_goods
 			unlock_decision_tooltip = Financial_aid_construction
-		
-	
 		}
 	}
 
@@ -1361,7 +1361,6 @@ completion_reward = {
 		completion_reward = {
 			unlock_decision_tooltip = Imported_essential_goods
 			add_ideas = DSC_Nationalized_bureaucratic_capital
-	
 		}
 	}
 	
@@ -1431,7 +1430,10 @@ completion_reward = {
 					remove_dynamic_modifier = { modifier = CW_ruins }
 				}
 			}
-
+			hidden_effect = { 
+				remove_ideas = DSC_Organize_emergency_repairs
+				remove_ideas = DSC_Nationalized_bureaucratic_capital
+			}
 		}
 	}
 
@@ -1701,6 +1703,8 @@ completion_reward = {
 
 			hidden_effect = {
 				clr_country_flag = DSC_send_agricultural_supplies 
+				remove_ideas = DSC_Temporary_agricultural_subsidies
+				remove_ideas = DSC_Hiring_refugees
 			}
 		}
 	}
