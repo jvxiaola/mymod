@@ -89,7 +89,9 @@ CHI_Oofb_fujian_trigger_tt: "§Y福建地区§!暂未开设§C“个体户官方
 CHI_Oofb_hubei_trigger_tt: "§Y湖北地区§!暂未开设§C“个体户官方合作论坛”§!"
 CHI_Oofb_shanghai_trigger_tt: "§上海市§!暂未开设§C“个体户官方合作论坛”§!"
 Launch_cooperation_initiatives_at_forums: "在§C各地合作论坛§!§G发出合作倡议§!"
-
+Launch_cooperation_initiatives_at_forums_desc: "在各个地区的§C“个体户官方合作论坛”§!组建完成后，政府与各地§O个体户§!的§Y沟通渠道§!已经打开。我们可以通过该渠道发出§7合作化倡议§!，作为§G回报§!，响应倡议的个体户可以得到§I资金援助§!。"
+CHI_Launch_cooperation_initiatives_at_forums_tt: "§Y所有目标地区§!均已§G开设§!§C“个体户官方合作论坛”§!"
+Launch_cooperation_initiatives_at_forums_effect_tt: "§Y合作化构建§!修正效果添加:\n$state_production_speed_industrial_complex_factor$:[?sc_spsic_add|=%+]\n$local_building_slots_factor$:[?sc_lbs_add|=%+]\n$state_productivity_growth_modifier$:[?sc_spg_add|=%+]"
 
 #idea
 CHI_BETTER_FOOD_SAFTY: "高质量§G食/药品§!"
