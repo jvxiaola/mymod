@@ -87,6 +87,9 @@ cost_20_0_potical_power_50_tooltip: "执行该决议将花费£treasury §Y20§!
 cost_10_0_potical_power_50: "£treasury  10£political_power_texticon    §H50§!"
 cost_10_0_potical_power_50_blocked: "£treasury  §R10§!£political_power_texticon    §R50§!"
 cost_10_0_potical_power_50_tooltip: "执行该决议将花费£treasury §Y20§!和£political_power_texticon §Y50§!"
+cost_100_0_potical_power_50: "£treasury  100£political_power_texticon    §H50§!"
+cost_100_0_potical_power_50_blocked: "£treasury  §R100§!£political_power_texticon    §R50§!"
+cost_100_0_potical_power_50_tooltip: "执行该决议将花费£treasury §Y100§!和£political_power_texticon §Y50§!"
 CHI_city_mutual_aid_trigger_tt: "已完成§7合作化倡议§!§I政策§!。"
 CHI_state_Oofb_start_tt: "§Y将开始§!推进§C个体户§!§O合作化§!政策"
 Oofb_guangdong: "在§Y广东与珠江地区§!§G开设§!§C“个体户官方合作论坛”§!"
@@ -117,6 +120,7 @@ CHI_Launch_cooperation_initiatives_at_forums_tt: "§Y所有目标地区§!均已
 Launch_cooperation_initiatives_at_forums_effect_tt: "§Y合作化构建§!地区修正效果添加:\n$state_production_speed_industrial_complex_factor$:[?sc_spsic_add|=%+]\n$local_building_slots_factor$:[?sc_lbs_add|=%+]\n$state_productivity_growth_modifier$:[?sc_spg_add|=%+]"
 STATE_Collaboralize_effect_tt: "§Y合作化构建§!地区修正效果添加:\n$state_production_speed_industrial_complex_factor$:[?sc_spsic_add|=%+]\n$local_building_slots_factor$:[?sc_lbs_add|=%+]\n$state_productivity_growth_modifier$:[?sc_spg_add|=%+]\n$state_production_speed_buildings_factor$:[?sc_spsbf_add|=%+]"
 CHI_Collaboralize_effect_tt: "§Y合作社网络§!修正效果添加:\n$tax_gain_multiplier_modifier$:[?CI_tg_add|=%+]\n$production_speed_offices_factor$:[?CI_pso_add|=%+]\n§Y工厂及办公园区劳动力需求§!:[?CI_cmowr|=%+]"
+CHI_Collaboralize: "§Y全面推进§!§C合作化§!"
 
 #idea and modifier
 CHI_Organize_state_enterprises_modifier: "§Y国企构建§!"

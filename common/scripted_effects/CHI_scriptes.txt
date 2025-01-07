@@ -935,12 +935,9 @@ CHI_add_Organize_state_enterprises_modifier = {
   }
 
   CHI_Collaboralize = {
-    if = {
-      limit = { check_variable = { CI_tg < 0 } }
       ROOT = {
-        set_temp_variable = { CI_tg_add = 0.005 } set_temp_variable = { CI_pso_add = 0.005 } set_temp_variable = { CI_cmowr_add = 0.003 } 
+        set_temp_variable = { CI_tg_add = 0.05 } set_temp_variable = { CI_pso_add = 0.05 } set_temp_variable = { CI_cmowr_add = 0.03 } 
         custom_effect_tooltip = CHI_Collaboralize_effect_tt 
         add_to_variable = { CI_tg = CI_tg_add } add_to_variable = { CI_pso = CI_pso_add } add_to_variable = { CI_cmowr = CI_cmowr_add } 
       }
-    }
   }

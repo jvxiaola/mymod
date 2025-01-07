@@ -817,37 +817,41 @@ CHI_new_social_economy_decisions = {
 		factor = 1
 	}
 	}
-#地区合作社化
-	CHI_Collaboralize_guangdong = { #(1)广东及珠江地区
+
+	CHI_Collaboralize = { #推进全体合作社化
 	icon = GFX_decision_generic_factory
 	visible = {
 		has_completed_focus = CHI_city_mutual_aid
-		534 = { has_dynamic_modifier = { modifier = State_Collaboration } } 532 = { has_dynamic_modifier = { modifier = State_Collaboration } }
+		all_owned_state = {
+			limit = { CHI_Organize_state_enterprises_states_trigger = yes }
+			has_dynamic_modifier = { modifier = State_Collaboration } 
+			check_variable = { sc_spsic = 0.10 }
+		}
 	}
 	available = {
 		always = yes
 	}
-	on_map_mode = map_only
-	highlight_states = {
-        highlight_state_targets = {
-           state = 534 state = 532 state = 595 state = 1106
-        }
-    }
+	
 	custom_cost_trigger = {
-		check_variable = { treasury > 20.0 }
+		check_variable = { treasury > 100.0 }
 		has_political_power > 49
 	}
-	custom_cost_text = cost_20_0_potical_power_50
+	custom_cost_text = cost_100_0_potical_power_50
 	complete_effect = {
-		set_temp_variable = { treasury_change = -20 }
+		set_temp_variable = { treasury_change = -100 }
 		modify_treasury_effect = yes
 		add_political_power = -50
 	}
-	days_remove = 30
+	days_remove = 90
 	remove_effect = {
 		CHI_Collaboralize = yes
-		534 = { STATE_Collaboralize = yes } 532 = { STATE_Collaboralize = yes } 595 = { STATE_Collaboralize = yes }
-		1106 = { STATE_Collaboralize = yes }
+		every_owned_state = {
+			limit = { 
+				CHI_Organize_state_enterprises_states_trigger = yes 
+				has_dynamic_modifier = { modifier = State_Collaboration } 
+			}
+			STATE_Collaboralize = yes
+		}
 	}
 	ai_will_do = { factor = 1 }
 	}
