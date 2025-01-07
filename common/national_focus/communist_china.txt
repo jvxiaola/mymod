@@ -2129,7 +2129,7 @@ mutually_exclusive = {focus = PRC_no_lgbt }
 
 
 					OR={
-					has_country_leader = {  name = "Fred Engst" }
+					has_country_leader = {  name = "QuanGuoRenMinDaiBiaoDaHui" }
 				    has_country_flag=xggm
 					}
 					tooltip = "政府支持性少数解放"
