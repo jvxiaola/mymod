@@ -29,3 +29,5 @@ CHI_Organize_state_enterprises_states_trigger = {
 		state = 570		state = 540		state = 547		state = 548
 	}
 }
+
+

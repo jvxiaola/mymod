@@ -3,12 +3,14 @@ defined_text = {
 	text = {
 		trigger = {
 			has_completed_focus = CHI_redemption
+			check_variable = { Redemption_assets_times < 3 }
 		}
 		localization_key = "CHI_redemption_goals"#显示赎买进度
 	}
 	text = {
 		trigger = {
 			has_completed_focus = CHI_confiscated
+			check_variable = { confiscated_assets_times < 5 }
 		}
 		localization_key = "CHI_confiscated_goals"#显示强制国有化进度
 	}
@@ -34,5 +36,133 @@ defined_text = {
 			check_variable = { confiscated_assets_times = 5 }
 		}
 		localization_key = "CHI_confiscated_goals_achieve"#强制国有化完成
+	}
+}
+
+defined_text = {
+	name = CHI_Promote_nationalization_strategic_industries_decisions_goal
+	text = {
+		trigger = {
+			has_completed_focus = CHI_Organize_state_enterprises
+			check_variable = { Promote_nationalization_strategic_industries_progress < 100 }
+		}
+		localization_key = "CHI_Organize_state_enterprises_goals"#显示战略产业国有化进度
+	}
+	text = {
+		trigger = {
+				NOT = { has_completed_focus = CHI_Organize_state_enterprises }
+		}
+		localization_key = "NOT_sign"
+	}
+	text = {
+		trigger = {
+			has_completed_focus = CHI_Organize_state_enterprises
+			check_variable = { Promote_nationalization_strategic_industries_progress = 100 }
+		}
+		localization_key = "CHI_Organize_state_enterprises_goals_achieve"#战略产业国有化完成
+	}
+}
+
+defined_text = {
+	name = CHI_Nationalize_construction_and_chemical_industries_decisions_goal
+	text = {
+		trigger = {
+			has_completed_focus = CHI_Organize_state_enterprises
+			check_variable = { Nationalize_construction_and_chemical_industries_progress < 100 }
+		}
+		localization_key = "CHI_Nationalize_construction_and_chemical_industries_goal"#显示建筑与化工产业国有化进度
+	}
+	text = {
+		trigger = {
+				NOT = { has_completed_focus = CHI_Organize_state_enterprises }
+		}
+		localization_key = "NOT_sign"
+	}
+	text = {
+		trigger = {
+			has_completed_focus = CHI_Organize_state_enterprises
+			check_variable = { Nationalize_construction_and_chemical_industries_progress = 100 }
+		}
+		localization_key = "CHI_Nationalize_construction_and_chemical_industries_goals_achieve"#建筑与化工产业产业国有化完成
+	}
+}
+
+defined_text = {
+	name = CHI_Partial_nationalize_light_manufacturing_industry_decisions_goal
+	text = {
+		trigger = {
+			has_completed_focus = CHI_Organize_state_enterprises
+			check_variable = { Partial_nationalize_light_manufacturing_industry_progress < 100 }
+		}
+		localization_key = "CHI_Partial_nationalize_light_manufacturing_industry_goal" #显示部分轻工业、制造业国有化进度
+	}
+	text = {
+		trigger = {
+				NOT = { has_completed_focus = CHI_Organize_state_enterprises }
+		}
+		localization_key = "NOT_sign"
+	}
+	text = {
+		trigger = {
+			has_completed_focus = CHI_Organize_state_enterprises
+			check_variable = { Partial_nationalize_light_manufacturing_industry_progress = 100 }
+		}
+		localization_key = "CHI_Partial_nationalize_light_manufacturing_industry_goal_achieve" #部分轻工业、制造业国有化完成
+	}
+}
+
+defined_text = {
+	name = CHI_Organize_breakthroughs_food_industry_decisions_goal
+	text = {
+		trigger = {
+			has_idea = CHI_shipinganquanwenti
+			check_variable = { Partial_nationalize_light_manufacturing_industry_progress = 100 }
+		}
+		localization_key = "CHI_Organize_breakthroughs_food_industry_goal" #显示解决食品安全国策
+	}
+	text = {
+		trigger = {
+			check_variable = { Partial_nationalize_light_manufacturing_industry_progress < 100 }
+		}
+		localization_key = "NOT_sign"
+	}
+	text = {
+		trigger = {
+			has_idea = CHI_BETTER_FOOD_SAFTY
+			check_variable = { Partial_nationalize_light_manufacturing_industry_progress = 100 }
+		}
+		localization_key = "CHI_Organize_breakthroughs_food_industry_goal_achieve" #食品安全国策解决完成
+	}
+}
+
+defined_text = {
+	name = CHI_Raise_worker_salaries_benefits_decisions_goal
+	text = {
+		trigger = {
+		check_variable = { Partial_nationalize_light_manufacturing_industry_progress = 100 }
+		check_variable = { Nationalize_construction_and_chemical_industries_progress = 100 }
+		check_variable = { Promote_nationalization_strategic_industries_progress = 100 }
+		OR = { has_idea = CHI_work7 has_idea = CHI_work6 has_idea = CHI_work5 has_idea = CHI_work_01 has_idea = CHI_work_02 has_idea = CHI_work_03 has_idea = CHI_work_04 }
+		}
+		localization_key = "CHI_Raise_worker_salaries_benefits_goal" #显示改善劳动待遇国策
+	}
+	text = {
+		trigger = {
+			NOT = {
+				check_variable = { Partial_nationalize_light_manufacturing_industry_progress = 100 }
+				check_variable = { Nationalize_construction_and_chemical_industries_progress = 100 }
+				check_variable = { Promote_nationalization_strategic_industries_progress = 100 }
+			}
+		}
+		localization_key = "NOT_sign"
+	}
+	text = {
+		trigger = {
+			check_variable = { Partial_nationalize_light_manufacturing_industry_progress = 100 }
+			check_variable = { Nationalize_construction_and_chemical_industries_progress = 100 }
+			check_variable = { Promote_nationalization_strategic_industries_progress = 100 }
+			NOT = { OR = { has_idea = CHI_work7 has_idea = CHI_work6 has_idea = CHI_work5 has_idea = CHI_work_01 has_idea = CHI_work_02 has_idea = CHI_work_03 has_idea = CHI_work_04 } }
+		}
+		localization_key = "CHI_Raise_worker_salaries_benefits_goal_achieve" #改善劳动待遇完成
 	}
 }

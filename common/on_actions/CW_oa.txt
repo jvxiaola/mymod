@@ -70,4 +70,49 @@ on_actions = {
 			}
 		}
 
+		on_capitulation_immediate = {
+			effect = {
+				if = {
+					limit = { 
+						has_global_flag = Ccw 
+						FROM = { tag = DSC }
+						NOT = { country_exists = CHI }
+						ROOT = {
+								original_tag = CHI
+								has_cosmetic_tag = CHI_REB_S
+						}
+					}
+					FROM = {
+						annex_country = {
+							target = ROOT
+							transfer_troops = yes
+						}
+					}
+				}
+
+				else_if = {
+					limit = { 
+						has_global_flag = Ccw 
+						FROM = { OR = { tag = DSC tag = CHI } has_war_with = ROOT }
+						DSC = { has_war_with = ROOT } CHI = { has_war_with = ROOT }
+						ROOT = {
+								original_tag = CHI
+								has_cosmetic_tag = CHI_REB_S
+						}
+					}
+					DSC = {
+						every_controlled_state = {
+							transfer_state_to = DSC
+						}
+					}
+					CHI = {
+						annex_country = {
+							target = ROOT
+							transfer_troops = no
+						}
+					}
+				}
+			}
+		}
+
 }

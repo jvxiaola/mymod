@@ -7,14 +7,20 @@ CHI_new_social_economy_decisions = {
 			tag = HkG
 	}
 }
+visible_when_empty = yes
 	icon = GFX_decision_generic_china
 	on_map_area = {
-		targets = { all_owned_state = { limit = { state = { CHI_Organize_state_enterprises_states_trigger = yes } } } }
-			name = CHI_Organize_state_enterprises_states_map
-			zoom = 850
+		targets = { 534	532	541	536	435	544	538	567 1095 552 434 549 585 586 583 537 570 540 547 548 595 1106 }
+			name = Organize_official_forums_individual_businesses
+			zoom = 250
 	
 		target_trigger = {
-			has_completed_focus = CHI_Organize_state_enterprises
+			OR = {
+				original_tag = CHI
+				original_tag = DSC
+				original_tag = HKG
+				}
+			ROOT = { has_completed_focus = CHI_get_organized }
 		}
 	}
 
@@ -24,27 +30,31 @@ CHI_new_social_economy_decisions = {
 			tag = DSC
 			tag = HkG
 		}
-	}
-}
-
-CHI_Organize_state_enterprises_decisions = {
-	priority = { base = 1000 }
-	allowed = { 
 		OR = { 
-			original_tag = CHI 
-			tag = DSC
-			tag = HkG
-	}
-}
-		icon = GFX_decision_generic_china
-
-	visible = {
-		OR = { 
-			original_tag = CHI 
-			tag = DSC
-			tag = HkG
+			any_owned_state = { has_dynamic_modifier = { modifier = CW_ruins } } 
+			has_completed_focus = CHI_Socialist_Reconstruction
 		}
-		has_completed_focus = CHI_Organize_state_enterprises
 	}
 }
+
+#CHI_Organize_state_enterprises_decisions = {
+#	priority = { base = 1000 }
+#	allowed = { 
+#		OR = { 
+#			original_tag = CHI 
+#			tag = DSC
+	#		tag = HkG
+#	}
+#}
+	#	icon = GFX_decision_generic_china
+
+	#visible = {
+	#	OR = { 
+	#		original_tag = CHI 
+	#		tag = DSC
+	#		tag = HkG
+	#	}
+	#	has_completed_focus = CHI_Organize_state_enterprises
+	#}
+#}
 

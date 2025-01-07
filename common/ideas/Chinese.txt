@@ -1763,6 +1763,24 @@ Industrial_rebuild_end = {
 		}
 	}
 
+	CHI_NEW_people_war2 = {
+		
+		allowed = { 
+			OR = { tag = DSC tag = HKG tag = CHI } 
+		}
+		picture = red_revolutionary_army
+		modifier = {
+			army_org_factor = 0.05
+			breakthrough_factor = 0.03
+			experience_loss_factor = -0.07
+			cas_damage_reduction = 0.60
+			army_speed_factor = 0.15
+			supply_consumption_factor = -0.15
+			supply_factor = 0.05
+			supply_node_range = 0.10
+		}
+	}
+
 
 #农业损伤
 	Poor_agriculture1 = {

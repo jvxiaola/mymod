@@ -468,7 +468,7 @@ CHI_allowed_to_exist_desc: "这一点的私有制改变不了我们的社会主�
 CHI_limit_accumulation: "限制资本积累"
 CHI_limit_accumulation_desc: "不过我们还是应该管一下这群人的“头脑聪明”者，因为他们有可能会变成新资产阶级。"
 CHI_city_mutual_aid: "城市互助合作社"
-CHI_city_mutual_aid_desc: "这些基本的服务应该让这些个体户去做，不过现在是国家发给他们工资，给他们补贴，他们不再需要靠这些过活。"
+CHI_city_mutual_aid_desc: "城市中的基本服务业应该让这些个体户承担，但市场条件下经营不善的企业将会被政府收购，再重新组织培训，引进技术，尝试扭亏为盈，或者根据国家计划转变服务。\n这种政策在实行时应采取“因地制宜”的原则，如在上海、深圳等经济较发达地区还应以合作社为主，尝试缓步扎实的服务业合作化；在东北地区与山河四省等经实践检验适宜计划经济模式的地区，可以尝试初步构建地方计划与中央规划相结合的经济模式。"
 CHI_Efficient_and_economical: "高效，经济"
 CHI_Efficient_and_economical_desc: "以前的社会主义经济被诟病为低效和浪费，但是现在的新模式下，我们不再一刀切的对待复杂问题，因此是比资本主义经济更加高效、经济的模式"
 CHI_agricultural_issues: "农业问题"
@@ -1301,13 +1301,13 @@ Chinese_people_support_to_china_government_modifier: "£stability_texticon 政�
 
 PRC_Revolutionary_Enthusiasm_tt: "§Y政府合法性§!动态修正将被替换为§Y革命热情§!。\n此动态修正与外交、政治、经济挂钩。"
 
-DSC_people_support_dynamic_left_desc: "\n\n\n\n\n£GFX_CHI_people_support_dynamic_dynamic_desc_left_picture \n\n\n\n\n\n\n中国革命群众经过各种斗争，最终掌握了中国的政权，不过，这并不是革命的结束，而仅仅是开始！中国人民必须考虑自身与外国无产阶级的联系，考虑自身的建设，万万不可重蹈无产阶级文化大革命后期人民对革命失望的覆辙，不然的话，资产阶级与官僚主义反革命极有可能再次推翻革命政权。\n\n §Y人民的革命热情为§!： £stability_texticon [?DSC_people_support|%+2]。\n受到民族精神或法律影响，每月变化(本mod已将变化缩小10倍)：[?Final_chuanyu_people_support_to_china_government_modifier|%+2]"
+DSC_people_support_dynamic_left_desc: "\n\n\n\n\n£GFX_CHI_people_support_dynamic_dynamic_desc_left_picture \n\n\n\n\n\n\n经过残酷的战争，中国人民又一次站在历史舞台中央。可形势仍不容乐观：外面的豺狼固然凶险，内部流传几千年的政治冷淡才更令人毛骨悚然————如果连自己都不关心自己的利益，又有谁能来保护他们呢？\n但另一方面，主观能动性也并非无所不能，正如老话“欲速则不达”，过度的主观能动往往变成盲目，在别有用心者的有意推波助澜下酿成大祸....\n不管如何，历史的船舵已在他们手中。§Y而这次他们能否掌好舵§!，那就§R只有天知道了§!。\n\n §Y群众平均主观能动性量化百分比为§!： £stability_texticon [?DSC_people_support|%+2]。\n受到民族精神或法律影响，每月变化(本mod已将变化缩小10倍)：[?Final_chuanyu_people_support_to_china_government_modifier|%+2]"
 DSC_people_support_dynamic_right_desc: "\n\n£GFX_CHI_people_support_dynamic_dynamic_desc_right_pic \n\n\n\n中国人民自古以来就是不愿意做奴隶的人民，上千年的历史数千次起义，说明了中国的历史就是一部悲壮的阶级斗争史，如果政府不让人民活了，那么人民就会抛弃该政府。\n §R王侯将相，宁有种乎？§!\n\n §Y政府合法性为§!： £stability_texticon [?DSC_people_support|%+2]\n受到修正影响，每月变化(本mod已将变化缩小10倍)：[?Final_chuanyu_people_support_to_china_government_modifier|%+2]"
-DSC_people_support_dynamic_left: "革命热情"
+DSC_people_support_dynamic_left: "主观能动性"
 DSC_people_support_dynamic_right: "政府合法性"
-chuanyu_people_support_to_china_government_modifier: "£stability_texticon 政府合法性或革命热情每月变化"
+chuanyu_people_support_to_china_government_modifier: "£stability_texticon 政府合法性或主观能动性每月变化"
 
-DSC_Revolutionary_Enthusiasm_tt: "§Y政府合法性§!动态修正将被替换为§Y革命热情§!。\n此动态修正与外交、政治、经济挂钩。"
+DSC_Revolutionary_Enthusiasm_tt: "§Y政府合法性§!动态修正将被替换为§Y主观能动性§!。\n此动态修正与外交、政治、经济挂钩。"
 
 
 
@@ -1358,8 +1358,8 @@ change_CHI_people_support_tt: "[CHI_people_support_dynamic_name]变化：[?|+%]\
 
 
 
-DSC_Socialist_Construction_dynamic: "红色之梦"
-DSC_Socialist_Construction_dynamic_desc: "\n\n\n\n\n£CHI_Socialist_Construction_dynamic_desc_pic \n\n\n\n\n\n\n在中国左派重新获得政权之后，必须领导革命群众进行社会主义建设，与官僚主义作斗争，防止资产阶级复辟。\n§R这是最后的斗争，团结起来到明天，英特纳雄奈尔，就一定要实现！§!"
+DSC_Socialist_Construction_dynamic: "§O未竟之事§!"
+DSC_Socialist_Construction_dynamic_desc: "\n\n\n\n\n£CHI_Socialist_Construction_dynamic_desc_pic \n\n\n\n\n\n\n在经过§O近二十年的兜兜转转§!之后，中国人民发现他们回到了§R起点§!。这条已经§C走过而还未走完§!的路究竟会§I通向何方§!，还是一个§Y未知数§!.....\n驶向何方，掌握在§G每个人§!手中。"
 DSC_Socialist_Construction_dynamic_tt: "§H§!追加效果：\n"
 change_DSC_Socialist_Construction_dynamic1_tt: "[DSC_people_support_dynamic_name]每月变化：[?temp_DSC_Socialist_Construction_dynamic|+]\n"
 change_DSC_Socialist_Construction_dynamic2_tt: "正当化战争所需时间：[?temp_DSC_Socialist_Construction_dynamic|-%]\n"
@@ -1472,7 +1472,6 @@ USA_Anti_Communist_china_Jihad: "干涉中国内战"
 CHI_worker_cooperative: "工人合作社"
 PRC_World_Revolution_tt: "§H我们或我们的盟友§!§R必须§!控制§R华盛顿特区、伦敦、莫斯科、柏林、东京、巴黎、马德里§!"
 PRC_Xi_Jinping_Ambition: "在习主席的带领下，我们统一了东亚地区"
-CHI_Stateowned_enterprise_monopoly: "国营企业"
 CHI_selfemployed_small_cities: "受控的个体户"
 CHI_basic_service_TT: "每1000万人额外支出$$§R0.05B§!"
 CHI_basic_service_tte: "$$[?additional_expense_CHI_basic_service|-3]来自§Y$CHI_basic_service$§!\n"
@@ -1484,7 +1483,6 @@ CHI_People_Commune_tte: "$$[?additional_income_CHI_People_Commune|+3]来自§Y$C
 CHI_state_farm_tt: "每1000万人额外收入$$§G0.15B§!"
 CHI_state_farm_tte: "$$[?additional_income_CHI_state_farm|+3]来自§Y$CHI_state_farm$§!\n"
 CHI_new_socialist_economy: "新社会主义模式"
-CHI_guoyouhua:"国有化运动"
 CHI_new_socialist_economy_desc: "21世纪的社会主义经济模式在于保障经济民主，防止官僚化，保证无产阶级专政，此种模式是列宁在国家与革命中设想的模式。"
 CHI_kra_isthmus_canal_prc: "控制克拉地峡运河"
 CHI_Planned_Economy:"计划经济"
@@ -2469,7 +2467,7 @@ CHI_annex_Hon_desc:"正如中央所一直宣传的，我们在港澳实施的制
   DSC_FUCONGZHIHUI_desc: "北方政府成功缓解了经济崩溃，并成功取得了广大中下民众的支持，同时他们也许诺我们....\n不管如何,军管区司令部已经决定，宣布北方政府为“共和国唯一合法政府”。"
 
     DSC_DONGYUAN: "动员民兵"
-  DSC_DONGYUAN_desc: "目前形势相当不妙，西边高原地区对西四川虎视眈眈，西北的西域也妄图发动“生站”，近日东边的南方军政府也开始进行军事试探....\n冲突前流串到军管区的级做分子也开始煽动不明真相的农民与工人，军管区司令部已经召开会议，决定大量征招民兵，以应对内外的不稳定局势。"
+  DSC_DONGYUAN_desc: "目前形势相当不妙，西边西藏军区对我们虎视眈眈，西北的新疆军区近日也动作频发，近日东边的南方军政府也开始进行军事试探....\n冲突前流串到军管区的极左分子也开始煽动不明真相的农民与工人，军管区司令部已经召开会议，决定大量征招民兵，以应对内外的不稳定局势。"
 
    DSC_ZHENGSHUI: "大规模征税"
   DSC_ZHENGSHUI_desc: "大量扩充的军队导致军管区军费开支暴增！我们必须对市民收取战争税来补充军费开支"
@@ -2481,8 +2479,8 @@ CHI_annex_Hon_desc:"正如中央所一直宣传的，我们在港澳实施的制
   DSC_JIEFNQUANZHONGGUO:"宣称全中国"
   DSC_JIEFNQUANZHONGGUO_desc:"无产阶级将会拿回他们的国家"
 
-  DSC_NEIZHANJIESHU:"内战结束"
-  DSC_NEIZHANJIESHU_desc:"内战结束了，我们胜利了"
+  DSC_NEIZHANJIESHU: "内战结束"
+  DSC_NEIZHANJIESHU_desc: "经过长时间的军事冲突，自川渝而来的革命者取得了最终的胜利，他们的故事也就此开始....."
 
   DSC_QINGSUANFENLIESHILI:"清算分裂势力"
   DSC_QINGSUANFENLIESHILI_desc:"我们将用武力收回我们的领土"

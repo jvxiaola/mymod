@@ -2,31 +2,333 @@
 
 #tooltip:
 ruins_rebuild_finish_trigger_tt: "§C所有地区重建均已完成§!"
+CHI_nationalizing_start_tt: "§Y将正式开始进行国有化工作§!"
 
 #加成
 CHI_Organize_state_enterprises_modifier: "§Y国企构建§!"
-
+CHI_nationalizing_end_other_modifier_tt: "£construction_speed_texticon §Y基建、工厂、办公园区及补给站与铁路§!建造速度:§G+15%§!\n§!工厂及办公园区劳动力需求§!:§G+15%§!"
+State_Collaboration: "§C合作化构建§!"
 #决议
+Organize_official_forums_individual_businesses: "§G构建§!§R城市合作社§!的§Y目标§!§C(经济较发达地区)§!"
 CHI_new_social_economy_decisions: "新社会主义经济"
-CHI_new_social_economy_decisions_desc: "在经历了近二十年的经济停滞，又经过惨烈内战后，原有的经济体系被§R彻底撕碎§!，但从某种意义上来讲，这也是一个§G重建公有制经济§!的§Y机会§!\n\n\n[CHI_new_social_economy_decisions_goal]"
+CHI_new_social_economy_decisions_desc: "在经历了近二十年的经济停滞，又经过惨烈内战后，原有的经济体系被§R彻底撕碎§!，但从某种意义上来讲，这也是一个§G重建公有制经济§!的§Y机会§!\n\n[CHI_new_social_economy_decisions_goal]\n[CHI_Promote_nationalization_strategic_industries_decisions_goal]\n[CHI_Nationalize_construction_and_chemical_industries_decisions_goal]\n[CHI_Partial_nationalize_light_manufacturing_industry_decisions_goal]\n[CHI_Organize_breakthroughs_food_industry_decisions_goal]\n[CHI_Raise_worker_salaries_benefits_decisions_goal]"
 CHI_redemption_goals: "正在以§O赎买§!方式进行§C国有化§!,目前进度为：[?Redemption_assets_times|Y0]次/§03§!次。"
 CHI_confiscated_goals: "正在以§R强制没收§!方式进行§C国有化§!,目前进度为：[?confiscated_assets_times|Y0]次/§05§!次。"
 NOT_sign: "§g尚未决定政策§!"
-CHI_redemption_goals_achieve: "§7政策§!§O赎买§!§C国有化§!§7已完成！§!"
-CHI_confiscated_goals_achieve: "§7政策§!§R强制§!§C国有化§!§7已完成！§!"
+CHI_redemption_goals_achieve: "§G政策§!§I赎买§!§C国有化§!§G已完成！§!"
+CHI_confiscated_goals_achieve: "§G政策§!§R强制§!§C国有化§!§G已完成！§!"
+CHI_Organize_state_enterprises_goals: "正在进行§O战略资源及相关冶炼产业§!§C国有化§!,目前进度为：[?Promote_nationalization_strategic_industries_progress|Y0]§Y%§!"
+CHI_Organize_state_enterprises_goals_achieve: "§G政策§!§O战略资源及相关冶炼产业§!§C国有化§!§G已完成！§!"
+CHI_Nationalize_construction_and_chemical_industries_goal: "正在进行§O建造业及化工产业§!§C国有化§!,目前进度为：[?Nationalize_construction_and_chemical_industries_progress|Y0]§Y%§!"
+CHI_Nationalize_construction_and_chemical_industries_goals_achieve: "§G政策§!§O建造业及化工产业国有化§!§C国有化§!§G已完成！§!"
+CHI_Partial_nationalize_light_manufacturing_industry_goal: "正在进行§O部分轻工业、制造业§!§C国有化§!,目前进度为：[?Partial_nationalize_light_manufacturing_industry_progress|Y0]§Y%§!"
+CHI_Partial_nationalize_light_manufacturing_industry_goal_achieve: "§G政策§!§O部分轻工业、制造业§!§C国有化§!§G已完成！§!"
+CHI_Partial_nationalize_light_manufacturing_industry_goal_achieve_tt: "§G政策§!§O部分轻工业、制造业§!§C国有化§!§G已完成！§!"
+CHI_Organize_breakthroughs_food_industry_goal: "正在§R解决食品、药品安全§!§Y问题§!"
+CHI_Organize_breakthroughs_food_industry_goal_achieve: "§G政策§!§R解决食品、药品安全§!§Y问题§!§G已完成！§!"
+CHI_Raise_worker_salaries_benefits_goal: "正在§Y改善劳动待遇§!"
+CHI_Raise_worker_salaries_benefits_goal_achieve: "§G政策§!§Y改善劳动待遇§!§G已完成！§!"
 ruins_rebuild: "§I正在重建地区§!"
 ruins_rebuild_desc: "长时间的战争已经使各地千疮百孔，重建工作任重道远。"
 Redemption_assets: "赎买资产"
 Redemption_assets_desc: "经历内战摧残后，私人企业已经非常稀少了，我们不能打草惊蛇，必须通过赎买进行改造。"
-Redemption_assets_trigger_tt: "§R最多赎买三次私人企业§!，目前已进行[?Redemption_assets_times|Y]次。"
+Redemption_assets_trigger_tt: "§R最多赎买三次私人企业§!，目前已进行[?Redemption_assets_times|Y0]次。"
 confiscated_assets: "强制国有化"
 confiscated_assets_desc: "这些在惨烈战争中滋润悠哉的企业，要么是同军政府狼狈为奸，要么是在战争中哄抬高价大发国难才，或者干脆就是在它们北约主子的关照下悠哉游哉。我们没有时间，也耻于和这些败类合作！"
-confiscated_assets_trigger_tt: "§R最多强制国有化五次私人企业§!，目前已进行[?confiscated_assets_times|Y]次。"
-CHI_Organize_state_enterprises_states_map: "国企构建地区范围"
-state_enterprises_1_tt: "§7目标地区§!的§Y国企构建§!修正效果添加:\n$local_building_slots_factor$:[?COSEM_lbs_add|=%+]\n$MODIFIER_LOCAL_RESOURCES_FACTOR$:[?COSEM_lrs_add|=%+]\n$state_production_speed_buildings_factor$:[?COSEM_sb_add|=%+]"
-state_enterprises_2_tt: "§7目标地区§!的§Y国企构建§!修正效果添加:\n$state_production_speed_buildings_factor$:[?COSEM_sb_add|=%+]\n$state_productivity_growth_modifier$:[?COSEM_pm_add|=%+]"
-state_enterprises_3_tt: "§7目标地区§!的§Y国企构建§!修正效果添加:\n$local_building_slots_factor$:[?COSEM_lbs_add|=%+]\n$MODIFIER_LOCAL_RESOURCES_FACTOR$:[?COSEM_lrs_add|=%+]"
-state_enterprises_4_tt: "§7目标地区§!的§Y国企构建§!修正效果添加:\n$energy_gain_multiplier$:[?COSEM_egm_add|=%+]\n$state_productivity_growth_modifier$:[?COSEM_pm_add|=%+]\n$local_building_slots_factor$:[?COSEM_lbs_add|=%+]"
-state_enterprises_5_tt: "§7目标地区§!的§Y国企构建§!修正效果添加:\n$state_production_speed_buildings_factor$:[?COSEM_sb_add|=%+]\n$state_productivity_growth_modifier$:[?COSEM_pm_add|=%+]"
-state_enterprises_6_tt: "§7目标地区§!的§Y国企构建§!修正效果添加:\n$state_production_speed_buildings_factor$:[?COSEM_sb_add|=%+]\n$state_productivity_growth_modifier$:[?COSEM_pm_add|=%+]\n$state_production_speed_infrastructure_factor$:[?COSEM_otsb_add|=%+]\n$state_production_speed_industrial_complex_factor$:[?COSEM_otsb_add|=%+]\n$state_production_arms_factory_factor$:[?COSEM_otsb_add|=%+]\n$state_production_speed_supply_node_factor$:[?COSEM_otsb_add|=%+]\n$state_production_speed_rail_way_factor$:[?COSEM_otsb_add|=%+]"
-state_enterprises_7_tt: "§7目标地区§!的§Y国企构建§!修正效果添加:\n$state_production_speed_buildings_factor$:[?COSEM_sb_add|=%+]\n$state_productivity_growth_modifier$:[?COSEM_pm_add|=%+]\n$energy_gain_multiplier$:[?COSEM_egm_add|=%+]"
+confiscated_assets_trigger_tt: "§R最多强制国有化五次私人企业§!，目前已进行[?confiscated_assets_times|Y0]次。"
+Promote_nationalization_strategic_industries_progress_trigger_tt: "§7战略资源及相关冶炼产业国有化§!进度为：[?Promote_nationalization_strategic_industries_progress|Y0]%。"
+Promote_nationalization_strategic_industries_progress_effect_tt: "§7战略资源及相关冶炼产业国有化§!将推进§Y20%§!的§C进度§!，目前进度为：[?Promote_nationalization_strategic_industries_progress|Y0]%。"
+Promote_nationalization_strategic_industries: "§7战略资源及相关冶炼产业§!国有化"
+Promote_nationalization_strategic_industries_desc: "§7战略资源及相关冶炼产业§!是一个国家的命脉。在前政府时期，相关资源被贱卖，造成了巨大损失。我们工作的第一步，就是将§7战略资源及相关冶炼产业§!国有化。"
+Promote_nationalization_strategic_industries_end_effect_tt: "§Y国企构建§!修正效果添加:\n$global_building_slots_factor$:[?COSEM_gbs_add|=%+]\n$local_resources_factor$:[?COSEM_lrs_add|=%+]\n$productivity_growth_modifier$:[?COSEM_gm_add|=%+]\n$energy_gain_multiplier$:[?COSEM_egm_add|=%+]\n$industrial_capacity_factory$:[?COSEM_icf_add|=%+]\n所有工业建筑所需工人:[?COSEM_iwr_add|=%+]\n$total_workforce_modifier$:[?COSEM_twm_add|=%+]"
+Nationalize_construction_and_chemical_industries: "§7建造业及化工产业§!国有化"
+Nationalize_construction_and_chemical_industries_desc: "目前失业率居高不下，因此政府应扩大§7建造业与化工产业§!建设，以改善社会失业率。"
+Partial_nationalize_light_manufacturing_industry: "§7部分轻工业、制造业国有化§!国有化"
+Partial_nationalize_light_manufacturing_industry_desc: "当前的轻工业由于过于分散，采用小作坊式的生产方式，导致产品质量较低，这在食品生产方面尤为严重。扩大§7部分轻工业、制造业§!建设，促进国有化，由政府组织集中生产、工人培训、先进设备采购，可以有效改善这种状况。"
+Nationalize_construction_and_chemical_industries_progress_trigger_tt: "§7建造业及化工产业国有化§!进度为：[?Nationalize_construction_and_chemical_industries_progress|Y0]%。"
+Nationalize_construction_and_chemical_industries_progress_progress_effect_tt: "§7建造业及化工产业国有化§!将推进§Y20%§!的§C进度§!，目前进度为：[?Nationalize_construction_and_chemical_industries_progress|Y0]%。"
+Partial_nationalize_light_manufacturing_industry_progress_trigger_tt: "§7部分轻工业、制造业国有化§!进度为：[?Partial_nationalize_light_manufacturing_industry_progress|Y0]%。"
+Partial_nationalize_light_manufacturing_industry_progress_progress_effect_tt: "§7部分轻工业、制造业国有化§!将推进§Y20%§!的§C进度§!，目前进度为：[?Partial_nationalize_light_manufacturing_industry_progress|Y0]%。"
+Nationalize_construction_and_chemical_industries_end_effect_tt: "§Y国企构建§!修正效果添加:\n$global_building_slots_factor$:[?COSEM_gbs_add|=%+]\n$local_resources_factor$:[?COSEM_lrs_add|=%+]\n$productivity_growth_modifier$:[?COSEM_gm_add|=%+]\n$energy_gain_multiplier$:[?COSEM_egm_add|=%+]\n$production_speed_buildings_factor$:[?COSEM_sb_add|=%+]\n$production_speed_infrastructure_factor$:[?COSEM_otsb_add|=%+]\n$production_speed_offices_factor$:[?COSEM_otsb_add|=%+]\n$production_speed_industrial_complex_factor$:[?COSEM_otsb_add|=%+]\n$production_arms_factory_factor$:[?COSEM_otsb_add|=%+]\n$production_speed_supply_node_factor$:[?COSEM_otsb_add|=%+]\n$production_speed_rail_way_factor$:[?COSEM_otsb_add|=%+]\n所有工业建筑所需工人:[?COSEM_iwr_add|=%+]\n$total_workforce_modifier$:[?COSEM_twm_add|=%+]"
+Partial_nationalize_light_manufacturing_industry_progress_end_effect_tt: "§Y国企构建§!修正效果添加:\n$global_building_slots_factor$:[?COSEM_add|=%+]\n$productivity_growth_modifier$:[?COSEM_add|=%+]\n$energy_gain_multiplier$:[?COSEM_add|=%+]\n$industrial_capacity_factory$:[?COSEM_add|=%+]\n$production_speed_infrastructure_factor$:[?COSEM_add|=%+]\n$production_speed_offices_factor$:[?COSEM_add|=%+]\n$production_speed_industrial_complex_factor$:[?COSEM_add|=%+]\n$production_arms_factory_factor$:[?COSEM_add|=%+]\n$production_speed_supply_node_factor$:[?COSEM_add|=%+]\n$production_speed_rail_way_factor$:[?COSEM_add|=%+]\n所有工业建筑所需工人:[?COSEM_iwr_add|=%+]\n$total_workforce_modifier$:[?COSEM_twm_add|=%+]"
+COSEM_add_effect_tt: "§Y国企构建§!修正效果添加:\n$MODIFIER_POLITICAL_POWER_FACTOR$:[?COSEM_pp_add|=%+]\n所有工业建筑所需工人:[?COSEM_iwr_add|=%+]\n$total_workforce_modifier$:[?COSEM_twm_add|=%+]"
+Organize_breakthroughs_food_industry: "组织§Y食品、药品制造业技术§!攻关运动"
+Organize_breakthroughs_food_industry_desc: "在国有化了一批§Y食品、药品企业§!后，我们终于可以利用政府组织力，集中攻关其技术了。"
+Raise_worker_salaries_benefits: "提高§Y工人薪资待遇§!"
+Raise_worker_salaries_benefits_desc: "在经济领域取得公有制改革的一系列成功之后，我们终于可以着手进行最后的改革，也是我们的核心目标之一——§G提高工人薪资待遇§!"
+cost_50_0_AND_political_power_10: "£treasury 50£political_power_texticon §H10§!"
+cost_50_0_AND_political_power_10_blocked: "£treasury  §R50§!£political_power_texticon    §R10§!"
+cost_50_0_AND_political_power_10_tooltip: "执行该决议将花费£treasury §Y50§!和£political_power_texticon §Y10§!"
+cost_20_0_potical_power_50: "£treasury  20£political_power_texticon    §H50§!"
+cost_20_0_potical_power_50_blocked: "£treasury  §R20§!£political_power_texticon    §R50§!"
+cost_20_0_potical_power_50_tooltip: "执行该决议将花费£treasury §Y20§!和£political_power_texticon §Y50§!"
+cost_10_0_potical_power_50: "£treasury  10£political_power_texticon    §H50§!"
+cost_10_0_potical_power_50_blocked: "£treasury  §R10§!£political_power_texticon    §R50§!"
+cost_10_0_potical_power_50_tooltip: "执行该决议将花费£treasury §Y20§!和£political_power_texticon §Y50§!"
+CHI_state_Oofb_start_tt: "§Y将开始§!推进§C个体户§!§O合作化§!政策"
+Oofb_guangdong: "在§Y广东与珠江地区§!§G开设§!§C“个体户官方合作论坛”§!"
+Oofb_jiangsu: "在§Y江苏地区§!§G开设§!§C“个体户官方合作论坛”§!"
+Oofb_shandong: "在§Y山东地区§!§G开设§!§C“个体户官方合作论坛”§!"
+Oofb_zhejiang: "在§Y浙江地区§!§G开设§!§C“个体户官方合作论坛”§!"
+Oofb_henan: "在§Y河南地区§!§G开设§!§C“个体户官方合作论坛”§!"
+Oofb_liaoning: "在§Y辽宁地区§!§G开设§!§C“个体户官方合作论坛”§!"
+Oofb_hebei: "在§Y京津冀地区§!§G开设§!§C“个体户官方合作论坛”§!"
+Oofb_sichuan: "在§Y四川地区§!§G开设§!§C“个体户官方合作论坛”§!"
+Oofb_fujian: "在§Y福建地区§!§G开设§!§C“个体户官方合作论坛”§!"
+Oofb_hubei: "在§Y湖北地区§!§G开设§!§C“个体户官方合作论坛”§!"
+Oofb_shanghai: "在§Y上海市§!§G开设§!§C“个体户官方合作论坛”§!"
+CHI_Oofb_guangdong_trigger_tt: "§Y广东与珠江地区§!暂未开设§C“个体户官方合作论坛”§!"
+CHI_Oofb_jiangsu_trigger_tt: "§Y江苏地区§!暂未开设§C“个体户官方合作论坛”§!"
+CHI_Oofb_shandong_trigger_tt: "§Y山东地区§!暂未开设§C“个体户官方合作论坛”§!"
+CHI_Oofb_zhejiang_trigger_tt: "§Y浙江地区§!暂未开设§C“个体户官方合作论坛”§!"
+CHI_Oofb_henan_trigger_tt: "§Y河南地区§!暂未开设§C“个体户官方合作论坛”§!"
+CHI_Oofb_liaoning_trigger_tt: "§Y辽宁地区§!暂未开设§C“个体户官方合作论坛”§!"
+CHI_Oofb_hebei_trigger_tt: "§Y京津冀地区§!暂未开设§C“个体户官方合作论坛”§!"
+CHI_Oofb_sichuan_trigger_tt: "§Y四川地区§!暂未开设§C“个体户官方合作论坛”§!"
+CHI_Oofb_fujian_trigger_tt: "§Y福建地区§!暂未开设§C“个体户官方合作论坛”§!"
+CHI_Oofb_hubei_trigger_tt: "§Y湖北地区§!暂未开设§C“个体户官方合作论坛”§!"
+CHI_Oofb_shanghai_trigger_tt: "§上海市§!暂未开设§C“个体户官方合作论坛”§!"
+Launch_cooperation_initiatives_at_forums: "在§C各地合作论坛§!§G发出合作倡议§!"
+Launch_cooperation_initiatives_at_forums_desc: "在各个地区的§C“个体户官方合作论坛”§!组建完成后，政府与各地§O个体户§!的§Y沟通渠道§!已经打开。我们可以通过该渠道发出§7合作化倡议§!，作为§G回报§!，响应倡议的个体户可以得到§I资金援助§!。"
+CHI_Launch_cooperation_initiatives_at_forums_tt: "§Y所有目标地区§!均已§G开设§!§C“个体户官方合作论坛”§!"
+Launch_cooperation_initiatives_at_forums_effect_tt: "§Y合作化构建§!修正效果添加:\n$state_production_speed_industrial_complex_factor$:[?sc_spsic_add|=%+]\n$local_building_slots_factor$:[?sc_lbs_add|=%+]\n$state_productivity_growth_modifier$:[?sc_spg_add|=%+]"
+
+#idea
+CHI_BETTER_FOOD_SAFTY: "高质量§G食/药品§!"
+CHI_BETTER_FOOD_SAFTY_desc: "在经过§O艰苦的攻关§!之后，我们终于研究出物美价廉的§G食/药品§!，这将大大提高人民对我们的支持。同时，在§O攻关运动§!中成长起的一批§C农产品研究机构§!与§7国营食品加工厂§!也为我国经济发展增添了动力。"
+CHI_Raise_worker_salaries_benefits_trigger_tt: "三大§7国有化政策§!§G已全部完成§!"
+CHI_nationalizing: "国有化开支"
+CHI_nationalizing_desc: "建设国有企业，购买先进设备、组织工人培训需要大量开支。"
+CHI_nationalizing_end: "§O国企§!§Y主导§!§G公有制§!"
+CHI_nationalizing_end_desc: "花费大量资金，动用大量干部后，§7国有化率§!已经达到§R近二十年§!的§G最高值§!，依托大量国有企业支柱，我们成功改善了§C劳动者待遇§!，初步达成§I公有制建设目标§!。"
+CHI_nationalizing_end_tt: "§O国企建设§!与§I公有制建设§!已§C初步完成§!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#CHI_Organize_state_enterprises_states_map: "国企构建地区范围"
+#state_enterprises_1_tt: "§7目标地区§!的§Y国企构建§!修正效果添加:\n$local_building_slots_factor$:[?COSEM_lbs_add|=%+]\n$MODIFIER_LOCAL_RESOURCES_FACTOR$:[?COSEM_lrs_add|=%+]\n$state_production_speed_buildings_factor$:[?COSEM_sb_add|=%+]"
+#state_enterprises_2_tt: "§7目标地区§!的§Y国企构建§!修正效果添加:\n$state_production_speed_buildings_factor$:[?COSEM_sb_add|=%+]\n$state_productivity_growth_modifier$:[?COSEM_pm_add|=%+]"
+#state_enterprises_3_tt: "§7目标地区§!的§Y国企构建§!修正效果添加:\n$local_building_slots_factor$:[?COSEM_lbs_add|=%+]\n$MODIFIER_LOCAL_RESOURCES_FACTOR$:[?COSEM_lrs_add|=%+]"
+#state_enterprises_4_tt: "§7目标地区§!的§Y国企构建§!修正效果添加:\n$energy_gain_multiplier$:[?COSEM_egm_add|=%+]\n$state_productivity_growth_modifier$:[?COSEM_pm_add|=%+]\n$local_building_slots_factor$:[?COSEM_lbs_add|=%+]"
+#state_enterprises_5_tt: "§7目标地区§!的§Y国企构建§!修正效果添加:\n$state_production_speed_buildings_factor$:[?COSEM_sb_add|=%+]\n$state_productivity_growth_modifier$:[?COSEM_pm_add|=%+]"
+#state_enterprises_6_tt: "§7目标地区§!的§Y国企构建§!修正效果添加:\n$state_production_speed_buildings_factor$:[?COSEM_sb_add|=%+]\n$state_productivity_growth_modifier$:[?COSEM_pm_add|=%+]\n$state_production_speed_infrastructure_factor$:[?COSEM_otsb_add|=%+]\n$state_production_speed_industrial_complex_factor$:[?COSEM_otsb_add|=%+]\n$state_production_arms_factory_factor$:[?COSEM_otsb_add|=%+]\n$state_production_speed_supply_node_factor$:[?COSEM_otsb_add|=%+]\n$state_production_speed_rail_way_factor$:[?COSEM_otsb_add|=%+]"
+#state_enterprises_7_tt: "§7目标地区§!的§Y国企构建§!修正效果添加:\n$state_production_speed_buildings_factor$:[?COSEM_sb_add|=%+]\n$state_productivity_growth_modifier$:[?COSEM_pm_add|=%+]\n$energy_gain_multiplier$:[?COSEM_egm_add|=%+]"
+#CHI_state_enterprises_decisions_cost_effect_tt: "§Y以下为本次国有化决议花费§!"
