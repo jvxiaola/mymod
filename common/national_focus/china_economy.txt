@@ -1094,8 +1094,8 @@ add_power_balance_value = {
 				has_idea = CHI_nationalizing
 				has_idea = CHI_BETTER_FOOD_SAFTY
 				OR = { 
-					check_variable = { Redemption_assets_times = 4 }
-					check_variable = { confiscated_assets_times = 6 }
+					check_variable = { Redemption_assets_times = 3 }
+					check_variable = { confiscated_assets_times = 5 }
 				}
 				check_variable = { Partial_nationalize_light_manufacturing_industry_progress = 100 }
 				check_variable = { Nationalize_construction_and_chemical_industries_progress = 100 }
