@@ -928,10 +928,7 @@ shared_focus = {
 
 		completion_reward = {
 			add_political_power = 100
-			if = {
-				limit = { tag = DSC }
-				CHI_add_Organize_state_enterprises_modifier = yes
-			}
+			CHI_add_Organize_state_enterprises_modifier = yes
 		}
 
 		ai_will_do = { base = 1 }
@@ -1280,10 +1277,8 @@ add_power_balance_value = {
 		}
 
 		completion_reward = {
-			if = {
-				limit = { tag = DSC }
-				CHI_add_CHI_Collaboration_internet_modifier = yes
-			}
+			custom_effect_tooltip = CHI_city_mutual_start_tt 
+			CHI_add_CHI_Collaboration_internet_modifier = yes
 		}
 
 		ai_will_do = { base = 1 }
