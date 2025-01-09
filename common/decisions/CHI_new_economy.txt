@@ -660,7 +660,7 @@ CHI_new_social_economy_decisions = {
 	on_map_mode = map_only
 	highlight_states = {
         highlight_state_targets = {
-           state = 585 state = 586 state - 583
+           state = 585 state = 586 state = 583
         }
     }
 	custom_cost_trigger = {
@@ -780,19 +780,17 @@ CHI_new_social_economy_decisions = {
 	Launch_cooperation_initiatives_at_forums = { #在各地合作论坛发出合作倡议
 	icon = GFX_decision_ger_mefo_bills
 	visible = {
-		all_owned_state = {
-			limit = { CHI_Organize_state_enterprises_states_trigger = yes }
-			has_dynamic_modifier = { modifier = State_Collaboration } 
-		}
+		534 = { has_dynamic_modifier = { modifier = State_Collaboration } } 532 = { has_dynamic_modifier = { modifier = State_Collaboration } } 541 = { has_dynamic_modifier = { modifier = State_Collaboration } }
+		536 = { has_dynamic_modifier = { modifier = State_Collaboration } } 435 = { has_dynamic_modifier = { modifier = State_Collaboration } } 544 = { has_dynamic_modifier = { modifier = State_Collaboration } }
+		538 = { has_dynamic_modifier = { modifier = State_Collaboration } } 567 = { has_dynamic_modifier = { modifier = State_Collaboration } } 1095 = { has_dynamic_modifier = { modifier = State_Collaboration } }
+		552 = { has_dynamic_modifier = { modifier = State_Collaboration } } 434 = { has_dynamic_modifier = { modifier = State_Collaboration } } 549 = { has_dynamic_modifier = { modifier = State_Collaboration } }
+		585 = { has_dynamic_modifier = { modifier = State_Collaboration } } 586 = { has_dynamic_modifier = { modifier = State_Collaboration } } 583 = { has_dynamic_modifier = { modifier = State_Collaboration } }
+		537 = { has_dynamic_modifier = { modifier = State_Collaboration } } 570 = { has_dynamic_modifier = { modifier = State_Collaboration } } 540 = { has_dynamic_modifier = { modifier = State_Collaboration } }
+		547 = { has_dynamic_modifier = { modifier = State_Collaboration } } 548 = { has_dynamic_modifier = { modifier = State_Collaboration } } 595 = { has_dynamic_modifier = { modifier = State_Collaboration } }
+		1106 = { has_dynamic_modifier = { modifier = State_Collaboration } }
 	}
 	available = {
-		custom_trigger_tooltip = {
-			tooltip = CHI_Launch_cooperation_initiatives_at_forums_tt
-			all_owned_state = {
-				limit = { CHI_Organize_state_enterprises_states_trigger = yes }
-				has_dynamic_modifier = { modifier = State_Collaboration } 
-			}
-		}
+		always = yes
 	}
 	custom_cost_trigger = {
 		check_variable = { treasury > 50.0 }
@@ -812,6 +810,7 @@ CHI_new_social_economy_decisions = {
 			custom_effect_tooltip = Launch_cooperation_initiatives_at_forums_effect_tt 
 			add_to_variable = { sc_spsic = sc_spsic_add } add_to_variable = { sc_lbs = sc_lbs_add } add_to_variable = { sc_spg = sc_spg_add } 
 		}
+		set_country_flag = Launch_cooperation_initiatives_at_forums
 	}
 	ai_will_do = {
 		factor = 1
@@ -822,11 +821,7 @@ CHI_new_social_economy_decisions = {
 	icon = GFX_decision_generic_factory
 	visible = {
 		has_completed_focus = CHI_city_mutual_aid
-		all_owned_state = {
-			limit = { CHI_Organize_state_enterprises_states_trigger = yes }
-			has_dynamic_modifier = { modifier = State_Collaboration } 
-			check_variable = { sc_spsic = 0.10 }
-		}
+		has_country_flag = Launch_cooperation_initiatives_at_forums
 	}
 	available = {
 		always = yes
@@ -852,6 +847,8 @@ CHI_new_social_economy_decisions = {
 			}
 			STATE_Collaboralize = yes
 		}
+		clr_country_flag = Launch_cooperation_initiatives_at_forums
+		set_country_flag = CHI_Collaboralize
 	}
 	ai_will_do = { factor = 1 }
 	}
@@ -860,11 +857,7 @@ CHI_new_social_economy_decisions = {
 	icon = GFX_decision_generic_factory
 	visible = {
 		has_completed_focus = CHI_city_mutual_aid
-		all_owned_state = {
-			limit = { CHI_Organize_state_enterprises_states_trigger = yes }
-			has_dynamic_modifier = { modifier = State_Collaboration } 
-			check_variable = { sc_spsic = 0.15 }
-		}
+		has_country_flag = CHI_Collaboralize
 	}
 	available = {
 		always = yes
@@ -890,6 +883,8 @@ CHI_new_social_economy_decisions = {
 			}
 			STATE_Assign_local_cooperative_party_committee = yes
 		}
+		clr_country_flag = CHI_Collaboralize
+		set_country_flag = CHI_Assign_local_cooperative_party_committee
 	}
 	ai_will_do = { factor = 1 }
 	}
@@ -898,7 +893,7 @@ CHI_new_social_economy_decisions = {
 	icon = GFX_decision_generic_factory
 	visible = {
 		has_completed_focus = CHI_city_mutual_aid
-		ROOT = { check_variable = { CI_tg = 0 } }
+		has_country_flag = CHI_Assign_local_cooperative_party_committee
 	}
 	available = {
 		always = yes
@@ -922,6 +917,7 @@ CHI_new_social_economy_decisions = {
 			}
 			STATE_ostlc = yes
 		}
+		clr_country_flag = CHI_Assign_local_cooperative_party_committee
 	}
 	ai_will_do = { factor = 1 }
 	}

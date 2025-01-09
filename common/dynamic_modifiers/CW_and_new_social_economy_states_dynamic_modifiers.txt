@@ -49,7 +49,7 @@ State_Collaboration = {
 }
 
 CHI_Collaboration_internet = {
-	allowed_civil_war = { always = yes }		
+	enable = { always = yes }	
 	picture = inflation
 	modifier = {
 	tax_gain_multiplier_modifier = CI_tg

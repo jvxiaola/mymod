@@ -1275,10 +1275,7 @@ add_power_balance_value = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = CHI_city_mutual_aid_trigger_tt
-				every_owned_state = {
-					limit = { has_dynamic_modifier = { modifier = State_Collaboration } }
-					check_variable = { sc_spsic = 0.10 }
-				}
+				has_country_flag = Launch_cooperation_initiatives_at_forums
 			}
 		}
 
