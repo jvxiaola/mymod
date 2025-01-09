@@ -272,3 +272,26 @@ country_event = {
 	}
 		}
 	}
+
+
+
+
+
+
+	country_event = {
+		id = chuanyu.9
+		title = chuanyu.9.t
+		desc = chuanyu.9.d
+						
+		is_triggered_only = yes
+						
+						
+		option = {
+		name = chuanyu.9.a 
+
+		
+
+						
+			}
+		}
+

@@ -104,6 +104,11 @@ army_xp_20_AND_potical_power_100_tooltip: "执行该决议将花费£army_experi
  Chuanyu.8.a: "“他那个时候好像也是这样。”"
 
 
+chuanyu.9: "张春桥的讲话"
+
+chuanyu.9.d: ""
+chuanyu.9.a: "社会主义再现"
+
 #决议    #战间
 CHI_economic_deterioration: "§R经济正在崩溃§!"
 CHI_economic_deterioration_desc: "由于战争原因，大量工人逃离工厂，大小企业争相离开，如果我们任无所作为，§R我们的经济将万劫不复！§!"

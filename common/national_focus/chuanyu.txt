@@ -835,6 +835,7 @@ add_political_power = 100
 					set_cosmetic_tag = DSC_GMG
 				}
 				country_event = { id = Chuanyu.8 }
+				country_event={id=chuanyu.9}
 				set_capital = { state = 547 }
 
 			}
