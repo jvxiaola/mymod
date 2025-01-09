@@ -844,7 +844,7 @@ CHI_new_social_economy_decisions = {
 	}
 	days_remove = 90
 	remove_effect = {
-		CHI_Collaboralize = yes
+		CHI_Collaboralize_effect = yes
 		every_owned_state = {
 			limit = { 
 				CHI_Organize_state_enterprises_states_trigger = yes 
@@ -882,7 +882,7 @@ CHI_new_social_economy_decisions = {
 	}
 	days_remove = 90
 	remove_effect = {
-		CHI_Collaboralize = yes
+		CHI_Assign_local_cooperative_party_committee_effect = yes
 		every_owned_state = {
 			limit = { 
 				CHI_Organize_state_enterprises_states_trigger = yes 
@@ -898,11 +898,7 @@ CHI_new_social_economy_decisions = {
 	icon = GFX_decision_generic_factory
 	visible = {
 		has_completed_focus = CHI_city_mutual_aid
-		all_owned_state = {
-			limit = { CHI_Organize_state_enterprises_states_trigger = yes }
-			has_dynamic_modifier = { modifier = State_Collaboration } 
-			check_variable = { sc_spsic = 0.10 }
-		}
+		ROOT = { check_variable = { CI_tg = 0 } }
 	}
 	available = {
 		always = yes
@@ -918,13 +914,13 @@ CHI_new_social_economy_decisions = {
 	}
 	days_remove = 90
 	remove_effect = {
-		CHI_Collaboralize = yes
+		CHI_ostlc = yes
 		every_owned_state = {
 			limit = { 
 				CHI_Organize_state_enterprises_states_trigger = yes 
 				has_dynamic_modifier = { modifier = State_Collaboration } 
 			}
-			STATE_Collaboralize = yes
+			STATE_ostlc = yes
 		}
 	}
 	ai_will_do = { factor = 1 }

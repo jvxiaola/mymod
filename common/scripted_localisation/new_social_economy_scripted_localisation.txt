@@ -401,3 +401,81 @@ defined_text = {
 		localization_key = "CHI_Launch_cooperation_initiatives_at_forums_goal_achieve" #发出合作倡议完成
 	}
 }
+
+defined_text = {
+	name = CHI_Collaboralize_decisions_goal
+	text = {
+		trigger = {
+			ROOT = { check_variable = { CI_tg = -0.05 } }
+			has_completed_focus = CHI_city_mutual_aid
+		}
+		localization_key = "CHI_Collaboralize_goal" #显示推进合作化国策
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_completed_focus = CHI_city_mutual_aid
+			}
+		}
+		localization_key = "NOT_sign"
+	}
+	text = {
+		trigger = {
+			ROOT = { check_variable = { CI_tg = -0.03 } }
+			has_completed_focus = CHI_city_mutual_aid
+		}
+		localization_key = "CHI_Collaboralize_goal_achieve" #推进合作化完成
+	}
+}
+
+defined_text = {
+	name = CHI_Assign_local_cooperative_party_committee_decisions_goal
+	text = {
+		trigger = {
+			ROOT = { check_variable = { CI_tg = -0.03 } }
+			has_completed_focus = CHI_city_mutual_aid
+		}
+		localization_key = "CHI_Assign_local_cooperative_party_committee_goal" #显示推进合作化国策
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_completed_focus = CHI_city_mutual_aid
+			}
+		}
+		localization_key = "NOT_sign"
+	}
+	text = {
+		trigger = {
+			ROOT = { check_variable = { CI_tg = 0 } }
+			has_completed_focus = CHI_city_mutual_aid
+		}
+		localization_key = "CHI_Assign_local_cooperative_party_committee_goal_achieve" #推进合作化完成
+	}
+}
+
+defined_text = {
+	name = CHI_ostlc_decisions_goal
+	text = {
+		trigger = {
+			ROOT = { check_variable = { CI_tg = 0 } }
+			has_completed_focus = CHI_city_mutual_aid
+		}
+		localization_key = "CHI_ostlc_goal" #显示组织技能培训与全国劳动竞赛国策
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_completed_focus = CHI_city_mutual_aid
+			}
+		}
+		localization_key = "NOT_sign"
+	}
+	text = {
+		trigger = {
+			ROOT = { check_variable = { CI_tg = 0.05 } }
+			has_completed_focus = CHI_city_mutual_aid
+		}
+		localization_key = "CHI_ostlc_goal_achieve" #推进合作化完成
+	}
+}
