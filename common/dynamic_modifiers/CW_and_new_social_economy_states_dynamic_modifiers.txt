@@ -36,7 +36,7 @@ CHI_Organize_state_enterprises_modifier = {
 }
 
 State_Collaboration = {
-	enable = {always = yes}
+	enable = { always = yes }
 	icon = GFX_idea_dpr_ruins
 	state_production_speed_industrial_complex_factor = sc_spsic #地区民用工厂建筑速度
 	state_production_speed_offices_factor = sc_spsic #地区办公园区建筑速度

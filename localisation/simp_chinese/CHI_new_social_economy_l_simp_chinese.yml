@@ -119,8 +119,11 @@ Launch_cooperation_initiatives_at_forums_desc: "在各个地区的§C“个体�
 CHI_Launch_cooperation_initiatives_at_forums_tt: "§Y所有目标地区§!均已§G开设§!§C“个体户官方合作论坛”§!"
 Launch_cooperation_initiatives_at_forums_effect_tt: "§Y合作化构建§!地区修正效果添加:\n$state_production_speed_industrial_complex_factor$:[?sc_spsic_add|=%+]\n$local_building_slots_factor$:[?sc_lbs_add|=%+]\n$state_productivity_growth_modifier$:[?sc_spg_add|=%+]"
 STATE_Collaboralize_effect_tt: "§Y合作化构建§!地区修正效果添加:\n$state_production_speed_industrial_complex_factor$:[?sc_spsic_add|=%+]\n$local_building_slots_factor$:[?sc_lbs_add|=%+]\n$state_productivity_growth_modifier$:[?sc_spg_add|=%+]\n$state_production_speed_buildings_factor$:[?sc_spsbf_add|=%+]"
+STATE_Assign_local_cooperative_party_committee_effect_tt: "§Y合作化构建§!地区修正效果添加:\n$state_production_speed_industrial_complex_factor$:[?sc_spsrf_add|=%+]\n$local_building_slots_factor$:[?sc_lbs_add|=%+]\n$state_productivity_growth_modifier$:[?sc_spg_add|=%+]\n$state_production_speed_buildings_factor$:[?sc_spsbf_add|=%+]"
+CHI_Assign_local_cooperative_party_committee_effect_tt: "§Y合作社网络§!修正效果添加:\n$tax_gain_multiplier_modifier$:[?CI_tg_add|=%+]\n$Chinese_people_support_to_china_government_modifier$:[?CI_cpstc_add|=%+]\n§Y工厂及办公园区劳动力需求§!:[?CI_cmowr|=%+]"
 CHI_Collaboralize_effect_tt: "§Y合作社网络§!修正效果添加:\n$tax_gain_multiplier_modifier$:[?CI_tg_add|=%+]\n$production_speed_offices_factor$:[?CI_pso_add|=%+]\n§Y工厂及办公园区劳动力需求§!:[?CI_cmowr|=%+]"
 CHI_Collaboralize: "§Y全面推进§!§C合作化§!"
+CHI_Assign_local_cooperative_party_committee: "§Y指派§!§C地方合作社党委§!"
 
 #idea and modifier
 CHI_Organize_state_enterprises_modifier: "§Y国企构建§!"
