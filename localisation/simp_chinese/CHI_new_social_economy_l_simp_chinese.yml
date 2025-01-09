@@ -133,6 +133,7 @@ CHI_Collaboralize_desc: "在各个地区发出§7合作化倡议§!后，我们�
 CHI_Assign_local_cooperative_party_committee: "§Y指派§!§C地方合作社党委§!"
 CHI_Assign_local_cooperative_party_committee_desc: "在已经建立的§7合作社§!委派党委，可以加强政府对其§Y掌控力度§!，在推进§O地方经济计划§!实行的同时保留社内§C良性竞争§!。"
 CHI_city_mutual_start_tt: "将开始构建§Y全国性§!§C合作社网络§!，并提供政府§G管控能力§!"
+CHI_Efficient_and_economical_trigger_tt: "§Y全国§!§C合作社§!已基本§G完成§!"
 
 #idea and modifier
 CHI_Organize_state_enterprises_modifier: "§Y国企构建§!"

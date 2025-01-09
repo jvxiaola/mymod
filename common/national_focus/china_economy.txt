@@ -1299,18 +1299,19 @@ add_power_balance_value = {
 
 		available = {
 			custom_trigger_tooltip = {
-				NOT = {
-					OR = {
-						has_idea = CHI_Socialist_Market_Economy_free_1
-						has_idea = CHI_Socialist_Market_Economy_free_2
-						has_idea = CHI_Free_Market_Economy
-					}
+				custom_trigger_tooltip = {
+					tooltip = CHI_Efficient_and_economical_trigger_tt
+					has_country_flag = CHI_Collaboralize_end
 				}
-			tooltip = CHI_economic_model_liberalization_economy_tt
 			}
 		}
 
 		completion_reward = {
+			if = {
+				limit = { tag = DSC }
+				remove_dynamic_modifier = { modifier = CHI_Collaboration_internet }
+				
+			}
 			if = {
 				limit = { has_idea = CHI_Socialist_Market_Economy }
 					swap_ideas = {

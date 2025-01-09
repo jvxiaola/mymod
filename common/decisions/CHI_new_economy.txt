@@ -916,6 +916,7 @@ CHI_new_social_economy_decisions = {
 			STATE_ostlc = yes
 		}
 		clr_country_flag = CHI_Assign_local_cooperative_party_committee
+		set_country_flag = CHI_Collaboralize_end
 	}
 	ai_will_do = { factor = 1 }
 	}
