@@ -123,6 +123,7 @@ STATE_Assign_local_cooperative_party_committee_effect_tt: "§Y合作化构建§!
 CHI_Assign_local_cooperative_party_committee_effect_tt: "§Y合作社网络§!修正效果添加:\n$tax_gain_multiplier_modifier$:[?CI_tg_add|=%+]\n$Chinese_people_support_to_china_government_modifier$:[?CI_cpstc_add|=%+]\n§Y工厂及办公园区劳动力需求§!:[?CI_cmowr|=%+]"
 CHI_Collaboralize_effect_tt: "§Y合作社网络§!修正效果添加:\n$tax_gain_multiplier_modifier$:[?CI_tg_add|=%+]\n$production_speed_offices_factor$:[?CI_pso_add|=%+]\n§Y工厂及办公园区劳动力需求§!:[?CI_cmowr|=%+]"
 CHI_Collaboralize: "§Y全面推进§!§C合作化§!"
+CHI_Collaboralize_desc: "在各个地区发出§7合作化倡议§!后，我们可以开始§Y收购§!经营不善的§O个体户§!，并利用§I资金§!与§I政策§!优势组织竞争，全面推进§C合作化§!。"
 CHI_Assign_local_cooperative_party_committee: "§Y指派§!§C地方合作社党委§!"
 
 #idea and modifier
