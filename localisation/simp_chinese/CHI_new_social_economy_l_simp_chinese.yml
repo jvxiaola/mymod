@@ -137,7 +137,7 @@ CHI_city_mutual_start_tt: "将开始构建§Y全国性§!§C合作社网络§!�
 #idea and modifier
 CHI_Organize_state_enterprises_modifier: "§Y国企构建§!"
 CHI_nationalizing_end_other_modifier_tt: "£construction_speed_texticon §Y基建、工厂、办公园区及补给站与铁路§!建造速度:§G+15%§!\n§Y工厂及办公园区劳动力需求§!:§G+15%§!"
-vCHI_Collaboration_internet_end_other_modifier_tt: "§Y工厂及办公园区劳动力需求§!:[?CI_cmowr|=%+]\n每1000万人额外支出$$§R0.05B§!"
+CHI_Collaboration_internet_end_other_modifier_tt: "§Y工厂及办公园区劳动力需求§!:[?CI_cmowr|=%+]\n每1000万人额外支出$$§R0.05B§!"
 State_Collaboration: "§C合作化构建§!"
 CHI_BETTER_FOOD_SAFTY: "高质量§G食/药品§!"
 CHI_BETTER_FOOD_SAFTY_desc: "在经过§O艰苦的攻关§!之后，我们终于研究出物美价廉的§G食/药品§!，这将大大提高人民对我们的支持。同时，在§O攻关运动§!中成长起的一批§C农产品研究机构§!与§7国营食品加工厂§!也为我国经济发展增添了动力。"
