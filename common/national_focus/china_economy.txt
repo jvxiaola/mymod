@@ -928,10 +928,7 @@ shared_focus = {
 
 		completion_reward = {
 			add_political_power = 100
-			if = {
-				limit = { tag = DSC }
-				CHI_add_Organize_state_enterprises_modifier = yes
-			}
+			CHI_add_Organize_state_enterprises_modifier = yes
 		}
 
 		ai_will_do = { base = 1 }
@@ -1275,14 +1272,12 @@ add_power_balance_value = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = CHI_city_mutual_aid_trigger_tt
-				every_owned_state = {
-					limit = { has_dynamic_modifier = { modifier = State_Collaboration } }
-					check_variable = { sc_spsic = 0.10 }
-				}
+				has_country_flag = Launch_cooperation_initiatives_at_forums
 			}
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = CHI_city_mutual_start_tt 
 			CHI_add_CHI_Collaboration_internet_modifier = yes
 		}
 
