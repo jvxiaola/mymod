@@ -933,7 +933,13 @@ CHI_add_Organize_state_enterprises_modifier = {
 		add_to_variable = { sc_spsic = sc_spsic_add } add_to_variable = { sc_lbs = sc_lbs_add } add_to_variable = { sc_spg = sc_spg_add } 
     add_to_variable = { sc_spsbf = sc_spsbf_add }
   }
-
+  STATE_Assign_local_cooperative_party_committee = {
+    set_temp_variable = { sc_spsrf_add = 0.05 } set_temp_variable = { sc_lbs_add = 0.02 } set_temp_variable = { sc_spg_add = 0.02 } 
+    set_temp_variable = { sc_spsbf_add = 0.05 }
+		custom_effect_tooltip = STATE_Assign_local_cooperative_party_committee_effect_tt 
+		add_to_variable = { sc_spsrf = sc_spsrf_add } add_to_variable = { sc_lbs = sc_lbs_add } add_to_variable = { sc_spg = sc_spg_add } 
+    add_to_variable = { sc_spsbf = sc_spsbf_add }
+  }
   CHI_Collaboralize = {
       ROOT = {
         set_temp_variable = { CI_tg_add = 0.05 } set_temp_variable = { CI_pso_add = 0.05 } set_temp_variable = { CI_cmowr_add = 0.03 } 

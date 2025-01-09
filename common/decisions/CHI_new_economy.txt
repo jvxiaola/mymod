@@ -856,6 +856,80 @@ CHI_new_social_economy_decisions = {
 	ai_will_do = { factor = 1 }
 	}
 
+	CHI_Assign_local_cooperative_party_committee = { #指派地方合作社党委
+	icon = GFX_decision_generic_factory
+	visible = {
+		has_completed_focus = CHI_city_mutual_aid
+		all_owned_state = {
+			limit = { CHI_Organize_state_enterprises_states_trigger = yes }
+			has_dynamic_modifier = { modifier = State_Collaboration } 
+			check_variable = { sc_spsic = 0.15 }
+		}
+	}
+	available = {
+		always = yes
+	}
+	
+	custom_cost_trigger = {
+		check_variable = { treasury > 20.0 }
+		has_political_power > 49
+	}
+	custom_cost_text = cost_20_0_potical_power_50
+	complete_effect = {
+		set_temp_variable = { treasury_change = -20 }
+		modify_treasury_effect = yes
+		add_political_power = -50
+	}
+	days_remove = 90
+	remove_effect = {
+		CHI_Collaboralize = yes
+		every_owned_state = {
+			limit = { 
+				CHI_Organize_state_enterprises_states_trigger = yes 
+				has_dynamic_modifier = { modifier = State_Collaboration } 
+			}
+			STATE_Assign_local_cooperative_party_committee = yes
+		}
+	}
+	ai_will_do = { factor = 1 }
+	}
+
+	CHI_Organizational_skills_training_labor_competition = { #组织技能培训与全国劳动竞赛
+	icon = GFX_decision_generic_factory
+	visible = {
+		has_completed_focus = CHI_city_mutual_aid
+		all_owned_state = {
+			limit = { CHI_Organize_state_enterprises_states_trigger = yes }
+			has_dynamic_modifier = { modifier = State_Collaboration } 
+			check_variable = { sc_spsic = 0.10 }
+		}
+	}
+	available = {
+		always = yes
+	}
+	
+	custom_cost_trigger = {
+		check_variable = { treasury > 100.0 }
+	}
+	custom_cost_text = cost_100_0
+	complete_effect = {
+		set_temp_variable = { treasury_change = -100 }
+		modify_treasury_effect = yes
+	}
+	days_remove = 90
+	remove_effect = {
+		CHI_Collaboralize = yes
+		every_owned_state = {
+			limit = { 
+				CHI_Organize_state_enterprises_states_trigger = yes 
+				has_dynamic_modifier = { modifier = State_Collaboration } 
+			}
+			STATE_Collaboralize = yes
+		}
+	}
+	ai_will_do = { factor = 1 }
+	}
+
 }
 
 
