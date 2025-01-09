@@ -6944,7 +6944,7 @@ option = {	#We accept!
 		
 		option = {	
 			name = prc1.119.o1
-	set_temp_variable = { temp_DSC_people_support = -0.01 }
+	set_temp_variable = { temp_DSC_people_support = 0.01 }
 	change_DSC_people_support = yes
 			ai_chance = {factor = 20}
 			}
