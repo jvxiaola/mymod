@@ -51,7 +51,6 @@ State_Collaboration = {
 CHI_Collaboration_internet = {
 	enable = { always = yes }	
 	icon = GFX_idea_recovering_from_the_civil_war
-	modifier = {
 	tax_gain_multiplier_modifier = CI_tg
 	production_speed_offices_factor = CI_pso #办公园区建设速度
 	Chinese_people_support_to_china_government_modifier = CI_cpstc
@@ -61,5 +60,4 @@ CHI_Collaboration_internet = {
 		offices_worker_requirement_modifier = CI_cmowr
 	}
 	custom_modifier_tooltip = CHI_Collaboration_internet_end_other_modifier_tt
-	}
 }
