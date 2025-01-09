@@ -32,5 +32,34 @@ ideas = {
 				custom_modifier_tooltip = CHI_nationalizing_end_other_modifier_tt
 			}
 		}
+
+		CHI_Collaboration_internet_end = {
+			picture = recovering_from_the_civil_war
+			
+			allowed = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.15
+				productivity_growth_modifier = 0.05
+				tax_gain_multiplier_modifier = 0.15
+				production_speed_offices_factor = 0.15
+				production_cost_offices_factor = -0.15
+				energy_use_modifier_offices = -0.05
+				offices_productivity = 0.05
+				chuanyu_people_support_to_china_government_modifier = 0.05
+				industry_repair_factor = 0.20
+				social_cost_multiplier_modifier = -0.03
+				health_cost_multiplier_modifier = -0.02
+				hidden_modifier = {
+					civ_facs_worker_requirement_modifier = 0.05
+					mil_facs_worker_requirement_modifier = 0.05
+					offices_worker_requirement_modifier = 0.05
+				}
+				custom_modifier_tooltip = CHI_nationalizing_end_other_modifier_tt
+			}
+		}
+
+
 	}
 }

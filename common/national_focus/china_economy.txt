@@ -1310,7 +1310,7 @@ add_power_balance_value = {
 			if = {
 				limit = { tag = DSC }
 				remove_dynamic_modifier = { modifier = CHI_Collaboration_internet }
-				
+				add_ideas = CHI_Collaboration_internet_end
 			}
 			if = {
 				limit = { has_idea = CHI_Socialist_Market_Economy }

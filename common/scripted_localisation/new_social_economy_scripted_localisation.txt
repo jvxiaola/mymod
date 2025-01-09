@@ -432,6 +432,10 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			OR = {
+				ROOT = { check_variable = { CI_tg = -0.03 } }
+				has_idea = CHI_Collaboration_internet_end
+			}
 			has_completed_focus = CHI_city_mutual_aid
 		}
 		localization_key = "CHI_Collaboralize_goal_achieve" #推进合作化完成
@@ -457,6 +461,10 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			OR = {
+				ROOT = { check_variable = { CI_tg = 0 } }
+				has_idea = CHI_Collaboration_internet_end
+			}
 			has_completed_focus = CHI_city_mutual_aid
 		}
 		localization_key = "CHI_Assign_local_cooperative_party_committee_goal_achieve" #推进合作化完成
@@ -467,7 +475,13 @@ defined_text = {
 	name = CHI_ostlc_decisions_goal
 	text = {
 		trigger = {
-			ROOT = { check_variable = { CI_tg = 0 } }
+			OR = {
+				ROOT = { check_variable = { CI_tg = 0 } }
+				AND = {
+					has_country_flag = CHI_Assign_local_cooperative_party_committee
+					NOT = { has_idea = CHI_Collaboration_internet_end }
+				}
+			}
 			has_completed_focus = CHI_city_mutual_aid
 		}
 		localization_key = "CHI_ostlc_goal" #显示组织技能培训与全国劳动竞赛国策
@@ -482,9 +496,13 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			ROOT = { check_variable = { CI_tg = 0.05 } }
+			OR = {
+				has_idea = CHI_Collaboration_internet_end
+				ROOT = { check_variable = { CI_tg = 0.05 } }
+			}
 			has_completed_focus = CHI_city_mutual_aid
 		}
 		localization_key = "CHI_ostlc_goal_achieve" #推进合作化完成
 	}
 }
+

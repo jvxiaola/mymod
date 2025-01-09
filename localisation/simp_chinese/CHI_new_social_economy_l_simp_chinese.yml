@@ -134,6 +134,8 @@ CHI_Assign_local_cooperative_party_committee: "§Y指派§!§C地方合作社党
 CHI_Assign_local_cooperative_party_committee_desc: "在已经建立的§7合作社§!委派党委，可以加强政府对其§Y掌控力度§!，在推进§O地方经济计划§!实行的同时保留社内§C良性竞争§!。"
 CHI_city_mutual_start_tt: "将开始构建§Y全国性§!§C合作社网络§!，并提供政府§G管控能力§!"
 CHI_Efficient_and_economical_trigger_tt: "§Y全国§!§C合作社§!已基本§G完成§!"
+CHI_Organizational_skills_training_labor_competition: "§Y组织§!§7技能培训§!与§O全国劳动竞赛§!"
+CHI_Organizational_skills_training_labor_competition_desc: "全国§7网状合作社系统§!§Y建设§!已经§G基本完成§!,接下来就是组织各种§7技能培训活动§!以及§O全国劳动竞赛§!，提高§R工人§!§O技术水平§!"
 
 #idea and modifier
 CHI_Organize_state_enterprises_modifier: "§Y国企构建§!"
@@ -145,12 +147,14 @@ CHI_BETTER_FOOD_SAFTY_desc: "在经过§O艰苦的攻关§!之后，我们终于
 CHI_Raise_worker_salaries_benefits_trigger_tt: "三大§7国有化政策§!§G已全部完成§!"
 CHI_nationalizing: "国有化开支"
 CHI_nationalizing_desc: "建设国有企业，购买先进设备、组织工人培训需要大量开支。"
-CHI_nationalizing_end: "§O国企§!§Y主导§!§G公有制§!"
+CHI_nationalizing_end: "§O国企支柱§!§Y主导§!§G公有制§!"
 CHI_nationalizing_end_desc: "花费大量资金，动用大量干部后，§7国有化率§!已经达到§R近二十年§!的§G最高值§!，依托大量国有企业支柱，我们成功改善了§C劳动者待遇§!，初步达成§I公有制建设目标§!。"
 CHI_nationalizing_end_tt: "§O国企建设§!与§I公有制建设§!已§C初步完成§!"
 CHI_Collaboration_internet_tte: "$$[?additional_expense_CHI_Collaboration_internet|-3]来自§Y$CHI_Collaboration_internet$§!\n"
 CHI_Collaboration_internet: "§C合作社网络§!"
 CHI_Collaboration_internet_desc: "经过各地§C合作社§!的§Y建立及协作§!，我国的合作社逐渐形成了§7网状放射性系统§!，§G几乎可以代替§!之前的§O城市个体户§!，并已成为我国§I公有制经济§!的§C重要组成部分§!。"
+CHI_Collaboration_internet_end: "§C合作社网络§!§Y补充§!§G公有制§!"
+CHI_Collaboration_internet_endt_desc: "通过§I赎买股权§!、§Y收购破产个体户§!、出台§O合资规则!，§7网状合作社系统§!已经§G基本完成§!,成为我国§I公有制经济§!的§C重要组成部分§!。"
 
 
 
