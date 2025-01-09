@@ -37,7 +37,7 @@ CHI_Organize_state_enterprises_modifier = {
 
 State_Collaboration = {
 	enable = { always = yes }
-	icon = GFX_idea_dpr_ruins
+	icon = GFX_idea_economy_housing
 	state_production_speed_industrial_complex_factor = sc_spsic #地区民用工厂建筑速度
 	state_production_speed_offices_factor = sc_spsic #地区办公园区建筑速度
 	state_production_synthetic_refinery_factor = sc_spsrf #地区可再生能源建造速度
@@ -50,7 +50,7 @@ State_Collaboration = {
 
 CHI_Collaboration_internet = {
 	enable = { always = yes }	
-	picture = inflation
+	icon = GFX_idea_recovering_from_the_civil_war
 	modifier = {
 	tax_gain_multiplier_modifier = CI_tg
 	production_speed_offices_factor = CI_pso #办公园区建设速度
