@@ -1,7 +1,7 @@
 change_DSC_Socialist_Construction_dynamic1 = {
 		add_to_variable = { DSC_Socialist_Construction_dynamic1 = temp_DSC_Socialist_Construction_dynamic }
 custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic1_tt
-#主观能动性
+#革命热情
 }
 change_DSC_Socialist_Construction_dynamic2 = {
 		add_to_variable = { DSC_Socialist_Construction_dynamic2 = temp_DSC_Socialist_Construction_dynamic }
@@ -187,7 +187,7 @@ max = 1
 }		
 		
 custom_effect_tooltip = change_DSC_people_support_tt
-#主观能动性
+#革命热情
 }
 DSC_people_support_dynamic_scriptes = {
 
