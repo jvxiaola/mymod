@@ -852,7 +852,7 @@ CHI_new_social_economy_decisions = {
 	}
 
 	CHI_Assign_local_cooperative_party_committee = { #指派地方合作社党委
-	icon = GFX_decision_generic_factory
+	icon = GFX_decision_category_coms_cat
 	visible = {
 		has_completed_focus = CHI_city_mutual_aid
 		has_country_flag = CHI_Collaboralize
@@ -888,7 +888,7 @@ CHI_new_social_economy_decisions = {
 	}
 
 	CHI_Organizational_skills_training_labor_competition = { #组织技能培训与全国劳动竞赛
-	icon = GFX_decision_generic_factory
+	icon = GFX_decision_eng_blackshirt_march
 	visible = {
 		has_completed_focus = CHI_city_mutual_aid
 		has_country_flag = CHI_Assign_local_cooperative_party_committee
@@ -922,7 +922,112 @@ CHI_new_social_economy_decisions = {
 	}
 
 	CHI_Restart_constructing_intensive_agriculture = { #重启集约农业建设
-	icon = GFX_decision_generic_factory
+	icon = GFX_decision_generic_operation
+	visible = {
+		has_completed_focus = CHI_People_Commune
+	}
+	available = {
+		always = yes
+	}
+	fire_only_once = yes
+	cost = -10
+	complete_effect = {}
+	days_remove = 15
+	remove_effect = {
+		every_owned_state = {
+			limit = { is_New_people_commune_state = yes }
+			STATE_add_modifier_New_people_commune = yes 
+		}	
+	}
+	ai_will_do = { factor = 1 }
+	}
+
+	CHI_Organize_allocation_commune_resources = { #组织分配公社资源
+	icon = GFX_decision_infiltrate_state
+	visible = {
+		has_completed_focus = CHI_People_Commune
+	}
+	available = {
+		always = yes
+	}
+	fire_only_once = yes
+	cost = -10
+	complete_effect = {}
+	days_remove = 15
+	remove_effect = {
+		every_owned_state = {
+			limit = { is_New_people_commune_state = yes }
+			STATE_add_modifier_New_people_commune = yes 
+		}	
+	}
+	ai_will_do = { factor = 1 }
+	}
+
+	CHI_Reorganize_communal_party = { #重组公社党组织
+	icon = GFX_decision_infiltrate_state
+	visible = {
+		has_completed_focus = CHI_People_Commune
+	}
+	available = {
+		always = yes
+	}
+	fire_only_once = yes
+	cost = -10
+	complete_effect = {}
+	days_remove = 15
+	remove_effect = {
+		every_owned_state = {
+			limit = { is_New_people_commune_state = yes }
+			STATE_add_modifier_New_people_commune = yes 
+		}	
+	}
+	ai_will_do = { factor = 1 }
+	}
+
+	CHI_Raise_grainal_purchase_price = { #提高粮食收购价
+	icon = GFX_decision_infiltrate_state
+	visible = {
+		has_completed_focus = CHI_People_Commune
+	}
+	available = {
+		always = yes
+	}
+	fire_only_once = yes
+	cost = -10
+	complete_effect = {}
+	days_remove = 15
+	remove_effect = {
+		every_owned_state = {
+			limit = { is_New_people_commune_state = yes }
+			STATE_add_modifier_New_people_commune = yes 
+		}	
+	}
+	ai_will_do = { factor = 1 }
+	}
+
+	CHI_Purchase_agricultural_supplies = { #采购拖拉机及化肥
+	icon = GFX_decision_infiltrate_state
+	visible = {
+		has_completed_focus = CHI_People_Commune
+	}
+	available = {
+		always = yes
+	}
+	fire_only_once = yes
+	cost = -10
+	complete_effect = {}
+	days_remove = 15
+	remove_effect = {
+		every_owned_state = {
+			limit = { is_New_people_commune_state = yes }
+			STATE_add_modifier_New_people_commune = yes 
+		}	
+	}
+	ai_will_do = { factor = 1 }
+	}
+
+	CHI_Organize_learning_mechanized_agricultural_tools = { #组织学习农用机械
+	icon = GFX_decision_infiltrate_state
 	visible = {
 		has_completed_focus = CHI_People_Commune
 	}
