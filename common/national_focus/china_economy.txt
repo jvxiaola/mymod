@@ -1417,19 +1417,14 @@ add_power_balance_value = {
 			}
 		}
 		cost = 2
-
 		prerequisite = { focus = CHI_agricultural_issues}
 		mutually_exclusive = { focus = CHI_state_farm }
-
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_CORRUPTION FOCUS_FILTER_INDUSTRY }
-
-		available = {
-			has_political_power > 99
-		}
+		available = {	}
 
 		completion_reward = {
+			
 			add_ideas = CHI_People_Commune
-			add_political_power = -100
 		}
 
 		ai_will_do = { base = 1 }

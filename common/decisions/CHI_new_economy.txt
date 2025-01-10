@@ -937,7 +937,10 @@ CHI_new_social_economy_decisions = {
 	}
 	days_remove = 15
 	remove_effect = {
-		
+		every_owned_state = {
+			limit = { is_New_people_commune_state = yes }
+			STATE_add_modifier_New_people_commune = yes 
+		}	
 	}
 	ai_will_do = { factor = 1 }
 	}

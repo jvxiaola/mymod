@@ -67,7 +67,6 @@ CHI_New_people_commune = {
 	icon = GFX_idea_agricultural_reforms
 	local_resources_factor = Npc_lrf
 	local_supplies = Npc_ls 
-	Chinese_people_support_to_china_government_modifier = Npc_cpstc
 	local_org_regain = Npc_lor
 	state_production_speed_infrastructure_factor = Npc_ps
 	state_production_speed_supply_node_factor = Npc_ps

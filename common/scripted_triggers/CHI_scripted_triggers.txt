@@ -30,4 +30,12 @@ CHI_Organize_state_enterprises_states_trigger = {
 	}
 }
 
+is_New_people_commune_state = {
+	OR = {
+		state = 582		state = 586		state = 583		state = 572		state = 570		state = 562		state = 564		state = 567
+		state = 541		state = 536		state = 549		state = 434		state = 544		state = 556		state = 1095	state = 552
+		state = 554		state = 555
+	}
+}
+
 
