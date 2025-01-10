@@ -939,6 +939,7 @@ CHI_new_social_economy_decisions = {
 			limit = { is_New_people_commune_state = yes }
 			STATE_add_modifier_New_people_commune = yes 
 		}
+		set_country_flag = CHI_Restart_constructing_intensive_agriculture_end
 	}
 	ai_will_do = { factor = 1 }
 	}
@@ -947,6 +948,7 @@ CHI_new_social_economy_decisions = {
 	icon = GFX_decision_infiltrate_state
 	visible = {
 		has_completed_focus = CHI_People_Commune
+		has_country_flag = CHI_Restart_constructing_intensive_agriculture_end
 	}
 	available = {
 		always = yes
@@ -961,13 +963,25 @@ CHI_new_social_economy_decisions = {
 	}
 	days_remove = 50
 	remove_effect = {
+		custom_effect_tooltip = Organize_allocation_commune_resources_progress_effect_tt
 		hidden_effect = {
-			
+			set_country_flag = CHI_Organize_allocation_commune_resources_end
+			if = {
+				limit = { NOT = { has_variable = Organize_allocation_commune_resources_progress } }
+				set_variable = { Organize_allocation_commune_resources_progress = 20 }
+			}
+			else_if = {
+				limit = { has_variable = Organize_allocation_commune_resources_progress } 
+				add_to_variable = { Organize_allocation_commune_resources_progress = 20 }
+			}
+			if = {
+				limit = { check_variable = { Organize_allocation_commune_resources_progress = 100 } }
+				every_owned_state = {
+					limit = { is_New_people_commune_state = yes }
+					STATE_oacr = yes 
+				}	
+			}
 		}
-		every_owned_state = {
-			limit = { is_New_people_commune_state = yes }
-			STATE_oacr = yes 
-		}	
 	}
 	ai_will_do = { factor = 1 }
 	}
@@ -976,6 +990,7 @@ CHI_new_social_economy_decisions = {
 	icon = GFX_decision_infiltrate_state
 	visible = {
 		has_completed_focus = CHI_People_Commune
+		has_country_flag = CHI_Restart_constructing_intensive_agriculture_end
 	}
 	available = {
 		always = yes
@@ -985,10 +1000,25 @@ CHI_new_social_economy_decisions = {
 	complete_effect = {}
 	days_remove = 15
 	remove_effect = {
-		every_owned_state = {
-			limit = { is_New_people_commune_state = yes }
-			STATE_add_modifier_New_people_commune = yes 
-		}	
+		custom_effect_tooltip = Reorganize_communal_party_progress_effect_tt
+		hidden_effect = {
+			set_country_flag = Reorganize_communal_party_progress
+			if = {
+				limit = { NOT = { has_variable = Reorganize_communal_party_progress } }
+				set_variable = { Reorganize_communal_party_progress = 20 }
+			}
+			else_if = {
+				limit = { has_variable = Reorganize_communal_party_progress } 
+				add_to_variable = { Reorganize_communal_party_progress = 20 }
+			}
+			if = {
+				limit = { check_variable = { Reorganize_communal_party_progress = 100 } }
+				every_owned_state = {
+					limit = { is_New_people_commune_state = yes }
+					STATE_oacr = yes 
+				}	
+			}
+		}
 	}
 	ai_will_do = { factor = 1 }
 	}
