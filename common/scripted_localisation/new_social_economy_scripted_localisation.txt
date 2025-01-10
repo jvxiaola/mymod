@@ -26,14 +26,20 @@ defined_text = {
 	text = {
 		trigger = {
 			has_completed_focus = CHI_redemption
-			check_variable = { Redemption_assets_times = 3 }
+			OR = {
+				has_idea = CHI_nationalizing_end
+				check_variable = { Redemption_assets_times = 3 }
+			}
 		}
 		localization_key = "CHI_redemption_goals_achieve"#赎买完成
 	}
 	text = {
 		trigger = {
 			has_completed_focus = CHI_confiscated
-			check_variable = { confiscated_assets_times = 5 }
+			OR = {
+				has_idea = CHI_nationalizing_end
+				check_variable = { confiscated_assets_times = 5 }
+			}
 		}
 		localization_key = "CHI_confiscated_goals_achieve"#强制国有化完成
 	}
@@ -57,7 +63,10 @@ defined_text = {
 	text = {
 		trigger = {
 			has_completed_focus = CHI_Organize_state_enterprises
-			check_variable = { Promote_nationalization_strategic_industries_progress = 100 }
+			OR = {
+				has_idea = CHI_nationalizing_end
+				check_variable = { Promote_nationalization_strategic_industries_progress = 100 }
+			}
 		}
 		localization_key = "CHI_Organize_state_enterprises_goals_achieve"#战略产业国有化完成
 	}
@@ -81,7 +90,10 @@ defined_text = {
 	text = {
 		trigger = {
 			has_completed_focus = CHI_Organize_state_enterprises
-			check_variable = { Nationalize_construction_and_chemical_industries_progress = 100 }
+			OR = {
+				has_idea = CHI_nationalizing_end
+				check_variable = { Nationalize_construction_and_chemical_industries_progress = 100 }
+			}
 		}
 		localization_key = "CHI_Nationalize_construction_and_chemical_industries_goals_achieve"#建筑与化工产业产业国有化完成
 	}
@@ -105,7 +117,10 @@ defined_text = {
 	text = {
 		trigger = {
 			has_completed_focus = CHI_Organize_state_enterprises
-			check_variable = { Partial_nationalize_light_manufacturing_industry_progress = 100 }
+			OR = {
+				has_idea = CHI_nationalizing_end
+				check_variable = { Partial_nationalize_light_manufacturing_industry_progress = 100 }
+			}
 		}
 		localization_key = "CHI_Partial_nationalize_light_manufacturing_industry_goal_achieve" #部分轻工业、制造业国有化完成
 	}
@@ -129,7 +144,10 @@ defined_text = {
 	text = {
 		trigger = {
 			has_idea = CHI_BETTER_FOOD_SAFTY
-			check_variable = { Partial_nationalize_light_manufacturing_industry_progress = 100 }
+			OR = {
+				has_idea = CHI_nationalizing_end
+				check_variable = { Partial_nationalize_light_manufacturing_industry_progress = 100 }
+			}
 		}
 		localization_key = "CHI_Organize_breakthroughs_food_industry_goal_achieve" #食品安全国策解决完成
 	}
@@ -158,9 +176,14 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			check_variable = { Partial_nationalize_light_manufacturing_industry_progress = 100 }
-			check_variable = { Nationalize_construction_and_chemical_industries_progress = 100 }
-			check_variable = { Promote_nationalization_strategic_industries_progress = 100 }
+			OR = {
+				has_idea = CHI_nationalizing_end
+				AND = {
+					check_variable = { Partial_nationalize_light_manufacturing_industry_progress = 100 }
+					check_variable = { Nationalize_construction_and_chemical_industries_progress = 100 }
+					check_variable = { Promote_nationalization_strategic_industries_progress = 100 }
+				}
+			}
 			NOT = { OR = { has_idea = CHI_work7 has_idea = CHI_work6 has_idea = CHI_work5 has_idea = CHI_work_01 has_idea = CHI_work_02 has_idea = CHI_work_03 has_idea = CHI_work_04 } }
 		}
 		localization_key = "CHI_Raise_worker_salaries_benefits_goal_achieve" #改善劳动待遇完成
@@ -502,7 +525,24 @@ defined_text = {
 			}
 			has_completed_focus = CHI_city_mutual_aid
 		}
-		localization_key = "CHI_ostlc_goal_achieve" #推进合作化完成
+		localization_key = "CHI_ostlc_goal_achieve" #组织技能培训与全国劳动竞赛完成
 	}
 }
 
+defined_text = {
+	name = CHI_Collaboration_internet_tte_dynamic_localisation
+	text = {
+		trigger = {
+			has_idea = CHI_Collaboration_internet_end
+		}
+		localization_key = "CHI_Collaboration_internet_end_tte" 
+	}
+	text = {
+		trigger = {
+			has_dynamic_modifier = {
+				modifier = CHI_Collaboration_internet
+			}
+		}
+		localization_key = "CHI_Collaboration_internet_l_tte" 
+	}
+}

@@ -2953,7 +2953,13 @@ calculate_additional_expense_rate = {
 			}
 		}
 		if = {
-			limit = { has_idea = CHI_Collaboration_internet }
+			limit = { 
+				OR = { has_idea = CHI_Collaboration_internet_end 
+					has_dynamic_modifier = {
+						modifier = CHI_Collaboration_internet
+					}
+				}
+			}
 			set_variable = { additional_expense_CHI_Collaboration_internet = population_total }
 			divide_variable = { additional_expense_CHI_Collaboration_internet = 10 }	#Millions of people
 			multiply_variable = { additional_expense_CHI_Collaboration_internet = 0.10 } #per million

@@ -914,6 +914,14 @@ CHI_add_Organize_state_enterprises_modifier = {
     clear_variable = COSEM_twm
   }
 
+  CHI_remove_other_variable = {
+    clear_variable = Redemption_assets_times
+    clear_variable = confiscated_assets_times
+    clear_variable = Promote_nationalization_strategic_industries_progress
+    clear_variable = Nationalize_construction_and_chemical_industries_progress
+    clear_variable = Partial_nationalize_light_manufacturing_industry_progress
+  }
+
   STATE_ADD_State_Collaboration = {
     set_variable = { sc_spsic = 0.05 }  set_variable = { sc_spsrf = 0.05 } set_variable = { sc_lbs = 0.05 } 
     set_variable = { sc_spsbf = 0 }      set_variable = { sc_spg = 0.05 }       set_variable = { sc_ls = 0.05 } 
@@ -970,4 +978,13 @@ CHI_add_Organize_state_enterprises_modifier = {
         custom_effect_tooltip = CHI_ostlc_effect_tt 
         add_to_variable = { CI_tg = CI_tg_add } add_to_variable = { CI_pso = CI_pso_add } 
       }
+  }
+  CHI_remove_Collaboration_internet_modifier = {
+    remove_dynamic_modifier = {
+      modifier = CHI_Collaboration_internet
+    }
+    clear_variable = CI_tg
+    clear_variable = CI_pso
+    clear_variable = CI_cpstc
+    clear_variable = CI_cmowr
   }
