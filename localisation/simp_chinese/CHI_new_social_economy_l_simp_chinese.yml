@@ -71,7 +71,7 @@ Promote_nationalization_strategic_industries: "§7战略资源及相关冶炼产
 Promote_nationalization_strategic_industries_desc: "§7战略资源及相关冶炼产业§!是一个国家的命脉。在前政府时期，相关资源被贱卖，造成了巨大损失。我们工作的第一步，就是将§7战略资源及相关冶炼产业§!国有化。"
 Nationalize_construction_and_chemical_industries: "§7建造业及化工产业§!国有化"
 Nationalize_construction_and_chemical_industries_desc: "目前失业率居高不下，因此政府应扩大§7建造业与化工产业§!建设，以改善社会失业率。"
-Partial_nationalize_light_manufacturing_industry: "§7部分轻工业、制造业国有化§!国有化"
+Partial_nationalize_light_manufacturing_industry: "§7部分轻工业、制造业§!国有化"
 Partial_nationalize_light_manufacturing_industry_desc: "当前的轻工业由于过于分散，采用小作坊式的生产方式，导致产品质量较低，这在食品生产方面尤为严重。扩大§7部分轻工业、制造业§!建设，促进国有化，由政府组织集中生产、工人培训、先进设备采购，可以有效改善这种状况。"
 Nationalize_construction_and_chemical_industries_progress_trigger_tt: "§7建造业及化工产业国有化§!进度为：[?Nationalize_construction_and_chemical_industries_progress|Y0]%。"
 Nationalize_construction_and_chemical_industries_progress_progress_effect_tt: "§7建造业及化工产业国有化§!将推进§Y20%§!的§C进度§!，目前进度为：[?Nationalize_construction_and_chemical_industries_progress|Y0]%。\n§Y当进度为100%时:§!\n§Y国企构建§!修正效果添加:\n$MODIFIER_GLOBAL_BUILDING_SLOTS_FACTOR$: §G+5%§!\n$MODIFIER_LOCAL_RESOURCES_FACTOR$: §G+10%§!\n$productivity_growth_modifier$: §G+5%§!\n$energy_gain_multiplier$: §G+5%§!\n$MODIFIER_PRODUCTION_SPEED_BUILDINGS_FACTOR$: §G+20%§!\n$MODIFIER_production_speed_infrastructure_factor$: §G+5%§!\n$modifier_production_speed_offices_factor$: §G+5%§!\n$MODIFIER_production_speed_industrial_complex_factor$: §G+5%§!\n$MODIFIER_production_speed_arms_factory_factor$: §G+5%§!\n$MODIFIER_production_speed_supply_node_factor$: §G+5%§!\n$MODIFIER_production_speed_rail_way_factor$: §G+5%§!\n所有工业建筑所需工人:§G+1%§!\n$total_workforce_modifier$: §G+1%§!"
