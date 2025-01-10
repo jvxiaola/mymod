@@ -916,10 +916,7 @@ country_event = {
 	hidden_effect = {
 					add_stability = 0.10
 
-				start_politics_input = yes
-	add_to_array = { ruling_party = 5 }
-	add_to_array = { gov_coalition_array = 19 } 
-	startup_politics = yes	
+
 			}
 
 	set_country_flag = PRC_left_cpc		
