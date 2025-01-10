@@ -996,7 +996,7 @@ CHI_new_social_economy_decisions = {
 		always = yes
 	}
 	fire_only_once = yes
-	cost = -10
+	cost = 30
 	complete_effect = {}
 	days_remove = 15
 	remove_effect = {
