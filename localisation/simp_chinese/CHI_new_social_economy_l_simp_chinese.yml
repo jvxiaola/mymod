@@ -136,7 +136,8 @@ CHI_city_mutual_start_tt: "将开始构建§Y全国性§!§C合作社网络§!�
 CHI_Efficient_and_economical_trigger_tt: "§Y全国§!§C合作社§!已基本§G完成§!"
 CHI_Organizational_skills_training_labor_competition: "§Y组织§!§7技能培训§!与§O全国劳动竞赛§!"
 CHI_Organizational_skills_training_labor_competition_desc: "全国§7网状合作社系统§!§Y建设§!已经§G基本完成§!,接下来就是组织各种§7技能培训活动§!以及§O全国劳动竞赛§!，提高§R工人§!§O技术水平§!"
-
+CHI_Restart_constructing_intensive_agriculture: "§Y重启§!§I集约农业§!建设"
+CHI_Restart_constructing_intensive_agriculture_desc: "在经过一系列§R艰难险阻§!后，§O国内外形势§!逐渐安定下来。现在终于可以腾出手来，§Y重启§!§I集约农业§!建设，继续§C几十年前§!没有完成的事情了。"
 #idea and modifier
 CHI_Organize_state_enterprises_modifier: "§Y国企构建§!"
 CHI_nationalizing_end_other_modifier_tt: "£construction_speed_texticon §Y基建、工厂、办公园区及补给站与铁路§!建造速度:§G+15%§!\n§Y工厂及办公园区劳动力需求§!:§G+15%§!"
