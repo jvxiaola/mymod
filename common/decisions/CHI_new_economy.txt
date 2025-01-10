@@ -921,6 +921,27 @@ CHI_new_social_economy_decisions = {
 	ai_will_do = { factor = 1 }
 	}
 
+	CHI_Restart_constructing_intensive_agriculture = { #重启集约农业建设
+	icon = GFX_decision_generic_factory
+	visible = {
+		has_completed_focus = CHI_People_Commune
+	}
+	available = {
+		always = yes
+	}
+	
+	cost = -10
+	complete_effect = {
+		set_temp_variable = { treasury_change = -100 }
+		modify_treasury_effect = yes
+	}
+	days_remove = 15
+	remove_effect = {
+		
+	}
+	ai_will_do = { factor = 1 }
+	}
+
 }
 
 
