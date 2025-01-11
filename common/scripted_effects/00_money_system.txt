@@ -593,7 +593,7 @@ calculate_additional_income_rate = {
 			add_to_variable = { additional_income_rate = additional_income_CHI_not_nongyesui }
 		}
 		if = {
-			limit = { has_idea = CHI_People_Commune }
+			limit = { has_idea = CHI_idea_People_Commune }
 			set_variable = { additional_income_CHI_People_Commune = population_total }
 			divide_variable = { additional_income_CHI_People_Commune = 10 }	#Millions of people
 			multiply_variable = { additional_income_CHI_People_Commune = 0.40 } #per million

@@ -1089,31 +1089,32 @@ add_power_balance_value = {
 
 
 		available = {
-			custom_trigger_tooltip = { 
-				tooltip = CHI_nationalizing_end_tt 
-				has_idea = CHI_nationalizing
-				has_idea = CHI_BETTER_FOOD_SAFTY
-				OR = { 
-					check_variable = { Redemption_assets_times = 3 }
-					check_variable = { confiscated_assets_times = 5 }
-				}
-				check_variable = { Partial_nationalize_light_manufacturing_industry_progress = 100 }
-				check_variable = { Nationalize_construction_and_chemical_industries_progress = 100 }
-				check_variable = { Promote_nationalization_strategic_industries_progress = 100 }
-				NOT = { 
+			OR = {
+				custom_trigger_tooltip = { 
+					tooltip = CHI_nationalizing_end_tt 
+					has_idea = CHI_nationalizing
+					has_idea = CHI_BETTER_FOOD_SAFTY
 					OR = { 
-						has_idea = CHI_work7 has_idea = CHI_work6 has_idea = CHI_work5 has_idea = CHI_work_01 
-						has_idea = CHI_work_02 has_idea = CHI_work_03 has_idea = CHI_work_04 
-					} 
+						check_variable = { Redemption_assets_times = 3 }
+						check_variable = { confiscated_assets_times = 5 }
+					}
+					check_variable = { Partial_nationalize_light_manufacturing_industry_progress = 100 }
+					check_variable = { Nationalize_construction_and_chemical_industries_progress = 100 }
+					check_variable = { Promote_nationalization_strategic_industries_progress = 100 }
+					NOT = { 
+						OR = { 
+							has_idea = CHI_work7 has_idea = CHI_work6 has_idea = CHI_work5 has_idea = CHI_work_01 
+							has_idea = CHI_work_02 has_idea = CHI_work_03 has_idea = CHI_work_04 
+						} 
+					}
 				}
+				has_completed_focus = CHI_worker_ownership
 			}
-		
 		}
-
 		completion_reward = {
 			remove_ideas = CHI_nationalizing
 			if = {
-				limit = { tag = DSC }
+				limit = { tag = DSC has_dynamic_modifier = { modifier = CHI_Organize_state_enterprises_modifier } }
 				CHI_remove_Organize_state_enterprises_modifier = yes
 				CHI_remove_other_variable = yes
 				add_ideas = CHI_nationalizing_end
@@ -1288,28 +1289,26 @@ add_power_balance_value = {
 	shared_focus = {
 	id = CHI_Efficient_and_economical
 		icon = worker_paradise
-
 		x = 0
 		y = 3
 		relative_position_id = CHI_selfemployed_problem
-
 		cost = 4
-
 		prerequisite = { focus = CHI_limit_accumulation focus = CHI_city_mutual_aid }
-
-
 		available = {
 			custom_trigger_tooltip = {
 				custom_trigger_tooltip = {
 					tooltip = CHI_Efficient_and_economical_trigger_tt
 					has_country_flag = CHI_Collaboralize_end
 				}
+				OR = {
+					has_completed_focus = CHI_limit_accumulation
+				}
 			}
 		}
 
 		completion_reward = {
 			if = {
-				limit = { tag = DSC }
+				limit = { tag = DSC has_dynamic_modifier = { modifier = CHI_Collaboration_internet } }
 				CHI_remove_Collaboration_internet_modifier = yes
 				add_ideas = CHI_Collaboration_internet_end
 			}
@@ -1368,11 +1367,9 @@ add_power_balance_value = {
 	shared_focus = {
 	id = CHI_Negative_contract_system
 		icon = ChinaHouse
-
 		x = 0
 		y = 1
 		relative_position_id = CHI_agricultural_issues
-
 		cost = 3
 		offset = {
 			x = -1
@@ -1384,25 +1381,18 @@ add_power_balance_value = {
 				}
 			}
 		}
-	
 		prerequisite = { focus = CHI_agricultural_issues }
-
 		search_filters = { FOCUS_FILTER_POLITICAL }
-
 		available = {  }
-
 		completion_reward = {
 			add_political_power = 50
 			remove_ideas = CHI_not_nongyesui
 		}
-
 		ai_will_do = { base = 1 }
 	}
-
 	shared_focus = {		
 		id = CHI_People_Commune
 		icon = anarchist_economy
-
 		x = 1
 		y = 2
 		relative_position_id = CHI_agricultural_issues
@@ -1421,44 +1411,32 @@ add_power_balance_value = {
 		mutually_exclusive = { focus = CHI_state_farm }
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_CORRUPTION FOCUS_FILTER_INDUSTRY }
 		available = {	}
-
 		completion_reward = {
-			
-			add_ideas = CHI_People_Commune
+			custom_effect_tooltip = CHI_People_Commune_start_tt 
 		}
-
 		ai_will_do = { base = 1 }
 	}
-
 shared_focus = {		
 		id = CHI_state_farm
 		icon = Farm_national_movement
-
 		x = -1
 		y = 2
 		relative_position_id = CHI_agricultural_issues
-
 		cost = 5
-
 		prerequisite = { focus = CHI_agricultural_issues }
 		mutually_exclusive = { focus = CHI_People_Commune }
-
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_CORRUPTION FOCUS_FILTER_INDUSTRY }
 		allow_branch = {
 			has_country_flag = xggm
-	 }
+		}
 		available = {
 				custom_trigger_tooltip = {
-					has_country_flag=xggm
-
+					has_country_flag = xggm
 				}
 			}
-
 		completion_reward = {
 			add_ideas = CHI_state_farm
-
 		}
-
 		ai_will_do = { base = 1 }
 	}
 
@@ -1470,43 +1448,47 @@ shared_focus = {
 		relative_position_id = CHI_agricultural_issues
 		prerequisite = { focus = CHI_state_farm focus = CHI_People_Commune }
 		cost = 2
-
-
-		available = {
+		available = { 
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = CHI_Revitalize_the_countryside_trigger_tt
+					has_country_flag = Organize_learning_mechanized_agricultural_tools
+				}
+				has_completed_focus = CHI_state_farm
+			}
 		}
-
 		completion_reward = {
 			if = {
-limit = {has_idea = CHI_Socialist_Market_Economy }
-swap_ideas = {
-add_idea = CHI_Socialist_Market_Economy_planned_1
-remove_idea =  CHI_Socialist_Market_Economy
-
-}
-}
-else_if = {
-limit = { has_idea = CHI_Socialist_Market_Economy_planned_1 }
-swap_ideas = {
-add_idea = CHI_Socialist_Market_Economy_planned_2
-remove_idea =  CHI_Socialist_Market_Economy_planned_1
-
-}
+				limit = { tag = DSC has_dynamic_modifier = { modifier = CHI_restart_people_commune } }
+				CHI_remove_modifier_restart_people_commune = yes
+				add_ideas = CHI_idea_People_Commune
 			}
-else_if = {
-limit = { has_idea = CHI_Socialist_Market_Economy_planned_2 }
-swap_ideas = {
-add_idea = CHI_Planned_Economy
-remove_idea =  CHI_Socialist_Market_Economy_planned_2
-
-}
+			if = {
+				limit = {has_idea = CHI_Socialist_Market_Economy }
+				swap_ideas = {
+					add_idea = CHI_Socialist_Market_Economy_planned_1
+					remove_idea =  CHI_Socialist_Market_Economy
+				}
 			}
-		CHI_ruin_economy_remove = yes
+			else_if = {
+				limit = { has_idea = CHI_Socialist_Market_Economy_planned_1 }
+				swap_ideas = {
+					add_idea = CHI_Socialist_Market_Economy_planned_2
+					remove_idea =  CHI_Socialist_Market_Economy_planned_1
+				}
+			}
+			else_if = {
+				limit = { has_idea = CHI_Socialist_Market_Economy_planned_2 }
+				swap_ideas = {
+					add_idea = CHI_Planned_Economy
+					remove_idea = CHI_Socialist_Market_Economy_planned_2
+				}
+			}
+			CHI_ruin_economy_remove = yes
 		}
 
 		ai_will_do = { base = 1 }
 	}
-
-
 
 	shared_focus = {		
 		id = CHI_Chinese_Industrial_Explosion

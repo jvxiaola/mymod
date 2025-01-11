@@ -1031,20 +1031,30 @@ Raise_grainal_purchase_price_effect = {
   set_temp_variable = { rpc_atm_add = 0.02 }  set_temp_variable = { rpc_dw_p_add = 0.03 }
   custom_effect_tooltip = Raise_grainal_purchase_price_effect_tt 
   add_to_variable = { rpc_cd = rpc_cd_add } add_to_variable = { rpc_psof = rpc_psof_add } 
-  add_to_variable = { rpc_atm = rpc_atm_add } add_to_variable = { sc_regm = sc_regm_add }
+  add_to_variable = { rpc_atm = rpc_atm_add } add_to_variable = { rpc_dw_p = rpc_dw_p_add }
   }
 }
 Purchase_agricultural_supplies_effect = {
   ROOT = {
   set_temp_variable = { rpc_psof_add = 0.08 } set_temp_variable = { rpc_atm_add = 0.03 }  set_temp_variable = { rpc_dw_p_add = 0.02 }
   custom_effect_tooltip = Purchase_agricultural_supplies_effect_tt 
-  add_to_variable = { rpc_psof = rpc_psof_add } add_to_variable = { rpc_atm = rpc_atm_add } add_to_variable = { sc_regm = sc_regm_add }
+  add_to_variable = { rpc_psof = rpc_psof_add } add_to_variable = { rpc_atm = rpc_atm_add } add_to_variable = { rpc_dw_p = rpc_dw_p_add }
   }
 }
 Organize_learning_mechanized_agricultural_tools_effect = {
   ROOT = {
   set_temp_variable = { rpc_psof_add = 0.05 } set_temp_variable = { rpc_ppc_add = -0.05 }  set_temp_variable = { rpc_dw_p_add = 0.05 }
   custom_effect_tooltip = Organize_learning_mechanized_agricultural_tools_effect_tt 
-  add_to_variable = { rpc_psof = rpc_psof_add } add_to_variable = { rpc_ppc = rpc_ppc_add } add_to_variable = { sc_regm = sc_regm_add }
+  add_to_variable = { rpc_psof = rpc_psof_add } add_to_variable = { rpc_ppc = rpc_ppc_add } add_to_variable = { rpc_dw_p = rpc_dw_p_add }
   }
+}
+CHI_remove_modifier_restart_people_commune = {
+  remove_dynamic_modifier = {
+    modifier = CHI_restart_people_commune
+  }
+  clear_variable = rpc_cd
+  clear_variable = rpc_ppc
+  clear_variable = rpc_psof
+  clear_variable = rpc_atm
+  clear_variable = rpc_dw_p
 }
