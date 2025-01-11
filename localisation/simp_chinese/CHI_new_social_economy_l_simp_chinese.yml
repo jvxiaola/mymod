@@ -66,7 +66,8 @@ confiscated_assets: "强制国有化"
 confiscated_assets_desc: "这些在惨烈战争中滋润悠哉的企业，要么是同军政府狼狈为奸，要么是在战争中哄抬高价大发国难才，或者干脆就是在它们北约主子的关照下悠哉游哉。我们没有时间，也耻于和这些败类合作！"
 confiscated_assets_trigger_tt: "§R最多强制国有化五次私人企业§!，目前已进行[?confiscated_assets_times|Y0]次。"
 Promote_nationalization_strategic_industries_progress_trigger_tt: "§7战略资源及相关冶炼产业国有化§!进度为：[?Promote_nationalization_strategic_industries_progress|Y0]%。"
-Organize_allocation_commune_resources_progress_effect_tt: "§Y组织分配公社资源§!将推进§Y20%§!的§C进度§!，目前进度为：[?Organize_allocation_commune_resources_progress|Y0]%。\n§Y当进度为100%时:\n§!地区修正§R人民公社§!效果添加:\n$state_production_speed_infrastructure_factor$: §G+3%§!\n$state_production_speed_supply_node_factor$: §G+3%§!\n$state_renewable_capacity_factor_modifier$: §G+2%§!\n$state_productivity_growth_modifier$: §G+2%§!"
+Organize_allocation_commune_resources_progress_effect_tt: "§Y组织分配公社资源§!将推进§Y20%§!的§C进度§!，目前进度为：[?Organize_allocation_commune_resources_progress|Y0]%。\n§Y当进度为100%时:\n§Y地区修正§!§R地区人民公社§!效果添加:\n$state_production_speed_infrastructure_factor$: §G+3%§!\n$state_production_speed_supply_node_factor$: §G+3%§!\n$state_renewable_capacity_factor_modifier$: §G+2%§!\n$state_productivity_growth_modifier$: §G+2%§!"
+Reorganize_communal_party_progress_effect_tt: "§Y重组公社党组织§!将推进§Y20%§!的§C进度§!，目前进度为：[?Reorganize_communal_party_progress|Y0]%。\n§Y当进度为100%时:\n§Y地区修正§!§R地区人民公社§!效果添加:\n$MODIFIER_LOCAL_ORG_REGAIN$: §G+3%§!\n$MODIFIER_LOCAL_SUPPLIES$: §G+2%§!\n\n添加修正§§R人民公社重启§!,效果为:\n$MODIFIER_POLITICAL_POWER_COST$: §G-0.05§!"
 Promote_nationalization_strategic_industries_progress_effect_tt: "§7战略资源及相关冶炼产业国有化§!将推进§Y20%§!的§C进度§!，目前进度为：[?Promote_nationalization_strategic_industries_progress|Y0]%。\n§Y当进度为100%时:\n§!§Y国企构建§!修正效果添加:\n$MODIFIER_GLOBAL_BUILDING_SLOTS_FACTOR$: §G+15%§!\n$MODIFIER_LOCAL_RESOURCES_FACTOR$: §G+10%§!\n$productivity_growth_modifier$: §G+5%§!\n$energy_gain_multiplier$: §G+5%§!\n$MODIFIER_INDUSTRIAL_CAPACITY_FACTOR$: §G+5%§!\n所有工业建筑所需工人: §G+1%§!\n$total_workforce_modifier$: §G+1%§!"
 Promote_nationalization_strategic_industries: "§7战略资源及相关冶炼产业§!国有化"
 Promote_nationalization_strategic_industries_desc: "§7战略资源及相关冶炼产业§!是一个国家的命脉。在前政府时期，相关资源被贱卖，造成了巨大损失。我们工作的第一步，就是将§7战略资源及相关冶炼产业§!国有化。"
@@ -139,6 +140,10 @@ CHI_Organizational_skills_training_labor_competition: "§Y组织§!§7技能培�
 CHI_Organizational_skills_training_labor_competition_desc: "全国§7网状合作社系统§!§Y建设§!已经§G基本完成§!,接下来就是组织各种§7技能培训活动§!以及§O全国劳动竞赛§!，提高§R工人§!§O技术水平§!"
 CHI_Restart_constructing_intensive_agriculture: "§Y重启§!§I集约农业§!建设"
 CHI_Restart_constructing_intensive_agriculture_desc: "在经过一系列§R艰难险阻§!后，§O国内外形势§!逐渐安定下来。现在终于可以腾出手来，§Y重启§!§I集约农业§!建设，继续§C几十年前§!没有完成的事情了。"
+Restart_constructing_intensive_agriculture_effect_tt: "将§Y正式开始§!以§C公社形式§!建设§I集约农业§!"
+CHI_Reorganize_communal_party: "重组§C公社§!§R党组织§!"
+CHI_Reorganize_communal_party_desc: "虽然地区公社的框架以及搭建完成，但实际领导层尚未组建。§R重组公社党组织§!，既可利于后续开展§Y政治§!与§C技术§!§I学习活动§!,又可防止§R教会等势力§!向农村地区蔓延。"
+
 #idea and modifier
 CHI_Organize_state_enterprises_modifier: "§Y国企构建§!"
 CHI_nationalizing_end_other_modifier_tt: "£construction_speed_texticon §Y基建、工厂、办公园区及补给站与铁路§!建造速度:§G+15%§!\n§Y工厂及办公园区劳动力需求§!:§G+15%§!"
@@ -157,9 +162,11 @@ CHI_Collaboration_internet_l_tte: "$$[?additional_expense_CHI_Collaboration_inte
 CHI_Collaboration_internet_end_tte: "$$[?additional_expense_CHI_Collaboration_internet|-3]来自§Y$CHI_Collaboration_internet_end$§!\n"
 CHI_Collaboration_internet: "§C合作社网络§!"
 CHI_Collaboration_internet_desc: "经过各地§C合作社§!的§Y建立及协作§!，我国的合作社逐渐形成了§7网状放射性系统§!，§G几乎可以代替§!之前的§O城市个体户§!，并已成为我国§I公有制经济§!的§C重要组成部分§!。"
+CHI_restart_people_commune: "§R人民公社重启§!"
+CHI_restart_people_commune_desc: "§I现代化农业§!的§Y发展方向§!是向§C机械化§!、§7规模化§!、§O合作化§!方向发展的。§g包产到户§!只是靠一时提高粮价来吸引农民，从长远来看§R极不利于§!§!农业发展§!。政府已通过§R重启人民公社§!议案，通过集体化促进§G农业现代化§!。"
 CHI_Collaboration_internet_end: "§C合作社网络§!§Y补充§!§G公有制§!"
 CHI_Collaboration_internet_endt_desc: "通过§I赎买股权§!、§Y收购破产个体户§!、出台§O合资规则!，§7网状合作社系统§!已经§G基本完成§!,成为我国§I公有制经济§!的§C重要组成部分§!。"
-CHI_New_people_commune: "§R人民公社§!"
+CHI_New_people_commune: "§R地区人民公社§!"
 
 
 

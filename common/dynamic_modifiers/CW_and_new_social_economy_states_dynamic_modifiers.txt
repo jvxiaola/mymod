@@ -73,3 +73,15 @@ CHI_New_people_commune = {
 	state_renewable_capacity_factor_modifier = Npc_rfpg
 	state_productivity_growth_modifier = Npc_rfpg
 }
+
+CHI_restart_people_commune = {
+	enable = { always = yes }	
+	icon = GFX_idea_agricultural_reforms
+	communism_drift = rpc_cd #新兴变化
+	political_power_cost = rpc_ppc
+	production_speed_infrastructure_factor = rpc_psof 
+	production_speed_agriculture_district_factor = rpc_psof
+	agriculture_tax_modifier = rpc_atm
+	agriculture_district_worker_requirement_modifier = rpc_dw_p
+	agricolture_productivity_modifier = rpc_dw_p
+}

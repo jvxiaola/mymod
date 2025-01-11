@@ -988,12 +988,24 @@ CHI_add_Organize_state_enterprises_modifier = {
     clear_variable = CI_cpstc
     clear_variable = CI_cmowr
   }
+#地区修正：公社
   STATE_add_modifier_New_people_commune = {
     set_variable = { Npc_lrf = 0.05 } set_variable = { Npc_ls = 0 } set_variable = { Npc_lor = 0 } 
     set_variable = { Npc_ps = 0 } set_variable = { Npc_rfpg = 0 }
     add_dynamic_modifier = { modifier = CHI_New_people_commune }
   }
   STATE_oacr = {
-      set_temp_variable = { Npc_ps_add = 0.03 } set_temp_variable = { Npc_rfpg_add = 0.02 } 
-      add_to_variable = { Npc_ps = Npc_ps_add } add_to_variable = { Npc_rfpg = Npc_rfpg_add } 
+      add_to_variable = { Npc_ps = 0.03 } add_to_variable = { Npc_rfpg = 0.02 } 
   }
+  STATE_RCP = {
+    add_to_variable = { Npc_lor = 0.03 } add_to_variable = { Npc_ls = 0.02 } 
+}
+
+#整体修正：公社
+add_modifier_restart_people_commune = {
+  ROOT = {
+    set_variable = { rpc_cd = 0 } set_variable = { rpc_ppc = -0.05 } set_variable = { rpc_psof = 0 } 
+    set_variable = { rpc_atm = 0 } set_variable = { rpc_dw_p = 0 }
+    add_dynamic_modifier = { modifier = CHI_restart_people_commune }
+  }
+}

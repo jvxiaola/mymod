@@ -935,6 +935,7 @@ CHI_new_social_economy_decisions = {
 	complete_effect = {}
 	days_remove = 15
 	remove_effect = {
+		custom_effect_tooltip = Restart_constructing_intensive_agriculture_effect_tt
 		every_owned_state = {
 			limit = { is_New_people_commune_state = yes }
 			STATE_add_modifier_New_people_commune = yes 
@@ -998,7 +999,7 @@ CHI_new_social_economy_decisions = {
 	fire_only_once = yes
 	cost = 30
 	complete_effect = {}
-	days_remove = 15
+	days_remove = 50
 	remove_effect = {
 		custom_effect_tooltip = Reorganize_communal_party_progress_effect_tt
 		hidden_effect = {
@@ -1013,9 +1014,10 @@ CHI_new_social_economy_decisions = {
 			}
 			if = {
 				limit = { check_variable = { Reorganize_communal_party_progress = 100 } }
+				add_modifier_restart_people_commune = yes
 				every_owned_state = {
 					limit = { is_New_people_commune_state = yes }
-					STATE_oacr = yes 
+					STATE_RCP = yes 
 				}	
 			}
 		}
