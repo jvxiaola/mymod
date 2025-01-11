@@ -1060,11 +1060,14 @@ CHI_new_social_economy_decisions = {
 			limit = { is_New_people_commune_state = yes }
 			STATE_RGPP = yes 
 		}
+		hidden_effect = {
+			set_country_flag = Raise_grainal_purchase_price
+		}
 	}
 	ai_will_do = { factor = 1 }
 	}
 
-	CHI_Purchase_agricultural_supplies = { #采购拖拉机及化肥
+	CHI_Purchase_agricultural_supplies = { #采购农用器械及化肥
 	icon = GFX_decision_infiltrate_state
 	visible = {
 		has_completed_focus = CHI_People_Commune
@@ -1087,10 +1090,14 @@ CHI_new_social_economy_decisions = {
 	}
 	days_remove = 90
 	remove_effect = {
+		Purchase_agricultural_supplies_effect = yes
 		every_owned_state = {
 			limit = { is_New_people_commune_state = yes }
-			STATE_add_modifier_New_people_commune = yes 
+			STATE_PAS = yes 
 		}	
+		hidden_effect = {
+			set_country_flag = Purchase_agricultural_supplies
+		}
 	}
 	ai_will_do = { factor = 1 }
 	}
@@ -1099,19 +1106,31 @@ CHI_new_social_economy_decisions = {
 	icon = GFX_decision_infiltrate_state
 	visible = {
 		has_completed_focus = CHI_People_Commune
+		has_country_flag = Raise_grainal_purchase_price
+		has_country_flag = Purchase_agricultural_supplies
 	}
 	available = {
 		always = yes
 	}
 	fire_only_once = yes
-	cost = -10
-	complete_effect = {}
-	days_remove = 15
+	custom_cost_trigger = {
+		check_variable = { treasury > 100 }
+		has_political_power > 50
+	}
+	custom_cost_text = cost_100_0_potical_power_50
+	complete_effect = {
+		set_temp_variable = { treasury_change = -100 }
+		modify_treasury_effect = yes
+		add_political_power = -50
+	}
+	days_remove = 90
 	remove_effect = {
+		Organize_learning_mechanized_agricultural_tools_effect = yes
 		every_owned_state = {
 			limit = { is_New_people_commune_state = yes }
-			STATE_add_modifier_New_people_commune = yes 
-		}	
+			STATE_OLMAT = yes 
+		}
+		set_country_flag = Organize_learning_mechanized_agricultural_tools
 	}
 	ai_will_do = { factor = 1 }
 	}

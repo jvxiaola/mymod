@@ -1359,7 +1359,7 @@ change_CHI_people_support_tt: "[CHI_people_support_dynamic_name]变化：[?|+%]\
 
 
 DSC_Socialist_Construction_dynamic: "§O未竟之事§!"
-DSC_Socialist_Construction_dynamic_desc: "\n\n\n\n\n£CHI_Socialist_Construction_dynamic_desc_pic \n\n\n\n\n\n\n在经过§O近二十年的兜兜转转§!之后，中国人民发现他们回到了§R起点§!。这条已经§C走过而还未走完§!的路究竟会§I通向何方§!，还是一个§Y未知数§!.....\n驶向何方，掌握在§G每个人§!手中。"
+DSC_Socialist_Construction_dynamic_desc: "\n\n\n\n\n£CHI_Socialist_Construction_dynamic_desc_pic \n\n\n\n\n\n\n在经过§O近二十年的兜兜转转§!之后，中国人民发现他们回到了§R起点§!。这条已经§C走过而还未走完§!的路究竟会§7通向何方§!，还是一个§Y未知数§!.....\n驶向何方，掌握在§G每个人§!手中。"
 DSC_Socialist_Construction_dynamic_tt: "§H§!追加效果：\n"
 change_DSC_Socialist_Construction_dynamic1_tt: "[DSC_people_support_dynamic_name]每月变化：[?temp_DSC_Socialist_Construction_dynamic|+]\n"
 change_DSC_Socialist_Construction_dynamic2_tt: "正当化战争所需时间：[?temp_DSC_Socialist_Construction_dynamic|-%]\n"
