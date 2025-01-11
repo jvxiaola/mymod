@@ -1015,3 +1015,12 @@ add_modifier_restart_people_commune = {
     add_dynamic_modifier = { modifier = CHI_restart_people_commune }
   }
 }
+Raise_grainal_purchase_price_effect = {
+  ROOT = {
+  set_temp_variable = { rpc_cd_add = 0.05 } set_temp_variable = { rpc_psof_add = 0.02 } 
+  set_temp_variable = { rpc_atm_add = 0.02 }  set_temp_variable = { rpc_dw_p_add = 0.03 }
+  custom_effect_tooltip = Raise_grainal_purchase_price_effect_tt 
+  add_to_variable = { rpc_cd = rpc_cd_add } add_to_variable = { rpc_psof = rpc_psof_add } 
+  add_to_variable = { rpc_atm = rpc_atm_add } add_to_variable = { sc_regm = sc_regm_add }
+  }
+}

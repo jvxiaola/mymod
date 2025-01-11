@@ -123,7 +123,8 @@ CHI_Oofb_shanghai_trigger_tt: "§上海市§!暂未开设§C“个体户官方�
 Launch_cooperation_initiatives_at_forums: "在§C各地合作论坛§!§G发出合作倡议§!"
 Launch_cooperation_initiatives_at_forums_desc: "在各个地区的§C“个体户官方合作论坛”§!组建完成后，政府与各地§O个体户§!的§Y沟通渠道§!已经打开。我们可以通过该渠道发出§7合作化倡议§!，作为§G回报§!，响应倡议的个体户可以得到§I资金援助§!。"
 CHI_Launch_cooperation_initiatives_at_forums_tt: "§Y所有目标地区§!均已§G开设§!§C“个体户官方合作论坛”§!"
-STATE_RGPP_effect_tt: "§Y地区修正§!§R地区人民公社§!效果添加:\n$state_production_speed_industrial_complex_factor$:[?sc_spsic_add|=%+]\n$MODIFIER_LOCAL_BUILDING_SLOTS_FACTOR$:[?sc_lbs_add|=%+]\n$state_productivity_growth_modifier$:[?sc_spg_add|=%+]"
+STATE_RGPP_effect_tt: "§Y地区修正§!§R地区人民公社§!效果添加:\n$MODIFIER_LOCAL_RESOURCES_FACTOR$:[?Npc_lrf_add|=%+]\n$MODIFIER_LOCAL_SUPPLIES$:[?Npc_ls_add|=%+]\n$MODIFIER_LOCAL_ORG_REGAIN$:[?Npc_lor_add|=%+]\n$state_production_speed_infrastructure_factor$:[?Npc_ps_add|=%+]\n$state_production_speed_supply_node_factor$:[?Npc_ps_add|=%+]\n$state_renewable_capacity_factor_modifier$:[?Npc_rfpg_add|=%+]\n$state_productivity_growth_modifier$:[?Npc_rfpg_add|=%+]"
+Raise_grainal_purchase_price_effect_tt: "§R人民公社重启§!修正效果添加:\n$communism_drift$:[?rpc_cd_add|=%+]\n$modifier_production_speed_infrastructure_factor$:[?rpc_psof_add|=%+]\n$modifier_production_speed_agriculture_district_factor$:[?rpc_psof_add|=%+]\n$agriculture_tax_modifier$:[?rpc_atm|=%+]\n$agriculture_district_worker_requirement_modifier$:[?rpc_dw_p|=%+]\n$agricolture_productivity_modifier$:[?rpc_dw_p|=%+]"
 Launch_cooperation_initiatives_at_forums_effect_tt: "§Y合作化构建§!地区修正效果添加:\n$state_production_speed_industrial_complex_factor$:[?sc_spsic_add|=%+]\n$MODIFIER_LOCAL_BUILDING_SLOTS_FACTOR$:[?sc_lbs_add|=%+]\n$state_productivity_growth_modifier$:[?sc_spg_add|=%+]"
 STATE_Collaboralize_effect_tt: "§Y合作化构建§!地区修正效果添加:\n$state_production_speed_industrial_complex_factor$:[?sc_spsic_add|=%+]\n$MODIFIER_LOCAL_BUILDING_SLOTS_FACTOR$:[?sc_lbs_add|=%+]\n$state_productivity_growth_modifier$:[?sc_spg_add|=%+]\n$STATE_PRODUCTION_SPEED_BUILDINGS_FACTOR$:[?sc_spsbf_add|=%+]"
 STATE_Assign_local_cooperative_party_committee_effect_tt: "§Y合作化构建§!地区修正效果添加:\n$state_production_speed_industrial_complex_factor$:[?sc_spsrf_add|=%+]\n$MODIFIER_LOCAL_BUILDING_SLOTS_FACTOR$:[?sc_lbs_add|=%+]\n$state_productivity_growth_modifier$:[?sc_spg_add|=%+]\n$STATE_PRODUCTION_SPEED_BUILDINGS_FACTOR$:[?sc_spsbf_add|=%+]"
@@ -144,6 +145,8 @@ CHI_Restart_constructing_intensive_agriculture_desc: "在经过一系列§R艰�
 Restart_constructing_intensive_agriculture_effect_tt: "将§Y正式开始§!以§C公社形式§!建设§I集约农业§!"
 CHI_Reorganize_communal_party: "重组§C公社§!§R党组织§!"
 CHI_Reorganize_communal_party_desc: "虽然地区公社的框架以及搭建完成，但实际领导层尚未组建。§R重组公社党组织§!，既可利于后续开展§Y政治§!与§C技术§!§I学习活动§!,又可防止§R教会等势力§!向农村地区蔓延。"
+CHI_Raise_grainal_purchase_price: "§O提高§!§I粮食§!§Y收购价§!"
+CHI_Raise_grainal_purchase_price_desc: "在§R社会主义建设初期§!，§Y农业产出§!大部分都用于§O工业建设§!，导致农民§R所得较少§!，§R积极性§!不高。暂时§O提高粮食收购价§!，能有效提高农民参与新公社建设的热情。"
 
 #idea and modifier
 CHI_Organize_state_enterprises_modifier: "§Y国企构建§!"

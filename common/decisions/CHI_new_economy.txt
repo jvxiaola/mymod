@@ -1055,6 +1055,7 @@ CHI_new_social_economy_decisions = {
 	}
 	days_remove = 90
 	remove_effect = {
+		Raise_grainal_purchase_price_effect = yes
 		every_owned_state = {
 			limit = { is_New_people_commune_state = yes }
 			STATE_RGPP = yes 
@@ -1067,14 +1068,24 @@ CHI_new_social_economy_decisions = {
 	icon = GFX_decision_infiltrate_state
 	visible = {
 		has_completed_focus = CHI_People_Commune
+		has_country_flag = CHI_Organize_allocation_commune_resources_end
+		has_country_flag = Reorganize_communal_party
 	}
 	available = {
 		always = yes
 	}
 	fire_only_once = yes
-	cost = -10
-	complete_effect = {}
-	days_remove = 15
+	custom_cost_trigger = {
+		check_variable = { treasury > 50.0 }
+		has_political_power > 10
+	}
+	custom_cost_text = cost_50_0_AND_political_power_10
+	complete_effect = {
+		set_temp_variable = { treasury_change = -50 }
+		modify_treasury_effect = yes
+		add_political_power = -10
+	}
+	days_remove = 90
 	remove_effect = {
 		every_owned_state = {
 			limit = { is_New_people_commune_state = yes }
