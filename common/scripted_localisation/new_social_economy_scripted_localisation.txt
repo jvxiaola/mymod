@@ -430,6 +430,9 @@ defined_text = {
 			OR = {
 			has_completed_focus = CHI_city_mutual_aid
 			has_country_flag = Launch_cooperation_initiatives_at_forums
+			has_country_flag = CHI_Collaboralize
+			has_country_flag = CHI_Assign_local_cooperative_party_committee
+			has_country_flag = CHI_Collaboralize_end
 			}
 		}
 		localization_key = "CHI_Launch_cooperation_initiatives_at_forums_goal_achieve" #发出合作倡议完成
@@ -456,7 +459,9 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = {
-				ROOT = { check_variable = { CI_tg = -0.03 } }
+				has_country_flag = CHI_Collaboralize
+				has_country_flag = CHI_Assign_local_cooperative_party_committee
+				has_country_flag = CHI_Collaboralize_end
 				has_idea = CHI_Collaboration_internet_end
 			}
 			has_completed_focus = CHI_city_mutual_aid
@@ -485,7 +490,8 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = {
-				ROOT = { check_variable = { CI_tg = 0 } }
+				has_country_flag = CHI_Assign_local_cooperative_party_committee
+				has_country_flag = CHI_Collaboralize_end
 				has_idea = CHI_Collaboration_internet_end
 			}
 			has_completed_focus = CHI_city_mutual_aid
@@ -521,7 +527,7 @@ defined_text = {
 		trigger = {
 			OR = {
 				has_idea = CHI_Collaboration_internet_end
-				ROOT = { check_variable = { CI_tg = 0.05 } }
+				has_country_flag = CHI_Collaboralize_end
 			}
 			has_completed_focus = CHI_city_mutual_aid
 		}

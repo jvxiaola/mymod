@@ -950,6 +950,7 @@ CHI_new_social_economy_decisions = {
 	visible = {
 		has_completed_focus = CHI_People_Commune
 		has_country_flag = CHI_Restart_constructing_intensive_agriculture_end
+		check_variable = { Organize_allocation_commune_resources_progress < 100 }
 	}
 	available = {
 		always = yes
@@ -992,6 +993,7 @@ CHI_new_social_economy_decisions = {
 	visible = {
 		has_completed_focus = CHI_People_Commune
 		has_country_flag = CHI_Restart_constructing_intensive_agriculture_end
+		check_variable = { Reorganize_communal_party_progress < 100 }
 	}
 	available = {
 		always = yes
