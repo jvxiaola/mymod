@@ -1921,7 +1921,6 @@ Agricultural_restructuring1 = {
 			industry_free_repair_factor = 0.45
 			production_speed_buildings_factor = 0.15
 			production_cost_industrial_complex_factor = -0.1
-			production_cost_industrial_complex_factor = -0.1
 			production_cost_offices_factor = -0.20
 			local_resources_factor = 0.10
 			industrial_capacity_factory = 0.15

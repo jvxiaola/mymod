@@ -38,7 +38,7 @@ CHI_new_social_economy_decisions = {
 	Redemption_assets = {
 		icon = GFX_decision_gre_investment_decisions
 		visible = {
-			has_completed_focus = CHI_redemption NOT = { has_completed_focus = CHI_Chinese_Industrial_Explosion }
+			has_completed_focus = CHI_redemption NOT = { has_completed_focus = CHI_Consolidation_public_ownership }
 			check_variable = { Redemption_assets_times < 3 }
 		}
 		available = {
@@ -55,7 +55,7 @@ CHI_new_social_economy_decisions = {
 			set_temp_variable = { treasury_change = -10 }
 			modify_treasury_effect = yes
 		}
-		days_remove = 20
+		days_remove = 60
 		remove_effect = {
 			random_owned_state = {
 				if = {
@@ -107,7 +107,7 @@ CHI_new_social_economy_decisions = {
 	confiscated_assets = {
 		icon = GFX_decision_generic_assassination
 		visible = {
-			has_completed_focus = CHI_confiscated NOT = { has_completed_focus = CHI_Chinese_Industrial_Explosion }
+			has_completed_focus = CHI_confiscated NOT = { has_completed_focus = CHI_Consolidation_public_ownership }
 			check_variable = { confiscated_assets_times < 5 }
 		}
 		available = {
@@ -120,7 +120,7 @@ CHI_new_social_economy_decisions = {
 		complete_effect = {
 			add_stability = -0.02
 		}
-		days_remove = 10
+		days_remove = 25
 		remove_effect = {
 			modify_timed_idea = {
 				idea = CHI_confiscated
@@ -178,7 +178,7 @@ CHI_new_social_economy_decisions = {
 	Promote_nationalization_strategic_industries = { #战略行业国有化
 		icon = GFX_decision_refinery_dec
 		visible = {
-			has_completed_focus = CHI_Organize_state_enterprises NOT = { has_completed_focus = CHI_Chinese_Industrial_Explosion }
+			has_completed_focus = CHI_Organize_state_enterprises NOT = { has_completed_focus = CHI_Consolidation_public_ownership }
 			check_variable = { Promote_nationalization_strategic_industries_progress < 100 }
 		}
 		available = {
@@ -197,7 +197,7 @@ CHI_new_social_economy_decisions = {
 			modify_treasury_effect = yes
 			add_political_power = -50
 		}
-		days_remove = 50
+		days_remove = 75
 		remove_effect = {
 			custom_effect_tooltip = Promote_nationalization_strategic_industries_progress_effect_tt
 			hidden_effect = {
@@ -230,7 +230,7 @@ CHI_new_social_economy_decisions = {
 	Nationalize_construction_and_chemical_industries = { #建筑与化工行业国有化效果
 		icon = GFX_decision_generic_construction
 		visible = {
-			has_completed_focus = CHI_Organize_state_enterprises NOT = { has_completed_focus = CHI_Chinese_Industrial_Explosion }
+			has_completed_focus = CHI_Organize_state_enterprises NOT = { has_completed_focus = CHI_Consolidation_public_ownership }
 			check_variable = { Nationalize_construction_and_chemical_industries_progress < 100 }
 		}
 		available = {
@@ -249,7 +249,7 @@ CHI_new_social_economy_decisions = {
 			modify_treasury_effect = yes
 			add_political_power = -50
 		}
-		days_remove = 50
+		days_remove = 75
 		remove_effect = {
 			custom_effect_tooltip = Nationalize_construction_and_chemical_industries_progress_progress_effect_tt
 			hidden_effect = {
@@ -282,7 +282,7 @@ CHI_new_social_economy_decisions = {
 	Partial_nationalize_light_manufacturing_industry = { #部分轻工业、制造业国有化效果
 	icon = GFX_decision_generic_factory
 	visible = {
-		has_completed_focus = CHI_Organize_state_enterprises NOT = { has_completed_focus = CHI_Chinese_Industrial_Explosion }
+		has_completed_focus = CHI_Organize_state_enterprises NOT = { has_completed_focus = CHI_Consolidation_public_ownership }
 		check_variable = { Partial_nationalize_light_manufacturing_industry_progress < 100 }
 	}
 	available = {
@@ -301,7 +301,7 @@ CHI_new_social_economy_decisions = {
 		modify_treasury_effect = yes
 		add_political_power = -50
 	}
-	days_remove = 50
+	days_remove = 75
 	remove_effect = {
 		custom_effect_tooltip = Partial_nationalize_light_manufacturing_industry_progress_progress_effect_tt
 		hidden_effect = {
@@ -352,7 +352,7 @@ CHI_new_social_economy_decisions = {
 		modify_treasury_effect = yes
 		add_political_power = -50
 	}
-	days_remove = 120
+	days_remove = 140
 	remove_effect = {
 		swap_ideas = {
 			remove_idea = CHI_shipinganquanwenti
@@ -390,7 +390,7 @@ CHI_new_social_economy_decisions = {
 		modify_treasury_effect = yes
 		add_political_power = -10
 	}
-	days_remove = 30
+	days_remove = 45
 	remove_effect = {
 		CHI_work_up = yes
 		if = {
@@ -434,7 +434,7 @@ CHI_new_social_economy_decisions = {
 		set_temp_variable = { treasury_change = -10 }
 		modify_treasury_effect = yes
 	}
-	days_remove = 30
+	days_remove = 60
 	remove_effect = {
 		534 = { STATE_ADD_State_Collaboration = yes } 532 = { STATE_ADD_State_Collaboration = yes } 595 = { STATE_ADD_State_Collaboration = yes }
 		1106 = { STATE_ADD_State_Collaboration = yes }
@@ -468,7 +468,7 @@ CHI_new_social_economy_decisions = {
 		set_temp_variable = { treasury_change = -10 }
 		modify_treasury_effect = yes
 	}
-	days_remove = 30
+	days_remove = 60
 	remove_effect = {
 		541 = { STATE_ADD_State_Collaboration = yes } 536 = { STATE_ADD_State_Collaboration = yes }
 	}
@@ -501,7 +501,7 @@ CHI_new_social_economy_decisions = {
 		set_temp_variable = { treasury_change = -10 }
 		modify_treasury_effect = yes
 	}
-	days_remove = 30
+	days_remove = 60
 	remove_effect = {
 		435 = { STATE_ADD_State_Collaboration = yes } 544 = { STATE_ADD_State_Collaboration = yes }
 	}
@@ -534,7 +534,7 @@ CHI_new_social_economy_decisions = {
 		set_temp_variable = { treasury_change = -10 }
 		modify_treasury_effect = yes
 	}
-	days_remove = 30
+	days_remove = 60
 	remove_effect = {
 		538 = { STATE_ADD_State_Collaboration = yes }
 	}
@@ -567,7 +567,7 @@ CHI_new_social_economy_decisions = {
 		set_temp_variable = { treasury_change = -10 }
 		modify_treasury_effect = yes
 	}
-	days_remove = 30
+	days_remove = 60
 	remove_effect = {
 		567 = { STATE_ADD_State_Collaboration = yes }
 	}
@@ -600,7 +600,7 @@ CHI_new_social_economy_decisions = {
 		set_temp_variable = { treasury_change = -10 }
 		modify_treasury_effect = yes
 	}
-	days_remove = 30
+	days_remove = 60
 	remove_effect = {
 		1095 = { STATE_ADD_State_Collaboration = yes } 552 = { STATE_ADD_State_Collaboration = yes }
 	}
@@ -635,7 +635,7 @@ CHI_new_social_economy_decisions = {
 		set_temp_variable = { treasury_change = -30 }
 		modify_treasury_effect = yes
 	}
-	days_remove = 30
+	days_remove = 60
 	remove_effect = {
 		434 = { STATE_ADD_State_Collaboration = yes } 549 = { STATE_ADD_State_Collaboration = yes } 
 		547 = { STATE_ADD_State_Collaboration = yes } 548 = { STATE_ADD_State_Collaboration = yes }
@@ -669,7 +669,7 @@ CHI_new_social_economy_decisions = {
 		set_temp_variable = { treasury_change = -20 }
 		modify_treasury_effect = yes
 	}
-	days_remove = 30
+	days_remove = 60
 	remove_effect = {
 		585 = { STATE_ADD_State_Collaboration = yes } 586 = { STATE_ADD_State_Collaboration = yes } 583 = { STATE_ADD_State_Collaboration = yes }
 	}
@@ -702,7 +702,7 @@ CHI_new_social_economy_decisions = {
 		set_temp_variable = { treasury_change = -10 }
 		modify_treasury_effect = yes
 	}
-	days_remove = 30
+	days_remove = 60
 	remove_effect = {
 		537 = { STATE_ADD_State_Collaboration = yes }
 	}
@@ -735,7 +735,7 @@ CHI_new_social_economy_decisions = {
 		set_temp_variable = { treasury_change = -10 }
 		modify_treasury_effect = yes
 	}
-	days_remove = 30
+	days_remove = 60
 	remove_effect = {
 		570 = { STATE_ADD_State_Collaboration = yes }
 	}
@@ -768,7 +768,7 @@ CHI_new_social_economy_decisions = {
 		set_temp_variable = { treasury_change = -10 }
 		modify_treasury_effect = yes
 	}
-	days_remove = 30
+	days_remove = 60
 	remove_effect = {
 		540 = { STATE_ADD_State_Collaboration = yes }
 	}
@@ -801,7 +801,7 @@ CHI_new_social_economy_decisions = {
 		add_political_power = -10
 	}
 	fire_only_once = yes
-	days_remove = 50
+	days_remove = 70
 	remove_effect = {
 		every_owned_state = {
 			limit = { has_dynamic_modifier = { modifier = State_Collaboration } }
@@ -906,7 +906,7 @@ CHI_new_social_economy_decisions = {
 		set_temp_variable = { treasury_change = -100 }
 		modify_treasury_effect = yes
 	}
-	days_remove = 90
+	days_remove = 120
 	remove_effect = {
 		CHI_ostlc = yes
 		every_owned_state = {
@@ -963,7 +963,7 @@ CHI_new_social_economy_decisions = {
 		set_temp_variable = { treasury_change = -10 }
 		modify_treasury_effect = yes
 	}
-	days_remove = 50
+	days_remove = 75
 	remove_effect = {
 		custom_effect_tooltip = Organize_allocation_commune_resources_progress_effect_tt
 		hidden_effect = {
@@ -1008,7 +1008,7 @@ CHI_new_social_economy_decisions = {
 		modify_treasury_effect = yes
 		add_political_power = -50
 	}
-	days_remove = 50
+	days_remove = 75
 	remove_effect = {
 		custom_effect_tooltip = Reorganize_communal_party_progress_effect_tt
 		hidden_effect = {
@@ -1055,7 +1055,7 @@ CHI_new_social_economy_decisions = {
 		modify_treasury_effect = yes
 		add_political_power = -10
 	}
-	days_remove = 90
+	days_remove = 120
 	remove_effect = {
 		Raise_grainal_purchase_price_effect = yes
 		every_owned_state = {
@@ -1090,7 +1090,7 @@ CHI_new_social_economy_decisions = {
 		modify_treasury_effect = yes
 		add_political_power = -10
 	}
-	days_remove = 90
+	days_remove = 120
 	remove_effect = {
 		Purchase_agricultural_supplies_effect = yes
 		every_owned_state = {
@@ -1125,7 +1125,7 @@ CHI_new_social_economy_decisions = {
 		modify_treasury_effect = yes
 		add_political_power = -50
 	}
-	days_remove = 90
+	days_remove = 140
 	remove_effect = {
 		Organize_learning_mechanized_agricultural_tools_effect = yes
 		every_owned_state = {

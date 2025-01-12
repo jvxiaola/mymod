@@ -601,6 +601,14 @@ calculate_additional_income_rate = {
 			add_to_variable = { additional_income_rate = additional_income_CHI_People_Commune }
 		}
 		if = {
+			limit = { has_idea = CHI_idea_Public_ownership_economy }
+			set_variable = { additional_income_CHI_idea_Public_ownership_economy = population_total }
+			divide_variable = { additional_income_CHI_idea_Public_ownership_economy = 10 }	#Millions of people
+			multiply_variable = { additional_income_CHI_idea_Public_ownership_economy = 0.30 } #per million
+			multiply_variable = { additional_income_CHI_idea_Public_ownership_economy = 0.50 }	#weekly
+			add_to_variable = { additional_income_rate = additional_income_CHI_idea_Public_ownership_economy }
+		}
+		if = {
 			limit = { has_idea = CHI_state_farm }
 			set_variable = { additional_income_CHI_state_farm = population_total }
 			divide_variable = { additional_income_CHI_state_farm = 10 }	#Millions of people

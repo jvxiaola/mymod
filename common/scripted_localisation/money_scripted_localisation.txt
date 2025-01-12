@@ -1249,13 +1249,28 @@ defined_text = {
 	name = additional_income_summary_additional_income_CHI_People_Commune
 	text = {
 		trigger = {
-			has_idea = CHI_People_Commune
+			has_idea = CHI_idea_People_Commune
 		}
 		localization_key = "CHI_People_Commune_tte"
 	}
 	text = {
 		trigger = {
 			NOT = {	has_idea = CHI_People_Commune }
+		}
+		localization_key = ""
+	}
+}
+defined_text = {
+	name = additional_income_summary_additional_income_CHI_idea_Public_ownership_economy
+	text = {
+		trigger = {
+			has_idea = CHI_idea_Public_ownership_economy
+		}
+		localization_key = "CHI_idea_Public_ownership_economy_tte"
+	}
+	text = {
+		trigger = {
+			NOT = {	has_idea = CHI_idea_Public_ownership_economy }
 		}
 		localization_key = ""
 	}

@@ -828,14 +828,9 @@
 	shared_focus = {
 		id = CHI_Socialist_Reconstruction
 		icon = communist_party_of_china
-
 		x = 90
 		y = 15
-
 		cost = 2
-
-
-
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		allow_branch = {
 			OR = {
@@ -1364,10 +1359,9 @@ add_power_balance_value = {
 
 	shared_focus = {
 	id = CHI_Negative_contract_system
-		icon = focus_generic_agricultural_subsidies
-		x = 0
-		y = 1
-		relative_position_id = CHI_agricultural_issues
+	icon = focus_generic_agricultural_subsidies
+		x = 91
+		y = 18
 		cost = 3
 		offset = {
 			x = -1
@@ -1379,6 +1373,20 @@ add_power_balance_value = {
 				}
 			}
 		}
+		offset = {
+			x = -65
+			y = -5
+			trigger = {
+				tag = DSC
+			}
+		}
+		allow_branch = {
+			OR = {
+				has_country_flag = xggm
+				tag = DSC
+				has_country_flag = laozuo
+			}
+		 }
 		prerequisite = { focus = CHI_agricultural_issues }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		available = {  }
@@ -1483,6 +1491,12 @@ shared_focus = {
 				}
 			}
 			CHI_ruin_economy_remove = yes
+			clr_country_flag = CHI_Restart_constructing_intensive_agriculture_end
+			clr_country_flag = CHI_Organize_allocation_commune_resources_end
+			clr_country_flag = Reorganize_communal_party
+			clr_country_flag = Raise_grainal_purchase_price
+			clr_country_flag = Purchase_agricultural_supplies
+			clr_country_flag = Organize_learning_mechanized_agricultural_tools
 		}
 
 		ai_will_do = { base = 1 }
@@ -1506,19 +1520,24 @@ shared_focus = {
 		completion_reward = {
 			CHI_ruin_economy_remove = yes
 			if = {
-				limit = { has_idea = CHI_Stateowned_enterprise_monopoly }
+				limit = { tag = DSC }
+					add_ideas = CHI_idea_Public_ownership_economy
+			}
+			if = {
+				limit = { has_idea = CHI_Stateowned_enterprise_monopoly NOT = { tag = DSC } }
 					add_ideas = a_new_leap_forward
 			}
 			else_if = {
 				limit = {
-					has_idea = CHI_worker_cooperative
+					has_idea = CHI_worker_cooperative NOT = { tag = DSC }
 				}
 				add_ideas = CHI_new_socialist_economy
-
 			}
 			custom_effect_tooltip = CHI_Chinese_Industrial_Explosion21_tt
 			mark_focus_tree_layout_dirty = yes
 			hidden_effect = {
+				clear_variable = Reorganize_communal_party_progress
+				clear_variable = Organize_allocation_commune_resources_progress
 				clear_variable = Redemption_assets_times
 				clear_variable = confiscated_assets_times
 				clear_variable = Promote_nationalization_strategic_industries_progress

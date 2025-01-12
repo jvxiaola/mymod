@@ -192,14 +192,15 @@ CHI_Collaboration_internet_desc: "经过各地§C合作社§!的§Y建立及协�
 CHI_restart_people_commune: "§R人民公社重启§!"
 CHI_restart_people_commune_desc: "§7现代化农业§!的§Y发展方向§!是向§C机械化§!、§7规模化§!、§O合作化§!方向发展的。§g包产到户§!只是靠一时提高粮价来吸引农民，从长远来看§R极不利于§!§!农业发展§!。政府已通过§R重启人民公社§!议案，通过集体化促进§G农业现代化§!。"
 CHI_Collaboration_internet_end: "§C合作社网络§!§Y补充§!§G公有制§!"
-CHI_Collaboration_internet_endt_desc: "通过§7赎买股权§!、§Y收购破产个体户§!、出台§O合资规则!，§7网状合作社系统§!已经§G基本完成§!,成为我国§7公有制经济§!的§C重要组成部分§!。"
+CHI_Collaboration_internet_end_desc: "通过§7赎买股权§!、§Y收购破产个体户§!、出台§O合资规则!，§7网状合作社系统§!已经§G基本完成§!,成为我国§7公有制经济§!的§C重要组成部分§!。"
 CHI_New_people_commune: "§R地区人民公社§!"
 CHI_idea_People_Commune: "§7公社机械化农业§!§Y支撑§!§G公有制§!"
 CHI_idea_People_Commune_desc: "作为§7新兴国家§!，我国的§Y农业机械化率§!一直比不上§B西方发达国家§!。在§R复兴人民公社§!政策执行期间，我们积累了许多经验。通过§R社会主义建设时期§!的经验与§8公有制经济建设实践§!，建立了21世纪的§O“机械化农业公社”§!"
 CHI_People_Commune: "重建人民公社"
 CHI_People_Commune_desc: "早在社会主义建设初期，我国就模仿苏联设立了一批人民公社。在上世纪60年代末期，配合引进的化肥产业，全国人民公社掀起了农业机械化、现代化浪潮，而这些在80年代的私有化浪潮中都化为企业家手中的资金。如今，我们还是得走这条未走完的道路，重新组建人民公社。"
-
-
+CHI_idea_Public_ownership_economy_tt: "§Y每1000万人§!额外收入$$§G0.15B§!"
+CHI_idea_Public_ownership_economy_tte: "$$[?additional_income_CHI_idea_Public_ownership_economy|+3]来自§Y$CHI_idea_Public_ownership_economy$§!\n"
+CHI_idea_Public_ownership_economy: "§t公有制§!§7经济§!§O体系§!§G建成§!"
 
 
 

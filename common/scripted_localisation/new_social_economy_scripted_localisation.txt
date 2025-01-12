@@ -481,14 +481,6 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			NOT = {
-				has_country_flag = CHI_Collaboralize
-			}
-		}
-		localization_key = "NOT_sign"
-	}
-	text = {
-		trigger = {
 			OR = {
 				has_country_flag = CHI_Assign_local_cooperative_party_committee
 				has_country_flag = CHI_Collaboralize_end
@@ -497,6 +489,14 @@ defined_text = {
 			has_completed_focus = CHI_city_mutual_aid
 		}
 		localization_key = "CHI_Assign_local_cooperative_party_committee_goal_achieve" #推进合作化完成
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = CHI_Collaboralize
+			}
+		}
+		localization_key = "NOT_sign"
 	}
 }
 
