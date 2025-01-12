@@ -966,7 +966,6 @@ CHI_new_social_economy_decisions = {
 	remove_effect = {
 		custom_effect_tooltip = Organize_allocation_commune_resources_progress_effect_tt
 		hidden_effect = {
-			set_country_flag = CHI_Organize_allocation_commune_resources_end
 			if = {
 				limit = { NOT = { has_variable = Organize_allocation_commune_resources_progress } }
 				set_variable = { Organize_allocation_commune_resources_progress = 20 }
@@ -977,6 +976,7 @@ CHI_new_social_economy_decisions = {
 			}
 			if = {
 				limit = { check_variable = { Organize_allocation_commune_resources_progress = 100 } }
+				set_country_flag = CHI_Organize_allocation_commune_resources_end
 				every_owned_state = {
 					limit = { is_New_people_commune_state = yes }
 					STATE_oacr = yes 
@@ -1010,7 +1010,6 @@ CHI_new_social_economy_decisions = {
 	remove_effect = {
 		custom_effect_tooltip = Reorganize_communal_party_progress_effect_tt
 		hidden_effect = {
-			set_country_flag = Reorganize_communal_party
 			if = {
 				limit = { NOT = { has_variable = Reorganize_communal_party_progress } }
 				set_variable = { Reorganize_communal_party_progress = 20 }
@@ -1021,6 +1020,7 @@ CHI_new_social_economy_decisions = {
 			}
 			if = {
 				limit = { check_variable = { Reorganize_communal_party_progress = 100 } }
+				set_country_flag = Reorganize_communal_party
 				add_modifier_restart_people_commune = yes
 				every_owned_state = {
 					limit = { is_New_people_commune_state = yes }
