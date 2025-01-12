@@ -482,7 +482,7 @@ defined_text = {
 	text = {
 		trigger = {
 			NOT = {
-				has_completed_focus = CHI_city_mutual_aid
+				has_country_flag = CHI_Collaboralize
 			}
 		}
 		localization_key = "NOT_sign"
@@ -518,7 +518,7 @@ defined_text = {
 	text = {
 		trigger = {
 			NOT = {
-				has_completed_focus = CHI_city_mutual_aid
+				has_country_flag = CHI_Assign_local_cooperative_party_committee
 			}
 		}
 		localization_key = "NOT_sign"

@@ -1297,10 +1297,8 @@ add_power_balance_value = {
 		available = {
 			OR = {
 				custom_trigger_tooltip = {
-					custom_trigger_tooltip = {
-						tooltip = CHI_Efficient_and_economical_trigger_tt
-						has_country_flag = CHI_Collaboralize_end
-					}
+					tooltip = CHI_Efficient_and_economical_trigger_tt
+					has_country_flag = CHI_Collaboralize_end
 				}
 				has_completed_focus = CHI_limit_accumulation
 			}
