@@ -200,7 +200,7 @@ CHI_People_Commune: "重建人民公社"
 CHI_People_Commune_desc: "早在社会主义建设初期，我国就模仿苏联设立了一批人民公社。在上世纪60年代末期，配合引进的化肥产业，全国人民公社掀起了农业机械化、现代化浪潮，而这些在80年代的私有化浪潮中都化为企业家手中的资金。如今，我们还是得走这条未走完的道路，重新组建人民公社。"
 CHI_idea_Public_ownership_economy_tt: "§Y每1000万人§!额外收入$$§G0.15B§!"
 CHI_idea_Public_ownership_economy_tte: "$$[?additional_income_CHI_idea_Public_ownership_economy|+3]来自§Y$CHI_idea_Public_ownership_economy$§!\n"
-CHI_idea_Public_ownership_economy: "§t公有制§!§7经济§!§O体系§!§G建成§!"
+CHI_idea_Public_ownership_economy: "§0公有制§!§7经济§!§O体系§!§G建成§!"
 
 
 

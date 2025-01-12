@@ -81,7 +81,7 @@ ideas = {
 	}
 	CHI_idea_Public_ownership_economy = {
 		allowed_civil_war = { always = yes }		
-		picture = CUB_revived_agro
+		picture = GFX_idea_blr_communist_economy
 		allowed = { original_tag = DSC }
 		on_add = {
 			remove_ideas = CHI_nationalizing_end
