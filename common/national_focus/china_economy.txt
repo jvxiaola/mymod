@@ -1295,14 +1295,14 @@ add_power_balance_value = {
 		cost = 4
 		prerequisite = { focus = CHI_limit_accumulation focus = CHI_city_mutual_aid }
 		available = {
-			custom_trigger_tooltip = {
+			OR = {
 				custom_trigger_tooltip = {
-					tooltip = CHI_Efficient_and_economical_trigger_tt
-					has_country_flag = CHI_Collaboralize_end
+					custom_trigger_tooltip = {
+						tooltip = CHI_Efficient_and_economical_trigger_tt
+						has_country_flag = CHI_Collaboralize_end
+					}
 				}
-				OR = {
-					has_completed_focus = CHI_limit_accumulation
-				}
+				has_completed_focus = CHI_limit_accumulation
 			}
 		}
 
