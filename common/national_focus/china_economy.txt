@@ -1147,7 +1147,7 @@ add_power_balance_value = {
 	}
 	shared_focus = {		
 	id = CHI_selfemployed_problem
-		icon = sustainable_development
+		icon = dutch_house
 
 		x = 0
 		y = 2
@@ -1342,7 +1342,7 @@ add_power_balance_value = {
 	}
 	shared_focus = {		
 	id = CHI_agricultural_issues
-		icon = agriculture
+		icon = farming
 
 		x = 4
 		y = 2
@@ -1366,7 +1366,7 @@ add_power_balance_value = {
 
 	shared_focus = {
 	id = CHI_Negative_contract_system
-		icon = ChinaHouse
+		icon = focus_generic_agricultural_subsidies
 		x = 0
 		y = 1
 		relative_position_id = CHI_agricultural_issues
@@ -1392,7 +1392,7 @@ add_power_balance_value = {
 	}
 	shared_focus = {		
 		id = CHI_People_Commune
-		icon = anarchist_economy
+		icon = generic_embrace_agrarian_society
 		x = 1
 		y = 2
 		relative_position_id = CHI_agricultural_issues
@@ -1442,7 +1442,7 @@ shared_focus = {
 
 	shared_focus = {		
 		id = CHI_Revitalize_the_countryside
-		icon = agriculture2
+		icon = goal_JAP_agrarian_reform
 		x = 0
 		y = 3
 		relative_position_id = CHI_agricultural_issues
