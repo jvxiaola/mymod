@@ -1283,7 +1283,7 @@ add_power_balance_value = {
 
 	shared_focus = {
 	id = CHI_Efficient_and_economical
-		icon = worker_paradise
+		icon = economic_prosperity
 		x = 0
 		y = 3
 		relative_position_id = CHI_selfemployed_problem
@@ -1504,7 +1504,7 @@ shared_focus = {
 
 	shared_focus = {		
 		id = CHI_Chinese_Industrial_Explosion
-		icon = Generic_Workers_Democracy
+		icon = Socialist_Workaholics
 
 		x = 0
 		y = 6
@@ -1521,6 +1521,7 @@ shared_focus = {
 			CHI_ruin_economy_remove = yes
 			if = {
 				limit = { tag = DSC }
+				custom_effect_tooltip = DSC_Chinese_Industrial_Explosion21_tt
 					add_ideas = CHI_idea_Public_ownership_economy
 			}
 			if = {
@@ -1533,7 +1534,10 @@ shared_focus = {
 				}
 				add_ideas = CHI_new_socialist_economy
 			}
-			custom_effect_tooltip = CHI_Chinese_Industrial_Explosion21_tt
+			if = {
+				limit = { NOT = { tag = DSC } }
+				custom_effect_tooltip = CHI_Chinese_Industrial_Explosion21_tt
+			}
 			mark_focus_tree_layout_dirty = yes
 			hidden_effect = {
 				clear_variable = Reorganize_communal_party_progress
