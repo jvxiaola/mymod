@@ -338,28 +338,23 @@ value = 0.05
 		}}
 		}
 		
-								focus = {
+focus = {
 		id = CHI_china_wangluo
 		icon = coins
 		x = 2
 		y = 5
 		cost = 5
 		relative_position_id = CHI_zhengzhigaige	
-mutually_exclusive = { 
-	
-	focus = CHI_zuzhiguoqigaige
-	focus = CHI_gongpindejzhj 
-
-
-}
-				prerequisite = {
+		mutually_exclusive = { 
+			focus = CHI_zuzhiguoqigaige
+			focus = CHI_gongpindejzhj 
+		}
+		prerequisite = {
 			focus = CHI_condemn_United_States
 			focus = CHI_Support_the_War_on_Terror
-			}
-
-					bypass = {
-
 		}
+
+		bypass = {	}
 	ai_will_do = {
 			factor = 50
 		}
@@ -367,30 +362,30 @@ mutually_exclusive = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {set_temp_variable = { temp_CHI_people_support = 0.1 }
-change_CHI_people_support = yes
+			change_CHI_people_support = yes
 			custom_effect_tooltip = influence_the_party_line_tt
-add_5_western_liberalism = yes
-add_5_emerging_reactionary = yes
-add_to_variable = {
-var = CPC_Right
-value = 0.07
-}
-add_to_variable = {
-var = CPC_Dengist
-value = 0.03
-}
-add_to_variable = {
-var = CPC_Left
-value = -0.1
-}
-four_random_industrial_complex = yes
-remove_ideas = CHI_big_layoff1
-add_timed_idea = {
-    idea = CHI_big_layoff2
-    days = 365
-}		
+			add_5_western_liberalism = yes
+			add_5_emerging_reactionary = yes
+			add_to_variable = {
+				var = CPC_Right
+				value = 0.07
+				}
+			add_to_variable = {
+				var = CPC_Dengist
+				value = 0.03
+				}		
+			add_to_variable = {
+			var = CPC_Left
+			value = -0.1
+			}
+			four_random_industrial_complex = yes
+			remove_ideas = CHI_big_layoff1
+			add_timed_idea = {
+    			idea = CHI_big_layoff2
+    			days = 365
+			}		
 		}
-		}
+}
 focus = {
 		id = CHI_gongpindejzhj
 		icon = money
