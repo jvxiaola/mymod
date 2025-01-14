@@ -923,7 +923,7 @@ CHI_add_Organize_state_enterprises_modifier = {
   }
 
   STATE_ADD_State_Collaboration = {
-    set_variable = { sc_spsic = 0.05 }  set_variable = { sc_spsrf = 0.05 } set_variable = { sc_lbs = 0.05 } 
+    set_variable = { sc_spsic = 0.05 }  set_variable = { sc_spsrf = 0.05 } set_variable = { sc_lbs = 0.02 } 
     set_variable = { sc_spsbf = 0 }      set_variable = { sc_spg = 0.05 }       set_variable = { sc_ls = 0.05 } 
     set_variable = { sc_regm = 0.05 } 
     add_dynamic_modifier = { modifier = State_Collaboration }
@@ -951,10 +951,10 @@ CHI_add_Organize_state_enterprises_modifier = {
     }
   }
   STATE_Assign_local_cooperative_party_committee = {
-    set_temp_variable = { sc_spsrf_add = 0.05 } set_temp_variable = { sc_lbs_add = 0.02 } set_temp_variable = { sc_spg_add = 0.02 } 
+    set_temp_variable = { sc_spsrf_add = 0.05 } set_temp_variable = { sc_spg_add = 0.02 } 
     set_temp_variable = { sc_spsbf_add = 0.05 }
 		custom_effect_tooltip = STATE_Assign_local_cooperative_party_committee_effect_tt 
-		add_to_variable = { sc_spsrf = sc_spsrf_add } add_to_variable = { sc_lbs = sc_lbs_add } add_to_variable = { sc_spg = sc_spg_add } 
+		add_to_variable = { sc_spsrf = sc_spsrf_add } add_to_variable = { sc_spg = sc_spg_add } 
     add_to_variable = { sc_spsbf = sc_spsbf_add }
   }
   CHI_Assign_local_cooperative_party_committee_effect = {
@@ -990,7 +990,7 @@ CHI_add_Organize_state_enterprises_modifier = {
   }
 #地区修正：公社
 STATE_add_modifier_New_people_commune = {
-    set_variable = { Npc_lrf = 0.05 } set_variable = { Npc_ls = 0 } set_variable = { Npc_lor = 0 } 
+    set_variable = { Npc_lrf = 0 } set_variable = { Npc_ls = 0 } set_variable = { Npc_lor = 0 } 
     set_variable = { Npc_ps = 0 } set_variable = { Npc_rfpg = 0 }
     add_dynamic_modifier = { modifier = CHI_New_people_commune }
 }
@@ -1008,9 +1008,9 @@ STATE_RGPP = {
   add_to_variable = { Npc_ps = Npc_ps_add } add_to_variable = { Npc_rfpg = Npc_rfpg_add }
 }
 STATE_PAS = {
-  set_temp_variable = { Npc_lrf_add = 0.05 } set_temp_variable = { Npc_ls_add = 0.05 } set_temp_variable = { Npc_ps_add = 0.05 }
+  set_temp_variable = { Npc_ls_add = 0.05 } set_temp_variable = { Npc_ps_add = 0.05 }
   custom_effect_tooltip = STATE_PAS_effect_tt 
-  add_to_variable = { Npc_lrf = Npc_lrf_add } add_to_variable = { Npc_ls = Npc_ls_add } add_to_variable = { Npc_ps = Npc_ps_add } 
+  add_to_variable = { Npc_ls = Npc_ls_add } add_to_variable = { Npc_ps = Npc_ps_add } 
 }
 STATE_OLMAT = {
   set_temp_variable = { Npc_rfpg_add = 0.05 } set_temp_variable = { Npc_ls_add = 0.05 } set_temp_variable = { Npc_ps_add = 0.10 }

@@ -805,9 +805,9 @@ CHI_new_social_economy_decisions = {
 	remove_effect = {
 		every_owned_state = {
 			limit = { has_dynamic_modifier = { modifier = State_Collaboration } }
-			set_temp_variable = { sc_spsic_add = 0.05 } set_temp_variable = { sc_lbs_add = 0.02 } set_temp_variable = { sc_spg_add = 0.02 } 
+			set_temp_variable = { sc_spsic_add = 0.05 }  set_temp_variable = { sc_spg_add = 0.02 } 
 			custom_effect_tooltip = Launch_cooperation_initiatives_at_forums_effect_tt 
-			add_to_variable = { sc_spsic = sc_spsic_add } add_to_variable = { sc_lbs = sc_lbs_add } add_to_variable = { sc_spg = sc_spg_add } 
+			add_to_variable = { sc_spsic = sc_spsic_add } add_to_variable = { sc_spg = sc_spg_add } 
 		}
 		set_country_flag = Launch_cooperation_initiatives_at_forums
 	}
