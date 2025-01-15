@@ -1382,6 +1382,14 @@ add_power_balance_value = {
 				tag = DSC
 			}
 		}
+		offset = {
+			x = 9
+			y = -2
+			trigger = {
+				tag = DSC
+				has_completed_focus = CHI_Chinese_Industrial_Explosion
+			}
+		}
 		allow_branch = {
 			OR = {
 				has_country_flag = xggm
@@ -1529,14 +1537,19 @@ shared_focus = {
 				increase_economic_growth = yes
 			}
 			if = {
-				limit = { has_idea = CHI_Stateowned_enterprise_monopoly NOT = { tag = DSC } }
-					add_ideas = a_new_leap_forward
-			}
-			else_if = {
 				limit = {
 					has_idea = CHI_worker_cooperative NOT = { tag = DSC }
 				}
 				add_ideas = CHI_new_socialist_economy
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = xggm }
+				}
+				set_power_balance = {
+					id = economic_developing_direction_balance
+					set_value = 0.15
+				}
 			}
 			if = {
 				limit = { NOT = { tag = DSC } }
@@ -1644,9 +1657,6 @@ shared_focus = {
 		cost = 5
 
 		prerequisite = { focus = CHI_Chinese_High_Speed_Rail_System }
-		mutually_exclusive = { focus = CHI_Deutsche_Bahn }
-		mutually_exclusive = { focus = CHI_Union_Pacific }
-		mutually_exclusive = { focus = CHI_Japan_Railway_Group }
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
@@ -1695,9 +1705,6 @@ shared_focus = {
 		cost = 5
 
 		prerequisite = { focus = CHI_Chinese_High_Speed_Rail_System }
-		mutually_exclusive = { focus = CHI_Korail }
-		mutually_exclusive = { focus = CHI_Union_Pacific }
-		mutually_exclusive = { focus = CHI_Japan_Railway_Group }
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
@@ -1746,9 +1753,6 @@ shared_focus = {
 		cost = 5
 
 		prerequisite = { focus = CHI_Chinese_High_Speed_Rail_System }
-		mutually_exclusive = { focus = CHI_Korail }
-		mutually_exclusive = { focus = CHI_Deutsche_Bahn }
-		mutually_exclusive = { focus = CHI_Japan_Railway_Group }
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
@@ -1797,9 +1801,6 @@ shared_focus = {
 		cost = 5
 
 		prerequisite = { focus = CHI_Chinese_High_Speed_Rail_System }
-		mutually_exclusive = { focus = CHI_Korail }
-		mutually_exclusive = { focus = CHI_Deutsche_Bahn }
-		mutually_exclusive = { focus = CHI_Union_Pacific }
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
@@ -3754,7 +3755,6 @@ shared_focus = {
 		cost = 5
 
 		prerequisite = { focus = CHI_Renewable_Strategy }
-		mutually_exclusive = { focus = CHI_Nuclear_Boom }
 		mutually_exclusive = { focus = CHI_Cheap_Coal_Supremacy }
 
 		search_filters = { FOCUS_FILTER_STABILITY }
@@ -3778,9 +3778,9 @@ shared_focus = {
 		id = CHI_Export_Photovoltaic_Systems
 		icon = money
 
-		x = -2
-		y = 2
-		relative_position_id = CHI_Renewable_Strategy
+		x = 0
+		y = 1
+		relative_position_id = CHI_Golden_Sun_Initiative
 
 		cost = 5
 
@@ -3826,14 +3826,13 @@ shared_focus = {
 		id = CHI_Nuclear_Boom
 		icon = nuclear_science
 
-		x = 0
+		x = 2
 		y = 1
 		relative_position_id = CHI_Renewable_Strategy
 
 		cost = 5
 
 		prerequisite = { focus = CHI_Renewable_Strategy }
-		mutually_exclusive = { focus = CHI_Golden_Sun_Initiative }
 		mutually_exclusive = { focus = CHI_Cheap_Coal_Supremacy }
 
 		search_filters = { FOCUS_FILTER_STABILITY }
@@ -3857,8 +3856,8 @@ shared_focus = {
 		icon = prc_electricity
 
 		x = 0
-		y = 2
-		relative_position_id = CHI_Renewable_Strategy
+		y = 1
+		relative_position_id = CHI_Nuclear_Boom
 
 		cost = 5
 
@@ -3881,7 +3880,7 @@ shared_focus = {
 		id = CHI_Cheap_Coal_Supremacy
 		icon = prc_coal
 
-		x = 2
+		x = 0
 		y = 1
 		relative_position_id = CHI_Renewable_Strategy
 
@@ -3907,7 +3906,7 @@ shared_focus = {
 		id = CHI_Mass_Coal_Oil_Conversion_Project
 		icon = oil_trade
 
-		x = 2
+		x = 0
 		y = 2
 		relative_position_id = CHI_Renewable_Strategy
 
@@ -5753,7 +5752,6 @@ is_subject_of = CHI
 		cost = 5
 
 		prerequisite = { focus = CHI_Automotive_Industry }
-		mutually_exclusive = { focus = CHI_Bid_for_Foreign_Investments }
 
 		search_filters = { FOCUS_FILTER_INFLUENCE FOCUS_FILTER_INTERNAL_FACTION }
 		completion_reward = {
@@ -5868,7 +5866,6 @@ is_subject_of = CHI
 		cost = 5
 
 		prerequisite = { focus = CHI_Automotive_Industry }
-		mutually_exclusive = { focus = CHI_Domestic_Development }
 
 		available = {
 			has_war = no
@@ -5897,9 +5894,6 @@ is_subject_of = CHI
 		cost = 5
 
 		prerequisite = { focus = CHI_Bid_for_Foreign_Investments }
-		mutually_exclusive = { focus = CHI_Volkswagen }
-		mutually_exclusive = { focus = CHI_General_Motors }
-		mutually_exclusive = { focus = CHI_Toyota }
 
 		available = {
 			has_war = no
@@ -5943,9 +5937,6 @@ is_subject_of = CHI
 		cost = 5
 
 		prerequisite = { focus = CHI_Bid_for_Foreign_Investments }
-		mutually_exclusive = { focus = CHI_Hyundai }
-		mutually_exclusive = { focus = CHI_General_Motors }
-		mutually_exclusive = { focus = CHI_Toyota }
 
 		available = {
 			has_war = no
@@ -5989,9 +5980,6 @@ is_subject_of = CHI
 		cost = 5
 
 		prerequisite = { focus = CHI_Bid_for_Foreign_Investments }
-		mutually_exclusive = { focus = CHI_Hyundai }
-		mutually_exclusive = { focus = CHI_General_Motors }
-		mutually_exclusive = { focus = CHI_Volkswagen }
 
 		available = {
 			has_war = no
@@ -6038,9 +6026,6 @@ is_subject_of = CHI
 		cost = 5
 
 		prerequisite = { focus = CHI_Bid_for_Foreign_Investments }
-		mutually_exclusive = { focus = CHI_Hyundai }
-		mutually_exclusive = { focus = CHI_Toyota }
-		mutually_exclusive = { focus = CHI_Volkswagen }
 
 		available = {
 			has_war = no
@@ -6611,7 +6596,16 @@ is_subject_of = CHI
 		relative_position_id = CHI_Strategic_Industries
 
 		cost = 5
-
+		offset = {
+			x = 1
+			trigger = {
+					OR = { 
+						has_country_flag = xggm
+						tag = DSC
+						has_country_flag = laozuo
+					}
+			}
+		}
 		prerequisite = { focus = CHI_Aerospace_Industry }
 		mutually_exclusive = { focus = CHI_Private_Endeavors }
 
@@ -6654,9 +6648,9 @@ is_subject_of = CHI
 		id = CHI_State_Sponsored_Space_Endeavors
 		icon = international_space_station
 
-		x = 18
-		y = 3
-		relative_position_id = CHI_Strategic_Industries
+		x = 0
+		y = 1
+		relative_position_id = CHI_Bolster_the_CNSA
 
 		cost = 5
 
@@ -6709,7 +6703,13 @@ is_subject_of = CHI
 		relative_position_id = CHI_Strategic_Industries
 
 		cost = 5
-
+		allow_branch = {
+			NOT = {
+				has_country_flag = xggm
+				tag = DSC
+				has_country_flag = laozuo
+			}
+		}
 		prerequisite = { focus = CHI_Aerospace_Industry }
 		mutually_exclusive = { focus = CHI_Bolster_the_CNSA }
 
@@ -6868,14 +6868,13 @@ is_subject_of = CHI
 		id = CHI_Develop_Stealth_Fighters
 		icon = modern_fighter
 
-		x = 22
-		y = 4
-		relative_position_id = CHI_Strategic_Industries
+		x = 0
+		y = 1
+		relative_position_id = CHI_Aircraft_Improvements
 
 		cost = 5
 
-		prerequisite = { focus = CHI_Aircraft_Improvements }
-		prerequisite = { focus = CHI_Chinese_Tech_Dominance }
+		prerequisite = { focus = CHI_Aircraft_Improvements focus = CHI_Chinese_Tech_Dominance }
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
@@ -6932,7 +6931,17 @@ is_subject_of = CHI
 		x = 26
 		y = 1
 		relative_position_id = CHI_Strategic_Industries
-
+		allow_branch = {
+			NOT = {
+				has_country_flag = xggm
+				tag = DSC
+				has_country_flag = laozuo
+			}
+			OR = {	
+				has_completed_focus = CHI_paving_the_way_for_successors
+				has_country_flag = CPC_Rehabilitation_of_Zhao_Ziyang
+			}
+		}
 		cost = 5
 
 		prerequisite = { focus = CHI_Strategic_Industries }

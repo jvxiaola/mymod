@@ -212,7 +212,17 @@ CHI_Revitalize_the_countryside_desc: "新人民公社的建立为农村注入了
 CHI_Chinese_Industrial_Explosion: "千禧黎明"
 CHI_Chinese_Industrial_Explosion21_desc: "§B福山说历史已经终结，终结于资本主义的自由市场。§!如果新时代就沿着旧世界继续发展下去，那么可能看起来就像他所言。§R可历史终究会前进，就算是花一万年的时间，历史也终有一天会突破重重迷雾。§!或许人们还不知道他们所做的一切都有什么意义，§G但终有一天，人民的力量会在新千年焕发新春。§!在此之前，我们还需改善公有制经济体系。§7进步不会停止，但能取得人民支持的进步才能成功。§!"
 
-
+#bop
+economic_developing_direction_balance: "§Y经济发展方向平衡§!"
+centralization_side: "§R经济集中化§!"
+liberalization_side: "§B经济自由化§!"
+Centrally_planned_economy: "§R中央集中计划经济§!"
+local_centrally_planned_economy2: "§Y计划经济：§!§R偏向中央集中计划§!"
+local_centrally_planned_economy1: "§Y计划经济：§!§O偏向地方自主计划§!"
+Local_planned_economy: "§O偏向地方自主计划经济§!"
+Local_planned_bird_cage_economy1: "§C地方经济：§!§O偏向地方计划经济§!"
+Local_planned_bird_cage_economy2: "§C地方经济：§!§2偏向鸟笼经济§!"
+bird_cage_economy: "§2鸟笼经济§!"
 
 
 
