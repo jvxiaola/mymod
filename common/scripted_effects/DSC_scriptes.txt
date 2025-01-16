@@ -173,11 +173,6 @@ change_DSC_Socialist_Construction_dynamic35 = {
 custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic35_tt
 #工厂产出
 }
-change_DSC_Socialist_Construction_dynamic36 = {
-		add_to_variable = { DSC_Socialist_Construction_dynamic36 = temp_DSC_Socialist_Construction_dynamic }
-custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic36_tt
-#贫富分化
-}
 change_DSC_people_support = {
 		add_to_variable = { DSC_people_support = temp_DSC_people_support }
 clamp_variable  = {

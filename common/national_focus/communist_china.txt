@@ -11010,31 +11010,23 @@ add_idea=CHI_zzgs2
 			icon = Believe_in_market_economy
 			x = 0
 			y = 5
-	prerequisite = {focus = PRC_Implementing_the_Anshan_Constitution }
-	relative_position_id = PRC_Chairman_Mao_Yuanxin
-	
-			cost = 5
-	
-			ai_will_do = {
-				factor = 10
-			}
-	
-			available = {
-
-			}
-	
-			bypass = {
-			}
-	
+			prerequisite = { focus = PRC_Implementing_the_Anshan_Constitution }
+			relative_position_id = PRC_Chairman_Mao_Yuanxin
+			cost = 3
+			ai_will_do = { factor = 10 }
+			available = {}
+			bypass = {}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
-	
 			completion_reward = {
-add_stability=0.05
-	
+				add_stability = 0.05
+				custom_effect_tooltip = DSC_allotment_economy_effect_tt
+				hidden_effect = {
+					set_country_flag = CHI_allotment_end
+				}
 			}
-			}			
+		}			
 	focus = {
 			id = PRC_Spiritual_Atomic_Bomb
 			icon = Purdue_sentient_beings

@@ -6,6 +6,7 @@ CHI_new_social_economy_decisions = {
 			tag = DSC
 			tag = HkG
 		}
+		NOT = { has_idea = CHI_idea_Public_ownership_economy }
 	}
 	visible_when_empty = yes
 	icon = GFX_decision_generic_china
@@ -21,6 +22,8 @@ CHI_new_social_economy_decisions = {
 				original_tag = HKG
 				}
 			ROOT = { has_completed_focus = CHI_get_organized }
+			NOT = { has_idea = CHI_Collaboration_internet_end }
+			NOT = { has_dynamic_modifier = { modifier = CHI_Collaboration_internet } }
 		}
 	}
 
@@ -35,6 +38,25 @@ CHI_new_social_economy_decisions = {
 			has_completed_focus = CHI_Socialist_Reconstruction
 		}
 		NOT = { has_completed_focus = CHI_Chinese_Industrial_Explosion }
+	}
+}
+
+China_edd_category = {
+	allowed = { 
+		OR = { 
+			original_tag = CHI 
+			tag = DSC
+			tag = HkG
+	}
+}
+		icon = GFX_decision_CUB_train_chi
+
+	visible = {
+		OR = { 
+			original_tag = CHI 
+			tag = DSC
+			tag = HkG
+		}
 	}
 }
 

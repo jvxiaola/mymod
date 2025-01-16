@@ -850,7 +850,7 @@
 			}
 		}
 		offset = {
-			x = -68
+			x = -71
 			y = -5
 			trigger = {
 			tag = DSC

@@ -151,9 +151,7 @@ is_in_array = { ruling_party = 4 }
 	defined_text = {
 	name = DSC_people_support_dynamic_name
 	text = {
-	
 	trigger = {
-
 DSC = {
 
 

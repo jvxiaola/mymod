@@ -212,17 +212,30 @@ CHI_Revitalize_the_countryside_desc: "新人民公社的建立为农村注入了
 CHI_Chinese_Industrial_Explosion: "千禧黎明"
 CHI_Chinese_Industrial_Explosion21_desc: "§B福山说历史已经终结，终结于资本主义的自由市场。§!如果新时代就沿着旧世界继续发展下去，那么可能看起来就像他所言。§R可历史终究会前进，就算是花一万年的时间，历史也终有一天会突破重重迷雾。§!或许人们还不知道他们所做的一切都有什么意义，§G但终有一天，人民的力量会在新千年焕发新春。§!在此之前，我们还需改善公有制经济体系。§7进步不会停止，但能取得人民支持的进步才能成功。§!"
 
-#bop
+#bop with decisions
 economic_developing_direction_balance: "§Y经济发展方向平衡§!"
 centralization_side: "§R经济集中化§!"
 liberalization_side: "§B经济自由化§!"
 Centrally_planned_economy: "§R中央集中计划经济§!"
 local_centrally_planned_economy2: "§Y计划经济：§!§R偏向中央集中计划§!"
 local_centrally_planned_economy1: "§Y计划经济：§!§O偏向地方自主计划§!"
-Local_planned_economy: "§O偏向地方自主计划经济§!"
+Local_planned_economy: "§O地方自主计划经济§!"
 Local_planned_bird_cage_economy1: "§C地方经济：§!§O偏向地方计划经济§!"
 Local_planned_bird_cage_economy2: "§C地方经济：§!§2偏向鸟笼经济§!"
 bird_cage_economy: "§2鸟笼经济§!"
+Acquisition_Cooperative_Equity: "§Y收购合作社股份§!"
+Acquisition_Cooperative_Equity_desc: "§Y收购合作社股份§!是公有制经济建设时期由中央提出的一项过渡性政策，通过收购股份形式推进国有化，依此加大政府管控力度，来推进员工福利政策的改革与落实。"
+Sell_cooperative_equity: "§B出售合作社股份§!"
+Sell_cooperative_equity_desc: "过多的国家股份导致合作社工作过于僵化，§B出售合作社股份§!能使合作社的工作效率显著提升。"
+Combating_Smuggling: "§O打击走私§!"
+Combating_Smuggling_desc: "在目前我国经济发展还未达到社会主义发达阶段的当下，仍有相当多违法走私行为，它们的目标客户往往是高官，走私一些奢侈品。§O打击走私§!自然成为了一项日常工作。"
+CHI_allotment_trigger_tt: "§Y已完成§!国策：重建配给制"
+DSC_allotment_economy_effect_tt: "将§G解锁更多§!§Y经济发展方向平衡§!相关决议。"
+Organize_exports: "§B开放部分出口§!"
+Organize_exports_desc: "闭关锁国早已是过去式，§B开放部分合作社的出口业务§!，这对发展生产力是有好处的，要学习外国，同时提升国际形象。"
+IDMTW_effect_TT: "当§Y经济发展方向§!不在§O地方自主计划经济§!区间内时，将会向§O地方自主计划经济§!§C方向§!移动§G15%§!"
+Increase_distribute_materials_to_workers: "§G提高劳动者物资报酬§!"
+Increase_distribute_materials_to_workers_desc: "我们的国家是脱胎于劳动者的，这个国家的高楼大厦理应归于劳动者，既然如此，§G提高劳动者物资报酬§!又有什么不对呢？"
 
 
 

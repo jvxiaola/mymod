@@ -102,7 +102,6 @@ foreign_influence_defense_modifier= DSC_Socialist_Construction_dynamic32
 monthly_population= DSC_Socialist_Construction_dynamic33
 research_speed_factor = DSC_Socialist_Construction_dynamic34
 industrial_capacity_factory = DSC_Socialist_Construction_dynamic35
-power_balance_weekly = DSC_Socialist_Construction_dynamic36
 	}
 	
 Shanghai_Cooperation_Organization_dynamic = {
