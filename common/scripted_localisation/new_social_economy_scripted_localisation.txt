@@ -511,13 +511,9 @@ defined_text = {
 	name = CHI_ostlc_decisions_goal
 	text = {
 		trigger = {
-			OR = {
-				ROOT = { check_variable = { CI_tg = 0 } }
-				AND = {
-					has_country_flag = CHI_Assign_local_cooperative_party_committee
-					NOT = { has_idea = CHI_Collaboration_internet_end }
-				}
-			}
+			ROOT = { check_variable = { CI_tg = 0 } }
+			has_country_flag = CHI_Assign_local_cooperative_party_committee
+			NOT = { has_idea = CHI_Collaboration_internet_end }
 			has_completed_focus = CHI_city_mutual_aid
 		}
 		localization_key = "CHI_ostlc_goal" #显示组织技能培训与全国劳动竞赛国策
@@ -573,7 +569,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			NOT = { has_country_flag = CHI_Restart_constructing_intensive_agriculture_end }
+			NOT = { has_country_flag = CHI_Restart_constructing_intensive_agriculture_end has_idea = CHI_idea_People_Commune }
 		}
 		localization_key = "NOT_sign"
 	}
@@ -601,7 +597,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			NOT = { has_country_flag = CHI_Restart_constructing_intensive_agriculture_end }
+			NOT = { has_country_flag = CHI_Restart_constructing_intensive_agriculture_end has_idea = CHI_idea_People_Commune }
 		}
 		localization_key = "NOT_sign"
 	}
@@ -630,7 +626,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			NOT = { OR = { has_country_flag = CHI_Organize_allocation_commune_resources_end has_country_flag = Reorganize_communal_party } }
+			NOT = { OR = { has_country_flag = CHI_Organize_allocation_commune_resources_end has_country_flag = Reorganize_communal_party } has_idea = CHI_idea_People_Commune }
 		}
 		localization_key = "NOT_sign"
 	}
@@ -659,7 +655,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			NOT = { OR = { has_country_flag = CHI_Organize_allocation_commune_resources_end has_country_flag = Reorganize_communal_party } }
+			NOT = { OR = { has_country_flag = CHI_Organize_allocation_commune_resources_end has_country_flag = Reorganize_communal_party } has_idea = CHI_idea_People_Commune }
 		}
 		localization_key = "NOT_sign"
 	}
@@ -688,7 +684,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			NOT = { OR = { has_country_flag = Raise_grainal_purchase_price has_country_flag = Purchase_agricultural_supplies } }
+			NOT = { OR = { has_country_flag = Raise_grainal_purchase_price has_country_flag = Purchase_agricultural_supplies } has_idea = CHI_idea_People_Commune }
 		}
 		localization_key = "NOT_sign"
 	}

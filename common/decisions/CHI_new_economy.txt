@@ -213,7 +213,7 @@ CHI_new_social_economy_decisions = {
 				if = {
 					limit = { check_variable = { Promote_nationalization_strategic_industries_progress = 100 } }
 					set_temp_variable = { COSEM_gbs_add = 0.05 } set_temp_variable = { COSEM_lrs_add = 0.10 } set_temp_variable = { COSEM_gm_add = 0.05 } 
-					set_temp_variable = { COSEM_egm_add = 0.05 } set_temp_variable = { COSEM_icf_add = 0.05 } set_temp_variable = { COSEM_iwr_add = 0.01 } 
+					set_temp_variable = { COSEM_egm_add = 0.025 } set_temp_variable = { COSEM_icf_add = 0.05 } set_temp_variable = { COSEM_iwr_add = 0.01 } 
 					set_temp_variable = { COSEM_twm_add = 0.01 } 
 					add_to_variable = { COSEM_gbs = COSEM_gbs_add } add_to_variable = { COSEM_lrs = COSEM_lrs_add } add_to_variable = { COSEM_gm = COSEM_gm_add } 
 					add_to_variable = { COSEM_egm = COSEM_egm_add } add_to_variable = { COSEM_icf = COSEM_icf_add } add_to_variable = { COSEM_iwr = COSEM_iwr_add } 
@@ -265,7 +265,7 @@ CHI_new_social_economy_decisions = {
 				if = {
 					limit = { check_variable = { Nationalize_construction_and_chemical_industries_progress = 100 } }
 					set_temp_variable = { COSEM_gbs_add = 0.05 } set_temp_variable = { COSEM_lrs_add = 0.05 } set_temp_variable = { COSEM_gm_add = 0.05 } 
-					set_temp_variable = { COSEM_sb_add = 0.20 } set_temp_variable = { COSEM_egm_add = 0.05 } set_temp_variable = { COSEM_otsb_add = 0.05 } 
+					set_temp_variable = { COSEM_sb_add = 0.20 } set_temp_variable = { COSEM_egm_add = 0.025 } set_temp_variable = { COSEM_otsb_add = 0.05 } 
 					set_temp_variable = { COSEM_iwr_add = 0.01 } set_temp_variable = { COSEM_twm_add = 0.01 } 
 					add_to_variable = { COSEM_gbs = COSEM_gbs_add } add_to_variable = { COSEM_lrs = COSEM_lrs_add } add_to_variable = { COSEM_gm = COSEM_gm_add } 
 					add_to_variable = { COSEM_sb = COSEM_sb_add } add_to_variable = { COSEM_egm = COSEM_egm_add } add_to_variable = { COSEM_otsb = COSEM_otsb_add }
@@ -317,7 +317,7 @@ CHI_new_social_economy_decisions = {
 			if = {
 				limit = { check_variable = { Partial_nationalize_light_manufacturing_industry_progress = 100 } }
 				set_temp_variable = { COSEM_add = 0.05 } set_temp_variable = { COSEM_iwr_add = 0.01 } set_temp_variable = { COSEM_twm_add = 0.01 } 
-				add_to_variable = { COSEM_gbs = COSEM_add } add_to_variable = { COSEM_gm = COSEM_add } add_to_variable = { COSEM_egm = COSEM_add } 
+				add_to_variable = { COSEM_gbs = COSEM_add } add_to_variable = { COSEM_gm = COSEM_add } 
 				add_to_variable = { COSEM_otsb = COSEM_add } add_to_variable = { COSEM_icf = COSEM_add } add_to_variable = { COSEM_iwr = COSEM_iwr_add } 
 				add_to_variable = { COSEM_twm = COSEM_twm_add } 
 				set_country_flag = Partial_nationalize_light_manufacturing_industry_end

@@ -923,7 +923,7 @@ CHI_add_Organize_state_enterprises_modifier = {
   }
 
   STATE_ADD_State_Collaboration = {
-    set_variable = { sc_spsic = 0.05 }  set_variable = { sc_spsrf = 0.05 } set_variable = { sc_lbs = 0.02 } 
+    set_variable = { sc_spsic = 0 }  set_variable = { sc_spsrf = 0.05 } set_variable = { sc_lbs = 0 } 
     set_variable = { sc_spsbf = 0 }      set_variable = { sc_spg = 0.05 }       set_variable = { sc_ls = 0.05 } 
     set_variable = { sc_regm = 0.05 } 
     add_dynamic_modifier = { modifier = State_Collaboration }
@@ -966,7 +966,7 @@ CHI_add_Organize_state_enterprises_modifier = {
   }
 
   STATE_ostlc = {
-    set_temp_variable = { sc_ls_add = 0.05 } set_temp_variable = { sc_lbs_add = 0.05 } set_temp_variable = { sc_spg_add = 0.05 } 
+    set_temp_variable = { sc_ls_add = 0.05 } set_temp_variable = { sc_lbs_add = 0.02 } set_temp_variable = { sc_spg_add = 0.05 } 
     set_temp_variable = { sc_regm_add = 0.05 }
 		custom_effect_tooltip = STATE_ostlc_effect_tt 
 		add_to_variable = { sc_ls = sc_ls_add } add_to_variable = { sc_lbs = sc_lbs_add } add_to_variable = { sc_spg = sc_spg_add } 
@@ -1043,9 +1043,9 @@ Purchase_agricultural_supplies_effect = {
 }
 Organize_learning_mechanized_agricultural_tools_effect = {
   ROOT = {
-  set_temp_variable = { rpc_psof_add = 0.05 } set_temp_variable = { rpc_ppc_add = -0.05 }  set_temp_variable = { rpc_dw_p_add = 0.05 }
+  set_temp_variable = { rpc_ppc_add = -0.05 }  set_temp_variable = { rpc_dw_p_add = 0.05 }
   custom_effect_tooltip = Organize_learning_mechanized_agricultural_tools_effect_tt 
-  add_to_variable = { rpc_psof = rpc_psof_add } add_to_variable = { rpc_ppc = rpc_ppc_add } add_to_variable = { rpc_dw_p = rpc_dw_p_add }
+   add_to_variable = { rpc_ppc = rpc_ppc_add } add_to_variable = { rpc_dw_p = rpc_dw_p_add }
   }
 }
 CHI_remove_modifier_restart_people_commune = {
