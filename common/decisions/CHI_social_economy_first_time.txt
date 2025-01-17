@@ -1,6 +1,6 @@
 China_edd_category = {
 	Acquisition_Cooperative_Equity = {
-		icon = GFX_decision_minotor_button
+		icon = GFX_decision_political_discourse
 		visible = {
 			has_idea = CHI_idea_Public_ownership_economy
 		}
@@ -33,7 +33,7 @@ China_edd_category = {
 	}
 
 	Sell_cooperative_equity = {
-		icon = GFX_decision_hol_drain_water_lines
+		icon = GFX_decision_pmr_cobasna_button
 		visible = {
 			has_idea = CHI_idea_Public_ownership_economy
 		}
@@ -61,7 +61,7 @@ China_edd_category = {
 	}
 
 	Combating_Smuggling = {
-		icon = GFX_decision_hol_drain_water_lines
+		icon = GFX_decision_generic_brainwash
 		visible = {
 			has_idea = CHI_idea_Public_ownership_economy
 			has_country_flag = CHI_allotment_end
@@ -94,7 +94,7 @@ China_edd_category = {
 	}
 
 	Organize_exports = {
-		icon = GFX_decision_hol_drain_water_lines
+		icon = GFX_decision_generic_decision
 		visible = {
 			has_idea = CHI_idea_Public_ownership_economy
 			has_country_flag = CHI_allotment_end
@@ -130,7 +130,7 @@ China_edd_category = {
 	}
 
 	Increase_distribute_materials_to_workers = {
-		icon = GFX_decision_hol_drain_water_lines
+		icon = GFX_decision_eng_trade_unions_support
 		visible = {
 			has_idea = CHI_idea_Public_ownership_economy
 			has_country_flag = CHI_allotment_end

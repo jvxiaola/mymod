@@ -989,7 +989,7 @@ CHI_new_social_economy_decisions = {
 	}
 
 	CHI_Reorganize_communal_party = { #重组公社党组织
-	icon = GFX_decision_infiltrate_state
+	icon = GFX_decisions_category_blr_help
 	visible = {
 		has_completed_focus = CHI_People_Commune
 		has_country_flag = CHI_Restart_constructing_intensive_agriculture_end
@@ -1035,7 +1035,7 @@ CHI_new_social_economy_decisions = {
 	}
 
 	CHI_Raise_grainal_purchase_price = { #提高粮食收购价
-	icon = GFX_decision_infiltrate_state
+	icon = GFX_decision_break_treaty
 	visible = {
 		has_completed_focus = CHI_People_Commune
 		has_country_flag = CHI_Organize_allocation_commune_resources_end
@@ -1070,7 +1070,7 @@ CHI_new_social_economy_decisions = {
 	}
 
 	CHI_Purchase_agricultural_supplies = { #采购农用器械及化肥
-	icon = GFX_decision_infiltrate_state
+	icon = GFX_decision_hol_drain_water_lines
 	visible = {
 		has_completed_focus = CHI_People_Commune
 		has_country_flag = CHI_Organize_allocation_commune_resources_end
@@ -1105,7 +1105,7 @@ CHI_new_social_economy_decisions = {
 	}
 
 	CHI_Organize_learning_mechanized_agricultural_tools = { #组织学习农用机械
-	icon = GFX_decision_infiltrate_state
+	icon = GFX_decision_eng_ally_imperialist_coup
 	visible = {
 		has_completed_focus = CHI_People_Commune
 		has_country_flag = Raise_grainal_purchase_price
