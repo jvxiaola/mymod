@@ -850,7 +850,7 @@
 			}
 		}
 		offset = {
-			x = -71
+			x = -75
 			y = -5
 			trigger = {
 			tag = DSC
@@ -1376,14 +1376,14 @@ add_power_balance_value = {
 			}
 		}
 		offset = {
-			x = -65
+			x = -70
 			y = -5
 			trigger = {
 				tag = DSC
 			}
 		}
 		offset = {
-			x = 9
+			x = 14
 			y = -2
 			trigger = {
 				tag = DSC

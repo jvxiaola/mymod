@@ -1,17 +1,13 @@
 focus_tree = {
 	id = communsim_PRC_focus
-	
-	country = {
-
-
-	}
+	country = {}
 		default = no
 		shared_focus = CHI_Socialist_Reconstruction
 		shared_focus = CHI_Chinese_Megaprojects
 		shared_focus = CHI_Strategic_Industries
 		shared_focus = PRC_computer
 
-				focus = {
+	focus = {
 		id = PRC_communist
 		icon = communist_party_of_china
 		x = 4
@@ -24,30 +20,25 @@ focus_tree = {
 		}
 
 		available = {
-has_civil_war = yes
+			has_civil_war = yes
 		}
-allow_branch={
-	NOT={
-		tag = DSC
-		has_country_flag = xggm
-	}	
-		
-	}
-
-		bypass = {
-
+		allow_branch={
+			NOT = {
+				tag = DSC
+				has_country_flag = xggm
+			}	
 		}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-select_effect = {
-		country_event = {id = prc1.60 days = 30 }
+		select_effect = {
+			country_event = {id = prc1.60 days = 30 }
 
-}
+		}
 		completion_reward = {
 		remove_ideas = patry_fenlie
-
 		}
 			
 	}
@@ -1163,15 +1154,15 @@ CHI_gosplan
 		ai_will_do = {
 			factor = 5
 		}
-mutually_exclusive = {focus = PRC_Workersdemocracy focus = PRC_gyqy focus = PRC_angangxfa focus = PRC_Socialist_market }
+		mutually_exclusive = {focus = PRC_Workersdemocracy focus = PRC_gyqy focus = PRC_angangxfa focus = PRC_Socialist_market }
 		available = {
-OR = {
-and = {
-has_completed_focus = PRC_decentralized_economy
-has_country_leader = {name = "Wang Xizhe" }
-}
-						has_country_leader = {  name = "Han Dongfang" }
-}
+		OR = {
+			and = {
+				has_completed_focus = PRC_decentralized_economy
+				has_country_leader = {name = "Wang Xizhe" }
+				}
+			has_country_leader = {  name = "Han Dongfang" }
+		}
 		
 		}
 
@@ -1838,21 +1829,19 @@ mutually_exclusive = {focus = PRC_guoyouhua focus = PRC_Workersdemocracy focus =
 		prerequisite = {focus = PRC_jjtz }
 		relative_position_id = PRC_shzygg
 		cost = 5
-mutually_exclusive = {focus = PRC_guoyouhua focus = PRC_Workersdemocracy focus = PRC_gyqy focus = PRC_angangxfa }
+		mutually_exclusive = {focus = PRC_guoyouhua focus = PRC_Workersdemocracy focus = PRC_gyqy focus = PRC_angangxfa }
 
 		ai_will_do = {
 			factor = 5
 		}
 
 		available = {		
-OR = {
-		has_country_leader = {  name = "Deng Liqun" }
-		has_country_leader = {  name = "Han Deqiang" }
-		has_country_leader = {  name = "Han Dongfang" }
-
-
+			OR = {
+				has_country_leader = {  name = "Deng Liqun" }
+				has_country_leader = {  name = "Han Deqiang" }
+				has_country_leader = {  name = "Han Dongfang" }
+			}
 		}
-}
 		bypass = {
 
 		}

@@ -7,6 +7,7 @@ CHI_new_social_economy_decisions = {
 			tag = HkG
 		}
 		NOT = { has_idea = CHI_idea_Public_ownership_economy }
+		NOT = { has_global_flag = Ccw }
 	}
 	visible_when_empty = yes
 	icon = GFX_decision_generic_china
@@ -34,7 +35,10 @@ CHI_new_social_economy_decisions = {
 			tag = HkG
 		}
 		OR = { 
-			any_owned_state = { has_dynamic_modifier = { modifier = CW_ruins } } 
+			AND = {
+				NOT = { has_global_flag = Ccw }
+				any_owned_state = { has_dynamic_modifier = { modifier = CW_ruins } } 
+			}
 			has_completed_focus = CHI_Socialist_Reconstruction
 		}
 		NOT = { has_completed_focus = CHI_Chinese_Industrial_Explosion }

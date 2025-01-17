@@ -331,14 +331,7 @@ prerequisite = { focus = PRC_computer4}
 		ai_will_do = {
 			factor = 5
 		}
-		allow_branch = {
-			NOT = {
-				OR = {
-					tag = DSC
-					has_country_flag = laozuo
-					}
-			 }
-			}
+		allow_branch = { has_country_flag = xggm }
 
 			offset = {
 				x = -2
@@ -472,8 +465,8 @@ add_ideas = PRC_working_life
 		x = 4
 		y = 4
 		cost = 10
-relative_position_id = PRC_computer
-prerequisite = { focus = PRC_computer3 }
+		relative_position_id = PRC_computer
+		prerequisite = { focus = PRC_computer3 }
 		ai_will_do = {
 			factor = 5
 		}
@@ -486,28 +479,33 @@ prerequisite = { focus = PRC_computer3 }
 				}
 		 }
 		}
-		available = {
-				custom_trigger_tooltip = {
-NOT = {
-OR = {
-					is_in_array = { ruling_party = 5 }
-					is_in_array = { ruling_party = 4 }
-
-}}
-					tooltip = CHI_not_left
-}	}
-
-		bypass = {
-
+		offset = {
+			x = -4
+			trigger = {
+				NOT = {
+					has_country_flag = xggm
+					has_country_flag = laozuo
+					tag = DSC
+				}
+			}
 		}
+		available = {
+			custom_trigger_tooltip = {
+				NOT = {
+					OR = {
+						is_in_array = { ruling_party = 5 }
+						is_in_array = { ruling_party = 4 }
 
+					}
+				}
+			tooltip = CHI_not_left
+			}		
+		}
+		bypass = {}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		completion_reward = {		add_political_power = 100
-		
-		
-}
+		completion_reward = {	add_political_power = 100 }
 }
 	shared_focus = {
 		id = PRC_Streamline_administration_and_delegate_power
