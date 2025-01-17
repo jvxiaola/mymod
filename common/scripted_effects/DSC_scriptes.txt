@@ -175,12 +175,7 @@ custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic35_tt
 }
 change_DSC_people_support = {
 		add_to_variable = { DSC_people_support = temp_DSC_people_support }
-clamp_variable  = {
-    var = DSC_people_support
-    min = 0
-max = 1
-}		
-		
+    clamp_variable  = {  var = DSC_people_support min = 0 max = 1 }		
 custom_effect_tooltip = change_DSC_people_support_tt
 #革命热情
 }
@@ -204,14 +199,13 @@ check_variable = {
 }
 check_variable = {
 	DSC_people_support < 0.09
-
 }
 
 }
   set_variable = { DSC_people_support_dynamic1 = 0.3 }
-  set_variable = { DSC_people_support_dynamic2 = -1 }
-  set_variable = { DSC_people_support_dynamic3 = -0.5 }
-  set_variable = { DSC_people_support_dynamic4 = -1 }
+  set_variable = { DSC_people_support_dynamic2 = -0.5 }
+  set_variable = { DSC_people_support_dynamic3 = -0.10 }
+  set_variable = { DSC_people_support_dynamic4 = -0.20 }
   set_variable = { DSC_people_support_dynamic5 = -1 }
   set_variable = { DSC_people_support_dynamic6 = 1 }
   set_variable = { DSC_people_support_dynamic7 = -1 }
@@ -228,7 +222,7 @@ check_variable = {
   set_variable = { DSC_people_support_dynamic18 = 1 }
   set_variable = { DSC_people_support_dynamic19 = -1 }
   set_variable = { DSC_people_support_dynamic20 = -1000 }
-  set_variable = { DSC_people_support_dynamic21 = -0.5 }
+  set_variable = { DSC_people_support_dynamic21 = -0.30 }
   set_variable = { DSC_people_support_dynamic22 = -0.5 }
   set_variable = { DSC_people_support_dynamic23 = -0.5 }
   set_variable = { DSC_people_support_dynamic24 = -1 }
@@ -243,9 +237,9 @@ check_variable = {
 }
 }
   set_variable = { DSC_people_support_dynamic1 = 0.20 }
-  set_variable = { DSC_people_support_dynamic2 = -0.8 }
-  set_variable = { DSC_people_support_dynamic3 = -0.4 }
-  set_variable = { DSC_people_support_dynamic4 = -0.8 }
+  set_variable = { DSC_people_support_dynamic2 = -0.3 }
+  set_variable = { DSC_people_support_dynamic3 = -0.075 }
+  set_variable = { DSC_people_support_dynamic4 = -0.15 }
   set_variable = { DSC_people_support_dynamic5 = -0.8 }
   set_variable = { DSC_people_support_dynamic6 = 0.8 }
   set_variable = { DSC_people_support_dynamic7 = -0.8 }
@@ -262,7 +256,7 @@ check_variable = {
   set_variable = { DSC_people_support_dynamic18 = 0.8 }
   set_variable = { DSC_people_support_dynamic19 = -0.8 }
   set_variable = { DSC_people_support_dynamic20 = -800 }
-  set_variable = { DSC_people_support_dynamic21 = -0.4 }
+  set_variable = { DSC_people_support_dynamic21 = -0.20 }
   set_variable = { DSC_people_support_dynamic22 = -0.4 }
   set_variable = { DSC_people_support_dynamic23 = -0.4 }
   set_variable = { DSC_people_support_dynamic24 = -0.8 }
@@ -277,9 +271,9 @@ check_variable = {
 }
 }
   set_variable = { DSC_people_support_dynamic1 = 0.15 }
-  set_variable = { DSC_people_support_dynamic2 = -0.6 }
-  set_variable = { DSC_people_support_dynamic3 = -0.3 }
-  set_variable = { DSC_people_support_dynamic4 = -0.6 }
+  set_variable = { DSC_people_support_dynamic2 = -0.2 }
+  set_variable = { DSC_people_support_dynamic3 = -0.05 }
+  set_variable = { DSC_people_support_dynamic4 = -0.10 }
   set_variable = { DSC_people_support_dynamic5 = -0.6 }
   set_variable = { DSC_people_support_dynamic6 = 0.6 }
   set_variable = { DSC_people_support_dynamic7 = -0.6 }
@@ -296,7 +290,7 @@ check_variable = {
   set_variable = { DSC_people_support_dynamic18 = 0.6 }
   set_variable = { DSC_people_support_dynamic19 = -0.6 }
   set_variable = { DSC_people_support_dynamic20 = -600 }
-  set_variable = { DSC_people_support_dynamic21 = -0.3 }
+  set_variable = { DSC_people_support_dynamic21 = -0.05 }
   set_variable = { DSC_people_support_dynamic22 = -0.3 }
   set_variable = { DSC_people_support_dynamic23 = -0.3 }
   set_variable = { DSC_people_support_dynamic24 = -0.6 }
@@ -311,9 +305,9 @@ check_variable = {
 }
 }
   set_variable = { DSC_people_support_dynamic1 = 0.10 }
-  set_variable = { DSC_people_support_dynamic2 = -0.4 }
-  set_variable = { DSC_people_support_dynamic3 = -0.2 }
-  set_variable = { DSC_people_support_dynamic4 = -0.4 }
+  set_variable = { DSC_people_support_dynamic2 = -0.1 }
+  set_variable = { DSC_people_support_dynamic3 = -0.025 }
+  set_variable = { DSC_people_support_dynamic4 = -0.05 }
   set_variable = { DSC_people_support_dynamic5 = -0.4 }
   set_variable = { DSC_people_support_dynamic6 = 0.4 }
   set_variable = { DSC_people_support_dynamic7 = -0.4 }
@@ -330,7 +324,7 @@ check_variable = {
   set_variable = { DSC_people_support_dynamic18 = 0.4 }
   set_variable = { DSC_people_support_dynamic19 = -0.4 }
   set_variable = { DSC_people_support_dynamic20 = -400 }
-  set_variable = { DSC_people_support_dynamic21 = -0.2 }
+  set_variable = { DSC_people_support_dynamic21 = 0.05 }
   set_variable = { DSC_people_support_dynamic22 = -0.2 }
   set_variable = { DSC_people_support_dynamic23 = -0.2 }
   set_variable = { DSC_people_support_dynamic24 = -0.4 }
@@ -345,9 +339,9 @@ check_variable = {
 }
 }
   set_variable = { DSC_people_support_dynamic1 = 0.05 }
-  set_variable = { DSC_people_support_dynamic2 = -0.2 }
-  set_variable = { DSC_people_support_dynamic3 = -0.1 }
-  set_variable = { DSC_people_support_dynamic4 = -0.2 }
+  set_variable = { DSC_people_support_dynamic2 = 0 }
+  set_variable = { DSC_people_support_dynamic3 = 0 }
+  set_variable = { DSC_people_support_dynamic4 = 0 }
   set_variable = { DSC_people_support_dynamic5 = -0.2 }
   set_variable = { DSC_people_support_dynamic6 = 0.2 }
   set_variable = { DSC_people_support_dynamic7 = -0.2 }
@@ -364,7 +358,7 @@ check_variable = {
   set_variable = { DSC_people_support_dynamic18 = 0.2 }
   set_variable = { DSC_people_support_dynamic19 = -0.2 }
   set_variable = { DSC_people_support_dynamic20 = -200 }
-  set_variable = { DSC_people_support_dynamic21 = -0.1 }
+  set_variable = { DSC_people_support_dynamic21 = 0.075 }
   set_variable = { DSC_people_support_dynamic22 = -0.1 }
   set_variable = { DSC_people_support_dynamic23 = -0.10 }
   set_variable = { DSC_people_support_dynamic24 = -0.2 }
@@ -379,9 +373,9 @@ check_variable = {
 }
 }
   set_variable = { DSC_people_support_dynamic1 = 0.03 }
-  set_variable = { DSC_people_support_dynamic2 = -0.1 }
-  set_variable = { DSC_people_support_dynamic3 = -0.05 }
-  set_variable = { DSC_people_support_dynamic4 = -0.1 }
+  set_variable = { DSC_people_support_dynamic2 = 0.05 }
+  set_variable = { DSC_people_support_dynamic3 = 0 }
+  set_variable = { DSC_people_support_dynamic4 = 0.1 }
   set_variable = { DSC_people_support_dynamic5 = -0.1 }
   set_variable = { DSC_people_support_dynamic6 = 0.1 }
   set_variable = { DSC_people_support_dynamic7 = -0.1 }
@@ -398,7 +392,7 @@ check_variable = {
   set_variable = { DSC_people_support_dynamic18 = 0.1 }
   set_variable = { DSC_people_support_dynamic19 = -0.1 }
   set_variable = { DSC_people_support_dynamic20 = -100 }
-  set_variable = { DSC_people_support_dynamic21 = -0.1 }
+  set_variable = { DSC_people_support_dynamic21 = 0.1 }
   set_variable = { DSC_people_support_dynamic22 = -0.1 }
   set_variable = { DSC_people_support_dynamic23 = -0.10 }
   set_variable = { DSC_people_support_dynamic24 = -0.1 }
@@ -414,8 +408,8 @@ check_variable = {
 }
   set_variable = { DSC_people_support_dynamic1 = 0.0 }
   set_variable = { DSC_people_support_dynamic2 = 0.1 }
-  set_variable = { DSC_people_support_dynamic3 = 0.05 }
-  set_variable = { DSC_people_support_dynamic4 = 0.05 }
+  set_variable = { DSC_people_support_dynamic3 = 0 }
+  set_variable = { DSC_people_support_dynamic4 = 0.2 }
   set_variable = { DSC_people_support_dynamic5 = 0.1 }
   set_variable = { DSC_people_support_dynamic6 = -0.1 }
   set_variable = { DSC_people_support_dynamic7 = 0.1 }
@@ -447,9 +441,9 @@ check_variable = {
 }
 }
   set_variable = { DSC_people_support_dynamic1 = -0.05 }
-  set_variable = { DSC_people_support_dynamic2 = 0.15 }
-  set_variable = { DSC_people_support_dynamic3 = 0.10 }
-  set_variable = { DSC_people_support_dynamic4 = 0.10 }
+  set_variable = { DSC_people_support_dynamic2 = 0.075 }
+  set_variable = { DSC_people_support_dynamic3 = 0 }
+  set_variable = { DSC_people_support_dynamic4 = 0.25 }
   set_variable = { DSC_people_support_dynamic5 = 0.15 }
   set_variable = { DSC_people_support_dynamic6 = -0.15 }
   set_variable = { DSC_people_support_dynamic7 = 0.15 }
@@ -466,7 +460,7 @@ check_variable = {
   set_variable = { DSC_people_support_dynamic18 = -0.15 }
   set_variable = { DSC_people_support_dynamic19 = 0.15 }
   set_variable = { DSC_people_support_dynamic20 = 100 }
-  set_variable = { DSC_people_support_dynamic21 = 0.15 }
+  set_variable = { DSC_people_support_dynamic21 = 0.125 }
   set_variable = { DSC_people_support_dynamic22 = 0.15 }
   set_variable = { DSC_people_support_dynamic23 = 0.15 }
   set_variable = { DSC_people_support_dynamic24 = 0.15 }
@@ -481,9 +475,9 @@ check_variable = {
 }
 }
   set_variable = { DSC_people_support_dynamic1 = -0.10 }
-  set_variable = { DSC_people_support_dynamic2 = 0.2 }
-  set_variable = { DSC_people_support_dynamic3 = 0.20 }
-  set_variable = { DSC_people_support_dynamic4 = 0.20 }
+  set_variable = { DSC_people_support_dynamic2 = 0.1 }
+  set_variable = { DSC_people_support_dynamic3 = 0 }
+  set_variable = { DSC_people_support_dynamic4 = 0.275 }
   set_variable = { DSC_people_support_dynamic5 = 0.20 }
   set_variable = { DSC_people_support_dynamic6 = -0.2 }
   set_variable = { DSC_people_support_dynamic7 = 0.2 }
@@ -500,7 +494,7 @@ check_variable = {
   set_variable = { DSC_people_support_dynamic18 = -0.2 }
   set_variable = { DSC_people_support_dynamic19 = 0.2 }
   set_variable = { DSC_people_support_dynamic20 = 500 }
-  set_variable = { DSC_people_support_dynamic21 = 0.2 }
+  set_variable = { DSC_people_support_dynamic21 = 0.125 }
   set_variable = { DSC_people_support_dynamic22 = 0.2 }
   set_variable = { DSC_people_support_dynamic23 = 0.2 }
   set_variable = { DSC_people_support_dynamic24 = 0.2 }
@@ -515,8 +509,8 @@ check_variable = {
 }
 }
   set_variable = { DSC_people_support_dynamic1 = -0.3 }
-  set_variable = { DSC_people_support_dynamic2 = 0.3 }
-  set_variable = { DSC_people_support_dynamic3 = 0.3 }
+  set_variable = { DSC_people_support_dynamic2 = 0.2 }
+  set_variable = { DSC_people_support_dynamic3 = 0.05 }
   set_variable = { DSC_people_support_dynamic4 = 0.3 }
   set_variable = { DSC_people_support_dynamic5 = 0.5 }
   set_variable = { DSC_people_support_dynamic6 = -0.5 }
@@ -534,7 +528,7 @@ check_variable = {
   set_variable = { DSC_people_support_dynamic18 = -0.4 }
   set_variable = { DSC_people_support_dynamic19 = 0.2 }
   set_variable = { DSC_people_support_dynamic20 = 1000 }
-  set_variable = { DSC_people_support_dynamic21 = 0.3 }
+  set_variable = { DSC_people_support_dynamic21 = 0.15 }
   set_variable = { DSC_people_support_dynamic22 = 0.3 }
   set_variable = { DSC_people_support_dynamic23 = 0.3 }
   set_variable = { DSC_people_support_dynamic24 = 0.3 }
@@ -553,7 +547,7 @@ check_variable = {
 }
   set_variable = { DSC_people_support_dynamic25 = -0.5 }
   set_variable = { DSC_people_support_dynamic26 = -0.5 }
-    set_variable = { DSC_people_support_dynamic27 = -0.5 }
+  set_variable = { DSC_people_support_dynamic27 = -0.5 }
 
 
 }
@@ -566,9 +560,9 @@ check_variable = {
 	DSC_people_support < 0.29
 }
 }  
-set_variable = { DSC_people_support_dynamic25 = -0.3 }
+  set_variable = { DSC_people_support_dynamic25 = -0.3 }
   set_variable = { DSC_people_support_dynamic26 = -0.3 }
-    set_variable = { DSC_people_support_dynamic27 = -0.3 }
+  set_variable = { DSC_people_support_dynamic27 = -0.3 }
 }
 else_if = {
 limit = {
@@ -581,7 +575,7 @@ check_variable = {
 }
   set_variable = { DSC_people_support_dynamic25 = -0.2 }
   set_variable = { DSC_people_support_dynamic26 = -0.2 }
-    set_variable = { DSC_people_support_dynamic27 = -0.2 }
+  set_variable = { DSC_people_support_dynamic27 = -0.2 }
 }
 else_if = {
 limit = {
@@ -594,7 +588,7 @@ check_variable = {
 }
   set_variable = { DSC_people_support_dynamic25 = -0.1 }
   set_variable = { DSC_people_support_dynamic26 = -0.1 }
-    set_variable = { DSC_people_support_dynamic27 = -0.1 }
+  set_variable = { DSC_people_support_dynamic27 = -0.1 }
 }
 else_if = {
 limit = {
@@ -605,9 +599,9 @@ check_variable = {
 	DSC_people_support < 0.59
 }
 }
-  set_variable = { DSC_people_support_dynamic25 = 0.1 }
-  set_variable = { DSC_people_support_dynamic26 = 0.1}
-    set_variable = { DSC_people_support_dynamic27 = 0.1 } 
+  set_variable = { DSC_people_support_dynamic25 = 0 }
+  set_variable = { DSC_people_support_dynamic26 = 0 }
+  set_variable = { DSC_people_support_dynamic27 = 0 } 
 }
 else_if = {
 limit = {
@@ -628,9 +622,9 @@ check_variable = {
 	DSC_people_support < 0.79
 }
 }
-  set_variable = { DSC_people_support_dynamic25 = 0.2}
-  set_variable = { DSC_people_support_dynamic26 = 0.2 }
-    set_variable = { DSC_people_support_dynamic27 = 0.2 }
+  set_variable = { DSC_people_support_dynamic25 = 0 }
+  set_variable = { DSC_people_support_dynamic26 = 0 }
+  set_variable = { DSC_people_support_dynamic27 = 0 }
 }
 else_if = {
 limit = {
@@ -641,9 +635,9 @@ check_variable = {
 	DSC_people_support < 0.89
 }
 }
-  set_variable = { DSC_people_support_dynamic25 = 0.3 }
-  set_variable = { DSC_people_support_dynamic26 = 0.3 }
-    set_variable = { DSC_people_support_dynamic27 = 0.3 }
+  set_variable = { DSC_people_support_dynamic25 = 0.025 }
+  set_variable = { DSC_people_support_dynamic26 = 0.025 }
+  set_variable = { DSC_people_support_dynamic27 = 0.025 }
 }
 else_if = {
 limit = {
@@ -654,9 +648,9 @@ check_variable = {
 	DSC_people_support < 1.01
 }
 }
-  set_variable = { DSC_people_support_dynamic25 = 0.4 }
-  set_variable = { DSC_people_support_dynamic26 = 0.4 }
-    set_variable = { DSC_people_support_dynamic27 = 0.4 }
+  set_variable = { DSC_people_support_dynamic25 = 0.05 }
+  set_variable = { DSC_people_support_dynamic26 = 0.05 }
+  set_variable = { DSC_people_support_dynamic27 = 0.05 }
 }
 
 

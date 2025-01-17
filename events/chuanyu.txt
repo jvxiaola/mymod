@@ -231,7 +231,7 @@ country_event = {
 	is_triggered_only = yes				
 								
 	option = {
-	name = Chuanyu.8.a 
+	name = Chuanyu.8.a
 	#添加工业体系损伤精神
 	if = {
 		limit = { has_global_flag = Ccw }

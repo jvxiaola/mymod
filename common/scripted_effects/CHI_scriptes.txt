@@ -894,7 +894,7 @@ CHI_ruin_economy_remove = {
 
 CHI_add_Organize_state_enterprises_modifier = {
     set_variable = { COSEM_gbs = -0.15 }  set_variable = { COSEM_lrs = -0.05 } set_variable = { COSEM_sb = -0.05 } set_variable = { COSEM_iwr = 0 } set_variable = { COSEM_twm = 0 }
-  	set_variable = { COSEM_otsb = 0 } set_variable = { COSEM_pm = -0.05 } set_variable = { COSEM_egm = 0 } set_variable = { COSEM_icf = 0 } set_variable = { COSEM_pp = 0 }
+  	set_variable = { COSEM_otsb = 0 } set_variable = { COSEM_pm = -0.05 } set_variable = { COSEM_egm = -0.025 } set_variable = { COSEM_icf = 0 } set_variable = { COSEM_pp = 0 }
   	add_dynamic_modifier = { modifier = CHI_Organize_state_enterprises_modifier }
   }
 
@@ -1057,4 +1057,14 @@ CHI_remove_modifier_restart_people_commune = {
   clear_variable = rpc_psof
   clear_variable = rpc_atm
   clear_variable = rpc_dw_p
+}
+
+CHI_Public_ownership_economy_end_effect = {
+  custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
+	set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.20 } change_DSC_Socialist_Construction_dynamic20 = yes
+	change_DSC_Socialist_Construction_dynamic1 = yes change_DSC_Socialist_Construction_dynamic34 = yes 
+	set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.30 } change_DSC_Socialist_Construction_dynamic6 = yes
+	set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.40 } change_DSC_Socialist_Construction_dynamic17 = yes
+	set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.1 } change_DSC_Socialist_Construction_dynamic13 = yes change_DSC_Socialist_Construction_dynamic14 = yes
+	increase_economic_growth = yes
 }

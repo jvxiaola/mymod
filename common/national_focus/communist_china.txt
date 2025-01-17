@@ -1648,7 +1648,8 @@ set_temp_variable = { temp_opinion = 10 }
 
 		}
 		}				
-		focus = { id= PRC_angangxfa
+		focus = { 
+		id = PRC_angangxfa
 		icon = union_negotiations
 		x = 6
 		y = 2
@@ -1822,7 +1823,8 @@ mutually_exclusive = {focus = PRC_guoyouhua focus = PRC_Workersdemocracy focus =
 
 		}
 		}			
-		focus = { id= PRC_Socialist_market
+		focus = { 
+		id = PRC_Socialist_market
 		icon = market_socialism
 		x = 8
 		y = 2
@@ -10968,7 +10970,7 @@ add_idea=CHI_zzgs2
 			icon = worker_negotiation
 			x = 0
 			y = 4
-	prerequisite = {focus = PRC_Politics_in_everyday_life }
+	prerequisite = { focus = PRC_Politics_in_everyday_life }
 	relative_position_id = PRC_Chairman_Mao_Yuanxin
 	
 			cost = 5
@@ -10978,7 +10980,7 @@ add_idea=CHI_zzgs2
 			}
 	
 			available = {
-					has_idea = CHI_Planned_Economy
+					has_idea = CHI_idea_Public_ownership_economy
 			}
 	
 			bypass = {

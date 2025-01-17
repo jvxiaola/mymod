@@ -8,7 +8,7 @@ shared_focus = {
 			x = -20
 			y = -18
 			trigger = {
-			tag = DSC
+				tag = DSC
 			}
 		}
 		ai_will_do = {
@@ -16,26 +16,22 @@ shared_focus = {
 		}
 
 		available = {
-has_tech = computing3
-has_civil_war = no
-	}
-
-		bypass = {
-
+			has_tech = computing3
+			has_civil_war = no
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {			
-add_research_slot = 1
-         add_tech_bonus = {
-            name = PRC_computer
+			add_research_slot = 1
+        	add_tech_bonus = {
+          	  name = PRC_computer
             bonus = 2
 			uses = 1
 			technology = computing4
          }
-}
+	}
 }
 
 	shared_focus = {

@@ -38,7 +38,8 @@ CHI_new_social_economy_decisions = {
 	Redemption_assets = {
 		icon = GFX_decision_gre_investment_decisions
 		visible = {
-			has_completed_focus = CHI_redemption NOT = { has_completed_focus = CHI_Consolidation_public_ownership }
+			has_completed_focus = CHI_redemption 
+			NOT = { has_completed_focus = CHI_Consolidation_public_ownership }
 			check_variable = { Redemption_assets_times < 3 }
 		}
 		available = {
@@ -107,7 +108,8 @@ CHI_new_social_economy_decisions = {
 	confiscated_assets = {
 		icon = GFX_decision_generic_assassination
 		visible = {
-			has_completed_focus = CHI_confiscated NOT = { has_completed_focus = CHI_Consolidation_public_ownership }
+			has_completed_focus = CHI_confiscated 
+			NOT = { has_completed_focus = CHI_Consolidation_public_ownership }
 			check_variable = { confiscated_assets_times < 5 }
 		}
 		available = {
@@ -178,7 +180,8 @@ CHI_new_social_economy_decisions = {
 	Promote_nationalization_strategic_industries = { #战略行业国有化
 		icon = GFX_decision_refinery_dec
 		visible = {
-			has_completed_focus = CHI_Organize_state_enterprises NOT = { has_completed_focus = CHI_Consolidation_public_ownership }
+			has_completed_focus = CHI_Organize_state_enterprises 
+			NOT = { has_completed_focus = CHI_Consolidation_public_ownership }
 			check_variable = { Promote_nationalization_strategic_industries_progress < 100 }
 		}
 		available = {
@@ -230,7 +233,8 @@ CHI_new_social_economy_decisions = {
 	Nationalize_construction_and_chemical_industries = { #建筑与化工行业国有化效果
 		icon = GFX_decision_generic_construction
 		visible = {
-			has_completed_focus = CHI_Organize_state_enterprises NOT = { has_completed_focus = CHI_Consolidation_public_ownership }
+			has_completed_focus = CHI_Organize_state_enterprises 
+			NOT = { has_completed_focus = CHI_Consolidation_public_ownership }
 			check_variable = { Nationalize_construction_and_chemical_industries_progress < 100 }
 		}
 		available = {
@@ -282,7 +286,8 @@ CHI_new_social_economy_decisions = {
 	Partial_nationalize_light_manufacturing_industry = { #部分轻工业、制造业国有化效果
 	icon = GFX_decision_generic_factory
 	visible = {
-		has_completed_focus = CHI_Organize_state_enterprises NOT = { has_completed_focus = CHI_Consolidation_public_ownership }
+		has_completed_focus = CHI_Organize_state_enterprises 
+		NOT = { has_completed_focus = CHI_Consolidation_public_ownership }
 		check_variable = { Partial_nationalize_light_manufacturing_industry_progress < 100 }
 	}
 	available = {

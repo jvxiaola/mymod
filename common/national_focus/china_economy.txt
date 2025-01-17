@@ -1534,7 +1534,7 @@ shared_focus = {
 				limit = { tag = DSC }
 				custom_effect_tooltip = DSC_Chinese_Industrial_Explosion21_tt
 				add_ideas = CHI_idea_Public_ownership_economy
-				increase_economic_growth = yes
+				CHI_Public_ownership_economy_end_effect = yes
 			}
 			if = {
 				limit = {

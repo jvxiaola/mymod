@@ -13,7 +13,7 @@ ideas = {
 				local_resources_factor = 0.10
 				production_speed_buildings_factor = 0.20
 				productivity_growth_modifier = 0.20
-				energy_gain_multiplier = 0.075
+				energy_gain_multiplier = 0.025
 				industrial_capacity_factory = 0.15
 				total_workforce_modifier = 0.10
 				social_cost_multiplier_modifier = -0.02
@@ -90,16 +90,13 @@ ideas = {
 		}
 		removal_cost = -1
 		modifier = {
-			communism_drift = 0.20
 			political_power_cost = -0.25
 			political_power_factor = 0.30
-			chuanyu_people_support_to_china_government_modifier = 0.20
-	
 			global_building_slots_factor = 0.07
 			local_resources_factor = 0.15
-			production_speed_buildings_factor = 0.30
+
 			productivity_growth_modifier = 0.40
-			energy_gain_multiplier = 0.10
+			energy_gain_multiplier = 0.075
 			total_workforce_modifier = 0.15
 			production_speed_infrastructure_factor = 0.40
 			production_speed_offices_factor = 0.40 
@@ -114,7 +111,6 @@ ideas = {
 			industrial_capacity_factory = 0.40
 	
 			stability_factor = 0.25
-			research_speed_factor = 0.20
 			hidden_modifier = {
 				production_factory_start_efficiency_factor = 0.20
 				production_factory_efficiency_gain_factor = 0.20
