@@ -4,7 +4,7 @@ CHI_Civil_war_decisions = {
 		OR = { 
 			original_tag = CHI 
 			tag = DSC
-			tag = HkG
+			tag = HKG
 	}
 }
 		icon = GFX_decision_CUB_train_chi
@@ -13,17 +13,30 @@ CHI_Civil_war_decisions = {
 		OR = { 
 			original_tag = CHI 
 			tag = DSC
-			tag = HkG
+			tag = HKG
 		}
 	}
 }
 
+
+DSC_MAOPAIJUECE = {
+	priority = { base = 1000 }
+	allowed = { 
+has_country_flag = chuanyumaopai
+}
+		icon = GFX_decision_CUB_train_chi
+
+	visible = {
+
+		has_country_flag = chuanyumaopai
+	}
+}
 China_erp_category = {
 	allowed = { 
 		OR = { 
 			original_tag = CHI 
 			tag = DSC
-			tag = HkG
+			tag = HKG
 	}
 }
 		icon = GFX_decision_CUB_train_chi
@@ -32,7 +45,7 @@ China_erp_category = {
 		OR = { 
 			original_tag = CHI 
 			tag = DSC
-			tag = HkG
+			tag = HKG
 		}
 	}
 }
@@ -42,7 +55,7 @@ China_irp_category = {
 		OR = { 
 			original_tag = CHI 
 			tag = DSC
-			tag = HkG
+			tag = HKG
 	}
 }
 		icon = GFX_decision_CUB_train_chi
@@ -51,7 +64,7 @@ China_irp_category = {
 		OR = { 
 			original_tag = CHI 
 			tag = DSC
-			tag = HkG
+			tag = HKG
 		}
 	}
 }

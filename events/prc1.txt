@@ -2206,6 +2206,11 @@ division_template = {
 HKG={
 load_focus_tree = HKG_focus
 }
+
+DSC={
+	country_event = {id=Chuanyu.1 days=7}
+
+}
 				
 			}
 		}
