@@ -836,7 +836,6 @@
 			OR = {
 				has_country_flag = xggm
 				tag = DSC
-				has_country_flag = laozuo
 				}
 			NOT = { has_completed_focus = CHI_Chinese_Industrial_Explosion }
 		 }
@@ -908,9 +907,9 @@
 	id = CHI_redemption
 		icon = communism4
 
-		x = -5
-		y = 2
-		relative_position_id = CHI_Socialist_Reconstruction
+		x = -1
+		y = 1
+		relative_position_id = CHI_Problems_capitalist_industry_commerce
 		mutually_exclusive = { focus = CHI_confiscated }
 
 		cost = 2
@@ -937,9 +936,9 @@
 		id = CHI_confiscated
 		icon = cash_grap
 
-		x = -3
-		y = 2
-		relative_position_id = CHI_Socialist_Reconstruction
+		x = 1
+		y = 1
+		relative_position_id = CHI_Problems_capitalist_industry_commerce
 
 		cost = 2
 
@@ -968,31 +967,19 @@
 	shared_focus = {		
 		id = CHI_Organize_state_enterprises
 		icon = import_economy
-
-		x = -5
-		y = 3
-		relative_position_id = CHI_Socialist_Reconstruction
+		x = 0
+		y = 2
+		relative_position_id = CHI_Problems_capitalist_industry_commerce
 		mutually_exclusive = { focus = CHI_worker_ownership }
 
 		cost = 2
 
 		prerequisite = { focus = CHI_confiscated focus = CHI_redemption }
 		allow_branch = {
-			OR = {
-				tag = DSC
-				NOT = { has_completed_focus = CHI_worker_ownership }
-			}
+			NOT = { has_completed_focus = CHI_Chinese_Industrial_Explosion has_country_flag = laozuo }
+			tag = DSC
 		 }
 		search_filters = { FOCUS_FILTER_INFLUENCE }
-		offset = {
-			x = 1
-			trigger = {
-				OR = {
-					NOT = { has_country_flag = xggm }
-					has_completed_focus = CHI_Organize_state_enterprises
-				}	
-			}
-		}
 		available = {
 			OR = {
 				custom_trigger_tooltip = {
@@ -1005,25 +992,17 @@
 				}
 			}
 		}
-
 		completion_reward = {	
 			add_ideas = CHI_nationalizing
 			custom_effect_tooltip = CHI_nationalizing_start_tt 
-			hidden_effect = {
-				if = {
-					limit = { NOT = { tag = DSC } }
-					mark_focus_tree_layout_dirty = yes
-				}
-			}
 		}
-
 		ai_will_do = { base = 1 }
 	}
 
 	shared_focus = {		
 		id = CHI_worker_ownership
 		icon = union_negotiations
-		x = -3
+		x = -4
 		y = 3
 		relative_position_id = CHI_Socialist_Reconstruction
 		prerequisite = { focus = CHI_confiscated focus = CHI_redemption }
@@ -1033,11 +1012,7 @@
 
 		allow_branch = {
 			has_country_flag = xggm
-			NOT = { has_completed_focus = CHI_Organize_state_enterprises }
-		}
-		offset = {
-			x = -1
-			trigger = { has_completed_focus = CHI_worker_ownership }
+			NOT = { has_completed_focus = CHI_Chinese_Industrial_Explosion }
 		}
 		available = {
 			custom_trigger_tooltip = {
@@ -1058,27 +1033,143 @@
 	}
 
 	shared_focus = {
-	id = CHI_Consolidation_public_ownership
+		id = Promote_nationalization_strategic_industries
+		icon = focus_generic_land_reclamation
+		x = -2
+		y = 1
+		relative_position_id = CHI_Organize_state_enterprises
+		mutually_exclusive = { focus = CHI_worker_ownership }
+
+		cost = 0.7
+
+		prerequisite = { focus = CHI_Organize_state_enterprises }
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+		available = {
+			
+		}
+		completion_reward = {	
+			custom_effect_tooltip = CHI_nationalizing_start_tt 
+		}
+		ai_will_do = { base = 1 }
+	}
+
+	shared_focus = {
+		id = Nationalize_construction_and_chemical_industries
+		icon = construction4
+		x = 0
+		y = 1
+		relative_position_id = CHI_Organize_state_enterprises
+		mutually_exclusive = { focus = CHI_worker_ownership }
+
+		cost = 0.7
+
+		prerequisite = { focus = CHI_Organize_state_enterprises }
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+		available = {
+			
+		}
+		completion_reward = {	
+			custom_effect_tooltip = CHI_nationalizing_start_tt 
+		}
+		ai_will_do = { base = 1 }
+	}
+
+	shared_focus = {
+		id = Partial_nationalize_light_manufacturing_industry
+		icon = Generic_Underground_Factories
+		x = 2
+		y = 1
+		relative_position_id = CHI_Organize_state_enterprises
+		mutually_exclusive = { focus = CHI_worker_ownership }
+
+		cost = 0.7
+
+		prerequisite = { focus = CHI_Organize_state_enterprises }
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+		available = {
+			
+		}
+		completion_reward = {	
+			custom_effect_tooltip = CHI_nationalizing_start_tt 
+		}
+		ai_will_do = { base = 1 }
+	}
+
+	shared_focus = {
+		id = Organize_breakthroughs_food_industry
+		icon = Generic_Veggies
+		x = -1
+		y = 2
+		relative_position_id = CHI_Organize_state_enterprises
+		mutually_exclusive = { focus = CHI_worker_ownership }
+
+		cost = 0.7
+		prerequisite = { focus = Promote_nationalization_strategic_industries }
+		prerequisite = { focus = Nationalize_construction_and_chemical_industries }
+		prerequisite = { focus = Partial_nationalize_light_manufacturing_industry }
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = CHI_Partial_nationalize_light_manufacturing_industry_goal_achieve_tt
+				check_variable = { Partial_nationalize_light_manufacturing_industry_progress = 100 }
+			}
+		}
+		completion_reward = {	
+			custom_effect_tooltip = CHI_nationalizing_start_tt 
+		}
+		ai_will_do = { base = 1 }
+	}
+
+	shared_focus = {
+		id = Raise_worker_salaries_benefits
+		icon = Generic_Loadsamoney
+		x = 1
+		y = 2
+		relative_position_id = CHI_Organize_state_enterprises
+		mutually_exclusive = { focus = CHI_worker_ownership }
+
+		cost = 0.7
+		prerequisite = { focus = Promote_nationalization_strategic_industries }
+		prerequisite = { focus = Nationalize_construction_and_chemical_industries }
+		prerequisite = { focus = Partial_nationalize_light_manufacturing_industry }
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = CHI_Raise_worker_salaries_benefits_trigger_tt
+				check_variable = { Partial_nationalize_light_manufacturing_industry_progress = 100 }
+				check_variable = { Nationalize_construction_and_chemical_industries_progress = 100 }
+				check_variable = { Promote_nationalization_strategic_industries_progress = 100 }
+			}
+		}
+		completion_reward = {	
+			custom_effect_tooltip = CHI_nationalizing_start_tt 
+		}
+		ai_will_do = { base = 1 }
+	}
+
+	shared_focus = {
+		id = CHI_Consolidation_public_ownership
 		icon = decentralized_economy
 
-		x = -4
-		y = 4
-		relative_position_id = CHI_Socialist_Reconstruction
+		x = 0
+		y = 3
+		relative_position_id = CHI_Problems_capitalist_industry_commerce
 
 		cost = 4
 
-		prerequisite = { focus = CHI_Organize_state_enterprises focus = CHI_worker_ownership }
+		prerequisite = { focus = Organize_breakthroughs_food_industry focus = Raise_worker_salaries_benefits  focus = CHI_worker_ownership }
 		offset = {
-			y = 1
-			trigger = { has_completed_focus = CHI_Organize_state_enterprises }
+			y = 2
+			trigger = { tag = DSC }
 		}
-
 		available = {
 			OR = {
 				custom_trigger_tooltip = { 
 					tooltip = CHI_nationalizing_end_tt 
 					has_idea = CHI_nationalizing
 					has_idea = CHI_BETTER_FOOD_SAFTY
+					has_completed_focus = Organize_breakthroughs_food_industry
+					has_completed_focus = Raise_worker_salaries_benefits
 					OR = { 
 						check_variable = { Redemption_assets_times = 3 }
 						check_variable = { confiscated_assets_times = 5 }
@@ -1166,21 +1257,16 @@
 
 		cost = 5
 		allow_branch = {
-			NOT = {	
-				OR = {
-					tag = DSC 
-					has_completed_focus = CHI_get_organized
-				}
-			}
-			OR = {
-				has_country_flag = xggm
+			NOT = {
 				has_country_flag = laozuo
+				has_completed_focus = CHI_Chinese_Industrial_Explosion 
 			}
+			has_country_flag = xggm
 	 	}
 		offset = {
 			x = 1
 			trigger = {
-				has_completed_focus = CHI_allowed_to_exist
+				has_country_flag = xggm
 			}
 		}
 		prerequisite = { focus = CHI_selfemployed_problem }
@@ -1208,7 +1294,7 @@
 		id = CHI_get_organized
 		icon = national_unity_red
 
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = CHI_selfemployed_problem
 
@@ -1217,30 +1303,38 @@
 		prerequisite = { focus = CHI_selfemployed_problem }
 		mutually_exclusive = { focus = CHI_allowed_to_exist }
 		allow_branch = {
-			OR = {
-				tag = DSC
-				NOT = { has_completed_focus = CHI_allowed_to_exist }
-			}
+			NOT = { has_completed_focus = CHI_Chinese_Industrial_Explosion has_country_flag = laozuo }
+			tag = DSC
 		 }
-		offset = {
-			x = -1
-			trigger = {
-				OR = {
-					tag = DSC
-					has_completed_focus = CHI_get_organized
-				}
-			}
-		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_CORRUPTION FOCUS_FILTER_INDUSTRY }
 		available = {}
 		completion_reward = {
 			custom_effect_tooltip = CHI_state_Oofb_start_tt 
-			hidden_effect = {
-				if = {
-					limit = { NOT = { tag = DSC } }
-					mark_focus_tree_layout_dirty = yes
-				}
-			}
+		}
+		ai_will_do = { base = 1 }
+	}
+
+	shared_focus = {
+		id = Launch_cooperation_initiatives_at_forums
+		icon = communist_propaganda
+		x = 0
+		y = 1
+		relative_position_id = CHI_get_organized
+		cost = 0.7
+		prerequisite = { focus = CHI_get_organized }
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+		available = {
+			534 = { has_dynamic_modifier = { modifier = State_Collaboration } } 532 = { has_dynamic_modifier = { modifier = State_Collaboration } } 541 = { has_dynamic_modifier = { modifier = State_Collaboration } }
+			536 = { has_dynamic_modifier = { modifier = State_Collaboration } } 435 = { has_dynamic_modifier = { modifier = State_Collaboration } } 544 = { has_dynamic_modifier = { modifier = State_Collaboration } }
+			538 = { has_dynamic_modifier = { modifier = State_Collaboration } } 567 = { has_dynamic_modifier = { modifier = State_Collaboration } } 1095 = { has_dynamic_modifier = { modifier = State_Collaboration } }
+			552 = { has_dynamic_modifier = { modifier = State_Collaboration } } 434 = { has_dynamic_modifier = { modifier = State_Collaboration } } 549 = { has_dynamic_modifier = { modifier = State_Collaboration } }
+			585 = { has_dynamic_modifier = { modifier = State_Collaboration } } 586 = { has_dynamic_modifier = { modifier = State_Collaboration } } 583 = { has_dynamic_modifier = { modifier = State_Collaboration } }
+			537 = { has_dynamic_modifier = { modifier = State_Collaboration } } 570 = { has_dynamic_modifier = { modifier = State_Collaboration } } 540 = { has_dynamic_modifier = { modifier = State_Collaboration } }
+			547 = { has_dynamic_modifier = { modifier = State_Collaboration } } 548 = { has_dynamic_modifier = { modifier = State_Collaboration } } 595 = { has_dynamic_modifier = { modifier = State_Collaboration } }
+			1106 = { has_dynamic_modifier = { modifier = State_Collaboration } }
+		}
+		completion_reward = {	
+			custom_effect_tooltip = CHI_nationalizing_start_tt 
 		}
 		ai_will_do = { base = 1 }
 	}
@@ -1261,29 +1355,59 @@
 
 	shared_focus = {		
 		id = CHI_city_mutual_aid
-		icon = BRA_public_housing_programs
+		icon = focus_generic_improve_the_administration
 
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = CHI_get_organized
-		prerequisite = { focus = CHI_get_organized }
-
+		prerequisite = { focus = Launch_cooperation_initiatives_at_forums }
 		cost = 2
-
-
-
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = CHI_city_mutual_aid_trigger_tt
 				has_country_flag = Launch_cooperation_initiatives_at_forums
 			}
 		}
-
 		completion_reward = {
 			custom_effect_tooltip = CHI_city_mutual_start_tt 
 			CHI_add_CHI_Collaboration_internet_modifier = yes
 		}
+		ai_will_do = { base = 1 }
+	}
 
+	shared_focus = {
+		id = CHI_Assign_local_cooperative_party_committee
+		icon = communism5
+		x = -1
+		y = 1
+		relative_position_id = CHI_city_mutual_aid
+		cost = 0.7
+		prerequisite = { focus = CHI_city_mutual_aid }
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+		available = {
+			has_country_flag = CHI_Collaboralize
+		}
+		completion_reward = {	
+			custom_effect_tooltip = CHI_nationalizing_start_tt 
+		}
+		ai_will_do = { base = 1 }
+	}
+
+	shared_focus = {
+		id = CHI_Organizational_skills_training_labor_competition
+		icon = Generic_Hammer_Star
+		x = 1
+		y = 1
+		relative_position_id = CHI_city_mutual_aid
+		cost = 0.7
+		prerequisite = { focus = CHI_city_mutual_aid }
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+		available = {
+			has_country_flag = CHI_Assign_local_cooperative_party_committee
+		}
+		completion_reward = {	
+			custom_effect_tooltip = CHI_nationalizing_start_tt 
+		}
 		ai_will_do = { base = 1 }
 	}
 
@@ -1293,12 +1417,12 @@
 		x = 0
 		y = 3
 		offset = {
-			y = 1
-			trigger = { has_completed_focus = CHI_get_organized }
+			y = 2
+			trigger = { tag = DSC }
 		}
 		relative_position_id = CHI_selfemployed_problem
 		cost = 4
-		prerequisite = { focus = CHI_limit_accumulation focus = CHI_city_mutual_aid }
+		prerequisite = { focus = CHI_limit_accumulation focus = CHI_Assign_local_cooperative_party_committee focus = CHI_Organizational_skills_training_labor_competition }
 		available = {
 			OR = {
 				custom_trigger_tooltip = {
@@ -1341,7 +1465,6 @@
 			}
 			CHI_ruin_economy_remove = yes
 		}
-
 		ai_will_do = { base = 1 }
 	}
 	shared_focus = {		
@@ -1402,10 +1525,6 @@
 			x = 1
 			trigger = {
 				NOT = { tag = DSC has_country_flag = laozuo }
-				OR = {
-					has_completed_focus = CHI_state_farm
-					has_completed_focus = CHI_People_Commune
-				}
 			}
 		}
 		allow_branch = {
@@ -1431,16 +1550,13 @@
 		y = 2
 		relative_position_id = CHI_agricultural_issues
 		allow_branch = {
-			NOT = { has_completed_focus = CHI_state_farm }
+			tag = DSC 
+			NOT = { has_completed_focus = CHI_Chinese_Industrial_Explosion }
 		}
 		offset = {
 			x = -1
 			trigger = {
-				OR = { 
-					tag = DSC 
-					has_country_flag = laozuo 
-					has_completed_focus = CHI_People_Commune
-				}
+					tag = DSC
 			}
 		}
 		cost = 2
@@ -1459,7 +1575,7 @@
 shared_focus = {		
 		id = CHI_state_farm
 		icon = Farm_national_movement
-		x = -1
+		x = 0
 		y = 2
 		relative_position_id = CHI_agricultural_issues
 		cost = 5
@@ -1468,13 +1584,6 @@ shared_focus = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_CORRUPTION FOCUS_FILTER_INDUSTRY }
 		allow_branch = {
 			has_country_flag = xggm
-			NOT = { has_completed_focus = CHI_People_Commune }
-		}
-		offset = {
-			x = 1
-			trigger = {
-				has_completed_focus = CHI_state_farm
-			}
 		}
 		available = {
 				custom_trigger_tooltip = {
@@ -1496,8 +1605,8 @@ shared_focus = {
 		x = 0
 		y = 3
 		offset = {
-			y = 1
-			trigger = { has_completed_focus = CHI_People_Commune }
+			y = 2
+			trigger = { tag = DSC }
 		}
 		relative_position_id = CHI_agricultural_issues
 		prerequisite = { focus = CHI_state_farm focus = CHI_People_Commune }
@@ -1555,11 +1664,14 @@ shared_focus = {
 		icon = Socialist_Workaholics
 
 		x = 0
-		y = 6
+		y = 7
 		relative_position_id = CHI_Socialist_Reconstruction
 
 		cost = 5
-
+		offset = {
+			y = -2
+			trigger = { has_country_flag = xggm }
+		}
 		prerequisite = { focus = CHI_Revitalize_the_countryside }
 		prerequisite = {focus = CHI_Efficient_and_economical }
 		prerequisite = { focus = CHI_Consolidation_public_ownership }
@@ -1615,6 +1727,7 @@ shared_focus = {
 		
 		allow_branch = {
 			OR = {
+				has_country_flag = laozuo
 				has_completed_focus = CHI_Chinese_Industrial_Explosion
 				has_completed_focus = CHI_Factory_of_the_World
 			}
@@ -5509,6 +5622,7 @@ is_subject_of = CHI
 		cost = 5
 		allow_branch = {
 			OR = {
+				has_country_flag = laozuo
 				has_completed_focus = CHI_Chinese_Industrial_Explosion
 				has_completed_focus = CHI_Factory_of_the_World
 			}
