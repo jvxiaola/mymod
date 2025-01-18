@@ -2931,6 +2931,36 @@ change_CHI_people_support = yes
 }
 
 
+
+
+
+
+
+
+DSC_MAOPAIJUECE = {
+
+	DSC_maopaizhenghe = {
+		icon = GFX_decision_generic_form_nation
+
+		
+
+
+		fire_only_once = yes
+		visible = {
+			has_country_flag = chuanyumaopai
+		}
+
+		complete_effect = {
+			
+		}
+		}
+
+}
+
+
+
+
+
 CHI_Civil_war_decisions = {
 
 	CHI_economic_deterioration = {

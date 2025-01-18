@@ -56,7 +56,7 @@ focus_tree = {
 	focus = {
 		id = DSC_ZHONGLI
 		icon = defense
-		x = 4
+		x = 5
 
 		y = 1
 
@@ -80,50 +80,51 @@ focus_tree = {
 
 		}
 		completion_reward = {
-			country_event = chuanyu.1
-		}
-	}
-
-
-
-
-
-	focus = {
-		id = DSC_FUCONGZHIHUI
-		icon = become_puppet
-		x = 6
-
-		y = 1
-
-		cost = 5
-
-		prerequisite = {
-			focus = DSC_JGBD
-		 }
-		 mutually_exclusive = {focus =DSC_ZHONGLI  }
-
-		ai_will_do = {
-			factor = 100
-		}
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		available = {
-
-		}
-		completion_reward = {
 			country_event = chuanyu.2
+
 		}
 	}
+
+
+
+
+
+	#focus = {
+	#	id = DSC_FUCONGZHIHUI
+	#	icon = become_puppet
+	#	x = 6
+
+	#	y = 1
+
+	#	cost = 5
+
+	#	prerequisite = {
+	#		focus = DSC_JGBD
+	#	 }
+	#	 mutually_exclusive = {focus =DSC_ZHONGLI  }
+
+	#	ai_will_do = {
+	#		factor = 100
+#		}
+	#	bypass = {
+
+	#	}
+
+	#	cancel_if_invalid = yes
+	#	continue_if_invalid = no
+	#	available_if_capitulated = no
+	#	available = {
+
+	#	}
+	#	completion_reward = {
+	#		country_event = chuanyu.2
+	#	}
+	#}
 
 	focus = {
 		id = DSC_DONGYUAN
 		icon = military_mission2
-		x = 4
+		x = 5
 
 		y = 2
 
@@ -319,7 +320,7 @@ focus_tree = {
 	focus = {
 		id = DSC_ZHENGSHUI
 		icon = economic_crisis
-		x = 4
+		x = 5
 
 		y = 3
 
