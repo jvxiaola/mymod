@@ -1372,7 +1372,7 @@
 	}
 
 	shared_focus = {		
-		id = CHI_city_mutual_aid
+		id = CHI_city_mutual_aid_build
 		icon = focus_generic_improve_the_administration
 
 		x = 0
@@ -1399,9 +1399,9 @@
 		icon = communism5
 		x = -1
 		y = 1
-		relative_position_id = CHI_city_mutual_aid
+		relative_position_id = CHI_city_mutual_aid_build
 		cost = 0.7
-		prerequisite = { focus = CHI_city_mutual_aid }
+		prerequisite = { focus = CHI_city_mutual_aid_build }
 		search_filters = { FOCUS_FILTER_INFLUENCE }
 		available = {
 			custom_trigger_tooltip = {
@@ -1420,9 +1420,9 @@
 		icon = Generic_Hammer_Star
 		x = 1
 		y = 1
-		relative_position_id = CHI_city_mutual_aid
+		relative_position_id = CHI_city_mutual_aid_build
 		cost = 0.7
-		prerequisite = { focus = CHI_city_mutual_aid }
+		prerequisite = { focus = CHI_city_mutual_aid_build }
 		search_filters = { FOCUS_FILTER_INFLUENCE }
 		available = {
 			custom_trigger_tooltip = {

@@ -397,7 +397,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_completed_focus = Launch_cooperation_initiatives_at_forums
-			NOT = { has_country_flag = Launch_cooperation_initiatives_at_forums has_completed_focus = CHI_city_mutual_aid }
+			NOT = { has_country_flag = Launch_cooperation_initiatives_at_forums has_completed_focus = CHI_city_mutual_aid_build }
 		}
 		localization_key = "CHI_Launch_cooperation_initiatives_at_forums_goal" #显示发出合作倡议国策
 	}
@@ -408,7 +408,7 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = {
-			has_completed_focus = CHI_city_mutual_aid
+			has_completed_focus = CHI_city_mutual_aid_build
 			has_country_flag = Launch_cooperation_initiatives_at_forums
 			}
 		}
@@ -421,14 +421,14 @@ defined_text = {
 	text = {
 		trigger = {
 			NOT = { has_country_flag = CHI_Collaboralize has_completed_focus = CHI_Assign_local_cooperative_party_committee has_completed_focus = CHI_Organizational_skills_training_labor_competition }
-			has_completed_focus = CHI_city_mutual_aid
+			has_completed_focus = CHI_city_mutual_aid_build
 		}
 		localization_key = "CHI_Collaboralize_goal" #显示推进合作化国策
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_completed_focus = CHI_city_mutual_aid
+				has_completed_focus = CHI_city_mutual_aid_build
 			}
 		}
 		localization_key = "NOT_sign"

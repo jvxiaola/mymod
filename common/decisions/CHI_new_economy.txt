@@ -816,7 +816,7 @@ CHI_new_social_economy_decisions = {
 	CHI_Collaboralize = { #推进全体合作社化
 	icon = GFX_decision_generic_factory
 	visible = {
-		has_completed_focus = CHI_city_mutual_aid
+		has_completed_focus = CHI_city_mutual_aid_build
 	}
 	available = {
 		always = yes
