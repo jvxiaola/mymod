@@ -1108,10 +1108,12 @@
 		prerequisite = { focus = Nationalize_construction_and_chemical_industries }
 		prerequisite = { focus = Partial_nationalize_light_manufacturing_industry }
 		search_filters = { FOCUS_FILTER_INFLUENCE }
+		bypass = { NOT = { has_idea = CHI_shipinganquanwenti } }
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = CHI_Partial_nationalize_light_manufacturing_industry_goal_achieve_tt
 				check_variable = { Partial_nationalize_light_manufacturing_industry_progress = 100 }
+				has_idea = CHI_shipinganquanwenti
 			}
 		}
 		completion_reward = {	
@@ -1139,8 +1141,10 @@
 				check_variable = { Partial_nationalize_light_manufacturing_industry_progress = 100 }
 				check_variable = { Nationalize_construction_and_chemical_industries_progress = 100 }
 				check_variable = { Promote_nationalization_strategic_industries_progress = 100 }
+				OR = { has_idea = CHI_work7 has_idea = CHI_work6 has_idea = CHI_work5 has_idea = CHI_work_01 has_idea = CHI_work_02 has_idea = CHI_work_03 has_idea = CHI_work_04 }
 			}
 		}
+		bypass = { NOT = { OR = { has_idea = CHI_work7 has_idea = CHI_work6 has_idea = CHI_work5 has_idea = CHI_work_01 has_idea = CHI_work_02 has_idea = CHI_work_03 has_idea = CHI_work_04 } } }
 		completion_reward = {	
 			custom_effect_tooltip = CHI_nationalizing_start_tt 
 		}
