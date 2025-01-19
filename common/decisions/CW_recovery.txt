@@ -400,7 +400,7 @@ China_irp_category = {
 			modify_treasury_effect = yes
 			add_power_balance_value = {
 				id = industry_recovery_progress_balance
-				value = 0.80
+				value = 0.40
 			}
 
 			random_owned_state = {

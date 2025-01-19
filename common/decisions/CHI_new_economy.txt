@@ -180,7 +180,7 @@ CHI_new_social_economy_decisions = {
 	Promote_nationalization_strategic_industries = { #战略行业国有化
 		icon = GFX_decision_refinery_dec
 		visible = {
-			has_completed_focus = CHI_Promote_nationalization_strategic_industries 
+			has_completed_focus = Promote_nationalization_strategic_industries 
 			NOT = { has_completed_focus = CHI_Consolidation_public_ownership }
 			check_variable = { Promote_nationalization_strategic_industries_progress < 100 }
 		}
@@ -233,7 +233,7 @@ CHI_new_social_economy_decisions = {
 	Nationalize_construction_and_chemical_industries = { #建筑与化工行业国有化效果
 		icon = GFX_decision_generic_construction
 		visible = {
-			has_completed_focus = CHI_Nationalize_construction_and_chemical_industries 
+			has_completed_focus = Nationalize_construction_and_chemical_industries 
 			NOT = { has_completed_focus = CHI_Consolidation_public_ownership }
 			check_variable = { Nationalize_construction_and_chemical_industries_progress < 100 }
 		}
@@ -286,7 +286,7 @@ CHI_new_social_economy_decisions = {
 	Partial_nationalize_light_manufacturing_industry = { #部分轻工业、制造业国有化效果
 	icon = GFX_decision_generic_factory
 	visible = {
-		has_completed_focus = CHI_Partial_nationalize_light_manufacturing_industry 
+		has_completed_focus = Partial_nationalize_light_manufacturing_industry 
 		NOT = { has_completed_focus = CHI_Consolidation_public_ownership }
 		check_variable = { Partial_nationalize_light_manufacturing_industry_progress < 100 }
 	}
@@ -338,8 +338,7 @@ CHI_new_social_economy_decisions = {
 	Organize_breakthroughs_food_industry = { #组织食品、药品制造业技术攻关运动
 	icon = GFX_decision_generic_research
 	visible = {
-		has_completed_focus = CHI_Organize_breakthroughs_food_industry
-		
+		has_completed_focus = Organize_breakthroughs_food_industry
 		has_idea = CHI_shipinganquanwenti
 	}
 	available = {
@@ -373,7 +372,7 @@ CHI_new_social_economy_decisions = {
 	Raise_worker_salaries_benefits = { #提高工人薪资待遇
 	icon = GFX_decision_ger_mefo_bills
 	visible = {
-		has_completed_focus = CHI_Raise_worker_salaries_benefits
+		has_completed_focus = Raise_worker_salaries_benefits
 		OR = { has_idea = CHI_work7 has_idea = CHI_work6 has_idea = CHI_work5 has_idea = CHI_work_01 has_idea = CHI_work_02 has_idea = CHI_work_03 has_idea = CHI_work_04 }
 	}
 	available = {
