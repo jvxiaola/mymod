@@ -172,7 +172,7 @@ CHI_People_Commune_start_tt: "§7将开始重建人民公社的决议§!"
 CHI_Revitalize_the_countryside_trigger_tt: "§Y全国§!§7人民公社§!已基本§G重建完成§!"
 
 #idea and modifier or focus
-CHI_start_agriculture_trigger_tt: "已决定Y正式实行§!以§C公社形式§!建设§7集约农业§!的政策"
+CHI_start_agriculture_trigger_tt: "已决定§Y正式实行§!以§C公社形式§!建设§7集约农业§!的政策"
 CHI_agriculture2_trigger_tt: "§C各地公社§!§Y基础构架§!已完成"
 CHI_Collaboralize_end_tt: "§G政策§!§C推进§!§Y合作化§!§G已落实§!"
 CHI_Launch_cooperation_initiatives_at_forums_tt: "各经济较发达地区的§C“个体户-官方合作对话”政策§!均已完成"
