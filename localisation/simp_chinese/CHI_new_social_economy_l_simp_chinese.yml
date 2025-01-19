@@ -172,6 +172,7 @@ CHI_People_Commune_start_tt: "§7将开始重建人民公社的决议§!"
 CHI_Revitalize_the_countryside_trigger_tt: "§Y全国§!§7人民公社§!已基本§G重建完成§!"
 
 #idea and modifier or focus
+Organize_state_enterprises1_trigger: "§G已正式开始进行国有化工作§!"
 CHI_Organize_state_enterprises_modifier: "§Y国企构建§!"
 CHI_nationalizing_end_other_modifier_tt: "£construction_speed_texticon §Y基建、工厂、办公园区及补给站与铁路§!建造速度:§G+15%§!\n§Y工厂及办公园区劳动力需求§!:§G+15%§!"
 CHI_Collaboration_internet_end_other_modifier_tt: "§Y工厂及办公园区劳动力需求§!:[?CI_cmowr|=%+]\n每1000万人额外支出$$§R0.05B§!"

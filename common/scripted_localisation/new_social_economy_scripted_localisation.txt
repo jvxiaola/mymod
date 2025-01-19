@@ -524,15 +524,14 @@ defined_text = {
 	name = CHI_oacr_decisions_goal
 	text = {
 		trigger = {
-			has_country_flag = CHI_Restart_constructing_intensive_agriculture_end
-			has_completed_focus = CHI_People_Commune
+			has_completed_focus = CHI_Organize_allocation_commune_resources
 			NOT = { has_country_flag = CHI_Organize_allocation_commune_resources_end }
 		}
 		localization_key = "CHI_oacr_goal" #显示组织分配公社资源国策
 	}
 	text = {
 		trigger = {
-			NOT = { has_country_flag = CHI_Restart_constructing_intensive_agriculture_end has_idea = CHI_idea_People_Commune }
+			NOT = { has_completed_focus = CHI_Organize_allocation_commune_resources }
 		}
 		localization_key = "NOT_sign"
 	}
@@ -542,7 +541,6 @@ defined_text = {
 				has_country_flag = CHI_Organize_allocation_commune_resources_end
 				has_idea = CHI_idea_People_Commune
 			}
-			has_completed_focus = CHI_People_Commune
 		}
 		localization_key = "CHI_oacr_goal_achieve" #组织分配公社资源完成
 	}
@@ -552,15 +550,14 @@ defined_text = {
 	name = CHI_RCP_decisions_goal
 	text = {
 		trigger = {
-			has_country_flag = CHI_Restart_constructing_intensive_agriculture_end
-			has_completed_focus = CHI_People_Commune
+			has_completed_focus = CHI_Reorganize_communal_party
 			NOT = { has_country_flag = Reorganize_communal_party }
 		}
 		localization_key = "CHI_RCP_goal" #显示重组公社党组织国策
 	}
 	text = {
 		trigger = {
-			NOT = { has_country_flag = CHI_Restart_constructing_intensive_agriculture_end has_idea = CHI_idea_People_Commune }
+			NOT = { has_completed_focus = CHI_Reorganize_communal_party }
 		}
 		localization_key = "NOT_sign"
 	}
@@ -570,7 +567,6 @@ defined_text = {
 				has_country_flag = Reorganize_communal_party
 				has_idea = CHI_idea_People_Commune
 			}
-			has_completed_focus = CHI_People_Commune
 		}
 		localization_key = "CHI_RCP_goal_achieve" #重组公社党组织完成
 	}
