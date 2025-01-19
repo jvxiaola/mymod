@@ -1507,11 +1507,13 @@
 			}
 		}
 		offset = {
+			x = -1
+			trigger = { has_country_flag = xggm }
+		}
+		offset = {
 			x = -70
 			y = -5
-			trigger = {
-				tag = DSC
-			}
+			trigger = { tag = DSC }
 		}
 		offset = {
 			x = 14
@@ -1519,12 +1521,6 @@
 			trigger = {
 				tag = DSC
 				has_completed_focus = CHI_Chinese_Industrial_Explosion
-			}
-		}
-		offset = {
-			x = 1
-			trigger = {
-				NOT = { tag = DSC has_country_flag = laozuo }
 			}
 		}
 		allow_branch = {
