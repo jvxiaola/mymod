@@ -1062,7 +1062,7 @@
 
 	shared_focus = {
 		id = Nationalize_construction_and_chemical_industries
-		icon = construction4
+		icon = generic_office_construct
 		x = 0
 		y = 1
 		relative_position_id = CHI_Organize_state_enterprises
