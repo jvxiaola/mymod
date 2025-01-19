@@ -889,7 +889,6 @@ CHI_new_social_economy_decisions = {
 	available = {
 		always = yes
 	}
-	
 	custom_cost_trigger = {
 		check_variable = { treasury > 100.0 }
 	}
