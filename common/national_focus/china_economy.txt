@@ -1815,7 +1815,8 @@ shared_focus = {
 
 				clr_country_flag = Launch_cooperation_initiatives_at_forums
 				clr_country_flag = CHI_Collaboralize
-				
+				clr_country_flag = CHI_Assign_local_cooperative_party_committee
+
 				clr_country_flag = CHI_Restart_constructing_intensive_agriculture_end
 				clr_country_flag = CHI_Organize_allocation_commune_resources_end
 				clr_country_flag = Reorganize_communal_party
