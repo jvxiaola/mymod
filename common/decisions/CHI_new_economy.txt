@@ -943,8 +943,7 @@ CHI_new_social_economy_decisions = {
 	CHI_Organize_allocation_commune_resources = { #组织分配公社资源
 	icon = GFX_decision_infiltrate_state
 	visible = {
-		has_completed_focus = CHI_People_Commune
-		has_country_flag = CHI_Restart_constructing_intensive_agriculture_end
+		has_completed_focus = CHI_Organize_allocation_commune_resources
 		check_variable = { Organize_allocation_commune_resources_progress < 100 }
 	}
 	available = {
@@ -986,8 +985,7 @@ CHI_new_social_economy_decisions = {
 	CHI_Reorganize_communal_party = { #重组公社党组织
 	icon = GFX_decisions_category_blr_help
 	visible = {
-		has_completed_focus = CHI_People_Commune
-		has_country_flag = CHI_Restart_constructing_intensive_agriculture_end
+		has_completed_focus = CHI_Reorganize_communal_party
 		check_variable = { Reorganize_communal_party_progress < 100 }
 	}
 	available = {
@@ -1032,9 +1030,7 @@ CHI_new_social_economy_decisions = {
 	CHI_Raise_grainal_purchase_price = { #提高粮食收购价
 	icon = GFX_decision_break_treaty
 	visible = {
-		has_completed_focus = CHI_People_Commune
-		has_country_flag = CHI_Organize_allocation_commune_resources_end
-		has_country_flag = Reorganize_communal_party
+		has_completed_focus = CHI_Raise_grainal_purchase_price
 	}
 	available = {
 		always = yes
@@ -1067,9 +1063,7 @@ CHI_new_social_economy_decisions = {
 	CHI_Purchase_agricultural_supplies = { #采购农用器械及化肥
 	icon = GFX_decision_hol_drain_water_lines
 	visible = {
-		has_completed_focus = CHI_People_Commune
-		has_country_flag = CHI_Organize_allocation_commune_resources_end
-		has_country_flag = Reorganize_communal_party
+		has_completed_focus = CHI_Purchase_agricultural_supplies
 	}
 	available = {
 		always = yes
@@ -1102,9 +1096,7 @@ CHI_new_social_economy_decisions = {
 	CHI_Organize_learning_mechanized_agricultural_tools = { #组织学习农用机械
 	icon = GFX_decision_eng_ally_imperialist_coup
 	visible = {
-		has_completed_focus = CHI_People_Commune
-		has_country_flag = Raise_grainal_purchase_price
-		has_country_flag = Purchase_agricultural_supplies
+		has_completed_focus = CHI_Organize_learning_mechanized_agricultural_tools
 	}
 	available = {
 		always = yes

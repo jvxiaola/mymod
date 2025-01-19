@@ -1076,7 +1076,7 @@
 
 	shared_focus = {
 		id = Partial_nationalize_light_manufacturing_industry
-		icon = Generic_Underground_Factories
+		icon = focus_CHL_enlarge_the_textile_industries
 		x = 2
 		y = 1
 		relative_position_id = CHI_Organize_state_enterprises
@@ -1543,6 +1543,7 @@
 		}
 		ai_will_do = { base = 1 }
 	}
+
 	shared_focus = {		
 		id = CHI_People_Commune
 		icon = generic_embrace_agrarian_society
@@ -1556,7 +1557,7 @@
 		offset = {
 			x = -1
 			trigger = {
-					tag = DSC
+				tag = DSC
 			}
 		}
 		cost = 2
@@ -1572,6 +1573,103 @@
 		}
 		ai_will_do = { base = 1 }
 	}
+
+	shared_focus = {
+		id = CHI_Organize_allocation_commune_resources
+		icon = economic_machina_tools_factory
+		x = -2
+		y = 1
+		relative_position_id = CHI_People_Commune
+		cost = 0.7
+		prerequisite = { focus = CHI_People_Commune }
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+		available = {
+			has_country_flag = CHI_Restart_constructing_intensive_agriculture_end
+		}
+		completion_reward = {	
+			custom_effect_tooltip = CHI_nationalizing_start_tt 
+		}
+		ai_will_do = { base = 1 }
+	}
+
+	shared_focus = {
+		id = CHI_Reorganize_communal_party
+		icon = blr_soviet_academy_of_sciences
+		x = 0
+		y = 1
+		relative_position_id = CHI_People_Commune
+		cost = 0.7
+		prerequisite = { focus = CHI_People_Commune }
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+		available = {
+			has_country_flag = CHI_Restart_constructing_intensive_agriculture_end
+		}
+		completion_reward = {	
+			custom_effect_tooltip = CHI_nationalizing_start_tt 
+		}
+		ai_will_do = { base = 1 }
+	}
+
+	shared_focus = {
+		id = CHI_Raise_grainal_purchase_price
+		icon = expand_finance_ministry
+		x = 2
+		y = 1
+		relative_position_id = CHI_People_Commune
+		cost = 0.7
+		prerequisite = { focus = CHI_People_Commune }
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+		available = {
+			has_country_flag = CHI_Restart_constructing_intensive_agriculture_end
+		}
+		completion_reward = {	
+			custom_effect_tooltip = CHI_nationalizing_start_tt 
+		}
+		ai_will_do = { base = 1 }
+	}
+
+	shared_focus = {
+		id = CHI_Purchase_agricultural_supplies
+		icon = Wheat_Industry
+		x = -1
+		y = 2
+		relative_position_id = CHI_People_Commune
+		cost = 0.7
+		prerequisite = { focus = CHI_Organize_allocation_commune_resources }
+		prerequisite = { focus = CHI_Reorganize_communal_party }
+		prerequisite = { focus = CHI_Raise_grainal_purchase_price }
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+		available = {
+			has_country_flag = CHI_Organize_allocation_commune_resources_end
+			has_country_flag = Reorganize_communal_party
+		}
+		completion_reward = {	
+			custom_effect_tooltip = CHI_nationalizing_start_tt 
+		}
+		ai_will_do = { base = 1 }
+	}
+
+	shared_focus = {
+		id = CHI_Organize_learning_mechanized_agricultural_tools
+		icon = focus_generic_university_1
+		x = 1
+		y = 2
+		relative_position_id = CHI_People_Commune
+		cost = 0.7
+		prerequisite = { focus = CHI_Organize_allocation_commune_resources }
+		prerequisite = { focus = CHI_Reorganize_communal_party }
+		prerequisite = { focus = CHI_Raise_grainal_purchase_price }
+		search_filters = { FOCUS_FILTER_INFLUENCE }
+		available = {
+			has_country_flag = Raise_grainal_purchase_price
+			has_country_flag = Purchase_agricultural_supplies
+		}
+		completion_reward = {	
+			custom_effect_tooltip = CHI_nationalizing_start_tt 
+		}
+		ai_will_do = { base = 1 }
+	}
+
 shared_focus = {		
 		id = CHI_state_farm
 		icon = Farm_national_movement
@@ -1609,7 +1707,7 @@ shared_focus = {
 			trigger = { tag = DSC }
 		}
 		relative_position_id = CHI_agricultural_issues
-		prerequisite = { focus = CHI_state_farm focus = CHI_People_Commune }
+		prerequisite = { focus = CHI_state_farm focus = CHI_Purchase_agricultural_supplies focus = CHI_Organize_learning_mechanized_agricultural_tools }
 		cost = 2
 		available = { 
 			OR = {
