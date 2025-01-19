@@ -817,7 +817,6 @@ CHI_new_social_economy_decisions = {
 	icon = GFX_decision_generic_factory
 	visible = {
 		has_completed_focus = CHI_city_mutual_aid
-		has_country_flag = Launch_cooperation_initiatives_at_forums
 	}
 	available = {
 		always = yes
@@ -843,7 +842,6 @@ CHI_new_social_economy_decisions = {
 			}
 			STATE_Collaboralize = yes
 		}
-		clr_country_flag = Launch_cooperation_initiatives_at_forums
 		set_country_flag = CHI_Collaboralize
 	}
 	ai_will_do = { factor = 1 }
@@ -878,7 +876,6 @@ CHI_new_social_economy_decisions = {
 			}
 			STATE_Assign_local_cooperative_party_committee = yes
 		}
-		clr_country_flag = CHI_Collaboralize
 		set_country_flag = CHI_Assign_local_cooperative_party_committee
 	}
 	ai_will_do = { factor = 1 }

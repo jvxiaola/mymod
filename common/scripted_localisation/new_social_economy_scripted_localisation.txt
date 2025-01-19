@@ -576,16 +576,14 @@ defined_text = {
 	name = CHI_RGPP_decisions_goal
 	text = {
 		trigger = {
-			has_country_flag = CHI_Organize_allocation_commune_resources_end
-			has_country_flag = Reorganize_communal_party
-			has_completed_focus = CHI_People_Commune
+			has_completed_focus = CHI_Purchase_agricultural_supplies
 			NOT = { has_country_flag = Raise_grainal_purchase_price }
 		}
 		localization_key = "CHI_RGPP_goal" #显示提高粮食收购价格国策
 	}
 	text = {
 		trigger = {
-			NOT = { OR = { has_country_flag = CHI_Organize_allocation_commune_resources_end has_country_flag = Reorganize_communal_party } has_idea = CHI_idea_People_Commune }
+			NOT = { has_completed_focus = CHI_Purchase_agricultural_supplies }
 		}
 		localization_key = "NOT_sign"
 	}
@@ -595,7 +593,6 @@ defined_text = {
 				has_country_flag = Raise_grainal_purchase_price
 				has_idea = CHI_idea_People_Commune
 			}
-			has_completed_focus = CHI_People_Commune
 		}
 		localization_key = "CHI_RGPP_goal_achieve" #提高粮食收购价格完成
 	}
@@ -605,16 +602,14 @@ defined_text = {
 	name = CHI_PAS_decisions_goal
 	text = {
 		trigger = {
-			has_country_flag = CHI_Organize_allocation_commune_resources_end
-			has_country_flag = Reorganize_communal_party
-			has_completed_focus = CHI_People_Commune
+			has_completed_focus = CHI_Purchase_agricultural_supplies
 			NOT = { has_country_flag = Purchase_agricultural_supplies }
 		}
 		localization_key = "CHI_PAS_goal" #显示采购农用器械及化肥国策
 	}
 	text = {
 		trigger = {
-			NOT = { OR = { has_country_flag = CHI_Organize_allocation_commune_resources_end has_country_flag = Reorganize_communal_party } has_idea = CHI_idea_People_Commune }
+			NOT = { has_completed_focus = CHI_Purchase_agricultural_supplies }
 		}
 		localization_key = "NOT_sign"
 	}
@@ -624,7 +619,6 @@ defined_text = {
 				has_country_flag = Purchase_agricultural_supplies
 				has_idea = CHI_idea_People_Commune
 			}
-			has_completed_focus = CHI_People_Commune
 		}
 		localization_key = "CHI_PAS_goal_achieve" #采购农用器械及化肥完成
 	}
@@ -634,9 +628,7 @@ defined_text = {
 	name = CHI_OLMAT_decisions_goal
 	text = {
 		trigger = {
-			has_country_flag = Raise_grainal_purchase_price
-			has_country_flag = Purchase_agricultural_supplies
-			has_completed_focus = CHI_People_Commune
+			has_completed_focus = CHI_Organize_learning_mechanized_agricultural_tools
 			NOT = { has_country_flag = Organize_learning_mechanized_agricultural_tools }
 		}
 		localization_key = "CHI_OLMAT_goal" #显示组织学习农用机械国策
@@ -653,7 +645,6 @@ defined_text = {
 				has_country_flag = Organize_learning_mechanized_agricultural_tools
 				has_idea = CHI_idea_People_Commune
 			}
-			has_completed_focus = CHI_People_Commune
 		}
 		localization_key = "CHI_OLMAT_goal_achieve" #组织学习农用机械完成
 	}
