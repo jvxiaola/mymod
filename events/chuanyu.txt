@@ -61,11 +61,19 @@ country_event = {
 
 				}
 			option = {
+				ai_chance = {factor=1}
 				name = Chuanyu.2.a.o2
+				set_country_flag = chuanyumaopai
+
+
+	
 				set_political_power = 0
 				add_manpower = -10
+
 				add_stability = 0.1
-				set_country_flag = chuanyumaopai
+
+
+
 				}
 
 

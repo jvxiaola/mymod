@@ -22,8 +22,11 @@ CHI_Civil_war_decisions = {
 DSC_MAOPAIJUECE = {
 	priority = { base = 1000 }
 	allowed = { 
-has_country_flag = chuanyumaopai
-}
+		has_country_flag = chuanyumaopai
+	}
+
+
+
 		icon = GFX_decision_CUB_train_chi
 
 	visible = {
@@ -31,6 +34,7 @@ has_country_flag = chuanyumaopai
 		has_country_flag = chuanyumaopai
 	}
 }
+
 China_erp_category = {
 	allowed = { 
 		OR = { 
