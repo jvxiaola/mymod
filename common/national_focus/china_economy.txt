@@ -1586,9 +1586,7 @@
 		available = {	}
 		completion_reward = {
 			custom_effect_tooltip = CHI_People_Commune_start_tt 
-			hidden_effect = {
-				mark_focus_tree_layout_dirty = yes
-			}
+			unlock_decision_tooltip = CHI_Restart_constructing_intensive_agriculture
 		}
 		ai_will_do = { base = 1 }
 	}
@@ -1603,7 +1601,10 @@
 		prerequisite = { focus = CHI_People_Commune }
 		search_filters = { FOCUS_FILTER_INFLUENCE }
 		available = {
-			has_country_flag = CHI_Restart_constructing_intensive_agriculture_end
+			custom_trigger_tooltip = {
+				tooltip = CHI_start_agriculture_trigger_tt
+				has_country_flag = CHI_Restart_constructing_intensive_agriculture_end
+			}
 		}
 		completion_reward = {	
 			unlock_decision_tooltip = CHI_Organize_allocation_commune_resources
@@ -1621,7 +1622,10 @@
 		prerequisite = { focus = CHI_People_Commune }
 		search_filters = { FOCUS_FILTER_INFLUENCE }
 		available = {
-			has_country_flag = CHI_Restart_constructing_intensive_agriculture_end
+			custom_trigger_tooltip = {
+				tooltip = CHI_start_agriculture_trigger_tt
+				has_country_flag = CHI_Restart_constructing_intensive_agriculture_end
+			}
 		}
 		completion_reward = {	
 			unlock_decision_tooltip = CHI_Reorganize_communal_party
@@ -1640,8 +1644,11 @@
 		prerequisite = { focus = CHI_Reorganize_communal_party }
 		search_filters = { FOCUS_FILTER_INFLUENCE }
 		available = {
-			has_country_flag = CHI_Organize_allocation_commune_resources_end
-			has_country_flag = Reorganize_communal_party
+			custom_trigger_tooltip = {
+				tooltip = CHI_agriculture2_trigger_tt
+				has_country_flag = CHI_Organize_allocation_commune_resources_end
+				has_country_flag = Reorganize_communal_party
+			}
 		}
 		completion_reward = {	
 			unlock_decision_tooltip = CHI_Raise_grainal_purchase_price
@@ -1660,8 +1667,11 @@
 		prerequisite = { focus = CHI_Reorganize_communal_party }
 		search_filters = { FOCUS_FILTER_INFLUENCE }
 		available = {
-			has_country_flag = CHI_Organize_allocation_commune_resources_end
-			has_country_flag = Reorganize_communal_party
+			custom_trigger_tooltip = {
+				tooltip = CHI_agriculture2_trigger_tt
+				has_country_flag = CHI_Organize_allocation_commune_resources_end
+				has_country_flag = Reorganize_communal_party
+			}
 		}
 		completion_reward = {	
 			unlock_decision_tooltip = CHI_Purchase_agricultural_supplies
@@ -1680,8 +1690,11 @@
 		prerequisite = { focus = CHI_Reorganize_communal_party }
 		search_filters = { FOCUS_FILTER_INFLUENCE }
 		available = {
-			has_country_flag = CHI_Organize_allocation_commune_resources_end
-			has_country_flag = Reorganize_communal_party
+			custom_trigger_tooltip = {
+				tooltip = CHI_agriculture2_trigger_tt
+				has_country_flag = CHI_Organize_allocation_commune_resources_end
+				has_country_flag = Reorganize_communal_party
+			}
 		}
 		completion_reward = {	
 			unlock_decision_tooltip = CHI_Organize_learning_mechanized_agricultural_tools

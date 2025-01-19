@@ -108,7 +108,7 @@ cost_100_0_potical_power_50: "£treasury  100£political_power_texticon    §H50
 cost_100_0_potical_power_50_blocked: "£treasury  §R100§!£political_power_texticon    §R50§!"
 cost_100_0_potical_power_50_tooltip: "执行该决议将花费£treasury §Y100§!和£political_power_texticon §Y50§!"
 CHI_city_mutual_aid_trigger_tt: "已完成§7合作化倡议§!§7政策§!。"
-CHI_state_Oofb_start_tt: "§Y将开始§!推进§C个体户§!§O合作化§!政策"
+CHI_state_Oofb_start_tt: "§Y将开始§!在§7经济较发达地区§!推进§C“个体户-官方合作对话”§!"
 Oofb_guangdong: "在§Y广东与珠江地区§!§G进行§!§C“个体户-官方合作对话”§!"
 Oofb_jiangsu: "在§Y江苏地区§!§G进行§!§C“个体户-官方合作对话”§!"
 Oofb_shandong: "在§Y山东地区§!§G进行§!§C“个体户-官方合作对话”§!"
@@ -172,6 +172,8 @@ CHI_People_Commune_start_tt: "§7将开始重建人民公社的决议§!"
 CHI_Revitalize_the_countryside_trigger_tt: "§Y全国§!§7人民公社§!已基本§G重建完成§!"
 
 #idea and modifier or focus
+CHI_start_agriculture_trigger_tt: "已决定Y正式实行§!以§C公社形式§!建设§7集约农业§!的政策"
+CHI_agriculture2_trigger_tt: "§C各地公社§!§Y基础构架§!已完成"
 CHI_Collaboralize_end_tt: "§G政策§!§C推进§!§Y合作化§!§G已落实§!"
 CHI_Launch_cooperation_initiatives_at_forums_tt: "各经济较发达地区的§C“个体户-官方合作对话”政策§!均已完成"
 Organize_state_enterprises1_trigger: "§G已正式开始进行国有化工作§!"
@@ -213,7 +215,7 @@ CHI_Efficient_and_economical_desc: "合作化经济是我们目前在大城市�
 CHI_Revitalize_the_countryside: "社会主义新乡村"
 CHI_Revitalize_the_countryside_desc: "新人民公社的建立为农村注入了新鲜血液。国家大力投入的农业机械化与公社的集体化耕作方式相适应，配合国企新引入的化肥生产线极大提高了农业平均亩产，而生产效率的提升又促进农民向雇佣制的“农业工人”转变。而人民公社的党政基层建设又使得农村远离邪教等势力，成为产业民主与社会民主相结合的典范。"
 CHI_Chinese_Industrial_Explosion: "千禧黎明"
-CHI_Chinese_Industrial_Explosion_desc: "§B福山说历史已经终结，终结于资本主义的自由市场。§!如果新时代就沿着旧世界继续发展下去，那么可能看起来就像他所言。§R可历史终究会前进，就算是花一万年的时间，历史也终有一天会突破重重迷雾。§!或许人们还不知道他们所做的一切都有什么意义，§G但终有一天，人民的力量会在新千年焕发新春。§!在此之前，我们还需改善公有制经济体系，整顿官僚体系，客服资本阻碍.....总而言之，§7进步不会停止，但能取得人民支持的进步才能成功。§!"
+CHI_Chinese_Industrial_Explosion_desc: "§B福山说历史已经终结，终结于资本主义的自由市场。§!如果新时代就沿着旧世界继续发展下去，那么可能看起来就像他所言。§R可历史终究会前进，就算是花一万年的时间，历史也终有一天会突破重重迷雾。§!或许人们还不知道他们所做的一切都有什么意义，§G但终有一天，人民的力量会在新千年焕发新春。§!在此之前，我们还需改善公有制经济体系，整顿官僚体系，克服资本阻碍.....总而言之，§7进步不会停止，但能取得人民支持的进步才能成功。§!"
 
 #bop with decisions
 economic_developing_direction_balance: "§Y经济发展方向平衡§!"
