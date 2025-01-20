@@ -39,9 +39,9 @@ CHI_new_social_economy_decisions = {
 				NOT = { has_global_flag = Ccw }
 				any_controlled_state = { has_dynamic_modifier = { modifier = CW_ruins } } 
 			}
-			has_completed_focus = CHI_Socialist_Reconstruction
+			has_completed_focus = CHI_Public_ownership_construction
 		}
-		NOT = { has_completed_focus = CHI_Chinese_Industrial_Explosion }
+		NOT = { has_completed_focus = CHI_Chinese_NEW_MILLENNIUM }
 	}
 }
 
