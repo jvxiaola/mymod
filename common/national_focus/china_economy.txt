@@ -909,16 +909,19 @@
 	}
 
 	shared_focus = {
-	id = CHI_redemption
-		icon = communism4
+	id = CHI_Redemption_assets
+		icon = business_man
 
 		x = -1
 		y = 1
 		relative_position_id = CHI_Problems_capitalist_industry_commerce
-		mutually_exclusive = { focus = CHI_confiscated }
+		mutually_exclusive = { focus = CHI_confiscated_assets }
 
 		cost = 2
-
+		allow_branch = {
+			NOT = { has_completed_focus = CHI_Chinese_Industrial_Explosion has_country_flag = laozuo }
+			tag = DSC
+		 }
 		prerequisite = { focus = CHI_Problems_capitalist_industry_commerce }
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -931,24 +934,27 @@
 			add_political_power = 50
 			set_temp_variable = { temp_opinion = 10 }
 			change_industrial_conglomerates_opinion = yes
-			unlock_decision_tooltip = Redemption_assets
+			unlock_decision_tooltip = CHI_Redemption_assets
 		}
 
 		ai_will_do = { base = 1 }
 	}
 
 	shared_focus = {		
-		id = CHI_confiscated
-		icon = cash_grap
+		id = CHI_confiscated_assets
+		icon = anti_establishment
 
 		x = 1
 		y = 1
 		relative_position_id = CHI_Problems_capitalist_industry_commerce
 
 		cost = 2
-
+		allow_branch = {
+			NOT = { has_completed_focus = CHI_Chinese_Industrial_Explosion has_country_flag = laozuo }
+			tag = DSC
+		 }
 		prerequisite = { focus = CHI_Problems_capitalist_industry_commerce }
-		mutually_exclusive = { focus = CHI_redemption }
+		mutually_exclusive = { focus = CHI_Redemption_assets }
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_CORRUPTION FOCUS_FILTER_INDUSTRY }
 
@@ -964,7 +970,7 @@
 			change_communist_cadres_opinion = yes
 			set_temp_variable = { treasury_change = 300 }
 			modify_treasury_effect = yes
-			unlock_decision_tooltip = confiscated_assets
+			unlock_decision_tooltip = CHI_confiscated_assets
 }
 		ai_will_do = { base = 1 }
 	}
@@ -975,11 +981,8 @@
 		x = 0
 		y = 2
 		relative_position_id = CHI_Problems_capitalist_industry_commerce
-		mutually_exclusive = { focus = CHI_worker_ownership }
-
 		cost = 2
-
-		prerequisite = { focus = CHI_confiscated focus = CHI_redemption }
+		prerequisite = { focus = CHI_confiscated_assets focus = CHI_Redemption_assets }
 		allow_branch = {
 			NOT = { has_completed_focus = CHI_Chinese_Industrial_Explosion has_country_flag = laozuo }
 			tag = DSC
@@ -1007,10 +1010,10 @@
 	shared_focus = {		
 		id = CHI_worker_ownership
 		icon = union_negotiations
-		x = -4
+		x = -3
 		y = 3
 		relative_position_id = CHI_Socialist_Reconstruction
-		prerequisite = { focus = CHI_confiscated focus = CHI_redemption }
+		prerequisite = { focus = CHI_Problems_capitalist_industry_commerce }
 		mutually_exclusive = { focus = CHI_Organize_state_enterprises }
 
 		cost = 5
@@ -1530,7 +1533,7 @@
 			}
 		}
 		offset = {
-			x = -1
+			x = -2
 			trigger = { has_country_flag = xggm }
 		}
 		offset = {

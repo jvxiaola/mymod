@@ -2,7 +2,7 @@ defined_text = {
 	name = CHI_new_social_economy_decisions_goal
 	text = {
 		trigger = {
-			has_completed_focus = CHI_redemption
+			has_completed_focus = CHI_Redemption_assets
 			check_variable = { Redemption_assets_times < 3 }
 			NOT = { has_idea = CHI_nationalizing_end }
 		}
@@ -10,7 +10,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_completed_focus = CHI_confiscated
+			has_completed_focus = CHI_confiscated_assets
 			check_variable = { confiscated_assets_times < 5 }
 			NOT = { has_idea = CHI_nationalizing_end }
 		}
@@ -19,7 +19,7 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
-				NOT = { has_completed_focus = CHI_redemption }
+				NOT = { has_completed_focus = CHI_Redemption_assets }
 				NOT = { has_completed_focus = CHI_confiscated }
 			}		
 		}
@@ -27,7 +27,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_completed_focus = CHI_redemption
+			has_completed_focus = CHI_Redemption_assets
 			OR = {
 				has_idea = CHI_nationalizing_end
 				check_variable = { Redemption_assets_times = 3 }
@@ -37,7 +37,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_completed_focus = CHI_confiscated
+			has_completed_focus = CHI_confiscated_assets
 			OR = {
 				has_idea = CHI_nationalizing_end
 				check_variable = { confiscated_assets_times = 5 }

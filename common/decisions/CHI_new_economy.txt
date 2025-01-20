@@ -35,10 +35,10 @@ CHI_new_social_economy_decisions = {
 		}
 	}
 #工业国有化
-	Redemption_assets = {
+CHI_Redemption_assets = {
 		icon = GFX_decision_gre_investment_decisions
 		visible = {
-			has_completed_focus = CHI_redemption 
+			has_completed_focus = CHI_Redemption_assets 
 			NOT = { has_completed_focus = CHI_Consolidation_public_ownership }
 			check_variable = { Redemption_assets_times < 3 }
 		}
@@ -105,10 +105,10 @@ CHI_new_social_economy_decisions = {
 		}
 	}
 
-	confiscated_assets = {
+	CHI_confiscated_assets = {
 		icon = GFX_decision_generic_assassination
 		visible = {
-			has_completed_focus = CHI_confiscated 
+			has_completed_focus = CHI_confiscated_assets 
 			NOT = { has_completed_focus = CHI_Consolidation_public_ownership }
 			check_variable = { confiscated_assets_times < 5 }
 		}
