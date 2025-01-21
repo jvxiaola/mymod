@@ -1,0 +1,31 @@
+state={
+	id=1200
+	name="STATE_1200"
+	state_category = state_05
+	provinces={
+		1970 2015 7790 14470 14471 15454 15455 15456 15457 
+	}
+	history = {
+		owner = CHI
+		victory_points = { 1970 1 } #Yarkant
+		victory_points = { 2015 5 } #Kashgar
+
+
+		buildings = {
+			infrastructure = 1
+			internet_station = 0
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 2
+			fuel_silo = 0
+		}
+		add_dynamic_modifier = { modifier = renewable_capacity_factor_dyn_mod }
+		set_variable = { state_renewable_capacity_factor_modifier_var = 0.05 }
+		add_core_of = CHI
+		add_core_of = TAI
+		add_core_of = ETK
+	}
+	manpower=4500000
+	buildings_max_level_factor=1.000
+	local_supplies=0.005
+}
