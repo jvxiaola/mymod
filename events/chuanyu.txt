@@ -197,8 +197,8 @@ trigger = {
 	tag = DSC
 }
 	OR = {
-	536 = { is_controlled_by = DSC }
-	536 = { is_controlled_by = HKG }
+	536 = { is_controlled_by = ROOT }
+	536 = { is_controlled_by = ROOT }
 	}
 }
 mean_time_to_happen = {

@@ -2,6 +2,10 @@ state = {
 	id = 1198
 	name = "STATE_1198"
 	state_category = state_01
+	resources = {
+		chromium = 2
+		oil = 3
+	}
 	provinces = {
 		1766 5087 
 	}
@@ -10,8 +14,8 @@ state = {
 		buildings = {
 			infrastructure = 0
 			internet_station = 0
-			industrial_complex = 0
-			arms_factory = 0
+			industrial_complex = 1
+			arms_factory = 1
 			air_base = 0
 			fuel_silo = 0
 		}
@@ -21,7 +25,7 @@ state = {
 		add_core_of = TAI
 		add_core_of = ETK
 	}
-	manpower = 410000
+	manpower = 310000#资料数据
 	buildings_max_level_factor = 1.000
 	local_supplies = 0.005
 }
