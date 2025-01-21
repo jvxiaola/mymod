@@ -2,12 +2,16 @@ state={
 	id=1199
 	name="STATE_1199"
 	state_category = state_00
+	resources = {
+		chromium = 1
+		oil = 2
+	}
 	history = {
 		owner = CHI
 		buildings = {
 			infrastructure = 0
 			internet_station = 0
-			industrial_complex = 0
+			industrial_complex = 1
 			arms_factory = 0
 			air_base = 0
 			fuel_silo = 0
@@ -21,7 +25,7 @@ state={
 	provinces={
 		4828 12119 
 	}
-	manpower=220000
+	manpower=140000#资料数据
 	buildings_max_level_factor=1.00
 	local_supplies=0.005
 }
