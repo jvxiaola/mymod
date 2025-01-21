@@ -2942,17 +2942,17 @@ DSC_MAOPAIJUECE = {
 	DSC_maopaizhenghe = {
 		icon = GFX_decision_generic_form_nation
 		available = {
-			has_country_flag = chuanyumaopai
+			has_country_flag = gmxingdong
 		}
 
 
 		fire_only_once = yes
 		visible = {
-			has_country_flag = chuanyumaopai
+			has_country_flag = gmxingdong
 		}
 
 		complete_effect = {
-			
+			country_event=chuanyu.6
 		}
 		}
 

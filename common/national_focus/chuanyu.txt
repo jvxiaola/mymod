@@ -30,6 +30,7 @@ focus_tree = {
 		}
 		allow_branch={
 			NOT={
+				has_country_flag = chuanyumaopai
 				has_country_flag = qyxd
 				has_country_flag = rehabilitate_economy
 			}
@@ -308,21 +309,124 @@ focus_tree = {
 
 
 
+	focus = {
+		id = DSC_SUQINGSAOLUAN
+		icon = military_mission2
+		x = 5
+
+		y = 3
+
+		cost = 5
+
+		prerequisite = {
+			focus = DSC_ZHONGLI
+		}
+
+
+		prerequisite = {
+			focus = DSC_kongzhiyulun
+		}
+			prerequisite = {
+			focus = DSC_ZHENGYAFANPAN
+		} 
+
+
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+		completion_reward = {
+
+		country_event = chuanyu.10
+}
+	}
 
 
 
 
+	focus = {
+		id = DSC_ZHENGYAFANPAN
+		icon = military_mission2
+		x = 3
+
+		y = 2
+
+		cost = 5
+
+		prerequisite = {
+			focus = DSC_ZHONGLI
+		 }
 
 
 
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+		completion_reward = {
+	add_stability = 0.05
+}
+	}
+
+	focus = {
+		id = DSC_kongzhiyulun
+		icon = military_mission2
+		x = 7
+
+		y = 2
+
+		cost = 5
+
+		prerequisite = {
+			focus = DSC_ZHONGLI
+		 }
+
+
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+		completion_reward = {
+			set_temp_variable = { treasury_change = -0.20 }
+			modify_treasury_effect = yes
+}
+	}
 
 	focus = {
 		id = DSC_ZHENGSHUI
 		icon = economic_crisis
 		x = 5
 
-		y = 3
+		y = 4
 
 		cost = 5
 
@@ -347,15 +451,152 @@ focus_tree = {
 			set_temp_variable = { treasury_change = 20 }
 			modify_treasury_effect = yes
 			country_event = chuanyu.3
-			custom_effect_tooltip = "等待一段时间，将会有翻天覆地的变化"
+
 		}
 	}
 
 
 
+	focus = {
+		id = DSC_zhenghexiaozu
+		icon = economic_crisis
+		x = 5
+
+		y = 0
+
+		cost = 5
+		allow_branch = {
+			has_country_flag = chuanyumaopai
+
+			NOT = {
+							has_country_flag = qyxd
+			}
+		}
+		prerequisite = {
+
+		 }
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+		completion_reward = {
 
 
+		}
+	}
 
+	focus = {
+		id = DSC_zhengzhibao
+		icon = economic_crisis
+		x = 5
+
+		y = 1
+
+		cost = 5
+		allow_branch = {
+
+		}
+		prerequisite = {
+			focus = DSC_zhenghexiaozu
+		 }
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+		completion_reward = {
+
+
+		}
+	}
+
+	focus = {
+		id = DSC_xianfengdui
+		icon = economic_crisis
+		x = 5
+
+		y = 2
+
+		cost = 5
+		allow_branch = {
+
+		}
+		prerequisite = {
+			focus=DSC_zhengzhibao
+		 }
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+		completion_reward = {
+
+
+		}
+	}
+
+
+	focus = {
+		id = DSC_shiyicidaibiaodahui
+		icon = economic_crisis
+		x = 5
+
+		y = 4
+
+		cost = 5
+		allow_branch = {
+
+		}
+		prerequisite = {
+			focus=DSC_xianfengdui
+		 }
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+		completion_reward = {
+			set_country_flag = gmxingdong
+
+		}
+	}
 
 	focus = {
 		id = DSC_QIYI
@@ -539,7 +780,6 @@ add_political_power = 100
 			}
 	
 		}
-
 
 
 

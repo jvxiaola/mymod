@@ -55,23 +55,22 @@ country_event = {
 			option = {
 				
 				ai_chance = {factor=100}
+
 				name = Chuanyu.2.a.o1
-				add_manpower = -10
+				add_ideas =  CHI_Strict_military_control
+
 				add_stability = 0.1
 
 				}
 			option = {
 				ai_chance = {factor=1}
 				name = Chuanyu.2.a.o2
+				add_ideas =  CHI_Strict_military_control
 				set_country_flag = chuanyumaopai
-
-
-	
 				set_political_power = 0
-				add_manpower = -10
 
 				add_stability = 0.1
-
+				mark_focus_tree_layout_dirty = yes
 
 
 				}
@@ -318,3 +317,19 @@ country_event = {
 			}
 		}
 
+		country_event = {
+			id = chuanyu.10
+			title = chuanyu.10.t
+			desc = chuanyu.10.d
+							
+			is_triggered_only = yes
+							
+							
+			option = {
+			name = chuanyu.10.a 
+	
+			add_manpower = -300
+	
+							
+				}
+			}
