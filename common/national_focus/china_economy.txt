@@ -1260,8 +1260,7 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = {
-		}
+		available = {	}
 
 		completion_reward = {
 			add_stability = 0.05
