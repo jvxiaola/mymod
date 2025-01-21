@@ -71,6 +71,8 @@ army_xp_20_AND_potical_power_100_tooltip: "执行该决议将花费£army_experi
  CHI_NEW_people_war2: "新人民战争:§Y第二阶段§!"
  CHI_NEW_people_war1_desc: "战争使得大多数地区的基础设施遭到破坏，为此我们将运用以前的经验：依靠人民群众。"
  CHI_NEW_people_war2_desc: "战争使得大多数地区的基础设施遭到破坏，为此我们将运用以前的经验：依靠人民群众。"
+ CHI_NEW_people_war_final: "§R中国命运之决战§!"
+ CHI_NEW_people_war_final_desc: "当前的中国主要由两个不同势力占据，接下来的战争将会决定中国未来的命运。§R同志们，继续前进§!"
 
 
 #事件

@@ -2945,14 +2945,14 @@ DSC_MAOPAIJUECE = {
 			has_country_flag = gmxingdong
 		}
 
-
+		cost = 0
 		fire_only_once = yes
 		visible = {
 			has_country_flag = gmxingdong
 		}
 
 		complete_effect = {
-			country_event=chuanyu.6
+			country_event = chuanyu.6
 		}
 		}
 
@@ -3074,6 +3074,40 @@ CHI_Civil_war_decisions = {
 			}
 		}
 
+		CHI_NEW_people_war_final = {
+			icon = GFX_decision_generic_form_nation
+			available = {
+				is_ai = no
+				has_idea = CHI_NEW_people_war2
+			}
+			custom_cost_trigger = {
+				has_army_experience > 20
+				has_political_power > 99
+			}
+			custom_cost_text = army_xp_20_AND_potical_power_100
+	
+			fire_only_once = yes
+			visible = {
+				tag = DSC
+				has_idea = CHI_NEW_people_war2
+				all_country = {
+					if = {
+						limit = { exists = yes }
+						NOT = { has_cosmetic_tag = CHI_REB_S }
+					}
+				}
+				any_enemy_country = { tag = CHI }
+			}
+	
+			complete_effect = {
+				swap_ideas = {
+					remove_idea = CHI_NEW_people_war2
+					add_idea = CHI_NEW_people_war_final
+				}
+				hidden_effect = { army_experience = -20 add_political_power = -100 }
+			}
+		}
+
 CHI_difangredamry = {
 		icon = GFX_decision_generic_form_nation
 		available = {
@@ -3095,14 +3129,14 @@ CHI_difangredamry = {
 		target_array = controlled_states
 				target_trigger = {
 			FROM = {
-				is_owned_by = ROOT
+				is_controlled_by = ROOT
 			}
 		}
 		visible = {
-has_idea = CHI_war_communism
-			has_civil_war = yes
+				is_ai = no
+				has_global_flag = Ccw
 			FROM = {
-				is_owned_by = ROOT			}
+				is_controlled_by = ROOT			}
 		}
 
 		complete_effect = {
@@ -3121,7 +3155,7 @@ has_idea = CHI_war_communism
 		Militia_Bat = { x = 1 y = 2 }
 				}
 			}
-			FROM = {	
+			FROM = {
 					create_unit = {
 					division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
 					owner = CHI
