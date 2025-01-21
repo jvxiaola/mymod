@@ -470,6 +470,7 @@ focus_tree = {
 
 			NOT = {
 							has_country_flag = qyxd
+							has_country_flag = rehabilitate_economy
 			}
 		}
 		prerequisite = {
@@ -594,7 +595,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			set_country_flag = gmxingdong
-
+custom_effect_tooltip = "革命决议将会可用"
 		}
 	}
 
