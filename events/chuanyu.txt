@@ -181,7 +181,8 @@ country_event = {
 			startup_politics = yes
 				}				
 				mark_focus_tree_layout_dirty = yes
-				set_country_flag = qyxd												
+				set_country_flag = qyxd			
+				clr_country_flag = gmxingdong									
 						}
 					}
 

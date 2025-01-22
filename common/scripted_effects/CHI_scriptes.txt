@@ -781,7 +781,7 @@ CHI_work_up = {
     ROOT = {
       if = {
         limit = {
-         check_variable = { 5 > ruined_state_num > 2 }
+         check_variable = { 5 > ruined_state_num > -1 }
         }
         add_ideas = Industrial_damage1
       }
@@ -791,7 +791,7 @@ CHI_work_up = {
         check_variable = { 8 > ruined_state_num > 4 }
       }
       swap_ideas = {
-        remove_idea = Industrial_damage1
+
         add_idea = Industrial_damage2
       }
     }
@@ -800,8 +800,7 @@ CHI_work_up = {
       limit = {
         check_variable = { 12 > ruined_state_num > 6 }
       }
-        remove_ideas = Industrial_damage1
-        remove_ideas = Industrial_damage2
+
         add_ideas = Industrial_damage3
     }
 
@@ -809,9 +808,7 @@ CHI_work_up = {
       limit = {
         check_variable = { ruined_state_num > 11 }
       }
-      remove_ideas = Industrial_damage1
-      remove_ideas = Industrial_damage2
-      remove_ideas = Industrial_damage3
+
       add_ideas = Industrial_damage4
     }
   }
@@ -824,7 +821,7 @@ CHI_ruin_agriculture_add = {
   ROOT = {
     if = {
       limit = {
-       check_variable = { 5 > ruined_agriculture_state_num > 2 }
+       check_variable = { 5 > ruined_agriculture_state_num > -1 }
       }
       add_ideas = Poor_agriculture1
     }
@@ -834,7 +831,7 @@ CHI_ruin_agriculture_add = {
       check_variable = { 8 > ruined_agriculture_state_num > 4 }
     }
     swap_ideas = {
-      remove_idea = Poor_agriculture1
+
       add_idea = Poor_agriculture2
     }
   }
@@ -843,8 +840,7 @@ CHI_ruin_agriculture_add = {
     limit = {
       check_variable = { 11 > ruined_agriculture_state_num > 7 }
     }
-      remove_ideas = Poor_agriculture1
-      remove_ideas = Poor_agriculture2
+
       add_ideas = Poor_agriculture3
   }
 
@@ -852,9 +848,7 @@ CHI_ruin_agriculture_add = {
     limit = {
       check_variable = { ruined_agriculture_state_num > 10 }
     }
-    remove_ideas = Poor_agriculture1
-    remove_ideas = Poor_agriculture2
-    remove_ideas = Poor_agriculture3
+
     add_ideas = Poor_agriculture4
   }
 }

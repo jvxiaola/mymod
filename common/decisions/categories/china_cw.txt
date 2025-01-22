@@ -22,7 +22,7 @@ CHI_Civil_war_decisions = {
 DSC_MAOPAIJUECE = {
 	priority = { base = 1000 }
 	allowed = { 
-		has_country_flag = gmxingdong
+
 	}
 
 
