@@ -781,24 +781,33 @@ CHI_work_up = {
     ROOT = {
       if = {
         limit = {
-         check_variable = { 5 > ruined_state_num > -1 }
+        check_variable = { 5 > ruined_state_num }
+
+        check_variable = { ruined_state_num > -1 }
+
         }
         add_ideas = Industrial_damage1
       }
 
     else_if = {
       limit = {
-        check_variable = { 8 > ruined_state_num > 4 }
+        check_variable = { 8 > ruined_state_num }
+        check_variable = { ruined_state_num  > 4 }
+
+
+
+
       }
-      swap_ideas = {
+
 
         add_idea = Industrial_damage2
-      }
+      
     }
 
     else_if = {
       limit = {
-        check_variable = { 12 > ruined_state_num > 6 }
+        check_variable = { 12 > ruined_state_num }
+        check_variable = { ruined_state_num > 6 }
       }
 
         add_ideas = Industrial_damage3
@@ -821,24 +830,31 @@ CHI_ruin_agriculture_add = {
   ROOT = {
     if = {
       limit = {
-       check_variable = { 5 > ruined_agriculture_state_num > -1 }
+
+
+       check_variable = { 5 > ruined_agriculture_state_num }
+       check_variable = {ruined_agriculture_state_num > -1 }
+
+
       }
       add_ideas = Poor_agriculture1
     }
 
   else_if = {
     limit = {
-      check_variable = { 8 > ruined_agriculture_state_num > 4 }
+      check_variable = { 8 > ruined_agriculture_state_num }
+      check_variable = { ruined_agriculture_state_num > 4 }
     }
-    swap_ideas = {
+
 
       add_idea = Poor_agriculture2
-    }
+    
   }
 
   else_if = {
     limit = {
-      check_variable = { 11 > ruined_agriculture_state_num > 7 }
+      check_variable = { 11 > ruined_agriculture_state_num }
+      check_variable = { ruined_agriculture_state_num > 7 }
     }
 
       add_ideas = Poor_agriculture3

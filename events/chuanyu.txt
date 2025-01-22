@@ -256,8 +256,7 @@ country_event = {
 	option = {
 	name = Chuanyu.8.a
 	#添加工业体系损伤精神
-	if = {
-		limit = { has_global_flag = Ccw }
+
 	every_controlled_state = { 
 		limit = {
 			is_core_of = DSC
@@ -266,13 +265,13 @@ country_event = {
 			add_to_array = {
 				array = global.ruined_state
 			}
-			CHI_ruin_industry_add = yes
+
 		}
+		CHI_ruin_industry_add = yes
 	clear_array = global.ruined_state
-	}
+	
 	#添加农业损伤精神
-	if = {
-		limit = { has_global_flag = Ccw }
+
 	every_controlled_state = { 
 		limit = {
 			is_agriculture_state = yes
@@ -281,10 +280,11 @@ country_event = {
 			add_to_array = {
 				array = global.ruined_agriculture_state
 			}
-			CHI_ruin_agriculture_add = yes
+
 		}
+		CHI_ruin_agriculture_add = yes
 		clear_array = global.ruined_agriculture_state
-	}
+	
 	add_ideas = p5_member
 	custom_effect_tooltip = change_rebuild_focus_tree_tt
 	hidden_effect = {
