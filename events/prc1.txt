@@ -1529,57 +1529,7 @@ country_event = {
 					}
 			add_ideas = CHI_Strict_military_control
 			set_cosmetic_tag = CHI_REB_S
-			puppet = HKG
-			puppet = MAC
 			load_focus_tree = CHI_focus
-		XIN = {
-			create_country_leader={
-				name = "Qiu yanhan"
-				picture = "qiu_yanhan.dds"
-				ideology = Nat_Autocracy
-		traits = {
-		}
-	}
-		set_cosmetic_tag = ETK_JUNQU
-		transfer_state = 592
-		set_popularities = {
-			democratic = 0.0
-			communism = 0.0
-			fascism = 0.0
-			neutrality = 0.0
-			nationalist = 100
-		}
-		set_politics = {
-			ruling_party = nationalist
-			last_election = "1996.12.11"
-			election_frequency = 60
-			elections_allowed = no
-		}
-	
-		start_politics_input = yes
-			 division_template = {
-			name = "XIN"
-			division_names_group = SOV_GAR_01
-			regiments = {
-	Mot_Inf_Bat = { x = 0 y = 0 }
-	Mot_Inf_Bat = { x = 0 y = 1 }
-	Mot_Inf_Bat = { x = 0 y = 2 }
-	Mot_Inf_Bat = { x = 0 y = 3 }
-			}
-			}
-			mark_focus_tree_layout_dirty = yes#刷新国策树
-	}
-	transfer_units_fraction= {
-		target = XIN
-		size = 0.01
-		stockpile_ratio = 0.1
-		army_ratio = 0.1
-		air_ratio = 0.1
-	}
-			random_army_leader = {
-			set_nationality = XIN
-			}
-
 			set_capital = 536
 			create_country_leader = {
 			name = "Deng Pufang"
@@ -1595,28 +1545,26 @@ country_event = {
 		peoplefuhao	
 				}
 			}
-			add_ideas = {denglegacy CHI_jdjs1 }
-			
-
-					add_ideas = p5_member
-					set_temp_variable = { temp_democratic = PREV.party_popularity@democratic }
-					multiply_temp_variable = { temp_democratic = 100 }
-					set_temp_variable = { temp_total = temp_democratic }
-					set_temp_variable = { temp_communism = PREV.party_popularity@communism }
-					multiply_temp_variable = { temp_communism = 100 }
-					add_to_temp_variable = { temp_total = temp_communism }
-					set_temp_variable = { temp_neutrality = PREV.party_popularity@neutrality }
-					multiply_temp_variable = { temp_neutrality = 100 }
-					add_to_temp_variable = { temp_total = temp_neutrality }
-					set_temp_variable = { temp_fascism = PREV.party_popularity@fascism }
-					multiply_temp_variable = { temp_fascism = 100 }
-					add_to_temp_variable = { temp_total = temp_fascism }
-					set_temp_variable = { temp_nationalist = PREV.party_popularity@nationalist }
-					multiply_temp_variable = { temp_nationalist = 100 }
-					add_to_temp_variable = { temp_total = temp_nationalist }
-					subtract_from_temp_variable = { temp_total = 100 }
-					multiply_temp_variable = { temp_total = -1 }
-					add_to_temp_variable = { temp_nationalist = temp_total }
+			add_ideas = { denglegacy CHI_jdjs1 }
+			add_ideas = p5_member
+			set_temp_variable = { temp_democratic = PREV.party_popularity@democratic }
+			multiply_temp_variable = { temp_democratic = 100 }
+			set_temp_variable = { temp_total = temp_democratic }
+			set_temp_variable = { temp_communism = PREV.party_popularity@communism }
+			multiply_temp_variable = { temp_communism = 100 }
+			add_to_temp_variable = { temp_total = temp_communism }
+			set_temp_variable = { temp_neutrality = PREV.party_popularity@neutrality }
+			multiply_temp_variable = { temp_neutrality = 100 }
+			add_to_temp_variable = { temp_total = temp_neutrality }
+			set_temp_variable = { temp_fascism = PREV.party_popularity@fascism }
+			multiply_temp_variable = { temp_fascism = 100 }
+			add_to_temp_variable = { temp_total = temp_fascism }
+			set_temp_variable = { temp_nationalist = PREV.party_popularity@nationalist }
+			multiply_temp_variable = { temp_nationalist = 100 }
+			add_to_temp_variable = { temp_total = temp_nationalist }
+			subtract_from_temp_variable = { temp_total = 100 }
+			multiply_temp_variable = { temp_total = -1 }
+			add_to_temp_variable = { temp_nationalist = temp_total }
 
 					set_popularities = {
 						democratic = temp_democratic

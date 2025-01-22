@@ -44,7 +44,6 @@ country_event = {
 			damage_building = {
 				tag = offices
 				damage = 0.65
-				repair_speed_modifier = 0.5
 			}
 			damage_building = {
 				type = infrastructure
@@ -56,12 +55,134 @@ country_event = {
 			}
 		}
 		1201 = { 
-		set_demilitarized_zone = yes
-		add_manpower = -150
+			set_demilitarized_zone = yes
+			add_manpower = -150
 		}
 		1198 = { 
 			set_demilitarized_zone = yes
 			add_manpower = -200
+		}
+	}
+}
+
+country_event = {
+	id = CW_Diverse.3
+	title = CW_Diverse.3.t
+	desc = CW_Diverse.3.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+	option = {	
+		name = CW_Diverse.3.a
+		army_experience = 5
+		country_event = { id = CW_Diverse.4 days = 2 }
+		add_equipment_to_stockpile = {
+			type = Inf_equipment
+			amount = -100
+			producer = CHI
+		}
+		592 = {
+			set_demilitarized_zone = no
+			add_manpower = -150
+			damage_building = {
+				tag = offices
+				damage = 0.10
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 0.05
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 0.25
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CW_Diverse.4
+	title = CW_Diverse.4.t
+	desc = CW_Diverse.4.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+	option = {	
+		name = CW_Diverse.4.a
+
+		#country_event = { id = CW_Diverse.4 days = 2 }
+		592 = { transfer_state_to = XIN add_core_of = XIN 
+		add_victory_points = { province = 3167 value = 5 }
+		}
+		1198 = { transfer_state_to = XIN add_core_of = XIN }
+		1199 = { transfer_state_to = XIN add_core_of = XIN }
+		1200 = { transfer_state_to = XIN add_core_of = XIN }
+		1201 = { transfer_state_to = XIN add_core_of = XIN }
+		1202 = { transfer_state_to = XIN add_core_of = XIN }
+		1203 = { transfer_state_to = XIN add_core_of = XIN }
+		1204 = { transfer_state_to = XIN add_core_of = XIN }
+		1205 = { transfer_state_to = XIN add_core_of = XIN }
+		1206 = { transfer_state_to = XIN add_core_of = XIN }
+		1207 = { transfer_state_to = XIN add_core_of = XIN }
+		1208 = { transfer_state_to = XIN add_core_of = XIN }
+
+		XIN = {
+			create_country_leader={
+				name = "Qiu yanhan"
+				picture = "qiu_yanhan.dds"
+				ideology = Nat_Autocracy
+				traits = {}
+			}
+			set_cosmetic_tag = ETK_JUNQU
+			set_popularities = {
+				democratic = 0.0
+				communism = 0.0
+				fascism = 0.0
+				neutrality = 0.0
+				nationalist = 100
+			}
+			set_politics = {
+				ruling_party = nationalist
+				last_election = "1996.12.11"
+				election_frequency = 60
+				elections_allowed = no
+			}
+	
+			start_politics_input = yes
+			 	division_template = {
+				name = "XIN"
+				division_names_group = SOV_GAR_01
+				is_locked = yes
+				regiments = {
+					Mot_Inf_Bat = { x = 0 y = 0 } Mot_Inf_Bat = { x = 0 y = 1 }
+					Mot_Inf_Bat = { x = 0 y = 2 } Mot_Inf_Bat = { x = 0 y = 3 }
+					Mot_Inf_Bat = { x = 1 y = 0 } Mot_Inf_Bat = { x = 1 y = 1 }
+					Mot_Inf_Bat = { x = 1 y = 2 } Mot_Inf_Bat = { x = 1 y = 3 }
+				}
+			}
+			mark_focus_tree_layout_dirty = yes#刷新国策树
+	}
+		CHI = {
+			add_equipment_to_stockpile = {
+				type = Inf_equipment
+				amount = -5000
+				producer = CHI
+			}
+			transfer_units_fraction = {
+				target = XIN
+				size = 0.01
+				stockpile_ratio = 0.1
+				army_ratio = 0.1
+				air_ratio = 0.1
+			}
+			random_army_leader = {
+				set_nationality = XIN
+			}
+		}
+		XIN = {
+			add_equipment_to_stockpile = {
+				type = Inf_equipment
+				amount = 5000
+				producer = CHI
+			}
 		}
 	}
 }
