@@ -727,7 +727,7 @@ country_event ={id =  prc1.56 days = 15 }
 		change_industrial_conglomerates_opinion = yes
 		change_communist_cadres_opinion = yes
 		add_political_power = 100
-		hidden_effect = { country_event ={ id = CW_Diverse.1 days = 105 } }
+		hidden_effect = { country_event ={ id = CW_Diverse.1 days = 90 } }
 }	
 	news_event = {id = mdardchina_news.57 days = 7 }
 	}
