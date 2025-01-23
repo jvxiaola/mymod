@@ -8,12 +8,18 @@ spriteTypes = {
 		name = "GFX_idea_marxist_military_strengthened"
 		texturefile = "gfx/interface/ideas/CW_idea/idea_marxist_military_strengthened.png"
 	}
+
 	spriteType = {
-		name = "GFX_idea_KUB_cooperatives"
-		texturefile = "gfx/interface/ideas/ideas/KUB_cooperatives.png"
+		name = "GFX_idea_marxist_militarical_government"
+		texturefile = "gfx/interface/ideas/CW_idea/idea_marxist_militarical_government.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_military_economy_remain"
+		texturefile = "gfx/interface/ideas/CW_idea/idea_military_economy_remain.png"
 	}
 	spriteType = {
-		name = "GFX_idea_quran"
-		texturefile = "gfx/interface/ideas/OTT/quran.png"
+		name = "GFX_idea_ex_islam_up"
+		texturefile = "gfx/interface/ideas/CW_idea/idea_ex_islam_up.png"
 	}
 }

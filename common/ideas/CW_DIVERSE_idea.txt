@@ -5,7 +5,7 @@ ideas = {
 		allowed = { 
 			OR = { tag = DSC tag = HKG tag = CHI } 
 		}
-		picture = marxist_military
+		picture = marxist_militarical_government
 		modifier = {
 			army_org_factor = 0.05
 			breakthrough_factor = 0.03
