@@ -1,0 +1,11 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_marxist_military"
+		texturefile = "gfx/interface/ideas/CW_idea/idea_marxist_military.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_marxist_military_strengthened"
+		texturefile = "gfx/interface/ideas/CW_idea/idea_marxist_military_strengthened.png"
+	}
+}

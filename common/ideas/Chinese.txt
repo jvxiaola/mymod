@@ -1773,7 +1773,7 @@ Industrial_rebuild_end = {
 		allowed = { 
 			tag = DSC
 		}
-		picture = red_revolutionary_army
+		picture = marxist_military_strengthened
 		modifier = {
 			army_org_factor = 0.05
 			experience_loss_factor = -0.07
