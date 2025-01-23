@@ -724,7 +724,256 @@ add_political_power = 100
 				set_temp_variable = { temp_DSC_people_support = 0.1 }
 				change_DSC_people_support = yes
 				add_stability=0.05
+				remove_ideas =  CHI_Strict_military_control
 				unlock_decision_tooltip = CHI_CHI_No_guns_cannons_ask_enemy_for_us
+				division_template = {
+					name = "赤卫队"
+					regiments = {
+						Militia_Bat = { x = 0 y = 0 }
+						Militia_Bat = { x = 0 y = 1 }
+						Militia_Bat = { x = 0 y = 2 }
+						Militia_Bat = { x = 0 y = 3 }
+						Militia_Bat = { x = 1 y = 0 }
+						Militia_Bat = { x = 1 y = 1 }
+						Militia_Bat = { x = 1 y = 2 }
+								}
+							}
+							583 = {
+									create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+
+
+
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+
+
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+								create_unit = {
+									division = "division_template = \"赤卫队\" start_experience_factor = 0.1	start_equipment_factor = 1"
+									owner = ROOT
+								}
+
+
+
+
+							}
+
+
 			}
 	
 		}
