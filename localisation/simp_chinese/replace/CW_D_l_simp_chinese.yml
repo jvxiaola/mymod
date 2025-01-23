@@ -1,5 +1,12 @@
 ﻿l_simp_chinese:
 
+#好感
+chinese_MRG: "是中国军区"
+
+#精神
+Military_region_government: "§Y军区政府§!"
+Military_region_government_desc: "该政治实体是由§7中央政府§!为应对特殊紧急情况而成立的§Y军区政府§!,享有一定的军事与政治自主权。"
+
 #事件
  CW_Diverse.1: "遇袭报告"
  CW_Diverse.1.t: "遇袭报告"

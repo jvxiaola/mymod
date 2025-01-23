@@ -178,6 +178,7 @@ country_event = {
 			}
 		}
 		XIN = {
+			add_ideas = Military_region_government
 			add_equipment_to_stockpile = {
 				type = Inf_equipment
 				amount = 5000

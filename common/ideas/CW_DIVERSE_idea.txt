@@ -1,0 +1,58 @@
+ideas = {
+	country = {
+		Military_region_government = {
+			
+		allowed = { 
+			OR = { tag = DSC tag = HKG tag = CHI } 
+		}
+		picture = red_revolutionary_army
+		modifier = {
+			army_org_factor = 0.05
+			breakthrough_factor = 0.03
+			army_attack_factor = 0.05
+		}
+		hidden_modifier = {
+			social_cost_multiplier_modifier = -1
+			health_cost_multiplier_modifier = -1
+			personnel_cost_multiplier_modifier = -2
+			equipment_cost_multiplier_modifier = -1
+			bureaucracy_cost_multiplier_modifier -0.6
+			police_cost_multiplier_modifier = -1
+		}
+		rule = {
+			can_not_declare_war = no
+			can_declare_war_without_wargoal_when_in_war = no
+		}
+		on_add = {
+			add_opinion_modifier = {
+				target = CHI
+				modifier = chinese_MRG
+			}
+			reverse_add_opinion_modifier = {
+				target = CHI
+				modifier = chinese_MRG 
+			}
+
+			add_opinion_modifier = {
+				target = DSC
+				modifier = chinese_MRG
+			}
+			reverse_add_opinion_modifier = {
+				target = DSC
+				modifier = chinese_MRG 
+			}
+
+			add_opinion_modifier = {
+				target = HKG
+				modifier = chinese_MRG
+			}
+			reverse_add_opinion_modifier = {
+				target = HKG
+				modifier = chinese_MRG 
+			}
+		}
+		}
+	}
+	
+}
+	
