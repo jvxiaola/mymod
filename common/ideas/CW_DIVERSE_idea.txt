@@ -3,7 +3,7 @@ ideas = {
 		Military_region_government = {
 			
 		allowed = { 
-			OR = { tag = DSC tag = HKG tag = CHI } 
+			OR = { tag = XIZ tag = XIN } 
 		}
 		picture = marxist_militarical_government
 		modifier = {
@@ -53,7 +53,36 @@ ideas = {
 		}
 		}
 
+		Militarical_economy_remain = {
+			allowed = { 
+				OR = { tag = XIZ tag = XIN } 
+			}
+			picture = military_economy_remain
+			modifier = {
+				army_org_factor = -0.03
+				army_attack_factor = -0.02
+				consumer_goods_expected_value = -0.05
+				nationalist_drift = 0.03
+				democratic_drift = 0.01
+			}
+		}
 
+		extreme_islam = {
+			allowed = { 
+				tag = XIN
+			}
+			picture = ex_islam_up
+			modifier = {
+				army_org_factor = 0.10
+				army_speed_factor = -0.06
+				conscription_factor = 0.05
+				stability_factor = -0.20
+				expected_police_modifier = 4
+				expected_mil_modifier = 4
+				nationalist_drift = 0.03
+				fascism_drift = 0.03
+			}
+		}
 
 	}
 	
