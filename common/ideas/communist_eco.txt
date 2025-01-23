@@ -2,29 +2,51 @@ ideas = {
 	economic_cycles = {
 		law = yes
 		use_list_view = yes
-	Socialist_Economy = {
+		
+		Preparing_war_mobilizing_economy = {
+			cost = 1
+			removal_cost = -1
+			level = 1
+			picture = Preparing_war_mobilizing_economy
+			visible = {
+				always = no
+			}
+			available = {
+			always = yes
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.25
+				productivity_growth_modifier = 2
+				expected_police_modifier = 3
+				expected_mil_modifier = 3
+				social_cost_multiplier_modifier = -0.9
+				health_cost_multiplier_modifier = -0.9
+				personnel_cost_multiplier_modifier = -0.95
+				equipment_cost_multiplier_modifier = -0.95
+				bureaucracy_cost_multiplier_modifier -0.8
+				police_cost_multiplier_modifier = -0.95
+				disabled_ideas = 1
+				industrial_capacity_factory = 0.25
+				pop_energy_use_multiplier = -0.95
+				energy_use_modifier_civs = -0.95
+				energy_use_modifier_offices = -0.95
+			}
+			on_add = {
+				add_ideas = police_05
+				add_ideas = defence_09
+			}
+			cancel_if_invalid = no
+		}
+
+		Socialist_Economy = {
 			cost = 350
 			removal_cost = -1
 			level = 1
-		picture = 	collective_soceity
-visible = {
-		OR = {
-				custom_trigger_tooltip = {
-					is_in_array = { ruling_party = 4 }
-					tooltip = has_communist_state_government_TT
-				}
-								custom_trigger_tooltip = {
-					is_in_array = { ruling_party = 5 }
-					tooltip = has_anarchist_communism_government_TT
-				}
-				custom_trigger_tooltip = {
-					is_in_array = { ruling_party = 19 }
-					tooltip = has_neutral_communism_government_TT
-				}
-			}
-}
+		picture = collective_soceity
+	visible = {
+		always = no
+	}
 			available = {
-	
 			custom_trigger_tooltip = {
 				tooltip = 25_per_capita_or_more_tt
 				check_variable = { gdp_per_capita > 24.999 }
@@ -78,5 +100,5 @@ visible = {
 			}
 			cancel_if_invalid = no
 		}
-}
+	}
 }		

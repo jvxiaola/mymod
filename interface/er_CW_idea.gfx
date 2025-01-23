@@ -18,8 +18,19 @@ spriteTypes = {
 		name = "GFX_idea_military_economy_remain"
 		texturefile = "gfx/interface/ideas/CW_idea/idea_military_economy_remain.png"
 	}
+
 	spriteType = {
 		name = "GFX_idea_ex_islam_up"
 		texturefile = "gfx/interface/ideas/CW_idea/idea_ex_islam_up.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_Preparing_war_mobilizing_economy"
+		texturefile = "gfx/interface/ideas/CW_idea/idea_Preparing_war_mobilizing_economy.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CW_ruin"
+		texturefile = "gfx/interface/ideas/CW_idea/idea_CW_ruin.png"
 	}
 }

@@ -1,7 +1,7 @@
 
 CW_ruins = {
 	enable = {always = yes}
-	icon = GFX_idea_dpr_ruins
+	icon = GFX_idea_CW_ruin
 	army_speed_factor_for_controller = -0.1 
 	enemy_army_speed_factor = -0.1
 	attrition_for_controller = 0.1
