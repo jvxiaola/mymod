@@ -10578,7 +10578,7 @@ add_core_of = ROOT
 			}
 			}
 			}
-
+		
 	focus = {
 			id = PRC_Revolutionizing_the_Army
 			icon = Party_government_military_integration
@@ -10616,7 +10616,7 @@ add_core_of = ROOT
 			}
 			}
 			}
-
+		
 	focus = {
 			id = PRC_The_real_two_whatevers
 			icon = maoism
@@ -10657,14 +10657,14 @@ add_core_of = ROOT
 	add_country_leader_trait = Chairman_Mao_successor
 			}
 			}
-			
+		
 	focus = {
 			id = PRC_Continue_the_Cultural_Revolution
 			icon = maoism2
 			x = 0
-			y = 7
+			y = 8
 
-	prerequisite = {focus = PRC_Spiritual_Atomic_Bomb}
+			prerequisite = { focus = PRC_Spiritual_Atomic_Bomb }
 
 	relative_position_id = PRC_Chairman_Mao_Yuanxin
 	
@@ -10748,7 +10748,7 @@ add_core_of = ROOT
 			id = PRC_Proletarian_leader
 			icon = Neo_Marxism
 			x = -1
-			y = 8
+			y = 9
 
 	prerequisite = {focus = PRC_Continue_the_Cultural_Revolution}
 
@@ -10785,7 +10785,7 @@ add_core_of = ROOT
 				id = PRC_jitilingdao
 				icon = revolutionary_government
 				x = 1
-				y = 8
+				y = 9
 	
 		prerequisite = {focus = PRC_Continue_the_Cultural_Revolution}
 	
@@ -10864,7 +10864,7 @@ add_core_of = ROOT
 			}	
 		focus = {
 			id = PRC_Study_the_People_Liberation_Army_Movement
-			icon = Learn_from_Red_Army
+			icon = Rectification_Movement
 			x = -3
 			y = 5
 	prerequisite = {focus = PRC_Politics_in_everyday_life }
@@ -11020,53 +11020,44 @@ add_idea=CHI_zzgs2
 				}
 			}
 		}			
-	focus = {
-			id = PRC_Spiritual_Atomic_Bomb
-			icon = Purdue_sentient_beings
+
+
+
+
+
+
+
+
+
+		focus = {
+			id = PRC_xianzhizcjjfaquan
+			icon = xianzhifaquan
 			x = 0
 			y = 6
-	prerequisite = {focus = PRC_allotment_system }
+			prerequisite = {focus = PRC_allotment_system }
 
-	prerequisite = {focus = PRC_Study_the_People_Liberation_Army_Movement}
-	prerequisite = {focus = PRC_Proletarian_Legalist_Thought}
-	relative_position_id = PRC_Chairman_Mao_Yuanxin
-	
-			cost = 5
-	
-			ai_will_do = {
-				factor = 10
-			}
-	
-			available = {
-	
-			}
-	
-			bypass = {
-			}
-	
+			prerequisite = {focus = PRC_Study_the_People_Liberation_Army_Movement}
+			prerequisite = {focus = PRC_Proletarian_Legalist_Thought}
+
+
+			relative_position_id = PRC_Chairman_Mao_Yuanxin
+			cost = 3
+			ai_will_do = { factor = 10 }
+			available = {}
+			bypass = {}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
-	
 			completion_reward = {
-	custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
-	set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.05 }
-	change_DSC_Socialist_Construction_dynamic1 = yes
-	
-	set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.3 }
-	change_DSC_Socialist_Construction_dynamic6 = yes
-	change_DSC_Socialist_Construction_dynamic35 = yes
-	change_DSC_Socialist_Construction_dynamic7= yes
-	set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.1 }
-	change_DSC_Socialist_Construction_dynamic34 = yes
-	
-	hidden_effect = {
-
-	
-	}		
-	
+				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.03 }
+				change_DSC_Socialist_Construction_dynamic1 = yes
+				}
 			}
-			}	
+			
+
+
+
+
 		focus = {
 			id = PRC_Lasting_Cultural_Revolution
 			icon = Continuous_Cultural_Revolution
@@ -11110,11 +11101,57 @@ add_idea=CHI_zzgs2
 
 			}
 			}		
+		
+	focus = {
+			id = PRC_Spiritual_Atomic_Bomb
+			icon = ziligengsheng
+			x = 0
+			y = 7
+			prerequisite = {focus = PRC_xianzhizcjjfaquan }
 
 
-
-
-
-
-		}		
+	relative_position_id = PRC_Chairman_Mao_Yuanxin
 	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 10
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			completion_reward = {
+	custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
+	set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.05 }
+	change_DSC_Socialist_Construction_dynamic1 = yes
+	
+	set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.3 }
+	change_DSC_Socialist_Construction_dynamic6 = yes
+	change_DSC_Socialist_Construction_dynamic35 = yes
+	change_DSC_Socialist_Construction_dynamic7= yes
+	set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.1 }
+	change_DSC_Socialist_Construction_dynamic34 = yes
+	
+	
+	
+			}
+			}	
+
+
+
+
+
+		
+
+				
+	
+		}
