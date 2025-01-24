@@ -7,33 +7,9 @@ focus_tree = {
 		modifier = {
 			add = 10
 			tag = XIN
-	}
-
-
-
 		}
-	
+	}
+	shared_focus = XIN_troubled_times
 	default = no
 
-
-
-
-
-
-
-
-
-
-
-
 	}
-
-
-
-
-
-
-
-
-
-

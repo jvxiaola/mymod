@@ -1,0 +1,232 @@
+
+	shared_focus = {
+		id = XIN_troubled_times
+		icon = turk_skulls_guns_fire
+		x = 1
+		y = 1
+		cost = 0.1
+		offset = {
+			x = 0
+			y = 0
+			trigger = { tag = CHI }
+		}
+		allow_branch = {
+			OR = {
+				AND = {
+					OR = { tag = CHI original_tag = DSC original_tag = HKG }
+					has_country_flag = XIN_attacked
+				}
+				tag = XIN
+			}
+		}
+	
+		available = { always = no }
+	
+		joint_trigger = { tag = CHI original_tag = DSC original_tag = HKG }
+	
+		completion_reward = {
+		}
+	
+		ai_will_do = { factor = 0.5 }
+	}
+
+	joint_focus = {
+		id = XIN_military_Region_Construction
+		icon = focus_generic_military_dictatorship
+		x = 0
+		y = 1
+		cost = 0.5
+
+		available = { tag = XIN }
+		relative_position_id = XIN_troubled_times
+		prerequisite = { focus = XIN_troubled_times }
+		joint_trigger = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN }
+	
+		completion_reward = {
+		}
+	
+		ai_will_do = { factor = 0.5 }
+	}
+
+	joint_focus = {
+		id = XIN_Expand_conscription
+		icon = conscription
+		x = -2
+		y = 1
+		cost = 3
+
+		available = { tag = XIN }
+		relative_position_id = XIN_military_Region_Construction
+		prerequisite = { focus = XIN_military_Region_Construction }
+		joint_trigger = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN }
+	
+		completion_reward = {
+		}
+	
+		ai_will_do = { factor = 0.5 }
+	}
+
+	joint_focus = {
+		id = XIN_Temporary_training
+		icon = focus_SMB_tierra_del_fuego_training
+		x = 0
+		y = 1
+		cost = 3
+
+		available = { tag = XIN }
+		relative_position_id = XIN_Expand_conscription
+		prerequisite = { focus = XIN_Expand_conscription }
+		joint_trigger = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN }
+	
+		completion_reward = {
+		}
+	
+		ai_will_do = { factor = 0.5 }
+	}
+
+	joint_focus = {
+		id = XIN_anti_terrorism
+		icon = counter
+		x = 0
+		y = 1
+		cost = 3
+
+		available = { tag = XIN }
+		relative_position_id = XIN_Temporary_training
+		prerequisite = { focus = XIN_Temporary_training }
+		joint_trigger = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN }
+	
+		completion_reward = {
+		}
+	
+		ai_will_do = { factor = 0.5 }
+	}
+
+	joint_focus = {
+		id = XIN_Focus_military_equipment
+		icon = toyota_technical2
+		x = 0
+		y = 1
+		cost = 3
+
+		available = { tag = XIN }
+		relative_position_id = XIN_military_Region_Construction
+		prerequisite = { focus = XIN_military_Region_Construction }
+		joint_trigger = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN }
+	
+		completion_reward = {
+		}
+	
+		ai_will_do = { factor = 0.5 }
+	}
+
+	joint_focus = {
+		id = XIN_Militarize_productical_corps
+		icon = PRC_federal_proposal
+		x = 0
+		y = 1
+		cost = 3
+
+		available = { tag = XIN }
+		relative_position_id = XIN_Focus_military_equipment
+		prerequisite = { focus = XIN_Focus_military_equipment }
+		joint_trigger = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN }
+	
+		completion_reward = {
+		}
+	
+		ai_will_do = { factor = 0.5 }
+	}
+
+	joint_focus = {
+		id = XIN_martial_to_production
+		icon = CPC_industrial_redemption
+		x = 0
+		y = 1
+		cost = 3
+
+		available = { tag = XIN }
+		relative_position_id = XIN_Militarize_productical_corps
+		prerequisite = { focus = XIN_Militarize_productical_corps }
+		joint_trigger = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN }
+	
+		completion_reward = {
+		}
+	
+		ai_will_do = { factor = 0.5 }
+	}
+
+	joint_focus = {
+		id = XIN_assign_commission
+		icon = army_officers_communist
+		x = 2
+		y = 1
+		cost = 3
+
+		available = { tag = XIN }
+		relative_position_id = XIN_military_Region_Construction
+		prerequisite = { focus = XIN_military_Region_Construction }
+		joint_trigger = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN }
+	
+		completion_reward = {
+		}
+	
+		ai_will_do = { factor = 0.5 }
+	}
+
+	joint_focus = {
+		id = XIN_learn_theory
+		icon = Communist_Education
+		x = 0
+		y = 1
+		cost = 3
+
+		available = { tag = XIN }
+		relative_position_id = XIN_assign_commission
+		prerequisite = { focus = XIN_assign_commission }
+		joint_trigger = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN }
+	
+		completion_reward = {
+		}
+	
+		ai_will_do = { factor = 0.5 }
+	}
+
+	joint_focus = {
+		id = XIN_alleviating_ethnic_tensions
+		icon = white_peace
+		x = 0
+		y = 1
+		cost = 3
+
+		available = { tag = XIN }
+		relative_position_id = XIN_learn_theory
+		prerequisite = { focus = XIN_learn_theory }
+		joint_trigger = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN }
+	
+		completion_reward = {
+		}
+	
+		ai_will_do = { factor = 0.5 }
+	}
+
+	joint_focus = {
+		id = XIN_Work_completion
+		icon = PRC_red_army
+		x = 0
+		y = 4
+		cost = 3
+
+		available = { tag = XIN }
+		relative_position_id = XIN_military_Region_Construction
+		prerequisite = { focus = XIN_martial_to_production focus = XIN_anti_terrorism focus = XIN_alleviating_ethnic_tensions }
+		joint_trigger = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN }
+	
+		completion_reward = {
+		}
+	
+		ai_will_do = { factor = 0.5 }
+	}
+
+
+
