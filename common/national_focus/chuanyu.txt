@@ -459,7 +459,7 @@ focus_tree = {
 
 	focus = {
 		id = DSC_zhenghexiaozu
-		icon = economic_crisis
+		icon = CPC_revolution_of_all_classes
 		x = 5
 
 		y = 0
@@ -498,7 +498,7 @@ focus_tree = {
 
 	focus = {
 		id = DSC_zhengzhibao
-		icon = economic_crisis
+		icon = four_freedoms
 		x = 5
 
 		y = 1
@@ -532,7 +532,7 @@ focus_tree = {
 
 	focus = {
 		id = DSC_xianfengdui
-		icon = economic_crisis
+		icon = reaffirm_the_party_state
 		x = 5
 
 		y = 2
@@ -567,7 +567,7 @@ focus_tree = {
 
 	focus = {
 		id = DSC_shiyicidaibiaodahui
-		icon = economic_crisis
+		icon = CPC_convene_National_People_Congress
 		x = 5
 
 		y = 4

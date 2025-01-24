@@ -1096,6 +1096,9 @@ SpriteType = {
 		texturefile = "gfx/interface/goals/GFX_PRC_50s_Carry_out_A_Rectification_Movement.png"
 	}	
 
+
+
+
 	SpriteType = {
 		name = "xianzhifaquan"
 		texturefile = "gfx/interface/goals/total_dictatorship_over_the_bourgeoisie.png"

@@ -10967,7 +10967,7 @@ add_idea=CHI_zzgs2
 			}	
 		focus = {
 			id = PRC_Implementing_the_Anshan_Constitution
-			icon = worker_negotiation
+			icon = party_state
 			x = 0
 			y = 4
 	prerequisite = { focus = PRC_Politics_in_everyday_life }
