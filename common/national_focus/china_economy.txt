@@ -1514,7 +1514,7 @@
 	shared_focus = {
 	id = CHI_Negative_contract_system
 	icon = focus_generic_agricultural_subsidies
-		x = 91
+		x = 90
 		y = 17
 		cost = 3
 		offset = {
@@ -1544,7 +1544,9 @@
 			}
 		}
 		allow_branch = {
+			NOT = { has_completed_focus = CHI_Chinese_NEW_MILLENNIUM }
 			OR = {
+
 				has_country_flag = xggm
 				tag = DSC
 				has_country_flag = laozuo
@@ -1567,7 +1569,7 @@
 		y = 2
 		relative_position_id = CHI_agricultural_issues
 		cost = 2
-		prerequisite = { focus = CHI_agricultural_issues}
+		prerequisite = { focus = CHI_Negative_contract_system}
 		mutually_exclusive = { focus = CHI_state_farm }
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_CORRUPTION FOCUS_FILTER_INDUSTRY }
 		available = {	}

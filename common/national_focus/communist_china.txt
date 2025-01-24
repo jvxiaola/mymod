@@ -11011,6 +11011,8 @@ add_idea=CHI_zzgs2
 			continue_if_invalid = no
 			available_if_capitulated = no
 			completion_reward = {
+				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.03 }
+				change_DSC_Socialist_Construction_dynamic1 = yes
 				add_stability = 0.05
 				custom_effect_tooltip = DSC_allotment_economy_effect_tt
 				hidden_effect = {
