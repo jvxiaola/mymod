@@ -1091,6 +1091,23 @@ SpriteType = {
 		name = "Learn_from_Red_Army"
 		texturefile = "gfx/interface/goals/lor/CPC/Yejianying/Learn_from_Red_Army.png"
 	}	
+	SpriteType = {
+		name = "Rectification_Movement"
+		texturefile = "gfx/interface/goals/GFX_PRC_50s_Carry_out_A_Rectification_Movement.png"
+	}	
+
+	SpriteType = {
+		name = "xianzhifaquan"
+		texturefile = "gfx/interface/goals/total_dictatorship_over_the_bourgeoisie.png"
+	}	
+
+
+
+	SpriteType = {
+		name = "ziligengsheng"
+		texturefile = "gfx/interface/goals/the_cultural_revolution_end.png"
+	}	
+
 			SpriteType = {
 		name = "Pay_attention_to_production"
 		texturefile = "gfx/interface/goals/lor/CPC/Yejianying/Pay_attention_to_production.png"
