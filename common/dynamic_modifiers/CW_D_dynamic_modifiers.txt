@@ -1,0 +1,9 @@
+
+extrameal_islam_attack = {
+	enable = { always = yes }
+	#相关变量：extrameal_islam_leavel
+	icon = GFX_idea_extrameal_islam_attack
+	army_speed_factor_for_controller = extrameal_islam_attack1
+	attrition_for_controller = extrameal_islam_attack2
+	local_factory_sabotage = extrameal_islam_attack3
+}

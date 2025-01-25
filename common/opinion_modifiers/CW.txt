@@ -10,7 +10,7 @@
 
 opinion_modifiers = {
 	chinese_MRG = { # Don't Support Kurdish Independence
-		value = 90
-		max_trust = 200
+		value = 300
+		max_trust = 300
 	}
 }

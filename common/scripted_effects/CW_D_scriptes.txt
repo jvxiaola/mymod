@@ -1,0 +1,78 @@
+#extrameal_islam_leavel:
+#等级1：极低 等级2：较低 等级3：中 等级4：高 等级5：极高
+
+start_add_extrameal_islam_leavel5 = {
+  set_variable = { extrameal_islam_leavel = 5 }
+  set_nomal_multiply_num_aeil = yes
+  set_attack_modifier = yes
+}
+
+start_add_extrameal_islam_leavel3 = {
+  set_variable = { extrameal_islam_leavel = 3 }
+  set_nomal_multiply_num_aeil = yes
+  set_attack_modifier = yes
+}
+
+start_add_extrameal_islam_leavel1 = {
+  set_variable = { extrameal_islam_leavel = 1 }
+  set_nomal_multiply_num_aeil = yes
+  set_attack_modifier = yes
+}
+
+extrameal_islam_leavel_up = {
+  add_to_variable = { extrameal_islam_leavel = 1 }
+  set_nomal_multiply_num_aeil = yes
+  set_attack_modifier = yes
+}
+
+extrameal_islam_leavel_down = {
+  if = {
+    limit = {
+      check_variable = { extrameal_islam_leavel > 1 }
+    }
+    add_to_variable = { extrameal_islam_leavel = 1 }
+    set_nomal_multiply_num_aeil = yes
+    set_attack_modifier = yes
+  }
+  else_if = {
+    limit = {
+      check_variable = { extrameal_islam_leavel = 1 }
+    }
+    remove_dynamic_modifier = {
+      modifier = extrameal_islam_attack
+    }
+  }
+}
+
+set_nomal_multiply_num_aeil = {
+  set_temp_variable = { extrameal_islam_attack01 = 0.02 }
+  multiply_temp_variable = { extrameal_islam_attack01 = extrameal_islam_leavel }
+  set_variable = { army_speed_factor_for_controller = extrameal_islam_attack01 }
+
+  set_temp_variable = { extrameal_islam_attack02 = 0.03 }
+  multiply_temp_variable = { extrameal_islam_attack02 = extrameal_islam_leavel }
+  set_variable = { extrameal_islam_attack2 = extrameal_islam_attack02 }
+}
+
+set_attack_modifier = {
+  if = {
+    limit = { check_variable = { extrameal_islam_leavel = 1 } }
+    set_variable = { extrameal_islam_attack3 = 0.01 }
+  }
+  else_if = {
+    limit = { check_variable = { extrameal_islam_leavel = 2 } }
+    set_variable = { extrameal_islam_attack3 = 0.02 }
+  }
+  else_if = {
+    limit = { check_variable = { extrameal_islam_leavel = 3 } }
+    set_variable = { extrameal_islam_attack3 = 0.05 }
+  }
+  else_if = {
+    limit = { check_variable = { extrameal_islam_leavel = 4 } }
+    set_variable = { extrameal_islam_attack3 = 0.12 }
+  }
+  else_if = {
+    limit = { check_variable = { extrameal_islam_leavel = 5 } }
+    set_variable = { extrameal_islam_attack3 = 0.15 }
+  }
+}
