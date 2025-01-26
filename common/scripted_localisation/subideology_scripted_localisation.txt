@@ -10529,6 +10529,7 @@ defined_text = {
 	text = { trigger = { original_tag = CAN } localization_key = CAN.Communist-State }
 	text = { trigger = { original_tag = CHE } localization_key = CHE.Communist-State }
 	text = { trigger = { original_tag = CHI } localization_key = CHI1.Communist-State }
+	text = { trigger = { original_tag = XIN } localization_key = XIN.Communist-State }
 	text = { trigger = { original_tag = CHL } localization_key = CHL.Communist-State }
 	text = { trigger = { original_tag = CHU } localization_key = CHU.Communist-State }
 	text = { trigger = { original_tag = CKK } localization_key = CKK.Communist-State }
@@ -10907,7 +10908,8 @@ defined_text = {
 # Reactionary
 defined_text = {
 	name = Conservative_L
-		text = { trigger = { original_tag = CHI } localization_key = CHI1.Conservative }
+	text = { trigger = { original_tag = CHI } localization_key = CHI1.Conservative }
+	text = { trigger = { original_tag = XIN } localization_key = XIN.Conservative }
 
 	text = { trigger = { has_country_flag = USoE_political_parties date < 2017.1.1 } localization_key = USoE.Conservative }
 	text = { trigger = { has_country_flag = USoE_political_parties date > 2017.1.1 } localization_key = USoE.Conservative_2017 }
@@ -12729,6 +12731,7 @@ defined_text = {
 	text = { trigger = { original_tag = CHA } localization_key = CHA.Nat_Autocracy }
 	text = { trigger = { original_tag = CHE } localization_key = CHE.Nat_Autocracy }
 	text = { trigger = { original_tag = CHI } localization_key = CHI1.Nat_Autocracy }
+	text = { trigger = { original_tag = XIN } localization_key = XIN.Nat_Autocracy }
 	text = { trigger = { original_tag = CHL } localization_key = CHL.Nat_Autocracy }
 	text = { trigger = { original_tag = COL } localization_key = COL.Nat_Autocracy }
 	text = { trigger = { original_tag = CRO } localization_key = CRO.Nat_Autocracy }
@@ -13306,6 +13309,7 @@ defined_text = {
 	text = { trigger = { original_tag = BOT NOT = { has_country_flag = MELS_joined_UDC } } localization_key = BOT.Communist-State_desc }
 	text = { trigger = { original_tag = BSH } localization_key = BSH.Communist-State_desc }
 	text = { trigger = { original_tag = CHI } localization_key = CHI1.Communist-State_desc }
+	text = { trigger = { original_tag = XIN } localization_key = XIN.Communist-State_desc }
 	text = { trigger = { original_tag = CSA } localization_key = CSA.Communist-State_desc }
 	text = { trigger = { original_tag = DEN } localization_key = DEN.Communist-State_desc }
 	text = { trigger = { original_tag = DON } localization_key = DON.Communist-State_desc }
@@ -13434,7 +13438,8 @@ defined_text = {
 # Reactionary
 defined_text = {
 	name = Conservative_L_desc
-			text = { trigger = { original_tag = CHI } localization_key = CHI1.Conservative_desc }
+	text = { trigger = { original_tag = CHI } localization_key = CHI1.Conservative_desc }
+	text = { trigger = { original_tag = XIN } localization_key = CHI1.Conservative_desc }
 
 	text = { trigger = { has_country_flag = USoE_political_parties date < 2017.1.1 } localization_key = USoE.Conservative_desc }
 	text = { trigger = { has_country_flag = USoE_political_parties date > 2017.1.1 } localization_key = USoE.Conservative_2017_desc }
@@ -14153,6 +14158,7 @@ defined_text = {
 	text = { trigger = { original_tag = CAR } localization_key = CAR.Nat_Autocracy_desc }
 	text = { trigger = { original_tag = CHE } localization_key = CHE.Nat_Autocracy_desc }
 	text = { trigger = { original_tag = CHI } localization_key = CHI1.Nat_Autocracy_desc }
+	text = { trigger = { original_tag = XIN } localization_key = XIN.Nat_Autocracy_desc }
 	text = { trigger = { original_tag = CSA } localization_key = CSA.Nat_Autocracy_desc }
 	text = { trigger = { original_tag = DON } localization_key = DON.Nat_Autocracy_desc }
 	text = { trigger = { original_tag = EGY } localization_key = EGY.Nat_Autocracy_desc }
@@ -14820,6 +14826,7 @@ defined_text = {
 	text = { trigger = { original_tag = CAN } localization_key = CAN.Communist-State_icon }
 	text = { trigger = { original_tag = CHE } localization_key = CHE.Communist-State_icon }
 	text = { trigger = { original_tag = CHI } localization_key = CHI1.Communist-State_icon }
+	text = { trigger = { original_tag = XIN } localization_key = XIN.Communist-State_icon }
 	text = { trigger = { original_tag = CHL } localization_key = CHL.Communist-State_icon }
 	text = { trigger = { original_tag = CHU } localization_key = CHU.Communist-State_icon }
 	text = { trigger = { original_tag = CKK } localization_key = CKK.Communist-State_icon }
@@ -14940,7 +14947,8 @@ defined_text = {
 
 defined_text = {
 	name = Conservative_L_icon
-			text = { trigger = { original_tag = CHI } localization_key = CHI1.Conservative_icon }
+	text = { trigger = { original_tag = CHI } localization_key = CHI1.Conservative_icon }
+	text = { trigger = { original_tag = XIN } localization_key = XIN.Conservative_icon }
 
 	text = { trigger = { original_tag = ABK } localization_key = ABK.Conservative_icon }
 	text = { trigger = { original_tag = ADY has_country_flag = SUB_united_russia } localization_key = ADY.Conservative_icon }
@@ -16123,6 +16131,7 @@ defined_text = {
 	text = { trigger = { original_tag = CAN } localization_key = CAN.Nat_Autocracy_icon }
 	text = { trigger = { original_tag = CAR } localization_key = CAR.Nat_Autocracy_icon }
 	text = { trigger = { original_tag = CHI } localization_key = CHI1.Nat_Autocracy_icon }
+	text = { trigger = { original_tag = XIN } localization_key = XIN.Nat_Autocracy_icon }
 	text = { trigger = { original_tag = CHL } localization_key = CHL.Nat_Autocracy_icon }
 	text = { trigger = { original_tag = COL } localization_key = COL.Nat_Autocracy_icon }
 	text = { trigger = { original_tag = CRO } localization_key = CRO.Nat_Autocracy_icon }
