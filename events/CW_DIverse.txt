@@ -4,7 +4,7 @@ country_event = {
 	id = CW_Diverse.1
 	title = CW_Diverse.1.t
 	desc = CW_Diverse.1.d
-	picture = GFX_report_event_chinese_soldiers
+	picture = GFX_event_pictures_CW_D_event1
 	
 	is_triggered_only = yes
 	
@@ -25,7 +25,7 @@ country_event = {
 	id = CW_Diverse.2
 	title = CW_Diverse.2.t
 	desc = CW_Diverse.2.d
-	picture = GFX_report_event_chinese_soldiers
+	picture = GFX_event_pictures_CW_D_event2
 	
 	is_triggered_only = yes
 	

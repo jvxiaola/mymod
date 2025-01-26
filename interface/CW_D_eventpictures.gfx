@@ -1,0 +1,17 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_event_pictures_CW_D_event1"
+		texturefile = "gfx/event_pictures/CW_D/CW_D_event1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_pictures_CW_D_event2"
+		texturefile = "gfx/event_pictures/CW_D/CW_D_event2.png"
+	}
+
+	spriteType = {
+		name = "GFX_event_pictures_CW_D_ET_attack"
+		texturefile = "gfx/event_pictures/CW_D/old_news.png"
+	}
+}
+
