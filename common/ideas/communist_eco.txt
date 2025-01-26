@@ -15,25 +15,20 @@ ideas = {
 			always = yes
 			}
 			modifier = {
-				production_speed_buildings_factor = 0.25
 				productivity_growth_modifier = 2
 				expected_police_modifier = 3
 				expected_mil_modifier = 3
-				social_cost_multiplier_modifier = -0.9
-				health_cost_multiplier_modifier = -0.9
+				social_cost_multiplier_modifier = -0.75
+				health_cost_multiplier_modifier = -0.75
 				personnel_cost_multiplier_modifier = -0.95
 				equipment_cost_multiplier_modifier = -0.95
 				bureaucracy_cost_multiplier_modifier -0.8
 				police_cost_multiplier_modifier = -0.95
 				disabled_ideas = 1
 				industrial_capacity_factory = 0.25
-				pop_energy_use_multiplier = -0.95
+				pop_energy_use_multiplier = -0.8
 				energy_use_modifier_civs = -0.95
 				energy_use_modifier_offices = -0.95
-			}
-			on_add = {
-				add_ideas = police_05
-				add_ideas = defence_09
 			}
 			cancel_if_invalid = no
 		}

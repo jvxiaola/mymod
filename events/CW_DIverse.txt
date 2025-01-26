@@ -103,7 +103,7 @@ country_event = {
 	id = CW_Diverse.4
 	title = CW_Diverse.4.t
 	desc = CW_Diverse.4.d
-	picture = GFX_report_event_chinese_soldiers
+	picture = GFX_event_pictures_CW_D_event4
 	is_triggered_only = yes
 	option = {	
 		name = CW_Diverse.4.a
@@ -145,11 +145,10 @@ country_event = {
 				election_frequency = 60
 				elections_allowed = no
 			}
-	
 			start_politics_input = yes
+			update_party_name = yes
 			 	division_template = {
-				name = "XIN"
-				
+				name = "解放军摩托化师级单位"
 				is_locked = yes
 				regiments = {
 					Mot_Inf_Bat = { x = 0 y = 0 } Mot_Inf_Bat = { x = 0 y = 1 }
@@ -178,10 +177,6 @@ country_event = {
 			}
 		}
 		XIN = {
-			add_ideas = Military_region_government
-			add_ideas = Militarical_economy_remain
-			add_ideas = extreme_islam
-			add_ideas = Preparing_war_mobilizing_economy
 			add_equipment_to_stockpile = {
 				type = Inf_equipment
 				amount = 5000

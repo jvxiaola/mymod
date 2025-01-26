@@ -1,4 +1,11 @@
 ﻿l_simp_chinese:
+
+#军区设定
+ XIN.Nat_Autocracy: "£CHI_military_junta 中国人民解放军-新疆军区"
+ XIN.Nat_Autocracy_desc: "中国人民解放军在新疆的历史沿革可以追溯至上世纪40年代“三区革命”中的新疆民族军，解放后成为第一支解放军在疆改编部队。由于新疆在中国特殊的政治，文化，产业及战略地位，新疆军区也与其它军区有着相当独特的区别，如著名的“新疆生产建设兵团”。\n处在对抗极端伊斯兰恐怖主义的第一线，新疆军区的人民解放军为维护中国西部和平稳定——乃至全中亚的长治久安做出了重大贡献。"
+ XIN_communist_cadres: "军区政委"
+ XIN_industrial_conglomerates: "生产建设兵团"
+ XIN_the_military: "新疆军区-解放军军官"
 #focus、决议
 XIN_troubled_times: "§R多事之秋§!"
 XIN_troubled_times_desc: "自党内左翼保守派逐渐增强以来，三种不同观点的分歧便逐渐扩大。内部的激烈矛盾掩盖了边疆地区的问题，直到乌鲁木齐遭受恐怖袭击。\n不管怎样，中央必须做些什么来度过这段困难时间。"

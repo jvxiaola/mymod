@@ -6,12 +6,22 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_event_pictures_CW_D_event2"
-		texturefile = "gfx/event_pictures/CW_D/CW_D_event2.png"
+		texturefile = "gfx/event_pictures/CW_D/CW_D_event2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_pictures_CW_D_event3"
+		texturefile = "gfx/event_pictures/CW_D/CW_D_event3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_pictures_CW_D_event4"
+		texturefile = "gfx/event_pictures/CW_D/CW_D_event4.dds"
 	}
 
 	spriteType = {
 		name = "GFX_event_pictures_CW_D_ET_attack"
-		texturefile = "gfx/event_pictures/CW_D/old_news.png"
+		texturefile = "gfx/event_pictures/CW_D/old_news.dds"
 	}
 }
 
