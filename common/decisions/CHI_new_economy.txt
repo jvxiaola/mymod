@@ -125,7 +125,7 @@ CHI_Redemption_assets = {
 		days_remove = 25
 		remove_effect = {
 			modify_timed_idea = {
-				idea = CHI_confiscated
+				idea = depression
 				days = -20
 			}
 			set_temp_variable = { treasury_change = 100 }
