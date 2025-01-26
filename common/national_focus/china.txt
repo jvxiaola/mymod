@@ -1150,7 +1150,7 @@ country_event = {id= prc1.57 days = 3 }
 		completion_reward = {
 			add_political_power = 100
 			country_event = {id = prc1.26 days = 10}
-
+			mark_focus_tree_layout_dirty = yes
 		}
 		}		
 		focus = {
