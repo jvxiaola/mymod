@@ -69,7 +69,7 @@ country_event = {
 	id = CW_Diverse.3
 	title = CW_Diverse.3.t
 	desc = CW_Diverse.3.d
-	picture = GFX_report_event_chinese_soldiers
+	picture = GFX_event_pictures_CW_D_event3
 	is_triggered_only = yes
 	option = {	
 		name = CW_Diverse.3.a
@@ -109,20 +109,19 @@ country_event = {
 		name = CW_Diverse.4.a
 		custom_effect_tooltip = orgnize_xinjiang_military_TT
 			hidden_effect = {
-			#country_event = { id = CW_Diverse.4 days = 2 }
 			592 = { transfer_state_to = XIN add_core_of = XIN 
 			add_victory_points = { province = 3167 value = 5 }
 			}
-			1198 = { transfer_state_to = XIN add_core_of = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack}}
-			1199 = { transfer_state_to = XIN add_core_of = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack}}
-			1200 = { transfer_state_to = XIN add_core_of = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack}}
-			1201 = { transfer_state_to = XIN add_core_of = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack}}
+			1198 = { transfer_state_to = XIN add_core_of = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack} start_add_extrameal_islam_leavel5 = yes }
+			1199 = { transfer_state_to = XIN add_core_of = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack} start_add_extrameal_islam_leavel5 = yes }
+			1200 = { transfer_state_to = XIN add_core_of = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack} start_add_extrameal_islam_leavel4 = yes }
+			1201 = { transfer_state_to = XIN add_core_of = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack} start_add_extrameal_islam_leavel1 = yes }
 			1202 = { transfer_state_to = XIN add_core_of = XIN }
-			1203 = { transfer_state_to = XIN add_core_of = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack}}
-			1204 = { transfer_state_to = XIN add_core_of = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack}}
-			1205 = { transfer_state_to = XIN add_core_of = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack}}
+			1203 = { transfer_state_to = XIN add_core_of = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack} start_add_extrameal_islam_leavel3 = yes }
+			1204 = { transfer_state_to = XIN add_core_of = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack} start_add_extrameal_islam_leavel5 = yes }
+			1205 = { transfer_state_to = XIN add_core_of = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack} start_add_extrameal_islam_leavel2 = yes }
 			1206 = { transfer_state_to = XIN add_core_of = XIN }
-			1207 = { transfer_state_to = XIN add_core_of = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack}}
+			1207 = { transfer_state_to = XIN add_core_of = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack} start_add_extrameal_islam_leavel1 = yes }
 			1208 = { transfer_state_to = XIN add_core_of = XIN }
 
 			XIN = {
@@ -164,7 +163,7 @@ country_event = {
 				}
 			}
 			mark_focus_tree_layout_dirty = yes#刷新国策树
-	}
+			}
 		CHI = {
 			add_equipment_to_stockpile = {
 				type = Inf_equipment
@@ -192,3 +191,40 @@ country_event = {
 	}
 	}
 }
+
+country_event = {
+	id = CW_Diverse.5
+	title = CW_Diverse.5.t
+	desc = CW_Diverse.5.d
+	is_triggered_only = no
+	mean_time_to_happen = { days = 15 }
+	trigger = {
+		any_state = {
+			is_sourth_XJ = yes
+			has_dynamic_modifier = { modifier = extrameal_islam_attack }
+		}
+	}
+	option = {	
+		name = CW_Diverse.5.a
+		
+		add_equipment_to_stockpile = {
+			type = Inf_equipment
+			amount = -300
+			producer = CHI
+		}
+		random_state = {
+			if = {
+				limit = {
+					is_sourth_XJ = yes
+					check_variable = { extrameal_islam_leavel < 5 }
+					has_dynamic_modifier = { modifier = extrameal_islam_attack }
+				}
+				extrameal_islam_leavel_up = yes
+				set_demilitarized_zone = yes
+				add_manpower = -150
+			}
+	
+		}
+	}
+}
+

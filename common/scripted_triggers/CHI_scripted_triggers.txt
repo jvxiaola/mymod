@@ -38,4 +38,9 @@ is_New_people_commune_state = {
 	}
 }
 
+is_sourth_XJ = {
+	OR = {
+		state = 1198		state = 1199		state = 1200		state = 1203		state = 1204		state = 1205	
+	}
+}
 

@@ -7,8 +7,20 @@ start_add_extrameal_islam_leavel5 = {
   set_attack_modifier = yes
 }
 
+start_add_extrameal_islam_leavel4 = {
+  set_variable = { extrameal_islam_leavel = 4 }
+  set_nomal_multiply_num_aeil = yes
+  set_attack_modifier = yes
+}
+
 start_add_extrameal_islam_leavel3 = {
   set_variable = { extrameal_islam_leavel = 3 }
+  set_nomal_multiply_num_aeil = yes
+  set_attack_modifier = yes
+}
+
+start_add_extrameal_islam_leavel2 = {
+  set_variable = { extrameal_islam_leavel = 2 }
   set_nomal_multiply_num_aeil = yes
   set_attack_modifier = yes
 }
