@@ -329,6 +329,9 @@ color = { 132 50 0 }
 
 			Monarchist = { color = { 55 55 55 }
 			can_be_randomly_selected = no }
+
+			XIN_MR = { color = { 238 59 59 }
+			can_be_randomly_selected = no}
 		}
 
 		dynamic_faction_names = {

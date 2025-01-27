@@ -273,6 +273,12 @@ defined_text = {
 		}
 		localization_key = Nat_Autocracy
 	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = XIN_MR
+		}
+		localization_key = XIN_MR
+	}
 		text = {
 		trigger = {
 			has_country_leader_ideology = Nat_Fascism

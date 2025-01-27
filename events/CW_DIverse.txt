@@ -128,7 +128,7 @@ country_event = {
 				create_country_leader = {
 					name = "Qiu yanhan"
 					picture = "qiu_yanhan.dds"
-					ideology = Nat_Autocracy
+					ideology = XIN_MR
 					traits = {}
 				}
 				set_cosmetic_tag = ETK_JUNQU

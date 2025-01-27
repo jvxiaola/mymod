@@ -88,9 +88,13 @@ spriteType = {
 		name = "GFX_ideology_Nat_Fascism"
 		texturefile = "gfx/Ideology/fascism_group.dds"
 	}
-				spriteType = {
+	spriteType = {
 		name = "GFX_ideology_Nat_Autocracy"
 		texturefile = "gfx/Ideology/natpop_warlordism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_XIN_MR"
+		texturefile = "gfx/Ideology/genertic_chinese_MR.png"
 	}
 				spriteType = {
 		name = "GFX_ideology_Vilayat_e_Faqih"
