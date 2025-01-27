@@ -293,7 +293,8 @@ value = -0.1
 		}
 						focus = {
 		id = CHI_condemn_United_States
-		icon = war_against_the_united_states
+		icon =peoples_republic_of_china
+		#icon = war_against_the_united_states
 		x = -1
 		y = 4
 		cost = 5
@@ -389,7 +390,7 @@ focus = {
 }
 focus = {
 		id = CHI_gongpindejzhj
-		icon = money
+		icon = worker_negotiation
 		x = 0
 		y = 5
 		cost = 5
