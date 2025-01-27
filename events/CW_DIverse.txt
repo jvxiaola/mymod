@@ -182,9 +182,12 @@ country_event = {
 	is_triggered_only = no
 	mean_time_to_happen = { days = 15 }
 	trigger = {
-		any_state = {
-			will_be_attacked_by_islam = yes
-			is_sourth_XJ = yes
+		tag = CHI
+		XIN = {
+			any_controlled_state = {
+				will_be_attacked_by_islam = yes
+				is_sourth_XJ = yes
+			}
 		}
 	}
 	option = {	
@@ -194,15 +197,18 @@ country_event = {
 			amount = -300
 			producer = CHI
 		}
+		XIN = {
 			if = {
-				limit = { random_state = { is_sourth_XJ = yes will_be_attacked_by_islam = yes } }
-				random_state = { limit = { is_sourth_XJ = yes will_be_attacked_by_islam = yes }
-				extrameal_islam_leavel_up = yes
-				set_demilitarized_zone = yes
-				add_manpower = -150
+				limit = { random_controlled_state = { is_sourth_XJ = yes will_be_attacked_by_islam = yes } }
+				random_controlled_state = { 
+					limit = { is_sourth_XJ = yes will_be_attacked_by_islam = yes }
+					extrameal_islam_leavel_up = yes
+					set_demilitarized_zone = yes
+					add_manpower = -150
 				}
 			}
 		}
 	}
+}
 
 
