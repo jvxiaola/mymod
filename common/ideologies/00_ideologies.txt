@@ -71,19 +71,19 @@ color = { 0 0 255}
 
 	#新兴主义
 	communism = {
-color = { 0 179 60 } 
+			color = { 0 179 60 } 
 		types = {
-communismism = {}		
+			communismism = {}		
 			Communist-State = { color = { 255 0 0 }
 			can_be_randomly_selected = no}
 			trotskyism = { color = { 255 0 0 } 
 			can_be_randomly_selected = no}
 			juche = { color = { 238 121 66	 }
 			can_be_randomly_selected = no}
-Reform_Communism = {color = {219 112 147 }
-can_be_randomly_selected = no
+			Reform_Communism = {color = {219 112 147 }
+			can_be_randomly_selected = no
 
-}
+			}
 			Conservative = { color = { 205 201 201	 } 
 			can_be_randomly_selected = no }
 			Chinese_Socialism_jiang = { color = { 139 26 26 }
@@ -96,9 +96,9 @@ can_be_randomly_selected = no
 			Autocracy = { color = { 205 205 193 } can_be_randomly_selected = no}
 
 			Vilayat_e_Faqih = { 
-color = { 144 238 144 }
-can_be_randomly_selected = no
- }
+			color = { 144 238 144 }
+				can_be_randomly_selected = no
+ 			}
 
 			Mod_Vilayat_e_Faqih = { 
 color = { 144 238 144 }
@@ -317,7 +317,7 @@ can_be_randomly_selected = no
 	nationalist = {
 color = { 132 50 0 } 
 		types = {
-nationalist_sub = {}
+			nationalist_sub = {}
 			Nat_Autocracy = { color = { 35 35 35 }
 			can_be_randomly_selected = no }
 
@@ -330,6 +330,8 @@ nationalist_sub = {}
 			Monarchist = { color = { 55 55 55 }
 			can_be_randomly_selected = no }
 
+			XIN_MR = { color = { 238 59 59 }
+			can_be_randomly_selected = no}
 		}
 
 		dynamic_faction_names = {

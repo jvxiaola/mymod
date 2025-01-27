@@ -13309,7 +13309,6 @@ defined_text = {
 	text = { trigger = { original_tag = BOT NOT = { has_country_flag = MELS_joined_UDC } } localization_key = BOT.Communist-State_desc }
 	text = { trigger = { original_tag = BSH } localization_key = BSH.Communist-State_desc }
 	text = { trigger = { original_tag = CHI } localization_key = CHI1.Communist-State_desc }
-	text = { trigger = { original_tag = XIN } localization_key = XIN.Communist-State_desc }
 	text = { trigger = { original_tag = CSA } localization_key = CSA.Communist-State_desc }
 	text = { trigger = { original_tag = DEN } localization_key = DEN.Communist-State_desc }
 	text = { trigger = { original_tag = DON } localization_key = DON.Communist-State_desc }

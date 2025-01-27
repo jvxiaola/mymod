@@ -109,7 +109,7 @@ country_event = {
 		name = CW_Diverse.4.a
 		custom_effect_tooltip = orgnize_xinjiang_military_TT
 			hidden_effect = {
-			592 = { transfer_state_to = XIN add_core_of = XIN 
+			592 = { transfer_state_to = XIN add_core_of = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack} start_add_extrameal_islam_leavel3 = yes
 			add_victory_points = { province = 3167 value = 5 }
 			}
 			1198 = { transfer_state_to = XIN add_core_of = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack} start_add_extrameal_islam_leavel5 = yes }
@@ -125,10 +125,10 @@ country_event = {
 			1208 = { transfer_state_to = XIN add_core_of = XIN }
 
 			XIN = {
-				create_country_leader={
+				create_country_leader = {
 					name = "Qiu yanhan"
 					picture = "qiu_yanhan.dds"
-					ideology = Nat_Autocracy
+					ideology = XIN_MR
 					traits = {}
 				}
 				set_cosmetic_tag = ETK_JUNQU
@@ -145,23 +145,24 @@ country_event = {
 				election_frequency = 60
 				elections_allowed = no
 			}
-			start_politics_input = yes
 			add_to_array = { ruling_party = 22 } #军区								
-			set_variable = { party_pop_array^22 = 0.50 } #军区	
 			add_to_array = { gov_coalition_array = 4 }
 			add_to_array = { gov_coalition_array = 6 }
-			
+			set_variable = { party_pop_array^22 = 0.50 } #军区	
+			set_variable = { party_pop_array^4 = 0.20 } #军区	
+			set_variable = { party_pop_array^6 = 0.15 } #军区	
 			update_party_name = yes
-			startup_politics = yes
+			start_politics_input = yes
 			 	division_template = {
-				name = "解放军机动师级单位"
-				is_locked = yes
-				regiments = {
-					Mot_Inf_Bat = { x = 0 y = 0 } Mot_Inf_Bat = { x = 0 y = 1 }
-					Mot_Inf_Bat = { x = 0 y = 2 } Mot_Inf_Bat = { x = 0 y = 3 }
-					Mot_Inf_Bat = { x = 1 y = 0 } Mot_Inf_Bat = { x = 1 y = 1 }
-					Mot_Inf_Bat = { x = 1 y = 2 } Mot_Inf_Bat = { x = 1 y = 3 }
-				}
+					name = "解放军机动师级单位"
+					division_names_group = CHI_XIN_01
+					is_locked = yes
+					regiments = {
+						Mot_Inf_Bat = { x = 0 y = 0 } Mot_Inf_Bat = { x = 0 y = 1 }
+						Mot_Inf_Bat = { x = 0 y = 2 } Mot_Inf_Bat = { x = 0 y = 3 }
+						Mot_Inf_Bat = { x = 1 y = 0 } Mot_Inf_Bat = { x = 1 y = 1 }
+						Mot_Inf_Bat = { x = 1 y = 2 } Mot_Inf_Bat = { x = 1 y = 3 }
+					}
 			}
 			mark_focus_tree_layout_dirty = yes#刷新国策树
 			}
@@ -170,13 +171,6 @@ country_event = {
 				type = Inf_equipment
 				amount = -5000
 				producer = CHI
-			}
-			transfer_units_fraction = {
-				target = XIN
-				size = 0.01
-				stockpile_ratio = 0.1
-				army_ratio = 0.1
-				air_ratio = 0.1
 			}
 			random_army_leader = {
 				set_nationality = XIN

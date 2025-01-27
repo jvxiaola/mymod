@@ -266,13 +266,18 @@ defined_text = {
 			has_country_leader_ideology = nationalist_sub
 		}
 		localization_key = "民族主义"
-		
 	}
 		text = {
 		trigger = {
 			has_country_leader_ideology = Nat_Autocracy
 		}
 		localization_key = Nat_Autocracy
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = XIN_MR
+		}
+		localization_key = XIN_MR
 	}
 		text = {
 		trigger = {

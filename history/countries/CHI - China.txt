@@ -171,7 +171,7 @@ set_variable = { CHI_Socialist_Construction_dynamic1 = -0.40}
 	CHI_GGKF
 	CHI_Bide
 	CHI_jihuashengyu
-CHI_jdjs1
+	CHI_jdjs1
 	CHI_big_layoff1
 	CHI_not_nongyesui
 	CHI_Socialist_Market_Economy

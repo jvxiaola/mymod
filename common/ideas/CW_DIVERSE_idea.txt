@@ -14,6 +14,8 @@ ideas = {
 		rule = {
 			can_not_declare_war = no
 			can_declare_war_without_wargoal_when_in_war = no
+			can_create_factions = no
+			can_join_factions = no
 		}
 		on_add = {
 			add_opinion_modifier = {
