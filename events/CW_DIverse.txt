@@ -144,6 +144,7 @@ country_event = {
 				election_frequency = 60
 				elections_allowed = no
 			}
+			inherit_technology = CHI
 			add_to_array = { ruling_party = 22 } #军区								
 			add_to_array = { gov_coalition_array = 4 }
 			add_to_array = { gov_coalition_array = 6 }
@@ -196,19 +197,19 @@ country_event = {
 			amount = -300
 			producer = CHI
 		}
-		random_state = {
 			if = {
+				random_state = {
 				limit = {
 					is_sourth_XJ = yes
 					check_variable = { extrameal_islam_leavel < 5 }
 					has_dynamic_modifier = { modifier = extrameal_islam_attack }
-				}
+					}
 				extrameal_islam_leavel_up = yes
 				set_demilitarized_zone = yes
 				add_manpower = -150
+				}
 			}
 	
-		}
 	}
 }
 
