@@ -123,7 +123,6 @@ country_event = {
 			1206 = { transfer_state_to = XIN add_core_of = XIN }
 			1207 = { transfer_state_to = XIN add_core_of = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack} start_add_extrameal_islam_leavel1 = yes }
 			1208 = { transfer_state_to = XIN add_core_of = XIN }
-
 			XIN = {
 				create_country_leader = {
 					name = "Qiu yanhan"
@@ -153,26 +152,26 @@ country_event = {
 			set_variable = { party_pop_array^6 = 0.15 } #军区	
 			update_party_name = yes
 			start_politics_input = yes
-			load_oob = "XIN_liberate_units"
+			load_oob = XIN_liberate_units
 			mark_focus_tree_layout_dirty = yes#刷新国策树
-			}
-		CHI = {
-			add_equipment_to_stockpile = {
-				type = Inf_equipment
-				amount = -5000
-				producer = CHI
-			}
-			random_army_leader = {
-				set_nationality = XIN
-			}
-		}
-		XIN = {
+			give_military_access = CHI
 			add_equipment_to_stockpile = {
 				type = Inf_equipment
 				amount = 5000
 				producer = CHI
 			}
-		}
+			}
+			CHI = {
+				add_equipment_to_stockpile = {
+					type = Inf_equipment
+					amount = -5000
+					producer = CHI
+				}
+				random_army_leader = {
+					set_nationality = XIN
+				}
+				give_guarantee = XIN
+			}
 	}
 	}
 }

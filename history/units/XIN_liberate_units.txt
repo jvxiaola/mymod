@@ -48,8 +48,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 3673
-		division_template = "中国人民解放军新疆军区第1机动师"
+		location = 10674
+		division_template = "解放军师级机动单位"
 		start_experience_factor = 2
 		start_equipment_factor = 1
 	}
@@ -59,8 +59,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 3673
-		division_template = "乌鲁木齐市第2守备机动师"
+		location = 3167
+		division_template = "解放军师级步战单位"
 		start_experience_factor = 2
 		start_equipment_factor = 1
 	}
@@ -70,8 +70,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 3673
-		division_template = "中国人民解放军新疆军区第1陆战师"
+		location = 4843
+		division_template = "解放军师级步战单位"
 		start_experience_factor = 1.3
 		start_equipment_factor = 1
 	}
@@ -81,8 +81,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 3673
-		division_template = "中国人民解放军新疆军区第2陆战师"
+		location = 1844
+		division_template = "解放军师级步战单位"
 		start_experience_factor = 1.5
 		start_equipment_factor = 1
 	}
@@ -92,8 +92,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 3673
-		division_template = "乌鲁木齐市第1机械化师"
+		location = 10545
+		division_template = "解放军师级机械化单位"
 		start_experience_factor = 2
 		start_equipment_factor = 1
 	}
