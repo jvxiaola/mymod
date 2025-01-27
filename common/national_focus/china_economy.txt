@@ -29,7 +29,7 @@
 
 	shared_focus = {
 		id = CHI_Smash_the_Iron_Rice_Bowl
-		icon = iron_rice_bowl
+		icon = coins
 
 		x = -3
 		y = 1
