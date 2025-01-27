@@ -59,7 +59,7 @@ extrameal_islam_leavel_down = {
 set_nomal_multiply_num_aeil = {
   set_temp_variable = { extrameal_islam_attack01 = 0.02 }
   multiply_temp_variable = { extrameal_islam_attack01 = extrameal_islam_leavel }
-  set_variable = { army_speed_factor_for_controller = extrameal_islam_attack01 }
+  set_variable = { extrameal_islam_attack1 = extrameal_islam_attack01 }
 
   set_temp_variable = { extrameal_islam_attack02 = 0.03 }
   multiply_temp_variable = { extrameal_islam_attack02 = extrameal_islam_leavel }

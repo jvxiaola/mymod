@@ -1,0 +1,58 @@
+defined_text = {
+	name = extrameal_islam_leavel_num_display
+	text = { trigger = { check_variable = { 592.extrameal_islam_leavel = 1 }  } localization_key = "ext_isl_lev1" }
+	text = { trigger = { check_variable = { 592.extrameal_islam_leavel = 2 }  } localization_key = "ext_isl_lev2" }
+	text = { trigger = { check_variable = { 592.extrameal_islam_leavel = 3 }  } localization_key = "ext_isl_lev3" }
+	text = { trigger = { check_variable = { 592.extrameal_islam_leavel = 4 }  } localization_key = "ext_isl_lev4" }
+	text = { trigger = { check_variable = { 592.extrameal_islam_leavel = 5 }  } localization_key = "ext_isl_lev5" }
+
+	text = { trigger = { check_variable = { 1198.extrameal_islam_leavel = 1 }  } localization_key = "ext_isl_lev1" }
+	text = { trigger = { check_variable = { 1198.extrameal_islam_leavel = 2 }  } localization_key = "ext_isl_lev2" }
+	text = { trigger = { check_variable = { 1198.extrameal_islam_leavel = 3 }  } localization_key = "ext_isl_lev3" }
+	text = { trigger = { check_variable = { 1198.extrameal_islam_leavel = 4 }  } localization_key = "ext_isl_lev4" }
+	text = { trigger = { check_variable = { 1198.extrameal_islam_leavel = 5 }  } localization_key = "ext_isl_lev5" }
+
+	text = { trigger = { check_variable = { 1199.extrameal_islam_leavel = 1 }  } localization_key = "ext_isl_lev1" }
+	text = { trigger = { check_variable = { 1199.extrameal_islam_leavel = 2 }  } localization_key = "ext_isl_lev2" }
+	text = { trigger = { check_variable = { 1199.extrameal_islam_leavel = 3 }  } localization_key = "ext_isl_lev3" }
+	text = { trigger = { check_variable = { 1199.extrameal_islam_leavel = 4 }  } localization_key = "ext_isl_lev4" }
+	text = { trigger = { check_variable = { 1199.extrameal_islam_leavel = 5 }  } localization_key = "ext_isl_lev5" }
+
+	text = { trigger = { check_variable = { 1200.extrameal_islam_leavel = 1 }  } localization_key = "ext_isl_lev1" }
+	text = { trigger = { check_variable = { 1200.extrameal_islam_leavel = 2 }  } localization_key = "ext_isl_lev2" }
+	text = { trigger = { check_variable = { 1200.extrameal_islam_leavel = 3 }  } localization_key = "ext_isl_lev3" }
+	text = { trigger = { check_variable = { 1200.extrameal_islam_leavel = 4 }  } localization_key = "ext_isl_lev4" }
+	text = { trigger = { check_variable = { 1200.extrameal_islam_leavel = 5 }  } localization_key = "ext_isl_lev5" }
+
+	text = { trigger = { check_variable = { 1201.extrameal_islam_leavel = 1 }  } localization_key = "ext_isl_lev1" }
+	text = { trigger = { check_variable = { 1201.extrameal_islam_leavel = 2 }  } localization_key = "ext_isl_lev2" }
+	text = { trigger = { check_variable = { 1201.extrameal_islam_leavel = 3 }  } localization_key = "ext_isl_lev3" }
+	text = { trigger = { check_variable = { 1201.extrameal_islam_leavel = 4 }  } localization_key = "ext_isl_lev4" }
+	text = { trigger = { check_variable = { 1201.extrameal_islam_leavel = 5 }  } localization_key = "ext_isl_lev5" }
+
+	text = { trigger = { check_variable = { 1203.extrameal_islam_leavel = 1 }  } localization_key = "ext_isl_lev1" }
+	text = { trigger = { check_variable = { 1203.extrameal_islam_leavel = 2 }  } localization_key = "ext_isl_lev2" }
+	text = { trigger = { check_variable = { 1203.extrameal_islam_leavel = 3 }  } localization_key = "ext_isl_lev3" }
+	text = { trigger = { check_variable = { 1203.extrameal_islam_leavel = 4 }  } localization_key = "ext_isl_lev4" }
+	text = { trigger = { check_variable = { 1203.extrameal_islam_leavel = 5 }  } localization_key = "ext_isl_lev5" }
+
+	text = { trigger = { check_variable = { 1204.extrameal_islam_leavel = 1 }  } localization_key = "ext_isl_lev1" }
+	text = { trigger = { check_variable = { 1204.extrameal_islam_leavel = 2 }  } localization_key = "ext_isl_lev2" }
+	text = { trigger = { check_variable = { 1204.extrameal_islam_leavel = 3 }  } localization_key = "ext_isl_lev3" }
+	text = { trigger = { check_variable = { 1204.extrameal_islam_leavel = 4 }  } localization_key = "ext_isl_lev4" }
+	text = { trigger = { check_variable = { 1204.extrameal_islam_leavel = 5 }  } localization_key = "ext_isl_lev5" }
+
+	text = { trigger = { check_variable = { 1205.extrameal_islam_leavel = 1 }  } localization_key = "ext_isl_lev1" }
+	text = { trigger = { check_variable = { 1205.extrameal_islam_leavel = 2 }  } localization_key = "ext_isl_lev2" }
+	text = { trigger = { check_variable = { 1205.extrameal_islam_leavel = 3 }  } localization_key = "ext_isl_lev3" }
+	text = { trigger = { check_variable = { 1205.extrameal_islam_leavel = 4 }  } localization_key = "ext_isl_lev4" }
+	text = { trigger = { check_variable = { 1205.extrameal_islam_leavel = 5 }  } localization_key = "ext_isl_lev5" }
+
+	text = { trigger = { check_variable = { 1207.extrameal_islam_leavel = 1 }  } localization_key = "ext_isl_lev1" }
+	text = { trigger = { check_variable = { 1207.extrameal_islam_leavel = 2 }  } localization_key = "ext_isl_lev2" }
+	text = { trigger = { check_variable = { 1207.extrameal_islam_leavel = 3 }  } localization_key = "ext_isl_lev3" }
+	text = { trigger = { check_variable = { 1207.extrameal_islam_leavel = 4 }  } localization_key = "ext_isl_lev4" }
+	text = { trigger = { check_variable = { 1207.extrameal_islam_leavel = 5 }  } localization_key = "ext_isl_lev5" }
+
+}
+
