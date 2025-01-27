@@ -1,0 +1,40 @@
+﻿CHI_XIN_01 = {
+	name = "解放军师级机动单位"
+	for_countries = { XIN }
+
+	division_types = { "Mot_Inf_Bat" }
+
+	ordered = {
+		1 = { "中国人民解放军新疆军区第%d机动师" }
+		2 = { "乌鲁木齐市第%d守备机动师" }
+	}
+}
+		#3 = { "阿尔泰第%d动员机动师" }
+		#4 = { "昌吉第%d动员机动师" }
+		#5 = { "哈密第%d动员机动师" }
+		#6 = { "吐鲁番第%d动员机动师" }
+		#7 = { "乌鲁木齐大学第%d动员民兵机动师" }
+
+CHI_XIN_02 = {
+	name = "解放军师级步战单位"
+	for_countries = { XIN }
+
+	division_types = { "L_Inf_Bat" }
+
+	ordered = {
+		1 = { "中国人民解放军新疆军区第%d陆战师" }
+		2 = { "乌鲁木齐市第%d守备陆战师" }
+	}
+}
+
+CHI_XIN_02 = {
+	name = "解放军师级机械化单位"
+	for_countries = { XIN }
+
+	division_types = { "Mech_Inf_Bat" }
+
+	ordered = {
+		1 = { "中国人民解放军新疆军区第%d机械化师" }
+		2 = { "乌鲁木齐市第%d守备机械化师" }
+	}
+}

@@ -153,17 +153,7 @@ country_event = {
 			set_variable = { party_pop_array^6 = 0.15 } #军区	
 			update_party_name = yes
 			start_politics_input = yes
-			 	division_template = {
-					name = "解放军机动师级单位"
-					division_names_group = CHI_XIN_01
-					is_locked = yes
-					regiments = {
-						Mot_Inf_Bat = { x = 0 y = 0 } Mot_Inf_Bat = { x = 0 y = 1 }
-						Mot_Inf_Bat = { x = 0 y = 2 } Mot_Inf_Bat = { x = 0 y = 3 }
-						Mot_Inf_Bat = { x = 1 y = 0 } Mot_Inf_Bat = { x = 1 y = 1 }
-						Mot_Inf_Bat = { x = 1 y = 2 } Mot_Inf_Bat = { x = 1 y = 3 }
-					}
-			}
+			load_oob = "XIN_liberate_units"
 			mark_focus_tree_layout_dirty = yes#刷新国策树
 			}
 		CHI = {
