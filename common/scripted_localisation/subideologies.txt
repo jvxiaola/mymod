@@ -266,7 +266,6 @@ defined_text = {
 			has_country_leader_ideology = nationalist_sub
 		}
 		localization_key = "民族主义"
-		
 	}
 		text = {
 		trigger = {
