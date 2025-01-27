@@ -43,4 +43,9 @@ is_sourth_XJ = {
 		state = 1198		state = 1199		state = 1200		state = 1203		state = 1204		state = 1205	
 	}
 }
-
+will_be_attacked_by_islam = {
+	OR = {
+		has_dynamic_modifier = { modifier = extrameal_islam_attack1 } has_dynamic_modifier = { modifier = extrameal_islam_attack2 } has_dynamic_modifier = { modifier = extrameal_islam_attack3 }
+		has_dynamic_modifier = { modifier = extrameal_islam_attack4 } has_dynamic_modifier = { modifier = extrameal_islam_attack5 }
+	}
+}

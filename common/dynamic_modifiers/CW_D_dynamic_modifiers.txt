@@ -1,9 +1,46 @@
 
-extrameal_islam_attack = {
+#等级1：极低 等级2：较低 等级3：中 等级4：高 等级5：极高
+extrameal_islam_attack1 = {
 	enable = { always = yes }
-	#相关变量：extrameal_islam_leavel
+	
 	icon = GFX_idea_extrameal_islam_attack
-	army_speed_factor_for_controller = extrameal_islam_attack1
-	attrition_for_controller = extrameal_islam_attack2
-	local_factory_sabotage = extrameal_islam_attack3
+	army_speed_factor_for_controller = -0.02
+	attrition_for_controller = 0.03
+	local_factory_sabotage = 0.01
+}
+
+extrameal_islam_attack2 = {
+	enable = { always = yes }
+	
+	icon = GFX_idea_extrameal_islam_attack
+	army_speed_factor_for_controller = -0.04
+	attrition_for_controller = 0.06
+	local_factory_sabotage = 0.02
+}
+
+extrameal_islam_attack3 = {
+	enable = { always = yes }
+	
+	icon = GFX_idea_extrameal_islam_attack
+	army_speed_factor_for_controller = -0.06
+	attrition_for_controller = 0.09
+	local_factory_sabotage = 0.05
+}
+
+extrameal_islam_attack4 = {
+	enable = { always = yes }
+	
+	icon = GFX_idea_extrameal_islam_attack
+	army_speed_factor_for_controller = -0.08
+	attrition_for_controller = 0.12
+	local_factory_sabotage = 0.12
+}
+
+extrameal_islam_attack5 = {
+	enable = { always = yes }
+	
+	icon = GFX_idea_extrameal_islam_attack
+	army_speed_factor_for_controller = -0.10
+	attrition_for_controller = 0.15
+	local_factory_sabotage = 0.15
 }
