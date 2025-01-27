@@ -1168,29 +1168,6 @@ rd_CHI_differentiation_side_2: "中等两极分化"
 rd_CHI_differentiation_side_3: "严重两极分化"
 rd_CHI_differentiation_side_4: "极端两极分化"
 #patryname
- Socialism_with_Chinese_characteristics_ideology:0 "意识形态：中国特色社会主义"
-
- CHI1.Conservative: "£CHI_communism 中国共产党 - §C改革派§!"
- CHI1.Conservative_icon: "£CHI_communism"
- CHI1.Conservative_desc: " 中国特色社会主义 - \n中国共产党（英文名：the Communist Party of China），简称中共，创建于1921年7月23日，历经多年国共内战，中国共产党在中国大陆和绝大多数沿海岛屿取得全面胜利，率领中国人民解放军打败中华民国国军，迫使中华民国政府退守台澎金马，并在1949年于北京建立中华人民共和国。1949年10月至今为代表工人阶级领导工农联盟和统一战线，在中国大陆实行人民民主专政的中华人民共和国唯一执政党。\n文化大革命结束后，以邓小平为首的改革派获得中共的领导权，开始了“改革开放”，引入市场经济，国有企业市场化。走上了“中国特色社会主义”道路。"
- CPC.oligarchism: "£CHI_communism 中国共产党 - §L权贵系§!"
- CPC.oligarchism_icon: "£CHI_communism"
- CPC.oligarchism_desc: " 寡头主义 - \n在中国共产党高级领导岗位任职过的人的后代普遍被视为中华人民共和国的政治贵族。"
-
- 
- CHI1.Caliphate:0 "£CHI_salafist_jihadism 东突厥斯坦青年党"
- CHI1.Caliphate_icon:0 "£CHI_salafist_jihadism"
- CHI1.Caliphate_desc:0 ""
- CHI1.neutral_Social:0 "£CHI_Revolutionary_Committee_of_the_Chinese_Kuomintang 中国国民党革命委员会"
- CHI1.neutral_Social_icon:0 "£CHI_Revolutionary_Committee_of_the_Chinese_Kuomintang"
- CHI1.neutral_Social_desc:0 " 三民主义、中国特色社会主义——民革创立于1949年，主要是留在大陆的国民党左派成员所创立，现阶段是中国共产党领导的人民代表大会的一个民主党派参政党。"
- CHI.Nat_Fascism: "£CHI_liberal 中华文明党"
- CHI.Nat_Fascism_icon:0 "£CHI_liberal"
- CHI.Nat_Fascism_desc:0 " 法西斯主义——张维为认为中国人民必须要“自信”，要达到自信的目标就必须要禁止西方文化的一切——尽管他本人是瑞士留学生。"
- CHI.Neutral_Libertarian: "£TAI_liberalism 民主进步党"
- CHI.Neutral_Libertarian_icon: "£TAI_liberalism"
- CHI.Neutral_Libertarian_desc: " 社会自由主义 - 民主进步党成立于1986年9月28日，由党外运动各团体于《台湾省戒严令》与党禁解除前整合而成，是中华民国台湾时期主要政党之一。"
- 	
 VIE.anarchist_communism: "£CHI_communism 越南共产党（亲华派）"
 #贫富分化系统
 CHI_gbrp1: "贫富分化：§G极低§!"
@@ -2759,12 +2736,6 @@ NKO_AUTH_S: "朝鲜民主主义人民共和国"
  CSA_nationalist_DEF: "美利坚南方共和国"
 
 
-
-
-
-
-
-
  CHI.Western_Autocracy: "£generic_Western_Autocracy_small §1中国民主党§!"
  CHI.Western_Autocracy_icon: "£generic_Western_Autocracy_small"
  CHI.Western_Autocracy_desc: " 中国特色自由主义 - \n中国民主党在中华人民共和国是被取缔的政党。西式改良主义和西方自由主义是其核心价值观。据大多数西方消息来源称，该组织由民主活动人士和天安门广场抗议活动的前学生领袖组成。"
@@ -2803,10 +2774,10 @@ NKO_AUTH_S: "朝鲜民主主义人民共和国"
  CHI1.neutral_Social_desc: " 三民主义、中国特色社会主义 - \n民革创立于1949年，主要是留在大陆的国民党左派成员所创立，目前是中国共产党领导的人民代表大会的一个民主党派参政党。"
  CHI.Nat_Fascism: "£CHI_liberal 中华文明党"
  CHI.Nat_Fascism_icon: "£CHI_liberal"
- CHI.Nat_Fascism_desc: " 极端民族主义 - \n中华文明党主张中国利益高于一切，认为西方被盎格鲁撒克逊人和犹太人控制了，他们给西方底层人发钱，形成了利益共同体，因此社会主义和中华民族伟大复兴只能在铁于火之中得到实现。"
- CHI.Neutral_Libertarian: "£TAI_liberalism 民主进步党"
+ CHI.Nat_Fascism_desc: " 极端民族主义 - \n中华文明党主张中国利益高于一切，认为西方被盎格鲁撒克逊人和犹太人控制了，他们剥削第三世界国家，将所得资源少部分分给西方底层，形成了利益共同体，因此社会主义和中华民族伟大复兴只能在铁于火之中得到实现。"
+ CHI.Neutral_Libertarian: "£TAI_liberalism §7民主进步党§!"
  CHI.Neutral_Libertarian_icon: "£TAI_liberalism"
- CHI.Neutral_Libertarian_desc: " 社会自由主义 - \n民主进步党成立于1986年9月28日，由党外运动各团体于《台湾省戒严令》与党禁解除前整合而成，是中华民国台湾时期主要政党之一。"
+ CHI.Neutral_Libertarian_desc: " 社会自由主义/新自由主义 - \n民主进步党成立于1986年9月28日，由党外运动各团体于《台湾省戒严令》与党禁解除前整合而成，是中华民国台湾时期主要政党之一。\n但民主进步党自90年代起为寻求选举胜利大力煽动地方意识，造成“台独”意识盛行，其本身也在当选后也从左翼政党迅速蜕化为实质上的极端民粹主义政党"
  CHI1.Neutral_Communism: "£CHI_neutral_communism §O民间毛派§!"
  CHI1.Neutral_Communism_icon: "£CHI_neutral_communism"
  CHI1.Neutral_Communism_desc: " 民间共产主义思潮 - \n民间毛派是中国民间支持或同情毛泽东及其思想或继承者的民众统称。他们没有统一纲领或组织，仅仅是因为相同观点而被称为毛派。"
@@ -2816,6 +2787,19 @@ NKO_AUTH_S: "朝鲜民主主义人民共和国"
  CHI1.Monarchist:0 "£CHI_monarchism 大清皇室"
  CHI1.Monarchist_icon:0 "£CHI_monarchism"
  CHI1.Monarchist_desc:0 " 君主主义 - 爱新觉罗皇室在清朝统治中国近276年，直到隆裕皇后颁布诏书，宣布幼子皇帝溥仪退位。满族统治的王朝在中国官方历史上常常因其在向外国列强让步以及对汉族多数民族的压迫而受到谴责。"  	
+Socialism_with_Chinese_characteristics_ideology:0 "意识形态：中国特色社会主义"
+
+ CHI1.Conservative: "£CHI_communism 中国共产党 - §C改革派§!"
+ CHI1.Conservative_icon: "£CHI_communism"
+ CHI1.Conservative_desc: " 中国特色社会主义 - \n中国共产党（英文名：the Communist Party of China），简称中共，创建于1921年7月23日，历经多年国共内战，中国共产党在中国大陆和绝大多数沿海岛屿取得全面胜利，率领中国人民解放军打败中华民国国军，迫使中华民国政府退守台澎金马，并在1949年于北京建立中华人民共和国。1949年10月至今为代表工人阶级领导工农联盟和统一战线，在中国大陆实行人民民主专政的中华人民共和国唯一执政党。\n文化大革命结束后，以邓小平为首的改革派获得中共的领导权，开始了“改革开放”，引入市场经济，国有企业市场化。走上了“中国特色社会主义”道路。"
+ CPC.oligarchism: "£CHI_communism 中国共产党 - §L权贵系§!"
+ CPC.oligarchism_icon: "£CHI_communism"
+ CPC.oligarchism_desc: " 寡头主义 - \n在中国共产党高级领导岗位任职过的人的后代普遍被视为中华人民共和国的政治贵族。"
+
+ 
+ CHI1.Caliphate:0 "£CHI_salafist_jihadism 东突厥斯坦青年党"
+ CHI1.Caliphate_icon:0 "£CHI_salafist_jihadism"
+ CHI1.Caliphate_desc:0 ""
 
 
 
