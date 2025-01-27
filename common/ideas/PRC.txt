@@ -679,12 +679,12 @@ name = chi_jdjs
 			
  	
 			modifier = {
-army_org_factor = -0.15
-army_attack_factor = -0.15
-consumer_goods_factor = -0.05
-nationalist_drift = 0.05
-army_defence_factor = -0.15
-political_power_gain = -0.10
+army_org_factor = -0.10
+army_attack_factor = -0.10
+consumer_goods_factor = -0.03
+nationalist_drift = 0.03
+army_defence_factor = -0.10
+political_power_gain = -0.05
 			}
 		}
 CHI_jdjs2 = {

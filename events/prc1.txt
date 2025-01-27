@@ -2760,6 +2760,7 @@ has_country_flag = CHI_yingduioldmanh
 	
 	immediate = {
 		set_country_flag = CHI_three_daibiao
+		
 	}
 		option = {	
 		name = prc1.48.o1
@@ -5929,14 +5930,15 @@ country_event = {
 			set_country_flag = CPC_Rehabilitation_of_Zhao_Ziyang
 	mark_focus_tree_layout_dirty = yes
 		
-			create_country_leader = {
-		name = "Zhao Ziyang"
-		picture = "Zhao_ziyang.dds"
+	create_country_leader = {
+		name = "Li Ruihuan"
+		picture = "Li_Ruihuan.dds"
 		expire = "2010.1.1"
 		ideology = liberalism
 		traits = {
 		western_liberalism
 		captain_of_industry
+CHI_Democratic_Communists		
 		}
 	}
 	hidden_effect = {
@@ -6021,25 +6023,61 @@ country_event = {
 	
 	option = {
 	name = prc1.98.o1	
-	clr_country_flag = party5_banned
 
-	hidden_effect = {	
-	start_politics_input = yes
-					add_to_array = { ruling_party = 5 } 
-	add_to_array = { gov_coalition_array = 19 } #communism
-					startup_politics = yes
-}	
-		create_country_leader = {
-		name = "Fred Engst"
-		picture = "Yang_Heping.dds"
-		expire = "3000.1.1"
-		ideology = anarchist_communism
-		traits = {
-		emerging_anarchist_communism
-		china_duoshou
-		}
+
+
+		set_temp_variable = { temp_opinion = 10 }
+		change_communist_cadres_opinion = yes
+				custom_effect_tooltip = influence_the_party_line_tt
+	add_5_emerging_left_wing_radical = yes
+	add_to_variable = {
+	var = CPC_Right
+	value = -0.025
+	}
+	add_to_variable = {
+	var = CPC_Dengist
+	value = 0.01
+	}
+	add_to_variable = {
+	var = CPC_Left
+	value = 0.015
+	}
+	USA = {		add_opinion_modifier = {
+				target = CHI
+				modifier = diplomatic_distance
+			}
+	
 	}
 	ai_chance = {factor = 100}
+	}
+
+
+
+	option={
+
+		name=prc1.98.o2	
+		set_temp_variable = { temp_opinion = 10 }
+		change_communist_cadres_opinion = yes
+				custom_effect_tooltip = influence_the_party_line_tt
+	add_5_emerging_left_wing_radical = yes
+	add_to_variable = {
+	var = CPC_Right
+	value = -0.025
+	}
+	
+	add_to_variable = {
+	var = CPC_Left
+	value = 0.025
+	}
+	USA = {		add_opinion_modifier = {
+				target = CHI
+				modifier = diplomatic_distance
+			}
+	
+	}
+
+	
+	ai_chance = {factor = 5}
 	}
 	}
 	country_event = {
@@ -7715,3 +7753,245 @@ country_event = {
 																											
 	}
 }			
+
+
+
+
+country_event = {
+	id = prc1.164
+	title = prc1.164.t
+	desc = prc1.164.d
+	#CW							
+	is_triggered_only = yes
+	
+	trigger = {
+
+		
+	}
+
+
+	option = { 
+	name = prc1.164.a.o1	
+	set_temp_variable = { treasury_change = 10 }
+	modify_treasury_effect = yes
+				custom_effect_tooltip = influence_the_party_line_tt
+add_5_western_liberalism = yes
+add_5_emerging_reactionary = yes
+add_to_variable = {
+var = CPC_Right
+value = 0.05
+}
+add_to_variable = {
+var = CPC_Dengist
+value = 0.05
+}
+add_to_variable = {
+var = CPC_Left
+value = -0.1
+}
+			USA = {		add_opinion_modifier = {
+			target = CHI
+			modifier = medium_increase
+		}
+
+}
+
+
+
+	ai_chance = { factor = 95 }
+
+	}
+	option = { 
+		name = prc1.164.a.o2	
+
+		set_temp_variable = { treasury_change = 10 }
+		modify_treasury_effect = yes
+					custom_effect_tooltip = influence_the_party_line_tt
+	add_5_western_liberalism = yes
+	add_5_emerging_reactionary = yes
+	add_to_variable = {
+	var = CPC_Right
+	value = 0.1
+	}
+
+	add_to_variable = {
+	var = CPC_Left
+	value = -0.1
+	}
+				USA = {		add_opinion_modifier = {
+				target = CHI
+				modifier = medium_increase
+			}
+	
+	}
+	
+
+		ai_chance = { factor = 5 }																								
+		}
+}		
+
+country_event = {
+	id = prc1.165
+	title = prc1.165.t
+	desc = prc1.165.d
+	#CW							
+	is_triggered_only = yes
+	
+	trigger = {
+
+		
+	}
+
+
+	option = { 
+	name = prc1.165.a.o1	
+
+	set_temp_variable = { temp_CHI_people_support = 0.15 }
+	change_CHI_people_support = yes
+				custom_effect_tooltip = influence_the_party_line_tt
+add_5_emerging_left_wing_radical = yes
+add_to_variable = {
+var = CPC_Right
+value = -0.15
+}
+add_to_variable = {
+var = CPC_Dengist
+value = 0.05
+}
+add_to_variable = {
+var = CPC_Left
+value = 0.1
+}
+						set_temp_variable = { treasury_change = -50 }
+		modify_treasury_effect = yes
+	remove_ideas = CHI_big_layoff1
+	increase_social_spending = yes
+
+	ai_chance = { factor = 95 }
+
+	}
+	option = { 
+		name = prc1.165.a.o2	
+
+					set_temp_variable = { temp_CHI_people_support = 0.15 }
+			change_CHI_people_support = yes
+						custom_effect_tooltip = influence_the_party_line_tt
+		add_5_emerging_left_wing_radical = yes
+	add_to_variable = {
+	var = CPC_Right
+	value = -0.1
+	}
+	add_to_variable = {
+	var = CPC_Dengist
+	value = -0.1
+	}
+	add_to_variable = {
+	var = CPC_Left
+	value = 0.2
+	}
+								set_temp_variable = { treasury_change = -100 }
+				modify_treasury_effect = yes
+			remove_ideas = CHI_big_layoff1
+			increase_social_spending = yes
+		ai_chance = { factor = 5 }																								
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	country_event = {
+		id = prc1.166
+		title = prc1.166.t
+		desc = prc1.166.d
+		#CW							
+		is_triggered_only = yes
+		
+		trigger = {
+	
+			
+		}
+	
+	
+
+	option = { 
+		name = prc1.166.a.o1	
+		set_temp_variable = { temp_CHI_people_support = 0.1 }
+	change_CHI_people_support = yes
+	custom_effect_tooltip = influence_the_party_line_tt
+	add_5_western_liberalism = yes
+	add_5_emerging_reactionary = yes
+	add_to_variable = {
+		var = CPC_Right
+		value = 0.07
+		}
+	add_to_variable = {
+		var = CPC_Dengist
+		value = 0.03
+		}		
+	add_to_variable = {
+	var = CPC_Left
+	value = -0.1
+	}
+	four_random_industrial_complex = yes
+	remove_ideas = CHI_big_layoff1
+	add_timed_idea = {
+		idea = CHI_big_layoff2
+		days = 365
+	}		
+
+	
+		ai_chance = { factor = 95 }
+	
+		}
+		option = { 
+			name = prc1.166.a.o2	
+			set_temp_variable = { temp_CHI_people_support = 0.1 }
+			change_CHI_people_support = yes
+			custom_effect_tooltip = influence_the_party_line_tt
+			add_5_western_liberalism = yes
+			add_5_emerging_reactionary = yes
+			add_to_variable = {
+				var = CPC_Right
+				value = 0.1
+				}
+
+			add_to_variable = {
+			var = CPC_Left
+			value = -0.1
+			}
+			four_random_industrial_complex = yes
+			remove_ideas = CHI_big_layoff1
+			add_timed_idea = {
+				idea = CHI_big_layoff2
+				days = 365
+			}		
+		
+			ai_chance = { factor = 5 }																								
+			}
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

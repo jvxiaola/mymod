@@ -21,38 +21,38 @@ focus_tree = {
 	@taiwan_tree = 26
 	@south_sea_tree = 24
 	@east_sea_tree = 22
-		focus = {
-		id = CHI_chisosm
-		icon = one_china_policy
-		x = 20
-		y = 0
+	#	focus = {
+	#	id = CHI_chisosm
+	#	icon = one_china_policy
+	#	x = 20
+	#	y = 0
+#
+	#	cost = 1
 
-		cost = 1
+	#	ai_will_do = {
+	#		factor = 10
+	#	}
+	#	bypass = {
 
-		ai_will_do = {
-			factor = 10
-		}
-		bypass = {
+	#	}
 
-		}
+	#	cancel_if_invalid = yes
+	#	continue_if_invalid = no
+	#	available_if_capitulated = no
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
+	#	completion_reward = {
+	#		add_political_power = 150
+	#	}
+#	}
 			focus = {
 		id = CHI_zhengzhigaige
 		icon = PRC_gov
-		x = -5
+		x = 15
 		y = 1
 		cost = 3
-		relative_position_id = CHI_chisosm
+
 				prerequisite = {
-			focus = CHI_chisosm
+
 			}
 	ai_will_do = {
 			factor = 50
@@ -65,7 +65,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 completion_reward = {
-			add_stability = 0.10
+
 			add_political_power = 150
 			
 		}
@@ -74,7 +74,7 @@ focus = {
 		id = CHI_Three_represents
 		icon = focus_jiang_zemin
 		x = 0
-		y = 2
+		y = 1
 		cost = 4
 		relative_position_id = CHI_zhengzhigaige
 				prerequisite = {
@@ -96,20 +96,121 @@ has_country_flag = CPC_Rehabilitation_of_Zhao_Ziyang
 		continue_if_invalid = no
 		available_if_capitulated = no
 completion_reward = {
-add_stability = 0.10	
+
 			country_event = prc1.48
 		}
 		}
+
+
+
+
+		focus = {
+			id = CHI_dashiguan
+			icon = intervene_cosovo
+			x = -3
+			y = 1
+			cost = 4
+			relative_position_id = CHI_zhengzhigaige
+					prerequisite = {
+				focus = CHI_zhengzhigaige
+				}
+
+
+					ai_will_do = {
+				factor = 50
+			}
+			allow_branch = {
+			NOT = {
+	has_country_flag = CPC_Rehabilitation_of_Zhao_Ziyang
+	}
+			}
+						bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	completion_reward = {
+	add_political_power = 100
+
+			}
+			}
+	
+			focus = {
+				id = CHI_meifangdafu
+				icon = USA_clintonomics
+				x = -5
+				y = 4
+				cost = 4
+				relative_position_id = CHI_zhengzhigaige
+						prerequisite = {
+					focus = CHI_condemn_United_States
+					focus= CHI_Support_the_War_on_Terror
+					}
+						ai_will_do = {
+					factor = 50
+				}
+				allow_branch = {
+				NOT = {
+		has_country_flag = CPC_Rehabilitation_of_Zhao_Ziyang
+		}
+				}
+							bypass = {
+		
+				}
+		
+				cancel_if_invalid = yes
+				continue_if_invalid = no
+				available_if_capitulated = no
+		completion_reward = {
+		add_political_power = 100
+	
+				}
+				}
+			
+
+			focus = {
+				id = CHI_daxiagang
+				icon = RUS_State_Construction
+				x = 3
+				y = 1
+				cost = 4
+				relative_position_id = CHI_zhengzhigaige
+						prerequisite = {
+					focus = CHI_zhengzhigaige
+					}
+						ai_will_do = {
+					factor = 50
+				}
+				allow_branch = {
+				NOT = {
+		has_country_flag = CPC_Rehabilitation_of_Zhao_Ziyang
+		}
+				}
+							bypass = {
+		
+				}
+		
+				cancel_if_invalid = yes
+				continue_if_invalid = no
+				available_if_capitulated = no
+		completion_reward = {
+		add_political_power = 100
+	
+				}
+				}
+		
 focus = {
 		id = CHI_zibenjia-dang
 		icon = CPCNational_Party
-		x = -5
+		x = -1
 		y = 2
 		cost = 5
 		relative_position_id = CHI_zhengzhigaige
 
 				prerequisite = {
-			focus = CHI_zhengzhigaige
+			focus = CHI_Three_represents
 			}
 				ai_will_do = {
 			factor = 50
@@ -158,50 +259,50 @@ add_to_variable = {
 
 
 
-		focus = {
-			id = CHI_zibenjiajingshen
-			icon = liberalization
-			x = -5
-			y = 3
-			cost = 5
-			relative_position_id = CHI_zhengzhigaige
+		#focus = {
+	#		id = CHI_zibenjiajingshen
+	#		icon = liberalization
+	#		x = -5
+	#		y = 3
+	#		cost = 5
+	#		relative_position_id = CHI_zhengzhigaige
 	
-					prerequisite = {
-				focus = CHI_zibenjia-dang
-				}
-					ai_will_do = {
-				factor = 50
-			}
-						bypass = {
+	#				prerequisite = {
+	#			focus = CHI_zibenjia-dang
+	#			}
+	#				ai_will_do = {
+	#			factor = 50
+	#		}
+	#					bypass = {
+	#
+	#		}
 	
-			}
+	#		cancel_if_invalid = yes
+	#		continue_if_invalid = no
+#			available_if_capitulated = no
+#	completion_reward = {
+
+#	add_stability = 0.05
+
+#	custom_effect_tooltip = influence_the_party_line_tt
+	#add_10_western_liberalism = yes
 	
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
-	completion_reward = {
-
-	add_stability = 0.05
-
-	custom_effect_tooltip = influence_the_party_line_tt
-	add_10_western_liberalism = yes
+#	add_to_variable = {
+#	var = CPC_Right
+#	value = 0.10
+#	}
 	
-	add_to_variable = {
-	var = CPC_Right
-	value = 0.10
-	}
+#	add_to_variable = {
+#	var = CPC_Left
+#	value = -0.03
+#	}
 	
-	add_to_variable = {
-	var = CPC_Left
-	value = -0.03
-	}
-	
-	add_to_variable = {
-		var = CPC_Dengist
-		value = -0.07
-		}
-			}
-			}
+#	add_to_variable = {
+#		var = CPC_Dengist
+#		value = -0.07
+#		}
+#			}
+#			}
 
 
 
@@ -214,88 +315,62 @@ add_to_variable = {
 
 
 
-		focus = {
-		id = CHI_railway_speed_up
-		icon = Generic_Railroads
-		x = -7
-		y = 1
-		cost = 5
-		relative_position_id = CHI_chisosm
-				prerequisite = {
-			focus = CHI_chisosm
+		#focus = {
+	#	id = CHI_railway_speed_up
+	#	icon = Generic_Railroads
+		#x = -7
+	#	y = 1
+	#	cost = 5
+#		relative_position_id = CHI_chisosm
+	#			prerequisite = {
+		#	focus = CHI_chisosm
 
-			}
-					bypass = {
-
-		}
-			ai_will_do = {
-			factor = 50
-		}
-			available = {
-			}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-three_random_infrastructure = yes			
-		}
-		}
+	#		}
+	#				bypass = {
+#
+	#	}
+	#		ai_will_do = {
+	#		factor = 50
+	#	}
+#			available = {
+#			}
+#		cancel_if_invalid = yes
+	#	continue_if_invalid = no
+#		available_if_capitulated = no
+#		completion_reward = {
+#three_random_infrastructure = yes			
+#		}
+#		}
 				focus = {
 		id = CHI_Support_the_War_on_Terror
 		icon = internationalism
-		x = 1
-		y = 4
+		x = -2
+		y = 3
 		cost = 5
 		relative_position_id = CHI_zhengzhigaige				
 		mutually_exclusive = { focus = CHI_condemn_United_States }
 
 				prerequisite = {
-			focus = CHI_Three_represents
+			focus = CHI_dashiguan
 			}
-
+			prerequisite = {
+				focus = CHI_Three_represents
+				}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-							set_temp_variable = { treasury_change = 10 }
-			modify_treasury_effect = yes
-						custom_effect_tooltip = influence_the_party_line_tt
-add_5_western_liberalism = yes
-add_5_emerging_reactionary = yes
-add_to_variable = {
-var = CPC_Right
-value = 0.05
-}
-add_to_variable = {
-var = CPC_Dengist
-value = 0.05
-}
-add_to_variable = {
-var = CPC_Left
-value = -0.1
-}
-					USA = {		add_opinion_modifier = {
-					target = CHI
-					modifier = medium_increase
-				}
-		
-		}
-						add_opinion_modifier = {
-					target = AFG
-					modifier = mutual_trade_agreement
-				}
-								add_opinion_modifier = {
-					target = TAL
-					modifier = 	embargo 
-				}
+
+			country_event=prc1.164
 		}
 		}
 						focus = {
 		id = CHI_condemn_United_States
-		icon = war_against_the_united_states
-		x = -1
-		y = 4
+		icon =peoples_republic_of_china
+		#icon = war_against_the_united_states
+		x = -4
+		y = 3
 		cost = 5
 		relative_position_id = CHI_zhengzhigaige	
 		mutually_exclusive = { focus = CHI_Support_the_War_on_Terror }
@@ -303,6 +378,10 @@ value = -0.1
 				prerequisite = {
 			focus = CHI_Three_represents
 			}
+
+			prerequisite = {
+				focus = CHI_dashiguan
+				}
 				ai_will_do = {
 			factor = 50
 		}
@@ -315,44 +394,27 @@ value = -0.1
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-				set_temp_variable = { temp_opinion = 10 }
-			change_communist_cadres_opinion = yes
-					custom_effect_tooltip = influence_the_party_line_tt
-	add_5_emerging_left_wing_radical = yes
-add_to_variable = {
-var = CPC_Right
-value = -0.025
-}
-add_to_variable = {
-var = CPC_Dengist
-value = -0.025
-}
-add_to_variable = {
-var = CPC_Left
-value = 0.05
-}
-		USA = {		add_opinion_modifier = {
-					target = CHI
-					modifier = diplomatic_distance
-				}
-		
-		}}
+
+			country_event = prc1.98
+
+
+		}
 		}
 		
 focus = {
 		id = CHI_china_wangluo
 		icon = coins
-		x = 2
-		y = 5
+		x = 4
+		y = 3
 		cost = 5
 		relative_position_id = CHI_zhengzhigaige	
 		mutually_exclusive = { 
 			focus = CHI_zuzhiguoqigaige
-			focus = CHI_gongpindejzhj 
+
 		}
 		prerequisite = {
-			focus = CHI_condemn_United_States
-			focus = CHI_Support_the_War_on_Terror
+			focus = CHI_gongpindejzhj
+
 		}
 
 		bypass = {	}
@@ -362,73 +424,42 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		completion_reward = {set_temp_variable = { temp_CHI_people_support = 0.1 }
-			change_CHI_people_support = yes
-			custom_effect_tooltip = influence_the_party_line_tt
-			add_5_western_liberalism = yes
-			add_5_emerging_reactionary = yes
-			add_to_variable = {
-				var = CPC_Right
-				value = 0.07
-				}
-			add_to_variable = {
-				var = CPC_Dengist
-				value = 0.03
-				}		
-			add_to_variable = {
-			var = CPC_Left
-			value = -0.1
-			}
-			four_random_industrial_complex = yes
-			remove_ideas = CHI_big_layoff1
-			add_timed_idea = {
-    			idea = CHI_big_layoff2
-    			days = 365
-			}		
+		completion_reward = {
+
+
+			country_event = prc1.166
 		}
 }
 focus = {
 		id = CHI_gongpindejzhj
-		icon = money
-		x = 0
-		y = 5
+		icon = worker_negotiation
+		x = 3
+		y = 2
 		cost = 5
 		relative_position_id = CHI_zhengzhigaige		
-		mutually_exclusive = {
-			 focus = CHI_china_wangluo 
-			 focus = CHI_zuzhiguoqigaige
-			}
 
 
-				prerequisite = {
-			focus = CHI_condemn_United_States
-			focus = CHI_Support_the_War_on_Terror
+
+		prerequisite = {
+				focus=CHI_daxiagang
 			}
+		prerequisite = {
+			focus = CHI_Three_represents
+		}
+
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		completion_reward = {set_temp_variable = { temp_CHI_people_support = 0.15 }
-change_CHI_people_support = yes
-					custom_effect_tooltip = influence_the_party_line_tt
-	add_5_emerging_left_wing_radical = yes
-add_to_variable = {
-var = CPC_Right
-value = -0.025
-}
-add_to_variable = {
-var = CPC_Dengist
-value = -0.025
-}
-add_to_variable = {
-var = CPC_Left
-value = 0.5
-}
-							set_temp_variable = { treasury_change = -12 }
+		completion_reward = {
+		
+
+			add_stability = 0.01
+			set_temp_variable = { treasury_change = -12 }
 			modify_treasury_effect = yes
-		remove_ideas = CHI_big_layoff1
-		increase_social_spending = yes
-		}
+
+
+			}
 		}
 		focus = {
 		id = CHI_break_term_limits
@@ -459,7 +490,7 @@ bypass = {}
 			
 			focus = CHI_zuzhiguoqigaige
 			focus = CHI_china_wangluo
-			focus = CHI_gongpindejzhj
+
 			}
 			available = 
 			{
@@ -502,23 +533,22 @@ bypass = {}
 		focus = {
 			id = CHI_zuzhiguoqigaige
 			icon = proletariat_prc
-			x = -2
-			y = 5
+			x = 2
+			y = 3
 			cost = 5
 			relative_position_id = CHI_zhengzhigaige		
 			mutually_exclusive = { 
 
 			
 				focus = CHI_china_wangluo
-				focus = CHI_gongpindejzhj
+
 
 			}
 	
 	
 					prerequisite = {
 						
-				focus = CHI_condemn_United_States
-				focus = CHI_Support_the_War_on_Terror
+			focus = CHI_gongpindejzhj
 				
 				}
 	available = {
@@ -530,26 +560,9 @@ bypass = {}
 			continue_if_invalid = no
 			available_if_capitulated = no
 			completion_reward = {
-				set_temp_variable = { temp_CHI_people_support = 0.15 }
-			change_CHI_people_support = yes
-						custom_effect_tooltip = influence_the_party_line_tt
-		add_5_emerging_left_wing_radical = yes
-	add_to_variable = {
-	var = CPC_Right
-	value = -0.1
-	}
-	add_to_variable = {
-	var = CPC_Dengist
-	value = -0.1
-	}
-	add_to_variable = {
-	var = CPC_Left
-	value = 0.2
-	}
-								set_temp_variable = { treasury_change = -100 }
-				modify_treasury_effect = yes
-			remove_ideas = CHI_big_layoff1
-			increase_social_spending = yes
+
+				country_event=prc1.165
+
 			}
 			}
 
@@ -1130,7 +1143,7 @@ country_event = {id= prc1.57 days = 3 }
 				prerequisite = {
 					focus = CHI_zuzhiguoqigaige
 					focus = CHI_china_wangluo
-					focus = CHI_gongpindejzhj
+
 				}
 
 				ai_will_do = {
@@ -2837,14 +2850,14 @@ increase_social_spending = yes
 	  focus = {
       id = CHI_china_dream
       icon = peoples_republic_of_china
-      x = 12
+      x = 30
       y = 1
       cost = 5
-		relative_position_id = CHI_chisosm
+
 
 		prerequisite = {
 
-		focus = CHI_chisosm
+
 		}
 		
 				available = {

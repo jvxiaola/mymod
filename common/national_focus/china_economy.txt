@@ -12,10 +12,7 @@
 				tag = DSC
 				has_country_flag = laozuo
 			}
-			OR = {	
-				has_completed_focus = CHI_paving_the_way_for_successors
-				has_country_flag = CPC_Rehabilitation_of_Zhao_Ziyang
-			}
+
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -32,7 +29,7 @@
 
 	shared_focus = {
 		id = CHI_Smash_the_Iron_Rice_Bowl
-		icon = iron_rice_bowl
+		icon = coins
 
 		x = -3
 		y = 1
@@ -7002,6 +6999,7 @@ is_subject_of = CHI
 				tag = DSC
 				has_country_flag = laozuo
 			}
+			has_completed_focus =  CHI_Aerospace_Industry
 		}
 		prerequisite = { focus = CHI_Aerospace_Industry }
 		mutually_exclusive = { focus = CHI_Bolster_the_CNSA }
@@ -7501,7 +7499,7 @@ is_subject_of = CHI
 	}
 	shared_focus = {		id = CHI_manned_moon_landing
 		icon = lunar_launch
-
+ 
 		x = 19
 		y = 4
 		relative_position_id = CHI_Strategic_Industries
