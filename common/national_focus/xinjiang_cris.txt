@@ -169,6 +169,9 @@
 		joint_trigger = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN }
 	
 		completion_reward = {
+			XIN = {
+				XIN_political_assign_effect = yes
+			}
 		}
 	
 		ai_will_do = { factor = 0.5 }
