@@ -44,3 +44,22 @@ extrameal_islam_attack5 = {
 	attrition_for_controller = 0.15
 	local_factory_sabotage = 0.15
 }
+
+Preparation_status = {
+	enable = { always = yes }
+	
+	icon = GFX_idea_manpower_bonus
+	
+	communism_drift = ps_1
+	army_org = ps_2
+	army_org_factor = ps_3
+	army_attack_factor = ps_4
+
+	production_speed_arms_factory_factor = ps_5
+	industrial_capacity_factory = ps_6
+	line_change_production_efficiency_factor = ps_7
+	production_factory_max_efficiency_factor
+	production_factory_start_efficiency_factor
+	production_factory_efficiency_gain_factor
+	production_lack_of_resource_penalty_factor
+}
