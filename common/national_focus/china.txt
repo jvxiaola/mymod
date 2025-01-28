@@ -1246,7 +1246,7 @@ country_event = {id= prc1.57 days = 3 }
 		icon = communist_party_of_china
 		x = 0
 		y = 7
-		cost = 5
+		cost = 7
 		relative_position_id = CHI_zhengzhigaige		
 			mutually_exclusive = {focus = CHI_break_term_limits}
 			available = {
