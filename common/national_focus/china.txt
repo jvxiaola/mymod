@@ -481,7 +481,7 @@ ai_will_do = {
 				}
 
 
-					hidden_effect={	country_event=prc1.102 days=30}
+				hidden_effect={	country_event={ id=prc1.102 days=30}}
 
 				 }
 		set_temp_variable = { treasury_change = 50 }
@@ -530,7 +530,9 @@ ai_will_do = {
 				}
 
 
-					hidden_effect={	country_event=prc1.102 days=30}
+					hidden_effect={	country_event={ id=prc1.102 days=30}}
+
+
 
 				 }
 
@@ -1244,7 +1246,7 @@ country_event = {id= prc1.57 days = 3 }
 		icon = communist_party_of_china
 		x = 0
 		y = 7
-		cost = 5
+		cost = 7
 		relative_position_id = CHI_zhengzhigaige		
 			mutually_exclusive = {focus = CHI_break_term_limits}
 			available = {
