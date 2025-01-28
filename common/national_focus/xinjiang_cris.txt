@@ -79,6 +79,9 @@
 		joint_trigger = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN }
 	
 		completion_reward = {
+			XIN = {
+				XIN_Temporary_training = yes
+			}
 		}
 	
 		ai_will_do = { factor = 0.5 }
@@ -97,6 +100,15 @@
 		joint_trigger = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN }
 	
 		completion_reward = {
+			XIN = {
+				XIN_Temporary_training = yes
+				random_owned_controlled_state = { 
+					limit = { will_be_attacked_by_islam = yes }
+					extrameal_islam_leavel_down = yes
+				}
+				manpower = -4
+				army_experience = 10
+			}
 		}
 	
 		ai_will_do = { factor = 0.5 }
@@ -133,6 +145,9 @@
 		joint_trigger = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN }
 	
 		completion_reward = {
+			XIN = { 
+				XIN_Temporary_training = yes 
+			}
 		}
 	
 		ai_will_do = { factor = 0.5 }
@@ -190,6 +205,10 @@
 		joint_trigger = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN }
 	
 		completion_reward = {
+			XIN = {
+				XIN_military_qualities_effect = yes
+			}
+			
 		}
 	
 		ai_will_do = { factor = 0.5 }
