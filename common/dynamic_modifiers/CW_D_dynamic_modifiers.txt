@@ -49,14 +49,12 @@ Preparation_status = {
 	enable = { always = yes }
 	
 	icon = GFX_idea_manpower_bonus
-	#military_qualities_level
 	custom_modifier_tooltip = military_qualities_effect_tt
 	communism_drift = ps_1
 	army_org = ps_2
 	army_org_factor = ps_3
 	army_attack_factor = ps_4
 	terrain_penalty_reduction = ps_5
-	#Military_Industry_level
 	custom_modifier_tooltip = Military_Industry_effect_tt
 	production_speed_arms_factory_factor = ps_6
 	industrial_capacity_factory = ps_7
