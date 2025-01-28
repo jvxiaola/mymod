@@ -63,12 +63,21 @@ extrameal_islam_leavel_down = {
 }
 
 XIN_military_qualities_effect = {
+	custom_effect_tooltip = XIN_military_qualities_effect_tt
 	set_temp_variable = { mq_c = 1 } multiply_temp_variable = { mq_c = 0.01 } add_variable = { ps_3 = mq_c }
 	set_temp_variable = { mq_c = 1 } multiply_temp_variable = { mq_c = 0.02 } add_variable = { ps_4 = mq_c }
 	set_temp_variable = { mq_c = 1 } multiply_temp_variable = { mq_c = 0.03 } add_variable = { ps_5 = mq_c }
 }
 
+XIN_Expand_conscription = {
+	custom_effect_tooltip = XIN_Expand_conscription_effect_tt
+	set_temp_variable = { mq_c = -0.75 } multiply_temp_variable = { mq_c = 0.01 } add_variable = { ps_3 = mq_c }
+	set_temp_variable = { mq_c = -0.75 } multiply_temp_variable = { mq_c = 0.02 } add_variable = { ps_4 = mq_c }
+	set_temp_variable = { mq_c = -0.75 } multiply_temp_variable = { mq_c = 0.03 } add_variable = { ps_5 = mq_c }
+}
+
 XIN_Temporary_training = {
+	custom_effect_tooltip = XIN_Temporary_training_effect_tt
 	set_temp_variable = { mq_c = 0.5 } multiply_temp_variable = { mq_c = 0.01 } add_variable = { ps_3 = mq_c }
 	set_temp_variable = { mq_c = 0.5 } multiply_temp_variable = { mq_c = 0.02 } add_variable = { ps_4 = mq_c }
 	set_temp_variable = { mq_c = 0.5 } multiply_temp_variable = { mq_c = 0.03 } add_variable = { ps_5 = mq_c }
@@ -76,6 +85,7 @@ XIN_Temporary_training = {
 
 
 XIN_political_assign_effect = {
+	custom_effect_tooltip = XIN_political_assign_effect_tt
 	set_temp_variable = { mq_c = 1 } multiply_temp_variable = { mq_c = 0.02 } add_variable = { ps_1 = mq_c }
 	set_temp_variable = { mq_c = 1 } multiply_temp_variable = { mq_c = 0.005 } add_variable = { ps_2 = mq_c }
 }

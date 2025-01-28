@@ -24,10 +24,10 @@ capital = 592
 	add_dynamic_modifier = {
 		modifier = Preparation_status
 	}
-	set_variable = { military_qualities_level = 0 } set_variable = { ps_1 = 0 } set_variable = { ps_2 = 0 } 
+	set_variable = { ps_1 = 0 } set_variable = { ps_2 = 0 } 
 	set_variable = { ps_3 = -0.05 } set_variable = { ps_4 = -0.10 } set_variable = { ps_5 = 0 }
 
-	set_variable = { Military_Industry_level = 0 } set_variable = { ps_6 = -0.1 } set_variable = { ps_7 = -0.05 } 
+	set_variable = { ps_6 = -0.1 } set_variable = { ps_7 = -0.05 } 
 	set_variable = { ps_8 = -0.05 } set_variable = { ps_9 = -0.05 } set_variable = { ps_10 = 0 } set_variable = { ps_11 = 0 }
 	set_variable = { ps_12 = 0 }
 
