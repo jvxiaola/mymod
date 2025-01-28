@@ -6118,6 +6118,7 @@ country_event = {
 	
 		}
 		add_stability = -0.1
+		mark_focus_tree_layout_dirty = yes
 	}	
 }
 	country_event = {
@@ -7992,6 +7993,34 @@ value = 0.1
 
 
 
+		country_event = {
+			id = prc1.167
+			title = prc1.167.t
+			desc = prc1.167.d
+			#CW							
+			is_triggered_only = yes
+			
+			trigger = {
+		
+				
+			}
+		
+		
+	
+		option = { 
+			name = prc1.167.a.o1	
+		set_country_flag = CHI_zhunbeirudang
+	
+		
+			ai_chance = { factor = 95 }
+		
+			}
+			option = { 
+				name = prc1.167.a.o2	
+	
+				ai_chance = { factor = 5 }																								
+				}
+			}
 
 
-
+	

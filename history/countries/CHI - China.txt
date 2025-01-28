@@ -178,7 +178,7 @@ set_variable = { CHI_Socialist_Construction_dynamic1 = -0.40}
 	CHI_shipinganquanwenti
 	
 	CHI_shaosuminzu1
-	
+	CHI_guoshengweiji
 	CHI_work_01	  
 		multi_ethnic_state_idea
 		economic_boom

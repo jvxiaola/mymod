@@ -704,6 +704,29 @@ name = chi_jdjs
 				political_power_gain = -0.05
 			}
 		}
+
+
+
+
+		CHI_guoshengweiji = {
+			allowed_civil_war = {
+			always = yes
+			}
+			name = CHI_guoshengweiji
+						picture = financial_crisis
+						allowed = {
+						}
+						
+				 
+						modifier = {
+
+			consumer_goods_factor = 0.03
+
+			political_power_gain = -0.05
+						}
+					}
+
+
 CHI_CPC_left1 = {
 name = "社会主义改造计划"
 allowed = { original_tag = CHI }
