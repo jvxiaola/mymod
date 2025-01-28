@@ -21,6 +21,18 @@ capital = 592
 		volunteer_army
 		no_women_in_military
 	}
+	add_dynamic_modifier = {
+		modifier = Preparation_status
+	}
+	set_variable = { military_qualities_level = 0 } set_variable = { ps_1 = 0 } set_variable = { ps_2 = 0 } 
+	set_variable = { ps_3 = -0.05 } set_variable = { ps_4 = -0.10 } set_variable = { ps_5 = 0 }
+
+	set_variable = { Military_Industry_level = 0 } set_variable = { ps_6 = -0.1 } set_variable = { ps_7 = -0.05 } 
+	set_variable = { ps_8 = -0.05 } set_variable = { ps_9 = -0.05 } set_variable = { ps_10 = 0 } set_variable = { ps_11 = 0 }
+	set_variable = { ps_12 = 0 }
+
+	set_variable = { Nationalist_sentiment_military = 5 } set_variable = { ps_13 = 0.50 } set_variable = { ps_14 = 0.50 } 
+	set_variable = { ps_15 = -0.30 } set_variable = { ps_16 = -0.15 } set_variable = { ps_17 = 0.10 }
 	set_technology = {
 		legacy_doctrines = 1
 		infantry_mass_assault = 1

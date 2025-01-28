@@ -56,7 +56,9 @@ extrameal_islam_attack3: "极端伊斯兰恐怖袭击风险等级：§g3.中§!"
 extrameal_islam_attack4: "极端伊斯兰恐怖袭击风险等级：§O4.较高§!"
 extrameal_islam_attack5: "极端伊斯兰恐怖袭击风险等级：§R5.极高§!"
 Preparation_status: "整军备战状况"
-
+military_qualities_effect_tt: "军区§G军事素养§!及§R政治理论素养§!综合等级：[?military_qualities_level|0]"
+Military_Industry_effect_tt: "\n\n军区§O军备工业§!等级：[?Military_Industry_level|0]"
+Nationalist_sentiment_military_effect_tt: "\n\n军内§8民族主义情绪§!等级：[?Nationalist_sentiment_military|0]"
 #事件
  CW_Diverse.1: "遇袭报告"
  CW_Diverse.1.t: "遇袭报告"

@@ -49,17 +49,27 @@ Preparation_status = {
 	enable = { always = yes }
 	
 	icon = GFX_idea_manpower_bonus
-	
+	#military_qualities_level
+	custom_modifier_tooltip = military_qualities_effect_tt
 	communism_drift = ps_1
 	army_org = ps_2
 	army_org_factor = ps_3
 	army_attack_factor = ps_4
-
-	production_speed_arms_factory_factor = ps_5
-	industrial_capacity_factory = ps_6
-	line_change_production_efficiency_factor = ps_7
-	production_factory_max_efficiency_factor
-	production_factory_start_efficiency_factor
-	production_factory_efficiency_gain_factor
-	production_lack_of_resource_penalty_factor
+	terrain_penalty_reduction = ps_5
+	#Military_Industry_level
+	custom_modifier_tooltip = Military_Industry_effect_tt
+	production_speed_arms_factory_factor = ps_6
+	industrial_capacity_factory = ps_7
+	line_change_production_efficiency_factor = ps_8
+	production_factory_max_efficiency_factor = ps_9
+	production_factory_start_efficiency_factor = ps_10
+	production_factory_efficiency_gain_factor = ps_11
+	production_lack_of_resource_penalty_factor = ps_12
+	#Nationalist_sentiment_military
+	custom_modifier_tooltip = Nationalist_sentiment_military_effect_tt
+	nationalist_drift = ps_13
+	war_support_factor = ps_14
+	stability_factor = ps_15
+	army_org_factor = ps_16
+	army_attack_factor = ps_17
 }
