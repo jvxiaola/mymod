@@ -473,21 +473,18 @@ ai_will_do = {
 	completion_reward = {
 		if = {
 			limit = {
-				OR={
+				OR = {
 					check_variable = {CPC_Dengist   < CPC_Right}
 					check_variable = {CPC_Dengist   < CPC_Left}
 				}
-
 				}
-
-
 				hidden_effect = { country_event = { id = prc1.102 days = 15 }}
 
 				}
 		set_temp_variable = { treasury_change = 50 }
 		modify_treasury_effect = yes
 		mark_focus_tree_layout_dirty = yes
-remove_ideas = CHI_guoshengweiji
+		remove_ideas = CHI_guoshengweiji
 	}
 }
 
@@ -574,9 +571,9 @@ focus = {
 		relative_position_id = CHI_zhengzhigaige		
 		mutually_exclusive = {focus = CHI_paving_the_way_for_successors}
 		allow_branch = {
-			has_country_leader = { name = Quanlizhengkong }
 			NOT = {
  				OR = {
+					has_country_leader = { name = "江泽民" }
 					has_completed_focus = CHI_paving_the_way_for_successors
 					has_country_flag = CPC_Rehabilitation_of_Zhao_Ziyang
 				}
@@ -604,10 +601,8 @@ focus = {
 			mark_focus_tree_layout_dirty = yes
 				hidden_effect = {
 				}
+			}
 		}
-				
-
-	}
 
 
 
@@ -1227,7 +1222,7 @@ country_event = {id= prc1.57 days = 3 }
 			mutually_exclusive = {focus = CHI_break_term_limits}
 			available = {
 				date > 2002.6.1
-
+has_country_leader = {name="江泽民"}
 			}
 			bypass = {}
 				prerequisite = {
@@ -1243,14 +1238,29 @@ country_event = {id= prc1.57 days = 3 }
 			factor = 5
 		}
 		allow_branch = {
+<<<<<<< HEAD
 			NOT={
 				has_completed_focus = CHI_break_term_limits
 				has_country_leader = { name = Quanlizhengkong }
 			}
+=======
+
+				has_country_leader = {name = "江泽民"}
+				
+				
+			
+>>>>>>> e451ef34e9522043d556e08a5e1f897e6610d8d3
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = no 
+cancel_effect = {
+	
+
+mark_focus_tree_layout_dirty = yes
+
+			
+		}
 		completion_reward = {
 			if = {
 				limit = { has_country_flag= CHI_zhunbeirudang}
