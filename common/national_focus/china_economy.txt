@@ -2,8 +2,8 @@
 	shared_focus = {
 		id = CHI_The_Untapped_Market
 		icon = prc_currency_reform
-		x = 72
-		y = 14
+		x = 42
+		y = 10
 
 		cost = 5
 		allow_branch = {

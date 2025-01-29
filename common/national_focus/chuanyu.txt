@@ -125,7 +125,7 @@ focus_tree = {
 
 	focus = {
 		id = DSC_DONGYUAN
-		icon = military_mission2
+		icon = conscription
 		x = 5
 
 		y = 2
@@ -312,7 +312,7 @@ focus_tree = {
 
 	focus = {
 		id = DSC_SUQINGSAOLUAN
-		icon = military_mission2
+		icon =  anti_immigration1
 		x = 5
 
 		y = 3
@@ -390,7 +390,7 @@ focus_tree = {
 
 	focus = {
 		id = DSC_kongzhiyulun
-		icon = military_mission2
+		icon = espionage
 		x = 7
 
 		y = 2

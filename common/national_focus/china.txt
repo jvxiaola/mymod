@@ -686,10 +686,10 @@ bypass = {}
 			focus = {
 		id = CHI_support_the_left
 		icon = espionage
-		x = 2
-		y = 7
+		x = 0
+		y = 1
 		cost = 5
-		relative_position_id = CHI_zhengzhigaige		
+		relative_position_id = CHI_break_term_limits	
 		bypass = {}
 		allow_branch = {
 			NOT = {
@@ -1272,7 +1272,7 @@ country_event = {id= prc1.57 days = 3 }
 
 			NOT={
 				has_completed_focus = CHI_break_term_limits
-				has_country_leader = "Quanlizhengkong"
+				has_country_leader = {name="Quanlizhengkong"}
 				
 			}
 			
