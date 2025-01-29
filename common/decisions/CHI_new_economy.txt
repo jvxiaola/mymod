@@ -782,6 +782,7 @@ CHI_Redemption_assets = {
 	icon = GFX_decision_ger_mefo_bills
 	visible = {
 		has_completed_focus = Launch_cooperation_initiatives_at_forums
+		NOT = { has_country_flag = Launch_cooperation_initiatives_at_forums }
 	}
 	available = {
 		always = yes
@@ -816,6 +817,7 @@ CHI_Redemption_assets = {
 	icon = GFX_decision_generic_factory
 	visible = {
 		has_completed_focus = CHI_city_mutual_aid_build
+		NOT = { has_country_flag = CHI_Collaboralize }
 	}
 	available = {
 		always = yes
@@ -850,6 +852,7 @@ CHI_Redemption_assets = {
 	icon = GFX_decision_category_coms_cat
 	visible = {
 		has_completed_focus = CHI_Assign_local_cooperative_party_committee
+		NOT = { has_country_flag = CHI_Assign_local_cooperative_party_committee }
 	}
 	available = {
 		always = yes
@@ -884,6 +887,7 @@ CHI_Redemption_assets = {
 	icon = GFX_decision_eng_blackshirt_march
 	visible = {
 		has_completed_focus = CHI_Organizational_skills_training_labor_competition
+		NOT = { has_country_flag = CHI_Collaboralize_end }
 	}
 	available = {
 		always = yes
@@ -915,6 +919,7 @@ CHI_Redemption_assets = {
 	icon = GFX_decision_generic_operation
 	visible = {
 		has_completed_focus = CHI_People_Commune
+		NOT = { has_country_flag = CHI_Restart_constructing_intensive_agriculture_end }
 	}
 	available = {
 		always = yes
@@ -1025,6 +1030,7 @@ CHI_Redemption_assets = {
 	icon = GFX_decision_break_treaty
 	visible = {
 		has_completed_focus = CHI_Raise_grainal_purchase_price
+		NOT = { has_country_flag = Raise_grainal_purchase_price }
 	}
 	available = {
 		always = yes
@@ -1058,6 +1064,7 @@ CHI_Redemption_assets = {
 	icon = GFX_decision_hol_drain_water_lines
 	visible = {
 		has_completed_focus = CHI_Purchase_agricultural_supplies
+		NOT = { has_country_flag = Purchase_agricultural_supplies }
 	}
 	available = {
 		has_completed_focus = CHI_Purchase_agricultural_supplies
@@ -1091,6 +1098,7 @@ CHI_Redemption_assets = {
 	icon = GFX_decision_eng_ally_imperialist_coup
 	visible = {
 		has_completed_focus = CHI_Organize_learning_mechanized_agricultural_tools
+		NOT = { has_country_flag = Organize_learning_mechanized_agricultural_tools }
 	}
 	available = {
 		has_completed_focus = CHI_Organize_learning_mechanized_agricultural_tools

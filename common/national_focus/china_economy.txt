@@ -1213,7 +1213,6 @@
 			if = {
 				limit = { tag = DSC has_dynamic_modifier = { modifier = CHI_Organize_state_enterprises_modifier } }
 				CHI_remove_Organize_state_enterprises_modifier = yes
-				CHI_remove_other_variable = yes
 				add_ideas = CHI_nationalizing_end
 				increase_economic_growth = yes
 			}
@@ -1801,6 +1800,7 @@ shared_focus = {
 			}
 			mark_focus_tree_layout_dirty = yes
 			hidden_effect = {
+				CHI_remove_other_variable = yes
 				clear_variable = Reorganize_communal_party_progress clear_variable = Organize_allocation_commune_resources_progress
 				clear_variable = Redemption_assets_times clear_variable = confiscated_assets_times
 				clear_variable = Promote_nationalization_strategic_industries_progress
