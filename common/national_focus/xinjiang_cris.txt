@@ -13,7 +13,7 @@
 		allow_branch = {
 			OR = {
 				AND = {
-					OR = { tag = CHI original_tag = DSC original_tag = HKG }
+					OR = { tag = CHI }
 					has_country_flag = XIN_attacked
 				}
 				tag = XIN
