@@ -1238,18 +1238,7 @@ has_country_leader = {name="江泽民"}
 			factor = 5
 		}
 		allow_branch = {
-<<<<<<< HEAD
-			NOT={
-				has_completed_focus = CHI_break_term_limits
-				has_country_leader = { name = Quanlizhengkong }
-			}
-=======
-
 				has_country_leader = {name = "江泽民"}
-				
-				
-			
->>>>>>> e451ef34e9522043d556e08a5e1f897e6610d8d3
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
