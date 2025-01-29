@@ -63,6 +63,7 @@
 		completion_reward = {
 			XIN = {
 				XIN_Expand_conscription = yes
+				load_oob = XIN_liberate_units_recruitment
 			}
 		}
 	
