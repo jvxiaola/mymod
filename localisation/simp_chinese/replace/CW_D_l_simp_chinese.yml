@@ -38,6 +38,7 @@ XIN_alleviating_ethnic_tensions: "§R缓解汉民族紧张度§!"
 XIN_alleviating_ethnic_tensions_desc: "军区新募集的士兵大多都是怀着对恐怖分子的憎恨与血仇而入伍，但若有朝一日新疆安顿下来，这种复仇思潮又会阻碍新疆的建设。与他们交流，安抚他们的紧张情绪，我们可以将复仇思潮转化为对社会主义的信仰。"
 XIN_Work_completion: "§C建设工作完成§!"
 XIN_Work_completion_desc: "本轮新疆军区建设计划已完成，可以进行下一轮建设计划，请中央政府发布命令。"
+XIN_Work_completion_effect_tt: "§O可以进行下一轮建设计划§!§Y(在决议中决定所进行的建设路线)§!。"
 
 #好感
 chinese_MRG: "是中国军区"
@@ -59,12 +60,17 @@ extrameal_islam_leavel_down_tt: "§g极端伊斯兰恐怖袭击§!风险等级§
 extrameal_islam_leavel_up_tt: "§g极端伊斯兰恐怖袭击§!风险等级§R将上升§!"
 Preparation_status: "整军备战状况"
 XIN_military_qualities_effect_tt: "军区§G军事素养§!将§G提高§!！"
-XIN_Temporary_training_effect_tt: "军区§G军事素养§!将§G微略提高§!！"
+XIN_Temporary_training_effect_tt: "军区§G军事素养§!将§G稍有提高§!！"
 XIN_Expand_conscription_effect_tt: "军区§G军事素养§!将§R中幅下降§!！"
 XIN_political_assign_effect_tt: "军区§R政治理论素养§!将§G提高§!！"
+XIN_military_equipment_effect_tt: "军区§O军备工业§!§G建设§!与§C生产§!将§G微略加快§!！"
+XIN_Militarize_productical_corps_effect_tt: "军区§G军事素养§!将§G微略提高§!！\n军区§O军备工业§!§G建设§!与§C产量§!将§G微略加快、提高§!！"
+XIN_martial_to_production_effect_tt: "军区§O军备工业§!§C生产效率§!将§G微略加快§!！"
 military_qualities_effect_tt: "军区§G军事素养§!及§R政治理论素养§!综合效果："
 Military_Industry_effect_tt: "\n\n军区§O军备工业§!效果："
 Nationalist_sentiment_military_effect_tt: "\n\n军内§8民族主义情绪§!等级：[?Nationalist_sentiment_military|0]"
+
+
 #事件
  CW_Diverse.1: "遇袭报告"
  CW_Diverse.1.t: "遇袭报告"

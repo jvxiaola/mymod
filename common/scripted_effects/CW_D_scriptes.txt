@@ -62,6 +62,48 @@ extrameal_islam_leavel_down = {
 	}
 }
 
+transfer_cf_to_mf = {
+	if = {
+		limit = {
+			any_owned_state = {
+				will_be_attacked_by_islam = no
+				free_building_slots = {
+					building = arms_factory
+					size = 1
+				}
+			}
+			any_owned_state = {
+				will_be_attacked_by_islam = yes
+				industrial_complex > 0
+			}
+		}
+		any_owned_state = {
+			limit = {
+				will_be_attacked_by_islam = no
+				free_building_slots = {
+					building = arms_factory
+					size = 1
+				}
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		any_owned_state = {
+			limit = { 
+				will_be_attacked_by_islam = yes
+				industrial_complex > 0
+			}
+			remove_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+	}
+}
+
 XIN_military_qualities_effect = {
 	custom_effect_tooltip = XIN_military_qualities_effect_tt
 	set_temp_variable = { mq_c = 1 } multiply_temp_variable = { mq_c = 0.01 } add_variable = { ps_3 = mq_c }
@@ -88,4 +130,32 @@ XIN_political_assign_effect = {
 	custom_effect_tooltip = XIN_political_assign_effect_tt
 	set_temp_variable = { mq_c = 1 } multiply_temp_variable = { mq_c = 0.02 } add_variable = { ps_1 = mq_c }
 	set_temp_variable = { mq_c = 1 } multiply_temp_variable = { mq_c = 0.005 } add_variable = { ps_2 = mq_c }
+}
+
+XIN_military_equipment_effect = {
+	custom_effect_tooltip = XIN_military_equipment_effect_tt
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_6 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_7 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_8 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_9 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_10 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = -0.025 } add_variable = { ps_11 = mq_c }
+}
+
+XIN_Militarize_productical_corps = {
+	custom_effect_tooltip = XIN_Militarize_productical_corps_effect_tt
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.01 } add_variable = { ps_3 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.02 } add_variable = { ps_4 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.03 } add_variable = { ps_5 = mq_c }
+
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_6 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_7 = mq_c }
+}
+
+XIN_martial_to_production_effect = {
+	custom_effect_tooltip = XIN_martial_to_production_effect_tt
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_8 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_9 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_10 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = -0.025 } add_variable = { ps_11 = mq_c }
 }

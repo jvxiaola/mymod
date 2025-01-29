@@ -169,6 +169,8 @@ country_event = {
 				random_army_leader = {
 					set_nationality = XIN
 				}
+				set_country_flag = XIN_attacked
+				mark_focus_tree_layout_dirty = yes
 				give_guarantee = XIN
 			}
 	}

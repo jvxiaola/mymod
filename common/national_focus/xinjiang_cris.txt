@@ -131,9 +131,8 @@
 		joint_trigger = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN }
 	
 		completion_reward = {
-			
+			XIN_military_equipment_effect = yes
 		}
-	
 		ai_will_do = { factor = 0.5 }
 	}
 
@@ -151,7 +150,7 @@
 	
 		completion_reward = {
 			XIN = { 
-				XIN_Temporary_training = yes 
+				XIN_Militarize_productical_corps = yes 
 			}
 		}
 	
@@ -171,6 +170,8 @@
 		joint_trigger = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN }
 	
 		completion_reward = {
+			XIN_martial_to_production_effect = yes
+			transfer_cf_to_mf = yes
 		}
 	
 		ai_will_do = { factor = 0.5 }
@@ -250,8 +251,11 @@
 		joint_trigger = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN }
 	
 		completion_reward = {
+			custom_effect_tooltip = XIN_Work_completion_effect_tt
+			hidden_effect = {
+				uncomplete_national_focus = XIN_military_Region_Construction
+			}
 		}
-	
 		ai_will_do = { factor = 0.5 }
 	}
 
