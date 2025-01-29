@@ -70,7 +70,7 @@ XIN_alleviating_ethnic_tensions_effect_tt: "军区§8民族主义情绪§!将§G
 military_qualities_effect_tt: "军区§G军事素养§!及§R政治理论素养§!综合效果："
 Military_Industry_effect_tt: "\n\n军区§O军备工业§!效果："
 Nationalist_sentiment_military_effect_tt: "\n\n军内§8民族主义情绪§!等级：[?Nationalist_sentiment_military|0]"
-
+NOT_completed_tt: "§R边疆危机内容尚未完成，敬请期待！§!"
 
 #事件
  CW_Diverse.1: "遇袭报告"
@@ -94,3 +94,7 @@ Nationalist_sentiment_military_effect_tt: "\n\n军内§8民族主义情绪§!等
  CW_Diverse.5.d: "近几日，东突分子在南疆地区发动了一次恐怖袭击，可能运用了重武器，对应地区陷入无序状态。"
  CW_Diverse.5.a: "坚决抵抗，消灭恐怖分子。"
  orgnize_xinjiang_military_TT: "§R将组建新疆军区，并开启“边疆危机”决议"
+ CW_Diverse.6: "新疆军区失联"
+ CW_Diverse.6.t: "新疆军区失联"
+ CW_Diverse.6.d: "即便是在军事冲突爆发后，中央仍关注着新疆的内部稳定与其它事务，但中央最不想希望看到的事情发生了。离军区定时向中央汇报的时间已经过去12小时，但中央与新疆军区的联系被凭空隔断，仿佛什么也不存在。"
+ CW_Diverse.6.a: "“这不是个好兆头。”"

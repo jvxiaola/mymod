@@ -214,4 +214,17 @@ country_event = {
 	}
 }
 
-
+country_event = {
+	id = CW_Diverse.6
+	title = CW_Diverse.6.t
+	desc = CW_Diverse.6.d
+	is_triggered_only = yes
+	trigger = {
+		tag = CHI
+	}
+	option = {
+		name = CW_Diverse.6.a
+		custom_effect_tooltip = NOT_completed_tt
+		civl_start_xin_or_effect = yes
+	}
+}

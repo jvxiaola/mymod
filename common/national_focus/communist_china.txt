@@ -6659,9 +6659,6 @@ cost = 5
 		OR = {
 
 			has_country_leader = {  name = "Mao Yuanxin" }
-			
-
-
 						has_country_leader = {  name = "韩东方" }
 						has_country_leader = {  name = QuanGuoRenMinDaiBiaoDaHui }
 
