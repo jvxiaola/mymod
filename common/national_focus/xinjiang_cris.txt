@@ -233,6 +233,9 @@
 		joint_trigger = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN }
 	
 		completion_reward = {
+			custom_effect_tooltip = XIN_alleviating_ethnic_tensions_effect_tt
+			add_to_variable = { Nationalist_sentiment_military = -1 }
+			XIN_Nationalist_sentiment_military_effect = yes
 		}
 	
 		ai_will_do = { factor = 0.5 }

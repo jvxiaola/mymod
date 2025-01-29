@@ -159,3 +159,55 @@ XIN_martial_to_production_effect = {
 	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_10 = mq_c }
 	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = -0.025 } add_variable = { ps_11 = mq_c }
 }
+
+XIN_Nsem_10_5_num = {
+	clamp_variable = {
+		var = Nationalist_sentiment_military
+		min = 0
+		max = 10
+	}
+	set_temp_variable = { Nsm_5_10 = Nationalist_sentiment_military } 
+	add_to_temp_variable = { temp_Nsm_5_10 = -5 }
+}
+XIN_Nationalist_sentiment_military_10_5_effect = {
+	XIN_Nsem_10_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = 0.10 } set_variable = { ps_8 = mq_c }
+	XIN_Nsem_10_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = 0.10 } set_variable = { ps_9 = mq_c }
+	XIN_Nsem_10_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = -0.06 } set_variable = { ps_10 = mq_c }
+	XIN_Nsem_10_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = -0.03 } set_variable = { ps_11 = mq_c }
+	XIN_Nsem_10_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = 0.02 } set_variable = { ps_11 = mq_c }
+}
+
+XIN_Nsem_0_5_num = {
+	clamp_variable = {
+		var = Nationalist_sentiment_military
+		min = 0
+		max = 10
+	}
+	set_temp_variable = { Nsm_5_10 = Nationalist_sentiment_military } 
+	add_to_temp_variable = { temp_Nsm_5_10 = -5 }
+	multiply_temp_variable = { temp_Nsm_5_10 = -1 }
+}
+
+XIN_Nationalist_sentiment_military_0_5_effect = {
+	XIN_Nsem_0_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = -0.05 } set_variable = { ps_8 = mq_c }
+	XIN_Nsem_0_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = 0.02 } set_variable = { ps_9 = mq_c }
+	XIN_Nsem_0_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = 0.03 } set_variable = { ps_10 = mq_c }
+	XIN_Nsem_0_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = 0.02 } set_variable = { ps_11 = mq_c }
+	XIN_Nsem_0_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = 0.01 } set_variable = { ps_11 = mq_c }
+}
+
+XIN_Nationalist_sentiment_military_effect = {
+	if = { 
+		limit = {
+			check_variable = { Nationalist_sentiment_military < 5 }
+		}
+		XIN_Nationalist_sentiment_military_0_5_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = { Nationalist_sentiment_military > 5 }
+		}
+		XIN_Nationalist_sentiment_military_10_5_effect = yes
+	}
+	
+}

@@ -66,6 +66,7 @@ XIN_political_assign_effect_tt: "军区§R政治理论素养§!将§G提高§!�
 XIN_military_equipment_effect_tt: "军区§O军备工业§!§G建设§!与§C生产§!将§G微略加快§!！"
 XIN_Militarize_productical_corps_effect_tt: "军区§G军事素养§!将§G微略提高§!！\n军区§O军备工业§!§G建设§!与§C产量§!将§G微略加快、提高§!！"
 XIN_martial_to_production_effect_tt: "军区§O军备工业§!§C生产效率§!将§G微略加快§!！"
+XIN_alleviating_ethnic_tensions_effect_tt: "军区§8民族主义情绪§!将§G降低一级§!！"
 military_qualities_effect_tt: "军区§G军事素养§!及§R政治理论素养§!综合效果："
 Military_Industry_effect_tt: "\n\n军区§O军备工业§!效果："
 Nationalist_sentiment_military_effect_tt: "\n\n军内§8民族主义情绪§!等级：[?Nationalist_sentiment_military|0]"
