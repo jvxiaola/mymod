@@ -474,16 +474,16 @@ ai_will_do = {
 		if = {
 			limit = {
 				OR={
-				check_variable = {CPC_Dengist   < CPC_Right}
-				check_variable = {CPC_Dengist   <CPC_Left}
+					check_variable = {CPC_Dengist   < CPC_Right}
+					check_variable = {CPC_Dengist   < CPC_Left}
 				}
 
 				}
 
 
-				hidden_effect={	country_event={ id=prc1.102 days=30}}
+				hidden_effect = { country_event = { id = prc1.102 days = 15 }}
 
-				 }
+				}
 		set_temp_variable = { treasury_change = 50 }
 		modify_treasury_effect = yes
 		mark_focus_tree_layout_dirty = yes
@@ -507,9 +507,6 @@ mutually_exclusive = {
 	}
 
 
-
-
-
 	bypass = {	}
 ai_will_do = {
 		factor = 30
@@ -518,33 +515,20 @@ ai_will_do = {
 	continue_if_invalid = no
 	available_if_capitulated = no
 	completion_reward = {
-
-#最新
+		#最新
 		if = {
 			limit = {
-				OR={
-				check_variable = {CPC_Dengist   < CPC_Right}
-				check_variable = {CPC_Dengist   <CPC_Left}
+				OR = {
+				check_variable = { CPC_Dengist < CPC_Right}
+				check_variable = { CPC_Dengist < CPC_Left}
 				}
-
-				}
-
-
-					hidden_effect={	country_event={ id=prc1.102 days=30}}
-
-
-
-				 }
-
-
-		
-
+			}
+			hidden_effect={	country_event = { id = prc1.102 days = 30}}
+		}
 		set_temp_variable = { treasury_change = -50 }
-
 		modify_treasury_effect = yes
-
 		mark_focus_tree_layout_dirty = yes
-remove_ideas = CHI_guoshengweiji
+		remove_ideas = CHI_guoshengweiji
 	}
 	}
 
@@ -589,23 +573,17 @@ focus = {
 		cost = 5
 		relative_position_id = CHI_zhengzhigaige		
 		mutually_exclusive = {focus = CHI_paving_the_way_for_successors}
-				allow_branch = {
-
-
-has_country_leader = { name = "Quanlizhengkong" }
-
-
-					
-NOT = {
- OR = {
-has_completed_focus = CHI_paving_the_way_for_successors
-has_country_flag = CPC_Rehabilitation_of_Zhao_Ziyang
-
-}
-}
+		allow_branch = {
+			has_country_leader = { name = Quanlizhengkong }
+			NOT = {
+ 				OR = {
+					has_completed_focus = CHI_paving_the_way_for_successors
+					has_country_flag = CPC_Rehabilitation_of_Zhao_Ziyang
+				}
+			}
 
 		}
-bypass = {}
+		bypass = {}
 				prerequisite = {
 			
 			focus = CHI_kuodachukou
@@ -625,8 +603,6 @@ bypass = {}
 			add_stability = -0.1
 			mark_focus_tree_layout_dirty = yes
 				hidden_effect = {
-
-					country_event ={ id = CW_Diverse.1 days = 20 }
 				}
 		}
 				
@@ -1267,18 +1243,11 @@ country_event = {id= prc1.57 days = 3 }
 			factor = 5
 		}
 		allow_branch = {
-
-
-
 			NOT={
 				has_completed_focus = CHI_break_term_limits
-				has_country_leader = {name="Quanlizhengkong"}
-				
+				has_country_leader = {name = Quanlizhengkong}
 			}
-			
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2247,7 +2216,7 @@ prerequisite = {focus = CHI_18th}
 			available = 
 			{
 has_country_leader = {
-name = "Xi jinping"
+name = "习近平"
 }			}
 
 
@@ -2508,7 +2477,7 @@ prerequisite = {focus = CHI_18th}
 			available = 
 			{
 has_country_leader = {
-name = "Bo Xilai"
+name = "薄熙来"
 }				}
 
 
@@ -2689,7 +2658,7 @@ focus = {
 				custom_effect_tooltip = CHI_left_sm_tt
 		hidden_effect = {
 	create_country_leader = {
-		name = "Bo Xilai"
+		name = "薄熙来"
 		picture = "bo_xilai.dds"
 		expire = "2222.1.1"
 		ideology = anarchist_communism
@@ -6497,7 +6466,7 @@ set_variable = { party_pop_array^3 = 0.20 } #generate the rest
 }	
 custom_effect_tooltip = "中国共产党继续执政"
 	     create_country_leader = {
-         name = "Central Committee of the Communist Party of China"
+         name = Central_Committee_of_the_Communist_Party_of_China
          picture = "Portrait_China_patry_Power_Vacuum.dds"
          expire = "2020.1.1"
          ideology = liberalism
@@ -6545,7 +6514,7 @@ set_variable = { party_pop_array^3 = 0.20 } #generate the rest
 					startup_politics = yes
 }	
 			     create_country_leader = {
-         name = "Wang Yang"
+         name = "汪洋"
          picture = "Wang_Yang.dds"
          expire = "2020.1.1"
          ideology = socialism
@@ -6744,7 +6713,7 @@ prerequisite = { focus = CHI_som_dec }
 		available_if_capitulated = no
 		completion_reward = {		
 			     create_country_leader = {
-         name = "Wen Jiabao"
+         name = "温家宝"
          picture = "Wen_Jiabao.dds"
          expire = "2020.1.1"
          ideology = liberalism
@@ -6966,8 +6935,8 @@ prerequisite = { focus = CHI_xuanju  }
 	add_to_array = { gov_coalition_array = 18 } #social_democracy
 					startup_politics = yes
 }
-         create_country_leader = {
-         name = "Central Committee of the Chinese Kuomintang"
+        create_country_leader = {
+         name = Central_Committee_of_the_Chinese_Kuomintang
          picture = "KMT.dds"
          expire = "2020.1.1"
          ideology = conservatism
@@ -7006,8 +6975,8 @@ mutually_exclusive = {focus = CHI_lkmt1 }
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {	
-		         create_country_leader = {
-         name = "Chiang Hsiao-yen"
+		create_country_leader = {
+         name = "蒋孝严"
          picture = "Jiang_Xiaoyan.dds"
          expire = "2020.1.1"
          ideology = conservatism
@@ -7290,7 +7259,7 @@ prerequisite = { focus = CHI_kmt  }
 				elections_allowed = yes
 			}  		
 				create_country_leader = {
-				name = "Wan Exiang"
+				name = "万鄂湘"
 				picture = "Wan_Exiang.dds"
 				ideology = neutral_Social
 				traits = {
@@ -7508,7 +7477,7 @@ remove_idea = CHI_three_people2
 relative_position_id = CHI_decx
 prerequisite = { focus = CHI_xuanju  }
 allow_branch = {
-has_country_leader = { name = "Tsai Ing-wen" }
+has_country_leader = { name = "蔡英文" }
 
 }
 		cost = 1
@@ -7518,7 +7487,7 @@ has_country_leader = { name = "Tsai Ing-wen" }
 		}
 
 		available = {
-has_country_leader = { name = "Tsai Ing-wen" }
+has_country_leader = { name = "蔡英文" }
 
 		}
 
@@ -7839,207 +7808,4 @@ remove_idea = CHI_dppgov1
 
 }
 } 
-   focus = {
-		id = CHI_Buddhism0
-		icon = buddhist_communist
-		x = 26
-		y = 8
-relative_position_id = CHI_decx
-prerequisite = { focus = CHI_xuanju  }
-allow_branch = {
-has_country_leader = { name = "Guo Jicheng" }
-
-}
-		cost = 1
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		available = {
-has_country_leader = { name = "Guo Jicheng" }
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {	
-
-	}
-	}
-   focus = {
-		id = CHI_Buddhism1
-		icon = Dialogue_with_Buddha
-		x = 26
-		y = 9
-relative_position_id = CHI_decx
-prerequisite = { focus = CHI_Buddhism0  }
-		cost = 5
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		available = {
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-
-}
-}
-focus = {
-		id = CHI_Buddhism2
-		icon = Shakyamuni_Marxism
-		x = 25
-		y = 10
-relative_position_id = CHI_decx
-prerequisite = { focus = CHI_Buddhism1  }
-		cost = 5
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		available = {
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-
-
-}
-}
-focus = {
-		id = CHI_Buddhism3
-		icon = people_savior
-		x = 27
-		y = 10
-relative_position_id = CHI_decx
-prerequisite = { focus = CHI_Buddhism1  }
-		cost = 5
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		available = {
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-
-}
-}
-focus = {
-		id = CHI_Buddhism4
-		icon = CPCNational_Party
-		x = 26
-		y = 11
-relative_position_id = CHI_decx
-prerequisite = { focus = CHI_Buddhism3  }
-prerequisite = { focus = CHI_Buddhism2  }
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		available = {
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-
-}
-}	
-focus = {
-		id = CHI_Buddhism5
-		icon = Eliminate_karma
-		x = 25
-		y = 12
-relative_position_id = CHI_decx
-prerequisite = { focus = CHI_Buddhism4  }
-		cost = 5
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		available = {
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-}
-}
-focus = {
-		id = CHI_Buddhism6
-		icon = attack_india
-		x = 27
-		y = 12
-relative_position_id = CHI_decx
-prerequisite = { focus = CHI_Buddhism4  }
-		cost = 5
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		available = {
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-
-
-}
-} 
-
-
-
-	
-	
 	}

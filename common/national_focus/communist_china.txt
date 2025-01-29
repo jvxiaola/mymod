@@ -1161,7 +1161,7 @@ CHI_gosplan
 				has_completed_focus = PRC_decentralized_economy
 				has_country_leader = {name = "Wang Xizhe" }
 				}
-			has_country_leader = {  name = "Han Dongfang" }
+			has_country_leader = {  name = "韩东方" }
 		}
 		
 		}
@@ -1490,10 +1490,10 @@ mutually_exclusive = {focus = PRC_guoyouhua focus = PRC_Workersdemocracy focus =
 	has_completed_focus = CHI_Organize_state_enterprises
 
 	OR ={
-		has_country_leader = {  name = "Jiang Zemin" }
-		has_country_leader = {  name = "Xi Jinping" }
+		has_country_leader = {  name = "江泽民" }
+		has_country_leader = {  name = "习近平" }
 		AND = {
-		has_country_leader = {  name = "Bo Xilai" }
+		has_country_leader = {  name = "薄熙来" }
 		has_completed_focus = PRC_Strengthening_Party_State
 		}
 
@@ -1841,7 +1841,7 @@ mutually_exclusive = {focus = PRC_guoyouhua focus = PRC_Workersdemocracy focus =
 			OR = {
 				has_country_leader = {  name = "Deng Liqun" }
 				has_country_leader = {  name = "Han Deqiang" }
-				has_country_leader = {  name = "Han Dongfang" }
+				has_country_leader = {  name = "韩东方" }
 			}
 		}
 		bypass = {
@@ -2120,7 +2120,7 @@ mutually_exclusive = {focus = PRC_no_lgbt }
 
 
 					OR={
-					has_country_leader = {  name = "QuanGuoRenMinDaiBiaoDaHui" }
+					has_country_leader = {  name = QuanGuoRenMinDaiBiaoDaHui }
 				    has_country_flag=xggm
 					}
 					tooltip = "政府支持性少数解放"
@@ -2294,7 +2294,7 @@ cost = 5
 			factor = 5
 		}
 allow_branch = {
-						has_country_leader = {  name = "Han Dongfang" }
+						has_country_leader = {  name = "韩东方" }
 }
 		available = {
 		}
@@ -6662,8 +6662,8 @@ cost = 5
 			
 
 
-						has_country_leader = {  name = "Han Dongfang" }
-						has_country_leader = {  name = "QuanGuoRenMinDaiBiaoDaHui" }
+						has_country_leader = {  name = "韩东方" }
+						has_country_leader = {  name = QuanGuoRenMinDaiBiaoDaHui }
 
 						}
 				custom_trigger_tooltip = {
@@ -10812,14 +10812,11 @@ add_core_of = ROOT
 		
 				completion_reward = {
 					create_country_leader = {
-						name = "QuanGuoRenMinDaiBiaoDaHui"
+						name = QuanGuoRenMinDaiBiaoDaHui
 						picture = "renda.dds"
 						expire = "2222.1.1"
 						ideology = Chinese_Socialism_mao
-						traits = {
-
-						jiti
-						}
+						traits = { jiti }
 					}	
 
 					mark_focus_tree_layout_dirty = yes

@@ -1548,10 +1548,10 @@ CHI_Purge_the_capitalist_roaders = {
 		days_remove = 90
 		days_re_enable = 120
 available = {OR = {	and = {
-						has_country_leader = {  name = "Bo Xilai" }
+						has_country_leader = {  name = "薄熙来" }
 has_completed_focus = PRC_Purge_of_Liberals}
 						and = {
-						has_country_leader = {  name = "Jiang Zemin" }
+						has_country_leader = {  name = "江泽民" }
 has_completed_focus = PRC_Liquidate_three_types_people}
 has_completed_focus = PRC_Leading_the_class_struggle
 }
@@ -1587,15 +1587,15 @@ CHI_Promoting_the_cult_of_personality = {
 		days_re_enable = 90
 available = {
 or = {
-and = {has_country_leader = {name = "Jiang Zemin"}
+and = { has_country_leader = {name = "江泽民"}
 has_completed_focus = PRC_Reinstate_party_chairman
 
 }
 	and = {
-						has_country_leader = {  name = "Bo Xilai" }
+		has_country_leader = {  name = "薄熙来" }
 has_completed_focus = PRC_leader_worship}
 AND = {
-has_country_leader = {name = "Xi Jinping"  }
+has_country_leader = {name = "习近平"  }
 has_completed_focus = PRC_Learn_from_Xi_Jinping_to_strengthen_the_country
 }
 }
@@ -1613,8 +1613,8 @@ change_CHI_people_support = yes
 if = {
 limit = {
 OR = {
-has_country_leader = {  name = "Bo Xilai" }
-has_country_leader = {name = "Jiang Zemin"}
+has_country_leader = {  name = "薄熙来" }
+has_country_leader = {name = "江泽民"}
 }
 }
 add_10_emerging_left_wing_radical = yes
@@ -1622,7 +1622,7 @@ add_10_emerging_left_wing_radical = yes
 }
 else_if = {
 limit = {
-has_country_leader = {name = "Xi Jinping" }
+has_country_leader = {name = "习近平" }
 }
 add_10_emerging_autocrats = yes
 
@@ -1644,7 +1644,7 @@ CHI_Promoting_Xi_Jinpings_faction = {
 		days_remove = 90
 		days_re_enable = 120
 available = {
-has_country_leader = {name = "Xi Jinping"  }
+has_country_leader = {name = "习近平"  }
 has_completed_focus = PRC_Promotion_Zhijiangiang_Xinjun
 }
 		cost = 50
@@ -1677,7 +1677,7 @@ PRC_The_Second_Great_Proletarian_Cultural_Revolution_1 = {
 		days_remove = 90
 		fire_only_once = yes
 available = {
-has_country_leader = {name = "Bo Xilai"  }
+has_country_leader = {name = "薄熙来"  }
 has_completed_focus = PRC_The_Second_Great_Proletarian_Cultural_Revolution
 }
 		cost = 100
@@ -1708,7 +1708,7 @@ has_idea = PRC_The_Second_Great_Proletarian_Cultural_Revolution_1
 }
 		days_remove = 90
 available = {
-has_country_leader = {name = "Bo Xilai"  }
+has_country_leader = {name = "薄熙来"  }
 has_completed_focus = PRC_The_Second_Great_Proletarian_Cultural_Revolution
 }
 		cost = 100
@@ -1743,7 +1743,7 @@ has_idea = PRC_The_Second_Great_Proletarian_Cultural_Revolution_2
 }
 		days_remove = 90
 available = {
-has_country_leader = {name = "Bo Xilai"  }
+has_country_leader = {name = "薄熙来"  }
 has_completed_focus = PRC_The_Second_Great_Proletarian_Cultural_Revolution
 }
 		cost = 100
@@ -2247,7 +2247,7 @@ OR = {
 remove_effect = {
 if = {
 limit = {
-has_country_leader = {name = "Xi Jinping" }
+has_country_leader = {name = "习近平" }
 }
 set_country_flag = PRC_Xi_Jinping_Ambition
 }

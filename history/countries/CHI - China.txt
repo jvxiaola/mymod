@@ -2848,7 +2848,7 @@ set_popularities = {
 	set_country_flag = party24_banned
 
 	create_country_leader = {
-		name = "Jiang Zemin"
+		name = "江泽民"
 		desc = jiangzheming_desc
 		picture = "Jiang_Zemin.dds"
 		expire = "2030.1.1"
@@ -3816,7 +3816,7 @@ set_popularities = {
 	}
 
 	create_country_leader = {
-		name = "Xi Jinping"
+		name = "习近平"
 		desc = XI_JINPING_LEADER_DESC
 		picture = "Xi_Jinping.dds"
 		expire = "2030.1.1"

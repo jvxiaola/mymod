@@ -191,7 +191,7 @@ set_leader_CHI = {
 			hidden_effect = { kill_country_leader = yes }
 
 			create_country_leader = {
-				name = "Wan Exiang"
+				name = "万鄂湘"
 				picture = "Wan_Exiang.dds"
 				ideology = anarchist_communism
 				traits = {

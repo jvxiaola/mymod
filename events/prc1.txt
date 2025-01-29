@@ -2729,7 +2729,7 @@ has_country_flag = CHI_yingduioldmanh
 			factor = 10
 			}
 	create_country_leader = {
-		name = "Xi jinping"
+		name = "习近平"
 		picture = "CHI_Xi_Jinping.dds"
 		expire = "2032.1.1"
 		ideology = Conservative
@@ -3290,7 +3290,7 @@ check_variable = {
 
 
 		create_country_leader = {
-				name = "Bo Xilai"
+				name = "薄熙来"
 				desc = "POLITICIAN_CHI_BO_XILAI_DESC"
 				picture = "bo_xilai.dds"
 				expire = "2050.1.1"
@@ -3350,7 +3350,7 @@ ggkfdjcr
 		}
 
 		create_country_leader = {
-				name = "Xi jinping"
+				name = "习近平"
 				desc = "POLITICIAN_CHI_XI_JINPING_DESC"
 				picture = "CHI_Xi_Jinping.dds"
 				expire = "2050.1.1"
@@ -3981,7 +3981,7 @@ id = mdardchina_news.50
 days = 30
 }
 create_country_leader = {
-				name = "Xi jinping"
+				name = "习近平"
 				picture = "CHI_Xi_Jinping.dds"
 				expire = "2050.1.1"
 				ideology = Conservative
@@ -4854,7 +4854,7 @@ set_politics = {
 				}
 				#Switch to commie leader
 	create_country_leader = {
-		name = "Han Dongfang"
+		name = "韩东方"
 		picture = "Han_Dongfang.dds"
 		expire = "2222.1.1"
 		ideology = anarchist_communism
@@ -4900,7 +4900,7 @@ set_politics = {
 				}
 				#Switch to commie leader
 	create_country_leader = {
-		name = "Han Dongfang"
+		name = "韩东方"
 		picture = "Han_Dongfang.dds"
 		expire = "2222.1.1"
 		ideology = anarchist_communism
@@ -5698,7 +5698,7 @@ country_event = {
 		date < 2012.12.1
 		not = { has_country_flag = CHI_congress_2012_jiang }
 		 has_country_flag = chi_left 
-		 has_country_leader = {  name = "Jiang Zemin" }
+		 has_country_leader = {  name = "江泽民" }
 
 	}
 	
@@ -5716,7 +5716,7 @@ check_variable = {
 }
 }		}
 		create_country_leader = {
-		name = "Xi Jinping"
+		name = "习近平"
 		picture = "CHI_Xi_Jinping.dds"
 		expire = "2222.1.1"
 		ideology = anarchist_communism
@@ -5734,7 +5734,7 @@ check_variable = {
     CPC_Dengist < 0.4
 }		}
 		create_country_leader = {
-		name = "Bo Xilai"
+		name = "薄熙来"
 		picture = "bo_xilai.dds"
 		expire = "2222.1.1"
 		ideology = anarchist_communism
@@ -5806,7 +5806,7 @@ check_variable = {
     CPC_Dengist < 0.4
 }		}
 		create_country_leader = {
-		name = "Bo Xilai"
+		name = "薄熙来"
 		picture = "bo_xilai.dds"
 		expire = "2222.1.1"
 		ideology = anarchist_communism
@@ -6096,23 +6096,19 @@ country_event = {
 	title = prc1.102.t
 	desc = prc1.102.d
 
-
+	immediate = { country_event ={ id = CW_Diverse.1 days = 50 } }
 	is_triggered_only = yes
-
 	option = {
 		name = prc1.102.a #We reject this threat to our independence.
 		kill_country_leader = yes
 		create_country_leader = {
-			name = "Quanlizhengkong"
+			name = Quanlizhengkong
 			picture = "Portrait_China_patry_Power_Vacuum.dds"
 			expire = "3000.1.1"
 			ideology = Chinese_Socialism
-	
-			traits = {
-			}
-	
-	
+			traits = { political_vacuum }
 		}
+
 		add_stability = -0.1
 		mark_focus_tree_layout_dirty = yes
 	}	
@@ -6158,7 +6154,7 @@ country_event = {
 	mark_focus_tree_layout_dirty = yes
 		
 			create_country_leader = {
-		name = "Tsai Ing-wen"
+		name = "蔡英文"
 		picture = "Tsai_Ing-wen.dds"
 		expire = "2010.1.1"
 		ideology = Neutral_Libertarian
@@ -6588,7 +6584,7 @@ TAI = {
 							set_country_flag = chi_left
 
 			create_country_leader = {
-		name = "Xi Jinping"
+		name = "习近平"
 		picture = "CHI_Xi_Jinping.dds"
 		expire = "2032.1.1"
 		ideology = anarchist_communism

@@ -11069,8 +11069,8 @@ defined_text = {
 	text = { trigger = { original_tag = CBD } localization_key = CBD.Autocracy }
 	text = { trigger = { original_tag = CHA } localization_key = CHA.Autocracy }
 	text = { trigger = { original_tag = CHE } localization_key = CHE.Autocracy }
-	text = { trigger = { original_tag = CHI NOT = { OR = {has_country_leader = {name = "Xi Jinping"  } has_country_leader = {name = "Xi I"  } } }} localization_key = CHI1.Autocracy }
-	text = { trigger = { original_tag = CHI OR = {has_country_leader = {name = "Xi Jinping"  } has_country_leader = {name = "Xi I"  } }} localization_key = CHI1.cpc_xi }
+	text = { trigger = { original_tag = CHI NOT = { OR = {has_country_leader = {name = "习近平"  } has_country_leader = {name = "Xi I"  } } }} localization_key = CHI1.Autocracy }
+	text = { trigger = { original_tag = CHI OR = {has_country_leader = {name = "习近平"  } has_country_leader = {name = "Xi I"  } }} localization_key = CHI1.cpc_xi }
 
 	text = { trigger = { original_tag = CHU } localization_key = CHU.Autocracy }
 	text = { trigger = { original_tag = CKK } localization_key = CKK.Autocracy }
@@ -13496,8 +13496,8 @@ defined_text = {
 	text = { trigger = { original_tag = ARG } localization_key = ARG.Autocracy_desc }
 	text = { trigger = { original_tag = BLR } localization_key = BLR.Autocracy_desc }
 	text = { trigger = { original_tag = BSH } localization_key = BSH.Autocracy_desc }
-	text = { trigger = { original_tag = CHI NOT = { OR = {has_country_leader = {name = "Xi Jinping"  } has_country_leader = {name = "Xi I"  } } }} localization_key = CHI1.Autocracy_desc }
-	text = { trigger = { original_tag = CHI OR = {has_country_leader = {name = "Xi Jinping"  } has_country_leader = {name = "Xi I"  } }} localization_key = CHI1.cpc_xi_desc }
+	text = { trigger = { original_tag = CHI NOT = { OR = {has_country_leader = {name = "习近平"  } has_country_leader = {name = "Xi I"  } } }} localization_key = CHI1.Autocracy_desc }
+	text = { trigger = { original_tag = CHI OR = {has_country_leader = {name = "习近平"  } has_country_leader = {name = "Xi I"  } }} localization_key = CHI1.cpc_xi_desc }
 
 	text = { trigger = { original_tag = CSA } localization_key = CSA.Autocracy_desc }
 	text = { trigger = { original_tag = DPR } localization_key = DPR.Autocracy_desc }
@@ -15074,8 +15074,8 @@ defined_text = {
 	text = { trigger = { original_tag = BSH } localization_key = BSH.Autocracy_icon }
 	text = { trigger = { original_tag = BUL } localization_key = BUL.Autocracy_icon }
 	text = { trigger = { original_tag = CHE } localization_key = CHE.Autocracy_icon }
-	text = { trigger = { original_tag = CHI NOT = { OR = {has_country_leader = {name = "Xi Jinping"  } has_country_leader = {name = "Xi I"  } }}} localization_key = CHI1.Autocracy_icon }
-	text = { trigger = { original_tag = CHI OR = {has_country_leader = {name = "Xi Jinping"  } has_country_leader = {name = "Xi I"  } }} localization_key = CHI1.cpc_xi_icon }
+	text = { trigger = { original_tag = CHI NOT = { OR = {has_country_leader = {name = "习近平"  } has_country_leader = {name = "Xi I"  } }}} localization_key = CHI1.Autocracy_icon }
+	text = { trigger = { original_tag = CHI OR = {has_country_leader = {name = "习近平"  } has_country_leader = {name = "Xi I"  } }} localization_key = CHI1.cpc_xi_icon }
 
 	text = { trigger = { original_tag = CHU } localization_key = CHU.Autocracy_icon }
 	text = { trigger = { original_tag = CKK } localization_key = CKK.Autocracy_icon }
