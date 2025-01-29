@@ -3204,12 +3204,8 @@ country_event = {
 		fire_only_once = yes
 
 	trigger = {
-		tag = CHI
-		has_government = communism
-		date > 2002.6.1
-		date < 2002.12.1
-		not = { has_country_flag = CHI_congress_2002 }
-		is_in_array = { ruling_party = 6 }
+
+
 	}
 	immediate = {
 			set_country_flag = CHI_congress_2002
