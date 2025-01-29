@@ -523,7 +523,7 @@ ai_will_do = {
 				check_variable = { CPC_Dengist < CPC_Left}
 				}
 			}
-			hidden_effect={	country_event = { id = prc1.102 days = 30}}
+			hidden_effect={	country_event = { id = prc1.102 days = 15 } }
 		}
 		set_temp_variable = { treasury_change = -50 }
 		modify_treasury_effect = yes
@@ -1245,7 +1245,7 @@ country_event = {id= prc1.57 days = 3 }
 		allow_branch = {
 			NOT={
 				has_completed_focus = CHI_break_term_limits
-				has_country_leader = {name = Quanlizhengkong}
+				has_country_leader = { name = Quanlizhengkong }
 			}
 		}
 		cancel_if_invalid = yes
