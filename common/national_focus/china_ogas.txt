@@ -342,8 +342,8 @@ NOT = {
 has_active_mission = CHI_Yangheping_corp
 }		
 	custom_trigger_tooltip = {
-OR = {	
-					is_in_array = { ruling_party = 4 }
+		OR = {	
+				is_in_array = { ruling_party = 4 }
 				has_country_leader = {  name = "毛远新" }
 				has_country_leader = {  name = "张春桥" }
 				has_country_leader = {  name = "薄熙来" }

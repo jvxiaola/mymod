@@ -186,7 +186,7 @@ country_event = {
 		add_political_power = 50
 		add_stability = 0.2
 	create_country_leader = {
-		name = "Deng Liqun"
+		name = "邓力群"
 		picture = "Deng_liqun.dds"
 		expire = "2222.1.1"
 		ideology = anarchist_communism
@@ -2080,7 +2080,7 @@ add_to_array = { gov_coalition_array = 19 }
 				#Switch to commie leader
 	set_cosmetic_tag = CHI_REB_S
 	create_country_leader = {
-		name = "Deng Liqun"
+		name = "邓力群"
 		picture = "Deng_liqun.dds"
 		expire = "2222.1.1"
 		ideology = anarchist_communism
@@ -3327,7 +3327,7 @@ check_variable = {
 		}
 
 		create_country_leader = {
-				name = "Li Keqiang"
+				name = "李克强"
 				desc = "POLITICIAN_CHI_LI_KEQIANG_DESC"
 				picture = "Li_Keqiang.dds"
 				expire = "2050.1.1"
@@ -5778,7 +5778,7 @@ country_event = {
 		date < 2012.12.1
 		not = { has_country_flag = CHI_congress_2012_deng }
 		 has_country_flag = chi_left 
-		 has_country_leader = {  name = "Deng Liqun" }
+		 has_country_leader = {  name = "邓力群" }
 
 	}
 	
@@ -5789,7 +5789,7 @@ country_event = {
 	option = {
 	name = prc1.90.o1
 		create_country_leader = {
-		name = "Han Deqiang"
+		name = "韩德强"
 		picture = "Han_Deqiang.dds"
 		expire = "2222.1.1"
 		ideology = anarchist_communism

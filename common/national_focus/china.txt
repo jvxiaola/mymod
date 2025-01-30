@@ -572,10 +572,8 @@ focus = {
 		}
 		bypass = {}
 				prerequisite = {
-			
-			focus = CHI_kuodachukou
-			focus = CHI_kuodaneixu
-
+					focus = CHI_kuodachukou
+					focus = CHI_kuodaneixu
 			}
 			available = {}
 				ai_will_do = {
@@ -2174,16 +2172,13 @@ remove_idea = CHI_CPC_right4
 		y = 6
 		cost = 5
 		relative_position_id = CHI_jjwj	
-prerequisite = {focus = CHI_Chongqingmodel focus = CHI_sjgc focus = CHI_Guangdongmodel}
-allow_branch = {
-#has_country_flag = CHI_congress_2012
-}
-			available = 
-			{
-has_country_flag = CHI_congress_2012
-
-
-always = no			}
+		prerequisite = {focus = CHI_Chongqingmodel focus = CHI_sjgc focus = CHI_Guangdongmodel}
+		allow_branch = { #has_country_flag = CHI_congress_2012 
+		}
+		available = { 
+			has_country_flag = CHI_congress_2012
+			always = no			
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2200,24 +2195,16 @@ always = no			}
 		y = 1
 		cost = 5
 		relative_position_id = CHI_18th	
-prerequisite = {focus = CHI_18th}
-
-			available = 
-			{
-has_country_leader = {
-name = "习近平"
-}			}
-
-
+		prerequisite = {focus = CHI_18th}
+		available = { has_country_leader = { name = "习近平" } }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-		add_political_power = 100
-				custom_effect_tooltip = event_lock
-
+			add_political_power = 100
+			custom_effect_tooltip = event_lock
 		}
-		}	
+	}	
 		
 	focus = {
 		id = CHI_x1
@@ -2228,19 +2215,15 @@ name = "习近平"
 		relative_position_id = CHI_18th		
 
 
-				prerequisite = {
-			focus = CHI_XiJingpingwin
-			}
-			available = 
-			{
-			}
+		prerequisite = { focus = CHI_XiJingpingwin }
+			available = {}
 
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-							decrease_corruption = yes
+			decrease_corruption = yes
 
 		}
 		}	
@@ -2465,8 +2448,8 @@ prerequisite = {focus = CHI_18th}
 
 			available = 
 			{
-has_country_leader = {
-name = "薄熙来"
+			has_country_leader = {
+			name = "薄熙来"
 }				}
 
 
@@ -2728,7 +2711,7 @@ prerequisite = {focus = CHI_18th}
 			available = 
 			{
 has_country_leader = {
-name = "Li Keqiang"
+name = "李克强"
 }				}
 
 

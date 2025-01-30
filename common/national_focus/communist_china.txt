@@ -1839,8 +1839,8 @@ mutually_exclusive = {focus = PRC_guoyouhua focus = PRC_Workersdemocracy focus =
 
 		available = {		
 			OR = {
-				has_country_leader = {  name = "Deng Liqun" }
-				has_country_leader = {  name = "Han Deqiang" }
+				has_country_leader = {  name = "邓力群" }
+				has_country_leader = {  name = "韩德强" }
 				has_country_leader = {  name = "韩东方" }
 			}
 		}
@@ -2116,13 +2116,10 @@ mutually_exclusive = {focus = PRC_no_lgbt }
 		}
 
 		available = {custom_trigger_tooltip = {
-
-
-
-					OR={
-					has_country_leader = {  name = QuanGuoRenMinDaiBiaoDaHui }
-				    has_country_flag=xggm
-					}
+			OR = {
+			has_country_leader = {  character = QuanGuoRenMinDaiBiaoDaHui }
+			has_country_flag = xggm
+			}
 					tooltip = "政府支持性少数解放"
 				}
 		}
@@ -2136,8 +2133,8 @@ mutually_exclusive = {focus = PRC_no_lgbt }
 		available_if_capitulated = no
 
 		completion_reward = {
-add_ideas = PRC_lgbt		
-}
+			add_ideas = PRC_lgbt		
+		}
 		}
 		focus = { id= PRC_no_lgbt
 		icon = anti_lgbt
@@ -2936,7 +2933,7 @@ cost = 5
 			factor = 5
 		}
 		allow_branch = {
-has_country_leader = {name = "Deng Liqun"  }
+has_country_leader = {name = "邓力群"  }
 
 }
 		available = {
@@ -3542,7 +3539,7 @@ change_CHI_Socialist_Construction_dynamic18 = yes
 prerequisite = {focus = PRC_Socialism_in_one_country2}
 
 			available = 
-			{has_country_leader = {name = "Han Deqiang"  }
+			{has_country_leader = {name = "韩德强"  }
 
 			}
 
