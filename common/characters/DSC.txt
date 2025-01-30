@@ -2,7 +2,7 @@ characters = {
 
 	#2000 Army Chiefs
 	DSC_Mao_Yuanxin = {
-		name = "Mao Yuanxin"
+		name = "毛远新"
 		portraits = {
 			army = {
 				small = "gfx/leaders/DSC/small/Mao_Yuanxin_small.dds"

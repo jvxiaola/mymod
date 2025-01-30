@@ -1547,19 +1547,23 @@ CHI_Purge_the_capitalist_roaders = {
 
 		days_remove = 90
 		days_re_enable = 120
-available = {OR = {	and = {
+		available = {
+			OR = {	
+				and = {
 						has_country_leader = {  name = "薄熙来" }
-has_completed_focus = PRC_Purge_of_Liberals}
-						and = {
-						has_country_leader = {  name = "江泽民" }
-has_completed_focus = PRC_Liquidate_three_types_people}
-has_completed_focus = PRC_Leading_the_class_struggle
-}
-}
+						has_completed_focus = PRC_Purge_of_Liberals
+				}
+				and = {
+					has_country_leader = {  name = "江泽民" }
+					has_completed_focus = PRC_Liquidate_three_types_people	
+				}
+				has_completed_focus = PRC_Leading_the_class_struggle
+			}
+		}
 		cost = 50
 
 		modifier = {
-	political_power_gain = -0.10	
+			political_power_gain = -0.10	
 		}
 remove_effect = {
 		set_temp_variable = { treasury_change = -10 }

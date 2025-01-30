@@ -169,7 +169,7 @@ country_event = {
 			}
 			set_cosmetic_tag = DSC_GMQ
 			create_country_leader = {
-				name = "Mao Yuanxin"
+				name = "毛远新"
 				picture = "Mao_Yuanxin.dds"
 				ideology = Chinese_Socialism_mao
 				traits = {

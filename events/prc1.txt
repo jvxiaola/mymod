@@ -160,7 +160,7 @@ country_event = {
 
 		add_stability = 0.10	
 		create_country_leader = {
-				name = "Zhang Chunqiao"
+				name = "张春桥"
 				desc = "zcq_desc"
 				picture = "zhangchunqiao.dds"
 				expire = "2020.1.1"

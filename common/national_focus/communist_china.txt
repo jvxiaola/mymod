@@ -6658,7 +6658,7 @@ cost = 5
 		has_civil_war = no
 		OR = {
 
-			has_country_leader = {  name = "Mao Yuanxin" }
+			has_country_leader = {  name = "毛远新" }
 						has_country_leader = {  name = "韩东方" }
 						has_country_leader = {  name = QuanGuoRenMinDaiBiaoDaHui }
 
@@ -10490,7 +10490,7 @@ add_core_of = ROOT
 			}
 	}
 			available = {
-	has_country_leader = {name = "Mao Yuanxin"  }
+	has_country_leader = {name = "毛远新"  }
 			}
 					bypass = {
 			}

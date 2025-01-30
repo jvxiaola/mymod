@@ -1219,10 +1219,10 @@ country_event = {id= prc1.57 days = 3 }
 		y = 7
 		cost = 10
 		relative_position_id = CHI_zhengzhigaige		
-			mutually_exclusive = {focus = CHI_break_term_limits}
+			mutually_exclusive = { focus = CHI_break_term_limits}
 			available = {
 				date > 2002.6.1
-has_country_leader = {name="江泽民"}
+				has_country_leader = { name="江泽民" }
 			}
 			bypass = {}
 				prerequisite = {
@@ -1255,7 +1255,7 @@ mark_focus_tree_layout_dirty = yes
 				limit = { has_country_flag= CHI_zhunbeirudang}
 				set_temp_variable = { temp_CHI_people_support = 0.15 }
 				change_CHI_people_support = yes
-							add_ideas = CHI_zibenjia
+				add_ideas = CHI_zibenjia
 				custom_effect_tooltip = influence_the_party_line_tt
 				add_10_western_liberalism = yes
 				

@@ -344,10 +344,10 @@ has_active_mission = CHI_Yangheping_corp
 	custom_trigger_tooltip = {
 OR = {	
 					is_in_array = { ruling_party = 4 }
-				has_country_leader = {  name = "Mao Yuanxin" }
-				has_country_leader = {  name = "Zhang Chunqiao" }
+				has_country_leader = {  name = "毛远新" }
+				has_country_leader = {  name = "张春桥" }
 				has_country_leader = {  name = "薄熙来" }
-				has_country_leader = {  name = "Presidium of the National People's Congress" }
+				has_country_leader = {  name = QuanGuoRenMinDaiBiaoDaHui }
 				}		
 		tooltip = CHI_communist_marx
 
