@@ -211,30 +211,20 @@ focus = {
 
 		prerequisite = {
 			focus = CHI_china_wangluo
-					focus = CHI_zuzhiguoqigaige
+			focus = CHI_zuzhiguoqigaige
 		}
-	
 		prerequisite = {
 			focus = CHI_condemn_United_States
 			focus = CHI_Support_the_War_on_Terror
 		}
-				ai_will_do = {
-			factor = 50
-		}
-					bypass = {
-
-		}
-
+		ai_will_do = { factor = 50 }
+		bypass = {	}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-completion_reward = {
-country_event = prc1.167
-
-
-
-}
-
+		completion_reward = {
+			country_event = prc1.167
+		}
 }
 
 
@@ -1222,7 +1212,7 @@ country_event = {id= prc1.57 days = 3 }
 			mutually_exclusive = { focus = CHI_break_term_limits}
 			available = {
 				date > 2002.6.1
-				has_country_leader = { name="江泽民" }
+				has_country_leader = { name = "江泽民" }
 			}
 			bypass = {}
 				prerequisite = {
