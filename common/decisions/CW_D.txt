@@ -1,5 +1,10 @@
 CW_D_category = {
 #边疆危机
+
+#民族紧张度等级增加
+
+#国策路线选择
+
 #组织作战技能训练
 CHI_Organize_combat_skills_training = {
 		icon = GFX_decision_gre_investment_decisions
@@ -58,52 +63,21 @@ CHI_Organize_combat_skills_training = {
 		}
 	}
 #调解军区民族情绪
-	Promote_nationalization_strategic_industries = { 
+CHI_Mediate_ethnic_emotions_XIN = { 
 		icon = GFX_decision_refinery_dec
-		visible = {
-			has_completed_focus = Promote_nationalization_strategic_industries 
-			NOT = { has_completed_focus = CHI_Consolidation_public_ownership }
-			check_variable = { Promote_nationalization_strategic_industries_progress < 100 }
-		}
+		visible = { always = yes }
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = Promote_nationalization_strategic_industries_progress_trigger_tt
-				check_variable = { Promote_nationalization_strategic_industries_progress < 100 }
+				tooltip = CHI_Mediate_ethnic_emotions_XIN_trigger_tt
+				check_variable = { Nationalist_sentiment_military > 0 }
 			}
 		}
-		custom_cost_trigger = {
-			check_variable = { treasury > 10.0 }
-			has_political_power > 49
-		}
-		custom_cost_text = cost_10_0_potical_power_50
-		complete_effect = {
-			set_temp_variable = { treasury_change = -10 }
-			modify_treasury_effect = yes
-			add_political_power = -50
-		}
-		days_remove = 75
+		cost = 35
+		days_remove = 15
+		days_re_enable = 10
 		remove_effect = {
-			custom_effect_tooltip = Promote_nationalization_strategic_industries_progress_effect_tt
-			hidden_effect = {
-				if = {
-					limit = { NOT = { has_variable = Promote_nationalization_strategic_industries_progress } }
-					set_variable = { Promote_nationalization_strategic_industries_progress = 20 }
-				}
-				else_if = {
-					limit = { has_variable = Promote_nationalization_strategic_industries_progress } 
-					add_to_variable = { Promote_nationalization_strategic_industries_progress = 20 }
-				}
-
-				if = {
-					limit = { check_variable = { Promote_nationalization_strategic_industries_progress = 100 } }
-					set_temp_variable = { COSEM_gbs_add = 0.05 } set_temp_variable = { COSEM_lrs_add = 0.10 } set_temp_variable = { COSEM_gm_add = 0.05 } 
-					set_temp_variable = { COSEM_egm_add = 0.025 } set_temp_variable = { COSEM_icf_add = 0.05 } set_temp_variable = { COSEM_iwr_add = 0.01 } 
-					set_temp_variable = { COSEM_twm_add = 0.01 } 
-					add_to_variable = { COSEM_gbs = COSEM_gbs_add } add_to_variable = { COSEM_lrs = COSEM_lrs_add } add_to_variable = { COSEM_gm = COSEM_gm_add } 
-					add_to_variable = { COSEM_egm = COSEM_egm_add } add_to_variable = { COSEM_icf = COSEM_icf_add } add_to_variable = { COSEM_iwr = COSEM_iwr_add } 
-					add_to_variable = { COSEM_twm = COSEM_twm_add } 
-				}
-			}
+			add_to_variable = { Nationalist_sentiment_military = -1 }
+			XIN_Nationalist_sentiment_military_effect = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -135,40 +109,17 @@ CHI_Organize_combat_skills_training = {
 		}
 		days_remove = 75
 		remove_effect = {
-			custom_effect_tooltip = Nationalize_construction_and_chemical_industries_progress_progress_effect_tt
-			hidden_effect = {
-				if = {
-					limit = { NOT = { has_variable = Nationalize_construction_and_chemical_industries_progress } }
-					set_variable = { Nationalize_construction_and_chemical_industries_progress = 20 }
-				}
-				else_if = {
-					limit = { has_variable = Nationalize_construction_and_chemical_industries_progress } 
-					add_to_variable = { Nationalize_construction_and_chemical_industries_progress = 20 }
-				}
 
-				if = {
-					limit = { check_variable = { Nationalize_construction_and_chemical_industries_progress = 100 } }
-					set_temp_variable = { COSEM_gbs_add = 0.05 } set_temp_variable = { COSEM_lrs_add = 0.05 } set_temp_variable = { COSEM_gm_add = 0.05 } 
-					set_temp_variable = { COSEM_sb_add = 0.20 } set_temp_variable = { COSEM_egm_add = 0.025 } set_temp_variable = { COSEM_otsb_add = 0.05 } 
-					set_temp_variable = { COSEM_iwr_add = 0.01 } set_temp_variable = { COSEM_twm_add = 0.01 } 
-					add_to_variable = { COSEM_gbs = COSEM_gbs_add } add_to_variable = { COSEM_lrs = COSEM_lrs_add } add_to_variable = { COSEM_gm = COSEM_gm_add } 
-					add_to_variable = { COSEM_sb = COSEM_sb_add } add_to_variable = { COSEM_egm = COSEM_egm_add } add_to_variable = { COSEM_otsb = COSEM_otsb_add }
-					add_to_variable = { COSEM_iwr = COSEM_iwr_add } add_to_variable = { COSEM_twm = COSEM_twm_add } 
-					#建筑与化工行业国有化效果
-				}
-			}
 		}
 		ai_will_do = {
 			factor = 1
 		}
 	}
 #提升军备生产
-	Partial_nationalize_light_manufacturing_industry = { #部分轻工业、制造业国有化效果
+	Partial_nationalize_light_manufacturing_industry = { 
 	icon = GFX_decision_generic_factory
 	visible = {
-		has_completed_focus = Partial_nationalize_light_manufacturing_industry 
-		NOT = { has_completed_focus = CHI_Consolidation_public_ownership }
-		check_variable = { Partial_nationalize_light_manufacturing_industry_progress < 100 }
+		always = yes
 	}
 	available = {
 		custom_trigger_tooltip = {
@@ -188,34 +139,13 @@ CHI_Organize_combat_skills_training = {
 	}
 	days_remove = 75
 	remove_effect = {
-		custom_effect_tooltip = Partial_nationalize_light_manufacturing_industry_progress_progress_effect_tt
-		hidden_effect = {
-			if = {
-				limit = { NOT = { has_variable = Partial_nationalize_light_manufacturing_industry_progress } }
-				set_variable = { Partial_nationalize_light_manufacturing_industry_progress = 20 }
-			}
-			else_if = {
-				limit = { has_variable = Partial_nationalize_light_manufacturing_industry_progress } 
-				add_to_variable = { Partial_nationalize_light_manufacturing_industry_progress = 20 }
-			}
-
-			if = {
-				limit = { check_variable = { Partial_nationalize_light_manufacturing_industry_progress = 100 } }
-				set_temp_variable = { COSEM_add = 0.05 } set_temp_variable = { COSEM_iwr_add = 0.01 } set_temp_variable = { COSEM_twm_add = 0.01 } 
-				add_to_variable = { COSEM_gbs = COSEM_add } add_to_variable = { COSEM_gm = COSEM_add } 
-				add_to_variable = { COSEM_otsb = COSEM_add } add_to_variable = { COSEM_icf = COSEM_add } add_to_variable = { COSEM_iwr = COSEM_iwr_add } 
-				add_to_variable = { COSEM_twm = COSEM_twm_add } 
-				set_country_flag = Partial_nationalize_light_manufacturing_industry_end
-				#部分轻工业、制造业国有化效果
-			}
-		}
 	}
 	ai_will_do = {
 		factor = 1
 	}
 	}
 #派遣征招机械师
-	Organize_breakthroughs_food_industry = { #组织食品、药品制造业技术攻关运动
+	Organize_breakthroughs_food_industry = { 
 	icon = GFX_decision_generic_research
 	visible = {
 		has_completed_focus = Organize_breakthroughs_food_industry
@@ -253,7 +183,6 @@ CHI_Organize_combat_skills_training = {
 	icon = GFX_decision_ger_mefo_bills
 	visible = {
 		has_completed_focus = Raise_worker_salaries_benefits
-		OR = { has_idea = CHI_work7 has_idea = CHI_work6 has_idea = CHI_work5 has_idea = CHI_work_01 has_idea = CHI_work_02 has_idea = CHI_work_03 has_idea = CHI_work_04 }
 	}
 	available = {
 		custom_trigger_tooltip = {
@@ -275,13 +204,6 @@ CHI_Organize_combat_skills_training = {
 	}
 	days_remove = 45
 	remove_effect = {
-		CHI_work_up = yes
-		if = {
-			limit = { check_variable = { COSEM_pp < 0.10 } }
-			set_temp_variable = { COSEM_pp_add = 0.05 } set_temp_variable = { COSEM_iwr_add = 0.01 } set_temp_variable = { COSEM_twm_add = 0.01 }
-			custom_effect_tooltip = COSEM_add_effect_tt 
-			add_to_variable = { COSEM_pp = COSEM_pp_add } add_to_variable = { COSEM_iwr = COSEM_iwr_add } add_to_variable = { COSEM_twm = COSEM_twm_add } 
-		}
 	}
 	ai_will_do = {
 		factor = 1
@@ -314,13 +236,6 @@ Raise_worker_salaries_benefits = {
 	}
 	days_remove = 45
 	remove_effect = {
-		CHI_work_up = yes
-		if = {
-			limit = { check_variable = { COSEM_pp < 0.10 } }
-			set_temp_variable = { COSEM_pp_add = 0.05 } set_temp_variable = { COSEM_iwr_add = 0.01 } set_temp_variable = { COSEM_twm_add = 0.01 }
-			custom_effect_tooltip = COSEM_add_effect_tt 
-			add_to_variable = { COSEM_pp = COSEM_pp_add } add_to_variable = { COSEM_iwr = COSEM_iwr_add } add_to_variable = { COSEM_twm = COSEM_twm_add } 
-		}
 	}
 	ai_will_do = {
 		factor = 1

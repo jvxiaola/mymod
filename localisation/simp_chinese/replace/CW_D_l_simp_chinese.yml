@@ -43,6 +43,7 @@ command_power_more_than_5: "£command_power §H5§!"
 command_power_more_than_5_blocked: "£command_power §R5§!"
 CHI_max_milliary_trigger_tt: "军区§G军事素质§!§7尚未达到最大值§!"
 CHI_Organize_political_work_XIN_trigger_tt: "军区§R政治理论素养§!§7尚未达到最大值§!"
+CHI_Mediate_ethnic_emotions_XIN_trigger_tt: "军区§8民族主义情绪§!§7尚未达到最低值§!"
 CW_D_category: "§R边疆危机§!"
 #好感
 chinese_MRG: "是中国军区"
