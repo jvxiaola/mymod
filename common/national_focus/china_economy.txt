@@ -1510,45 +1510,11 @@
 	shared_focus = {
 	id = CHI_Negative_contract_system
 	icon = focus_generic_agricultural_subsidies
-		x = 90
-		y = 17
+		x = 0
+		y = 1
 		cost = 3
-		offset = {
-			x = -1
-			trigger = {
-				OR = { 
-					tag = DSC 
-					has_country_flag = laozuo
-				}
-			}
-		}
-		offset = {
-			y = -1
-			trigger = { has_country_flag = xggm }
-		}
-		offset = {
-			x = -69
-			y = -5
-			trigger = { tag = DSC }
-		}
-		offset = {
-			x = 13
-			y = -2
-			trigger = {
-				tag = DSC
-				has_completed_focus = CHI_Chinese_NEW_MILLENNIUM
-			}
-		}
-		allow_branch = {
-			NOT = { has_completed_focus = CHI_Chinese_NEW_MILLENNIUM }
-			OR = {
-
-				has_country_flag = xggm
-				tag = DSC
-				has_country_flag = laozuo
-			}
-		 }
-		prerequisite = { focus = CHI_agricultural_issues focus = CHI_Socialist_Reconstruction }
+		prerequisite = { focus = CHI_agricultural_issues }
+		relative_position_id = CHI_agricultural_issues
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		available = {  }
 		completion_reward = {
