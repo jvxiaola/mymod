@@ -40,6 +40,7 @@ XIN_Work_completion: "§C建设工作完成§!"
 XIN_Work_completion_desc: "本轮新疆军区建设计划已完成，可以进行下一轮建设计划，请中央政府发布命令。"
 XIN_Work_completion_effect_tt: "§O可以进行下一轮建设计划§!§Y(在决议中决定所进行的建设路线)§!。"
 
+CW_D_category: "§R边疆危机§!"
 #好感
 chinese_MRG: "是中国军区"
 
