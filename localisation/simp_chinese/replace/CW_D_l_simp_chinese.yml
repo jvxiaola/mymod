@@ -39,7 +39,10 @@ XIN_alleviating_ethnic_tensions_desc: "军区新募集的士兵大多都是怀�
 XIN_Work_completion: "§C建设工作完成§!"
 XIN_Work_completion_desc: "本轮新疆军区建设计划已完成，可以进行下一轮建设计划，请中央政府发布命令。"
 XIN_Work_completion_effect_tt: "§O可以进行下一轮建设计划§!§Y(在决议中决定所进行的建设路线)§!。"
-
+command_power_more_than_5: "£command_power §H5§!"
+command_power_more_than_5_blocked: "£command_power §R5§!"
+CHI_max_milliary_trigger_tt: "军区§G军事素质§!§7尚未达到最大值§!"
+CHI_Organize_political_work_XIN_trigger_tt: "军区§R政治理论素养§!§7尚未达到最大值§!"
 CW_D_category: "§R边疆危机§!"
 #好感
 chinese_MRG: "是中国军区"

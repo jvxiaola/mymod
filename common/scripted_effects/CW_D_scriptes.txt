@@ -104,32 +104,47 @@ transfer_cf_to_mf = {
 	}
 }
 
+
+
+max_XIN_millatry = {
+	clamp_variable = { var = ps_3 min = -0.05 max = 0.05 }
+	clamp_variable = { var = ps_4 min = -0.10 max = 0.10 }
+	clamp_variable = { var = ps_5 min = 0 max = 0.15 }
+}
+
 XIN_military_qualities_effect = {
 	custom_effect_tooltip = XIN_military_qualities_effect_tt
 	set_temp_variable = { mq_c = 1 } multiply_temp_variable = { mq_c = 0.01 } add_variable = { ps_3 = mq_c }
 	set_temp_variable = { mq_c = 1 } multiply_temp_variable = { mq_c = 0.02 } add_variable = { ps_4 = mq_c }
-	set_temp_variable = { mq_c = 1 } multiply_temp_variable = { mq_c = 0.03 } add_variable = { ps_5 = mq_c }
+	set_temp_variable = { mq_c = 1 } multiply_temp_variable = { mq_c = 0.02 } add_variable = { ps_5 = mq_c }
+	max_XIN_millatry = yes
 }
 
 XIN_Expand_conscription = {
 	custom_effect_tooltip = XIN_Expand_conscription_effect_tt
 	set_temp_variable = { mq_c = -0.75 } multiply_temp_variable = { mq_c = 0.01 } add_variable = { ps_3 = mq_c }
 	set_temp_variable = { mq_c = -0.75 } multiply_temp_variable = { mq_c = 0.02 } add_variable = { ps_4 = mq_c }
-	set_temp_variable = { mq_c = -0.75 } multiply_temp_variable = { mq_c = 0.03 } add_variable = { ps_5 = mq_c }
+	set_temp_variable = { mq_c = -0.75 } multiply_temp_variable = { mq_c = 0.02 } add_variable = { ps_5 = mq_c }
+	max_XIN_millatry = yes
 }
 
 XIN_Temporary_training = {
 	custom_effect_tooltip = XIN_Temporary_training_effect_tt
 	set_temp_variable = { mq_c = 0.5 } multiply_temp_variable = { mq_c = 0.01 } add_variable = { ps_3 = mq_c }
 	set_temp_variable = { mq_c = 0.5 } multiply_temp_variable = { mq_c = 0.02 } add_variable = { ps_4 = mq_c }
-	set_temp_variable = { mq_c = 0.5 } multiply_temp_variable = { mq_c = 0.03 } add_variable = { ps_5 = mq_c }
+	set_temp_variable = { mq_c = 0.5 } multiply_temp_variable = { mq_c = 0.02 } add_variable = { ps_5 = mq_c }
+	max_XIN_millatry = yes
 }
 
-
+max_XIN_millatry = {
+	clamp_variable = { var = ps_1 min = 0 max = 0.20 }
+	clamp_variable = { var = ps_2 min = 0 max = 5 }
+}
 XIN_political_assign_effect = {
 	custom_effect_tooltip = XIN_political_assign_effect_tt
 	set_temp_variable = { mq_c = 1 } multiply_temp_variable = { mq_c = 0.02 } add_variable = { ps_1 = mq_c }
-	set_temp_variable = { mq_c = 1 } multiply_temp_variable = { mq_c = 0.005 } add_variable = { ps_2 = mq_c }
+	set_temp_variable = { mq_c = 1 } multiply_temp_variable = { mq_c = 0.5 } add_variable = { ps_2 = mq_c }
+	max_XIN_millatry = yes
 }
 
 XIN_military_equipment_effect = {
@@ -146,7 +161,8 @@ XIN_Militarize_productical_corps = {
 	custom_effect_tooltip = XIN_Militarize_productical_corps_effect_tt
 	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.01 } add_variable = { ps_3 = mq_c }
 	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.02 } add_variable = { ps_4 = mq_c }
-	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.03 } add_variable = { ps_5 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.02 } add_variable = { ps_5 = mq_c }
+	max_XIN_millatry = yes
 
 	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_6 = mq_c }
 	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_7 = mq_c }
