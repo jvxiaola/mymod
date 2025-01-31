@@ -830,7 +830,7 @@
 		cost = 2
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		allow_branch = {
-				tag = DSC
+			tag = DSC
 			NOT = { 
 				has_completed_focus = CHI_Chinese_NEW_MILLENNIUM 
 			}
@@ -857,7 +857,7 @@
 	shared_focus = {
 		id = CHI_Socialist_Reconstruction
 		icon = communist_party_of_china
-		x = 87
+		x = 22
 		y = 15
 		cost = 2
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -865,13 +865,6 @@
 			has_country_flag = xggm
 			NOT = { has_completed_focus = CHI_Chinese_Industrial_Explosion }
 		 }
-		offset = {
-			x = -75
-			y = -5
-			trigger = {
-			tag = DSC
-			}
-		}
 		available = {
 			has_government = communism
 			OR = {
@@ -1173,13 +1166,16 @@
 	shared_focus = {
 		id = CHI_Consolidation_public_ownership
 		icon = decentralized_economy
-
 		x = 10
 		y = 16
 		cost = 4
 		prerequisite = { focus = Organize_breakthroughs_food_industry focus = Raise_worker_salaries_benefits  focus = CHI_worker_ownership }
+		allow_branch = {
+			OR = { tag = DSC has_country_flag = xggm }
+			NOT = { has_completed_focus = CHI_Chinese_NEW_MILLENNIUM }
+		}
 		offset = {
-			x = 75
+			x = 10
 			y = 2
 			trigger = { has_country_flag = xggm }
 		}
@@ -1442,9 +1438,13 @@
 		x = 15
 		y = 16
 		offset = {
-			x = 72
+			x = 7
 			y = 2
 			trigger = { has_country_flag = xggm }
+		}
+		allow_branch = {
+			OR = { tag = DSC has_country_flag = xggm }
+			NOT = { has_completed_focus = CHI_Chinese_NEW_MILLENNIUM }
 		}
 		cost = 4
 		prerequisite = { focus = CHI_limit_accumulation focus = CHI_Assign_local_cooperative_party_committee focus = CHI_Organizational_skills_training_labor_competition }
@@ -1687,9 +1687,13 @@ shared_focus = {
 		x = 20
 		y = 16
 		offset = {
-			x = 69
+			x = 4
 			y = 2
 			trigger = { has_country_flag = xggm }
+		}
+		allow_branch = {
+			OR = { tag = DSC has_country_flag = xggm }
+			NOT = { has_completed_focus = CHI_Chinese_NEW_MILLENNIUM }
 		}
 		prerequisite = { focus = CHI_Raise_grainal_purchase_price focus = CHI_state_farm focus = CHI_Purchase_agricultural_supplies focus = CHI_Organize_learning_mechanized_agricultural_tools }
 		cost = 2
@@ -1792,7 +1796,7 @@ shared_focus = {
 		id = CHI_Chinese_Industrial_Explosion21
 		icon = Generic_Workers_Democracy
 
-		x = 87
+		x = 22
 		y = 19
 		allow_branch = {
 			has_country_flag = xggm

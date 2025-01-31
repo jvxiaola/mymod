@@ -6,6 +6,10 @@ focus_tree = {
 		shared_focus = CHI_Chinese_Megaprojects
 		shared_focus = CHI_Strategic_Industries
 		shared_focus = PRC_computer
+		shared_focus = CHI_Consolidation_public_ownership
+		shared_focus = CHI_Efficient_and_economical
+		shared_focus = CHI_Revitalize_the_countryside
+		shared_focus = CHI_Socialist_Reconstruction
 
 	focus = {
 		id = PRC_communist
@@ -6595,7 +6599,7 @@ change_HKG_Socialist_Construction_dynamic24 = yes
 		}
 		}				
 #世界革命#
-						focus = {
+focus = {
 		id = PRC_jjdz
 		icon = communism5
 		x = 70
@@ -6611,14 +6615,18 @@ change_HKG_Socialist_Construction_dynamic24 = yes
 			tag = DSC
 			}
 		}
+		offset = {
+			x = -10
+			trigger = {
+				has_country_flag=xggm
+			}
+		}
 		available = {
-					is_in_faction = no
+			is_in_faction = no
 
 		}
 
-		bypass = {
-
-		}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
