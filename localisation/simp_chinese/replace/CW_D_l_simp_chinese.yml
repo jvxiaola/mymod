@@ -78,8 +78,6 @@ XIN_Militarize_productical_corps_effect_tt: "军区§G军事素养§!将§G微�
 XIN_martial_to_production_effect_tt: "军区§O军备工业§!§C生产效率§!将§G微略加快§!！"
 XIN_alleviating_ethnic_tensions_effect_tt: "军区§8民族主义情绪§!将§G降低一级§!！"
 Preparation_status_tt: "军区§R政治理论素养§!效果：\n$communism_drift$:[?ps_1|=2+]\n$army_org$:[?ps_2|=0+]\n\n§G军事素养§!效果：\n$army_org_factor$:[?ps_3|=%+]\n$army_attack_factor$:[?ps_4|=%+]\n$terrain_penalty_reduction$:[?ps_5|=%+]\n\n军区§O军备工业§!效果：\n$production_speed_arms_factory_factor$:[?ps_6|=%+]\n$industrial_capacity_factory$:[?ps_7|=%+]\n$line_change_production_efficiency_factor$:[?ps_8|=%+]\n$production_factory_max_efficiency_factor$:[?ps_9|=%+]\n$production_factory_start_efficiency_factor$:[?ps_10|=%+]\n$production_factory_efficiency_gain_factor$:[?ps_11|=%+]\n$production_lack_of_resource_penalty_factor$:[?ps_12|=%-]\n\n§8民族主义情绪§!等级：[?Nationalist_sentiment_military|0]\n$nationalist_drift$:[?ps_13|=2-]\n$war_support_factor$:[?ps_14|=%+]\n$stability_factor$:[?ps_15|=%+]\n$army_org_factor$:[?ps_16|=%+]\n$army_attack_factor$:[?ps_17|=%+]"
-Military_Industry_effect_tt: "\n\n军区§O军备工业§!效果："
-Nationalist_sentiment_military_effect_tt: ""
 NOT_completed_tt: "§R边疆危机内容尚未完成，敬请期待！§!"
 
 #事件
