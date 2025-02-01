@@ -11,7 +11,7 @@ country_event = {
 	option = {	
 		name = CW_Diverse.1.a
 
-		country_event = { id = CW_Diverse.2 days = 75}
+		country_event = { id = CW_Diverse.2 days = 35 }
 		add_manpower = -200
 		add_equipment_to_stockpile = {
 			type = Inf_equipment
