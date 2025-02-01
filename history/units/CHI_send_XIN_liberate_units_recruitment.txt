@@ -1,15 +1,13 @@
 ﻿division_template = {
-	name = "解放军师级征招机动单位"
-	division_names_group = CHI_XIN_recruitment_01
+	name = "解放军师级征招机械单位"
+	division_names_group = CHI_XIN_recruitment_02
 	is_locked = yes
 	regiments = {
-		Mot_Inf_Bat = { x = 0 y = 0 }
-		Mot_Inf_Bat = { x = 0 y = 1 } 
-		Mot_Inf_Bat = { x = 1 y = 0 } 
-		Mot_Inf_Bat = { x = 1 y = 1 } Mot_Inf_Bat = { x = 1 y = 2 }
+		Mech_Inf_Bat = { x = 0 y = 0 } Mech_Inf_Bat = { x = 0 y = 1 }
+		Mech_Inf_Bat = { x = 0 y = 2 } Mech_Inf_Bat = { x = 0 y = 3 }
 	}
 	support = {
-		Mot_Recce_Comp = { x = 0 y = 0 }
+		Mech_Recce_Comp = { x = 0 y = 0 }
 	}
 }
 
@@ -20,7 +18,7 @@ units = {
 			name_order = 1
 		}
 		location = 10674
-		division_template = "解放军师级征招机动单位"
+		division_template = "解放军师级征招机械单位"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1
 		start_manpower_factor = 1
@@ -32,7 +30,7 @@ units = {
 			name_order = 2
 		}
 		location = 3167
-		division_template = "解放军师级征招机动单位"
+		division_template = "解放军师级征招机械单位"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1
 		start_manpower_factor = 1

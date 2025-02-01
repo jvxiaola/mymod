@@ -34,7 +34,8 @@ division_template = {
 	is_locked = yes
 	regiments = {
 		Mech_Inf_Bat = { x = 0 y = 0 } Mech_Inf_Bat = { x = 0 y = 1 }
-		Mech_Inf_Bat = { x = 0 y = 2 }
+		Mech_Inf_Bat = { x = 0 y = 2 } Mech_Inf_Bat = { x = 0 y = 3 }
+		Mech_Inf_Bat = { x = 0 y = 4 }
 		L_Inf_Bat = { x = 1 y = 3 }
 	}
 	support = {

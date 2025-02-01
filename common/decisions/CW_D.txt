@@ -1,9 +1,15 @@
 CW_D_category = {
 #边疆危机
 
-#民族紧张度等级增加
+#军区民族紧张度
 
-#国策路线选择
+#国策路线选择(未更新)
+
+#联络中亚国家(未更新)
+
+#联络俄罗斯(未更新)
+
+#组织中亚联合反恐行动(未更新)
 
 #组织作战技能训练
 CHI_Organize_combat_skills_training = {
@@ -133,41 +139,28 @@ CHI_Mediate_ethnic_emotions_XIN = {
 		factor = 1
 	}
 	}
-#派遣征招机械师(未更新)
-	Organize_breakthroughs_food_industry = { 
+#派遣征招机械师(更新中)
+	CHI_Dispatch_recruit_mechanics_XIN = { 
 	icon = GFX_decision_generic_research
 	visible = {
-		has_completed_focus = Organize_breakthroughs_food_industry
-		has_idea = CHI_shipinganquanwenti
+		always = yes
 	}
 	available = {
-		custom_trigger_tooltip = {
-			tooltip = CHI_Partial_nationalize_light_manufacturing_industry_goal_achieve_tt
-			check_variable = { Partial_nationalize_light_manufacturing_industry_progress = 100 }
-		}
+		country_exists = XIN
 	}
-	custom_cost_trigger = {
-		check_variable = { treasury > 20.0 }
-		has_political_power > 49
-	}
-	custom_cost_text = cost_20_0_potical_power_50
-	complete_effect = {
-		set_temp_variable = { treasury_change = -20 }
-		modify_treasury_effect = yes
-		add_political_power = -50
-	}
-	days_remove = 140
+	cost = 50
+	days_remove = 45
+	days_re_enable = 25
 	remove_effect = {
-		swap_ideas = {
-			remove_idea = CHI_shipinganquanwenti
-			add_idea = CHI_BETTER_FOOD_SAFTY
+		XIN = {
+			load_oob = CHI_send_XIN_liberate_units_recruitment
 		}
 	}
 	ai_will_do = {
 		factor = 1
 	}
 	}
-#派遣征招步兵师
+#派遣征招步兵师(未更新)
 	Raise_worker_salaries_benefits = {
 	icon = GFX_decision_ger_mefo_bills
 	visible = {
@@ -198,7 +191,7 @@ CHI_Mediate_ethnic_emotions_XIN = {
 		factor = 1
 	}
 	}
-#组织联合反恐行动
+#组织联合反恐行动(未更新)
 Raise_worker_salaries_benefits = {
 	icon = GFX_decision_ger_mefo_bills
 	visible = {
