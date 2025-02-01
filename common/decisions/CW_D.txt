@@ -106,7 +106,7 @@ CHI_Mediate_ethnic_emotions_XIN = {
 		}
 	}
 #提升军备生产(未更新)
-	Partial_nationalize_light_manufacturing_industry = { 
+	Partial_nationalize_light_manufacturing_industry = {
 	icon = GFX_decision_generic_factory
 	visible = {
 		always = yes

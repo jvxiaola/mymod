@@ -936,7 +936,7 @@ CHI_add_Organize_state_enterprises_modifier = {
     set_variable = { sc_spsic = 0 }  set_variable = { sc_spsrf = 0.05 } set_variable = { sc_lbs = 0 } 
     set_variable = { sc_spsbf = 0 }      set_variable = { sc_spg = 0.05 }       set_variable = { sc_ls = 0.05 } 
     set_variable = { sc_regm = 0.05 } 
-    add_dynamic_modifier = { modifier = State_Collaboration }
+    add_dynamic_modifier = { modifier = State_Collaboration scope = DSC }
   }
 
   CHI_add_CHI_Collaboration_internet_modifier = {
@@ -1002,7 +1002,7 @@ CHI_add_Organize_state_enterprises_modifier = {
 STATE_add_modifier_New_people_commune = {
     set_variable = { Npc_lrf = 0 } set_variable = { Npc_ls = 0 } set_variable = { Npc_lor = 0 } 
     set_variable = { Npc_ps = 0 } set_variable = { Npc_rfpg = 0 }
-    add_dynamic_modifier = { modifier = CHI_New_people_commune }
+    add_dynamic_modifier = { modifier = CHI_New_people_commune scope = DSC }
 }
 STATE_oacr = {
       add_to_variable = { Npc_ps = 0.03 } add_to_variable = { Npc_rfpg = 0.02 } 
