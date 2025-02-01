@@ -689,7 +689,6 @@ add_political_power = 100
 	add_ideas = CHI_party_before_guns
 	add_ideas = people_amry1
 	unlock_decision_tooltip = CHI_CHI_NEW_people_war1
-	remove_ideas = red_weidui1
 		}
 	}
 
