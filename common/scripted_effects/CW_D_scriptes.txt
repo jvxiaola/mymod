@@ -179,7 +179,15 @@ XIN_Militarize_productical_corps = {
 	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_7 = mq_c }
 	max_XIN_military_equipment = yes
 }
-
+Enhance_military_production = {
+	custom_effect_tooltip = XIN_Enhance_military_production_effect_tt
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_8 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_9 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_10 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_11 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = -0.03 } add_variable = { ps_12 = mq_c }
+	max_XIN_military_equipment = yes
+}
 Accelerate_construct_m_i = {
 	custom_effect_tooltip = XIN_Accelerate_construct_m_i_effect_tt
 	set_temp_variable = { mq_c = 0.50 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_6 = mq_c }
