@@ -20,24 +20,17 @@ country_event = {
 		ai_chance = {factor=100}
 		CHI = {
 			annex_country = {
-		target = ROOT
-		transfer_troops = yes
-	}
-	}
-		
-
+				target = ROOT
+				transfer_troops = yes
+			}
 		}
+	}
 		option={
 		name = Chuanyu.1.a.o2
-
-		CHI={ end_puppet = DSC }
+		CHI = { end_puppet = DSC }
+		inherit_technology = CHI
 		}
-
-		
-
-		
-
-		}
+}
 
 
 
