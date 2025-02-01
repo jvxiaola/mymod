@@ -304,3 +304,39 @@ civl_start_xin_or_effect = {
 		}
 	}
 }
+Dispatch_ID_recruitment = {
+
+if = {
+	limit = { has_template = "解放军师级征招步战单位" }
+	random_owned_state = {
+		create_unit = {
+			division = "name = \"解放军师级征招步战单位\" division_template = \"解放军师级征招步战单位\" start_experience_factor = 0.8"
+			owner = XIN
+			count = 3
+		}
+	}
+}
+else = {
+	division_template = {
+		name = "解放军师级征招步战单位"
+		division_names_group = CHI_XIN_recruitment_03
+		is_locked = yes
+		support = {
+			L_Engi_Comp = { x = 0 y = 0 } Arty_Battery = { x = 0 y = 1 }
+		}
+		regiments = {
+			L_Inf_Bat = { x = 0 y = 0 } L_Inf_Bat = { x = 0 y = 1 }
+			L_Inf_Bat = { x = 0 y = 2 } L_Inf_Bat = { x = 0 y = 3 }
+			L_Inf_Bat = { x = 1 y = 0 } L_Inf_Bat = { x = 1 y = 1 }
+		}
+		priority = 0
+	}
+	random_owned_state = {
+		create_unit = {
+			division = "name = \"解放军师级征招步战单位\" division_template = \"解放军师级征招步战单位\" start_experience_factor = 0.8"
+			owner = XIN
+			count = 3
+		}
+	}
+}
+}

@@ -65,3 +65,20 @@ CHI_XIN_recruitment_02 = {
 		7 = { "甘肃第%d动员征调机械师" }
 	}
 }
+
+division_names_group = CHI_XIN_recruitment_03 = {
+	name = "解放军师级征招步战单位"
+	for_countries = { XIN }
+
+	division_types = { "Mech_Inf_Bat" }
+
+	ordered = {
+		1 = { "北京第%d动员征调步战师" }
+		2 = { "上海第%d动员征调步战师" }
+		3 = { "辽宁第%d动员征调步战师" }
+		4 = { "四川第%d动员征调步战师" }
+		5 = { "广东第%d动员征调步战师" }
+		6 = { "内蒙第%d动员征调步战师" }
+		7 = { "甘肃第%d动员征调步战师" }
+	}
+}
