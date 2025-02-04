@@ -35,6 +35,23 @@ DSC_MAOPAIJUECE = {
 	}
 }
 
+
+DSC_zuzhimaopai = {
+	priority = { base = 2000 }
+	allowed = { 
+
+	}
+
+
+
+		icon = GFX_decision_CUB_train_chi
+
+	visible = {
+
+		has_country_flag = zuzhimaopai
+	}
+}
+
 China_erp_category = {
 	allowed = { 
 		OR = { 

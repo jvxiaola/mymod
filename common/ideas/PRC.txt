@@ -4134,6 +4134,104 @@ communism_drift = 0.70
 
 
 
+
+
+
+
+CHI_gongchanguimuo = {
+	picture = vladimir_lenin
+
+allowed = {
+}
+
+
+modifier = {
+
+	political_power_gain = 0.25
+
+}
+}
+
+CHI_gongchanguimuo1 = {
+	picture = vladimir_lenin
+
+allowed = {
+}
+
+
+modifier = {
+
+
+	political_power_gain = 0.5
+
+}
+}
+
+CHI_gongchanguimuo2 = {
+	picture = vladimir_lenin
+
+allowed = {
+}
+
+
+modifier = {
+
+
+	political_power_gain = 0.75
+
+}
+}
+
+
+CHI_gongchanguimuo3 = {
+	picture = vladimir_lenin
+
+allowed = {
+}
+
+
+modifier = {
+
+
+	political_power_gain = 1
+
+}
+}
+
+
+
+
+CHI_zzb = {
+	picture = vladimir_lenin
+
+allowed = {
+}
+
+
+modifier = {
+
+
+communism_drift = 0.1
+political_power_gain = -1
+}
+}
+
+
+DSC_gcd = {
+	picture = vladimir_lenin
+
+allowed = {
+}
+
+
+modifier = {
+
+
+communism_drift = 0.1
+political_power_gain= 0.5
+}
+}
+
 	}
 
 }

@@ -1497,6 +1497,15 @@ CHI_zzgs_desc: "在政治与各项工作的关系上，要把政治摆在统帅�
 CHI_zzgs1_desc: "在政治与各项工作的关系上，要把政治摆在统帅的地位"
 CHI_zzgs2_desc: "在政治与各项工作的关系上，要把政治摆在统帅的地位"
 
+
+
+CHI_zzb: "政治报"
+DSC_gcd: "共产党"
+CHI_gongchanguimuo: "社会主义组织规模：微不可差"
+CHI_gongchanguimuo1: "社会主义组织规模：初具规模"
+CHI_gongchanguimuo2: "社会主义组织规模：四通八达"
+CHI_gongchanguimuo3: "社会主义组织规模：网络密布"
+
 CHI_jihuashengyu2:0 "计划生育：两个孩子"
 CHI_jihuashengyu2_desc:0 "计划生育是中华人民共和国的一项基本国策，即按人口政策有计划的生育。1982年9月被定为基本国策，同年12月写入宪法。主要内容及目的是：提倡晚婚、晚育，少生、优生，从而有计划地控制人口。"
 CHI_GGKF:0 "改革开放"
@@ -1763,6 +1772,13 @@ DSC_MAOPAIJUECE: "星星之火"
 DSC_MAOPAIJUECE_desc: "红旗卷起农奴戟，黑手高悬霸主鞭。为有牺牲多壮志，敢教日月换新天"
 DSC_maopaizhenghe: "发动革命"
 
+DSC_zuzhimaopai: "整合马克思主义小组"
+#DSC_MAOPAIJUECE_desc: "红旗卷起农奴戟，黑手高悬霸主鞭。为有牺牲多壮志，敢教日月换新天"
+DSC_maopaixiaozuzhenghe1: "整合重庆马克思主义小组"
+DSC_maopaixiaozuzhenghe2: "整合西四川马克思主义小组"
+DSC_maopaixiaozuzhenghe3: "整合东四川马克思主义小组"
+
+DSC_maopaizhenghe: "发动革命"
 
 CHI_cw: "第二次中国内战"
 CHI_Ensure_control: "确保§Y[From.GetName]§!的控制权"
@@ -2446,6 +2462,9 @@ DSC_shiyicidaibiaodahui: "党的第十一次代表大会"
 DSC_shiyicidaibiaodahui_desc: "我们将继续毛主席的党的事业"
 
 
+DSC_gmxingdong: "准备革命"
+DSC_shiyicidaibiaodahui_desc: "我们已经准备好进行革命了"
+
 
 
   DSC_QIYI: "接管政府"
@@ -2476,6 +2495,22 @@ DSC_duijunzhengfu_desc:"军政府的反动性质川渝人民深有体会，我�
 
 DSC_duilaozuopai:"进攻老左派"
 DSC_duilaozuopai_desc:"老左派自称社会主义者，实际上推行的却是实实在在的资产阶级专政，为了完成中国的无产阶级革命，是马虎不得的"
+
+
+DSC_fanjunfaxuanchuan: "反军阀宣传"
+DSC_fanjunfaxuanchuan_desc: "派遣我们的党员去工厂里，去民兵组织那里去做思想工作"
+
+DSC_shengtoumingbing: "渗透民兵"
+DSC_shengtoumingbing_desc: "派遣我们的党员去民兵哪里做政治工作"
+
+DSC_mingbingshengtou: "渗透民兵"
+
+DSC_fanduijunfaxuanchuan: "反军阀宣传"
+
+DSC_wuqiduoqu: "夺取武器"
+
+DSC_duoquwuqi: "夺取武器"
+DSC_duoquwuqi_desc: ""
 
 
   Chuanyu.1.t: "中华人民共和国（左派）的命令"

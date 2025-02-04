@@ -492,8 +492,8 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
-
+			set_country_flag = zuzhimaopai
+			add_ideas = CHI_gongchanguimuo
 		}
 	}
 
@@ -526,7 +526,7 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
+add_ideas = CHI_zzb
 
 		}
 	}
@@ -560,7 +560,7 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
+add_ideas = DSC_gcd
 
 		}
 	}
@@ -571,9 +571,9 @@ focus_tree = {
 		icon = CPC_convene_National_People_Congress
 		x = 5
 
-		y = 4
+		y = 3
 
-		cost = 5
+		cost = 1
 		allow_branch = {
 
 		}
@@ -599,6 +599,153 @@ focus_tree = {
 custom_effect_tooltip = "革命决议将会可用"
 		}
 	}
+
+
+
+
+	focus = {
+		id = DSC_duoquwuqi
+		icon = CPC_convene_National_People_Congress
+		x = 3
+
+		y = 4
+
+		cost = 1
+		allow_branch = {
+
+		}
+		prerequisite = {
+			focus=DSC_shiyicidaibiaodahui
+		 }
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+		completion_reward = {
+custom_effect_tooltip = "解锁相关决议"
+		}
+	}
+
+
+	focus = {
+		id = DSC_shengtoumingbing
+		icon = CPC_convene_National_People_Congress
+		x = 5
+
+		y = 4
+
+		cost = 1
+		allow_branch = {
+
+		}
+		prerequisite = {
+			focus=DSC_shiyicidaibiaodahui
+		 }
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+		completion_reward = {
+custom_effect_tooltip = "解锁相关决议"
+		}
+	}
+
+	focus = {
+		id = DSC_fanjunfaxuanchuan
+		icon = CPC_convene_National_People_Congress
+		x = 7
+
+		y = 4
+
+		cost = 1
+		allow_branch = {
+
+		}
+		prerequisite = {
+			focus=DSC_shiyicidaibiaodahui
+		 }
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+		completion_reward = {
+custom_effect_tooltip = "解锁相关决议"
+		}
+	}	
+
+
+
+	focus = {
+		id = DSC_gmxingdong
+		icon = CPC_convene_National_People_Congress
+		x = 5
+
+		y = 5
+
+		cost = 1
+		allow_branch = {
+
+		}
+		prerequisite = {
+			focus=DSC_shengtoumingbing
+		 }
+
+		 prerequisite = {
+			focus=DSC_duoquwuqi
+		 }
+
+		 prerequisite = {
+			focus=DSC_fanjunfaxuanchuan
+		 }
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}	
+
 
 	focus = {
 		id = DSC_QIYI
