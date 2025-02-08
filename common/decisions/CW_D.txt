@@ -1,21 +1,8 @@
-CW_D_category = {
-#边疆危机
 
-#军区民族紧张度
-
-#国策路线选择(未更新)
-
-#联络中亚国家(未更新)
-
-#联络俄罗斯(未更新)
-
-#组织中亚联合反恐行动(未更新)
-
-#组织作战技能训练
-CHI_Organize_combat_skills_training = {
+CW_D_category = { #边疆危机 #军区民族紧张度 #国策路线选择(未更新) #联络中亚国家(未更新) #联络俄罗斯(未更新) #组织中亚联合反恐行动(未更新)
+CHI_Organize_combat_skills_training = { #组织作战技能训练
 		icon = GFX_decision_gre_investment_decisions
 		visible = {
-			always = yes
 			tag = CHI
 			has_country_flag = XIN_attacked
 		}
@@ -47,7 +34,7 @@ CHI_Organize_combat_skills_training = {
 	CHI_Organize_political_work_XIN = {
 		icon = GFX_decision_generic_assassination
 		visible = {
-			always = yes tag = CHI
+			tag = CHI
 			has_country_flag = XIN_attacked
 		}
 		available = {
@@ -74,7 +61,7 @@ CHI_Organize_combat_skills_training = {
 #调解军区民族情绪
 CHI_Mediate_ethnic_emotions_XIN = { 
 		icon = GFX_decision_refinery_dec
-		visible = { always = yes has_country_flag = XIN_attacked tag = CHI }
+		visible = { has_country_flag = XIN_attacked tag = CHI }
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = CHI_Mediate_ethnic_emotions_XIN_trigger_tt
@@ -98,7 +85,7 @@ CHI_Mediate_ethnic_emotions_XIN = {
 	CHI_Accelerate_construct_m_i_XIN = {
 		icon = GFX_decision_generic_construction
 		visible = {
-			always = yes has_country_flag = XIN_attacked tag = CHI
+			has_country_flag = XIN_attacked tag = CHI
 		}
 		available = {
 			custom_trigger_tooltip = {
@@ -122,7 +109,7 @@ CHI_Mediate_ethnic_emotions_XIN = {
 	CHI_Enhance_military_production_XIN = {
 	icon = GFX_decision_generic_factory
 	visible = {
-		always = yes has_country_flag = XIN_attacked tag = CHI
+		has_country_flag = XIN_attacked tag = CHI
 	}
 	available = {
 		custom_trigger_tooltip = {
@@ -146,7 +133,7 @@ CHI_Mediate_ethnic_emotions_XIN = {
 	CHI_Dispatch_recruit_mechanics_XIN = { 
 	icon = GFX_decision_generic_research has_country_flag = XIN_attacked tag = CHI
 	visible = {
-		always = yes
+		has_country_flag = XIN_attacked tag = CHI
 	}
 	available = {
 		country_exists = XIN
@@ -168,7 +155,7 @@ CHI_Mediate_ethnic_emotions_XIN = {
 	CHI_Dispatch_ID_recruitment_XIN = {
 	icon = GFX_decision_ger_mefo_bills
 	visible = {
-		always = yes has_country_flag = XIN_attacked tag = CHI
+		has_country_flag = XIN_attacked tag = CHI
 	}
 	available = {
 		country_exists = XIN
@@ -178,7 +165,9 @@ CHI_Mediate_ethnic_emotions_XIN = {
 	days_remove = 35
 	days_re_enable = 15
 	remove_effect = {
-		Dispatch_ID_recruitment = yes
+		XIN = {
+			Dispatch_ID_recruitment = yes
+		}
 	}
 	ai_will_do = {
 		factor = 1
@@ -206,7 +195,7 @@ CHI_Organize_antiterrorism_operations = {
 	days_remove = 5
 	days_re_enable = 2
 	remove_effect = {
-		event = { CW_Diverse.7 }
+		event = { id = CW_Diverse.7 }
 	}
 	ai_will_do = {
 		factor = 1

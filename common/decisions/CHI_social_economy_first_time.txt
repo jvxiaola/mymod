@@ -15,7 +15,7 @@ China_edd_category = {
 			always = yes
 		}
 		days_remove = 60
-		days_re_enable = 90
+		days_re_enable = 30
 		modifier = {
             industrial_capacity_factory = 0.05
 			production_factory_efficiency_gain_factor = 0.05
@@ -42,7 +42,7 @@ China_edd_category = {
 		}
 		cost = 50
 		days_remove = 30
-		days_re_enable = 50
+		days_re_enable = 20
 		modifier = {
 			consumer_goods_expected_value = -0.05
 			production_factory_max_efficiency_factor = 0.10
@@ -74,7 +74,7 @@ China_edd_category = {
 		}
 		cost = 50
 		days_remove = 90
-		days_re_enable = 120
+		days_re_enable = 30
 		modifier = {
 			consumer_goods_expected_value = -0.10
 			political_power_cost = 0.10
@@ -107,7 +107,7 @@ China_edd_category = {
 		}
 		cost = 50
 		days_remove = 90
-		days_re_enable = 120
+		days_re_enable = 30
 		modifier = {
 			consumer_goods_expected_value = -0.10
 			foreign_influence_defense_modifier = -0.15
@@ -149,7 +149,7 @@ China_edd_category = {
 			hidden_effect = { set_temp_variable = { treasury_change = -10 } modify_treasury_effect = yes }
 		}
 		days_remove = 90
-		days_re_enable = 120
+		days_re_enable = 30
 		modifier = {
 			consumer_goods_expected_value = 0.10
 			communism_drift = 0.15
