@@ -16,6 +16,8 @@ CHI_Organize_combat_skills_training = {
 		icon = GFX_decision_gre_investment_decisions
 		visible = {
 			always = yes
+			tag = CHI
+			has_country_flag = XIN_attacked
 		}
 		available = {
 			custom_trigger_tooltip = {
@@ -45,7 +47,8 @@ CHI_Organize_combat_skills_training = {
 	CHI_Organize_political_work_XIN = {
 		icon = GFX_decision_generic_assassination
 		visible = {
-			always = yes
+			always = yes tag = CHI
+			has_country_flag = XIN_attacked
 		}
 		available = {
 			custom_trigger_tooltip = {
@@ -71,7 +74,7 @@ CHI_Organize_combat_skills_training = {
 #调解军区民族情绪
 CHI_Mediate_ethnic_emotions_XIN = { 
 		icon = GFX_decision_refinery_dec
-		visible = { always = yes }
+		visible = { always = yes has_country_flag = XIN_attacked tag = CHI }
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = CHI_Mediate_ethnic_emotions_XIN_trigger_tt
@@ -95,7 +98,7 @@ CHI_Mediate_ethnic_emotions_XIN = {
 	CHI_Accelerate_construct_m_i_XIN = {
 		icon = GFX_decision_generic_construction
 		visible = {
-			always = yes
+			always = yes has_country_flag = XIN_attacked tag = CHI
 		}
 		available = {
 			custom_trigger_tooltip = {
@@ -119,7 +122,7 @@ CHI_Mediate_ethnic_emotions_XIN = {
 	CHI_Enhance_military_production_XIN = {
 	icon = GFX_decision_generic_factory
 	visible = {
-		always = yes
+		always = yes has_country_flag = XIN_attacked tag = CHI
 	}
 	available = {
 		custom_trigger_tooltip = {
@@ -141,7 +144,7 @@ CHI_Mediate_ethnic_emotions_XIN = {
 	}
 #派遣征招机械师(更新中)
 	CHI_Dispatch_recruit_mechanics_XIN = { 
-	icon = GFX_decision_generic_research
+	icon = GFX_decision_generic_research has_country_flag = XIN_attacked tag = CHI
 	visible = {
 		always = yes
 	}
@@ -165,7 +168,7 @@ CHI_Mediate_ethnic_emotions_XIN = {
 	CHI_Dispatch_ID_recruitment_XIN = {
 	icon = GFX_decision_ger_mefo_bills
 	visible = {
-		always = yes
+		always = yes has_country_flag = XIN_attacked tag = CHI
 	}
 	available = {
 		country_exists = XIN
@@ -185,6 +188,7 @@ CHI_Mediate_ethnic_emotions_XIN = {
 CHI_Organize_antiterrorism_operations = {
 	icon = GFX_decision_ger_mefo_bills
 	visible = {
+		tag = CHI
 		XIN = {
 			any_controlled_state = {
 				will_be_attacked_by_islam = yes
