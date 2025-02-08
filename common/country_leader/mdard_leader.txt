@@ -8,6 +8,26 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	Non_governmental_riots = {
+		random = no
+		stability_factor = -0.3
+		political_power_factor = -0.40
+		experience_gain_army = -0.75
+		popularity_attack_modifier = 0.10
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	freedom_fighter = {
+		random = no
+		political_power_factor = -0.10
+		democratic_acceptance = 50
+		communism_acceptance = -100
+		neutrality_acceptance = -100
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	man_of_steel = {
 		random = no
 		stability_factor = 0.1

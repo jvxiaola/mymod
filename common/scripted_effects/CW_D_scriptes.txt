@@ -288,20 +288,7 @@ XIN_Nationalist_sentiment_military_effect = {
 
 civl_start_xin_or_effect = {
 	hidden_effect = {
-		if = {
-			limit = {
-				any_owned_state = {
-					will_be_attacked_by_islam = yes
-				}
-			}
-			every_owned_state = {
-				limit = { will_be_attacked_by_islam = yes }
-				set_demilitarized_zone = no
-				remove_dynamic_modifier = { modifier = extrameal_islam_attack1 } remove_dynamic_modifier = { modifier = extrameal_islam_attack2 }
-				remove_dynamic_modifier = { modifier = extrameal_islam_attack3 } remove_dynamic_modifier = { modifier = extrameal_islam_attack4 } 
-				remove_dynamic_modifier = { modifier = extrameal_islam_attack5 }
-			}
-		}
+		Set_ETK = yes
 	}
 }
 Dispatch_ID_recruitment = {
@@ -339,4 +326,50 @@ else = {
 		}
 	}
 }
+}
+
+Set_ETK = {
+	every_owned_state = {
+		limit = { OR = { has_dynamic_modifier = { modifier = extrameal_islam_attack3 } has_dynamic_modifier = { modifier = extrameal_islam_attack4 } has_dynamic_modifier = { modifier = extrameal_islam_attack5 } } }
+		set_demilitarized_zone = no
+		transfer_state_to = ETK
+
+		ETK = {
+			every_owned_state = {
+			limit = { OR = { has_dynamic_modifier = { modifier = extrameal_islam_attack1 } has_dynamic_modifier = { modifier = extrameal_islam_attack2 } has_dynamic_modifier = { modifier = extrameal_islam_attack3 } has_dynamic_modifier = { modifier = extrameal_islam_attack4 } has_dynamic_modifier = { modifier = extrameal_islam_attack5 } } }
+			set_demilitarized_zone = no
+			remove_dynamic_modifier = { modifier = extrameal_islam_attack1 } remove_dynamic_modifier = { modifier = extrameal_islam_attack2 }
+			remove_dynamic_modifier = { modifier = extrameal_islam_attack3 } remove_dynamic_modifier = { modifier = extrameal_islam_attack4 } 
+			remove_dynamic_modifier = { modifier = extrameal_islam_attack5 }
+		}
+		create_country_leader = {
+			name = XIN_terriost
+			picture = "XIN_terriost.dds"
+			ideology = fascism
+			traits = { Non_governmental_riots freedom_fighter }
+		}
+		set_popularities = {
+			democratic = 49
+			communism = 0
+			fascism = 50
+			neutrality = 0
+			nationalist = 1
+		}
+		set_politics = {
+			ruling_party = fascism
+			last_election = "1996.12.11"
+			election_frequency = 60
+			elections_allowed = no
+		}
+		inherit_technology = XIN
+		add_to_array = { ruling_party = 11 }
+		add_to_array = { gov_coalition_array = 1 }
+		add_to_array = { gov_coalition_array = 0 }
+		set_variable = { party_pop_array^11 = 0.50 } 
+		set_variable = { party_pop_array^1 = 0.27 } 
+		set_variable = { party_pop_array^0 = 0.22 } 
+		update_party_name = yes
+		start_politics_input = yes
+		}
+	}
 }

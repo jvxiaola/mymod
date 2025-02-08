@@ -301,7 +301,7 @@
  generic.conservatism_desc: "保守主义是指广泛的温和右翼意识形态，主张传统文化、团结和稳定的生活方式的重要性。保守派倾向于反对国家干预社会和经济事务，并常常认为减少监管将导致民众更大的社会流动性。"
  generic.conservatism_icon: "£generic_conservatism_small"
  generic.liberalism: "£generic_liberalism_small 自由主义"
- generic.liberalism_desc: "自由主义是一种中间派意识形态，提倡个人权利并强调自由而不是国家权力的扩张。自由主义者倾向于在与世界其他地区进行自由贸易的自由市场框架内支持进步的社会政策。"
+ generic.liberalism_desc: "自由主义是一种中间派意识形态，提倡个人权利并强调自由而不是国家权力的扩张。自由主义者倾向于在与世界其他地区进行自由贸易的自由市场框架内支持进步的社会政策,但其结果往往是政府变为西方傀儡。"
  generic.liberalism_icon: "£generic_liberalism_small"
  generic.socialism: "£generic_socialism_small 社会民主主义"
  generic.socialism_desc: "社会民主主义指的是比大多数自由主义分支更大程度地支持经济和社会正义的广泛左翼意识形态。社会民主党寻求使资本主义人性化，以遏制不平等、压迫并促进民主。"
