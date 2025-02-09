@@ -122,6 +122,32 @@ country_event = {
 			1207 = { transfer_state_to = XIN add_core_of = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack1} }
 			1208 = { transfer_state_to = XIN add_core_of = XIN }
 			XIN = {
+				add_opinion_modifier = {
+					target = CHI
+					modifier = chinese_MRG
+				}
+				reverse_add_opinion_modifier = {
+					target = CHI
+					modifier = chinese_MRG 
+				}
+	
+				add_opinion_modifier = {
+					target = DSC
+					modifier = chinese_MRG
+				}
+				reverse_add_opinion_modifier = {
+					target = DSC
+					modifier = chinese_MRG 
+				}
+	
+				add_opinion_modifier = {
+					target = HKG
+					modifier = chinese_MRG
+				}
+				reverse_add_opinion_modifier = {
+					target = HKG
+					modifier = chinese_MRG 
+				}
 				create_country_leader = {
 					name = "Qiu yanhan"
 					picture = "qiu_yanhan.dds"
@@ -189,7 +215,7 @@ country_event = {
 	title = CW_Diverse.5.t
 	desc = CW_Diverse.5.d
 	is_triggered_only = no
-	mean_time_to_happen = { days = 15 }
+	mean_time_to_happen = { days = 40 }
 	trigger = {
 		tag = CHI
 		XIN = {
@@ -211,9 +237,50 @@ country_event = {
 				limit = { random_controlled_state = { is_sourth_XJ = yes will_be_attacked_by_islam = yes } }
 				random_controlled_state = { 
 					limit = { is_sourth_XJ = yes will_be_attacked_by_islam = yes }
-					extrameal_islam_leavel_up = yes
-					set_demilitarized_zone = yes
-					add_manpower = -150
+					random_list = {
+						5 = { 
+							add_manpower = -200 
+							damage_building = {
+								type = infrastructure
+								damage = 0.45
+							}
+							damage_building = {
+								type = industrial_complex
+								damage = 0.75
+							}
+					} 
+					10 = { 
+						add_manpower = -150 
+						damage_building = {
+							type = infrastructure
+							damage = 0.35
+						}
+						damage_building = {
+							type = industrial_complex
+							damage = 0.50
+						}
+					} 
+					15 = { 
+						add_manpower = -100 
+						damage_building = {
+							type = infrastructure
+							damage = 0.10
+						}
+						damage_building = {
+							type = industrial_complex
+							damage = 0.28
+						}
+					} 
+					20 = { 
+						add_manpower = -50 
+						damage_building = {
+							type = industrial_complex
+							damage = 0.12
+						}
+					} 
+					30 = { add_manpower = -27 } 
+					10 = { add_manpower = -10 }
+					}
 				}
 			}
 		}

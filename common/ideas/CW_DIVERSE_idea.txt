@@ -17,34 +17,6 @@ ideas = {
 			can_create_factions = no
 			can_join_factions = no
 		}
-		on_add = {
-			add_opinion_modifier = {
-				target = CHI
-				modifier = chinese_MRG
-			}
-			reverse_add_opinion_modifier = {
-				target = CHI
-				modifier = chinese_MRG 
-			}
-
-			add_opinion_modifier = {
-				target = DSC
-				modifier = chinese_MRG
-			}
-			reverse_add_opinion_modifier = {
-				target = DSC
-				modifier = chinese_MRG 
-			}
-
-			add_opinion_modifier = {
-				target = HKG
-				modifier = chinese_MRG
-			}
-			reverse_add_opinion_modifier = {
-				target = HKG
-				modifier = chinese_MRG 
-			}
-		}
 		}
 
 		Militarical_economy_remain = {

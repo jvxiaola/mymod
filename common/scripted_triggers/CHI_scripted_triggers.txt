@@ -49,3 +49,9 @@ will_be_attacked_by_islam = {
 		has_dynamic_modifier = { modifier = extrameal_islam_attack4 } has_dynamic_modifier = { modifier = extrameal_islam_attack5 }
 	}
 }
+will_up_attacked_by_islam_leavel = {
+	OR = {
+		has_dynamic_modifier = { modifier = extrameal_islam_attack1 } has_dynamic_modifier = { modifier = extrameal_islam_attack2 }
+		has_dynamic_modifier = { modifier = extrameal_islam_attack3 } has_dynamic_modifier = { modifier = extrameal_islam_attack4 } 
+	}
+}
