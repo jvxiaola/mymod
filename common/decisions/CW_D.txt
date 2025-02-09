@@ -79,6 +79,7 @@ CHI_Mediate_ethnic_emotions_XIN = {
 		days_re_enable = 10
 		remove_effect = {
 			XIN = {
+				custom_effect_tooltip = XIN_alleviating_ethnic_tensions_effect_tt
 				add_to_variable = { Nationalist_sentiment_military = -1 }
 				XIN_Nationalist_sentiment_military_effect = yes
 			}
@@ -205,7 +206,7 @@ CHI_Organize_antiterrorism_operations = {
 	days_remove = 5
 	days_re_enable = 2
 	remove_effect = {
-		event = { id = CW_Diverse.7 }
+		country_event = { id = CW_Diverse.7 }
 	}
 	ai_will_do = {
 		factor = 1
