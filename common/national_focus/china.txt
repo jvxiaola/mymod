@@ -6684,7 +6684,7 @@ prerequisite = { focus = CHI_som_dec }
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {		
-			     create_country_leader = {
+		create_country_leader = {
          name = "温家宝"
          picture = "Wen_Jiabao.dds"
          expire = "2020.1.1"

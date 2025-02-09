@@ -329,10 +329,12 @@ else = {
 }
 
 Set_ETK = {
-	every_owned_state = {
-		limit = { OR = { has_dynamic_modifier = { modifier = extrameal_islam_attack3 } has_dynamic_modifier = { modifier = extrameal_islam_attack4 } has_dynamic_modifier = { modifier = extrameal_islam_attack5 } } }
-		set_demilitarized_zone = no
-		transfer_state_to = ETK
+	XIN = {
+		every_owned_state = {
+			limit = { OR = { has_dynamic_modifier = { modifier = extrameal_islam_attack3 } has_dynamic_modifier = { modifier = extrameal_islam_attack4 } has_dynamic_modifier = { modifier = extrameal_islam_attack5 } } }
+			set_demilitarized_zone = no
+			transfer_state_to = ETK
+		}
 	}
 		ETK = {
 			every_owned_state = {
