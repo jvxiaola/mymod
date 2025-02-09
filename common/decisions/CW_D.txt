@@ -9,9 +9,11 @@ CHI_Organize_combat_skills_training = { #组织作战技能训练
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = CHI_max_milliary_trigger_tt
-				check_variable = { ps_3 < 0.05 }
-				check_variable = { ps_3 < 0.10 }
-				check_variable = { ps_3 < 0.15 }
+				XIN = {
+					check_variable = { ps_3 < 0.05 }
+					check_variable = { ps_3 < 0.10 }
+					check_variable = { ps_3 < 0.15 }
+				}
 			}
 		}
 		custom_cost_trigger = { command_power > 4 }
@@ -40,8 +42,10 @@ CHI_Organize_combat_skills_training = { #组织作战技能训练
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = CHI_Organize_political_work_XIN_trigger_tt
-				check_variable = { ps_1 < 0.20 }
-				check_variable = { ps_2 < 5 }
+				XIN = {
+					check_variable = { ps_1 < 0.20 }
+					check_variable = { ps_2 < 5 }
+				}
 			}
 		}
 		cost = 25
@@ -65,7 +69,9 @@ CHI_Mediate_ethnic_emotions_XIN = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = CHI_Mediate_ethnic_emotions_XIN_trigger_tt
-				check_variable = { Nationalist_sentiment_military > 0 }
+				XIN = {
+					check_variable = { Nationalist_sentiment_military > 0 }
+				}
 			}
 		}
 		cost = 35
@@ -90,7 +96,9 @@ CHI_Mediate_ethnic_emotions_XIN = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = CHI_Accelerate_construct_m_i_XIN_trigger_tt
-				check_variable = { ps_6 < 0.15 } check_variable = { ps_6 < 0.20 }
+				XIN = {
+					check_variable = { ps_6 < 0.15 } check_variable = { ps_6 < 0.20 }
+				}
 			}
 		}
 		days_remove = 25
@@ -114,7 +122,9 @@ CHI_Mediate_ethnic_emotions_XIN = {
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = CHI_Enhance_military_production_XIN_trigger_tt
-			check_variable = { Partial_nationalize_light_manufacturing_industry_progress < 100 }
+			XIN = {
+				check_variable = { ps_8 < 0.20 } check_variable = { ps_10 < 0.25 }
+			}
 		}
 	}
 	modifier = { civilian_factory_use = 5 }
