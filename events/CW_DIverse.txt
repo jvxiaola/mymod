@@ -307,21 +307,25 @@ country_event = {
 	}
 	option = {
 		name = CW_Diverse.7.a
+		random_list = {
+			25 = { CHI = { army_experience = 5 } XIN = { army_experience = 5 } }
+			50 = { CHI = { army_experience = 10 } XIN = { army_experience = 10 } }
+			25 = { CHI = { army_experience = 15 } XIN = { army_experience = 15 } }
+		}
 		XIN = {
 			if = {
-				limit = {
-					XIN = {
+				if = {
+					limit = {
 						check_variable = { ps_1 > 0.04 }
 						check_variable = { ps_2 > 1 }
 					}
+					custom_effect_tooltip = XIN_alleviating_ethnic_tensions_effect_tt
+					add_to_variable = { Nationalist_sentiment_military = -1 }
+					XIN_Nationalist_sentiment_military_effect = yes
 				}
-				custom_effect_tooltip = XIN_alleviating_ethnic_tensions_effect_tt
-				add_to_variable = { Nationalist_sentiment_military = -1 }
-				XIN_Nationalist_sentiment_military_effect = yes
+				else_if = { custom_effect_tooltip = XIN_might_alleviating_ethnic_tensions_effect_tt }
 			}
-			else_if = {
-				custom_effect_tooltip = XIN_might_alleviating_ethnic_tensions_effect_tt
-			}
+			
 			if = {
 				random_controlled_state = { 
 					limit = { is_demilitarized_zone = yes }
@@ -330,11 +334,6 @@ country_event = {
 						5 = { add_manpower = -200 } 10 = { add_manpower = -150 } 15 = { add_manpower = -100 } 20 = { add_manpower = -50 } 30 = { add_manpower = -27 } 10 = { add_manpower = -10 }
 					}
 				}
-			}
-			random_list = {
-				25 = { CHI = { army_experience = 5 } XIN = { army_experience = 5 } }
-				50 = { CHI = { army_experience = 10 } XIN = { army_experience = 10 } }
-				25 = { CHI = { army_experience = 15 } XIN = { army_experience = 15 } }
 			}
 		}
 	}
