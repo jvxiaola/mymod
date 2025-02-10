@@ -24,6 +24,8 @@ capital = 592
 	add_dynamic_modifier = {
 		modifier = Preparation_status
 	}
+	set_variable = { var = corporate_tax_rate value = 15 } set_variable = { var = population_tax_rate value = 45 }
+
 	set_variable = { ps_1 = 0 } set_variable = { ps_2 = 0 } 
 	set_variable = { ps_3 = -0.05 } set_variable = { ps_4 = -0.05 } set_variable = { ps_5 = -0.05 }
 
