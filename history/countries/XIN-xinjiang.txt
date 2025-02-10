@@ -62,11 +62,11 @@ capital = 592
 	startup_influence = yes
 
 	set_popularities = {
-		democratic = 20.0
-		communism = 10.0
-		fascism = 60.0
-		neutrality = 10.0
-		nationalist = 0.0
+		democratic = 8
+		communism = 35
+		fascism = 0
+		neutrality = 7
+		nationalist = 50
 	}
 	set_politics = {
 		ruling_party = fascism
@@ -79,18 +79,18 @@ capital = 592
 	start_politics_input = yes
 	### Party Popularities
 	set_variable = { party_pop_array^0 = 0 } #Western_Autocracy
-	set_variable = { party_pop_array^1 = 0.10 } #conservatism
-	set_variable = { party_pop_array^2 = 0.10 } #liberalism
+	set_variable = { party_pop_array^1 = 0 } #conservatism
+	set_variable = { party_pop_array^2 = 0 } #liberalism
 	set_variable = { party_pop_array^3 = 0 } #socialism
-	set_variable = { party_pop_array^4 = 0 } #Communist-State
+	set_variable = { party_pop_array^4 = 0.30 } #Communist-State
 	set_variable = { party_pop_array^5 = 0 } #anarchist_communism
-	set_variable = { party_pop_array^6 = 0.10 } #Conservative
+	set_variable = { party_pop_array^6 = 0.20 } #Conservative
 	set_variable = { party_pop_array^7 = 0 } #Autocracy
 	set_variable = { party_pop_array^8 = 0 } #Mod_Vilayat_e_Faqih
 	set_variable = { party_pop_array^9 = 0 } #Vilayat_e_Faqih
-	set_variable = { party_pop_array^10 = 0.10 } #Kingdom
-	set_variable = { party_pop_array^11 = 0.50 } #Caliphate
-	set_variable = { party_pop_array^12 = 0.10 } #Neutral_Muslim_Brotherhood
+	set_variable = { party_pop_array^10 = 0 } #Kingdom
+	set_variable = { party_pop_array^11 = 0 } #Caliphate
+	set_variable = { party_pop_array^12 = 0 } #Neutral_Muslim_Brotherhood
 	set_variable = { party_pop_array^13 = 0 } #Neutral_Autocracy
 	set_variable = { party_pop_array^14 = 0 } #Neutral_conservatism
 	set_variable = { party_pop_array^15 = 0 } #oligarchism
@@ -100,13 +100,38 @@ capital = 592
 	set_variable = { party_pop_array^19 = 0 } #Neutral_Communism
 	set_variable = { party_pop_array^20 = 0 } #Nat_Populism
 	set_variable = { party_pop_array^21 = 0 } #Nat_Fascism
-	set_variable = { party_pop_array^22 = 0 } #Nat_Autocracy
+	set_variable = { party_pop_array^22 = 0.50 } #Nat_Autocracy
 	set_variable = { party_pop_array^23 = 0 } #Monarchist
 
 	### Ruling Party
 	add_to_array = { ruling_party = 22 }
 	startup_politics = yes
+	add_opinion_modifier = {
+		target = CHI
+		modifier = chinese_MRG
+	}
+	reverse_add_opinion_modifier = {
+		target = CHI
+		modifier = chinese_MRG 
+	}
 
+	add_opinion_modifier = {
+		target = DSC
+		modifier = chinese_MRG
+	}
+	reverse_add_opinion_modifier = {
+		target = DSC
+		modifier = chinese_MRG 
+	}
+
+	add_opinion_modifier = {
+		target = HKG
+		modifier = chinese_MRG
+	}
+	reverse_add_opinion_modifier = {
+		target = HKG
+		modifier = chinese_MRG 
+	}
 
 }
 2017.1.1 = {

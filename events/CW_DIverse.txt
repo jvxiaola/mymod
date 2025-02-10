@@ -122,32 +122,6 @@ country_event = {
 			1207 = { transfer_state_to = XIN add_core_of = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack1} }
 			1208 = { transfer_state_to = XIN add_core_of = XIN }
 			XIN = {
-				add_opinion_modifier = {
-					target = CHI
-					modifier = chinese_MRG
-				}
-				reverse_add_opinion_modifier = {
-					target = CHI
-					modifier = chinese_MRG 
-				}
-	
-				add_opinion_modifier = {
-					target = DSC
-					modifier = chinese_MRG
-				}
-				reverse_add_opinion_modifier = {
-					target = DSC
-					modifier = chinese_MRG 
-				}
-	
-				add_opinion_modifier = {
-					target = HKG
-					modifier = chinese_MRG
-				}
-				reverse_add_opinion_modifier = {
-					target = HKG
-					modifier = chinese_MRG 
-				}
 				create_country_leader = {
 					name = "Qiu yanhan"
 					picture = "qiu_yanhan.dds"
@@ -155,13 +129,6 @@ country_event = {
 					traits = {}
 				}
 				set_cosmetic_tag = ETK_JUNQU
-				set_popularities = {
-				democratic = 8
-				communism = 35
-				fascism = 0.0
-				neutrality = 7
-				nationalist = 50
-			}
 			set_politics = {
 				ruling_party = nationalist
 				last_election = "1996.12.11"
@@ -172,11 +139,6 @@ country_event = {
 			add_to_array = { ruling_party = 22 } #军区								
 			add_to_array = { gov_coalition_array = 4 }
 			add_to_array = { gov_coalition_array = 6 }
-			set_variable = { party_pop_array^22 = 0.50 } #军区	
-			set_variable = { party_pop_array^4 = 0.20 } #军区	
-			set_variable = { party_pop_array^6 = 0.15 } #军区	
-			update_party_name = yes
-			start_politics_input = yes
 			load_oob = XIN_liberate_units
 			mark_focus_tree_layout_dirty = yes#刷新国策树
 			give_military_access = CHI
