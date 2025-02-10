@@ -51,11 +51,8 @@ country_event = {
 				add_ideas =  CHI_Strict_military_control
 				set_country_flag = chuanyumaopai
 				set_political_power = 0
-
 				add_stability = 0.1
 				mark_focus_tree_layout_dirty = yes
-
-
 				}
 
 

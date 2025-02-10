@@ -673,13 +673,11 @@ focus = {
 		available_if_capitulated = no
 		completion_reward = {
 			hidden_effect = {
-				country_event ={id =  prc1.158 days = 10 }
-				country_event ={id =  prc1.82 days = 20 }
-				country_event ={id =  prc1.159 days = 25 }
+				country_event ={id = prc1.158 days = 10 }
+				country_event ={id = prc1.82 days = 20 }
+				country_event ={id = prc1.159 days = 25 }
 			}
 			country_event=prc1.157
-
-
 		}
 		}	
 
