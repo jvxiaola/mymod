@@ -198,7 +198,7 @@ CHI_Organize_antiterrorism_operations = {
 	available = {
 		XIN = {
 			any_controlled_state = {
-				will_be_attacked_by_islam = yes
+				is_demilitarized_zone = yes
 			}
 		}
 	}

@@ -74,7 +74,7 @@ country_event = {
 				
 		option = {
 			name = Chuanyu.3.a 
-			country_event ={id =  chuanyu.4 days = 7 }
+			country_event ={id = chuanyu.4 days = 7 }
 						
 				
 			}
