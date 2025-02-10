@@ -2949,7 +2949,7 @@ DSC_MAOPAIJUECE = {
 has_completed_focus = DSC_duoquwuqi
 		}
 
-		cost = 5
+		cost = 50
 		fire_only_once = no
 		visible = {
 
@@ -2967,22 +2967,20 @@ has_completed_focus = DSC_duoquwuqi
 	has_completed_focus = DSC_shengtoumingbing
 			}
 	
-			cost = 5
+			cost = 100
 			fire_only_once = no
 			visible = {
 	
 			}
 			custom_cost_trigger = {
 
-				has_political_power > 99
+
 			}
 			
 
 			
 			complete_effect = {
-	hidden_effect = {
-		political_power_gain = -100
-	}
+
 	
 			}
 			}
@@ -2994,20 +2992,18 @@ has_completed_focus = DSC_duoquwuqi
 		has_completed_focus = DSC_fanjunfaxuanchuan
 				}
 		
-				cost = 5
+				cost = 50
 				fire_only_once = yes
 				visible = {
 		
 				}
 				custom_cost_trigger = {
 
-					has_political_power > 99
+
 				}
 				complete_effect = {
 		
-					hidden_effect = {
-						political_power_gain = -100
-					}
+
 				}
 				}
 
