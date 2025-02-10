@@ -1,9 +1,4 @@
 
-
-
-
-
-
 add_namespace = chuanyu
 
 
@@ -17,7 +12,7 @@ country_event = {
 
 	option = {
 		name = Chuanyu.1.a.o1
-		ai_chance = {factor=100}
+		ai_chance = { factor = 100 }
 		CHI = {
 			annex_country = {
 				target = ROOT
@@ -25,16 +20,11 @@ country_event = {
 			}
 		}
 	}
-		option={
+	option = {
 		name = Chuanyu.1.a.o2
 		CHI = { end_puppet = DSC }
-		inherit_technology = CHI
-		}
+	}
 }
-
-
-
-
 
 
 		country_event = {

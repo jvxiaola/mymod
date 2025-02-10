@@ -5395,29 +5395,19 @@ set_country_flag = CHI_no_shanghaicommune
 
 
 DSC = {
+	inherit_technology = CHI
 	set_variable = { gdp_capita = 90.415 }
 	set_variable = { gdp_per_capita = 3.415 }
-
 	add_state_core = 586
 	add_state_core = 585	
 	add_state_core = 583
-
-	
 	transfer_state = 586
 	transfer_state = 585
 	transfer_state = 583
-
-
-
-
-
-
-
-
 	}
 
 puppet = DSC
-DSC={
+DSC = {
 DSC_Legal_amendments_dynamic_scriptes = yes
 
 

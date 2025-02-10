@@ -188,12 +188,7 @@ country_event = {
 			}
 			}
 			CHI = {
-				teleport_armies = {
-					limit = {
-						tag = XIN
-					}
-					to_state_array = owned_controlled_states
-				}
+				complete_national_focus = XIN_troubled_times
 				add_equipment_to_stockpile = {
 					type = Inf_equipment
 					amount = -5000
