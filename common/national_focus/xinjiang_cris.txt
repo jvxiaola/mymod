@@ -24,8 +24,7 @@
 	
 		joint_trigger = { tag = CHI original_tag = DSC original_tag = HKG }
 	
-		completion_reward = {
-		}
+		completion_reward = {}
 	
 		ai_will_do = { factor = 0.5 }
 	}
