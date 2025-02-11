@@ -288,11 +288,17 @@ XIN_Nationalist_sentiment_military_effect = {
 
 civl_start_xin_or_effect = {
 	hidden_effect = {
+		XIN = {
+			every_owned_state = {
+				limit = { OR = { has_dynamic_modifier = { modifier = extrameal_islam_attack3 } has_dynamic_modifier = { modifier = extrameal_islam_attack4 } has_dynamic_modifier = { modifier = extrameal_islam_attack5 } } }
+				set_demilitarized_zone = no
+				transfer_state_to = ETK
+			}
+		}
 		Set_ETK = yes
 	}
 }
 Dispatch_ID_recruitment = {
-
 if = {
 	limit = { has_template = "解放军师级征招步战单位" }
 	random_owned_state = {
@@ -329,16 +335,9 @@ else = {
 }
 
 Set_ETK = {
-	XIN = {
-		every_owned_state = {
-			limit = { OR = { has_dynamic_modifier = { modifier = extrameal_islam_attack3 } has_dynamic_modifier = { modifier = extrameal_islam_attack4 } has_dynamic_modifier = { modifier = extrameal_islam_attack5 } } }
-			set_demilitarized_zone = no
-			transfer_state_to = ETK
-		}
-	}
 		ETK = {
 			every_owned_state = {
-			limit = { OR = { has_dynamic_modifier = { modifier = extrameal_islam_attack1 } has_dynamic_modifier = { modifier = extrameal_islam_attack2 } has_dynamic_modifier = { modifier = extrameal_islam_attack3 } has_dynamic_modifier = { modifier = extrameal_islam_attack4 } has_dynamic_modifier = { modifier = extrameal_islam_attack5 } } }
+			limit = { OR = { has_dynamic_modifier = { modifier = extrameal_islam_attack3 } has_dynamic_modifier = { modifier = extrameal_islam_attack4 } has_dynamic_modifier = { modifier = extrameal_islam_attack5 } } }
 			set_demilitarized_zone = no
 			remove_dynamic_modifier = { modifier = extrameal_islam_attack1 } remove_dynamic_modifier = { modifier = extrameal_islam_attack2 }
 			remove_dynamic_modifier = { modifier = extrameal_islam_attack3 } remove_dynamic_modifier = { modifier = extrameal_islam_attack4 } 
@@ -350,27 +349,41 @@ Set_ETK = {
 			ideology = fascism
 			traits = { Non_governmental_riots freedom_fighter }
 		}
-		set_popularities = {
-			democratic = 49
-			communism = 0
-			fascism = 50
-			neutrality = 0
-			nationalist = 1
-		}
-		set_politics = {
-			ruling_party = fascism
-			last_election = "1996.12.11"
-			election_frequency = 60
-			elections_allowed = no
-		}
 		inherit_technology = XIN
-		add_to_array = { ruling_party = 11 }
-		add_to_array = { gov_coalition_array = 1 }
-		add_to_array = { gov_coalition_array = 0 }
-		set_variable = { party_pop_array^11 = 0.50 } 
-		set_variable = { party_pop_array^1 = 0.27 } 
-		set_variable = { party_pop_array^0 = 0.22 } 
-		update_party_name = yes
-		start_politics_input = yes
+		}
+		if = {
+			division_template = {
+				name = "东突厥斯坦圣战军"
+				division_names_group = ETK_exis_01
+				is_locked = yes
+				regiments = {
+					L_Inf_Bat = { x = 0 y = 0 } L_Inf_Bat = { x = 0 y = 1 }
+					L_Inf_Bat = { x = 0 y = 2 } L_Inf_Bat = { x = 0 y = 3 }
+				}
+			}
+			every_owned_state = {
+				limit = { has_dynamic_modifier = { modifier = extrameal_islam_attack3 }}
+				create_unit = {
+					division = "name = \"东突厥斯坦圣战军\" division_template = \"东突厥斯坦圣战军\" start_experience_factor = 0.8"
+					owner = ETK
+					count = 1
+				}
+			}
+			every_owned_state = {
+				limit = { has_dynamic_modifier = { modifier = extrameal_islam_attack4 }}
+				create_unit = {
+					division = "name = \"东突厥斯坦圣战军\" division_template = \"东突厥斯坦圣战军\" start_experience_factor = 0.8"
+					owner = ETK
+					count = 2
+				}
+			}
+			every_owned_state = {
+				limit = { has_dynamic_modifier = { modifier = extrameal_islam_attack5 }}
+				create_unit = {
+					division = "name = \"东突厥斯坦圣战军\" division_template = \"东突厥斯坦圣战军\" start_experience_factor = 0.8"
+					owner = ETK
+					count = 3
+				}
+			}
 		}
 }

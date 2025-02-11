@@ -66,7 +66,7 @@ CHI_XIN_recruitment_02 = {
 	}
 }
 
-division_names_group = CHI_XIN_recruitment_03 = {
+CHI_XIN_recruitment_03 = {
 	name = "解放军师级征招步战单位"
 	for_countries = { XIN }
 
@@ -80,5 +80,16 @@ division_names_group = CHI_XIN_recruitment_03 = {
 		5 = { "广东第%d动员征调步战师" }
 		6 = { "内蒙第%d动员征调步战师" }
 		7 = { "甘肃第%d动员征调步战师" }
+	}
+}
+
+ETK_exis_01 = {
+	name = "东突厥斯坦圣战军"
+	for_countries = { ETK }
+
+	division_types = { "Mech_Inf_Bat" }
+
+	ordered = {
+		1 = { "东突厥斯坦第%d圣战军" }
 	}
 }
