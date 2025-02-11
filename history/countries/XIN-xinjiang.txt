@@ -1,5 +1,6 @@
 capital = 592
 2000.1.1 = {
+	set_cosmetic_tag = ETK_JUNQU
 	set_variable = { gdp_per_capita = 3.452 }
 	add_ideas = {
 		Military_region_government
@@ -69,9 +70,9 @@ capital = 592
 		nationalist = 50
 	}
 	set_politics = {
-		ruling_party = fascism
-		last_election = "1940.1.1"
-		election_frequency = 48
+		ruling_party = nationalist
+		last_election = "1996.12.11"
+		election_frequency = 60
 		elections_allowed = no
 	}
 
@@ -105,6 +106,8 @@ capital = 592
 
 	### Ruling Party
 	add_to_array = { ruling_party = 22 }
+	add_to_array = { gov_coalition_array = 4 }
+	add_to_array = { gov_coalition_array = 6 }
 	startup_politics = yes
 	add_opinion_modifier = {
 		target = CHI

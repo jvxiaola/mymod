@@ -123,22 +123,12 @@ country_event = {
 			1208 = { transfer_state_to = XIN add_core_of = XIN }
 			XIN = {
 				create_country_leader = {
-					name = "Qiu yanhan"
+					name = "邱衍汉"
 					picture = "qiu_yanhan.dds"
 					ideology = XIN_MR
 					traits = {}
 				}
-				set_cosmetic_tag = ETK_JUNQU
-			set_politics = {
-				ruling_party = nationalist
-				last_election = "1996.12.11"
-				election_frequency = 60
-				elections_allowed = no
-			}
-			inherit_technology = CHI
-			add_to_array = { ruling_party = 22 } #军区								
-			add_to_array = { gov_coalition_array = 4 }
-			add_to_array = { gov_coalition_array = 6 }
+			inherit_technology = CHI							
 			load_oob = XIN_liberate_units
 			mark_focus_tree_layout_dirty = yes#刷新国策树
 			give_military_access = CHI
