@@ -114,25 +114,25 @@ max_XIN_millatry = {
 
 XIN_military_qualities_effect = {
 	custom_effect_tooltip = XIN_military_qualities_effect_tt
-	set_temp_variable = { mq_c = 1 } multiply_temp_variable = { mq_c = 0.01 } add_variable = { ps_3 = mq_c }
-	set_temp_variable = { mq_c = 1 } multiply_temp_variable = { mq_c = 0.02 } add_variable = { ps_4 = mq_c }
-	set_temp_variable = { mq_c = 1 } multiply_temp_variable = { mq_c = 0.02 } add_variable = { ps_5 = mq_c }
+	set_temp_variable = { mq_c = 1 } multiply_temp_variable = { mq_c = 0.01 } add_to_variable = { ps_3 = mq_c }
+	set_temp_variable = { mq_c = 1 } multiply_temp_variable = { mq_c = 0.02 } add_to_variable = { ps_4 = mq_c }
+	set_temp_variable = { mq_c = 1 } multiply_temp_variable = { mq_c = 0.02 } add_to_variable = { ps_5 = mq_c }
 	max_XIN_millatry = yes
 }
 
 XIN_Expand_conscription = {
 	custom_effect_tooltip = XIN_Expand_conscription_effect_tt
-	set_temp_variable = { mq_c = -0.75 } multiply_temp_variable = { mq_c = 0.01 } add_variable = { ps_3 = mq_c }
-	set_temp_variable = { mq_c = -0.75 } multiply_temp_variable = { mq_c = 0.02 } add_variable = { ps_4 = mq_c }
-	set_temp_variable = { mq_c = -0.75 } multiply_temp_variable = { mq_c = 0.02 } add_variable = { ps_5 = mq_c }
+	set_temp_variable = { mq_c = -0.75 } multiply_temp_variable = { mq_c = 0.01 } add_to_variable = { ps_3 = mq_c }
+	set_temp_variable = { mq_c = -0.75 } multiply_temp_variable = { mq_c = 0.02 } add_to_variable = { ps_4 = mq_c }
+	set_temp_variable = { mq_c = -0.75 } multiply_temp_variable = { mq_c = 0.02 } add_to_variable = { ps_5 = mq_c }
 	max_XIN_millatry = yes
 }
 
 XIN_Temporary_training = {
 	custom_effect_tooltip = XIN_Temporary_training_effect_tt
-	set_temp_variable = { mq_c = 0.5 } multiply_temp_variable = { mq_c = 0.01 } add_variable = { ps_3 = mq_c }
-	set_temp_variable = { mq_c = 0.5 } multiply_temp_variable = { mq_c = 0.02 } add_variable = { ps_4 = mq_c }
-	set_temp_variable = { mq_c = 0.5 } multiply_temp_variable = { mq_c = 0.02 } add_variable = { ps_5 = mq_c }
+	set_temp_variable = { mq_c = 0.5 } multiply_temp_variable = { mq_c = 0.01 } add_to_variable = { ps_3 = mq_c }
+	set_temp_variable = { mq_c = 0.5 } multiply_temp_variable = { mq_c = 0.02 } add_to_variable = { ps_4 = mq_c }
+	set_temp_variable = { mq_c = 0.5 } multiply_temp_variable = { mq_c = 0.02 } add_to_variable = { ps_5 = mq_c }
 	max_XIN_millatry = yes
 }
 
@@ -142,8 +142,8 @@ max_XIN_political_modifier = {
 }
 XIN_political_assign_effect = {
 	custom_effect_tooltip = XIN_political_assign_effect_tt
-	set_temp_variable = { mq_c = 1 } multiply_temp_variable = { mq_c = 0.02 } add_variable = { ps_1 = mq_c }
-	set_temp_variable = { mq_c = 1 } multiply_temp_variable = { mq_c = 0.5 } add_variable = { ps_2 = mq_c }
+	set_temp_variable = { mq_c = 1 } multiply_temp_variable = { mq_c = 0.02 } add_to_variable = { ps_1 = mq_c }
+	set_temp_variable = { mq_c = 1 } multiply_temp_variable = { mq_c = 0.5 } add_to_variable = { ps_2 = mq_c }
 	max_XIN_political_modifier = yes
 }
 
@@ -158,40 +158,40 @@ max_XIN_military_equipment = {
 }
 XIN_military_equipment_effect = {
 	custom_effect_tooltip = XIN_military_equipment_effect_tt
-	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_6 = mq_c }
-	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_7 = mq_c }
-	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_8 = mq_c }
-	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_9 = mq_c }
-	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_10 = mq_c }
-	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_11 = mq_c }
-	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = -0.03 } add_variable = { ps_12 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_6 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_7 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_8 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_9 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_10 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_11 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = -0.03 } add_to_variable = { ps_12 = mq_c }
 	max_XIN_military_equipment = yes
 }
 
 XIN_Militarize_productical_corps = {
 	custom_effect_tooltip = XIN_Militarize_productical_corps_effect_tt
-	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.01 } add_variable = { ps_3 = mq_c }
-	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.02 } add_variable = { ps_4 = mq_c }
-	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.02 } add_variable = { ps_5 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.01 } add_to_variable = { ps_3 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.02 } add_to_variable = { ps_4 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.02 } add_to_variable = { ps_5 = mq_c }
 	max_XIN_millatry = yes
 
-	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_6 = mq_c }
-	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_7 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_6 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_7 = mq_c }
 	max_XIN_military_equipment = yes
 }
 Enhance_military_production = {
 	custom_effect_tooltip = XIN_Enhance_military_production_effect_tt
-	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_8 = mq_c }
-	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_9 = mq_c }
-	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_10 = mq_c }
-	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_11 = mq_c }
-	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = -0.03 } add_variable = { ps_12 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_8 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_9 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_10 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_11 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = -0.03 } add_to_variable = { ps_12 = mq_c }
 	max_XIN_military_equipment = yes
 }
 Accelerate_construct_m_i = {
 	custom_effect_tooltip = XIN_Accelerate_construct_m_i_effect_tt
-	set_temp_variable = { mq_c = 0.50 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_6 = mq_c }
-	set_temp_variable = { mq_c = 0.50 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_7 = mq_c }
+	set_temp_variable = { mq_c = 0.50 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_6 = mq_c }
+	set_temp_variable = { mq_c = 0.50 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_7 = mq_c }
 	max_XIN_military_equipment = yes
 	any_owned_state = {
 		limit = {
@@ -226,11 +226,11 @@ Accelerate_construct_m_i = {
 
 XIN_martial_to_production_effect = {
 	custom_effect_tooltip = XIN_martial_to_production_effect_tt
-	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_8 = mq_c }
-	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_9 = mq_c }
-	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_10 = mq_c }
-	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_variable = { ps_11 = mq_c }
-	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = -0.03 } add_variable = { ps_12 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_8 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_9 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_10 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_11 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = -0.03 } add_to_variable = { ps_12 = mq_c }
 	max_XIN_military_equipment = yes
 }
 
