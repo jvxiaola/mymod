@@ -18,7 +18,7 @@ TIB_JUNQU={
 }
 
 
-ETK_JUNQU={
+XIN = {
 
 	color = rgb { 200 100 31 }
 	color_ui = rgb { 245 123 38 }

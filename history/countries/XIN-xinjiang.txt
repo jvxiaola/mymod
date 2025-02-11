@@ -1,6 +1,5 @@
 capital = 592
 2000.1.1 = {
-	set_cosmetic_tag = ETK_JUNQU
 	set_variable = { gdp_per_capita = 3.452 }
 	add_ideas = {
 		Military_region_government

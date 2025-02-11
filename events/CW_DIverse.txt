@@ -181,7 +181,7 @@ country_event = {
 		}
 		XIN = {
 			if = {
-				limit = { random_controlled_state = { is_sourth_XJ = yes will_be_attacked_by_islam = yes } }
+				limit = { any_controlled_state = { is_sourth_XJ = yes will_be_attacked_by_islam = yes } }
 				random_controlled_state = { 
 					limit = { is_sourth_XJ = yes will_be_attacked_by_islam = yes }
 					random_list = {
