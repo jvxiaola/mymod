@@ -5366,9 +5366,8 @@ country_event = {
 	
 	option = {
 		name = prc1.81.o1
-				ai_chance = {factor = 60}
-			add_ideas = patry_fenlie
-			activate_mission = CHI_cw				
+			ai_chance = {factor = 60}
+			add_ideas = patry_fenlie	
 		434 ={ set_state_flag = CHI_Left_State}
 		548 ={ set_state_flag = CHI_Left_State}
 		549 ={ set_state_flag = CHI_Left_State}

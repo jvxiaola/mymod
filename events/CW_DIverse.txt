@@ -42,7 +42,7 @@ country_event = {
 			set_demilitarized_zone = yes
 			add_manpower = -1000
 			damage_building = {
-				tag = offices
+				type = offices
 				damage = 0.65
 			}
 			damage_building = {
@@ -84,7 +84,7 @@ country_event = {
 			set_demilitarized_zone = no
 			add_manpower = -150
 			damage_building = {
-				tag = offices
+				type = offices
 				damage = 0.10
 			}
 			damage_building = {
