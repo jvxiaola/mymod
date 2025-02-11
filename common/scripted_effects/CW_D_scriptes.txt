@@ -244,11 +244,13 @@ XIN_Nsem_10_5_num = {
 	add_to_temp_variable = { temp_Nsm_5_10 = -5 }
 }
 XIN_Nationalist_sentiment_military_10_5_effect = {
-	XIN_Nsem_10_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = 0.10 } set_variable = { ps_8 = mq_c }
-	XIN_Nsem_10_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = 0.10 } set_variable = { ps_9 = mq_c }
-	XIN_Nsem_10_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = -0.06 } set_variable = { ps_10 = mq_c }
-	XIN_Nsem_10_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = -0.03 } set_variable = { ps_11 = mq_c }
-	XIN_Nsem_10_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = 0.02 } set_variable = { ps_11 = mq_c }
+	XIN_Nsem_10_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = 0.10 } set_variable = { ps_13 = mq_c }
+	XIN_Nsem_10_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = 0.10 } set_variable = { ps_14 = mq_c }
+	XIN_Nsem_10_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = -0.06 } set_variable = { ps_15 = mq_c }
+	XIN_Nsem_10_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = -0.03 } set_variable = { ps_16 = mq_c }
+	XIN_Nsem_10_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = 0.02 } set_variable = { ps_17 = mq_c }
+	set_variable = { ps_3_and_ps_16 = ps_3 } add_to_variable = { ps_3_and_ps_16 = ps_16 } 
+	set_variable = { ps_4_and_ps_17 = ps_4 } add_to_variable = { ps_4_and_ps_17 = ps_17 } 
 }
 
 XIN_Nsem_0_5_num = {
@@ -263,11 +265,13 @@ XIN_Nsem_0_5_num = {
 }
 
 XIN_Nationalist_sentiment_military_0_5_effect = {
-	XIN_Nsem_0_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = -0.05 } set_variable = { ps_8 = mq_c }
-	XIN_Nsem_0_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = 0.02 } set_variable = { ps_9 = mq_c }
-	XIN_Nsem_0_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = 0.03 } set_variable = { ps_10 = mq_c }
-	XIN_Nsem_0_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = 0.02 } set_variable = { ps_11 = mq_c }
-	XIN_Nsem_0_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = 0.01 } set_variable = { ps_11 = mq_c }
+	XIN_Nsem_0_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = -0.05 } set_variable = { ps_13 = mq_c }
+	XIN_Nsem_0_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = 0.02 } set_variable = { ps_14 = mq_c }
+	XIN_Nsem_0_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = 0.03 } set_variable = { ps_15 = mq_c }
+	XIN_Nsem_0_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = 0.02 } set_variable = { ps_16 = mq_c }
+	XIN_Nsem_0_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = 0.01 } set_variable = { ps_17 = mq_c }
+	set_variable = { ps_3_and_ps_16 = ps_3 } add_to_variable = { ps_3_and_ps_16 = ps_16 } 
+	set_variable = { ps_4_and_ps_17 = ps_4 } add_to_variable = { ps_4_and_ps_17 = ps_17 } 
 }
 
 XIN_Nationalist_sentiment_military_effect = {

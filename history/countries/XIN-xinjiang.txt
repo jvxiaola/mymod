@@ -36,6 +36,8 @@ capital = 592
 
 	set_variable = { Nationalist_sentiment_military = 10 } set_variable = { ps_13 = 0.50 } set_variable = { ps_14 = 0.50 } 
 	set_variable = { ps_15 = -0.30 } set_variable = { ps_16 = -0.15 } set_variable = { ps_17 = 0.10 }
+	set_variable = { ps_3_and_ps_16 = ps_3 } add_to_variable = { ps_3_and_ps_16 = ps_16 } 
+	set_variable = { ps_4_and_ps_17 = ps_4 } add_to_variable = { ps_4_and_ps_17 = ps_17 } 
 	set_technology = {
 		legacy_doctrines = 1
 		infantry_mass_assault = 1
