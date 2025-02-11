@@ -18,17 +18,6 @@ TIB_JUNQU={
 }
 
 
-XIN = {
-
-	color = rgb { 200 100 31 }
-	color_ui = rgb { 245 123 38 }
-}
-
-
-
-
-
-
 DSC_GMQ={
     color = rgb { 255  20  20 }
     color_ui = rgb { 255 20 20 }

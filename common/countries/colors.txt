@@ -1418,8 +1418,8 @@ XIZ = {
 }
 
 XIN = {
-	color = rgb { 80 115 45 }
-	color_ui = rgb { 222 247 198 }
+	color = rgb { 200 100 31 }
+	color_ui = rgb { 245 123 38 }
 }
 
 PCP = {
