@@ -48,7 +48,7 @@ CHI_Accelerate_construct_m_i_XIN_trigger_tt: "军区§O军备工业§!§G建设�
 CHI_Enhance_military_production_XIN_trigger_tt: "军区§O军备工业§!§C生产效率§!§7尚未达到最大值§!"
 In_Chaos_by_terrist_attck_XIN: "§R正因恐怖袭击而陷入混乱！§!"
 CW_D_category: "§R边疆危机§!"
-
+CW_D_category_desc: "    我国的地区分离主义分子由来已久，在§c1976“平反浪潮”§!与§O“自治区扩大”§!后，地方§B分离主义§!与§g恐怖袭击§!频率达到§R顶峰§!"
 
 #好感
 chinese_MRG: "是中国军区"
