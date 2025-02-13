@@ -166,7 +166,7 @@ country_event = {
 	trigger = {
 		tag = CHI
 		XIN = {
-			random_controlled_state = {
+			any_controlled_state = {
 				will_be_attacked_by_islam = yes
 				is_sourth_XJ = yes
 			}
@@ -181,7 +181,7 @@ country_event = {
 		}
 		XIN = {
 			if = {
-				limit = { random_controlled_state = { is_sourth_XJ = yes will_be_attacked_by_islam = yes } }
+				limit = { any_controlled_state = { is_sourth_XJ = yes will_be_attacked_by_islam = yes } }
 				random_controlled_state = { 
 					limit = { is_sourth_XJ = yes will_be_attacked_by_islam = yes }
 					random_list = {
@@ -308,21 +308,14 @@ country_event = {
 					XIN_Nationalist_sentiment_military_effect = yes
 				
 				}
-			
-			
+				random_controlled_state = { 
+					limit = { is_demilitarized_zone = yes }
+					set_demilitarized_zone = no
+				}
 
-					random_controlled_state = { 
-						limit = { is_demilitarized_zone = yes }
-
-
-						set_demilitarized_zone = no
-
-
-					}
-
-					random_list = {
-						5 = { add_manpower = -200 } 10 = { add_manpower = -150 } 15 = { add_manpower = -100 } 20 = { add_manpower = -50 } 30 = { add_manpower = -27 } 10 = { add_manpower = -10 }
-					}
+				random_list = {
+					5 = { add_manpower = -200 } 10 = { add_manpower = -150 } 15 = { add_manpower = -100 } 20 = { add_manpower = -50 } 30 = { add_manpower = -27 } 10 = { add_manpower = -10 }
+				}
 				}
 			}
 		}

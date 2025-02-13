@@ -192,14 +192,14 @@ CHI_Organize_antiterrorism_operations = {
 	visible = {
 		has_country_flag = XIN_attacked tag = CHI
 		XIN = {
-			random_controlled_state = {
+			any_controlled_state = {
 				will_be_attacked_by_islam = yes
 			}
 		}
 	}
 	available = {
 		XIN = {
-			random_controlled_state = {
+			any_controlled_state = {
 				is_demilitarized_zone = yes
 			}
 		}
