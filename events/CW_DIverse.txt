@@ -286,8 +286,8 @@ country_event = {
 			25 = { CHI = { army_experience = 15 } XIN = { army_experience = 15 } }
 		}
 		XIN = {
+
 			if = {
-				if = {
 					limit = {
 						check_variable = { ps_1 > 0.04 }
 						check_variable = { ps_2 > 1 }
@@ -296,18 +296,35 @@ country_event = {
 					add_to_variable = { Nationalist_sentiment_military = -1 }
 					XIN_Nationalist_sentiment_military_effect = yes
 				}
-				else_if = { custom_effect_tooltip = XIN_might_alleviating_ethnic_tensions_effect_tt }
-			}
+				else_if = { 
+					limit = {
+						
+						check_variable = { ps_1 > 0.04 }
+						check_variable = { ps_2 = 1 }
+					}
+					custom_effect_tooltip = XIN_might_alleviating_ethnic_tensions_effect_tt 
+				
+					add_to_variable = { Nationalist_sentiment_military = -2 }
+					XIN_Nationalist_sentiment_military_effect = yes
+				
+				}
 			
-			if = {
-				random_controlled_state = { 
-					limit = { is_demilitarized_zone = yes }
-					set_demilitarized_zone = no
+			
+
+					random_controlled_state = { 
+						limit = { is_demilitarized_zone = yes }
+
+
+						set_demilitarized_zone = no
+
+
+					}
+
 					random_list = {
 						5 = { add_manpower = -200 } 10 = { add_manpower = -150 } 15 = { add_manpower = -100 } 20 = { add_manpower = -50 } 30 = { add_manpower = -27 } 10 = { add_manpower = -10 }
 					}
 				}
 			}
 		}
-	}
-}
+
+
