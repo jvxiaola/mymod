@@ -187,42 +187,63 @@ country_event = {
 					random_list = {
 						5 = { 
 							add_manpower = -200 
-							damage_building = {
-								type = infrastructure
-								damage = 0.45
+							if = {
+								limit = { infrastructure > 0 }
+								damage_building = {
+									type = infrastructure
+									damage = 0.45
+								}
 							}
-							damage_building = {
-								type = industrial_complex
-								damage = 0.75
+							if = {
+								limit = { industrial_complex > 0 }
+								damage_building = {
+									type = industrial_complex
+									damage = 0.75
+								}
 							}
 					} 
 					10 = { 
 						add_manpower = -150 
-						damage_building = {
-							type = infrastructure
-							damage = 0.35
+						if = {
+							limit = { infrastructure > 0 }
+							damage_building = {
+								type = infrastructure
+								damage = 0.35
+							}
 						}
-						damage_building = {
-							type = industrial_complex
-							damage = 0.50
+						if = {
+							limit = { industrial_complex > 0 }
+							damage_building = {
+								type = industrial_complex
+								damage = 0.50
+							}
 						}
 					} 
 					15 = { 
 						add_manpower = -100 
-						damage_building = {
-							type = infrastructure
-							damage = 0.10
+						if = {
+							limit = { infrastructure > 0 }
+							damage_building = {
+								type = infrastructure
+								damage = 0.10
+							}
 						}
-						damage_building = {
-							type = industrial_complex
-							damage = 0.28
+						if = {
+							limit = { industrial_complex > 0 }
+							damage_building = {
+								type = industrial_complex
+								damage = 0.28
+							}
 						}
 					} 
 					20 = { 
 						add_manpower = -50 
-						damage_building = {
-							type = industrial_complex
-							damage = 0.12
+						if = {
+							limit = { industrial_complex > 0 }
+							damage_building = {
+								type = industrial_complex
+								damage = 0.12
+							}
 						}
 					} 
 					30 = { add_manpower = -27 } 
