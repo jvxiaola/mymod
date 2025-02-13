@@ -166,7 +166,7 @@ country_event = {
 	trigger = {
 		tag = CHI
 		XIN = {
-			any_controlled_state = {
+			random_controlled_state = {
 				will_be_attacked_by_islam = yes
 				is_sourth_XJ = yes
 			}
@@ -181,7 +181,7 @@ country_event = {
 		}
 		XIN = {
 			if = {
-				limit = { any_controlled_state = { is_sourth_XJ = yes will_be_attacked_by_islam = yes } }
+				limit = { random_controlled_state = { is_sourth_XJ = yes will_be_attacked_by_islam = yes } }
 				random_controlled_state = { 
 					limit = { is_sourth_XJ = yes will_be_attacked_by_islam = yes }
 					random_list = {
