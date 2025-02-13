@@ -189,19 +189,10 @@ CHI_Mediate_ethnic_emotions_XIN = {
 #组织军区反恐行动(更新中)
 CHI_Organize_antiterrorism_operations = {
 	icon = GFX_decision_ger_mefo_bills
-	visible = {
-		has_country_flag = XIN_attacked tag = CHI
-		XIN = {
-			any_controlled_state = {
-				will_be_attacked_by_islam = yes
-			}
-		}
-	}
+	visible = { has_country_flag = XIN_attacked tag = CHI }
 	available = {
 		XIN = {
-			any_controlled_state = {
-				is_demilitarized_zone = yes
-			}
+			any_controlled_state = { has_state_flag = In_Chaos_by_terrist_attck_XIN }
 		}
 	}
 	cost = 25
