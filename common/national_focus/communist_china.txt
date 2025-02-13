@@ -1324,11 +1324,8 @@ mutually_exclusive = {focus = PRC_guoyouhua focus = PRC_gyqy focus = PRC_angangx
 		available = {
 						has_completed_focus =CHI_worker_ownership
 						custom_trigger_tooltip = {
-
-
-
-has_country_flag=xggm
-		tooltip = CHI_communist_marx
+						has_country_flag=xggm
+						tooltip = CHI_communist_marx
 				}
 		}
 

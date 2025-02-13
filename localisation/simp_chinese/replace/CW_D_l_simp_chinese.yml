@@ -11,7 +11,7 @@
  XIN_MR_desc: "§Y临时军区政府§! - 中国人民解放军在新疆的历史沿革可以追溯至上世纪40年代“三区革命”中的新疆民族军，解放后成为第一支解放军在疆改编部队。由于新疆在中国特殊的政治，文化，产业及战略地位，新疆军区也与其它军区有着相当独特的区别，如著名的“新疆生产建设兵团”。\n处在对抗极端伊斯兰恐怖主义的第一线，新疆军区的人民解放军为维护中国西部和平稳定——乃至全中亚的长治久安做出了重大贡献。"
  XIN.Communist-State: "£CHI_communism 中国共产党 - §R新毛派§! "
  XIN.Communist-State_icon: "£CHI_communism"
- XIN.Conservative: "£CHI_communism 中国共产党 - §B改革派§! "
+ XIN.Conservative: "£CHI_communism 中国共产党 - §1改革派§! "
  XIN.Conservative_icon: "£CHI_communism"
 #focus、决议
 XIN_troubled_times: "§R多事之秋§!"
@@ -48,7 +48,7 @@ CHI_Accelerate_construct_m_i_XIN_trigger_tt: "军区§O军备工业§!§G建设�
 CHI_Enhance_military_production_XIN_trigger_tt: "军区§O军备工业§!§C生产效率§!§7尚未达到最大值§!"
 In_Chaos_by_terrist_attck_XIN: "§R正因恐怖袭击而陷入混乱！§!"
 CW_D_category: "§R边疆危机§!"
-CW_D_category_desc: "    我国的地区分离主义分子由来已久，在§c1976“平反浪潮”§!与§O“自治区扩大”§!后，地方§B分离主义§!与§g恐怖袭击§!频率达到§R顶峰§!"
+CW_D_category_desc: "    我国的地区分离主义分子由来已久，在§C1976“平反浪潮”§!与§O“自治区扩大”§!后，地方§B分离主义§!与§g恐怖袭击§!频率达到§R顶峰§!。\n近日来中央的一系列政治变化也使得党内出现各类矛盾，疏于对地方分离主义进行及时且有效的打击。"
 
 #好感
 chinese_MRG: "是中国军区"

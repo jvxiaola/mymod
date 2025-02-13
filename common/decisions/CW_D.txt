@@ -142,7 +142,7 @@ CHI_Mediate_ethnic_emotions_XIN = {
 		factor = 1
 	}
 	}
-#派遣征招机械师(更新中)
+#派遣征招机械师
 	CHI_Dispatch_recruit_mechanics_XIN = { 
 	icon = GFX_decision_generic_research
 	visible = {
@@ -164,7 +164,7 @@ CHI_Mediate_ethnic_emotions_XIN = {
 		factor = 1
 	}
 	}
-#派遣征招步兵师(更新中)
+#派遣征招步兵师
 	CHI_Dispatch_ID_recruitment_XIN = {
 	icon = GFX_decision_ger_mefo_bills
 	visible = {
@@ -186,7 +186,7 @@ CHI_Mediate_ethnic_emotions_XIN = {
 		factor = 1
 	}
 	}
-#组织军区反恐行动(更新中)
+#组织军区反恐行动
 CHI_Organize_antiterrorism_operations = {
 	icon = GFX_decision_ger_mefo_bills
 	visible = { has_country_flag = XIN_attacked tag = CHI }
