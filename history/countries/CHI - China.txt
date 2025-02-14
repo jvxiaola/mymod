@@ -10,18 +10,9 @@ add_dynamic_modifier = {
 add_dynamic_modifier = {
     modifier = CHI_Legal_amendments_dynamic
 }
-
-
-
-
-
-
-
-
-
-	set_power_balance = {
-		id = CHI_power_balance
-		set_default = no  # whether or not to reset the power balance to the initial value, default = no
+set_power_balance = {
+	id = CHI_power_balance
+	set_default = no  # whether or not to reset the power balance to the initial value, default = no
 	}
 clamp_variable  = {
     var = CPC_Left
@@ -29,7 +20,6 @@ clamp_variable  = {
 max = 1
 }
     set_variable = { CPC_Left = 0.3	}
-
 clamp_variable  = {
     var = CPC_Dengist
     min = 0
@@ -88,7 +78,15 @@ set_variable = { CHI_Socialist_Construction_dynamic1 = -0.40}
 			set_air_oob = "CHI_2000_nonbba"
 		}
 	}
-
+	if = {
+		limit = {
+			has_dlc = "La Resistance"
+		}
+		create_intelligence_agency = {
+			name = "国家安全部 (MSS)"
+			icon = GFX_intelligence_agency_logo_prc
+		}
+	}
 	if = {
 		limit = { has_dlc = "Gotterdammerung" }
 		set_technology = {

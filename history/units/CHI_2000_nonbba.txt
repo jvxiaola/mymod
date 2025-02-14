@@ -1,0 +1,100 @@
+﻿instant_effect = {
+
+	### Aircraft
+
+	add_equipment_to_stockpile = {
+	type = AS_Fighter2 #J-11
+	amount = 24
+	}
+
+	add_equipment_to_stockpile = {
+	type = AS_Fighter2 #Su-27
+	producer = SOV
+	amount = 48
+	}
+
+	add_equipment_to_stockpile = {
+	type = AS_Fighter1 #J-8
+	amount = 286
+	}
+
+	add_equipment_to_stockpile = {
+	type = MR_Fighter1 #J-7
+	amount = 740
+	}
+
+	add_equipment_to_stockpile = {
+	type = Strike_fighter2 #JH-7
+	amount = 12
+	}
+
+	add_equipment_to_stockpile = {
+	type = Strike_fighter1 #Q-5I
+	amount = 542
+	}
+
+	add_equipment_to_stockpile = {
+	type = strategic_bomber1 #H-6
+	amount = 158
+	}
+
+	add_equipment_to_stockpile = {
+		type = transport_plane2 #Shaanxi Y-8
+		amount = 49
+	}
+	add_equipment_to_stockpile = {
+		type = transport_plane1 #Xian Y-7
+		amount = 93
+	}
+	add_equipment_to_stockpile = {
+		type = transport_plane3 #Ilyushin Il-76MD
+		amount = 20
+		producer = SOV
+	}
+	# Missile OOB
+	if = {
+		limit = {
+			has_dlc = "Gotterdammerung"
+		}
+		add_equipment_to_stockpile = {
+			type = sam_missile_equipment_1
+			amount = 500
+		}
+		add_equipment_to_stockpile = {
+			type = sam_missile_equipment_2
+			amount = 100
+		}
+		add_equipment_to_stockpile = {
+			type = sam_missile_equipment_3
+			amount = 120
+		}
+		add_equipment_to_stockpile = {
+			type = nuclear_missile_equipment_1
+			amount = 20
+		}
+		add_equipment_to_stockpile = {
+			type = nuclear_missile_equipment_2
+			amount = 20
+		}
+		add_equipment_to_stockpile = {
+			type = ballistic_missile_equipment_2
+			amount = 50
+		}
+		add_equipment_to_stockpile = {
+			type = ballistic_missile_equipment_3
+			amount = 230
+		}
+		add_equipment_to_stockpile = {
+			type = guided_missile_equipment_1
+			amount = 362
+		}
+		add_equipment_to_stockpile = {
+			type = guided_missile_equipment_2
+			amount = 900
+		}
+		add_equipment_to_stockpile = {
+			type = guided_missile_equipment_3
+			amount = 280
+		}
+	}
+}
