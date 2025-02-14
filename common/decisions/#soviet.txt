@@ -115,7 +115,7 @@ SOV_Ensure_control = {
 			}
 		}
 		visible = {
-has_idea = SOV_Civil_war_idea
+    		has_idea = SOV_Civil_war_idea
 			FROM = {
 			any_neighbor_state = { has_state_flag = SOV_Left_State } 
 				is_owned_by = ROOT}

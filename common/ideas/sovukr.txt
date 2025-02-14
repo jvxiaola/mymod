@@ -1,6 +1,18 @@
 ideas = {
 
 	country = {
+		SOV_Civil_war_idea = {
+			picture = communism10		
+		allowed = {}
+			
+ 	
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.10
+				consumer_goods_factor = -0.05						
+				defensive_war_stability_factor = 0.5
+				war_stability_factor = 0.5
+			}
+		}
 UKR_nyjth = {
 			picture = agricultural_reforms
 		allowed = {
