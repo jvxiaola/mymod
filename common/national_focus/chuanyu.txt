@@ -597,6 +597,9 @@ add_ideas = DSC_gcd
 		completion_reward = {
 			set_country_flag = gmxingdong
 custom_effect_tooltip = "革命决议将会可用"
+hidden_effect = {
+	country_event = {id=chuanyu.3 days = 6}
+}
 		}
 	}
 
@@ -605,7 +608,7 @@ custom_effect_tooltip = "革命决议将会可用"
 
 	focus = {
 		id = DSC_duoquwuqi
-		icon = CPC_convene_National_People_Congress
+		icon = ak74u
 		x = 3
 
 		y = 4
@@ -639,7 +642,7 @@ custom_effect_tooltip = "解锁相关决议"
 
 	focus = {
 		id = DSC_shengtoumingbing
-		icon = CPC_convene_National_People_Congress
+		icon = focus_ARG_women_in_industry
 		x = 5
 
 		y = 4
@@ -672,7 +675,7 @@ custom_effect_tooltip = "解锁相关决议"
 
 	focus = {
 		id = DSC_fanjunfaxuanchuan
-		icon = CPC_convene_National_People_Congress
+		icon = communist_propaganda
 		x = 7
 
 		y = 4
@@ -707,7 +710,7 @@ custom_effect_tooltip = "解锁相关决议"
 
 	focus = {
 		id = DSC_gmxingdong
-		icon = CPC_convene_National_People_Congress
+		icon = Generic_Socialist_Revolution
 		x = 5
 
 		y = 5
