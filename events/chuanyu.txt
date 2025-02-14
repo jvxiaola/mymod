@@ -67,11 +67,11 @@ country_event = {
 		desc = Chuanyu.3.d
 				
 		is_triggered_only = yes
-				
+		fire_only_once = yes
 				
 		option = {
 			name = Chuanyu.3.a 
-			country_event ={id = chuanyu.4 days = 7 }
+
 						
 				
 			}
@@ -83,11 +83,11 @@ country_event = {
 			desc = chuanyu.4.d
 						
 			is_triggered_only = yes
-						
+			fire_only_once = yes
 						
 			option = {
 				name = chuanyu.4.a 
-				country_event ={id =  chuanyu.5 days = 1 }
+
 								
 						
 				}
@@ -99,12 +99,11 @@ country_event = {
 				desc = chuanyu.5.d
 								
 				is_triggered_only = yes
-								
+				fire_only_once = yes	
 								
 				option = {
 				name = chuanyu.5.a 
 
-				country_event = { id = chuanyu.6 days = 1 }
 
 								
 					}
@@ -118,7 +117,7 @@ country_event = {
 		desc = chuanyu.6.d
 						
 		is_triggered_only = yes
-						
+		fire_only_once = yes
 						
 		option = {
 		name = chuanyu.6.a 
