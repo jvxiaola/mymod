@@ -1,0 +1,62 @@
+# This is available to only the nations who start with the capital in the region
+peaceful_development = {
+	allowed = { always = yes }
+	enable = {
+		has_war = no
+		date < 2013.01.01
+		all_enemy_country = {
+			NOT = {
+				is_neighbor_of = ROOT
+			}
+		}
+	}
+	abort = {
+		OR = {
+			date < 2013.01.01
+			has_war = yes
+			any_enemy_country = { is_neighbor_of = ROOT }
+		}
+	}
+	enable_reverse = {
+       has_war = no 
+		date < 2013.01.01
+		all_enemy_country = {
+			NOT = {
+				is_neighbor_of = ROOT
+			}
+		}
+    }
+	ai_strategy = { type = building_target id = industrial_complex value = 100 }
+	ai_strategy = { type = building_target id = offices value = 150 }
+	ai_strategy = { type = equipment_production_factor id = Air_helicopters value = -150 }
+	ai_strategy = { type = equipment_production_factor id = Air_mech value = -150 }
+	ai_strategy = { type = equipment_production_factor id = strategic_bomber value = -100 }
+	ai_strategy = { type = equipment_variant_production_factor id = small_plane_airframe value = -100 }
+	ai_strategy = { type = equipment_variant_production_factor id = small_plane_strike_airframe value = -100 }
+	ai_strategy = { type = equipment_variant_production_factor id = small_plane_cas_airframe value = -100 }
+	ai_strategy = { type = equipment_variant_production_factor id = small_plane_naval_bomber_airframe value = -100 }
+	ai_strategy = { type = equipment_variant_production_factor id = small_plane_suicide_airframe value = -100 }
+	ai_strategy = { type = equipment_variant_production_factor id = medium_plane_airframe value = -100 }
+	ai_strategy = { type = equipment_variant_production_factor id = medium_plane_fighter_airframe value = -100 }
+	ai_strategy = { type = equipment_variant_production_factor id = medium_plane_cas_airframe value = -75 }
+	ai_strategy = { type = equipment_variant_production_factor id = medium_plane_maritime_patrol_airframe value = -90 }
+	ai_strategy = { type = equipment_variant_production_factor id = medium_plane_suicide_airframe value = -75 }
+	ai_strategy = { type = equipment_variant_production_factor id = medium_plane_air_transport_airframe value = -90 }
+	ai_strategy = { type = equipment_variant_production_factor id = large_plane_airframe value = -80 }
+	ai_strategy = { type = equipment_variant_production_factor id = large_plane_air_transport_airframe value = -90 }
+	ai_strategy = { type = equipment_variant_production_factor id = large_plane_awacs_airframe value = -90 }
+	ai_strategy = { type = equipment_variant_production_factor id = large_plane_cas_airframe value = -100 }
+	ai_strategy = { type = equipment_variant_production_factor id = large_plane_maritime_patrol_airframe value = -100 }
+
+	ai_strategy = { type = equipment_variant_production_factor id = cv_small_plane_airframe value = -100 }
+	ai_strategy = { type = equipment_variant_production_factor id = cv_small_plane_strike_airframe value = -100 }
+	ai_strategy = { type = equipment_variant_production_factor id = cv_small_plane_cas_airframe value = -100 }
+	ai_strategy = { type = equipment_variant_production_factor id = cv_small_plane_naval_bomber_airframe value = -90 }
+	ai_strategy = { type = equipment_variant_production_factor id = cv_small_plane_suicide_airframe value = -100 }
+	ai_strategy = { type = equipment_variant_production_factor id = cv_medium_plane_airframe value = -100 }
+	ai_strategy = { type = equipment_variant_production_factor id = cv_medium_plane_fighter_airframe value = -150 }
+	ai_strategy = { type = equipment_variant_production_factor id = cv_medium_plane_cas_airframe value = -90 }
+	ai_strategy = { type = equipment_variant_production_factor id = cv_medium_plane_maritime_patrol_airframe value = -100 }
+	ai_strategy = { type = equipment_variant_production_factor id = cv_medium_plane_air_transport_airframe value = -100 }
+	ai_strategy = { type = equipment_variant_production_factor id = cv_medium_plane_scout_airframe value = -100 }
+}
