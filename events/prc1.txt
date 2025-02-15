@@ -6596,84 +6596,9 @@ TAI = {
 
 		}
 		}
-	country_event = {
-	id = prc1.114514
-	title = prc1.114514.t
-	desc = prc1.114514.d
-
-
-	is_triggered_only = yes
-
-
-	option = {
-		name = prc1.114514.a #We reject this threat to our independence.
-572 = {
-set_state_name = "托洛茨基格勒"
-	
-}	set_province_name = { id = 7097 name = "章笑语市" }
-
-GXC = {
-transfer_state = 532
-transfer_state = 534
-transfer_state = 574
-transfer_state = 531
-}
-TAI = {
-transfer_state = 537
-transfer_state = 538
-transfer_state = 540
-transfer_state = 536
-transfer_state = 514
-transfer_state = 564
-transfer_state =541
-}
-HNN = {
-transfer_state = 572
-transfer_state = 570
-}
-JXI = {
-transfer_state = 562
-}
-CQQ = {
-transfer_state = 583
-transfer_state = 586
-}
-YUN = {
-transfer_state =578
-}
-GUZ = {
-transfer_state =582
-}
-TIB = {
-transfer_state = 589
-transfer_state =588
-transfer_state =585
-}
-ETK = {
-transfer_state =592
-transfer_state = 591
-}
-MON = {
-transfer_state =556
-transfer_state = 1097
-}
-DQG = {
-transfer_state =555
-transfer_state = 1096
-transfer_state =554
-transfer_state =552
-transfer_state =1095
-}
-CHF = {
-transfer_state = 567
-transfer_state = 544
-transfer_state = 435
-
-
-}
-	}	}
-	
-
+#来看看陀牢的逆天效果
+#set_state_name = "托洛茨基格勒"
+#set_province_name = { id = 7097 name = "章笑语市" }
 country_event = {
 	id = prc1.110
 	title = prc1.110.t
@@ -7674,7 +7599,7 @@ country_event = {
 		limit = {
 			original_tag = HkG
 			}
-			add_idea = CHI_capital_withdrawal1
+			add_ideas = CHI_capital_withdrawal1
 			}
 		}
 	else_if = {
@@ -7683,7 +7608,7 @@ country_event = {
 			original_tag = CHI
 			NOT = { has_idea = CHI_capital_withdrawal1 }
 			}
-			add_idea = CHI_capital_withdrawal2
+			add_ideas = CHI_capital_withdrawal2
 			}
 		}
 	}

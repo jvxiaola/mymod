@@ -1415,11 +1415,9 @@ ideas = {
 		picture = poor_economy
 		allowed = { 
 			OR = { tag = DSC tag = HKG original_tag = CHI } 
-			NOT = {
-				has_idea = CHI_capital_withdrawal2
-				has_idea = CHI_capital_withdrawal3
-				has_idea = CHI_capital_withdrawal4
-			}
+		}
+		cancel = {
+			OR = { has_idea = CHI_capital_withdrawal2 has_idea = CHI_capital_withdrawal3 has_idea = CHI_capital_withdrawal4 }
 		}
 		allowed_civil_war = {
 			always = yes
@@ -1436,10 +1434,9 @@ ideas = {
 		picture = poor_economy
 		allowed = { 
 			OR = { tag = DSC tag = HKG original_tag = CHI } 
-			NOT = {
-				has_idea = CHI_capital_withdrawal3
-				has_idea = CHI_capital_withdrawal4
-			}
+		}
+		cancel = {
+			OR = { has_idea = CHI_capital_withdrawal3 has_idea = CHI_capital_withdrawal4 }
 		}
 		allowed_civil_war = {
 			always = yes
@@ -1456,9 +1453,9 @@ ideas = {
 		picture = arm_une_idea
 		allowed = { 
 			OR = { tag = DSC tag = HKG original_tag = CHI } 
-			NOT = {
-				has_idea = CHI_capital_withdrawal4
-			}
+		}
+		cancel = {
+			OR = { has_idea = CHI_capital_withdrawal4 }
 		}
 		allowed_civil_war = {
 			always = yes
