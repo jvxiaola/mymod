@@ -5,9 +5,9 @@ country_event = {
 	title = CW_Diverse.1.t
 	desc = CW_Diverse.1.d
 	picture = GFX_event_pictures_CW_D_event1
-	
+	RAJ_support_xinjian_islamists
 	is_triggered_only = yes
-	
+	immediate = { RAJ = { set_country_flag = CAN_NOT_input_is_reb } }
 	option = {	
 		name = CW_Diverse.1.a
 
@@ -353,7 +353,45 @@ country_event = {
 	immediate = { limit = { tag = CHI } Set_ETK = yes }
 	option = {
 		name = CW_Diverse.8.a
-		custom_effect_tooltip = NOT_completed_tt
+		every_country = { news_event = { id = CW_Diverse.9 days = 7 } }
+		custom_effect_tooltip = CW_Diverse_event8_effect_tt
 	}
 }
 
+news_event = {
+	id = CW_Diverse.9
+	title = CW_Diverse.9.t
+	desc = CW_Diverse.9.d
+	picture = GFX_news_peninsula_shield_intervention
+	is_triggered_only = yes
+	immediate = { 
+		limit = { tag = CHI } 
+		ETK = {
+			declare_war_on = {
+				target = XIN
+				type = annex_everything
+			}
+		}
+	}
+	option = {
+		name = CW_Diverse.9.a1
+		trigger = { OR = { tag = CHI tag = DSC tag = HKG tag = XIZ tag = XIN } }
+		custom_effect_tooltip = NOT_completed_tt
+	}
+	option = {
+		name = CW_Diverse.9.a2
+		trigger = { has_government = communism }
+	}
+	option = {
+		name = CW_Diverse.9.a3
+		trigger = { has_government = democratic }
+	}
+	option = {
+		name = CW_Diverse.9.a4
+		trigger = { OR = { has_government = neutrality has_government = nationalist } }
+	}
+	option = {
+		name = CW_Diverse.9.a5
+		trigger = { OR = { has_government = fascism } }
+	}
+}
