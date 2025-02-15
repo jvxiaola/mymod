@@ -58,7 +58,7 @@ ingame_update_setup = {
 	calculate_resource_sale_rate = yes
 	calculate_tax_gain = yes
 	calculate_additional_income_rate = yes
-
+	CHI_NEW_economy_income_effect = yes
 	#Expenses
 	update_military_rate = yes
 	update_bureaucracy_rate = yes
@@ -68,7 +68,8 @@ ingame_update_setup = {
 	update_social_rate = yes
 	calculate_interest_rate = yes
 	calculate_additional_expense_rate = yes
-	CHI_NEW_economy_income_effect = yes
+	CHI_NEW_economy_out_put_cash_effect = yes
+	
 	#Various
 	update_economic_cycle_cost = yes
 	update_cyber_cost = yes
