@@ -197,7 +197,6 @@ set_variable = { CHI_Socialist_Construction_dynamic1 = -0.40}
 		water_shortages_3
 		CHI_low_end_manufacturing
 		p5_member
-		nuclear_power
 		semi_consumption_economy
 		defence_02
 		edu_02
@@ -3320,7 +3319,6 @@ set_popularities = {
 		party_before_country
 		CHI_low_end_manufacturing
 		p5_member
-		nuclear_power
 		consumption_economy
 		defence_02
 		edu_02

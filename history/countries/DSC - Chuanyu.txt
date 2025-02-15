@@ -113,7 +113,6 @@ capital = 583
 		water_shortages_3
 			CHI_low_end_manufacturing
 			
-			nuclear_power
 			nuclear_power_def
 			semi_consumption_economy
 			defence_02
