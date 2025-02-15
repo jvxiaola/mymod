@@ -6895,7 +6895,7 @@ prerequisite = { focus = CHI_xuanju  }
 					 add_20_western_conservatism = yes
 				add_popularity = { ideology = neutrality popularity = 0.20 }
 				add_20_neutrality_neutral_social = yes						 
-				set_politics = { 
+			set_politics = { 
 				ruling_party = democratic
 				elections_allowed = yes
 			}  		
@@ -7224,7 +7224,7 @@ prerequisite = { focus = CHI_kmt  }
 		set_cosmetic_tag = CHI_new_roc
 				add_popularity = { ideology = neutrality popularity = 0.20 }
 				add_20_neutrality_neutral_social = yes						 
-				set_politics = { 
+			set_politics = { 
 				ruling_party = neutrality
 				elections_allowed = yes
 			}  		

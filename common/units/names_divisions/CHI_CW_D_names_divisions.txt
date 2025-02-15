@@ -1,6 +1,18 @@
-﻿CHI_XIN_01 = {
+﻿PRC_XIZ_MOD_template = {
+	name = "解放军西藏军区机动师"
+	for_countries = { XIZ CHI DSC HKG }
+
+	division_types = { "Mot_Inf_Bat" }
+
+	ordered = {
+		1 = { "中国人民解放军西藏军区第%d机动师" }
+		2 = { "拉萨市第%d守备机动师" }
+	}
+}
+
+CHI_XIN_01 = {
 	name = "解放军师级机动单位"
-	for_countries = { XIN }
+	for_countries = { XIN CHI DSC HKG }
 
 	division_types = { "Mot_Inf_Bat" }
 
@@ -12,7 +24,7 @@
 
 CHI_XIN_02 = {
 	name = "解放军师级步战单位"
-	for_countries = { XIN }
+	for_countries = { XIN CHI DSC HKG}
 
 	division_types = { "L_Inf_Bat" }
 
@@ -24,7 +36,7 @@ CHI_XIN_02 = {
 
 CHI_XIN_03 = {
 	name = "解放军师级机械化单位"
-	for_countries = { XIN }
+	for_countries = { XIN CHI DSC HKG}
 
 	division_types = { "Mech_Inf_Bat" }
 
@@ -36,7 +48,7 @@ CHI_XIN_03 = {
 
 CHI_XIN_recruitment_01 = {
 	name = "解放军师级征招机动单位"
-	for_countries = { XIN }
+	for_countries = { XIN CHI DSC HKG }
 
 	division_types = { "Mot_Inf_Bat" }
 
@@ -51,7 +63,7 @@ CHI_XIN_recruitment_01 = {
 
 CHI_XIN_recruitment_02 = {
 	name = "解放军师级征招机械单位"
-	for_countries = { XIN }
+	for_countries = { XIN CHI DSC HKG }
 
 	division_types = { "Mech_Inf_Bat" }
 
@@ -68,7 +80,7 @@ CHI_XIN_recruitment_02 = {
 
 CHI_XIN_recruitment_03 = {
 	name = "解放军师级征招步战单位"
-	for_countries = { XIN }
+	for_countries = { XIN CHI DSC HKG }
 
 	division_types = { "Mech_Inf_Bat" }
 

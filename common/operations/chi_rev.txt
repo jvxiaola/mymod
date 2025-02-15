@@ -1092,8 +1092,6 @@ NOT = {	OR = {
 					
 					calculate_influence_percentage = yes #set alignment drifts from influence
 					setup_init_factions = yes 	#flags for int. factions
-					init_neighbor_drift_1 = yes #drift from neighbor
-					init_neighbor_drift_2 = yes #drift from neighbor
 					
 					country_event = { id = brotherhood.0 } #Sets muslim_brotherhood relations
 					country_event = { id = brotherhood.2 }
@@ -2279,8 +2277,6 @@ remove_ideas = {		india_divided
 					
 					calculate_influence_percentage = yes #set alignment drifts from influence
 					setup_init_factions = yes 	#flags for int. factions
-					init_neighbor_drift_1 = yes #drift from neighbor
-					init_neighbor_drift_2 = yes #drift from neighbor
 					
 					country_event = { id = brotherhood.0 } #Sets muslim_brotherhood relations
 					country_event = { id = brotherhood.2 }

@@ -1358,8 +1358,8 @@ country_event = {
 
 				set_cosmetic_tag = TIB_JUNQU
 						 division_template = {
-					name = "tib"
-					division_names_group = SOV_GAR_01
+					name = "西藏军区机动师"
+					division_names_group = PRC_XIZ_MOD_template
 					regiments = {
 			Mot_Inf_Bat = { x = 0 y = 0 }
 			Mot_Inf_Bat = { x = 0 y = 1 }
@@ -1492,8 +1492,8 @@ country_event = {
 						}
 						start_politics_input = yes
 								 division_template = {
-							name = "tib"
-							division_names_group = SOV_GAR_01
+							name = "解放军西藏军区机动师"
+							division_names_group = PRC_XIZ_MOD_template
 							regiments = {
 					Mot_Inf_Bat = { x = 0 y = 0 }
 					Mot_Inf_Bat = { x = 0 y = 1 }
@@ -1535,7 +1535,7 @@ country_event = {
 			add_ideas = CHI_Strict_military_control
 			set_cosmetic_tag = CHI_REB_S
 			load_focus_tree = CHI_focus
-			set_capital = 536
+			set_capital = { state = 536 }
 			create_country_leader = {
 			name = "Deng Pufang"
 			picture = "jack_deng.dds"
@@ -2071,7 +2071,7 @@ add_ai_strategy  = {
 
 
 					start_politics_input = yes
-					elections_allowed=no
+					set_politics = { elections_allowed = no }
 					add_to_array = { ruling_party = 5 } #CPC
 					set_variable = { party_pop_array^5 = 0.55 }
 					set_variable = { party_pop_array^4 = 0.15 }
@@ -2115,7 +2115,6 @@ division_template = {
 		SP_Arty_Bat = { x = 2 y = 1 }
 		SP_AA_Bat = { x = 2 y = 2 }
 		SP_Arty_Bat = { x = 2 y = 3 }
-		armor_Recce_Bat = { x = 3 y = 0 }
 	   H_Engi_Bat = { x = 3 y = 1 }
 	}
 	}
@@ -4801,12 +4800,9 @@ country_event = {
 						add_ideas = chaebols
 					}
 
-					add_tax_laws = yes
 					calculate_influence_percentage = yes #set alignment drifts from influence
 					startup_extra_setup = yes 	#money system
 					setup_init_factions = yes 	#flags for int. factions
-					init_neighbor_drift_1 = yes #drift from neighbor
-					init_neighbor_drift_2 = yes #drift from neighbor
 					
 					country_event = { id = brotherhood.0 } #Sets muslim_brotherhood relations
 					country_event = { id = brotherhood.2 }
@@ -5287,12 +5283,9 @@ set_politics = {
 						add_ideas = chaebols
 					}
 					add_ideas ={ p5_member}
-					add_tax_laws = yes
 					calculate_influence_percentage = yes #set alignment drifts from influence
 					startup_extra_setup = yes 	#money system
 					setup_init_factions = yes 	#flags for int. factions
-					init_neighbor_drift_1 = yes #drift from neighbor
-					init_neighbor_drift_2 = yes #drift from neighbor
 					
 					country_event = { id = brotherhood.0 } #Sets muslim_brotherhood relations
 					country_event = { id = brotherhood.2 }
@@ -6250,7 +6243,7 @@ add_ideas = Major_Non_NATO_Ally
 	}				
 			load_focus_tree = communsim_PRC_focus
 
-								set_capital = 536
+			set_capital = { state = 536 }
 create_country_leader = {
 		name = "Leung Kwok-hung"
 		picture = "liangguoxiong.dds"
@@ -6308,7 +6301,7 @@ set_state_flag = CHI_Left_State
 			load_focus_tree = communsim_PRC_focus
 				set_country_flag = CHI_trotskyism
 
-								set_capital = 595
+				set_capital = { state = 595 }
 create_country_leader = {
 		name = "Leung Kwok-hung"
 		picture = "liangguoxiong.dds"
