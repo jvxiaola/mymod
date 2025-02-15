@@ -1,0 +1,43 @@
+CHI_NEW_economy_income_effect = {
+	if = {
+		limit = { 
+			OR = { 
+				original_tag = CHI 
+				tag = DSC tag = HKG
+			}
+		}
+		set_variable = { additional_income_rate = 0 }
+		if = {
+			limit = { has_idea = CHI_not_nongyesui }
+			set_variable = { additional_income_CHI_not_nongyesui = population_total }
+			divide_variable = { additional_income_CHI_not_nongyesui = 10 }	#Millions of people
+			multiply_variable = { additional_income_CHI_not_nongyesui = 0.20 } #per million
+			multiply_variable = { additional_income_CHI_not_nongyesui = 0.50 }	#weekly
+			add_to_variable = { additional_income_rate = additional_income_CHI_not_nongyesui }
+		}
+		if = {
+			limit = { has_idea = CHI_idea_People_Commune }
+			set_variable = { additional_income_CHI_People_Commune = population_total }
+			divide_variable = { additional_income_CHI_People_Commune = 10 }	#Millions of people
+			multiply_variable = { additional_income_CHI_People_Commune = 0.40 } #per million
+			multiply_variable = { additional_income_CHI_People_Commune = 0.50 }	#weekly
+			add_to_variable = { additional_income_rate = additional_income_CHI_People_Commune }
+		}
+		if = {
+			limit = { has_idea = CHI_idea_Public_ownership_economy }
+			set_variable = { additional_income_CHI_idea_Public_ownership_economy = population_total }
+			divide_variable = { additional_income_CHI_idea_Public_ownership_economy = 10 }	#Millions of people
+			multiply_variable = { additional_income_CHI_idea_Public_ownership_economy = 0.30 } #per million
+			multiply_variable = { additional_income_CHI_idea_Public_ownership_economy = 0.50 }	#weekly
+			add_to_variable = { additional_income_rate = additional_income_CHI_idea_Public_ownership_economy }
+		}
+		if = {
+			limit = { has_idea = CHI_state_farm }
+			set_variable = { additional_income_CHI_state_farm = population_total }
+			divide_variable = { additional_income_CHI_state_farm = 10 }	#Millions of people
+			multiply_variable = { additional_income_CHI_state_farm = 0.30 } #per million
+			multiply_variable = { additional_income_CHI_state_farm = 0.50 }	#weekly
+			add_to_variable = { additional_income_rate = additional_income_CHI_state_farm }
+		}
+	}
+}
