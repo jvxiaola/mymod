@@ -1907,9 +1907,9 @@ country_event = {
 				}
 					}
 
-					if = { limit = { PREV = { has_idea = isi_pakistan } }
-						add_ideas = isi_pakistan
-					}
+					#if = { limit = { PREV = { has_idea = isi_pakistan } }
+					#	add_ideas = isi_pakistan
+					#}
 					if = { limit = { PREV = { has_idea = wall_street } }
 						add_ideas = wall_street
 					}
@@ -2071,7 +2071,8 @@ add_ai_strategy  = {
 
 
 					start_politics_input = yes
-					set_politics = { elections_allowed = no }
+
+					set_politics = {ruling_party = communism elections_allowed = no }
 					add_to_array = { ruling_party = 5 } #CPC
 					set_variable = { party_pop_array^5 = 0.55 }
 					set_variable = { party_pop_array^4 = 0.15 }
@@ -4790,9 +4791,9 @@ country_event = {
 						}
 						add_ideas = foreign_jihadis
 					}
-					if = { limit = { PREV = { has_idea = isi_pakistan } }
-						add_ideas = isi_pakistan
-					}
+					#if = { limit = { PREV = { has_idea = isi_pakistan } }
+					#	add_ideas = isi_pakistan
+					#}
 					if = { limit = { PREV = { has_idea = wall_street } }
 						add_ideas = wall_street
 					}
@@ -5273,9 +5274,9 @@ set_politics = {
 						}
 						add_ideas = foreign_jihadis
 					}
-					if = { limit = { PREV = { has_idea = isi_pakistan } }
-						add_ideas = isi_pakistan
-					}
+					#if = { limit = { PREV = { has_idea = isi_pakistan } }
+					#	add_ideas = isi_pakistan
+					#}
 					if = { limit = { PREV = { has_idea = wall_street } }
 						add_ideas = wall_street
 					}
