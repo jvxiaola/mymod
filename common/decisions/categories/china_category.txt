@@ -264,4 +264,18 @@ taiwan_coup_category = {
 		TAI = { has_idea = taiwanese_coup }
 	}
 }
+###
+made_in_china_category = {
+	icon = GFX_decision_category_generic_industry
+	allowed = {
+		OR = {
+			has_country_flag = laozuo
+		    tag = DSC
+			has_country_flag = xggm
+		}
+	}
 
+	visible = {
+		has_completed_focus = CHI_Strategic_Industries
+	}
+}

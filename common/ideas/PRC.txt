@@ -4231,7 +4231,93 @@ communism_drift = 0.1
 political_power_gain= 0.5
 }
 }
+#新加
+CHI_Free_electricity = {
+	allowed_civil_war = {
+always = yes
+}
+		picture = china_factory
+		allowed = { original_tag = CHI }
+		modifier = {
+productivity_growth_modifier = 10
+production_factory_efficiency_gain_factor = 1
+production_factory_max_efficiency_factor = 1
+production_factory_start_efficiency_factor = 1
+			pop_energy_use_multiplier = 0.5
+			stability_weekly = 0.005
+			production_speed_buildings_factor = 0.5
+			
 
+		}
+	}			
+	CHI_Eliminating_fossil_fuels = {
+	allowed_civil_war = {
+always = yes
+}
+		picture = china_factory
+		allowed = { original_tag = CHI }
+		modifier = {
+base_fuel_gain_factor = 0.25
+fuel_gain_factor = 0.10
+	fossil_pp_energy_generation_modifier = 1.5
+
+			
+
+		}
+	}					
+	CHI_Controlled_nuclear_fusion_reactor = {
+		allowed_civil_war = {
+		always = yes
+		}
+		picture = nuclear_power
+					allowed = { original_tag = CHI }
+					modifier = {
+				nuclear_energy_generation_modifier = 2.0
+				nuclear_fuel_consumption_modifier = -1.5
+			
+			}
+		}		
+		
+				CHI_Controlled_nuclear_fusion_idea = {
+				allowed_civil_war = {
+		always = yes
+		}
+					picture = nuclear_energy
+					allowed = { original_tag = CHI }
+					modifier = {
+				production_speed_nuclear_reactor_factor = 1.5
+					}
+				}			
+		
+				CHI_solar_power_2 = {
+					picture = solar_energy
+			name = CHI_solar_power		
+					modifier = {
+						stability_weekly = 0.005
+						production_speed_buildings_factor = -0.10
+								renewable_energy_gain_multiplier = 0.3
+				production_speed_synthetic_refinery_factor = 0.3
+				research_speed_factor = 0.10
+				consumer_goods_factor = -0.10
+					}
+				}
+				CHI_West_to_East_Power_Transmission = {
+					allowed_civil_war = {
+				always = yes
+				}
+						picture = hydroelectric
+						allowed = { original_tag = CHI }
+						modifier = {
+				productivity_growth_modifier = 2
+				consumer_goods_factor = -0.05
+					renewable_energy_gain_multiplier = 0.5
+				production_factory_efficiency_gain_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_start_efficiency_factor = 0.10
+				industrial_capacity_dockyard = 0.10
+				industrial_capacity_factory = 0.10
+				}
+				}	
 	}
 
 }
