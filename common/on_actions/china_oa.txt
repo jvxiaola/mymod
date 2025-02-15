@@ -140,26 +140,21 @@ CHI_people_support_dynamic_scriptes_left = yes
 }
 		if = {
 			limit = {
-			CHI = {
-NOT = {
-has_dynamic_modifier = {
-    modifier = CHI_Socialist_Construction_dynamic
-}
-} 
-OR = {
-has_country_flag = chi_work_rev
-has_country_flag = chi_left 
-has_country_flag = CHI_trotskyism
-}
-
-}
-
-add_dynamic_modifier = {
-    modifier = CHI_Socialist_Construction_dynamic
-}
-
-}
-}
+				CHI = {
+					NOT = {
+						has_dynamic_modifier = {
+    					modifier = CHI_Socialist_Construction_dynamic
+						}
+					} 
+					OR = {
+						has_country_flag = chi_work_rev
+						has_country_flag = chi_left 
+						has_country_flag = CHI_trotskyism
+					}
+				}
+			}
+			add_dynamic_modifier = { modifier = CHI_Socialist_Construction_dynamic }
+		}
 }
 }
 }
