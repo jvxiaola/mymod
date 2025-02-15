@@ -814,6 +814,7 @@
 				limit = { has_dynamic_modifier = { modifier = CW_ruins } }
 				remove_dynamic_modifier = { modifier = CW_ruins }
 			}
+			mark_focus_tree_layout_dirty = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Factory_of_the_World executed"
 		}
 
@@ -1829,13 +1830,13 @@ shared_focus = {
 		id = CHI_Chinese_Megaprojects
 		icon = communism19
 
-		x = 84
-		y = 22
+		x = 42
+		y = 18
 		
 		allow_branch = {
 			OR = {
 				has_country_flag = laozuo
-				has_completed_focus = CHI_Chinese_NEW_MILLENNIUM
+				has_completed_focus = CHI_Chinese_NEW_MILLENNIUM				
 				has_completed_focus = CHI_Factory_of_the_World
 				has_completed_focus = CHI_Chinese_Industrial_Explosion21
 			}
@@ -1853,8 +1854,8 @@ shared_focus = {
 			}
 		}
 		offset = {
-			x = -50
-			y = -10
+			x = -20
+			y = 15
 			trigger = {
 				tag = DSC
 			}
@@ -3891,7 +3892,7 @@ shared_focus = {
 		cost = 5
 
 		prerequisite = { focus = CHI_North_South_Water_Transfer }
-		mutually_exclusive = { focus = CHI_Yarlung_Tsangpo_Diversion_Project }
+
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
@@ -3917,7 +3918,7 @@ shared_focus = {
 		cost = 5
 
 		prerequisite = { focus = CHI_North_South_Water_Transfer }
-		mutually_exclusive = { focus = CHI_Ecological_Preservation_Movement }
+	
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY }
 
@@ -3984,7 +3985,7 @@ shared_focus = {
 		y = 1
 		relative_position_id = CHI_Chinese_Megaprojects
 
-		cost = 5
+		cost = 4
 
 		prerequisite = { focus = CHI_Chinese_Megaprojects }
 
@@ -4010,20 +4011,18 @@ shared_focus = {
 		y = 1
 		relative_position_id = CHI_Renewable_Strategy
 
-		cost = 5
+		cost = 4
 
 		prerequisite = { focus = CHI_Renewable_Strategy }
-		mutually_exclusive = { focus = CHI_Cheap_Coal_Supremacy }
+
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			set_temp_variable = { treasury_change = -7.5 }
 			modify_treasury_effect = yes
 			one_random_synthetic_refinery = yes
-			add_timed_idea = {
-				idea = CHI_solar_power
-				days = 180
-			}
+		CHI_water_shortages_decrease = yes	
+				add_ideas = CHI_solar_power
 			log = "[GetDateText]: [This.GetName]: focus CHI_Golden_Sun_Initiative executed"
 		}
 
@@ -4036,11 +4035,11 @@ shared_focus = {
 		id = CHI_Export_Photovoltaic_Systems
 		icon = money
 
-		x = 0
-		y = 1
-		relative_position_id = CHI_Golden_Sun_Initiative
+		x = -2
+		y = 2
+		relative_position_id = CHI_Renewable_Strategy
 
-		cost = 5
+		cost = 4
 
 		prerequisite = { focus = CHI_Golden_Sun_Initiative }
 
@@ -4056,7 +4055,11 @@ shared_focus = {
 		}
 
 		completion_reward = {
-			set_temp_variable = { treasury_change = 25 }
+		swap_ideas = {
+		add_idea = CHI_solar_power_2
+		remove_idea = CHI_solar_power
+		}
+			set_temp_variable = { treasury_change = 30 }
 			modify_treasury_effect = yes
 			every_other_country = {
 				limit = {
@@ -4079,19 +4082,65 @@ shared_focus = {
 			base = 1
 		}
 	}
+	shared_focus = {
+		id = CHI_West_to_East_Power_Transmission
+		icon = radio_communications
 
+		x = -2
+		y = 3
+		relative_position_id = CHI_Renewable_Strategy
+
+		cost = 4
+
+		prerequisite = { focus = CHI_Export_Photovoltaic_Systems }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		available = {
+			has_war = no
+			592 = {
+			synthetic_refinery >3
+			}
+			589 = {
+			synthetic_refinery >3
+			}	
+			588 = {
+			synthetic_refinery >3
+			}	
+			556 = {
+			synthetic_refinery >3
+			}	
+			585 = {
+			synthetic_refinery >3
+			}	
+			586 = {
+			synthetic_refinery >3
+			}
+			
+		}
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -50 }
+			modify_treasury_effect = yes
+		add_ideas =	CHI_West_to_East_Power_Transmission
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
 	shared_focus = {
 		id = CHI_Nuclear_Boom
 		icon = nuclear_science
 
-		x = 2
+		x = 0
 		y = 1
 		relative_position_id = CHI_Renewable_Strategy
 
-		cost = 5
+		cost = 4
 
 		prerequisite = { focus = CHI_Renewable_Strategy }
-		mutually_exclusive = { focus = CHI_Cheap_Coal_Supremacy }
+
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
@@ -4114,10 +4163,10 @@ shared_focus = {
 		icon = prc_electricity
 
 		x = 0
-		y = 1
-		relative_position_id = CHI_Nuclear_Boom
+		y = 2
+		relative_position_id = CHI_Renewable_Strategy
 
-		cost = 5
+		cost = 4
 
 		prerequisite = { focus = CHI_Nuclear_Boom }
 
@@ -4133,23 +4182,219 @@ shared_focus = {
 			base = 1
 		}
 	}
+	shared_focus = {
+		id = CHI_invest_fusion_reactor
+		icon = CHI_invest_fusion_reactor
 
+		x = 0
+		y = 3
+		relative_position_id = CHI_Renewable_Strategy
+
+		cost = 4
+available = {
+has_tech = reactor4
+
+}
+		prerequisite = { focus = CHI_Construct_Nuclear_Waste_Repository }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			set_temp_variable = { treasury_change = -50 }
+			modify_treasury_effect = yes
+set_country_flag = CAN_invest_fusion_reactor
+			custom_effect_tooltip = {
+				localization_key = SP_UNLOCK_PROJECT
+				PROJECT = sp_fusion_reactors
+			}			
+			    add_breakthrough_points = {
+    specialization = specialization_nuclear
+    value = 3
+}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Radiation_Translation executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+	shared_focus = {
+		id = CHI_Construct_Tokamak_Reactor
+		icon = tokamak_reactor
+
+		x = -1
+		y = 4
+		relative_position_id = CHI_Renewable_Strategy
+
+		cost = 4
+available = {
+    is_special_project_being_researched = sp:sp_fusion_reactors
+}
+bypass = {
+	is_special_project_completed = sp:sp_fusion_reactors
+}
+		prerequisite = { focus = CHI_invest_fusion_reactor }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			set_temp_variable = { treasury_change = -50 }
+			modify_treasury_effect = yes
+sp:sp_fusion_reactors = {
+  add_project_progress_ratio = 0.1
+}
+
+
+	}
+
+		ai_will_do = {
+			base = 1
+		}
+	}	
+		shared_focus = {
+		id = CHI_Construct_Stellarator_Reactor
+		icon = stellarator_reactor
+
+		x = 1
+		y = 4
+		relative_position_id = CHI_Renewable_Strategy
+		cost = 4
+
+		prerequisite = { focus = CHI_invest_fusion_reactor }
+available = {
+    is_special_project_being_researched = sp:sp_fusion_reactors
+}
+bypass = {
+	is_special_project_completed = sp:sp_fusion_reactors
+}
+		prerequisite = { focus = CHI_invest_fusion_reactor }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			set_temp_variable = { treasury_change = -50 }
+			modify_treasury_effect = yes
+sp:sp_fusion_reactors = {
+  add_project_progress_ratio = 0.1
+}	}
+
+		ai_will_do = {
+			base = 1
+		}
+	}	
+		shared_focus = {
+		id = CHI_Controlled_Fusion
+		icon = BLR_promise_first_nuclear
+
+		x = 0
+		y = 5
+		relative_position_id = CHI_Renewable_Strategy
+		cost = 4
+
+		prerequisite = { focus = CHI_Construct_Stellarator_Reactor focus = CHI_Construct_Tokamak_Reactor }
+available = {
+is_special_project_completed = sp:sp_fusion_reactors
+}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			set_temp_variable = { treasury_change = -100 }
+			modify_treasury_effect = yes
+add_ideas = CHI_Controlled_nuclear_fusion_idea
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}		
+		shared_focus = {
+		id = CHI_Free_electricity
+		icon = electricity
+
+		x = 1
+		y = 6
+		relative_position_id = CHI_Renewable_Strategy
+		cost = 4
+
+		prerequisite = { focus = CHI_Controlled_Fusion }
+available = {
+nuclear_reactor > 100
+}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			set_temp_variable = { treasury_change = -100 }
+			modify_treasury_effect = yes
+add_ideas = CHI_Free_electricity
+CHI_water_shortages_decrease = yes
+news_event = mdardchina_news.62
+hidden_effect = {
+if = {
+limit = {
+NOT = {
+OR = {
+					is_in_array = { ruling_party = 4 }
+				has_country_leader = {  name = "Bo Xilai" }
+}
+}
+}
+add_ideas = CHI_The_conflict_between_productivity_and_superstructure
+}
+}
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+		shared_focus = {
+		id = CHI_Eliminating_fossil_fuels
+		icon = powerplant
+
+		x = -1
+		y = 6
+		relative_position_id = CHI_Renewable_Strategy
+		cost = 4
+
+		prerequisite = { focus = CHI_Controlled_Fusion }
+available = {
+nuclear_reactor > 200
+}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			set_temp_variable = { treasury_change = -100 }
+			modify_treasury_effect = yes
+add_ideas = CHI_Eliminating_fossil_fuels
+CHI_water_shortages_decrease = yes
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}		
 	shared_focus = {
 		id = CHI_Cheap_Coal_Supremacy
 		icon = prc_coal
 
-		x = 0
+		x = 2
 		y = 1
 		relative_position_id = CHI_Renewable_Strategy
 
-		cost = 5
+		cost = 4
 
 		prerequisite = { focus = CHI_Renewable_Strategy }
-		mutually_exclusive = { focus = CHI_Golden_Sun_Initiative }
-		mutually_exclusive = { focus = CHI_Nuclear_Boom }
+
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			every_controlled_state = {
+limit = {
+has_resources_amount = {
+    resource = oil
+    amount > 1
+    delivered = yes
+}
+}
+add_resource = {
+    type = oil
+    amount = 50
+}
+}
 			add_ideas = CHI_coal
 			CHI_water_shortages_increase = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Cheap_Coal_Supremacy executed"
@@ -4164,11 +4409,11 @@ shared_focus = {
 		id = CHI_Mass_Coal_Oil_Conversion_Project
 		icon = oil_trade
 
-		x = 0
+		x = 2
 		y = 2
 		relative_position_id = CHI_Renewable_Strategy
 
-		cost = 5
+		cost = 4
 
 		prerequisite = { focus = CHI_Cheap_Coal_Supremacy }
 
@@ -4228,7 +4473,144 @@ shared_focus = {
 			base = 1
 		}
 	}
+	shared_focus = {
+		id = CHI_Developing_South_China_Sea_shale_oil
+		icon = oil_sands
 
+		x = 2
+		y = 3
+		relative_position_id = CHI_Renewable_Strategy
+
+		cost = 4
+available = {
+OR = {
+controls_state = 813
+any_other_country = {
+controls_state = 813
+OR = {
+is_in_faction_with = CHI
+is_subject_of = CHI
+}
+}
+}
+OR = {
+controls_state = 526
+any_other_country = {
+controls_state = 526
+OR = {
+is_in_faction_with = CHI
+is_subject_of = CHI
+}
+}
+}
+OR = {
+controls_state = 801
+any_other_country = {
+controls_state = 801
+OR = {
+is_in_faction_with = CHI
+is_subject_of = CHI
+}
+}
+}
+OR = {
+controls_state = 491
+any_other_country = {
+controls_state = 491
+OR = {
+is_in_faction_with = CHI
+is_subject_of = CHI
+}
+}
+}
+OR = {
+controls_state = 802
+any_other_country = {
+controls_state = 802
+OR = {
+is_in_faction_with = CHI
+is_subject_of = CHI
+}
+}
+}
+OR = {
+controls_state = 816
+any_other_country = {
+controls_state = 816
+OR = {
+is_in_faction_with = CHI
+is_subject_of = CHI
+}
+}
+}
+OR = {
+controls_state = 936
+any_other_country = {
+controls_state = 936
+OR = {
+is_in_faction_with = CHI
+is_subject_of = CHI
+}
+}
+}
+OR = {
+controls_state = 943
+any_other_country = {
+controls_state = 943
+OR = {
+is_in_faction_with = CHI
+is_subject_of = CHI
+}
+}
+}
+}
+		prerequisite = { focus = CHI_Mass_Coal_Oil_Conversion_Project }
+
+		search_filters = { FOCUS_FILTER_RESOURCE FOCUS_FILTER_EXPENDITURE }
+		completion_reward = {			set_temp_variable = { treasury_change = -50.5 }
+			modify_treasury_effect = yes
+					add_resource = {
+				type = oil
+				amount = 50
+				state = 813
+			}
+						add_resource = {
+				type = oil
+				amount = 50
+				state = 526
+			}
+add_resource = {
+				type = oil
+				amount = 50
+				state = 801
+			}			
+add_resource = {
+				type = oil
+				amount = 50
+				state = 491
+			}			
+add_resource = {
+				type = oil
+				amount = 50
+				state = 802
+			}			
+add_resource = {
+				type = oil
+				amount = 50
+				state = 816
+			}
+add_resource = {
+				type = oil
+				amount = 50
+				state = 936
+			}
+add_resource = {
+				type = oil
+				amount = 50
+				state = 943
+			}			
+		}
+		}
 	shared_focus = {
 		id = CHI_First_Tier_Megacity_Development
 		icon = production
@@ -5724,8 +6106,8 @@ is_subject_of = CHI
 		id = CHI_Strategic_Industries
 		icon = communism18
 
-		x = 90
-		y = 22
+		x = 48
+		y = 18
 
 		cost = 5
 		allow_branch = {
@@ -5747,8 +6129,8 @@ is_subject_of = CHI
 			}
 		}
 		offset = {
-			x = -50
-			y = -10
+			x = -20
+			y = 15
 			trigger = {
 				tag = DSC
 			}
@@ -5765,6 +6147,7 @@ is_subject_of = CHI
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = made_in_china_tt
 			increase_military_spending = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Strategic_Industries executed"
 		}
@@ -6969,7 +7352,6 @@ is_subject_of = CHI
 				tag = DSC
 				has_country_flag = laozuo
 			}
-			has_completed_focus =  CHI_Aerospace_Industry
 		}
 		prerequisite = { focus = CHI_Aerospace_Industry }
 		mutually_exclusive = { focus = CHI_Bolster_the_CNSA }
@@ -7467,6 +7849,99 @@ is_subject_of = CHI
 
 		ai_will_do = { base = 0 }
 	}
+	shared_focus = {
+		id = CHI_establishment_space_combat_support_force
+		icon = space_combat_support_force
+		prerequisite = { focus = CHI_manned_moon_landing  }
+		x = 17
+		y = 5
+		relative_position_id = CHI_Strategic_Industries
+		cost = 5
+		ai_will_do = { factor = 1 }
+
+		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_establishment_space_combat_support_force executed"
+			set_temp_variable = { treasury_change = -100 }
+			modify_treasury_effect = yes
+			add_ideas = space_combat_support_force
+		}
+	}
+	shared_focus = {
+		id = CHI_weaponized_space
+		icon = weaponized_satellites
+		prerequisite = { focus = CHI_establishment_space_combat_support_force }
+		x = 18
+		y = 6
+		relative_position_id = CHI_Strategic_Industries
+		cost = 5
+		ai_will_do = { factor = 1 }
+
+		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_weaponized_space executed"
+			set_temp_variable = { treasury_change = -50 }
+			modify_treasury_effect = yes
+			swap_ideas = {
+				remove_idea = space_combat_support_force
+				add_idea = space_combat_support_force_2
+			}
+		}
+	}
+	shared_focus = {
+		id = CHI_space_marines
+		icon = paratroopers
+		prerequisite = { focus = CHI_weaponized_space }
+		x = 18
+		y = 7
+		relative_position_id = CHI_Strategic_Industries
+		cost = 5
+		ai_will_do = { factor = 1 }
+
+		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_space_marines_idea executed"
+			swap_ideas = {
+				remove_idea = space_combat_support_force_2
+				add_idea = space_combat_support_force_3
+			}
+			add_ideas = CHI_space_marines_idea
+		}
+	}
+	shared_focus = {
+		id = CHI_shanxi_launch_pad
+		icon = generic_space
+		prerequisite = { focus = CHI_establishment_space_combat_support_force }
+		prerequisite = { focus = CHI_Seaborne_Spaceflight }
+		x = 16
+		y = 6
+		relative_position_id = CHI_Strategic_Industries
+		cost = 10
+
+		ai_will_do = { factor = 1 }
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_shanxi_launch_pad executed"
+			set_temp_variable = { treasury_change = -15 }
+			modify_treasury_effect = yes
+			558 = {	#Shanxi
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+			}
+		}
+	}
+
 	shared_focus = {		id = CHI_manned_moon_landing
 		icon = lunar_launch
  
@@ -7506,10 +7981,126 @@ add_political_power = 150
 
 		ai_will_do = { base = 1 }
 	}
+	shared_focus = {
+		id = CHI_visit_dark_side_moon
+		icon = orbit_moon
+		prerequisite = { focus = CHI_manned_moon_landing }
+		x = 20
+		y = 5
+		relative_position_id = CHI_Strategic_Industries
+		cost = 10
+		ai_will_do = { factor = 1 }
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_visit_dark_side_moon executed"
+			add_ideas = space_efforts
+			set_temp_variable = { treasury_change = -20 }
+			modify_treasury_effect = yes
+		}
+	}
+	shared_focus = {
+		id = CHI_beidou_satelite_navigation
+		icon = international_space_station
+		prerequisite = { focus = CHI_State_Sponsored_Space_Endeavors }
+		x = 17
+		y = 4
+		relative_position_id = CHI_Strategic_Industries
+		cost = 10
+
+		ai_will_do = { factor = 1 }
+
+		available = { has_tech = computing5 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_beidou_satelite_navigation executed"
+			set_temp_variable = { treasury_change = -20 }
+			modify_treasury_effect = yes
+			add_ideas = beidou_satelite_navigation
+		}
+	}
+	shared_focus = {
+		id = CHI_lunar_outpost
+		icon = moon_relax
+		prerequisite = { focus = CHI_visit_dark_side_moon }
+		x = 20
+		y = 6
+		relative_position_id = CHI_Strategic_Industries
+		cost = 10
+		available = {  }
+
+		ai_will_do = { factor = 1 }
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_lunar_outpost executed"
+			set_temp_variable = { treasury_change = -50 }
+			modify_treasury_effect = yes
+			custom_effect_tooltip = CHI_moonbase_chain_start_tt
+			custom_effect_tooltip = lunar_outpost_tt
+			hidden_effect = { country_event = chi_moon.1 }
+		}
+	}
+	shared_focus = {
+		id = CHI_mission_to_mars
+		icon = mars
+		prerequisite = { focus = CHI_lunar_outpost }
+		x = 20
+		y = 7
+		relative_position_id = CHI_Strategic_Industries
+		cost = 10
+		available = { date > 2016.1.1
+					  has_country_flag = chi_moonbase_beta_completed }
+		ai_will_do = { factor = 1 }
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_mission_to_mars executed"
+			swap_ideas = {
+				remove_idea = space_efforts
+				add_idea = space_efforts1
+			}
+			set_temp_variable = { treasury_change = -70 }
+			modify_treasury_effect = yes
+			custom_effect_tooltip = CHI_mars_city_building_chain_start_tt
+			hidden_effect = { country_event = chi_mars.1 }
+		}
+	}
+	shared_focus = {
+		id = CHI_mars_colony
+		icon = mars_base
+		prerequisite = { focus = CHI_mission_to_mars }
+		x = 20
+		y = 9
+		relative_position_id = CHI_Strategic_Industries
+		cost = 10
+		available = {
+			has_tech = modern_satelite_internet
+			has_tech = computing5
+			has_tech = large_scale_3D_printing
+			has_country_flag = chi_mars_city_building_completed
+		}
+
+		ai_will_do = { factor = 1 }
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_mars_colony executed"
+			swap_ideas = {
+				remove_idea = space_efforts1
+				add_idea = space_efforts2
+			}
+			set_temp_variable = { treasury_change = -100 }
+			modify_treasury_effect = yes
+			set_temp_variable = { arg_popularity = 0.1 }
+			add_ruling_outlook_popularity = yes
+		}
+	}
+
 	shared_focus = {		id = CHI_Helium3
 		icon = nuclear_science
 
-		x = 20
+		x = 22
 		y = 5
 		relative_position_id = CHI_Strategic_Industries
 
@@ -7534,14 +8125,14 @@ add_ideas = CHI_dev_Helium3
 	shared_focus = {		id = CHI_Landing_on_Mars
 		icon = mars
 
-		x = 18
-		y = 5
+		x = 20
+		y = 8
 		relative_position_id = CHI_Strategic_Industries
 
 		cost = 5
 
 		prerequisite = {
-focus = CHI_manned_moon_landing }
+focus = CHI_mission_to_mars }
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
