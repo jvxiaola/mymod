@@ -1366,9 +1366,9 @@ add_political_power = 100
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = "主要地区军事冲突已结束"
-					random_country = {
+					any_country = {
 						limit = {
-							NOT = { tag = CHI}
+							NOT = { tag = CHI }
 							 has_cosmetic_tag = CHI_REB_S
 						}
 						exists = no
@@ -1377,7 +1377,13 @@ add_political_power = 100
 				}
 			}
 			completion_reward = {
-
+		if = {
+			limit = { country_exists = ETK }
+				create_wargoal = {
+					target = ETK
+					type = annex_everything
+				}	
+		}
 		if = {
 			limit = { country_exists = XIN }
 				create_wargoal = {
