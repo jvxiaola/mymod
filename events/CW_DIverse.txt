@@ -279,6 +279,17 @@ country_event = {
 		name = CW_Diverse.6.a
 		custom_effect_tooltip = NOT_completed_tt
 		civl_start_xin_or_effect = yes
+		country_event = { id = CW_Diverse.8 days = 15 }
+		hidden_effect = {
+			if = {
+				limit = { country_exists = DSC }
+				DSC = { country_event = { id = CW_Diverse.8 days = 15 } }
+			}
+			if = {
+				limit = { country_exists = HKG }
+				HKG = { country_event = { id = CW_Diverse.8 days = 15 } }
+			}
+		}
 	}
 }
 
@@ -298,7 +309,6 @@ country_event = {
 			25 = { CHI = { army_experience = 15 } XIN = { army_experience = 15 } }
 		}
 		XIN = {
-
 			if = {
 					limit = {
 						check_variable = { ps_1 > 0.04 }
@@ -320,17 +330,30 @@ country_event = {
 					XIN_Nationalist_sentiment_military_effect = yes
 				
 				}
-				random_controlled_state = { 
-					limit = { has_state_flag = In_Chaos_by_terrist_attck_XIN }
-					set_demilitarized_zone = no
-					clr_state_flag = In_Chaos_by_terrist_attck_XIN
+				if = {
+					limit = { has_country_flag = XIN_attacked }
+					random_controlled_state = { 
+						limit = { has_state_flag = In_Chaos_by_terrist_attck_XIN }
+						set_demilitarized_zone = no
+						clr_state_flag = In_Chaos_by_terrist_attck_XIN
+					}
 				}
-
 				random_list = {
 					5 = { add_manpower = -200 } 10 = { add_manpower = -150 } 15 = { add_manpower = -100 } 20 = { add_manpower = -50 } 30 = { add_manpower = -27 } 10 = { add_manpower = -10 }
 				}
-				}
-			}
 		}
+	}
+}
 
+country_event = {
+	id = CW_Diverse.8
+	title = CW_Diverse.8.t
+	desc = CW_Diverse.8.d
+	is_triggered_only = yes
+	immediate = { limit = { tag = CHI } Set_ETK = yes }
+	option = {
+		name = CW_Diverse.8.a
+		custom_effect_tooltip = NOT_completed_tt
+	}
+}
 

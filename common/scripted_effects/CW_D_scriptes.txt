@@ -286,12 +286,16 @@ civl_start_xin_or_effect = {
 	hidden_effect = {
 		XIN = {
 			every_owned_state = {
-				limit = { OR = { has_dynamic_modifier = { modifier = extrameal_islam_attack3 } has_dynamic_modifier = { modifier = extrameal_islam_attack4 } has_dynamic_modifier = { modifier = extrameal_islam_attack5 } } }
-				set_demilitarized_zone = no
-				transfer_state_to = ETK
+				if = {
+					limit = { OR = { has_dynamic_modifier = { modifier = extrameal_islam_attack3 } has_dynamic_modifier = { modifier = extrameal_islam_attack4 } has_dynamic_modifier = { modifier = extrameal_islam_attack5 } } }
+					set_demilitarized_zone = yes
+					transfer_state_to = ETK
+				}
+				else = {
+					set_demilitarized_zone = no
+				}
 			}
 		}
-		Set_ETK = yes
 	}
 }
 
