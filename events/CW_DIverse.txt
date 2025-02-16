@@ -184,7 +184,10 @@ country_event = {
 		XIN = {
 			if = {
 				limit = { any_controlled_state = { is_sourth_XJ = yes will_be_attacked_by_islam = yes } }
-				random_controlled_state = { 
+				custom_effect_tooltip = XIN_attacked_ethnic_tensions_effect_tt
+				add_to_variable = { Nationalist_sentiment_military = 0.5 }
+				XIN_Nationalist_sentiment_military_effect = yes
+				random_controlled_state = {
 					limit = { is_sourth_XJ = yes will_be_attacked_by_islam = yes }
 					if = { 
 						limit = { has_dynamic_modifier = { modifier = extrameal_islam_attack5 } }

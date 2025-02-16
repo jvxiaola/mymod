@@ -1,7 +1,58 @@
 
-CW_D_category = { #边疆危机 #军区民族紧张度 #国策路线选择(未更新) #联络中亚国家(未更新) #联络俄罗斯(未更新) #组织中亚联合反恐行动(未更新)
-CHI_Organize_combat_skills_training = { #组织作战技能训练
-		icon = GFX_decision_gre_investment_decisions
+CW_D_category = { #边疆危机  
+#恐怖组织渗透
+CHI_XIN_Terrorist_infiltration = {
+	icon = GFX_decision_border_war
+	days_mission_timeout = 15
+	selectable_mission = no
+	timeout_effect = {
+		if = {
+			limit = { all_owned_state = { NOT = { has_dynamic_modifier = { modifier = extrameal_islam_attack5 } } } }
+			random_owned_state = { extrameal_islam_leavel_up = yes }
+		}
+		else = { country_event = { id = CW_Diverse.5 } }
+	}
+	activation = { 
+		has_country_flag = XIN_attacked 
+	}
+	is_good = no
+}
+#国策路线选择(未更新) #联络中亚国家(未更新) #联络俄罗斯(未更新) #组织中亚联合反恐行动(未更新)
+
+#军警民协调派驻
+Military_Police_Democratic_Alliance_dispatched_XIN_station = {
+	icon = GFX_decision_generic_military
+	visible = {
+		tag = CHI
+		has_country_flag = XIN_attacked
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = CHI_Military_Police_Democratic_Alliance_dispatched_XIN_station_trigger_tt
+			XIN = {
+				all_owned_state = { NOT = { has_dynamic_modifier = { modifier = extrameal_islam_attack5 } } }
+			}
+		}
+	}
+	days_remove = 10
+	days_re_enable = 13
+	custom_cost_trigger = { command_power > 4 }
+	custom_cost_text = command_power_more_than_5
+	complete_effect = {
+		hidden_effect = { add_command_power = -5 }
+	}
+	remove_effect = {
+		XIN = {
+			any_owned_state = {
+				limit = { will_be_attacked_by_islam = yes }
+				extrameal_islam_leavel_down = yes
+			}
+		}
+	}
+}
+#组织作战技能训练
+CHI_Organize_combat_skills_training = { 
+		icon = GFX_decision_chinese_guns
 		visible = {
 			tag = CHI
 			has_country_flag = XIN_attacked
@@ -34,7 +85,7 @@ CHI_Organize_combat_skills_training = { #组织作战技能训练
 	}
 #组织政工工作
 	CHI_Organize_political_work_XIN = {
-		icon = GFX_decision_generic_assassination
+		icon = GFX_decision_generic_speech
 		visible = {
 			tag = CHI
 			has_country_flag = XIN_attacked
@@ -64,7 +115,7 @@ CHI_Organize_combat_skills_training = { #组织作战技能训练
 	}
 #调解军区民族情绪
 CHI_Mediate_ethnic_emotions_XIN = { 
-		icon = GFX_decision_refinery_dec
+		icon = GFX_decision_generic_political_discourse
 		visible = { has_country_flag = XIN_attacked tag = CHI }
 		available = {
 			custom_trigger_tooltip = {
@@ -117,7 +168,7 @@ CHI_Mediate_ethnic_emotions_XIN = {
 	}
 #提升军备生产
 	CHI_Enhance_military_production_XIN = {
-	icon = GFX_decision_generic_factory
+	icon = GFX_decision_arms_industry
 	visible = {
 		has_country_flag = XIN_attacked tag = CHI
 	}
@@ -144,7 +195,7 @@ CHI_Mediate_ethnic_emotions_XIN = {
 	}
 #派遣征招机械师
 	CHI_Dispatch_recruit_mechanics_XIN = { 
-	icon = GFX_decision_generic_research
+	icon = GFX_decision_eng_ally_imperialist_coup
 	visible = {
 		has_country_flag = XIN_attacked tag = CHI
 	}
@@ -166,7 +217,7 @@ CHI_Mediate_ethnic_emotions_XIN = {
 	}
 #派遣征招步兵师
 	CHI_Dispatch_ID_recruitment_XIN = {
-	icon = GFX_decision_ger_mefo_bills
+	icon = GFX_decision_eng_ally_imperialist_coup
 	visible = {
 		has_country_flag = XIN_attacked tag = CHI
 	}
@@ -188,7 +239,7 @@ CHI_Mediate_ethnic_emotions_XIN = {
 	}
 #组织军区反恐行动
 CHI_Organize_antiterrorism_operations = {
-	icon = GFX_decision_ger_mefo_bills
+	icon = GFX_decision_eng_support_imperialist_coup
 	visible = { has_country_flag = XIN_attacked tag = CHI }
 	available = {
 		XIN = {
