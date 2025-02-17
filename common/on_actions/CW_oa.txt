@@ -115,4 +115,37 @@ on_actions = {
 			}
 		}
 
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+					limit = {
+						FROM = { tag = XIN }
+						NOT = { country_exists = CHI }
+						ROOT = { tag = ETK }
+					}
+					every_country = { news_event = { id = CW_Diverse.10 days = 1 } }
+					FROM = {
+						annex_country = {
+							target = ROOT
+							transfer_troops = no
+						}
+					}
+			}
+			else_if = {
+				if = {
+					limit = {
+						FROM = { tag = ETK }
+						NOT = { country_exists = CHI }
+						ROOT = { tag = XIN }
+					}
+					FROM = {
+						annex_country = {
+							target = ROOT
+							transfer_troops = no
+						}
+					}
+			}
+			}
+		}
+	}
 }
