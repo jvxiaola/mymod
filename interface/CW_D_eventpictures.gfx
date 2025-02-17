@@ -23,5 +23,11 @@ spriteTypes = {
 		name = "GFX_event_pictures_CW_D_ET_attack"
 		texturefile = "gfx/event_pictures/CW_D/old_news.dds"
 	}
+
+	spriteType = {
+		name = "GFX_news_event_pictures_CW_XIN_win_attack_terrist"
+		texturefile = "gfx/event_pictures/CW_D/CW_XIN_win_attack_terrist.dds"
+	}
+	
 }
 
