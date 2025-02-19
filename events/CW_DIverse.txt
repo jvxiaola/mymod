@@ -281,7 +281,6 @@ country_event = {
 	}
 	option = {
 		name = CW_Diverse.6.a
-		custom_effect_tooltip = NOT_completed_tt
 		civl_start_xin_or_effect = yes
 		country_event = { id = CW_Diverse.8 days = 15 }
 		hidden_effect = {
@@ -412,6 +411,19 @@ news_event = {
 		name = CW_Diverse.10.a1
 		trigger = { OR = { tag = CHI tag = DSC tag = HKG tag = XIZ tag = XIN } }
 		custom_effect_tooltip = NOT_completed_tt
+		hidden_effect = {
+			if = {
+				limit = { 
+					country_exists = DSC 
+					XIN = {
+						check_variable = { party_pop_array^4 > 0.30 }
+					}
+				}
+				DSC = { 
+					country_event = { id = CW_Diverse.11 days = 5 }
+				}
+			}
+		}
 	}
 	option = {
 		name = CW_Diverse.10.a2
@@ -428,5 +440,43 @@ news_event = {
 	option = {
 		name = CW_Diverse.10.a5
 		trigger = { OR = { has_government = fascism } }
+	}
+}
+
+country_event = {
+	id = CW_Diverse.11
+	title = CW_Diverse.11.t
+	desc = CW_Diverse.11.d
+	is_triggered_only = yes
+	option = {
+		name = CW_Diverse.11.a
+		annex_country = {
+			target = XIN
+			transfer_troops = yes
+		}
+		set_division_template_lock = {
+			division_template = "解放军师级征招机动单位"
+			is_locked = no
+		}
+		set_division_template_lock = {
+			division_template = "解放军师级征招机械单位"
+			is_locked = no
+		}
+		set_division_template_lock = {
+			division_template = "解放军师级征招步战单位"
+			is_locked = no
+		}
+		set_division_template_lock = {
+			division_template = "解放军师级机动单位"
+			is_locked = no
+		}
+		set_division_template_lock = {
+			division_template = "解放军师级步战单位"
+			is_locked = no
+		}
+		set_division_template_lock = {
+			division_template = "解放军师级机械化单位"
+			is_locked = no
+		}
 	}
 }

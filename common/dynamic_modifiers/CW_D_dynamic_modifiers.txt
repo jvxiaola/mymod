@@ -38,11 +38,15 @@ extrameal_islam_attack4 = {
 
 extrameal_islam_attack5 = {
 	enable = { always = yes }
-	
 	icon = GFX_idea_extrameal_islam_attack
 	army_speed_factor_for_controller = -0.10
 	attrition_for_controller = 0.15
 	local_factory_sabotage = 0.15
+}
+
+extrameal_islam_attack_escape = {
+	enable = { always = yes }
+	icon = GFX_idea_ex_islam_up
 }
 
 Preparation_status = {

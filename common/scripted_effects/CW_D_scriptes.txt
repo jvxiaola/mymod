@@ -299,6 +299,42 @@ civl_start_xin_or_effect = {
 	}
 }
 
+Dispatch_MDE_recruitment = {
+	if = {
+		limit = { has_template = "解放军师级征招机动单位" }
+		random_owned_state = {
+			create_unit = {
+				division = "name = \"解放军师级征招机动单位\" division_template = \"解放军师级征招机动单位\" start_experience_factor = 0.8"
+				owner = XIN
+				count = 2
+			}
+		}
+	}
+	else = {
+		division_template = {
+			name = "解放军师级征招机动单位"
+			division_names_group = CHI_XIN_recruitment_01
+			is_locked = yes
+			regiments = {
+				Mot_Inf_Bat = { x = 0 y = 0 } Mot_Inf_Bat = { x = 0 y = 1 }
+				Mot_Inf_Bat = { x = 0 y = 2 } Mot_Inf_Bat = { x = 0 y = 3 }
+				Mot_Inf_Bat = { x = 1 y = 0 } Mot_Inf_Bat = { x = 1 y = 1 }
+			}
+			support = {
+				Mech_Recce_Comp = { x = 0 y = 0 }
+			}
+		}
+		random_owned_state = {
+			create_unit = {
+				division = "name = \"解放军师级征招机动单位\" division_template = \"解放军师级征招机动单位\" start_experience_factor = 0.8"
+				owner = XIN
+				count = 2
+			}
+		}
+	}
+}
+
+
 Dispatch_MU_recruitment = {
 	if = {
 		limit = { has_template = "解放军师级征招机械化单位" }
@@ -340,7 +376,7 @@ if = {
 		create_unit = {
 			division = "name = \"解放军师级征招步战单位\" division_template = \"解放军师级征招步战单位\" start_experience_factor = 0.8"
 			owner = XIN
-			count = 3
+			count = 4
 		}
 	}
 }
@@ -363,7 +399,7 @@ else = {
 		create_unit = {
 			division = "name = \"解放军师级征招步战单位\" division_template = \"解放军师级征招步战单位\" start_experience_factor = 0.8"
 			owner = XIN
-			count = 3
+			count = 4
 		}
 	}
 }
