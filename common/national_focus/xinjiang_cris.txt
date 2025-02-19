@@ -1,6 +1,5 @@
 
-
-joint_focus = {
+	joint_focus = {
 		id = XIN_troubled_times
 		icon = turk_skulls_guns_fire
 		x = 1
@@ -13,12 +12,10 @@ joint_focus = {
 		}
 		allow_branch = {
 			OR = {
-				AND = {
-					OR = { tag = CHI }
-					has_country_flag = XIN_attacked
-				}
+				tag = CHI
 				tag = XIN
 			}
+			has_country_flag = XIN_attacked
 		}
 	
 		available = { always = no }

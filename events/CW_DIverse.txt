@@ -132,6 +132,7 @@ country_event = {
 				}
 			inherit_technology = CHI							
 			load_oob = XIN_liberate_units
+			set_country_flag = XIN_attacked
 			mark_focus_tree_layout_dirty = yes#刷新国策树
 			give_military_access = CHI
 			complete_national_focus = XIN_troubled_times
