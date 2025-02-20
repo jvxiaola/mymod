@@ -354,7 +354,7 @@ country_event = {
 	desc = CW_Diverse.8.d
 	picture = GFX_iranian_civ_war_country
 	is_triggered_only = yes
-	immediate = { limit = { tag = CHI } Set_ETK = yes }
+	immediate = { if = { limit = { tag = CHI } Set_ETK = yes } }
 	option = {
 		name = CW_Diverse.8.a
 		every_country = { news_event = { id = CW_Diverse.9 days = 7 } }
@@ -370,11 +370,13 @@ news_event = {
 	major = yes
 	is_triggered_only = yes
 	immediate = { 
-		limit = { tag = CHI } 
-		ETK = {
-			declare_war_on = {
-				target = XIN
-				type = annex_everything
+		if = {
+			limit = { tag = CHI } 
+			ETK = {
+				declare_war_on = {
+					target = XIN
+					type = annex_everything
+				}
 			}
 		}
 	}
@@ -512,7 +514,7 @@ country_event = {
 			limit = { ROOT = { tag = SOV } }
 			CHI = { set_country_flag = Contact_SOV_successs }
 		}
-		ai_will_do = {
+		ai_chance = {
 			base = 1
 			modifier = {
 				OR = { has_government = democratic has_government = fascism }
@@ -534,7 +536,7 @@ country_event = {
 			limit = { ROOT = { tag = SOV } }
 			CHI = { set_country_flag = Contact_SOV_failed }
 		}
-		ai_will_do = {
+		ai_chance = {
 			base = 0
 			modifier = {
 				OR = { has_government = democratic has_government = fascism }
