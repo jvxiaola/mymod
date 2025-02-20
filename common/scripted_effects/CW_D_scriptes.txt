@@ -289,7 +289,7 @@ civl_start_xin_or_effect = {
 				if = {
 					limit = { OR = { has_dynamic_modifier = { modifier = extrameal_islam_attack3 } has_dynamic_modifier = { modifier = extrameal_islam_attack4 } has_dynamic_modifier = { modifier = extrameal_islam_attack5 } } }
 					set_demilitarized_zone = yes
-					transfer_state_to = ETK
+					set_state_flag = XIN_LOSE_states
 				}
 				else = {
 					set_demilitarized_zone = no
@@ -406,10 +406,17 @@ else = {
 }
 
 Set_ETK = {
+	XIN = { 
+		every_owned_state = { 
+			limit = { has_state_flag = XIN_LOSE_states }
+			clr_state_flag = XIN_LOSE_states
+			set_demilitarized_zone = no
+			transfer_state_to = ETK
+		} 
+	}
 		ETK = {
 			every_owned_state = {
 			limit = { OR = { has_dynamic_modifier = { modifier = extrameal_islam_attack3 } has_dynamic_modifier = { modifier = extrameal_islam_attack4 } has_dynamic_modifier = { modifier = extrameal_islam_attack5 } } }
-			set_demilitarized_zone = no
 			remove_dynamic_modifier = { modifier = extrameal_islam_attack1 } remove_dynamic_modifier = { modifier = extrameal_islam_attack2 }
 			remove_dynamic_modifier = { modifier = extrameal_islam_attack3 } remove_dynamic_modifier = { modifier = extrameal_islam_attack4 } 
 			remove_dynamic_modifier = { modifier = extrameal_islam_attack5 }
@@ -417,7 +424,7 @@ Set_ETK = {
 		create_country_leader = {
 			name = XIN_terriost
 			picture = "XIN_terriost.dds"
-			ideology = Kingdom
+			ideology = Caliphate
 			traits = { Non_governmental_riots WESTERN_freedom_fighter }
 		}
 		inherit_technology = XIN
