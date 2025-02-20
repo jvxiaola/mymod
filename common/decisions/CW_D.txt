@@ -6,11 +6,13 @@ CHI_XIN_Terrorist_infiltration = {
 	days_mission_timeout = 15
 	selectable_mission = no
 	timeout_effect = {
-		if = {
-			limit = { all_owned_state = { NOT = { has_dynamic_modifier = { modifier = extrameal_islam_attack5 } } } }
-			random_owned_state = { extrameal_islam_leavel_up = yes }
+		XIN = {
+			if = {
+				limit = { all_owned_state = { NOT = { has_dynamic_modifier = { modifier = extrameal_islam_attack5 } } } }
+				random_owned_state = { extrameal_islam_leavel_up = yes }
+			}
+			else = { CHI = { country_event = { id = CW_Diverse.5 } } }
 		}
-		else = { country_event = { id = CW_Diverse.5 } }
 	}
 	activation = { 
 		has_country_flag = XIN_attacked 
