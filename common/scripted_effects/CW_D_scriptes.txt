@@ -417,7 +417,7 @@ Set_ETK = {
 		create_country_leader = {
 			name = XIN_terriost
 			picture = "XIN_terriost.dds"
-			ideology = fascism
+			ideology = Caliphate
 			traits = { Non_governmental_riots WESTERN_freedom_fighter }
 		}
 		inherit_technology = XIN
