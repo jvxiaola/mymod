@@ -52,7 +52,7 @@ CW_D_category_desc: "    我国的地区分离主义分子由来已久，在§C1
 CAN_NOT_input_is_reb: "无法煽动叛乱"
 #好感
 chinese_MRG: "是中国军区"
-
+Joint_anti_terrorism: "联合反恐"
 #精神
 Military_region_government: "军区政府"
 Military_region_government_desc: "该政治实体是由§7中央政府§!为应对特殊紧急情况而成立的§Y军区政府§!,享有一定的军事与政治自主权。"
@@ -83,6 +83,8 @@ XIN_alleviating_ethnic_tensions_effect_tt: "军区§8民族主义情绪§!将§G
 XIN_attacked_ethnic_tensions_effect_tt: "军区§8民族主义情绪§!将§R提高0.5级§!"
 Preparation_status_tt: "军区§R政治理论素养§!效果：\n$communism_drift$:[?ps_1|=2+]\n$MODIFIER_ARMY_ORG$:[?ps_2|=0+]\n\n§G军事素养§!效果：\n$MODIFIER_ARMY_ORG_FACTOR$:[?ps_3|=%+]\n$MODIFIERS_ARMY_ATTACK_FACTOR$:[?ps_4|=%+]\n$MODIFIER_TERRAIN_PENALTY_REDUCTION$:[?ps_5|=%+]\n\n军区§O军备工业§!效果：\n$MODIFIER_production_speed_arms_factory_factor$:[?ps_6|=%+]\n$MODIFIER_INDUSTRIAL_CAPACITY_FACTOR$:[?ps_7|=%+]\n$MODIFIER_LINE_CHANGE_PRODUCTION_EFFICIENCY_FACTOR$:[?ps_8|=%+]\n$MODIFIER_PRODUCTION_FACTORY_MAX_EFFICIENCY_FACTOR$:[?ps_9|=%+]\n$MODIFIER_PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR$:[?ps_10|=%+]\n$MODIFIER_PRODUCTION_FACTORY_EFFICIENCY_GAIN_FACTOR$:[?ps_11|=%+]\n$MODIFIER_PRODUCTION_LACK_OF_RESOURCE_PENALTY_FACTOR$:[?ps_12|=%-]\n\n§8民族主义情绪§!等级：[?Nationalist_sentiment_military|0]\n$nationalist_drift$:[?ps_13|=2-]\n$MODIFIER_WAR_SUPPORT_FACTOR$:[?ps_14|=%+]\n$MODIFIER_STABILITY_FACTOR$:[?ps_15|=%+]\n$MODIFIER_ARMY_ORG_FACTOR$:[?ps_16|=%+]\n$MODIFIERS_ARMY_ATTACK_FACTOR$:[?ps_17|=%+]"
 CHI_Military_Police_Democratic_Alliance_dispatched_XIN_station_trigger_tt: "§R尚有地区存在恐怖主义渗透风险！§!"
+CHI_Contact_to_attack_xin_terrist_KAZ_decision_trigger_tt: "§R尚未与哈萨克斯坦就反恐演习事项展开会谈§!"
+CHI_Contact_to_attack_xin_terrist_SOV_decision_trigger_tt: "§R尚未与俄罗斯就反恐演习事项展开会谈§!"
 NOT_completed_tt: "§R边疆危机内容尚未完成，敬请期待！§!"
 CHI_XIN_Terrorist_infiltration: "§R恐怖组织渗透§!"
 Military_Police_Democratic_Alliance_dispatched_XIN_station: "军警民协调派驻"
@@ -150,3 +152,8 @@ CW_Diverse.11: "新疆军区转向川渝"
 CW_Diverse.11.t: "新疆军区转向川渝"
 CW_Diverse.11.d: "在消灭泛突厥恐怖分子与极端伊斯兰圣战恐怖分子后，经过军区司令部表决，新疆军区决定投入川渝政府治下。"
 CW_Diverse.11.a: "明智的决定"
+CW_Diverse.12: "中国接洽反恐演习事项"
+CW_Diverse.12.t: "中国接洽反恐演习事项"
+CW_Diverse.12.d: "中国政府近日向我方发起外交倡议，希望与我方就边境安全问题开展各项活动。我们是否同意？"
+CW_Diverse.12.a: "同意"
+CW_Diverse.12.b: "拒绝"

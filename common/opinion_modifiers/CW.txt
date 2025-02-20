@@ -2,6 +2,10 @@
 opinion_modifiers = {
 	chinese_MRG = {
 		value = 300
-		max_trust = 300
+		max_trust = 100
+	}
+	Joint_anti_terrorism = {
+		value = 50
+		max_trust = 100
 	}
 }

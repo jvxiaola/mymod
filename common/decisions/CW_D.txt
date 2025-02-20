@@ -17,7 +17,56 @@ CHI_XIN_Terrorist_infiltration = {
 	}
 	is_good = no
 }
-#国策路线选择(未更新) #联络中亚国家(未更新) #联络俄罗斯(未更新) #组织中亚联合反恐行动(未更新)
+#国策路线选择(未更新) 
+
+#联络哈萨克斯坦  #组织中亚联合反恐行动(未更新)
+CHI_Contact_to_attack_xin_terrist_KAZ = {
+	icon = GFX_decision_generic_military
+	visible = {
+		tag = CHI
+		has_country_flag = XIN_attacked
+		NOT = { has_country_flag = Contact_kaz_successs }
+		NOT = { has_country_flag = Contact_kaz_failed }
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = CHI_Contact_to_attack_xin_terrist_KAZ_decision_trigger_tt
+			always = yes
+		}
+	}
+	days_remove = 3
+	fire_only_once = yes
+	cost = 20
+	remove_effect = {
+		KAZ = {
+			country_event = { id = CW_Diverse.7 }
+		}
+	}
+}
+#联络俄罗斯(未更新)
+CHI_Contact_to_attack_xin_terrist_SOV = {
+	icon = GFX_decision_generic_military
+	visible = {
+		tag = CHI
+		has_country_flag = XIN_attacked
+		NOT = { has_country_flag = Contact_SOV_successs }
+		NOT = { has_country_flag = Contact_SOV_failed }
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = CHI_Contact_to_attack_xin_terrist_SOV_decision_trigger_tt
+			always = yes
+		}
+	}
+	days_remove = 3
+	fire_only_once = yes
+	cost = 20
+	remove_effect = {
+		SOV = {
+			country_event = { id = CW_Diverse.7 }
+		}
+	}
+}
 
 #军警民协调派驻
 Military_Police_Democratic_Alliance_dispatched_XIN_station = {
