@@ -3159,7 +3159,6 @@ nationalist_Nat_Autocracy
 					add_to_array = { ruling_party = 22 } 
 					set_variable = { party_pop_array^22 = 0.9 } 
 					startup_politics = yes
-					remove_ideas = party_before_country
 						complete_national_focus = CHI_china_dream
 set_country_flag = CHI_xvcaihou
 			}
@@ -3183,7 +3182,6 @@ ggkfdjcr
 fubai
 }
 			}
-			add_ideas = party_before_country
 			complete_national_focus = CHI_chisosm
 					set_politics = { ruling_party = communism elections_allowed = no }
 			add_popularity = { ideology = communism popularity = 1.0 }

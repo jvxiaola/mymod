@@ -193,7 +193,6 @@ set_variable = { CHI_Socialist_Construction_dynamic1 = -0.40}
 		economic_boom
 		unrestrained_corruption
 		pluralist
-		censored_nation_01
 		water_shortages_3
 		CHI_low_end_manufacturing
 		p5_member
@@ -3316,7 +3315,6 @@ set_popularities = {
 		unrestrained_corruption
 		pluralist
 		zhonghua
-		party_before_country
 		CHI_low_end_manufacturing
 		p5_member
 		consumption_economy

@@ -3940,7 +3940,7 @@ east_asia_ziyou_JAP = {
 				
 		}
 		china_dream = {
-			picture = party_before_country
+			picture = faction_chinese_united_front
 			
 			allowed = { always = no }
 			removal_cost = -1

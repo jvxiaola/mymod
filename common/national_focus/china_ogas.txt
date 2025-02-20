@@ -422,7 +422,6 @@ prerequisite = { focus = PRC_communsim_soc }
 else_if = {
  limit ={ has_idea = people_amry3 }
 		remove_ideas = people_amry3
-		remove_ideas = party_before_country
 		}
 add_ideas = PRC_gmwz}
 }
