@@ -92,7 +92,7 @@ Military_Police_Democratic_Alliance_dispatched_XIN_station = {
 	}
 	remove_effect = {
 		XIN = {
-			any_owned_state = {
+			random_owned_state = {
 				limit = { will_be_attacked_by_islam = yes }
 				extrameal_islam_leavel_down = yes
 			}
