@@ -5,12 +5,11 @@ country_event = {
 	title = CW_Diverse.1.t
 	desc = CW_Diverse.1.d
 	picture = GFX_event_pictures_CW_D_event1
-	RAJ_support_xinjian_islamists
 	is_triggered_only = yes
+	trigger = { tag = CHI }
 	immediate = { RAJ = { set_country_flag = CAN_NOT_input_is_reb } }
 	option = {	
 		name = CW_Diverse.1.a
-
 		country_event = { id = CW_Diverse.2 days = 35 }
 		add_manpower = -200
 		add_equipment_to_stockpile = {
@@ -26,9 +25,8 @@ country_event = {
 	title = CW_Diverse.2.t
 	desc = CW_Diverse.2.d
 	picture = GFX_event_pictures_CW_D_event2
-	
+	trigger = { tag = CHI }
 	is_triggered_only = yes
-	
 	option = {	
 		name = CW_Diverse.2.a
 
@@ -73,6 +71,7 @@ country_event = {
 	desc = CW_Diverse.3.d
 	picture = GFX_event_pictures_CW_D_event3
 	is_triggered_only = yes
+	trigger = { tag = CHI }
 	option = {	
 		name = CW_Diverse.3.a
 		army_experience = 5
@@ -107,6 +106,7 @@ country_event = {
 	desc = CW_Diverse.4.d
 	picture = GFX_event_pictures_CW_D_event4
 	is_triggered_only = yes
+	trigger = { tag = CHI }
 	option = {
 		name = CW_Diverse.4.a
 		custom_effect_tooltip = orgnize_xinjiang_military_TT
@@ -354,7 +354,6 @@ country_event = {
 	desc = CW_Diverse.8.d
 	picture = GFX_iranian_civ_war_country
 	is_triggered_only = yes
-	fire_only_once = yes
 	immediate = { limit = { tag = CHI } Set_ETK = yes }
 	option = {
 		name = CW_Diverse.8.a
@@ -368,8 +367,8 @@ news_event = {
 	title = CW_Diverse.9.t
 	desc = CW_Diverse.9.d
 	picture = GFX_event_pictures_CW_D_ET_attack
+	major = yes
 	is_triggered_only = yes
-	fire_only_once = yes
 	immediate = { 
 		limit = { tag = CHI } 
 		ETK = {
@@ -408,7 +407,7 @@ news_event = {
 	desc = CW_Diverse.10.d
 	picture = GFX_news_event_pictures_CW_XIN_win_attack_terrist
 	is_triggered_only = yes
-	fire_only_once = yes
+	major = yes
 	option = {
 		name = CW_Diverse.10.a1
 		trigger = { OR = { tag = CHI tag = DSC tag = HKG tag = XIZ tag = XIN } }
@@ -450,7 +449,6 @@ country_event = {
 	title = CW_Diverse.11.t
 	desc = CW_Diverse.11.d
 	is_triggered_only = yes
-	fire_only_once = yes
 	option = {
 		name = CW_Diverse.11.a
 		annex_country = {
@@ -496,7 +494,6 @@ country_event = {
 	desc = CW_Diverse.12.d
 	picture = GFX_iranian_civ_war_country
 	is_triggered_only = yes
-	fire_only_once = yes
 	option = {
 		name = CW_Diverse.12.a
 		add_opinion_modifier = {
