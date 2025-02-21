@@ -1,8 +1,8 @@
 scripted_gui = {
 
 	CISC_main_GUI = {
-		context_type = decision_context
-		window_name = "CISC_main_GUI_window"
+		context_type = decision_category
+		window_name = "CISC_main_GUI"
 
 		visible = {
 			always = yes
@@ -11,12 +11,13 @@ scripted_gui = {
 		effects = {
 			XIN_button_click = {
 				if = {
-					NOT = { has_country_flag = XIN_CSIC_GUI_OPENED }
+					limit = { NOT = { has_country_flag = XIN_CSIC_GUI_OPENED } }
+					set_country_flag = XIN_CSIC_GUI_OPENED
 				}
-				set_country_flag = XIN_CSIC_GUI_OPENED
+				
 			}
 
-			
+
 		}
 	}
 
