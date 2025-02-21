@@ -7,14 +7,21 @@ scripted_gui = {
 		visible = {
 			always = yes
 		}
-
+		triggers = {
+			XIN_button_visible = {
+				country_exists = XIN
+				has_country_flag = XIN_attacked
+			}
+			XIN_button_visible_click_enabled = {
+				NOT = { has_country_flag = XIN_CSIC_GUI_OPENED }
+			}
+		}
 		effects = {
 			XIN_button_click = {
 				if = {
 					limit = { NOT = { has_country_flag = XIN_CSIC_GUI_OPENED } }
 					set_country_flag = XIN_CSIC_GUI_OPENED
 				}
-				
 			}
 
 
