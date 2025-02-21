@@ -1,0 +1,8 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_XIN_CSIC_GUI_icon"
+		texturefile = "gfx/interface/XIN_CIS_GUI/XIN_icon.png"
+	}
+	
+}
+

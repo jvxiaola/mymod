@@ -117,6 +117,7 @@ CW_D_category = {
 	priority = { base = 30000 }
 	icon = GFX_decision_CUB_train_chi
 	visible_when_empty = yes
+	scripted_gui = CISC_main_GUI
 	visible = {
 		original_tag = CHI 
 		has_country_flag = XIN_attacked
