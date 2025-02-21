@@ -2388,22 +2388,22 @@ DSC_JGBD_desc: "我们需要进行准备"
 DSC_ZHONGLI: "高压政策"
 DSC_ZHONGLI_desc: "军管已经开始松懈了，在内战全面爆发后，骚乱开始蔓延了，之前的成果付之一炬了，必须使出铁腕手腕"
 
-   DSC_FUCONGZHIHUI: "继续跟随中央"
-  DSC_FUCONGZHIHUI_desc: "北方政府成功缓解了经济崩溃，并成功取得了广大中下民众的支持，同时他们也许诺我们....\n不管如何,军管区司令部已经决定，宣布北方政府为“共和国唯一合法政府”。"
+DSC_FUCONGZHIHUI: "继续跟随中央"
+DSC_FUCONGZHIHUI_desc: "北方政府成功缓解了经济崩溃，并成功取得了广大中下民众的支持，同时他们也许诺我们....\n不管如何,军管区司令部已经决定，宣布北方政府为“共和国唯一合法政府”。"
 
-    DSC_DONGYUAN: "动员民兵"
-  DSC_DONGYUAN_desc: "目前形势相当不妙，西边西藏军区对我们虎视眈眈，西北的新疆军区近日也动作频发，近日东边的南方军政府也开始进行军事试探....\n冲突前流串到军管区的极左分子也开始煽动不明真相的农民与工人，军管区司令部已经召开会议，决定大量征招民兵，以应对内外的不稳定局势。"
+DSC_DONGYUAN: "动员民兵"
+DSC_DONGYUAN_desc: "目前形势相当不妙，西边西藏军区对我们虎视眈眈，西北的新疆军区近日也动作频发，近日东边的南方军政府也开始进行军事试探....\n冲突前流串到军管区的极左分子也开始煽动不明真相的农民与工人，军管区司令部已经召开会议，决定大量征招民兵，以应对内外的不稳定局势。"
 
 
-    DSC_SUQINGSAOLUAN: "抓捕骚乱者"
+DSC_SUQINGSAOLUAN: "抓捕骚乱者"
 DSC_SUQINGSAOLUAN_desc: "我们要抓捕这些骚乱者，以及给他们撑腰的所谓毛派"
 
-    DSC_kongzhiyulun: "收买线人"
- DSC_kongzhiyulun_desc: "我们要在群众中发展线人，争取套取更多有用的信息"
+DSC_kongzhiyulun: "收买线人"
+DSC_kongzhiyulun_desc: "我们要在群众中发展线人，争取套取更多有用的信息"
 
 
-    DSC_ZHENGYAFANPAN: "控制舆论"
- DSC_ZHENGYAFANPAN_desc: "我们现在处于战争、动荡交织的紧急状态，为防舆论失控，必须更严格的收紧舆论，以维稳、聚力为宗旨，成立审查局与舆论部，管控信息发布与传播渠道，鼓励民众监督举报，打击虚假恶意言论，定期评估调整，力求稳定民心，直至紧急状态解除 。"
+DSC_ZHENGYAFANPAN: "控制舆论"
+DSC_ZHENGYAFANPAN_desc: "我们现在处于战争、动荡交织的紧急状态，为防舆论失控，必须更严格的收紧舆论，以维稳、聚力为宗旨，成立审查局与舆论部，管控信息发布与传播渠道，鼓励民众监督举报，打击虚假恶意言论，定期评估调整，力求稳定民心，直至紧急状态解除 。"
 
 
 DSC_ZHENGSHUI: "大规模征税"
@@ -2423,22 +2423,22 @@ DSC_shiyicidaibiaodahui_desc: "我们将继续毛主席的党的事业"
 
 
 DSC_gmxingdong: "准备革命"
-DSC_shiyicidaibiaodahui_desc: "我们已经准备好进行革命了"
+DSC_gmxingdong_desc: "我们已经准备好进行革命了"
 
 
 
-  DSC_QIYI: "接管政府"
-  DSC_QIYI_desc: "前军管区政府已经垮台，川渝正陷入无政府状态。接管并组建一个能正常运转的新地区政府，是我们遇到的第一个问题。\n同志们！快快动起来！革命不会自己到来！城区的工厂，农村的水田，街边的商店，都还等着我们组织工作呢！"
+DSC_QIYI: "接管政府"
+DSC_QIYI_desc: "前军管区政府已经垮台，川渝正陷入无政府状态。接管并组建一个能正常运转的新地区政府，是我们遇到的第一个问题。\n同志们！快快动起来！革命不会自己到来！城区的工厂，农村的水田，街边的商店，都还等着我们组织工作呢！"
 
 
-  DSC_JIEFNQUANZHONGGUO: "宣称全中国"
-  DSC_JIEFNQUANZHONGGUO_desc: "无产阶级将会拿回他们的国家"
+DSC_JIEFNQUANZHONGGUO: "宣称全中国"
+DSC_JIEFNQUANZHONGGUO_desc: "无产阶级将会拿回他们的国家"
 
-  DSC_NEIZHANJIESHU: "内战结束"
-  DSC_NEIZHANJIESHU_desc: "经过长时间的军事冲突，自川渝而来的革命者取得了最终的胜利，他们的故事也就此开始....."
+DSC_NEIZHANJIESHU: "内战结束"
+DSC_NEIZHANJIESHU_desc: "经过长时间的军事冲突，自川渝而来的革命者取得了最终的胜利，他们的故事也就此开始....."
 
-  DSC_QINGSUANFENLIESHILI:"清算分裂势力"
-  DSC_QINGSUANFENLIESHILI_desc:"我们将用武力收回我们的领土"
+DSC_QINGSUANFENLIESHILI: "清算分裂势力"
+DSC_QINGSUANFENLIESHILI_desc: "我们将用武力收回我们的领土"
 
 
 
