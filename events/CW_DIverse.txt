@@ -371,15 +371,14 @@ news_event = {
 	is_triggered_only = yes
 	fire_only_once=yes
 	immediate = { 
-		if = {
-			limit = { tag = CHI } 
+
 			ETK = {
 				declare_war_on = {
 					target = XIN
 					type = annex_everything
 				}
 			}
-		}
+
 	}
 	option = {
 		name = CW_Diverse.9.a1
