@@ -377,7 +377,6 @@ news_event = {
 					type = annex_everything
 				}
 			}
-
 	}
 	option = {
 		name = CW_Diverse.9.a1

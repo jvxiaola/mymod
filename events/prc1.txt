@@ -6010,7 +6010,7 @@ country_event = {
 
 		set_temp_variable = { temp_opinion = 10 }
 		change_communist_cadres_opinion = yes
-				custom_effect_tooltip = influence_the_party_line_tt
+		custom_effect_tooltip = influence_the_party_line_tt
 	add_5_emerging_left_wing_radical = yes
 	add_to_variable = {
 	var = CPC_Right
@@ -6024,7 +6024,8 @@ country_event = {
 	var = CPC_Left
 	value = 0.015
 	}
-	USA = {		add_opinion_modifier = {
+	USA = {		
+		add_opinion_modifier = {
 				target = CHI
 				modifier = diplomatic_distance
 			}
@@ -7710,19 +7711,20 @@ value = -0.1
 
 		set_temp_variable = { treasury_change = 10 }
 		modify_treasury_effect = yes
-					custom_effect_tooltip = influence_the_party_line_tt
-	add_5_western_liberalism = yes
-	add_5_emerging_reactionary = yes
-	add_to_variable = {
-	var = CPC_Right
-	value = 0.1
-	}
+		custom_effect_tooltip = influence_the_party_line_tt
+		add_10_western_liberalism = yes
+		add_10_emerging_reactionary = yes
+		add_to_variable = {
+			var = CPC_Right
+			value = 0.1
+		}
 
-	add_to_variable = {
-	var = CPC_Left
-	value = -0.1
-	}
-				USA = {		add_opinion_modifier = {
+		add_to_variable = {
+		var = CPC_Left
+		value = -0.1
+		}
+				USA = {		
+			add_opinion_modifier = {
 				target = CHI
 				modifier = medium_increase
 			}
