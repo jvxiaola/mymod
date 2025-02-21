@@ -357,7 +357,7 @@ country_event = {
 	immediate = { if = { limit = { tag = CHI } Set_ETK = yes } }
 	option = {
 		name = CW_Diverse.8.a
-		every_country = { news_event = { id = CW_Diverse.9 days = 7 } }
+		every_country = { limit = { is_ai = no } news_event = { id = CW_Diverse.9 days = 7 } }
 		custom_effect_tooltip = CW_Diverse_event8_effect_tt
 	}
 }
