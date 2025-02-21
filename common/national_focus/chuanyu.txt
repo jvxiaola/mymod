@@ -1428,10 +1428,10 @@ add_political_power = 100
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = "中国已重归一统"
-					random_country = {
+					all_country = {
 						limit = {
-							NOT = { tag = CHI}
-							 has_cosmetic_tag = CHI_REB_S
+							original_tag = CHI
+							has_cosmetic_tag = CHI_REB_S
 						}
 						exists = no
 					}
