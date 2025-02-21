@@ -413,6 +413,7 @@ news_event = {
 	desc = CW_Diverse.10.d
 	picture = GFX_news_event_pictures_CW_XIN_win_attack_terrist
 	is_triggered_only = yes
+	fire_only_once=yes
 	major = yes
 	option = {
 		name = CW_Diverse.10.a1
