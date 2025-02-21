@@ -1366,14 +1366,7 @@ add_political_power = 100
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = "主要地区军事冲突已结束"
-					any_country = {
-						limit = {
-							NOT = { tag = CHI }
-							 has_cosmetic_tag = CHI_REB_S
-						}
-						exists = no
-					}
-					CHI = { exists = no }
+					has_war=no
 				}
 			}
 			completion_reward = {
