@@ -122,8 +122,12 @@ on_actions = {
 						FROM = { tag = XIN }
 						NOT = { country_exists = CHI }
 						ROOT = { tag = ETK }
+						NOT={
+						has_global_flag = cw10_already
+					}
 					}
 					every_country = { news_event = { id = CW_Diverse.10 days = 1 } }
+
 					ROOT = {
 						every_owned_state = { add_dynamic_modifier = { modifier = extrameal_islam_attack_escape } }
 					}
@@ -150,6 +154,8 @@ on_actions = {
 					}
 			}
 			}
+
+			set_global_flag = cw10_already
 		}
 	}
 }
