@@ -312,6 +312,7 @@
 		relative_position_id = CHI_The_Untapped_Market
 
 		cost = 5
+
 		offset = {
 			x = 3
 			trigger = {
@@ -4184,7 +4185,7 @@ shared_focus = {
 	}
 	shared_focus = {
 		id = CHI_invest_fusion_reactor
-		icon = CHI_invest_fusion_reactor
+		icon = fusion_science
 
 		x = 0
 		y = 3
@@ -7347,9 +7348,12 @@ is_subject_of = CHI
 
 		cost = 5
 		allow_branch = {
+
+			has_completed_focus = CHI_Factory_of_the_World
+			
 			NOT = {
 				has_country_flag = xggm
-				tag = DSC
+				has_country_flag = qyxd
 				has_country_flag = laozuo
 			}
 		}
