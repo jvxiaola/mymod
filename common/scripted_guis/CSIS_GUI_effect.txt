@@ -17,6 +17,7 @@ scripted_gui = {
 			}
 			XIN_diplomacy_button_visible = { has_country_flag = XIN_CSIC_GUI_OPENED }
 			XIN_public_security_button_visible = { has_country_flag = XIN_CSIC_GUI_OPENED }
+			XIN_military_recruitment_button_visible = { has_country_flag = XIN_CSIC_GUI_OPENED }
 		}
 
 		effects = {
@@ -25,6 +26,7 @@ scripted_gui = {
 					limit = { NOT = { has_country_flag = XIN_CSIC_GUI_OPENED } }
 					set_country_flag = XIN_CSIC_GUI_OPENED
 				}
+
 			}
 
 			XIN_diplomacy_button_click = {
@@ -37,6 +39,10 @@ scripted_gui = {
 					limit = { has_country_flag = XIN_public_security_opened }
 					clr_country_flag = XIN_public_security_opened
 				}
+				if = {
+					limit = { has_country_flag = XIN_military_recruitment_opened }
+					clr_country_flag = XIN_military_recruitment_opened
+				}
 			}
 
 			XIN_public_security_button_click = {
@@ -48,6 +54,26 @@ scripted_gui = {
 				if = {
 					limit = { has_country_flag = XIN_diplomacy_opened }
 					clr_country_flag = XIN_diplomacy_opened
+				}
+				if = {
+					limit = { has_country_flag = XIN_military_recruitment_opened }
+					clr_country_flag = XIN_military_recruitment_opened
+				}
+			}
+
+			XIN_military_recruitment_button_click = {
+				if = {
+					limit = { NOT = { has_country_flag = XIN_military_recruitment_opened } }
+					set_country_flag = XIN_military_recruitment_opened
+				}
+				#关闭其它界面
+				if = {
+					limit = { has_country_flag = XIN_diplomacy_opened }
+					clr_country_flag = XIN_diplomacy_opened
+				}
+				if = {
+					limit = { has_country_flag = XIN_public_security_opened }
+					clr_country_flag = XIN_public_security_opened
 				}
 			}
 		}

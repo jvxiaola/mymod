@@ -35,5 +35,23 @@ guiTypes = {
 			clicksound = click_default
 			pdx_tooltip = "XIN_public_security_button_desc_TT"
 		}
+		buttonType = {
+			name = "XIN_military_recruitment_button"
+			spriteType = "GFX_XIN_second_button_icon"
+			buttonText = "新疆军区征招"
+			buttonFont = "hoi_18mbs"
+			position = { x = 270 y = 100 }
+			clicksound = click_default
+			pdx_tooltip = "XIN_public_security_button_desc_TT"
+		}
+		buttonType = {
+			name = "XIN_public_security_button"
+			spriteType = "GFX_XIN_second_button_icon"
+			buttonText = "新疆治安事项"
+			buttonFont = "hoi_18mbs"
+			position = { x = 30 y = 190 }
+			clicksound = click_default
+			pdx_tooltip = "XIN_public_security_button_desc_TT"
+		}
 	}
 }
