@@ -152,6 +152,7 @@ completion_reward = {
 					factor = 50
 				}
 				allow_branch = {
+					has_country_leader = {name="江泽民"}
 				NOT = {
 		has_country_flag = CPC_Rehabilitation_of_Zhao_Ziyang
 		}
@@ -622,9 +623,6 @@ focus = {
 				
 				}
 	available = {
-		NOT={
-			has_idea = CHI_zibenjia 
-		}
 	}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
