@@ -24,7 +24,7 @@ guiTypes = {
 			buttonFont = "hoi_18mbs"
 			position = { x = 20 y = 140 }
 			clicksound = click_default
-			pdx_tooltip = "XIN_diplomacy_button_desc_TT"
+			pdx_tooltip = "XIN_diplomacy_desc_TT"
 		}
 		buttonType = {
 			name = "XIN_public_security_button"
@@ -33,7 +33,7 @@ guiTypes = {
 			buttonFont = "hoi_18mbs"
 			position = { x = 170 y = 140 }
 			clicksound = click_default
-			pdx_tooltip = "XIN_public_security_button_desc_TT"
+			pdx_tooltip = "XIN_public_security_desc_TT"
 		}
 		buttonType = {
 			name = "XIN_military_recruitment_button"
@@ -42,16 +42,25 @@ guiTypes = {
 			buttonFont = "hoi_18mbs"
 			position = { x = 320 y = 140 }
 			clicksound = click_default
-			pdx_tooltip = "XIN_public_security_button_desc_TT"
+			pdx_tooltip = "XIN_military_recruitment_desc_TT"
 		}
 		buttonType = {
 			name = "XIN_arms_industry_button"
 			spriteType = "GFX_XIN_second_button_icon"
 			buttonText = "新疆军备建设"
 			buttonFont = "hoi_18mbs"
-			position = { x = 20 y = 170 }
+			position = { x = 20 y = 190 }
 			clicksound = click_default
-			pdx_tooltip = "XIN_public_security_button_desc_TT"
+			pdx_tooltip = "XIN_arms_industry_desc_TT"
+		}
+		buttonType = {
+			name = "XIN_military_qualities_button"
+			spriteType = "GFX_XIN_second_button_icon"
+			buttonText = "军事素质建设"
+			buttonFont = "hoi_18mbs"
+			position = { x = 320 y = 190 }
+			clicksound = click_default
+			pdx_tooltip = "XIN_military_qualities_desc_TT"
 		}
 	}
 }
