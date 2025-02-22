@@ -114,8 +114,7 @@ Military_Police_Democratic_Alliance_dispatched_XIN_station = {
 CHI_Organize_combat_skills_training = { 
 		icon = GFX_decision_chinese_guns
 		visible = {
-			tag = CHI
-			has_country_flag = XIN_attacked
+			tag = CHI has_country_flag = XIN_attacked has_country_flag = XIN_military_qualities_opened
 		}
 		available = {
 			custom_trigger_tooltip = {
@@ -147,8 +146,7 @@ CHI_Organize_combat_skills_training = {
 	CHI_Organize_political_work_XIN = {
 		icon = GFX_decision_generic_speech
 		visible = {
-			tag = CHI
-			has_country_flag = XIN_attacked
+			tag = CHI has_country_flag = XIN_attacked has_country_flag = XIN_military_qualities_opened
 		}
 		available = {
 			custom_trigger_tooltip = {
@@ -176,7 +174,7 @@ CHI_Organize_combat_skills_training = {
 #调解军区民族情绪
 CHI_Mediate_ethnic_emotions_XIN = { 
 		icon = GFX_decision_generic_political_discourse
-		visible = { has_country_flag = XIN_attacked tag = CHI }
+		visible = { has_country_flag = XIN_attacked tag = CHI has_country_flag = XIN_military_qualities_opened  }
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = CHI_Mediate_ethnic_emotions_XIN_trigger_tt
@@ -203,7 +201,7 @@ CHI_Mediate_ethnic_emotions_XIN = {
 	CHI_Accelerate_construct_m_i_XIN = {
 		icon = GFX_decision_generic_construction
 		visible = {
-			has_country_flag = XIN_attacked tag = CHI
+			has_country_flag = XIN_attacked tag = CHI has_country_flag = XIN_arms_industry_opened
 		}
 		available = {
 			custom_trigger_tooltip = {
@@ -230,7 +228,7 @@ CHI_Mediate_ethnic_emotions_XIN = {
 	CHI_Enhance_military_production_XIN = {
 	icon = GFX_decision_arms_industry
 	visible = {
-		has_country_flag = XIN_attacked tag = CHI
+		has_country_flag = XIN_attacked tag = CHI has_country_flag = XIN_arms_industry_opened
 	}
 	available = {
 		custom_trigger_tooltip = {

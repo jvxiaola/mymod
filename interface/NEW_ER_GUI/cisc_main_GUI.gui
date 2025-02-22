@@ -1,7 +1,7 @@
 guiTypes = {
 	containerWindowType = {
 		name = "CISC_main_GUI"
-		size = { width = 470 height = 200 }
+		size = { width = 470 height = 300 }
 
 		buttonType = {
 			name = "XIN_button"
@@ -12,53 +12,77 @@ guiTypes = {
 			pdx_tooltip_delayed = "XIN_button_more_desc_loc_TT"
 		}
 
+		iconType = {
+			name = "signed_gui_XIN_diplomacy_button"
+			spriteType = "GFX_pla_selected_icon"
+			position = {  x = 0 y = 110 }
+		}
 		buttonType = {
 			name = "XIN_diplomacy_button"
 			spriteType = "GFX_XIN_second_button_icon"
 			buttonText = "新疆外交事项"
 			buttonFont = "hoi_18mbs"
-			position = { x = 20 y = 140 }
+			position = { x = 70 y = 140 }
 			clicksound = click_default
 			pdx_tooltip = "XIN_diplomacy_desc_TT"
 		}
+
 		iconType = {
-			name = "signed_gui_XIN_diplomacy_button"
+			name = "signed_gui_XIN_public_security_button"
 			spriteType = "GFX_pla_selected_icon"
-			position = {  x = 91 y = 165 }
+			position = {  x = 230 y = 110 }
 		}
 		buttonType = {
 			name = "XIN_public_security_button"
 			spriteType = "GFX_XIN_second_button_icon"
 			buttonText = "新疆治安事项"
 			buttonFont = "hoi_18mbs"
-			position = { x = 170 y = 140 }
+			position = { x = 300 y = 140 }
 			clicksound = click_default
 			pdx_tooltip = "XIN_public_security_desc_TT"
+		}
+
+		iconType = {
+			name = "signed_gui_XIN_military_recruitment_button"
+			spriteType = "GFX_pla_selected_icon"
+			position = {  x = 230 y = 110 }
 		}
 		buttonType = {
 			name = "XIN_military_recruitment_button"
 			spriteType = "GFX_XIN_second_button_icon"
 			buttonText = "新疆军区征招"
 			buttonFont = "hoi_18mbs"
-			position = { x = 320 y = 140 }
+			position = { x = 70 y = 190 }
 			clicksound = click_default
 			pdx_tooltip = "XIN_military_recruitment_desc_TT"
+		}
+
+		iconType = {
+			name = "signed_gui_XIN_arms_industry_button"
+			spriteType = "GFX_pla_selected_icon"
+			position = {  x = 230 y = 110 }
 		}
 		buttonType = {
 			name = "XIN_arms_industry_button"
 			spriteType = "GFX_XIN_second_button_icon"
 			buttonText = "新疆军备建设"
 			buttonFont = "hoi_18mbs"
-			position = { x = 20 y = 190 }
+			position = { x = 300 y = 190 }
 			clicksound = click_default
 			pdx_tooltip = "XIN_arms_industry_desc_TT"
+		}
+
+		iconType = {
+			name = "signed_gui_XIN_military_qualities_button"
+			spriteType = "GFX_pla_selected_icon"
+			position = {  x = 230 y = 110 }
 		}
 		buttonType = {
 			name = "XIN_military_qualities_button"
 			spriteType = "GFX_XIN_second_button_icon"
 			buttonText = "军事素质建设"
 			buttonFont = "hoi_18mbs"
-			position = { x = 320 y = 190 }
+			position = { x = 180 y = 240 }
 			clicksound = click_default
 			pdx_tooltip = "XIN_military_qualities_desc_TT"
 		}
