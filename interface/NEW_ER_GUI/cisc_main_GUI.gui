@@ -16,5 +16,14 @@ guiTypes = {
 			#spriteType = "GFX_gui_alert"
 			#position = {  x = 184 y = -20 }
 		#}
+
+		buttonType = {
+			name = "XIN_diplomacy_button"
+			spriteType = "GFX_XIN_CSIC_GUI_icon"
+			text = "新疆反恐外交事项"
+			position = { x = 30 y = -30 }
+			clicksound = click_default
+			pdx_tooltip = "XIN_diplomacy_button_desc_TT"
+		}
 	}
 }

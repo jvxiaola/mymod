@@ -3,6 +3,9 @@ spriteTypes = {
 		name = "GFX_XIN_CSIC_GUI_icon"
 		texturefile = "gfx/interface/XIN_CIS_GUI/XIN_icon.png"
 	}
-	
+	spriteType = {
+		name = "GFX_XIN_diplomacy_button_icon"
+		texturefile = "gfx/interface/XIN_CIS_GUI/second_button_icon.png"
+	}
 }
 
