@@ -8,8 +8,8 @@ scripted_gui = {
 			always = yes
 		}
 		triggers = {
-			XIN_button_visible = { country_exists = XIN has_country_flag = XIN_attacked }
-			XIN_button_desc_text_visible = { country_exists = XIN has_country_flag = XIN_attacked }
+			XIN_button_OPEN_visible = { country_exists = XIN has_country_flag = XIN_attacked }
+			XIN_button_OPEN_desc_text_visible = { country_exists = XIN has_country_flag = XIN_attacked }
 
 			XIN_diplomacy_button_visible = { has_country_flag = XIN_CSIC_GUI_OPENED }
 			signed_gui_XIN_diplomacy_button_visible = { has_country_flag = XIN_diplomacy_opened }
@@ -26,10 +26,18 @@ scripted_gui = {
 			XIN_military_qualities_button_visible = { has_country_flag = XIN_CSIC_GUI_OPENED }
 			signed_gui_XIN_military_qualities_button_visible = { has_country_flag = XIN_military_qualities_opened }
 
+			XIN_focus_conscription_button_visible = { 
+				has_country_flag = XIN_CSIC_GUI_OPENED 
+				XIN = { NOT = { has_country_flag = XIN_focus_conscription_goals } }
+			}
+			XIN_focus_conscription_button_shine_visible = {
+				has_country_flag = XIN_CSIC_GUI_OPENED 
+				XIN = { has_country_flag = XIN_focus_conscription_goals }
+			}
 		}
 
 		effects = {
-			XIN_button_click = {
+			XIN_button_OPEN_click = {
 				if = {
 					limit = { NOT = { has_country_flag = XIN_CSIC_GUI_OPENED } }
 					set_country_flag = XIN_CSIC_GUI_OPENED
@@ -144,6 +152,11 @@ scripted_gui = {
 				if = { limit = { has_country_flag = XIN_military_recruitment_opened } clr_country_flag = XIN_military_recruitment_opened }
 				if = { limit = { has_country_flag = XIN_arms_industry_opened } clr_country_flag = XIN_arms_industry_opened }
 			}
+
+			XIN_focus_conscription_button_click = { 
+				XIN = { set_country_flag = XIN_focus_conscription_goals }
+			}
+
 		}
 	}
 

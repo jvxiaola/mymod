@@ -2,6 +2,10 @@
 #GUI
 XIN_button_desc_TT: "新疆地区事务"
 XIN_button_more_desc_loc_TT: "作为中国历史与政治层面极为复杂而重要的地区，新疆也是中亚乃至东西交锋的重要焦点。"
+XIN_focus_conscription_goals: "新疆军区正聚焦于征招事务"
+XIN_focus_conscription_desc_TT: "使新疆军区§R专注于§!§7征招军队§!"
+XIN_focus_conscription_ing_desc_TT: "§R新疆军区正专注于§!§7征招军队§!"
+XIN_focus_conscription_effect_desc_TT: "§Y效果为§!:使新疆军区的§C左侧国策树分支可用§!"
 #军区设定
 XIN_communist_cadres: "军区政委"
 XIN_industrial_conglomerates: "生产建设兵团"
