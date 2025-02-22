@@ -6,7 +6,7 @@ guiTypes = {
 		buttonType = {
 			name = "XIN_button"
 			spriteType = "GFX_XIN_CSIC_GUI_icon"
-			position = { x = 30 y = -20 }
+			position = { x = 30 y = 10 }
 			clicksound = click_default
 			pdx_tooltip = "XIN_button_desc_TT"
 			pdx_tooltip_delayed = "XIN_button_more_desc_loc_TT"
@@ -20,16 +20,18 @@ guiTypes = {
 		buttonType = {
 			name = "XIN_diplomacy_button"
 			spriteType = "GFX_XIN_second_button_icon"
-			text = "新疆反恐外交事项"
-			position = { x = 30 y = -30 }
+			buttonText = "新疆外交事项"
+			buttonFont = "hoi_18mbs"
+			position = { x = 30 y = 100 }
 			clicksound = click_default
 			pdx_tooltip = "XIN_diplomacy_button_desc_TT"
 		}
 		buttonType = {
 			name = "XIN_public_security_button"
 			spriteType = "GFX_XIN_second_button_icon"
-			text = "新疆治安事项"
-			position = { x = 70 y = -30 }
+			buttonText = "新疆治安事项"
+			buttonFont = "hoi_18mbs"
+			position = { x = 150 y = 100 }
 			clicksound = click_default
 			pdx_tooltip = "XIN_public_security_button_desc_TT"
 		}
