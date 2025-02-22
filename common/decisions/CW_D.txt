@@ -87,7 +87,7 @@ Military_Police_Democratic_Alliance_dispatched_XIN_station = {
 		custom_trigger_tooltip = {
 			tooltip = CHI_Military_Police_Democratic_Alliance_dispatched_XIN_station_trigger_tt
 			XIN = {
-				all_owned_state = { NOT = { has_dynamic_modifier = { modifier = extrameal_islam_attack5 } } }
+				any_owned_state = { will_be_attacked_by_islam = yes }
 			}
 		}
 	}
