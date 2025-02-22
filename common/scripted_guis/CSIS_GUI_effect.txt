@@ -16,8 +16,11 @@ scripted_gui = {
 				NOT = { has_country_flag = XIN_CSIC_GUI_OPENED }
 			}
 			XIN_diplomacy_button_visible = { has_country_flag = XIN_CSIC_GUI_OPENED }
+			signed_gui_XIN_diplomacy_button_visible = { has_country_flag = XIN_diplomacy_opened }
 			XIN_public_security_button_visible = { has_country_flag = XIN_CSIC_GUI_OPENED }
 			XIN_military_recruitment_button_visible = { has_country_flag = XIN_CSIC_GUI_OPENED }
+			XIN_arms_industry_button_visible = { has_country_flag = XIN_CSIC_GUI_OPENED }
+			XIN_military_qualities_button_visible = { has_country_flag = XIN_CSIC_GUI_OPENED }
 		}
 
 		effects = {

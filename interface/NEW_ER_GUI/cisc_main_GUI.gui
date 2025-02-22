@@ -11,11 +11,6 @@ guiTypes = {
 			pdx_tooltip = "XIN_button_desc_TT"
 			pdx_tooltip_delayed = "XIN_button_more_desc_loc_TT"
 		}
-		#iconType = {
-			#name = "gui_alert"
-			#spriteType = "GFX_gui_alert"
-			#position = {  x = 184 y = -20 }
-		#}
 
 		buttonType = {
 			name = "XIN_diplomacy_button"
@@ -25,6 +20,11 @@ guiTypes = {
 			position = { x = 20 y = 140 }
 			clicksound = click_default
 			pdx_tooltip = "XIN_diplomacy_desc_TT"
+		}
+		iconType = {
+			name = "signed_gui_XIN_diplomacy_button"
+			spriteType = "GFX_pla_selected_icon"
+			position = {  x = 91 y = 165 }
 		}
 		buttonType = {
 			name = "XIN_public_security_button"
