@@ -1203,11 +1203,11 @@ country_event = {id= prc1.57 days = 3 }
 		icon = communist_party_of_china
 		x = 0
 		y = 7
-		cost = 10
+		cost = 2
 		relative_position_id = CHI_zhengzhigaige		
 			mutually_exclusive = { focus = CHI_break_term_limits}
 			available = {
-				date > 2002.6.1
+				date > 2002.9.1
 				has_country_leader = { name = "江泽民" }
 			}
 			bypass = {}
@@ -1221,7 +1221,7 @@ country_event = {id= prc1.57 days = 3 }
 
 
 				ai_will_do = {
-			factor = 5
+			factor = 500
 		}
 		allow_branch = {
 				has_country_leader = {name = "江泽民"}
