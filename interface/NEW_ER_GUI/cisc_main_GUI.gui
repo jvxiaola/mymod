@@ -11,6 +11,15 @@ guiTypes = {
 			pdx_tooltip = "XIN_button_desc_TT"
 			pdx_tooltip_delayed = "XIN_button_more_desc_loc_TT"
 		}
+		textBoxType = {
+			position = { x = 35 y = 15 }
+			name = "XIN_button_desc_text"
+			borderSize = { x = 130 y = 120 }
+			font = "Main_14_eu"
+			text = "新疆地区"
+			maxWidth = 300
+			maxHeight = 22
+		}
 
 		iconType = {
 			name = "signed_gui_XIN_diplomacy_button"
@@ -45,7 +54,7 @@ guiTypes = {
 		iconType = {
 			name = "signed_gui_XIN_military_recruitment_button"
 			spriteType = "GFX_pla_selected_icon"
-			position = {  x = 230 y = 110 }
+			position = {  x = 0 y = 160 }
 		}
 		buttonType = {
 			name = "XIN_military_recruitment_button"
@@ -60,7 +69,7 @@ guiTypes = {
 		iconType = {
 			name = "signed_gui_XIN_arms_industry_button"
 			spriteType = "GFX_pla_selected_icon"
-			position = {  x = 230 y = 110 }
+			position = {  x = 230 y = 160 }
 		}
 		buttonType = {
 			name = "XIN_arms_industry_button"
@@ -75,7 +84,7 @@ guiTypes = {
 		iconType = {
 			name = "signed_gui_XIN_military_qualities_button"
 			spriteType = "GFX_pla_selected_icon"
-			position = {  x = 230 y = 110 }
+			position = {  x = 110 y = 210 }
 		}
 		buttonType = {
 			name = "XIN_military_qualities_button"

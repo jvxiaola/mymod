@@ -8,12 +8,9 @@ scripted_gui = {
 			always = yes
 		}
 		triggers = {
-			XIN_button_visible = {
-				country_exists = XIN
-				has_country_flag = XIN_attacked
-			}
-			XIN_button_click_enabled = { NOT = { has_country_flag = XIN_CSIC_GUI_OPENED } }
-			
+			XIN_button_visible = { country_exists = XIN has_country_flag = XIN_attacked }
+			XIN_button_desc_text_visible = { country_exists = XIN has_country_flag = XIN_attacked }
+
 			XIN_diplomacy_button_visible = { has_country_flag = XIN_CSIC_GUI_OPENED }
 			signed_gui_XIN_diplomacy_button_visible = { has_country_flag = XIN_diplomacy_opened }
 
