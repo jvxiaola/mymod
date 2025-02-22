@@ -258,6 +258,7 @@ CHI_Mediate_ethnic_emotions_XIN = {
 	icon = GFX_decision_eng_ally_imperialist_coup
 	visible = {
 		has_country_flag = XIN_attacked tag = CHI
+		has_country_flag = XIN_military_recruitment_opened
 	}
 	available = {
 		country_exists = XIN
@@ -280,6 +281,7 @@ CHI_Mediate_ethnic_emotions_XIN = {
 	icon = GFX_decision_eng_ally_imperialist_coup
 	visible = {
 		has_country_flag = XIN_attacked tag = CHI
+		has_country_flag = XIN_military_recruitment_opened
 	}
 	available = {
 		country_exists = XIN
