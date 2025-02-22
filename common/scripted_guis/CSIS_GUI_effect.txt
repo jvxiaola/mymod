@@ -12,10 +12,13 @@ scripted_gui = {
 				country_exists = XIN
 				has_country_flag = XIN_attacked
 			}
-			XIN_button_visible_click_enabled = {
+			XIN_button_click_enabled = {
 				NOT = { has_country_flag = XIN_CSIC_GUI_OPENED }
 			}
+			XIN_diplomacy_button_visible = { has_country_flag = XIN_CSIC_GUI_OPENED }
+			XIN_public_security_button_visible = { has_country_flag = XIN_CSIC_GUI_OPENED }
 		}
+
 		effects = {
 			XIN_button_click = {
 				if = {
@@ -24,7 +27,29 @@ scripted_gui = {
 				}
 			}
 
+			XIN_diplomacy_button_click = {
+				if = {
+					limit = { NOT = { has_country_flag = XIN_diplomacy_opened } }
+					set_country_flag = XIN_diplomacy_opened
+				}
+				#关闭其它界面
+				if = {
+					limit = { has_country_flag = XIN_public_security_opened }
+					clr_country_flag = XIN_public_security_opened
+				}
+			}
 
+			XIN_public_security_button_click = {
+				if = {
+					limit = { NOT = { has_country_flag = XIN_public_security_opened } }
+					set_country_flag = XIN_public_security_opened
+				}
+				#关闭其它界面
+				if = {
+					limit = { has_country_flag = XIN_diplomacy_opened }
+					clr_country_flag = XIN_diplomacy_opened
+				}
+			}
 		}
 	}
 
