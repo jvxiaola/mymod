@@ -140,7 +140,7 @@ on_actions = {
 					}
 			}
 			else_if = {
-				if = {
+
 					limit = {
 						FROM = { tag = ETK }
 						NOT = { country_exists = CHI }
@@ -152,7 +152,7 @@ on_actions = {
 							transfer_troops = no
 						}
 					}
-			}
+			
 			}
 
 			set_global_flag = cw10_already
