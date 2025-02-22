@@ -4185,7 +4185,7 @@ shared_focus = {
 	}
 	shared_focus = {
 		id = CHI_invest_fusion_reactor
-		icon = CHI_invest_fusion_reactor
+		icon = fusion_science
 
 		x = 0
 		y = 3
