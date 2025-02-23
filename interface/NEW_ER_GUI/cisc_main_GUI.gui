@@ -125,7 +125,7 @@ guiTypes = {
 			name = "XIN_focus_conscription_desc_text"
 			borderSize = { x = 10 y = 4 }
 			font = "hoi_22tech"
-			text = "聚焦于征招事务"
+			text = "聚焦征招事务"
 			maxWidth = 135
 			maxHeight = 20
 		}
@@ -133,7 +133,7 @@ guiTypes = {
 		buttonType = {
 			name = "XIN_focus_military_equipment_button"
 			spriteType = "GFX_military_equipment"
-			position = { x = 180 y = 315 }
+			position = { x = 175 y = 315 }
 			clicksound = click_default
 			pdx_tooltip = "XIN_focus_military_equipment_desc_TT"
 			pdx_tooltip_delayed = "XIN_focus_military_equipment_effect_desc_TT"
@@ -143,16 +143,41 @@ guiTypes = {
 			spriteType = "GFX_military_equipment_shine"
 			pdx_tooltip = "XIN_focus_military_equipment_ing_desc_TT"
 			pdx_tooltip_delayed = "XIN_focus_military_equipment_effect_desc_TT"
-			position = {  x = 180 y = 315 }
+			position = {  x = 175 y = 315 }
 		}
 		textBoxType = {
 			position = { x = 165 y = 410 }
 			name = "XIN_focus_military_equipment_desc_text"
 			borderSize = { x = 10 y = 4 }
 			font = "hoi_22tech"
-			text = "聚焦于军备建设"
+			text = "聚焦军备建设"
 			maxWidth = 135
 			maxHeight = 20
+		}
+
+		buttonType = {
+			name = "XIN_focus_military_qualities_button"
+			spriteType = "GFX_military_qualities"
+			position = { x = 320 y = 325 }
+			clicksound = click_default
+			pdx_tooltip = "XIN_focus_military_qualities_desc_TT"
+			pdx_tooltip_delayed = "XIN_focus_military_qualities_effect_desc_TT"
+		}
+		iconType = {
+			name = "XIN_focus_military_qualities_button_shine"
+			spriteType = "GFX_military_qualities_shine"
+			pdx_tooltip = "XIN_focus_military_qualities_ing_desc_TT"
+			pdx_tooltip_delayed = "XIN_focus_military_qualities_effect_desc_TT"
+			position = {  x = 320 y = 325 }
+		}
+		textBoxType = {
+			position = { x = 295 y = 410 }
+			name = "XIN_focus_military_qualities_desc_text"
+			borderSize = { x = 15 y = 5 }
+			font = "hoi_22tech"
+			text = "聚焦军事素质提升"
+			maxWidth = 170
+			maxHeight = 22
 		}
 	}
 }
