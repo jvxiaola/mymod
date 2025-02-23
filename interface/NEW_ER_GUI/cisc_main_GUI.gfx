@@ -1,5 +1,9 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_focus_m_r_states_icon"
+		texturefile = "gfx/interface/XIN_CIS_GUI/focus_m_r_states.dds"
+	}
+	spriteType = {
 		name = "GFX_XIN_CSIC_GUI_icon"
 		texturefile = "gfx/interface/XIN_CIS_GUI/XIN_icon.png"
 	}
