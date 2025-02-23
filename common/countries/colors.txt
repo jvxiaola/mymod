@@ -1408,21 +1408,22 @@ CAB = {
 
 
 DSC = {
-	color = rgb { 200 100 31 }
-	color_ui = rgb { 245 123 38 }
+	color = rgb { 220 32 0 } #255 244 190
+	color_ui = rgb { 220 32 0 }
 }
 
 XIZ = {
-	color = rgb { 80 115 45 }
-	color_ui = rgb { 222 247 198 }
+	color = rgb { 220 32 0 } #255 244 190
+	color_ui = rgb { 220 32 0 }
 }
 
 XIN = {
-	color = rgb { 200 100 31 }
-	color_ui = rgb { 245 123 38 }
+	color = rgb { 220 32 0 } #255 244 190
+	color_ui = rgb { 220 32 0 }
 }
 
 PCP = {
 	color = rgb { 255 20 20 } #255 244 190
 	color_ui = rgb { 255 20 20 }
 }
+

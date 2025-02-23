@@ -185,6 +185,19 @@ country_event = {
 		name = prc1.200.o2
 		add_political_power = 50
 		add_stability = 0.2
+		start_politics_input = yes
+
+		set_politics = {ruling_party = communism elections_allowed = no }
+		add_to_array = { ruling_party = 5 } #CPC
+		set_variable = { party_pop_array^5 = 0.55 }
+		set_variable = { party_pop_array^4 = 0.15 }
+		set_variable = { party_pop_array^19 = 0.2 }
+		set_variable = { party_pop_array^2 = 0.10 }
+
+		#generate the rest
+add_to_array = { gov_coalition_array = 19 }
+	startup_politics = yes
+
 	create_country_leader = {
 		name = "邓力群"
 		picture = "Deng_liqun.dds"
@@ -1436,7 +1449,8 @@ country_event = {
 				every_country = {
 					limit = {
 						original_tag = CHI
-						has_cosmetic_tag = CHI_REB_S
+						has_cosmetic_tag = CHI_REB_SA
+						has_cosmetic_tag = CHI_REB_SB
 					}
 					country_event = { id = prc1.161 days = 3 }
 				}
@@ -1448,7 +1462,15 @@ country_event = {
 				}
 				}
 				start_politics_input = yes
+
+				XIN = {
+					set_cosmetic_tag = XIN_CIVIL
+				}
 				XIZ = {
+
+
+
+
 		create_country_leader = {
 			name = "Meng jinxi"
 			picture = "meng_jinxi.dds"
@@ -1486,8 +1508,6 @@ country_event = {
 						}
 						set_politics = {
 							ruling_party = nationalist
-							last_election = "1996.12.11"
-							election_frequency = 60
 							elections_allowed = no
 						}
 						start_politics_input = yes
@@ -1533,7 +1553,7 @@ country_event = {
 			NOT = { TAG = CHI }
 					}
 			add_ideas = CHI_Strict_military_control
-			set_cosmetic_tag = CHI_REB_S
+			set_cosmetic_tag = CHI_REB_SA
 			load_focus_tree = CHI_focus
 			set_capital = { state = 536 }
 			create_country_leader = {
@@ -2084,7 +2104,7 @@ add_to_array = { gov_coalition_array = 19 }
 				startup_politics = yes
 				
 				#Switch to commie leader
-	set_cosmetic_tag = CHI_REB_S
+	set_cosmetic_tag = CHI_REB_SB
 	create_country_leader = {
 		name = "邓力群"
 		picture = "Deng_liqun.dds"

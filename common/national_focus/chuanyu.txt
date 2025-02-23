@@ -1269,8 +1269,7 @@ add_political_power = 100
 
 				random_country={
 					limit = {
-						NOT = { tag = CHI}
-						 has_cosmetic_tag = CHI_REB_S
+						 has_cosmetic_tag = CHI_REB_SA
 					}
 					declare_war_on = {
 						target = DSC
@@ -1423,8 +1422,8 @@ add_political_power = 100
 					tooltip = "中国已重归一统"
 					all_country = {
 						limit = {
-							original_tag = CHI
-							has_cosmetic_tag = CHI_REB_S
+							has_cosmetic_tag = CHI_REB_SA
+							has_cosmetic_tag = CHI_REB_SB
 						}
 						exists = no
 					}

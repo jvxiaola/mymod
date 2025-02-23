@@ -659,8 +659,7 @@ asian_crisis
 	
 				random_country={
 					limit={
-						NOT={tag = CHI}
-						 has_cosmetic_tag=CHI_REB_S
+						 has_cosmetic_tag=CHI_REB_SA
 					}
 					declare_war_on = {
 

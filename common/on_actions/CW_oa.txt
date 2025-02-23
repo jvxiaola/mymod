@@ -79,7 +79,8 @@ on_actions = {
 						NOT = { country_exists = CHI }
 						ROOT = {
 								original_tag = CHI
-								has_cosmetic_tag = CHI_REB_S
+								has_cosmetic_tag = CHI_REB_SA
+								has_cosmetic_tag = CHI_REB_SB	
 						}
 					}
 					FROM = {
@@ -97,7 +98,8 @@ on_actions = {
 						DSC = { has_war_with = ROOT } CHI = { has_war_with = ROOT }
 						ROOT = {
 								original_tag = CHI
-								has_cosmetic_tag = CHI_REB_S
+								has_cosmetic_tag = CHI_REB_SA
+								has_cosmetic_tag = CHI_REB_SB	
 						}
 					}
 					DSC = {

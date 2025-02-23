@@ -23,7 +23,7 @@ CHI_NEW_economy_income_effect = {
 			multiply_variable = { additional_income_CHI_People_Commune = 0.50 }	#weekly
 			add_to_variable = { additional_income_rate = additional_income_CHI_People_Commune }
 		}
-		if = {
+		if = {guoqi
 			limit = { has_idea = CHI_idea_Public_ownership_economy }
 			set_variable = { additional_income_CHI_idea_Public_ownership_economy = population_total }
 			divide_variable = { additional_income_CHI_idea_Public_ownership_economy = 100 }	#Millions of people

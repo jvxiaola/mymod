@@ -13,13 +13,14 @@ SOC = {
 
 TIB_JUNQU={
 
-	color = rgb { 200 100 31 }
-	color_ui = rgb { 245 123 38 }
+    color = rgb { 210 66 16 }
+	color_ui = rgb { 233 78 19 }
 }
 
 
+
 DSC_GMQ={
-    color = rgb { 255  20  20 }
+    color = rgb { 255 20 20 }
     color_ui = rgb { 255 20 20 }
 }
 
@@ -27,4 +28,14 @@ DSC_GMQ={
 DSC_GMG={
     color = rgb { 255  20  20 }
     color_ui = rgb { 255 20 20 }
+}
+
+CHI_REB_SA={
+	color = rgb { 200 100 31 }
+	color_ui = rgb { 245 123 38 }
+}
+
+XIN_CIVIL={
+    color = rgb { 210 66 16 }
+	color_ui = rgb { 233 78 19 }
 }

@@ -3311,7 +3311,12 @@ CHI_Civil_war_decisions = {
 				all_country = {
 					if = {
 						limit = { exists = yes }
-						NOT = { has_cosmetic_tag = CHI_REB_S }
+						NOT = {
+							OR={
+							 has_cosmetic_tag = CHI_REB_SA 
+							 has_cosmetic_tag = CHI_REB_SB 		 
+						}
+							}
 					}
 				}
 				any_enemy_country = { tag = CHI }
