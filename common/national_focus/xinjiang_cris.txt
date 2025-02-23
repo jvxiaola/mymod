@@ -116,7 +116,7 @@
 		y = 1
 		cost = 3
 
-		available = { tag = XIN }
+		available = { tag = XIN has_country_flag = XIN_focus_military_equipment_goals }
 		relative_position_id = XIN_military_Region_Construction
 		prerequisite = { focus = XIN_military_Region_Construction }
 		joint_trigger = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN }

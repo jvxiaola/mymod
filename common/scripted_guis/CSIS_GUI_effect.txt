@@ -34,6 +34,22 @@ scripted_gui = {
 				has_country_flag = XIN_CSIC_GUI_OPENED 
 				XIN = { has_country_flag = XIN_focus_conscription_goals }
 			}
+			XIN_focus_conscription_desc_text_visible = {
+				has_country_flag = XIN_CSIC_GUI_OPENED 
+			}
+
+
+			XIN_focus_military_equipment_button_visible = { 
+				has_country_flag = XIN_CSIC_GUI_OPENED 
+				XIN = { NOT = { has_country_flag = XIN_focus_military_equipment_goals } }
+			}
+			XIN_focus_military_equipment_button_shine_visible = {
+				has_country_flag = XIN_CSIC_GUI_OPENED 
+				XIN = { has_country_flag = XIN_focus_military_equipment_goals }
+			}
+			XIN_focus_military_equipment_desc_text_visible = {
+				has_country_flag = XIN_CSIC_GUI_OPENED 
+			}
 		}
 
 		effects = {
@@ -155,6 +171,10 @@ scripted_gui = {
 
 			XIN_focus_conscription_button_click = { 
 				XIN = { set_country_flag = XIN_focus_conscription_goals }
+			}
+
+			XIN_focus_military_equipment_button_click = { 
+				XIN = { set_country_flag = XIN_focus_military_equipment_goals }
 			}
 
 		}
