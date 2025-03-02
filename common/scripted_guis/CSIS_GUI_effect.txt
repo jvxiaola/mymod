@@ -30,6 +30,13 @@ scripted_gui = {
 				has_country_flag = XIN_CSIC_GUI_OPENED 
 				XIN = { NOT = { has_country_flag = XIN_focus_conscription_goals } }
 			}
+			XIN_focus_conscription_button_click_enabled = { 
+				has_country_flag = XIN_CSIC_GUI_OPENED 
+				XIN = { 
+					NOT = { has_country_flag = XIN_focus_military_equipment_goals } 
+					NOT = { has_country_flag = XIN_focus_military_qualities_goals } 
+				}
+			}
 			XIN_focus_conscription_button_shine_visible = {
 				has_country_flag = XIN_CSIC_GUI_OPENED 
 				XIN = { has_country_flag = XIN_focus_conscription_goals }
@@ -43,6 +50,13 @@ scripted_gui = {
 				has_country_flag = XIN_CSIC_GUI_OPENED 
 				XIN = { NOT = { has_country_flag = XIN_focus_military_equipment_goals } }
 			}
+			XIN_focus_military_equipment_button_click_enabled = { 
+				has_country_flag = XIN_CSIC_GUI_OPENED 
+				XIN = { 
+					NOT = { has_country_flag = XIN_focus_conscription_goals } 
+					NOT = { has_country_flag = XIN_focus_military_qualities_goals } 
+				}
+			}
 			XIN_focus_military_equipment_button_shine_visible = {
 				has_country_flag = XIN_CSIC_GUI_OPENED 
 				XIN = { has_country_flag = XIN_focus_military_equipment_goals }
@@ -54,6 +68,13 @@ scripted_gui = {
 			XIN_focus_military_qualities_button_visible = { 
 				has_country_flag = XIN_CSIC_GUI_OPENED 
 				XIN = { NOT = { has_country_flag = XIN_focus_military_qualities_goals } }
+			}
+			XIN_focus_military_qualities_button_click_enabled = { 
+				has_country_flag = XIN_CSIC_GUI_OPENED 
+				XIN = { 
+					NOT = { has_country_flag = XIN_focus_conscription_goals } 
+					NOT = { has_country_flag = XIN_focus_military_equipment_goals } 
+				}
 			}
 			XIN_focus_military_qualities_button_shine_visible = {
 				has_country_flag = XIN_CSIC_GUI_OPENED 
@@ -181,31 +202,9 @@ scripted_gui = {
 				if = { limit = { has_country_flag = XIN_arms_industry_opened } clr_country_flag = XIN_arms_industry_opened }
 			}
 
-			XIN_focus_conscription_button_click = { 
-				XIN = { set_country_flag = XIN_focus_conscription_goals }
-				#云泽尝试
-				XIN = { clr_country_flag = XIN_focus_military_equipment_goals }
-				XIN = { clr_country_flag = XIN_focus_military_qualities_goals }
-			}
-
-			XIN_focus_military_equipment_button_click = { 
-				XIN = { set_country_flag = XIN_focus_military_equipment_goals }
-				#云泽尝试
-				XIN = { clr_country_flag = XIN_focus_conscription_goals }
-				XIN = { clr_country_flag = XIN_focus_military_qualities_goals }
-			}
-
-			XIN_focus_military_qualities_button_click = { 
-				XIN = { set_country_flag = XIN_focus_military_qualities_goals }
-				#云泽尝试
-				XIN = { clr_country_flag = XIN_focus_conscription_goals }
-				XIN = { clr_country_flag = XIN_focus_military_equipment_goals }
-			}
 
 
 		}
 	}
-
-	
 
 }
