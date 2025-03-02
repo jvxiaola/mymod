@@ -109,6 +109,12 @@ CHI_Enhance_military_production_XIN: "提升军备生产"
 CHI_Dispatch_recruit_mechanics_XIN: "征招机械化军队"
 CHI_Dispatch_ID_recruitment_XIN: "征招步兵师"
 CHI_Organize_antiterrorism_operations: "组织军区反恐行动"
+
+
+#云泽的临时修改
+
+CHI_Contact_to_attack_xin_terrist_KAZ: "联络哈萨克斯坦"
+CHI_Contact_to_attack_xin_terrist_SOV: "联络俄罗斯"
 #事件
 CW_Diverse.1: "遇袭报告"
 CW_Diverse.1.t: "遇袭报告"

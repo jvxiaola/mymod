@@ -183,14 +183,23 @@ scripted_gui = {
 
 			XIN_focus_conscription_button_click = { 
 				XIN = { set_country_flag = XIN_focus_conscription_goals }
+				#云泽尝试
+				XIN = { clr_country_flag = XIN_focus_military_equipment_goals }
+				XIN = { clr_country_flag = XIN_focus_military_qualities_goals }
 			}
 
 			XIN_focus_military_equipment_button_click = { 
 				XIN = { set_country_flag = XIN_focus_military_equipment_goals }
+				#云泽尝试
+				XIN = { clr_country_flag = XIN_focus_conscription_goals }
+				XIN = { clr_country_flag = XIN_focus_military_qualities_goals }
 			}
 
 			XIN_focus_military_qualities_button_click = { 
 				XIN = { set_country_flag = XIN_focus_military_qualities_goals }
+				#云泽尝试
+				XIN = { clr_country_flag = XIN_focus_conscription_goals }
+				XIN = { clr_country_flag = XIN_focus_military_equipment_goals }
 			}
 
 
