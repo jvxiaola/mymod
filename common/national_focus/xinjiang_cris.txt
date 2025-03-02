@@ -310,10 +310,19 @@
 		completion_reward_joint_originator = {
 			custom_effect_tooltip = XIN_Work_completion_effect_tt
 			hidden_effect = {
+				CHI = { uncomplete_national_focus = XIN_military_Region_Construction }
 				uncomplete_national_focus = XIN_military_Region_Construction
 				if = {
 					limit = { has_country_flag = XIN_focus_conscription_goals }
 					clr_country_flag = XIN_focus_conscription_goals
+				}
+				if = {
+					limit = { has_country_flag = XIN_focus_military_equipment_goals }
+					clr_country_flag = XIN_focus_military_equipment_goals
+				}
+				if = {
+					limit = { has_country_flag = XIN_focus_military_qualities_goals }
+					clr_country_flag = XIN_focus_military_qualities_goals
 				}
 			}
 		}

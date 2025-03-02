@@ -202,6 +202,17 @@ scripted_gui = {
 				if = { limit = { has_country_flag = XIN_arms_industry_opened } clr_country_flag = XIN_arms_industry_opened }
 			}
 
+			XIN_focus_conscription_button_click = { 
+				XIN = { set_country_flag = XIN_focus_conscription_goals }
+			}
+
+			XIN_focus_military_equipment_button_click = { 
+				XIN = { set_country_flag = XIN_focus_military_equipment_goals }
+			}
+
+			XIN_focus_military_qualities_button_click = { 
+				XIN = { set_country_flag = XIN_focus_military_qualities_goals }
+			}
 
 
 		}
