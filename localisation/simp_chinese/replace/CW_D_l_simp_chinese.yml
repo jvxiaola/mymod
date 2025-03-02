@@ -1,7 +1,7 @@
 ﻿l_simp_chinese:
 #GUI
 XIN_button_desc_TT: "新疆地区事务"
-XIN_button_more_desc_loc_TT: "作为中国历史与政治层面极为复杂而重要的地区，新疆也是中亚乃至东西交锋的重要焦点。\n£GFX_XIN_GUI_BUTTON_DESC"
+XIN_button_more_desc_loc_TT: "作为中国历史与政治层面极为复杂而重要的地区，新疆也是中亚乃至东西交锋的重要焦点。\n\n£GFX_XIN_GUI_BUTTON_DESC"
 XIN_focus_conscription_goals: "新疆军区正聚焦于征招事务"
 XIN_focus_military_equipment_goals: "新疆军区正聚焦于军备建设"
 XIN_focus_military_qualities_goals: "新疆军区正聚焦于军事素质提升"
@@ -14,6 +14,7 @@ XIN_focus_conscription_effect_desc_TT: "§Y效果为§!:使新疆军区的§7左
 XIN_focus_military_equipment_effect_desc_TT: "§Y效果为§!:使新疆军区的§O中间国策树分支可用§!"
 XIN_focus_military_qualities_ing_desc_TT: "§0新疆军区正专注于§!§O军备建设§!"
 XIN_focus_military_qualities_effect_desc_TT: "§Y效果为§!:使新疆军区的§R右侧国策树分支可用§!"
+CHI_XIN_has_complete_goals_TT: "§0新疆军区§!§O已完成对应政策§!"
 #军区设定
 XIN_communist_cadres: "军区政委"
 XIN_industrial_conglomerates: "生产建设兵团"
