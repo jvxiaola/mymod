@@ -123,7 +123,7 @@ guiTypes = {
 		textBoxType = {
 			position = { x = 20 y = 410 }
 			name = "XIN_focus_conscription_desc_text"
-			borderSize = { x = 10 y = 4 }
+			borderSize = { x = 10 y = 10 }
 			font = "hoi_22tech"
 			text = "聚焦征招事务"
 			maxWidth = 135
@@ -148,7 +148,7 @@ guiTypes = {
 		textBoxType = {
 			position = { x = 165 y = 410 }
 			name = "XIN_focus_military_equipment_desc_text"
-			borderSize = { x = 10 y = 4 }
+			borderSize = { x = 10 y = 10 }
 			font = "hoi_22tech"
 			text = "聚焦军备建设"
 			maxWidth = 135
@@ -173,7 +173,7 @@ guiTypes = {
 		textBoxType = {
 			position = { x = 295 y = 410 }
 			name = "XIN_focus_military_qualities_desc_text"
-			borderSize = { x = 15 y = 5 }
+			borderSize = { x = 15 y = 10 }
 			font = "hoi_22tech"
 			text = "聚焦军事素质提升"
 			maxWidth = 170
