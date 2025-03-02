@@ -1222,7 +1222,11 @@ country_event = {id= prc1.57 days = 3 }
 			factor = 500
 		}
 		allow_branch = {
+			OR={
 				has_country_leader = {name = "江泽民"}
+				has_country_flag = CHI_congress_2002
+			}
+
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1237,8 +1241,8 @@ mark_focus_tree_layout_dirty = yes
 		completion_reward = {
 			if = {
 				limit = { has_country_flag= CHI_zhunbeirudang}
-				set_temp_variable = { temp_CHI_people_support = 0.15 }
-				change_CHI_people_support = yes
+				#set_temp_variable = { temp_CHI_people_support = 0.15 }
+				#change_CHI_people_support = yes
 				add_ideas = CHI_zibenjia
 				custom_effect_tooltip = influence_the_party_line_tt
 				add_10_western_liberalism = yes

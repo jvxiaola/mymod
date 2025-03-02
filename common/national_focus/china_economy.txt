@@ -7579,14 +7579,12 @@ is_subject_of = CHI
 		y = 1
 		relative_position_id = CHI_Strategic_Industries
 		allow_branch = {
+			has_completed_focus = CHI_Factory_of_the_World
+			
 			NOT = {
 				has_country_flag = xggm
-				tag = DSC
+				has_country_flag = qyxd
 				has_country_flag = laozuo
-			}
-			OR = {	
-				has_completed_focus = CHI_paving_the_way_for_successors
-				has_country_flag = CPC_Rehabilitation_of_Zhao_Ziyang
 			}
 		}
 		cost = 5

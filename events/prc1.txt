@@ -3139,78 +3139,6 @@ country_event = { #2011 Train Collision Scandal
 	}
 }
 
-country_event = {
-	id = prc1.999
-	title = prc1.999.t
-	desc = prc1.999.d
-	picture = GFX_trade_agreement
-	
-	fire_only_once = yes
-	
-	trigger = {
-		tag = CHI
-has_country_flag = CHI_junfangzhengbian
-	}
-	
-	
-	option = {	
-		name = prc1.999.o1
-		ai_chance = {
-			factor = 5
-
-		}
-
-		create_country_leader = {
-				name = "徐才厚"
-				desc = "POLITICIAN_CHI_WU_BANGGUO_DESC"
-				picture = "Xu_Caihou.dds"
-				expire = "2050.1.1"
-				ideology = Nat_Autocracy
-				
-				traits = {
-nationalist_Nat_Autocracy
-			Caesar
-				}
-			}
-			
-			set_politics = { ruling_party = nationalist elections_allowed = no }
-			add_popularity = { ideology = nationalist popularity = 1.0 }
-					start_politics_input = yes
-					add_to_array = { ruling_party = 22 } 
-					set_variable = { party_pop_array^22 = 0.9 } 
-					startup_politics = yes
-						complete_national_focus = CHI_china_dream
-set_country_flag = CHI_xvcaihou
-			}
-			
-option = {	
-		name = prc1.999.o2
-		ai_chance = {
-			factor = 5
-
-		}
-create_country_leader = {
-name = "周永康"
-desc = ""
-picture = "Zhou_yongkang.dds"
-expire = "2050.1.1"
-ideology = anarchist_communism
-				
-traits = {
-emerging_anarchist_communism
-ggkfdjcr
-fubai
-}
-			}
-			complete_national_focus = CHI_chisosm
-					set_politics = { ruling_party = communism elections_allowed = no }
-			add_popularity = { ideology = communism popularity = 1.0 }
-					start_politics_input = yes
-					add_to_array = { ruling_party = 6 } 
-					set_variable = { party_pop_array^4 = 0.9 } 
-					startup_politics = yes
-			}
-			}
 
 #########
 ###########################################################################################################################################################
@@ -3223,13 +3151,8 @@ country_event = {
 	title = prc1.26.t
 	desc = prc1.26.d
 	picture = GFX_politics_communism
+	#fire_only_once = yes
 
-		fire_only_once = yes
-
-	trigger = {
-
-
-	}
 	immediate = {
 			set_country_flag = CHI_congress_2002
 
@@ -3250,7 +3173,7 @@ country_event = {
 				
 				traits = {
 				Socialism_with_Chinese_characteristics_ideology
-ggkfdjcr
+				ggkfdjcr
 				}
 			}
 mark_focus_tree_layout_dirty = yes
