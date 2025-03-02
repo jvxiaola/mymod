@@ -21,38 +21,38 @@ industrial_capacity_factory = SOV_economy14
 
 
 
-CHI_people_support_dynamic_right = {
-	enable = {always = yes}
-	icon = GFX_idea_Parliamentary_republic_idea
+#CHI_people_support_dynamic_right = {
+	#enable = {always = yes}
+	#icon = GFX_idea_Parliamentary_republic_idea
 	
-	consumer_goods_factor = CHI_people_support_dynamic1 
-	political_power_gain = CHI_people_support_dynamic2
-	global_building_slots_factor = CHI_people_support_dynamic3
-	research_speed_factor = CHI_people_support_dynamic4
-	production_speed_arms_factory_factor = CHI_people_support_dynamic5
-conversion_cost_civ_to_mil_factor = CHI_people_support_dynamic6
-production_speed_industrial_complex_factor = CHI_people_support_dynamic7
-production_speed_offices_factor = CHI_people_support_dynamic8
-stability_factor = CHI_people_support_dynamic9
-master_ideology_drift = CHI_people_support_dynamic10
-party_popularity_stability_factor  = CHI_people_support_dynamic11
-drift_defence_factor = CHI_people_support_dynamic12
-war_stability_factor = CHI_people_support_dynamic13
-defensive_war_stability_factor = CHI_people_support_dynamic14
-civil_war_involvement_tension = CHI_people_support_dynamic15
-generate_wargoal_tension = CHI_people_support_dynamic16
-justify_war_goal_time = CHI_people_support_dynamic17
-resistance_activity = CHI_people_support_dynamic18
-decryption_factor = CHI_people_support_dynamic19
-weekly_manpower = CHI_people_support_dynamic20
-local_resources_factor = CHI_people_support_dynamic21
-industrial_capacity_dockyard = CHI_people_support_dynamic22
-war_support_factor	= CHI_people_support_dynamic23
-industrial_capacity_factory = CHI_people_support_dynamic24
-army_attack_factor =CHI_people_support_dynamic25
-army_defence_factor = CHI_people_support_dynamic26
-army_org_factor =  CHI_people_support_dynamic27
-}
+	#consumer_goods_factor = CHI_people_support_dynamic1 
+	#political_power_gain = CHI_people_support_dynamic2
+	#global_building_slots_factor = CHI_people_support_dynamic3
+	#research_speed_factor = CHI_people_support_dynamic4
+	#production_speed_arms_factory_factor = CHI_people_support_dynamic5
+#conversion_cost_civ_to_mil_factor = CHI_people_support_dynamic6
+#production_speed_industrial_complex_factor = CHI_people_support_dynamic7
+#production_speed_offices_factor = CHI_people_support_dynamic8
+#stability_factor = CHI_people_support_dynamic9
+#master_ideology_drift = CHI_people_support_dynamic10
+#party_popularity_stability_factor  = CHI_people_support_dynamic11
+#drift_defence_factor = CHI_people_support_dynamic12
+#war_stability_factor = CHI_people_support_dynamic13
+#defensive_war_stability_factor = CHI_people_support_dynamic14
+#civil_war_involvement_tension = CHI_people_support_dynamic15
+#generate_wargoal_tension = CHI_people_support_dynamic16
+#justify_war_goal_time = CHI_people_support_dynamic17
+#resistance_activity = CHI_people_support_dynamic18
+#decryption_factor = CHI_people_support_dynamic19
+#weekly_manpower = CHI_people_support_dynamic20
+#local_resources_factor = CHI_people_support_dynamic21
+#industrial_capacity_dockyard = CHI_people_support_dynamic22
+#war_support_factor	= CHI_people_support_dynamic23
+#industrial_capacity_factory = CHI_people_support_dynamic24
+#army_attack_factor =CHI_people_support_dynamic25
+#army_defence_factor = CHI_people_support_dynamic26
+#army_org_factor =  CHI_people_support_dynamic27
+#}
 CHI_people_support_dynamic_left = {
 	enable = {always = yes}
 	icon = GFX_idea_communism5

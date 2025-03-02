@@ -4,9 +4,9 @@
 
 
 set_country_flag = CHI_revisionism
-add_dynamic_modifier = {
-    modifier = CHI_people_support_dynamic_right
-}
+#add_dynamic_modifier = {
+#    modifier = CHI_people_support_dynamic_right
+#}
 add_dynamic_modifier = {
     modifier = CHI_Legal_amendments_dynamic
 }

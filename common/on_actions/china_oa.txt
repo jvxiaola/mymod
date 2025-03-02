@@ -31,14 +31,14 @@ on_monthly_CHI = {
 	if = {
 				limit = {
 				CHI = {
-	OR = {			
+	#OR = {			
 	has_dynamic_modifier = {
 		modifier = CHI_people_support_dynamic_left
 	}
-	has_dynamic_modifier = {
-	modifier = CHI_people_support_dynamic_right
-	}
-	}
+	#has_dynamic_modifier = {
+	#modifier = CHI_people_support_dynamic_right
+	#}
+	#}
 	}
 	}
 	

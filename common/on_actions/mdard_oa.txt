@@ -189,9 +189,9 @@ OR = {
 has_dynamic_modifier = {
     modifier = CHI_people_support_dynamic_left
 }
-has_dynamic_modifier = {
-modifier = CHI_people_support_dynamic_right
-}
+#has_dynamic_modifier = {
+#modifier = CHI_people_support_dynamic_right
+#}
 }
 }
 }
@@ -316,18 +316,18 @@ has_country_flag = CHI_trotskyism
 add_dynamic_modifier = {
     modifier = CHI_people_support_dynamic_left
 }
-remove_dynamic_modifier = {
-    modifier = CHI_people_support_dynamic_right
+#remove_dynamic_modifier = {
+    #modifier = CHI_people_support_dynamic_right
 
-}		
+#}		
 }
 if = {
 			limit = {
 			CHI = {
 NOT = {
-has_dynamic_modifier = {
-    modifier = CHI_people_support_dynamic_right
-}
+#has_dynamic_modifier = {
+    #modifier = CHI_people_support_dynamic_right
+#}
 has_country_flag = PRC_World_Revolution
 } 
 OR = {
@@ -355,9 +355,9 @@ NOT = {
 }
 }
 
-add_dynamic_modifier = {
-    modifier = CHI_people_support_dynamic_right
-}
+#add_dynamic_modifier = {
+    #modifier = CHI_people_support_dynamic_right
+#}
 remove_dynamic_modifier = {
     modifier = CHI_people_support_dynamic_left
 

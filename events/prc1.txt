@@ -5422,9 +5422,9 @@ DSC = {
 DSC_Legal_amendments_dynamic_scriptes = yes
 
 
-add_dynamic_modifier = {
-	modifier = DSC_people_support_dynamic_right
-}
+#add_dynamic_modifier = {
+#	modifier = DSC_people_support_dynamic_right
+#}
 
 add_dynamic_modifier = {
 	modifier = DSC_Legal_amendments_dynamic
