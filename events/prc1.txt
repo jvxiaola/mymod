@@ -3151,7 +3151,10 @@ country_event = {
 	title = prc1.26.t
 	desc = prc1.26.d
 	picture = GFX_politics_communism
-	#fire_only_once = yes
+	fire_only_once = yes
+	trigger = {
+		has_country_leader = {name="江泽民"}
+	}
 
 	immediate = {
 			set_country_flag = CHI_congress_2002
@@ -3169,7 +3172,7 @@ country_event = {
 				desc = "hujintao_desc"
 				picture = "Hu_jintao.dds"
 				expire = "2012.10.1"
-				ideology = Conservative
+				ideology = Chinese_Socialism
 				
 				traits = {
 				Socialism_with_Chinese_characteristics_ideology
@@ -3196,23 +3199,17 @@ country_event = {
 	desc = prc1.27.d
 	picture = GFX_politics_communism
 	
-	fire_only_once = yes
+	#fire_only_once = yes
 	
 	trigger = {
 		tag = CHI
-		has_government = communism
-		date > 2012.6.1
-		date < 2012.12.1
-		not = { has_country_flag = CHI_congress_2012 }
-		is_in_array = { ruling_party = 6 }
+
 	}
 	
 	immediate = {
 		set_country_flag = CHI_congress_2012
 		mark_focus_tree_layout_dirty = yes
-		hidden_effect = {
-		complete_national_focus = CHI_18th
-	}
+
 	}
 	
 	option = {	#new_left
@@ -3240,7 +3237,7 @@ check_variable = {
 				desc = "POLITICIAN_CHI_BO_XILAI_DESC"
 				picture = "bo_xilai.dds"
 				expire = "2050.1.1"
-				ideology = Conservative
+				ideology = Chinese_Socialism
 				
 				traits = {
 			Socialism_with_Chinese_characteristics_ideology
@@ -3250,6 +3247,7 @@ check_variable = {
 			
 
 		set_country_flag = CHI_Shanghai_2012
+		mark_focus_tree_layout_dirty = yes
 	}
 	
 	option = {	#TuanPai
@@ -3277,14 +3275,14 @@ check_variable = {
 				desc = "POLITICIAN_CHI_LI_KEQIANG_DESC"
 				picture = "Li_Keqiang.dds"
 				expire = "2050.1.1"
-				ideology = Conservative
+				ideology = Chinese_Socialism
 				
 				traits = {
 								Socialism_with_Chinese_characteristics_ideology
 ggkfdjcr
 				}
 			}
-
+			mark_focus_tree_layout_dirty = yes
 	}
 
 	option = {	#TaiZiDang
@@ -3300,7 +3298,7 @@ ggkfdjcr
 				desc = "POLITICIAN_CHI_XI_JINPING_DESC"
 				picture = "CHI_Xi_Jinping.dds"
 				expire = "2050.1.1"
-				ideology = Conservative
+				ideology = Chinese_Socialism
 				
 				traits = {
 Socialism_with_Chinese_characteristics_ideology
@@ -3313,6 +3311,7 @@ Socialism_with_Chinese_characteristics_ideology
 			}
 
 		set_country_flag = CHI_TaiZiDang_2012
+		mark_focus_tree_layout_dirty = yes
 	}
 }
 
@@ -7008,7 +7007,7 @@ option = {	#We accept!
 							desc = "hujintao_desc"
 							picture = "Hu_jintao.dds"
 							expire = "2012.10.1"
-							ideology = Conservative
+							ideology = Chinese_Socialism
 							
 							traits = {
 							Socialism_with_Chinese_characteristics_ideology

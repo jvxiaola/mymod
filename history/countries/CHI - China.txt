@@ -4074,7 +4074,7 @@ set_popularities = {
 		desc = XI_JINPING_LEADER_DESC
 		picture = "Xi_Jinping.dds"
 		expire = "2030.1.1"
-		ideology = Communist-State
+		ideology = Chinese_Socialism
 		traits = {
 			ex_engineer
 			emerging_Communist-State

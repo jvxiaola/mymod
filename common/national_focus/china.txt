@@ -1223,7 +1223,7 @@ country_event = {id= prc1.57 days = 3 }
 		}
 		allow_branch = {
 			OR={
-				has_country_leader = {name = "江泽民"}
+				tag=CHI
 				has_country_flag = CHI_congress_2002
 			}
 
@@ -2176,15 +2176,14 @@ remove_idea = CHI_CPC_right4
 		allow_branch = { #has_country_flag = CHI_congress_2012 
 		}
 		available = { 
-			has_country_flag = CHI_congress_2012
-			always = no			
+			date > 2012.9.1
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-				custom_effect_tooltip = event_lock
+			country_event=prc1.27
 
 		}
 		}	
@@ -2196,6 +2195,9 @@ remove_idea = CHI_CPC_right4
 		cost = 5
 		relative_position_id = CHI_18th	
 		prerequisite = {focus = CHI_18th}
+		allow_branch = {
+			has_country_leader = { name = "习近平" } 
+		}
 		available = { has_country_leader = { name = "习近平" } }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2440,17 +2442,21 @@ remove_idea = CHI_xijinpingsixiang1
 focus = {
 		id = CHI_BoXilaiwin
 		icon = focus_bo_xilai
-		x = -4
+		x = 0
 		y = 1
 		cost = 5
 		relative_position_id = CHI_18th
 prerequisite = {focus = CHI_18th}
-
-			available = 
-			{
+allow_branch = {
+	has_country_leader = {
+		name = "薄熙来"
+}	
+}
+			available = {
 			has_country_leader = {
 			name = "薄熙来"
-}				}
+}				
+}
 
 
 		cancel_if_invalid = yes
@@ -2702,12 +2708,18 @@ focus = {
 focus = {
 		id = CHI_likeqiangwin
 		icon = likeqiang
-		x = 4
+		x = 0
 		y = 1
 		cost = 5
 		relative_position_id = CHI_18th	
 prerequisite = {focus = CHI_18th}
 
+
+allow_branch = {
+	has_country_leader = {
+		name = "李克强"
+		}		
+}
 			available = 
 			{
 has_country_leader = {
