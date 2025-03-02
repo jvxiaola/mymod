@@ -16,11 +16,11 @@ guiTypes = {
 			spriteType = "GFX_focus_m_r_states_icon"
 			position = {  x = 75 y = 50 }
 		}
-		textBoxType = {
+		instantTextBoxType = {
 			position = { x = 30 y = 100 }
 			name = "XIN_button_OPEN_desc_text"
 			borderSize = { x = 10 y = 4 }
-			font = "hoi_33"
+			font = "vic_22"
 			text = "新疆地区"
 			maxWidth = 130
 			maxHeight = 40
@@ -120,14 +120,14 @@ guiTypes = {
 			pdx_tooltip_delayed = "XIN_focus_conscription_effect_desc_TT"
 			position = {  x = 40 y = 330 }
 		}
-		textBoxType = {
+		instantTextBoxType = {
 			position = { x = 20 y = 410 }
 			name = "XIN_focus_conscription_desc_text"
 			borderSize = { x = 10 y = 10 }
-			font = "hoi_22tech"
+			font = "vic_22"
 			text = "聚焦征招事务"
 			maxWidth = 135
-			maxHeight = 20
+			maxHeight = 22
 		}
 
 		buttonType = {
@@ -145,14 +145,14 @@ guiTypes = {
 			pdx_tooltip_delayed = "XIN_focus_military_equipment_effect_desc_TT"
 			position = {  x = 175 y = 315 }
 		}
-		textBoxType = {
+		instantTextBoxType = {
 			position = { x = 165 y = 410 }
 			name = "XIN_focus_military_equipment_desc_text"
 			borderSize = { x = 10 y = 10 }
-			font = "hoi_22tech"
+			font = "vic_22"
 			text = "聚焦军备建设"
 			maxWidth = 135
-			maxHeight = 20
+			maxHeight = 22
 		}
 
 		buttonType = {
@@ -170,11 +170,11 @@ guiTypes = {
 			pdx_tooltip_delayed = "XIN_focus_military_qualities_effect_desc_TT"
 			position = {  x = 320 y = 325 }
 		}
-		textBoxType = {
+		instantTextBoxType = {
 			position = { x = 295 y = 410 }
 			name = "XIN_focus_military_qualities_desc_text"
 			borderSize = { x = 15 y = 10 }
-			font = "hoi_22tech"
+			font = "vic_22"
 			text = "聚焦军事素质提升"
 			maxWidth = 170
 			maxHeight = 22
