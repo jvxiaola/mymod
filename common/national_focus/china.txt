@@ -1222,9 +1222,14 @@ country_event = {id= prc1.57 days = 3 }
 			factor = 500
 		}
 		allow_branch = {
-			OR={
+
+
 				has_country_leader = { name = "江泽民" }
+			NOT={
+				has_country_flag = CPC_Rehabilitation_of_Zhao_Ziyang
 			}
+
+		
 
 		}
 		cancel_if_invalid = yes
