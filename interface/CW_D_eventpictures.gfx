@@ -32,6 +32,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_XIN_GUI_BUTTON_DESC"
 		texturefile = "gfx/interface/XIN_CIS_GUI/XIN_GUI_BUTTON_DESC.dds"
+		legacy_lazy_load = no
 	}
 	
 }
