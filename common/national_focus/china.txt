@@ -1223,8 +1223,7 @@ country_event = {id= prc1.57 days = 3 }
 		}
 		allow_branch = {
 			OR={
-				tag=CHI
-				has_country_flag = CHI_congress_2002
+				has_country_leader = { name = "江泽民" }
 			}
 
 		}
