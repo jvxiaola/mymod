@@ -3097,7 +3097,7 @@ set_popularities = {
 		desc = jiangzheming_desc
 		picture = "Jiang_Zemin.dds"
 		expire = "2030.1.1"
-		ideology = Chinese_Socialism
+		ideology = Chinese_Socialism_jiang
 		traits = {
 			Socialism_with_Chinese_characteristics_ideology
 			ex_engineer
