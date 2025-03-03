@@ -86,7 +86,7 @@ color = { 0 0 255}
 			}
 			Conservative = { color = { 205 201 201	 } 
 			can_be_randomly_selected = no }
-			Chinese_Socialism_jiang = { color = { 139 26 26 }
+			Chinese_Socialism_jiang = { color = { 255 26 26 }
 			can_be_randomly_selected = no }
 			Chinese_Socialism = { color = { 255 192 203 }
 			can_be_randomly_selected = no }
