@@ -937,6 +937,7 @@ CHI_add_Organize_state_enterprises_modifier = {
     set_variable = { sc_spsbf = 0 }      set_variable = { sc_spg = 0.05 }       set_variable = { sc_ls = 0.05 } 
     set_variable = { sc_regm = 0.05 } 
     add_dynamic_modifier = { modifier = State_Collaboration scope = DSC }
+    set_state_flag = State_start_Collaboration
   }
 
   CHI_add_CHI_Collaboration_internet_modifier = {

@@ -415,12 +415,12 @@ CHI_Redemption_assets = {
 	icon = GFX_decision_hol_exchange_intelligence_data
 	visible = {
 		has_completed_focus = CHI_get_organized
-		534 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 532 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+		534 = { NOT = { has_state_flag = State_start_Collaboration } } 532 = { NOT = { has_state_flag = State_start_Collaboration } }
 	}
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = CHI_Oofb_guangdong_trigger_tt
-			534 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 532 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+			534 = { NOT = { has_state_flag = State_start_Collaboration } } 532 = { NOT = { has_state_flag = State_start_Collaboration } }
 		}
 	}
 	on_map_mode = map_only
@@ -449,12 +449,12 @@ CHI_Redemption_assets = {
 	icon = GFX_decision_hol_exchange_intelligence_data
 	visible = {
 		has_completed_focus = CHI_get_organized
-		541 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 536 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+		541 = { NOT = { has_state_flag = State_start_Collaboration } } 536 = { NOT = { has_state_flag = State_start_Collaboration } }
 	}
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = CHI_Oofb_jiangsu_trigger_tt
-			541 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 536 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+			541 = { NOT = { has_state_flag = State_start_Collaboration } 536 = { has_state_flag = State_start_Collaboration } }
 		}
 	}
 	on_map_mode = map_only
@@ -482,12 +482,12 @@ CHI_Redemption_assets = {
 	icon = GFX_decision_hol_exchange_intelligence_data
 	visible = {
 		has_completed_focus = CHI_get_organized
-		435 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 544 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+		435 = { NOT = { has_state_flag = State_start_Collaboration } 544 = { has_state_flag = State_start_Collaboration } }
 	}
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = CHI_Oofb_shandong_trigger_tt
-			435 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 544 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+			435 = { NOT = { has_state_flag = State_start_Collaboration } 544 = { has_state_flag = State_start_Collaboration } }
 		}
 	}
 	on_map_mode = map_only
@@ -515,12 +515,12 @@ CHI_Redemption_assets = {
 	icon = GFX_decision_hol_exchange_intelligence_data
 	visible = {
 		has_completed_focus = CHI_get_organized
-		538 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+		538 = { NOT = { has_state_flag = State_start_Collaboration } }
 	}
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = CHI_Oofb_zhejiang_trigger_tt
-			538 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+			538 = { NOT = { has_state_flag = State_start_Collaboration } }
 		}
 	}
 	on_map_mode = map_only
@@ -548,12 +548,12 @@ CHI_Redemption_assets = {
 	icon = GFX_decision_hol_exchange_intelligence_data
 	visible = {
 		has_completed_focus = CHI_get_organized
-		567 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+		567 = { NOT = { has_state_flag = State_start_Collaboration } }
 	}
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = CHI_Oofb_henan_trigger_tt
-			567 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+			567 = { NOT = { has_state_flag = State_start_Collaboration } }
 		}
 	}
 	on_map_mode = map_only
@@ -581,12 +581,12 @@ CHI_Redemption_assets = {
 	icon = GFX_decision_hol_exchange_intelligence_data
 	visible = {
 		has_completed_focus = CHI_get_organized
-		1095 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 552 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+		1095 = { NOT = { has_state_flag = State_start_Collaboration } } 552 = { NOT = { has_state_flag = State_start_Collaboration } }
 	}
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = CHI_Oofb_liaoning_trigger_tt
-			1095 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 552 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+			1095 = { NOT = { has_state_flag = State_start_Collaboration } } 552 = { NOT = { has_state_flag = State_start_Collaboration } }
 		}
 	}
 	on_map_mode = map_only
@@ -614,14 +614,14 @@ CHI_Redemption_assets = {
 	icon = GFX_decision_hol_exchange_intelligence_data
 	visible = {
 		has_completed_focus = CHI_get_organized
-		434 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 549 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
-		547 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 548 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 
+		434 = { NOT = { has_state_flag = State_start_Collaboration } } 549 = { NOT = { has_state_flag = State_start_Collaboration } }
+		547 = { NOT = { has_state_flag = State_start_Collaboration } } 548 = { NOT = { has_state_flag = State_start_Collaboration } } 
 	}
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = CHI_Oofb_hebei_trigger_tt
-			434 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 549 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
-			547 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 548 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 
+			434 = { NOT = { has_state_flag = State_start_Collaboration } } 549 = { NOT = { has_state_flag = State_start_Collaboration } }
+			547 = { NOT = { has_state_flag = State_start_Collaboration } } 548 = { NOT = { has_state_flag = State_start_Collaboration } }
 		}
 	}
 	on_map_mode = map_only
@@ -650,12 +650,12 @@ CHI_Redemption_assets = {
 	icon = GFX_decision_hol_exchange_intelligence_data
 	visible = {
 		has_completed_focus = CHI_get_organized
-		585 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 586 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 583 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+		585 = { NOT = { has_state_flag = State_start_Collaboration } } 586 = { NOT = { has_state_flag = State_start_Collaboration } } 583 = { NOT = { has_state_flag = State_start_Collaboration } }
 	}
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = CHI_Oofb_sichuan_trigger_tt
-			585 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 586 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } } 583 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+			585 = { NOT = { has_state_flag = State_start_Collaboration } } 586 = { NOT = { has_state_flag = State_start_Collaboration } } 583 = { NOT = { has_state_flag = State_start_Collaboration } }
 		}
 	}
 	on_map_mode = map_only
@@ -683,12 +683,12 @@ CHI_Redemption_assets = {
 	icon = GFX_decision_hol_exchange_intelligence_data
 	visible = {
 		has_completed_focus = CHI_get_organized
-		537 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+		537 = { NOT = { has_state_flag = State_start_Collaboration } }
 	}
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = CHI_Oofb_fujian_trigger_tt
-			537 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+			537 = { NOT = { has_state_flag = State_start_Collaboration } }
 		}
 	}
 	on_map_mode = map_only
@@ -716,12 +716,12 @@ CHI_Redemption_assets = {
 	icon = GFX_decision_hol_exchange_intelligence_data
 	visible = {
 		has_completed_focus = CHI_get_organized
-		570 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+		570 = { NOT = { has_state_flag = State_start_Collaboration } }
 	}
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = CHI_Oofb_hubei_trigger_tt
-			570 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+			570 = { NOT = { has_state_flag = State_start_Collaboration } }
 		}
 	}
 	on_map_mode = map_only
@@ -749,12 +749,12 @@ CHI_Redemption_assets = {
 	icon = GFX_decision_hol_exchange_intelligence_data
 	visible = {
 		has_completed_focus = CHI_get_organized
-		540 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+		540 = { NOT = { has_state_flag = State_start_Collaboration } }
 	}
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = CHI_Oofb_shanghai_trigger_tt
-			540 = { NOT = { has_dynamic_modifier = { modifier = State_Collaboration } } }
+			540 = { NOT = { has_state_flag = State_start_Collaboration } }
 		}
 	}
 	on_map_mode = map_only
@@ -801,7 +801,7 @@ CHI_Redemption_assets = {
 	days_remove = 70
 	remove_effect = {
 		every_owned_state = {
-			limit = { has_dynamic_modifier = { modifier = State_Collaboration } }
+			limit = { has_state_flag = State_start_Collaboration }
 			set_temp_variable = { sc_spsic_add = 0.05 }  set_temp_variable = { sc_spg_add = 0.02 } 
 			custom_effect_tooltip = Launch_cooperation_initiatives_at_forums_effect_tt 
 			add_to_variable = { sc_spsic = sc_spsic_add } add_to_variable = { sc_spg = sc_spg_add } 
