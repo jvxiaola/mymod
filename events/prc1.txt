@@ -3152,9 +3152,7 @@ country_event = {
 	desc = prc1.26.d
 	picture = GFX_politics_communism
 	fire_only_once = yes
-	trigger = {
-		has_country_leader = {name="江泽民"}
-	}
+	is_triggered_only = yes
 
 	immediate = {
 			set_country_flag = CHI_congress_2002
