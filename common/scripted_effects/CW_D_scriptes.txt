@@ -428,7 +428,6 @@ Set_ETK = {
 			traits = { Non_governmental_riots WESTERN_freedom_fighter }
 		}
 		inherit_technology = XIN
-		}
 		if = {
 			division_template = {
 				name = "东突厥斯坦圣战军"
@@ -463,5 +462,6 @@ Set_ETK = {
 					count = 3
 				}
 			}
+		}
 		}
 }

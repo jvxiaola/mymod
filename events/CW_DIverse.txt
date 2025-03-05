@@ -379,15 +379,13 @@ news_event = {
 	}
 	option = {
 		name = CW_Diverse.9.a1
-		trigger = { OR = { tag = CHI tag = DSC tag = HKG tag = XIZ tag = XIN} }
+		trigger = { OR = { tag = CHI tag = DSC tag = HKG tag = XIZ tag = XIN } }
 		custom_effect_tooltip = NOT_completed_tt
 	}
 	option = {
 		name = CW_Diverse.9.a2
 		trigger = {
-			NOT = {
-				OR = { tag = CHI tag = DSC tag = HKG tag = XIZ tag = XIN }
-			}
+			NOT = { tag = CHI tag = DSC tag = HKG tag = XIZ tag = XIN }
 			has_government = communism 
 		}
 	}
