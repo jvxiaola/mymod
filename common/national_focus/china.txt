@@ -1613,7 +1613,7 @@ add_war_support = 0.10
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-		remove_ideas = CHI_not_nongyesui
+		remove_ideas = CHINESE_agricultural_tax
 		}
 		}
 						focus = {
@@ -6673,7 +6673,7 @@ prerequisite = { focus = CHI_som_dec3 }
 				id = CHI_power_balance
 				value = -0.25
 			}		
-			remove_ideas = CHI_not_nongyesui
+			remove_ideas = CHINESE_agricultural_tax
 
 }
 }
@@ -7610,7 +7610,7 @@ prerequisite = { focus = CHI_dpp2  }
 		available_if_capitulated = no
 		completion_reward = {
 add_ideas = CHI_dppgov1
-remove_ideas = CHI_not_nongyesui
+remove_ideas = CHINESE_agricultural_tax
 
 }
 }	

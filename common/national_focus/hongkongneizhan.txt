@@ -554,7 +554,7 @@ remove_ideas = red_weidui1
 
 
 
-	CHI_not_nongyesui
+	CHINESE_agricultural_tax
 	CHI_Socialist_Market_Economy
 	CHI_shipinganquanwenti
 	

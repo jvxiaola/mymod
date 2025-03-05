@@ -1521,7 +1521,7 @@
 		available = {  }
 		completion_reward = {
 			add_political_power = 50
-			remove_ideas = CHI_not_nongyesui
+			remove_ideas = CHINESE_agricultural_tax
 		}
 		ai_will_do = { base = 1 }
 	}

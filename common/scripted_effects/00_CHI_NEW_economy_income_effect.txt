@@ -8,12 +8,12 @@ CHI_NEW_economy_income_effect = {
 		}
 		set_variable = { additional_income_rate = 0 }
 		if = {
-			limit = { has_idea = CHI_not_nongyesui }
-			set_variable = { additional_income_CHI_not_nongyesui = population_total }
-			divide_variable = { additional_income_CHI_not_nongyesui = 100 }	#Millions of people
-			multiply_variable = { additional_income_CHI_not_nongyesui = 0.20 } #per million
-			multiply_variable = { additional_income_CHI_not_nongyesui = 0.50 }	#weekly
-			add_to_variable = { additional_income_rate = additional_income_CHI_not_nongyesui }
+			limit = { has_idea = CHINESE_agricultural_tax }
+			set_variable = { additional_income_CHINESE_agricultural_tax = population_total }
+			divide_variable = { additional_income_CHINESE_agricultural_tax = 100 }	#Millions of people
+			multiply_variable = { additional_income_CHINESE_agricultural_tax = 0.20 } #per million
+			multiply_variable = { additional_income_CHINESE_agricultural_tax = 0.50 }	#weekly
+			add_to_variable = { additional_income_rate = additional_income_CHINESE_agricultural_tax }
 		}
 		if = {
 			limit = { has_idea = CHI_idea_People_Commune }

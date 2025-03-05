@@ -1231,16 +1231,16 @@ defined_text = {
 	}
 }
 defined_text = {
-	name = additional_income_summary_additional_income_CHI_not_nongyesui
+	name = additional_income_summary_additional_income_CHINESE_agricultural_tax
 	text = {
 		trigger = {
-			has_idea = CHI_not_nongyesui
+			has_idea = CHINESE_agricultural_tax
 		}
-		localization_key = "CHI_not_nongyesui_tte"
+		localization_key = "CHINESE_agricultural_tax_tte"
 	}
 	text = {
 		trigger = {
-			NOT = {	has_idea = CHI_not_nongyesui }
+			NOT = {	has_idea = CHINESE_agricultural_tax }
 		}
 		localization_key = ""
 	}

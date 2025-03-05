@@ -1,0 +1,18 @@
+ideas = {
+	country = {
+		CHINESE_agricultural_tax = {
+    		allowed_civil_war = { always = yes }
+			picture = agriculture
+			allowed = { original_tag = CHI }
+			modifier = {
+			stability_factor = -0.25
+			consumer_goods_factor = 0.10		
+			monthly_population = -0.10
+			agriculture_workers_modifier = -0.10
+			custom_modifier_tooltip = CHI_not_nongyesui_tt
+			}
+		}
+
+
+	}
+}

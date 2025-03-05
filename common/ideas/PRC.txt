@@ -2783,36 +2783,6 @@ CHI_nationalizing = {
 
 
 
-
-
-
-
-
-
-CHI_not_nongyesui = {
-
-
-	allowed_civil_war = {
-always = yes
-}		
-
-			picture = agriculture
-
-			allowed = { original_tag = CHI }
-
-			removal_cost = -1
-						modifier = {
-
-stability_factor = -0.15
-consumer_goods_factor = -0.05		
-monthly_population = -0.10
-industrial_capacity_factory = -0.1
-production_speed_industrial_complex_factor = 0.10
-				agriculture_workers_modifier = 0.3
-custom_modifier_tooltip = CHI_not_nongyesui_tt
-
-}
-}
 CHI_state_farm = {
 
 
