@@ -1,7 +1,7 @@
 ﻿l_simp_chinese:
 #GUI
 XIN_button_desc_TT: "新疆地区事务"
-XIN_button_more_desc_loc_TT: "作为中国历史与政治层面极为复杂而重要的地区，新疆也是中亚乃至东西交锋的重要焦点。\n\n £GFX_XIN_GUI_BUTTON_DESC"
+XIN_button_more_desc_loc_TT: "作为中国历史与政治层面极为复杂而重要的地区，新疆也是中亚乃至东西交锋的重要焦点。\n\n\n\n£GFX_XIN_GUI_BUTTON_DESC\n\n "
 XIN_focus_conscription_goals: "新疆军区正聚焦于征招事务"
 XIN_focus_military_equipment_goals: "新疆军区正聚焦于军备建设"
 XIN_focus_military_qualities_goals: "新疆军区正聚焦于军事素质提升"
