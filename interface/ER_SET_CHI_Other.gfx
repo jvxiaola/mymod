@@ -1,0 +1,7 @@
+	spriteTypes = {
+		spriteType = {
+			name = "GFX_agricultural_tax_in_CHI"
+			texturefile = "gfx/interface/ideas/ER_ideas/agricultural_tax_in_CHI.png"
+		}
+
+	}

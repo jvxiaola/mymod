@@ -2,7 +2,7 @@ ideas = {
 	country = {
 		CHINESE_agricultural_tax = {
     		allowed_civil_war = { always = yes }
-			picture = agriculture
+			picture = agricultural_tax_in_CHI
 			allowed = { original_tag = CHI }
 			modifier = {
 			stability_factor = -0.25
