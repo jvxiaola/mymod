@@ -115,5 +115,6 @@ spriteType = {
 	spriteType = {
 		name = "GFX_Chinese_jiang_ideology_desc_picture"
 		texturefile = "gfx/Ideology/Chinese_Socialism_jiang_desc.png"
+		legacy_lazy_load = no
 	}
 	}
