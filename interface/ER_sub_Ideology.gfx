@@ -112,6 +112,12 @@ spriteType = {
 		name = "GFX_ideology_Neutral_green"
 		texturefile = "gfx/Ideology/Neutral_green.png"
 	}
+
+	spriteType = {
+		name = "GFX_ideology_enterprise_government"
+		texturefile = "gfx/Ideology/enterprise_government.png"
+	}
+
 	spriteType = {
 		name = "GFX_Chinese_jiang_ideology_desc_picture"
 		texturefile = "gfx/Ideology/Chinese_Socialism_jiang_desc.png"
