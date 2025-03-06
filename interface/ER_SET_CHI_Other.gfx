@@ -3,5 +3,8 @@
 			name = "GFX_agricultural_tax_in_CHI"
 			texturefile = "gfx/interface/ideas/ER_ideas/agricultural_tax_in_CHI.png"
 		}
-
+		spriteType = {
+			name = "GFX_harsh_working_en_of_CHI"
+			texturefile = "gfx/interface/ideas/ER_ideas/CHI_harsh_working_environment.dds"
+		}
 	}

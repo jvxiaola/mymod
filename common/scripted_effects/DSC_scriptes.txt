@@ -656,3 +656,52 @@ check_variable = {
 
 
 }
+
+CHI_work_envir_up = {
+	if = {
+		limit = { has_idea = harsh_working_en_of_CHI7 }
+		swap_ideas = {
+			remove_idea = harsh_working_en_of_CHI7
+			add_idea = harsh_working_en_of_CHI6
+		}
+	}
+	else_if = {
+		limit = { has_idea = harsh_working_en_of_CHI6 }
+		swap_ideas = {
+			remove_idea = harsh_working_en_of_CHI6
+			add_idea = harsh_working_en_of_CHI5
+		}
+	}
+	else_if = {
+		limit = { has_idea = harsh_working_en_of_CHI5 }
+		swap_ideas = {
+			remove_idea = harsh_working_en_of_CHI5
+			add_idea = harsh_working_en_of_CHI4
+		}
+	}
+	else_if = {
+		limit = { has_idea = harsh_working_en_of_CHI4 }
+		swap_ideas = {
+			remove_idea = harsh_working_en_of_CHI4
+			add_idea = harsh_working_en_of_CHI3
+		}
+	}
+		else_if = {
+		limit = { has_idea = harsh_working_en_of_CHI3 }
+		swap_ideas = {
+			remove_idea = harsh_working_en_of_CHI3
+			add_idea = harsh_working_en_of_CHI2
+		}
+	}	
+  else_if = {
+		limit = { has_idea = harsh_working_en_of_CHI2 }
+		swap_ideas = {
+			remove_idea = harsh_working_en_of_CHI2
+			add_idea = harsh_working_en_of_CHI1
+		}
+	}
+  else_if = {
+		limit = { has_idea = harsh_working_en_of_CHI1 }
+			remove_ideas = harsh_working_en_of_CHI1
+	}
+	} 

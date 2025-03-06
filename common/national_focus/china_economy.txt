@@ -1155,10 +1155,10 @@
 				check_variable = { Partial_nationalize_light_manufacturing_industry_progress = 100 }
 				check_variable = { Nationalize_construction_and_chemical_industries_progress = 100 }
 				check_variable = { Promote_nationalization_strategic_industries_progress = 100 }
-				OR = { has_idea = CHI_work7 has_idea = CHI_work6 has_idea = CHI_work5 has_idea = CHI_work_01 has_idea = CHI_work_02 has_idea = CHI_work_03 has_idea = CHI_work_04 }
+				OR = { has_idea = harsh_working_en_of_CHI7 has_idea = harsh_working_en_of_CHI6 has_idea = harsh_working_en_of_CHI5 has_idea = harsh_working_en_of_CHI_01 has_idea = harsh_working_en_of_CHI_02 has_idea = harsh_working_en_of_CHI_03 has_idea = harsh_working_en_of_CHI_04 }
 			}
 		}
-		bypass = { NOT = { OR = { has_idea = CHI_work7 has_idea = CHI_work6 has_idea = CHI_work5 has_idea = CHI_work_01 has_idea = CHI_work_02 has_idea = CHI_work_03 has_idea = CHI_work_04 } } }
+		bypass = { NOT = { OR = { has_idea = harsh_working_en_of_CHI7 has_idea = harsh_working_en_of_CHI6 has_idea = harsh_working_en_of_CHI5 has_idea = harsh_working_en_of_CHI_01 has_idea = harsh_working_en_of_CHI_02 has_idea = harsh_working_en_of_CHI_03 has_idea = harsh_working_en_of_CHI_04 } } }
 		completion_reward = {	
 			unlock_decision_tooltip = Raise_worker_salaries_benefits
 		}
@@ -1197,10 +1197,11 @@
 					check_variable = { Nationalize_construction_and_chemical_industries_progress = 100 }
 					check_variable = { Promote_nationalization_strategic_industries_progress = 100 }
 					NOT = { 
-						OR = { 
-							has_idea = CHI_work7 has_idea = CHI_work6 has_idea = CHI_work5 has_idea = CHI_work_01 
-							has_idea = CHI_work_02 has_idea = CHI_work_03 has_idea = CHI_work_04 
-						} 
+						OR = { has_idea = harsh_working_en_of_CHI7 has_idea = harsh_working_en_of_CHI6 
+								has_idea = harsh_working_en_of_CHI5 has_idea = harsh_working_en_of_CHI_01 
+								has_idea = harsh_working_en_of_CHI_02 has_idea = harsh_working_en_of_CHI_03 
+								has_idea = harsh_working_en_of_CHI_04 
+						}
 					}
 				}
 				has_completed_focus = CHI_worker_ownership

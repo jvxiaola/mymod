@@ -4382,47 +4382,25 @@ jdjs = {
 }
 
 gjldf = {
-
-		allowed = {
-			original_tag = CHI
-		}
-		available = {
-		}
-		icon = GFX_decision_political_discourse
-
-		visible = {			
+	allowed = { original_tag = CHI}
+	available = {}
+	icon = GFX_decision_political_discourse
+	visible = {			
 		OR = {
-		has_idea = CHI_work_01
-		has_idea = CHI_work_02
-	has_idea = CHI_work_03
-			has_idea = CHI_work_04
-	has_idea = CHI_work5
-		has_idea = CHI_work6
-		has_idea = CHI_work7
-
-
+			has_idea = harsh_working_en_of_CHI1
+			has_idea = harsh_working_en_of_CHI2
+			has_idea = harsh_working_en_of_CHI3
+			has_idea = harsh_working_en_of_CHI4
+			has_idea = harsh_working_en_of_CHI5
+			has_idea = harsh_working_en_of_CHI6
+			has_idea = harsh_working_en_of_CHI7
 		}
-		
-		
-		}
-				days_remove = 365
-		cost = 996
-		ai_will_do = {
-			factor = 5
-		}
-		remove_effect = {
-			  		 if = {
-		limit = { NOT = {has_idea = CHI_work_04} }
-CHI_work_up = yes
-}
-	else_if = {
-		limit = { has_idea = CHI_work_04}
-			remove_ideas = CHI_work_04
 	}
-
+		days_remove = 365
+		cost = 500
+		ai_will_do = {factor = 5}
+		remove_effect = {}
 }
-}
-
 }
 
 south_china_sea_category = {

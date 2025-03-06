@@ -13,6 +13,119 @@ ideas = {
 			}
 		}
 
+		harsh_working_en_of_CHI7 = {
+			allowed_civil_war = { always = yes }
+			name = harsh_working_en_of_CHI
+			picture = harsh_working_en_of_CHI
+			allowed = {}
+			modifier = {
+				production_speed_buildings_factor = 1.0
+				conscription_factor = -0.15
+				monthly_population = -0.8
+				stability_factor = -0.40
+				communism_drift = -0.05
+				research_speed_factor = -0.3
+				political_power_gain = -0.45
+				Chinese_people_support_to_china_government_modifier = -0.20
+						}
+					}
 
+		harsh_working_en_of_CHI6 = {
+			allowed_civil_war = { always = yes }
+			name = harsh_working_en_of_CHI
+			picture = harsh_working_en_of_CHI
+			allowed = {}
+			modifier = {
+				production_speed_buildings_factor = 0.8
+				conscription_factor = -0.15
+				stability_factor = -0.35
+				monthly_population = -0.7
+				communism_drift = -0.05
+				Chinese_people_support_to_china_government_modifier = -0.15
+				research_speed_factor = -0.2
+				political_power_gain = -0.45
+			}
+		}
+
+		harsh_working_en_of_CHI5 = {
+			allowed_civil_war = { always = yes }
+			name = harsh_working_en_of_CHI
+			picture = harsh_working_en_of_CHI
+			allowed = {}
+			modifier = {
+				production_speed_buildings_factor = 0.6
+				Chinese_people_support_to_china_government_modifier = -0.12
+				conscription_factor = -0.10
+				stability_factor = -0.25
+				monthly_population = -0.6
+				communism_drift = -0.03
+				research_speed_factor = -0.1
+				political_power_gain = -0.35
+			}
+		}
+
+		harsh_working_en_of_CHI4 = {
+			allowed_civil_war = { always = yes }
+			name = harsh_working_en_of_CHI
+			picture = harsh_working_en_of_CHI
+			allowed = {}
+			modifier = {
+				production_speed_buildings_factor = 0.4
+				Chinese_people_support_to_china_government_modifier = -0.10
+				conscription_factor = -0.05
+				stability_factor = -0.15
+				monthly_population = -0.5
+				communism_drift = -0.01
+				political_power_gain = -0.25
+						}
+					}
+			
+		harsh_working_en_of_CHI3 = {
+			allowed_civil_war = { always = yes }
+			name = harsh_working_en_of_CHI
+			picture = harsh_working_en_of_CHI
+			allowed = {}		
+			modifier = {
+				production_speed_buildings_factor = 0.3
+				conscription_factor = -0.05
+				monthly_population = -0.4
+				stability_factor = -0.10
+				communism_drift = -0.01
+				Chinese_people_support_to_china_government_modifier = -0.07
+				political_power_gain = -0.15
+			}
+		}
+			
+		harsh_working_en_of_CHI2 = {
+			allowed_civil_war = { always = yes }
+			name = harsh_working_en_of_CHI
+			picture = harsh_working_en_of_CHI
+			allowed = {}
+			modifier = {
+			production_speed_buildings_factor = 0.2
+			stability_factor = -0.05
+			monthly_population = -0.3
+			communism_drift = -0.01
+			Chinese_people_support_to_china_government_modifier = -0.05
+			political_power_gain = -0.1
+			}
+		}
+			
+		harsh_working_en_of_CHI1 = {
+			allowed_civil_war = { always = yes }
+			name = harsh_working_en_of_CHI
+			picture = harsh_working_en_of_CHI
+			allowed = {} 
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				communism_drift = -0.01
+				monthly_population = -0.2
+				research_speed_factor = -0.05
+				political_power_gain = -0.1
+				Chinese_people_support_to_china_government_modifier = -0.01
+			}
+		}
+
+		
 	}
 }

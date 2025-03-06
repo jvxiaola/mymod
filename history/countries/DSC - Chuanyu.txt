@@ -105,7 +105,7 @@ capital = 583
 		CHI_Socialist_Market_Economy
 		CHI_shipinganquanwenti
 		CHI_shaosuminzu1
-		CHI_work_01	  
+		harsh_working_en_of_CHI_01	  
 		multi_ethnic_state_idea
 		recession
 		unrestrained_corruption

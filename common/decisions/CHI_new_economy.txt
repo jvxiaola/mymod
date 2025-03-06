@@ -373,7 +373,7 @@ CHI_Redemption_assets = {
 	icon = GFX_decision_ger_mefo_bills
 	visible = {
 		has_completed_focus = Raise_worker_salaries_benefits
-		OR = { has_idea = CHI_work7 has_idea = CHI_work6 has_idea = CHI_work5 has_idea = CHI_work_01 has_idea = CHI_work_02 has_idea = CHI_work_03 has_idea = CHI_work_04 }
+		OR = { has_idea = harsh_working_en_of_CHI7 has_idea = harsh_working_en_of_CHI6 has_idea = harsh_working_en_of_CHI5 has_idea = harsh_working_en_of_CHI4 has_idea = harsh_working_en_of_CHI3 has_idea = harsh_working_en_of_CHI2 has_idea = harsh_working_en_of_CHI1 }
 	}
 	available = {
 		custom_trigger_tooltip = {
@@ -395,7 +395,7 @@ CHI_Redemption_assets = {
 	}
 	days_remove = 45
 	remove_effect = {
-		CHI_work_up = yes
+		CHI_work_envir_up = yes
 		if = {
 			limit = { check_variable = { COSEM_pp < 0.10 } }
 			set_temp_variable = { COSEM_pp_add = 0.05 } set_temp_variable = { COSEM_iwr_add = 0.01 } set_temp_variable = { COSEM_twm_add = 0.01 }
