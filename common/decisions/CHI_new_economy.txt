@@ -454,7 +454,7 @@ CHI_Redemption_assets = {
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = CHI_Oofb_jiangsu_trigger_tt
-			541 = { NOT = { has_state_flag = State_start_Collaboration } 536 = { has_state_flag = State_start_Collaboration } }
+			541 = { NOT = { has_state_flag = State_start_Collaboration } } 536 = { NOT = { has_state_flag = State_start_Collaboration } }
 		}
 	}
 	on_map_mode = map_only
@@ -482,12 +482,12 @@ CHI_Redemption_assets = {
 	icon = GFX_decision_hol_exchange_intelligence_data
 	visible = {
 		has_completed_focus = CHI_get_organized
-		435 = { NOT = { has_state_flag = State_start_Collaboration } 544 = { has_state_flag = State_start_Collaboration } }
+		435 = { NOT = { has_state_flag = State_start_Collaboration } } 435 = { NOT = { has_state_flag = State_start_Collaboration } }
 	}
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = CHI_Oofb_shandong_trigger_tt
-			435 = { NOT = { has_state_flag = State_start_Collaboration } 544 = { has_state_flag = State_start_Collaboration } }
+			435 = { NOT = { has_state_flag = State_start_Collaboration } } 435 = { NOT = { has_state_flag = State_start_Collaboration } }
 		}
 	}
 	on_map_mode = map_only
