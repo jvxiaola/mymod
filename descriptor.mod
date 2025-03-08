@@ -9,5 +9,5 @@ dependencies={
 	"Millennium Dawn千禧黎明开局装备翻译"
 }
 name="千禧黎明永恒革命"
-supported_version="1.15.*"
+supported_version="1.16.*"
 remote_file_id="3323854766"
