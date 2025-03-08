@@ -6773,7 +6773,6 @@ cost = 5
 		available = {
 				custom_trigger_tooltip = {
 					has_country_flag=xggm
-					tooltip = has_communist_state_government_TT
 				}
 				is_in_faction = no
 		has_civil_war = no
