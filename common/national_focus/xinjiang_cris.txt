@@ -29,15 +29,15 @@
 		x = 0
 		y = 1
 		cost = 0.5
-		trigger = {
+		available = {
 			custom_trigger_tooltip = {
 				tooltip = CHI_XIN_has_complete_goals_TT
+				tag = XIN
 			}
 		}
-		available = { tag = XIN }
 		relative_position_id = XIN_troubled_times
 		prerequisite = { focus = XIN_troubled_times }
-		joint_trigger = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN }
+		joint_trigger = { OR = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN } }
 		completion_reward = {}
 		ai_will_do = { factor = 0.5 }
 	}
@@ -55,10 +55,15 @@
 				tooltip = CHI_XIN_has_complete_goals_TT
 			}
 		}
-		available = { tag = XIN has_country_flag = XIN_focus_conscription_goals }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = CHI_XIN_has_complete_goals_TT
+				tag = XIN
+			}
+		}
 		relative_position_id = XIN_military_Region_Construction
 		prerequisite = { focus = XIN_military_Region_Construction }
-		joint_trigger = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN }
+		joint_trigger = { OR = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN } }
 	
 		completion_reward_joint_originator = {
 			XIN_Expand_conscription = yes
@@ -74,17 +79,15 @@
 		x = 0
 		y = 1
 		cost = 3
-		bypass = {
+		available = {
 			custom_trigger_tooltip = {
-				tag = CHI
-				XIN = { has_completed_focus = XIN_Temporary_training }
 				tooltip = CHI_XIN_has_complete_goals_TT
+				tag = XIN
 			}
 		}
-		available = { tag = XIN }
 		relative_position_id = XIN_Expand_conscription
 		prerequisite = { focus = XIN_Expand_conscription }
-		joint_trigger = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN }
+		joint_trigger = { OR = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN } }
 	
 		completion_reward_joint_originator = {
 			XIN_Temporary_training = yes
@@ -100,17 +103,15 @@
 		x = 0
 		y = 1
 		cost = 3
-		bypass = {
+		available = {
 			custom_trigger_tooltip = {
-				tag = CHI
-				XIN = { has_completed_focus = XIN_anti_terrorism }
 				tooltip = CHI_XIN_has_complete_goals_TT
+				tag = XIN
 			}
 		}
-		available = { tag = XIN }
 		relative_position_id = XIN_Temporary_training
 		prerequisite = { focus = XIN_Temporary_training }
-		joint_trigger = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN }
+		joint_trigger = { OR = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN } }
 	
 		completion_reward_joint_originator = {
 			XIN = {
@@ -133,17 +134,15 @@
 		x = 0
 		y = 1
 		cost = 3
-		bypass = {
+		available = {
 			custom_trigger_tooltip = {
-				tag = CHI
-				XIN = { has_completed_focus = XIN_Focus_military_equipment }
 				tooltip = CHI_XIN_has_complete_goals_TT
+				tag = XIN
 			}
 		}
-		available = { tag = XIN has_country_flag = XIN_focus_military_equipment_goals }
 		relative_position_id = XIN_military_Region_Construction
 		prerequisite = { focus = XIN_military_Region_Construction }
-		joint_trigger = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN }
+		joint_trigger = { OR = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN } }
 	
 		completion_reward_joint_originator = {
 			XIN_military_equipment_effect = yes
@@ -157,17 +156,15 @@
 		x = 0
 		y = 1
 		cost = 3
-		bypass = {
+		available = {
 			custom_trigger_tooltip = {
-				tag = CHI
-				XIN = { has_completed_focus = XIN_Militarize_productical_corps }
 				tooltip = CHI_XIN_has_complete_goals_TT
+				tag = XIN
 			}
 		}
-		available = { tag = XIN }
 		relative_position_id = XIN_Focus_military_equipment
 		prerequisite = { focus = XIN_Focus_military_equipment }
-		joint_trigger = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN }
+		joint_trigger = { OR = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN } }
 	
 		completion_reward_joint_originator = {
 			XIN = { 
@@ -184,17 +181,15 @@
 		x = 0
 		y = 1
 		cost = 3
-		bypass = {
+		available = {
 			custom_trigger_tooltip = {
-				tag = CHI
-				XIN = { has_completed_focus = XIN_martial_to_production }
 				tooltip = CHI_XIN_has_complete_goals_TT
+				tag = XIN
 			}
 		}
-		available = { tag = XIN }
 		relative_position_id = XIN_Militarize_productical_corps
 		prerequisite = { focus = XIN_Militarize_productical_corps }
-		joint_trigger = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN }
+		joint_trigger = { OR = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN } }
 	
 		completion_reward_joint_originator = {
 			XIN_martial_to_production_effect = yes
@@ -210,17 +205,15 @@
 		x = 2
 		y = 1
 		cost = 3
-		bypass = {
+		available = {
 			custom_trigger_tooltip = {
-				tag = CHI
-				XIN = { has_completed_focus = XIN_assign_commission }
 				tooltip = CHI_XIN_has_complete_goals_TT
+				tag = XIN
 			}
 		}
-		available = { tag = XIN has_country_flag = XIN_focus_military_qualities_goals }
 		relative_position_id = XIN_military_Region_Construction
 		prerequisite = { focus = XIN_military_Region_Construction }
-		joint_trigger = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN }
+		joint_trigger = { OR = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN } }
 	
 		completion_reward_joint_originator = {
 			XIN = {
@@ -237,17 +230,15 @@
 		x = 0
 		y = 1
 		cost = 3
-		bypass = {
+		available = {
 			custom_trigger_tooltip = {
-				tag = CHI
-				XIN = { has_completed_focus = XIN_learn_theory }
 				tooltip = CHI_XIN_has_complete_goals_TT
+				tag = XIN
 			}
 		}
-		available = { tag = XIN }
 		relative_position_id = XIN_assign_commission
 		prerequisite = { focus = XIN_assign_commission }
-		joint_trigger = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN }
+		joint_trigger = { OR = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN } }
 	
 		completion_reward_joint_originator = {
 			XIN_military_qualities_effect = yes
@@ -262,17 +253,15 @@
 		x = 0
 		y = 1
 		cost = 3
-		bypass = {
+		available = {
 			custom_trigger_tooltip = {
-				tag = CHI
-				XIN = { has_completed_focus = XIN_alleviating_ethnic_tensions }
 				tooltip = CHI_XIN_has_complete_goals_TT
+				tag = XIN
 			}
 		}
-		available = { tag = XIN }
 		relative_position_id = XIN_learn_theory
 		prerequisite = { focus = XIN_learn_theory }
-		joint_trigger = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN }
+		joint_trigger = { OR = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN } }
 	
 		completion_reward_joint_originator = {
 			custom_effect_tooltip = XIN_alleviating_ethnic_tensions_effect_tt
@@ -289,17 +278,15 @@
 		x = 0
 		y = 4
 		cost = 3
-		bypass = {
+		available = {
 			custom_trigger_tooltip = {
-				tag = CHI
-				XIN = { has_completed_focus = XIN_Work_completion }
 				tooltip = CHI_XIN_has_complete_goals_TT
+				tag = XIN
 			}
 		}
-		available = { tag = XIN }
 		relative_position_id = XIN_military_Region_Construction
 		prerequisite = { focus = XIN_martial_to_production focus = XIN_anti_terrorism focus = XIN_alleviating_ethnic_tensions }
-		joint_trigger = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN }
+		joint_trigger = { OR = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN } }
 	
 		completion_reward_joint_originator = {
 			custom_effect_tooltip = XIN_Work_completion_effect_tt

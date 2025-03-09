@@ -15,7 +15,7 @@ XIN_focus_conscription_effect_desc_TT: "§Y效果为§!:使新疆军区的§7左
 XIN_focus_military_equipment_effect_desc_TT: "§Y效果为§!:使新疆军区的§O中间国策树分支可用§!"
 XIN_focus_military_qualities_ing_desc_TT: "§0新疆军区正专注于§!§O军备建设§!"
 XIN_focus_military_qualities_effect_desc_TT: "§Y效果为§!:使新疆军区的§R右侧国策树分支可用§!"
-CHI_XIN_has_complete_goals_TT: "§0新疆军区§!§O已完成对应政策§!"
+CHI_XIN_has_complete_goals_TT: "§G将随着§!§0新疆军区§!§O完成对应政策§!§G而完成§!"
 #军区设定
 XIN_communist_cadres: "军区政委"
 XIN_industrial_conglomerates: "生产建设兵团"
