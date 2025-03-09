@@ -9,7 +9,7 @@ spriteType = {
 	}	
 	spriteType = {
 		name = "GFX_ideology_Chinese_Socialism"
-		texturefile = "gfx/Ideology/Market_Socialism.png"
+		texturefile = "gfx/Ideology/Market_Socialism1.png"
 	}	
 	spriteType = {
 		name = "GFX_ideology_Neutral_Reform_Communism"
