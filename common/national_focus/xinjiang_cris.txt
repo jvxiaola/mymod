@@ -38,7 +38,14 @@
 		relative_position_id = XIN_troubled_times
 		prerequisite = { focus = XIN_troubled_times }
 		joint_trigger = { OR = { tag = CHI original_tag = DSC original_tag = HKG tag = XIN } }
-		completion_reward = {}
+		completion_reward_joint_member = {
+			hidden_effect = {
+				uncomplete_national_focus = {
+					focus = XIN_Work_completion 
+					uncomplete_children = yes
+				}
+			}
+		}
 		ai_will_do = { factor = 0.5 }
 	}
 
@@ -301,19 +308,12 @@
 						focus = XIN_military_Region_Construction 
 						uncomplete_children = yes
 					}
-					uncomplete_national_focus = {
-						focus = XIN_Work_completion 
-						uncomplete_children = yes
-					}
 				}
 				uncomplete_national_focus = {
 					focus = XIN_military_Region_Construction 
 					uncomplete_children = yes
 				}
-				uncomplete_national_focus = {
-					focus = XIN_Work_completion 
-					uncomplete_children = yes
-				}
+				
 			}
 		}
 		ai_will_do = { factor = 0.5 }
