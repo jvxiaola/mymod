@@ -48,17 +48,10 @@
 		x = -2
 		y = 1
 		cost = 3
-		bypass = {
-			custom_trigger_tooltip = {
-				tag = CHI
-				XIN = { has_completed_focus = XIN_Expand_conscription }
-				tooltip = CHI_XIN_has_complete_goals_TT
-			}
-		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = CHI_XIN_has_complete_goals_TT
-				tag = XIN
+				tag = XIN has_country_flag = XIN_focus_conscription_goals
 			}
 		}
 		relative_position_id = XIN_military_Region_Construction
@@ -137,7 +130,7 @@
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = CHI_XIN_has_complete_goals_TT
-				tag = XIN
+				tag = XIN has_country_flag = XIN_focus_military_equipment_goals
 			}
 		}
 		relative_position_id = XIN_military_Region_Construction
@@ -208,7 +201,7 @@
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = CHI_XIN_has_complete_goals_TT
-				tag = XIN
+				tag = XIN has_country_flag = XIN_focus_military_qualities_goals
 			}
 		}
 		relative_position_id = XIN_military_Region_Construction
