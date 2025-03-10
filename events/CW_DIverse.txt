@@ -546,7 +546,7 @@ country_event = {
 		}
 		if = {
 			limit = { ROOT = { tag = TAJ } }
-			CHI = { set_country_flag = Contact_taj_successs }
+			CHI = { set_country_flag = Contact_taj_failed }
 		}
 		if = {
 			limit = { ROOT = { tag = SOV } }
