@@ -511,6 +511,10 @@ country_event = {
 			CHI = { set_country_flag = Contact_kaz_successs }
 		}
 		if = {
+			limit = { ROOT = { tag = KYR } }
+			CHI = { set_country_flag = Contact_KYR_successs }
+		}
+		if = {
 			limit = { ROOT = { tag = SOV } }
 			CHI = { set_country_flag = Contact_SOV_successs }
 		}
@@ -531,6 +535,10 @@ country_event = {
 		if = {
 			limit = { ROOT = { tag = KAZ } }
 			CHI = { set_country_flag = Contact_kaz_failed }
+		}
+		if = {
+			limit = { ROOT = { tag = KYR } }
+			CHI = { set_country_flag = Contact_KYR_failed }
 		}
 		if = {
 			limit = { ROOT = { tag = SOV } }

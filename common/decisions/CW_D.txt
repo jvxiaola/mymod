@@ -52,6 +52,33 @@ CHI_Contact_to_attack_xin_terrist_KAZ = {
 		}
 	}
 }
+
+#联络吉尔吉斯斯坦
+CHI_Contact_to_attack_xin_terrist_KYR  = {
+	icon = GFX_decision_generic_military
+	visible = {
+		tag = CHI
+		has_country_flag = XIN_attacked
+		NOT = { has_country_flag = Contact_kyr_successs }
+		NOT = { has_country_flag = Contact_kyr_failed }
+		has_country_flag = XIN_diplomacy_opened
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = CHI_Contact_to_attack_xin_terrist_KYR_decision_trigger_tt
+			always = yes
+		}
+	}
+	days_remove = 3
+	fire_only_once = yes
+	cost = 20
+	remove_effect = {
+		KYR = {
+			country_event = { id = CW_Diverse.12 }
+		}
+	}
+}
+
 #联络俄罗斯(未更新)
 CHI_Contact_to_attack_xin_terrist_SOV = {
 	icon = GFX_decision_generic_military
