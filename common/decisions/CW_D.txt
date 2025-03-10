@@ -25,7 +25,7 @@ CHI_XIN_Terrorist_infiltration = {
 	}
 	is_good = no
 }
-#国策路线选择(未更新) 
+#国策路线选择(详见GUI) 
 
 #联络哈萨克斯坦  #组织中亚联合反恐行动(未更新)
 CHI_Contact_to_attack_xin_terrist_KAZ = {
