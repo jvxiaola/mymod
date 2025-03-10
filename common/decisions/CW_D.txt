@@ -79,6 +79,32 @@ CHI_Contact_to_attack_xin_terrist_KYR  = {
 	}
 }
 
+#联络塔吉克斯坦
+CHI_Contact_to_attack_xin_terrist_TAJ  = {
+	icon = GFX_decision_generic_military
+	visible = {
+		tag = CHI
+		has_country_flag = XIN_attacked
+		NOT = { has_country_flag = Contact_taj_successs }
+		NOT = { has_country_flag = Contact_taj_failed }
+		has_country_flag = XIN_diplomacy_opened
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = CHI_Contact_to_attack_xin_terrist_TAJ_decision_trigger_tt
+			always = yes
+		}
+	}
+	days_remove = 3
+	fire_only_once = yes
+	cost = 20
+	remove_effect = {
+		TAJ = {
+			country_event = { id = CW_Diverse.12 }
+		}
+	}
+}
+
 #联络俄罗斯(未更新)
 CHI_Contact_to_attack_xin_terrist_SOV = {
 	icon = GFX_decision_generic_military

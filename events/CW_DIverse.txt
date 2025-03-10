@@ -512,7 +512,11 @@ country_event = {
 		}
 		if = {
 			limit = { ROOT = { tag = KYR } }
-			CHI = { set_country_flag = Contact_KYR_successs }
+			CHI = { set_country_flag = Contact_kyr_successs }
+		}
+		if = {
+			limit = { ROOT = { tag = TAJ } }
+			CHI = { set_country_flag = Contact_taj_successs }
 		}
 		if = {
 			limit = { ROOT = { tag = SOV } }
@@ -538,7 +542,11 @@ country_event = {
 		}
 		if = {
 			limit = { ROOT = { tag = KYR } }
-			CHI = { set_country_flag = Contact_KYR_failed }
+			CHI = { set_country_flag = Contact_kyr_failed }
+		}
+		if = {
+			limit = { ROOT = { tag = TAJ } }
+			CHI = { set_country_flag = Contact_taj_successs }
 		}
 		if = {
 			limit = { ROOT = { tag = SOV } }
