@@ -159,7 +159,7 @@ defined_text = {
 	text = {
 		trigger = {
 		has_completed_focus = Raise_worker_salaries_benefits
-		OR = { has_idea = harsh_working_en_of_CHI7 has_idea = harsh_working_en_of_CHI6 has_idea = harsh_working_en_of_CHI5 has_idea = harsh_working_en_of_CHI_01 has_idea = harsh_working_en_of_CHI_02 has_idea = harsh_working_en_of_CHI_03 has_idea = harsh_working_en_of_CHI_04 }
+		OR = { has_idea = harsh_working_en_of_CHI7 has_idea = harsh_working_en_of_CHI6 has_idea = harsh_working_en_of_CHI5 has_idea = harsh_working_en_of_CHI1 has_idea = harsh_working_en_of_CHI2 has_idea = harsh_working_en_of_CHI3 has_idea = harsh_working_en_of_CHI4 }
 		}
 		localization_key = "CHI_Raise_worker_salaries_benefits_goal" #显示改善劳动待遇国策
 	}
@@ -182,7 +182,7 @@ defined_text = {
 					check_variable = { Promote_nationalization_strategic_industries_progress = 100 }
 				}
 			}
-			NOT = { OR = { has_idea = harsh_working_en_of_CHI7 has_idea = harsh_working_en_of_CHI6 has_idea = harsh_working_en_of_CHI5 has_idea = harsh_working_en_of_CHI_01 has_idea = harsh_working_en_of_CHI_02 has_idea = harsh_working_en_of_CHI_03 has_idea = harsh_working_en_of_CHI_04 } }
+			NOT = { OR = { has_idea = harsh_working_en_of_CHI7 has_idea = harsh_working_en_of_CHI6 has_idea = harsh_working_en_of_CHI5 has_idea = harsh_working_en_of_CHI1 has_idea = harsh_working_en_of_CHI2 has_idea = harsh_working_en_of_CHI3 has_idea = harsh_working_en_of_CHI4 } }
 		}
 		localization_key = "CHI_Raise_worker_salaries_benefits_goal_achieve" #改善劳动待遇完成
 	}
