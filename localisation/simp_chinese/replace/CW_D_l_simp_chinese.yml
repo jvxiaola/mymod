@@ -118,6 +118,9 @@ CHI_Organize_antiterrorism_operations: "组织军区反恐行动"
 
 CHI_Contact_to_attack_xin_terrist_KAZ: "联络哈萨克斯坦"
 CHI_Contact_to_attack_xin_terrist_SOV: "联络俄罗斯"
+CHI_Contact_to_attack_xin_terrist_KYR: "联络吉尔吉斯斯坦"
+CHI_Contact_to_attack_xin_terrist_TAJ: "联络塔吉克斯坦"
+
 #事件
 CW_Diverse.1: "遇袭报告"
 CW_Diverse.1.t: "遇袭报告"
