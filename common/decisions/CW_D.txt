@@ -131,6 +131,56 @@ CHI_Contact_to_attack_xin_terrist_SOV = {
 	}
 }
 
+blockade_Wakhan_Corridor = {
+	icon = GFX_decision_generic_military
+	visible = {
+		tag = CHI
+		has_country_flag = XIN_attacked
+		NOT = { has_country_flag = Wakhan_Corridor_blocked_successs }
+		has_country_flag = XIN_diplomacy_opened
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = CHI_blockade_Wakhan_Corridor_decision_trigger_tt
+			always = yes
+		}
+	}
+	custom_cost_text = command_power_more_than_20
+	custom_cost_trigger = {
+	command_power > 20
+	}
+	complete_effect = {
+		hidden_effect = {
+			add_command_power = -20
+		}
+	}
+	days_remove = 15
+	fire_only_once = yes
+	remove_effect = {
+		set_country_flag = Wakhan_Corridor_blocked_successs
+		AFG = {
+			add_opinion_modifier = {
+				target = CHI
+				modifier = WAS_blocked_for_terrorism
+			}
+			reverse_add_opinion_modifier = {
+				target = CHI
+				modifier = WAS_blocked_for_terrorism 
+			}
+		}
+		TAL = {
+			add_opinion_modifier = {
+				target = CHI
+				modifier = WAS_blocked_for_terrorism
+			}
+			reverse_add_opinion_modifier = {
+				target = CHI
+				modifier = WAS_blocked_for_terrorism 
+			}
+		}
+	}
+}
+
 #军警民协调派驻
 Military_Police_Democratic_Alliance_dispatched_XIN_station = {
 	icon = GFX_decision_generic_military

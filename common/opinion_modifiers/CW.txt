@@ -8,4 +8,7 @@ opinion_modifiers = {
 		value = 50
 		max_trust = 100
 	}
+	WAS_blocked_for_terrorism = {
+		value = -20
+	}
 }
