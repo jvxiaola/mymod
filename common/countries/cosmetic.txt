@@ -39,3 +39,7 @@ XIN_CIVIL={
     color = rgb { 210 66 16 }
 	color_ui = rgb { 233 78 19 }
 }
+DSC_JGQ={
+	color = rgb { 220 32 0 } #255 244 190
+	color_ui = rgb { 220 32 0 }
+}
