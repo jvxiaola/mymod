@@ -105,6 +105,11 @@ CHI_Contact_to_attack_xin_terrist_KAZ_decision_trigger_tt: "§R尚未与哈萨�
 CHI_Contact_to_attack_xin_terrist_SOV_decision_trigger_tt: "§R尚未与俄罗斯就反恐演习事项展开会谈§!"
 NOT_completed_tt: "§R边疆危机内容尚未完成，敬请期待！§!"
 CHI_XIN_Terrorist_infiltration: "§R恐怖组织渗透§!"
+CHI_Contact_to_attack_xin_terrist_KAZ: "联络哈萨克斯坦"
+CHI_Contact_to_attack_xin_terrist_SOV: "联络俄罗斯"
+CHI_Contact_to_attack_xin_terrist_KYR: "联络吉尔吉斯斯坦"
+CHI_Contact_to_attack_xin_terrist_TAJ: "联络塔吉克斯坦"
+blockade_Wakhan_Corridor: "§O封锁瓦罕走廊§!"
 Military_Police_Democratic_Alliance_dispatched_XIN_station: "军警民协调派驻"
 CHI_Organize_combat_skills_training: "组织作战技能训练"
 CHI_Organize_political_work_XIN: "组织政工工作"
@@ -116,12 +121,7 @@ CHI_Dispatch_ID_recruitment_XIN: "征招步兵师"
 CHI_Organize_antiterrorism_operations: "组织军区反恐行动"
 
 
-#云泽的临时修改
 
-CHI_Contact_to_attack_xin_terrist_KAZ: "联络哈萨克斯坦"
-CHI_Contact_to_attack_xin_terrist_SOV: "联络俄罗斯"
-CHI_Contact_to_attack_xin_terrist_KYR: "联络吉尔吉斯斯坦"
-CHI_Contact_to_attack_xin_terrist_TAJ: "联络塔吉克斯坦"
 
 #事件
 CW_Diverse.1: "遇袭报告"
