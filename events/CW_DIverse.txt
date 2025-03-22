@@ -171,7 +171,7 @@ country_event = {
 		XIN = {
 			any_controlled_state = {
 				will_be_attacked_by_islam = yes
-				is_sourth_XJ = yes
+				is_sourth_XJ = yes NOT = { has_state_flag = in_martial_law }
 			}
 		}
 	}
@@ -191,7 +191,7 @@ country_event = {
 				random_controlled_state = {
 					limit = { is_sourth_XJ = yes will_be_attacked_by_islam = yes }
 					if = { 
-						limit = { has_dynamic_modifier = { modifier = extrameal_islam_attack5 } }
+						limit = { has_dynamic_modifier = { modifier = extrameal_islam_attack5 } NOT = { has_state_flag = in_martial_law } }
 						set_state_flag = In_Chaos_by_terrist_attck_XIN
 						set_demilitarized_zone = yes
 						add_manpower = -1000
@@ -211,7 +211,7 @@ country_event = {
 						}
 					} 
 					else_if = { 
-						limit = { has_dynamic_modifier = { modifier = extrameal_islam_attack4 } }
+						limit = { has_dynamic_modifier = { modifier = extrameal_islam_attack4 } NOT = { has_state_flag = in_martial_law } }
 						set_state_flag = In_Chaos_by_terrist_attck_XIN
 						set_demilitarized_zone = yes
 						add_manpower = -450

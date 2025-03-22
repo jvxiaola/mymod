@@ -66,9 +66,11 @@ In_Chaos_by_terrist_attck_XIN: "§R正因恐怖袭击而陷入混乱！§!"
 CW_D_category: "§R边疆危机§!"
 CW_D_category_desc: "    我国的地区分离主义分子由来已久，在§C1976“平反浪潮”§!与§O“自治区扩大”§!后，地方§B分离主义§!与§g恐怖袭击§!频率达到§R顶峰§!。\n近日来中央的一系列政治变化也使得党内出现各类矛盾，疏于对地方分离主义进行及时且有效的打击。"
 CAN_NOT_input_is_reb: "无法煽动叛乱"
+in_martial_law: "戒严状态"
 #好感
 chinese_MRG: "是中国军区"
-Joint_anti_terrorism: "联合反恐"
+Joint_anti_terrorism: "联合反恐合作伙伴"
+WAS_blocked_for_terrorism: "封锁戒严"
 #精神
 Military_region_government: "军区政府"
 Military_region_government_desc: "该政治实体是由§7中央政府§!为应对特殊紧急情况而成立的§Y军区政府§!,享有一定的军事与政治自主权。"

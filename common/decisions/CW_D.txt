@@ -163,6 +163,7 @@ blockade_Wakhan_Corridor = {
 	days_remove = 15
 	fire_only_once = yes
 	remove_effect = {
+		411 = { set_state_flag = in_martial_law days = 20 }
 		add_days_remove  = {
 			decision = CHI_XIN_Terrorist_infiltration
 			days = 30
