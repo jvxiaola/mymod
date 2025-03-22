@@ -105,7 +105,7 @@ CHI_Contact_to_attack_xin_terrist_TAJ  = {
 	}
 }
 
-#联络俄罗斯(未更新)
+#联络俄罗斯
 CHI_Contact_to_attack_xin_terrist_SOV = {
 	icon = GFX_decision_generic_military
 	visible = {
@@ -163,7 +163,7 @@ blockade_Wakhan_Corridor = {
 	days_remove = 15
 	fire_only_once = yes
 	remove_effect = {
-		411 = { set_state_flag = in_martial_law days = 20 }
+		411 = { set_state_flag = { flag = in_martial_law days = 15 } }
 		add_days_remove  = {
 			decision = CHI_XIN_Terrorist_infiltration
 			days = 30
@@ -189,6 +189,46 @@ blockade_Wakhan_Corridor = {
 				modifier = WAS_blocked_for_terrorism 
 			}
 		}
+	}
+}
+#与巴基斯坦组织联合反恐
+CHI_orgnize_attack_xin_terrist_PAK = {
+	icon = GFX_decision_generic_military
+	visible = {
+		tag = CHI
+		has_country_flag = XIN_attacked
+		has_country_flag = XIN_diplomacy_opened
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = is_attacking_terrist_with_other_decision_trigger_tt
+			NOT = { has_country_flag = is_attacking_terrist_with_other }
+		}
+	}
+	days_re_enable = 7
+	days_remove = 20
+	custom_cost_text = command_power_more_than_20
+	custom_cost_trigger = {
+	command_power > 20
+	}
+	complete_effect = {
+		add_manpower = -400
+		add_equipment_to_stockpile = {
+			type = Inf_equipment
+			amount = -400
+			producer = CHI
+		}
+		hidden_effect = {
+			add_command_power = -20
+		}
+	}
+	remove_effect = {
+		1207 = { set_state_flag = { flag = in_martial_law days = 10 } }
+		add_days_remove  = {
+			decision = CHI_XIN_Terrorist_infiltration
+			days = 5
+		}
+		set_country_flag = { flag = is_attacking_terrist_with_other days = 30 }
 	}
 }
 
