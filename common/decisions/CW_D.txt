@@ -130,7 +130,7 @@ CHI_Contact_to_attack_xin_terrist_SOV = {
 		}
 	}
 }
-
+#封锁瓦罕走廊
 blockade_Wakhan_Corridor = {
 	icon = GFX_decision_generic_military
 	visible = {
@@ -150,6 +150,12 @@ blockade_Wakhan_Corridor = {
 	command_power > 20
 	}
 	complete_effect = {
+		add_manpower = -200
+		add_equipment_to_stockpile = {
+			type = Inf_equipment
+			amount = -300
+			producer = CHI
+		}
 		hidden_effect = {
 			add_command_power = -20
 		}
@@ -157,6 +163,10 @@ blockade_Wakhan_Corridor = {
 	days_remove = 15
 	fire_only_once = yes
 	remove_effect = {
+		add_days_remove  = {
+			decision = CHI_XIN_Terrorist_infiltration
+			days = 30
+		}
 		set_country_flag = Wakhan_Corridor_blocked_successs
 		AFG = {
 			add_opinion_modifier = {
