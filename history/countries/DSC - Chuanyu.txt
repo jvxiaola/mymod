@@ -2363,7 +2363,7 @@ if = {
 
 
 	create_country_leader = {
-		name = "Chuanyujunzhengfu"
+		name = "川渝军政府"
 		picture = "NpcC.dds"
 		expire = "2222.1.1"
 		ideology = Nat_Autocracy

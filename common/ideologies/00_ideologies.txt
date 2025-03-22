@@ -78,17 +78,17 @@ color = { 0 0 255}
 			can_be_randomly_selected = no}
 			trotskyism = { color = { 255 0 0 } 
 			can_be_randomly_selected = no}
-			juche = { color = { 238 121 66	 }
+			juche = { color = { 50 0 0 }
 			can_be_randomly_selected = no}
-			Reform_Communism = {color = {219 112 147 }
+			Reform_Communism = {color = { 255 127 80 }
 			can_be_randomly_selected = no
 
 			}
 			Conservative = { color = { 205 201 201	 } 
 			can_be_randomly_selected = no }
-			Chinese_Socialism_jiang = { color = { 255 192 203 }
+			Chinese_Socialism_jiang = { color = { 255 127 80 }
 			can_be_randomly_selected = no }
-			Chinese_Socialism = { color = { 255 192 203 }
+			Chinese_Socialism = { color = { 255 127 80 }
 			can_be_randomly_selected = no }
 			Chinese_Socialism_mao = { color = { 238 59 59	 }
 			can_be_randomly_selected = no }
@@ -240,7 +240,8 @@ neutralityism = {}
 
 			Neutral_Autocracy = { color = { 75 75 75 } 
 			can_be_randomly_selected = no}
-Neutral_Reform_Communism = {color = {176 48 96	 }
+			
+Neutral_Reform_Communism = {color = { 255 127 80 }
 can_be_randomly_selected = no
 
 }

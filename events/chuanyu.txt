@@ -124,6 +124,130 @@ country_event = {
 						
 		custom_effect_tooltip = chuanyu_change_effect_tt
 		hidden_effect = {
+
+			start_civil_war = {
+				ideology = communism
+				size = 0.5
+states = 585
+
+}
+
+	set_cosmetic_tag = DSC_JGQ
+
+	set_popularities = {
+		democratic = 0.0
+		communism = 0.0
+		fascism = 0.0
+		neutrality = 0.0
+		nationalist = 100
+	}
+	set_politics = {
+		ruling_party = nationalist
+		last_election = "1996.12.11"
+		election_frequency = 60
+		elections_allowed = no
+	}
+
+	start_politics_input = yes
+
+	### Party Popularities
+	set_variable = { party_pop_array^0 = 0 } #Western_Autocracy
+	set_variable = { party_pop_array^1 = 0 } #conservatism
+	set_variable = { party_pop_array^2 = 0 } #liberalism
+	set_variable = { party_pop_array^3 = 0 } #socialism
+	set_variable = { party_pop_array^4 = 0 } #Communist-State
+	set_variable = { party_pop_array^5 = 0 } #anarchist_communism
+	set_variable = { party_pop_array^6 = 0 } #Conservative
+	set_variable = { party_pop_array^7 = 0 } #Autocracy
+	set_variable = { party_pop_array^8 = 0 } #Mod_Vilayat_e_Faqih
+	set_variable = { party_pop_array^9 = 0 } #Vilayat_e_Faqih
+	set_variable = { party_pop_array^10 = 0 } #Kingdom
+	set_variable = { party_pop_array^11 = 0 } #Caliphate
+	set_variable = { party_pop_array^12 = 0 } #Neutral_Muslim_Brotherhood
+	set_variable = { party_pop_array^13 = 0 } #Neutral_Autocracy
+	set_variable = { party_pop_array^14 = 0 } #Neutral_conservatism
+	set_variable = { party_pop_array^15 = 0 } #oligarchism
+	set_variable = { party_pop_array^16 = 0 } #Neutral_Libertarian
+	set_variable = { party_pop_array^17 = 0 } #Neutral_green
+	set_variable = { party_pop_array^18 = 0 } #neutral_Social
+	set_variable = { party_pop_array^19 = 0 } #Neutral_Communism
+	set_variable = { party_pop_array^20 = 0 } #Nat_Populism
+	set_variable = { party_pop_array^21 = 0 } #Nat_Fascism
+	set_variable = { party_pop_array^22 = 1.0 } #Nat_Autocracy
+	set_variable = { party_pop_array^23 = 0 } #Monarchist
+
+	### Ruling Party
+	add_to_array = { ruling_party = 22 }
+
+
+
+
+
+	
+
+
+
+startup_politics = yes
+
+
+create_country_leader = {
+	name = "川渝军政府"
+	picture = "NpcC.dds"
+	expire = "2222.1.1"
+	ideology = Nat_Autocracy
+	traits = {
+
+	}
+}
+
+DSC={
+
+
+
+
+
+
+
+	division_template = {
+		name = "川渝民兵"
+regiments = {
+Militia_Bat = { x = 0 y = 0 }
+Militia_Bat = { x = 0 y = 1 }
+Militia_Bat = { x = 0 y = 2 }
+Militia_Bat = { x = 0 y = 3 }
+Militia_Bat = { x = 1 y = 0 }
+Militia_Bat = { x = 1 y = 1 }
+Militia_Bat = { x = 1 y = 2 }
+Militia_Bat = { x = 1 y = 3 }
+
+		}
+	}
+	random_owned_controlled_state = {
+		prioritize = { 583 }
+		create_unit = {
+			division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+			prioritize_location = 6999
+		}
+
+		create_unit = {
+			division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+			prioritize_location = 6999
+		}
+
+		create_unit = {
+			division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+			prioritize_location = 6999
+		}
+		create_unit = {
+			division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+			prioritize_location = 6999
+		}
+	}
+
+
+
+
+
 			remove_ideas = CHI_GGKF
 			remove_ideas = CHI_Socialist_Market_Economy
 			remove_dynamic_modifier = {
@@ -164,7 +288,8 @@ country_event = {
 				clr_country_flag = gmxingdong									
 						}
 					}
-
+				}
+			
 country_event = {
 id = Chuanyu.7
 title = Chuanyu.7.t
