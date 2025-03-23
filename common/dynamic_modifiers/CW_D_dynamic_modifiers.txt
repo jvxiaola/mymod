@@ -73,3 +73,13 @@ Preparation_status = {
 		stability_factor = ps_15
 	}
 }
+
+XIN_state_in_martial_law = {
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = { country_exists = XIN }
+    }
+	icon = GFX_idea_manpower_bonus
+	custom_modifier_tooltip = state_in_XIN_martial_law_tt
+	
+}

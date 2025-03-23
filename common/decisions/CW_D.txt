@@ -163,7 +163,7 @@ blockade_Wakhan_Corridor = {
 	days_remove = 15
 	fire_only_once = yes
 	remove_effect = {
-		411 = { set_state_flag = { flag = in_martial_law days = 15 } }
+		411 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 15 } }
 		add_days_mission_timeout  = {
 			mission = CHI_XIN_Terrorist_infiltration
 			days = 30
@@ -223,7 +223,7 @@ CHI_orgnize_attack_xin_terrist_PAK = {
 		}
 	}
 	remove_effect = {
-		1207 = { set_state_flag = { flag = in_martial_law days = 10 } }
+		1207 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 10 } }
 		add_days_mission_timeout  = {
 			mission = CHI_XIN_Terrorist_infiltration
 			days = -5
