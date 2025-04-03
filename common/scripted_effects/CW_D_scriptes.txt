@@ -1,3 +1,21 @@
+XIN_anti_terrist_time_effect = {
+	custom_effect_tooltip = CHI_Organize_antiterrorism_operations_effect_tt
+	if = {
+		limit = { XIN = { check_variable = { ps_4 > -0.06 } } }
+		add_days_mission_timeout  = {
+			mission = CHI_XIN_Terrorist_infiltration
+			days = 5
+		}
+	}
+	else_if = {
+		limit = { XIN = { check_variable = { ps_4 > 0 } } }
+		add_days_mission_timeout  = {
+			mission = CHI_XIN_Terrorist_infiltration
+			days = 10
+		}
+	}
+}
+
 extrameal_islam_leavel_up = {
 	custom_effect_tooltip = extrameal_islam_leavel_up_tt
 	hidden_effect = {
