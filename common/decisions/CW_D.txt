@@ -162,7 +162,7 @@ blockade_Wakhan_Corridor = {
 	}
 	highlight_states = {
         highlight_state_targets = {
-           state = 411
+           state = 411 state = 421
         }
     }
 	days_remove = 15
@@ -236,7 +236,7 @@ CHI_orgnize_attack_xin_terrist_PAK = {
 		1207 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 10 } }
 		add_days_mission_timeout  = {
 			mission = CHI_XIN_Terrorist_infiltration
-			days = -5
+			days = 10
 		}
 		set_country_flag = { flag = is_attacking_terrist_with_other days = 30 }
 	}
