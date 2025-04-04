@@ -519,19 +519,19 @@ country_event = {
 			modifier = Joint_anti_terrorism 
 		}
 		if = {
-			limit = { ROOT = { tag = KAZ } }
+			limit = { tag = KAZ }
 			CHI = { set_country_flag = Contact_kaz_successs }
 		}
 		if = {
-			limit = { ROOT = { tag = KYR } }
+			limit = { tag = KYR }
 			CHI = { set_country_flag = Contact_kyr_successs }
 		}
 		if = {
-			limit = { ROOT = { tag = TAJ } }
+			limit = { tag = TAJ }
 			CHI = { set_country_flag = Contact_taj_successs }
 		}
 		if = {
-			limit = { ROOT = { tag = SOV } }
+			limit = { tag = SOV }
 			CHI = { set_country_flag = Contact_SOV_successs }
 		}
 		ai_chance = {
@@ -549,19 +549,19 @@ country_event = {
 	option = {
 		name = CW_Diverse.12.b
 		if = {
-			limit = { ROOT = { tag = KAZ } }
+			limit = { tag = KAZ }
 			CHI = { set_country_flag = Contact_kaz_failed }
 		}
 		if = {
-			limit = { ROOT = { tag = KYR } }
+			limit = { tag = KYR } 
 			CHI = { set_country_flag = Contact_kyr_failed }
 		}
 		if = {
-			limit = { ROOT = { tag = TAJ } }
+			limit = { tag = TAJ } 
 			CHI = { set_country_flag = Contact_taj_failed }
 		}
 		if = {
-			limit = { ROOT = { tag = SOV } }
+			limit = { tag = SOV } 
 			CHI = { set_country_flag = Contact_SOV_failed }
 		}
 		ai_chance = {
