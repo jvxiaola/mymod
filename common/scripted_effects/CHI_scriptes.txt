@@ -197,11 +197,6 @@ custom_effect_tooltip = change_CHI_people_support_tt
 
 CHI_people_support_dynamic_scriptes = {
 
-
-
-
-
-
 if = {
 limit = {
 check_variable = {
@@ -667,65 +662,6 @@ check_variable = {
 
 
 }
-
-	CHI_work_down = {
-	if = {
-		limit = { 
-		NOT = {
-		has_idea = CHI_work_01
-		has_idea = CHI_work_02
-		has_idea = CHI_work_03
-		has_idea = CHI_work_04
-		has_idea = CHI_work5
-		has_idea = CHI_work6
-		has_idea = CHI_work7
-		}
-		}
-			add_ideas = CHI_work_04
-		}
-	else_if = {
-		limit = { has_idea = CHI_work_04 }
-		swap_ideas = {
-			remove_idea = CHI_work_04
-			add_idea = CHI_work_03
-		}
-	}
-	else_if = {
-		limit = { has_idea = CHI_work_03 }
-		swap_ideas = {
-			remove_idea = CHI_work_03
-			add_idea = CHI_work_02
-		}
-	}
-		else_if = {
-		limit = { has_idea = CHI_work_02 }
-		swap_ideas = {
-			remove_idea = CHI_work_02
-			add_idea = CHI_work_01
-		}
-	}
-	else_if = {
-		limit = { has_idea = CHI_work_01 }
-		swap_ideas = {
-			remove_idea = CHI_work_01
-			add_idea = CHI_work5
-		}
-	}
-	else_if = {
-		limit = { has_idea = CHI_work5 }
-		swap_ideas = {
-			remove_idea = CHI_work5
-			add_idea = CHI_work6
-		}
-	}
-		else_if = {
-		limit = { has_idea = CHI_work6 }
-		swap_ideas = {
-			remove_idea = CHI_work6
-			add_idea = CHI_work7
-		}
-	}
-	}
 
   CHI_ruin_industry_add = {
     #添加工厂损毁精神
