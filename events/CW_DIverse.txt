@@ -510,7 +510,6 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = CW_Diverse.12.a
-		CHI = { country_event = { id = CW_Diverse.13 } }
 		add_opinion_modifier = {
 			target = CHI
 			modifier = Joint_anti_terrorism
@@ -535,6 +534,8 @@ country_event = {
 			limit = { tag = SOV }
 			CHI = { set_country_flag = Contact_SOV_successs set_country_flag = SOV_name_anti_teriost }
 		}
+		CHI = { country_event = { id = CW_Diverse.13 } }
+
 		ai_chance = {
 			base = 1
 			modifier = {
@@ -551,20 +552,22 @@ country_event = {
 		name = CW_Diverse.12.b
 		if = {
 			limit = { tag = KAZ }
-			CHI = { set_country_flag = Contact_kaz_failed }
+			CHI = { set_country_flag = Contact_kaz_failed set_country_flag = kaz_name_anti_teriost }
 		}
 		if = {
 			limit = { tag = KYR } 
-			CHI = { set_country_flag = Contact_kyr_failed }
+			CHI = { set_country_flag = Contact_kyr_failed set_country_flag = kyr_name_anti_teriost }
 		}
 		if = {
 			limit = { tag = TAJ } 
-			CHI = { set_country_flag = Contact_taj_failed }
+			CHI = { set_country_flag = Contact_taj_failed set_country_flag = taj_name_anti_teriost }
 		}
 		if = {
 			limit = { tag = SOV } 
-			CHI = { set_country_flag = Contact_SOV_failed }
+			CHI = { set_country_flag = Contact_SOV_failed set_country_flag = SOV_name_anti_teriost }
 		}
+		CHI = { country_event = { id = CW_Diverse.14 } }
+
 		ai_chance = {
 			base = 0
 			modifier = {
@@ -587,6 +590,32 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = CW_Diverse.13.a
+		if = {
+			limit = { has_country_flag = kaz_name_anti_teriost }
+			clr_country_flag = kaz_name_anti_teriost 
+		}
+		if = {
+			limit = { has_country_flag = kyr_name_anti_teriost }
+			clr_country_flag = kyr_name_anti_teriost 
+		}
+		if = {
+			limit = { has_country_flag = taj_name_anti_teriost }
+			clr_country_flag = taj_name_anti_teriost 
+		}
+		if = {
+			limit = { has_country_flag = SOV_name_anti_teriost }
+			clr_country_flag = SOV_name_anti_teriost 
+		}
+	}
+}
+
+country_event = {
+	id = CW_Diverse.14
+	title = CW_Diverse.14.t
+	desc = CW_Diverse.14.d
+	is_triggered_only = yes
+	option = {
+		name = CW_Diverse.14.a
 		if = {
 			limit = { has_country_flag = kaz_name_anti_teriost }
 			clr_country_flag = kaz_name_anti_teriost 
