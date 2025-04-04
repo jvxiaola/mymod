@@ -42,15 +42,13 @@ state = {
 			stronghold_network = 1 #South Korean DMZ depots, etc
 			3308 = {
 				naval_base = 8
+				bunker = 2
 			}
 			12011 = {
 				naval_base = 8
 			}
 			3285 = {
 				naval_base = 8
-			}
-			3308 = {
-				bunker = 2
 			}
 			7125 = {
 				bunker = 1
