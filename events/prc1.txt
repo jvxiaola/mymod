@@ -5328,6 +5328,7 @@ DSC = {
 	inherit_technology = CHI
 	set_variable = { gdp_capita = 90.415 }
 	set_variable = { gdp_per_capita = 3.415 }
+<<<<<<< HEAD
 	add_state_core = 586
 	add_state_core = 585	
 	add_state_core = 583
@@ -5338,7 +5339,16 @@ DSC = {
 	transfer_state = 583
 	transfer_state = 1216
 	transfer_state = 1217
+=======
+	transfer_state = 586
+	transfer_state = 585
+	transfer_state = 583
+	every_owned_state = {
+		add_core_of = DSC
+		remove_core_of = CHI
+>>>>>>> 8b31c8e6a8222ba14644b375cc62d8ee05a9b3b6
 	}
+}
 
 puppet = DSC
 DSC = {
