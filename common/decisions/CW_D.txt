@@ -161,9 +161,7 @@ blockade_Wakhan_Corridor = {
 		}
 	}
 	highlight_states = {
-        highlight_state_targets = {
-           state = 411 state = 421
-        }
+        highlight_state_targets = { state = 411 state = 1207 }
     }
 	days_remove = 15
 	fire_only_once = yes
@@ -213,9 +211,7 @@ CHI_orgnize_attack_xin_terrist_PAK = {
 	days_re_enable = 7
 	days_remove = 20
 	highlight_states = {
-        highlight_state_targets = {
-           state = 1207
-        }
+        highlight_state_targets = { state = 1207 state = 421 }
     }
 	custom_cost_text = command_power_more_than_20
 	custom_cost_trigger = {
