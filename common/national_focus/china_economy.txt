@@ -1348,7 +1348,7 @@
 				585 = { has_state_flag = State_start_Collaboration } 586 = { has_state_flag = State_start_Collaboration } 583 = { has_state_flag = State_start_Collaboration }
 				537 = { has_state_flag = State_start_Collaboration } 570 = { has_state_flag = State_start_Collaboration } 540 = { has_state_flag = State_start_Collaboration }
 				547 = { has_state_flag = State_start_Collaboration } 548 = { has_state_flag = State_start_Collaboration } 595 = { has_state_flag = State_start_Collaboration }
-				1106 = { has_state_flag = State_start_Collaboration }
+				1106 = { has_state_flag = State_start_Collaboration } 1216 = { has_state_flag = State_start_Collaboration } 1217 = { has_state_flag = State_start_Collaboration }
 			}
 		}
 		completion_reward = {	

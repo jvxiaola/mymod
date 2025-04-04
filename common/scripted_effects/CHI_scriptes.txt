@@ -968,3 +968,69 @@ CHI_Public_ownership_economy_end_effect = {
 	set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.1 } change_DSC_Socialist_Construction_dynamic13 = yes change_DSC_Socialist_Construction_dynamic14 = yes
 	increase_economic_growth = yes
 }
+#省份及地块划分
+CHI_state_recognize_start = {
+  CHI_add_State_guangdong = yes CHI_add_State_jiangsu = yes CHI_add_State_shandong = yes
+	CHI_add_State_zhejiang = yes  CHI_add_State_henan = yes   CHI_add_State_liaoning = yes
+	CHI_add_State_hebei = yes     CHI_add_State_sichuan = yes CHI_add_State_fujian = yes
+	CHI_add_State_hubei = yes     CHI_add_State_shanghai = yes
+}
+CHI_add_State_guangdong = {
+  hidden_effect = {
+    534 = { add_to_array = { array = guangdong_states } } 532 = { add_to_array = { array = guangdong_states } } 
+    595 = { add_to_array = { array = guangdong_states } } 1106 = { add_to_array = { array = guangdong_states } } 
+  }
+}
+CHI_add_State_jiangsu = {
+  hidden_effect = {
+    541 = { add_to_array = { array = jiangsu_states } } 536 = { add_to_array = { array = jiangsu_states } } 
+  }
+}
+CHI_add_State_shandong = {
+  hidden_effect = {
+    435 = { add_to_array = { array = shandong_states } } 544 = { add_to_array = { array = shandong_states } } 
+  }
+}
+CHI_add_State_zhejiang = {
+  hidden_effect = {
+    538 = { add_to_array = { array = zhejiang_states } }
+  }
+}
+CHI_add_State_henan = {
+  hidden_effect = {
+    567 = { add_to_array = { array = henan_states } }
+  }
+}
+CHI_add_State_liaoning = {
+  hidden_effect = {
+    1095 = { add_to_array = { array = liaoning_states } } 552 = { add_to_array = { array = liaoning_states } }
+  }
+}
+CHI_add_State_hebei = {
+  hidden_effect = {
+    434 = { add_to_array = { array = hebei_states } } 549 = { add_to_array = { array = hebei_states } }
+    547 = { add_to_array = { array = hebei_states } } 548 = { add_to_array = { array = hebei_states } }
+  }
+}
+CHI_add_State_sichuan = {
+  hidden_effect = {
+    583 = { add_to_array = { array = sichuan_states } } 586 = { add_to_array = { array = sichuan_states } }
+    585 = { add_to_array = { array = sichuan_states } } 1216 = { add_to_array = { array = sichuan_states } }
+    1217 = { add_to_array = { array = sichuan_states } }
+  }
+}
+CHI_add_State_fujian = {
+  hidden_effect = {
+    537 = { add_to_array = { array = fujian_states } }
+  }
+}
+CHI_add_State_hubei = {
+  hidden_effect = {
+    570 = { add_to_array = { array = hubei_states } }
+  }
+}
+CHI_add_State_shanghai = {
+  hidden_effect = {
+    540 = { add_to_array = { array = shanghai_states } }
+  }
+}
