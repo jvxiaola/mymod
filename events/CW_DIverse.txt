@@ -111,18 +111,18 @@ country_event = {
 		name = CW_Diverse.4.a
 		custom_effect_tooltip = orgnize_xinjiang_military_TT
 			hidden_effect = {
-			592 = { transfer_state_to = XIN add_core_of = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack2 } add_victory_points = { province = 3167 value = 5 } }
-			1205 = { transfer_state_to = XIN add_core_of = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack5 } }
-			1206 = { transfer_state_to = XIN add_core_of = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack5 } }
-			1207 = { transfer_state_to = XIN add_core_of = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack4 } }
-			1208 = { transfer_state_to = XIN add_core_of = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack1 } }
-			1209 = { transfer_state_to = XIN add_core_of = XIN }
-			1210 = { transfer_state_to = XIN add_core_of = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack3} }
-			1211 = { transfer_state_to = XIN add_core_of = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack5} }
-			1212 = { transfer_state_to = XIN add_core_of = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack2} }
-			1213 = { transfer_state_to = XIN add_core_of = XIN }
-			1214 = { transfer_state_to = XIN add_core_of = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack1} }
-			1215 = { transfer_state_to = XIN add_core_of = XIN }
+			592 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack2 } }
+			1205 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack5 } }
+			1206 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack5 } }
+			1207 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack4 } }
+			1208 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack1 } }
+			1209 = { transfer_state_to = XIN }
+			1210 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack3} }
+			1211 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack5} }
+			1212 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack2} }
+			1213 = { transfer_state_to = XIN }
+			1214 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack1} }
+			1215 = { transfer_state_to = XIN }
 			XIN = {
 				create_country_leader = {
 					name = "邱衍汉"
@@ -130,17 +130,21 @@ country_event = {
 					ideology = XIN_MR
 					traits = {}
 				}
-			inherit_technology = CHI							
-			load_oob = XIN_liberate_units
-			set_country_flag = XIN_attacked
-			mark_focus_tree_layout_dirty = yes#刷新国策树
-			give_military_access = CHI
-			complete_national_focus = XIN_troubled_times
-			add_equipment_to_stockpile = {
-				type = Inf_equipment
-				amount = 5000
-				producer = CHI
-			}
+				every_owned_state = {
+					add_core_of = XIN
+					remove_core_of = CHI
+				}
+				inherit_technology = CHI							
+				load_oob = XIN_liberate_units
+				set_country_flag = XIN_attacked
+				mark_focus_tree_layout_dirty = yes#刷新国策树
+				give_military_access = CHI
+				complete_national_focus = XIN_troubled_times
+				add_equipment_to_stockpile = {
+					type = Inf_equipment
+					amount = 5000
+					producer = CHI
+				}
 			}
 			CHI = {
 				complete_national_focus = XIN_troubled_times
