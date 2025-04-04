@@ -53,6 +53,14 @@ country_event = {
 				set_political_power = 0
 				add_stability = 0.1
 				mark_focus_tree_layout_dirty = yes
+
+
+				set_variable = {
+					var = DSC_rmjd_renyuan
+					value = 0
+				}
+
+
 				}
 
 
@@ -242,6 +250,52 @@ Militia_Bat = { x = 1 y = 3 }
 			division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 			prioritize_location = 6999
 		}
+
+		if = { 
+			limit={
+					check_variable = {
+				DSC_rmjd_renyuan > 0
+			}
+			}
+			create_unit = {
+				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				prioritize_location = 6999
+			}
+	
+			create_unit = {
+				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				prioritize_location = 6999
+			}
+	
+			create_unit = {
+				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				prioritize_location = 6999
+			}
+			create_unit = {
+				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				prioritize_location = 6999
+			}
+			create_unit = {
+				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				prioritize_location = 6999
+			}
+	
+			create_unit = {
+				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				prioritize_location = 6999
+			}
+	
+			create_unit = {
+				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				prioritize_location = 6999
+			}
+			create_unit = {
+				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				prioritize_location = 6999
+			}
+		}
+
+
 	}
 
 
@@ -438,3 +492,26 @@ country_event = {
 							
 				}
 			}
+
+
+			country_event = {
+				id = chuanyu.11
+				title = chuanyu.11.t
+				desc = chuanyu.11.d
+								
+				is_triggered_only = yes
+								
+								
+				option = {
+				name = chuanyu.11.a 
+		
+				
+				add_to_variable={
+					var = DSC_rmjd_renyuan
+					value = 1
+				}
+				
+				
+								
+					}
+				}

@@ -144,6 +144,12 @@ chuanyu.10.t: "抓捕骚乱者"
 chuanyu.10.d: "在我们的民兵组织以及群众举报下，搜捕到了数近百名骚乱者，包括几十名毛派分子分子，"
 chuanyu.10.a: "杀无赦"
 
+chuanyu.11.t: "成功收获人员"
+
+chuanyu.11.d: "我们的队伍扩大了"
+chuanyu.11.a: "太好了"
+
+
 #决议    #战间
 CHI_economic_deterioration: "§R经济正在崩溃§!"
 CHI_economic_deterioration_desc: "由于战争原因，大量工人逃离工厂，大小企业争相离开，如果我们任无所作为，§R我们的经济将万劫不复！§!"

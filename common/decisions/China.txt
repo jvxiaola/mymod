@@ -2982,6 +2982,7 @@ has_completed_focus = DSC_duoquwuqi
 			complete_effect = {
 
 	country_event = {id=chuanyu.4 days=5}
+	country_event = {id=chuanyu.11 days=9}
 			}
 			}
 
