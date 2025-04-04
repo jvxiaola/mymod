@@ -79,7 +79,7 @@ XIN_state_in_martial_law = {
 	remove_trigger = {
 		NOT = { country_exists = XIN }
     }
-	icon = GFX_idea_manpower_bonus
+	icon = GFX_idea_roit_police_idea
 	custom_modifier_tooltip = state_in_XIN_martial_law_tt
 	
 }
