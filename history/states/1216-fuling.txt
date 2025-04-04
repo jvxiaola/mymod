@@ -1,11 +1,11 @@
 state = {
-	id = 583
-	name = "STATE_583"
-	manpower = 19324138
+	id = 1216
+	name = "STATE_1216"
+	manpower = 7451378
 	state_category = state_14
 
 	resources = {
-		oil = 12
+		oil = 10
 	}
 
 	history = {
@@ -13,28 +13,23 @@ state = {
 		victory_points = {
 			6999 10
 		}
-
 		victory_points = {
-			7240 1
-		}
-		victory_points = {
-			1893 1
-		}
-		victory_points = {
-			4141 1
+			11865 5
 		}
 
 
+
 		victory_points = {
-			14035 1
+			7948 1
 		}
+
+
 		buildings = {
 			infrastructure = 1
 			internet_station = 1
-			industrial_complex = 3
-			offices = 1
-			arms_factory = 3
-			air_base = 4
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
 
 		}
 		add_core_of = CHI
@@ -42,6 +37,6 @@ state = {
 	}
 
 	provinces = {
-		7240 14312 6999 14035 4141 14609 15842 1893
+		15843 11865 3100 7948 4041 3119
 	}
 }

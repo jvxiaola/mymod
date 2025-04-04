@@ -163,6 +163,8 @@ set_variable = { CHI_Socialist_Construction_dynamic1 = -0.40}
 	548 = { add_dynamic_modifier = { modifier = CHI_tianjin_municipality } }	
 	540 = { add_dynamic_modifier = { modifier = CHI_shanghai_municipality } }
 	583 = { add_dynamic_modifier = { modifier = CHI_chongqing_municipality } }
+	1216 = { add_dynamic_modifier = { modifier = CHI_chongqing_municipality } }
+	1217 = { add_dynamic_modifier = { modifier = CHI_chongqing_municipality } }
 	595 = { add_dynamic_modifier = { modifier = CHI_hong_kong } }
 	1106 = { add_dynamic_modifier = { modifier = CHI_macau } }
 	574 = { add_dynamic_modifier = { modifier = CHI_guangxi_zhuang_autonomous_region } }
