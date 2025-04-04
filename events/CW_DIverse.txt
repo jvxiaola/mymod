@@ -111,6 +111,7 @@ country_event = {
 		name = CW_Diverse.4.a
 		custom_effect_tooltip = orgnize_xinjiang_military_TT
 			hidden_effect = {
+			591 = { transfer_state_to = XIN }
 			592 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack2 } }
 			1205 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack5 } }
 			1206 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack5 } }
