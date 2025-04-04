@@ -1,4 +1,5 @@
 focus_tree = {
+	#规划：开明老左（王照国） 保守老左（邓力群）
 	id = communsim_PRC_focus
 	country = {}
 		default = no
