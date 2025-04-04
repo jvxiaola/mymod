@@ -519,21 +519,23 @@ country_event = {
 			modifier = Joint_anti_terrorism 
 		}
 		if = {
-			limit = { ROOT = { tag = KAZ } }
-			CHI = { set_country_flag = Contact_kaz_successs }
+			limit = { tag = KAZ }
+			CHI = { set_country_flag = Contact_kaz_successs set_country_flag = kaz_name_anti_teriost }
 		}
 		if = {
-			limit = { ROOT = { tag = KYR } }
-			CHI = { set_country_flag = Contact_kyr_successs }
+			limit = { tag = KYR }
+			CHI = { set_country_flag = Contact_kyr_successs set_country_flag = kyr_name_anti_teriost }
 		}
 		if = {
-			limit = { ROOT = { tag = TAJ } }
-			CHI = { set_country_flag = Contact_taj_successs }
+			limit = { tag = TAJ }
+			CHI = { set_country_flag = Contact_taj_successs set_country_flag = taj_name_anti_teriost }
 		}
 		if = {
-			limit = { ROOT = { tag = SOV } }
-			CHI = { set_country_flag = Contact_SOV_successs }
+			limit = { tag = SOV }
+			CHI = { set_country_flag = Contact_SOV_successs set_country_flag = SOV_name_anti_teriost }
 		}
+		CHI = { country_event = { id = CW_Diverse.13 } }
+
 		ai_chance = {
 			base = 1
 			modifier = {
@@ -549,21 +551,23 @@ country_event = {
 	option = {
 		name = CW_Diverse.12.b
 		if = {
-			limit = { ROOT = { tag = KAZ } }
-			CHI = { set_country_flag = Contact_kaz_failed }
+			limit = { tag = KAZ }
+			CHI = { set_country_flag = Contact_kaz_failed set_country_flag = kaz_name_anti_teriost }
 		}
 		if = {
-			limit = { ROOT = { tag = KYR } }
-			CHI = { set_country_flag = Contact_kyr_failed }
+			limit = { tag = KYR } 
+			CHI = { set_country_flag = Contact_kyr_failed set_country_flag = kyr_name_anti_teriost }
 		}
 		if = {
-			limit = { ROOT = { tag = TAJ } }
-			CHI = { set_country_flag = Contact_taj_failed }
+			limit = { tag = TAJ } 
+			CHI = { set_country_flag = Contact_taj_failed set_country_flag = taj_name_anti_teriost }
 		}
 		if = {
-			limit = { ROOT = { tag = SOV } }
-			CHI = { set_country_flag = Contact_SOV_failed }
+			limit = { tag = SOV } 
+			CHI = { set_country_flag = Contact_SOV_failed set_country_flag = SOV_name_anti_teriost }
 		}
+		CHI = { country_event = { id = CW_Diverse.14 } }
+
 		ai_chance = {
 			base = 0
 			modifier = {
@@ -574,6 +578,59 @@ country_event = {
 				tag = SOV has_government = nationalist
 				add = 1
 			}
+		}
+	}
+}
+
+
+country_event = {
+	id = CW_Diverse.13
+	title = CW_Diverse.13.t
+	desc = CW_Diverse.13.d
+	is_triggered_only = yes
+	option = {
+		name = CW_Diverse.13.a
+		if = {
+			limit = { has_country_flag = kaz_name_anti_teriost }
+			clr_country_flag = kaz_name_anti_teriost 
+		}
+		if = {
+			limit = { has_country_flag = kyr_name_anti_teriost }
+			clr_country_flag = kyr_name_anti_teriost 
+		}
+		if = {
+			limit = { has_country_flag = taj_name_anti_teriost }
+			clr_country_flag = taj_name_anti_teriost 
+		}
+		if = {
+			limit = { has_country_flag = SOV_name_anti_teriost }
+			clr_country_flag = SOV_name_anti_teriost 
+		}
+	}
+}
+
+country_event = {
+	id = CW_Diverse.14
+	title = CW_Diverse.14.t
+	desc = CW_Diverse.14.d
+	is_triggered_only = yes
+	option = {
+		name = CW_Diverse.14.a
+		if = {
+			limit = { has_country_flag = kaz_name_anti_teriost }
+			clr_country_flag = kaz_name_anti_teriost 
+		}
+		if = {
+			limit = { has_country_flag = kyr_name_anti_teriost }
+			clr_country_flag = kyr_name_anti_teriost 
+		}
+		if = {
+			limit = { has_country_flag = taj_name_anti_teriost }
+			clr_country_flag = taj_name_anti_teriost 
+		}
+		if = {
+			limit = { has_country_flag = SOV_name_anti_teriost }
+			clr_country_flag = SOV_name_anti_teriost 
 		}
 	}
 }

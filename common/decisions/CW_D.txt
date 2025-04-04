@@ -27,7 +27,7 @@ CHI_XIN_Terrorist_infiltration = {
 }
 #国策路线选择(详见GUI) 
 
-#联络哈萨克斯坦  #组织中亚联合反恐行动(未更新)
+#联络哈萨克斯坦
 CHI_Contact_to_attack_xin_terrist_KAZ = {
 	icon = GFX_decision_generic_military
 	visible = {
@@ -52,6 +52,51 @@ CHI_Contact_to_attack_xin_terrist_KAZ = {
 		}
 	}
 }
+#与哈萨克斯坦组织联合反恐
+CHI_orgnize_attack_xin_terrist_KAZ = {
+	icon = GFX_decision_generic_military
+	visible = {
+		tag = CHI
+		has_country_flag = XIN_attacked
+		has_country_flag = Contact_kaz_successs
+		has_country_flag = XIN_diplomacy_opened
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = is_attacking_terrist_with_other_decision_trigger_tt
+			NOT = { has_country_flag = is_attacking_terrist_with_other }
+		}
+	}
+	days_re_enable = 7
+	days_remove = 23
+	highlight_states = {
+        highlight_state_targets = { state = 1214 state = 1208 }
+    }
+	custom_cost_text = command_power_more_than_40
+	custom_cost_trigger = {
+	command_power > 40
+	}
+	complete_effect = {
+		add_manpower = -600
+		add_equipment_to_stockpile = {
+			type = Inf_equipment
+			amount = -600
+			producer = CHI
+		}
+		hidden_effect = {
+			add_command_power = -40
+		}
+	}
+	remove_effect = {
+		1214 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 10 } }
+		1208 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 10 } }
+		add_days_mission_timeout  = {
+			mission = CHI_XIN_Terrorist_infiltration
+			days = 10
+		}
+		set_country_flag = { flag = is_attacking_terrist_with_other days = 15 }
+	}
+}
 
 #联络吉尔吉斯斯坦
 CHI_Contact_to_attack_xin_terrist_KYR  = {
@@ -69,7 +114,7 @@ CHI_Contact_to_attack_xin_terrist_KYR  = {
 			always = yes
 		}
 	}
-	days_remove = 3
+	days_remove = 7
 	fire_only_once = yes
 	cost = 20
 	remove_effect = {
@@ -78,7 +123,53 @@ CHI_Contact_to_attack_xin_terrist_KYR  = {
 		}
 	}
 }
-
+#与吉尔吉斯斯坦组织联合反恐
+CHI_orgnize_attack_xin_terrist_KAZ = {
+	icon = GFX_decision_generic_military
+	visible = {
+		tag = CHI
+		has_country_flag = XIN_attacked
+		has_country_flag = Contact_kyr_successs
+		has_country_flag = XIN_diplomacy_opened
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = is_attacking_terrist_with_other_decision_trigger_tt
+			NOT = { has_country_flag = is_attacking_terrist_with_other }
+		}
+	}
+	days_re_enable = 7
+	days_remove = 23
+	highlight_states = {
+        highlight_state_targets = { state = 1205 state = 1206 state = 1214 state = 1211 }
+    }
+	custom_cost_text = command_power_more_than_40
+	custom_cost_trigger = {
+	command_power > 40
+	}
+	complete_effect = {
+		add_manpower = -1000
+		add_equipment_to_stockpile = {
+			type = Inf_equipment
+			amount = -1000
+			producer = CHI
+		}
+		hidden_effect = {
+			add_command_power = -40
+		}
+	}
+	remove_effect = {
+		1205 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 10 } }
+		1206 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 10 } }
+		1214 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 5 } }
+		1211 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 5 } }
+		add_days_mission_timeout  = {
+			mission = CHI_XIN_Terrorist_infiltration
+			days = 15
+		}
+		set_country_flag = { flag = is_attacking_terrist_with_other days = 30 }
+	}
+}
 #联络塔吉克斯坦
 CHI_Contact_to_attack_xin_terrist_TAJ  = {
 	icon = GFX_decision_generic_military
@@ -104,7 +195,51 @@ CHI_Contact_to_attack_xin_terrist_TAJ  = {
 		}
 	}
 }
-
+#与塔吉克斯坦组织联合反恐
+CHI_orgnize_attack_xin_terrist_TAJ = {
+	icon = GFX_decision_generic_military
+	visible = {
+		tag = CHI
+		has_country_flag = XIN_attacked
+		has_country_flag = Contact_taj_successs
+		has_country_flag = XIN_diplomacy_opened
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = is_attacking_terrist_with_other_decision_trigger_tt
+			NOT = { has_country_flag = is_attacking_terrist_with_other }
+		}
+	}
+	days_re_enable = 7
+	days_remove = 23
+	highlight_states = {
+        highlight_state_targets = { state = 722 state = 1205 }
+    }
+	custom_cost_text = command_power_more_than_40
+	custom_cost_trigger = {
+	command_power > 40
+	}
+	complete_effect = {
+		add_manpower = -400
+		add_equipment_to_stockpile = {
+			type = Inf_equipment
+			amount = -400
+			producer = CHI
+		}
+		hidden_effect = {
+			add_command_power = -40
+		}
+	}
+	remove_effect = {
+		722 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 10 } }
+		1205 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 10 } }
+		add_days_mission_timeout  = {
+			mission = CHI_XIN_Terrorist_infiltration
+			days = 10
+		}
+		set_country_flag = { flag = is_attacking_terrist_with_other days = 15 }
+	}
+}
 #联络俄罗斯
 CHI_Contact_to_attack_xin_terrist_SOV = {
 	icon = GFX_decision_generic_military
@@ -128,6 +263,50 @@ CHI_Contact_to_attack_xin_terrist_SOV = {
 		SOV = {
 			country_event = { id = CW_Diverse.12 }
 		}
+	}
+}
+#与俄罗斯组织联合反恐
+CHI_orgnize_attack_xin_terrist_SOV = {
+	icon = GFX_decision_generic_military
+	visible = {
+		tag = CHI
+		has_country_flag = XIN_attacked
+		has_country_flag = Contact_SOV_successs
+		has_country_flag = XIN_diplomacy_opened
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = is_attacking_terrist_with_other_decision_trigger_tt
+			NOT = { has_country_flag = is_attacking_terrist_with_other }
+		}
+	}
+	days_re_enable = 7
+	days_remove = 23
+	highlight_states = {
+        highlight_state_targets = { state = 1208 }
+    }
+	custom_cost_text = command_power_more_than_20
+	custom_cost_trigger = {
+	command_power > 20
+	}
+	complete_effect = {
+		add_manpower = -200
+		add_equipment_to_stockpile = {
+			type = Inf_equipment
+			amount = -200
+			producer = CHI
+		}
+		hidden_effect = {
+			add_command_power = -20
+		}
+	}
+	remove_effect = {
+		1208 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 10 } }
+		add_days_mission_timeout  = {
+			mission = CHI_XIN_Terrorist_infiltration
+			days = 5
+		}
+		set_country_flag = { flag = is_attacking_terrist_with_other days = 10 }
 	}
 }
 #封锁瓦罕走廊
@@ -234,7 +413,7 @@ CHI_orgnize_attack_xin_terrist_PAK = {
 			mission = CHI_XIN_Terrorist_infiltration
 			days = 10
 		}
-		set_country_flag = { flag = is_attacking_terrist_with_other days = 30 }
+		set_country_flag = { flag = is_attacking_terrist_with_other days = 10 }
 	}
 }
 

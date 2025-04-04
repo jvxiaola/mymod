@@ -1,0 +1,31 @@
+defined_text = {
+	name = anti_terrist_XIN_country_taget  
+	text = {  
+	   trigger = {
+			has_country_flag = kaz_name_anti_teriost
+	   }
+	   localization_key = "[KAZ.GetNameWithFlag]" 
+	   
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = kyr_name_anti_teriost
+		}
+		localization_key = "[KYR.GetNameWithFlag]"  
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = taj_name_anti_teriost
+		}
+		localization_key = "[TAJ.GetNameWithFlag]"  
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = SOV_name_anti_teriost
+		}
+		localization_key = "[SOV.GetNameWithFlag]"  
+	}
+}
