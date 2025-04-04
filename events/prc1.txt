@@ -7411,9 +7411,7 @@ option = {	#We accept!
 							expire = "2012.10.1"
 							ideology = Communist-State
 							
-							traits = {
-			Congress_of_Soviets_leader
-							}
+							traits = { }
 						}
 						hidden_effect = {
 								set_politics = {

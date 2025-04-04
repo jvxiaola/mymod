@@ -1,30 +1,10 @@
 on_actions = {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	on_monthly_DSC = {
 	
 		effect = {
 			set_temp_variable = {
-				var=Final_chuanyu_people_support_to_china_government_modifier
-				value=modifier@chuanyu_people_support_to_china_government_modifier
+				var = Final_chuanyu_people_support_to_china_government_modifier
+				value = modifier@chuanyu_people_support_to_china_government_modifier
 			}
 			divide_temp_variable={
 				Final_chuanyu_people_support_to_china_government_modifier=10
@@ -46,10 +26,11 @@ on_actions = {
 		}
 		}
 		
-		DSC = {clamp_variable  = {
+		DSC = {
+		clamp_variable  = {
 			var = DSC_people_support
 			min = 0
-		max = 1
+			max = 1
 		}
 		DSC_people_support_dynamic_scriptes = yes
 		
@@ -169,26 +150,19 @@ on_actions = {
 
 on_monthly_CHI = {
 effect = {
-
 	set_temp_variable = {
-		var=Final_Chinese_people_support_to_china_government_modifier
-		value=modifier@Chinese_people_support_to_china_government_modifier
+		var = Final_Chinese_people_support_to_china_government_modifier
+		value = modifier@Chinese_people_support_to_china_government_modifier
 	}
-	divide_temp_variable={
-		Final_Chinese_people_support_to_china_government_modifier=10
+	divide_temp_variable = {
+		Final_Chinese_people_support_to_china_government_modifier = 10
 	}
-
-	
 	add_to_variable = { CHI_people_support =Final_Chinese_people_support_to_china_government_modifier }
-
-
-if = {
+		if = {
 			limit = {
-			CHI = {
-OR = {			
-has_dynamic_modifier = {
-    modifier = CHI_people_support_dynamic_left
-}
+				CHI = {
+					OR = {			
+						has_dynamic_modifier = { modifier = CHI_people_support_dynamic_left }
 #has_dynamic_modifier = {
 #modifier = CHI_people_support_dynamic_right
 #}
@@ -234,88 +208,44 @@ CHI_people_support_dynamic_scriptes_left = yes
 
 }
 on_startup = {
-      effect = { # NEVER FORGET! Important to include this line to distinguish it from random_events = { ... }
-            every_country = {
-                limit = {
-                    is_ai = no
-                }
-                #country_event = welcome_event.1
-            }
+    effect = { # NEVER FORGET! Important to include this line to distinguish it from random_events = { ... }
             CHI = {
-CHI_people_support_dynamic_scriptes = yes
-refresh_pie_chart_cpc_patry_icon = yes
+				CHI_people_support_dynamic_scriptes = yes
             }
-            every_country = {
-add_dynamic_modifier = {
-    modifier = Private_capital_contracting_dynamic
-}
-add_dynamic_modifier = {
-    modifier = Private_capital_contracting_gui_dynamic
-}
-Private_capital_contracting_var_se = yes
-            }      
-	  }
+	}
 
 }
-on_daily_CHI = {
-effect = {
-CHI_Legal_amendments_dynamic_scriptes = yes
-
+on_monthly_CHI = {
+	effect = {
 		if = {
 			limit = {
-			CHI = {
-NOT = {
-has_dynamic_modifier = {
-    modifier = CHI_Socialist_Construction_dynamic
-}
-} 
-OR = {
-has_country_flag = chi_work_rev
-has_country_flag = chi_left 
-has_country_flag = CHI_trotskyism
-}
-
-}
-}
-add_dynamic_modifier = {
-    modifier = CHI_Socialist_Construction_dynamic
-}
-
-}
-if = {
+				NOT = { has_dynamic_modifier = { modifier = CHI_Socialist_Construction_dynamic } } 
+				OR = {
+					has_country_flag = chi_work_rev
+					has_country_flag = chi_left 
+					has_country_flag = CHI_trotskyism
+				}
+			}
+			add_dynamic_modifier = { modifier = CHI_Socialist_Construction_dynamic }
+		}
+		else_if = {
 			limit = {
-			CHI = {
-NOT = {
-has_dynamic_modifier = {
-    modifier = CHI_people_support_dynamic_left
-}
-has_country_flag = PRC_World_Revolution
-} 
-OR = {
-has_country_flag = chi_work_rev
-has_country_flag = chi_left 
-has_country_flag = CHI_trotskyism
-}
-			OR = {
-				custom_trigger_tooltip = {
+				NOT = { 
+					has_dynamic_modifier = { modifier = CHI_people_support_dynamic_left }
+					has_country_flag = PRC_World_Revolution
+				} 
+				OR = {
+					has_country_flag = chi_work_rev
+					has_country_flag = chi_left 
+					has_country_flag = CHI_trotskyism
+				}
+				OR = {
 					is_in_array = { ruling_party = 4 }
-					tooltip = has_communist_state_government_TT
-				}
-								custom_trigger_tooltip = {
 					is_in_array = { ruling_party = 5 }
-					tooltip = has_anarchist_communism_government_TT
-				}
-				custom_trigger_tooltip = {
 					is_in_array = { ruling_party = 19 }
-					tooltip = has_neutral_communism_government_TT
 				}
-				}
-}
-}
-
-add_dynamic_modifier = {
-    modifier = CHI_people_support_dynamic_left
-}
+			}
+			add_dynamic_modifier = { modifier = CHI_people_support_dynamic_left }
 #remove_dynamic_modifier = {
     #modifier = CHI_people_support_dynamic_right
 
@@ -360,10 +290,8 @@ NOT = {
 #}
 remove_dynamic_modifier = {
     modifier = CHI_people_support_dynamic_left
-
 }		
 }
-refresh_pie_chart_cpc_patry_icon = yes
 }
 }
 }

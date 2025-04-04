@@ -1,15 +1,9 @@
 ﻿capital = 547
 2000.1.1 = {
-	CHI_Legal_amendments_dynamic_scriptes = yes
-
-
 set_country_flag = CHI_revisionism
 #add_dynamic_modifier = {
 #    modifier = CHI_people_support_dynamic_right
 #}
-add_dynamic_modifier = {
-    modifier = CHI_Legal_amendments_dynamic
-}
 set_power_balance = {
 	id = CHI_power_balance
 	set_default = no  # whether or not to reset the power balance to the initial value, default = no
@@ -171,7 +165,7 @@ set_variable = { CHI_Socialist_Construction_dynamic1 = -0.40}
 	1072 = { add_dynamic_modifier = { modifier = CHI_ningxia_hui_autonomous_region } }
 	556 = { add_dynamic_modifier = { modifier = CHI_inner_mongolia_autonomous_region } }
 	1097 = { add_dynamic_modifier = { modifier = CHI_inner_mongolia_autonomous_region } }
-	every_owned_state = { limit = { is_core_of = ETK }add_dynamic_modifier = { modifier = CHI_xinjiang_uygur_autonomous_region } }
+	every_owned_state = { limit = { is_core_of = ETK } add_dynamic_modifier = { modifier = CHI_xinjiang_uygur_autonomous_region } }
 	589 = { add_dynamic_modifier = { modifier = CHI_tibet_autonomous_region } }
 
 	add_ideas = {
