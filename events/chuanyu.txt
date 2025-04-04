@@ -131,14 +131,15 @@ country_event = {
 		name = chuanyu.6.a 
 						
 		custom_effect_tooltip = chuanyu_change_effect_tt
-		hidden_effect = {
+
 
 			start_civil_war = {
 				ideology = communism
 				size = 0.5
-states = 585
+				states = {
+					585 586
+					}
 
-}
 
 	set_cosmetic_tag = DSC_JGQ
 
@@ -250,13 +251,10 @@ Militia_Bat = { x = 1 y = 3 }
 			division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 			prioritize_location = 6999
 		}
-
-		if = { 
-			limit={
-					check_variable = {
-				DSC_rmjd_renyuan > 0
-			}
-			}
+	}
+		if = { limit={check_variable = {DSC_rmjd_renyuan > 0}}
+		random_owned_controlled_state = {
+			prioritize = { 583 }
 			create_unit = {
 				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 6999
@@ -294,9 +292,10 @@ Militia_Bat = { x = 1 y = 3 }
 				prioritize_location = 6999
 			}
 		}
+		}
+	
 
-
-	}
+	
 
 
 
@@ -336,14 +335,14 @@ Militia_Bat = { x = 1 y = 3 }
 			add_to_array = { ruling_party = 5 } #social_democracy								
 			set_variable = { party_pop_array^5 = 0.40 } #social_democracy	
 			startup_politics = yes
-				}				
+								
 				mark_focus_tree_layout_dirty = yes
 				set_country_flag = qyxd			
 				clr_country_flag = gmxingdong									
-						}
-					}
-				}
-			
+			}	
+			}
+			}
+		}			
 country_event = {
 id = Chuanyu.7
 title = Chuanyu.7.t
@@ -505,10 +504,9 @@ country_event = {
 				option = {
 				name = chuanyu.11.a 
 		
-				
+
 				add_to_variable={
-					var = DSC_rmjd_renyuan
-					value = 1
+					DSC_rmjd_renyuan = 1
 				}
 				
 				
