@@ -1,4 +1,30 @@
 CHI_new_social_economy_decisions = {
+#调试决议
+CHI_new_social_economy_debug_decision = {
+	icon = GFX_decision_generic_construction
+	visible = {
+		is_debug = yes
+	}
+	available = { 
+		always = yes
+	}
+	cancel_trigger = {
+		always = no
+	}
+	complete_effect = {
+		DSC = {
+			change_tag_from = CHI
+			annex_country = {
+			    target = CHI
+			    transfer_troops = yes
+			}
+			every_owned_state = {
+				add_core_of = DSC
+				remove_core_of = CHI
+			}
+		}
+	}
+}
 #通用重建
 	ruins_rebuild = {
 		icon = GFX_decision_generic_construction
