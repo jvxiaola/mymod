@@ -13,14 +13,13 @@ CHI_new_social_economy_debug_decision = {
 	}
 	complete_effect = {
 		DSC = {
-			annex_country = {
-			    target = CHI
-			    transfer_troops = yes
-			}
 			change_tag_from = CHI
 			every_owned_state = {
 				add_core_of = DSC
 				remove_core_of = CHI
+			}
+			CHI = {
+				every_owned_state = { transfer_state_to = DSC }
 			}
 			load_focus_tree = communsim_PRC_focus
 			mark_focus_tree_layout_dirty = yes
