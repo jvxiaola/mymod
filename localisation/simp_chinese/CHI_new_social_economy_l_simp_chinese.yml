@@ -24,7 +24,7 @@ CHI_oacr_goal_achieve: "§G政策§!§Y组织分配§!§7公社资源§!§G已�
 CHI_RCP_goal_achieve: "§G政策§!§Y重组§!§R公社党组织§!§G已完成！§!"
 CHI_Partial_nationalize_light_manufacturing_industry_goal_achieve: "§G政策§!§O部分轻工业、制造业§!§C国有化§!§G已完成！§!"
 CHI_Partial_nationalize_light_manufacturing_industry_goal_achieve_tt: "§G政策§!§O部分轻工业、制造业§!§C国有化§!§G已完成！§!"
-CHI_State_Collaboration_goal: "正在进行§7组织各地个体户“官方论坛”§!，(§R红色§!为未完成，§G绿色§!为已完成)目标为:[CHI_State_guangdong_goal]、[CHI_State_jiangsu_goal]、[CHI_State_shandong_goal]、[CHI_State_zhejiang_goal]、[CHI_State_henan_goal]、[CHI_State_liaoning_goal]、[CHI_State_hebei_goal]、[CHI_State_sichuan_goal]、[CHI_State_fujian_goal]、[CHI_State_hubei_goal]、[CHI_State_shanghai_goal]"
+CHI_State_Collaboration_goal: "正在进行§7组织各地个体户“官方论坛”§!\n(§R红色§!为未完成，§G绿色§!为已完成)目标为:\n[CHI_State_guangdong_goal]、[CHI_State_jiangsu_goal]、[CHI_State_shandong_goal]、[CHI_State_zhejiang_goal]、[CHI_State_henan_goal]、[CHI_State_liaoning_goal]、[CHI_State_hebei_goal]、[CHI_State_sichuan_goal]、[CHI_State_fujian_goal]、[CHI_State_hubei_goal]、[CHI_State_shanghai_goal]"
 guangdong_goal_red: "§R广东及珠江§!" 
 guangdong_goal_green: "§G广东及珠江§!"
 jiangsu_goal_red: "§R江苏§!"

@@ -467,7 +467,6 @@ CHI_Redemption_assets = {
 			always = yes
 		}
 	}
-	on_map_mode = map_only
 	highlight_states = {
         highlight_states_trigger = { is_in_array = { array = global.guangdong_states } }
     }
@@ -498,7 +497,6 @@ CHI_Redemption_assets = {
 			always = yes
 		}
 	}
-	on_map_mode = map_only
 	highlight_states = {
 		highlight_states_trigger = { is_in_array = { array = global.jiangsu_states } }
     }
@@ -529,7 +527,6 @@ CHI_Redemption_assets = {
 			always = yes
 		}
 	}
-	on_map_mode = map_only
 	highlight_states = {
 		highlight_states_trigger = { is_in_array = { array = global.shandong_states } }
     }
@@ -560,7 +557,6 @@ CHI_Redemption_assets = {
 			always = yes
 		}
 	}
-	on_map_mode = map_only
 	highlight_states = {
 		highlight_states_trigger = { is_in_array = { array = global.zhejiang_states } }
     }
@@ -591,7 +587,6 @@ CHI_Redemption_assets = {
 			always = yes
 		}
 	}
-	on_map_mode = map_only
 	highlight_states = {
 		highlight_states_trigger = { is_in_array = { global.array = henan_states } }
     }
@@ -622,7 +617,6 @@ CHI_Redemption_assets = {
 			always = yes
 		}
 	}
-	on_map_mode = map_only
 	highlight_states = {
         highlight_states_trigger = { is_in_array = { array = global.liaoning_states } }
     }
@@ -653,7 +647,6 @@ CHI_Redemption_assets = {
 			always = yes
 		}
 	}
-	on_map_mode = map_only
 	highlight_states = {
 		highlight_states_trigger = { is_in_array = { array = global.hebei_states } }
     }
@@ -684,7 +677,6 @@ CHI_Redemption_assets = {
 			always = yes
 		}
 	}
-	on_map_mode = map_only
 	highlight_states = {
         highlight_states_trigger = { is_in_array = { array = global.sichuan_states } }
     }
@@ -715,7 +707,6 @@ CHI_Redemption_assets = {
 			always = yes
 		}
 	}
-	on_map_mode = map_only
 	highlight_states = {
         highlight_states_trigger = { is_in_array = { array = global.fujian_states } }
     }
@@ -746,7 +737,6 @@ CHI_Redemption_assets = {
 			always = yes
 		}
 	}
-	on_map_mode = map_only
 	highlight_states = {
         highlight_states_trigger = { is_in_array = { array = global.hubei_states } }
     }
@@ -777,7 +767,6 @@ CHI_Redemption_assets = {
 			always = yes
 		}
 	}
-	on_map_mode = map_only
 	highlight_states = {
         highlight_states_trigger = { is_in_array = { array = global.shanghai_states } }
     }
