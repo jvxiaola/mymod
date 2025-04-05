@@ -694,7 +694,7 @@ CHI_Redemption_assets = {
 	icon = GFX_decision_hol_exchange_intelligence_data
 	visible = {
 		has_completed_focus = CHI_get_organized
-		570 = { NOT = { has_state_flag = State_start_Collaboration } }
+		all_of = { array = hubei_states NOT = { has_state_flag = State_start_Collaboration } }
 	}
 	available = {
 		custom_trigger_tooltip = {
@@ -704,9 +704,7 @@ CHI_Redemption_assets = {
 	}
 	on_map_mode = map_only
 	highlight_states = {
-        highlight_state_targets = {
-           state = 570
-        }
+        highlight_states_trigger = { is_in_array = { array = hubei_states } }
     }
 	custom_cost_trigger = {
 		check_variable = { treasury > 10.0 }
@@ -718,7 +716,7 @@ CHI_Redemption_assets = {
 	}
 	days_remove = 60
 	remove_effect = {
-		570 = { STATE_ADD_State_Collaboration = yes }
+		for_each_scope_loop = { array = hubei_states STATE_ADD_State_Collaboration = yes }
 	}
 	ai_will_do = { factor = 1 }
 	}
@@ -727,19 +725,17 @@ CHI_Redemption_assets = {
 	icon = GFX_decision_hol_exchange_intelligence_data
 	visible = {
 		has_completed_focus = CHI_get_organized
-		540 = { NOT = { has_state_flag = State_start_Collaboration } }
+		all_of = { array = shanghai_states NOT = { has_state_flag = State_start_Collaboration } }
 	}
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = CHI_Oofb_shanghai_trigger_tt
-			540 = { NOT = { has_state_flag = State_start_Collaboration } }
+			always = yes
 		}
 	}
 	on_map_mode = map_only
 	highlight_states = {
-        highlight_state_targets = {
-           state = 540
-        }
+        highlight_states_trigger = { is_in_array = { array = shanghai_states } }
     }
 	custom_cost_trigger = {
 		check_variable = { treasury > 10.0 }
@@ -751,7 +747,7 @@ CHI_Redemption_assets = {
 	}
 	days_remove = 60
 	remove_effect = {
-		540 = { STATE_ADD_State_Collaboration = yes }
+		for_each_scope_loop = { array = shanghai_states STATE_ADD_State_Collaboration = yes }
 	}
 	ai_will_do = { factor = 1 }
 	}
