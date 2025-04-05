@@ -1,0 +1,350 @@
+
+  CHI_ruin_industry_add = {
+    #添加工厂损毁精神
+
+    set_temp_variable = { ruined_state_num = global.ruined_state^num }
+    ROOT = {
+      if = {
+        limit = {
+        check_variable = { 5 > ruined_state_num }
+        check_variable = { ruined_state_num > -1 }
+        }
+        add_ideas = Industrial_damage1
+      }
+
+    else_if = {
+      limit = {
+        check_variable = { 8 > ruined_state_num }
+        check_variable = { ruined_state_num  > 4 }
+      }
+      add_idea = Industrial_damage2
+    }
+
+    else_if = {
+      limit = {
+        check_variable = { 12 > ruined_state_num }
+        check_variable = { ruined_state_num > 6 }
+      }
+        add_ideas = Industrial_damage3
+    }
+
+    else_if = {
+      limit = {
+        check_variable = { ruined_state_num > 11 }
+      }
+      add_ideas = Industrial_damage4
+    }
+  }
+}
+
+CHI_ruin_agriculture_add = {
+  #添加农业损毁精神
+  set_temp_variable = { ruined_agriculture_state_num = global.ruined_agriculture_state^num }
+  ROOT = {
+    if = {
+      limit = {
+       check_variable = { 5 > ruined_agriculture_state_num }
+       check_variable = { ruined_agriculture_state_num > -1 }
+      }
+      add_ideas = Poor_agriculture1
+    }
+
+  else_if = {
+    limit = {
+      check_variable = { 8 > ruined_agriculture_state_num }
+      check_variable = { ruined_agriculture_state_num > 4 }
+    }
+    add_idea = Poor_agriculture2
+  }
+
+  else_if = {
+    limit = {
+      check_variable = { 11 > ruined_agriculture_state_num }
+      check_variable = { ruined_agriculture_state_num > 7 }
+    }
+    add_ideas = Poor_agriculture3
+  }
+
+  else_if = {
+    limit = {
+      check_variable = { ruined_agriculture_state_num > 10 }
+    }
+    add_ideas = Poor_agriculture4
+  }
+}
+}
+
+CHI_ruin_economy_remove = {
+  if = { 
+    limit = { has_idea = CHI_capital_withdrawal4 }
+    swap_ideas = {
+      remove_idea = CHI_capital_withdrawal4
+      add_idea = CHI_economic_recovery1
+      }
+    }
+  else_if = { 
+    limit = { has_idea = CHI_economic_recovery1 }
+    swap_ideas = {
+      remove_idea = CHI_economic_recovery1
+      add_idea = CHI_economic_recovery2
+      }
+    }
+  else_if = { 
+    limit = { has_idea = CHI_economic_recovery2 }
+    swap_ideas = {
+      remove_idea = CHI_economic_recovery2
+      add_idea = CHI_economic_recovery3
+      }
+    }
+  else_if = { 
+     limit = { has_idea = CHI_economic_recovery3 }
+     swap_ideas = {
+      remove_idea = CHI_economic_recovery3
+      add_idea = CHI_economic_recovery_end
+      } 
+  }
+}
+
+CHI_add_Organize_state_enterprises_modifier = {
+    set_variable = { COSEM_gbs = -0.15 }  set_variable = { COSEM_lrs = -0.05 } set_variable = { COSEM_sb = -0.05 } set_variable = { COSEM_iwr = 0 } set_variable = { COSEM_twm = 0 }
+  	set_variable = { COSEM_otsb = 0 } set_variable = { COSEM_pm = -0.05 } set_variable = { COSEM_egm = -0.025 } set_variable = { COSEM_icf = 0 } set_variable = { COSEM_pp = 0 }
+  	add_dynamic_modifier = { modifier = CHI_Organize_state_enterprises_modifier }
+  }
+
+  CHI_remove_Organize_state_enterprises_modifier = {
+    remove_dynamic_modifier = {
+      modifier = CHI_Organize_state_enterprises_modifier
+    }
+    clear_variable = COSEM_pp
+    clear_variable = COSEM_gbs
+    clear_variable = COSEM_lrs
+    clear_variable = COSEM_sb
+    clear_variable = COSEM_otsb
+    clear_variable = COSEM_gm
+    clear_variable = COSEM_egm
+    clear_variable = COSEM_icf
+    clear_variable = COSEM_iwr
+    clear_variable = COSEM_twm
+  }
+
+  CHI_remove_other_variable = {
+    clear_variable = Redemption_assets_times
+    clear_variable = confiscated_assets_times
+    clear_variable = Promote_nationalization_strategic_industries_progress
+    clear_variable = Nationalize_construction_and_chemical_industries_progress
+    clear_variable = Partial_nationalize_light_manufacturing_industry_progress
+  }
+
+  STATE_ADD_State_Collaboration = {
+    set_variable = { sc_spsic = 0 }  set_variable = { sc_spsrf = 0.05 } set_variable = { sc_lbs = 0 } 
+    set_variable = { sc_spsbf = 0 }      set_variable = { sc_spg = 0.05 }       set_variable = { sc_ls = 0.05 } 
+    set_variable = { sc_regm = 0.05 } 
+    add_dynamic_modifier = { modifier = State_Collaboration }
+    set_state_flag = State_start_Collaboration
+  }
+
+  CHI_add_CHI_Collaboration_internet_modifier = {
+    set_variable = { CI_tg = -0.05 }  set_variable = { CI_pso = 0 } set_variable = { CI_cpstc = 0 } set_variable = { CI_cmowr = 0 } 
+  	add_dynamic_modifier = { modifier = CHI_Collaboration_internet }
+  }
+
+  STATE_Collaboralize = {
+    set_temp_variable = { sc_spsic_add = 0.05 } set_temp_variable = { sc_lbs_add = 0.03 } set_temp_variable = { sc_spg_add = 0.03 } 
+    set_temp_variable = { sc_spsbf_add = 0.05 }
+		custom_effect_tooltip = STATE_Collaboralize_effect_tt 
+		add_to_variable = { sc_spsic = sc_spsic_add } add_to_variable = { sc_lbs = sc_lbs_add } add_to_variable = { sc_spg = sc_spg_add } 
+    add_to_variable = { sc_spsbf = sc_spsbf_add }
+  }
+  CHI_Collaboralize_effect = {
+    ROOT = {
+      set_temp_variable = { CI_tg_add = 0.02 }
+      set_temp_variable = { CI_cmowr_add = 0.03 } set_temp_variable = { CI_pso_add = 0.02 } 
+      custom_effect_tooltip = CHI_Collaboralize_effect_tt 
+      add_to_variable = { CI_tg = CI_tg_add }
+      add_to_variable = { CI_cmowr = CI_cmowr_add } add_to_variable = { CI_pso = CI_pso_add } 
+    }
+  }
+  STATE_Assign_local_cooperative_party_committee = {
+    set_temp_variable = { sc_spsrf_add = 0.05 } set_temp_variable = { sc_spg_add = 0.02 } 
+    set_temp_variable = { sc_spsbf_add = 0.05 }
+		custom_effect_tooltip = STATE_Assign_local_cooperative_party_committee_effect_tt 
+		add_to_variable = { sc_spsrf = sc_spsrf_add } add_to_variable = { sc_spg = sc_spg_add } 
+    add_to_variable = { sc_spsbf = sc_spsbf_add }
+  }
+  CHI_Assign_local_cooperative_party_committee_effect = {
+      ROOT = {
+        set_temp_variable = { CI_tg_add = 0.03 } set_temp_variable = { CI_cpstc_add = 0.05 } set_temp_variable = { CI_cmowr_add = 0.02 } set_temp_variable = { CI_pso_add = 0.03 } 
+        custom_effect_tooltip = CHI_Assign_local_cooperative_party_committee_effect_tt 
+        add_to_variable = { CI_tg = CI_tg_add } add_to_variable = { CI_cpstc = CI_cpstc_add } add_to_variable = { CI_cmowr = CI_cmowr_add } add_to_variable = { CI_pso = CI_pso_add } 
+      }
+  }
+
+  STATE_ostlc = {
+    set_temp_variable = { sc_ls_add = 0.05 } set_temp_variable = { sc_lbs_add = 0.02 } set_temp_variable = { sc_spg_add = 0.05 } 
+    set_temp_variable = { sc_regm_add = 0.05 }
+		custom_effect_tooltip = STATE_ostlc_effect_tt 
+		add_to_variable = { sc_ls = sc_ls_add } add_to_variable = { sc_lbs = sc_lbs_add } add_to_variable = { sc_spg = sc_spg_add } 
+    add_to_variable = { sc_regm = sc_regm_add }
+  }
+  CHI_ostlc = {
+      ROOT = {
+        set_temp_variable = { CI_tg_add = 0.05 } set_temp_variable = { CI_pso_add = 0.05 } 
+        custom_effect_tooltip = CHI_ostlc_effect_tt 
+        add_to_variable = { CI_tg = CI_tg_add } add_to_variable = { CI_pso = CI_pso_add } 
+      }
+  }
+  CHI_remove_Collaboration_internet_modifier = {
+    remove_dynamic_modifier = {
+      modifier = CHI_Collaboration_internet
+    }
+    clear_variable = CI_tg
+    clear_variable = CI_pso
+    clear_variable = CI_cpstc
+    clear_variable = CI_cmowr
+  }
+#地区修正：公社
+STATE_add_modifier_New_people_commune = {
+    set_variable = { Npc_lrf = 0 } set_variable = { Npc_ls = 0 } set_variable = { Npc_lor = 0 } 
+    set_variable = { Npc_ps = 0 } set_variable = { Npc_rfpg = 0 }
+    add_dynamic_modifier = { modifier = CHI_New_people_commune }
+}
+STATE_oacr = {
+      add_to_variable = { Npc_ps = 0.03 } add_to_variable = { Npc_rfpg = 0.02 } 
+}
+STATE_RCP = {
+    add_to_variable = { Npc_lor = 0.03 } add_to_variable = { Npc_ls = 0.02 } 
+}
+STATE_RGPP = {
+  set_temp_variable = { Npc_lrf_add = 0.05 } set_temp_variable = { Npc_ls_add = 0.03 } set_temp_variable = { Npc_lor_add = 0.02 } 
+  set_temp_variable = { Npc_ps_add = 0.02 }  set_temp_variable = { Npc_rfpg_add = 0.03 }
+  custom_effect_tooltip = STATE_RGPP_effect_tt 
+  add_to_variable = { Npc_lrf = Npc_lrf_add } add_to_variable = { Npc_ls = Npc_ls_add } add_to_variable = { Npc_lor = Npc_lor_add } 
+  add_to_variable = { Npc_ps = Npc_ps_add } add_to_variable = { Npc_rfpg = Npc_rfpg_add }
+}
+STATE_PAS = {
+  set_temp_variable = { Npc_ls_add = 0.05 } set_temp_variable = { Npc_ps_add = 0.05 }
+  custom_effect_tooltip = STATE_PAS_effect_tt 
+  add_to_variable = { Npc_ls = Npc_ls_add } add_to_variable = { Npc_ps = Npc_ps_add } 
+}
+STATE_OLMAT = {
+  set_temp_variable = { Npc_rfpg_add = 0.05 } set_temp_variable = { Npc_ls_add = 0.05 } set_temp_variable = { Npc_ps_add = 0.10 }
+  custom_effect_tooltip = STATE_OLMAT_effect_tt 
+  add_to_variable = { Npc_rfpg = Npc_rfpg_add } add_to_variable = { Npc_ls = Npc_ls_add } add_to_variable = { Npc_ps = Npc_ps_add } 
+}
+#整体修正：公社
+add_modifier_restart_people_commune = {
+  ROOT = {
+    set_variable = { rpc_cd = 0 } set_variable = { rpc_ppc = -0.05 } set_variable = { rpc_psof = 0 } 
+    set_variable = { rpc_atm = 0 } set_variable = { rpc_dw_p = 0 }
+    add_dynamic_modifier = { modifier = CHI_restart_people_commune }
+  }
+}
+Raise_grainal_purchase_price_effect = {
+  ROOT = {
+  set_temp_variable = { rpc_cd_add = 0.05 } set_temp_variable = { rpc_psof_add = 0.07 } 
+  set_temp_variable = { rpc_atm_add = 0.02 }  set_temp_variable = { rpc_dw_p_add = 0.03 }
+  custom_effect_tooltip = Raise_grainal_purchase_price_effect_tt 
+  add_to_variable = { rpc_cd = rpc_cd_add } add_to_variable = { rpc_psof = rpc_psof_add } 
+  add_to_variable = { rpc_atm = rpc_atm_add } add_to_variable = { rpc_dw_p = rpc_dw_p_add }
+  }
+}
+Purchase_agricultural_supplies_effect = {
+  ROOT = {
+  set_temp_variable = { rpc_psof_add = 0.08 } set_temp_variable = { rpc_atm_add = 0.03 }  set_temp_variable = { rpc_dw_p_add = 0.02 }
+  custom_effect_tooltip = Purchase_agricultural_supplies_effect_tt 
+  add_to_variable = { rpc_psof = rpc_psof_add } add_to_variable = { rpc_atm = rpc_atm_add } add_to_variable = { rpc_dw_p = rpc_dw_p_add }
+  }
+}
+Organize_learning_mechanized_agricultural_tools_effect = {
+  ROOT = {
+  set_temp_variable = { rpc_ppc_add = -0.05 }  set_temp_variable = { rpc_dw_p_add = 0.05 }
+  custom_effect_tooltip = Organize_learning_mechanized_agricultural_tools_effect_tt 
+   add_to_variable = { rpc_ppc = rpc_ppc_add } add_to_variable = { rpc_dw_p = rpc_dw_p_add }
+  }
+}
+CHI_remove_modifier_restart_people_commune = {
+  remove_dynamic_modifier = {
+    modifier = CHI_restart_people_commune
+  }
+  clear_variable = rpc_cd
+  clear_variable = rpc_ppc
+  clear_variable = rpc_psof
+  clear_variable = rpc_atm
+  clear_variable = rpc_dw_p
+}
+
+CHI_Public_ownership_economy_end_effect = {
+  custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
+	set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.20 } change_DSC_Socialist_Construction_dynamic20 = yes
+	change_DSC_Socialist_Construction_dynamic1 = yes change_DSC_Socialist_Construction_dynamic34 = yes 
+	set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.30 } change_DSC_Socialist_Construction_dynamic6 = yes
+	set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.40 } change_DSC_Socialist_Construction_dynamic17 = yes
+	set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.1 } change_DSC_Socialist_Construction_dynamic13 = yes change_DSC_Socialist_Construction_dynamic14 = yes
+	increase_economic_growth = yes
+}
+#省份及地块划分
+CHI_state_recognize_start = {
+  CHI_add_State_guangdong = yes CHI_add_State_jiangsu = yes CHI_add_State_shandong = yes
+	CHI_add_State_zhejiang = yes  CHI_add_State_henan = yes   CHI_add_State_liaoning = yes
+	CHI_add_State_hebei = yes     CHI_add_State_sichuan = yes CHI_add_State_fujian = yes
+	CHI_add_State_hubei = yes     CHI_add_State_shanghai = yes
+}
+CHI_add_State_guangdong = {
+  hidden_effect = {
+    534 = { add_to_array = { array = guangdong_states } } 532 = { add_to_array = { array = guangdong_states } } 
+    595 = { add_to_array = { array = guangdong_states } } 1106 = { add_to_array = { array = guangdong_states } } 
+  }
+}
+CHI_add_State_jiangsu = {
+  hidden_effect = {
+    541 = { add_to_array = { array = jiangsu_states } } 536 = { add_to_array = { array = jiangsu_states } } 
+  }
+}
+CHI_add_State_shandong = {
+  hidden_effect = {
+    435 = { add_to_array = { array = shandong_states } } 544 = { add_to_array = { array = shandong_states } } 
+  }
+}
+CHI_add_State_zhejiang = {
+  hidden_effect = {
+    538 = { add_to_array = { array = zhejiang_states } }
+  }
+}
+CHI_add_State_henan = {
+  hidden_effect = {
+    567 = { add_to_array = { array = henan_states } }
+  }
+}
+CHI_add_State_liaoning = {
+  hidden_effect = {
+    1095 = { add_to_array = { array = liaoning_states } } 552 = { add_to_array = { array = liaoning_states } }
+  }
+}
+CHI_add_State_hebei = {
+  hidden_effect = {
+    434 = { add_to_array = { array = hebei_states } } 549 = { add_to_array = { array = hebei_states } }
+    547 = { add_to_array = { array = hebei_states } } 548 = { add_to_array = { array = hebei_states } }
+  }
+}
+CHI_add_State_sichuan = {
+  hidden_effect = {
+    583 = { add_to_array = { array = sichuan_states } } 586 = { add_to_array = { array = sichuan_states } }
+    585 = { add_to_array = { array = sichuan_states } } 1216 = { add_to_array = { array = sichuan_states } }
+    1217 = { add_to_array = { array = sichuan_states } }
+  }
+}
+CHI_add_State_fujian = {
+  hidden_effect = {
+    537 = { add_to_array = { array = fujian_states } }
+  }
+}
+CHI_add_State_hubei = {
+  hidden_effect = {
+    570 = { add_to_array = { array = hubei_states } }
+  }
+}
+CHI_add_State_shanghai = {
+  hidden_effect = {
+    540 = { add_to_array = { array = shanghai_states } }
+  }
+}
