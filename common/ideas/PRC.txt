@@ -2943,8 +2943,8 @@ hidden_modifier = {
 			}
 			
 			modifier = {
-			monthly_population = 0.1
-stability_factor = -0.05
+			monthly_population = -0.1
+			stability_factor = -0.05
 			}
 		}
 	PRC_wr = {
@@ -2974,15 +2974,13 @@ production_speed_buildings_factor = -0.5
 			}
 		}
 	PRC_new_family = {
-						picture = land_of_the_free
+		picture = family_supports
 			allowed = {
 			}
 			
 			modifier = {
-			monthly_population = 0.10
-			research_speed_factor = 0.10
-stability_factor = 0.10
-Chinese_people_support_to_china_government_modifier = 0.03
+			monthly_population = -0.10
+			research_speed_factor = 0.05
 			}
 		}
 	PRC_erjianzi = {
@@ -3001,8 +2999,8 @@ stability_factor = -0.10
 			}
 			
 			modifier = {
-			research_speed_factor = 0.10
-stability_factor = -0.15
+				research_speed_factor = 0.05
+				stability_factor = -0.30
 			}
 		}
 PRC_computer_syetem1 = {

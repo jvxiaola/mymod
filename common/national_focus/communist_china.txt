@@ -2171,14 +2171,17 @@ mutually_exclusive = {focus = PRC_lgbt }
 add_stability = 0.10
 }
 		}
-		focus = { id= PRC_socfuy
+	focus = { 
+		id = PRC_socfuy
 		icon = worker_paradise
 		x = 11
 		y = 4
-		prerequisite = {focus = PRC_lgbt focus = PRC_no_lgbt }
+		prerequisite = {
+			focus = PRC_lgbt focus = PRC_no_lgbt 
+		}
 		relative_position_id = PRC_shzygg	
-cost = 5
-mutually_exclusive = {focus = PRC_ctfuy }
+		cost = 5
+		mutually_exclusive = { focus = PRC_ctfuy }
 		ai_will_do = {
 			factor = 5
 		}
@@ -2195,10 +2198,10 @@ mutually_exclusive = {focus = PRC_ctfuy }
 		available_if_capitulated = no
 
 		completion_reward = {
-add_ideas = PRC_socfuy
-}
+			add_ideas = PRC_socfuy
 		}
-		focus = { id= PRC_ctfuy
+	}
+		focus = { id = PRC_ctfuy
 		icon = refugees
 		x = 13
 		y = 4
@@ -2252,7 +2255,8 @@ cost = 5
 add_stability = 0.1
 }
 		}
-		focus = { id= PRC_new_family
+		focus = { 
+		id = PRC_new_family
 		icon = family
 		x = 11
 		y = 6
