@@ -25,8 +25,12 @@ is_agriculture_state = {
 
 is_New_people_commune_state = {
 	OR = {
-		state = 582		state = 586		state = 583		state = 572		state = 570		state = 562		state = 564		state = 567
-		state = 541		state = 536		state = 549		state = 434		state = 544		state = 556		state = 1095	state = 552
+		is_in_array = { array = guizhou_states }    is_in_array = { array = sichuan_states } 
+		is_in_array = { array = hunan_states }	    is_in_array = { array = hubei_states }	
+		is_in_array = { array = jiangxi_states }    is_in_array = { array = anhui_states }	
+		is_in_array = { array = henan_states }	    is_in_array = { array = jiangsu_states }		
+		is_in_array = { array = hebei_states }	    is_in_array = { array = shandong_states }	
+		is_in_array = { array = neimenggu_states }	is_in_array = { array = liaoning_states }	
 		state = 554		state = 555
 	}
 }
