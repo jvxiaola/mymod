@@ -387,12 +387,14 @@ news_event = {
 	is_triggered_only = yes
 
 	immediate = { 
+		hidden_effect = {
 			ETK = {
 				declare_war_on = {
 					target = XIN
 					type = annex_everything
 				}
 			}
+		}	
 	}
 	option = {
 		name = CW_Diverse.9.a1
@@ -637,5 +639,53 @@ country_event = {
 			limit = { has_country_flag = SOV_name_anti_teriost }
 			clr_country_flag = SOV_name_anti_teriost 
 		}
+	}
+}
+
+
+news_event = {
+	id = CW_Diverse.15
+	title = CW_Diverse.15.t
+	desc = CW_Diverse.15.d
+	picture = GFX_event_pictures_CW_D_ET_attack
+	is_triggered_only = yes
+
+	immediate = { 
+		ETK = {
+			annex_country = {
+				target = XIN
+				transfer_troops = no
+			}
+		}
+		591 = {
+			transfer_state_to = RAJ
+		}
+		RAJ = {
+			give_guarantee = ETK
+		}
+	}
+	option = {
+		name = CW_Diverse.15.a1
+		trigger = { OR = { tag = CHI tag = DSC tag = HKG tag = XIZ tag = XIN } }
+		custom_effect_tooltip = NOT_completed_tt
+	}
+	option = {
+		name = CW_Diverse.15.a2
+		trigger = {
+			NOT = { tag = CHI tag = DSC tag = HKG tag = XIZ tag = XIN }
+			has_government = communism 
+		}
+	}
+	option = {
+		name = CW_Diverse.15.a3
+		trigger = { has_government = democratic }
+	}
+	option = {
+		name = CW_Diverse.15.a4
+		trigger = { OR = { has_government = neutrality has_government = nationalist } }
+	}
+	option = {
+		name = CW_Diverse.15.a5
+		trigger = { OR = { has_government = fascism } }
 	}
 }
