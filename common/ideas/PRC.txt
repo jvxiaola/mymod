@@ -2130,20 +2130,19 @@ consumer_goods_factor = -0.05
 
 		}		
 PRC_hero_mother = {
-
-			picture = party_of_progress
-
-			allowed = { original_tag = CHI }
-
-			removal_cost = -1
-						modifier = {
-consumer_goods_factor = 0.10
-monthly_population = 0.50
-stability_factor = 0.10
-				   }
-
-
-		}
+	picture = party_of_progress
+	allowed = { original_tag = CHI }
+	removal_cost = -1
+	modifier = {
+		consumer_goods_factor = -0.05
+		conscription_factor = 0.10
+		monthly_population = 0.20
+		stability_factor = 0.10
+		communism_drift = 0.05
+		nationalist_drift = 0.05
+		production_speed_buildings_factor = -0.10
+	}
+}
 PRC_beishui = {
 
 			picture = party_of_progress
