@@ -13,14 +13,16 @@ CHI_new_social_economy_debug_decision = {
 		always = no
 	}
 	complete_effect = {
-		CHI = {
-			every_owned_state = { transfer_state_to = DSC }
-		}
-		DSC = {
-			change_tag_from = CHI
+		CHI = { 
 			every_owned_state = {
 				add_core_of = DSC
 				remove_core_of = CHI
+				transfer_state_to = DSC 
+			} 
+		}
+		DSC = {
+			every_owned_state = {
+				
 			}
 			create_country_leader = {
 				name = "毛远新"
@@ -38,6 +40,7 @@ CHI_new_social_economy_debug_decision = {
 			mark_focus_tree_layout_dirty = yes
 			complete_national_focus = CHI_Public_ownership_construction
 		}
+		DSC = { change_tag_from = CHI }
 	}
 }
 #通用重建
