@@ -22,6 +22,9 @@ CHI_new_social_economy_debug_decision = {
 				add_core_of = DSC
 				remove_core_of = CHI
 			}
+			load_focus_tree = communsim_PRC_focus
+			mark_focus_tree_layout_dirty = yes
+			complete_national_focus = CHI_Public_ownership_construction
 		}
 	}
 }
