@@ -481,6 +481,7 @@ CHI_Redemption_assets = {
 	}
 	days_remove = 60
 	remove_effect = {
+		custom_effect_tooltip = STATE_ADD_State_Collaboration_effect_tt 
 		for_each_scope_loop = { array = global.guangdong_states STATE_ADD_State_Collaboration = yes }
 	}	
 	ai_will_do = { factor = 1 }
@@ -512,6 +513,7 @@ CHI_Redemption_assets = {
 	}
 	days_remove = 60
 	remove_effect = {
+		custom_effect_tooltip = STATE_ADD_State_Collaboration_effect_tt 
 		for_each_scope_loop = { array = global.jiangsu_states STATE_ADD_State_Collaboration = yes }
 	}
 	ai_will_do = { factor = 1 }
@@ -543,6 +545,7 @@ CHI_Redemption_assets = {
 	}
 	days_remove = 60
 	remove_effect = {
+		custom_effect_tooltip = STATE_ADD_State_Collaboration_effect_tt 
 		for_each_scope_loop = { array = global.shandong_states STATE_ADD_State_Collaboration = yes }
 	}
 	ai_will_do = { factor = 1 }
@@ -574,6 +577,7 @@ CHI_Redemption_assets = {
 	}
 	days_remove = 60
 	remove_effect = {
+		custom_effect_tooltip = STATE_ADD_State_Collaboration_effect_tt 
 		for_each_scope_loop = { array = global.zhejiang_states STATE_ADD_State_Collaboration = yes }
 	}
 	ai_will_do = { factor = 1 }
@@ -593,6 +597,7 @@ CHI_Redemption_assets = {
 	}
 	on_map_mode = map_only
 	highlight_states = {
+		custom_effect_tooltip = STATE_ADD_State_Collaboration_effect_tt 
 		highlight_states_trigger = { is_in_array = { global.henan_states = THIS } }
     }
 	custom_cost_trigger = {
@@ -636,6 +641,7 @@ CHI_Redemption_assets = {
 	}
 	days_remove = 60
 	remove_effect = {
+		custom_effect_tooltip = STATE_ADD_State_Collaboration_effect_tt 
 		for_each_scope_loop = { array = global.liaoning_states STATE_ADD_State_Collaboration = yes }
 	}
 	ai_will_do = { factor = 1 }
@@ -667,6 +673,7 @@ CHI_Redemption_assets = {
 	}
 	days_remove = 60
 	remove_effect = {
+		custom_effect_tooltip = STATE_ADD_State_Collaboration_effect_tt 
 		for_each_scope_loop = { array = global.hebei_states STATE_ADD_State_Collaboration = yes }
 	}
 	ai_will_do = { factor = 1 }
@@ -698,6 +705,7 @@ CHI_Redemption_assets = {
 	}
 	days_remove = 60
 	remove_effect = {
+		custom_effect_tooltip = STATE_ADD_State_Collaboration_effect_tt 
 		for_each_scope_loop = { array = global.sichuan_states STATE_ADD_State_Collaboration = yes }
 	}
 	ai_will_do = { factor = 1 }
@@ -729,6 +737,7 @@ CHI_Redemption_assets = {
 	}
 	days_remove = 60
 	remove_effect = {
+		custom_effect_tooltip = STATE_ADD_State_Collaboration_effect_tt 
 		for_each_scope_loop = { array = global.fujian_states STATE_ADD_State_Collaboration = yes }
 	}
 	ai_will_do = { factor = 1 }
@@ -760,6 +769,7 @@ CHI_Redemption_assets = {
 	}
 	days_remove = 60
 	remove_effect = {
+		custom_effect_tooltip = STATE_ADD_State_Collaboration_effect_tt 
 		for_each_scope_loop = { array = global.hubei_states STATE_ADD_State_Collaboration = yes }
 	}
 	ai_will_do = { factor = 1 }
@@ -791,6 +801,7 @@ CHI_Redemption_assets = {
 	}
 	days_remove = 60
 	remove_effect = {
+		custom_effect_tooltip = STATE_ADD_State_Collaboration_effect_tt 
 		for_each_scope_loop = { array = global.shanghai_states STATE_ADD_State_Collaboration = yes }
 	}
 	ai_will_do = { factor = 1 }
