@@ -469,7 +469,7 @@ CHI_Redemption_assets = {
 	}
 	on_map_mode = map_only
 	highlight_states = {
-        highlight_states_trigger = { all_owned_state = { is_in_array = { array = global.guangdong_states } } }
+        highlight_states_trigger = { is_in_array = { global.guangdong_states = THIS } }
     }
 	custom_cost_trigger = {
 		check_variable = { treasury > 10.0 }
@@ -500,7 +500,7 @@ CHI_Redemption_assets = {
 	}
 	on_map_mode = map_only
 	highlight_states = {
-		highlight_states_trigger = { all_owned_state = { is_in_array = { array = global.jiangsu_states } } }
+		highlight_states_trigger = { is_in_array = { global.jiangsu_states = THIS } }
     }
 	custom_cost_trigger = {
 		check_variable = { treasury > 10.0 }
@@ -531,7 +531,7 @@ CHI_Redemption_assets = {
 	}
 	on_map_mode = map_only
 	highlight_states = {
-		highlight_states_trigger = { all_owned_state = { is_in_array = { array = global.shandong_states } } }
+		highlight_states_trigger = { is_in_array = { global.shandong_states = THIS } }
     }
 	custom_cost_trigger = {
 		check_variable = { treasury > 10.0 }
@@ -562,7 +562,7 @@ CHI_Redemption_assets = {
 	}
 	on_map_mode = map_only
 	highlight_states = {
-		highlight_states_trigger = { all_owned_state = { is_in_array = { array = global.zhejiang_states } } }
+		highlight_states_trigger = { is_in_array = { global.zhejiang_states = THIS } }
     }
 	custom_cost_trigger = {
 		check_variable = { treasury > 10.0 }
@@ -593,7 +593,7 @@ CHI_Redemption_assets = {
 	}
 	on_map_mode = map_only
 	highlight_states = {
-		highlight_states_trigger = { every_owned_state { is_in_array = { global.array = henan_states } } }
+		highlight_states_trigger = { is_in_array = { global.henan_states = THIS } }
     }
 	custom_cost_trigger = {
 		check_variable = { treasury > 10.0 }
@@ -624,7 +624,7 @@ CHI_Redemption_assets = {
 	}
 	on_map_mode = map_only
 	highlight_states = {
-        highlight_states_trigger = { every_owned_state { is_in_array = { array = global.liaoning_states } } }
+        highlight_states_trigger = { is_in_array = { global.liaoning_states = THIS } }
     }
 	custom_cost_trigger = {
 		check_variable = { treasury > 10.0 }
@@ -655,7 +655,7 @@ CHI_Redemption_assets = {
 	}
 	on_map_mode = map_only
 	highlight_states = {
-		highlight_states_trigger = { every_owned_state { is_in_array = { array = global.hebei_states } } }
+		highlight_states_trigger = { is_in_array = { global.hebei_states = THIS } }
     }
 	custom_cost_trigger = {
 		check_variable = { treasury > 30.0 }
@@ -686,7 +686,7 @@ CHI_Redemption_assets = {
 	}
 	on_map_mode = map_only
 	highlight_states = {
-        highlight_states_trigger = { every_owned_state { is_in_array = { array = global.sichuan_states } } }
+        highlight_states_trigger = { is_in_array = { global.sichuan_states = THIS } }
     }
 	custom_cost_trigger = {
 		check_variable = { treasury > 20.0 }
@@ -717,7 +717,7 @@ CHI_Redemption_assets = {
 	}
 	on_map_mode = map_only
 	highlight_states = {
-        highlight_states_trigger = { every_owned_state { is_in_array = { array = global.fujian_states } } }
+        highlight_states_trigger = { is_in_array = { global.fujian_states = THIS } }
     }
 	custom_cost_trigger = {
 		check_variable = { treasury > 10.0 }
@@ -748,7 +748,7 @@ CHI_Redemption_assets = {
 	}
 	on_map_mode = map_only
 	highlight_states = {
-        highlight_states_trigger = { every_owned_state { is_in_array = { array = global.hubei_states } } }
+        highlight_states_trigger = { is_in_array = { global.hubei_states = THIS } }
     }
 	custom_cost_trigger = {
 		check_variable = { treasury > 10.0 }
@@ -779,7 +779,7 @@ CHI_Redemption_assets = {
 	}
 	on_map_mode = map_only
 	highlight_states = {
-        highlight_states_trigger = { every_owned_state { is_in_array = { array = global.shanghai_states } } }
+        highlight_states_trigger = { is_in_array = { global.shanghai_states = THIS } }
     }
 	custom_cost_trigger = {
 		check_variable = { treasury > 10.0 }

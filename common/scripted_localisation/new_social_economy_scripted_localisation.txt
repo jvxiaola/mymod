@@ -227,13 +227,13 @@ defined_text = {
 	name = CHI_State_guangdong_goal #珠江地区
 	text = {
 		trigger = {
-			all_of = { array = global.guangdong_states NOT = { has_state_flag = State_start_Collaboration } }
+			all_of_scopes = { array = global.guangdong_states NOT = { has_state_flag = State_start_Collaboration } }
 		}
 		localization_key = "guangdong_goal_red" #地方组建合作社未完成
 	}
 	text = {
 		trigger = {
-			all_of = { array = global.guangdong_states has_state_flag = State_start_Collaboration }
+			all_of_scopes = { array = global.guangdong_states has_state_flag = State_start_Collaboration }
 		}
 		localization_key = "guangdong_goal_green" #地方组建合作社已完成
 	}
@@ -242,13 +242,13 @@ defined_text = {
 	name = CHI_State_jiangsu_goal #江苏地区
 	text = {
 		trigger = {
-			all_of = { array = global.jiangsu_states NOT = { has_state_flag = State_start_Collaboration } }
+			all_of_scopes = { array = global.jiangsu_states NOT = { has_state_flag = State_start_Collaboration } }
 		}
 		localization_key = "jiangsu_goal_red" #地方组建合作社未完成
 	}
 	text = {
 		trigger = {
-			all_of = { array = global.jiangsu_states has_state_flag = State_start_Collaboration }
+			all_of_scopes = { array = global.jiangsu_states has_state_flag = State_start_Collaboration }
 		}
 		localization_key = "jiangsu_goal_green" #地方组建合作社已完成
 	}
@@ -257,13 +257,13 @@ defined_text = {
 	name = CHI_State_shandong_goal #山东地区
 	text = {
 		trigger = {
-			all_of = { array = global.shandong_states NOT = { has_state_flag = State_start_Collaboration } }
+			all_of_scopes = { array = global.shandong_states NOT = { has_state_flag = State_start_Collaboration } }
 		}
 		localization_key = "shandong_goal_red" #地方组建合作社未完成
 	}
 	text = {
 		trigger = {
-			all_of = { array = global.shandong_states has_state_flag = State_start_Collaboration }
+			all_of_scopes = { array = global.shandong_states has_state_flag = State_start_Collaboration }
 		}
 		localization_key = "shandong_goal_green" #地方组建合作社已完成
 	}
@@ -272,13 +272,13 @@ defined_text = {
 	name = CHI_State_zhejiang_goal #浙江地区
 	text = {
 		trigger = {
-			all_of = { array = global.zhejiang_states NOT = { has_state_flag = State_start_Collaboration } }
+			all_of_scopes = { array = global.zhejiang_states NOT = { has_state_flag = State_start_Collaboration } }
 		}
 		localization_key = "zhejiang_goal_red" #地方组建合作社未完成
 	}
 	text = {
 		trigger = {
-			all_of = { array = global.zhejiang_states has_state_flag = State_start_Collaboration }
+			all_of_scopes = { array = global.zhejiang_states has_state_flag = State_start_Collaboration }
 		}
 		localization_key = "zhejiang_goal_green" #地方组建合作社已完成
 	}
@@ -287,13 +287,13 @@ defined_text = {
 	name = CHI_State_henan_goal #河南地区
 	text = {
 		trigger = {
-			all_of = { array = global.henan_states NOT = { has_state_flag = State_start_Collaboration } }
+			all_of_scopes = { array = global.henan_states NOT = { has_state_flag = State_start_Collaboration } }
 		}
 		localization_key = "henan_goal_red" #地方组建合作社未完成
 	}
 	text = {
 		trigger = {
-			all_of = { array = global.henan_states has_state_flag = State_start_Collaboration }
+			all_of_scopes = { array = global.henan_states has_state_flag = State_start_Collaboration }
 		}
 		localization_key = "henan_goal_green" #地方组建合作社已完成
 	}
@@ -301,11 +301,11 @@ defined_text = {
 defined_text = {
 	name = CHI_State_liaoning_goal #辽宁地区
 	text = {
-		trigger = { all_of = { array = global.liaoning_states NOT = { has_state_flag = State_start_Collaboration } } }
+		trigger = { all_of_scopes = { array = global.liaoning_states NOT = { has_state_flag = State_start_Collaboration } } }
 		localization_key = "liaoning_goal_red" #地方组建合作社未完成
 	}
 	text = {
-		trigger = { all_of = { array = global.liaoning_states has_state_flag = State_start_Collaboration } }
+		trigger = { all_of_scopes = { array = global.liaoning_states has_state_flag = State_start_Collaboration } }
 		localization_key = "liaoning_goal_green" #地方组建合作社已完成
 	}
 }
@@ -313,13 +313,13 @@ defined_text = {
 	name = CHI_State_hebei_goal #京津冀地区
 	text = {
 		trigger = {
-			all_of = { array = global.hebei_states NOT = { has_state_flag = State_start_Collaboration } }
+			all_of_scopes = { array = global.hebei_states NOT = { has_state_flag = State_start_Collaboration } }
 		}
 		localization_key = "hebei_goal_red" #地方组建合作社未完成
 	}
 	text = {
 		trigger = {
-			all_of = { array = global.hebei_states has_state_flag = State_start_Collaboration }
+			all_of_scopes = { array = global.hebei_states has_state_flag = State_start_Collaboration }
 		}
 		localization_key = "hebei_goal_green" #地方组建合作社已完成
 	}
@@ -328,13 +328,13 @@ defined_text = {
 	name = CHI_State_sichuan_goal #四川地区
 	text = {
 		trigger = {
-			all_of = { array = global.sichuan_states NOT = { has_state_flag = State_start_Collaboration } }
+			all_of_scopes = { array = global.sichuan_states NOT = { has_state_flag = State_start_Collaboration } }
 		}
 		localization_key = "sichuan_goal_red" #地方组建合作社未完成
 	}
 	text = {
 		trigger = {
-			all_of = { array = global.sichuan_states has_state_flag = State_start_Collaboration }
+			all_of_scopes = { array = global.sichuan_states has_state_flag = State_start_Collaboration }
 		}
 		localization_key = "sichuan_goal_green" #地方组建合作社已完成
 	}
@@ -343,13 +343,13 @@ defined_text = {
 	name = CHI_State_fujian_goal #福建地区
 	text = {
 		trigger = {
-			all_of = { array = global.fujian_states NOT = { has_state_flag = State_start_Collaboration } }
+			all_of_scopes = { array = global.fujian_states NOT = { has_state_flag = State_start_Collaboration } }
 		}
 		localization_key = "fujian_goal_red" #地方组建合作社未完成
 	}
 	text = {
 		trigger = {
-			all_of = { array = global.fujian_states has_state_flag = State_start_Collaboration }
+			all_of_scopes = { array = global.fujian_states has_state_flag = State_start_Collaboration }
 		}
 		localization_key = "fujian_goal_green" #地方组建合作社已完成
 	}
@@ -358,13 +358,13 @@ defined_text = {
 	name = CHI_State_hubei_goal #湖北地区
 	text = {
 		trigger = {
-			all_of = { array = global.hubei_states NOT = { has_state_flag = State_start_Collaboration } }
+			all_of_scopes = { array = global.hubei_states NOT = { has_state_flag = State_start_Collaboration } }
 		}
 		localization_key = "hubei_goal_red" #地方组建合作社未完成
 	}
 	text = {
 		trigger = {
-			all_of = { array = global.hubei_states has_state_flag = State_start_Collaboration }
+			all_of_scopes = { array = global.hubei_states has_state_flag = State_start_Collaboration }
 		}
 		localization_key = "hubei_goal_green" #地方组建合作社已完成
 	}
@@ -373,13 +373,13 @@ defined_text = {
 	name = CHI_State_shanghai_goal #上海地区
 	text = {
 		trigger = {
-			all_of = { array = global.shanghai_states NOT = { has_state_flag = State_start_Collaboration } }
+			all_of_scopes = { array = global.shanghai_states NOT = { has_state_flag = State_start_Collaboration } }
 		}
 		localization_key = "shanghai_goal_red" #地方组建合作社未完成
 	}
 	text = {
 		trigger = {
-			all_of = { array = global.shanghai_states has_state_flag = State_start_Collaboration }
+			all_of_scopes = { array = global.shanghai_states has_state_flag = State_start_Collaboration }
 		}
 		localization_key = "shanghai_goal_green" #地方组建合作社已完成
 	}
