@@ -31,7 +31,7 @@ is_New_people_commune_state = {
 		is_in_array = { array = henan_states }	    is_in_array = { array = jiangsu_states }		
 		is_in_array = { array = hebei_states }	    is_in_array = { array = shandong_states }	
 		is_in_array = { array = neimenggu_states }	is_in_array = { array = liaoning_states }	
-		state = 554		state = 555
+		is_in_array = { array = jilin_states }  is_in_array = { array = heilongjiang_states }
 	}
 }
 

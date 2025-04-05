@@ -289,6 +289,7 @@ CHI_state_recognize_start = {
 	CHI_add_State_hebei = yes     CHI_add_State_sichuan = yes  CHI_add_State_fujian = yes
 	CHI_add_State_hubei = yes     CHI_add_State_shanghai = yes CHI_add_State_guizhou = yes
   CHI_add_State_hunan = yes     CHI_add_State_jiangxi = yes  CHI_add_State_neimenggu = yes
+  CHI_add_State_jilin = yes     CHI_add_State_heilongjiang = yes
 }
 CHI_add_State_guangdong = {
   hidden_effect = {
@@ -371,6 +372,16 @@ CHI_add_State_anhui = {
 }
 CHI_add_State_neimenggu = {
   hidden_effect = {
-    556 = { add_to_array = { array = neimenggu_states } }
+    556 = { add_to_array = { array = neimenggu_states } } 1097 = { add_to_array = { array = neimenggu_states } }
+  }
+}
+CHI_add_State_jilin = {
+  hidden_effect = {
+    554 = { add_to_array = { array = jilin_states } }
+  }
+}
+CHI_add_State_heilongjiang = {
+  hidden_effect = {
+    555 = { add_to_array = { array = heilongjiang_states } }
   }
 }
