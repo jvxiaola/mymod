@@ -812,8 +812,7 @@ CHI_Redemption_assets = {
 		CHI_Collaboralize_effect = yes
 		every_owned_state = {
 			limit = { 
-				CHI_Organize_state_enterprises_states_trigger = yes 
-				has_dynamic_modifier = { modifier = State_Collaboration } 
+				has_state_flag = State_start_Collaboration
 			}
 			STATE_Collaboralize = yes
 		}
@@ -847,8 +846,7 @@ CHI_Redemption_assets = {
 		CHI_Assign_local_cooperative_party_committee_effect = yes
 		every_owned_state = {
 			limit = { 
-				CHI_Organize_state_enterprises_states_trigger = yes 
-				has_dynamic_modifier = { modifier = State_Collaboration } 
+				has_state_flag = State_start_Collaboration
 			}
 			STATE_Assign_local_cooperative_party_committee = yes
 		}
@@ -879,8 +877,7 @@ CHI_Redemption_assets = {
 		CHI_ostlc = yes
 		every_owned_state = {
 			limit = { 
-				CHI_Organize_state_enterprises_states_trigger = yes 
-				has_dynamic_modifier = { modifier = State_Collaboration } 
+				has_state_flag = State_start_Collaboration 
 			}
 			STATE_ostlc = yes
 		}
