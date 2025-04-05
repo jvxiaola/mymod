@@ -25,13 +25,13 @@ is_agriculture_state = {
 
 is_New_people_commune_state = {
 	OR = {
-		is_in_array = { array = guizhou_states }    is_in_array = { array = sichuan_states } 
-		is_in_array = { array = hunan_states }	    is_in_array = { array = hubei_states }	
-		is_in_array = { array = jiangxi_states }    is_in_array = { array = anhui_states }	
-		is_in_array = { array = henan_states }	    is_in_array = { array = jiangsu_states }		
-		is_in_array = { array = hebei_states }	    is_in_array = { array = shandong_states }	
-		is_in_array = { array = neimenggu_states }	is_in_array = { array = liaoning_states }	
-		is_in_array = { array = jilin_states }  is_in_array = { array = heilongjiang_states }
+		is_in_array = { array = global.guizhou_states }    is_in_array = { array = global.sichuan_states } 
+		is_in_array = { array = global.hunan_states }	    is_in_array = { array = global.hubei_states }	
+		is_in_array = { array = global.jiangxi_states }    is_in_array = { array = global.anhui_states }	
+		is_in_array = { array = global.henan_states }	    is_in_array = { array = global.jiangsu_states }		
+		is_in_array = { array = global.hebei_states }	    is_in_array = { array = global.shandong_states }	
+		is_in_array = { array = global.neimenggu_states }	is_in_array = { array = global.liaoning_states }	
+		is_in_array = { array = global.jilin_states }  is_in_array = { array = global.heilongjiang_states }
 	}
 }
 
