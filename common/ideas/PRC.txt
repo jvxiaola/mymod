@@ -2903,26 +2903,21 @@ nationalist_drift = 0.01
 			}
 		}
 		PRC_nvquan = {
-						picture = land_of_the_free
+		picture = Radical_Feminism
 			allowed = {
 			}
 			
 			modifier = {
-				conscription_factor = 0.10
+				conscription_factor = -0.10
 				monthly_population = -0.15
-stability_factor = 0.10
-war_support_factor = 0.15
-industrial_capacity_factory = 0.10
-
-industrial_capacity_dockyard = 0.10
-Chinese_people_support_to_china_government_modifier = 0.05
-hidden_modifier = {
-	
-
-	chuanyu_people_support_to_china_government_modifier = 0.05
-			}
-
-
+				stability_factor = -0.10
+				war_support_factor = -0.15
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
+				democratic_drift = 0.05
+				foreign_influence_defense_modifier = -0.10
+				social_cost_multiplier_modifier = 0.05
+				production_speed_buildings_factor = -0.05
 			}
 		}
 		PRC_lgbt = {
