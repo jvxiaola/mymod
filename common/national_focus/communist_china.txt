@@ -2044,17 +2044,18 @@ add_ideas = PRC_lading
 
 }
 		}
-		focus = { id= PRC_nvquan
-		icon = communism5
-		x = 10
-		y = 2
-		prerequisite = {focus = PRC_socgg  }
-		relative_position_id = PRC_shzygg	
-cost = 5
-		ai_will_do = {
-			factor = 5
-		}
-mutually_exclusive = {focus = PRC_hero_mother }
+		focus = { 
+			id = PRC_nvquan
+			icon = Generic_Woman
+			x = 10
+			y = 2
+			prerequisite = {focus = PRC_socgg  }
+			relative_position_id = PRC_shzygg	
+			cost = 5
+			ai_will_do = {
+				factor = 5
+			}
+			mutually_exclusive = {focus = PRC_hero_mother }
 
 		available = {
 		}
@@ -2068,11 +2069,12 @@ mutually_exclusive = {focus = PRC_hero_mother }
 		available_if_capitulated = no
 
 		completion_reward = {
-add_ideas = PRC_nvquan		
-}
+			add_ideas = PRC_nvquan		
 		}
-focus = { id= PRC_hero_mother
-		icon = Fancy_Lady
+		}
+focus = { 
+	id= PRC_hero_mother
+		icon = Generic_Working_Class_Family
 		x = 12
 		y = 2
 		prerequisite = {focus = PRC_socgg }
