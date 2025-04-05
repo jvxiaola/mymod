@@ -1341,17 +1341,17 @@
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = CHI_Launch_cooperation_initiatives_at_forums_tt
-				all_of = { array = global.guangdong_states has_state_flag = State_start_Collaboration }
-				all_of = { array = global.jiangsu_states has_state_flag = State_start_Collaboration }
-				all_of = { array = global.shandong_states has_state_flag = State_start_Collaboration }
-				all_of = { array = global.zhejiang_states has_state_flag = State_start_Collaboration }
-				all_of = { array = global.henan_states has_state_flag = State_start_Collaboration }
-				all_of = { array = global.liaoning_states has_state_flag = State_start_Collaboration }
-				all_of = { array = global.hebei_states has_state_flag = State_start_Collaboration }
-				all_of = { array = global.sichuan_states has_state_flag = State_start_Collaboration }
-				all_of = { array = global.fujian_states has_state_flag = State_start_Collaboration }
-				all_of = { array = global.hubei_states has_state_flag = State_start_Collaboration }
-				all_of = { array = global.shanghai_states has_state_flag = State_start_Collaboration }
+				all_of_scopes = { array = global.guangdong_states has_state_flag = State_start_Collaboration }
+				all_of_scopes = { array = global.jiangsu_states has_state_flag = State_start_Collaboration }
+				all_of_scopes = { array = global.shandong_states has_state_flag = State_start_Collaboration }
+				all_of_scopes = { array = global.zhejiang_states has_state_flag = State_start_Collaboration }
+				all_of_scopes = { array = global.henan_states has_state_flag = State_start_Collaboration }
+				all_of_scopes = { array = global.liaoning_states has_state_flag = State_start_Collaboration }
+				all_of_scopes = { array = global.hebei_states has_state_flag = State_start_Collaboration }
+				all_of_scopes = { array = global.sichuan_states has_state_flag = State_start_Collaboration }
+				all_of_scopes = { array = global.fujian_states has_state_flag = State_start_Collaboration }
+				all_of_scopes = { array = global.hubei_states has_state_flag = State_start_Collaboration }
+				all_of_scopes = { array = global.shanghai_states has_state_flag = State_start_Collaboration }
 			}
 		}
 		completion_reward = {	
