@@ -748,6 +748,80 @@ custom_effect_tooltip = "解锁相关决议"
 
 		}
 	}	
+	focus = {
+		id = DSC_QIYIGCA
+		icon = communist_factories
+		x = 0
+
+		y = 0
+
+		cost = 5
+
+		prerequisite = {
+
+		 }
+		 allow_branch = {
+			has_country_flag = qygc
+			NOT = { has_country_flag = rehabilitate_economy }
+		 }
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+		completion_reward = {
+############################
+
+
+
+		}
+	}
+
+
+	focus = {
+		id = DSC_QIYIGCB
+		icon = communist_factories
+		x = 0
+
+		y = 1
+
+		cost = 5
+
+		prerequisite = {
+			focus=DSC_QIYIGCA
+		 }
+
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+		completion_reward = {
+############################
+
+clr_country_flag = qygc
+set_country_flag = qyxd
+		}
+	}
+
 
 
 	focus = {

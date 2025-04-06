@@ -134,12 +134,17 @@ country_event = {
 
 
 			start_civil_war = {
-				ideology = communism
-				size = DSC_rmjd_renyuan
-				states = {
-					585 586
-					}
 
+
+
+					ideology = communism
+					size = DSC_rmjd_renyuan
+				
+
+
+			
+		
+		
 
 	set_cosmetic_tag = DSC_JGQ
 
@@ -337,10 +342,10 @@ Militia_Bat = { x = 1 y = 3 }
 			startup_politics = yes
 								
 				mark_focus_tree_layout_dirty = yes
-				set_country_flag = qyxd			
+				set_country_flag = qygc		
 				clr_country_flag = gmxingdong									
 			}	
-			}
+		}
 			}
 		}			
 country_event = {
