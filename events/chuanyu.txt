@@ -57,7 +57,7 @@ country_event = {
 
 				set_variable = {
 					var = DSC_rmjd_renyuan
-					value = 0
+					value = 1
 				}
 
 
@@ -139,8 +139,15 @@ country_event = {
 
 					ideology = communism
 					size = DSC_rmjd_renyuan
-				
 
+					states = all
+					states_filter = {
+							NOT = { state=1216 }
+
+						}
+
+
+				
 
 			
 		
@@ -511,11 +518,11 @@ country_event = {
 
 trigger = {
 	check_variable = {
-		DSC_rmjd_renyuan < 0.5
+		DSC_rmjd_renyuan > 0.5
 	}
 }
 				add_to_variable={
-					DSC_rmjd_renyuan = 0.1
+					DSC_rmjd_renyuan = -0.1
 				}
 				
 				
@@ -526,13 +533,11 @@ trigger = {
 						name = chuanyu.11.a.o2
 						trigger = {
 							check_variable = {
-								DSC_rmjd_renyuan > 0.5
+								DSC_rmjd_renyuan < 0.5
 							}
 						}
 		
-						add_to_variable={
-							DSC_rmjd_renyuan = 0.1
-						}
+
 						
 						
 										
