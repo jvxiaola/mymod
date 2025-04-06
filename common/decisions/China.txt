@@ -2954,11 +2954,16 @@ has_completed_focus = DSC_duoquwuqi
 		visible = {
 
 		}
-
+		days_re_enable = 7
+		days_remove = 10
 		complete_effect = {
 
 
 		}
+
+		remove_effect = {
+
+			}
 		}
 
 		DSC_mingbingshengtou = {
@@ -2977,12 +2982,24 @@ has_completed_focus = DSC_duoquwuqi
 
 			}
 			
+			days_re_enable = 7
+			days_remove = 10
 
-			
+
+			remove_effect = {
+				country_event = {id=chuanyu.4 days=5}
+				country_event = {id=chuanyu.11 days=9}
+				}
+
+
+
+
+
+
+
 			complete_effect = {
 
-	country_event = {id=chuanyu.4 days=5}
-	country_event = {id=chuanyu.11 days=9}
+
 			}
 			}
 
@@ -3002,8 +3019,18 @@ has_completed_focus = DSC_duoquwuqi
 
 
 				}
+
+				days_re_enable = 7
+				days_remove = 10
+
+
+				
+			remove_effect = {
+				country_event = {id=chuanyu.5 days=5}
+
+			}
 				complete_effect = {
-		country_event = {id=chuanyu.5 days=5}
+
 
 				}
 				}
@@ -3023,11 +3050,16 @@ has_completed_focus = DSC_duoquwuqi
 
 
 		}
+
+		days_remove = 10
 		complete_effect = {
+
+
+
+
+		}
+		remove_effect = {
 			country_event = chuanyu.6
-
-
-
 		}
 
 
@@ -3052,8 +3084,8 @@ DSC_zuzhimaopai = {
 
 
 		}
-
-		complete_effect = {
+		days_remove = 10
+		remove_effect = {
 
 
 			
@@ -3103,7 +3135,8 @@ if = {
 
 
 			}
-			complete_effect = {
+			days_remove = 10
+			remove_effect = {
 				if = {
 					limit = { has_idea = CHI_gongchanguimuo}
 					swap_ideas = {
@@ -3147,7 +3180,9 @@ if = {
 				custom_cost_trigger = {
 
 				}
-				complete_effect = {
+
+				days_remove = 10
+				remove_effect = {
 		
 					if = {
 						limit = { has_idea = CHI_gongchanguimuo}
