@@ -2969,7 +2969,12 @@ has_completed_focus = DSC_duoquwuqi
 		DSC_mingbingshengtou = {
 			icon = GFX_decision_generic_form_nation
 			available = {
-	has_completed_focus = DSC_shengtoumingbing
+				has_completed_focus = DSC_shengtoumingbing
+
+
+			
+					
+				
 			}
 	
 			cost = 100

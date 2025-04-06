@@ -471,6 +471,7 @@ focus_tree = {
 
 			NOT = {
 							has_country_flag = qyxd
+							has_country_flag = qygc			
 							has_country_flag = rehabilitate_economy
 			}
 		}
@@ -751,7 +752,7 @@ custom_effect_tooltip = "解锁相关决议"
 	focus = {
 		id = DSC_QIYIGCA
 		icon = communist_factories
-		x = 0
+		x = 3
 
 		y = 0
 
@@ -790,7 +791,7 @@ custom_effect_tooltip = "解锁相关决议"
 	focus = {
 		id = DSC_QIYIGCB
 		icon = communist_factories
-		x = 0
+		x = 3
 
 		y = 1
 
@@ -819,6 +820,7 @@ custom_effect_tooltip = "解锁相关决议"
 
 clr_country_flag = qygc
 set_country_flag = qyxd
+mark_focus_tree_layout_dirty = yes
 		}
 	}
 

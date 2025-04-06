@@ -132,7 +132,9 @@ country_event = {
 						
 		custom_effect_tooltip = chuanyu_change_effect_tt
 
-
+set_capital = {
+	state = 1216
+}
 			start_civil_war = {
 
 
@@ -223,7 +225,9 @@ create_country_leader = {
 
 DSC={
 
-
+	set_capital = {
+		state = 1216
+	}
 
 
 
@@ -347,10 +351,10 @@ Militia_Bat = { x = 1 y = 3 }
 			add_to_array = { ruling_party = 5 } #social_democracy								
 			set_variable = { party_pop_array^5 = 0.40 } #social_democracy	
 			startup_politics = yes
-								
+			set_country_flag = qygc		
+			clr_country_flag = gmxingdong						
 				mark_focus_tree_layout_dirty = yes
-				set_country_flag = qygc		
-				clr_country_flag = gmxingdong									
+								
 			}	
 		}
 			}
