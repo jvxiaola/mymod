@@ -135,7 +135,7 @@ country_event = {
 
 			start_civil_war = {
 				ideology = communism
-				size = 0.5
+				size = DSC_rmjd_renyuan
 				states = {
 					585 586
 					}
@@ -502,14 +502,35 @@ country_event = {
 								
 								
 				option = {
-				name = chuanyu.11.a 
-		
+				name = chuanyu.11.a.o1
 
+trigger = {
+	check_variable = {
+		DSC_rmjd_renyuan < 0.5
+	}
+}
 				add_to_variable={
-					DSC_rmjd_renyuan = 1
+					DSC_rmjd_renyuan = 0.1
 				}
 				
 				
 								
 					}
+
+					option = {
+						name = chuanyu.11.a.o2
+						trigger = {
+							check_variable = {
+								DSC_rmjd_renyuan > 0.5
+							}
+						}
+		
+						add_to_variable={
+							DSC_rmjd_renyuan = 0.1
+						}
+						
+						
+										
+							}
+
 				}

@@ -675,7 +675,7 @@ news_event = {
 	id = mdardchina_news.17
 	title = mdardchina_news.17.t
 	desc = mdardchina_news.17.d
-	picture = GFX_news_event_chinese_soldiers
+	picture = GFX_chinawar
 	
 	major = yes
 	

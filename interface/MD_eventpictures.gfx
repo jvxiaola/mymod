@@ -9356,6 +9356,12 @@ spriteTypes = {
 		name = "GFX_maopaiyouxing"
 		texturefile = "gfx/event_pictures/asia/china - CHI/maopaiyouxing.dds"
 	}
+
+	spriteType = {
+		name = "GFX_chinawar"
+		texturefile = "gfx/event_pictures/asia/china - CHI/chinawar.dds"
+	}
+
 	spriteType = {
 		name = "GFX_china_jieyan"
 		texturefile = "gfx/event_pictures/asia/china - CHI/china_jieyan.dds"
