@@ -150,10 +150,11 @@ chuanyu.11.d: "成功渗透川渝军队"
 chuanyu.11.a.o1: "太好了"
 
 
-chuanyu.12.d: "成功收获武器"
+chuanyu.12.t: "成功收获武器"
 chuanyu.12.a.o1: "太好了"
 
-
+chuanyu.13.t: "成功收获人员"
+chuanyu.13.a.o1: "太好了"
 
 #决议    #战间
 CHI_economic_deterioration: "§R经济正在崩溃§!"

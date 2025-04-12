@@ -65,6 +65,17 @@ country_event = {
 					value = 1
 				}
 
+				set_variable = {
+					var = DSC_rmjd_wuqi_count
+					value = 1
+				}
+
+				set_variable = {
+					var = DSC_rmjd_houbeijun
+					value = 1000
+				}
+
+
 
 
 				}
@@ -545,26 +556,53 @@ country_event = {
 
 
 
-				country_event = {
-					id = chuanyu.12
-					title = chuanyu.12.t
-					desc = chuanyu.12.d
+	country_event = {
+		id = chuanyu.12
+		title = chuanyu.12.t
+		desc = chuanyu.12.d
 									
-					is_triggered_only = yes
+		is_triggered_only = yes
 									
 									
-					option = {
-					name = chuanyu.12.a.o1
+		option = {
+			name = chuanyu.12.a.o1
 	
 
-					add_to_variable={
-						DSC_rmjd_renyuan = 1
-					}
+			add_to_variable={
+				DSC_rmjd_renyuan = 1
+			}
 					
 					
 									
-						}
+		}
 	
 
 	
-					}
+	}
+
+
+
+
+	country_event = {
+		id = chuanyu.13
+		title = chuanyu.13.t
+		desc = chuanyu.13.d
+										
+		is_triggered_only = yes
+										
+										
+		option = {
+			name = chuanyu.13.a.o1
+		
+	
+			add_to_variable={
+				DSC_rmjd_houbeijun  = 1000
+			}
+						
+						
+										
+				}
+		
+	
+		
+			}

@@ -2953,7 +2953,7 @@ has_completed_focus = DSC_duoquwuqi
 		fire_only_once = no
 		visible = {
 			check_variable = {
-				DSC_rmjd_wuqi < 6
+				DSC_rmjd_wuqi_count < 6
 			}
 		}
 		days_re_enable = 7
@@ -2967,12 +2967,13 @@ has_completed_focus = DSC_duoquwuqi
 			if={
 				limit={
 					check_variable = {
-						DSC_rmjd_wuqi < 6
+						DSC_rmjd_wuqi_count < 6
 					}
 					
 				}
 				add_to_variable={
 					DSC_rmjd_wuqi = 1
+					DSC_rmjd_wuqi_count = 1
 				}	
 				country_event={id=chuanyu.12}
 			}
@@ -3063,7 +3064,18 @@ has_completed_focus = DSC_duoquwuqi
 
 				
 			remove_effect = {
-				country_event = {id=chuanyu.5 days=5}
+
+				if = {
+					limit={
+					check_variable = {
+						DSC_rmjd_houbeijun < 20000
+					}
+				}
+					add_to_variable={
+						DSC_rmjd_houbeijun = 1000
+					}
+				country_event = {id=chuanyu.5}
+				country_event = {id=chuanyu.13}
 
 			}
 				complete_effect = {
@@ -3071,7 +3083,7 @@ has_completed_focus = DSC_duoquwuqi
 
 				}
 				}
-
+			}
 	DSC_maopaizhenghe = {
 		icon = GFX_decision_generic_form_nation
 		available = {
