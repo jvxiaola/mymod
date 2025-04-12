@@ -146,9 +146,14 @@ chuanyu.10.a: "杀无赦"
 
 chuanyu.11.t: "策反士兵"
 
-chuanyu.11.d: "策反川渝士兵的行动。。。"
-chuanyu.11.a.o1: "成功了"
-chuanyu.11.a.o2: "以及没有更多士兵可以被策反了"
+chuanyu.11.d: "成功渗透川渝军队"
+chuanyu.11.a.o1: "太好了"
+
+
+chuanyu.12.d: "成功收获武器"
+chuanyu.12.a.o1: "太好了"
+
+
 
 #决议    #战间
 CHI_economic_deterioration: "§R经济正在崩溃§!"

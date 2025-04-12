@@ -57,8 +57,14 @@ country_event = {
 
 				set_variable = {
 					var = DSC_rmjd_renyuan
+					value = 0.9
+				}
+
+				set_variable = {
+					var = DSC_rmjd_wuqi
 					value = 1
 				}
+
 
 
 				}
@@ -520,11 +526,7 @@ country_event = {
 				option = {
 				name = chuanyu.11.a.o1
 
-trigger = {
-	check_variable = {
-		DSC_rmjd_renyuan > 0.5
-	}
-}
+
 				add_to_variable={
 					DSC_rmjd_renyuan = -0.1
 				}
@@ -533,18 +535,36 @@ trigger = {
 								
 					}
 
-					option = {
-						name = chuanyu.11.a.o2
-						trigger = {
-							check_variable = {
-								DSC_rmjd_renyuan < 0.5
-							}
-						}
-		
 
-						
-						
-										
-							}
 
 				}
+
+
+
+
+
+
+
+				country_event = {
+					id = chuanyu.12
+					title = chuanyu.12.t
+					desc = chuanyu.12.d
+									
+					is_triggered_only = yes
+									
+									
+					option = {
+					name = chuanyu.12.a.o1
+	
+
+					add_to_variable={
+						DSC_rmjd_renyuan = 1
+					}
+					
+					
+									
+						}
+	
+
+	
+					}

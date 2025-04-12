@@ -1,0 +1,118 @@
+defined_text = {
+	name = DSC_shengtouchengdu
+	text = {
+		trigger = {
+			check_variable = {
+				DSC_rmjd_renyuan = 0.9	
+			}
+
+		}
+		localization_key = "10%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				DSC_rmjd_renyuan = 0.8	
+			}
+
+		}
+		localization_key = "20%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				DSC_rmjd_renyuan = 0.7	
+			}
+
+		}
+		localization_key = "30%"
+	}
+
+	text = {
+		trigger = {
+			check_variable = {
+				DSC_rmjd_renyuan = 0.6	
+			}
+
+		}
+		localization_key = "40%"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				DSC_rmjd_renyuan = 0.5	
+			}
+
+		}
+		localization_key = "50%"
+	}
+
+
+
+
+}
+
+
+
+
+
+
+
+defined_text = {
+	name = DSC_wuzhuangchengdu
+	text = {
+		trigger = {
+			check_variable = {
+				DSC_rmjd_wuqi = 1
+			}
+
+		}
+		localization_key = "1"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				DSC_rmjd_wuqi = 2
+			}
+
+		}
+		localization_key = "2"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				DSC_rmjd_wuqi = 3
+			}
+
+		}
+		localization_key = "3"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				DSC_rmjd_wuqi = 4
+			}
+
+		}
+		localization_key = "4"
+	}
+
+	text = {
+		trigger = {
+			check_variable = {
+				DSC_rmjd_wuqi = 5
+			}
+
+		}
+		localization_key = "5"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				DSC_rmjd_wuqi = 6
+			}
+
+		}
+		localization_key = "6"
+	}
+}
