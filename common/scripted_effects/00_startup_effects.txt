@@ -1,4 +1,5 @@
 # 当前省份修正修改：新疆 3167 7792 1766
+#广东 9978
 initialize_state_provincial_images = {
 	207 = { #Jerusalem, Contested
 		add_province_modifier = {
@@ -5806,7 +5807,7 @@ initialize_state_provincial_images = {
 			province = { id = 1069 }
 		}
 	}
-	534 = {
+	1219 = { #汕头
 		add_province_modifier = {
 			static_modifiers = { terrain_shantou }
 			province = { id = 9978 }
