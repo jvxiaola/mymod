@@ -1,0 +1,40 @@
+state={
+	id = 1218
+	name = "STATE_1218"
+	provinces={
+		9938 
+	}
+	resources = {
+		oil = 3
+		tungsten = 6
+	}
+	manpower = 2400000
+	state_category = state_03
+	history = {
+		owner = CHI
+		victory_points = {
+			9938 5
+		}
+		buildings = {
+			infrastructure = 2
+			internet_station = 2
+			offices = 1
+			industrial_complex = 1
+			dockyard = 1
+			11981 = {
+				naval_base = 10
+			}
+			9978 = {
+				naval_base = 6
+			}
+
+			11938 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = CHI
+		add_core_of = TAI
+	}
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.000
+}

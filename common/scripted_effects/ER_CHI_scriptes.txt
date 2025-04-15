@@ -295,6 +295,8 @@ CHI_add_State_guangdong = {
   hidden_effect = {
     534 = { add_to_array = { array = global.guangdong_states } } 532 = { add_to_array = { array = global.guangdong_states } } 
     595 = { add_to_array = { array = global.guangdong_states } } 1106 = { add_to_array = { array = global.guangdong_states } } 
+    1218 = { add_to_array = { array = global.guangdong_states } } 1219 = { add_to_array = { array = global.guangdong_states } } 
+    
   }
 }
 CHI_add_State_jiangsu = {
