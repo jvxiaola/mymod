@@ -1196,7 +1196,7 @@ country_event = {id= prc1.57 days = 3 }
 		}
 		}
 
-		focus = {
+	focus = {
 		id = CHI_paving_the_way_for_successors
 		icon = communist_party_of_china
 		x = 0
@@ -1211,9 +1211,7 @@ country_event = {id= prc1.57 days = 3 }
 			bypass = {}
 				prerequisite = {
 					focus = CHI_kuodachukou
-
 					focus = CHI_kuodaneixu
-
 				}
 
 
@@ -1222,53 +1220,41 @@ country_event = {id= prc1.57 days = 3 }
 			factor = 500
 		}
 		allow_branch = {
-
-OR={
-	AND={
-				has_country_leader = { name = "江泽民" }
-			NOT={
-				has_country_flag = CPC_Rehabilitation_of_Zhao_Ziyang
+			OR = {
+				AND = {
+					has_country_leader = { name = "江泽民" }
+					NOT = {
+						has_country_flag = CPC_Rehabilitation_of_Zhao_Ziyang
+					}
+				}
+				has_country_flag = CHI_congress_2002
 			}
-		}
-		
-has_country_flag = CHI_congress_2002
-		}
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no 
-cancel_effect = {
-	
-
-mark_focus_tree_layout_dirty = yes
-
-			
+		cancel_effect = {
+			mark_focus_tree_layout_dirty = yes
 		}
 		completion_reward = {
 			if = {
-				limit = { has_country_flag= CHI_zhunbeirudang}
+				limit = { has_country_flag = CHI_zhunbeirudang }
 				#set_temp_variable = { temp_CHI_people_support = 0.15 }
 				#change_CHI_people_support = yes
 				add_ideas = CHI_zibenjia
 				custom_effect_tooltip = influence_the_party_line_tt
 				add_10_western_liberalism = yes
-				
-				add_to_variable = {
-				var = CPC_Right
-				value = 0.15
+				add_to_variable = { CPC_Right = 0.15 }
+				add_to_variable = { CPC_Left = -0.03 }
+				add_to_variable = { CPC_Dengist = -0.12}
+			}
+			if = {
+				limit = { 
+					NOT = { has_completed_focus = CHI_kuodaneixu }
+					NOT = { has_completed_focus = CHI_kuodachukou }  
 				}
-				
-				add_to_variable = {
-				var = CPC_Left
-				value = -0.03
-				}
-				
-				add_to_variable = {
-					var = CPC_Dengist
-					value = -0.12
-					}
-						}
-						
+				custom_effect_tooltip = CHI_change_forward_tt
+			}			
 					
 				
 			
