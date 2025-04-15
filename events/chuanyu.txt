@@ -40,7 +40,7 @@ country_event = {
 				ai_chance = {factor=100}
 
 				name = Chuanyu.2.a.o1
-				add_ideas =  CHI_Strict_military_control
+				add_ideas = CHI_Strict_military_control
 
 				add_stability = 0.1
 
@@ -470,11 +470,9 @@ country_event = {
 			add_to_array = {
 				array = global.ruined_agriculture_state
 			}
-
-		}
+	}
 		CHI_ruin_agriculture_add = yes
 		clear_array = global.ruined_agriculture_state
-	
 	add_ideas = p5_member
 	custom_effect_tooltip = change_rebuild_focus_tree_tt
 	hidden_effect = {
