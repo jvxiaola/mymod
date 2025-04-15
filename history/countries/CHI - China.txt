@@ -3439,7 +3439,6 @@ set_popularities = {
 
 		attack_helicopter2 = 1 #WZ-10
 
-		transport_helicopter2 = 1
 
 		transport_plane2 = 1
 		transport_plane3 = 1 #Y9

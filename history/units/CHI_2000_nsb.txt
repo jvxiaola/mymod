@@ -1420,11 +1420,6 @@ units = {
 		#version_name = "Mil Mi-17"
 	}
 	add_equipment_to_stockpile = {
-		type = transport_helicopter2 #PLA Mi-26 Halo
-		amount = 3
-		producer = SOV
-	}
-	add_equipment_to_stockpile = {
 		type = transport_helicopter1 #PLAAF Mi-4
 		amount = 100
 		variant_name = "Z-4"
@@ -1447,15 +1442,6 @@ units = {
 		amount = 10
 		producer = SOV
 		#version_name = "Mil Mi-17"
-	}
-	add_equipment_to_stockpile = {
-		type = transport_helicopter2 #PLAAF Z-9
-		amount = 30
-	}
-	add_equipment_to_stockpile = {
-		type = transport_helicopter2 #PLA S-70 Blackhawk
-		amount = 20
-		producer = USA
 	}
 
 	#GROUND PRODUCTION
@@ -1522,15 +1508,6 @@ units = {
 		}
 		requested_factories = 3
 		industrial_manufacturer = mio:CHI_norinco_tank_manufacturer
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = transport_helicopter2
-			creator = "CHI"
-		}
-		requested_factories = 2
-		industrial_manufacturer = mio:CHI_changhe_aircraft_corp_tank_manufacturer
 	}
 
 	add_equipment_production = {
