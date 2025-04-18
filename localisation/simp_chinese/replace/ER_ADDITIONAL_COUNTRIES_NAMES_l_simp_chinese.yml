@@ -19,6 +19,8 @@ HKG_GMQ: "香港革命政府"
 PRG: "广州临时军管区"
 PRG_ADJ: "广州军区"
 PRG_DEF: "广州军区"
+PGR_TEMPOR_GOVERMENT: "广州临时军管区 - £CHI_military_junta军区司令部"
+hasty_deployment: "§R紧急动员§!"
 
 #西藏
 TIB_JUNQU: "驻西藏部队"

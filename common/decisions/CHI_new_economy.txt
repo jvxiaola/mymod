@@ -28,8 +28,7 @@ CHI_new_social_economy_debug_decision = {
 				name = "毛远新"
 				picture = "Mao_Yuanxin.dds"
 				ideology = Chinese_Socialism_mao
-				traits = {
-						}
+				traits = { }
 				}
 			start_politics_input = yes
 			add_to_array = { ruling_party = 5 } #social_democracy								

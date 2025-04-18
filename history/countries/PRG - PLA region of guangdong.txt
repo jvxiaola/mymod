@@ -7,7 +7,7 @@ set_technology = {
 #开始时的科技
 set_stability = 0.2
 set_war_support = 0.7
-recruit_character = AGR_TEMPOR_GOVERMENT
+recruit_character = PGR_TEMPOR_GOVERMENT
 init_influence = yes
 set_variable = { domestic_influence_amount = 30 }
 add_to_array = { influence_array = CHI.id }
