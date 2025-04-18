@@ -17,7 +17,7 @@
         check_variable = { 8 > ruined_state_num }
         check_variable = { ruined_state_num  > 4 }
       }
-      add_idea = Industrial_damage2
+      add_ideas = Industrial_damage2
     }
 
     else_if = {
