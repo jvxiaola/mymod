@@ -1,31 +1,18 @@
 state = {
 	id = 534
 	name = "STATE_534"
-	manpower = 50245729
-	state_category = state_17
+	manpower = 8694000
+	state_category = state_07
 
 	resources = {
-		oil = 20
-		rubber = 14
-		tungsten = 40
+		oil = 6
+		rubber = 10
 	}
 
 	history = {
 		owner = CHI
 		victory_points = {
-			7039 5
-		}
-		victory_points = {
 			7141 1
-		}
-		victory_points = {
-			9963 1
-		}
-		victory_points = {
-			1131 1
-		}
-		victory_points = {
-			11941 5
 		}
 		victory_points = {
 			7067 1
@@ -33,20 +20,12 @@ state = {
 		victory_points = {
 			4165 3
 		}
-		victory_points = {
-			9970 5
-		}
+		
 		buildings = {
 			infrastructure = 1
 			arms_factory = 2
-			industrial_complex = 10
-			dockyard = 1
-			fuel_silo = 1
-			agriculture_district = 4
-
-			11938 = {
-				naval_base = 4
-			}
+			industrial_complex = 3
+			agriculture_district = 2
 		}
 		add_core_of = CHI
 		add_core_of = TAI
@@ -66,6 +45,6 @@ state = {
 	}
 
 	provinces = {
-		1078 1120 1131 1162 4165 4207 7039 7067 7141 7182 9963 9970 10080 10121 11938 11941 12077 14389
+		1078 4165 4207 7067 7141 7182
 	}
 }
