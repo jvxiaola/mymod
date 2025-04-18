@@ -2348,37 +2348,11 @@ CHI_annex_Hon_desc: "正如中央所一直宣传的，我们在港澳实施的�
 
 
 
-#川渝军管区
-DSC_JGQ: "川渝军管区"
-DSC_JGQ_ADJ: "川渝"
-DSC_JGQ_DEF: "川渝"
-DSC_GMQ: "川渝革命政府"
-DSC_GMQ_ADJ: "川渝"
-DSC_GMQ_DEF: "川渝"
-HKG_GMQ: "香港革命政府"
-TIB_JUNQU: "驻西藏部队"
-TIB_JUNQU_ADJ: "西藏军区"
-TIB_JUNQU_DEF: "西藏军区"
-XIN: "中国新疆军区"
-XIN_ADH: "新疆军区"
-XIN_DEF: "新疆军区"
-DSC_GMG: "中华人民共和国"
-DSC_GMG_ADJ: "中国"
-DSC_GMG_DEF: "中国"
-
-
-
-
-
-
-
-
 
 
 
 DSC_JGBD: "中国内战爆发"
 DSC_JGBD_desc: "我们需要进行准备"
-
 
 DSC_ZHONGLI: "高压政策"
 DSC_ZHONGLI_desc: "军管已经开始松懈了，在内战全面爆发后，骚乱开始蔓延了，之前的成果付之一炬了，必须使出铁腕手腕"

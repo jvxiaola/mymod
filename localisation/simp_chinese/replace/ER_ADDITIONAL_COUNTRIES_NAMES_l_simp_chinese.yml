@@ -1,0 +1,30 @@
+l_simp_chinese:
+ 
+#川渝军管区
+DSC_JGQ: "川渝军管区"
+DSC_JGQ_ADJ: "川渝"
+DSC_JGQ_DEF: "川渝"
+DSC_GMQ: "川渝革命政府"
+DSC_GMQ_ADJ: "川渝"
+DSC_GMQ_DEF: "川渝"
+#川渝胜利
+DSC_GMG: "中华人民共和国"
+DSC_GMG_ADJ: "中国"
+DSC_GMG_DEF: "中国"
+
+#香港
+HKG_GMQ: "香港革命政府"
+
+#广东
+PRG: "广州临时军管区"
+PRG_ADJ: "广州军区"
+PRG_DEF: "广州军区"
+
+#西藏
+TIB_JUNQU: "驻西藏部队"
+TIB_JUNQU_ADJ: "西藏军区"
+TIB_JUNQU_DEF: "西藏军区"
+#新疆
+XIN: "中国新疆军区"
+XIN_ADH: "新疆军区"
+XIN_DEF: "新疆军区"

@@ -416,8 +416,9 @@ MLR = "countries/Malorossiya.txt"
 
 
 
-
+#ER添加
 DSC = "countries/Chuanyuco.txt"
 XIZ = "countries/xizang.txt"
 XIN = "countries/Xinjiang.txt"
 PCP = "countries/guanghui.txt"
+PRG = "countries/PLA region of guangdong.txt"
