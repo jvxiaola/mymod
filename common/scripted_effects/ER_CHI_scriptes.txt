@@ -54,7 +54,7 @@ CHI_ruin_agriculture_add = {
       check_variable = { 8 > ruined_agriculture_state_num }
       check_variable = { ruined_agriculture_state_num > 4 }
     }
-    add_idea = Poor_agriculture2
+    add_ideas = Poor_agriculture2
   }
 
   else_if = {
