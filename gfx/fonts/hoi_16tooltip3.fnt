@@ -120,6 +120,7 @@ char id=179  x=57    y=234   width=7     height=7     xoffset=-1    yoffset=3   
 char id=180  x=130   y=231   width=6     height=5     xoffset=0     yoffset=2     xadvance=5     page=0  chnl=15
 char id=181  x=110   y=184   width=9     height=12    xoffset=-1    yoffset=5     xadvance=8     page=0  chnl=15
 char id=182  x=111   y=91    width=10    height=13    xoffset=-1    yoffset=3     xadvance=8     page=0  chnl=15
+char id=183  x=36    y=242   width=5     height=4     xoffset=2     yoffset=7     xadvance=5     page=0  chnl=15
 char id=184  x=137   y=231   width=6     height=5     xoffset=-1    yoffset=12    xadvance=5     page=0  chnl=15
 char id=185  x=249   y=218   width=6     height=7     xoffset=-1    yoffset=3     xadvance=5     page=0  chnl=15
 char id=186  x=30    y=234   width=8     height=7     xoffset=-1    yoffset=3     xadvance=5     page=0  chnl=15
