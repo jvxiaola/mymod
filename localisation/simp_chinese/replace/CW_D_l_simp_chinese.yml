@@ -29,6 +29,17 @@ XIN.Communist-State: "£CHI_communism 中国共产党 - §R新毛派§! "
 XIN.Communist-State_icon: "£CHI_communism"
 XIN.Conservative: "£CHI_communism 中国共产党 - §1改革派§! "
 XIN.Conservative_icon: "£CHI_communism"
+
+PRG_communist_cadres: "军管区政委"
+PRG_industrial_conglomerates: "国家资源委员会 - 广州区"
+PRG_the_military: "广州军管区-解放军军官"
+PRG.Nat_Autocracy: "£CHI_military_junta §R中国人民解放军§! - 广州军区"
+PRG.Nat_Autocracy_icon: "£CHI_military_junta"
+
+PRG.Communist-State: "£CHI_communism 中国共产党 - §R新毛派§! "
+PRG.Communist-State_icon: "£CHI_communism"
+PRG.Conservative: "£CHI_communism 中国共产党 - §1改革派§! "
+PRG.Conservative_icon: "£CHI_communism"
 #focus、决议
 XIN_troubled_times: "§R多事之秋§!"
 XIN_troubled_times_desc: "自党内左翼保守派逐渐增强以来，三种不同观点的分歧便逐渐扩大。内部的激烈矛盾掩盖了边疆地区的问题，直到乌鲁木齐遭受恐怖袭击。\n不管怎样，中央必须做些什么来度过这段困难时间。"
