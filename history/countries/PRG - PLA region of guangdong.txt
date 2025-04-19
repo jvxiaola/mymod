@@ -8,6 +8,8 @@ set_technology = {
 set_stability = 0.2
 set_war_support = 0.7
 recruit_character = PGR_TEMPOR_GOVERMENT
+PGR_TEMPOR_GOVERMENT = { promote_character = yes }
+
 init_influence = yes
 set_variable = { domestic_influence_amount = 30 }
 add_to_array = { influence_array = CHI.id }
