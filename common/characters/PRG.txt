@@ -3,7 +3,7 @@ PGR_TEMPOR_GOVERMENT = {
 		name = PGR_TEMPOR_GOVERMENT
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/PRG/PGR_TEMPOR_GOVERMENT.dds"
+				large = "gfx/leaders/PRG/PRG_TEMPOR_GOVERMENT.dds"
 			}
 
 		}
