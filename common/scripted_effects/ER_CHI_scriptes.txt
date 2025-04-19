@@ -296,7 +296,9 @@ CHI_add_State_guangdong = {
     534 = { add_to_array = { array = global.guangdong_states } } 532 = { add_to_array = { array = global.guangdong_states } } 
     595 = { add_to_array = { array = global.guangdong_states } } 1106 = { add_to_array = { array = global.guangdong_states } } 
     1218 = { add_to_array = { array = global.guangdong_states } } 1219 = { add_to_array = { array = global.guangdong_states } } 
-    
+    1220 = { add_to_array = { array = global.guangdong_states } } 1221 = { add_to_array = { array = global.guangdong_states } }
+    1222 = { add_to_array = { array = global.guangdong_states } } 1223 = { add_to_array = { array = global.guangdong_states } }
+    1224 = { add_to_array = { array = global.guangdong_states } } 1225 = { add_to_array = { array = global.guangdong_states } }
   }
 }
 CHI_add_State_jiangsu = {

@@ -1,1 +1,19 @@
 add_namespace = CHI_ER_BEFORE
+
+country_event = {
+	id = CW_Diverse.00
+	title = CW_Diverse.00.t
+	desc = CW_Diverse.00.d
+	#picture = GFX_event_pictures_CW_D_event1
+	is_triggered_only = yes
+	trigger = { tag = CHI }
+	
+	option = {	
+		name = CW_Diverse.1.a
+		#country_event = { id = CW_Diverse.2 days = 35 }
+		#add_manpower = -200
+		PRG = {
+			
+		}
+	}
+}
