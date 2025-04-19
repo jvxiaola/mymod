@@ -1,6 +1,6 @@
 l_simp_chinese:
- 
 #川渝军管区
+DSC: "川渝军管区"
 DSC_JGQ: "川渝军管区"
 DSC_JGQ_ADJ: "川渝"
 DSC_JGQ_DEF: "川渝"
@@ -11,10 +11,8 @@ DSC_GMQ_DEF: "川渝"
 DSC_GMG: "中华人民共和国"
 DSC_GMG_ADJ: "中国"
 DSC_GMG_DEF: "中国"
-
 #香港
 HKG_GMQ: "香港革命政府"
-
 #广东
 PRG: "广州临时军管区"
 PRG_ADJ: "广州军区"
