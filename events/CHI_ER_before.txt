@@ -15,15 +15,39 @@ country_event = {
 }
 
 country_event = {
-	id = CHI_ER_BEFORE_guang.04
-	title = CHI_ER_BEFORE_guang.04.t
-	desc = CHI_ER_BEFORE_guang.04.d
+	id = CHI_ER_BEFORE_guang.02
+	title = CHI_ER_BEFORE_guang.02.t
+	desc = CHI_ER_BEFORE_guang.02.d
+	#picture = GFX_event_pictures_CW_D_event1
+	is_triggered_only = yes
+	option = {	
+		name = CHI_ER_BEFORE_guang.02.a
+		add_stability = -0.005
+	}
+}
+
+country_event = {
+	id = CHI_ER_BEFORE_guang.03
+	title = CHI_ER_BEFORE_guang.03.t
+	desc = CHI_ER_BEFORE_guang.03.d
+	#picture = GFX_event_pictures_CW_D_event1
+	is_triggered_only = yes
+	option = {	
+		name = CHI_ER_BEFORE_guang.03.a
+		add_stability = -0.005
+	}
+}
+
+country_event = {
+	id = CHI_ER_BEFORE_guang.00
+	title = CHI_ER_BEFORE_guang.00.t
+	desc = CHI_ER_BEFORE_guang.00.d
 	#picture = GFX_event_pictures_CW_D_event1
 	is_triggered_only = yes
 	trigger = { tag = CHI }
 	
 	option = {	
-		name = CHI_ER_BEFORE_guang.04.a
+		name = CHI_ER_BEFORE_guang.00.a
 		#country_event = { id = CHI_ER_BEFORE.2 days = 35 }
 		#add_manpower = -200
 		every_state = {
