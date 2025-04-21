@@ -1,29 +1,29 @@
-add_namespace = CHI_ER_BEFORE
+add_namespace = CHI_ER_BEFORE_guang
 
 country_event = {
-	id = CHI_ER_BEFORE.01
-	title = CHI_ER_BEFORE.01.t
-	desc = CHI_ER_BEFORE.01.d
+	id = CHI_ER_BEFORE_guang.01
+	title = CHI_ER_BEFORE_guang.01.t
+	desc = CHI_ER_BEFORE_guang.01.d
 	#picture = GFX_event_pictures_CW_D_event1
 	trigger = { tag = CHI has_completed_focus = CHI_Three_represents }
 	fire_only_once = yes
 
 	option = {	
-		name = CHI_ER_BEFORE.01.a
+		name = CHI_ER_BEFORE_guang.01.a
 		add_stability = -0.001
 	}
 }
 
 country_event = {
-	id = CHI_ER_BEFORE.04
-	title = CHI_ER_BEFORE.04.t
-	desc = CHI_ER_BEFORE.04.d
+	id = CHI_ER_BEFORE_guang.04
+	title = CHI_ER_BEFORE_guang.04.t
+	desc = CHI_ER_BEFORE_guang.04.d
 	#picture = GFX_event_pictures_CW_D_event1
 	is_triggered_only = yes
 	trigger = { tag = CHI }
 	
 	option = {	
-		name = CHI_ER_BEFORE.04.a
+		name = CHI_ER_BEFORE_guang.04.a
 		#country_event = { id = CHI_ER_BEFORE.2 days = 35 }
 		#add_manpower = -200
 		every_state = {
