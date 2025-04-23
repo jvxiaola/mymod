@@ -8,3 +8,6 @@
  CHINESE_agricultural_tax_tte: "$$[?additional_income_CHINESE_agricultural_tax|+3]来自§Y$CHINESE_agricultural_tax$§!\n"
  harsh_working_en_of_CHI: "§g“廉价劳动力”§!"
  harsh_working_en_of_CHI_desc: "改革开放以来，我国农村流出大量青壮年劳动力到§C东南沿海城市§!（即农民工），农民工居无定所，缺少各类§G社会福利§!与§C医疗保险§!，§O劳动时间§!通常达到§R10小时§!左右，甚至大于12小时，所得薪资§g仅能饱腹§!。\n 虽然这严重影响了§G政府声誉§!，但大量涌入市场的廉价劳动力也促使§B各国投资§!纷纷到来。"
+
+ CHI_party_split: "§R分道扬镳§!"
+ CHI_party_split_effect_tt: "§R党内各派系的矛盾将公开化§!"

@@ -1,0 +1,26 @@
+focus_tree = {
+	id = CHI_urgent_focus
+	
+	country = {
+		factor = -2
+	}
+	default = no
+	shared_focus = XIN_troubled_times
+
+	focus = {
+		id = CHI_party_split
+		icon = PRC_gov
+		x = 15
+		y = 1
+		cost = 0
+		ai_will_do = {
+			factor = 50
+		}				
+		bypass = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+		}
+}
