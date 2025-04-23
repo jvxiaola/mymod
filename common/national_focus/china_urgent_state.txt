@@ -40,7 +40,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+		completion_reward = { custom_effect_tooltip = CHI_return_to_ideal_heart_effect_tt }
 	}
 
 	focus = {
