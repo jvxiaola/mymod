@@ -22,5 +22,22 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
-		}
+	}
+
+	focus = {
+		id = CHI_return_to_ideal_heart
+		icon = snamrinocom
+		x = -3
+		y = 1
+		cost = 0.1
+		prerequisite = { focus = CHI_party_split }
+		relative_position_id = CHI_party_split
+		ai_will_do = { factor = 50 }				
+		bypass = { }
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+	}
 }
