@@ -21,16 +21,6 @@ state={
 			offices = 1
 			industrial_complex = 1
 			dockyard = 1
-			11981 = {
-				naval_base = 10
-			}
-			9978 = {
-				naval_base = 6
-			}
-
-			11938 = {
-				naval_base = 4
-			}
 		}
 		add_core_of = CHI
 		add_core_of = TAI
