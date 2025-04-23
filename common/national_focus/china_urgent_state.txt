@@ -10,7 +10,7 @@ focus_tree = {
 	focus = {
 		id = CHI_party_split
 		icon = PRC_gov
-		x = 15
+		x = 10
 		y = 1
 		cost = 0
 		ai_will_do = {
@@ -40,4 +40,39 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
 	}
+
+	focus = {
+		id = CHI_persist_reform
+		icon = communist_china
+		x = 0
+		y = 1
+		cost = 0.1
+		prerequisite = { focus = CHI_party_split }
+		relative_position_id = CHI_party_split
+		ai_will_do = { factor = 50 }				
+		bypass = { }
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+	}
+
+	focus = {
+		id = CHI_believers_of_freedom
+		icon = Fight_for_Freedom
+		x = 3
+		y = 1
+		cost = 0.1
+		prerequisite = { focus = CHI_party_split }
+		relative_position_id = CHI_party_split
+		ai_will_do = { factor = 50 }				
+		bypass = { }
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+	}
+
 }
