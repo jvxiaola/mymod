@@ -533,6 +533,9 @@ spriteTypes = {
 		name = "PRC_cancer_of_china"
 		texturefile = "gfx/interface/goals/china/PRC_cancer_of_china.dds"			
 	}	
-	
+	SpriteType = {
+		name = "PRC_left_china_front"
+		texturefile = "gfx/interface/goals/china/left_china_front.png"			
+	}	
 	
 }
