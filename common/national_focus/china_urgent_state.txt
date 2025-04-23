@@ -32,6 +32,8 @@ focus_tree = {
 		cost = 0.1
 		prerequisite = { focus = CHI_party_split }
 		relative_position_id = CHI_party_split
+		mutually_exclusive = { focus = CHI_persist_reform }
+		mutually_exclusive = { focus = CHI_believers_of_freedom }
 		ai_will_do = { factor = 50 }				
 		bypass = { }
 	
@@ -49,6 +51,8 @@ focus_tree = {
 		cost = 0.1
 		prerequisite = { focus = CHI_party_split }
 		relative_position_id = CHI_party_split
+		mutually_exclusive = { focus = CHI_return_to_ideal_heart }
+		mutually_exclusive = { focus = CHI_believers_of_freedom }
 		ai_will_do = { factor = 50 }				
 		bypass = { }
 	
@@ -66,6 +70,8 @@ focus_tree = {
 		cost = 0.1
 		prerequisite = { focus = CHI_party_split }
 		relative_position_id = CHI_party_split
+		mutually_exclusive = { focus = CHI_return_to_ideal_heart }
+		mutually_exclusive = { focus = CHI_persist_reform }
 		ai_will_do = { factor = 50 }				
 		bypass = { }
 	
