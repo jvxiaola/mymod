@@ -66,6 +66,28 @@ country_event = {
 				}
 
 				set_variable = {
+					var = DSC_wanzhou_shengtou
+					value = 0
+				}
+
+				set_variable = {
+					var = DSC_zhucheng_shengtou
+					value = 0
+				}
+
+
+				set_variable = {
+					var = DSC_zhucheng_shengtou
+					value = 0
+				}
+
+
+				set_variable = {
+					var = DSC_xisichuan_shengtou
+					value = 0
+				}
+
+				set_variable = {
 					var = DSC_rmjd_wuqi_count
 					value = 1
 				}
@@ -247,6 +269,7 @@ Militia_Bat = { x = 1 y = 3 }
 
 		}
 	}
+
 	random_owned_controlled_state = {
 		prioritize = { 583 }
 		create_unit = {
@@ -268,52 +291,62 @@ Militia_Bat = { x = 1 y = 3 }
 			prioritize_location = 6999
 		}
 	}
-		if = { limit={check_variable = {DSC_rmjd_renyuan > 0}}
+		if = { limit={ DSC_wanzhou_shengtou  = 1}
 		random_owned_controlled_state = {
-			prioritize = { 583 }
+			prioritize = { 1216 }
 			create_unit = {
 				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
-				prioritize_location = 6999
+				prioritize_location = 11865
 			}
 	
-			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
-				prioritize_location = 6999
-			}
-	
-			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
-				prioritize_location = 6999
-			}
-			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
-				prioritize_location = 6999
-			}
-			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
-				prioritize_location = 6999
-			}
-	
-			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
-				prioritize_location = 6999
-			}
-	
-			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
-				prioritize_location = 6999
-			}
-			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
-				prioritize_location = 6999
-			}
+		
+			
+		
 		}
+	}
+		else_if = {
+			limit = { DSC_wanzhou_shengtou  = 2}
+		
+		random_owned_controlled_state = {
+			prioritize = { 1216 }
+			create_unit = {
+				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				prioritize_location = 11865
+			}
+			create_unit = {
+				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				prioritize_location = 11865
+			}
+
 		}
 	
 
 	
+	}
+	else_if = {
+		limit = { DSC_wanzhou_shengtou  = 3}
+	
+	random_owned_controlled_state = {
+		prioritize = { 1216 }
+		create_unit = {
+			division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+			prioritize_location = 11865
+		}
+		create_unit = {
+			division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+			prioritize_location = 11865
+		}
+		create_unit = {
+			division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+			prioritize_location = 11865
+		}
+
+	
+	}
 
 
+
+}
 
 
 
@@ -354,11 +387,11 @@ Militia_Bat = { x = 1 y = 3 }
 			set_country_flag = qygc		
 			clr_country_flag = gmxingdong						
 				mark_focus_tree_layout_dirty = yes
-								
+			}				
 			}	
 		}
 			}
-		}			
+					
 country_event = {
 id = Chuanyu.7
 title = Chuanyu.7.t
@@ -550,7 +583,7 @@ country_event = {
 	
 
 			add_to_variable={
-				DSC_rmjd_renyuan = 1
+				DSC_rmjd_wuqi = 1
 			}
 					
 					

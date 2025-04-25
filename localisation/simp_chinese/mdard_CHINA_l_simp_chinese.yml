@@ -1746,7 +1746,7 @@ CHI_Civil_war_decisions: "中国战间政策"
 CHI_Civil_war_decisions_desc: "政治间的激烈分歧终于延伸至军事，并导致了激烈冲突，这对我们的经济与社会造成了巨大冲击，我们必须采取措施来缓解它。"
 
 DSC_MAOPAIJUECE: "星星之火"
-DSC_MAOPAIJUECE_desc: "红旗卷起农奴戟，黑手高悬霸主鞭。为有牺牲多壮志，敢教日月换新天\n\n  川渝军区军队渗透程度：[DSC_shengtouchengdu]\n 武器足以武装的革命民兵部队：[DSC_wuzhuangchengdu]\n   革命人员：[DSC_rmjd_houbeijun_text]"
+DSC_MAOPAIJUECE_desc: "红旗卷起农奴戟，黑手高悬霸主鞭。为有牺牲多壮志，敢教日月换新天\n\n  川渝军区军队渗透程度：[DSC_shengtouchengdui]\n  武器足以武装的革命民兵部队：[DSC_wuzhuangchengdu]\n  革命人员：[DSC_rmjd_houbeijun_text] \n  万州地下武装程度：[DSC_wanzhou_shengtou_houbeijun_text]"
 DSC_maopaizhenghe: "发动革命"
 
 DSC_zuzhimaopai: "整合马克思主义小组"
@@ -2440,6 +2440,8 @@ DSC_wuqiduoqu: "夺取武器"
 
 DSC_duoquwuqi: "夺取武器"
 DSC_duoquwuqi_desc: ""
+
+DSC_shengtouwanzhou: "在万州建立地下武装"
 
 
 Chuanyu.1.t: "中华人民共和国（左派）的命令"

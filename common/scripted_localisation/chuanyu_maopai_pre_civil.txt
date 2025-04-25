@@ -1,5 +1,5 @@
 defined_text = {
-	name = DSC_shengtouchengdu
+	name = DSC_shengtouchengdui
 	text = {
 		trigger = {
 			check_variable = {
@@ -84,3 +84,12 @@ defined_text = {
 		localization_key = "[?DSC_rmjd_houbeijun]"
 	}
 }
+
+defined_text = {
+	name = DSC_wanzhou_shengtou_houbeijun_text
+	text = {
+		localization_key = "[?DSC_wanzhou_shengtou]"
+	}
+}
+
+

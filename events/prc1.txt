@@ -5987,7 +5987,7 @@ country_event = {
 	title = prc1.102.t
 	desc = prc1.102.d
 
-	immediate = { country_event = { id = CW_Diverse.1 days = 50 } }
+	immediate = { hidden_effect={country_event = { id = CW_Diverse.1 days = 50 } }}
 	is_triggered_only = yes
 	option = {
 		name = prc1.102.a #We reject this threat to our independence.
