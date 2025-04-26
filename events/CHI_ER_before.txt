@@ -1,4 +1,214 @@
-add_namespace = CHI_ER_BEFORE_guang
+add_namespace = CHI_ER_BEFORE_guang #珠江事件
+add_namespace = CHI_ER_start #重新整编事件
+
+country_event = {
+	id = CHI_ER_start.1
+	title = CHI_ER_start.1.t
+	desc = CHI_ER_start.1.d
+
+	immediate = { hidden_effect = { country_event = { id = CW_Diverse.1 days = 50 } }}
+	is_triggered_only = yes
+	option = {
+		name = CHI_ER_start.1.a 
+		kill_country_leader = yes
+		create_country_leader = {
+			name = Quanlizhengkong
+			picture = "Portrait_China_patry_Power_Vacuum.dds"
+			expire = "3000.1.1"
+			ideology = Chinese_Socialism
+			traits = { political_vacuum }
+		}
+		hidden_effect = {
+			country_event = { id = prc1.159 days = 25 }
+			country_event = { id = prc1.81 days = 30 } #左翼人士变动
+			country_event = { id = CHI_ER_start.2 days = 4 }
+			#country_event = { id = prc1.57 days = 3 } 中超开赛
+			
+			434 = { set_state_flag = CHI_Left_State }
+			548 = { set_state_flag = CHI_Left_State }
+			549 = { set_state_flag = CHI_Left_State }
+			1095 ={ set_state_flag = CHI_Left_State }
+			552 = { set_state_flag = CHI_Left_State }
+		}
+		add_stability = -0.1
+		mark_focus_tree_layout_dirty = yes
+	}	
+}
+
+country_event = {
+	id = CHI_ER_start.2
+	title = CHI_ER_start.2.t
+	desc = CHI_ER_start.2.d
+	picture = GFX_china_jieyan
+	is_triggered_only = yes
+	option = {	
+		name = CHI_ER_start.2.o1
+		add_stability = 0.05
+		country_event = { id = CHI_ER_start.3 days = 10 }
+		ai_chance = { factor = 10 }
+	}
+}
+
+country_event = {
+	id = CHI_ER_start.3
+	title = CHI_ER_start.3.t
+	desc = CHI_ER_start.3.d
+
+	is_triggered_only = yes
+	
+	option = {	
+		name = CHI_ER_start.3.o1
+		country_event = { id = CHI_ER_start.4 days = 3 }
+		ai_chance = { factor = 10 }
+	}
+}
+
+country_event = {
+	id = CHI_ER_start.4
+	title = CHI_ER_start.4.t
+	desc = CHI_ER_start.4.d
+	is_triggered_only = yes
+	immediate = { hidden_effect = { country_event = { id = CHI_ER_start.5 days = 35 } } }
+	option = {
+		name = CHI_ER_start.4.o1
+		ai_chance = { factor = 60 }
+		custom_effect_tooltip = CHI_change_forward_mao_tt
+		set_country_flag = CHI_no_shanghaicommune
+		hidden_effect = {
+			DSC = {
+				inherit_technology = CHI
+				set_variable = { gdp_capita = 90.415 }
+				set_variable = { gdp_per_capita = 3.415 }
+				transfer_state = 586
+				transfer_state = 585
+				transfer_state = 583
+				transfer_state = 1216
+				transfer_state = 1217
+				every_owned_state = {
+					add_core_of = DSC
+					remove_core_of = CHI
+				}
+			}
+			puppet = DSC
+			DSC = {
+				DSC_Legal_amendments_dynamic_scriptes = yes
+				add_dynamic_modifier = { modifier = DSC_Legal_amendments_dynamic }
+			}
+			transfer_units_fraction= {
+				target = DSC
+				size = 0.20
+				stockpile_ratio = 0.1
+				army_ratio = 0.1
+				air_ratio = 0.1
+			}
+			random_army_leader = { set_nationality = DSC }
+			DSC = {
+				set_variable = { civilian_factory_employment_var = 1 }
+				set_variable = { naval_factory_employment_var = 1 }
+				set_variable = { military_factory_employment_var = 1 }
+				set_variable = { office_employment_var = 1 }
+				set_variable = { agriculture_district_employment_var = 1 }
+				set_variable = { gdpc_converging_var = FROM.gdpc_converging_var }
+				calculate_influence_percentage = yes #set alignment drifts from influence
+				startup_politics = yes
+				ingame_update_setup = yes 	#money system
+				setup_init_factions = yes 	#flags for int. factions
+				set_law_vars = yes 	#vars for change laws secondary effects
+				update_neighbors_effects = yes # Updates Neighbor Effects
+				economic_cycle_drift_popularity = yes #drift from neighbor
+				ai_update_build_units = yes
+				init_auto_influence_array = yes
+				ingame_init_investment_system = yes
+				research_slot_init_for_country = yes
+				calculate_expected_spending = yes
+				set_popularities = {
+					democratic = 0.0
+					communism = 0.0
+					fascism = 0.0
+					neutrality = 0.0
+					nationalist = 100
+				}
+				set_politics = {
+					ruling_party = nationalist
+					last_election = "1996.12.11"
+					election_frequency = 60
+					elections_allowed = no
+				}
+				start_politics_input = yes
+				set_variable = { party_pop_array^0 = 0 } #Western_Autocracy
+				set_variable = { party_pop_array^1 = 0 } #conservatism
+				set_variable = { party_pop_array^2 = 0 } #liberalism
+				set_variable = { party_pop_array^3 = 0 } #socialism
+				set_variable = { party_pop_array^4 = 0 } #Communist-State
+				set_variable = { party_pop_array^5 = 0 } #anarchist_communism
+				set_variable = { party_pop_array^6 = 0 } #Conservative
+				set_variable = { party_pop_array^7 = 0 } #Autocracy
+				set_variable = { party_pop_array^8 = 0 } #Mod_Vilayat_e_Faqih
+				set_variable = { party_pop_array^9 = 0 } #Vilayat_e_Faqih
+				set_variable = { party_pop_array^10 = 0 } #Kingdom
+				set_variable = { party_pop_array^11 = 0 } #Caliphate
+				set_variable = { party_pop_array^12 = 0 } #Neutral_Muslim_Brotherhood
+				set_variable = { party_pop_array^13 = 0 } #Neutral_Autocracy
+				set_variable = { party_pop_array^14 = 0 } #Neutral_conservatism
+				set_variable = { party_pop_array^15 = 0 } #oligarchism
+				set_variable = { party_pop_array^16 = 0 } #Neutral_Libertarian
+				set_variable = { party_pop_array^17 = 0 } #Neutral_green
+				set_variable = { party_pop_array^18 = 0 } #neutral_Social
+				set_variable = { party_pop_array^19 = 0 } #Neutral_Communism
+				set_variable = { party_pop_array^20 = 0 } #Nat_Populism
+				set_variable = { party_pop_array^21 = 0 } #Nat_Fascism
+				set_variable = { party_pop_array^22 = 1.0 } #Nat_Autocracy
+				set_variable = { party_pop_array^23 = 0 } #Monarchist
+				add_to_array = { ruling_party = 22 }
+				startup_politics = yes	
+				create_country_leader = {
+					name = "川渝军区司令部"
+					picture = "NpcC.dds"
+					expire = "2222.1.1"
+					ideology = Nat_Autocracy
+					traits = {}
+				}
+			}
+		}
+	}
+	option = {
+	name = CHI_ER_start.4.o2
+	ai_chance = { factor = 60 }
+	set_country_flag = 	CHI_shanghaicommune
+	custom_effect_tooltip = CHI_change_forward_cl_tt
+	add_political_power = -200
+	}
+}
+
+country_event = {
+	id = CHI_ER_start.5
+	title = CHI_ER_start.5.t
+	desc = CHI_ER_start.5.d
+	#最新注释
+picture= GFX_maopaiyouxing
+
+	is_triggered_only = yes
+	
+	option = {	
+		name = CHI_ER_start.5.o1
+		ai_chance = {factor = 10 }
+	}
+}
+
+country_event = {
+	id = CHI_ER_BEFORE_guang.01
+	title = CHI_ER_BEFORE_guang.01.t
+	desc = CHI_ER_BEFORE_guang.01.d
+	#picture = GFX_event_pictures_CW_D_event1
+	trigger = { tag = CHI has_completed_focus = CHI_Three_represents }
+	fire_only_once = yes
+
+	option = {	
+		name = CHI_ER_BEFORE_guang.01.a
+		add_stability = -0.001
+	}
+}
+
 
 country_event = {
 	id = CHI_ER_BEFORE_guang.01
