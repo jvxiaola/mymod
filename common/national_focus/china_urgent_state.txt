@@ -40,7 +40,13 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		completion_reward = { custom_effect_tooltip = CHI_return_to_ideal_heart_effect_tt }
+		completion_reward = { 
+			custom_effect_tooltip = CHI_return_to_ideal_heart_effect_tt 
+			hidden_effect = {
+				#country_event = { id = prc1.54 days = 3 }
+				#country_event = { id = prc1.56 days = 15 }
+			}
+		}
 	}
 
 	focus = {

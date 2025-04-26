@@ -534,50 +534,18 @@ focus = {
 		id = CHI_break_term_limits
 		icon = backstab
 		x = 0
-		y = 7
+		y = 9
 		cost = 5
 		relative_position_id = CHI_zhengzhigaige		
-		mutually_exclusive = {focus = CHI_paving_the_way_for_successors}
 		allow_branch = {
-			always = no
-			#NOT = {
- 				#OR = {
-					#has_country_leader = { name = "江泽民" }
-					#has_completed_focus = CHI_paving_the_way_for_successors
-					#has_country_flag = CPC_Rehabilitation_of_Zhao_Ziyang
-				#}
-			#}
-
+			has_country_flag = debug
 		}
 		bypass = {}
-				prerequisite = {
-					focus = CHI_kuodachukou
-					focus = CHI_kuodaneixu
-			}
-			available = {}
-				ai_will_do = {
-			factor = 50
-		}
-
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		available = {}
+		ai_will_do = { factor = 50 }
 		available_if_capitulated = no
-		completion_reward = {
-			add_stability = -0.1
-			mark_focus_tree_layout_dirty = yes
-				hidden_effect = {
-				}
-			}
+		completion_reward = {}
 		}
-
-
-
-
-	
-
-
-
 
 		focus = {
 			id = CHI_zuzhiguoqigaige
@@ -625,35 +593,12 @@ focus = {
 		y = 1
 		cost = 5
 		relative_position_id = CHI_break_term_limits	
-		bypass = {}
-		allow_branch = {
-			NOT = {
-			has_country_flag = CPC_Rehabilitation_of_Zhao_Ziyang
-				}
-		has_completed_focus = CHI_break_term_limits
-		}
-
-				prerequisite = {
+		prerequisite = {
 			focus = CHI_break_term_limits
 			}
-			available = 
-			{
-			}
-				ai_will_do = {
-			factor = 50
-		}
-
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 		completion_reward = {
-			hidden_effect = {
-				country_event ={id = prc1.158 days = 10 }
-				country_event ={id = prc1.82 days = 20 }
-				country_event ={id = prc1.159 days = 25 }
-			}
-			country_event=prc1.157
+			
+			
 		}
 		}	
 
@@ -670,43 +615,10 @@ prerequisite = {
 }
 
 		cost = 4
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		available = {
-			
-		
-
-		
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-	select_effect = {
-add_stability = -0.05
-	}
 	completion_reward = {	
 custom_effect_tooltip = CHI_cpchuiyi_tt	
-hidden_effect = {
+hidden_effect = {	
 if = {
-limit = {
-check_variable = {
-    CPC_Left > CPC_Right
-}
-}
-		country_event = {id = prc1.81 days = 10}
-		add_political_power = 100
-	
-
-}	
-else_if = {
 limit = {
 check_variable = {
     CPC_Left < CPC_Right
@@ -714,23 +626,8 @@ check_variable = {
 
 }
 		country_event = {id = prc1.96 days = 10}
-add_10_western_liberalism = yes
-add_5_emerging_reactionary = yes
-add_to_variable = {
-var = CPC_Right
-value = 0.10
-}
-add_to_variable = {
-var = CPC_Dengist
-value = 0.05
-}
-add_to_variable = {
-var = CPC_Left
-value = -0.10
 }
 }
-}
-mark_focus_tree_layout_dirty = yes
 	
 	}
 	}
@@ -746,29 +643,7 @@ prerequisite = { focus = CHI_cpchuiyi }
 		ai_will_do = {
 			factor = 5
 		}
-		allow_branch = {
-has_completed_focus = CHI_cpchuiyi
-NOT = {
-has_country_flag = CPC_Rehabilitation_of_Zhao_Ziyang
-}
-
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 select_effect = {
-
-country_event ={id =  prc1.54 days = 3 }
-country_event ={id =  prc1.56 days = 15 }
-
 }
 		completion_reward = {	
 		set_temp_variable = { temp_opinion = -5 }
@@ -862,29 +737,6 @@ prerequisite = { focus = CHI_antir }
 relative_position_id = CHI_support_the_left
 prerequisite = { focus = CHI_jjdz }
 		cost = 4
-
-		ai_will_do = {
-			factor = 5
-		}
-		allow_branch = {
-has_completed_focus = CHI_cpchuiyi
-NOT = {
-has_country_flag = CPC_Rehabilitation_of_Zhao_Ziyang
-}
-
-
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 		completion_reward = {	
 	add_political_power = 100
 	custom_effect_tooltip = ban_cpczyzy
@@ -942,69 +794,6 @@ prerequisite = { focus = CHI_pjjdz }
 		}
 		}
 
-
-
-
-
-
-
-
-
-	#	focus = {
-	#		id = CHI_annex_Hon
-	#		icon = hong_kong
-	#		x = 0
-	#		y = 5
-#	relative_position_id = CHI_support_the_left
-#	prerequisite = { 
-
-	#	focus = CHI_qcfb 
-	#}
-	#	prerequisite = { 
-	#	focus = CHI_zdyd 
-	#	}
-	#	prerequisite = { 
-#		focus = CHI_jdzcjj
-		
-#	}
-
-		
-	
-		#	cost = 4
-	
-		#	ai_will_do = {
-	#			factor = 5
-		#	}
-	
-	#		available = {
-	
-		#	}
-	
-		#	bypass = {
-	
-		#	}
-	
-		#	completion_reward = {	
-			#add_state_core = 595
-			#add_state_core = 1106
-		#annex_country = {
-		#target = HKG
-		#transfer_troops = yes
-		#}
-		#annex_country = {
-		#target = MAC
-		#transfer_troops = yes
-		#}
-		
-		
-		#	}
-	#	}
-
-
-		
-
-		
-	
 
 			focus = {
 		id = CHI_djzcjj
@@ -1066,7 +855,7 @@ prerequisite = {
 		}
 							set_temp_variable = { temp_opinion = -5 }
 			change_industrial_conglomerates_opinion = yes
-			country_event = prc1.156
+			
 		}
 		}
 
@@ -1169,7 +958,7 @@ prerequisite = { focus = CHI_djzcjj }
 		set_country_flag = CHI_qinxi
 		custom_effect_tooltip = CHI_2CW
 		hidden_effect = {
-			country_event = { id = prc1.57 days = 3 }
+			
 		}
 		}
 		}
@@ -1180,8 +969,7 @@ prerequisite = { focus = CHI_djzcjj }
 		x = 0
 		y = 7
 		cost = 3
-		relative_position_id = CHI_zhengzhigaige		
-		mutually_exclusive = { focus = CHI_break_term_limits }
+		relative_position_id = CHI_zhengzhigaige
 		available = {
 			CHI_difference_ROAD_trigger = yes
 		}
