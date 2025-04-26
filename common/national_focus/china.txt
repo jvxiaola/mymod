@@ -794,71 +794,6 @@ prerequisite = { focus = CHI_pjjdz }
 		}
 		}
 
-
-			focus = {
-		id = CHI_djzcjj
-		icon = class_war
-		x = 0
-		y = 5
-relative_position_id = CHI_support_the_left
-
-prerequisite = { 
-
-	focus = CHI_annex_Hon
-}
-
-prerequisite = { 
-
-	focus = CHI_qcfb 
-}
-	prerequisite = { 
-	focus = CHI_zdyd 
-	}
-	prerequisite = { 
-	focus = CHI_jdzcjj
-	
-}
-
-		cost = 4
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {	
-		add_political_power = 50
-		add_stability = -0.05
-				add_popularity = {
-					ideology = communism
-					popularity = 0.05
-				}
-				add_to_variable = {
-					var = party_pop_array^4
-					value = 0.05
-				}
-				recalculate_party = yes
-		CHI_work_up = yes
-		remove_ideas = CHI_big_layoff1
-		hidden_effect = {
-		remove_ideas = CHI_big_layoff2
-		}
-							set_temp_variable = { temp_opinion = -5 }
-			change_industrial_conglomerates_opinion = yes
-			
-		}
-		}
-
 			focus = {
 		id = CHI_lalongsc
 		icon = communist_army
@@ -929,39 +864,7 @@ set_country_flag =  CHI_38jituan
 }
 		}
 		}
-focus = {
-		id = CHI_xfzr
-		icon = Preemptive_cpc
-		x = 0
-		y = 6
-relative_position_id = CHI_support_the_left
 
-prerequisite = { focus = CHI_djzcjj }
-		cost = 5
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {	
-		set_country_flag = CHI_qinxi
-		custom_effect_tooltip = CHI_2CW
-		hidden_effect = {
-			
-		}
-		}
-		}
 
 	focus = {
 		id = CHI_paving_the_way_for_successors
