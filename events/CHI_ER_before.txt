@@ -17,13 +17,13 @@ country_event = {
 			expire = "3000.1.1"
 			ideology = Chinese_Socialism
 			traits = { political_vacuum }
+			load_focus_tree = CHI_urgent_focus
 		}
 		hidden_effect = {
 			country_event = { id = prc1.159 days = 25 }
 			country_event = { id = prc1.81 days = 30 } #左翼人士变动
 			country_event = { id = CHI_ER_start.2 days = 4 }
 			#country_event = { id = prc1.57 days = 3 } 中超开赛
-			
 			434 = { set_state_flag = CHI_Left_State }
 			548 = { set_state_flag = CHI_Left_State }
 			549 = { set_state_flag = CHI_Left_State }
@@ -90,10 +90,6 @@ country_event = {
 				}
 			}
 			puppet = DSC
-			DSC = {
-				DSC_Legal_amendments_dynamic_scriptes = yes
-				add_dynamic_modifier = { modifier = DSC_Legal_amendments_dynamic }
-			}
 			transfer_units_fraction= {
 				target = DSC
 				size = 0.20
@@ -103,6 +99,8 @@ country_event = {
 			}
 			random_army_leader = { set_nationality = DSC }
 			DSC = {
+				DSC_Legal_amendments_dynamic_scriptes = yes
+				add_dynamic_modifier = { modifier = DSC_Legal_amendments_dynamic }
 				set_variable = { civilian_factory_employment_var = 1 }
 				set_variable = { naval_factory_employment_var = 1 }
 				set_variable = { military_factory_employment_var = 1 }

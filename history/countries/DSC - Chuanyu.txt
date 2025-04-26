@@ -4,8 +4,6 @@ capital = 583
 
 2000.1.1 = {
 	set_cosmetic_tag = DSC_JGQ
-
-
 	if = {
 		limit = { has_dlc = "No Step Back" }
 		set_oob = "CHI_2000_nsb"
@@ -111,7 +109,6 @@ capital = 583
 		pluralist
 		water_shortages_3
 			CHI_low_end_manufacturing
-			
 			nuclear_power_def
 			semi_consumption_economy
 			defence_02
