@@ -1,0 +1,10 @@
+CHI_difference_ROAD_trigger = {
+	OR = {
+		date > 2002.9.1
+		OR = {
+			check_variable = { CPC_Dengist < CPC_Right}
+			check_variable = { CPC_Dengist < CPC_Left}
+		}
+	}
+	has_country_leader = { name = "江泽民" }
+}

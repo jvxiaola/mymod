@@ -282,6 +282,19 @@ CHI_Public_ownership_economy_end_effect = {
 	set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.1 } change_DSC_Socialist_Construction_dynamic13 = yes change_DSC_Socialist_Construction_dynamic14 = yes
 	increase_economic_growth = yes
 }
+
+#紧急状态
+CHI_URGENT_state = {
+  if = {
+    limit = {
+      OR = {
+      check_variable = { CPC_Dengist < CPC_Right}
+      check_variable = { CPC_Dengist < CPC_Left}
+      }
+    }
+    hidden_effect={	country_event = { id = prc1.102 days = 15 } }
+  }
+}
 #省份及地块划分
 CHI_state_recognize_start = {
   CHI_add_State_guangdong = yes CHI_add_State_jiangsu = yes  CHI_add_State_shandong = yes
