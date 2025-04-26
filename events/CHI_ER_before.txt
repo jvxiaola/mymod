@@ -36,7 +36,7 @@ country_event = {
 	option = {	
 		name = CHI_ER_BEFORE_guang.03.a
 		add_stability = -0.005
-		country_event = { id = CHI_ER_BEFORE_guang.04 days = 4 }
+		country_event = { id = CHI_ER_BEFORE_guang.04 days = 7 }
 	}
 }
 

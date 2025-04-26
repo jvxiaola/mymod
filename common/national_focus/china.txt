@@ -1147,7 +1147,7 @@ focus = {
 		y = 6
 relative_position_id = CHI_support_the_left
 
-prerequisite = {focus = CHI_djzcjj }
+prerequisite = { focus = CHI_djzcjj }
 		cost = 5
 
 		ai_will_do = {
