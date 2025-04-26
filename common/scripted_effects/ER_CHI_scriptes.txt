@@ -291,8 +291,9 @@ CHI_URGENT_state = {
       check_variable = { CPC_Dengist < CPC_Right}
       check_variable = { CPC_Dengist < CPC_Left}
       }
+      has_country_leader = { name = "江泽民" }
     }
-    hidden_effect={	country_event = { id = prc1.102 days = 15 } }
+    hidden_effect = {	country_event = { id = prc1.102 days = 15 } }
   }
 }
 #省份及地块划分

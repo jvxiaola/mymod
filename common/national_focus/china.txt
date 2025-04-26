@@ -1179,7 +1179,7 @@ prerequisite = {focus = CHI_djzcjj }
 		icon = communist_party_of_china
 		x = 0
 		y = 7
-		cost = 2
+		cost = 3
 		relative_position_id = CHI_zhengzhigaige		
 		mutually_exclusive = { focus = CHI_break_term_limits}
 		available = {
@@ -1189,6 +1189,9 @@ prerequisite = {focus = CHI_djzcjj }
 		prerequisite = {
 			focus = CHI_kuodachukou
 			focus = CHI_kuodaneixu
+		}
+		select_effect = {
+			CHI_URGENT_state = yes
 		}
 		ai_will_do = {
 			factor = 500
@@ -1202,8 +1205,6 @@ prerequisite = {focus = CHI_djzcjj }
 		completion_reward = {
 			if = {
 				limit = { has_country_flag = CHI_zhunbeirudang }
-				#set_temp_variable = { temp_CHI_people_support = 0.15 }
-				#change_CHI_people_support = yes
 				add_ideas = CHI_zibenjia
 				custom_effect_tooltip = influence_the_party_line_tt
 				add_10_western_liberalism = yes
@@ -1220,8 +1221,6 @@ prerequisite = {focus = CHI_djzcjj }
 				}
 				custom_effect_tooltip = CHI_change_forward_tt
 			}			
-					
-			add_political_power = 100
 			country_event = {id = prc1.26 days = 10}
 			mark_focus_tree_layout_dirty = yes
 		}
