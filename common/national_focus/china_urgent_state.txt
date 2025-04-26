@@ -10,7 +10,7 @@ focus_tree = {
 	focus = {
 		id = CHI_party_split
 		icon = PRC_gov
-		x = 10
+		x = 15
 		y = 1
 		cost = 0
 		ai_will_do = {
@@ -27,7 +27,7 @@ focus_tree = {
 	focus = {
 		id = CHI_return_to_ideal_heart
 		icon = PRC_left_china_front
-		x = -3
+		x = -5
 		y = 1
 		cost = 0.1
 		prerequisite = { focus = CHI_party_split }
@@ -64,8 +64,8 @@ focus_tree = {
 
 	focus = {
 		id = CHI_believers_of_freedom
-		icon = Fight_for_Freedom
-		x = 3
+		icon = blue_democracy
+		x = 5
 		y = 1
 		cost = 0.1
 		prerequisite = { focus = CHI_party_split }
@@ -83,12 +83,131 @@ focus_tree = {
 
 	focus = {
 		id = CHI_establish_left_united_front
-		icon = Fight_for_Freedom
+		icon = communism5
 		x = 0
 		y = 1
 		cost = 0.1
 		prerequisite = { focus = CHI_return_to_ideal_heart }
 		relative_position_id = CHI_return_to_ideal_heart
+		ai_will_do = { factor = 50 }				
+		bypass = { }
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+	}
+
+	focus = {
+		id = CHI_reconcile_with_maoist
+		icon = maoism
+		x = -2
+		y = 1
+		cost = 0.4
+		prerequisite = { focus = CHI_establish_left_united_front }
+		relative_position_id = CHI_establish_left_united_front
+		ai_will_do = { factor = 50 }				
+		bypass = { }
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+	}
+
+	focus = {
+		id = CHI_return_Twowhatever
+		icon = BLR_Communistst_clean
+		x = 0
+		y = 1
+		cost = 0.4
+		prerequisite = { focus = CHI_establish_left_united_front }
+		relative_position_id = CHI_establish_left_united_front
+		ai_will_do = { factor = 50 }				
+		bypass = { }
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+	}
+
+	focus = {
+		id = CHI_unity_left_liberal
+		icon = Fight_for_Freedom
+		x = 2
+		y = 1
+		cost = 0.4
+		prerequisite = { focus = CHI_establish_left_united_front }
+		relative_position_id = CHI_establish_left_united_front
+		ai_will_do = { factor = 50 }				
+		bypass = { }
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+	}
+
+	focus = {
+		id = CHI_authorize_mao_grassroots
+		icon = free_higher_education
+		x = 0
+		y = 1
+		cost = 0.4
+		prerequisite = { focus = CHI_reconcile_with_maoist }
+		relative_position_id = CHI_reconcile_with_maoist
+		ai_will_do = { factor = 50 }				
+		bypass = { }
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+	}
+
+	focus = {
+		id = CHI_ban_military_business
+		icon = blr_nationalize_foreign_business
+		x = 0
+		y = 1
+		cost = 0.4
+		prerequisite = { focus = CHI_return_Twowhatever }
+		relative_position_id = CHI_return_Twowhatever
+		ai_will_do = { factor = 50 }				
+		bypass = { }
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+	}
+
+	focus = {
+		id = CHI_unity_left_liberal
+		icon = Fight_for_Freedom
+		x = 2
+		y = 1
+		cost = 0.4
+		prerequisite = { focus = CHI_establish_left_united_front }
+		relative_position_id = CHI_establish_left_united_front
+		ai_will_do = { factor = 50 }				
+		bypass = { }
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+	}
+
+	focus = {
+		id = CHI_anti_bureaucratic_corruption
+		icon = Generic_Communist_Propaganda02
+		x = 0
+		y = 1
+		cost = 0.4
+		prerequisite = { focus = CHI_unity_left_liberal }
+		relative_position_id = CHI_unity_left_liberal
 		ai_will_do = { factor = 50 }				
 		bypass = { }
 	
