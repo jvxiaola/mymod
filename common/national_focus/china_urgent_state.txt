@@ -216,4 +216,75 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
 	}
+
+	focus = {
+		id = CHI_Military_issues
+		icon = army_marching
+		x = 0
+		y = 1
+		cost = 0.4
+		prerequisite = { focus = CHI_ban_military_business }
+		prerequisite = { focus = CHI_authorize_mao_grassroots }
+		prerequisite = { focus = CHI_anti_bureaucratic_corruption }
+		relative_position_id = CHI_ban_military_business
+		ai_will_do = { factor = 50 }				
+		bypass = { }
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+	}
+
+	focus = {
+		id = CHI_co_opt_officer
+		icon = army_russia_officer_shool
+		x = -1
+		y = 1
+		cost = 0.4
+		prerequisite = { focus = CHI_Military_issues }
+		relative_position_id = CHI_Military_issues
+		ai_will_do = { factor = 50 }				
+		bypass = { }
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+	}
+
+	focus = {
+		id = CHI_enhance_political_commissars
+		icon = communist_army
+		x = 1
+		y = 1
+		cost = 0.4
+		prerequisite = { focus = CHI_Military_issues }
+		relative_position_id = CHI_Military_issues
+		ai_will_do = { factor = 50 }				
+		bypass = { }
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+	}
+
+	focus = {
+		id = CHI_raise_soldier_salaries
+		icon = dollars_money
+		x = 0
+		y = 2
+		cost = 0.4
+		prerequisite = { focus = CHI_Military_issues }
+		relative_position_id = CHI_Military_issues
+		ai_will_do = { factor = 50 }				
+		bypass = { }
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+	}
+
 }
