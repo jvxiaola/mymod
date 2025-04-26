@@ -37,7 +37,7 @@ country_event = {
 		
 			option = {
 				
-				ai_chance = {factor=100}
+				ai_chance = { factor = 100 }
 
 				name = Chuanyu.2.a.o1
 				add_ideas = CHI_Strict_military_control
@@ -46,8 +46,9 @@ country_event = {
 
 				}
 			option = {
-				ai_chance = {factor=1}
+				ai_chance = { factor = 1 }
 				name = Chuanyu.2.a.o2
+				custom_effect_tooltip = CHI_change_forward_mao_tt
 				add_ideas =  CHI_Strict_military_control
 				set_country_flag = chuanyumaopai
 				set_political_power = 0
@@ -474,7 +475,7 @@ country_event = {
 
 		}
 		CHI_ruin_industry_add = yes
-	clear_array = global.ruined_state
+		clear_array = global.ruined_state
 	
 	#添加农业损伤精神
 
@@ -489,14 +490,14 @@ country_event = {
 	}
 		CHI_ruin_agriculture_add = yes
 		clear_array = global.ruined_agriculture_state
-	add_ideas = p5_member
-	custom_effect_tooltip = change_rebuild_focus_tree_tt
-	hidden_effect = {
-		set_country_flag = rehabilitate_economy
-		mark_focus_tree_layout_dirty = yes
-		clr_global_flag = Ccw
-		clr_country_flag = qyxd
-	}
+		add_ideas = p5_member
+		custom_effect_tooltip = change_rebuild_focus_tree_tt
+		hidden_effect = {
+			set_country_flag = rehabilitate_economy
+			mark_focus_tree_layout_dirty = yes
+			clr_global_flag = Ccw
+			clr_country_flag = qyxd
+		}
 		}
 	}
 
