@@ -184,23 +184,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_unity_left_liberal
-		icon = Fight_for_Freedom
-		x = 2
-		y = 1
-		cost = 0.4
-		prerequisite = { focus = CHI_establish_left_united_front }
-		relative_position_id = CHI_establish_left_united_front
-		ai_will_do = { factor = 50 }				
-		bypass = { }
-	
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
-	}
-
-	focus = {
 		id = CHI_anti_bureaucratic_corruption
 		icon = Generic_Communist_Propaganda02
 		x = 0
