@@ -711,32 +711,6 @@ has_government = communism		}
 	}
 }
 
-#Restored Republic
-news_event = { 
-	id = mdardchina_news.19
-	title = mdardchina_news.19.t
-	desc = mdardchina_news.19.d
-	picture = GFX_news_event_chinese_protestors
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = { #Good luck!
-		name = mdardchina_news.19.o1
-		trigger = { 
-			has_democratic_form_of_government = yes
-		}
-	}
-	
-	option = { #Worrisome
-		name = mdardchina_news.19.o2
-		trigger = {
-			has_democratic_form_of_government = no
-		}
-	}
-	
-}
 
 #New Republic
 news_event = { 

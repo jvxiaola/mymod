@@ -1673,105 +1673,6 @@ value = -0.025
 }
 }		
 }
-PRC_The_Second_Great_Proletarian_Cultural_Revolution_1 = {
-		ai_will_do = {
-			factor = 20
-		}
-
-		days_remove = 90
-		fire_only_once = yes
-available = {
-has_country_leader = {name = "薄熙来"  }
-has_completed_focus = PRC_The_Second_Great_Proletarian_Cultural_Revolution
-}
-		cost = 100
-
-		modifier = {
-	political_power_gain = -0.10	
-		}
-remove_effect = {
-add_ideas = PRC_The_Second_Great_Proletarian_Cultural_Revolution_1
-add_10_emerging_left_wing_radical = yes
-
-add_to_variable = {
-var = CPC_Right
-value = -0.025
-}
-add_to_variable = {
-var = CPC_Dengist
-value = -0.025
-}
-}		
-}
-PRC_The_Second_Great_Proletarian_Cultural_Revolution_2 = {
-		ai_will_do = {
-			factor = 20
-		}
-visible = {
-has_idea = PRC_The_Second_Great_Proletarian_Cultural_Revolution_1
-}
-		days_remove = 90
-available = {
-has_country_leader = {name = "薄熙来"  }
-has_completed_focus = PRC_The_Second_Great_Proletarian_Cultural_Revolution
-}
-		cost = 100
-		fire_only_once = yes
-
-		modifier = {
-	political_power_gain = -0.10	
-		}
-remove_effect = {
-swap_ideas = {
-add_idea = PRC_The_Second_Great_Proletarian_Cultural_Revolution_2
-remove_idea = PRC_The_Second_Great_Proletarian_Cultural_Revolution_1
-}
-add_10_emerging_left_wing_radical = yes
-
-add_to_variable = {
-var = CPC_Right
-value = -0.025
-}
-add_to_variable = {
-var = CPC_Dengist
-value = -0.025
-}
-}		
-}
-PRC_The_Second_Great_Proletarian_Cultural_Revolution_3 = {
-		ai_will_do = {
-			factor = 20
-		}
-visible = {
-has_idea = PRC_The_Second_Great_Proletarian_Cultural_Revolution_2
-}
-		days_remove = 90
-available = {
-has_country_leader = {name = "薄熙来"  }
-has_completed_focus = PRC_The_Second_Great_Proletarian_Cultural_Revolution
-}
-		cost = 100
-		fire_only_once = yes
-		modifier = {
-	political_power_gain = -0.10	
-		}
-remove_effect = {
-swap_ideas = {
-add_idea = PRC_The_Second_Great_Proletarian_Cultural_Revolution_3
-remove_idea = PRC_The_Second_Great_Proletarian_Cultural_Revolution_2
-}
-add_10_emerging_left_wing_radical = yes
-
-add_to_variable = {
-var = CPC_Right
-value = -0.025
-}
-add_to_variable = {
-var = CPC_Dengist
-value = -0.025
-}
-}
-}
 CHI_Wartime_Centralization = {
 		ai_will_do = {
 			factor = 20
@@ -6580,7 +6481,6 @@ south_china_sea_category = {
 				controls_state = 802
 			}
 			NOT = { controls_state = 816 }
-			has_completed_focus = CHI_Ramp_Up_Tensions
 			NOT = { has_country_flag = confrontation_VIE }
 			NOT = { has_country_flag = confrontation_PHI }
 		}
@@ -6678,7 +6578,6 @@ south_china_sea_category = {
 		visible = {
 			controls_state = 526
 			NOT = { controls_state = 802 }
-			has_completed_focus = CHI_Ramp_Up_Tensions
 			NOT = { has_country_flag = confrontation_VIE }
 			NOT = { has_country_flag = confrontation_MAY }
 		}
@@ -6751,7 +6650,6 @@ south_china_sea_category = {
 		visible = {
 			controls_state = 526
 			NOT = { controls_state = 801 }
-			has_completed_focus = CHI_Ramp_Up_Tensions
 			NOT = { has_country_flag = confrontation_MAY }
 			NOT = { has_country_flag = confrontation_PHI }
 		}
@@ -7088,7 +6986,6 @@ one_china_category = {
 		visible = {
 			original_tag = CHI
 			has_completed_focus = CHI_Gain_Support_of_Military_Elements
-			NOT = { has_completed_focus = CHI_The_Fifth_Column }
 		}
 
 		custom_cost_trigger = {

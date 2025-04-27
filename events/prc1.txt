@@ -297,17 +297,16 @@ remove_ideas = ASEAN_Member
 
 	option = {	#never!
 		name = prc1.5.o2
-
-		ai_chance = {
-			factor = 5
 		CHI = {
 			create_wargoal = {
 				type = topple_government
 				target = ROOT
 			}
 		}
-
+		ai_chance = {
+			factor = 5
 	}
+
 	}
 	}
 country_event = {
@@ -557,7 +556,6 @@ country_event = {
 	CHI = { add_opinion_modifier = { target = RAJ modifier = large_decrease }}
 	NEP = { add_opinion_modifier = { target = RAJ modifier = recent_actions_positive }}
 	BHU = { add_opinion_modifier = { target = RAJ modifier = recent_actions_positive }}
-	MYA = { add_opinion_modifier = { target = RAJ modifier = recent_actions_positive }}
 
 	news_event = {
 			hours = 6
@@ -718,9 +716,7 @@ country_event = {
 		trigger = { NOT = { HKG = { has_idea = Limited_Universal_Suffrage } } }
 		if = {
 			limit = { has_idea = communist_cadres }
-			visually_display_opinion_rise_communist_cadres = yes
 			set_country_flag = current_communist_cadres
-			increase_internal_faction_opinion = yes
 		}
 		add_popularity = {
 			ideology = communism
@@ -799,9 +795,7 @@ country_event = {
 		name = prc1.62.c #The Hong Kong people should choose their leaders
 		if = {
 			limit = { has_idea = communist_cadres }
-			visually_display_opinion_fall_communist_cadres = yes
 			set_country_flag = current_communist_cadres
-			decrease_internal_faction_opinion = yes
 		}
 		add_popularity = {
 			ideology = communism
@@ -875,9 +869,7 @@ country_event = {
 		name = prc1.63.b #Hong Kong will return to our control
 		if = {
 			limit = { has_idea = communist_cadres }
-			visually_display_opinion_rise_communist_cadres = yes
 			set_country_flag = current_communist_cadres
-			increase_internal_faction_opinion = yes
 		}
 		custom_effect_tooltip = TAI_reunification_less_likely_tt
 		add_popularity = {
@@ -3403,76 +3395,6 @@ country_event = {	#Ultimate of Khalkha
 }
 
 #########################################################################################################################################################################
-
-#The North Korean Question
-country_event = {
-	id = prc1.13005
-	title = prc1.13005.t
-	desc = prc1.13005.d
-	picture = GFX_report_event_nk_question
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = prc1.13005.a
-        diplomatic_relation = { country = PRK relation = guarantee active = no }
-		set_country_flag = removedprkguarantee
-		
-		ai_chance = {
-			factor = 50
-		}
-	}
-	
-	option = {
-		name = prc1.13005.b
-		give_military_access = PRK
-		PRK = { give_military_access = CHI }
-		
-		ai_chance = {
-			factor = 50
-		}
-	}
-}
-
-#Intervention to Secure Korea
-country_event = {
-	id = prc1.13006
-	title = prc1.13006.t
-	desc = prc1.13006.d
-	picture = GFX_report_event_china_invervention
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = prc1.13006.a
-        declare_war_on = { target = PRK type = annex_everything }
-		
-		ai_chance = {
-			factor = 20
-		}
-	}
-	
-	option = {
-		name = prc1.13006.b
-		declare_war_on = { target = USA type = annex_everything }
-		give_military_access = PRK
-		PRK = { give_military_access = CHI }
-		
-		ai_chance = {
-			factor = 20
-		}
-	}
-	
-	option = {
-		name = prc1.13006.c
-		
-		ai_chance = {
-			factor = 60
-		}
-	}
-}
-
-#Japan - China demands Ryukyu
 
 country_event = {
 	id = prc1.37
@@ -6677,19 +6599,6 @@ option = {	#We accept!
 					name = prc1.126.o1
 			set_temp_variable = { temp_CHI_people_support = 0.1 }
 			change_CHI_people_support = yes
-					ai_chance = {factor = 20}
-					}
-					}
-			country_event = {
-				id = prc1.127
-				title = prc1.127.t
-				desc = prc1.127.d
-				
-				is_triggered_only = yes
-				
-				option = {	
-					name = prc1.127.o1
-			add_ideas = CHI_The_Fifth_Column
 					ai_chance = {factor = 20}
 					}
 					}												

@@ -161,45 +161,6 @@ army_defence_factor = 0.30
 Chinese_people_support_to_china_government_modifier = 0.08
 }
 }	
-	PRC_The_Second_Great_Proletarian_Cultural_Revolution_1 = {
-			picture = generic_purge
-		allowed = {
-			}
-			
- 	
-			modifier = {
-political_power_factor = 0.10
-stability_factor = -0.10
-war_support_factor = 0.10
-Chinese_people_support_to_china_government_modifier = 0.01
-}
-}	
-	PRC_The_Second_Great_Proletarian_Cultural_Revolution_2 = {
-			picture = generic_purge
-		allowed = {
-			}
-			
- 	
-			modifier = {
-political_power_factor = 0.15
-stability_factor = -0.20
-war_support_factor = 0.15
-Chinese_people_support_to_china_government_modifier = 0.05
-}
-}	
-PRC_The_Second_Great_Proletarian_Cultural_Revolution_3 = {
-			picture = generic_purge
-		allowed = {
-			}
-			
- 	
-			modifier = {
-political_power_factor = 0.25
-stability_factor = -0.30
-war_support_factor = 0.25
-Chinese_people_support_to_china_government_modifier = 0.08
-}
-}	
 	USA_Anti_Communist_Jihad = {
 			picture = generic_purge
 		allowed = {

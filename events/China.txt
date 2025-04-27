@@ -1074,8 +1074,6 @@ country_event = {
 		name = chi_moon.2.o1
 		log = "[GetDateText]: [This.GetName]: chi_moon.2.o1 executed"
 		add_political_power = -10
-		add_0_25_Republican_popularity = yes
-		add_0_25_Nat_Populism_popularity = yes
 		advance_moon_base = yes
 	}
 }
@@ -1095,7 +1093,6 @@ country_event = {
 		name = chi_moon.3.o1
 		log = "[GetDateText]: [This.GetName]: chi_moon.3.o1 executed"
 		add_political_power = 20
-		add_0_25_Nat_Populism_popularity = yes
 		advance_moon_base = yes
 		swap_ideas = {
 			remove_idea = continued_space_efforts5
@@ -1119,8 +1116,6 @@ country_event = {
 		name = chi_moon.4.o1
 		log = "[GetDateText]: [This.GetName]: chi_moon.4.o1 executed"
 		add_political_power = -75
-		subtract_0_5_Republican_popularity = yes
-		subtract_1_Nat_Populism_popularity = yes
 		advance_moon_base = yes
 	}
 	option = { #Abandon the project. It's not meant for us
@@ -1128,7 +1123,6 @@ country_event = {
 		log = "[GetDateText]: [This.GetName]: chi_moon.4.o2 executed"
 		add_political_power = 25
 		subtract_0_25_Republican_popularity = yes
-		subtract_1_Nat_Populism_popularity = yes
 	}
 }
 
@@ -1147,7 +1141,6 @@ country_event = {
 		name = chi_moon.5.o1
 		log = "[GetDateText]: [This.GetName]: chi_moon.5.o1 executed"
 		add_political_power = 30
-		add_0_25_Nat_Populism_popularity = yes
 		advance_moon_base = yes
 		swap_ideas = {
 			remove_idea = continued_space_efforts6
@@ -1173,8 +1166,6 @@ country_event = {
 		add_political_power = -100
 		set_temp_variable = { treasury_change = -5 }
 		modify_treasury_effect = yes
-		subtract_0_5_Republican_popularity = yes
-		subtract_1_Nat_Populism_popularity = yes
 		advance_moon_base = yes
 	}
 	option = { #We can't continue doing things like this.
@@ -1182,7 +1173,6 @@ country_event = {
 		log = "[GetDateText]: [This.GetName]: chi_moon.6.o2 executed"
 		add_political_power = 50
 		subtract_0_25_Republican_popularity = yes
-		subtract_1_Nat_Populism_popularity = yes
 	}
 }
 
