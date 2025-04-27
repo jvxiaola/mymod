@@ -7403,8 +7403,6 @@ NOT = {
 				name = china_news.23.t
 			}
 			news_event = china_news.23
-			set_temp_variable = { modify_chinese_aggression = 2 }
-			CHI_modify_chinese_aggression = yes
 		}
 		}
 focus = {
@@ -7450,8 +7448,6 @@ NOT = {
 				threat = 5
 				name = PRC_Make_Taiwan_an_isolated_island
 			}
-			set_temp_variable = { modify_chinese_aggression = 5 }
-			CHI_modify_chinese_aggression = yes
 		}
 		}		
 focus = {
@@ -7547,8 +7543,6 @@ NOT = {
 					add_idea = legacy_of_1949_1
 				}
 			}
-			set_temp_variable = { modify_chinese_aggression = -2 }
-			CHI_modify_chinese_aggression = yes
 }
 }		
 focus = {

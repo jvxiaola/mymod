@@ -13,7 +13,6 @@ focus_tree = {
 	shared_focus = PRC_computer
 	shared_focus = CHI_Chinese_Megaprojects
 	shared_focus = CHI_Strategic_Industries
-	shared_focus = XIN_troubled_times
 
 	@national_interests_tree = 30
 	@tibet_tree = 28
@@ -93,31 +92,19 @@ focus_tree = {
 				y = 4
 				cost = 4
 				relative_position_id = CHI_zhengzhigaige
-						prerequisite = {
+				prerequisite = {
 					focus = CHI_condemn_United_States
-					focus= CHI_Support_the_War_on_Terror
-					}
-						ai_will_do = {
-					factor = 50
+					focus = CHI_Support_the_War_on_Terror
 				}
-				allow_branch = {
-					has_country_leader = {name="江泽民"}
-				NOT = {
-		has_country_flag = CPC_Rehabilitation_of_Zhao_Ziyang
-		}
-				}
-							bypass = {
-		
-				}
-		
+				ai_will_do = { factor = 50 }
+				bypass = {}
 				cancel_if_invalid = yes
 				continue_if_invalid = no
 				available_if_capitulated = no
-		completion_reward = {
-		add_political_power = 100
-	
+				completion_reward = {
+					add_political_power = 100
 				}
-				}
+			}
 			
 
 			focus = {
@@ -2685,8 +2672,6 @@ OR = {
 					add_ideas = sco_member_econ
 				}
 			}
-			set_temp_variable = { modify_chinese_aggression = -1 }
-			CHI_modify_chinese_aggression = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Emphasize_Economic_Cooperation executed"
 		}
 
@@ -2758,8 +2743,6 @@ OR = {
 
 		completion_reward = {
 			custom_effect_tooltip = CHI_development_assistance_tt
-			set_temp_variable = { modify_chinese_aggression = 1 }
-			CHI_modify_chinese_aggression = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Development_Assistance executed"
 		}
 
@@ -2944,8 +2927,6 @@ OR = {
 					add_ideas = sco_member_mil
 				}
 			}
-			set_temp_variable = { modify_chinese_aggression = 1 }
-			CHI_modify_chinese_aggression = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Emphasize_Military_Cooperation executed"
 		}
 
@@ -3063,8 +3044,6 @@ OR = {
 
 		completion_reward = {
 			custom_effect_tooltip = SCO_drills_effective_tt
-			set_temp_variable = { modify_chinese_aggression = 1 }
-			CHI_modify_chinese_aggression = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Strengthen_Security_Framework executed"
 		}
 
@@ -3108,8 +3087,6 @@ OR = {
 			every_country = {
 				news_event = { id = sco.9 }
 			}
-			set_temp_variable = { modify_chinese_aggression = 2 }
-			CHI_modify_chinese_aggression = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Chinese_Dominance executed"
 		}
 
@@ -3191,8 +3168,6 @@ OR = {
 					add_ideas = sco_member
 				}
 			}
-			set_temp_variable = { modify_chinese_aggression = -1 }
-			CHI_modify_chinese_aggression = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_ASEAN_Integration executed"
 		}
 
@@ -3224,8 +3199,6 @@ OR = {
 				limit = { has_idea = ASEAN_Member }
 				unlock_decision_category_tooltip = sco_category
 			}
-			set_temp_variable = { modify_chinese_aggression = 1 }
-			CHI_modify_chinese_aggression = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Undermine_ASEAN executed"
 		}
 
@@ -3255,8 +3228,6 @@ OR = {
 				limit = { OR = { is_sco = yes } }
 				generic_grant_2_percent_influence_of_CHI = yes
 			}
-				set_temp_variable = { modify_chinese_aggression = 1 }
-			CHI_modify_chinese_aggression = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Exploit_Economic_Clout executed"
 		}
 
@@ -3302,8 +3273,6 @@ OR = {
 				}
 				country_event = { days = 2 id = sco.10 }
 			}
-			set_temp_variable = { modify_chinese_aggression = 1 }
-			CHI_modify_chinese_aggression = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Split_CSTO executed"
 		}
 
@@ -3587,8 +3556,6 @@ OR = {
 				limit = { YEM = { OR = { has_idea = sco_member has_idea = sco_member_pol has_idea = sco_member_mil } NOT = { is_in_faction_with = CHI } } }
 				CHI = { add_to_faction = YEM }
 			}
-			set_temp_variable = { modify_chinese_aggression = 5 }
-			CHI_modify_chinese_aggression = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_An_Alliance_to_Rival_NATO executed"
 		}
 
@@ -3614,8 +3581,6 @@ OR = {
 		}
 
 		completion_reward = {
-			set_temp_variable = { modify_chinese_aggression = -1 }
-			CHI_modify_chinese_aggression = yes
 			log = "[GetDateText]: [This.GetName]: CHI_Forum_on_China_African_Cooperation executed"
 		}
 
@@ -3652,8 +3617,6 @@ OR = {
 				}
 				generic_grant_1_percent_influence_of_CHI = yes
 			}
-			set_temp_variable = { modify_chinese_aggression = -1 }
-			CHI_modify_chinese_aggression = yes
 			log = "[GetDateText]: [This.GetName]: CHI_China_Africa_Development_Fund executed"
 		}
 
@@ -3765,8 +3728,6 @@ set_temp_variable = { debt_change = 2 }
 			modify_debt_effect = yes
 				}
 			}
-			set_temp_variable = { modify_chinese_aggression = -1 }
-			CHI_modify_chinese_aggression = yes
 		set_temp_variable = { int_investment_change = 40}
 			modify_international_investment_effect = yes	
 	log = "[GetDateText]: [This.GetName]: CHI_Invest_in_Clean_Energy executed"
@@ -3862,8 +3823,6 @@ var = CPC_Left
 value = 0.05
 }			
 			add_ideas = PRC_afcan_work2
-			set_temp_variable = { modify_chinese_aggression = -1 }
-			CHI_modify_chinese_aggression = yes
 			log = "[GetDateText]: [This.GetName]: CHI_Workers_Rights executed"
 		}
 
@@ -3905,8 +3864,6 @@ value = 0.05
 set_temp_variable = { debt_change = 5 }
 			modify_debt_effect = yes
 			}
-				set_temp_variable = { modify_chinese_aggression = -1 }
-			CHI_modify_chinese_aggression = yes
 				set_temp_variable = { int_investment_change = 20}
 			modify_international_investment_effect = yes	
 			log = "[GetDateText]: [This.GetName]: CHI_Agriculture executed"
@@ -3950,8 +3907,6 @@ set_temp_variable = { debt_change = 5 }
 set_temp_variable = { debt_change = 5 }
 			modify_debt_effect = yes
 			}
-				set_temp_variable = { modify_chinese_aggression = -1 }
-			CHI_modify_chinese_aggression = yes
 				set_temp_variable = { int_investment_change = 15}
 			modify_international_investment_effect = yes	
 			log = "[GetDateText]: [This.GetName]: CHI_Develop_Hospitals executed"
@@ -3993,8 +3948,6 @@ set_temp_variable = { debt_change = 5 }
 				}
 				generic_grant_3_percent_influence_of_CHI = yes
 			}
-			set_temp_variable = { modify_chinese_aggression = 2 }
-			CHI_modify_chinese_aggression = yes
 			log = "[GetDateText]: [This.GetName]: CHI_Leverage_Influence executed"
 		}
 
@@ -4050,8 +4003,6 @@ set_temp_variable = { debt_change = -10 }
 set_temp_variable = { debt_change = -10 }
 			modify_debt_effect = yes
 			}
-			set_temp_variable = { modify_chinese_aggression = -2 }
-			CHI_modify_chinese_aggression = yes
 	set_temp_variable = { int_investment_change = -15}
 			modify_international_investment_effect = yes			
 			log = "[GetDateText]: [This.GetName]: CHI_Write_Off_Debts executed"
@@ -4092,8 +4043,6 @@ set_temp_variable = { debt_change = -10 }
 				}
 				add_stability = 0.02
 			}
-			set_temp_variable = { modify_chinese_aggression = -1 }
-			CHI_modify_chinese_aggression = yes
 				set_temp_variable = { int_investment_change = 15}
 			modify_international_investment_effect = yes	
 			log = "[GetDateText]: [This.GetName]: CHI_Friendship_Schools executed"
@@ -4134,8 +4083,6 @@ set_temp_variable = { debt_change = -10 }
 				}
 				add_to_tech_sharing_group = China_Africa_Tech_Share
 			}
-			set_temp_variable = { modify_chinese_aggression = -1 }
-			CHI_modify_chinese_aggression = yes
 				set_temp_variable = { int_investment_change = 15}
 			modify_international_investment_effect = yes	
 			log = "[GetDateText]: [This.GetName]: CHI_Joint_Research executed"
@@ -4179,8 +4126,6 @@ set_temp_variable = { debt_change = -10 }
 								generic_grant_1_percent_influence_of_CHI = yes
 
 			}
-			set_temp_variable = { modify_chinese_aggression = -1 }
-			CHI_modify_chinese_aggression = yes
 				set_temp_variable = { int_investment_change = 50}
 			modify_international_investment_effect = yes	
 			log = "[GetDateText]: [This.GetName]: CHI_TV_and_Internet_Access executed"
@@ -4670,8 +4615,6 @@ available = {
 }
       completion_reward = {
          #gives China claims on neighboring Central Asian states
-			set_temp_variable = { modify_chinese_aggression =  5}
-			CHI_modify_chinese_aggression = yes
          add_state_core = 719
 KAZ = {country_event = prc1.72 }
 		 add_state_core = 720
@@ -4704,9 +4647,7 @@ TRK = { country_event = prc1.5 }
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
       completion_reward = {
-				set_temp_variable = { modify_chinese_aggression = 10 }
-			CHI_modify_chinese_aggression = yes
-add_state_core = 1011
+		 add_state_core = 1011
          add_state_core = 686
          add_state_core = 687
 		 add_state_core = 692
@@ -4735,13 +4676,12 @@ add_state_core = 1011
 		 add_state_core = 681
 		 add_state_core = 680
 		 
-		 			create_wargoal = {
-				type = take_state
-				target = SOV
-				generator = { 686 }
-			}
+		create_wargoal = {
+			type = take_state
+			target = SOV
+			generator = { 686 }
+		}
       }
-
 		ai_will_do = {
 			factor = 10
 		}
@@ -4848,8 +4788,6 @@ add_state_core = 475
 
 		completion_reward = {
 			#Demand India drop disputed claims; can lead to war if India refuses
-			set_temp_variable = { modify_chinese_aggression = 10 }
-			CHI_modify_chinese_aggression = yes
 	create_wargoal = {
 				type = take_state
 				target = RAJ
@@ -4953,8 +4891,7 @@ add_state_core = 475
 		}
 
       completion_reward = {
-			set_temp_variable = { modify_chinese_aggression = 5 }
-			CHI_modify_chinese_aggression = yes
+			set_temp_variable = {
 	     annex_country = { target = MON transfer_troops = yes }
 		 add_state_core = 596
 		 add_state_core = 597
@@ -5178,8 +5115,6 @@ available = {
 
 		completion_reward = {
 		VIE = { country_event = { id = prc1.5 }}
-			set_temp_variable = { modify_chinese_aggression = 5 }
-			CHI_modify_chinese_aggression = yes
 		}
 
 		ai_will_do = {
@@ -5205,8 +5140,6 @@ available = {
 
 		completion_reward = {
 			#CHI gets claims on Burmese border states
-			set_temp_variable = { modify_chinese_aggression = 5 }
-			CHI_modify_chinese_aggression = yes
 			create_wargoal = {
 				type = take_state
 				target = KAC
@@ -5325,8 +5258,7 @@ not = {has_completed_focus = CHI_support_jap}
          focus = CHI_ryukyu_claim
       }
 
-      completion_reward = {		set_temp_variable = { modify_chinese_aggression = 10 }
-			CHI_modify_chinese_aggression = yes
+      completion_reward = {	
 		JAP = { country_event = { id = prc1.5 }}
         
       }
@@ -7344,4 +7276,5 @@ remove_idea = CHI_dppgov1
 
 }
 } 
+	}
 	}

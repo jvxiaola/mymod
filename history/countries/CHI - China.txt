@@ -220,9 +220,6 @@ set_variable = { CHI_Socialist_Construction_dynamic1 = -0.40}
 	set_variable = { the_military_opinion = 60 }
 	set_variable = { industrial_conglomerates_opinion = 80 }
 
-
-	set_variable = { chinese_aggression = 0 }
-
 	#Recognition
 	add_to_array = { global.rival_governments = THIS }
 	set_country_flag = rival_government_TAI

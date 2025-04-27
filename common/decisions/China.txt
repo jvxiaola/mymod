@@ -3833,18 +3833,6 @@ provide_development_assistance = {
 				CHI = { has_government = communism }
 			}
 			modifier = {
-				add = 1
-				check_variable = { Chinese_Aggression < -9 }
-			}
-			modifier = {
-				add = 1
-				check_variable = { Chinese_Aggression < -19 }
-			}
-			modifier = {
-				add = 1
-				check_variable = { Chinese_Aggression < -29 }
-			}
-			modifier = {
 				factor = 0
 				has_war = yes
 			}
@@ -3903,11 +3891,6 @@ provide_development_assistance = {
 
 		ai_will_do = {
 			factor = 0
-			modifier = {
-				add = 1
-				NOT = { has_government = communism }
-				check_variable = { Chinese_Aggression > 19 }
-			}
 			modifier = {
 				add = 10
 				has_war_with = CHI
@@ -4045,14 +4028,6 @@ provide_development_assistance = {
 				has_government = communism
 			}
 			modifier = {
-				add = 1
-				check_variable = { Chinese_Aggression < -19 }
-			}
-			modifier = {
-				add = 1
-				check_variable = { Chinese_Aggression < -29 }
-			}
-			modifier = {
 				factor = 0
 				has_war = yes
 			}
@@ -4106,11 +4081,6 @@ provide_development_assistance = {
 		ai_will_do = {
 			factor = 0
 			modifier = {
-				add = 1
-				NOT = { has_government = communism }
-				check_variable = { Chinese_Aggression > 9 }
-			}
-			modifier = {
 				add = 10
 				has_war_with = CHI
 			}
@@ -4128,12 +4098,6 @@ provide_development_assistance = {
 				add = 10
 				PAK = { is_sco = yes }
 				has_war_with = PAK
-			}
-			modifier = {
-				add = 10
-				original_tag = SOV
-				CHI = { has_completed_focus = CHI_core_national_interests }
-				check_variable = { Chinese_Aggression > 9 }
 			}
 			modifier = {
 				add = 10
@@ -4494,8 +4458,6 @@ south_china_sea_category = {
 						modifier = oil_exploration_disputed
 					}
 				}
-				custom_effect_tooltip = CHI_increase_aggression_1_tt
-				add_to_variable = { chinese_aggression = 1 }
 			}
 			else_if = {
 				limit = { has_country_flag = paracel_deal original_tag = CHI }
@@ -4918,8 +4880,6 @@ south_china_sea_category = {
 						has_country_flag = spratlys_deal_VIE
 					}
 				}
-				custom_effect_tooltip = CHI_increase_aggression_1_tt
-				add_to_variable = { chinese_aggression = 1 }
 			}
 		}
 	}
@@ -5318,8 +5278,6 @@ south_china_sea_category = {
 						has_country_flag = spratlys_deal_VIE
 					}
 				}
-				custom_effect_tooltip = CHI_increase_aggression_1_tt
-				add_to_variable = { chinese_aggression = 1 }
 			}
 		}
 	}
@@ -5717,8 +5675,6 @@ south_china_sea_category = {
 						has_country_flag = spratlys_deal_VIE
 					}
 				}
-				custom_effect_tooltip = CHI_increase_aggression_1_tt
-				add_to_variable = { chinese_aggression = 1 }
 			}
 		}
 	}
@@ -6117,8 +6073,6 @@ south_china_sea_category = {
 						has_country_flag = spratlys_deal_VIE
 					}
 				}
-				custom_effect_tooltip = CHI_increase_aggression_1_tt
-				add_to_variable = { chinese_aggression = 1 }
 			}
 		}
 	}
@@ -6163,12 +6117,6 @@ south_china_sea_category = {
 			}
 			custom_effect_tooltip = south_china_sea_shared_malaysia_tt
 			set_country_flag = spratlys_deal_MAY
-			if = {
-				limit = { original_tag = CHI }
-				MAY = { set_country_flag = spratlys_deal_CHI }
-				custom_effect_tooltip = CHI_reduce_aggression_1_tt
-				subtract_from_variable = { chinese_aggression = 1 }
-			}
 			else_if = {
 				limit = { original_tag = PHI }
 				MAY = { set_country_flag = spratlys_deal_PHI }
@@ -6220,12 +6168,6 @@ south_china_sea_category = {
 			}
 			custom_effect_tooltip = south_china_sea_shared_philippines_tt
 			set_country_flag = spratlys_deal_PHI
-			if = {
-				limit = { original_tag = CHI }
-				PHI = { set_country_flag = spratlys_deal_CHI }
-				custom_effect_tooltip = CHI_reduce_aggression_1_tt
-				subtract_from_variable = { chinese_aggression = 1 }
-			}
 			else_if = {
 				limit = { original_tag = MAY }
 				PHI = { set_country_flag = spratlys_deal_MAY }
@@ -6277,12 +6219,6 @@ south_china_sea_category = {
 			}
 			custom_effect_tooltip = south_china_sea_shared_vietnam_tt
 			set_country_flag = spratlys_deal_VIE
-			if = {
-				limit = { original_tag = CHI }
-				VIE = { set_country_flag = spratlys_deal_CHI }
-				custom_effect_tooltip = CHI_reduce_aggression_1_tt
-				subtract_from_variable = { chinese_aggression = 1 }
-			}
 			else_if = {
 				limit = { original_tag = PHI }
 				VIE = { set_country_flag = spratlys_deal_PHI }
@@ -6337,12 +6273,6 @@ south_china_sea_category = {
 		remove_effect = {
 			set_country_flag = maritime_boundary_agreed
 			816 = { remove_claim_by = ROOT }
-			if = {
-				limit = { original_tag = CHI }
-				526 = { remove_claim_by = MAY }
-				custom_effect_tooltip = CHI_reduce_aggression_2_tt
-				subtract_from_variable = { chinese_aggression = 2 }
-			}
 			else_if = {
 				limit = { original_tag = VIE }
 				801 = { remove_claim_by = MAY }
@@ -6395,12 +6325,6 @@ south_china_sea_category = {
 
 		remove_effect = {
 			802 = { remove_claim_by = ROOT }
-			if = {
-				limit = { original_tag = CHI }
-				526 = { remove_claim_by = PHI }
-				custom_effect_tooltip = CHI_reduce_aggression_2_tt
-				subtract_from_variable = { chinese_aggression = 2 }
-			}
 			else_if = {
 				limit = { original_tag = VIE }
 				801 = { remove_claim_by = PHI }
@@ -6453,12 +6377,6 @@ south_china_sea_category = {
 
 		remove_effect = {
 			801 = { remove_claim_by = ROOT }
-			if = {
-				limit = { original_tag = CHI }
-				526 = { remove_claim_by = VIE }
-				custom_effect_tooltip = CHI_reduce_aggression_2_tt
-				subtract_from_variable = { chinese_aggression = 2 }
-			}
 			else_if = {
 				limit = { original_tag = PHI }
 				802 = { remove_claim_by = VIE }
@@ -6519,8 +6437,6 @@ south_china_sea_category = {
 				news_event = { id = south_china_sea_clash.6 }
 			}
 			add_named_threat = { threat = 2 name = south_china_sea_clash.6.t }
-			custom_effect_tooltip = CHI_increase_aggression_2_tt
-			add_to_variable = { chinese_aggression = 2 }
 		}
 
 		days_remove = 30
@@ -6612,8 +6528,6 @@ south_china_sea_category = {
 				news_event = { id = south_china_sea_clash.6 }
 			}
 			add_named_threat = { threat = 2 name = south_china_sea_clash.6.t }
-			custom_effect_tooltip = CHI_increase_aggression_2_tt
-			add_to_variable = { chinese_aggression = 2 }
 		}
 
 		days_remove = 30
@@ -6682,8 +6596,6 @@ south_china_sea_category = {
 				news_event = { id = south_china_sea_clash.6 }
 			}
 			add_named_threat = { threat = 2 name = south_china_sea_clash.6.t }
-			custom_effect_tooltip = CHI_increase_aggression_2_tt
-			add_to_variable = { chinese_aggression = 2 }
 		}
 
 		days_remove = 30
@@ -7062,24 +6974,6 @@ one_china_category = {
 				}
 			}
 			modifier = {
-				add = 10
-				CHI = {
-					check_variable = { chinese_aggression > 0 }
-				}
-			}
-			modifier = {
-				add = 10
-				CHI = {
-					check_variable = { chinese_aggression > 10 }
-				}
-			}
-			modifier = {
-				add = 20
-				CHI = {
-					check_variable = { chinese_aggression > 20 }
-				}
-			}
-			modifier = {
 				add = 100
 				CHI = {
 					has_completed_focus = CHI_Drop_Opposition_to_Taiwanese_Independence
@@ -7276,632 +7170,6 @@ one_china_category = {
 				add = 1
 				date > 2019.12.12
 			}
-		}
-	}
-}
-hongkong_category = {
-	HKG_declare_independence = {
-
-		allowed = { original_tag = HKG }
-
-		icon = GFX_decision_generic_nationalism
-
-		available = {
-			has_government = nationalist
-			nationalist > 0.5
-		}
-
-		highlight_states = { state = 595 }
-
-		cost = 300
-
-		complete_effect = {
-			swap_ideas = {
-				remove_idea = Non_State_Actor
-				add_idea = Lacks_International_Recognition
-			}
-			add_to_array = {
-				global.Unrecognised_States = THIS
-			}
-			set_variable = {
-				var = Granted_Recognition
-				value = 0
-			}
-			CHI = {
-				add_opinion_modifier = {
-					modifier = declared_independence
-					target = ROOT
-				}
-				create_wargoal = {
-					type = annex_everything
-					target = ROOT
-				}
-				set_country_flag = original_owner_@FROM
-			}
-			595 = {
-				add_core_of = CHI
-			}
-			log = "[GetDateText]: [This.GetName]: decision HKG_declare_independence executed"
-		}
-
-	}
-
-	reconsider_the_NPCSC_decision = {
-
-		allowed = { original_tag = CHI }
-
-		icon = GFX_decision_generic_political_discourse
-
-		visible = {
-			HKG = {
-				OR = { has_idea = Lacks_Universal_Suffrage has_idea = Limited_Universal_Suffrage }
-			}
-		}
-
-		cost = 50
-
-		highlight_states = { state = 595 }
-
-		days_remove = 7
-
-		remove_effect = {
-			country_event = { id = prc1.62 }
-			log = "[GetDateText]: [This.GetName]: decision reconsider_the_NPCSC_decision executed"
-		}
-
-	}
-
-	reconsider_the_future_of_hongkong = {
-
-		allowed = { original_tag = CHI }
-
-		icon = GFX_decision_generic_political_discourse
-
-		visible = {
-		}
-
-		cost = 50
-
-		highlight_states = { state = 595 }
-
-		days_remove = 7
-
-		remove_effect = {
-			country_event = { id = prc1.63 }
-			log = "[GetDateText]: [This.GetName]: decision reconsider_the_future_of_hongkong executed"
-		}
-
-	}
-
-	deploy_troops = {
-
-		allowed = { original_tag = CHI }
-
-		icon = GFX_decision_generic_army_support_new
-
-		visible = {
-			OR = {
-				has_idea = CHI_Hong_Kong_Protests_01
-				has_idea = CHI_Hong_Kong_Protests_02
-				has_idea = CHI_Hong_Kong_Protests_03
-			}
-		}
-
-		highlight_states = { state = 595 }
-
-		available = {
-			divisions_in_state = {
-				size > 1
-				state = 595
-			}
-		}
-
-		custom_cost_trigger = {
-			command_power > 39
-		}
-
-		custom_cost_text = command_power_more_than_40
-
-		complete_effect = {
-			add_command_power = -40
-			log = "[GetDateText]: [This.GetName]: decision deploy_troops executed"
-		}
-
-		days_remove = 7
-
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 10
-				has_idea = CHI_Hong_Kong_Protests_03
-			}
-		}
-
-		remove_effect = {
-			if = {
-				limit = { CHI = { has_idea = CHI_Hong_Kong_Protests_01 } }
-				HKG = { remove_ideas = Hong_Kong_Protests_01 }
-				CHI = { remove_ideas = CHI_Hong_Kong_Protests_01 }
-			}
-			else_if = {
-				limit = { CHI = { has_idea = CHI_Hong_Kong_Protests_02 } }
-				HKG = { remove_ideas = Hong_Kong_Protests_02 }
-				CHI = { remove_ideas = CHI_Hong_Kong_Protests_02 }
-			}
-			else_if = {
-				limit = { CHI = { has_idea = CHI_Hong_Kong_Protests_03 } }
-				HKG = { remove_ideas = Hong_Kong_Protests_03 }
-				CHI = { remove_ideas = CHI_Hong_Kong_Protests_03 }
-			}
-			add_political_power = -500
-			HKG = {
-				add_stability = -0.1
-				decrease_economic_growth = yes
-				set_country_flag = troops_deployed
-				custom_effect_tooltip = CHI_HKG_influence_60_tt
-				hidden_effect = {
-					set_temp_variable = { influence_gain = 60 }
-					for_loop_effect = {
-						end = influence_array^num
-						value = v
-						if = {
-							limit = {
-								check_variable = { influence_array^v = CHI }
-							}
-							add_to_variable = { influence_array_val^v = influence_gain }
-							set_country_flag = found
-						}
-					}
-					if = {
-						limit = { NOT = { has_country_flag = found } }
-							add_to_array = { influence_array = CHI.id }
-							add_to_array = { influence_array_val = influence_gain }
-					}
-					clr_country_flag = found
-					recalculate_influence = yes
-				}
-			}
-			every_other_country = {
-				country_event = { id = hongkong.2 }
-			}
-			custom_effect_tooltip = CHI_increase_aggression_2_tt
-			add_to_variable = { chinese_aggression = 2 }
-		}
-
-	}
-
-	request_troops = {
-
-		allowed = { original_tag = HKG }
-
-		icon = GFX_decision_generic_army_support_new
-
-		visible = {
-			OR = {
-				has_idea = CHI_Hong_Kong_Protests_01
-				has_idea = CHI_Hong_Kong_Protests_02
-				has_idea = CHI_Hong_Kong_Protests_03
-			}
-		}
-
-		highlight_states = { state = 595 }
-
-		available = {
-			CHI = {
-				divisions_in_state = {
-					size > 1
-					state = 595
-				}
-			}
-		}
-
-		cost = 300
-
-		complete_effect = {
-			log = "[GetDateText]: [This.GetName]: decision deploy_troops executed"
-		}
-
-		days_remove = 7
-
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 10
-				has_idea = Hong_Kong_Protests_03
-			}
-		}
-
-		remove_effect = {
-			if = {
-				limit = { CHI = { has_idea = CHI_Hong_Kong_Protests_01 } }
-				HKG = { remove_ideas = Hong_Kong_Protests_01 }
-				CHI = { remove_ideas = CHI_Hong_Kong_Protests_01 }
-			}
-			else_if = {
-				limit = { CHI = { has_idea = CHI_Hong_Kong_Protests_02 } }
-				HKG = { remove_ideas = Hong_Kong_Protests_02 }
-				CHI = { remove_ideas = CHI_Hong_Kong_Protests_02 }
-			}
-			else_if = {
-				limit = { CHI = { has_idea = CHI_Hong_Kong_Protests_03 } }
-				HKG = { remove_ideas = Hong_Kong_Protests_03 }
-				CHI = { remove_ideas = CHI_Hong_Kong_Protests_03 }
-			}
-			HKG = {
-				add_stability = -0.1
-				decrease_economic_growth = yes
-				if = {
-					limit = { has_government = communism }
-					add_popularity = {
-						ideology = communism
-						popularity = -0.1
-					}
-				}
-				else_if = {
-					limit = { has_government = democratic }
-					add_popularity = {
-						ideology = democratic
-						popularity = -0.1
-					}
-				}
-				else_if = {
-					limit = { has_government = neutrality }
-					add_popularity = {
-						ideology = neutrality
-						popularity = -0.1
-					}
-				}
-				else_if = {
-					limit = { has_government = nationalist }
-					add_popularity = {
-						ideology = nationalist
-						popularity = -0.1
-					}
-				}
-				set_country_flag = troops_deployed
-				custom_effect_tooltip = CHI_HKG_influence_60_tt
-				hidden_effect = {
-					set_temp_variable = { influence_gain = 60 }
-					for_loop_effect = {
-						end = influence_array^num
-						value = v
-						if = {
-							limit = {
-								check_variable = { influence_array^v = CHI }
-							}
-							add_to_variable = { influence_array_val^v = influence_gain }
-							set_country_flag = found
-						}
-					}
-					if = {
-						limit = { NOT = { has_country_flag = found } }
-							add_to_array = { influence_array = CHI.id }
-							add_to_array = { influence_array_val = influence_gain }
-					}
-					clr_country_flag = found
-					recalculate_influence = yes
-				}
-			}
-			every_other_country = {
-				limit = { NOT = { original_tag = CHI } }
-				country_event = { id = hongkong.2 }
-			}
-		}
-
-	}
-
-	stop_the_protests_01 = {
-
-		allowed = {
-			OR = { original_tag = CHI }
-		}
-
-		icon = GFX_decision_revolt
-
-		is_good = no
-
-		days_mission_timeout = 60
-
-		highlight_states = { state = 595 }
-
-		activation = {
-			OR = {
-				has_idea = CHI_Hong_Kong_Protests_01
-				has_idea = Hong_Kong_Protests_01
-			}
-		}
-
-		available = {
-		}
-
-		fixed_random_seed = no
-
-		timeout_effect = {
-			if = {
-				limit = { original_tag = HKG }
-				effect_tooltip = {
-					add_popularity = {
-						ideology = nationalist
-						popularity = 0.05
-					}
-					add_popularity = {
-						ideology = democratic
-						popularity = 0.05
-					}
-					recalculate_party = yes
-					decrease_economic_growth = yes
-					random_list = {
-						75 = {
-							swap_ideas = {
-								remove_idea = Hong_Kong_Protests_01
-								add_idea = Hong_Kong_Protests_02
-							}
-						}
-						25 = {
-							remove_ideas = Hong_Kong_Protests_01
-						}
-					}
-				}
-			}
-			if = {
-				limit = { original_tag = CHI }
-				random_list = {
-					75 = {
-						swap_ideas = {
-							remove_idea = CHI_Hong_Kong_Protests_01
-							add_idea = CHI_Hong_Kong_Protests_02
-						}
-						HKG = {
-							swap_ideas = {
-								remove_idea = Hong_Kong_Protests_01
-								add_idea = Hong_Kong_Protests_02
-							}
-							add_popularity = {
-								ideology = nationalist
-								popularity = 0.05
-							}
-							add_popularity = {
-								ideology = democratic
-								popularity = 0.05
-							}
-							recalculate_party = yes
-							decrease_economic_growth = yes
-						}
-						every_country = {
-							news_event = { days = 1 id = hongkong.10 }
-						}
-					}
-					25 = {
-						CHI = {
-							remove_ideas = CHI_Hong_Kong_Protests_01
-						}
-						HKG = {
-							remove_ideas = Hong_Kong_Protests_01
-						}
-						every_country = {
-							news_event = { days = 1 id = hongkong.9 }
-						}
-					}
-				}
-			}
-		}
-
-		complete_effect = {
-			CHI = {
-				remove_ideas = CHI_Hong_Kong_Protests_01
-			}
-			HKG = {
-				remove_ideas = Hong_Kong_Protests_01
-			}
-			HKG = { clr_country_flag = troops_deployed }
-		}
-	}
-
-	stop_the_protests_02 = {
-
-		allowed = { original_tag = CHI }
-
-		icon = GFX_decision_revolt
-
-		is_good = no
-
-		days_mission_timeout = 60
-
-		activation = {
-			OR = {
-				has_idea = CHI_Hong_Kong_Protests_02
-				has_idea = Hong_Kong_Protests_02
-			}
-		}
-
-		highlight_states = { state = 595 }
-
-		available = {
-			OR = {
-				AND = {
-					country_exists = HKG
-					HKG = {
-						has_idea = Universal_Suffrage
-					}
-					custom_trigger_tooltip = {
-						tooltip = HKG_continuation_tt
-						HKG = { NOT = { has_country_flag = reunification } }
-					}
-				}
-				HKG = {
-					custom_trigger_tooltip = {
-						tooltip = HKG_chinese_troops_deployed_tt
-						has_country_flag = troops_deployed
-					}
-				}
-			}
-		}
-
-		fixed_random_seed = no
-
-		timeout_effect = {
-			if = {
-				limit = { original_tag = HKG }
-				effect_tooltip = {
-					add_popularity = {
-						ideology = nationalist
-						popularity = 0.05
-					}
-					add_popularity = {
-						ideology = democratic
-						popularity = 0.05
-					}
-					recalculate_party = yes
-					decrease_economic_growth = yes
-					random_list = {
-						50 = {
-							swap_ideas = {
-								remove_idea = Hong_Kong_Protests_02
-								add_idea = Hong_Kong_Protests_03
-							}
-						}
-						50 = {
-							swap_ideas = {
-								remove_idea = Hong_Kong_Protests_02
-								add_idea = Hong_Kong_Protests_01
-							}
-						}
-					}
-				}
-			}
-			if = {
-				limit = { original_tag = CHI }
-				random_list = {
-					50 = {
-						swap_ideas = {
-							remove_idea = CHI_Hong_Kong_Protests_02
-							add_idea = CHI_Hong_Kong_Protests_03
-						}
-						HKG = {
-							swap_ideas = {
-								remove_idea = Hong_Kong_Protests_02
-								add_idea = Hong_Kong_Protests_03
-							}
-							add_popularity = {
-								ideology = nationalist
-								popularity = 0.05
-							}
-							add_popularity = {
-								ideology = democratic
-								popularity = 0.05
-							}
-							recalculate_party = yes
-							decrease_economic_growth = yes
-						}
-						every_country = {
-							news_event = { days = 1 id = hongkong.10 }
-						}
-					}
-					50 = {
-						CHI = {
-							swap_ideas = {
-								remove_idea = CHI_Hong_Kong_Protests_02
-								add_idea = CHI_Hong_Kong_Protests_01
-							}
-						}
-						HKG = {
-							swap_ideas = {
-								remove_idea = Hong_Kong_Protests_02
-								add_idea = Hong_Kong_Protests_01
-							}
-						}
-					}
-				}
-			}
-		}
-
-		complete_effect = {
-			CHI = {
-				remove_ideas = CHI_Hong_Kong_Protests_02
-			}
-			HKG = {
-				remove_ideas = Hong_Kong_Protests_02
-			}
-			HKG = { clr_country_flag = troops_deployed }
-		}
-	}
-
-	stop_the_protests_03 = {
-
-		allowed = { original_tag = CHI }
-
-		icon = GFX_decision_revolt
-
-		is_good = no
-
-		days_mission_timeout = 60
-
-		activation = {
-			OR = {
-				has_idea = CHI_Hong_Kong_Protests_03
-				has_idea = Hong_Kong_Protests_03
-			}
-		}
-
-		highlight_states = { state = 595 }
-
-		available = {
-			OR = {
-				AND = {
-					country_exists = HKG
-					HKG = {
-						has_idea = Universal_Suffrage
-					}
-					custom_trigger_tooltip = {
-						tooltip = HKG_continuation_tt
-						HKG = { NOT = { has_country_flag = reunification } }
-					}
-				}
-				HKG = {
-					custom_trigger_tooltip = {
-						tooltip = HKG_chinese_troops_deployed_tt
-						has_country_flag = troops_deployed
-					}
-				}
-			}
-		}
-
-		timeout_effect = {
-			HKG = {
-				add_popularity = {
-					ideology = nationalist
-					popularity = 0.05
-				}
-				add_popularity = {
-					ideology = democratic
-					popularity = 0.05
-				}
-				recalculate_party = yes
-				decrease_economic_growth = yes
-			}
-
-			CHI = {
-				swap_ideas = {
-					remove_idea = CHI_Hong_Kong_Protests_03
-					add_idea = CHI_Hong_Kong_Protests_02
-				}
-			}
-			HKG = {
-				swap_ideas = {
-					remove_idea = Hong_Kong_Protests_03
-					add_idea = Hong_Kong_Protests_02
-				}
-			}
-		}
-
-		complete_effect = {
-			CHI = {
-				remove_ideas = CHI_Hong_Kong_Protests_03
-			}
-			HKG = {
-				remove_ideas = Hong_Kong_Protests_03
-			}
-			HKG = { clr_country_flag = troops_deployed }
 		}
 	}
 }
