@@ -756,8 +756,6 @@
  CHI_Sino_Mongol_Friendship_Treaty_desc: "中蒙两国边境线长达4600公里，双方要共同维护友谊，面向未来。"
  CHI_Aid_Outer_Mongolia: "援助外蒙古"
  CHI_Aid_Outer_Mongolia_desc: "由于长期受到卫星国待遇，外蒙古大部分地区处于农村和欠发达状态，应投入更多的资金来改善这一状况。"
- CHI_Outer_Mongolia_SAR: "外蒙古特别行政区"
- CHI_Outer_Mongolia_SAR_desc: "现在援助外蒙古的积极影响已经变得明显，如果我们在外蒙古建立一个高度自治的特别行政区，将进一步有助于我们在外蒙古人民中的知名度和国际社会对我们的看法。"
  CHI_Global_Influence: "全球影响力"
  CHI_Global_Influence_desc: "中国历朝历代都认为中国周边以外的世界不值得我们关注。这就是导致中国落后于西方工业化国家的原因。我们不会再犯同样的错误。"
  CHI_Favor_Multipolarity: "支持多极化"
@@ -768,8 +766,7 @@
  CHI_Support_Security_Council_Reform_desc: "由于我们与日本和印度的紧张关系，我们历来反对扩大联合国安理会的范围，将四国集团国家纳入其中。现在关系已经改善，我们可以放弃这种反对。是否会因此而进行改革取决于安理会其他常任理事国的意愿。"
  CHI_A_Rival_Superpower: "超级大国的对手"
  CHI_A_Rival_Superpower_desc: "我们必须向世界保证，在过去几十年里，当我们的国家相对于西方处于弱势时，我们并没有寻求霸权。然而，现在我国已经不再是一个不发达国家，我们就不必再维持这个门面，而是可以公开地争取取代美国成为全球唯一的霸主了。"
- CHI_End_US_Hegemony: "终结美国霸权"
- CHI_End_US_Hegemony_desc: "以美国为中心的世界秩序是不公正和不可持续的，我们应该尽最大努力确保其灭亡。必须将美帝国主义赶出南半球，并用善意和有道德的人的影响来填补它留下的真空。"
+
  CHI_The_Bears_Backyard: "熊之后院"
  CHI_The_Bears_Backyard_desc: "我们与俄罗斯的战略伙伴关系有助于我们实现破坏美国霸权的目标。然而，我们昔日的盟友不会支持我们新的全球统治野心。因此，我们必须设法削弱他们的地位，让这个斯拉夫巨人屈服。"
  CHI_A_New_Imperium: "新的帝国"

@@ -99,8 +99,6 @@ country_event = {
 			}
 			random_army_leader = { set_nationality = DSC }
 			DSC = {
-				DSC_Legal_amendments_dynamic_scriptes = yes
-				add_dynamic_modifier = { modifier = DSC_Legal_amendments_dynamic }
 				set_variable = { civilian_factory_employment_var = 1 }
 				set_variable = { naval_factory_employment_var = 1 }
 				set_variable = { military_factory_employment_var = 1 }

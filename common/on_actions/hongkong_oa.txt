@@ -12,21 +12,15 @@ on_actions = {
 				Final_hongkong_people_support_to_china_government_modifier=10
 			}
 			add_to_variable = { HKG_people_support = Final_hongkong_people_support_to_china_government_modifier }
-	
-		
-		if = {
-					limit = {
-					HKG = {
-		OR = {			
-		has_dynamic_modifier = {
-			modifier = HKG_people_support_dynamic_left
-		}
-		has_dynamic_modifier = {
-		modifier = HKG_people_support_dynamic_right
-		}
-		}
-		}
-		}
+			if = {
+				limit = {
+				HKG = {
+					OR = {			
+						has_dynamic_modifier = { modifier = HKG_people_support_dynamic_left }
+						has_dynamic_modifier = { modifier = HKG_people_support_dynamic_right }
+					}
+				}
+				}
 		
 		HKG = {clamp_variable  = {
 			var = HKG_people_support
@@ -80,7 +74,7 @@ has_country_flag=xggm
 				limit = {
 				HKG = {
 	has_dynamic_modifier = {
-		modifier = HKG_people_support_dynamic
+		modifier = HKG_people_support_dynamic_right
 	}
 	}
 	}
@@ -97,7 +91,7 @@ has_country_flag=xggm
 				limit = {
 				HKG = {
 	has_dynamic_modifier = {
-		modifier = HKG_people_support_dynamic
+		modifier = HKG_people_support_dynamic_left
 	}
 	
 	HKG={
