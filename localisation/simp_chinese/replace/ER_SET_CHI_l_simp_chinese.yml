@@ -10,6 +10,9 @@
  harsh_working_en_of_CHI: "§g“廉价劳动力”§!"
  harsh_working_en_of_CHI_desc: "改革开放以来，我国农村流出大量青壮年劳动力到§C东南沿海城市§!（即农民工），农民工居无定所，缺少各类§G社会福利§!与§C医疗保险§!，§O劳动时间§!通常达到§R10小时§!左右，甚至大于12小时，所得薪资§g仅能饱腹§!。\n 虽然这严重影响了§G政府声誉§!，但大量涌入市场的廉价劳动力也促使§B各国投资§!纷纷到来。"
 #事件
+ CHI_ER_start.01.t: "中国共产党第十六次全国代表大会"
+ CHI_ER_start.01.d: "江泽民的领导任期已经结束,中共代表们齐聚一堂,选举下一代党和国家领导人，不过，其实领导人早在邓小平时期就已经隔代指定好了，他就是——胡锦涛同志。"
+ CHI_ER_start.01.o1: "团结在以胡锦涛同志为核心的全体党中央周围。"
  CHI_ER_start.1.t: "紧急内部文件"
  CHI_ER_start.1.d: "【密级：绝密·仅限中央常委会内部传阅】  \n文件编号：CC-001号  \n\n摘录如下：  \n——— 以下内容经加密处理，非授权人员阅读将被追责 ———\n\n███████████ 机密 ███████████  \n███████████ 机密 ███████████\n███████████ 机密 ███████████\n特此通知，各级负责人务必严密封存，不得泄露."
  CHI_ER_start.1.a: "控制流言，为江同志默哀"
@@ -37,10 +40,11 @@
  CHI_break_term_limits_desc: "江泽民同志已经有一段时间没有出现在大众的视野里了。。。"
  CHI_support_the_left: "全面戒严"
  CHI_support_the_left_desc: "为了防止不实言论误导大众，以及维稳社会秩序，我们有必要暂时实行戒严"
- CHI_paving_the_way_for_successors: "第十六次全国代表大会"
- CHI_paving_the_way_for_successors_desc: "十六大召开了，这是次大会将会决定我们的下一任主席人选"
+ CHI_16th_National_Congress: "第十六次全国代表大会"
+ CHI_16th_National_Congress_desc: "十六大召开了，本次代表大会将会决定我们的下一任主席人选"
 
 #国策
+ CHI_CPB_Temporary_Meeting: "中央政治局临时会议"
  CHI_party_split: "§R分道扬镳§!"
 
  CHI_party_split_effect_tt: "§R党内各派系的矛盾将公开化§!"

@@ -380,36 +380,57 @@ focus = {
 	}
 }
 
-focus = {
-	id = CHI_kuodaneixu
-	icon = chinese_rmb
-	x = -1
-	y = 6
-	cost = 5
-	relative_position_id = CHI_zhengzhigaige	
-mutually_exclusive = {
-	focus=CHI_kuodachukou
-}
-	prerequisite = {
-		focus = CHI_jiejueweiji
-
+	focus = {
+		id = CHI_kuodaneixu
+		icon = chinese_rmb
+		x = -1
+		y = 6
+		cost = 5
+		relative_position_id = CHI_zhengzhigaige	
+		mutually_exclusive = { focus = CHI_kuodachukou }
+		prerequisite = { focus = CHI_jiejueweiji }
+		bypass = {	}
+		ai_will_do = { factor = 30 }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			set_temp_variable = { treasury_change = -50 }
+			modify_treasury_effect = yes
+			remove_ideas = CHI_guoshengweiji
+		}
 	}
 
-
-	bypass = {	}
-ai_will_do = {
-		factor = 30
+	focus = {
+		id = CHI_CPB_Temporary_Meeting
+		icon = communist_party_of_china
+		x = 1
+		y = 1
+		cost = 3
+		relative_position_id = CHI_kuodaneixu
+		available = {}
+		prerequisite = { focus = CHI_kuodaneixu focus = CHI_kuodachukou }
+		select_effect = {
+			CHI_URGENT_state = yes
+		}
+		ai_will_do = { factor = 500 }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no 
+		cancel_effect = { mark_focus_tree_layout_dirty = yes }
+		completion_reward = {
+			if = {
+				limit = { has_country_flag = CHI_zhunbeirudang }
+				add_ideas = CHI_zibenjia
+				custom_effect_tooltip = influence_the_party_line_tt
+				add_10_western_liberalism = yes
+				add_to_variable = { CPC_Right = 0.15 }
+				add_to_variable = { CPC_Left = -0.03 }
+				add_to_variable = { CPC_Dengist = -0.12}
+			}
+			custom_effect_tooltip = CHI_change_forward_tt
+		}
 	}
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-	completion_reward = {
-		set_temp_variable = { treasury_change = -50 }
-		modify_treasury_effect = yes
-		remove_ideas = CHI_guoshengweiji
-	}
-	}
-
 
 
 focus = {
@@ -741,7 +762,7 @@ prerequisite = { focus = CHI_jjdz }
 		}	
 
 	focus = {
-		id = CHI_paving_the_way_for_successors
+		id = CHI_16th_National_Congress
 		icon = communist_party_of_china
 		x = 15
 		y = 0
@@ -751,39 +772,15 @@ prerequisite = { focus = CHI_jjdz }
 		allow_branch = {
 			has_country_leader = { name = "胡锦涛" }
 		}
-		select_effect = {
-			CHI_URGENT_state = yes
-		}
-		ai_will_do = {
-			factor = 500
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no 
-		cancel_effect = {
-			mark_focus_tree_layout_dirty = yes
-		}
+		ai_will_do = { factor = 500 }
 		completion_reward = {
 			if = {
-				limit = { has_country_flag = CHI_zhunbeirudang }
-				add_ideas = CHI_zibenjia
 				custom_effect_tooltip = influence_the_party_line_tt
 				add_10_western_liberalism = yes
 				add_to_variable = { CPC_Right = 0.15 }
 				add_to_variable = { CPC_Left = -0.03 }
 				add_to_variable = { CPC_Dengist = -0.12}
-			}
-			if = {
-				limit = { 
-					OR = {
-						check_variable = { CPC_Dengist < CPC_Right}
-						check_variable = { CPC_Dengist < CPC_Left}
-					}
-				}
-				custom_effect_tooltip = CHI_change_forward_tt
-			}			
-			country_event = { id = prc1.26 days = 10 }
-			mark_focus_tree_layout_dirty = yes
+			}	
 		}
 	}
 
@@ -794,9 +791,9 @@ prerequisite = { focus = CHI_jjdz }
 		x = 0
 		y = 1
 		cost = 5
-		relative_position_id = CHI_paving_the_way_for_successors	
+		relative_position_id = CHI_16th_National_Congress	
 		bypass = {}
-		prerequisite = { focus = CHI_paving_the_way_for_successors }
+		prerequisite = { focus = CHI_16th_National_Congress }
 		available = {}
 		ai_will_do = { factor = 50 }
 		cancel_if_invalid = yes
@@ -814,7 +811,7 @@ prerequisite = { focus = CHI_jjdz }
 		x = 0
 		y = 2
 		cost = 5
-		relative_position_id = CHI_paving_the_way_for_successors		
+		relative_position_id = CHI_16th_National_Congress		
 
 	ai_will_do = {
 			factor = 50
@@ -846,7 +843,7 @@ focus = {
 		x = -3
 		y = 3
 		cost = 5
-		relative_position_id = CHI_paving_the_way_for_successors	
+		relative_position_id = CHI_16th_National_Congress	
 
 	ai_will_do = {
 			factor = 50
@@ -925,7 +922,7 @@ focus = {
 		x = 1
 		y = 3
 		cost = 5
-		relative_position_id = CHI_paving_the_way_for_successors	
+		relative_position_id = CHI_16th_National_Congress	
 
 	ai_will_do = {
 			factor = 50
@@ -983,7 +980,7 @@ focus = {
 		x = 3
 		y = 3
 		cost = 5
-		relative_position_id = CHI_paving_the_way_for_successors		
+		relative_position_id = CHI_16th_National_Congress		
 	ai_will_do = {
 			factor = 50
 		}
@@ -1012,7 +1009,7 @@ bypass = {
 		x = -1
 		y = 3
 		cost = 5
-		relative_position_id = CHI_paving_the_way_for_successors		
+		relative_position_id = CHI_16th_National_Congress		
 		prerequisite = { focus = CHI_process_sars }
 		available = {}
 		ai_will_do = { factor = 50 }
@@ -1027,7 +1024,7 @@ focus = {
 		x = 0
 		y = 4
 		cost = 5
-		relative_position_id = CHI_paving_the_way_for_successors		
+		relative_position_id = CHI_16th_National_Congress		
 prerequisite = {focus = CHI_talent_power}
 prerequisite = {focus = CHI_hangtian}
 prerequisite = {focus = CHI_dongbei}
@@ -1054,7 +1051,7 @@ add_stability = 0.10
 		x = -3
 		y = 5
 		cost = 5
-		relative_position_id = CHI_paving_the_way_for_successors			
+		relative_position_id = CHI_16th_National_Congress			
 
 	ai_will_do = {
 			factor = 50
@@ -1082,7 +1079,7 @@ add_war_support = 0.10
 		x = -1
 		y = 5
 		cost = 5
-		relative_position_id = CHI_paving_the_way_for_successors			
+		relative_position_id = CHI_16th_National_Congress			
 
 	ai_will_do = {
 			factor = 50
@@ -1108,7 +1105,7 @@ add_war_support = 0.10
 		x = 1
 		y = 5
 		cost = 5
-		relative_position_id = CHI_paving_the_way_for_successors			
+		relative_position_id = CHI_16th_National_Congress			
 
 
 				prerequisite = {
@@ -1134,7 +1131,7 @@ focus = {
 		x = 3
 		y = 5
 		cost = 5
-		relative_position_id = CHI_paving_the_way_for_successors			
+		relative_position_id = CHI_16th_National_Congress			
 
 	ai_will_do = {
 			factor = 50
@@ -1164,7 +1161,7 @@ focus = {
 		x = 0
 		y = 6
 		cost = 5
-		relative_position_id = CHI_paving_the_way_for_successors		
+		relative_position_id = CHI_16th_National_Congress		
 prerequisite = {focus = CHI_fanghuoqiang}
 prerequisite = {focus = CHI_2008aoyun}
 prerequisite = {focus = CHI_barongbachi}
