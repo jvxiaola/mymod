@@ -31,6 +31,14 @@
  CHI_ER_start.5.t: "民间毛派在重庆聚集"
  CHI_ER_start.5.d: "军管状态下的川渝地区一开始实际上几乎禁止了所有非必要人员出入川渝，但随着全国军管的放宽，川渝军管区也逐渐放松了管制，现在军队的任务变成了恢复秩序，而在这一时刻，民间毛派分子也到了川渝地区，进行交流讨论"
  CHI_ER_start.5.o1: "他们对我们没有威胁"
+#重置国策
+
+ CHI_break_term_limits: "前路未卜"
+ CHI_break_term_limits_desc: "江泽民同志已经有一段时间没有出现在大众的视野里了。。。"
+ CHI_support_the_left: "全面戒严"
+ CHI_support_the_left_desc: "为了防止不实言论误导大众，以及维稳社会秩序，我们有必要暂时实行戒严"
+ CHI_paving_the_way_for_successors: "第十六次全国代表大会"
+ CHI_paving_the_way_for_successors_desc: "十六大召开了，这是次大会将会决定我们的下一任主席人选"
 
 #国策
  CHI_party_split: "§R分道扬镳§!"
