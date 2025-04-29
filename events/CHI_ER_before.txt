@@ -12,17 +12,18 @@ country_event = {
 	}
 	option = {
 		name = CHI_ER_start.01.o1
+		complete_national_focus = CHI_16th_National_Congress
 		add_to_variable = { party_pop_array^6= 0.1 } 
 		create_country_leader = {
-				name = "胡锦涛"
-				desc = "hujintao_desc"
-				picture = "Hu_jintao.dds"
-				expire = "2012.10.1"
-				ideology = Chinese_Socialism
-				traits = {
+			name = "胡锦涛"
+			desc = "hujintao_desc"
+			picture = "Hu_jintao.dds"
+			expire = "2012.10.1"
+			ideology = Chinese_Socialism
+			traits = {
 				Socialism_with_Chinese_characteristics_ideology
 				ggkfdjcr
-				}
+			}
 		}
 		mark_focus_tree_layout_dirty = yes
 		add_stability = 0.10
