@@ -10583,38 +10583,21 @@ add_core_of = ROOT
 			icon = Party_government_military_integration
 			x = 2
 			y = 1
-	prerequisite = {focus = PRC_Chairman_Mao_Yuanxin }
-	
-	relative_position_id = PRC_Chairman_Mao_Yuanxin
-	
+			prerequisite = {focus = PRC_Chairman_Mao_Yuanxin }
+			relative_position_id = PRC_Chairman_Mao_Yuanxin
 			cost = 5
-	
-			ai_will_do = {
-				factor = 10
-			}
-	
-			available = {
-	
-			}
-	
-			bypass = {
-			}
-	
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
-	
+			ai_will_do = { factor = 10 }
+			available = {}
+			bypass = {}
 			completion_reward = {
 				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.03 }
 				change_DSC_Socialist_Construction_dynamic1 = yes
-				remove_ideas=CHI_jdjs1
-
-	
-	hidden_effect = {
-	country_event = {id = prc1.117 days = 7 }
+				CHI_MER_decresee_effect = yes
+				hidden_effect = {
+					country_event = { id = prc1.117 days = 7 }
+				}
 			}
-			}
-			}
+	}
 		
 	focus = {
 			id = PRC_The_real_two_whatevers

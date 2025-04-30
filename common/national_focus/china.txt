@@ -361,11 +361,6 @@ focus = {
 	prerequisite = {
 		focus = CHI_jiejueweiji
 	}
-
-
-
-
-
 	bypass = {	}
 	ai_will_do = {
 		factor = 100
@@ -403,7 +398,7 @@ focus = {
 
 	focus = {
 		id = CHI_CPB_Temporary_Meeting
-		icon = communist_party_of_china
+		icon = focus_SWE_socialist_reforms
 		x = 1
 		y = 1
 		cost = 3
@@ -464,22 +459,7 @@ focus = {
 
 			}
 }
-		focus = {
-		id = CHI_break_term_limits
-		icon = backstab
-		x = 0
-		y = 9
-		cost = 5
-		relative_position_id = CHI_zhengzhigaige		
-		allow_branch = {
-			has_country_flag = debug
-		}
-		bypass = {}
-		available = {}
-		ai_will_do = { factor = 50 }
-		available_if_capitulated = no
-		completion_reward = {}
-		}
+
 
 		focus = {
 			id = CHI_zuzhiguoqigaige
@@ -516,250 +496,6 @@ focus = {
 
 			}
 			}
-
-
-
-
-			focus = {
-		id = CHI_support_the_left
-		icon = espionage
-		x = 0
-		y = 1
-		cost = 5
-		relative_position_id = CHI_break_term_limits	
-		prerequisite = {
-			focus = CHI_break_term_limits
-			}
-		completion_reward = {
-			
-			
-		}
-		}	
-
-		focus = {
-		id = CHI_cpchuiyi
-		icon = Communist_patry_of_China_flag
-		x = 0
-		y = 1
-relative_position_id = CHI_support_the_left
-prerequisite = { 
-
-
-	focus = CHI_support_the_left
-}
-
-		cost = 4
-	completion_reward = {	
-custom_effect_tooltip = CHI_cpchuiyi_tt	
-hidden_effect = {	
-if = {
-limit = {
-check_variable = {
-    CPC_Left < CPC_Right
-}
-
-}
-		country_event = {id = prc1.96 days = 10}
-}
-}
-	
-	}
-	}
-	focus = {
-		id = CHI_jjdz
-		icon = trade_with_china
-		x = 0
-		y = 2
-relative_position_id = CHI_support_the_left
-prerequisite = { focus = CHI_cpchuiyi }
-		cost = 5
-
-		ai_will_do = {
-			factor = 5
-		}
-select_effect = {
-}
-		completion_reward = {	
-		set_temp_variable = { temp_opinion = -5 }
-		set_country_flag = chi_left
-		change_industrial_conglomerates_opinion = yes
-		change_communist_cadres_opinion = yes
-		add_political_power = 100
-}	
-	news_event = {id = mdardchina_news.57 days = 7 }
-	}
-	
-			focus = {
-		id = CHI_pjjdz
-		icon = communist_china
-		x = -3
-		y = 3
-relative_position_id = CHI_support_the_left
-prerequisite = { focus = CHI_jjdz}
-		cost = 5
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		available = {
-
-}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-								add_to_variable = {
-					var = party_pop_array^5
-					value = 0.05
-				}
-				recalculate_party = yes
-			set_temp_variable = { temp_opinion = 5 }
-			change_industrial_conglomerates_opinion = yes
-		change_communist_cadres_opinion = yes
-
-			}
-		}
-			focus = {
-		id = CHI_zdyd
-		icon = communist_purge
-		x = 0
-		y = 4
-relative_position_id = CHI_support_the_left
-prerequisite = { focus = CHI_antir }
-		cost = 5
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {	
-								add_to_variable = {
-					var = party_pop_array^5
-					value = 0.10
-				}
-				recalculate_party = yes
-			set_temp_variable = { temp_opinion = 10 }
-		change_communist_cadres_opinion = yes
-		remove_ideas = CHI_jiefangsixiang
-		}
-		}
-
-
-				focus = {
-		id = CHI_antir
-		icon = communist_spies
-		x = 0
-		y = 3
-relative_position_id = CHI_support_the_left
-prerequisite = { focus = CHI_jjdz }
-		cost = 4
-		completion_reward = {	
-	add_political_power = 100
-	custom_effect_tooltip = ban_cpczyzy
-				set_country_flag = party3_banned
-
-				set_temp_variable = { temp_opinion = -5 }
-		change_communist_cadres_opinion = yes
-						add_to_variable = {
-					var = party_pop_array^4
-					value = 0.05
-				}
-				recalculate_party = yes
-	}
-	}
-			focus = {
-		id = CHI_qcfb
-		icon = communist_spies2
-		x = -3
-		y = 4
-relative_position_id = CHI_support_the_left
-prerequisite = { focus = CHI_pjjdz }
-		cost = 4
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		available = {
-			OR = {
-				has_idea = paralyzing_corruption
-				has_idea = crippling_corruption
-				has_idea = rampant_corruption
-				has_idea = unrestrained_corruption
-				has_idea = systematic_corruption
-				has_idea = widespread_corruption
-				has_idea = medium_corruption
-				has_idea = modest_corruption
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {	
-					decrease_corruption = yes
-				add_to_variable = {
-					var = party_pop_array^4
-					value = 0.05
-				}
-				recalculate_party = yes
-		}
-		}
-
-			focus = {
-		id = CHI_lalongsc
-		icon = communist_army
-		x = 3
-		y = 3
-relative_position_id = CHI_support_the_left
-
-
-prerequisite = { focus = CHI_jjdz }
-		cost = 4
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {	
-		add_stability = 0.10
-			set_temp_variable = { temp_opinion = 10 }
-			change_the_military_opinion = yes
-		change_communist_cadres_opinion = yes
-		}
-		}	
 
 	focus = {
 		id = CHI_16th_National_Congress

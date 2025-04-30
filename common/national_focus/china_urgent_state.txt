@@ -43,6 +43,7 @@ focus_tree = {
 		completion_reward = { 
 			custom_effect_tooltip = CHI_return_to_ideal_heart_effect_tt 
 			hidden_effect = {
+				#mdardchina_news.57 改变方向
 				#country_event = { id = prc1.54 days = 3 }
 				#country_event = { id = prc1.56 days = 15 }
 			}
@@ -140,7 +141,7 @@ focus_tree = {
 
 	focus = {
 		id = CHI_unity_left_liberal
-		icon = Fight_for_Freedom
+		icon = left_socialism
 		x = 2
 		y = 1
 		cost = 0.4
@@ -218,7 +219,7 @@ focus_tree = {
 		relative_position_id = CHI_ban_military_business
 		ai_will_do = { factor = 50 }				
 		bypass = { }
-	
+		#prc1.96 自由派上台
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no

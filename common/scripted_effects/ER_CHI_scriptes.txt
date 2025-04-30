@@ -405,3 +405,39 @@ CHI_add_State_heilongjiang = {
     555 = { add_to_array = { array = global.heilongjiang_states } }
   }
 }
+
+#军队经商残余影响缓解
+CHI_MER_decresee_effect = {
+  if = {
+    limit = { has_idea = Militarical_economy_remain1 }
+    swap_ideas = {
+      remove_idea = Militarical_economy_remain1
+      add_idea = Militarical_economy_remain2
+    }
+  }
+  else_if = {
+    limit = { has_idea = Militarical_economy_remain2 }
+    swap_ideas = {
+      remove_idea = Militarical_economy_remain2
+      add_idea = Militarical_economy_remain3
+    }
+  }
+  else_if = {
+    limit = { has_idea = Militarical_economy_remain3 }
+    swap_ideas = {
+      remove_idea = Militarical_economy_remain3
+      add_idea = Militarical_economy_remain4
+    }
+  }
+  else_if = {
+    limit = { has_idea = Militarical_economy_remain4 }
+    swap_ideas = {
+      remove_idea = Militarical_economy_remain4
+      add_idea = Militarical_economy_remain5
+    }
+  }
+  else_if = {
+    limit = { has_idea = Militarical_economy_remain5 }
+    remove_ideas = Militarical_economy_remain5
+  }
+}

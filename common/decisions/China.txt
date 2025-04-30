@@ -4362,39 +4362,15 @@ add_stability = 0.05
 		set_country_flag = shipinganquan
 }
 }
-jdjs = {
-
-		allowed = {
-			original_tag = CHI
-		}
-		available = {
-		}
-
-		visible = {
-		OR = {
-		has_idea = CHI_jdjs1 
-	has_idea= CHI_jdjs2
+CHI_MER_decresee = {
+		allowed = { original_tag = CHI }
+		available = {}
+		visible = { CHI_MER_decresee_trigger = yes }
+		days_remove = 120
+		cost = 300
+		ai_will_do = { factor = 5 }
+		remove_effect = { CHI_MER_decresee_effect = yes }
 	}
-	}
-				days_remove = 365
-		cost = 1000
-		ai_will_do = {
-			factor = 5
-		}
-		remove_effect = {
-	if = {
-		limit = { has_idea = CHI_jdjs1 }
-		swap_ideas = {
-			remove_idea = CHI_jdjs1
-			add_idea = CHI_jdjs2
-		}
-}
-	else_if = {
-		limit = { has_idea = CHI_jdjs2}
-			remove_ideas = CHI_jdjs2
-	}
-}
-}
 
 gjldf = {
 	allowed = { original_tag = CHI}

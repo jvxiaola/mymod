@@ -8,3 +8,12 @@ CHI_difference_ROAD_trigger = {
 	}
 	has_country_leader = { name = "江泽民" }
 }
+
+#降低军队经商残余影响
+CHI_MER_decresee_trigger = {
+	OR = {
+		has_idea = Militarical_economy_remain1 has_idea = Militarical_economy_remain2 
+		has_idea = Militarical_economy_remain3 has_idea = Militarical_economy_remain4
+		has_idea = Militarical_economy_remain5
+	}
+}

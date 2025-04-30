@@ -125,7 +125,106 @@ ideas = {
 				Chinese_people_support_to_china_government_modifier = -0.01
 			}
 		}
-
-		
+		#重置：军队经商 CHI_jdjs1
+		Militarical_economy_remain1 = {
+			#军队经商残余影响：极度严重
+			allowed_civil_war = { always = yes }
+			cancel = { 
+				OR = { 
+					has_idea = Industrial_damage1 has_idea = Industrial_damage2 
+					has_idea = Industrial_damage3 has_idea = Industrial_damage4
+				} 
+			}
+			name = Militarical_economy_remain
+			picture = split_pla
+			modifier = {
+				army_org_factor = -0.30
+				army_attack_factor = -0.25
+				breakthrough_factor = -0.30
+				consumer_goods_factor = 0.15
+				nationalist_drift = 0.15
+				democratic_drift = 0.15
+				army_defence_factor = -0.15
+				political_power_gain = -0.30
+			}
+		}
+		Militarical_economy_remain2 = {
+			#军队经商残余影响：较为严重
+			allowed_civil_war = { always = yes }
+			cancel = { 
+				OR = { 
+					has_idea = Industrial_damage1 has_idea = Industrial_damage2 
+					has_idea = Industrial_damage3 has_idea = Industrial_damage4
+				} 
+			}
+			name = Militarical_economy_remain
+			picture = split_pla
+			modifier = {
+				army_org_factor = -0.25
+				army_attack_factor = -0.15
+				breakthrough_factor = -0.25
+				consumer_goods_factor = 0.10
+				nationalist_drift = 0.10
+				democratic_drift = 0.05
+				army_defence_factor = -0.15
+				political_power_gain = -0.15
+			}
+		}
+		Militarical_economy_remain3 = {
+			#军队经商残余影响：一般残余
+			allowed_civil_war = { always = yes }
+			cancel = { 
+				OR = { 
+					has_idea = Industrial_damage1 has_idea = Industrial_damage2 
+					has_idea = Industrial_damage3 has_idea = Industrial_damage4
+				} 
+			}
+			name = Militarical_economy_remain
+			picture = split_pla
+			modifier = {
+				army_org_factor = -0.15
+				army_attack_factor = -0.10
+				breakthrough_factor = -0.20
+				consumer_goods_factor = 0.02
+				nationalist_drift = 0.08
+				army_defence_factor = -0.10
+				political_power_gain = -0.05
+			}
+		}
+		Militarical_economy_remain4 = {
+			#军队经商残余影响：部分残余
+			allowed_civil_war = { always = yes }
+			cancel = { 
+				OR = { 
+					has_idea = Industrial_damage1 has_idea = Industrial_damage2 
+					has_idea = Industrial_damage3 has_idea = Industrial_damage4
+				} 
+			}
+			name = Militarical_economy_remain
+			picture = split_pla
+			modifier = {
+				army_org_factor = -0.05
+				army_attack_factor = -0.05
+				breakthrough_factor = -0.10
+				army_defence_factor = -0.05
+			}
+		}
+		Militarical_economy_remain5 = {
+			#军队经商残余影响：微小残余
+			allowed_civil_war = { always = yes }
+			cancel = { 
+				OR = { 
+					has_idea = Industrial_damage1 has_idea = Industrial_damage2 
+					has_idea = Industrial_damage3 has_idea = Industrial_damage4
+				} 
+			}
+			name = Militarical_economy_remain
+			picture = split_pla
+			modifier = {
+				army_org_factor = -0.03
+				army_attack_factor = -0.02
+				breakthrough_factor = -0.02
+			}
+		}
 	}
 }
