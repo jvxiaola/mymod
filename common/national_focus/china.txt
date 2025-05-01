@@ -10,7 +10,6 @@ focus_tree = {
 	}
 	default = no
 	shared_focus = CHI_The_Untapped_Market
-	shared_focus = PRC_computer
 	shared_focus = CHI_Chinese_Megaprojects
 	shared_focus = CHI_Strategic_Industries
 
@@ -141,91 +140,6 @@ focus = {
 			country_event = prc1.167
 		}
 }
-
-
-		#focus = {
-	#		id = CHI_zibenjiajingshen
-	#		icon = liberalization
-	#		x = -5
-	#		y = 3
-	#		cost = 5
-	#		relative_position_id = CHI_zhengzhigaige
-	
-	#				prerequisite = {
-	#			focus = CHI_zibenjia-dang
-	#			}
-	#				ai_will_do = {
-	#			factor = 50
-	#		}
-	#					bypass = {
-	#
-	#		}
-	
-	#		cancel_if_invalid = yes
-	#		continue_if_invalid = no
-#			available_if_capitulated = no
-#	completion_reward = {
-
-#	add_stability = 0.05
-
-#	custom_effect_tooltip = influence_the_party_line_tt
-	#add_10_western_liberalism = yes
-	
-#	add_to_variable = {
-#	var = CPC_Right
-#	value = 0.10
-#	}
-	
-#	add_to_variable = {
-#	var = CPC_Left
-#	value = -0.03
-#	}
-	
-#	add_to_variable = {
-#		var = CPC_Dengist
-#		value = -0.07
-#		}
-#			}
-#			}
-
-
-
-
-
-
-
-
-
-
-
-
-		#focus = {
-	#	id = CHI_railway_speed_up
-	#	icon = Generic_Railroads
-		#x = -7
-	#	y = 1
-	#	cost = 5
-#		relative_position_id = CHI_chisosm
-	#			prerequisite = {
-		#	focus = CHI_chisosm
-
-	#		}
-	#				bypass = {
-#
-	#	}
-	#		ai_will_do = {
-	#		factor = 50
-	#	}
-#			available = {
-#			}
-#		cancel_if_invalid = yes
-	#	continue_if_invalid = no
-#		available_if_capitulated = no
-#		completion_reward = {
-#three_random_infrastructure = yes			
-#		}
-#		}
-
 
 				focus = {
 		id = CHI_Support_the_War_on_Terror
@@ -6961,4 +6875,278 @@ remove_idea = CHI_dppgov1
 }
 } 
 	}
+
+	focus = {
+		id = PRC_computer
+		icon = red_industry
+		x = 28
+		y = 10
+		cost = 10
+		ai_will_do = { factor = 5 }
+		available = {
+			has_tech = computing3
+			has_civil_war = no
+		}
+		completion_reward = {			
+			add_research_slot = 1
+        	add_tech_bonus = {
+          		name = PRC_computer
+           	 	bonus = 2
+				uses = 1
+				technology = computing4
+        	}
+		}
+	}
+
+	focus = {
+		id = PRC_computer1
+		icon = electricity
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = PRC_computer
+		prerequisite = { focus = PRC_computer }
+		ai_will_do = { factor = 5 }
+		available = {}
+		bypass = {}
+		completion_reward = {			
+			set_temp_variable = { treasury_change = -20 }
+			modify_treasury_effect = yes	
+					every_owned_state = {
+						add_building_construction = {
+							type = internet_station
+							level = 1
+							instant_build = yes
+						}
+					}
+		}
+	}
+
+	focus = {
+		id = PRC_computer2
+		icon = blr_research_with_china
+		x = 0
+		y = 2
+		cost = 10
+		relative_position_id = PRC_computer
+		prerequisite = { focus = PRC_computer1 }
+		ai_will_do = { factor = 5 }
+
+		available = { has_tech = computing4 }
+		bypass = {}
+		completion_reward = {	
+			set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes	
+			add_research_slot = 2
+        	add_tech_bonus = {
+        		name = PRC_computer2
+            	bonus = 2
+				uses = 1
+				technology = computing5
+        	}
+		}
+	}
+	focus = {
+		id = PRC_computer3
+		icon = computer
+		x = 0
+		y = 3
+		cost = 10
+		relative_position_id = PRC_computer
+		prerequisite = { focus = PRC_computer2 }
+		ai_will_do = { factor = 5 }
+		available = {}
+		completion_reward = {	
+			set_temp_variable = { treasury_change = -10 }
+			modify_treasury_effect = yes	
+			add_tech_bonus = {
+				name = PRC_computer3
+				bonus = 0.1
+				uses = 3
+				category = CAT_industry
+			}
+		}
+	}
+
+	focus = {
+		id = PRC_computer5
+		icon = factory_planning
+		x = 0
+		y = 4
+		cost = 10
+		relative_position_id = PRC_computer
+		prerequisite = { focus = PRC_computer3 }
+		ai_will_do = { factor = 5 }
+		available = {
+			custom_trigger_tooltip = {
+				NOT = {
+					OR = {
+						is_in_array = { ruling_party = 5 }
+						is_in_array = { ruling_party = 4 }
+					}
+				}
+				tooltip = CHI_not_left
+			}		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = { add_political_power = 100 }
+	}
+
+	focus = {
+		id = PRC_Streamline_administration_and_delegate_power
+		icon = bread_and_peace
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = PRC_computer5
+		prerequisite = { focus = PRC_computer5 }
+		ai_will_do = { factor = 5 }
+		mutually_exclusive = { focus = PRC_antitrust_law }
+		available = { has_idea = CHI_Free_Market_Economy }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = { decrease_centralization = yes }
+	}
+
+	focus = {
+		id = PRC_liberalize_finance
+		icon = focus_drinks_peace
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = PRC_Streamline_administration_and_delegate_power
+		prerequisite = { focus = PRC_Streamline_administration_and_delegate_power }
+		ai_will_do = { factor = 5 }
+		available = {}
+		completion_reward = { add_ideas = PRC_bank_privatization }
+	}
+
+	focus = {
+		id = PRC_Amend_labor_laws
+		icon = focus_generic_societal_corporatism
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = PRC_Streamline_administration_and_delegate_power
+		prerequisite = { focus = PRC_Streamline_administration_and_delegate_power }
+		ai_will_do = { factor = 5 }
+		available = {}
+		completion_reward = { add_ideas = PRC_Reward }
+	}
+
+	focus = {
+		id = PRC_power_of_capital
+		icon = balance_buget
+		x = 0
+		y = 2
+		cost = 10
+		relative_position_id = PRC_Streamline_administration_and_delegate_power
+		prerequisite = { focus = PRC_liberalize_finance}
+		prerequisite = { focus = PRC_Amend_labor_laws }
+		ai_will_do = { factor = 5 }
+		available = {
+			custom_trigger_tooltip = {
+				is_in_array = { ruling_party = 6 }
+				tooltip = "中国共产党改革派执政"
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {					
+			hidden_effect = {
+				set_popularities = { communism = 100 }
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+				}
+				set_variable = { election_threshold = 0.05 }
+				start_politics_input = yes
+				set_variable = { party_pop_array^6 = 1 } #Conservative
+				add_to_array = { ruling_party = 6 }														
+				startup_politics = yes
+			}
+			create_country_leader = {
+				name = "马云"
+				picture = "jack_ma.dds"
+				expire = "2333.1.1"
+				ideology = Conservative
+				traits = {
+					Socialism_with_Chinese_characteristics_ideology
+					peoplefuhao
+					fubao
+				}
+			}
+
+		}
+	}
+
+	focus = {
+		id = PRC_antitrust_law
+		icon = GEO_Enforce_Wealth_Distribution
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = PRC_computer5
+		prerequisite = { focus = PRC_computer5 }
+		ai_will_do = { factor = 5 }
+		mutually_exclusive = { focus = PRC_Streamline_administration_and_delegate_power }
+		available = {	
+			custom_trigger_tooltip = {
+				is_in_array = { ruling_party = 6 }
+				tooltip = "中国共产党改革派执政"
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = { 
+			decrease_economic_growth = yes
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = PRC_Minors_are_prohibited_from_playing_games
+		icon = Focus_Socialist_Worker2
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = PRC_antitrust_law
+		prerequisite = { focus = PRC_antitrust_law }
+		ai_will_do = { factor = 5 }
+		available = {}
+		completion_reward = { add_ideas = PRC_ban_game }
+	}
+
+	focus = {
+		id = PRC_Strengthen_online_political_education
+		icon = one_china_policy_prc
+		x = 1
+		y = 1
+		cost = 5
+		relative_position_id = PRC_antitrust_law
+		prerequisite = { focus = PRC_antitrust_law }
+		ai_will_do = { factor = 5 }
+		available = {}
+		completion_reward = { add_ideas = PRC_nationalist_education }
+	}
+
+	focus = {
+		id = PRC_party_state_capitalism
+		icon = communist_china
+		x = 0
+		y = 2
+		cost = 10
+		relative_position_id = PRC_antitrust_law
+		prerequisite = { focus = PRC_Strengthen_online_political_education}
+		prerequisite = { focus = PRC_Minors_are_prohibited_from_playing_games }
+		ai_will_do = { factor = 5 }
+		available = {}
+		completion_reward = { add_ideas = PRC_party_state_capitalism }
+	}
+
 	}
