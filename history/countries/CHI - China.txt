@@ -170,23 +170,23 @@ set_variable = { CHI_Socialist_Construction_dynamic1 = -0.40}
 	589 = { add_dynamic_modifier = { modifier = CHI_tibet_autonomous_region } }
 
 	add_ideas = {
-	china_war
-	maolegacy
-	denglegacy
-	CHI_jiefangsixiang
-	CHI_GGKF
-	CHI_Bide
-	CHI_jihuashengyu
-	Militarical_economy_remain1
-	CHI_big_layoff1
-	CHINESE_agricultural_tax
-	CHI_Socialist_Market_Economy
-	CHI_shipinganquanwenti
+		china_war
+		maolegacy
+		denglegacy
+		CHI_jiefangsixiang
+		CHI_GGKF
+		CHI_Bide
+		CHI_jihuashengyu
+		Militarical_economy_remain1
+		CHI_big_layoff1
+		CHINESE_agricultural_tax
+		CHI_Socialist_Market_Economy
+		CHI_shipinganquanwenti
 	
-	CHI_shaosuminzu1
-	CHI_guoshengweiji
-	harsh_working_en_of_CHI4	  
-		multi_ethnic_state_idea
+		CHI_shaosuminzu1
+		CHI_overproduction1
+		harsh_working_en_of_CHI4
+
 		economic_boom
 		unrestrained_corruption
 		pluralist

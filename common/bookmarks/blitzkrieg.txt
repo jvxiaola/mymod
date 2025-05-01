@@ -13,9 +13,9 @@ bookmarks = {
 			history = "CHI_MILLENNIUM_DAWN_DESC"
 			ideology = communism
 			ideas = {
-				chastity_paifang
-				party_commands_gun
-				p5_member
+				Militarical_economy_remain1
+				harsh_working_en_of_CHI4
+				CHI_overproduction1
 			}
 			focuses = {
 				CHI_chisosm
