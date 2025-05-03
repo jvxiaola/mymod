@@ -6,30 +6,35 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_DSC_FRG_1_GUI_icon"
 		texturefile = "gfx/interface/DSC_CIV_GUI/GFX_DSC_FRG_1.png"
+		transparencecheck = yes
 	}
 	spriteType = {
 		name = "GFX_DSC_FRG_2_GUI_icon"
 		texturefile = "gfx/interface/DSC_CIV_GUI/GFX_DSC_FRG_2.png"
+		transparencecheck = yes
 	}
 	spriteType = {
 		name = "GFX_DSC_FRG_3_GUI_icon"
 		texturefile = "gfx/interface/DSC_CIV_GUI/GFX_DSC_FRG_3.png"
+		transparencecheck = yes
 	}
 
 	spriteType = {
 		name = "GFX_DSC_FRG_4_GUI_icon"
 		texturefile = "gfx/interface/DSC_CIV_GUI/GFX_DSC_FRG_4.png"
+		transparencecheck = yes
 	}
 
 	spriteType = {
 		name = "GFX_DSC_FRG_5_GUI_icon"
 		texturefile = "gfx/interface/DSC_CIV_GUI/GFX_DSC_FRG_5.png"
+		transparencecheck = yes
 	}
 
-	spriteTypes = {
-		name = "GFX_empty"
-		texturefile =  "gfx/interface/tongyong/empty_button.png"
-		}
+	#spriteTypes = {
+	#	name = "GFX_empty"
+	#	texturefile =  "gfx/interface/tongyong/empty_button.png"
+	#	}
 	
 
 }

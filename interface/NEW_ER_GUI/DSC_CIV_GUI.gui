@@ -21,12 +21,12 @@ guiTypes = {
 
 
 
-		iconType = {
-			name = "DSC_icon_OPEN5"
+		#iconType = {
+		#	name = "DSC_icon_OPEN5"
 			#spriteType ="GFX_empty"
-			spriteType = "GFX_DSC_FRG_5_GUI_icon"
-			position = { x = 20 y = 0 }
-		}
+		#	spriteType = "GFX_DSC_FRG_5_GUI_icon"
+		#	position = { x = 20 y = 0 }
+		#}
 
 
 		# 实际点击按钮（含 Hover 效果）
