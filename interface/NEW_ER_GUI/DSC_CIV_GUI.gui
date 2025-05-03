@@ -31,10 +31,13 @@ guiTypes = {
 
 		# 实际点击按钮（含 Hover 效果）
 buttonType = {
-	name = "DSC_button_OPEN5_pzx"
+	name = "DSC_button_OPEN5"
 	position = { x = 20 y = 0 }  # 这个偏移值决定碰撞框在哪
-	size = { width = 30 height = 30 }  # 实际点击范围
-	spriteType = "GFX_empty"
+	#size = { width = 30 height = 30 }  # 实际点击范围
+	#spriteType = "GFX_empty"
+	spriteType = "GFX_DSC_FRG_5_GUI_icon"
+
+
 	#background = "DSC_icon_OPEN5"
 	#hoverSpriteType = "GFX_HIGHLIGHT_CIRCLE"  # ← 你需要准备一个悬停高亮图
 	clicksound = click_default

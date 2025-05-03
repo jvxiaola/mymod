@@ -28,7 +28,7 @@ spriteTypes = {
 
 	spriteTypes = {
 		name = "GFX_empty"
-		texturefile =  "gfx/interface/empty_button.png"
+		texturefile =  "gfx/interface/tongyong/empty_button.png"
 		}
 	
 
