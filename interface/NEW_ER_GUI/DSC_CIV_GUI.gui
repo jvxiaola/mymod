@@ -4,8 +4,8 @@ guiTypes = {
 		size = { width = 470 height = 500 }
 		
 		buttonType = {
-			name = "XIN_button_OPEN"
-			spriteType = "GFX_XIN_CSIC_GUI_icon"
+			name = "DSC_button_OPEN"
+			spriteType = "GFX_DSC_FRG_1_GUI_icon"
 			position = { x = 30 y = 10 }
 			clicksound = click_default
 			pdx_tooltip = "XIN_button_desc_TT"
@@ -13,12 +13,12 @@ guiTypes = {
 		}
 		iconType = {
 			name = "signed_XIN_state_icon"
-			spriteType = "GFX_focus_m_r_states_icon"
+			spriteType = "GFX_DSC_FRG_1_GUI_icon"
 			position = {  x = 75 y = 50 }
 		}
 		instantTextBoxType = {
 			position = { x = 30 y = 100 }
-			name = "XIN_button_OPEN_desc_text"
+			name = "GFX_DSC_FRG_1_GUI_iconXIN_button_OPEN_desc_text"
 			borderSize = { x = 10 y = 4 }
 			font = "vic_22"
 			text = "新疆地区"
@@ -27,157 +27,8 @@ guiTypes = {
 		}
 
 		
-		buttonType = {
-			name = "XIN_diplomacy_button"
-			spriteType = "GFX_XIN_second_button_icon"
-			buttonText = "新疆外交事项"
-			buttonFont = "hoi_18mbs"
-			position = { x = 70 y = 160 }
-			clicksound = click_default
-			pdx_tooltip = "XIN_diplomacy_desc_TT"
-		}
-		iconType = {
-			name = "signed_gui_XIN_diplomacy_button"
-			spriteType = "GFX_pla_selected_icon"
-			position = {  x = 30 y = 135 }
-		}
+	
 
-		
-		buttonType = {
-			name = "XIN_public_security_button"
-			spriteType = "GFX_XIN_second_button_icon"
-			buttonText = "新疆治安事项"
-			buttonFont = "hoi_18mbs"
-			position = { x = 300 y = 160 }
-			clicksound = click_default
-			pdx_tooltip = "XIN_public_security_desc_TT"
-		}
-		iconType = {
-			name = "signed_gui_XIN_public_security_button"
-			spriteType = "GFX_pla_selected_icon"
-			position = {  x = 260 y = 135 }
-		}
-
-		
-		buttonType = {
-			name = "XIN_military_recruitment_button"
-			spriteType = "GFX_XIN_second_button_icon"
-			buttonText = "新疆军区征招"
-			buttonFont = "hoi_18mbs"
-			position = { x = 70 y = 220 }
-			clicksound = click_default
-			pdx_tooltip = "XIN_military_recruitment_desc_TT"
-		}
-		iconType = {
-			name = "signed_gui_XIN_military_recruitment_button"
-			spriteType = "GFX_pla_selected_icon"
-			position = {  x = 30 y = 195 }
-		}
-
-		buttonType = {
-			name = "XIN_arms_industry_button"
-			spriteType = "GFX_XIN_second_button_icon"
-			buttonText = "新疆军备建设"
-			buttonFont = "hoi_18mbs"
-			position = { x = 300 y = 220 }
-			clicksound = click_default
-			pdx_tooltip = "XIN_arms_industry_desc_TT"
-		}
-		iconType = {
-			name = "signed_gui_XIN_arms_industry_button"
-			spriteType = "GFX_pla_selected_icon"
-			position = {  x = 260 y = 195 }
-		}
-
-		buttonType = {
-			name = "XIN_military_qualities_button"
-			spriteType = "GFX_XIN_second_button_icon"
-			buttonText = "军事素质建设"
-			buttonFont = "hoi_18mbs"
-			position = { x = 180 y = 280 }
-			clicksound = click_default
-			pdx_tooltip = "XIN_military_qualities_desc_TT"
-		}
-		iconType = {
-			name = "signed_gui_XIN_military_qualities_button"
-			spriteType = "GFX_pla_selected_icon"
-			position = {  x = 140 y = 255 }
-		}
-
-
-		buttonType = {
-			name = "XIN_focus_conscription_button"
-			quadTextureSprite = "conscription"
-			position = { x = 40 y = 330 }
-			clicksound = click_default
-			pdx_tooltip = "XIN_focus_conscription_desc_TT"
-			pdx_tooltip_delayed = "XIN_focus_conscription_effect_desc_TT"
-		}
-		iconType = {
-			name = "XIN_focus_conscription_button_shine"
-			quadTextureSprite = "conscription_shine"
-			pdx_tooltip = "XIN_focus_conscription_ing_desc_TT"
-			pdx_tooltip_delayed = "XIN_focus_conscription_effect_desc_TT"
-			position = {  x = 40 y = 330 }
-		}
-		instantTextBoxType = {
-			position = { x = 20 y = 410 }
-			name = "XIN_focus_conscription_desc_text"
-			borderSize = { x = 10 y = 10 }
-			font = "vic_22"
-			text = "聚焦征招事务"
-			maxWidth = 135
-			maxHeight = 22
-		}
-
-		buttonType = {
-			name = "XIN_focus_military_equipment_button"
-			quadTextureSprite = "toyota_technical2"
-			position = { x = 175 y = 315 }
-			clicksound = click_default
-			pdx_tooltip = "XIN_focus_military_equipment_desc_TT"
-			pdx_tooltip_delayed = "XIN_focus_military_equipment_effect_desc_TT"
-		}
-		iconType = {
-			name = "XIN_focus_military_equipment_button_shine"
-			quadTextureSprite = "toyota_technical2_shine"
-			pdx_tooltip = "XIN_focus_military_equipment_ing_desc_TT"
-			pdx_tooltip_delayed = "XIN_focus_military_equipment_effect_desc_TT"
-			position = {  x = 175 y = 315 }
-		}
-		instantTextBoxType = {
-			position = { x = 165 y = 410 }
-			name = "XIN_focus_military_equipment_desc_text"
-			borderSize = { x = 10 y = 10 }
-			font = "vic_22"
-			text = "聚焦军备建设"
-			maxWidth = 135
-			maxHeight = 22
-		}
-
-		buttonType = {
-			name = "XIN_focus_military_qualities_button"
-			quadTextureSprite = "army_officers_communist"
-			position = { x = 320 y = 325 }
-			clicksound = click_default
-			pdx_tooltip = "XIN_focus_military_qualities_desc_TT"
-			pdx_tooltip_delayed = "XIN_focus_military_qualities_effect_desc_TT"
-		}
-		iconType = {
-			name = "XIN_focus_military_qualities_button_shine"
-			quadTextureSprite = "army_officers_communist_shine"
-			pdx_tooltip = "XIN_focus_military_qualities_ing_desc_TT"
-			pdx_tooltip_delayed = "XIN_focus_military_qualities_effect_desc_TT"
-			position = {  x = 320 y = 325 }
-		}
-		instantTextBoxType = {
-			position = { x = 295 y = 410 }
-			name = "XIN_focus_military_qualities_desc_text"
-			borderSize = { x = 15 y = 10 }
-			font = "vic_22"
-			text = "聚焦军事素质提升"
-			maxWidth = 170
-			maxHeight = 22
-		}
+	
 	}
 }
