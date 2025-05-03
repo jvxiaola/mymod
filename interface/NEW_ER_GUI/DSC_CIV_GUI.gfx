@@ -1,0 +1,31 @@
+spriteTypes = {
+
+
+
+	#川渝内战部分的GUI
+	spriteType = {
+		name = "GFX_DSC_FRG_1_GUI_icon"
+		texturefile = "gfx/interface/DSC_CIV_GUI/GFX_DSC_FRG_1.png"
+	}
+	spriteType = {
+		name = "GFX_DSC_FRG_2_GUI_icon"
+		texturefile = "gfx/interface/DSC_CIV_GUI/GFX_DSC_FRG_2.png"
+	}
+	spriteType = {
+		name = "GFX_DSC_FRG_3_GUI_icon"
+		texturefile = "gfx/interface/DSC_CIV_GUI/GFX_DSC_FRG_3.png"
+	}
+
+	spriteType = {
+		name = "GFX_DSC_FRG_4_GUI_icon"
+		texturefile = "gfx/interface/DSC_CIV_GUI/GFX_DSC_FRG_4.png"
+	}
+
+	spriteType = {
+		name = "GFX_DSC_FRG_5_GUI_icon"
+		texturefile = "gfx/interface/DSC_CIV_GUI/GFX_DSC_FRG_5.png"
+	}
+
+
+
+}

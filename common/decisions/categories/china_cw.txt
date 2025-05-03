@@ -31,7 +31,7 @@ DSC_MAOPAIJUECE = {
 
 	visible = {
 
-		has_country_flag = gmxingdong
+		#has_country_flag = gmxingdong
 	}
 }
 
@@ -121,5 +121,19 @@ CW_D_category = {
 	visible = {
 		original_tag = CHI 
 		has_country_flag = XIN_attacked
+	}
+}
+
+
+DSC_MAOPAIJUECE = {
+	allowed = { 
+		#tag = DSC 
+	}
+	priority = { base = 30000 }
+	icon = GFX_decision_CUB_train_chi
+	visible_when_empty = yes
+	scripted_gui = DSC_CIV_GUI
+	visible = {
+		#tag = DSC
 	}
 }
