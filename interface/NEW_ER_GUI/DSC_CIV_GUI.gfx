@@ -26,6 +26,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/DSC_CIV_GUI/GFX_DSC_FRG_5.png"
 	}
 
-
+	spriteTypes = {
+		name = "GFX_empty"
+		texturefile =  "gfx/interface/empty_button.png"
+		}
+	
 
 }
+
