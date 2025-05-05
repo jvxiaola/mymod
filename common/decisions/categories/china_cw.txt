@@ -31,8 +31,8 @@ DSC_MAOPAIJUECE = {
 		icon = GFX_decision_CUB_train_chi
 
 	visible = {
-tag = CHI
-		#has_country_flag = gmxingdong
+
+		has_country_flag = gmxingdong
 	}
 }
 
