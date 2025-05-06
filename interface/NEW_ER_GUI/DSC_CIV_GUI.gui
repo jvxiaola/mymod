@@ -10,7 +10,7 @@ guiTypes = {
 			clicksound = click_default
 			pdx_tooltip = "XIN_button_desc_TT"
 			pdx_tooltip_delayed = "XIN_button_more_desc_loc_TT"
-			onclick = "set_DSC_choice_4"
+
 		}
 		buttonType = {
 			name = "DSC_button_OPEN5"
@@ -19,7 +19,7 @@ guiTypes = {
 			clicksound = click_default
 			pdx_tooltip = "XIN_button_desc_TT"
 			pdx_tooltip_delayed = "XIN_button_more_desc_loc_TT"
-			onclick = "set_DSC_choice_5"
+
 		}	
 		buttonType = {
 			name = "DSC_button_OPEN2"
@@ -28,7 +28,7 @@ guiTypes = {
 			clicksound = click_default
 			pdx_tooltip = "XIN_button_desc_TT"
 			pdx_tooltip_delayed = "XIN_button_more_desc_loc_TT"
-			onclick = "set_DSC_choice_2"
+
 		}
 		buttonType = {
 			name = "DSC_button_OPEN3"
@@ -37,7 +37,7 @@ guiTypes = {
 			clicksound = click_default
 			pdx_tooltip = "XIN_button_desc_TT"
 			pdx_tooltip_delayed = "XIN_button_more_desc_loc_TT"
-		    onclick = "set_DSC_choice_3"
+
 		}
 		buttonType = {
 			name = "DSC_button_OPEN1"
@@ -47,7 +47,7 @@ guiTypes = {
 			clicksound = click_default
 			pdx_tooltip = "XIN_button_desc_TT"
 			pdx_tooltip_delayed = "XIN_button_more_desc_loc_TT"
-			onclick = "set_DSC_choice_1"
+
 		}
 	}
 }

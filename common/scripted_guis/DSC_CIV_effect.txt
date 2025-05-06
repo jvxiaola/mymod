@@ -16,9 +16,52 @@ scripted_gui = {
 		}
 		effects = {
 
+			DSC_button_OPEN4_click = { 
+				set_country_flag = DSC_GUI4_OPENED
+				clr_country_flag = DSC_GUI1_OPENED
+				clr_country_flag = DSC_GUI2_OPENED
+				clr_country_flag = DSC_GUI3_OPENED
+				clr_country_flag = DSC_GUI5_OPENED
+			}
+
+			DSC_button_OPEN1_click = { 
+				set_country_flag = DSC_GUI1_OPENED
+				clr_country_flag = DSC_GUI4_OPENED
+				clr_country_flag = DSC_GUI2_OPENED
+				clr_country_flag = DSC_GUI3_OPENED
+				clr_country_flag = DSC_GUI5_OPENED
+			}
+			DSC_button_OPEN2_click = { 
+				set_country_flag = DSC_GUI2_OPENED
+				clr_country_flag = DSC_GUI1_OPENED
+				clr_country_flag = DSC_GUI4_OPENED
+				clr_country_flag = DSC_GUI3_OPENED
+				clr_country_flag = DSC_GUI5_OPENED
+			}
+
+			DSC_button_OPEN3_click = { 
+				set_country_flag = DSC_GUI3_OPENED
+				clr_country_flag = DSC_GUI1_OPENED
+				clr_country_flag = DSC_GUI2_OPENED
+				clr_country_flag = DSC_GUI4_OPENED
+				clr_country_flag = DSC_GUI5_OPENED
+			}
 
 
-		}
+			DSC_button_OPEN5_click = { 
+				set_country_flag = DSC_GUI5_OPENED
+				clr_country_flag = DSC_GUI1_OPENED
+				clr_country_flag = DSC_GUI2_OPENED
+				clr_country_flag = DSC_GUI4_OPENED
+				clr_country_flag = DSC_GUI3_OPENED
+			}
+
+
+
+
+
+
 	}
 
+}
 }
