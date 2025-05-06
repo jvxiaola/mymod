@@ -290,7 +290,7 @@ focus = {
 				check_variable = { CPC_Dengist < CPC_Left}
 				}
 			}
-			hidden_effect={	country_event = { id = prc1.102 days = 15 } }
+			hidden_effect={	country_event = { id = CHI_ER_start.1 days = 15 } }
 		}
 		set_temp_variable = { treasury_change = 50 }
 		modify_treasury_effect = yes
@@ -320,7 +320,7 @@ focus = {
 					check_variable = { CPC_Dengist < CPC_Left}
 					}
 				}
-				hidden_effect={	country_event = { id = prc1.102 days = 15 } }
+				hidden_effect={	country_event = { id = CHI_ER_start.1 days = 15 } }
 			}
 			set_temp_variable = { treasury_change = -50 }
 			modify_treasury_effect = yes

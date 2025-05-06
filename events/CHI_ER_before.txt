@@ -2,16 +2,16 @@ add_namespace = CHI_ER_BEFORE_guang #珠江事件
 add_namespace = CHI_ER_start #重新整编事件
 #OTL领导层变动
 country_event = {
-	id = CHI_ER_start.01
-	title = CHI_ER_start.01.t
-	desc = CHI_ER_start.01.d
+	id = CHI_ER_start.0
+	title = CHI_ER_start.0.t
+	desc = CHI_ER_start.0.d
 	picture = GFX_politics_communism
 	fire_only_once = yes
     trigger = {
 		date > 2002.9.1 has_country_leader = { name = "江泽民" }
 	}
 	option = {
-		name = CHI_ER_start.01.o1
+		name = CHI_ER_start.0.o1
 		complete_national_focus = CHI_16th_National_Congress
 		add_to_variable = { party_pop_array^6= 0.1 } 
 		create_country_leader = {
