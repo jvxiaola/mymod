@@ -3,7 +3,7 @@ scripted_gui = {
 	CISC_main_GUI = {
 		context_type = decision_category
 		window_name = "CISC_main_GUI"
-
+		#云泽标记
 		visible = {
 			always = yes
 		}

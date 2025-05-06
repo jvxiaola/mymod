@@ -1,78 +1,43 @@
 guiTypes = {
 	containerWindowType = {
+		#云泽标记
 		name = "DSC_CIV_GUI"
 		size = { width = 900 height = 600 }
-		
-
-	
-
 		buttonType = {
 			name = "DSC_button_OPEN4"
 			spriteType = "GFX_DSC_FRG_4_GUI_icon"
 			position = { x = 92 y = 28 }
-
 			clicksound = click_default
 			pdx_tooltip = "XIN_button_desc_TT"
 			pdx_tooltip_delayed = "XIN_button_more_desc_loc_TT"
+			onclick = "set_DSC_choice_4"
 		}
-
-
-
-
-
-
-		#iconType = {
-		#	name = "DSC_icon_OPEN5"
-			#spriteType ="GFX_empty"
-		#	spriteType = "GFX_DSC_FRG_5_GUI_icon"
-		#	position = { x = 20 y = 0 }
-		#}
-
-
-		# 实际点击按钮（含 Hover 效果）
-buttonType = {
-	name = "DSC_button_OPEN5"
-	position = { x = 20 y = 0 }  # 这个偏移值决定碰撞框在哪
-	#size = { width = 30 height = 30 }  # 实际点击范围
-	#spriteType = "GFX_empty"
-	spriteType = "GFX_DSC_FRG_5_GUI_icon"
-
-
-	#background = "DSC_icon_OPEN5"
-	#hoverSpriteType = "GFX_HIGHLIGHT_CIRCLE"  # ← 你需要准备一个悬停高亮图
-	clicksound = click_default
-	pdx_tooltip = "XIN_button_desc_TT"
-	pdx_tooltip_delayed = "XIN_button_more_desc_loc_TT"
-}
-
-
-		#buttonType = {
-		#	name = "DSC_button_OPEN5"
-		#	spriteType = "GFX_DSC_FRG_5_GUI_icon"
-		#	position = { x = 20 y = 0 }
-		#	size = { width = 30 height = 30 }  # 控制碰撞箱的大小
-		#	background = "GFX_empty"
-		#	clicksound = click_default
-		#	pdx_tooltip = "XIN_button_desc_TT"
-		#	pdx_tooltip_delayed = "XIN_button_more_desc_loc_TT"
-		#}
+		buttonType = {
+			name = "DSC_button_OPEN5"
+			position = { x = 20 y = 0 }  # 这个偏移值决定碰撞框在哪
+			spriteType = "GFX_DSC_FRG_5_GUI_icon"
+			clicksound = click_default
+			pdx_tooltip = "XIN_button_desc_TT"
+			pdx_tooltip_delayed = "XIN_button_more_desc_loc_TT"
+			onclick = "set_DSC_choice_5"
+		}	
 		buttonType = {
 			name = "DSC_button_OPEN2"
 			spriteType = "GFX_DSC_FRG_2_GUI_icon"
 			position = { x = 355 y = 81 }
-
 			clicksound = click_default
 			pdx_tooltip = "XIN_button_desc_TT"
 			pdx_tooltip_delayed = "XIN_button_more_desc_loc_TT"
+			onclick = "set_DSC_choice_2"
 		}
 		buttonType = {
 			name = "DSC_button_OPEN3"
 			spriteType = "GFX_DSC_FRG_3_GUI_icon"
 			position = { x = 362 y = 136 }
-
 			clicksound = click_default
 			pdx_tooltip = "XIN_button_desc_TT"
 			pdx_tooltip_delayed = "XIN_button_more_desc_loc_TT"
+		    onclick = "set_DSC_choice_3"
 		}
 		buttonType = {
 			name = "DSC_button_OPEN1"
@@ -82,6 +47,7 @@ buttonType = {
 			clicksound = click_default
 			pdx_tooltip = "XIN_button_desc_TT"
 			pdx_tooltip_delayed = "XIN_button_more_desc_loc_TT"
+			onclick = "set_DSC_choice_1"
 		}
 	}
 }

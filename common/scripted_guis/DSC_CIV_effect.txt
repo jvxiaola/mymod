@@ -7,10 +7,15 @@ scripted_gui = {
 		visible = {
 			always = yes
 		}
+		#云泽标记
 		triggers = {
-			
-			DSC_button_OPEN_visible = { tag=CHI}
+
 		
+
+
+		}
+		effects = {
+
 
 
 		}
