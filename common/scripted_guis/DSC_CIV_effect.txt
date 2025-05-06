@@ -17,6 +17,7 @@ scripted_gui = {
 		effects = {
 
 			DSC_button_OPEN4_click = { 
+				
 				set_country_flag = DSC_GUI4_OPENED
 				clr_country_flag = DSC_GUI1_OPENED
 				clr_country_flag = DSC_GUI2_OPENED

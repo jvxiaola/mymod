@@ -283,6 +283,15 @@ focus = {
 	continue_if_invalid = no
 	available_if_capitulated = no
 	completion_reward = {
+		if = {
+			limit = {
+				OR = {
+				check_variable = { CPC_Dengist < CPC_Right}
+				check_variable = { CPC_Dengist < CPC_Left}
+				}
+			}
+			hidden_effect={	country_event = { id = prc1.102 days = 15 } }
+		}
 		set_temp_variable = { treasury_change = 50 }
 		modify_treasury_effect = yes
 		remove_ideas = CHI_overproduction1
@@ -304,42 +313,172 @@ focus = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
+			if = {
+				limit = {
+					OR = {
+					check_variable = { CPC_Dengist < CPC_Right}
+					check_variable = { CPC_Dengist < CPC_Left}
+					}
+				}
+				hidden_effect={	country_event = { id = prc1.102 days = 15 } }
+			}
 			set_temp_variable = { treasury_change = -50 }
 			modify_treasury_effect = yes
 			remove_ideas = CHI_overproduction1
 		}
 	}
-
 	focus = {
-		id = CHI_CPB_Temporary_Meeting
+		id = CHI_break_term_limits
 		icon = focus_SWE_socialist_reforms
-		x = 1
-		y = 1
-		cost = 3
-		relative_position_id = CHI_kuodaneixu
-		available = {}
-		prerequisite = { focus = CHI_kuodaneixu focus = CHI_kuodachukou }
-		select_effect = {
-			CHI_URGENT_state = yes
+		x = 0
+		y = 7
+		cost = 5
+		relative_position_id = CHI_zhengzhigaige		
+		mutually_exclusive = {focus = CHI_CPB_Temporary_Meeting}
+		allow_branch = {
+			NOT = {
+ 				OR = {
+					has_country_leader = { name = "江泽民" }
+					has_completed_focus = CHI_CPB_Temporary_Meeting
+					has_country_flag = CPC_Rehabilitation_of_Zhao_Ziyang
+				}
+			}
+
 		}
-		ai_will_do = { factor = 500 }
+		bypass = {}
+				prerequisite = {
+					focus = CHI_kuodachukou
+					focus = CHI_kuodaneixu
+			}
+			available = {}
+				ai_will_do = {
+			factor = 50
+		}
+
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no 
-		cancel_effect = { mark_focus_tree_layout_dirty = yes }
+		available_if_capitulated = no
 		completion_reward = {
-			if = {
-				limit = { has_country_flag = CHI_zhunbeirudang }
-				add_ideas = CHI_zibenjia
-				custom_effect_tooltip = influence_the_party_line_tt
-				add_10_western_liberalism = yes
-				add_to_variable = { CPC_Right = 0.15 }
-				add_to_variable = { CPC_Left = -0.03 }
-				add_to_variable = { CPC_Dengist = -0.12}
+			add_stability = -0.1
+			mark_focus_tree_layout_dirty = yes
+				hidden_effect = {
+				}
 			}
-			custom_effect_tooltip = CHI_change_forward_tt
 		}
-	}
+
+		focus = {
+			id = CHI_paving_the_way_for_successors
+			icon = communist_party_of_china
+			x = 0
+			y = 7
+			cost = 2
+			relative_position_id = CHI_zhengzhigaige		
+				mutually_exclusive = { focus = CHI_break_term_limits}
+				available = {
+					date > 2002.9.1
+					has_country_leader = { name = "江泽民" }
+				}
+				bypass = {}
+					prerequisite = {
+						focus = CHI_kuodachukou
+	
+						focus = CHI_kuodaneixu
+	
+					}
+	
+	
+	
+					ai_will_do = {
+				factor = 500
+			}
+			allow_branch = {
+	
+	OR={
+		AND={
+					has_country_leader = { name = "江泽民" }
+				NOT={
+					has_country_flag = CPC_Rehabilitation_of_Zhao_Ziyang
+				}
+			}
+			
+	has_country_flag = CHI_congress_2002
+			}
+			}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no 
+	cancel_effect = {
+		
+	
+	mark_focus_tree_layout_dirty = yes
+	
+				
+			}
+			completion_reward = {
+				if = {
+					limit = { has_country_flag= CHI_zhunbeirudang}
+					#set_temp_variable = { temp_CHI_people_support = 0.15 }
+					#change_CHI_people_support = yes
+					add_ideas = CHI_zibenjia
+					custom_effect_tooltip = influence_the_party_line_tt
+					add_10_western_liberalism = yes
+					
+					add_to_variable = {
+					var = CPC_Right
+					value = 0.15
+					}
+					
+					add_to_variable = {
+					var = CPC_Left
+					value = -0.03
+					}
+					
+					add_to_variable = {
+						var = CPC_Dengist
+						value = -0.12
+						}
+							}
+							
+						
+					
+				
+				add_political_power = 100
+				country_event = {id = prc1.26 days = 10}
+				mark_focus_tree_layout_dirty = yes
+			}
+		}
+
+	#focus = {
+		#id = CHI_CPB_Temporary_Meeting
+		#icon = focus_SWE_socialist_reforms
+		#x = 1
+		#y = 1
+		#cost = 3
+		#relative_position_id = CHI_kuodaneixu
+		#available = {}
+		#prerequisite = { focus = CHI_kuodaneixu focus = CHI_kuodachukou }
+		#select_effect = {
+			#CHI_URGENT_state = yes
+		#}
+		#ai_will_do = { factor = 500 }
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		#available_if_capitulated = no 
+		#cancel_effect = { mark_focus_tree_layout_dirty = yes }
+		#completion_reward = {
+			#if = {
+				#limit = { has_country_flag = CHI_zhunbeirudang }
+				#add_ideas = CHI_zibenjia
+				#custom_effect_tooltip = influence_the_party_line_tt
+				#add_10_western_liberalism = yes
+				#add_to_variable = { CPC_Right = 0.15 }
+				#add_to_variable = { CPC_Left = -0.03 }
+				#add_to_variable = { CPC_Dengist = -0.12}
+			#}
+			#custom_effect_tooltip = CHI_change_forward_tt
+		#}
+	#}
 
 
 focus = {

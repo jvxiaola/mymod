@@ -47,6 +47,11 @@
  CHI_16th_National_Congress: "第十六次全国代表大会"
  CHI_16th_National_Congress_desc: "十六大召开了，本次代表大会将会决定我们的下一任主席人选"
 
+ CHI_break_term_limits: "中央政治局临时会议"
+ CHI_break_term_limits_desc: "一些紧急状况需要被处理。。。"
+ CHI_support_the_left: "全面戒严"
+ CHI_support_the_left_desc: "为了防止不实言论误导大众，以及维稳社会秩序，我们有必要暂时实行戒严"
+
 #国策
  CHI_CPB_Temporary_Meeting: "中央政治局临时会议"
  CHI_party_split: "§R分道扬镳§!"
