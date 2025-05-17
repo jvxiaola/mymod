@@ -1,0 +1,11 @@
+guiTypes = {
+	containerWindowType = {
+		name = "CHI_CPC_poltical_GUI_main"
+		size = { width = 900 height = 600 }
+		position = { x = 100 y = 100 }
+		background = {
+			name = "CHI_CPC_poltical_GUI_background_main" 
+			quadTextureSprite = "GFX里的图片名字（需要interface定义，也可去复制原版的背景图片）"
+		}
+	}
+}

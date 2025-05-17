@@ -1,0 +1,8 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_CHI_CPC_poltical_GUI_background_main"
+		texturefile = "gfx/interface/CHI_CPC_poltical_GUI/main_political_window.png"
+	}
+	
+}
+
