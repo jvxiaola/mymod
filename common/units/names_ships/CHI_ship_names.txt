@@ -1,0 +1,152 @@
+##### CHINA NAME LISTS #####
+
+## SEE PLAN SHIP NAMING CONVENTIONS: https://en.wikipedia.org/wiki/Naval_Vessels_Naming_Regulation
+
+### AIRCRAFT CARRIER NAMES ###
+CHI_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = { CHI DSC }
+
+	type = ship
+	ship_types = { carrier }
+
+	fallback_name = "%d号航空母舰"
+
+	unique = {
+		"林芝" "山东" "江苏" "浙江" "福建" "广东" "西藏" "新疆" "山西" "四川" "青海" "宁夏" "江西" "湖南" "台湾" 
+		"黑龙江" "吉林" "云南" "河北" "陕西" "海南" "三沙" "湖北" "贵州" "辽宁" "广西" "甘肃" "安徽" "河南" "内蒙古" "外蒙古"
+		"外西北" "外东北"
+	}
+}
+
+### HELICOPTER OPERATOR NAMES ###
+CHI_LHA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_HELICOPTER_CARRIERS
+
+	for_countries = { CHI DSC }
+
+	type = ship
+		ship_types = { helicopter_operator }
+
+	fallback_name = "%d号直升机航母"
+
+	unique = {
+		"长江" "黄河" "黑龙江" "珠江" "澜沧江" "沅江" "怒江" "雅鲁藏布江" "汉江" "钱塘江" "青江" "鸭绿江" "淮河" "海河" "辽河"  
+    	"图们江"  "额尔古纳河" "松花江" "塔里木河" "色楞格河"  
+	}
+}
+
+### CRUISER NAMES###
+CHI_CRUISERS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CRUISER
+
+	for_countries = { CHI DSC }
+
+	type = ship
+	ship_types = { battle_cruiser cruiser }
+
+	fallback_name = "%d号巡洋舰"
+
+	unique = {
+		"Shanghai" "Chongqing" "Beijing" "Hongkong" "Taipei" "Chengdu" "Tianjin" "Dalian" "Wuhan" "Macau" "Nanning" "Changchun" "Harbin" "Qiqihar" "Xining" "Lhasa" "Kulun" "Urumqi" "Guilin" "Jinan" "Xi’an" "Changsha" "Shenyang" "Hualian" "Kunming" "Guiyang" "Kaifeng" "Taiyuan" "Nanjing" "Nanchang" "Guangzhou" "Guangzhou" "Yinchuan" "Fuzhou" "Hangzhou" "Hefei" "Shijiangzhuang" "Shijiangzhuang"
+	}
+}
+
+### REGULAR DESTROYER NAMES###
+CHI_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { CHI DSC }
+
+	type = ship
+	ship_types = { stealth_destroyer destroyer }
+
+	fallback_name = "Destroyer-%d"
+
+	unique = {
+		"Lanzhou" "Haikou" "Yangzhou" "Laiwu" "Baoding" "Liaoyang" "Shenzhen" "Panzhihua" "Qingdao" "Changde" "Tangshan" "Huizhou" "Lijiang" "Nanchong" "Hami" "Baishan" "Bohai" "Zhuhai" "Ordos" "Dunhuang" "Lechang" "Dali" "Altay" "Meizhou" "Xigaze" "Kunshan" "Shaoguan" "Chaozhou" "Xieyang" "Fu'an" "Cangwu" "Golmud" "Cixi" "Jiaxing" "Linhai" "Yueqing" "Jingdezhen" "Quzhou" "Yongkang" "Mudanjiang" "Taixing" "Yancheng" "Dongtai" "Huai'an" "Lianyungang" "Suqian" "Pizhou" "Shuyang" "Kaiyuan" "Linyi" "Tengzhou" "Heze" "Zhucheng" "Rizhao" "Zibo" "Tai'an" "Dongying" "Liaocheng" "Fengfeng" "Renqiu" "Gaobeidian" "Zhangbei" "Qian'an" "Yingkou" "Benxi" "Wafangdian" "Zhuanghe" "Pulandian" 
+		"Fengcheng" "Huanren" "Jinzhou" "Panjin" "Fushun" "Chaoyang" "Lingyuan" "Huludao" "Songyuan" "Siping" "Baishan" "Yanji" "Baicheng" "Xinyi" "Zunyi" "Zhanjiang" "Changsha" "Zibo" "Shaochong" "Zhangjiagang" "Meiping" "Dongdao" "Shaozhou" "Quanchong" "Shitong" "Qinyang" "Panzhou" "Meicheng" "Yuehai" "Guixing" "Liaobei" "Pingliang" "Tongzhou" "Pingwei" "Shanliang" "Guimei" "Zhenshu" "Anshan" "Xuchang" "Shizuishan" "Fengzhou" "Qinhuangdao" "Shanwei" "Suiyang" "Xianshu" "Yueyuan" "Changhua" "Jinmay" "Xiangliang" "Xiangying" "Qinmen" "Qinwei" "Panzhou" "Panping" "Xianshu" "Dongzou" "Zhaozuishan" "Tengchong" "Fengcheng" "Pingzhou" "Maoming" "Weifang" "Sanya" 
+		"Zaozhuang" "Yueyang" "Xiangtan" "Wuxi" "Xiangfan" "Linfen" "Zhenjiang" "Foshan" "Jiangmen" "Shantou" "Xuzhou" "Jingzhou" "Xuchang" "Yancheng" "Cangzhou" "Yantai" "Wuhu" "Wenzhou" "Tengping" "Jinhua" "Danping" "Hengjiang" "Qingxiang" "Jinrao" "Shangzihua" "Guishu" "Shigong" "Xinping" "Shitou" "Zhaojing" "Shaoshui" "Pingyang" "Shizuiyang" "Shaochong" "Zhongying" "Zhoutong" "Xiangrao" "Zhaoyang" "Baochun" "Jiangzuishan" "Liaohai" "Fengping" "Zhongqiu" "Taishan" "Shigong" "Xuhar" "Yuanshui" "Sutong" "Dongzou" "Zhangjiakou" "Chengde" "Langfang" "Datong" "Yangquan" "Changzhi" "Jincheng" "Shuozhou" "Jinzhong" "Yuncheng" "Xinzhou" "Lvliang" 
+		"Baotou" "Wuhai" "Chifeng" "Tongliao" "Fuxin" "Panjin" "Tieling" "Siping" "Liaoyuan" "Tonghua" "Songyuan" "Yanbian" "Jixi" "Hegang" "Shuangyashan" "Daqing" "Yichun" "Jiamusi" "Qitaihe" "Suihua" "Changzhou" "Suzhou" "Nantong" "Lishui" "Ningbo" "Jiaxing" "Huzhou" "Bangbu" "Maanshan" "Tongling" "Anqing" "Huangshan" "Zhangzhou" "Xiamen" "Chuzhou" "Fuyang" "Luan" "Bozhou" "Chizhou" "Xuancheng" "Putian" "Sanming" "Lu Heng" "Quanzhou" "Nanping" "Longyan" "Ningde" "Jingdezhen" "Pingxiang" "Jiujiang" "Xinyu" "Yingtan" "Ganzhou" "Jian" "Yichun" "Fuzhou" "Shangrao" "Dongying" "Jining" "Tai'an" "Dezhou" "Liaocheng" "Binzhou" "Anyang" "Hebi" "Xinxiang"
+		"Jiaozuo" "Puyang" "Luohe" "Sanmenxia" "Nanyang" "Shangqiu" "Xinyang" "Zhoukou" "Huangshi" "Shiyan" "Yichang" "E'zhou" "Jingmen" "Xiaogan" "Huanggang" "Xianning" "Suizhou" "En'shi" "Zhuzhou" "Xiangtan" "Hengyang" "Shaoyang" "Yueyang" "Yiyang" "Yongzhou" "Huaihua" "Loudi" "Xiangxi" "Zhaoqing" "Huizhou" "Meizhou" "Heyuan" "Yangjiang" "Qingyuan" "Dongguan" "Zhongshan" "Jieyang" "Yunfu" "Liuzhou" "Wuzhou" "Beihai" "Fangchenggang" "Guigang" "Yulin" "Bose" "Hezhou" "Hechi" "Laibin" "Chongzuo" "Danzhou" "Zigong" "Luzhou" "Deyang" "Mianyang" "Guangyuan" "Suining" "Neijiang" "Leshan" "Nanchong" "Meishan" "Yibin" "Guangan" "Dazhou" "Yang'an" 
+		"Bazhong" "Ziyang" "A'ba" "Ganzi" "Liangshan" "Liupanshui" "Baoshan" "Zhaotong" "Pu'er" "Lincang" "Chuxiong" "Honghe" "Wenshan" "Anshun" "Bijie" "Tongren" "Qujing" "Yuxi" "Dehong" "Diqing" "Tongchuan" "Baoji" "Naqu" "Changdu" "Ali" "Xianyang" "Weinan" "Yan'an" "Hanzhong" "Ankang" "Shangluo" "Jiayuguan" "Jinchang" "Baiyin" "Tianshui" "Wuwei" "Zhangye" "Pingliang" "Jiuquan" "Qingyang" "Dingxi" "Longnan" "Linxia" "Haidong" "Haibei" "Guoluo" "Yushu" "Haixi" "Wuzhong" "Guyuan" "Zhongwei" "Changji" "Aksu" "Kashi" "Hetian" "Tacheng" "Khovd" "Qiaoxi" "Xinhua" "Jingjing" "Yuhua" "Luquan" "Luancheng" "Zhengding" "Xingtang" "Lingshou" "Gaoyi" "Shenze" "Zanhuang"
+	}
+}
+
+### FRIGATE NAMES###
+CHI_FRIGATE_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_FRIGATE
+
+	for_countries = { CHI DSC }
+
+	type = ship
+	ship_types = { frigate }
+
+	fallback_name = "Frigate-%d"
+
+	unique = {
+		"Mianyang" "Luoyang" "Xiangyang" "Huaihua" "Nyingchi" "Liaoyuan" "Gyirong" "Meihekou" "Dunhua" "Fusong" "Yushu" "Da'an" "Qiqihar" "Jixi" "Yichun" "Jiamusi" "Hegang" "Qitaihe" "Nenjiang" "Heihe" "Daqing" "Tahe" "Mohe" "Nehe" "Suihua" "Zhaodong" "Bei'an" "Shangzhi" "Wuchang" "Shuangyashan" "Fujin" "Hulin" "Fuyuan" "Manzhouli" "Tongliao" "Chifeng" "Yakeshi" "Ulanhot" "Holingol" "Hulunbuir" "Oroqen" "Zalantun" "Xiaoyi" "Ningcheng" "Naiman" "Aohan" "Xilinhot" "Ongniud" "Qingyuan" "Wuhai" "Otog" "Datong" "Linfen" "Yangquan" "Shuozhou" "Jincheng" "Xinzhou" "Yuncheng" "Lishi" "Baoji" "Weinan" "Ankang" "Tongchuan" "Hanzhong" "Shangluo" "Baiyin" "Wuwei" "Zhangye" "Jiuquan" "Tianshui" 
+		"Longxi" "Jinchang" "Zhongwei" "Jiujiang" "Shenmu" "Yumen" "Shangrao" "Lufeng" "Longnan" "Guyan" "Qingyang" "Pingliang" "Yinchuan" "Garze" "Kangding" "Batang" "Dege" "Cangnan" "Fangchenggang" "Gongshan" "Liuku" "Pinggou" "Gejiu" "Kali" "Bazhong" "Aba" "Xuanwei" "Litang" "Yongsheng" "Lancang" "Dêqên" "Loudi" "Shaoyang" "Yongzhou" "Bobai" "Shihezi" "Zhongba" "Neijiang" "Dazhou" "Delingha" "Wenchuan" "Liupanshui" "Hengyang" "Zhuzhou" "Chenzhou" "Zhangjiajie" "Liuzhou" "Chaling" "Kuytun" "Dulan" "Madoi" "Darlag" "Barkam" "Korla" "Gulja" "Jiuzhaigou" "Qinzhou" "Anhua" "Pingnan" "Wuzhou" "Jishou" "Zunyi" "Gar" "Aksu"
+		"Liuyang" "Lop Nur" "Huludao" "Luoyang" "Linfen" "Dandong" "Changzhi" "Siping" "Yichang" "Jiujiang" "Xiamen" "Nanping" "Nantong" "Huai'an" "Wuxi" "Zhenjiang" "Jinhua" "Taizhou" "Zhoushan" "Wuhu" "Huangshi" "Beihai" "Foshan" "Anqing" "Huainan" "Huaibei" "Tongling" "Jiaxing" "Lianyungang" "Putian" "Sanming" "Ji'an" "Shaoxing" "Changde" "Maoming" "Yibin" "Zhaotong" "Shaoguan" "Anshun" "Xiangtan" "Jishou" "Dongguan" "Shantou" "Jiangmen" "Zhaoqing"
+	}
+}
+
+### CORVETTE NAMES ###
+CHI_CORVETTE_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CORVETTE
+
+	for_countries = { CHI DSC }
+
+	type = ship
+	ship_types = { corvette }
+	fallback_name = "Corvette-%d"
+
+	unique = {
+		"Defang" "Zhangbei" "Wangfang" "Datongshan" "Ximushan" "Fengjiang" "Shanmei" "Meiling" "Pumujiang" "Nanbei" "Xinhei" "Wufang" "Dazhang" "Shanmei" "Delinghe" "Meixi" "Xitong" "Tongfei" "Feihan" "Hanjiang" "Jianghei" "Heibing" "Bingzhao" "Zhaoding" "Dingfei" "Feihei" "Heilongshan" "Longshan" "Shanfei" "Feihua" "Huaxi" "Xihuabei" "Beifang" "Fangshao" "Shaogou" "Goumei" "Meidui" "Duihua" "Huaer" "Erming" "Minghua" "Weishanhua" "Huaming" "Xindong" "Dongfei" "Feiyuan" "Yuanming" "Minghua" "Goutong" "Dushan" "Fengxi" "Leichi" "Gangli" "Chiku" "Baili" "Yongyang" "Shaohua" "Tancheng" "Hengshui" "Yuecheng" "Gongfeng" "Lingmei" "Yizhou" 
+		"Enshouli" "Xinqio" "Chunching" "Chunluo" "Kangmen" "Yangshan" "Mashan" "Pushan" "Gongmen" "Jingmen" "Mamen" "Lingluo" "Xiangmen" "Xiaoyuan" "Xiangyuan" "Jingyuan" "Yangyuan" "Xiaojiang" "Jingjiang" "Tianqing" "Majin" "Xiangqing" "Xiaoqing" "Lingqing" "Huangluo" "Kanghai" "Wowei" "Huangwei" "Yifeng" "Taijin" "Luofeng" "Xiangdezhen" "Puyou" "Menshan" "Luoyou" "Gongyou" "Yiyou" "Woluodao" "Kangfeng" "Xianhuang" "Xiaowei" "Zhangdong" "Suidezhen" "Xiangmei" "Yangxin" "Kangshan" "Taihai" "Woshan" "Lingjin" "Tianxin" "Kangqing" "Taiqing" "Chiwei" "Yihuang" "Jingqing" "Guqing" "Zhangxin" "Chidao" "Benghai" "Yanghuang" "Jingdao" "Xiangdao" 
+		"Wuji" "Pingshan" "Yuanshi" "Xinji" "Xinle" "Guzhi" "Kaiping" "Fengnan" "Fengrun" "Caofeidian" "Luannan" "Leting" "Qianxi" "Yutian" "Zunhua" "Qian'an" "Luanzhou" "Funing" "Changli" "Lulong" "Beidaihe" "Qinglong" "Hanshan" "Fengfeng" "Congtai" "Fuxing" "Feixiang" "Yongnian" "Linzhang" "Cheng'an" "Daming" "Jize" "Guangping" "Guantao" "Quzhou" "Wu'an" "Xiangdu" "Xindu" "Nanhe" "Neiqiu" "Longyao" "Boshan" "Zichuan" "Zhoucun" "Zhangdian" "Huantai" "Linzi" "Gaoqing" "Yiyuan" "Shima" "Kouzhen" "Shixia" "Cicun" "Hongshan" "Nanding" "Changguo" "Badou" "Miaoshan" "Xueye" "Taihe" "Chishang" "Lijia" "Yuanquan" "Xihe" "Qingzhou" "Xinbo" "Mazhuang" "Changyi"
+		"Longyao" "Ningjin" "Julu" "Xinhe" "Guangzong" "Nangong" "Shahe" "Shuangshan" "Jimo" "Lancun" "Fangzi" "Huimin" "Jingxiu" "Lianchi" "Wang Gang" "Qingyuan" "Xushui" "Dingxing" "Haiyan" "Yucheng" "Qitian" "Gaoyang" "Rongcheng" "Wangdu" "Quyang" "Shunping" "Boye" "Zhuozhou" "Dingzhou" "Anguo" "Gaobeidian" "Wanquan" "Chongli" "Kangbao" "Shangyi" "Yangyuan" "Huailai" "Chicheng" "Longhua" "Pingquan" "Luanping" "Weichang" "Dongguang" "Haixing" "Xing Chen" "Nanpi" "Wuqiao" "Gaoqiao" "Songshan" "Xingshan" "Tashan" "Botou" "Renqiu" "Hejian" "Yunhe" "Dongping" "Zitong" "Guangyang" "Xianghe" "Yongqing" "Dachang" "Sanhe" "Bazhou" "Zaoqiang" "Jizhou" "Wuqiang" "Wuyi"
+		"Jinyuan" "Yangqu" "Loufan" "Linjiang" "Yungang" "Yunzhou" "Lingqiu" "Guangchang" "Yanggao" "Huiyuan" "Zuoquan" "Shangdang" "Tunliu" "Tianzhen" "Licheng" "Wuxiang" "Qinyang" "Lingchuan" "Zezhou" "Quwo" "Hongdong" "Ding Xinyue" "Anze" "Daning" "Houma" "Huozhou" "Yicheng" "Wenshui" "Xiaoyi" "Fenyang" "Zhongyang" "Shilou" "Jiaocheng" "Jiuyuan" "Guyang" "Qingshan" "Xinmin" "Huanggu" "Kangping" "Yuhong" "Haicheng" "Pinglu" "Shanyin" "Xinbin" "Qingyuan" "Xihu" "Kuandian" "Beizhen" "Linghai" "Zhangwu" "Dengta" "Panshan" "Kaiyuan" "Changtu" "Xifeng" "Beipiao" "Xingcheng" "Jianchang" "Baode" "Hequ" "Jingle" "Ningwu" "Shenchi" "Wutai" "Dehui" "Shuangyang" "Panshi" "Yongji" "Fengman" 
+		"Shuangliao" "Longshan" "Huinan" "Jingyu" "Hunjiang" "Jiangyuan" "Changling" "Fuyu" "Ningjiang" "Tongyu" "Longjing" "Dunhua" "Antu" "Helong" "Tumen" "Tonghe" "Wuchang" "Yilan" "Shuangcheng" "Keshan" "Baiquan" "Tiefeng" "Tailai" "Mishan" "Lishu" "Mashan" "Hengshan" "Hulin" "Luobei" "Suibin" "Qiu Dong" "Jixian" "Baoqing" "Raohe" "Baoshan" "Anda" "Lindian" "Zhaoyuan" "Tieli" "Tangwang" "Fenglin" "Tongjiang" "Fuyuan" "Laoshan" "Changqing" "Zhangqiu" "Jiyang"
+	}
+}
+
+### MISSILE SUBMARINES NAMES ###
+CHI_MISSILE_SUBMARINE_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_MISSILE_SUBMARINES
+
+	for_countries = { CHI DSC }
+
+	type = ship
+	ship_types = { missile_submarine }
+
+	fallback_name = "Yuanzheng-%d"
+}
+### ATTACK SUBMARINES ###
+CHI_NUCLEAR_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_NUCLEAR_SUBMARINES
+
+	for_countries = { CHI DSC }
+
+	type = ship
+	ship_types = { attack_submarine missile_submarine }
+
+	fallback_name = "Changzheng-%d"
+	
+	unique = { "Changzheng-7" "Changzheng-8" }
+}
+
+### ATTACK SUBMARINES ###
+CHI_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { CHI DSC }
+
+	type = ship
+	ship_types = { attack_submarine missile_submarine }
+
+	fallback_name = "Chángchēng-%d"
+	
+	unique = { "Chángchēng-310" "Chángchēng-311" "Chángchēng-312" "Chángchēng-313" }
+}
