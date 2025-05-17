@@ -49,7 +49,9 @@ CHI_CRUISERS_HISTORICAL = {
 	fallback_name = "%d号巡洋舰"
 
 	unique = {
-		"Shanghai" "Chongqing" "Beijing" "Hongkong" "Taipei" "Chengdu" "Tianjin" "Dalian" "Wuhan" "Macau" "Nanning" "Changchun" "Harbin" "Qiqihar" "Xining" "Lhasa" "Kulun" "Urumqi" "Guilin" "Jinan" "Xi’an" "Changsha" "Shenyang" "Hualian" "Kunming" "Guiyang" "Kaifeng" "Taiyuan" "Nanjing" "Nanchang" "Guangzhou" "Guangzhou" "Yinchuan" "Fuzhou" "Hangzhou" "Hefei" "Shijiangzhuang" "Shijiangzhuang"
+		"上海" "重庆" "北京" "香港" "台北" "成都" "天津" "大连" "武汉" "澳门" "南宁" "长春" "哈尔滨" "齐齐哈尔" "西宁" 
+		"拉萨" "库伦" "乌鲁木齐" "桂林" "济南" "西安" "长沙" "沈阳" "花莲" "昆明" "贵阳" "开封" "太原" "南京" "南昌" "广州" 
+		"银川" "福州" "杭州" "合肥" "石家庄"
 	}
 }
 
@@ -62,10 +64,10 @@ CHI_DD_HISTORICAL = {
 	type = ship
 	ship_types = { stealth_destroyer destroyer }
 
-	fallback_name = "Destroyer-%d"
+	fallback_name = "%d号驱逐舰"
 
 	unique = {
-		"Lanzhou" "Haikou" "Yangzhou" "Laiwu" "Baoding" "Liaoyang" "Shenzhen" "Panzhihua" "Qingdao" "Changde" "Tangshan" "Huizhou" "Lijiang" "Nanchong" "Hami" "Baishan" "Bohai" "Zhuhai" "Ordos" "Dunhuang" "Lechang" "Dali" "Altay" "Meizhou" "Xigaze" "Kunshan" "Shaoguan" "Chaozhou" "Xieyang" "Fu'an" "Cangwu" "Golmud" "Cixi" "Jiaxing" "Linhai" "Yueqing" "Jingdezhen" "Quzhou" "Yongkang" "Mudanjiang" "Taixing" "Yancheng" "Dongtai" "Huai'an" "Lianyungang" "Suqian" "Pizhou" "Shuyang" "Kaiyuan" "Linyi" "Tengzhou" "Heze" "Zhucheng" "Rizhao" "Zibo" "Tai'an" "Dongying" "Liaocheng" "Fengfeng" "Renqiu" "Gaobeidian" "Zhangbei" "Qian'an" "Yingkou" "Benxi" "Wafangdian" "Zhuanghe" "Pulandian" 
+		"兰州" "海口" "扬州" "Laiwu" "Baoding" "Liaoyang" "Shenzhen" "Panzhihua" "Qingdao" "Changde" "Tangshan" "Huizhou" "Lijiang" "Nanchong" "Hami" "Baishan" "Bohai" "Zhuhai" "Ordos" "Dunhuang" "Lechang" "Dali" "Altay" "Meizhou" "Xigaze" "Kunshan" "Shaoguan" "Chaozhou" "Xieyang" "Fu'an" "Cangwu" "Golmud" "Cixi" "Jiaxing" "Linhai" "Yueqing" "Jingdezhen" "Quzhou" "Yongkang" "Mudanjiang" "Taixing" "Yancheng" "Dongtai" "Huai'an" "Lianyungang" "Suqian" "Pizhou" "Shuyang" "Kaiyuan" "Linyi" "Tengzhou" "Heze" "Zhucheng" "Rizhao" "Zibo" "Tai'an" "Dongying" "Liaocheng" "Fengfeng" "Renqiu" "Gaobeidian" "Zhangbei" "Qian'an" "Yingkou" "Benxi" "Wafangdian" "Zhuanghe" "Pulandian" 
 		"Fengcheng" "Huanren" "Jinzhou" "Panjin" "Fushun" "Chaoyang" "Lingyuan" "Huludao" "Songyuan" "Siping" "Baishan" "Yanji" "Baicheng" "Xinyi" "Zunyi" "Zhanjiang" "Changsha" "Zibo" "Shaochong" "Zhangjiagang" "Meiping" "Dongdao" "Shaozhou" "Quanchong" "Shitong" "Qinyang" "Panzhou" "Meicheng" "Yuehai" "Guixing" "Liaobei" "Pingliang" "Tongzhou" "Pingwei" "Shanliang" "Guimei" "Zhenshu" "Anshan" "Xuchang" "Shizuishan" "Fengzhou" "Qinhuangdao" "Shanwei" "Suiyang" "Xianshu" "Yueyuan" "Changhua" "Jinmay" "Xiangliang" "Xiangying" "Qinmen" "Qinwei" "Panzhou" "Panping" "Xianshu" "Dongzou" "Zhaozuishan" "Tengchong" "Fengcheng" "Pingzhou" "Maoming" "Weifang" "Sanya" 
 		"Zaozhuang" "Yueyang" "Xiangtan" "Wuxi" "Xiangfan" "Linfen" "Zhenjiang" "Foshan" "Jiangmen" "Shantou" "Xuzhou" "Jingzhou" "Xuchang" "Yancheng" "Cangzhou" "Yantai" "Wuhu" "Wenzhou" "Tengping" "Jinhua" "Danping" "Hengjiang" "Qingxiang" "Jinrao" "Shangzihua" "Guishu" "Shigong" "Xinping" "Shitou" "Zhaojing" "Shaoshui" "Pingyang" "Shizuiyang" "Shaochong" "Zhongying" "Zhoutong" "Xiangrao" "Zhaoyang" "Baochun" "Jiangzuishan" "Liaohai" "Fengping" "Zhongqiu" "Taishan" "Shigong" "Xuhar" "Yuanshui" "Sutong" "Dongzou" "Zhangjiakou" "Chengde" "Langfang" "Datong" "Yangquan" "Changzhi" "Jincheng" "Shuozhou" "Jinzhong" "Yuncheng" "Xinzhou" "Lvliang" 
 		"Baotou" "Wuhai" "Chifeng" "Tongliao" "Fuxin" "Panjin" "Tieling" "Siping" "Liaoyuan" "Tonghua" "Songyuan" "Yanbian" "Jixi" "Hegang" "Shuangyashan" "Daqing" "Yichun" "Jiamusi" "Qitaihe" "Suihua" "Changzhou" "Suzhou" "Nantong" "Lishui" "Ningbo" "Jiaxing" "Huzhou" "Bangbu" "Maanshan" "Tongling" "Anqing" "Huangshan" "Zhangzhou" "Xiamen" "Chuzhou" "Fuyang" "Luan" "Bozhou" "Chizhou" "Xuancheng" "Putian" "Sanming" "Lu Heng" "Quanzhou" "Nanping" "Longyan" "Ningde" "Jingdezhen" "Pingxiang" "Jiujiang" "Xinyu" "Yingtan" "Ganzhou" "Jian" "Yichun" "Fuzhou" "Shangrao" "Dongying" "Jining" "Tai'an" "Dezhou" "Liaocheng" "Binzhou" "Anyang" "Hebi" "Xinxiang"
