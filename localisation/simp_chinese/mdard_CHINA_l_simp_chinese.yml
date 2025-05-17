@@ -1102,71 +1102,19 @@ PRC_The_working_class_for_itself_desc: "马克思在《神圣家族》中将工�
 ####提示
 
 taiwan_rep_tt: "承认§R台湾§!独立"
-
-world_cores:0 "获得全世界核心。"
-china_jieti:0 "§R中国将会解体。§!"
-china_influence:0 "增加§R100§!§Y[From.GetName]§!影响力\n"
-500_billion_expense_tt:0 "从我们的国库里移除§R5000§!亿美金。"
-event_lock:0 "§G稍后将会弹出事件解锁此国策。§!"
+world_cores: "获得全世界核心。"
+china_jieti: "§R中国将会解体。§!"
+china_influence: "增加§R100§!§Y[From.GetName]§!影响力\n"
+500_billion_expense_tt: "从我们的国库里移除§R5000§!亿美金。"
+event_lock: "§G稍后将会弹出事件解锁此国策。§!"
 CHI_western_border_security_TT: "[CHI.GetNameWithFlag]在[KAZ.GetNameWithFlag],[UZB.GetNameWithFlag],[KYR.GetNameWithFlag],[TAJ.GetNameWithFlag]和[TRK.GetNameWithFlag]有最大影响力。"
 CHI_mongolia_security_operations_TT: "[CHI.GetNameWithFlag]在[MON.GetNameWithFlag]拥有最大影响力。"
 
 
 #patryname
 VIE.anarchist_communism: "£CHI_communism 越南共产党（亲华派）"
-#贫富分化系统
-CHI_gbrp1: "贫富分化：§G极低§!"
-CHI_gbrp1_desc: "我们国家的贫富分化几乎没有，人民的生活非常幸福，各种各样的发明创造正在被创造出来，但是这对于国家不利于迅速发展。\n不过，我们作为工人国家如果不确保公平的经济，那么我们和资本主义国家有什么区别呢？"
-CHI_gbrp2: "贫富分化：§G较低§!"
-CHI_gbrp2_desc: "我们国家贫富分化比较低"
-CHI_gbrp3: "贫富分化：§H中等§!"
-CHI_gbrp3_desc: "我们国家贫富分化属于中等"
-CHI_gbrp4: "贫富分化：§H较高§!"
-CHI_gbrp4_desc: "我们国家贫富分化比较高"
-CHI_gbrp5: "贫富分化：§R高§!"
-CHI_gbrp5_desc: "我们国家贫富分化高"
-CHI_gbrp6: "贫富分化：§R极高§!"
-CHI_gbrp6_desc: "我们国家贫富分化极高，人民对我们政府很不满意，各种异见出现"
-CHI_gbrp7: "贫富分化：§R超高§!"
-CHI_gbrp7_desc: "我们国家贫富分化超高，2%的人掌握了80%的社会财富，人民已经没有财富进行多余的消费了，各种异见层出不穷。\n§R再不改善贫富分化或者镇压的话，我们很有可能会陷入内战！§!"
-China_gbrp_category: "两极分化"
-China_gbrp_category_desc: "无论我们怎么声称我们是”社会主义市场经济“，”不会出现两极分化“，但是市场经济下财富向少数人集中的马太效应无法避免，这给我们带来了一点点的麻烦。\n除非，我们抛弃市场经济。"
-CHI_tax: "落实累进制税收"
-CHI_Poverty_alleviation: "精准扶贫"
-CHI_minimum_wage: "提高最低工资标准"
-CHI_Encourage_charity: "资助慈善业"
-CHI_Property_taxes: "房产税"
-CHI_inheritance_taxes: "提高遗产税"
-CHI_Fight_against_monopolies: "打击垄断企业"
 
-CHI_Lower_minimum_wage: "降低最低工资"
-CHI_excise_duty: "增加消费税"
-CHI_Protect_entrepreneurs: "保护企业家利益"
-
-
-CHI_geni_01:  "基尼系数每个月变化：§R+0.01§!"
-CHI_geni_008: "基尼系数每个月变化：§R+0.008§!"
-CHI_geni_005: "基尼系数每个月变化：§R+0.005§!"
-CHI_geni_003: "基尼系数每个月变化：§R+0.003§!"
-CHI_geni_002: "基尼系数每个月变化：§R+0.002§!"
-CHI_geni_001: "基尼系数每个月变化：§R+0.001§!"
-
-CHI_geni_f1:  "基尼系数每个月变化：§G-0.01§!"
-CHI_geni_0008: "基尼系数每个月变化：§G-0.008§!"
-CHI_geni_0005: "基尼系数每个月变化：§G-0.005§!"
-CHI_geni_0003: "基尼系数每个月变化：§G-0.003§!"
-CHI_geni_0002: "基尼系数每个月变化：§G-0.002§!"
-CHI_geni_0001: "基尼系数每个月变化：§G-0.001§!"
-
-prc_geni.1.t: "贫富分化恶化"
-prc_geni.1.d: "我国的贫富差距进一步拉大，人民对此不是很满意。"
-prc_geni.1.o1: "糟了"
-prc_geni.2.t: "贫富差距缩小"
-prc_geni.2.d: "在政府领导下，我们的贫富差距缩小了，人民进一步支持我们"
-prc_geni.2.o1: "太好了"
 #修正
-
-
 CHI_people_support_dynamic_left_desc: "\n\n\n\n\n£GFX_CHI_people_support_dynamic_dynamic_desc_left_picture \n\n\n\n\n\n\n中国革命群众经过各种斗争，最终掌握了中国的政权，不过，这并不是革命的结束，而仅仅是开始！中国人民必须考虑自身与外国无产阶级的联系，考虑自身的建设，万万不可重蹈无产阶级文化大革命后期人民对革命失望的覆辙，不然的话，资产阶级与官僚主义反革命极有可能再次推翻革命政权。\n\n §Y人民的革命热情为§!： £stability_texticon [?CHI_people_support|%+2]。\n受到民族精神或法律影响，每月变化(本mod已将变化缩小10倍)：[?modifier@Chinese_people_support_to_china_government_modifier|%+2]"
 CHI_people_support_dynamic_right_desc: "\n\n£GFX_CHI_people_support_dynamic_dynamic_desc_right_pic \n\n\n\n中国人民自古以来就是不愿意做奴隶的人民，上千年的历史数千次起义，说明了中国的历史就是一部悲壮的阶级斗争史，如果政府不让人民活了，那么人民就会抛弃该政府。\n §R王侯将相，宁有种乎？§!\n\n §Y政府合法性为§!： £stability_texticon [?CHI_people_support|%+2]\n受到修正影响，每月变化(本mod已将变化缩小10倍)：[?modifier@Chinese_people_support_to_china_government_modifier|%+2]"
 CHI_people_support_dynamic_left: "革命热情"
