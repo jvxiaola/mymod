@@ -1111,19 +1111,7 @@ event_lock:0 "§G稍后将会弹出事件解锁此国策。§!"
 CHI_western_border_security_TT: "[CHI.GetNameWithFlag]在[KAZ.GetNameWithFlag],[UZB.GetNameWithFlag],[KYR.GetNameWithFlag],[TAJ.GetNameWithFlag]和[TRK.GetNameWithFlag]有最大影响力。"
 CHI_mongolia_security_operations_TT: "[CHI.GetNameWithFlag]在[MON.GetNameWithFlag]拥有最大影响力。"
 
-#bop
-rd_CHI_equality_side: "共同富裕"
-rd_CHI_differentiation_side: "两极分化"
-CHI_power_balance: "贫富分化"
-rd_CHI_equality_equality: "基本平等"
-rd_CHI_equality_side_1: "比较平等"
-rd_CHI_equality_side_2: "相当平等"
-rd_CHI_equality_side_3: "非常平等"
-rd_CHI_equality_side_4: "共同富裕"
-rd_CHI_differentiation_side_1: "轻微两极分化"
-rd_CHI_differentiation_side_2: "中等两极分化"
-rd_CHI_differentiation_side_3: "严重两极分化"
-rd_CHI_differentiation_side_4: "极端两极分化"
+
 #patryname
 VIE.anarchist_communism: "£CHI_communism 越南共产党（亲华派）"
 #贫富分化系统

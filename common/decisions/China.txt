@@ -1534,10 +1534,6 @@ remove_effect = {
 			modify_treasury_effect = yes
 set_temp_variable = { temp_CHI_people_support = 0.15 }
 change_CHI_people_support = yes
-		add_power_balance_value = {
-				id = CHI_power_balance
-				value = -0.10
-			}
 }		
 }
 CHI_Purge_the_capitalist_roaders = {
@@ -2560,10 +2556,6 @@ CHI_tax = {
 remove_effect = {
 set_temp_variable = { treasury_change = 1 }
 modify_treasury_effect = yes
-		add_power_balance_value = {
-				id = CHI_power_balance
-				value = -0.05
-			}
 set_temp_variable = { temp_CHI_people_support = 0.05 }
 change_CHI_people_support = yes			
 }		
@@ -2586,10 +2578,6 @@ CHI_Poverty_alleviation = {
 remove_effect = {
 set_temp_variable = { treasury_change = -10 }
 modify_treasury_effect = yes
-		add_power_balance_value = {
-				id = CHI_power_balance
-				value = -0.07
-			}
 set_temp_variable = { temp_CHI_people_support = 0.05 }
 change_CHI_people_support = yes						
 }		
@@ -2614,10 +2602,6 @@ CHI_minimum_wage = {
 remove_effect = {
 set_temp_variable = { treasury_change = -5 }
 modify_treasury_effect = yes
-		add_power_balance_value = {
-				id = CHI_power_balance
-				value = -0.10
-			}
 set_temp_variable = { temp_CHI_people_support = 0.05 }
 change_CHI_people_support = yes			
 }		
@@ -2641,10 +2625,6 @@ CHI_Encourage_charity = {
 remove_effect = {
 set_temp_variable = { treasury_change = -10 }
 modify_treasury_effect = yes
-		add_power_balance_value = {
-				id = CHI_power_balance
-				value = -0.10
-			}
 set_temp_variable = { temp_CHI_people_support = 0.05 }
 change_CHI_people_support = yes						
 }		
@@ -2669,10 +2649,6 @@ remove_effect = {
 add_stability = -0.2
 set_temp_variable = { treasury_change = 20 }
 modify_treasury_effect = yes
-		add_power_balance_value = {
-				id = CHI_power_balance
-				value = -0.10
-			}
 set_temp_variable = { temp_CHI_people_support = 0.05 }
 change_CHI_people_support = yes						
 }		
@@ -2696,10 +2672,6 @@ CHI_inheritance_taxes = {
 remove_effect = {
 set_temp_variable = { treasury_change = 2 }
 modify_treasury_effect = yes
-		add_power_balance_value = {
-				id = CHI_power_balance
-				value = -0.10
-			}
 set_temp_variable = { temp_CHI_people_support = 0.05 }
 change_CHI_people_support = yes					
 }		
@@ -2724,10 +2696,6 @@ CHI_Fight_against_monopolies = {
 remove_effect = {
 set_temp_variable = { treasury_change = 10 }
 modify_treasury_effect = yes
-		add_power_balance_value = {
-				id = CHI_power_balance
-				value = -0.20
-			}
 set_temp_variable = { temp_CHI_people_support = 0.05 }
 change_CHI_people_support = yes					
 }		
@@ -2752,10 +2720,6 @@ CHI_Lower_minimum_wage = {
 remove_effect = {
 set_temp_variable = { treasury_change = 10 }
 modify_treasury_effect = yes
-		add_power_balance_value = {
-				id = CHI_power_balance
-				value = 0.20
-			}
 set_temp_variable = { temp_CHI_people_support = -0.10 }
 change_CHI_people_support = yes					
 }		
@@ -2779,11 +2743,7 @@ CHI_excise_duty = {
 remove_effect = {
 set_temp_variable = { treasury_change = 3 }
 modify_treasury_effect = yes
-		add_power_balance_value = {
-				id = CHI_power_balance
-				value = 0.3
-			}
-			set_temp_variable = { temp_CHI_people_support = -0.20 }
+set_temp_variable = { temp_CHI_people_support = -0.20 }
 change_CHI_people_support = yes		
 }		
 }
@@ -2806,10 +2766,6 @@ CHI_Protect_entrepreneurs = {
 remove_effect = {
 set_temp_variable = { treasury_change = -20 }
 modify_treasury_effect = yes
-		add_power_balance_value = {
-				id = CHI_power_balance
-				value = 0.15
-			}
 if = {
 limit = {
 			OR = {

@@ -1011,10 +1011,6 @@
 		}
 		completion_reward = {		
 			add_ideas = CHI_worker_cooperative
-			add_power_balance_value = {
-				id = CHI_power_balance
-				value = -0.2
-			}
 		}
 		ai_will_do = { base = 1 }
 	}
@@ -1275,11 +1271,7 @@
 
 		completion_reward = {
 			add_political_power = 50
-			add_stability = 0.10
-			add_power_balance_value = {
-				id = CHI_power_balance
-				value = 0.10
-			}		
+			add_stability = 0.10	
 			hidden_effect = {
 				mark_focus_tree_layout_dirty = yes
 			}
