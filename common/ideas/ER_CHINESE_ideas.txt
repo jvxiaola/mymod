@@ -130,7 +130,6 @@ ideas = {
 			#军队经商残余影响：极度严重
 			allowed_civil_war = { always = yes }
 			cancel = { always = no }
-			name = Militarical_economy_remain
 			picture = split_pla
 			modifier = {
 				army_org_factor = -0.30
@@ -147,7 +146,6 @@ ideas = {
 			#军队经商残余影响：较为严重
 			allowed_civil_war = { always = yes }
 			cancel = { always = no }
-			name = Militarical_economy_remain
 			picture = split_pla
 			modifier = {
 				army_org_factor = -0.25
@@ -164,7 +162,6 @@ ideas = {
 			#军队经商残余影响：一般残余
 			allowed_civil_war = { always = yes }
 			cancel = { always = no }
-			name = Militarical_economy_remain
 			picture = split_pla
 			modifier = {
 				army_org_factor = -0.15
@@ -180,7 +177,6 @@ ideas = {
 			#军队经商残余影响：部分残余
 			allowed_civil_war = { always = yes }
 			cancel = { always = no }
-			name = Militarical_economy_remain
 			picture = split_pla
 			modifier = {
 				army_org_factor = -0.05
@@ -193,7 +189,6 @@ ideas = {
 			#军队经商残余影响：微小残余
 			allowed_civil_war = { always = yes }
 			cancel = { always = no }
-			name = Militarical_economy_remain
 			picture = split_pla
 			modifier = {
 				army_org_factor = -0.03
