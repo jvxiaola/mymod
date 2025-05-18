@@ -2,7 +2,6 @@ guiTypes = {
 	containerWindowType = {
 		name = "CISC_main_GUI"
 		size = { width = 470 height = 500 }
-		#云泽标记
 		buttonType = {
 			name = "XIN_button_OPEN"
 			spriteType = "GFX_XIN_CSIC_GUI_icon"

@@ -6,7 +6,7 @@ guiTypes = {
 		buttonType = {
 			name = "CPC_poltical_GUI_open_button" #开启按钮
 			position = { x = 0 y = 0 }
-			quadTextureSprite ="GFX_chinese_political_system_open_button"
+			quadTextureSprite ="GFX_chinese_political_system_open_button_icon"
 			clicksound = click_default
 			pdx_tooltip = "中国政治界面"
 		}
