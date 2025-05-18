@@ -13,6 +13,8 @@ guiTypes = {
 	}
 	containerWindowType = {#主界面
 		name = "CHI_CPC_poltical_GUI_main"
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
 		size = { width = 900 height = 600 }
 		position = { x = 100 y = 100 }
 		background = {

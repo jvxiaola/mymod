@@ -1,7 +1,8 @@
 scripted_gui = {
 
 	CHI_CPC_poltical_GUI_open_button_main = {
-		context_type = "countrypoliticsview"
+		context_type = player_context
+		parent_window_token = politics_tab
 		window_name = "CHI_CPC_poltical_GUI_open_button_main"
 		visible = { tag = CHI }
 		triggers = { CPC_poltical_GUI_open_button_enabled = { always = yes } }
@@ -18,8 +19,9 @@ scripted_gui = {
 			}
 		}
 	}
+
 	CHI_CPC_poltical_GUI_main = {
-		context_type = "countrypoliticsview"
+		context_type = player_context
 		window_name = "CHI_CPC_poltical_GUI_main"
 		visible = { has_country_flag = CPC_poltical_GUI_opened }
 		triggers = {  }
