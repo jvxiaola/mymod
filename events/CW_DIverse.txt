@@ -1,5 +1,5 @@
+#新疆危机事件
 add_namespace = CW_Diverse
-
 country_event = {
 	id = CW_Diverse.1
 	title = CW_Diverse.1.t
