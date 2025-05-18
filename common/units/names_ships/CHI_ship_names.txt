@@ -67,15 +67,23 @@ CHI_DD_HISTORICAL = {
 	fallback_name = "%d号驱逐舰"
 
 	unique = {
-		"兰州" "海口" "扬州" "莱芜" "保定" "辽阳" "深圳" "攀枝花" "青岛" "常德" "唐山" "惠州" "丽江" "南充" "哈密" "白山" 
-		"渤海" "珠海" "鄂尔多斯" "敦煌" "乐昌" "大理" "阿勒泰" "梅州" "日喀则" "昆山" "韶关" "潮州" "揭阳" "福安" "苍梧" 
-		"格尔木" "慈溪" "嘉兴" "临海" "乐清" "景德镇" "衢州" "永康" "牡丹江" "泰兴" "盐城" "东台" "淮安" "连云港" "宿迁" 
-		"邳州" "沭阳" "开原" "临沂" "滕州" "菏泽" "诸城" "日照" "淄博" "泰安" "东营" "聊城" "丰峰" "任丘" "高碑店" "张北" 
-		"迁安" "营口" "本溪" "瓦房店" "Zhuanghe" "Pulandian" "Fengcheng" "Huanren" "Jinzhou" "Panjin" "Fushun" "Chaoyang" "Lingyuan" "Huludao" "Songyuan" "Siping" "Baishan" "Yanji" "Baicheng" "Xinyi" "Zunyi" "Zhanjiang" "Changsha" "Zibo" "Shaochong" "Zhangjiagang" "Meiping" "Dongdao" "Shaozhou" "Quanchong" "Shitong" "Qinyang" "Panzhou" "Meicheng" "Yuehai" "Guixing" "Liaobei" "Pingliang" "Tongzhou" "Pingwei" "Shanliang" "Guimei" "Zhenshu" "Anshan" "Xuchang" "Shizuishan" "Fengzhou" "Qinhuangdao" "Shanwei" "Suiyang" "Xianshu" "Yueyuan" "Changhua" "Jinmay" "Xiangliang" "Xiangying" "Qinmen" "Qinwei" "Panzhou" "Panping" "Xianshu" "Dongzou" "Zhaozuishan" "Tengchong" "Fengcheng" "Pingzhou" "Maoming" "Weifang" "Sanya" 
-		"Zaozhuang" "Yueyang" "Xiangtan" "Wuxi" "Xiangfan" "Linfen" "Zhenjiang" "Foshan" "Jiangmen" "Shantou" "Xuzhou" "Jingzhou" "Xuchang" "Yancheng" "Cangzhou" "Yantai" "Wuhu" "Wenzhou" "Tengping" "Jinhua" "Danping" "Hengjiang" "Qingxiang" "Jinrao" "Shangzihua" "Guishu" "Shigong" "Xinping" "Shitou" "Zhaojing" "Shaoshui" "Pingyang" "Shizuiyang" "Shaochong" "Zhongying" "Zhoutong" "Xiangrao" "Zhaoyang" "Baochun" "Jiangzuishan" "Liaohai" "Fengping" "Zhongqiu" "Taishan" "Shigong" "Xuhar" "Yuanshui" "Sutong" "Dongzou" "Zhangjiakou" "Chengde" "Langfang" "Datong" "Yangquan" "Changzhi" "Jincheng" "Shuozhou" "Jinzhong" "Yuncheng" "Xinzhou" "Lvliang" 
-		"Baotou" "Wuhai" "Chifeng" "Tongliao" "Fuxin" "Panjin" "Tieling" "Siping" "Liaoyuan" "Tonghua" "Songyuan" "Yanbian" "Jixi" "Hegang" "Shuangyashan" "Daqing" "Yichun" "Jiamusi" "Qitaihe" "Suihua" "Changzhou" "Suzhou" "Nantong" "Lishui" "Ningbo" "Jiaxing" "Huzhou" "Bangbu" "Maanshan" "Tongling" "Anqing" "Huangshan" "Zhangzhou" "Xiamen" "Chuzhou" "Fuyang" "Luan" "Bozhou" "Chizhou" "Xuancheng" "Putian" "Sanming" "Lu Heng" "Quanzhou" "Nanping" "Longyan" "Ningde" "Jingdezhen" "Pingxiang" "Jiujiang" "Xinyu" "Yingtan" "Ganzhou" "Jian" "Yichun" "Fuzhou" "Shangrao" "Dongying" "Jining" "Tai'an" "Dezhou" "Liaocheng" "Binzhou" "Anyang" "Hebi" "Xinxiang"
-		"Jiaozuo" "Puyang" "Luohe" "Sanmenxia" "Nanyang" "Shangqiu" "Xinyang" "Zhoukou" "Huangshi" "Shiyan" "Yichang" "E'zhou" "Jingmen" "Xiaogan" "Huanggang" "Xianning" "Suizhou" "En'shi" "Zhuzhou" "Xiangtan" "Hengyang" "Shaoyang" "Yueyang" "Yiyang" "Yongzhou" "Huaihua" "Loudi" "Xiangxi" "Zhaoqing" "Huizhou" "Meizhou" "Heyuan" "Yangjiang" "Qingyuan" "Dongguan" "Zhongshan" "Jieyang" "Yunfu" "Liuzhou" "Wuzhou" "Beihai" "Fangchenggang" "Guigang" "Yulin" "Bose" "Hezhou" "Hechi" "Laibin" "Chongzuo" "Danzhou" "Zigong" "Luzhou" "Deyang" "Mianyang" "Guangyuan" "Suining" "Neijiang" "Leshan" "Nanchong" "Meishan" "Yibin" "Guangan" "Dazhou" "Yang'an" 
-		"Bazhong" "Ziyang" "A'ba" "Ganzi" "Liangshan" "Liupanshui" "Baoshan" "Zhaotong" "Pu'er" "Lincang" "Chuxiong" "Honghe" "Wenshan" "Anshun" "Bijie" "Tongren" "Qujing" "Yuxi" "Dehong" "Diqing" "Tongchuan" "Baoji" "Naqu" "Changdu" "Ali" "Xianyang" "Weinan" "Yan'an" "Hanzhong" "Ankang" "Shangluo" "Jiayuguan" "Jinchang" "Baiyin" "Tianshui" "Wuwei" "Zhangye" "Pingliang" "Jiuquan" "Qingyang" "Dingxi" "Longnan" "Linxia" "Haidong" "Haibei" "Guoluo" "Yushu" "Haixi" "Wuzhong" "Guyuan" "Zhongwei" "Changji" "Aksu" "Kashi" "Hetian" "Tacheng" "Khovd" "Qiaoxi" "Xinhua" "Jingjing" "Yuhua" "Luquan" "Luancheng" "Zhengding" "Xingtang" "Lingshou" "Gaoyi" "Shenze" "Zanhuang"
+		"兰州" "海口" "扬州" "莱芜" "保定" "辽阳" "深圳" "攀枝花" "青岛" "常德" "唐山" "惠州" "丽江" "南充" "哈密" "白山" "渤海" "珠海" "鄂尔多斯" "敦煌" 
+		"乐昌" "大理" "阿勒泰" "梅州" "日喀则" "昆山" "韶关" "潮州" "揭阳" "福安" "苍梧" "格尔木" "慈溪" "嘉兴" "临海" "乐清" "景德镇" "衢州" "永康" "牡丹江" 
+		"泰兴" "盐城" "东台" "淮安" "连云港" "宿迁" "邳州" "沭阳" "开原" "临沂" "滕州" "菏泽" "诸城" "日照" "淄博" "泰安" "东营" "聊城" "丰峰" "任丘" "高碑店" 
+		"张北" "迁安" "营口" "本溪" "瓦房店" "庄河" "普兰店" "凤城" "桓仁" "锦州" "盘锦" "抚顺" "朝阳" "凌源" "葫芦岛" "松原" "四平" "白山" "延吉" "白城" "新沂" 
+		"遵义" "湛江" "长沙" "少冲" "张家港" "梅萍" "东岛" "韶州" "泉州" "世通" "沁源" "盘州" "梅城" "粵海" "桂兴" "辽北" "平凉" "通州" "平圩" "山梁" "桂梅" "震戍" 
+		"鞍山" "许昌" "石嘴山" "丰州" "秦皇岛" "汕尾" "绥阳" "仙熟" "岳阳" "彰化" "金迈" "襄梁" "祥英" "秦门" "清迈" "盘清" "东洲" "腾冲" "平州" "茂名" "潍坊" "三亚" 
+		"枣庄" "湘潭" "无锡" "襄樊" "临汾" "镇江" "佛山" "江门" "汕头" "徐州" "荆州" "沧州" "烟台" "芜湖" "温州" "藤萍" "金华" "丹萍" "横江" "清乡" "金饶" "上子华" 
+		"桂树" "师恭" "新平" "狮头" "赵菁" "潲水" "平阳" "狮子洋" "仲英" "周桐" "襄饶" "保春" "将醉山" "辽海" "凤平" "周求" "泰山" "许哈尔" "沅水" "苏通" "张家口" 
+		"承德" "廊坊" "大同" "阳泉" "长治" "晋城" "朔州" "晋中" "运城" "忻州" "吕梁" "包头" "乌海" "赤峰" "通辽" "阜新" "铁岭" "辽源" "通化" "延边" "鸡西" "鹤岗"
+    	"双鸭山" "大庆" "伊春" "佳木斯" "七台河" "绥化" "常州" "苏州" "南通" "丽水" "宁波" "湖州" "蚌埠" "马鞍山" "铜陵" "安庆" "黄山" "漳州" "厦门" "滁州" "阜阳" 
+		"六安" "亳州" "池州" "宣城" "莆田" "三明" "绿恒" "南平" "龙岩" "宁德" "萍乡" "九江" "新余" "鹰潭" "赣州" "吉安" "福州" "上饶" "济宁" "德州" "彬州" "安阳"
+		"鹤壁" "新乡" "焦作" "濮阳" "漯河" "三门峡" "南阳" "商丘" "信阳" "周口" "黄石" "十堰" "宜昌" "鄂州" "荆门" "孝感" "黄冈" "咸宁" "随州" "恩施" "株洲" "衡阳" 
+		"邵阳" "益阳" "永州" "怀化" "娄底" "湘西" "肇庆" "河源" "阳江" "清远" "东莞" "中山" "云浮" "柳州" "梧州" "北海" "防城港" "贵港" "玉林" "百色" "贺州" "河池"
+		"来宾" "崇左" "儋州" "自贡" "泸州" "德阳" "绵阳" "广元" "遂宁" "内江" "乐山" "眉山" "宜宾" "广安" "达州" "阳安" "巴中" "资阳" "阿坝" "甘孜" "凉山" "六盘水" 
+		"保山" "昭通" "普洱" "临沧" "楚雄" "红河" "文山" "安顺" "毕节" "铜仁" "曲靖" "玉溪" "德宏" "帝清" "铜川" "宝鸡" "那曲" "昌都" "阿里" "咸阳" "渭南" "延安" 
+		"汉中" "安康" "商洛""嘉峪关" "金昌" "白银" "天水" "武威" "张掖" "酒泉" "庆阳" "定西" "陇南" "临夏" "海东" "海北" "果洛" "玉树" "海西" "吴忠" "固原" "中卫"
+    	"昌吉" "阿克苏" "喀什" "和田" "塔城" "科布多" "桥西" "新华" "井陉" "裕华" "鹿泉" "栾城" "正定" "行唐" "灵寿" "高邑" "赞皇"  
 	}
 }
 
@@ -88,12 +96,20 @@ CHI_FRIGATE_HISTORICAL = {
 	type = ship
 	ship_types = { frigate }
 
-	fallback_name = "Frigate-%d"
+	fallback_name = "%d号护卫舰"
 
 	unique = {
-		"Mianyang" "Luoyang" "Xiangyang" "Huaihua" "Nyingchi" "Liaoyuan" "Gyirong" "Meihekou" "Dunhua" "Fusong" "Yushu" "Da'an" "Qiqihar" "Jixi" "Yichun" "Jiamusi" "Hegang" "Qitaihe" "Nenjiang" "Heihe" "Daqing" "Tahe" "Mohe" "Nehe" "Suihua" "Zhaodong" "Bei'an" "Shangzhi" "Wuchang" "Shuangyashan" "Fujin" "Hulin" "Fuyuan" "Manzhouli" "Tongliao" "Chifeng" "Yakeshi" "Ulanhot" "Holingol" "Hulunbuir" "Oroqen" "Zalantun" "Xiaoyi" "Ningcheng" "Naiman" "Aohan" "Xilinhot" "Ongniud" "Qingyuan" "Wuhai" "Otog" "Datong" "Linfen" "Yangquan" "Shuozhou" "Jincheng" "Xinzhou" "Yuncheng" "Lishi" "Baoji" "Weinan" "Ankang" "Tongchuan" "Hanzhong" "Shangluo" "Baiyin" "Wuwei" "Zhangye" "Jiuquan" "Tianshui" 
-		"Longxi" "Jinchang" "Zhongwei" "Jiujiang" "Shenmu" "Yumen" "Shangrao" "Lufeng" "Longnan" "Guyan" "Qingyang" "Pingliang" "Yinchuan" "Garze" "Kangding" "Batang" "Dege" "Cangnan" "Fangchenggang" "Gongshan" "Liuku" "Pinggou" "Gejiu" "Kali" "Bazhong" "Aba" "Xuanwei" "Litang" "Yongsheng" "Lancang" "Dêqên" "Loudi" "Shaoyang" "Yongzhou" "Bobai" "Shihezi" "Zhongba" "Neijiang" "Dazhou" "Delingha" "Wenchuan" "Liupanshui" "Hengyang" "Zhuzhou" "Chenzhou" "Zhangjiajie" "Liuzhou" "Chaling" "Kuytun" "Dulan" "Madoi" "Darlag" "Barkam" "Korla" "Gulja" "Jiuzhaigou" "Qinzhou" "Anhua" "Pingnan" "Wuzhou" "Jishou" "Zunyi" "Gar" "Aksu"
-		"Liuyang" "Lop Nur" "Huludao" "Luoyang" "Linfen" "Dandong" "Changzhi" "Siping" "Yichang" "Jiujiang" "Xiamen" "Nanping" "Nantong" "Huai'an" "Wuxi" "Zhenjiang" "Jinhua" "Taizhou" "Zhoushan" "Wuhu" "Huangshi" "Beihai" "Foshan" "Anqing" "Huainan" "Huaibei" "Tongling" "Jiaxing" "Lianyungang" "Putian" "Sanming" "Ji'an" "Shaoxing" "Changde" "Maoming" "Yibin" "Zhaotong" "Shaoguan" "Anshun" "Xiangtan" "Jishou" "Dongguan" "Shantou" "Jiangmen" "Zhaoqing"
+		"绵阳" "洛阳" "襄阳" "怀化" "林芝" "辽源" "吉隆" "梅河口" "敦化" "抚松" "玉树" "大安" "齐齐哈尔" "鸡西" "宜春" "廊坊" "鹤岗"
+		"七台河" "嫩江" "黑河" "大庆" "塔河" "漠河" "讷河" "绥化" "Zhaodong" "Bei'an" "Shangzhi" "Wuchang" "Shuangyashan" "Fujin" "Hulin" "Fuyuan" "Manzhouli" 
+		"Tongliao" "Chifeng" "Yakeshi" "Ulanhot" "Holingol" "Hulunbuir" "Oroqen" "Zalantun" "Xiaoyi" "Ningcheng" "Naiman" "Aohan" "Xilinhot" "Ongniud" "Qingyuan" "Wuhai" 
+		"Otog" "Datong" "Linfen" "Yangquan" "Shuozhou" "Jincheng" "Xinzhou" "Yuncheng" "Lishi" "Baoji" "Weinan" "Ankang" "Tongchuan" "Hanzhong" "Shangluo" "Baiyin" "Wuwei" 
+		"Zhangye" "Jiuquan" "Tianshui" "Longxi" "Jinchang" "Zhongwei" "Jiujiang" "Shenmu" "Yumen" "Shangrao" "Lufeng" "Longnan" "Guyan" "Qingyang" "Pingliang" "Yinchuan" 
+		"Garze" "Kangding" "Batang" "Dege" "Cangnan" "Fangchenggang" "Gongshan" "Liuku" "Pinggou" "Gejiu" "Kali" "Bazhong" "Aba" "Xuanwei" "Litang" "Yongsheng" "Lancang" 
+		"Dêqên" "Loudi" "Shaoyang" "Yongzhou" "Bobai" "Shihezi" "Zhongba" "Neijiang" "Dazhou" "Delingha" "Wenchuan" "Liupanshui" "Hengyang" "Zhuzhou" "Chenzhou" "Zhangjiajie"
+		"Liuzhou" "Chaling" "Kuytun" "Dulan" "Madoi" "Darlag" "Barkam" "Korla" "Gulja" "Jiuzhaigou" "Qinzhou" "Anhua" "Pingnan" "Wuzhou" "Jishou" "Zunyi" "Gar" "Aksu"
+		"Liuyang" "Lop Nur" "" "Luoyang" "Linfen" "Dandong" "Changzhi" "Siping" "Yichang" "Jiujiang" "Xiamen" "Nanping" "Nantong" "Huai'an" "Wuxi" "Zhenjiang" "Jinhua" 
+		"Taizhou" "Zhoushan" "Wuhu" "Huangshi" "Beihai" "Foshan" "Anqing" "Huainan" "Huaibei" "Tongling" "Jiaxing" "Lianyungang" "Putian" "Sanming" "Ji'an" "Shaoxing" 
+		"Changde" "Maoming" "Yibin" "Zhaotong" "Shaoguan" "Anshun" "Xiangtan" "Jishou" "Dongguan" "Shantou" "Jiangmen" "Zhaoqing"
 	}
 }
 
