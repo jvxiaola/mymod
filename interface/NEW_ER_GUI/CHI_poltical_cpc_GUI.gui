@@ -1,8 +1,8 @@
 guiTypes = {
 	containerWindowType = {#开启按钮窗口
 		name = "CHI_CPC_poltical_GUI_open_button_main"
-		size = { width = 100 height = 100 }
-		position = { x = 100 y = 100 }
+		size = { width = 68 height = 68 }
+		position = { x = 120 y = 375 }
 		buttonType = {
 			name = "CPC_poltical_GUI_open_button" #开启按钮
 			position = { x = 0 y = 0 }
