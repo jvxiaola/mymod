@@ -111,10 +111,10 @@ country_event = {
 		name = CW_Diverse.4.a
 		custom_effect_tooltip = CHI_military_region_XIN
 		set_autonomy = {
-				target = XIN
-				autonomy_state = autonomy_special_administrative_region
-			}
-			hidden_effect = {
+			target = XIN
+			autonomy_state = autonomy_special_administrative_region
+		}
+		hidden_effect = {
 			591 = { transfer_state_to = XIN }
 			592 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack2 } }
 			1205 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack5 } }
@@ -143,7 +143,6 @@ country_event = {
 				load_oob = XIN_liberate_units
 				set_country_flag = XIN_attacked
 				mark_focus_tree_layout_dirty = yes#刷新国策树
-				give_military_access = CHI
 				complete_national_focus = XIN_troubled_times
 				add_equipment_to_stockpile = {
 					type = Inf_equipment
@@ -163,7 +162,6 @@ country_event = {
 				}
 				set_country_flag = XIN_attacked
 				mark_focus_tree_layout_dirty = yes
-				give_guarantee = XIN
 			}
 	}
 	}
