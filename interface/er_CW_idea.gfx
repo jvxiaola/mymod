@@ -3,6 +3,10 @@ spriteTypes = {
 		name = "GFX_idea_marxist_military"
 		texturefile = "gfx/interface/ideas/CW_idea/idea_marxist_military.png"
 	}
+	spriteType = {
+		name = "GFX_CHI_military_region_XIN_icon"
+		texturefile = "gfx/interface/autonomy/PRC_XIN.png"
+	}
 
 	spriteType = {
 		name = "GFX_idea_marxist_military_strengthened"

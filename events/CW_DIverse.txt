@@ -109,7 +109,11 @@ country_event = {
 	trigger = { tag = CHI }
 	option = {
 		name = CW_Diverse.4.a
-		custom_effect_tooltip = orgnize_xinjiang_military_TT
+		custom_effect_tooltip = CHI_military_region_XIN
+		set_autonomy = {
+				target = XIN
+				autonomy_state = autonomy_special_administrative_region
+			}
 			hidden_effect = {
 			591 = { transfer_state_to = XIN }
 			592 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack2 } }
