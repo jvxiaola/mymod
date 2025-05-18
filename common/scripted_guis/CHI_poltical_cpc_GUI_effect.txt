@@ -1,0 +1,30 @@
+scripted_gui = {
+
+	CHI_CPC_poltical_GUI_open_button_main = {
+		context_type = "countrypoliticsview"
+		window_name = "CHI_CPC_poltical_GUI_open_button_main"
+		visible = { tag = CHI }
+		triggers = { CPC_poltical_GUI_open_button_enabled = { always = yes } }
+		effects = {
+			CPC_poltical_GUI_open_button_click = {#开启按钮效果
+				if = {#打开窗口
+					limit = { NOT = { has_country_flag = CPC_poltical_GUI_opened } }
+					set_country_flag = CPC_poltical_GUI_opened
+				}
+				else_if = {#关闭窗口
+					limit = { has_country_flag = CPC_poltical_GUI_opened }
+					clr_country_flag = CPC_poltical_GUI_opened
+				}
+			}
+		}
+	}
+	CHI_CPC_poltical_GUI_main = {
+		context_type = "countrypoliticsview"
+		window_name = "CHI_CPC_poltical_GUI_main"
+		visible = { has_country_flag = CPC_poltical_GUI_opened }
+		triggers = {  }
+		effects = {
+			
+		}
+	}
+}
