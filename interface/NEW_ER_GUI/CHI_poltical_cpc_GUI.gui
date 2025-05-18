@@ -8,7 +8,7 @@ guiTypes = {
 			position = { x = 0 y = 0 }
 			quadTextureSprite ="GFX_chinese_political_system_open_button_icon"
 			clicksound = click_default
-			pdx_tooltip = "中国政治界面"
+			pdx_tooltip = "CHI_CPC_poltical_GUI_open_TT"
 		}
 	}
 	containerWindowType = {#主界面
