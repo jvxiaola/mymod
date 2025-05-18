@@ -11,7 +11,6 @@ guiTypes = {
 
 		#hide_sound = menu_close_window
 		show_sound = menu_open_window
-
 		# Containerized the background to make the subideology screen on politics tab closed
 		containerWindowType = {
 			name = "countrypoliticsview_bg"

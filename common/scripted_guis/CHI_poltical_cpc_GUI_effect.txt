@@ -5,7 +5,6 @@ scripted_gui = {
 		parent_window_token = politics_tab
 		window_name = "CHI_CPC_poltical_GUI_open_button_main"
 		visible = { tag = CHI }
-		triggers = { CPC_poltical_GUI_open_button_enabled = { always = yes } }
 		effects = {
 			CPC_poltical_GUI_open_button_click = {#开启按钮效果
 				if = {#打开窗口
