@@ -130,7 +130,7 @@ ideas = {
 			#军队经商残余影响：极度严重
 			allowed_civil_war = { always = yes }
 			cancel = { always = no }
-			picture = split_pla
+			picture = Militarical_economy_remain
 			modifier = {
 				army_org_factor = -0.30
 				army_attack_factor = -0.25
@@ -146,7 +146,7 @@ ideas = {
 			#军队经商残余影响：较为严重
 			allowed_civil_war = { always = yes }
 			cancel = { always = no }
-			picture = split_pla
+			picture = Militarical_economy_remain
 			modifier = {
 				army_org_factor = -0.25
 				army_attack_factor = -0.15
@@ -162,7 +162,7 @@ ideas = {
 			#军队经商残余影响：一般残余
 			allowed_civil_war = { always = yes }
 			cancel = { always = no }
-			picture = split_pla
+			picture = Militarical_economy_remain
 			modifier = {
 				army_org_factor = -0.15
 				army_attack_factor = -0.10
@@ -177,7 +177,7 @@ ideas = {
 			#军队经商残余影响：部分残余
 			allowed_civil_war = { always = yes }
 			cancel = { always = no }
-			picture = split_pla
+			picture = Militarical_economy_remain
 			modifier = {
 				army_org_factor = -0.05
 				army_attack_factor = -0.05
@@ -189,7 +189,7 @@ ideas = {
 			#军队经商残余影响：微小残余
 			allowed_civil_war = { always = yes }
 			cancel = { always = no }
-			picture = split_pla
+			picture = Militarical_economy_remain
 			modifier = {
 				army_org_factor = -0.03
 				army_attack_factor = -0.02
@@ -200,8 +200,7 @@ ideas = {
 		#重置：相对生产过剩 CHI_guoshengweiji
 		CHI_overproduction1 = {
 			allowed_civil_war = { always = yes }
-			name = CHI_overproduction
-			picture = financial_crisis
+			picture = CHI_overproduction
 			cancel = { 
 				OR = { 
 					has_idea = Industrial_damage1 has_idea = Industrial_damage2 
@@ -223,8 +222,7 @@ ideas = {
 
 		CHI_overproduction2 = {
 			allowed_civil_war = { always = yes }
-			name = CHI_overproduction
-			picture = financial_crisis
+			picture = CHI_overproduction
 			cancel = { 
 				OR = { 
 					has_idea = Industrial_damage1 has_idea = Industrial_damage2 
@@ -246,8 +244,7 @@ ideas = {
 
 		CHI_overproduction3 = {
 			allowed_civil_war = { always = yes }
-			name = CHI_overproduction
-			picture = financial_crisis
+			picture = CHI_overproduction
 			cancel = { 
 				OR = { 
 					has_idea = Industrial_damage1 has_idea = Industrial_damage2 
@@ -269,8 +266,7 @@ ideas = {
 
 		CHI_overproduction4 = {
 			allowed_civil_war = { always = yes }
-			name = CHI_overproduction
-			picture = financial_crisis
+			picture = CHI_overproduction
 			cancel = { 
 				OR = { 
 					has_idea = Industrial_damage1 has_idea = Industrial_damage2 
@@ -290,8 +286,7 @@ ideas = {
 
 		CHI_overproduction5 = {
 			allowed_civil_war = { always = yes }
-			name = CHI_overproduction
-			picture = financial_crisis
+			picture = CHI_overproduction
 			cancel = { 
 				OR = { 
 					has_idea = Industrial_damage1 has_idea = Industrial_damage2 

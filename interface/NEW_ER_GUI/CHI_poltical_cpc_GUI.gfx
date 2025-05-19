@@ -4,9 +4,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/CHI_CPC_poltical_GUI/chinese_political_system_open_button.png"
 	}
 	spriteType = {
-		name = "GFX_CHI_CPC_poltical_GUI_background_main"
+		name = "GFX_CHI_CPC_poltical_GUI_background_main_icon"
 		texturefile = "gfx/interface/CHI_CPC_poltical_GUI/main_political_window.png"
 	}
-	
+	spriteType = {
+		name = "GFX_poltical_GUI_button1_icon"
+		texturefile = "gfx/interface/CHI_CPC_poltical_GUI/main_political_window_button_1.png"
+	}
 }
 

@@ -7,4 +7,12 @@
 			name = "GFX_idea_harsh_working_en_of_CHI"
 			texturefile = "gfx/interface/ideas/ER_ideas/CHI_harsh_working_environment.dds"
 		}
+		spriteType = {
+			name = "GFX_idea_CHI_overproduction"
+			texturefile = "gfx/interface/ideas/ER_ideas/CHI_overproduction.png"
+		}
+		spriteType = {
+			name = "GFX_idea_Militarical_economy_remain"
+			texturefile = "gfx/interface/ideas/ER_ideas/Militarical_economy_remain.dds"
+		}
 	}
