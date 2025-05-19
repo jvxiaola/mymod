@@ -18,13 +18,13 @@ scripted_gui = {
 			}
 		}
 	}
-	CHI_CPC_poltical_GUI_front_button = {
+	
+	CHI_CPC_poltical_GUI_main = {
 		context_type = player_context
-		parent_window_token = CHI_CPC_poltical_GUI_main
-		window_name = CHI_CPC_poltical_GUI_front_button
-		triggers = {
+		window_name = CHI_CPC_poltical_GUI_main
+		visible = { has_country_flag = CPC_poltical_GUI_opened }
+		triggers = {  
 			CHI_poltical_GUI_button1_enabled = { NOT = { has_country_flag = CHI_poltical_GUI_page_2 } }
-			CHI_poltical_GUI_button1_visible = { has_country_flag = CPC_poltical_GUI_opened } CHI_poltical_GUI_button1_name_visible = { has_country_flag = CPC_poltical_GUI_opened }
 		}
 		effects = {
 			CHI_poltical_GUI_button1_click = {#开启按钮效果
@@ -33,15 +33,6 @@ scripted_gui = {
 					set_country_flag = CHI_poltical_GUI_page_1
 				}
 			}
-		}
-	}
-	CHI_CPC_poltical_GUI_main = {
-		context_type = player_context
-		window_name = CHI_CPC_poltical_GUI_main
-		visible = { has_country_flag = CPC_poltical_GUI_opened }
-		triggers = {  }
-		effects = {
-			
 		}
 	}
 }
