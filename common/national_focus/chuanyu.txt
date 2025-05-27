@@ -750,9 +750,10 @@ custom_effect_tooltip = "解锁相关决议"
 		}
 	}	
 	focus = {
-		id = DSC_QIYIGCA
-		icon = communist_factories
-		x = 3
+
+		id = DSC_people_armyI
+		icon = peoples_liberation_army
+		x = 7
 
 		y = 0
 
@@ -773,32 +774,43 @@ custom_effect_tooltip = "解锁相关决议"
 
 		}
 
+
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		available = {
 
-		}
 		completion_reward = {
-############################
 
-
-
+		hidden_effect = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+				add_to_variable = {
+					var = party_pop_array^5
+					value = 0.05
+				}
+				recalculate_party = yes
+			}
+	add_ideas = CHI_party_before_guns
+	add_ideas = people_army1
+	unlock_decision_tooltip = CHI_CHI_NEW_people_war1
 		}
 	}
 
 
 	focus = {
-		id = DSC_QIYIGCB
+		id = DSC_people_armyII
 		icon = communist_factories
-		x = 3
+		x = 7
 
 		y = 1
 
 		cost = 5
 
 		prerequisite = {
-			focus=DSC_QIYIGCA
+			focus=DSC_people_armyI
 		 }
 
 
@@ -874,8 +886,8 @@ add_political_power = 100
 
 
 	focus = {
-		id = DSC_people_amry
-		icon = peoples_liberation_army
+		id = DSC_zuzhishengchan
+		icon = communist_factories
 		x = 6
 		y = 1
 		prerequisite = {focus = DSC_QIYI}
@@ -900,21 +912,8 @@ add_political_power = 100
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_political_power = 100
 
-		hidden_effect = {
-				add_popularity = {
-					ideology = communism
-					popularity = 0.05
-				}
-				add_to_variable = {
-					var = party_pop_array^5
-					value = 0.05
-				}
-				recalculate_party = yes
-			}
-	add_ideas = CHI_party_before_guns
-	add_ideas = people_amry1
-	unlock_decision_tooltip = CHI_CHI_NEW_people_war1
 		}
 	}
 
@@ -1214,7 +1213,7 @@ add_political_power = 100
 			y = 2
 
 			prerequisite = {	
-				focus=DSC_people_amry
+				focus=DSC_zuzhishengchan
 			} 
 	
 			 prerequisite = {

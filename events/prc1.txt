@@ -2130,7 +2130,7 @@ division_template = {
 				random_owned_controlled_state = {
 				prioritize = { 434 }
 				create_unit = {
-						name = "38th amry"
+						name = "38th army"
 					division = "division_template = \"Zhuangjia Shi\" start_experience_factor = 1	start_equipment_factor = 1"
 					owner = CHI
 					prioritize_location = 9906

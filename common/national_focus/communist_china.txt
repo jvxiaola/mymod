@@ -492,12 +492,12 @@ relative_position_id = PRC_communist
 		}
 		
 				focus = {
-		id = PRC_red_amry1
+		id = PRC_red_army1
 		icon = communist_army
 		x = -1
 		y = 3
 		prerequisite = {focus = PRC_gyh}
-		mutually_exclusive = {focus = PRC_people_amry}
+		mutually_exclusive = {focus = PRC_people_army}
 		relative_position_id = PRC_communist
 		cost = 5
 
@@ -531,7 +531,7 @@ relative_position_id = PRC_communist
 				recalculate_party = yes
 			}		swap_ideas = {		
 		remove_idea = red_weidui1
-		add_idea = red_amry 
+		add_idea = red_army 
 		}
 		
 		}
@@ -541,7 +541,7 @@ relative_position_id = PRC_communist
 		icon = great_railway_incident
 		x = -2
 		y = 4
-		prerequisite = {focus = PRC_red_amry1}
+		prerequisite = {focus = PRC_red_army1}
 		relative_position_id = PRC_communist
 		cost = 5
 
@@ -574,8 +574,8 @@ relative_position_id = PRC_communist
 				}
 				recalculate_party = yes
 			}		swap_ideas = {		
-		remove_idea = red_amry
-		add_idea = red_amry1 
+		remove_idea = red_army
+		add_idea = red_army1 
 		}
 		
 		}
@@ -618,8 +618,8 @@ relative_position_id = PRC_communist
 				}
 				recalculate_party = yes
 			}		swap_ideas = {		
-		remove_idea = red_amry1
-		add_idea = red_amry2 
+		remove_idea = red_army1
+		add_idea = red_army2 
 		}
 		
 		}
@@ -629,7 +629,7 @@ relative_position_id = PRC_communist
 		icon = gurkhas
 		x = 0
 		y = 4
-		prerequisite = {focus = PRC_red_amry1 focus = PRC_people_amry}
+		prerequisite = {focus = PRC_red_army1 focus = PRC_people_army}
 		relative_position_id = PRC_communist
 		cost = 5
 
@@ -655,12 +655,12 @@ relative_position_id = PRC_communist
 		}
 		}
 						focus = {
-		id = PRC_people_amry
+		id = PRC_people_army
 		icon = peoples_liberation_army
 		x = 1
 		y = 3
 		prerequisite = {focus = PRC_gyh}
-		mutually_exclusive = {focus = PRC_red_amry1}
+		mutually_exclusive = {focus = PRC_red_army1}
 		relative_position_id = PRC_communist
 		cost = 5
 
@@ -693,7 +693,7 @@ relative_position_id = PRC_communist
 				}
 				recalculate_party = yes
 			}add_ideas = CHI_party_before_guns
-add_ideas = people_amry1
+add_ideas = people_army1
 remove_ideas = red_weidui1
 		}
 		}
@@ -702,7 +702,7 @@ focus = {
 		icon = entente
 		x = 2
 		y = 4
-		prerequisite = {focus = PRC_people_amry}
+		prerequisite = {focus = PRC_people_army}
 		relative_position_id = PRC_communist
 		cost = 5
 
@@ -735,8 +735,8 @@ focus = {
 				}
 				recalculate_party = yes
 			}			swap_ideas = {		
-		remove_idea = people_amry1
-		add_idea = people_amry2 
+		remove_idea = people_army1
+		add_idea = people_army2 
 		}
 		}
 		}
@@ -779,8 +779,8 @@ focus = {
 				recalculate_party = yes
 			}
 			swap_ideas = {		
-		remove_idea = people_amry2
-		add_idea = people_amry3
+		remove_idea = people_army2
+		add_idea = people_army3
 		}
 		}
 		}
@@ -11087,14 +11087,14 @@ add_stability = -0.20
 
 
 	focus = {
-		id = PRC_wenyipipan
+		id = PRC_wenyidaji
 		icon = Continuous_Cultural_Revolution
 		x = 1
 		y = 2
 		allow_branch={
 			has_country_flag = jixuwenge
 		}
-		mutually_exclusive = {focus=PRC_shangcengjianzhugm}
+		mutually_exclusive = {focus=PRC_baihuaqifang}
 	prerequisite={
 		focus=PRC_wengexiaozu
 	}
@@ -11126,14 +11126,14 @@ add_stability = -0.20
 		}	
 
 		focus = {
-			id = PRC_shangcengjianzhugm
+			id = PRC_baihuaqifang
 			icon = Continuous_Cultural_Revolution
 			x = -1
 			y = 2
 			allow_branch={
 				has_country_flag = jixuwenge
 			}
-			mutually_exclusive = {focus=PRC_wenyipipan}
+			mutually_exclusive = {focus=PRC_wenyidaji}
 		prerequisite={
 			focus=PRC_wengexiaozu
 		}
@@ -11175,8 +11175,8 @@ add_stability = -0.20
 			}
 
 prerequisite={	
-	focus=PRC_wenyipipan
-	focus=PRC_shangcengjianzhugm
+	focus=PRC_wenyidaji
+	focus=PRC_baihuaqifang
 }
 
 				relative_position_id = PRC_yunniang
@@ -11379,6 +11379,10 @@ prerequisite={
 		}		
 		}
 				}	
+
+
+
+				
 	focus = {
 			id = PRC_Spiritual_Atomic_Bomb
 			icon = ziligengsheng

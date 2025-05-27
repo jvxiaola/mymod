@@ -91,7 +91,7 @@
 		officer_advanced_training
 		consumption_economy
 		NEP_Himalayan_Rebellion_Struggle
-		people_amry3
+		people_army3
 	}
 
 	# Influence Explanation

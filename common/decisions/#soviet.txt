@@ -23,7 +23,7 @@ add_stability = 0.10		}
 country_event = russia.16
 		}
 	}
-SOV_difangredamry = {
+SOV_difangredarmy = {
 		icon = GFX_decision_generic_form_nation
 		available = {
 		}

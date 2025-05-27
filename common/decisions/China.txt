@@ -1762,7 +1762,7 @@ has_completed_focus = PRC_Dual_track_military_system
 	political_power_gain = -0.10	
 		}
 remove_effect = {
-remove_ideas = red_amry2
+remove_ideas = red_army2
 add_ideas = PRC_Dual_track_military_system_1
 }		
 }
@@ -3003,8 +3003,8 @@ CHI_Civil_war_decisions = {
 			available = {
 				is_ai = no
 				OR = { 
-					has_completed_focus = DSC_people_amry
-					has_completed_focus = HKG_people_amry
+					has_completed_focus = DSC_people_armyI
+					has_completed_focus = HKG_people_army
 				}
 			}
 	
@@ -3013,8 +3013,8 @@ CHI_Civil_war_decisions = {
 			fire_only_once = yes
 			visible = {
 				OR = { 
-					has_completed_focus = DSC_people_amry
-					has_completed_focus = HKG_people_amry
+					has_completed_focus = DSC_people_armyI
+					has_completed_focus = HKG_people_army
 				}
 			}
 	
@@ -3088,7 +3088,7 @@ CHI_Civil_war_decisions = {
 			}
 		}
 
-CHI_difangredamry = {
+CHI_difangredarmy = {
 		icon = GFX_decision_generic_form_nation
 		available = {
 			is_ai = no

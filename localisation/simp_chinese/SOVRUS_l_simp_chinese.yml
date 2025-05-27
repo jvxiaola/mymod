@@ -479,7 +479,7 @@ SOV_Ensure_control:0 "夺取§Y[From.GetName]§!的控制权"
 SOV_Left_State:0 "工人获得了该省份的控制"
 SOV_Secure_province:0 "正在集中注意力控制省份"
 SOV_Ensure_control_State_tt:"§Y[From.GetName]§!在内战中会与我们站在一起"
-SOV_difangredamry:0 "动员民兵"
+SOV_difangredarmy:0 "动员民兵"
 SOV_cw:"§R爆发内战§!"
 
 SOV_Export_the_revolution_decisions:"输出革命"

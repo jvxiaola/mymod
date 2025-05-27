@@ -375,7 +375,7 @@ add_political_power = 100
 
 
 	focus = {
-		id = HKG_people_amry
+		id = HKG_people_army
 		icon = communist_army
 		x = 6
 		y = 1
@@ -413,7 +413,7 @@ add_political_power = 100
 				}
 				recalculate_party = yes
 			}
-			add_ideas = red_amry 
+			add_ideas = red_army 
 remove_ideas = red_weidui1
 		}
 		}
@@ -465,7 +465,7 @@ remove_ideas = red_weidui1
 			y = 2
 
 			prerequisite = {	
-				focus=HKG_people_amry
+				focus=HKG_people_army
 			} 
 	
 			 prerequisite = {

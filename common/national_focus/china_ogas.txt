@@ -416,12 +416,12 @@ prerequisite = { focus = PRC_communsim_soc }
 		available_if_capitulated = no
 		completion_reward = {			
 		if = {
- limit ={ has_idea = red_amry2}
-		remove_ideas = red_amry2
+ limit ={ has_idea = red_army2}
+		remove_ideas = red_army2
 		}	
 else_if = {
- limit ={ has_idea = people_amry3 }
-		remove_ideas = people_amry3
+ limit ={ has_idea = people_army3 }
+		remove_ideas = people_army3
 		}
 add_ideas = PRC_gmwz}
 }

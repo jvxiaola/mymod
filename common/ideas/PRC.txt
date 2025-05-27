@@ -3153,7 +3153,7 @@ stability_factor = 0.25
 production_speed_buildings_factor = 0.1
 			}
 		}					
-	red_amry = {
+	red_army = {
 						picture = soviet_advisors
 			allowed = {
 			}
@@ -3167,12 +3167,12 @@ production_speed_buildings_factor = 0.1
 
 			}
 		}
-		red_amry1 = {
+		red_army1 = {
 						picture = soviet_advisors
 			allowed = {
 			}
 			
- 				name = red_amry
+ 				name = red_army
 
 			modifier = {
 			Chinese_people_support_to_china_government_modifier = 0.03
@@ -3185,12 +3185,12 @@ war_support_factor = 0.15
 
 			}
 		}
-		red_amry2 = {
+		red_army2 = {
 						picture = soviet_advisors
 			allowed = {
 			}
 			
- 				name = red_amry
+ 				name = red_army
 
 			modifier = {
 				conscription = 0.05
@@ -3290,11 +3290,11 @@ attrition = -0.1
 } 
 			}
 
-	people_amry1 = {
+	people_army1 = {
 			picture = pla
 			allowed = {
 			}
-			 				name = people_amry
+			 				name = people_army
  	
 			modifier = {
 				conscription = 0.003
@@ -3304,11 +3304,11 @@ attrition = -0.1
 
 			}
 		}
-	people_amry2 = {
+	people_army2 = {
 			picture = red_revolutionary_army
 			allowed = {
 			}
-			 				name = people_amry
+			 				name = people_army
  	
 			modifier = {
 				conscription = 0.010
@@ -3324,11 +3324,11 @@ Chinese_people_support_to_china_government_modifier = 0.03
 
 			}
 		}
-	people_amry3 = {
+	people_army3 = {
 			picture = red_revolutionary_army
 			allowed = {
 			}
-			 				name = people_amry
+			 				name = people_army
  	
 			modifier = {
 			army_org_factor = 0.15
