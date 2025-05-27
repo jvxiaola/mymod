@@ -10682,47 +10682,7 @@ add_core_of = ROOT
 			}
 			}
 
-	focus = {
-			id = PRC_Mass_Movement
-			icon = Chinese_People_Front
-			x = 0
-			y = 1
-	prerequisite = {focus = PRC_Lasting_Cultural_Revolution }
 	
-	relative_position_id = PRC_Lasting_Cultural_Revolution
-	
-			cost = 5
-	
-			ai_will_do = {
-				factor = 10
-			}
-	
-			available = {
-	
-			}
-	
-			bypass = {
-			}
-	
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
-	
-			completion_reward = {
-	custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
-	set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.10 }
-	change_DSC_Socialist_Construction_dynamic20 = yes
-	set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.15 }
-	change_DSC_Socialist_Construction_dynamic32 = yes
-	set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.2 }
-	change_DSC_Socialist_Construction_dynamic1 = yes
-
-	hidden_effect = {
-	country_event = {id = prc1.120 days = 14 }
-	
-	}		
-	}
-			}
 
 
 			#revolutionary_government
@@ -11035,26 +10995,192 @@ add_idea=CHI_zzgs2
 			
 
 
+#文革线
+
+
+focus = {
+	id = PRC_yunniang
+	icon = Continuous_Cultural_Revolution
+	x = 30
+	y = 0
+	allow_branch={
+		has_country_flag = jixuwenge
+	}
+
+	offset = {
+		x = -12
+		trigger = {
+			OR = { 
+				has_completed_focus = PRC_Proletarian_leader
+				has_completed_focus = PRC_jitilingdao
+			}
+		}
+	}
+	cost = 5
+
+	ai_will_do = {
+		factor = 10
+	}
+
+	available = {
+
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+
+add_stability = -0.20
+
+
+
+	}
+	}		
+
+
+
+
+	focus = {
+		id = PRC_wengexiaozu
+		icon = Continuous_Cultural_Revolution
+		x = 0
+		y = 1
+		allow_branch={
+			has_country_flag = jixuwenge
+		}
+	prerequisite={
+		focus=PRC_yunniang
+	}
+			relative_position_id = PRC_yunniang
+		cost = 5
+	
+		ai_will_do = {
+			factor = 10
+		}
+	
+		available = {
+	
+		}
+	
+		bypass = {
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+	
+	add_stability = -0.20
+	
+	
+	
+		}
+		}	
+
+
+
+
+	focus = {
+		id = PRC_wenyipipan
+		icon = Continuous_Cultural_Revolution
+		x = 1
+		y = 2
+		allow_branch={
+			has_country_flag = jixuwenge
+		}
+		mutually_exclusive = {focus=PRC_shangcengjianzhugm}
+	prerequisite={
+		focus=PRC_wengexiaozu
+	}
+			relative_position_id = PRC_yunniang
+		cost = 5
+	
+		ai_will_do = {
+			factor = 10
+		}
+	
+		available = {
+	
+		}
+	
+		bypass = {
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+	
+	add_stability = -0.20
+	
+	
+	
+		}
+		}	
+
+		focus = {
+			id = PRC_shangcengjianzhugm
+			icon = Continuous_Cultural_Revolution
+			x = -1
+			y = 2
+			allow_branch={
+				has_country_flag = jixuwenge
+			}
+			mutually_exclusive = {focus=PRC_wenyipipan}
+		prerequisite={
+			focus=PRC_wengexiaozu
+		}
+				relative_position_id = PRC_yunniang
+			cost = 5
+		
+			ai_will_do = {
+				factor = 10
+			}
+		
+			available = {
+		
+			}
+		
+			bypass = {
+			}
+		
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+		
+			completion_reward = {
+		
+		add_stability = -0.20
+		
+		
+		
+			}
+			}	
 
 
 		focus = {
 			id = PRC_Lasting_Cultural_Revolution
 			icon = Continuous_Cultural_Revolution
-			x = 30
-			y = 0
+			x = 0
+			y = 3
 			allow_branch={
 				has_country_flag = jixuwenge
 			}
 
-			offset = {
-				x = -12
-				trigger = {
-					OR = { 
-						has_completed_focus = PRC_Proletarian_leader
-						has_completed_focus = PRC_jitilingdao
-					}
-				}
-			}
+prerequisite={	
+	focus=PRC_wenyipipan
+	focus=PRC_shangcengjianzhugm
+}
+
+				relative_position_id = PRC_yunniang
+
 			cost = 5
 	
 			ai_will_do = {
@@ -11080,7 +11206,179 @@ add_idea=CHI_zzgs2
 
 			}
 			}		
+
+
+			focus = {
+				id = PRC_gongzuozu
+				icon = Chinese_People_Front
+				x = -1
+				y = 1
+		prerequisite = {focus = PRC_Lasting_Cultural_Revolution }
 		
+		relative_position_id = PRC_Lasting_Cultural_Revolution
+		
+				cost = 5
+		
+				ai_will_do = {
+					factor = 10
+				}
+		
+				available = {
+		
+				}
+		
+				bypass = {
+				}
+		
+				cancel_if_invalid = yes
+				continue_if_invalid = no
+				available_if_capitulated = no
+		
+				completion_reward = {
+		custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
+		set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.10 }
+		change_DSC_Socialist_Construction_dynamic20 = yes
+		set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.15 }
+		change_DSC_Socialist_Construction_dynamic32 = yes
+		set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.2 }
+		change_DSC_Socialist_Construction_dynamic1 = yes
+	
+		hidden_effect = {
+		country_event = {id = prc1.120 days = 14 }
+		
+		}		
+		}
+				}	
+
+
+				focus = {
+					id = PRC_gongzuozu
+					icon = Chinese_People_Front
+					x = -1
+					y = 4
+			prerequisite = {focus = PRC_Lasting_Cultural_Revolution }
+			
+			relative_position_id = PRC_yunniang
+			mutually_exclusive = {focus = PRC_nogongzuozu  }
+					cost = 5
+			
+					ai_will_do = {
+						factor = 10
+					}
+			
+					available = {
+			
+					}
+			
+					bypass = {
+					}
+			
+					cancel_if_invalid = yes
+					continue_if_invalid = no
+					available_if_capitulated = no
+			
+					completion_reward = {
+			custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
+			set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.10 }
+			change_DSC_Socialist_Construction_dynamic20 = yes
+			set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.15 }
+			change_DSC_Socialist_Construction_dynamic32 = yes
+			set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.2 }
+			change_DSC_Socialist_Construction_dynamic1 = yes
+		
+			hidden_effect = {
+			country_event = {id = prc1.120 days = 14 }
+			
+			}		
+			}
+					}	
+	
+					focus = {
+						id = PRC_nogongzuozu
+						icon = Chinese_People_Front
+						x = 1
+						y = 1
+				prerequisite = {focus = PRC_Lasting_Cultural_Revolution }
+				
+				relative_position_id = PRC_Lasting_Cultural_Revolution
+				mutually_exclusive = {focus = PRC_gongzuozu  }
+						cost = 5
+				
+						ai_will_do = {
+							factor = 10
+						}
+				
+						available = {
+				
+						}
+				
+						bypass = {
+						}
+				
+						cancel_if_invalid = yes
+						continue_if_invalid = no
+						available_if_capitulated = no
+				
+						completion_reward = {
+				custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
+				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.10 }
+				change_DSC_Socialist_Construction_dynamic20 = yes
+				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.15 }
+				change_DSC_Socialist_Construction_dynamic32 = yes
+				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.2 }
+				change_DSC_Socialist_Construction_dynamic1 = yes
+			
+				hidden_effect = {
+				country_event = {id = prc1.120 days = 14 }
+				
+				}		
+				}
+						}	
+
+
+			focus = {
+				id = PRC_Mass_Movement
+				icon = Chinese_People_Front
+				x = 0
+				y = 2
+		prerequisite = {focus = PRC_gongzuozu 
+		focus = PRC_nogongzuozu 
+	}
+		
+		relative_position_id = PRC_Lasting_Cultural_Revolution
+		
+				cost = 5
+		
+				ai_will_do = {
+					factor = 10
+				}
+		
+				available = {
+		
+				}
+		
+				bypass = {
+				}
+		
+				cancel_if_invalid = yes
+				continue_if_invalid = no
+				available_if_capitulated = no
+		
+				completion_reward = {
+		custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
+		set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.10 }
+		change_DSC_Socialist_Construction_dynamic20 = yes
+		set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.15 }
+		change_DSC_Socialist_Construction_dynamic32 = yes
+		set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.2 }
+		change_DSC_Socialist_Construction_dynamic1 = yes
+	
+		hidden_effect = {
+		country_event = {id = prc1.120 days = 14 }
+		
+		}		
+		}
+				}	
 	focus = {
 			id = PRC_Spiritual_Atomic_Bomb
 			icon = ziligengsheng

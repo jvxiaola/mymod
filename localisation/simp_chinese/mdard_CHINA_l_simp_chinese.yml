@@ -2384,8 +2384,28 @@ PRC_Spiritual_Atomic_Bomb: "自力更生"
 PRC_Spiritual_Atomic_Bomb_desc: "自力更生为主，争取外援为辅，破除迷信，独立自主地干工业、干农业，干技术革命和文化革命，打倒奴隶思想，埋葬教条主义，认真学习外国的好经验，也一定研究外国的坏经验——引以为戒，这就是我们的路线。"
 PRC_xianzhizcjjfaquan: "减少资产阶级法权"
 PRC_xianzhizcjjfaquan_desc: "社会主义条件下仍然会存在着资产阶级法权，但是我们仍然要依靠我们的主观能动性去主动消减它，"
+PRC_yunniang: "山雨欲来"
+PRC_yunniang_desc: "在进一步的推动前，我们应该对即将到来的第二次文化大革命做好准备"
+PRC_yunniang: "建立中央文革小组"
+PRC_yunniang_desc: "我们需要一个中央文革小组"
+PRC_shangcengjianzhugm: "上层建筑革命"
+PRC_shangcengjianzhugm_desc: ""
+PRC_wenyipipan: "文艺批判运动"
+PRC_wenyipiPan_desc: ""
+
 PRC_Lasting_Cultural_Revolution: "无产阶级文化大革命"
 PRC_Lasting_Cultural_Revolution_desc: "即便社会主义社会也仍然有反动派和工人阶级之间的阶级斗争。因此我们将继续贯彻阶级斗争，开展无产阶级文化大革命，直到实现共产主义。"
+
+PRC_Lasting_Cultural_Revolution: "无产阶级文化大革命"
+PRC_Lasting_Cultural_Revolution_desc: "即便社会主义社会也仍然有反动派和工人阶级之间的阶级斗争。因此我们将继续贯彻阶级斗争，开展无产阶级文化大革命，直到实现共产主义。"
+
+PRC_gongzuozu: "派遣工作组"
+PRC_Lasting_Cultural_Revolution_desc: "没有了党的领导，文化大革命如何开展下去？上一次文化大革命的工作组执行了许多不好的政策，这一点要承认，上次的问题将会得到解决，但是后来的事实表明，没有了党的领导，一切就会开始失控，最终还是要靠党来重塑秩序。。。"
+
+PRC_gongzuozu: "自发运动"
+PRC_Lasting_Cultural_Revolution_desc: "为什么一定要派工作组呢？这次运动本来就是对上层建筑的一次彻底的重塑，派了工作组，就会让群众受到藏在党内的资产阶级的影响，这是属于群众的运动，我们不会重蹈过去的错误"
+
+
 gmjingsheng-name: "人民战争"
 #秘鲁光辉道路
 PCP_a: "光辉道路"
