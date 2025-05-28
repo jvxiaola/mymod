@@ -283,9 +283,23 @@ focus = {
 	continue_if_invalid = no
 	available_if_capitulated = no
 	completion_reward = {
-		select_effect = {
-			CHI_URGENT_state = yes
+
+		if = {
+			limit = {
+				OR = {
+				check_variable = { CPC_Dengist < CPC_Right}
+				check_variable = { CPC_Dengist < CPC_Left}
+				}
+			}
+			hidden_effect={	country_event = { id = CHI_ER_start.1 days = 15 } }
 		}
+
+		mark_focus_tree_layout_dirty = yes
+
+
+		#select_effect = {
+			#CHI_URGENT_state = yes
+		#}
 		set_temp_variable = { treasury_change = 50 }
 		modify_treasury_effect = yes
 		remove_ideas = CHI_overproduction1
@@ -307,11 +321,28 @@ focus = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-		select_effect = {
-			CHI_URGENT_state = yes
-		}
+
+
+			if = {
+				limit = {
+					OR = {
+					check_variable = { CPC_Dengist < CPC_Right}
+					check_variable = { CPC_Dengist < CPC_Left}
+					}
+				}
+				hidden_effect={	country_event = { id = CHI_ER_start.1 days = 15 } }
+			}
 			set_temp_variable = { treasury_change = -50 }
 			modify_treasury_effect = yes
+			mark_focus_tree_layout_dirty = yes
+
+		#select_effect = {
+			#CHI_URGENT_state = yes
+		#}
+
+
+
+
 			remove_ideas = CHI_overproduction1
 		}
 	}
@@ -410,9 +441,9 @@ focus = {
 		relative_position_id = CHI_kuodaneixu
 		available = {}
 		prerequisite = { focus = CHI_kuodaneixu focus = CHI_kuodachukou }
-		#select_effect = {
-		#	CHI_URGENT_state = yes
-		#}
+		select_effect = {
+			CHI_URGENT_state = yes
+		}
 		ai_will_do = { factor = 500 }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
