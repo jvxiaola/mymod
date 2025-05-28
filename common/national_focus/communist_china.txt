@@ -11382,13 +11382,13 @@ prerequisite={
 
 
 				focus = {
-					id = PRC_no
+					id = PRC_jingzhiduoquan
 					icon = Chinese_People_Front
-					x = 0
-					y = 3
+					x = -6
+					y = 1
 			prerequisite = {focus = PRC_Mass_Movement }
-			
-			relative_position_id = PRC_Lasting_Cultural_Revolution
+			mutually_exclusive = {focus=PRC_guliduoquan }
+			relative_position_id = PRC_Mass_Movement
 
 					cost = 5
 			
@@ -11411,7 +11411,243 @@ prerequisite={
 	
 			}
 					}	
-				
+
+
+					focus = {
+						id = PRC_guliduoquan
+						icon = Chinese_People_Front
+						x = 6
+						y = 3
+						prerequisite = { focus = PRC_Mass_Movement }
+						mutually_exclusive = { focus = PRC_jingzhiduoquan }
+						relative_position_id = PRC_Lasting_Cultural_Revolution
+					
+						cost = 5
+					
+						ai_will_do = {
+							factor = 10
+						}
+					
+						available = {
+						}
+					
+						bypass = {
+						}
+					
+						cancel_if_invalid = yes
+						continue_if_invalid = no
+						available_if_capitulated = no
+					
+						completion_reward = {
+						}
+					}
+					
+					focus = {
+						id = PRC_wengongwuwei
+						icon = Chinese_People_Front
+						x = 1
+						y = 1
+						prerequisite = { focus = PRC_guliduoquan }
+						mutually_exclusive = { focus = PRC_jingzhiwudou }
+						relative_position_id = PRC_guliduoquan
+					
+						cost = 5
+					
+						ai_will_do = {
+							factor = 10
+						}
+					
+						available = {
+						}
+					
+						bypass = {
+						}
+					
+						cancel_if_invalid = yes
+						continue_if_invalid = no
+						available_if_capitulated = no
+					
+						completion_reward = {
+						}
+					}
+					
+					focus = {
+						id = PRC_jingzhiwudou
+						icon = Chinese_People_Front
+						x = -1
+						y = 1
+						prerequisite = { focus = PRC_guliduoquan }
+						mutually_exclusive = { focus = PRC_wengongwuwei }
+						relative_position_id = PRC_guliduoquan
+					
+						cost = 5
+					
+						ai_will_do = {
+							factor = 10
+						}
+					
+						available = {
+						}
+					
+						bypass = {
+						}
+					
+						cancel_if_invalid = yes
+						continue_if_invalid = no
+						available_if_capitulated = no
+					
+						completion_reward = {
+						}
+					}
+					
+					focus = {
+						id = PRC_sidamingzhu
+						icon = Chinese_People_Front
+						x = 0
+						y = 4
+						prerequisite = {
+							focus = PRC_jingzhiduoquan
+							focus = PRC_guliduoquan
+						}
+						relative_position_id = PRC_Lasting_Cultural_Revolution
+					
+						cost = 5
+					
+						ai_will_do = {
+							factor = 10
+						}
+					
+						available = {
+						}
+					
+						bypass = {
+						}
+					
+						cancel_if_invalid = yes
+						continue_if_invalid = no
+						available_if_capitulated = no
+					
+						completion_reward = {
+						}
+					}
+					
+					focus = {
+						id = PRC_daming
+						icon = Chinese_People_Front
+						x = -3
+						y = 1
+						prerequisite = { focus = PRC_sidamingzhu }
+						relative_position_id = PRC_sidamingzhu
+					
+						cost = 5
+					
+						ai_will_do = {
+							factor = 10
+						}
+					
+						available = {
+						}
+					
+						bypass = {
+						}
+					
+						cancel_if_invalid = yes
+						continue_if_invalid = no
+						available_if_capitulated = no
+					
+						completion_reward = {
+						}
+					}
+					
+					focus = {
+						id = PRC_dafang
+						icon = Chinese_People_Front
+						x = -1
+						y = 1
+						prerequisite = { focus = PRC_sidamingzhu }
+						relative_position_id = PRC_sidamingzhu
+					
+						cost = 5
+					
+						ai_will_do = {
+							factor = 10
+						}
+					
+						available = {
+						}
+					
+						bypass = {
+						}
+					
+						cancel_if_invalid = yes
+						continue_if_invalid = no
+						available_if_capitulated = no
+					
+						completion_reward = {
+						}
+					}
+					
+					
+
+
+focus = {
+	id = PRC_dazibao
+	icon = Chinese_People_Front
+	x = 1
+	y = 1
+	prerequisite = {focus = PRC_sidamingzhu}
+	relative_position_id = PRC_sidamingzhu
+	cost = 5
+									
+	ai_will_do = {
+	factor = 10
+	}
+					
+	available = {
+									
+	}
+									
+	bypass = {
+	}
+									
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+									
+	completion_reward = {
+							
+	}
+	}	
+
+	focus = {
+		id = PRC_dabianlun
+		icon = Chinese_People_Front
+		x = 3
+		y = 1
+		prerequisite = {focus = PRC_sidamingzhu}
+		relative_position_id = PRC_sidamingzhu
+		cost = 5
+										
+		ai_will_do = {
+		factor = 10
+		}
+						
+		available = {
+										
+		}
+										
+		bypass = {
+		}
+										
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+										
+		completion_reward = {
+								
+		}
+		}	
+
 	focus = {
 			id = PRC_Spiritual_Atomic_Bomb
 			icon = ziligengsheng
