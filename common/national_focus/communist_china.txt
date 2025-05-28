@@ -11381,7 +11381,36 @@ prerequisite={
 				}	
 
 
+				focus = {
+					id = PRC_no
+					icon = Chinese_People_Front
+					x = 0
+					y = 3
+			prerequisite = {focus = PRC_Mass_Movement }
+			
+			relative_position_id = PRC_Lasting_Cultural_Revolution
 
+					cost = 5
+			
+					ai_will_do = {
+						factor = 10
+					}
+			
+					available = {
+			
+					}
+			
+					bypass = {
+					}
+			
+					cancel_if_invalid = yes
+					continue_if_invalid = no
+					available_if_capitulated = no
+			
+					completion_reward = {
+	
+			}
+					}	
 				
 	focus = {
 			id = PRC_Spiritual_Atomic_Bomb

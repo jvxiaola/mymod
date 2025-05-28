@@ -294,7 +294,7 @@ CHI_URGENT_state = {
       has_country_leader = { name = "江泽民" }
     }
     hidden_effect = {	
-      country_event = { id = prc1.102 days = 15 } 
+      country_event = { id = CHI_ER_start.1 days = 15 } 
     }
   }
 }
