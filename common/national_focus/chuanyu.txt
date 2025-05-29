@@ -67,7 +67,7 @@ focus_tree = {
 		prerequisite = {
 			focus = DSC_JGBD
 		 }
-		 mutually_exclusive = {focus =DSC_FUCONGZHIHUI  }
+		 #mutually_exclusive = {focus =DSC_FUCONGZHIHUI  }
 		ai_will_do = {
 			factor = 10
 		}

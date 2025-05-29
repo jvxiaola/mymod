@@ -5799,7 +5799,7 @@ focus = {
 		x = -3
 		y = 5
 prerequisite = {focus = PRC_dictatorship_of_the_proletariat }
-mutually_exclusive = {focus = PRC_The_spirit_of_Fourth_Five_Movement}
+#utually_exclusive = {focus = PRC_The_spirit_of_Fourth_Five_Movement}
 
 relative_position_id = PRC_proletarian_revolution
 

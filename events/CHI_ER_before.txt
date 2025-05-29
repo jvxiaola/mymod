@@ -41,6 +41,7 @@ country_event = {
 	option = {
 		name = CHI_ER_start.1.a 
 		kill_country_leader = yes
+		
 		create_country_leader = {
 			name = Quanlizhengkong
 			picture = "Portrait_China_patry_Power_Vacuum.dds"
@@ -61,6 +62,7 @@ country_event = {
 			552 = { set_state_flag = CHI_Left_State }
 		}
 		add_stability = -0.1
+		set_country_flag = cjsl
 		mark_focus_tree_layout_dirty = yes
 	}	
 }

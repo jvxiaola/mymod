@@ -5,7 +5,7 @@ focus_tree = {
 		factor = -2
 	}
 	default = no
-	shared_focus = XIN_troubled_times
+
 
 	focus = {
 		id = CHI_party_split
@@ -16,6 +16,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 50
 		}				
+		allow_branch = {
+
+		}
 		bypass = { }
 
 		cancel_if_invalid = yes
