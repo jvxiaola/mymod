@@ -11625,7 +11625,7 @@ prerequisite={
 
 					focus = {
 						id = PRC_qzqqz
-						icon = Chinese_People_Front
+						icon = Poor_Peasant_Culture
 						x = -2
 						y = 2
 						prerequisite = { 
@@ -11655,7 +11655,7 @@ prerequisite={
 					}					
 					focus = {
 						id = PRC_sidamingzhu
-						icon = Chinese_People_Front
+						icon = four_basic_principles
 						x = 0
 						y = 4
 						prerequisite = {
@@ -11774,7 +11774,7 @@ focus = {
 
 	focus = {
 		id = PRC_dabianlun
-		icon = Chinese_People_Front
+		icon = dabianlun
 		x = 3
 		y = 1
 		prerequisite = {focus = PRC_sidamingzhu}
