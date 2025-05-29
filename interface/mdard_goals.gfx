@@ -158,6 +158,21 @@ name = "Virus_weapons"
 texturefile = "gfx/interface/goals/Virus_weapons.png"			
 }		
 SpriteType = {
+	name = "CHI_mobilize_the_red_guard"
+	texturefile = "gfx/interface/goals/CHI_mobilize_the_red_guard.dds"			
+	}		
+
+SpriteType = {
+	name = "gemingwuzui"
+	texturefile = "gfx/interface/goals/gemingwuzui.png"			
+	}		
+SpriteType = {
+	name = "GFX_HUN_red_news"
+	texturefile = "gfx/interface/goals/GFX_HUN_red_news.png"			
+	}		
+	
+
+SpriteType = {
 	name = "focus_red_propaganda"
 	texturefile = "gfx/interface/goals/focus_red_propaganda.dds"			
 	}		

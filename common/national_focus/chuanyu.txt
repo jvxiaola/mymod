@@ -500,7 +500,7 @@ focus_tree = {
 
 	focus = {
 		id = DSC_zhengzhibao
-		icon = four_freedoms
+		icon = GFX_HUN_red_news
 		x = 5
 
 		y = 1
@@ -793,7 +793,7 @@ custom_effect_tooltip = "解锁相关决议"
 				}
 				recalculate_party = yes
 			}
-	add_ideas = CHI_party_before_guns
+
 	add_ideas = people_army1
 	unlock_decision_tooltip = CHI_CHI_NEW_people_war1
 		}
@@ -828,8 +828,7 @@ custom_effect_tooltip = "解锁相关决议"
 
 		}
 		completion_reward = {
-############################
-
+	add_ideas = CHI_party_before_guns
 clr_country_flag = qygc
 set_country_flag = qyxd
 mark_focus_tree_layout_dirty = yes

@@ -11375,8 +11375,8 @@ prerequisite={
 
 					focus = {
 						id = PRC_guliduoquan
-						icon = Chinese_People_Front
-						x = -7
+						icon = gemingwuzui
+						x = -8
 						y = 3
 						prerequisite = { focus = PRC_Mass_Movement }
 						mutually_exclusive = { focus = PRC_jingzhiduoquan }
@@ -11404,11 +11404,11 @@ prerequisite={
 					
 					focus = {
 						id = PRC_wengongwuwei
-						icon = Chinese_People_Front
+						icon = CHI_mobilize_the_red_guard
 						x = 2
-						y = 2
-						prerequisite = { focus = PRC_gongshe
-						focus = PRC_gemingweiyuanhui
+						y = 4
+						prerequisite = { focus = PRC_baligongsheyuanze
+						focus=PRC_sanjiehe
 					}
 						mutually_exclusive = { focus = PRC_jingzhiwudou }
 						relative_position_id = PRC_guliduoquan
@@ -11438,7 +11438,7 @@ prerequisite={
 						id = PRC_hongweibingdaibiao
 						icon = Chinese_People_Front
 						x = 2
-						y = 3
+						y = 2
 						prerequisite = { 
 						focus = PRC_gemingweiyuanhui
 					}
@@ -11467,7 +11467,7 @@ prerequisite={
 					focus = {
 						id = PRC_gemingweiyuanhui
 						icon = Chinese_People_Front
-						x = 1
+						x = 2
 						y = 1
 						prerequisite = { focus = PRC_guliduoquan
 					}
@@ -11496,8 +11496,8 @@ prerequisite={
 				
 					focus = {
 						id = PRC_gongshe
-						icon = Chinese_People_Front
-						x = -1
+						icon = Principles_of_the_Paris_Commune
+						x = -2
 						y = 1
 						prerequisite = { focus = PRC_guliduoquan
 
@@ -11530,9 +11530,9 @@ prerequisite={
 						id = PRC_jingzhiwudou
 						icon = Chinese_People_Front
 						x = -2
-						y = 2
-						prerequisite = { focus = PRC_gongshe
-					focus=PRC_gemingweiyuanhui
+						y = 4
+						prerequisite = { focus = PRC_baligongsheyuanze
+						focus=PRC_sanjiehe
 					}
 						mutually_exclusive = { focus = PRC_wengongwuwei 
 
@@ -11565,7 +11565,7 @@ prerequisite={
 						icon = local_elections
 						x = -2
 						y = 3
-						prerequisite = { focus = PRC_jingzhiwudou
+						prerequisite = { focus = PRC_qzqqz
 					}
 
 						relative_position_id = PRC_guliduoquan
@@ -11595,14 +11595,12 @@ prerequisite={
 						id = PRC_sanjiehe
 						icon = Chinese_People_Front
 						x = 2
-						y = 4
+						y = 3
 						prerequisite = { 				
-										focus=PRC_baligongsheyuanze
+
 							focus = PRC_hongweibingdaibiao
 					}
-mutually_exclusive = {
-	focus=PRC_qzqqz
-}
+
 						relative_position_id = PRC_guliduoquan
 					
 						cost = 5
@@ -11629,14 +11627,11 @@ mutually_exclusive = {
 						id = PRC_qzqqz
 						icon = Chinese_People_Front
 						x = -2
-						y = 4
+						y = 2
 						prerequisite = { 
-							focus=PRC_baligongsheyuanze
-							focus = PRC_hongweibingdaibiao
+							focus=PRC_gongshe
 					}
-mutually_exclusive = {
-	focus=sanjiehe
-}
+
 						relative_position_id = PRC_guliduoquan
 					
 						cost = 5
@@ -11691,7 +11686,7 @@ mutually_exclusive = {
 					
 					focus = {
 						id = PRC_daming
-						icon = Chinese_People_Front
+						icon = proletarian_legalist_thought
 						x = -3
 						y = 1
 						prerequisite = { focus = PRC_sidamingzhu }
