@@ -189,7 +189,7 @@ add_political_power = 100
 }
 	shared_focus = {
 		id = PRC_OGAS
-		icon = cryptography
+		icon = focus_prc_ogas
 		x = -2
 		y = 5
 		cost = 10

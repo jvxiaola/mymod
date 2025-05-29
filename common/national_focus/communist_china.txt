@@ -11000,7 +11000,7 @@ add_idea=CHI_zzgs2
 
 focus = {
 	id = PRC_yunniang
-	icon = Continuous_Cultural_Revolution
+	icon = culturerev
 	x = 34
 	y = 0
 	allow_branch={
@@ -11466,7 +11466,7 @@ prerequisite={
 					}
 					focus = {
 						id = PRC_gemingweiyuanhui
-						icon = CommunistLoyalty
+						icon = gmwyh
 						x = 2
 						y = 1
 						prerequisite = { focus = PRC_guliduoquan
