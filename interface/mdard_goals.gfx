@@ -157,6 +157,14 @@ texturefile = "gfx/interface/goals/new_china_people.png"
 name = "Virus_weapons"
 texturefile = "gfx/interface/goals/Virus_weapons.png"			
 }		
+
+
+
+SpriteType = {
+	name = "China_Book_Burning"
+	texturefile = "gfx/interface/goals/China_Book_Burning.dds"			
+	}		
+
 	SpriteType = {
 name = "PRC_Mars_base"
 texturefile = "gfx/interface/goals/PRC_Mars_base.png"			

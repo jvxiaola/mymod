@@ -2369,18 +2369,33 @@ PRC_Mass_Movement_desc: "毛泽东曾说，要相信群众，依靠群众。发�
 
 PRC_sidamingzhu: "四大民主"
 PRC_sidamingzhu_desc: "我们将全面推行“大鸣、大放、大字报、大辩论”，赋予人民群众参与国家政治生活的权利与责任。这是对党内外民主监督的深化，是人民当家作主的具体体现。在思想与路线斗争中，真正的社会主义民主才能扎根。"
-PRC_jingzhiwudou: ""
-PRC_jingzhiwudou_desc: ""
+PRC_jingzhiwudou: "禁止武斗"
+PRC_jingzhiwudou_desc: "上一次无产阶级文化革命中，由于小资产阶级思潮泛滥，群众内斗不止，导致革命派互相残杀，及时现在工人成熟很多了，但是我们仍然有必要，阻止革命派之间的争斗，转而用更好的办法解决人民内部矛盾"
+PRC_wengongwuwei: "文攻武卫"
+PRC_wengongwuwei_desc: "别人打我，那我不打回去？"
+
 PRC_daming: "大鸣"
 PRC_daming_desc: "群众开始大胆发声，批评官僚主义与形式主义，我们鼓励人民参与到国家事务的讨论中来，敞开心扉，说真话，讲实情。"
 PRC_dafang: "大放"
 PRC_dafang_desc: "百家争鸣，百花齐放。我们将放宽言论空间，允许各界发表不同意见，以促进思想解放和政策革新。"
-PRC_dafang: "大字报"
-PRC_dafang_desc: "一纸大字报，胜过千言万语。人民以最直接的方式表达立场与诉求，街头巷尾的墙报成为思想斗争的新阵地。"
-PRC_dazibao: "大辩论"
-PRC_dazibao_desc: "激烈的思想交锋正在展开。通过群众辩论，我们鼓励不同观点的碰撞，在斗争中凝聚路线的共识。"
+PRC_dazibao: "大字报"
+PRC_dazibao_desc: "一纸大字报，胜过千言万语。人民以最直接的方式表达立场与诉求，街头巷尾的墙报成为思想斗争的新阵地。"
+PRC_dabianlun: "大辩论"
+PRC_dabianlun_desc: "激烈的思想交锋正在展开。通过群众辩论，我们鼓励不同观点的碰撞，在斗争中凝聚路线的共识。"
 PRC_Proletarian_leader: "个人崇拜"
 PRC_Proletarian_leader_desc: "正如毛泽东同志所说，有些个人崇拜是好的，有利于革命的，我们需要个人崇拜来巩固革命"
+
+PRC_guliduoquan: "鼓励夺权"
+PRC_guliduoquan_desc: "夺权有什么不好"
+
+PRC_gongshe: "允许建立公社"
+PRC_gongshe_desc: "巴黎公社是我们的榜样"
+PRC_gemingweiyuanhui: "革命委员会"
+PRC_gemingweiyuanhui_desc: "总得有个党"
+
+PRC_jingzhiduoquan: "禁止夺权"
+PRC_jingzhiduoquan_desc: "红卫兵可以用作监督我们干部的力量，可以撤换不称职的干部，但是没必要大规模的夺权"
+
 PRC_jitilingdao: "集体领导"
 PRC_jitilingdao_desc: "我们应该废除国家主席制度，赋权人大"
 PRC_Politics_in_everyday_life: "政治挂帅"
@@ -2408,6 +2423,8 @@ PRC_baihuaqifang_desc: "\n“现在春天来了嘛，一百种花都让他开放
 PRC_wenyidaji: "消灭“毒草”"
 PRC_wenyidaji_desc: "\n“凡是错误的思想，凡是毒草，凡是牛鬼蛇神，都应该进行批判，决不能让他们自由泛滥。”----毛泽东"
 
+PRC_wengexiaozu: "文革小组"
+PRC_wengexiaozu_desc: "中央文革小组"
 
 PRC_Lasting_Cultural_Revolution: "无产阶级文化大革命"
 PRC_Lasting_Cultural_Revolution_desc: "即便社会主义社会也仍然有反动派和工人阶级之间的阶级斗争。因此我们将继续贯彻阶级斗争，开展无产阶级文化大革命，直到实现共产主义。"
@@ -2415,8 +2432,8 @@ PRC_Lasting_Cultural_Revolution_desc: "即便社会主义社会也仍然有反�
 PRC_gongzuozu: "派遣工作组"
 PRC_Lasting_Cultural_Revolution_desc: "没有了党的领导，文化大革命如何开展下去？上一次文化大革命的工作组执行了许多不好的政策，这一点要承认，上次的问题将会得到解决，但是后来的事实表明，没有了党的领导，一切就会开始失控，最终还是要靠党来重塑秩序。。。"
 
-PRC_gongzuozu: "自发运动"
-PRC_Lasting_Cultural_Revolution_desc: "为什么一定要派工作组呢？这次运动本来就是对上层建筑的一次彻底的重塑，派了工作组，就会让群众受到藏在党内的资产阶级的影响，这是属于群众的运动，我们不会重蹈过去的错误"
+PRC_nogongzuozu: "自发运动"
+PRC_nogongzuozu_desc: "为什么一定要派工作组呢？这次运动本来就是对上层建筑的一次彻底的重塑，派了工作组，就会让群众受到藏在党内的资产阶级的影响，这是属于群众的运动，我们不会重蹈过去的错误"
 
 
 gmjingsheng-name: "人民战争"
