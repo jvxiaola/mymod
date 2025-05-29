@@ -11719,7 +11719,7 @@ mutually_exclusive = {
 					
 					focus = {
 						id = PRC_dafang
-						icon = Chinese_People_Front
+						icon = focus_red_propaganda
 						x = -1
 						y = 1
 						prerequisite = { focus = PRC_sidamingzhu }
@@ -11750,7 +11750,7 @@ mutually_exclusive = {
 
 focus = {
 	id = PRC_dazibao
-	icon = Chinese_People_Front
+	icon = four_freedoms
 	x = 1
 	y = 1
 	prerequisite = {focus = PRC_sidamingzhu}
