@@ -5690,7 +5690,7 @@ country_event = {
 	id = prc1.98
 	title = prc1.98.t
 	desc = prc1.98.d
-	picture = GFX_politics_communism
+
 	
 	is_triggered_only = yes
 
