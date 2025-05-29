@@ -11436,7 +11436,7 @@ prerequisite={
 
 					focus = {
 						id = PRC_hongweibingdaibiao
-						icon = Chinese_People_Front
+						icon = launch_the_cultural_revolution
 						x = 2
 						y = 2
 						prerequisite = { 
@@ -11466,7 +11466,7 @@ prerequisite={
 					}
 					focus = {
 						id = PRC_gemingweiyuanhui
-						icon = Chinese_People_Front
+						icon = CommunistLoyalty
 						x = 2
 						y = 1
 						prerequisite = { focus = PRC_guliduoquan
@@ -11593,7 +11593,7 @@ prerequisite={
 
 					focus = {
 						id = PRC_sanjiehe
-						icon = Chinese_People_Front
+						icon = PRC_communist_vanguard_restored
 						x = 2
 						y = 3
 						prerequisite = { 				
