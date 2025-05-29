@@ -17,280 +17,7 @@ focus_tree = {
 	@taiwan_tree = 26
 	@south_sea_tree = 24
 	@east_sea_tree = 22
-#紧急国策
-focus = {
-	id = CHI_party_split
-	icon = PRC_gov
-	x = 15
-	y = 1
-	cost = 0
-	ai_will_do = {
-		factor = 50
-	}				
-	allow_branch = {
-		has_country_flag=jingjizhuangtai
-		
-	}
-	bypass = { }
 
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
-}
-
-focus = {
-	id = CHI_return_to_ideal_heart
-	icon = PRC_left_china_front
-	x = -5
-	y = 1
-	cost = 0.1
-	prerequisite = { focus = CHI_party_split }
-	relative_position_id = CHI_party_split
-	mutually_exclusive = { focus = CHI_persist_reform }
-	mutually_exclusive = { focus = CHI_believers_of_freedom }
-	ai_will_do = { factor = 50 }				
-	bypass = { }
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-	completion_reward = { 
-		custom_effect_tooltip = CHI_return_to_ideal_heart_effect_tt 
-		hidden_effect = {
-			#mdardchina_news.57 改变方向
-			#country_event = { id = prc1.54 days = 3 }
-			#country_event = { id = prc1.56 days = 15 }
-		}
-	}
-}
-
-focus = {
-	id = CHI_persist_reform
-	icon = communist_china
-	x = 0
-	y = 1
-	cost = 0.1
-	prerequisite = { focus = CHI_party_split }
-	relative_position_id = CHI_party_split
-	mutually_exclusive = { focus = CHI_return_to_ideal_heart }
-	mutually_exclusive = { focus = CHI_believers_of_freedom }
-	ai_will_do = { factor = 50 }				
-	bypass = { }
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
-}
-
-focus = {
-	id = CHI_believers_of_freedom
-	icon = blue_democracy
-	x = 5
-	y = 1
-	cost = 0.1
-	prerequisite = { focus = CHI_party_split }
-	relative_position_id = CHI_party_split
-	mutually_exclusive = { focus = CHI_return_to_ideal_heart }
-	mutually_exclusive = { focus = CHI_persist_reform }
-	ai_will_do = { factor = 50 }				
-	bypass = { }
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
-}
-
-focus = {
-	id = CHI_establish_left_united_front
-	icon = communism5
-	x = 0
-	y = 1
-	cost = 0.1
-	prerequisite = { focus = CHI_return_to_ideal_heart }
-	relative_position_id = CHI_return_to_ideal_heart
-	ai_will_do = { factor = 50 }				
-	bypass = { }
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
-}
-
-focus = {
-	id = CHI_reconcile_with_maoist
-	icon = maoism
-	x = -2
-	y = 1
-	cost = 0.4
-	prerequisite = { focus = CHI_establish_left_united_front }
-	relative_position_id = CHI_establish_left_united_front
-	ai_will_do = { factor = 50 }				
-	bypass = { }
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
-}
-
-focus = {
-	id = CHI_return_Twowhatever
-	icon = BLR_Communistst_clean
-	x = 0
-	y = 1
-	cost = 0.4
-	prerequisite = { focus = CHI_establish_left_united_front }
-	relative_position_id = CHI_establish_left_united_front
-	ai_will_do = { factor = 50 }				
-	bypass = { }
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
-}
-
-focus = {
-	id = CHI_unity_left_liberal
-	icon = left_socialism
-	x = 2
-	y = 1
-	cost = 0.4
-	prerequisite = { focus = CHI_establish_left_united_front }
-	relative_position_id = CHI_establish_left_united_front
-	ai_will_do = { factor = 50 }				
-	bypass = { }
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
-}
-
-focus = {
-	id = CHI_authorize_mao_grassroots
-	icon = free_higher_education
-	x = 0
-	y = 1
-	cost = 0.4
-	prerequisite = { focus = CHI_reconcile_with_maoist }
-	relative_position_id = CHI_reconcile_with_maoist
-	ai_will_do = { factor = 50 }				
-	bypass = { }
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
-}
-
-focus = {
-	id = CHI_ban_military_business
-	icon = blr_nationalize_foreign_business
-	x = 0
-	y = 1
-	cost = 0.4
-	prerequisite = { focus = CHI_return_Twowhatever }
-	relative_position_id = CHI_return_Twowhatever
-	ai_will_do = { factor = 50 }				
-	bypass = { }
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
-}
-
-focus = {
-	id = CHI_anti_bureaucratic_corruption
-	icon = Generic_Communist_Propaganda02
-	x = 0
-	y = 1
-	cost = 0.4
-	prerequisite = { focus = CHI_unity_left_liberal }
-	relative_position_id = CHI_unity_left_liberal
-	ai_will_do = { factor = 50 }				
-	bypass = { }
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
-}
-
-focus = {
-	id = CHI_Military_issues
-	icon = army_marching
-	x = 0
-	y = 1
-	cost = 0.4
-	prerequisite = { focus = CHI_ban_military_business }
-	prerequisite = { focus = CHI_authorize_mao_grassroots }
-	prerequisite = { focus = CHI_anti_bureaucratic_corruption }
-	relative_position_id = CHI_ban_military_business
-	ai_will_do = { factor = 50 }				
-	bypass = { }
-	#prc1.96 自由派上台
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
-}
-
-focus = {
-	id = CHI_co_opt_officer
-	icon = army_russia_officer_shool
-	x = -1
-	y = 1
-	cost = 0.4
-	prerequisite = { focus = CHI_Military_issues }
-	relative_position_id = CHI_Military_issues
-	ai_will_do = { factor = 50 }				
-	bypass = { }
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
-}
-
-focus = {
-	id = CHI_enhance_political_commissars
-	icon = communist_army
-	x = 1
-	y = 1
-	cost = 0.4
-	prerequisite = { focus = CHI_Military_issues }
-	relative_position_id = CHI_Military_issues
-	ai_will_do = { factor = 50 }				
-	bypass = { }
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
-}
-
-focus = {
-	id = CHI_raise_soldier_salaries
-	icon = dollars_money
-	x = 0
-	y = 2
-	cost = 0.4
-	prerequisite = { focus = CHI_Military_issues }
-	relative_position_id = CHI_Military_issues
-	ai_will_do = { factor = 50 }				
-	bypass = { }
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
-}
 	focus = {
 		id = CHI_zhengzhigaige
 		icon = PRC_gov
@@ -2498,75 +2225,1055 @@ increase_social_spending = yes
 		}
 		}			
 ##外交
-	  focus = {
-      id = CHI_china_dream
-      icon = peoples_republic_of_china
-      x = 30
-      y = 1
-      cost = 5
+focus = {
+	id = CHI_china_dream
+	icon = peoples_republic_of_china
+	x = 30
+	y = 1
+	cost = 5
+	  relative_position_id = CHI_chisosm
 
+	  prerequisite = {
 
-		prerequisite = {
-
-
-		}
-		
-				available = {
-			is_puppet = no
-					custom_trigger_tooltip = {
+	  focus = CHI_chisosm
+	  }
+	  
+			  available = {
+		  is_puppet = no
+				  custom_trigger_tooltip = {
 NOT = {
 OR = {
-					is_in_array = { ruling_party = 5 }
-					is_in_array = { ruling_party = 4 }
+				  is_in_array = { ruling_party = 5 }
+				  is_in_array = { ruling_party = 4 }
 
 }}
-					tooltip = CHI_not_left
+				  tooltip = CHI_not_left
 }		}
 
-		completion_reward = {
-			add_political_power = 100
-			add_war_support = 0.10
-			add_ideas = china_dream
-						set_temp_variable = { temp_opinion = 5 }
-			change_the_military_opinion = yes
-		}
+	  completion_reward = {
+		  add_political_power = 100
+		  add_war_support = 0.10
+		  add_ideas = china_dream
+					  set_temp_variable = { temp_opinion = 5 }
+		  change_the_military_opinion = yes
+	  }
 
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 100
-				is_historical_focus_on = yes
-			}
-		}
-    }
-	#	focus = {
-#		id = CHI_peaceful_rise
-#		icon = internationalism
-#		x = 2
-#		y = 1
-#		cost = 5
-#		relative_position_id = CHI_china_dream
-#available = {
-#is_puppet = no
+	  ai_will_do = {
+		  factor = 10
+		  modifier = {
+			  factor = 100
+			  is_historical_focus_on = yes
+		  }
+	  }
+  }
 
-#}
-	#	prerequisite = {
-	#		focus = CHI_china_dream
-#		}
+focus = {
+	id = CHI_core_national_interests
+	icon = great_red_menace
+	x = @national_interests_tree
+	y = 2
+	cost = 5
 
-#		completion_reward = {
+	prerequisite = {
+	   focus = CHI_china_dream
+	}
+	available = {
+				custom_trigger_tooltip = {
+			  tooltip = 7_per_capita_or_more_tt
+			  check_variable = { gdp_per_capita > 6.999 }
+		  }
+		  OR = {
+		  has_idea = superpower
+		  has_idea = great_power
+		  }
+		  is_puppet = no
+	}
 
-	#		add_political_power = 100
+	completion_reward = {
+	   #reduce war justification time
+remove_ideas = CHI_Bide
+add_political_power = 100
+add_stability = 0.05         
+  add_popularity = {
+		  ideology = nationalist
+		  popularity = 0.2
+			  }
+  set_variable = { party_pop_array^20 = 0.2 } #Nat_pop
+  add_to_array = { gov_coalition_array = 20 } 
 
-	#		USA = { add_opinion_modifier = { target = CHI modifier = recent_actions_positive } }
-	#		JAP = { add_opinion_modifier = { target = CHI modifier = recent_actions_positive } }
-	#		RAJ = { add_opinion_modifier = { target = CHI modifier = recent_actions_positive } }
-	#	}
-		
-#		ai_will_do = {
-#			factor = 10
-#		}
-#	}
+	   }
+
+	  ai_will_do = {
+		  factor = 10
+	  }
+ }
+
+ focus = {
+	id = CHI_xinjiang_crackdown
+	icon = islamophobia2
+	x = @national_interests_tree
+	y = 3
+	cost = 5
+
+	prerequisite = {
+	   focus = CHI_core_national_interests
+	}
+
+	completion_reward = {
+  if = {
+	  limit = { has_idea = CHI_shaosuminzu1 }
+	  swap_ideas = {
+		  remove_idea = CHI_shaosuminzu1
+		  add_idea = CHI_shaosuminzu2
+	  }
+  }
+  else_if = {
+	  limit = { has_idea = CHI_shaosuminzu2 }
+	  swap_ideas = {
+		  remove_idea = CHI_shaosuminzu2
+		  add_idea = CHI_shaosuminzu3
+	  }
+  }
+  else_if = {
+	  limit = { has_idea = CHI_shaosuminzu3 }
+		  remove_ideas = CHI_shaosuminzu3
+  }
+
+} 
+
+
+
+	  ai_will_do = {
+		  factor = 10
+	  }
+ }
+
+  focus = {
+	id = CHI_xinjiang_security_operations
+	icon = islamophobia
+	x = @national_interests_tree
+	y = 4
+	cost = 5
+
+	prerequisite = {
+	   focus = CHI_xinjiang_crackdown
+	}
+
+	completion_reward = {
+  if = {
+	  limit = { has_idea = CHI_shaosuminzu1 }
+	  swap_ideas = {
+		  remove_idea = CHI_shaosuminzu1
+		  add_idea = CHI_shaosuminzu2
+	  }
+  }
+  else_if = {
+	  limit = { has_idea = CHI_shaosuminzu2 }
+	  swap_ideas = {
+		  remove_idea = CHI_shaosuminzu2
+		  add_idea = CHI_shaosuminzu3
+	  }
+  }
+  else_if = {
+	  limit = { has_idea = CHI_shaosuminzu3 }
+		  remove_ideas = CHI_shaosuminzu3
+  }
+						  every_state = {		
+	  limit = {
+								  is_core_of = ETK
+			  }					
+					  remove_core_of = ETK
+					  }
+  
+	  }
+
+	
+	  ai_will_do = {
+		  factor = 10
+	  }
+ }
+ 
+
+ focus = {
+	id = CHI_western_border_security
+	icon = attack_kazakhstan
+	x = @national_interests_tree
+	y = 5
+	cost = 5
+	  search_filters = { FOCUS_FILTER_ANNEXATION }
+
+	prerequisite = {
+	   focus = CHI_xinjiang_security_operations
+	}
+available = {
+		  custom_trigger_tooltip = {
+			  tooltip = CHI_western_border_security_TT
+			  KAZ = { check_variable = { influence_array^0 = CHI } }
+			  KYR = { check_variable = { influence_array^0 = CHI } }
+			  TAJ = { check_variable = { influence_array^0 = CHI } }
+			  UZB = { check_variable = { influence_array^0 = CHI } }
+			  TRK = { check_variable = { influence_array^0 = CHI } }
+
+		  }
+		  NOT = { has_completed_focus = CHI_Equal_Partners }
+
+}
+	completion_reward = {
+	   #gives China claims on neighboring Central Asian states
+		  set_temp_variable = { modify_chinese_aggression =  5}
+		  CHI_modify_chinese_aggression = yes
+	   add_state_core = 719
+KAZ = {country_event = prc1.72 }
+	   add_state_core = 720
+	   add_state_core = 721
+KYR = {country_event = prc1.73 }
+
+	   add_state_core = 722
+
+TAJ = {country_event = prc1.74 }
+UZB = { country_event = prc1.5 }
+TRK = { country_event = prc1.5 }
+	   
+	   }
+
+	  ai_will_do = {
+		  factor = 10
+	  }
+ }
+ 
+ focus = {
+	id = CHI_outer_manchuria_buryatia
+	icon = attack_russia
+	x = @national_interests_tree
+	y = 6
+	cost = 5
+
+	prerequisite = {
+	   focus = CHI_western_border_security
+	}
+	  search_filters = { FOCUS_FILTER_ANNEXATION }
+
+	completion_reward = {
+			  set_temp_variable = { modify_chinese_aggression = 10 }
+		  CHI_modify_chinese_aggression = yes
+add_state_core = 1011
+	   add_state_core = 686
+	   add_state_core = 687
+	   add_state_core = 692
+	   add_state_core = 691
+	   add_state_core = 685
+	   add_state_core = 684
+	   add_state_core = 682
+	   add_state_core = 688
+	   add_state_core = 689
+	   add_state_core = 1070
+	   add_state_core = 1065
+	   add_state_core = 1066
+	   add_state_core = 1064
+	   add_state_core = 1067
+	   add_state_core = 678
+	   add_state_core = 679
+	   add_state_core = 677
+	   add_state_core = 1071
+	   add_state_core = 675
+	   add_state_core = 676
+	   add_state_core = 1118
+	   add_state_core = 1136
+	   add_state_core = 1137
+	   add_state_core = 1069
+	   add_state_core = 1068
+	   add_state_core = 681
+	   add_state_core = 680
+	   
+				   create_wargoal = {
+			  type = take_state
+			  target = SOV
+			  generator = { 686 }
+		  }
+	}
+
+	  ai_will_do = {
+		  factor = 10
+	  }
+ }
+
+ focus = {
+	id = CHI_tibet_media_blackout
+	icon = communism3
+	x = @tibet_tree
+	y = 3
+	cost = 5
+
+	prerequisite = {
+	   focus = CHI_core_national_interests
+	}
+
+	completion_reward = {
+		   #minor relations hit
+
+					  set_temp_variable = { temp_opinion = 10 }
+		  change_communist_cadres_opinion = yes
+	}
+
+	  ai_will_do = {
+		  factor = 10
+	  }
+ }
+
+  focus = {
+	id = CHI_demand_dalai_lama
+	icon = backstab
+	x = @tibet_tree
+	y = 4
+	cost = 5
+
+	prerequisite = {
+	   focus = CHI_tibet_media_blackout
+	}
+	 bypass = {
+		  has_country_flag = CHI_remove_dalai
+	  }
+	  
+	completion_reward = {
+	
+	   #India recieves option to turn over Dalai Lama (Tibet loses cores in China, relations boost with China) or refuse (relations hit with China, boost with West, political power+unity)
+
+	   RAJ = { country_event = { id = prc1.6 }}
+	   
+	}
+
+	  ai_will_do = {
+		  factor = 10
+	  }
+ }
+ 
+ focus = {
+	id = CHI_tibet_border_security
+	icon = military_mission
+	x = @tibet_tree
+	y = 5
+	cost = 5
+
+	prerequisite = {
+	   focus = CHI_demand_dalai_lama
+	}
+	
+		   search_filters = { FOCUS_FILTER_ANNEXATION }
+
+	completion_reward = {
+	   #gives China claims on neighboring Himalaya states
+add_state_core = 475
+	   add_state_core = 455
+	   add_state_core = 473
+	   add_state_core = 428
+	   add_state_core = 484
+	   add_state_core = 983
+	   add_state_core = 982
+	   add_state_core = 980
+	   add_state_core = 981
+	   add_state_core = 489
+	   add_state_core = 485
+	   add_state_core = 476
+	   add_state_core = 477
+	   add_state_core = 478
+	   
+	}
+
+	  ai_will_do = {
+		  factor = 10
+	  }
+ }
+
+ focus = {
+	id = CHI_southern_border_adjustment
+	icon = attack_india
+	x = @tibet_tree
+	y = 6
+	cost = 5
+	  search_filters = { FOCUS_FILTER_ANNEXATION }
+
+	prerequisite = {
+	   focus = CHI_tibet_border_security
+	}
+
+	  completion_reward = {
+		  #Demand India drop disputed claims; can lead to war if India refuses
+		  set_temp_variable = { modify_chinese_aggression = 10 }
+		  CHI_modify_chinese_aggression = yes
+  create_wargoal = {
+			  type = take_state
+			  target = RAJ
+			  generator = { 455}
+		  }
+		  
+		  
+		  create_wargoal = {
+			  type = take_state
+			  target = BHU
+			  generator = { 484  }
+		  }
+		  create_wargoal = {
+			  type = take_state
+			  target = NEP
+			  generator = { 485  }
+		  }
+		  
+		  PAK = {
+		  declare_war_on = { target = RAJ type = annex_everything }
+		  add_state_core = 436
+		  add_state_core = 432
+		  add_state_core = 429
+		  
+		  }
+	  }
+
+	  ai_will_do = {
+		  factor = 10
+	  }
+ }
+
+ focus = {
+	id = CHI_one_china_concensus
+	icon = one_china_policy_prc
+	x = @taiwan_tree
+	y = 3
+	cost = 5
+
+	available = {
+	TAI = { exists = yes }
+	NOT = { has_war_with = TAI }
+	}
+
+	prerequisite = {
+	   focus = CHI_core_national_interests
+	}
+
+	completion_reward = {
+	   #political power bonus, relations hit
+
+	   add_political_power = 50
+	   TAI = { add_opinion_modifier = { target = CHI modifier = recent_actions_negative } }
+	}
+	
+	bypass = {
+		  OR = {
+			  TAI = {
+				  OR = {
+					  is_subject_of = CHI
+					  exists = no 
+					  
+				  }
+			  }
+
+		  }
+	  }
+	  ai_will_do = {
+		  factor = 10
+	  }
+ }
+ 
+ focus = {
+	id = CHI_mongolia_security_operations
+	icon = attack_mongolia
+	x = @taiwan_tree
+	y = 4
+	cost = 5
+	available = {
+	MON = { exists = yes }
+				custom_trigger_tooltip = {
+			  tooltip = CHI_mongolia_security_operations_TT
+			  MON = { check_variable = { influence_array^0 = CHI } }
+			  }
+   
+	}
+			search_filters = { FOCUS_FILTER_ANNEXATION }
+
+	prerequisite = {
+	   
+	   focus = CHI_one_china_concensus
+	}
+	
+	bypass = {
+		  OR = {
+			  MON = { exists = no 		
+			  }
+			  CHI = {
+				  owns_state = 596
+				  
+			  }
+		  }
+	  }
+
+	completion_reward = {
+		  set_temp_variable = { modify_chinese_aggression = 5 }
+		  CHI_modify_chinese_aggression = yes
+	   annex_country = { target = MON transfer_troops = yes }
+	   add_state_core = 596
+	   add_state_core = 597
+	   SOV = { add_opinion_modifier = { target = CHI modifier = recent_actions_negative } }
+	   add_stability = 0.1
+		  news_event = {
+		  hours = 6
+		  id = mdardchina_news.27
+	  }
+		  }
+	
+	  ai_will_do = {
+		  factor = 10
+	  }
+ }
+
+ focus = {
+	id = CHI_demand_rightful_territory
+	icon = war_against_china
+	x = @taiwan_tree
+	y = 5
+	cost = 5
+
+	available = {
+	TAI = { exists = yes }
+	NOT = { has_war_with = TAI }
+	}
+	  search_filters = { FOCUS_FILTER_ANNEXATION }
+
+	prerequisite = {
+	   focus = CHI_mongolia_security_operations
+	}
+
+	completion_reward = {
+	   #demand Taiwan become puppet
+
+	   TAI = { country_event = { id = prc1.12 }}
+	}
+	
+	bypass = {
+		  OR = {
+			  TAI = {
+				  OR = {
+					  is_subject_of = CHI
+					  exists = no 
+					  
+				  }
+			  }
+
+		  }
+	  }
+
+	  ai_will_do = {
+		  factor = 10
+	  }
+ }
+
+ focus = {
+	id = CHI_final_ultimatum
+	icon = attack_taiwan
+	x = @taiwan_tree
+	y = 6
+	cost = 5
+
+	available = {
+	TAI = { exists = yes }
+	NOT = { has_war_with = TAI }
+	}
+
+	prerequisite = {
+	   focus = CHI_demand_rightful_territory
+	}
+			search_filters = { FOCUS_FILTER_ANNEXATION }
+
+	bypass = {
+		  OR = {
+			  TAI = {
+				  OR = {
+					  is_subject_of = CHI
+					  exists = no 
+					  
+				  }
+			  }
+
+		  }
+	  }
+
+	completion_reward = {
+	   #fourth Taiwan Strait crisis. US must decide whether or not to back Taiwan. If yes China must decide whether or not to invade. If no Taiwan must decide whether or not to surrender.
+
+		  create_wargoal = {
+			  type = take_state
+			  target = TAI
+			  generator = { 600 }
+			  
+			  
+		  }
+		   USA = { country_event = prc1.13 }
+		   
+	  news_event = {
+		  hours = 6
+		  id = mdardchina_news.12
+	  }
+	}
+
+	  ai_will_do = {
+		  factor = 10
+	  }
+ }
+
+ focus = {
+	id = CHI_nine_dash_line
+	icon = volunteers
+	x = @south_sea_tree
+	y = 3
+	cost = 5
+
+	prerequisite = {
+	   focus = CHI_core_national_interests
+	}
+available = {
+		  NOT = { has_completed_focus = CHI_ASEAN_Integration }
+
+}
+	completion_reward = {
+	   #political power, relations hit with neighbors+US
+
+	   add_political_power = 50
+
+	   USA = { add_opinion_modifier = { target = CHI modifier = recent_actions_negative } }
+	   RAJ = { add_opinion_modifier = { target = CHI modifier = recent_actions_negative } }
+	   TAI = { add_opinion_modifier = { target = CHI modifier = recent_actions_negative } }
+	   
+	   VIE = { add_opinion_modifier = { target = CHI modifier = recent_actions_negative } }
+	   IND = { add_opinion_modifier = { target = CHI modifier = recent_actions_negative } }
+	   MAY = { add_opinion_modifier = { target = CHI modifier = recent_actions_negative } }
+	   BRU = { add_opinion_modifier = { target = CHI modifier = recent_actions_negative } }
+	  PHI = { add_opinion_modifier = { target = CHI modifier = recent_actions_negative } }
+	}
+
+	  ai_will_do = {
+		  factor = 10
+	  }
+ }
+
+ focus = {
+	id = CHI_xisha_claims
+	icon = destroyers
+	x = @south_sea_tree
+	y = 4
+	cost = 5
+
+	available = {
+	}
+	  search_filters = { FOCUS_FILTER_ANNEXATION }
+
+	prerequisite = {
+	   focus = CHI_nine_dash_line
+	}
+
+	completion_reward = {
+	   #demand Paracels from Vietnam
+  if = {
+			  limit = { has_full_control_of_state = 526 }
+			  526 = { # nansha
+				  set_building_level = {
+					  type = bunker
+					  province = {
+						  id = 11146 
+						  id = 11169
+						  id = 11167
+						  id = 11156
+					  }
+					  level = 2
+					  instant_build = yes
+				  }
+
+				  if = {
+					  limit = {
+						  any_province_building_level = {
+							  province = {
+								  id = 11146 #Shanghai
+							  }
+							  level < 3
+							  building = bunker
+						  }
+					  }
+					  set_building_level = {
+						  type = bunker
+						  province = {
+							  id = 11169
+						  }
+						  level = 3
+						  instant_build = yes
+					  }
+				  }
+
+				  if = {
+					  limit = {
+						  any_province_building_level = {
+							  province = {
+								  id = 11167
+							  }
+							  level < 2
+							  building = coastal_bunker
+						  }
+					  }
+					  set_building_level = {
+						  type = coastal_bunker
+						  province = {
+							  id = 11156
+						  }
+						  level = 2
+						  instant_build = yes
+					  }
+				  }					
+			  }
+
+			  #If not full control, only add forts in provinces bordering the enemy
+			  #Only time to throw up some emergency stuff
+			  else = {
+				  526 = {
+					  add_building_construction = {
+						  type = bunker
+						  province = {
+							  all_provinces = yes
+							  limit_to_border = yes
+						  }
+						  level = 1
+						  instant_build = yes
+					  }
+				  }
+
+			  }
+		  }
+	}
+
+	  ai_will_do = {
+		  factor = 10
+	  }
+ }
+
+ focus = {
+	id = CHI_nansha_claims
+	icon = colonial_crackdown
+	x = @south_sea_tree
+	y = 5
+	cost = 5
+
+	available = {
+has_navy_size = { unit = carrier size > 1 }      }
+	  search_filters = { FOCUS_FILTER_ANNEXATION }
+
+	prerequisite = {
+	   focus = CHI_xisha_claims
+	}
+
+	completion_reward = {
+	   VIE = { country_event = { hours = 4 id = prc1.11}}
+	   IND = { country_event = { hours = 4 id = prc1.11}}
+	   MAY = { country_event = { hours = 16 id = prc1.11 
+											 }}
+	   BRU = { country_event = { hours = 22 id = prc1.11
+												}}
+	   PHI = { country_event = { hours = 22 id = prc1.11
+												}}
+	   VIE = { country_event = { id = prc1.10 }}
+											 
+	   }
+
+	  ai_will_do = {
+		  factor = 10
+	  }
+ }
+
+ focus = {
+	id = CHI_vietnam_border_adjustment
+	icon = attack_vietnam
+	x = @south_sea_tree
+	y = 6
+	cost = 5
+	  search_filters = { FOCUS_FILTER_ANNEXATION }
+
+	available = {
+	NOT = { has_war_with = VIE }
+
+	}
+
+	prerequisite = {
+	   focus = CHI_nansha_claims
+	}
+
+	  completion_reward = {
+	  VIE = { country_event = { id = prc1.5 }}
+		  set_temp_variable = { modify_chinese_aggression = 5 }
+		  CHI_modify_chinese_aggression = yes
+	  }
+
+	  ai_will_do = {
+		  factor = 10
+	  }
+ }
+ 
+	focus = {
+	id = CHI_myanmar_border_adjustment
+	icon = attack_kachin
+	x = @south_sea_tree
+	y = 7
+	cost = 5
+
+	available = {
+
+	}
+	  search_filters = { FOCUS_FILTER_ANNEXATION }
+
+	prerequisite = {
+	   focus = CHI_vietnam_border_adjustment
+	}
+
+	  completion_reward = {
+		  #CHI gets claims on Burmese border states
+		  set_temp_variable = { modify_chinese_aggression = 5 }
+		  CHI_modify_chinese_aggression = yes
+		  create_wargoal = {
+			  type = take_state
+			  target = KAC
+			  generator = { 496 }
+		  }
+annex_country = {
+target = WAA
+transfer_troops = yes}
+		  create_wargoal = {
+			  type = puppet_wargoal_focus
+			  target = BRM
+		  }
+		  create_wargoal = {
+			  type = puppet_wargoal_focus
+			  target = SHN
+		  }
+		  create_wargoal = {
+			  type = puppet_wargoal_focus
+			  target = KAR
+		  }
+add_state_core = 497		
+	  add_state_core = 496
+	  }
+
+	  ai_will_do = {
+		  factor = 10
+	  }
+ }
+	focus = {
+	id = CHI_anti_NATO
+	icon = focus_prc_remove_america
+	x = -2
+	y = 6
+	cost = 5
+relative_position_id = CHI_china_dream
+	prerequisite = {
+	   focus = CHI_outer_manchuria_buryatia
+	}
+	prerequisite = {
+	focus = CHI_southern_border_adjustment
+	}
+	prerequisite = {
+	focus = CHI_final_ultimatum
+	}
+
+	available = {
+	has_idea = superpower
+	has_war = no
+controls_state = 692
+	}
+	completion_reward = {
+					  declare_war_on = {
+			  target = USA
+			  type = topple_government
+		  }
+	  declare_war_on = {
+			  target = ENG
+			  type = topple_government
+		  }	
+}
+}
+ focus = {
+	id = CHI_east_sea_territory
+	icon = irredentism
+	x = @east_sea_tree
+	y = 3
+	cost = 5
+
+	prerequisite = {
+	   focus = CHI_core_national_interests
+	}
+available = {has_navy_size = { unit = carrier size > 2 }
+not = {has_completed_focus = CHI_support_jap}
+}
+
+	completion_reward = {
+	   #political power, relations hit with neighbors+US
+
+	   add_political_power = 50
+
+	   JAP = { add_opinion_modifier = { target = CHI modifier = recent_actions_negative } }
+	   USA = { add_opinion_modifier = { target = CHI modifier = recent_actions_negative } }
+
+	}
+
+	  ai_will_do = {
+		  factor = 10
+	  }
+ }
+
+ focus = {
+	id = CHI_diaoyu_claim
+	icon = position_armies
+	x = @east_sea_tree
+	y = 4
+	cost = 5
+	  search_filters = { FOCUS_FILTER_ANNEXATION }
+
+	prerequisite = {
+	   focus = CHI_east_sea_territory
+	}
+
+	completion_reward = {
+	  
+	   #demand senkakus from Japan
+
+	  JAP = { country_event = { id = prc1.71 }}
+	}
+
+	  ai_will_do = {
+		  factor = 10
+	  }
+ }
+ 
+	focus = {
+	id = CHI_ryukyu_claim
+	icon = attack_japan
+	x = @east_sea_tree
+	y = 5
+	cost = 5
+	  search_filters = { FOCUS_FILTER_ANNEXATION }
+
+	prerequisite = {
+	   focus = CHI_diaoyu_claim
+	}
+available = {
+controls_state = 939
+
+}
+bypass = {
+has_war_with = JAP
+}
+	completion_reward = {
+	  add_state_core = 618
+	  add_state_core = 827
+	  #demand ryukyu from Japan
+	  USA = { country_event = { id = prc1.37 }}
+	  
+	}
+
+	  ai_will_do = {
+		  factor = 10
+	  }
+ 
+ }
+	   focus = {
+	id = CHI_jap_am
+	icon = japanese_imperialism
+	x = @east_sea_tree
+	y = 7
+	cost = 5
+
+	prerequisite = {
+	   focus = CHI_Annexation_of_Korea
+	}
+bypass = {
+has_war_with = JAP
+}
+	completion_reward = {		set_temp_variable = { modify_chinese_aggression = 10 }
+		  CHI_modify_chinese_aggression = yes
+	  JAP = { country_event = { id = prc1.5 }}
+	  
+	}
+	  search_filters = { FOCUS_FILTER_ANNEXATION }
+
+	  ai_will_do = {
+		  factor = 10
+	  }
+ 
+ }
+	   focus = {
+	id = CHI_Annexation_of_Korea
+	icon = attack_south_korea
+	x = @east_sea_tree
+	y = 6
+	cost = 5
+
+	prerequisite = {
+	   focus = CHI_ryukyu_claim
+	}
+
+	completion_reward = {		set_temp_variable = { modify_chinese_aggression = 5 }
+		  CHI_modify_chinese_aggression = yes
+		  USA = {
+		  country_event = prc1.100
+		  }
+		  NKO = {
+		   country_event = { id = prc1.5 }
+		  }
+
+	}
+	  search_filters = { FOCUS_FILTER_ANNEXATION }
+
+	  ai_will_do = {
+		  factor = 10
+	  }
+ 
+ }   
+	focus = {
+	id = CHI_The_great_rejuvenation_of_the_Chinese_nation
+	icon = focus_prc_china_dream
+	x = -5
+	y = 7
+	cost = 5
+relative_position_id = CHI_china_dream
+	prerequisite = {
+	   focus = CHI_anti_NATO
+	}
+	prerequisite = {
+	focus = CHI_myanmar_border_adjustment
+	}
+		  prerequisite = {
+	focus = CHI_jap_am
+   }
+	available = {
+	has_idea = superpower
+has_completed_focus = CHI_A_New_Imperium	  
+	SOV ={
+	OR = {
+	is_subject_of = CHI
+exists = no }	 
+   }
+	RAJ = {
+	
+	OR = {
+	is_subject_of = CHI
+exists = no }	 	  }
+	JAP = {
+	OR = {
+	is_subject_of = CHI
+exists = no }	 	  }
+	TAI = {
+	OR = {
+	is_subject_of = CHI
+	exists = no
+	}
+	}
+	}
+	completion_reward = {
+  add_ideas = CHI_The_great_rejuvenation_of_the_Chinese_nation
+}
+}
+
+
 		  focus = {
       id = CHI_diplomatic_initatives
       icon = race_relations2
@@ -4469,853 +5176,7 @@ is_puppet = no
 
    #####################################################################################################################################################################
 
-   focus = {
-      id = CHI_core_national_interests
-      icon = great_red_menace
-      x = @national_interests_tree
-      y = 2
-      cost = 5
 
-      prerequisite = {
-         focus = CHI_china_dream
-      }
-	  available = {
-	  			custom_trigger_tooltip = {
-				tooltip = 7_per_capita_or_more_tt
-				check_variable = { gdp_per_capita > 6.999 }
-			}
-			is_puppet = no
-	  }
-
-      completion_reward = {
-         #reduce war justification time
-remove_ideas = CHI_Bide
-add_political_power = 100
-add_stability = 0.05         
-	add_popularity = {
-			ideology = nationalist
-			popularity = 0.2
-				}
-	set_variable = { party_pop_array^20 = 0.2 } #Nat_pop
-	add_to_array = { gov_coalition_array = 20 } 
-
-		 }
-
-		ai_will_do = {
-			factor = 10
-		}
-   }
-
-   focus = {
-      id = CHI_xinjiang_crackdown
-      icon = islamophobia2
-      x = @national_interests_tree
-      y = 3
-      cost = 5
-
-      prerequisite = {
-         focus = CHI_core_national_interests
-      }
-
-      completion_reward = {
-	if = {
-		limit = { has_idea = CHI_shaosuminzu1 }
-		swap_ideas = {
-			remove_idea = CHI_shaosuminzu1
-			add_idea = CHI_shaosuminzu2
-		}
-	}
-	else_if = {
-		limit = { has_idea = CHI_shaosuminzu2 }
-		swap_ideas = {
-			remove_idea = CHI_shaosuminzu2
-			add_idea = CHI_shaosuminzu3
-		}
-	}
-	else_if = {
-		limit = { has_idea = CHI_shaosuminzu3 }
-			remove_ideas = CHI_shaosuminzu3
-	}
-
-  } 
-  
-
-
-		ai_will_do = {
-			factor = 10
-		}
-   }
-
-    focus = {
-      id = CHI_xinjiang_security_operations
-      icon = islamophobia
-      x = @national_interests_tree
-      y = 4
-      cost = 5
-
-      prerequisite = {
-         focus = CHI_xinjiang_crackdown
-      }
-
-      completion_reward = {
-	if = {
-		limit = { has_idea = CHI_shaosuminzu1 }
-		swap_ideas = {
-			remove_idea = CHI_shaosuminzu1
-			add_idea = CHI_shaosuminzu2
-		}
-	}
-	else_if = {
-		limit = { has_idea = CHI_shaosuminzu2 }
-		swap_ideas = {
-			remove_idea = CHI_shaosuminzu2
-			add_idea = CHI_shaosuminzu3
-		}
-	}
-	else_if = {
-		limit = { has_idea = CHI_shaosuminzu3 }
-			remove_ideas = CHI_shaosuminzu3
-	}
-							every_state = {		
-		limit = {
-									is_core_of = ETK
-				}					
-						remove_core_of = ETK
-						}
-	
-		}
-  
-      
-		ai_will_do = {
-			factor = 10
-		}
-   }
-   
-
-   focus = {
-      id = CHI_western_border_security
-      icon = attack_kazakhstan
-      x = @national_interests_tree
-      y = 5
-      cost = 5
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-
-      prerequisite = {
-         focus = CHI_xinjiang_security_operations
-      }
-available = {
-			custom_trigger_tooltip = {
-				tooltip = CHI_western_border_security_TT
-				KAZ = { check_variable = { influence_array^0 = CHI } }
-				KYR = { check_variable = { influence_array^0 = CHI } }
-				TAJ = { check_variable = { influence_array^0 = CHI } }
-				UZB = { check_variable = { influence_array^0 = CHI } }
-				TRK = { check_variable = { influence_array^0 = CHI } }
-
-			}
-			NOT = { has_completed_focus = CHI_Equal_Partners }
-
-}
-      completion_reward = {
-         #gives China claims on neighboring Central Asian states
-         add_state_core = 719
-KAZ = {country_event = prc1.72 }
-		 add_state_core = 720
-		 add_state_core = 721
-KYR = {country_event = prc1.73 }
-
-		 add_state_core = 722
-
-TAJ = {country_event = prc1.74 }
-UZB = { country_event = prc1.5 }
-TRK = { country_event = prc1.5 }
-		 
-		 }
-
-		ai_will_do = {
-			factor = 10
-		}
-   }
-   
-   focus = {
-      id = CHI_outer_manchuria_buryatia
-      icon = attack_russia
-      x = @national_interests_tree
-      y = 6
-      cost = 5
-
-      prerequisite = {
-         focus = CHI_western_border_security
-      }
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-
-      completion_reward = {
-		 add_state_core = 1011
-         add_state_core = 686
-         add_state_core = 687
-		 add_state_core = 692
-		 add_state_core = 691
-         add_state_core = 685
-		 add_state_core = 684
-		 add_state_core = 682
-		 add_state_core = 688
-         add_state_core = 689
-		 add_state_core = 1070
-		 add_state_core = 1065
-		 add_state_core = 1066
-		 add_state_core = 1064
-		 add_state_core = 1067
-		 add_state_core = 678
-		 add_state_core = 679
-		 add_state_core = 677
-		 add_state_core = 1071
-		 add_state_core = 675
-		 add_state_core = 676
-		 add_state_core = 1118
-		 add_state_core = 1136
-		 add_state_core = 1137
-		 add_state_core = 1069
-		 add_state_core = 1068
-		 add_state_core = 681
-		 add_state_core = 680
-		 
-		create_wargoal = {
-			type = take_state
-			target = SOV
-			generator = { 686 }
-		}
-      }
-		ai_will_do = {
-			factor = 10
-		}
-   }
-
-   focus = {
-      id = CHI_tibet_media_blackout
-      icon = communism3
-      x = @tibet_tree
-      y = 3
-      cost = 5
-
-      prerequisite = {
-         focus = CHI_core_national_interests
-      }
-
-      completion_reward = {
-	         #minor relations hit
-
-						set_temp_variable = { temp_opinion = 10 }
-			change_communist_cadres_opinion = yes
-      }
-
-		ai_will_do = {
-			factor = 10
-		}
-   }
-
-    focus = {
-      id = CHI_demand_dalai_lama
-      icon = backstab
-      x = @tibet_tree
-      y = 4
-      cost = 5
-
-      prerequisite = {
-         focus = CHI_tibet_media_blackout
-      }
-       bypass = {
-			has_country_flag = CHI_remove_dalai
-		}
-		
-      completion_reward = {
-	  
-         #India recieves option to turn over Dalai Lama (Tibet loses cores in China, relations boost with China) or refuse (relations hit with China, boost with West, political power+unity)
-
-         RAJ = { country_event = { id = prc1.6 }}
-		 
-      }
-
-		ai_will_do = {
-			factor = 10
-		}
-   }
-   
-   focus = {
-      id = CHI_tibet_border_security
-      icon = military_mission
-      x = @tibet_tree
-      y = 5
-      cost = 5
-
-      prerequisite = {
-         focus = CHI_demand_dalai_lama
-      }
-	  
-     		search_filters = { FOCUS_FILTER_ANNEXATION }
-
-      completion_reward = {
-         #gives China claims on neighboring Himalaya states
-add_state_core = 475
-         add_state_core = 455
-		 add_state_core = 473
-		 add_state_core = 428
-		 add_state_core = 484
-		 add_state_core = 983
-		 add_state_core = 982
-		 add_state_core = 980
-		 add_state_core = 981
-		 add_state_core = 489
-		 add_state_core = 485
-		 add_state_core = 476
-		 add_state_core = 477
-		 add_state_core = 478
-		 
-      }
-
-		ai_will_do = {
-			factor = 10
-		}
-   }
-
-   focus = {
-      id = CHI_southern_border_adjustment
-      icon = attack_india
-      x = @tibet_tree
-      y = 6
-      cost = 5
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-
-      prerequisite = {
-         focus = CHI_tibet_border_security
-      }
-
-		completion_reward = {
-			#Demand India drop disputed claims; can lead to war if India refuses
-	create_wargoal = {
-				type = take_state
-				target = RAJ
-				generator = { 455}
-			}
-			
-			
-			create_wargoal = {
-				type = take_state
-				target = BHU
-				generator = { 484  }
-			}
-			create_wargoal = {
-				type = take_state
-				target = NEP
-				generator = { 485  }
-			}
-			
-			PAK = {
-			declare_war_on = { target = RAJ type = annex_everything }
-			add_state_core = 436
-			add_state_core = 432
-			add_state_core = 429
-			
-			}
-		}
-
-		ai_will_do = {
-			factor = 10
-		}
-   }
-
-   focus = {
-      id = CHI_one_china_concensus
-      icon = one_china_policy_prc
-      x = @taiwan_tree
-      y = 3
-      cost = 5
-
-      available = {
-      TAI = { exists = yes }
-      NOT = { has_war_with = TAI }
-      }
-
-      prerequisite = {
-         focus = CHI_core_national_interests
-      }
-
-      completion_reward = {
-         add_political_power = 50
-         TAI = { add_opinion_modifier = { target = CHI modifier = recent_actions_negative } }
-      }
-	  
-	  bypass = {
-			OR = {
-				TAI = {
-					OR = {
-						is_subject_of = CHI
-						exists = no 
-						
-					}
-				}
-
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-   }
-   
-   focus = {
-      id = CHI_mongolia_security_operations
-      icon = attack_mongolia
-      x = @taiwan_tree
-      y = 4
-      cost = 5
-      available = {
-      MON = { exists = yes }
-	  			custom_trigger_tooltip = {
-				tooltip = CHI_mongolia_security_operations_TT
-				MON = { check_variable = { influence_array^0 = CHI } }
-				}
-     
-      }
-	  		search_filters = { FOCUS_FILTER_ANNEXATION }
-
-      prerequisite = {
-	     
-         focus = CHI_one_china_concensus
-      }
-	  
-	  bypass = {
-			OR = {
-				MON = { exists = no 		
-				}
-				CHI = {
-					owns_state = 596
-					
-				}
-			}
-		}
-
-      completion_reward = {
-			set_temp_variable = {
-	     annex_country = { target = MON transfer_troops = yes }
-		 add_state_core = 596
-		 add_state_core = 597
-		 SOV = { add_opinion_modifier = { target = CHI modifier = recent_actions_negative } }
-		 add_stability = 0.1
-			news_event = {
-			hours = 6
-			id = mdardchina_news.27
-		}
-			}
-      
-		ai_will_do = {
-			factor = 10
-		}
-   }
-
-   focus = {
-      id = CHI_demand_rightful_territory
-      icon = war_against_china
-      x = @taiwan_tree
-      y = 5
-      cost = 5
-
-      available = {
-      TAI = { exists = yes }
-      NOT = { has_war_with = TAI }
-      }
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-
-      prerequisite = {
-         focus = CHI_mongolia_security_operations
-      }
-
-      completion_reward = {
-         #demand Taiwan become puppet
-
-         TAI = { country_event = { id = prc1.12 }}
-      }
-	  
-	  bypass = {
-			OR = {
-				TAI = {
-					OR = {
-						is_subject_of = CHI
-						exists = no 
-						
-					}
-				}
-
-			}
-		}
-
-		ai_will_do = {
-			factor = 10
-		}
-   }
-
-   focus = {
-      id = CHI_final_ultimatum
-      icon = attack_taiwan
-      x = @taiwan_tree
-      y = 6
-      cost = 5
-
-      available = {
-      TAI = { exists = yes }
-      NOT = { has_war_with = TAI }
-      }
-
-      prerequisite = {
-         focus = CHI_demand_rightful_territory
-      }
-	  		search_filters = { FOCUS_FILTER_ANNEXATION }
-
-	  bypass = {
-			OR = {
-				TAI = {
-					OR = {
-						is_subject_of = CHI
-						exists = no 
-						
-					}
-				}
-
-			}
-		}
-
-      completion_reward = {
-         #fourth Taiwan Strait crisis. US must decide whether or not to back Taiwan. If yes China must decide whether or not to invade. If no Taiwan must decide whether or not to surrender.
-
-			create_wargoal = {
-				type = take_state
-				target = TAI
-				generator = { 600 }
-				
-				
-			}
-			 USA = { country_event = prc1.13 }
-			 
-		news_event = {
-			hours = 6
-			id = mdardchina_news.12
-		}
-      }
-
-		ai_will_do = {
-			factor = 10
-		}
-   }
-
-   focus = {
-      id = CHI_nine_dash_line
-      icon = volunteers
-      x = @south_sea_tree
-      y = 3
-      cost = 5
-
-      prerequisite = {
-         focus = CHI_core_national_interests
-      }
-available = {
-			NOT = { has_completed_focus = CHI_ASEAN_Integration }
-
-}
-      completion_reward = {
-         #political power, relations hit with neighbors+US
-
-         add_political_power = 50
-
-         USA = { add_opinion_modifier = { target = CHI modifier = recent_actions_negative } }
-         RAJ = { add_opinion_modifier = { target = CHI modifier = recent_actions_negative } }
-         TAI = { add_opinion_modifier = { target = CHI modifier = recent_actions_negative } }
-         
-         VIE = { add_opinion_modifier = { target = CHI modifier = recent_actions_negative } }
-         IND = { add_opinion_modifier = { target = CHI modifier = recent_actions_negative } }
-         MAY = { add_opinion_modifier = { target = CHI modifier = recent_actions_negative } }
-		 BRU = { add_opinion_modifier = { target = CHI modifier = recent_actions_negative } }
-	    PHI = { add_opinion_modifier = { target = CHI modifier = recent_actions_negative } }
-      }
-
-		ai_will_do = {
-			factor = 10
-		}
-   }
-
-   focus = {
-      id = CHI_xisha_claims
-      icon = destroyers
-      x = @south_sea_tree
-      y = 4
-      cost = 5
-
-      available = {
-      NOT = { has_war_with = VIE }
-      }
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-
-      prerequisite = {
-         focus = CHI_nine_dash_line
-      }
-
-      completion_reward = {
-         #demand Paracels from Vietnam
-
-         VIE = { country_event = { id = prc1.10 }}
-      }
-
-		ai_will_do = {
-			factor = 10
-		}
-   }
-
-   focus = {
-      id = CHI_nansha_claims
-      icon = colonial_crackdown
-      x = @south_sea_tree
-      y = 5
-      cost = 5
-
-      available = {
-      NOT = { has_war_with = VIE }
-      }
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-
-      prerequisite = {
-         focus = CHI_xisha_claims
-      }
-
-      completion_reward = {
-		 VIE = { country_event = { hours = 4 id = prc1.11}}
-         IND = { country_event = { hours = 4 id = prc1.11}}
-		 MAY = { country_event = { hours = 16 id = prc1.11 
-		                                       }}
-		 BRU = { country_event = { hours = 22 id = prc1.11
-                               		           }}
-		 PHI = { country_event = { hours = 22 id = prc1.11
-                               		           }}
-         }
-
-		ai_will_do = {
-			factor = 10
-		}
-   }
-
-   focus = {
-      id = CHI_vietnam_border_adjustment
-      icon = attack_vietnam
-      x = @south_sea_tree
-      y = 6
-      cost = 5
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-
-      available = {
-      NOT = { has_war_with = VIE }
-
-      }
-
-      prerequisite = {
-         focus = CHI_nansha_claims
-      }
-
-		completion_reward = {
-		VIE = { country_event = { id = prc1.5 }}
-		}
-
-		ai_will_do = {
-			factor = 10
-		}
-   }
-   
-      focus = {
-      id = CHI_myanmar_border_adjustment
-      icon = attack_kachin
-      x = @south_sea_tree
-      y = 7
-      cost = 5
-
-      available = {
-
-      }
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-
-      prerequisite = {
-         focus = CHI_vietnam_border_adjustment
-      }
-
-		completion_reward = {
-			#CHI gets claims on Burmese border states
-			create_wargoal = {
-				type = take_state
-				target = KAC
-				generator = { 496 }
-			}
-annex_country = {
-target = WAA
-transfer_troops = yes}
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = BRM
-			}
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = SHN
-			}
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = KAR
-			}
-add_state_core = 497		
-		add_state_core = 496
-		}
-
-		ai_will_do = {
-			factor = 10
-		}
-   }
-
-   focus = {
-      id = CHI_east_sea_territory
-      icon = irredentism
-      x = @east_sea_tree
-      y = 3
-      cost = 5
-
-      prerequisite = {
-         focus = CHI_core_national_interests
-      }
-available = {
-not = {has_completed_focus = CHI_support_jap}
-}
-
-      completion_reward = {
-         #political power, relations hit with neighbors+US
-
-         add_political_power = 50
-
-         JAP = { add_opinion_modifier = { target = CHI modifier = recent_actions_negative } }
-         USA = { add_opinion_modifier = { target = CHI modifier = recent_actions_negative } }
-
-      }
-
-		ai_will_do = {
-			factor = 10
-		}
-   }
-
-   focus = {
-      id = CHI_diaoyu_claim
-      icon = position_armies
-      x = @east_sea_tree
-      y = 4
-      cost = 5
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-
-      prerequisite = {
-         focus = CHI_east_sea_territory
-      }
-
-      completion_reward = {
-	    
-         #demand senkakus from Japan
-
-		JAP = { country_event = { id = prc1.71 }}
-      }
-
-		ai_will_do = {
-			factor = 10
-		}
-   }
-   
-      focus = {
-      id = CHI_ryukyu_claim
-      icon = attack_japan
-      x = @east_sea_tree
-      y = 5
-      cost = 5
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-
-      prerequisite = {
-         focus = CHI_diaoyu_claim
-      }
-
-      completion_reward = {
-	    add_state_core = 618
-		add_state_core = 827
-		#demand ryukyu from Japan
-		JAP = { country_event = { id = prc1.37 }}
-        
-      }
-
-		ai_will_do = {
-			factor = 10
-		}
-   
-   }
-         focus = {
-      id = CHI_jap_am
-      icon = japanese_imperialism
-      x = @east_sea_tree
-      y = 6
-      cost = 5
-
-      prerequisite = {
-         focus = CHI_ryukyu_claim
-      }
-
-      completion_reward = {	
-		JAP = { country_event = { id = prc1.5 }}
-        
-      }
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-
-		ai_will_do = {
-			factor = 10
-		}
-   
-   }
-      focus = {
-      id = CHI_The_great_rejuvenation_of_the_Chinese_nation
-      icon = mandate_of_heaven
-      x = -5
-      y = 7
-      cost = 5
-relative_position_id = CHI_china_dream
-      prerequisite = {
-         focus = CHI_outer_manchuria_buryatia
-      }
-	  prerequisite = {
-	  focus = CHI_southern_border_adjustment
-	  }
-	  prerequisite = {
-	  focus = CHI_final_ultimatum
-	  }
-	   prerequisite = {
-	  focus = CHI_myanmar_border_adjustment
-	  }
-	  	  prerequisite = {
-	  focus = CHI_jap_am
-	  }
-	  available = {
-	  has_idea = superpower
-	  SOV ={
-	  is_subject_of = CHI
-	  }
-	  RAJ = {
-	  is_subject_of = CHI
-	  }
-	  JAP = {
-	  is_subject_of = CHI
-	  }
-	  TAI = {
-	  OR = {
-	  is_subject_of = CHI
-	  exists = no
-	  }
-	  }
-	  }
-      completion_reward = {
-	add_ideas = CHI_The_great_rejuvenation_of_the_Chinese_nation
-}
-}
 		
 		
 	focus = {
@@ -7262,7 +7123,7 @@ remove_idea = CHI_dppgov1
 
 }
 } 
-	}
+	
 
 	focus = {
 		id = PRC_computer
@@ -7536,5 +7397,278 @@ remove_idea = CHI_dppgov1
 		available = {}
 		completion_reward = { add_ideas = PRC_party_state_capitalism }
 	}
-
+#紧急国策
+focus = {
+	id = CHI_party_split
+	icon = PRC_gov
+	x = 15
+	y = 1
+	cost = 0
+	ai_will_do = {
+		factor = 50
+	}				
+	allow_branch = {
+		has_country_flag=jingjizhuangtai
+		
 	}
+	bypass = { }
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+}
+
+focus = {
+	id = CHI_return_to_ideal_heart
+	icon = PRC_left_china_front
+	x = -5
+	y = 1
+	cost = 0.1
+	prerequisite = { focus = CHI_party_split }
+	relative_position_id = CHI_party_split
+	mutually_exclusive = { focus = CHI_persist_reform }
+	mutually_exclusive = { focus = CHI_believers_of_freedom }
+	ai_will_do = { factor = 50 }				
+	bypass = { }
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	completion_reward = { 
+		custom_effect_tooltip = CHI_return_to_ideal_heart_effect_tt 
+		hidden_effect = {
+			#mdardchina_news.57 改变方向
+			#country_event = { id = prc1.54 days = 3 }
+			#country_event = { id = prc1.56 days = 15 }
+		}
+	}
+}
+
+focus = {
+	id = CHI_persist_reform
+	icon = communist_china
+	x = 0
+	y = 1
+	cost = 0.1
+	prerequisite = { focus = CHI_party_split }
+	relative_position_id = CHI_party_split
+	mutually_exclusive = { focus = CHI_return_to_ideal_heart }
+	mutually_exclusive = { focus = CHI_believers_of_freedom }
+	ai_will_do = { factor = 50 }				
+	bypass = { }
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+}
+
+focus = {
+	id = CHI_believers_of_freedom
+	icon = blue_democracy
+	x = 5
+	y = 1
+	cost = 0.1
+	prerequisite = { focus = CHI_party_split }
+	relative_position_id = CHI_party_split
+	mutually_exclusive = { focus = CHI_return_to_ideal_heart }
+	mutually_exclusive = { focus = CHI_persist_reform }
+	ai_will_do = { factor = 50 }				
+	bypass = { }
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+}
+
+focus = {
+	id = CHI_establish_left_united_front
+	icon = communism5
+	x = 0
+	y = 1
+	cost = 0.1
+	prerequisite = { focus = CHI_return_to_ideal_heart }
+	relative_position_id = CHI_return_to_ideal_heart
+	ai_will_do = { factor = 50 }				
+	bypass = { }
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+}
+
+focus = {
+	id = CHI_reconcile_with_maoist
+	icon = maoism
+	x = -2
+	y = 1
+	cost = 0.4
+	prerequisite = { focus = CHI_establish_left_united_front }
+	relative_position_id = CHI_establish_left_united_front
+	ai_will_do = { factor = 50 }				
+	bypass = { }
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+}
+
+focus = {
+	id = CHI_return_Twowhatever
+	icon = BLR_Communistst_clean
+	x = 0
+	y = 1
+	cost = 0.4
+	prerequisite = { focus = CHI_establish_left_united_front }
+	relative_position_id = CHI_establish_left_united_front
+	ai_will_do = { factor = 50 }				
+	bypass = { }
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+}
+
+focus = {
+	id = CHI_unity_left_liberal
+	icon = left_socialism
+	x = 2
+	y = 1
+	cost = 0.4
+	prerequisite = { focus = CHI_establish_left_united_front }
+	relative_position_id = CHI_establish_left_united_front
+	ai_will_do = { factor = 50 }				
+	bypass = { }
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+}
+
+focus = {
+	id = CHI_authorize_mao_grassroots
+	icon = free_higher_education
+	x = 0
+	y = 1
+	cost = 0.4
+	prerequisite = { focus = CHI_reconcile_with_maoist }
+	relative_position_id = CHI_reconcile_with_maoist
+	ai_will_do = { factor = 50 }				
+	bypass = { }
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+}
+
+focus = {
+	id = CHI_ban_military_business
+	icon = blr_nationalize_foreign_business
+	x = 0
+	y = 1
+	cost = 0.4
+	prerequisite = { focus = CHI_return_Twowhatever }
+	relative_position_id = CHI_return_Twowhatever
+	ai_will_do = { factor = 50 }				
+	bypass = { }
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+}
+
+focus = {
+	id = CHI_anti_bureaucratic_corruption
+	icon = Generic_Communist_Propaganda02
+	x = 0
+	y = 1
+	cost = 0.4
+	prerequisite = { focus = CHI_unity_left_liberal }
+	relative_position_id = CHI_unity_left_liberal
+	ai_will_do = { factor = 50 }				
+	bypass = { }
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+}
+
+focus = {
+	id = CHI_Military_issues
+	icon = army_marching
+	x = 0
+	y = 1
+	cost = 0.4
+	prerequisite = { focus = CHI_ban_military_business }
+	prerequisite = { focus = CHI_authorize_mao_grassroots }
+	prerequisite = { focus = CHI_anti_bureaucratic_corruption }
+	relative_position_id = CHI_ban_military_business
+	ai_will_do = { factor = 50 }				
+	bypass = { }
+	#prc1.96 自由派上台
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+}
+
+focus = {
+	id = CHI_co_opt_officer
+	icon = army_russia_officer_shool
+	x = -1
+	y = 1
+	cost = 0.4
+	prerequisite = { focus = CHI_Military_issues }
+	relative_position_id = CHI_Military_issues
+	ai_will_do = { factor = 50 }				
+	bypass = { }
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+}
+
+focus = {
+	id = CHI_enhance_political_commissars
+	icon = communist_army
+	x = 1
+	y = 1
+	cost = 0.4
+	prerequisite = { focus = CHI_Military_issues }
+	relative_position_id = CHI_Military_issues
+	ai_will_do = { factor = 50 }				
+	bypass = { }
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+}
+
+focus = {
+	id = CHI_raise_soldier_salaries
+	icon = dollars_money
+	x = 0
+	y = 2
+	cost = 0.4
+	prerequisite = { focus = CHI_Military_issues }
+	relative_position_id = CHI_Military_issues
+	ai_will_do = { factor = 50 }				
+	bypass = { }
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+}
+}
