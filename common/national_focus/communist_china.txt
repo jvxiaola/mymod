@@ -11214,7 +11214,7 @@ prerequisite={
 				focus = {
 					id = PRC_gongzuozu
 					icon = Japan_Workers_negotiate
-					x = -1
+					x = 1
 					y = 4
 			prerequisite = {focus = PRC_Lasting_Cultural_Revolution }
 			
@@ -11256,7 +11256,7 @@ prerequisite={
 					focus = {
 						id = PRC_nogongzuozu
 						icon = Socialist_freedom
-						x = 1
+						x = -1
 						y = 1
 				prerequisite = {focus = PRC_Lasting_Cultural_Revolution }
 				
@@ -11562,7 +11562,7 @@ prerequisite={
 
 					focus = {
 						id = PRC_baligongsheyuanze
-						icon = Chinese_People_Front
+						icon = local_elections
 						x = -2
 						y = 3
 						prerequisite = { focus = PRC_jingzhiwudou
