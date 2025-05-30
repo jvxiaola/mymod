@@ -291,7 +291,7 @@ name = "KMT_ROC"
 texturefile = "gfx/interface/goals/KMT_ROC.dds"			
 }
 SpriteType = {
-name = "likeqiang"
+name = "focus_li_keqiang"
 texturefile = "gfx/interface/goals/focus_li_keqiang.dds"			
 }
 SpriteType = {

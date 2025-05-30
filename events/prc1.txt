@@ -2101,7 +2101,7 @@ add_to_array = { gov_coalition_array = 19 }
 		}
 	}
 	set_country_flag = laozuo
-
+mark_focus_tree_layout_dirty = yes
 if = {
 limit = { has_country_flag = CHI_38jituan}
 division_template = {

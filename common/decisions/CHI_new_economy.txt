@@ -13,6 +13,18 @@ CHI_new_social_economy_debug_decision = {
 		always = no
 	}
 	complete_effect = {
+
+
+		if={
+			limit={check_variable = {DSC_zhucheng_shengtou > 0	}}
+			#标记
+			583={
+				add_dynamic_modifier = {
+					 modifier = CW_youji 
+					}
+			}
+
+		}
 		CHI = { 
 			every_owned_state = {
 				add_core_of = DSC
@@ -21,9 +33,8 @@ CHI_new_social_economy_debug_decision = {
 			} 
 		}
 		DSC = {
-			every_owned_state = {
-				
-			}
+
+
 			create_country_leader = {
 				name = "毛远新"
 				picture = "Mao_Yuanxin.dds"
@@ -38,6 +49,9 @@ CHI_new_social_economy_debug_decision = {
 			load_focus_tree = communsim_PRC_focus
 			mark_focus_tree_layout_dirty = yes
 			complete_national_focus = CHI_Public_ownership_construction
+
+
+
 		}
 		DSC = { change_tag_from = CHI }
 	}

@@ -386,7 +386,7 @@ focus = {
 				}
 			}
 			
-	has_country_flag = CHI_congress_2002
+
 			}
 			}
 			cancel_if_invalid = yes
@@ -552,7 +552,7 @@ focus = {
 		available = {}
 		bypass = {}
 		allow_branch = {
-			has_country_leader = { name = "胡锦涛" }
+			has_country_leader = { name = "" }
 		}
 		ai_will_do = { factor = 500 }
 		completion_reward = {
@@ -573,9 +573,12 @@ focus = {
 		x = 0
 		y = 1
 		cost = 5
-		relative_position_id = CHI_16th_National_Congress	
+		relative_position_id = CHI_16th_National_Congress
+		allow_branch = {
+			has_country_leader = { name = "胡锦涛" }
+		}	
 		bypass = {}
-		prerequisite = { focus = CHI_16th_National_Congress }
+
 		available = {}
 		ai_will_do = { factor = 50 }
 		cancel_if_invalid = yes
@@ -1461,11 +1464,11 @@ remove_idea = CHI_CPC_right4
 	focus = {
 		id = CHI_XiJingpingwin
 		icon = focus_xi_jinping
-		x = 0
+		x = 15
 		y = 1
 		cost = 5
-		relative_position_id = CHI_18th	
-		prerequisite = {focus = CHI_18th}
+
+
 		allow_branch = {
 			has_country_leader = { name = "习近平" } 
 		}
@@ -1483,9 +1486,9 @@ remove_idea = CHI_CPC_right4
 		id = CHI_x1
 		icon = Preserve_cpc
 		x = -1
-		y = 2
+		y = 1
 		cost = 5
-		relative_position_id = CHI_18th		
+		relative_position_id = CHI_XiJingpingwin
 
 
 		prerequisite = { focus = CHI_XiJingpingwin }
@@ -1504,9 +1507,9 @@ remove_idea = CHI_CPC_right4
 		id = CHI_x2
 		icon = christianophobia
 		x = 1
-		y = 2
+		y = 1
 		cost = 5
-		relative_position_id = CHI_18th		
+		relative_position_id = CHI_XiJingpingwin
 
 
 				prerequisite = {
@@ -1547,9 +1550,9 @@ remove_idea = CHI_CPC_right4
 		id = CHI_zjqkc
 		icon = PRC_Monetary_easing
 		x = 0
-		y = 3
+		y = 2
 		cost = 5
-		relative_position_id = CHI_18th	
+		relative_position_id = CHI_XiJingpingwin
 				prerequisite = {
 			focus = CHI_x1
 			}
@@ -1580,9 +1583,9 @@ remove_idea = CHI_CPC_right4
 		id = CHI_daoluzixing
 		icon = Emperor_of_China
 		x = -1
-		y = 4
+		y = 3
 		cost = 5
-		relative_position_id = CHI_18th		
+		relative_position_id = CHI_XiJingpingwin
 
 
 				prerequisite = {
@@ -1604,9 +1607,9 @@ focus = {
 		id = CHI_scjj
 		icon = liberalization
 		x = -1
-		y = 5
+		y = 4
 		cost = 5
-		relative_position_id = CHI_18th		
+		relative_position_id = CHI_XiJingpingwin
 
 
 				prerequisite = {
@@ -1629,9 +1632,9 @@ add_ideas = CHI_996
 		id = CHI_yfzg
 		icon = PRC_gov
 		x = 1
-		y = 4
+		y = 3
 		cost = 5
-		relative_position_id = CHI_18th
+		relative_position_id = CHI_XiJingpingwin
 
 
 				prerequisite = {
@@ -1657,9 +1660,9 @@ remove_idea = censored_nation_01
 		id = CHI_zgzz2025
 		icon = circular_electron_positron_collider
 		x = 1
-		y = 5
+		y = 4
 		cost = 5
-		relative_position_id = CHI_18th	
+		relative_position_id = CHI_XiJingpingwin
 
 
 				prerequisite = {
@@ -1683,9 +1686,9 @@ remove_idea = censored_nation_01
 		id = CHI_chinese_fuxing
 		icon = China_dream
 		x = 0
-		y = 6
+		y = 5
 		cost = 5
-		relative_position_id = CHI_18th	
+		relative_position_id = CHI_XiJingpingwin
 			prerequisite = {
 			focus = CHI_scjj
 			}
@@ -1713,11 +1716,10 @@ remove_idea = CHI_xijinpingsixiang1
 focus = {
 		id = CHI_BoXilaiwin
 		icon = focus_bo_xilai
-		x = 0
+		x = 15
 		y = 1
 		cost = 5
-		relative_position_id = CHI_18th
-prerequisite = {focus = CHI_18th}
+
 allow_branch = {
 	has_country_leader = {
 		name = "薄熙来"
@@ -1741,10 +1743,10 @@ add_stability = 0.05
 	focus = {
 		id = CHI_chdh
 		icon = maoism2
-		x = -5
-		y = 2
+		x = -1
+		y = 1
 		cost = 5
-		relative_position_id = CHI_18th	
+		relative_position_id = CHI_BoXilaiwin
 
 
 				prerequisite = {
@@ -1772,10 +1774,10 @@ remove_idea = censored_nation_01
 	focus = {
 		id = CHI_gzfzd
 		icon = pearl_river_megacity
-		x = -3
-		y = 2
+		x = 1
+		y = 1
 		cost = 5
-		relative_position_id = CHI_18th	
+		relative_position_id = CHI_BoXilaiwin
 
 
 				prerequisite = {
@@ -1798,10 +1800,10 @@ remove_idea = censored_nation_01
 	focus = {
 		id = CHI_jiasi
 		icon = Guangdong_jiashi
-		x = -4
-		y = 3
+		x = 0
+		y = 2
 		cost = 5
-		relative_position_id = CHI_18th	
+		relative_position_id = CHI_BoXilaiwin
 				prerequisite = {
 			focus = CHI_chdh
 			}
@@ -1828,10 +1830,10 @@ remove_idea = censored_nation_01
 	focus = {
 		id = CHI_gonghui
 		icon = labor_unions
-		x = -5
-		y = 4
+		x = -1
+		y = 3
 		cost = 5
-		relative_position_id = CHI_18th	
+		relative_position_id = CHI_BoXilaiwin
 
 
 				prerequisite = {
@@ -1859,10 +1861,10 @@ remove_idea = censored_nation_01
 focus = {
 		id = CHI_sccsmzh
 		icon = communist_scientists
-		x = -5
-		y = 5
+		x = -1
+		y = 4
 		cost = 5
-		relative_position_id = CHI_18th		
+		relative_position_id = CHI_BoXilaiwin	
 
 
 				prerequisite = {
@@ -1886,10 +1888,10 @@ focus = {
 			focus = {
 		id = CHI_gzdg
 		icon = communism4
-		x = -3
-		y = 4
+		x = 1
+		y = 3
 		cost = 5
-		relative_position_id = CHI_18th		
+		relative_position_id = CHI_BoXilaiwin
 
 
 				prerequisite = {
@@ -1926,10 +1928,10 @@ focus = {
 		focus = {
 		id = CHI_nyjth
 		icon = agriculture
-		x = -3
-		y = 5
+		x = 1
+		y = 4
 		cost = 5
-		relative_position_id = CHI_18th	
+		relative_position_id = CHI_BoXilaiwin
 
 
 				prerequisite = {
@@ -1951,10 +1953,10 @@ focus = {
 		focus = {
 		id = CHI_Socialist_lowend
 		icon = communist_scientists
-		x = -4
-		y = 6
+		x = 0
+		y = 5
 		cost = 5
-		relative_position_id = CHI_18th		
+		relative_position_id = CHI_BoXilaiwin
 			prerequisite = {
 			focus = CHI_sccsmzh
 			}
@@ -1978,12 +1980,12 @@ focus = {
 		}			
 focus = {
 		id = CHI_likeqiangwin
-		icon = likeqiang
-		x = 0
+		icon = focus_li_keqiang
+		x = 15
 		y = 1
 		cost = 5
-		relative_position_id = CHI_18th	
-prerequisite = {focus = CHI_18th}
+
+
 
 
 allow_branch = {
@@ -2009,10 +2011,10 @@ add_political_power = 50
 	focus = {
 		id = CHI_Deleveraging
 		icon = gold_standard2
-		x = 3
-		y = 2
+		x = -1
+		y = 1
 		cost = 5
-		relative_position_id =CHI_18th
+		relative_position_id =CHI_likeqiangwin
 
 
 				prerequisite = {
@@ -2036,10 +2038,10 @@ add_political_power = 50
 	focus = {
 		id = CHI_autonomy
 		icon = aristocratic_funding
-		x = 5
-		y = 2
+		x = 1
+		y = 1
 		cost = 5
-		relative_position_id = CHI_18th		
+		relative_position_id = CHI_likeqiangwin
 
 
 				prerequisite = {
@@ -2065,10 +2067,10 @@ remove_idea = censored_nation_01
 	focus = {
 		id = CHI_gjcgg
 		icon = economic_prosperity2
-		x = 4
-		y = 3
+		x = 0
+		y = 2
 		cost = 5
-		relative_position_id = CHI_18th	
+		relative_position_id = CHI_likeqiangwin
 				prerequisite = {
 			focus = CHI_Deleveraging
 			}
@@ -2092,10 +2094,10 @@ remove_idea = censored_nation_01
 	focus = {
 		id = CHI_socialist_democracy
 		icon = PRC_democracy
-		x = 3
-		y = 4
+		x = -1
+		y = 3
 		cost = 5
-		relative_position_id = CHI_18th	
+		relative_position_id = CHI_likeqiangwin
 
 
 				prerequisite = {
@@ -2126,10 +2128,10 @@ remove_idea = open_nation_01
 focus = {
 		id = CHI_Entrepreneurship 
 		icon = business_man2
-		x = 3
-		y = 5
+		x = -1
+		y = 4
 		cost = 5
-		relative_position_id = CHI_18th	
+		relative_position_id = CHI_likeqiangwin
 
 
 				prerequisite = {
@@ -2150,10 +2152,10 @@ focus = {
 			focus = {
 		id = CHI_Social_market_economy
 		icon = market_economy
-		x = 5
-		y = 4
+		x = 1
+		y = 3
 		cost = 5
-		relative_position_id = CHI_18th		
+		relative_position_id = CHI_likeqiangwin
 
 
 				prerequisite = {
@@ -2175,10 +2177,10 @@ increase_social_spending = yes
 		focus = {
 		id = CHI_middle_class
 		icon = gunpoint_diplomacy
-		x = 5
-		y = 5
+		x = 1
+		y = 4
 		cost = 5
-		relative_position_id = CHI_18th	
+		relative_position_id = CHI_likeqiangwin
 
 
 				prerequisite = {
@@ -2200,10 +2202,10 @@ increase_social_spending = yes
 		focus = {
 		id = CHI_Developed_socialism
 		icon = Laurel_Slovakia
-		x = 4
-		y = 6
+		x = 0
+		y = 5
 		cost = 5
-		relative_position_id = CHI_18th		
+		relative_position_id = CHI_likeqiangwin
 			prerequisite = {
 			focus = CHI_middle_class
 			}
