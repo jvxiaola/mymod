@@ -1,6 +1,6 @@
 guiTypes = {
 	containerWindowType = {
-		#云泽标记
+		#标记
 		name = "DSC_CIV_GUI"
 		size = { width = 900 height = 600 }
 		buttonType = {
@@ -8,8 +8,8 @@ guiTypes = {
 			spriteType = "GFX_DSC_FRG_4_GUI_icon"
 			position = { x = 92 y = 28 }
 			clicksound = click_default
-			pdx_tooltip = "XIN_button_desc_TT"
-			pdx_tooltip_delayed = "XIN_button_more_desc_loc_TT"
+			#pdx_tooltip = "XIN_button_desc_TT"
+			#pdx_tooltip_delayed = "XIN_button_more_desc_loc_TT"
 
 		}
 		buttonType = {
@@ -17,8 +17,8 @@ guiTypes = {
 			position = { x = 20 y = 0 }  # 这个偏移值决定碰撞框在哪
 			spriteType = "GFX_DSC_FRG_5_GUI_icon"
 			clicksound = click_default
-			pdx_tooltip = "XIN_button_desc_TT"
-			pdx_tooltip_delayed = "XIN_button_more_desc_loc_TT"
+			#pdx_tooltip = "XIN_button_desc_TT"
+			#pdx_tooltip_delayed = "XIN_button_more_desc_loc_TT"
 
 		}	
 		buttonType = {
@@ -26,8 +26,8 @@ guiTypes = {
 			spriteType = "GFX_DSC_FRG_2_GUI_icon"
 			position = { x = 355 y = 81 }
 			clicksound = click_default
-			pdx_tooltip = "XIN_button_desc_TT"
-			pdx_tooltip_delayed = "XIN_button_more_desc_loc_TT"
+			#pdx_tooltip = "XIN_button_desc_TT"
+			#pdx_tooltip_delayed = "XIN_button_more_desc_loc_TT"
 
 		}
 		buttonType = {
@@ -35,8 +35,8 @@ guiTypes = {
 			spriteType = "GFX_DSC_FRG_3_GUI_icon"
 			position = { x = 362 y = 136 }
 			clicksound = click_default
-			pdx_tooltip = "XIN_button_desc_TT"
-			pdx_tooltip_delayed = "XIN_button_more_desc_loc_TT"
+			#pdx_tooltip = "XIN_button_desc_TT"
+			#pdx_tooltip_delayed = "XIN_button_more_desc_loc_TT"
 
 		}
 		buttonType = {
@@ -45,8 +45,8 @@ guiTypes = {
 			position = { x = 295 y = 136 }
 
 			clicksound = click_default
-			pdx_tooltip = "XIN_button_desc_TT"
-			pdx_tooltip_delayed = "XIN_button_more_desc_loc_TT"
+			#pdx_tooltip = "XIN_button_desc_TT"
+			#pdx_tooltip_delayed = "XIN_button_more_desc_loc_TT"
 
 		}
 	}

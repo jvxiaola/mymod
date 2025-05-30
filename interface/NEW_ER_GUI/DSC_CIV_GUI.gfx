@@ -31,10 +31,7 @@ spriteTypes = {
 		transparencecheck = yes
 	}
 
-	#spriteTypes = {
-	#	name = "GFX_empty"
-	#	texturefile =  "gfx/interface/tongyong/empty_button.png"
-	#	}
+
 	
 
 }

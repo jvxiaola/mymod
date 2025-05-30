@@ -76,9 +76,14 @@ country_event = {
 					value = 0
 				}
 
+				set_variable = {
+					var = DSC_sanxia_shengtou
+					value = 0
+				}
+
 
 				set_variable = {
-					var = DSC_zhucheng_shengtou
+					var = DSC_dongsichuan_shengtou
 					value = 0
 				}
 

@@ -86,10 +86,44 @@ defined_text = {
 }
 
 defined_text = {
-	name = DSC_wanzhou_shengtou_houbeijun_text
-	text = {
-		localization_key = "[?DSC_wanzhou_shengtou]"
-	}
+	name = DSC_gedi_shengtou_houbeijun_text
+		text = {
+		trigger={
+			has_country_flag = DSC_GUI1_OPENED
+		}
+			localization_key = "主城地下武装程度：[?DSC_zhucheng_shengtou]"
+		}
+
+		text = {
+		trigger={
+			has_country_flag = DSC_GUI2_OPENED
+		}
+		localization_key = "万州地下武装程度：[?DSC_wanzhou_shengtou]"
+					}
+
+		text = {
+		trigger={
+			has_country_flag = DSC_GUI3_OPENED
+			}
+		localization_key = "武陵地下武装程度：[?DSC_sanxia_shengtou]"
+		}
+
+				text = {
+						trigger={
+					has_country_flag = DSC_GUI4_OPENED
+					}
+							localization_key = "东四川地下武装程度：[?DSC_dongsichuan_shengtou]"
+					}
+				
+					text = {
+								trigger={
+							has_country_flag = DSC_GUI5_OPENED
+			}
+					localization_key = "西四川地下武装程度：[?DSC_xisichuan_shengtou]"
+			}
+
+		
+
 }
 
 

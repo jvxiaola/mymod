@@ -2590,13 +2590,13 @@ DSC_MAOPAIJUECE = {
 			available = {
 	has_completed_focus = DSC_duoquwuqi
 			}
-	
+	priority = 10000
 			cost = 50
 			fire_only_once = no
 			visible = {
 
 
-
+				has_country_flag=DSC_GUI2_OPENED
 
 
 						DSC_wanzhou_shengtou < 3
@@ -2647,8 +2647,252 @@ DSC_MAOPAIJUECE = {
 				}
 			}
 
+			DSC_shengtousanxia = {
+				icon = GFX_decision_generic_form_nation
+				available = {
+		has_completed_focus = DSC_duoquwuqi
+				}
+				priority = 10000
+				cost = 50
+				fire_only_once = no
+				visible = {
+	
+	
+					has_country_flag=DSC_GUI3_OPENED
+	
+	
+							DSC_sanxia_shengtou < 3
+						
+	
+							DSC_rmjd_renyuan > 0
+						
+	
+							DSC_rmjd_wuqi > 0
+						
+	
+				}
+				days_re_enable = 7
+				days_remove = 10
+				complete_effect = {
+		
+		
+				}
+		
+				remove_effect = {
+					if={
+						limit={
+							
+							DSC_sanxia_shengtou < 3
+						
+	
+							DSC_rmjd_renyuan > 0
+						
+	
+							DSC_rmjd_wuqi > 0
+						
+						}
+	
+						add_to_variable={
+							DSC_sanxia_shengtou = 1
+						}
+						add_to_variable={	
+							DSC_rmjd_houbeijun = -1000
+						}
+						add_to_variable={		
+							DSC_rmjd_wuqi = -1
+						}	
+	
+	
+	
+					}
+		
+					}
+				}
 
-
+				DSC_shengtoudongsichuan = {
+					icon = GFX_decision_generic_form_nation
+					available = {
+			has_completed_focus = DSC_duoquwuqi
+					}
+					priority = 10000
+					cost = 50
+					fire_only_once = no
+					visible = {
+		
+		
+						has_country_flag=DSC_GUI4_OPENED
+		
+		
+								DSC_dongsichuan_shengtou < 3
+							
+		
+								DSC_rmjd_renyuan > 0
+							
+		
+								DSC_rmjd_wuqi > 0
+							
+		
+					}
+					days_re_enable = 7
+					days_remove = 10
+					complete_effect = {
+			
+			
+					}
+			
+					remove_effect = {
+						if={
+							limit={
+								
+								DSC_dongsichuan_shengtou < 3
+							
+		
+								DSC_rmjd_renyuan > 0
+							
+		
+								DSC_rmjd_wuqi > 0
+							
+							}
+		
+							add_to_variable={
+								DSC_dongsichuan_shengtou = 1
+							}
+							add_to_variable={	
+								DSC_rmjd_houbeijun = -1000
+							}
+							add_to_variable={		
+								DSC_rmjd_wuqi = -1
+							}	
+		
+		
+		
+						}
+			
+						}
+					}
+	
+					DSC_shengtouxisichuan = {
+						icon = GFX_decision_generic_form_nation
+						available = {
+				has_completed_focus = DSC_duoquwuqi
+						}
+						priority = 10000
+						cost = 50
+						fire_only_once = no
+						visible = {
+			
+			
+							has_country_flag=DSC_GUI5_OPENED
+			
+			
+									DSC_xisichuan_shengtou < 3
+								
+			
+									DSC_rmjd_renyuan > 0
+								
+			
+									DSC_rmjd_wuqi > 0
+								
+			
+						}
+						days_re_enable = 7
+						days_remove = 10
+						complete_effect = {
+				
+				
+						}
+				
+						remove_effect = {
+							if={
+								limit={
+									
+									DSC_xisichuan_shengtou < 3
+								
+			
+									DSC_rmjd_renyuan > 0
+								
+			
+									DSC_rmjd_wuqi > 0
+								
+								}
+			
+								add_to_variable={
+									DSC_xisichuan_shengtou = 1
+								}
+								add_to_variable={	
+									DSC_rmjd_houbeijun = -1000
+								}
+								add_to_variable={		
+									DSC_rmjd_wuqi = -1
+								}	
+			
+			
+			
+							}
+				
+							}
+						}
+				DSC_shengtouzhucheng = {
+					icon = GFX_decision_generic_form_nation
+					available = {
+			has_completed_focus = DSC_duoquwuqi
+					}
+					priority = 10000
+					cost = 50
+					fire_only_once = no
+					visible = {
+		
+		
+						has_country_flag=DSC_GUI1_OPENED
+		
+		
+								DSC_zhucheng_shengtou < 3
+							
+		
+								DSC_rmjd_renyuan > 0
+							
+		
+								DSC_rmjd_wuqi > 0
+							
+		
+					}
+					days_re_enable = 7
+					days_remove = 10
+					complete_effect = {
+			
+			
+					}
+			
+					remove_effect = {
+						if={
+							limit={
+								
+								DSC_zhucheng_shengtou < 3
+							
+		
+								DSC_rmjd_renyuan > 0
+							
+		
+								DSC_rmjd_wuqi > 0
+							
+							}
+		
+							add_to_variable={
+								DSC_zhucheng_shengtou = 1
+							}
+							add_to_variable={	
+								DSC_rmjd_houbeijun = -1000
+							}
+							add_to_variable={		
+								DSC_rmjd_wuqi = -1
+							}	
+		
+		
+		
+						}
+			
+						}
+					}		
 		DSC_mingbingshengtou = {
 			icon = GFX_decision_generic_form_nation
 			available = {
