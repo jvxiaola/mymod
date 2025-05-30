@@ -2598,14 +2598,23 @@ DSC_MAOPAIJUECE = {
 
 				has_country_flag=DSC_GUI2_OPENED
 
+				check_variable = {
+					var = DSC_wanzhou_shengtou
+					value = 3
+					compare = less_than
+				}
 
-						DSC_wanzhou_shengtou < 3
 					
-
-						DSC_rmjd_renyuan > 0
-					
-
-						DSC_rmjd_wuqi > 0
+						check_variable = {
+							var = DSC_rmjd_renyuan
+							value = 0
+							compare = greater_than
+						}
+						check_variable = {
+							var = DSC_rmjd_wuqi 
+							value = 0
+							compare = greater_than
+						}
 					
 
 			}
@@ -2620,13 +2629,23 @@ DSC_MAOPAIJUECE = {
 				if={
 					limit={
 						
-						DSC_wanzhou_shengtou < 3
+						check_variable = {
+							var = DSC_wanzhou_shengtou
+							value = 3
+							compare = less_than
+						}
 					
 
-						DSC_rmjd_renyuan > 0
-					
-
-						DSC_rmjd_wuqi > 0
+						check_variable = {
+							var = DSC_rmjd_renyuan
+							value = 0
+							compare = greater_than
+						}
+						check_variable = {
+							var = DSC_rmjd_wuqi 
+							value = 0
+							compare = greater_than
+						}
 					
 					}
 
@@ -2661,13 +2680,23 @@ DSC_MAOPAIJUECE = {
 					has_country_flag=DSC_GUI3_OPENED
 	
 	
-							DSC_wuling_shengtou < 3
 						
+							check_variable = {
+								var = DSC_wuling_shengtou
+								value = 3
+								compare = less_than
+							}
 	
-							DSC_rmjd_renyuan > 0
-						
-	
-							DSC_rmjd_wuqi > 0
+							check_variable = {
+								var = DSC_rmjd_renyuan
+								value = 0
+								compare = greater_than
+							}
+							check_variable = {
+								var = DSC_rmjd_wuqi 
+								value = 0
+								compare = greater_than
+							}
 						
 	
 				}
@@ -2682,13 +2711,23 @@ DSC_MAOPAIJUECE = {
 					if={
 						limit={
 							
-							DSC_wuling_shengtou < 3
+							check_variable = {
+								var = DSC_wuling_shengtou
+								value = 3
+								compare = less_than
+							}
 						
 	
-							DSC_rmjd_renyuan > 0
-						
-	
-							DSC_rmjd_wuqi > 0
+							check_variable = {
+								var = DSC_rmjd_renyuan
+								value = 0
+								compare = greater_than
+							}
+							check_variable = {
+								var = DSC_rmjd_wuqi 
+								value = 0
+								compare = greater_than
+							}
 						
 						}
 	
@@ -2721,15 +2760,25 @@ DSC_MAOPAIJUECE = {
 		
 		
 						has_country_flag=DSC_GUI4_OPENED
+						check_variable = {
+							var = DSC_dongsichuan_shengtou 
+							value = 3
+							compare = less_than
+						}
 		
-		
-								DSC_dongsichuan_shengtou < 3
+								
 							
 		
-								DSC_rmjd_renyuan > 0
-							
-		
-								DSC_rmjd_wuqi > 0
+								check_variable = {
+									var = DSC_rmjd_renyuan
+									value = 0
+									compare = greater_than
+								}
+								check_variable = {
+									var = DSC_rmjd_wuqi 
+									value = 0
+									compare = greater_than
+								}
 							
 		
 					}
@@ -2744,13 +2793,25 @@ DSC_MAOPAIJUECE = {
 						if={
 							limit={
 								
-								DSC_dongsichuan_shengtou < 3
-							
+
+								check_variable = {
+									var = DSC_dongsichuan_shengtou
+									value = 3
+									compare = less_than
+								}
 		
-								DSC_rmjd_renyuan > 0
-							
-		
-								DSC_rmjd_wuqi > 0
+
+								check_variable = {
+									var = DSC_rmjd_renyuan
+									value = 0
+									compare = greater_than
+								}
+								check_variable = {
+									var = DSC_rmjd_wuqi 
+									value = 0
+									compare = greater_than
+								}
+
 							
 							}
 		
@@ -2784,14 +2845,24 @@ DSC_MAOPAIJUECE = {
 			
 							has_country_flag=DSC_GUI5_OPENED
 			
-			
-									DSC_xisichuan_shengtou < 3
+							check_variable = {
+								var = DSC_xisichuan_shengtou 
+								value = 3
+								compare = less_than
+							}
+									
 								
 			
-									DSC_rmjd_renyuan > 0
-								
-			
-									DSC_rmjd_wuqi > 0
+									check_variable = {
+										var = DSC_rmjd_renyuan
+										value = 0
+										compare = greater_than
+									}
+									check_variable = {
+										var = DSC_rmjd_wuqi 
+										value = 0
+										compare = greater_than
+									}
 								
 			
 						}
@@ -2806,13 +2877,23 @@ DSC_MAOPAIJUECE = {
 							if={
 								limit={
 									
-									DSC_xisichuan_shengtou < 3
 								
+									check_variable = {
+										var = DSC_xisichuan_shengtou
+										value = 3
+										compare = less_than
+									}
 			
-									DSC_rmjd_renyuan > 0
-								
-			
-									DSC_rmjd_wuqi > 0
+									check_variable = {
+										var = DSC_rmjd_renyuan
+										value = 0
+										compare = greater_than
+									}
+									check_variable = {
+										var = DSC_rmjd_wuqi 
+										value = 0
+										compare = greater_than
+									}
 								
 								}
 			
@@ -2845,14 +2926,25 @@ DSC_MAOPAIJUECE = {
 		
 						has_country_flag=DSC_GUI1_OPENED
 		
+						check_variable = {
+							var = DSC_zhucheng_shengtou 
+							value = 3
+							compare = less_than
+						}
 		
-								DSC_zhucheng_shengtou < 3
+								
 							
 		
-								DSC_rmjd_renyuan > 0
-							
-		
-								DSC_rmjd_wuqi > 0
+								check_variable = {
+									var = DSC_rmjd_renyuan
+									value = 0
+									compare = greater_than
+								}
+								check_variable = {
+									var = DSC_rmjd_wuqi 
+									value = 0
+									compare = greater_than
+								}
 							
 		
 					}
@@ -2866,14 +2958,24 @@ DSC_MAOPAIJUECE = {
 					remove_effect = {
 						if={
 							limit={
+								check_variable = {
+									var = DSC_zhucheng_shengtou
+									value = 3
+									compare = less_than
+								}
 								
-								DSC_zhucheng_shengtou < 3
-							
+								
 		
-								DSC_rmjd_renyuan > 0
-							
-		
-								DSC_rmjd_wuqi > 0
+								check_variable = {
+									var = DSC_rmjd_renyuan
+									value = 0
+									compare = greater_than
+								}
+								check_variable = {
+									var = DSC_rmjd_wuqi 
+									value = 0
+									compare = greater_than
+								}
 							
 							}
 		
@@ -2907,9 +3009,16 @@ DSC_MAOPAIJUECE = {
 			cost = 100
 			fire_only_once = no
 			visible = {
-				check_variable = {
-					DSC_rmjd_renyuan > 0.5
-				}
+
+
+
+					check_variable = {
+						var = DSC_rmjd_renyuan
+						value = 0.5
+						compare = greater_than
+					}
+
+				
 			}
 			custom_cost_trigger = {
 
@@ -2924,9 +3033,11 @@ DSC_MAOPAIJUECE = {
 				country_event = {id=chuanyu.4 days=5}
 				if = {
 					limit={
-					check_variable = {
-						DSC_rmjd_renyuan > 0.5
-					}
+						check_variable = {
+							var = DSC_rmjd_renyuan
+							value = 0.5
+							compare = greater_than
+						}
 				}
 					add_to_variable={
 						DSC_rmjd_renyuan = -0.1

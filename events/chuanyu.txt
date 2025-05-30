@@ -280,50 +280,52 @@ Militia_Bat = { x = 1 y = 3 }
 	}
 
 
-
 	if={
 		limit={
-		DSC_zhucheng_shengtou  =  1	
+			check_variable = {
+				var = DSC_zhucheng_shengtou
+				value = 3
+				compare = equals
+			}
+
+			
 		
 		
+		}
+		DSC={
+
+			transfer_state = 583
 		}
 
 
 
-		#标记
-		583={
-			add_dynamic_modifier = {
-				 modifier = CW_youji 
-				}
+		random_owned_controlled_state = {
+			prioritize = { 583}
+			create_unit = {
+				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				prioritize_location = 7240
+			}
+	
+			create_unit = {
+				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				prioritize_location = 7240
+			}
+
+			create_unit = {
+				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				prioritize_location = 14312
+			}
+	
+
 		}
+		random_country = {
+			limit={
+				has_cosmetic_tag = DSC_JGQ
+			}
 
-	}
+			transfer_state = 583
 
-	else_if={
-		limit={
-		DSC_zhucheng_shengtou  =  2
-		
-		
 		}
-
-
-
-		#标记
-		583={
-			add_dynamic_modifier = {
-				 modifier = CW_youji2
-				}
-		}
-
-	}
-
-	else_if={
-		limit={
-		DSC_zhucheng_shengtou  =  3
-		
-		
-		}
-
 
 
 		#标记
@@ -336,9 +338,69 @@ Militia_Bat = { x = 1 y = 3 }
 	}
 
 
-	if={
+	else_if={
 		limit={
-		DSC_wuling_shengtou  =  1	
+			check_variable = {
+				var = DSC_zhucheng_shengtou
+				value = 2
+				compare = equals
+			}
+
+
+		
+		
+		}
+
+		DSC={
+
+			transfer_state = 583
+		}
+
+
+		#标记
+		583={
+			add_dynamic_modifier = {
+				 modifier = CW_youji2
+			}
+		}
+
+
+		random_owned_controlled_state = {
+			prioritize = { 583}
+			create_unit = {
+				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				prioritize_location = 7240
+			}
+	
+			create_unit = {
+				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				prioritize_location = 14312
+			}
+	
+
+		}
+		random_country = {
+			limit={
+				has_cosmetic_tag = DSC_JGQ
+			}
+
+			transfer_state = 583
+
+		}
+
+	}
+
+	else_if={
+		limit={
+			check_variable = {
+
+					var = DSC_zhucheng_shengtou
+					value = 1
+					compare = equals
+				
+
+			}
+
 		
 		
 		}
@@ -346,7 +408,7 @@ Militia_Bat = { x = 1 y = 3 }
 
 
 		#标记
-		1217={
+		583={
 			add_dynamic_modifier = {
 				 modifier = CW_youji 
 				}
@@ -354,10 +416,81 @@ Militia_Bat = { x = 1 y = 3 }
 
 	}
 
+
+
+
+
+
+
+
+
+
+	if={
+		limit={
+			check_variable = {
+				var = DSC_wuling_shengtou
+				value = 3
+				compare = equals
+			}
+
+		
+		
+		}
+
+
+		DSC={
+			transfer_state = 1217
+		}
+
+
+		1217={
+			add_dynamic_modifier = {
+				 modifier = CW_youji3
+				}
+		}
+		random_owned_controlled_state = {
+			prioritize = { 1217}
+			create_unit = {
+				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				prioritize_location = 15842
+			}
+			create_unit = {
+				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				prioritize_location = 15842
+			}
+	
+			create_unit = {
+				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				prioritize_location = 3093
+			}
+	
+
+		}
+		random_country = {
+			limit={
+				has_cosmetic_tag = DSC_JGQ
+			}
+
+			transfer_state = 1217
+
+		}
+		#标记
+
+
+	}
+
+
+
 	else_if={
 		limit={
-		DSC_wuling_shengtou  =  2
-		
+
+			check_variable = {
+				var = DSC_wuling_shengtou
+				value = 3
+				compare = equals
+			}
+
+
 		
 		}
 
@@ -368,7 +501,6 @@ Militia_Bat = { x = 1 y = 3 }
 
 
 		DSC={
-
 			transfer_state = 1217
 		}
 
@@ -396,7 +528,6 @@ Militia_Bat = { x = 1 y = 3 }
 			limit={
 				has_cosmetic_tag = DSC_JGQ
 			}
-
 			transfer_state = 1217
 
 		}
@@ -404,59 +535,28 @@ Militia_Bat = { x = 1 y = 3 }
 
 	}
 
+
+
+
 	else_if={
 		limit={
-		DSC_wuling_shengtou  =  3
-		
-		
-		}
-
-
-		DSC={
-
-			transfer_state = 1217
-		}
-
-
-		1217={
-			add_dynamic_modifier = {
-				 modifier = CW_youji2
-				}
-		}
-		random_owned_controlled_state = {
-			prioritize = { 1217}
-			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
-				prioritize_location = 15842
-			}
-			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
-				prioritize_location = 15842
-			}
-	
-			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
-				prioritize_location = 3093
-			}
-	
-
-		}
-		random_country = {
-			limit={
-				has_cosmetic_tag = DSC_JGQ
-			}
-
-			transfer_state = 1217
-
+			check_variable = {
+				var = DSC_wuling_shengtou
+				value = 1
+				compare = equals
+			}	
 		}
 		#标记
 		1217={
 			add_dynamic_modifier = {
-				 modifier = CW_youji3
+				 modifier = CW_youji 
 				}
 		}
 
 	}
+
+	
+
 
 
 
@@ -484,7 +584,14 @@ Militia_Bat = { x = 1 y = 3 }
 			prioritize_location = 6999
 		}
 	}
-		if = { limit={ DSC_wanzhou_shengtou  = 1}
+		if = { 
+			limit={ 				
+		check_variable = {
+
+			var = DSC_wanzhou_shengtou
+			value = 1
+			compare = equals
+		}}
 		random_owned_controlled_state = {
 			prioritize = { 1216 }
 			create_unit = {
@@ -498,7 +605,15 @@ Militia_Bat = { x = 1 y = 3 }
 		}
 	}
 		else_if = {
-			limit = { DSC_wanzhou_shengtou  = 2}
+			limit = { 
+				
+				check_variable = {
+					var = DSC_wanzhou_shengtou
+					value = 2
+					compare = equals
+				}
+	
+		}
 		
 		random_owned_controlled_state = {
 			prioritize = { 1216 }
@@ -517,7 +632,16 @@ Militia_Bat = { x = 1 y = 3 }
 	
 	}
 	else_if = {
-		limit = { DSC_wanzhou_shengtou  = 3}
+		limit = { 
+			
+			check_variable = {
+				var = DSC_wanzhou_shengtou
+				value = 3
+				compare = equals
+			}
+	
+	
+	}
 	
 	random_owned_controlled_state = {
 		prioritize = { 1216 }

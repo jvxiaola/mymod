@@ -17,7 +17,8 @@ CW_youji2 = {
 
 
 CW_youji3 = {  
-
+	enable = {always = yes}
+	icon = GFX_idea_CW_ruin
 		  
 	}
 	
