@@ -15,16 +15,7 @@ CHI_new_social_economy_debug_decision = {
 	complete_effect = {
 
 
-		if={
-			limit={check_variable = {DSC_zhucheng_shengtou > 0	}}
-			#标记
-			583={
-				add_dynamic_modifier = {
-					 modifier = CW_youji 
-					}
-			}
 
-		}
 		CHI = { 
 			every_owned_state = {
 				add_core_of = DSC

@@ -105,7 +105,7 @@ defined_text = {
 		trigger={
 			has_country_flag = DSC_GUI3_OPENED
 			}
-		localization_key = "武陵地下武装程度：[?DSC_sanxia_shengtou]"
+		localization_key = "武陵地下武装程度：[?DSC_wuling_shengtou]"
 		}
 
 				text = {

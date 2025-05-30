@@ -2647,7 +2647,7 @@ DSC_MAOPAIJUECE = {
 				}
 			}
 
-			DSC_shengtousanxia = {
+			DSC_shengtouwuling = {
 				icon = GFX_decision_generic_form_nation
 				available = {
 		has_completed_focus = DSC_duoquwuqi
@@ -2661,7 +2661,7 @@ DSC_MAOPAIJUECE = {
 					has_country_flag=DSC_GUI3_OPENED
 	
 	
-							DSC_sanxia_shengtou < 3
+							DSC_wuling_shengtou < 3
 						
 	
 							DSC_rmjd_renyuan > 0
@@ -2682,7 +2682,7 @@ DSC_MAOPAIJUECE = {
 					if={
 						limit={
 							
-							DSC_sanxia_shengtou < 3
+							DSC_wuling_shengtou < 3
 						
 	
 							DSC_rmjd_renyuan > 0
@@ -2693,7 +2693,7 @@ DSC_MAOPAIJUECE = {
 						}
 	
 						add_to_variable={
-							DSC_sanxia_shengtou = 1
+							DSC_wuling_shengtou = 1
 						}
 						add_to_variable={	
 							DSC_rmjd_houbeijun = -1000

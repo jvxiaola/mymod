@@ -74,7 +74,14 @@ CHI_NEW_people_war2_desc: "战争使得大多数地区的基础设施遭到破�
 CHI_NEW_people_war_final: "§R中国命运之决战§!"
 CHI_NEW_people_war_final_desc: "当前的中国主要由两个不同势力占据，接下来的战争将会决定中国未来的命运。§R同志们，继续前进§!"
 
+CW_youji: "游击1"
+CW_youji_desc: "游击状态1"
 
+CW_youji2: "游击2"
+CW_youji2_desc: "游击状态2"
+
+CW_youji3: "游击3"
+CW_youji3_desc: "游击状态3"
 #事件
 prc1.159: "异相"
 prc1.159.t: "异相"

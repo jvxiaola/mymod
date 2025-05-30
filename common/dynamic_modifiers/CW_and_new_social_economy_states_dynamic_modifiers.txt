@@ -3,41 +3,20 @@ CW_youji = {
 	enable = {always = yes}
 	icon = GFX_idea_CW_ruin
 
-		#state_combat_modifiers = {
-		  #attacker = {
-			#has_cosmetic_tag= DSC_JGQ
-			#modifier = {
-			 # attack = -0.3
-			  #defense = -0.2
-			 # movement_speed = -0.1
-			#}
-		  #}
-		  #defender = {
-		#	has_cosmetic_tag= DSC_JGQ
-			#modifier = {
-			#  attack = -0.2
-			#  defense = -0.2
-			#}
-		  #}
-		#}
+
 	  
 }
 
-CW_ruins = {  
+CW_youji2 = {
+	enable = {always = yes}
+	icon = GFX_idea_CW_ruin
+	  
+}
 
-		enable = {always = yes}
-		icon = GFX_idea_CW_ruin
-		army_speed_factor_for_controller = -0.1 
-		enemy_army_speed_factor = -0.1
-		attrition_for_controller = 0.1
-		enemy_attrition = 0.1
-		local_building_slots_factor = -0.3
-		local_factories = -0.3
-		local_resources_factor = -0.5
-		state_production_speed_buildings_factor = -0.15
-		state_productivity_growth_modifier = -0.25
-		local_factory_sabotage = 0.03
-	
+
+
+
+CW_youji3 = {  
 
 		  
 	}
