@@ -2606,7 +2606,7 @@ DSC_MAOPAIJUECE = {
 
 					
 						check_variable = {
-							var = DSC_rmjd_renyuan
+							var = DSC_rmjd_houbeijun
 							value = 0
 							compare = greater_than
 						}
@@ -2637,7 +2637,7 @@ DSC_MAOPAIJUECE = {
 					
 
 						check_variable = {
-							var = DSC_rmjd_renyuan
+							var = DSC_rmjd_houbeijun
 							value = 0
 							compare = greater_than
 						}
@@ -2688,7 +2688,7 @@ DSC_MAOPAIJUECE = {
 							}
 	
 							check_variable = {
-								var = DSC_rmjd_renyuan
+								var = DSC_rmjd_houbeijun
 								value = 0
 								compare = greater_than
 							}
@@ -2719,7 +2719,7 @@ DSC_MAOPAIJUECE = {
 						
 	
 							check_variable = {
-								var = DSC_rmjd_renyuan
+								var = DSC_rmjd_houbeijun
 								value = 0
 								compare = greater_than
 							}
@@ -2770,7 +2770,7 @@ DSC_MAOPAIJUECE = {
 							
 		
 								check_variable = {
-									var = DSC_rmjd_renyuan
+									var = DSC_rmjd_houbeijun
 									value = 0
 									compare = greater_than
 								}
@@ -2802,7 +2802,7 @@ DSC_MAOPAIJUECE = {
 		
 
 								check_variable = {
-									var = DSC_rmjd_renyuan
+									var = DSC_rmjd_houbeijun
 									value = 0
 									compare = greater_than
 								}
@@ -2854,7 +2854,7 @@ DSC_MAOPAIJUECE = {
 								
 			
 									check_variable = {
-										var = DSC_rmjd_renyuan
+										var = DSC_rmjd_houbeijun
 										value = 0
 										compare = greater_than
 									}
@@ -2885,7 +2885,7 @@ DSC_MAOPAIJUECE = {
 									}
 			
 									check_variable = {
-										var = DSC_rmjd_renyuan
+										var = DSC_rmjd_houbeijun
 										value = 0
 										compare = greater_than
 									}
@@ -2936,7 +2936,7 @@ DSC_MAOPAIJUECE = {
 							
 		
 								check_variable = {
-									var = DSC_rmjd_renyuan
+									var = DSC_rmjd_houbeijun
 									value = 0
 									compare = greater_than
 								}
@@ -2967,7 +2967,7 @@ DSC_MAOPAIJUECE = {
 								
 		
 								check_variable = {
-									var = DSC_rmjd_renyuan
+									var = DSC_rmjd_houbeijun
 									value = 0
 									compare = greater_than
 								}

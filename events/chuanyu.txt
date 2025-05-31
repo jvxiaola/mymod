@@ -486,7 +486,7 @@ Militia_Bat = { x = 1 y = 3 }
 
 			check_variable = {
 				var = DSC_wuling_shengtou
-				value = 3
+				value = 2
 				compare = equals
 			}
 
