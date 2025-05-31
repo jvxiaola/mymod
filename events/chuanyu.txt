@@ -561,6 +561,267 @@ Militia_Bat = { x = 1 y = 3 }
 
 
 
+	if={
+		limit={
+			check_variable = {
+				var = DSC_dongsichuan_shengtou
+				value = 3
+				compare = equals
+			}
+
+		
+		
+		}
+
+
+		DSC={
+			transfer_state = 586
+		}
+
+
+		1217={
+			add_dynamic_modifier = {
+				 modifier = CW_youji3
+				}
+		}
+		random_owned_controlled_state = {
+			prioritize = { 586}
+			create_unit = {
+				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				prioritize_location = 3099
+			}
+			create_unit = {
+				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				prioritize_location = 3099
+			}
+	
+			create_unit = {
+				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				prioritize_location = 3096
+			}
+	
+
+		}
+		random_country = {
+			limit={
+				has_cosmetic_tag = DSC_JGQ
+			}
+
+			transfer_state = 586
+
+		}
+		#标记
+
+
+	}
+
+
+
+	else_if={
+		limit={
+
+			check_variable = {
+				var = DSC_dongsichuan_shengtou
+				value = 2
+				compare = equals
+			}
+
+
+		
+		}
+
+
+
+		#标记
+
+
+
+		DSC={
+			transfer_state = 586
+		}
+
+
+		586={
+			add_dynamic_modifier = {
+				 modifier = CW_youji2
+				}
+		}
+		random_owned_controlled_state = {
+			prioritize = { 586}
+			create_unit = {
+				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				prioritize_location = 3099
+			}
+
+	
+			create_unit = {
+				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				prioritize_location = 3096
+			}
+	
+
+		}
+		random_country = {
+			limit={
+				has_cosmetic_tag = DSC_JGQ
+			}
+			transfer_state = 586
+
+		}
+
+
+	}
+
+
+
+
+	else_if={
+		limit={
+			check_variable = {
+				var = DSC_dongsichuan_shengtou
+				value = 1
+				compare = equals
+			}	
+		}
+		#标记
+		586={
+			add_dynamic_modifier = {
+				 modifier = CW_youji 
+				}
+		}
+
+	}
+
+	if={
+		limit={
+			check_variable = {
+				var = DSC_xisichuan_shengtou
+				value = 3
+				compare = equals
+			}
+
+		
+		
+		}
+
+
+		DSC={
+			transfer_state = 585
+		}
+
+
+		585={
+			add_dynamic_modifier = {
+				 modifier = CW_youji3
+				}
+		}
+		random_owned_controlled_state = {
+			prioritize = { 585}
+			create_unit = {
+				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				prioritize_location = 1918
+			}
+			create_unit = {
+				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				prioritize_location = 4999
+			}
+	
+			create_unit = {
+				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				prioritize_location = 4999
+			}
+	
+
+		}
+		random_country = {
+			limit={
+				has_cosmetic_tag = DSC_JGQ
+			}
+
+			transfer_state = 585
+
+		}
+		#标记
+
+
+	}
+
+
+
+	else_if={
+		limit={
+
+			check_variable = {
+				var = DSC_xisichuan_shengtou
+				value = 2
+				compare = equals
+			}
+
+
+		
+		}
+
+
+
+		#标记
+
+
+
+		DSC={
+			transfer_state = 585
+		}
+
+
+		585={
+			add_dynamic_modifier = {
+				 modifier = CW_youji2
+				}
+		}
+		random_owned_controlled_state = {
+			prioritize = { 585}
+			create_unit = {
+				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				prioritize_location = 1918
+			}
+
+	
+			create_unit = {
+				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				prioritize_location = 4999
+			}
+	
+
+		}
+		random_country = {
+			limit={
+				has_cosmetic_tag = DSC_JGQ
+			}
+			transfer_state = 585
+
+		}
+
+
+	}
+
+
+
+
+	else_if={
+		limit={
+			check_variable = {
+				var = DSC_xisichuan_shengtou
+				value = 1
+				compare = equals
+			}	
+		}
+		#标记
+		585={
+			add_dynamic_modifier = {
+				 modifier = CW_youji 
+				}
+		}
+
+	}
 
 
 	random_owned_controlled_state = {
