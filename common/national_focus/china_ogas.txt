@@ -1,9 +1,10 @@
 shared_focus = {
 		id = PRC_computer
 		icon = red_industry
-		x = 28
+		x = 29
 		y = 10
 		cost = 10
+		#123
 		offset = {
 			x = -17
 			y = -10
@@ -508,11 +509,9 @@ add_ideas = PRC_working_life
 		x = -2
 		y = 1
 		cost = 10
-		allow_branch = {
-			NOT={
-				has_country_flag = laozuo
-			}
-		}
+
+
+		
 relative_position_id = PRC_computer5
 prerequisite = { focus = PRC_computer5 }
 		ai_will_do = {
@@ -658,11 +657,8 @@ prerequisite = { focus = PRC_computer5 }
 		ai_will_do = {
 			factor = 5
 		}
-		allow_branch = {
-			NOT={
-				has_country_flag = laozuo
-			}
-		}
+
+	
 mutually_exclusive = {
 focus = PRC_Streamline_administration_and_delegate_power
 }

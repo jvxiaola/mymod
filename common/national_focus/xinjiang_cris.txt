@@ -1,5 +1,15 @@
 
+	
+	
+	
+	
+	
+	
+	
+
 	shared_focus = {
+		
+	
 		id = XIN_troubled_times
 		icon = turk_skulls_guns_fire
 		x = 1

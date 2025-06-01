@@ -24,7 +24,7 @@ CHI_new_social_economy_debug_decision = {
 			} 
 		}
 		DSC = {
-
+			
 
 			create_country_leader = {
 				name = "毛远新"
@@ -33,9 +33,16 @@ CHI_new_social_economy_debug_decision = {
 				traits = { }
 				}
 			start_politics_input = yes
+
 			add_to_array = { ruling_party = 5 } #social_democracy								
 			set_variable = { party_pop_array^5 = 0.40 } #social_democracy	
 			startup_politics = yes
+			set_politics = {
+				ruling_party = communism
+				last_election = "1996.12.11"
+				election_frequency = 60
+				elections_allowed = no
+			}
 			set_cosmetic_tag = DSC_GMG
 			load_focus_tree = communsim_PRC_focus
 			mark_focus_tree_layout_dirty = yes
