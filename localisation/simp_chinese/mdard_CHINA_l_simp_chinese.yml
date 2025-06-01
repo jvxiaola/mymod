@@ -1655,11 +1655,11 @@ DSC_MAOPAIJUECE_desc: "红旗卷起农奴戟，黑手高悬霸主鞭。为有牺
 DSC_maopaizhenghe: "发动革命"
 
 
-DSC_pre_civ_decitions: "动荡的局势"
-DSC_pre_civ_decitions_desc: "当前内战风险：[CHI_neizhanfengxian_text]（到达100%则会内战）"
+CHI_pre_civ_decitions: "动荡的局势"
+CHI_pre_civ_decitions_desc: "当前内战风险：[CHI_neizhanfengxian_text]（到达100%则会内战）"
 
-
-
+DSC_wenhuadageming: "文化大革命"
+DSC_wenhuadageming_desc: "文化大革命"
 
 
 DSC_zuzhimaopai: "整合马克思主义小组"

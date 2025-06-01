@@ -6,7 +6,7 @@ shared_focus = {
 		cost = 10
 		#123
 		offset = {
-			x = -17
+			x = -18
 			y = -10
 			trigger = {
 				tag = DSC

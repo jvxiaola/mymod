@@ -18,7 +18,7 @@ CHI_Civil_war_decisions = {
 	}
 }
 
-DSC_pre_civ_decitions = {
+CHI_pre_civ_decitions = {
 	priority = {base=19999}
 	visible_when_empty = yes
 	visible = {
