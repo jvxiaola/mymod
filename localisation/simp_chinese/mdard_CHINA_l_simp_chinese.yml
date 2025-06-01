@@ -1654,6 +1654,14 @@ DSC_MAOPAIJUECE: "星星之火"
 DSC_MAOPAIJUECE_desc: "红旗卷起农奴戟，黑手高悬霸主鞭。为有牺牲多壮志，敢教日月换新天\n\n  川渝军区军队渗透程度：[DSC_shengtouchengdui]\n  武器足以武装的革命民兵部队：[DSC_wuzhuangchengdu]\n  革命人员：[DSC_rmjd_houbeijun_text] \n  [DSC_gedi_shengtou_houbeijun_text]"
 DSC_maopaizhenghe: "发动革命"
 
+
+DSC_pre_civ_decitions: "动荡的局势"
+DSC_pre_civ_decitions_desc: "当前内战风险：[CHI_neizhanfengxian_text]（到达100%则会内战）"
+
+
+
+
+
 DSC_zuzhimaopai: "整合马克思主义小组"
 #DSC_MAOPAIJUECE_desc: "红旗卷起农奴戟，黑手高悬霸主鞭。为有牺牲多壮志，敢教日月换新天"
 DSC_maopaixiaozuzhenghe1: "整合工人的马克思主义小组"

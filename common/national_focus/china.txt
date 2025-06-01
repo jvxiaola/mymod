@@ -458,6 +458,10 @@ focus = {
 		available_if_capitulated = no 
 		cancel_effect = { mark_focus_tree_layout_dirty = yes }
 		completion_reward = {
+			set_variable = {
+				var = CHI_neizhanfengxian
+				value = 0.1
+			}
 			set_country_flag = jingjizhuangtai
 			mark_focus_tree_layout_dirty = yes
 			if = {

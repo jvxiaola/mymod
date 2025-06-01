@@ -219,7 +219,6 @@ picture= GFX_maopaiyouxing
 	
 	option = {	
 		name = CHI_ER_start.5.o1
-		country_event = { id = prc1.57 days = 3 }
 		ai_chance = {factor = 10 }
 	}
 }

@@ -11,6 +11,40 @@
 
 
 on_actions = {
+	on_weekly_CHI = {
+		effect = {
+			# 条件一：如果内战风险变量大于等于1
+			if = {
+				limit = {
+					check_variable = {
+						var = CHI_neizhanfengxian
+						value = 1
+						compare = greater_than_or_equals
+					}
+				}
+				# 重置内战风险变量为极小值
+				set_variable = {
+					var = CHI_neizhanfengxian
+					value = -10000000
+				}
+				# 触发内战相关事件
+				country_event = { id = prc1.57 days = 3 }
+			}
+
+			# 条件二：如果国家有 "cjsl" 标志，就每周增加内战风险
+			if = {
+				limit = {
+					has_country_flag = cjsl
+				}
+				add_to_variable = {
+					var = CHI_neizhanfengxian
+					value = 0.05
+				}
+			}
+		}
+	}
+}
+	
 
 
 on_monthly_CHI = {
@@ -155,6 +189,5 @@ CHI_people_support_dynamic_scriptes_left = yes
 			}
 			add_dynamic_modifier = { modifier = CHI_Socialist_Construction_dynamic }
 		}
-}
 }
 }

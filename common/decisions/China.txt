@@ -160,6 +160,9 @@ southwest_hydroelectricity_dev_category = {
 	}
 
 }
+
+
+
 high_speed_railway_dev_category = {
 	northern_china_build_high_speed_railway = {
 		icon = GFX_decision_generic_construction
