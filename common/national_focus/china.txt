@@ -58,6 +58,17 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 4
+		allow_branch = {
+			NOT={
+				has_country_flag = CPC_Rehabilitation_of_Zhao_Ziyang
+			}
+			OR={
+				has_country_leader = { name = "江泽民" }
+				has_country_flag = cjsl
+				
+			}
+			NOT={has_country_flag= jingjizhuangtai}
+		}
 		relative_position_id = CHI_zhengzhigaige
 		prerequisite = { focus = CHI_zhengzhigaige }
 		ai_will_do = { factor = 50 }
@@ -76,6 +87,17 @@ focus_tree = {
 			relative_position_id = CHI_zhengzhigaige
 			prerequisite = {
 				focus = CHI_zhengzhigaige
+				}
+				allow_branch = {
+					NOT={
+						has_country_flag = CPC_Rehabilitation_of_Zhao_Ziyang
+					}
+					OR={
+						has_country_leader = { name = "江泽民" }
+						has_country_flag = cjsl
+						
+					}
+					NOT={has_country_flag= jingjizhuangtai}
 				}
 					ai_will_do = {
 				factor = 50
@@ -120,6 +142,17 @@ focus_tree = {
 				cost = 4
 				relative_position_id = CHI_zhengzhigaige
 				prerequisite = { focus = CHI_zhengzhigaige }
+				allow_branch = {
+					NOT={
+						has_country_flag = CPC_Rehabilitation_of_Zhao_Ziyang
+					}
+					OR={
+						has_country_leader = { name = "江泽民" }
+						has_country_flag = cjsl
+						
+					}
+					NOT={has_country_flag= jingjizhuangtai}
+				}
 				ai_will_do = { factor = 50 }
 				bypass = {}
 				cancel_if_invalid = yes

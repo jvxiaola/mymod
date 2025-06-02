@@ -67,36 +67,54 @@
  CHI_paving_the_way_for_successors_desc: "十六大召开了，这是次大会将会决定我们的下一任主席人选"
 #国策
  CHI_CPB_Temporary_Meeting: "中央政治局临时会议"
- CHI_party_split: "§R分道扬镳§!"
+ CHI_CPB_Temporary_Meeting_desc: "局势动荡之际，中央政治局召开了罕见的临时会议。各派力量暗流涌动，关于国家未来方向的争论愈发激烈——是回归革命理想，还是坚持改革路线？一场政治风暴即将爆发。"
 
+ CHI_party_split: "§R分道扬镳§!"
+ CHI_party_split_desc: "曾经统一于同一旗帜下的各派，如今再难掩裂痕。矛盾的公开化意味着妥协的终结，未来将由斗争决定。"
  CHI_party_split_effect_tt: "§R党内各派系的矛盾将公开化§!"
+
  CHI_return_to_ideal_heart: "§t回归理想本心§!"
+ CHI_return_to_ideal_heart_desc: "“人民至上，革命到底。”在现实妥协与权贵腐败中，左翼重申革命初心，意图重塑理想主义的红色政纲。"
  CHI_return_to_ideal_heart_effect_tt: "§t将扮演党内左翼势力§!"
+
  CHI_persist_reform: "§1坚持改革开放§!"
+ CHI_persist_reform_desc: "尽管质疑不断，改革派仍相信市场与全球化能引导国家走向富强。“摸着石头过河”的逻辑，在他们眼中仍是唯一的出路。"
 
  CHI_believers_of_freedom: "§B“自由”的信徒§!"
+ CHI_believers_of_freedom_desc: "一群知识分子、企业家和青年学子，憧憬自由市场与民主政治。他们不再满足于改良，而是追求更彻底的制度性转型。"
 
  CHI_establish_left_united_front: "组建§t左翼统一战线§!"
+ CHI_establish_left_united_front_desc: "工人、学生、红色知识分子与基层党人集结于同一面旗帜下。新左翼试图以团结打破主流的沉默与冷漠。"
 
  CHI_reconcile_with_maoist: "与§R毛派§!和解"
+ CHI_reconcile_with_maoist_desc: "毛派虽曾边缘化，仍拥有坚实的群众基础与斗争经验。左翼选择与之对话，而非斗争，以求汇聚更大的力量。"
 
  CHI_authorize_mao_grassroots: "解禁§R毛派组织§!"
+ CHI_authorize_mao_grassroots_desc: "被压制多年的毛派基层组织重见天日。他们将再次活跃在工厂、学校与村镇，播撒反对资本主义复辟的种子。"
 
  CHI_return_Twowhatever: "重提§R“两个凡是”§!"
+ CHI_return_Twowhatever_desc: "“凡是领袖说的，凡是领袖做的……”一纸口号，既是信仰的复苏，也是路线斗争的信号弹。历史将被重新书写。"
 
  CHI_ban_military_business: "打击军队经商"
+ CHI_ban_military_business_desc: "军队脱离人民，必然腐化堕落。左翼誓言铲除“枪杆子里的买卖经”，重建军民一体的革命传统。"
 
  CHI_unity_left_liberal: "团结§t左翼自由派§!"
+ CHI_unity_left_liberal_desc: "虽有分歧，但在反腐与反官僚化上，新左与自由派找到了共识。一场横跨意识形态边界的临时联盟正在形成。"
 
  CHI_anti_bureaucratic_corruption: "严查“官倒”现象"
+ CHI_anti_bureaucratic_corruption_desc: "官商勾结、权钱交易，是改革最深的毒瘤。左翼决心挥刀自宫，将“官倒”送上审判台。"
 
  CHI_Military_issues: "§g军队问题§!"
+ CHI_Military_issues_desc: "军队是权力的支柱，也是分裂的隐患。谁能赢得士兵与军官的支持，谁就掌握了未来。"
 
  CHI_co_opt_officer: "提拔新生代§R左翼军官§!"
+ CHI_co_opt_officer_desc: "一批受毛泽东思想熏陶、反感既得利益集团的青年军官，正在被提拔到关键岗位。军中的风向开始转变。"
 
  CHI_enhance_political_commissars: "扩大§R政委§!权力"
+ CHI_enhance_political_commissars_desc: "政委制度曾确保军队忠于党，而今左翼试图赋予其新的使命——监督军官、教育士兵、巩固红色信仰。"
 
  CHI_raise_soldier_salaries: "提高基层士兵待遇"
+ CHI_raise_soldier_salaries_desc: "革命不是靠口号，而要让士兵吃得饱、活得好。左翼政府加薪与保障同步推进，以赢得军心所向。"
 
 #GUI
  CHI_CPC_poltical_GUI_open_TT: "§R打开中国政治界面§!"
