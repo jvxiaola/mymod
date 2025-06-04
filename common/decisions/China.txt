@@ -3140,6 +3140,11 @@ DSC_MAOPAIJUECE = {
 
 		}
 
+
+
+
+
+
 }
 
 
@@ -3152,15 +3157,8 @@ DSC_MAOPAIJUECE = {
 
 
 
-DSC_wenhuadageming = {
 
-	priority =  { base = 19999 }
-	visible_when_empty = yes
-	visible = {
 
-		has_country_flag = jixuwenge
-	}
-}
 
 
 
