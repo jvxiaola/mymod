@@ -799,9 +799,8 @@ custom_effect_tooltip = "解锁相关决议"
 		}
 	}
 
-
 	focus = {
-		id = DSC_people_armyII
+		id = DSC_people_army_zzjj
 		icon = communist_factories
 		x = 7
 
@@ -829,12 +828,216 @@ custom_effect_tooltip = "解锁相关决议"
 		}
 		completion_reward = {
 	add_ideas = CHI_party_before_guns
+		}
+	}
+
+	focus = {
+		id = DSC_people_armyII
+		icon = communist_factories
+		x = 7
+
+		y = 2
+
+		cost = 5
+
+		prerequisite = {
+			focus=DSC_people_army_zzjj
+		 }
+
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+		completion_reward = {
+	add_ideas = CHI_party_before_guns
+		}
+	}
+
+	focus = {
+		id = DSC_people_army_zzwy
+		icon = communist_factories
+		x = 7
+
+		y = 3
+
+		cost = 5
+
+		prerequisite = {
+			focus= DSC_people_armyII
+		 }
+
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+		completion_reward = {
+	add_ideas = CHI_party_before_guns
+		}
+	}
+	focus = {
+		id = DSC_people_army_sandajilv
+		icon = communist_factories
+		x = 6
+
+		y = 4
+
+		cost = 5
+
+		prerequisite = {
+			focus= DSC_people_army_zzwy
+		 }
+
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+		completion_reward = {
+	add_ideas = CHI_party_before_guns
+		}
+	}
+	focus = {
+		id = DSC_people_army_jdmzzy
+		icon = communist_factories
+		x = 8
+
+		y = 4
+
+		cost = 5
+
+		prerequisite = {
+			focus= DSC_people_army_zzwy
+		 }
+
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+		completion_reward = {
+	add_ideas = CHI_party_before_guns
+		}
+	}
+
+	focus = {
+		id = DSC_people_armyIII
+		icon = communist_factories
+		x = 7
+
+		y = 5
+
+		cost = 5
+
+		prerequisite = {
+			focus=DSC_people_army_sandajilv
+		}
+		prerequisite = {
+			focus=DSC_people_army_jdmzzy
+		 }
+
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+		completion_reward = {
+			random_country={
+				limit = {
+					 has_cosmetic_tag = DSC_JGQ
+				}
+				transfer_units_fraction= {
+					target = DSC
+					size = 0.20
+					stockpile_ratio = 0.1
+					army_ratio = 0.1
+					air_ratio = 0.1
+				}
+			}
+		}
+	}
+
+
+	focus = {
+		id = DSC_DSC_civ_end
+		icon = communist_factories
+		x = 7
+
+		y = 6
+
+		cost = 5
+
+		prerequisite = {
+			focus=DSC_people_armyIII
+		 }
+
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+has_civil_war = no
+		}
+		completion_reward = {
+
 clr_country_flag = qygc
 set_country_flag = qyxd
 mark_focus_tree_layout_dirty = yes
 		}
-	}
-
+	}	
 
 
 	focus = {

@@ -283,39 +283,19 @@ focus_tree = {
 	focus = {
 		id = CHI_great_raise_tax_of_proviences
 		icon = dollars_money
-		x = -1
-		y = 1
+		x = 0
+		y = 3
 		cost = 0.4
 		prerequisite = { focus = CHI_raise_soldier_salaries }
-		relative_position_id = CHI_raise_soldier_salaries
+		relative_position_id = CHI_Military_issues
 		ai_will_do = { factor = 50 }				
 		bypass = { }
-		mutually_exclusive = {
-			focus= CHI_lraise_tax_of_proviences
-		}	
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+		completion_reward = { }
 	}
 
-	focus = {
-		id = CHI_little_raise_tax_of_proviences
-		icon = dollars_money
-		x = 1
-		y = 1
-		cost = 0.4
-		prerequisite = { focus = CHI_raise_soldier_salaries }
-		relative_position_id = CHI_raise_soldier_salaries
-		ai_will_do = { factor = 50 }			
-		mutually_exclusive = {
-			focus=CHI_raise_tax_of_proviences
-		}	
-		bypass = { }
-	
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
-	}
+
 }

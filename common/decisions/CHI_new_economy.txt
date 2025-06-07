@@ -39,8 +39,6 @@ CHI_new_social_economy_debug_decision = {
 			startup_politics = yes
 			set_politics = {
 				ruling_party = communism
-				last_election = "1996.12.11"
-				election_frequency = 60
 				elections_allowed = no
 			}
 			set_cosmetic_tag = DSC_GMG

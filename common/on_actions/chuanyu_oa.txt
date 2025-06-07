@@ -78,6 +78,22 @@ DSC={
 	}
 	on_daily_DSC = {
 	effect = {
+
+if={
+	limit={
+		has_country_flag = neizhanzhong
+		has_war = no
+	}
+clr_country_flag = neizhanzhong
+start_politics_input = yes
+set_politics = {
+elections_allowed = no
+
+}
+startup_politics = yes
+}
+
+
 			if = {
 				limit = {
 				DSC = {

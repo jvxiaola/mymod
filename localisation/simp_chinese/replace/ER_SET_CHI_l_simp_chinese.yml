@@ -92,8 +92,8 @@
  CHI_authorize_mao_grassroots: "解禁§R毛派组织§!"
  CHI_authorize_mao_grassroots_desc: "被压制多年的毛派基层组织重见天日。他们将再次活跃在工厂、学校与村镇，播撒反对资本主义复辟的种子。"
 
- CHI_return_Twowhatever: "重提§R“两个凡是”§!"
- CHI_return_Twowhatever_desc: "“凡是领袖说的，凡是领袖做的……”一纸口号，既是信仰的复苏，也是路线斗争的信号弹。历史将被重新书写。"
+ CHI_return_Twowhatever: "批判唯生产力论"
+ CHI_return_Twowhatever_desc: "多年来，一种狭隘的思维在国家发展中占据主导地位：只要生产力提高，任何代价都是值得的。人民被简化为数字，发展被等同于钢铁和产值，压迫、腐败与剥削被掩盖在增长的幻象之下，是时候做出改变了。"
 
  CHI_ban_military_business: "打击军队经商"
  CHI_ban_military_business_desc: "军队脱离人民，必然腐化堕落。左翼誓言铲除“枪杆子里的买卖经”，重建军民一体的革命传统。"
@@ -115,6 +115,10 @@
 
  CHI_raise_soldier_salaries: "提高基层士兵待遇"
  CHI_raise_soldier_salaries_desc: "革命不是靠口号，而要让士兵吃得饱、活得好。左翼政府加薪与保障同步推进，以赢得军心所向。"
+
+ CHI_great_raise_tax_of_proviences: "收缴财政权"
+
+ CHI_great_raise_tax_of_proviences_desc: "自从改革开放以来，财政权被很大程度的下放，应该说，这是极不健康的事情，应当被纠正。"
 
 #GUI
  CHI_CPC_poltical_GUI_open_TT: "§R打开中国政治界面§!"

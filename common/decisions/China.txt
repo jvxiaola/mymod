@@ -2543,7 +2543,34 @@ value = 0.05
 
 
 
+CHI_pre_civ_decitions = {
+	CHI_anfuguanliao = {
+		icon = GFX_decision_generic_form_nation
+		available = {
 
+		}
+
+		cost = 50
+		fire_only_once = no
+		visible = {
+
+		}
+		days_re_enable = 7
+		days_remove = 3
+		complete_effect = {
+
+
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				var = CHI_neizhanfengxian
+				value = -0.05
+			}
+
+			}
+		}
+}
 
 
 
