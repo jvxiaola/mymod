@@ -754,7 +754,7 @@ custom_effect_tooltip = "解锁相关决议"
 	focus = {
 
 		id = DSC_DSC_civ_start
-		icon = peoples_liberation_army
+		icon = worker_communist
 		x = 7
 
 		y = 0
@@ -784,22 +784,10 @@ custom_effect_tooltip = "解锁相关决议"
 
 		completion_reward = {
 
-		hidden_effect = {
-				add_popularity = {
-					ideology = communism
-					popularity = 0.05
-				}
-				add_to_variable = {
-					var = party_pop_array^5
-					value = 0.05
-				}
-				recalculate_party = yes
-			}
 
-	add_ideas = people_army1
-	unlock_decision_tooltip = CHI_CHI_NEW_people_war1
 		}
 	}
+
 
 
 
@@ -866,7 +854,7 @@ custom_effect_tooltip = "解锁相关决议"
 
 	focus = {
 		id = DSC_people_army_zzjj
-		icon = communist_factories
+		icon = regularized_army
 		x = 0
 
 		y = 1
@@ -892,14 +880,15 @@ relative_position_id = DSC_people_armyI
 
 		}
 		completion_reward = {
-	add_ideas = CHI_party_before_guns
+
 		}
 	}
 
 	focus = {
 		id = DSC_people_armyII
-		icon = communist_factories
-		x = 0
+		icon = Unify_the_army
+		
+		x = -2
 
 		y = 2
 
@@ -930,10 +919,10 @@ relative_position_id = DSC_people_armyI
 
 	focus = {
 		id = DSC_people_army_zzwy
-		icon = communist_factories
-		x = 0
+		icon = political_commissar
+		x = -2
 
-		y = 3
+		y = 4
 
 		cost = 5
 relative_position_id = DSC_people_armyI
@@ -956,20 +945,20 @@ relative_position_id = DSC_people_armyI
 
 		}
 		completion_reward = {
-	add_ideas = CHI_party_before_guns
+
 		}
 	}
 	focus = {
 		id = DSC_people_army_sandajilv
-		icon = communist_factories
-		x = -1
+		icon = Learn_from_Red_Army
+		x = 0
 
-		y = 4
+		y = 3
 
 		cost = 5
 relative_position_id = DSC_people_armyI
 		prerequisite = {
-			focus= DSC_people_army_zzwy
+			focus= DSC_people_army_zzjj
 		 }
 
 
@@ -987,20 +976,20 @@ relative_position_id = DSC_people_armyI
 
 		}
 		completion_reward = {
-	add_ideas = CHI_party_before_guns
+
 		}
 	}
 	focus = {
 		id = DSC_people_army_jdmzzy
-		icon = communist_factories
-		x = 1
+		icon = new_democratic_order
+		x = 2
 
-		y = 4
+		y = 3
 
 		cost = 5
 
 		prerequisite = {
-			focus= DSC_people_army_zzwy
+			focus= DSC_people_army_zzjj
 		 }
 
 relative_position_id = DSC_people_armyI
@@ -1018,25 +1007,23 @@ relative_position_id = DSC_people_armyI
 
 		}
 		completion_reward = {
-	add_ideas = CHI_party_before_guns
+
 		}
 	}
 
 	focus = {
 		id = DSC_people_armyIII
 		icon = communist_factories
-		x = 0
+		x = -2
 
-		y = 5
+		y = 0
 
 		cost = 5
 
 		prerequisite = {
-			focus=DSC_people_army_sandajilv
+			focus=DSC_DSC_civ_start
 		}
-		prerequisite = {
-			focus=DSC_people_army_jdmzzy
-		 }
+
 relative_position_id = DSC_people_armyI
 
 		ai_will_do = {
@@ -1068,18 +1055,143 @@ relative_position_id = DSC_people_armyI
 		}
 	}
 
-
 	focus = {
-		id = DSC_DSC_civ_end
-		icon = communist_factories
-		x = 0
+		id = DSC_people_armyIII
+		icon = Soldiers_Committee
+		x = -2
 
-		y = 6
+		y = 0
 
 		cost = 5
 
 		prerequisite = {
-			focus=DSC_people_armyIII
+			focus=DSC_DSC_civ_start
+		}
+
+relative_position_id = DSC_people_armyI
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+		completion_reward = {
+			random_country={
+				limit = {
+					 has_cosmetic_tag = DSC_JGQ
+				}
+				transfer_units_fraction= {
+					target = DSC
+					size = 0.20
+					stockpile_ratio = 0.1
+					army_ratio = 0.1
+					air_ratio = 0.1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = DSC_people_army_minbing
+		icon = encourage_militia
+		x = 2
+
+		y = 0
+
+		cost = 5
+
+		prerequisite = {
+			focus=DSC_DSC_civ_start
+		}
+
+relative_position_id = DSC_people_armyI
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+		completion_reward = {
+			division_template = {
+				name = "川渝民兵"
+	regiments = {
+	Militia_Bat = { x = 0 y = 0 }
+	Militia_Bat = { x = 0 y = 1 }
+	Militia_Bat = { x = 0 y = 2 }
+	Militia_Bat = { x = 0 y = 3 }
+	Militia_Bat = { x = 1 y = 0 }
+	Militia_Bat = { x = 1 y = 1 }
+	Militia_Bat = { x = 1 y = 2 }
+	Militia_Bat = { x = 1 y = 3 }
+
+				}
+			}
+
+
+			random_owned_controlled_state = {
+				prioritize = { 583 }
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 7948
+				}
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 7948
+				}
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 11865
+				}
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 11865
+				}
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 11865
+				}
+				create_unit = {
+					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					prioritize_location = 11865
+				}
+
+	}
+		}
+	}
+
+
+	focus = {
+		id = DSC_DSC_civ_end
+		icon = peace
+		x = 0
+
+		y = 5
+
+		cost = 5
+		prerequisite = {
+			focus=DSC_people_army_zzwy
+		}
+		prerequisite = {
+			focus=DSC_people_army_sandajilv
+		}
+		prerequisite = {
+			focus=DSC_people_army_jdmzzy
 		 }
 relative_position_id = DSC_people_armyI
 

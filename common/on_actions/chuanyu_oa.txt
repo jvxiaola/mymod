@@ -85,12 +85,10 @@ if={
 		has_war = no
 	}
 clr_country_flag = neizhanzhong
-start_politics_input = yes
 set_politics = {
-elections_allowed = no
-
+	ruling_party = communism
+	elections_allowed = no
 }
-startup_politics = yes
 }
 
 
