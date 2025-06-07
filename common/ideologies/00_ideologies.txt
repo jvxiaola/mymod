@@ -88,6 +88,8 @@ color = { 0 0 255}
 			can_be_randomly_selected = no }
 			Chinese_Socialism_jiang = { color = { 255 127 80 }
 			can_be_randomly_selected = no }
+			Chinese_Socialism_niaolong = { color = { 233 127 80 }
+			can_be_randomly_selected = no }
 			Chinese_Socialism = { color = { 255 127 80 }
 			can_be_randomly_selected = no }
 			Chinese_Socialism_mao = { color = { 238 59 59	 }

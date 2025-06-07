@@ -202,7 +202,7 @@ add_to_array = { gov_coalition_array = 19 }
 		name = "邓力群"
 		picture = "Deng_liqun.dds"
 		expire = "2222.1.1"
-		ideology = anarchist_communism
+		ideology = Chinese_Socialism_niaolong
 		traits = {
 		emerging_anarchist_communism
 		man_of_steel
@@ -2094,7 +2094,7 @@ add_to_array = { gov_coalition_array = 19 }
 		name = "邓力群"
 		picture = "Deng_liqun.dds"
 		expire = "2222.1.1"
-		ideology = anarchist_communism
+		ideology = Chinese_Socialism_niaolong
 		traits = {
 		emerging_anarchist_communism
 		man_of_steel

@@ -242,6 +242,14 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			has_country_leader_ideology = Chinese_Socialism_niaolong
+		}
+		localization_key = Chinese_Socialism_niaolong
+	}
+
+
+	text = {
+		trigger = {
 			has_country_leader_ideology = Autocracy
 		}
 		localization_key = Autocracy

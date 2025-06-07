@@ -846,7 +846,7 @@ SpriteType = {
 		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/new_democracy/state_capitalism.png"
 	}	
 	SpriteType = {
-		name = "state_capitalism_small"
+		name = "GFX_ideology_Chinese_Socialism_niaolong"
 		texturefile = "gfx/Ideology/state_capitalism.png"
 	}	
 	
