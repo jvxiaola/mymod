@@ -749,9 +749,11 @@ custom_effect_tooltip = "解锁相关决议"
 
 		}
 	}	
+
+
 	focus = {
 
-		id = DSC_people_armyI
+		id = DSC_DSC_civ_start
 		icon = peoples_liberation_army
 		x = 7
 
@@ -799,15 +801,78 @@ custom_effect_tooltip = "解锁相关决议"
 		}
 	}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 	focus = {
-		id = DSC_people_army_zzjj
-		icon = communist_factories
+
+		id = DSC_people_armyI
+		icon = peoples_liberation_army
 		x = 7
 
 		y = 1
 
 		cost = 5
 
+		prerequisite = {
+			focus=DSC_DSC_civ_start
+		 }
+		 allow_branch = {
+			has_country_flag = qygc
+			NOT = { has_country_flag = rehabilitate_economy }
+		 }
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+
+		}
+
+
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		hidden_effect = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+				add_to_variable = {
+					var = party_pop_array^5
+					value = 0.05
+				}
+				recalculate_party = yes
+			}
+
+	add_ideas = people_army1
+	unlock_decision_tooltip = CHI_CHI_NEW_people_war1
+		}
+	}
+
+	focus = {
+		id = DSC_people_army_zzjj
+		icon = communist_factories
+		x = 0
+
+		y = 1
+
+		cost = 5
+relative_position_id = DSC_people_armyI
 		prerequisite = {
 			focus=DSC_people_armyI
 		 }
@@ -834,12 +899,12 @@ custom_effect_tooltip = "解锁相关决议"
 	focus = {
 		id = DSC_people_armyII
 		icon = communist_factories
-		x = 7
+		x = 0
 
 		y = 2
 
 		cost = 5
-
+relative_position_id = DSC_people_armyI
 		prerequisite = {
 			focus=DSC_people_army_zzjj
 		 }
@@ -866,12 +931,12 @@ custom_effect_tooltip = "解锁相关决议"
 	focus = {
 		id = DSC_people_army_zzwy
 		icon = communist_factories
-		x = 7
+		x = 0
 
 		y = 3
 
 		cost = 5
-
+relative_position_id = DSC_people_armyI
 		prerequisite = {
 			focus= DSC_people_armyII
 		 }
@@ -897,12 +962,12 @@ custom_effect_tooltip = "解锁相关决议"
 	focus = {
 		id = DSC_people_army_sandajilv
 		icon = communist_factories
-		x = 6
+		x = -1
 
 		y = 4
 
 		cost = 5
-
+relative_position_id = DSC_people_armyI
 		prerequisite = {
 			focus= DSC_people_army_zzwy
 		 }
@@ -928,7 +993,7 @@ custom_effect_tooltip = "解锁相关决议"
 	focus = {
 		id = DSC_people_army_jdmzzy
 		icon = communist_factories
-		x = 8
+		x = 1
 
 		y = 4
 
@@ -938,7 +1003,7 @@ custom_effect_tooltip = "解锁相关决议"
 			focus= DSC_people_army_zzwy
 		 }
 
-
+relative_position_id = DSC_people_armyI
 		ai_will_do = {
 			factor = 10
 		}
@@ -960,7 +1025,7 @@ custom_effect_tooltip = "解锁相关决议"
 	focus = {
 		id = DSC_people_armyIII
 		icon = communist_factories
-		x = 7
+		x = 0
 
 		y = 5
 
@@ -972,7 +1037,7 @@ custom_effect_tooltip = "解锁相关决议"
 		prerequisite = {
 			focus=DSC_people_army_jdmzzy
 		 }
-
+relative_position_id = DSC_people_armyI
 
 		ai_will_do = {
 			factor = 10
@@ -1007,7 +1072,7 @@ custom_effect_tooltip = "解锁相关决议"
 	focus = {
 		id = DSC_DSC_civ_end
 		icon = communist_factories
-		x = 7
+		x = 0
 
 		y = 6
 
@@ -1016,7 +1081,7 @@ custom_effect_tooltip = "解锁相关决议"
 		prerequisite = {
 			focus=DSC_people_armyIII
 		 }
-
+relative_position_id = DSC_people_armyI
 
 		ai_will_do = {
 			factor = 10
