@@ -784,7 +784,7 @@ custom_effect_tooltip = "解锁相关决议"
 
 		completion_reward = {
 
-
+add_political_power = 100
 		}
 	}
 
@@ -880,7 +880,7 @@ relative_position_id = DSC_people_armyI
 
 		}
 		completion_reward = {
-
+#add_
 		}
 	}
 
@@ -976,6 +976,20 @@ relative_position_id = DSC_people_armyI
 
 		}
 		completion_reward = {
+			if={
+
+				limit = {
+					has_idea = people_army1
+				}
+				remove_ideas = people_army1
+				add_idea = people_army2 
+			}
+			else_if = {
+				limit = { 	has_idea = people_army2}
+				remove_ideas = people_army2
+				add_idea = people_army3
+
+			}
 
 		}
 	}
@@ -1007,7 +1021,20 @@ relative_position_id = DSC_people_armyI
 
 		}
 		completion_reward = {
+			if={
 
+				limit = {
+					has_idea = people_army1
+				}
+				remove_ideas = people_army1
+				add_idea = people_army2 
+			}
+			else_if = {
+				limit = { 	has_idea = people_army2}
+				remove_ideas = people_army2
+				add_idea = people_army3
+
+			}
 		}
 	}
 
