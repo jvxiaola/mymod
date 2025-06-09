@@ -158,6 +158,10 @@ name = "Virus_weapons"
 texturefile = "gfx/interface/goals/Virus_weapons.png"			
 }
 SpriteType = {
+name = "read_news"
+texturefile ="gfx/interface/goals/goal_AST_widen_the_peoples_newspaper_readership.png"		
+}
+SpriteType = {
 	name = "dabianlun"
 	texturefile = "gfx/interface/goals/dabianlun.png"			
 	}

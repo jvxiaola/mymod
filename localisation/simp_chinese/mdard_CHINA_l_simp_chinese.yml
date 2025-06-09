@@ -699,6 +699,34 @@ DSC_DSC_civ_start_desc: "川渝革命开始"
 DSC_people_army_zzjj: "政治建军"
 DSC_people_army_zzjj_desc: ""
 
+DSC_people_army_junshixy: "军事学院"
+DSC_people_army_junshixy_desc: "军事学院"
+
+DSC_people_army_czzzx: "从战争中学"
+DSC_people_army_czzzx_desc: ""
+
+DSC_people_army_zhbd: "整合部队"
+DSC_people_army_zhbd_desc: "整合部队"
+
+DSC_people_army_wuqizengjia: "补充武器"
+DSC_people_army_wuqizengjia_desc: ""
+
+DSC_people_army_jsjj: "军事建军"
+DSC_people_army_jsjj_desc: ""
+
+DSC_people_army_sxjj: "思想建军"
+DSC_people_army_sxjj_desc: ""
+
+DSC_people_army_sixiangjy: "思想教育"
+DSC_people_army_sixiangjy_desc: ""
+
+DSC_people_army_junduizf: "军队整风"
+DSC_people_army_junduizf_desc: ""
+
+DSC_people_army_qunzhonglx: "群众路线"
+DSC_people_army_qunzhonglx_desc: ""
+
+
 DSC_people_armyI: "建立人民解放军"
 DSC_people_armyI_desc: "虽然我国当前不止一个“人民解放军”，但我们的军队才是全中国唯一担负的起这一称号的军队，因为我们真正代表了人民的利益"
 DSC_people_armyII: "党指挥枪"
@@ -717,6 +745,9 @@ DSC_people_army_jdmzzy_desc: ""
 
 DSC_people_army_zzwy: "政治委员"
 DSC_people_army_zzwy_desc: "我们要贯彻党指挥枪，就不得不"
+
+DSC_people_army_shibweiyuanhui: "士兵委员会"
+DSC_people_army_shibweiyuanhui_desc: ""
 
 DSC_DSC_civ_end: "川渝革命胜利"
 DSC_DSC_civ_end_desc: "川渝革命胜利"
