@@ -986,7 +986,7 @@ relative_position_id = DSC_people_armyI
 		icon = serve_the_people
 		x = -4
 
-		y = 3
+		y = 4
 
 		cost = 5
 relative_position_id = DSC_people_armyI
@@ -1115,7 +1115,7 @@ relative_position_id = DSC_people_armyI
 	focus = {
 		id = DSC_people_army_junshixy
 		icon = compulsory_higher_education
-		x = 3
+		x = 4
 
 		y = 3
 
@@ -1123,6 +1123,9 @@ relative_position_id = DSC_people_armyI
 relative_position_id = DSC_people_armyI
 prerequisite = {
 	focus=DSC_people_army_wuqizengjia
+ }
+ prerequisite = {
+	focus=DSC_people_army_zhbd
  }
 
 
@@ -1148,14 +1151,14 @@ prerequisite = {
 		id = DSC_people_army_czzzx
 		icon = JSR_guns
 		
-		x = 5
+		x = 4
 
-		y = 3
+		y = 4
 
 		cost = 5
 relative_position_id = DSC_people_armyI
 		prerequisite = {
-			focus=DSC_people_army_zhbd
+			focus=DSC_people_army_junshixy
 		 }
 
 
@@ -1184,7 +1187,7 @@ relative_position_id = DSC_people_armyI
 		
 		x = 1
 
-		y = 2
+		y = 3
 
 		cost = 5
 relative_position_id = DSC_people_armyI
@@ -1216,7 +1219,7 @@ relative_position_id = DSC_people_armyI
 		icon = political_commissar
 		x = 1
 
-		y = 3
+		y = 4
 
 		cost = 5
 relative_position_id = DSC_people_armyI
@@ -1247,7 +1250,7 @@ relative_position_id = DSC_people_armyI
 		icon = training_red_guards
 		x = 0
 
-		y = 4
+		y = 5
 
 		cost = 5
 relative_position_id = DSC_people_armyI
@@ -1262,9 +1265,7 @@ prerequisite = {
  }
 
 
- prerequisite = {
-	focus=DSC_people_army_junshixy
-}
+
 prerequisite = {
 	focus=DSC_people_army_czzzx
  }
@@ -1306,7 +1307,7 @@ prerequisite = {
 		icon = Strengthening_Inner_Party_Democracy
 		x = -1
 
-		y = 2
+		y = 3
 
 		cost = 5
 
@@ -1355,7 +1356,7 @@ relative_position_id = DSC_people_armyI
 		icon = Soldiers_Committee
 		x = -1
 
-		y = 3
+		y = 4
 
 		cost = 5
 
@@ -1522,7 +1523,7 @@ relative_position_id = DSC_people_armyI
 		icon = peace
 		x = 0
 
-		y = 5
+		y = 6
 
 		cost = 5
 		
