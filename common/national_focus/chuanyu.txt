@@ -1242,7 +1242,7 @@ relative_position_id = DSC_people_armyI
 
 		}
 		completion_reward = {
-
+			add_ideas=CHI_zhengwei 
 		}
 	}
 	focus = {
@@ -3163,12 +3163,7 @@ completion_reward = {
 				every_owned_state = { NOT = { has_dynamic_modifier = { modifier = CW_ruins } } }
 			}
 		}
-		
-		select_effect = {
-			CHI={
-				transfer_state = 526
-			}
-		}
+
 
 		completion_reward = {
 			custom_effect_tooltip = Joint_production_system_tt
@@ -3203,6 +3198,13 @@ completion_reward = {
 
 
 			CHI = {
+
+
+
+				annex_country = {
+					target = DSC
+					transfer_troops = yes
+				}
 							change_tag_from = ROOT
 
 

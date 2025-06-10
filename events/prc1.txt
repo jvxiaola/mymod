@@ -231,10 +231,7 @@ country_event = {
 immediate = {
 
 CHI={
-	annex_country = {
-		target = DSC
-		transfer_troops = yes
-	}
+
 		create_country_leader = {
 			name = "毛远新"
 			picture = "Mao_Yuanxin.dds"
@@ -254,12 +251,14 @@ CHI={
 			ruling_party = communism
 			elections_allowed = no
 		}
-		add_to_array = { ruling_party = 5 } #social_democracy								
+		add_to_array = { ruling_party = 4 } #social_democracy								
 		set_variable = { party_pop_array^5 = 0.40 } #social_democracy	
 		startup_politics = yes
 		set_country_flag = qyxd
 clr_country_flag = laozuo
 set_cosmetic_tag = DSC_GMG
+remove_ideas = Militarical_economy_remain
+remove_ideas = CHI_jihuashengyu
 
 
 uncomplete_national_focus = {

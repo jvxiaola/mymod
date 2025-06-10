@@ -731,6 +731,12 @@ DSC_people_armyI: "建立人民解放军"
 DSC_people_armyI_desc: "虽然我国当前不止一个“人民解放军”，但我们的军队才是全中国唯一担负的起这一称号的军队，因为我们真正代表了人民的利益"
 DSC_people_armyII: "党指挥枪"
 DSC_people_armyII_desc: "党作为无产阶级的先锋队，应当完全的掌握无产阶级的武装力量"
+
+
+CHI_zhengwei: "政治委员"
+#CHI_zhengwei_desc: "政治委员"
+
+
 DSC_people_armyIII: "劝降敌军"
 DSC_people_armyIII_desc: ""
 
