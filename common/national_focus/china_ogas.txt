@@ -9,7 +9,7 @@ shared_focus = {
 			x = -18
 			y = -10
 			trigger = {
-				tag = DSC
+				has_country_flag = qyxd
 			}
 		}
 		ai_will_do = {
@@ -202,7 +202,7 @@ add_political_power = 100
 
 		allow_branch = {
 			OR = {
-				tag = DSC
+				has_country_flag = qyxd
 				has_country_flag = laozuo
 				}
 		 }
@@ -210,7 +210,7 @@ add_political_power = 100
 			x = 2
 			trigger = {
 				OR = {
-					tag = DSC
+					has_country_flag = qyxd
 					has_country_flag = laozuo
 					}
 			}
@@ -509,7 +509,15 @@ add_ideas = PRC_working_life
 		x = -2
 		y = 1
 		cost = 10
-
+allow_branch = {
+	not={
+		OR={
+			has_country_flag = laozuo
+			has_country_flag = qyxd
+						has_country_flag = xggm
+		}
+	}
+}
 
 		
 relative_position_id = PRC_computer5
@@ -658,7 +666,15 @@ prerequisite = { focus = PRC_computer5 }
 			factor = 5
 		}
 
-	
+		allow_branch = {
+			not={
+				OR={
+					has_country_flag = laozuo
+					has_country_flag = qyxd
+								has_country_flag = xggm
+				}
+			}
+		}
 mutually_exclusive = {
 focus = PRC_Streamline_administration_and_delegate_power
 }

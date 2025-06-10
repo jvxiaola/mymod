@@ -2241,7 +2241,7 @@ add_political_power = 100
 						limit = {
 							is_core_of = CHI
 								}					
-						remove_core_of = CHI
+						#remove_core_of = CHI
 							}
 						every_state = {		
 							limit = {
@@ -3163,6 +3163,13 @@ completion_reward = {
 				every_owned_state = { NOT = { has_dynamic_modifier = { modifier = CW_ruins } } }
 			}
 		}
+		
+		select_effect = {
+			CHI={
+				transfer_state = 526
+			}
+		}
+
 		completion_reward = {
 			custom_effect_tooltip = Joint_production_system_tt
 			add_ideas = Joint_production_system
@@ -3180,9 +3187,49 @@ completion_reward = {
 				remove_ideas = Industrial_rebuild_end
 			}
 			clr_country_flag = rehabilitate_economy
-			load_focus_tree = communsim_PRC_focus
-			mark_focus_tree_layout_dirty = yes
+
+
+
+
+
+
+
+
+
+
 			}
+
+
+
+
+			CHI = {
+							change_tag_from = ROOT
+
+
+
+
+
+
+
+
+						}
+
+
+
+
+
+
+
+
+
+
+            
+ 
+
+
+				
+				country_event = {id=prc1.300 }
+
 
 		}
 	}

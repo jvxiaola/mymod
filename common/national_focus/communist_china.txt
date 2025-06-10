@@ -29,7 +29,7 @@ focus_tree = {
 		}
 		allow_branch={
 			NOT = {
-				tag = DSC
+				has_country_flag = qyxd
 				has_country_flag = xggm
 			}	
 		}
@@ -1087,7 +1087,7 @@ focus = {
 		offset = {
 			x = -18
 			trigger = {
-			tag = DSC
+			has_country_flag = qyxd
 			}
 		}
 		available = {
@@ -2016,7 +2016,7 @@ cost = 5
 		relative_position_id = PRC_shzygg	
 		cost = 5
 		allow_branch = {
-			NOT = { tag = DSC }
+			NOT = { has_cosmetic_tag = DSC_GMG }
 			}
 
 		ai_will_do = {
@@ -6616,7 +6616,7 @@ focus = {
 			x = -50
 			y = 18
 			trigger = {
-			tag = DSC
+			has_country_flag = qyxd
 			}
 		}
 		offset = {
@@ -6650,7 +6650,7 @@ focus = {
 			x = -2
 			trigger = {
 				OR = {
-					tag = DSC
+					has_country_flag = qyxd
 					has_country_flag = laozuo
 					}
 			}
@@ -6767,7 +6767,7 @@ prerequisite = {  focus = PRC_jjdz }
 allow_branch = {
 	NOT = {
 		OR = {
-			tag = DSC
+			has_country_flag = qyxd
 			has_country_flag = laozuo
 			}
 	 }
@@ -10478,12 +10478,17 @@ add_core_of = ROOT
 			icon = focus_Mao_Yuanxin
 			x = 18
 			y = 0
+
+
+
+
 	cost = 5
 			ai_will_do = {
 				factor = 5
 			}
 			allow_branch = {
-				tag = DSC
+				tag=CHI
+				has_country_flag = qyxd
 			NOT = {
 				OR = { 
 					has_completed_focus = PRC_Proletarian_leader
@@ -10534,8 +10539,8 @@ add_core_of = ROOT
 			available_if_capitulated = no
 	
 			completion_reward = {
-				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.03 }
-				change_DSC_Socialist_Construction_dynamic1 = yes
+				set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.03 }
+				change_CHI_Socialist_Construction_dynamic1 = yes
 	add_stability = 0.05
 	set_country_flag = party5_banned
 	hidden_effect = {
@@ -10570,8 +10575,8 @@ add_core_of = ROOT
 			available_if_capitulated = no
 	
 			completion_reward = {
-				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.03 }
-				change_DSC_Socialist_Construction_dynamic1 = yes
+				set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.03 }
+				change_CHI_Socialist_Construction_dynamic1 = yes
 	hidden_effect = {
 	country_event = {id = prc1.116 days = 7 }
 			}
@@ -10590,8 +10595,8 @@ add_core_of = ROOT
 			available = {}
 			bypass = {}
 			completion_reward = {
-				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.03 }
-				change_DSC_Socialist_Construction_dynamic1 = yes
+				set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.03 }
+				change_CHI_Socialist_Construction_dynamic1 = yes
 				CHI_MER_decresee_effect = yes
 				hidden_effect = {
 					country_event = { id = prc1.117 days = 7 }
@@ -10630,8 +10635,6 @@ add_core_of = ROOT
 				set_politics = {
 	
 			ruling_party = communism
-			last_election = "2000.1.1"
-			election_frequency = 1374168
 			elections_allowed = no
 		}
 	add_stability = 0.15
@@ -10670,14 +10673,14 @@ add_core_of = ROOT
 			completion_reward = {
 				set_country_flag=jixuwenge
 				mark_focus_tree_layout_dirty = yes
-	custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
-	set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.10 }
-	change_DSC_Socialist_Construction_dynamic20 = yes
-	set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.05 }
-	change_DSC_Socialist_Construction_dynamic23 = yes
-	change_DSC_Socialist_Construction21_dynamic = yes
-	change_DSC_Socialist_Construction_dynamic22 = yes
-	change_DSC_Socialist_Construction_dynamic32 = yes
+	custom_effect_tooltip = CHI_Socialist_Construction_dynamic_tt
+	set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.10 }
+	change_CHI_Socialist_Construction_dynamic20 = yes
+	set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = -0.05 }
+	change_CHI_Socialist_Construction_dynamic23 = yes
+	change_CHI_Socialist_Construction21_dynamic = yes
+	change_CHI_SHocialist_Construction_dynamic22 = yes
+	change_CHI_Socialist_Construction_dynamic32 = yes
 	
 			}
 			}
@@ -10950,8 +10953,8 @@ add_idea=CHI_zzgs2
 			continue_if_invalid = no
 			available_if_capitulated = no
 			completion_reward = {
-				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.03 }
-				change_DSC_Socialist_Construction_dynamic1 = yes
+				set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.03 }
+				change_CHI_Socialist_Construction_dynamic1 = yes
 				add_stability = 0.05
 				custom_effect_tooltip = DSC_allotment_economy_effect_tt
 				hidden_effect = {
@@ -10988,8 +10991,8 @@ add_idea=CHI_zzgs2
 			continue_if_invalid = no
 			available_if_capitulated = no
 			completion_reward = {
-				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.03 }
-				change_DSC_Socialist_Construction_dynamic1 = yes
+				set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.03 }
+				change_CHI_Socialist_Construction_dynamic1 = yes
 				}
 			}
 			
@@ -11238,13 +11241,13 @@ prerequisite={
 					available_if_capitulated = no
 			
 					completion_reward = {
-			custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
-			set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.10 }
-			change_DSC_Socialist_Construction_dynamic20 = yes
-			set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.15 }
-			change_DSC_Socialist_Construction_dynamic32 = yes
-			set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.2 }
-			change_DSC_Socialist_Construction_dynamic1 = yes
+			custom_effect_tooltip = CHI_Socialist_Construction_dynamic_tt
+			set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.10 }
+			change_CHI_Socialist_Construction_dynamic20 = yes
+			set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = -0.15 }
+			change_CHI_Socialist_Construction_dynamic32 = yes
+			set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.2 }
+			change_CHI_Socialist_Construction_dynamic1 = yes
 		
 			hidden_effect = {
 			country_event = {id = prc1.120 days = 14 }
@@ -11280,13 +11283,13 @@ prerequisite={
 						available_if_capitulated = no
 				
 						completion_reward = {
-				custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
-				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.10 }
-				change_DSC_Socialist_Construction_dynamic20 = yes
-				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.15 }
-				change_DSC_Socialist_Construction_dynamic32 = yes
-				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.2 }
-				change_DSC_Socialist_Construction_dynamic1 = yes
+				custom_effect_tooltip = CHI_Socialist_Construction_dynamic_tt
+				set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.10 }
+				change_CHI_Socialist_Construction_dynamic20 = yes
+				set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = -0.15 }
+				change_CHI_Socialist_Construction_dynamic32 = yes
+				set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.2 }
+				change_CHI_Socialist_Construction_dynamic1 = yes
 			
 				hidden_effect = {
 				country_event = {id = prc1.120 days = 14 }
@@ -11325,13 +11328,13 @@ prerequisite={
 				available_if_capitulated = no
 		
 				completion_reward = {
-		custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
-		set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.10 }
-		change_DSC_Socialist_Construction_dynamic20 = yes
-		set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.15 }
-		change_DSC_Socialist_Construction_dynamic32 = yes
-		set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.2 }
-		change_DSC_Socialist_Construction_dynamic1 = yes
+		custom_effect_tooltip = CHI_Socialist_Construction_dynamic_tt
+		set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.10 }
+		change_CHI_Socialist_Construction_dynamic20 = yes
+		set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = -0.15 }
+		change_CHI_Socialist_Construction_dynamic32 = yes
+		set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.2 }
+		change_CHI_Socialist_Construction_dynamic1 = yes
 	
 		hidden_effect = {
 		country_event = {id = prc1.120 days = 14 }

@@ -216,6 +216,119 @@ add_to_array = { gov_coalition_array = 19 }
 	}
 }
 
+
+
+
+
+
+country_event = {
+	id = prc1.300
+	title = prc1.300.t
+	desc = prc1.300.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+immediate = {
+
+CHI={
+	annex_country = {
+		target = DSC
+		transfer_troops = yes
+	}
+		create_country_leader = {
+			name = "毛远新"
+			picture = "Mao_Yuanxin.dds"
+			ideology = Chinese_Socialism_mao
+			traits = {
+					}
+			}
+		start_politics_input = yes
+		set_popularities = {
+			democratic = 0.0
+			communism = 100
+			fascism = 0.0
+			neutrality = 0.0
+			nationalist = 0.0
+		}
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+		add_to_array = { ruling_party = 5 } #social_democracy								
+		set_variable = { party_pop_array^5 = 0.40 } #social_democracy	
+		startup_politics = yes
+		set_country_flag = qyxd
+clr_country_flag = laozuo
+set_cosmetic_tag = DSC_GMG
+
+
+uncomplete_national_focus = {
+	focus = CHI_Chinese_Megaprojects
+	uncomplete_children = yes
+}
+
+uncomplete_national_focus = {
+	focus = PRC_jjdz
+	uncomplete_children = yes
+}
+		mark_focus_tree_layout_dirty = yes
+
+	}
+
+
+
+}
+	option = {
+		name = prc1.300.o1
+
+	
+
+		ai_chance = {
+			factor = 50
+
+
+
+
+		}
+	}
+	
+
+}
+
+
+
+country_event = {
+	id = prc1.301
+	title = prc1.301.t
+	desc = prc1.301.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+immediate = {
+
+
+
+}
+
+	option = {
+		name = prc1.301.o1
+
+	
+
+		ai_chance = {
+			factor = 50
+
+
+
+
+		}
+	}
+	
+
+}
+
+
+
 #China Alliance Accepted
 
 country_event = {	#They accept!
