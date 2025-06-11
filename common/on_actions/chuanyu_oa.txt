@@ -97,6 +97,8 @@ set_politics = {
 	ruling_party = communism
 	elections_allowed = no
 }
+
+mark_focus_tree_layout_dirty = yes
 }
 
 
