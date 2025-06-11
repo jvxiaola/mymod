@@ -56,7 +56,7 @@
 			NOT={
 				OR={
 					has_country_flag=xggm
-					has_country_flag=qyxd
+					has_country_flag=chuanyumaopai
 					has_country_flag = laozuo
 				}
 			}
@@ -811,14 +811,14 @@
 		cost = 2
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		allow_branch = {
-			has_country_flag = qyxd
+			has_country_flag = chuanyumaopai
 			NOT = { 
 				has_completed_focus = CHI_Chinese_NEW_MILLENNIUM 
 			}
 		 }
 		available = {
 			has_government = communism
-			has_country_flag = qyxd
+			has_country_flag = chuanyumaopai
 		}
 
 		completion_reward = {
@@ -886,7 +886,7 @@
 		offset = {
 			x = -2
 			trigger = {
-			has_country_flag = qyxd
+			has_country_flag = chuanyumaopai
 			}
 		}
 		available = {
@@ -1148,7 +1148,7 @@
 		cost = 4
 		prerequisite = { focus = Organize_breakthroughs_food_industry focus = Raise_worker_salaries_benefits  focus = CHI_worker_ownership }
 		allow_branch = {
-			OR = { has_country_flag = qyxd has_country_flag = xggm }
+			OR = { has_country_flag = chuanyumaopai has_country_flag = xggm }
 			NOT = { has_completed_focus = CHI_Chinese_NEW_MILLENNIUM }
 		}
 		offset = {
@@ -1421,7 +1421,7 @@
 			trigger = { has_country_flag = xggm }
 		}
 		allow_branch = {
-			OR = { has_country_flag = qyxd has_country_flag = xggm }
+			OR = { has_country_flag = chuanyumaopai has_country_flag = xggm }
 			NOT = { has_completed_focus = CHI_Chinese_NEW_MILLENNIUM }
 		}
 		cost = 4
@@ -1670,7 +1670,7 @@ shared_focus = {
 			trigger = { has_country_flag = xggm }
 		}
 		allow_branch = {
-			OR = { has_country_flag = qyxd has_country_flag = xggm }
+			OR = { has_country_flag = chuanyumaopai has_country_flag = xggm }
 			NOT = { has_completed_focus = CHI_Chinese_NEW_MILLENNIUM }
 		}
 		prerequisite = { focus = CHI_Raise_grainal_purchase_price focus = CHI_state_farm focus = CHI_Purchase_agricultural_supplies focus = CHI_Organize_learning_mechanized_agricultural_tools }
@@ -1725,7 +1725,7 @@ shared_focus = {
 		y = 7
 		relative_position_id = CHI_Public_ownership_construction
 		allow_branch = {
-			has_country_flag = qyxd
+			has_country_flag = chuanyumaopai
 			NOT = { has_completed_focus = CHI_Chinese_NEW_MILLENNIUM }
 		}
 		cost = 5
@@ -1825,7 +1825,7 @@ shared_focus = {
 			trigger = {
 					OR = { 
 						has_country_flag = xggm
-						has_country_flag = qyxd
+						has_country_flag = chuanyumaopai
 						has_country_flag = laozuo
 					}
 			}
@@ -5998,7 +5998,7 @@ is_subject_of = CHI
 			trigger = {
 					OR = { 
 						has_country_flag = xggm
-						has_country_flag = qyxd
+						has_country_flag = chuanyumaopai
 						has_country_flag = laozuo
 					}
 			}
@@ -7227,7 +7227,7 @@ is_subject_of = CHI
 			
 			NOT = {
 				has_country_flag = xggm
-				has_country_flag = qyxd
+				has_country_flag = chuanyumaopai
 				has_country_flag = laozuo
 			}
 		}
@@ -7457,7 +7457,7 @@ is_subject_of = CHI
 			
 			NOT = {
 				has_country_flag = xggm
-				has_country_flag = qyxd
+				has_country_flag = chuanyumaopai
 				has_country_flag = laozuo
 			}
 		}

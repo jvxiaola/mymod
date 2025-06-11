@@ -33,7 +33,6 @@ focus_tree = {
 			NOT={
 				has_country_flag = chuanyumaopai
 				has_country_flag = qygc
-				has_country_flag = 	qyxd
 				has_country_flag = rehabilitate_economy
 			}
 		}

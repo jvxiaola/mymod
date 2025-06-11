@@ -269,7 +269,7 @@ CHI={
 
 
 
-		set_country_flag = qyxd
+		set_country_flag = chuanyumaopai
 clr_country_flag = laozuo
 set_cosmetic_tag = DSC_GMG
 remove_ideas = Militarical_economy_remain

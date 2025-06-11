@@ -9,7 +9,7 @@ shared_focus = {
 			x = -18
 			y = -10
 			trigger = {
-				has_country_flag = qyxd
+				has_country_flag = chuanyumaopai
 			}
 		}
 		ai_will_do = {
@@ -202,7 +202,7 @@ add_political_power = 100
 
 		allow_branch = {
 			OR = {
-				has_country_flag = qyxd
+				has_country_flag = chuanyumaopai
 				has_country_flag = laozuo
 				has_country_flag = xggm
 				}
@@ -212,7 +212,7 @@ add_political_power = 100
 			trigger = {
 				OR = {
 										has_country_flag = xggm
-					has_country_flag = qyxd
+					has_country_flag = chuanyumaopai
 					has_country_flag = laozuo
 					}
 			}
@@ -515,7 +515,7 @@ allow_branch = {
 	not={
 		OR={
 			has_country_flag = laozuo
-			has_country_flag = qyxd
+			has_country_flag = chuanyumaopai
 						has_country_flag = xggm
 		}
 	}
@@ -672,7 +672,7 @@ prerequisite = { focus = PRC_computer5 }
 			not={
 				OR={
 					has_country_flag = laozuo
-					has_country_flag = qyxd
+					has_country_flag = chuanyumaopai
 								has_country_flag = xggm
 				}
 			}

@@ -30,7 +30,7 @@ focus_tree = {
 		}
 		allow_branch={
 			NOT = {
-				has_country_flag = qyxd
+				has_country_flag = chuanyumaopai
 				has_country_flag = xggm
 			}	
 		}
@@ -1088,7 +1088,7 @@ focus = {
 		offset = {
 			x = -18
 			trigger = {
-			has_country_flag = qyxd
+			has_country_flag = chuanyumaopai
 			}
 		}
 		available = {
@@ -6617,7 +6617,7 @@ focus = {
 			x = -50
 			y = 18
 			trigger = {
-			has_country_flag = qyxd
+			has_country_flag = chuanyumaopai
 			}
 		}
 		offset = {
@@ -6651,7 +6651,7 @@ focus = {
 			x = -2
 			trigger = {
 				OR = {
-					has_country_flag = qyxd
+					has_country_flag = chuanyumaopai
 					has_country_flag = laozuo
 					}
 			}
@@ -6768,7 +6768,7 @@ prerequisite = {  focus = PRC_jjdz }
 allow_branch = {
 	NOT = {
 		OR = {
-			has_country_flag = qyxd
+			has_country_flag = chuanyumaopai
 			has_country_flag = laozuo
 			}
 	 }
@@ -10489,7 +10489,7 @@ add_core_of = ROOT
 			}
 			allow_branch = {
 				tag=CHI
-				has_country_flag = qyxd
+				has_country_flag = chuanyumaopai
 			NOT = {
 				OR = { 
 					has_completed_focus = PRC_Proletarian_leader

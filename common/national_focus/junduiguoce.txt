@@ -42,7 +42,7 @@ shared_focus = {
 
 
 		offset = {
-			x = 15
+			x = -14
 			trigger = {
 				OR={
 					has_country_flag = rehabilitate_economy
@@ -52,7 +52,7 @@ shared_focus = {
 			}
 
 			offset = {
-				x = -30
+				x = -20
 				trigger = {
 tag=CHI
 					
