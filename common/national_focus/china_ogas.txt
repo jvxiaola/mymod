@@ -204,12 +204,14 @@ add_political_power = 100
 			OR = {
 				has_country_flag = qyxd
 				has_country_flag = laozuo
+				has_country_flag = xggm
 				}
 		 }
 		 offset = {
 			x = 2
 			trigger = {
 				OR = {
+										has_country_flag = xggm
 					has_country_flag = qyxd
 					has_country_flag = laozuo
 					}
@@ -238,7 +240,7 @@ add_ideas = PRC_computer_syetem1
 }
 	shared_focus = {
 		id = PRC_fchb
-		icon = better_money
+		icon = ogas_communist
 		x = 1
 		y = 6
 		cost = 10
@@ -264,7 +266,7 @@ add_ideas = PRC_dzhb
 }
 	shared_focus = {
 		id = PRC_fcjc
-		icon = goal_JAP_secret_science2
+		icon = ogas
 		x = -1
 		y = 6
 		cost = 10
@@ -312,7 +314,7 @@ prerequisite = { focus = PRC_fcjc }
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {			
-add_ideas = PRC_1984
+add_ideas = PRC_gxdjhjj
 
 
 }
@@ -328,7 +330,7 @@ prerequisite = { focus = PRC_computer4}
 		ai_will_do = {
 			factor = 5
 		}
-		allow_branch = { has_country_flag = xggm }
+		allow_branch = { has_country_flag = zanshimeiyou }
 
 			offset = {
 				x = -2

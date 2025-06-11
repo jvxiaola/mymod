@@ -11,6 +11,7 @@ focus_tree = {
 		shared_focus = CHI_Efficient_and_economical
 		shared_focus = CHI_Revitalize_the_countryside
 		shared_focus = CHI_Socialist_Reconstruction
+		shared_focus = DSC_DSC_civ_start
 
 	focus = {
 		id = PRC_communist

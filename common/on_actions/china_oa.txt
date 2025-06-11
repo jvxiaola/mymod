@@ -43,7 +43,7 @@ on_actions = {
 			}
 		}
 	}
-}
+
 	
 
 
@@ -189,5 +189,6 @@ CHI_people_support_dynamic_scriptes_left = yes
 			}
 			add_dynamic_modifier = { modifier = CHI_Socialist_Construction_dynamic }
 		}
+}
 }
 }

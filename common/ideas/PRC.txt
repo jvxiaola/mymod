@@ -3168,6 +3168,27 @@ production_speed_buildings_factor = 0.2
 Chinese_people_support_to_china_government_modifier = -0.03
 			}
 		}		
+
+
+
+		PRC_gxdjhjj = {
+			#picture = Big_Brother
+			allowed = {
+			}
+			
+
+			modifier = {
+consumer_goods_factor = -0.2
+stability_factor = 0.1
+production_speed_buildings_factor = 0.2
+Chinese_people_support_to_china_government_modifier = 0.03
+			}
+		}		
+
+
+
+
+
 PRC_dzhb = {
 			picture = Communist_patry_of_china_flagideas
 			allowed = {
