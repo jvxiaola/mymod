@@ -3356,10 +3356,10 @@ attrition = -0.1
 			 				name = people_army
  	
 			modifier = {
-				conscription = 0.003
-				max_command_power = 50
-				command_power_gain_mult = 0.3
-				planning_speed = 0.10
+				conscription = 0.001
+				max_command_power = 20
+				command_power_gain_mult = 0.1
+				planning_speed = 0.04
 
 			}
 		}
@@ -3370,14 +3370,14 @@ attrition = -0.1
 			 				name = people_army
  	
 			modifier = {
-				conscription = 0.010
-				max_command_power = 50
+				conscription = 0.003
+				max_command_power = 30
 				command_power_gain_mult = 0.3
-				planning_speed = 0.15
+				planning_speed = 0.05
 
 
 
-army_org_factor = 0.10
+army_org_factor = 0.03
 
 Chinese_people_support_to_china_government_modifier = 0.03
 
@@ -3390,14 +3390,38 @@ Chinese_people_support_to_china_government_modifier = 0.03
 			 				name = people_army
  	
 			modifier = {
-			army_org_factor = 0.15
-				conscription = 0.015
-				max_command_power = 100
-				command_power_gain_mult = 0.5
-				planning_speed = 0.35
+			army_org_factor = 0.05
+				conscription = 0.005
+				max_command_power = 40
+				command_power_gain_mult = 0.2
+				planning_speed = 0.12
+				army_attack_factor =0.05
+				army_defence_factor = 0.05
 				Chinese_people_support_to_china_government_modifier = 0.06
 			}
 		}
+		people_army4={
+
+
+		picture = red_revolutionary_army
+		allowed = {
+		}
+			name = people_army
+ 	
+			modifier = {
+			army_org_factor = 0.07
+				conscription = 0.02
+				max_command_power = 40
+				command_power_gain_mult = 0.2
+				planning_speed = 0.14
+				army_attack_factor =0.1
+				army_defence_factor = 0.1
+				Chinese_people_support_to_china_government_modifier = 0.06
+			}
+		}
+
+
+
 		CHI_war_communism = {
 			allowed = { always = no }
 			picture = morale_bonus

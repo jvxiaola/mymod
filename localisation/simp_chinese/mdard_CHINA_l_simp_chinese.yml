@@ -693,7 +693,7 @@ PRC_red_army1_desc:0 "我们这次的革命是无产阶级社会主义革命，�
 PRC_people_army:0 "人民解放军"
 PRC_people_army_desc:0 "虽然我国当前不止一个“人民解放军”，但我们的军队才是全中国唯一担负的起这一称号的军队"
 
-DSC_DSC_civ_start: "川渝革命的开始"
+DSC_DSC_civ_start: "打响第一枪"
 DSC_DSC_civ_start_desc: "川渝革命开始"
 
 DSC_people_army_zzjj: "政治建军"
@@ -723,18 +723,20 @@ DSC_people_army_sixiangjy_desc: ""
 DSC_people_army_junduizf: "军队整风"
 DSC_people_army_junduizf_desc: ""
 
-DSC_people_army_qunzhonglx: "群众路线"
+DSC_people_army_qunzhonglx: "三大纪律八项注意"
 DSC_people_army_qunzhonglx_desc: ""
 
+DSC_people_army_rmdjd: "人民子弟兵"
+DSC_people_army_rmdjd_desc: "人民的军队"
+ 
 
 DSC_people_armyI: "建立人民解放军"
 DSC_people_armyI_desc: "虽然我国当前不止一个“人民解放军”，但我们的军队才是全中国唯一担负的起这一称号的军队，因为我们真正代表了人民的利益"
-DSC_people_armyII: "党指挥枪"
+DSC_people_armyII: "支部建在连上"
 DSC_people_armyII_desc: "党作为无产阶级的先锋队，应当完全的掌握无产阶级的武装力量"
 
 
 CHI_zhengwei: "政治委员"
-#CHI_zhengwei_desc: "政治委员"
 
 
 DSC_people_armyIII: "劝降敌军"
@@ -743,7 +745,7 @@ DSC_people_armyIII_desc: ""
 DSC_people_army_minbing: "动员赤卫队"
 DSC_people_army_minbing_desc: ""
 
-DSC_people_army_sandajilv: "贯彻三大纪律"
+DSC_people_army_sandajilv: "人民战争"
 DSC_people_army_sandajilv_desc: ""
 
 DSC_people_army_jdmzzy: "军队民主主义"
@@ -752,10 +754,13 @@ DSC_people_army_jdmzzy_desc: ""
 DSC_people_army_zzwy: "政治委员"
 DSC_people_army_zzwy_desc: "我们要贯彻党指挥枪，就不得不"
 
+DSC_people_army_dangjun: "党指挥枪"
+DSC_people_army_dangjun_desc: "党军"
+
 DSC_people_army_shibweiyuanhui: "士兵委员会"
 DSC_people_army_shibweiyuanhui_desc: ""
 
-DSC_DSC_civ_end: "川渝革命胜利"
+DSC_DSC_civ_end: "人民的根基"
 DSC_DSC_civ_end_desc: "川渝革命胜利"
 
 HKG_people_army:"建立红军"
