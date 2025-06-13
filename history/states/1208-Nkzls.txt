@@ -1,13 +1,10 @@
-state = {
-	id = 1205
-	name = "STATE_1205"
-	state_category = state_01
+state={
+	id=1208
+	name="STATE_1208"
+	state_category = state_00
 	resources = {
-		chromium = 2
-		oil = 3
-	}
-	provinces = {
-		1766 5087 
+		chromium = 1
+		oil = 2
 	}
 	history = {
 		owner = CHI
@@ -15,7 +12,7 @@ state = {
 			infrastructure = 0
 			internet_station = 0
 			industrial_complex = 1
-			arms_factory = 1
+			arms_factory = 0
 			air_base = 0
 			fuel_silo = 0
 		}
@@ -25,7 +22,10 @@ state = {
 		add_core_of = TAI
 		add_core_of = ETK
 	}
-	manpower = 310000#资料数据
-	buildings_max_level_factor = 1.000
-	local_supplies = 0.005
+	provinces={
+		4828 12119 
+	}
+	manpower=140000#资料数据
+	buildings_max_level_factor=1.00
+	local_supplies=0.005
 }

@@ -161,7 +161,7 @@ country_event = {
 		custom_effect_tooltip = chuanyu_change_effect_tt
 
 set_capital = {
-	state = 1216
+	state = 1218
 }
 			start_civil_war = {
 
@@ -174,7 +174,7 @@ set_capital = {
 
 
 					states_filter = {
-							NOT = { state=1216 }
+							NOT = { state=1218 }
 
 						}
 
@@ -257,7 +257,7 @@ create_country_leader = {
 DSC={
 
 	set_capital = {
-		state = 1216
+		state = 1218
 	}
 
 
@@ -854,7 +854,7 @@ Militia_Bat = { x = 1 y = 3 }
 			compare = equals
 		}}
 		random_owned_controlled_state = {
-			prioritize = { 1216 }
+			prioritize = { 1218 }
 			create_unit = {
 				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 11865
@@ -877,7 +877,7 @@ Militia_Bat = { x = 1 y = 3 }
 		}
 		
 		random_owned_controlled_state = {
-			prioritize = { 1216 }
+			prioritize = { 1218 }
 			create_unit = {
 				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 11865
@@ -905,7 +905,7 @@ Militia_Bat = { x = 1 y = 3 }
 	}
 	
 	random_owned_controlled_state = {
-		prioritize = { 1216 }
+		prioritize = { 1218 }
 		create_unit = {
 			division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 			prioritize_location = 11865
@@ -963,6 +963,10 @@ set_country_flag = neizhanzhong
 			set_variable = { party_pop_array^5 = 0.40 } #social_democracy	
 			startup_politics = yes
 			set_country_flag = qygc		
+
+			add_ideas = bcjzdjd
+add_ideas = junfazuofeng
+
 			clr_country_flag = gmxingdong						
 				mark_focus_tree_layout_dirty = yes
 			}				

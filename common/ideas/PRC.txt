@@ -1466,6 +1466,43 @@ power_balance_weekly = 0.003
 			}
 		}
 
+
+
+junfazuofeng={
+picture = communism7
+allowed = {
+}
+
+
+modifier = {
+	army_attack_factor=-0.1
+	army_defend_factor=-0.1
+}
+}
+
+
+
+		bcjzdjd={
+			picture = communism7
+			allowed = {
+			}
+			
+ 	
+			modifier = {
+army_attack_factor=-0.1
+army_defend_factor=-0.1
+			}
+
+		}
+
+
+
+
+
+
+
+
+
 		CHI_zhengwei = {
 			picture = idea_marxist_military
 			allowed = {

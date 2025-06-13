@@ -12,9 +12,12 @@ state = {
 
 	history = {
 		owner = CHI
+
+
 		victory_points = {
 			3167 10
 		}
+		
 
 		buildings = {
 			infrastructure = 3
@@ -31,7 +34,7 @@ state = {
 		add_core_of = ETK
 	}
 
-	provinces={
-	3167
-	}
+	provinces = {
+		 3167
+		}
 }

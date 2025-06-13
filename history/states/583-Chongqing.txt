@@ -1,6 +1,7 @@
 state = {
 	id = 583
 	name = "STATE_583"
+
 	manpower = 19324138
 	buildings_max_level_factor = 1.000
 	state_category = state_08
@@ -24,7 +25,6 @@ state = {
 		victory_points = {
 			4141 1
 		}
-
 
 		victory_points = {
 			14035 1

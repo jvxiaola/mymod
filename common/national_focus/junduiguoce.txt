@@ -292,27 +292,7 @@ relative_position_id = DSC_people_armyI
 
 	}
 	completion_reward = {
-		if={
-
-			limit = {
-				has_idea = people_army1
-			}
-			remove_ideas = people_army1
-			add_idea = people_army2 
-		}
-
-		else_if = {
-			limit = { 	has_idea = people_army2}
-			remove_ideas = people_army2
-			add_idea = people_army3
-
-		}
-		else_if = {
-			limit = { 	has_idea = people_army3}
-			remove_ideas = people_army3
-			add_idea = people_army4
-
-		}
+	remove_ideas = junfazuofeng
 
 
 
@@ -357,24 +337,24 @@ relative_position_id = DSC_people_armyI
 				has_idea = people_army1
 			}
 			remove_ideas = people_army1
-			add_idea = people_army2 
+			add_ideas = people_army2 
 		}
 
 		else_if = {
 			limit = { 	has_idea = people_army2}
 			remove_ideas = people_army2
-			add_idea = people_army3
+			add_ideas = people_army3
 
 		}
 		else_if = {
 			limit = { 	has_idea = people_army3}
 			remove_ideas = people_army3
-			add_idea = people_army4
+			add_ideas = people_army4
 
 		}
 
 
-
+add_army_experience =25
 
 	}
 }
@@ -411,7 +391,7 @@ relative_position_id = DSC_people_armyI
 
 	}
 	completion_reward = {
-		add_military_experience = 25
+		add_army_experience =25
 	}
 }
 
@@ -475,7 +455,8 @@ relative_position_id = DSC_people_armyI
 
 	}
 	completion_reward = {
-		add_military_experience = 25
+		add_army_experience =25
+		remove_ideas = bcjzdjd
 	}
 }
 
@@ -511,7 +492,7 @@ focus=DSC_people_army_zhbd
 		add_military_experience = 25
 	}
 	completion_reward = {
-#add_
+		add_army_experience =25
 	}
 }
 
@@ -550,23 +531,24 @@ relative_position_id = DSC_people_armyI
 				has_idea = people_army1
 			}
 			remove_ideas = people_army1
-			add_idea = people_army2 
+			add_ideas = people_army2 
 		}
 
 		else_if = {
 			limit = { 	has_idea = people_army2}
 			remove_ideas = people_army2
-			add_idea = people_army3
+			add_ideas = people_army3
 
 		}
 		else_if = {
 			limit = { 	has_idea = people_army3}
 			remove_ideas = people_army3
-			add_idea = people_army4
+			add_ideas = people_army4
 
 		}
 
-		add_military_experience = 25
+
+		add_army_experience = 25
 	}
 }
 

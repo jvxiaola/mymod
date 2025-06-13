@@ -1,36 +1,31 @@
 state = {
-	id = 992
-	name = "STATE_992"
+	id = 1205
+	name = "STATE_1205"
 
 	history = {
 		owner = TUR
 		victory_points = {
-			9893 11
+			9823 4
 		}
 		victory_points = {
-			3889 1
+			9912 1
+		}
+		victory_points = {
+			11759 1
 		}
 		buildings = {
 			infrastructure = 1
 			internet_station = 0
 			industrial_complex = 1
-			air_base = 4
 		}
 		add_core_of = TUR
-		2017.1.1 = {
-			add_manpower = 715627
-			buildings = {
-				internet_station = 3
-				industrial_complex = 2
-				offices = 1
-			}
-		}
+		add_core_of = PKK
 	}
 
 	provinces = {
-		1109 3889 6956 9893
+		797 7620 9823 9912 11759 11871
 	}
-	manpower = 2199274
+	manpower = 2156158
 	buildings_max_level_factor = 1.000
 	state_category = state_03
 }
