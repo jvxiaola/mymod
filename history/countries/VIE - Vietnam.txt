@@ -571,7 +571,7 @@
 		name = "Trân Đúc Luong"
 		picture = "Tran_Duc_Luong.dds"
 		expire = "2012.1.1"
-		ideology = Neutral_Communism
+		ideology = Reform_Communism
 		traits = {
 			neutrality_Neutral_Communism
 		}
