@@ -5739,7 +5739,7 @@ initialize_state_provincial_images = {
 			province = { id = 3167 }
 		}
 	}
-	1205 = {#南克孜勒苏
+	1207 = {#南克孜勒苏
 		add_province_modifier = {
 			static_modifiers = { terrain_kashgar }
 			province = { id = 1766 }

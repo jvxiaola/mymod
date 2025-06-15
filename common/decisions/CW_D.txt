@@ -159,8 +159,8 @@ CHI_orgnize_attack_xin_terrist_KAZ = {
 		}
 	}
 	remove_effect = {
-		1205 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 10 } }
-		1206 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 10 } }
+		1207 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 10 } }
+		1209 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 10 } }
 		1214 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 5 } }
 		1211 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 5 } }
 		add_days_mission_timeout  = {

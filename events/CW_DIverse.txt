@@ -117,17 +117,17 @@ country_event = {
 		hidden_effect = {
 			591 = { transfer_state_to = XIN }
 			592 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack2 } }
-			1205 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack5 } }
-			1206 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack5 } }
-			1207 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack4 } }
-			1208 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack1 } }
-			1209 = { transfer_state_to = XIN }
-			1210 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack3} }
-			1211 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack5} }
-			1212 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack2} }
-			1213 = { transfer_state_to = XIN }
-			1214 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack1} }
+			1207 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack5 } }
+			1208 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack5 } }
+			1209 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack4 } }
+			1210 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack1 } }
+			1211 = { transfer_state_to = XIN }
+			1212 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack3} }
+			1213 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack5} }
+			1214 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack2} }
 			1215 = { transfer_state_to = XIN }
+			1216 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack1} }
+			1217 = { transfer_state_to = XIN }
 			XIN = {
 				create_country_leader = {
 					name = "邱衍汉"
