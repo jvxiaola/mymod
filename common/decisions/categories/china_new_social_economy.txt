@@ -53,7 +53,7 @@ China_edd_category = {
 		OR = { 
 			original_tag = CHI 
 			tag = DSC
-			tag = HkG
+			tag = HKG
 	}
 }
 		icon = GFX_decision_CUB_train_chi
