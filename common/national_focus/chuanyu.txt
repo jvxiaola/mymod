@@ -2397,19 +2397,10 @@ completion_reward = {
 
 			CHI = {
 
+transfer_state = 526
 
 
-				annex_country = {
-					target = DSC
-					transfer_troops = yes
-				}
-							change_tag_from = ROOT
-
-
-
-
-
-
+							
 
 
 						}
@@ -2428,7 +2419,7 @@ completion_reward = {
 
 
 				
-				country_event = {id=prc1.300 }
+				country_event = {id=prc1.211 }
 
 
 		}
