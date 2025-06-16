@@ -5745,7 +5745,7 @@ initialize_state_provincial_images = {
 			province = { id = 1766 }
 		}
 	}
-	1212 = {#巴音郭勒
+	1214 = {#巴音郭勒
 		add_province_modifier = {
 			static_modifiers = { terrain_korla }
 			province = { id = 7792 }
@@ -5807,7 +5807,7 @@ initialize_state_provincial_images = {
 			province = { id = 1069 }
 		}
 	}
-	1219 = { #汕头
+	1221 = { #汕头
 		add_province_modifier = {
 			static_modifiers = { terrain_shantou }
 			province = { id = 9978 }

@@ -141,7 +141,7 @@ CHI_orgnize_attack_xin_terrist_KAZ = {
 	days_re_enable = 7
 	days_remove = 23
 	highlight_states = {
-        highlight_state_targets = { state = 1205 state = 1206 state = 1214 state = 1211 }
+        highlight_state_targets = { state = 1207 state = 1208 state = 1214 state = 1213 }
     }
 	custom_cost_text = command_power_more_than_40
 	custom_cost_trigger = {
@@ -232,7 +232,7 @@ CHI_orgnize_attack_xin_terrist_TAJ = {
 	}
 	remove_effect = {
 		722 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 10 } }
-		1205 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 10 } }
+		1207 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 10 } }
 		add_days_mission_timeout  = {
 			mission = CHI_XIN_Terrorist_infiltration
 			days = 10

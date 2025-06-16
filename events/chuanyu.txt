@@ -439,17 +439,17 @@ Militia_Bat = { x = 1 y = 3 }
 
 
 		DSC={
-			transfer_state = 1217
+			transfer_state = 1219
 		}
 
 
-		1217={
+		1219={
 			add_dynamic_modifier = {
 				 modifier = CW_youji3
 				}
 		}
 		random_owned_controlled_state = {
-			prioritize = { 1217}
+			prioritize = { 1219}
 			create_unit = {
 				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 15842
@@ -471,7 +471,7 @@ Militia_Bat = { x = 1 y = 3 }
 				has_cosmetic_tag = DSC_JGQ
 			}
 
-			transfer_state = 1217
+			transfer_state = 1219
 
 		}
 		#标记
@@ -501,7 +501,7 @@ Militia_Bat = { x = 1 y = 3 }
 
 
 		DSC={
-			transfer_state = 1217
+			transfer_state = 1219
 		}
 
 
@@ -511,7 +511,7 @@ Militia_Bat = { x = 1 y = 3 }
 				}
 		}
 		random_owned_controlled_state = {
-			prioritize = { 1217}
+			prioritize = { 1219}
 			create_unit = {
 				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 15842
@@ -528,7 +528,7 @@ Militia_Bat = { x = 1 y = 3 }
 			limit={
 				has_cosmetic_tag = DSC_JGQ
 			}
-			transfer_state = 1217
+			transfer_state = 1219
 
 		}
 
@@ -547,7 +547,7 @@ Militia_Bat = { x = 1 y = 3 }
 			}	
 		}
 		#标记
-		1217={
+		1219={
 			add_dynamic_modifier = {
 				 modifier = CW_youji 
 				}
@@ -825,7 +825,7 @@ Militia_Bat = { x = 1 y = 3 }
 
 
 	random_owned_controlled_state = {
-		prioritize = { 1216}
+		prioritize = { 1218}
 		create_unit = {
 			division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 			prioritize_location = 6999
