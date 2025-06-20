@@ -12,7 +12,7 @@
 	
 		id = XIN_troubled_times
 		icon = turk_skulls_guns_fire
-		x = 1
+		x = -5
 		y = 1
 		cost = 0.1
 		offset = {

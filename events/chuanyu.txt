@@ -966,7 +966,7 @@ set_country_flag = neizhanzhong
 
 			add_ideas = bcjzdjd
 add_ideas = junfazuofeng
-
+remove_idea = civil_war_disorganised_military_1
 			clr_country_flag = gmxingdong						
 				mark_focus_tree_layout_dirty = yes
 			}				

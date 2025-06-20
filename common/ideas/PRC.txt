@@ -1469,7 +1469,7 @@ power_balance_weekly = 0.003
 
 
 junfazuofeng={
-picture = communism7
+picture = GFX_ideology_Nat_Autocracy
 allowed = {
 }
 

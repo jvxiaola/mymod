@@ -61,6 +61,10 @@ DSC={
 		}
 		
 	}
+
+
+
+
 	on_startup = {
 		  effect = { # NEVER FORGET! Important to include this line to distinguish it from random_events = { ... }
 				every_country = {

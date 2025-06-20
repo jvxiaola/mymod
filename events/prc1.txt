@@ -226,8 +226,8 @@ hidden = yes
 is_triggered_only = yes
 fire_only_once = yes
 	immediate = {
-
-
+		country_event={id=prc1.7497}
+set_country_flag = clear_military_focus
 }
 	option = {
 		name = prc1.211.o1
@@ -242,15 +242,74 @@ fire_only_once = yes
 			CHI={
 				change_tag_from = DSC
 			}
-				country_event={id = prc1.300}
-			
+				country_event={id = prc1.300 days=1}
+			country_event={id=prc1.7497}
 
+
+
+
+CHI={remove_ideas =  CHI_party_before_guns
+remove_ideas =  people_army1
+remove_ideas =  people_army2
+remove_ideas =  people_army3
+remove_ideas =  people_army4
+remove_ideas =  red_weidui1
+}
 		
+
+
+
+
+
+
+				if={limit={DSC={has_country_flag = qygc}}CHI={set_country_flag = qygc}}
+				if={limit={DSC={has_idea=junfazuofeng}}CHI={add_ideas = junfazuofeng}}
+				if={limit={DSC={has_idea=people_army1}}CHI={add_ideas = people_army1}}
+				if={limit={DSC={has_idea=people_army2}}CHI={add_ideas = people_army2}}
+				if={limit={DSC={has_idea=people_army3}}CHI={add_ideas = people_army3}}
+				if={limit={DSC={has_idea=people_army4}}CHI={add_ideas = people_army4}}
+				if={limit={DSC={has_idea=CHI_zhengwei }}CHI={add_ideas = CHI_zhengwei }}
+				if={limit={DSC={has_idea=CHI_party_before_guns}}CHI={add_ideas = CHI_party_before_guns}}
+				
+					
+				
+
 	
 	}
 
 	
 }
+country_event = {
+	id = prc1.7497
+	title = prc1.7497.t
+	desc = prc1.7497.d
+hidden = yes
+is_triggered_only = yes
+
+	immediate = {
+		cancel_national_focus = yes
+
+}
+	option = {
+		name = prc1.7497.o1
+
+	
+
+		ai_chance = {
+			factor = 50
+		}
+
+
+
+					
+				
+
+	
+	}
+
+	
+}
+
 country_event = {
 	id = prc1.300
 	title = prc1.300.t
@@ -259,8 +318,16 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 immediate = {
-
+	
+		cancel_national_focus = yes
+	
+clr_country_flag = clear_military_focus
 CHI={
+	country_event={id=prc1.7497}
+annex_country = {
+	target = DSC
+	transfer_troops = yes
+}
 
 		create_country_leader = {
 			name = "毛远新"
@@ -284,18 +351,8 @@ CHI={
 		add_to_array = { ruling_party = 4 } #social_democracy								
 		set_variable = { party_pop_array^5 = 0.40 } #social_democracy	
 		startup_politics = yes
+#云泽最新
 
-if={
-limit={
-	DSC={
-		has_country_flag = qygc
-	}
-}
-
-CHI={
-	set_country_flag = qygc
-}
-}
 
 
 
@@ -305,7 +362,9 @@ set_cosmetic_tag = DSC_GMG
 remove_ideas = Militarical_economy_remain
 remove_ideas = CHI_jihuashengyu
 
-
+DSC={
+	country_event = {id=prc1.7497}
+}
 uncomplete_national_focus = {
 	focus = CHI_Chinese_Megaprojects
 	uncomplete_children = yes
@@ -317,6 +376,7 @@ uncomplete_national_focus = {
 }
 		mark_focus_tree_layout_dirty = yes
 
+		 
 	}
 
 
@@ -5609,7 +5669,9 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = CHI
+		#云泽暂时放弃
+
+		tag = CHI123
 		has_government = communism
 		date > 2012.6.1
 		date < 2012.12.1
@@ -7666,7 +7728,7 @@ value = 0.1
 			id = prc1.167
 			title = prc1.167.t
 			desc = prc1.167.d
-			#CW							
+
 			is_triggered_only = yes
 			
 			trigger = {
@@ -7692,4 +7754,90 @@ value = 0.1
 			}
 
 
+			
+
+
+			country_event = {
+				id = prc1.12345
+				title = prc1.12345.t
+				desc = prc1.12345.d
+				#CW							
+				is_triggered_only = yes
+				hidden = yes
+immediate = {
+
+	add_army_experience=25
+}
+			
+			
+		
+			option = { 
+				name = prc1.12345.a.o1	
+
+		
+			
+				ai_chance = { factor = 95 }
+			
+				}
+
+				}
+
+
+				country_event = {
+					id = prc1.123456
+					title = prc1.123456.t
+					desc = prc1.123456.d
+					hidden = yes						
+					is_triggered_only = yes
+					
+	immediate = {
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1000
+		}
+		add_equipment_to_stockpile = {
+			type = light_tank_equipment
+			amount = 150
+		}
 	
+	}
+				
+				
+			
+				option = { 
+					name = prc1.1234567.a.o1	
+	
+
+					ai_chance = { factor = 95 }
+				
+					}
+	
+					}
+					country_event = {
+						id = prc1.1234567
+						title = prc1.123456.t
+						desc = prc1.123456.d
+						hidden = yes						
+						is_triggered_only = yes
+						
+		immediate = {
+			every_owned_state = {
+				remove_dynamic_modifier = { modifier = extrameal_islam_attack1 } remove_dynamic_modifier = { modifier = extrameal_islam_attack2 }
+				remove_dynamic_modifier = { modifier = extrameal_islam_attack3 } remove_dynamic_modifier = { modifier = extrameal_islam_attack4 } 
+				remove_dynamic_modifier = { modifier = extrameal_islam_attack5 }
+			}
+		
+		}
+					
+					
+				
+					option = { 
+						name = prc1.1234567.a.o1	
+		
+	
+						ai_chance = { factor = 95 }
+					
+						}
+		
+						}
+					

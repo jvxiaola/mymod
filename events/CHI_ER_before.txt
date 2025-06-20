@@ -108,6 +108,7 @@ country_event = {
 		set_country_flag = CHI_no_shanghaicommune
 		hidden_effect = {
 			DSC = {
+
 				inherit_technology = CHI
 				set_variable = { gdp_capita = 90.415 }
 				set_variable = { gdp_per_capita = 3.415 }
@@ -322,6 +323,7 @@ country_event = {
 				remove_core_of = CHI
 			}
 			inherit_technology = CHI
+
 			give_military_access = CHI
 		}
 	}

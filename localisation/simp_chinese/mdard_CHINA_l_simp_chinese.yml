@@ -712,7 +712,7 @@ DSC_people_army_wuqizengjia: "补充武器"
 DSC_people_army_wuqizengjia_desc: ""
 
 DSC_people_army_jsjj: "军事建军"
-DSC_people_army_jsjj_desc: ""
+DSC_people_army_jsjj_desc: "没有一支人民的军队，就没有人民的一切"
 
 DSC_people_army_sxjj: "思想建军"
 DSC_people_army_sxjj_desc: ""
@@ -745,11 +745,11 @@ DSC_people_armyIII_desc: ""
 DSC_people_army_minbing: "动员赤卫队"
 DSC_people_army_minbing_desc: ""
 
-DSC_people_army_sandajilv: "人民战争"
-DSC_people_army_sandajilv_desc: ""
+DSC_people_army_nalodnayavoina: "人民战争"
+DSC_people_army_nalodnayavoina_desc: "战争不能只靠军队。我们将发动亿万人民，构建全民皆兵的抗战网络，让敌人在人民战争的汪洋大海中灭亡。"
 
 DSC_people_army_jdmzzy: "军队民主主义"
-DSC_people_army_jdmzzy_desc: ""
+DSC_people_army_jdmzzy_desc: "实行军队内的民主主义。官长不打士兵，官兵待遇平等，士兵有开会说话的自由，废除烦琐的礼节，经济公开。士兵管理伙食"
 
 DSC_people_army_zzwy: "政治委员"
 DSC_people_army_zzwy_desc: "我们要贯彻党指挥枪，就不得不"
@@ -1721,10 +1721,16 @@ CHI_Civil_war_decisions_desc: "政治间的激烈分歧终于延伸至军事，�
 
 
 CHI_anfuguanliao: "安抚官僚"
+CHI_ysxtstxc: "宣传左派意识形态"
+CHI_dayajundui: "限制军队经商"
 
 DSC_MAOPAIJUECE: "星星之火"
 DSC_MAOPAIJUECE_desc: "红旗卷起农奴戟，黑手高悬霸主鞭。为有牺牲多壮志，敢教日月换新天\n\n  川渝军区军队渗透程度：[DSC_shengtouchengdui]\n  武器足以武装的革命民兵部队：[DSC_wuzhuangchengdu]\n  革命人员：[DSC_rmjd_houbeijun_text] \n  [DSC_gedi_shengtou_houbeijun_text]"
 DSC_maopaizhenghe: "发动革命"
+
+bcjzdjd: "建制混乱的军队"
+junfazuofeng: "军阀作风"
+
 
 
 CHI_pre_civ_decitions: "动荡的局势"

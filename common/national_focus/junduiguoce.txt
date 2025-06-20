@@ -1,8 +1,7 @@
 
 
 
-
-shared_focus = {
+joint_focus = {
 
 
 	id = DSC_DSC_civ_start
@@ -16,7 +15,9 @@ shared_focus = {
 	prerequisite = {
 
 	 }
-
+joint_trigger = {
+	has_country_flag = qygc
+}
 			
 	 allow_branch = {
 		has_country_flag = qygc
@@ -29,7 +30,9 @@ shared_focus = {
 	bypass = {
 
 	}
+available = {
 
+}
 	offset = {
 		x = 10
 		trigger = {
@@ -84,7 +87,7 @@ add_political_power = 100
 
 
 
-shared_focus = {
+joint_focus = {
 
 	id = DSC_people_armyI
 	icon = peoples_liberation_army
@@ -97,9 +100,13 @@ shared_focus = {
 	prerequisite = {
 		focus=DSC_DSC_civ_start
 	 }
-	 allow_branch = {
+	 joint_trigger = {
 		has_country_flag = qygc
-	 }
+	}
+				
+	available = {
+
+	}
 
 	ai_will_do = {
 		factor = 10
@@ -127,13 +134,18 @@ shared_focus = {
 			}
 			recalculate_party = yes
 		}
+if={
+	limit = {
+		tag = ROOT
+	}
+	add_ideas = people_army1
+}
 
-add_ideas = people_army1
 unlock_decision_tooltip = CHI_CHI_NEW_people_war1
 	}
 }
 
-shared_focus = {
+joint_focus = {
 	id = DSC_people_army_zzjj
 	icon = unitary_system
 	x = 0
@@ -146,7 +158,9 @@ relative_position_id = DSC_people_armyI
 		focus=DSC_people_armyI
 	 }
 
-
+	 joint_trigger = {
+		has_country_flag = qygc
+	}
 	ai_will_do = {
 		factor = 10
 	}
@@ -154,6 +168,12 @@ relative_position_id = DSC_people_armyI
 
 	}
 
+	cancel = {
+		has_country_flag = clear_military_joint_focus
+	}
+	available = {
+
+	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -165,7 +185,7 @@ add_political_power = 100
 	}
 }
 
-shared_focus = {
+joint_focus = {
 	id = DSC_people_army_sxjj
 	icon = regularized_army
 	x = -4
@@ -177,7 +197,9 @@ relative_position_id = DSC_people_armyI
 	prerequisite = {
 		focus=DSC_people_armyI
 	 }
-
+	 joint_trigger = {
+		has_country_flag = qygc
+	}
 
 	ai_will_do = {
 		factor = 10
@@ -185,7 +207,9 @@ relative_position_id = DSC_people_armyI
 	bypass = {
 
 	}
+	available = {
 
+		}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -193,12 +217,12 @@ relative_position_id = DSC_people_armyI
 
 	}
 	completion_reward = {
-#add_
+add_political_power = 100
 	}
 }
 
 
-shared_focus = {
+joint_focus = {
 	id = DSC_people_army_sixiangjy
 	icon = read_news
 	x = -5
@@ -211,14 +235,18 @@ relative_position_id = DSC_people_armyI
 		focus=DSC_people_army_sxjj
 	 }
 
-
+	 joint_trigger = {
+		has_country_flag = qygc
+	}
 	ai_will_do = {
 		factor = 10
 	}
 	bypass = {
 
 	}
+	available = {
 
+	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -229,8 +257,7 @@ relative_position_id = DSC_people_armyI
 #add_
 	}
 }
-
-shared_focus = {
+joint_focus = {
 	id = DSC_people_army_junduizf
 	icon = Control_army
 	x = -3
@@ -242,7 +269,9 @@ relative_position_id = DSC_people_armyI
 	prerequisite = {
 		focus=DSC_people_army_sxjj
 	 }
+	 available = {
 
+	}
 
 	ai_will_do = {
 		factor = 10
@@ -250,7 +279,9 @@ relative_position_id = DSC_people_armyI
 	bypass = {
 
 	}
-
+	joint_trigger = {
+		has_country_flag = qygc
+	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -262,7 +293,7 @@ relative_position_id = DSC_people_armyI
 	}
 }
 
-shared_focus = {
+joint_focus = {
 	id = DSC_people_army_qunzhonglx
 	icon = training_red_guards
 	x = -4
@@ -274,7 +305,9 @@ relative_position_id = DSC_people_armyI
 	prerequisite = {
 		focus=DSC_people_army_sixiangjy
 	 }
-
+	 joint_trigger = {
+		has_country_flag = qygc
+	}
 	 prerequisite = {
 		focus=DSC_people_army_junduizf
 	 }
@@ -292,7 +325,13 @@ relative_position_id = DSC_people_armyI
 
 	}
 	completion_reward = {
-	remove_ideas = junfazuofeng
+		if={
+			limit={
+				tag=ROOT
+			}
+				remove_ideas = junfazuofeng
+		}
+
 
 
 
@@ -305,7 +344,7 @@ relative_position_id = DSC_people_armyI
 
 
 
-shared_focus = {
+joint_focus = {
 	id = DSC_people_army_rmdjd
 	icon = serve_the_people
 	x = -4
@@ -323,7 +362,9 @@ relative_position_id = DSC_people_armyI
 	bypass = {
 
 	}
-
+	joint_trigger = {
+		has_country_flag = qygc
+	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -335,19 +376,24 @@ relative_position_id = DSC_people_armyI
 
 			limit = {
 				has_idea = people_army1
+						tag=ROOT
 			}
 			remove_ideas = people_army1
 			add_ideas = people_army2 
 		}
 
 		else_if = {
-			limit = { 	has_idea = people_army2}
+			limit = { 	has_idea = people_army2
+		tag=ROOT
+		}
 			remove_ideas = people_army2
 			add_ideas = people_army3
 
 		}
 		else_if = {
-			limit = { 	has_idea = people_army3}
+			limit = { 	has_idea = people_army3
+				tag=ROOT
+		}
 			remove_ideas = people_army3
 			add_ideas = people_army4
 
@@ -363,7 +409,7 @@ add_army_experience =25
 
 
 
-shared_focus = {
+joint_focus = {
 	id = DSC_people_army_jsjj
 	icon = PRC_desperate_soldiers
 	x = 4
@@ -383,19 +429,31 @@ relative_position_id = DSC_people_armyI
 	bypass = {
 
 	}
-
+	cancel_if_invalid = yes
+	joint_trigger = {
+		has_country_flag = qygc
+	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
 	available = {
 
 	}
-	completion_reward = {
-		add_army_experience =25
-	}
+
+		completion_reward = {
+			custom_effect_tooltip = "获得25陆军经验"
+			hidden_effect = {
+				ROOT={
+					country_event = {id=prc1.12345}
+				}
+
+			}
+
+		}
+	
 }
 
-shared_focus = {
+joint_focus = {
 	id = DSC_people_army_wuqizengjia
 	icon = PRC_equipment_for_soldiers
 	x = 3
@@ -415,7 +473,9 @@ relative_position_id = DSC_people_armyI
 	bypass = {
 
 	}
-
+	joint_trigger = {
+		has_country_flag = qygc
+	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -423,11 +483,20 @@ relative_position_id = DSC_people_armyI
 
 	}
 	completion_reward = {
-#add_
+					custom_effect_tooltip = "获得军备"
+		hidden_effect = {
+
+			ROOT={
+
+			
+			country_event = {id=prc1.123456}
+		}
+
+
 	}
 }
-
-shared_focus = {
+}
+joint_focus = {
 	id = DSC_people_army_zhbd
 	icon = blood_theory
 	x = 5
@@ -440,14 +509,18 @@ relative_position_id = DSC_people_armyI
 		focus=DSC_people_army_jsjj
 	 }
 
+	 available = {
 
+	}
 	ai_will_do = {
 		factor = 10
 	}
 	bypass = {
 
 	}
-
+	joint_trigger = {
+		has_country_flag = qygc
+	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -455,13 +528,25 @@ relative_position_id = DSC_people_armyI
 
 	}
 	completion_reward = {
-		add_army_experience =25
+
+
+
+		if={
+			limit={
+						tag=ROOT
+
+			}
+
+
 		remove_ideas = bcjzdjd
+
+		}
+
 	}
 }
 
 
-shared_focus = {
+joint_focus = {
 	id = DSC_people_army_junshixy
 	icon = compulsory_higher_education
 	x = 4
@@ -484,19 +569,23 @@ focus=DSC_people_army_zhbd
 	bypass = {
 
 	}
-
+	joint_trigger = {
+		has_country_flag = qygc
+	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
 	available = {
-		add_military_experience = 25
+
 	}
 	completion_reward = {
-		add_army_experience =25
+ROOT={
+			add_army_experience =25
+		}
 	}
 }
 
-shared_focus = {
+joint_focus = {
 	id = DSC_people_army_czzzx
 	icon = JSR_guns
 	
@@ -517,7 +606,9 @@ relative_position_id = DSC_people_armyI
 	bypass = {
 
 	}
-
+	joint_trigger = {
+		has_country_flag = qygc
+	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -529,19 +620,25 @@ relative_position_id = DSC_people_armyI
 
 			limit = {
 				has_idea = people_army1
+				tag= ROOT
 			}
 			remove_ideas = people_army1
 			add_ideas = people_army2 
 		}
 
 		else_if = {
-			limit = { 	has_idea = people_army2}
+			limit = { 	has_idea = people_army2
+						tag= ROOT
+		}
 			remove_ideas = people_army2
 			add_ideas = people_army3
 
 		}
 		else_if = {
-			limit = { 	has_idea = people_army3}
+			limit = { 	has_idea = people_army3
+						tag= ROOT
+		
+		}
 			remove_ideas = people_army3
 			add_ideas = people_army4
 
@@ -553,7 +650,7 @@ relative_position_id = DSC_people_armyI
 }
 
 
-shared_focus = {
+joint_focus = {
 	id = DSC_people_armyII
 	icon = People_Guard
 	
@@ -574,7 +671,9 @@ relative_position_id = DSC_people_armyI
 	bypass = {
 
 	}
-
+	joint_trigger = {
+		has_country_flag = qygc
+	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -586,7 +685,7 @@ relative_position_id = DSC_people_armyI
 	}
 }
 
-shared_focus = {
+joint_focus = {
 	id = DSC_people_army_zzwy
 	icon = political_commissar
 	x = 1
@@ -606,7 +705,9 @@ relative_position_id = DSC_people_armyI
 	bypass = {
 
 	}
-
+	joint_trigger = {
+		has_country_flag = qygc
+	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -614,11 +715,19 @@ relative_position_id = DSC_people_armyI
 
 	}
 	completion_reward = {
-		add_ideas=CHI_zhengwei 
+						if={
+							limit={
+							
+							tag= ROOT
+					
+					}
+						add_ideas=CHI_zhengwei 
+					}
+
 	}
 }
-shared_focus = {
-	id = DSC_people_army_sandajilv
+joint_focus = {
+	id = DSC_people_army_nalodnayavoina
 	icon = Learn_from_Red_Army
 	x = 0
 
@@ -641,7 +750,9 @@ focus=DSC_people_army_rmdjd
 prerequisite = {
 focus=DSC_people_army_czzzx
 }
-
+joint_trigger = {
+	has_country_flag = qygc
+}
 
 	ai_will_do = {
 		factor = 10
@@ -661,20 +772,31 @@ focus=DSC_people_army_czzzx
 
 			limit = {
 				has_idea = people_army1
+				tag=ROOT
 			}
 			remove_ideas = people_army1
-			add_idea = people_army2 
+			add_ideas = people_army2 
+		}
+
+		else_if = {
+			limit = { 	has_idea = people_army2
+						tag=ROOT
+		}
+			remove_ideas = people_army2
+			add_ideas = people_army3
+
 		}
 		else_if = {
-			limit = { 	has_idea = people_army2}
-			remove_ideas = people_army2
-			add_idea = people_army3
+			limit = { 	has_idea = people_army3
+						tag=ROOT
+		}
+			remove_ideas = people_army3
+			add_ideas = people_army4
 
 		}
-
 	}
 }
-shared_focus = {
+joint_focus = {
 	id = DSC_people_army_jdmzzy
 	icon = Strengthening_Inner_Party_Democracy
 	x = -1
@@ -688,7 +810,9 @@ shared_focus = {
 		focus= DSC_people_army_zzjj
 	 }
 
-
+	 joint_trigger = {
+		has_country_flag = qygc
+	}
 
 
 relative_position_id = DSC_people_armyI
@@ -711,7 +835,7 @@ relative_position_id = DSC_people_armyI
  
 }
 
-shared_focus = {
+joint_focus = {
 	id = DSC_people_army_shibweiyuanhui
 	icon = Soldiers_Committee
 	x = -1
@@ -732,7 +856,9 @@ relative_position_id = DSC_people_armyI
 	bypass = {
 
 	}
-
+	joint_trigger = {
+		has_country_flag = qygc
+	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -746,7 +872,7 @@ relative_position_id = DSC_people_armyI
 
 
 
-shared_focus = {
+joint_focus = {
 	id = DSC_people_army_dangjun
 	icon = Unify_the_army
 	x = 0
@@ -754,6 +880,9 @@ shared_focus = {
 	y = 4
 
 	cost = 5
+	available = {
+
+	}
 
 	prerequisite = {
 		focus=DSC_people_army_shibweiyuanhui
@@ -770,7 +899,9 @@ relative_position_id = DSC_people_armyI
 	bypass = {
 
 	}
-
+	joint_trigger = {
+		has_country_flag = qygc
+	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -778,7 +909,13 @@ relative_position_id = DSC_people_armyI
 
 	}
 	completion_reward = {
-add_ideas = CHI_party_before_guns
+if={
+	limit={
+tag=ROOT
+	}
+	add_ideas = CHI_party_before_guns
+}
+
 	}
 }
 
@@ -786,7 +923,7 @@ add_ideas = CHI_party_before_guns
 
 
 
-shared_focus = {
+joint_focus = {
 	id = DSC_people_armyIII
 	icon = Chinese_militia
 	x = -2
@@ -807,7 +944,9 @@ relative_position_id = DSC_people_armyI
 	bypass = {
 
 	}
-
+	joint_trigger = {
+		has_country_flag = qygc
+	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -830,7 +969,7 @@ relative_position_id = DSC_people_armyI
 	}
 }
 
-shared_focus = {
+joint_focus = {
 	id = DSC_people_army_minbing
 	icon = encourage_militia
 	x = 2
@@ -851,7 +990,9 @@ relative_position_id = DSC_people_armyI
 	bypass = {
 
 	}
-
+	joint_trigger = {
+		has_country_flag = qygc
+	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -907,7 +1048,7 @@ Militia_Bat = { x = 1 y = 3 }
 }
 
 
-shared_focus = {
+joint_focus = {
 	id = DSC_DSC_civ_end
 	icon = consolidate_workers_dictatorship
 	x = 0
@@ -917,7 +1058,7 @@ shared_focus = {
 	cost = 5
 	
 	prerequisite = {
-		focus=DSC_people_army_sandajilv
+		focus=DSC_people_army_nalodnayavoina
 	}
 
 relative_position_id = DSC_people_armyI
@@ -928,17 +1069,19 @@ relative_position_id = DSC_people_armyI
 	bypass = {
 
 	}
-
+	joint_trigger = {
+		has_country_flag = qygc
+	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
 	available = {
-has_civil_war = no
+
 	}
 	completion_reward = {
 
 clr_country_flag = qygc
 
-mark_focus_tree_layout_dirty = yes
+mark_joint_focus_tree_layout_dirty = yes
 	}
 }	

@@ -4017,10 +4017,10 @@ initialize_state_provincial_images = {
 			static_modifiers = { terrain_tel_aviv }
 			province = { id = 4206 }
 		}
-		add_province_modifier = {
-			static_modifiers = { terrain_netanya }
-			province = { id = 1201 }
-		}
+		#add_province_modifier = {
+			#static_modifiers = { terrain_netanya }
+			#province = { id = 1201 }
+		#}
 	}
 	205 = {
 		add_province_modifier = {

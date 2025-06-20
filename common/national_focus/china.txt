@@ -7181,7 +7181,7 @@ remove_idea = CHI_dppgov1
 focus = {
 	id = CHI_party_split
 	icon = PRC_gov
-	x = 15
+	x = 10
 	y = 1
 	cost = 0
 	ai_will_do = {
@@ -7202,7 +7202,7 @@ focus = {
 focus = {
 	id = CHI_return_to_ideal_heart
 	icon = PRC_left_china_front
-	x = -5
+	x = -7
 	y = 1
 	cost = 1
 	prerequisite = { focus = CHI_party_split }
@@ -7244,9 +7244,79 @@ focus = {
 }
 
 focus = {
+	id = CHI_liwangkuanglan
+	icon = communist_china
+	x = 0
+	y = 1
+	cost = 1
+	prerequisite = { focus =  CHI_persist_reform}
+	relative_position_id = CHI_persist_reform
+	ai_will_do = { factor = 50 }				
+	bypass = { }
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+}
+
+focus = {
+	id = CHI_dajijizuopai
+	icon = communist_china
+	x = -1
+	y = 2
+	cost = 1
+	prerequisite = { focus =  CHI_liwangkuanglan}
+	relative_position_id = CHI_persist_reform
+	ai_will_do = { factor = 50 }				
+	bypass = { }
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+}
+
+focus = {
+	id = CHI_cujinggaigepai
+	icon = communist_china
+	x = 0
+	y = 3
+	cost = 1
+	prerequisite = { focus =  CHI_dajijizuopai}
+	prerequisite = {
+	focus=CHI_dajiyoupai}
+	relative_position_id = CHI_persist_reform
+	ai_will_do = { factor = 50 }				
+	bypass = { }
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+}
+
+
+focus = {
+	id = CHI_dajiyoupai
+	icon = communist_china
+	x = 1
+	y = 2
+	cost = 1
+	prerequisite = { focus =  CHI_liwangkuanglan}
+	relative_position_id = CHI_persist_reform
+	ai_will_do = { factor = 50 }				
+	bypass = { }
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+}
+focus = {
 	id = CHI_believers_of_freedom
 	icon = blue_democracy
-	x = 5
+	x = 7
 	y = 1
 	cost = 1
 	prerequisite = { focus = CHI_party_split }

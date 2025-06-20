@@ -2369,6 +2369,7 @@ completion_reward = {
 			increase_economic_growth = yes
 			add_research_slot = 2
 			hidden_effect = {
+
 			if = {
 				limit = {
 					has_idea = CHI_economic_recovery_end
@@ -2395,19 +2396,12 @@ completion_reward = {
 
 
 
-			CHI = {
-
-transfer_state = 526
-
-
-							
-
-
-						}
 
 
 
-
+CHI={
+	transfer_state = 526
+}
 
 
 
@@ -2419,10 +2413,7 @@ transfer_state = 526
 
 
 				
-				country_event = {id=prc1.211 }
-
-
-		}
+				country_event = {id=prc1.211 days = 1}
 	}
 
 }
@@ -2445,3 +2436,4 @@ transfer_state = 526
 
 
 
+}
