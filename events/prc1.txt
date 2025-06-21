@@ -2307,6 +2307,11 @@ add_to_array = { gov_coalition_array = 19 }
 				
 				#Switch to commie leader
 	set_cosmetic_tag = CHI_REB_SB
+	set_country_flag = neizhanzhihou
+	set_variable = {
+		var = CHI_neizhanfengxian
+		value = -10000000
+	}
 	create_country_leader = {
 		name = "邓力群"
 		picture = "Deng_liqun.dds"
@@ -7763,7 +7768,7 @@ value = 0.1
 				desc = prc1.12345.d
 				#CW							
 				is_triggered_only = yes
-				hidden = yes
+				hidden = no
 immediate = {
 
 	add_army_experience=25
@@ -7773,9 +7778,9 @@ immediate = {
 		
 			option = { 
 				name = prc1.12345.a.o1	
+				add_political_power = 100
+				army_experience=25
 
-		
-			
 				ai_chance = { factor = 95 }
 			
 				}

@@ -372,6 +372,7 @@ relative_position_id = DSC_people_armyI
 
 	}
 	completion_reward = {
+		ROOT={
 		if={
 
 			limit = {
@@ -400,8 +401,8 @@ relative_position_id = DSC_people_armyI
 		}
 
 
-add_army_experience =25
-
+army_experience =25
+	}
 	}
 }
 
@@ -441,13 +442,11 @@ relative_position_id = DSC_people_armyI
 	}
 
 		completion_reward = {
-			custom_effect_tooltip = "获得25陆军经验"
-			hidden_effect = {
-				ROOT={
-					country_event = {id=prc1.12345}
-				}
+ROOT={
+	army_experience=25
+}
 
-			}
+
 
 		}
 	
@@ -483,17 +482,33 @@ relative_position_id = DSC_people_armyI
 
 	}
 	completion_reward = {
-					custom_effect_tooltip = "获得军备"
-		hidden_effect = {
+
+
 
 			ROOT={
-
+				add_equipment_to_stockpile = {
+					type = infantry_weapons1 #1975
+					amount = 9000
+				}
 			
-			country_event = {id=prc1.123456}
+				add_equipment_to_stockpile = {
+					type = infantry_weapons3 #1995
+					amount = 750
+				}
+
+				add_equipment_to_stockpile = {
+					type = medium_tank_chassis_1
+					amount = 500
+				}
+				add_equipment_to_stockpile = {
+					type = command_control_equipment1 #C3
+					amount = 2500
+				}
+
 		}
 
 
-	}
+	
 }
 }
 joint_focus = {
@@ -579,8 +594,8 @@ focus=DSC_people_army_zhbd
 
 	}
 	completion_reward = {
-ROOT={
-			add_army_experience =25
+		ROOT={
+			army_experience=25
 		}
 	}
 }
@@ -1082,6 +1097,6 @@ relative_position_id = DSC_people_armyI
 
 clr_country_flag = qygc
 
-mark_joint_focus_tree_layout_dirty = yes
+mark_focus_tree_layout_dirty = yes
 	}
 }	

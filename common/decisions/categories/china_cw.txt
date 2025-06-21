@@ -22,6 +22,7 @@ CHI_pre_civ_decitions = {
 	priority = {base=19999}
 	visible_when_empty = yes
 	visible = {
+		NOT={has_country_flag=neizhanzhihou}
 
 		has_country_flag = cjsl
 	}

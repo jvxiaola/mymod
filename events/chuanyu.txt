@@ -966,7 +966,25 @@ set_country_flag = neizhanzhong
 
 			add_ideas = bcjzdjd
 add_ideas = junfazuofeng
-remove_idea = civil_war_disorganised_military_1
+
+
+set_country_flag = manual_civil_war_debuff_removal
+remove_ideas = civil_war_disorganised_military_1
+remove_ideas = civil_war_disorganised_military_2_military
+remove_ideas = civil_war_disorganised_military_2_production
+remove_ideas = civil_war_disorganised_military_2_experience
+remove_ideas = civil_war_disorganised_military_3_military
+remove_ideas = civil_war_disorganised_military_3_production
+remove_ideas = civil_war_disorganised_military_3_experience
+remove_ideas = civil_war_disorganised_military_4_military
+remove_ideas = civil_war_disorganised_military_4_production
+remove_ideas = civil_war_disorganised_military_4_experience
+remove_ideas = civil_war_disorganised_military_5_military
+remove_ideas = civil_war_disorganised_military_5_production
+remove_ideas = civil_war_disorganised_military_5_experience
+clr_country_flag = manual_civil_war_debuff_removal
+
+
 			clr_country_flag = gmxingdong						
 				mark_focus_tree_layout_dirty = yes
 			}				

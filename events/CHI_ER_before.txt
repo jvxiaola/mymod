@@ -48,12 +48,20 @@ country_event = {
 			expire = "3000.1.1"
 			ideology = Chinese_Socialism
 			traits = { political_vacuum }
-			load_focus_tree = CHI_urgent_focus
+			#load_focus_tree = CHI_urgent_focus
 		}
 		hidden_effect = {
 			country_event = { id = prc1.159 days = 25 }
-			country_event = { id = prc1.81 days = 30 } #左翼人士变动
-			country_event = { id = CHI_ER_start.2 days = 4 }
+			country_event = { id = prc1.81 days = 30 } #左翼人士变动\
+
+			
+if={
+	limit={
+		has_country_flag = the_left_wing_reform
+	}
+	country_event = { id = CHI_ER_start.2 days = 4 }
+}
+
 			#country_event = { id = prc1.57 days = 3 } 中超开赛
 			434 = { set_state_flag = CHI_Left_State }
 			548 = { set_state_flag = CHI_Left_State }
@@ -224,19 +232,19 @@ picture= GFX_maopaiyouxing
 	}
 }
 
-country_event = {
-	id = CHI_ER_BEFORE_guang.01
-	title = CHI_ER_BEFORE_guang.01.t
-	desc = CHI_ER_BEFORE_guang.01.d
-	#picture = GFX_event_pictures_CW_D_event1
-	trigger = { tag = CHI has_completed_focus = CHI_Three_represents }
-	fire_only_once = yes
+#country_event = {
+	# id = CHI_ER_BEFORE_guang.01
+	#title = CHI_ER_BEFORE_guang.01.t
+	#desc = CHI_ER_BEFORE_guang.01.d
+	##picture = GFX_event_pictures_CW_D_event1
+	#trigger = { tag = CHI has_completed_focus = CHI_Three_represents }
+	#fire_only_once = yes
 
-	option = {	
-		name = CHI_ER_BEFORE_guang.01.a
-		add_stability = -0.001
-	}
-}
+	#option = {	
+	#	name = CHI_ER_BEFORE_guang.01.a
+	#	add_stability = -0.001
+	#}
+#}
 
 
 

@@ -340,9 +340,28 @@ focus = {
 				check_variable = { CPC_Dengist < CPC_Left}
 				}
 			}
+
 			hidden_effect={	country_event = { id = CHI_ER_start.1 days = 15 } }
 		}
+		if = {
+			limit = {
 
+				check_variable = {  CPC_Right < CPC_Left}
+				
+			}
+							set_country_flag = the_left_wing_reform
+
+		}
+		if = {
+			limit = {
+NOT={
+check_variable = {  CPC_Right < CPC_Left}
+}
+
+				
+			}
+			set_country_flag = the_Right_wing_reform
+		}
 		mark_focus_tree_layout_dirty = yes
 
 
@@ -379,7 +398,27 @@ focus = {
 					check_variable = { CPC_Dengist < CPC_Left}
 					}
 				}
+				
 				hidden_effect={	country_event = { id = CHI_ER_start.1 days = 15 } }
+			}
+			if = {
+				limit = {
+
+					check_variable = {  CPC_Right < CPC_Left}
+					
+				}
+								set_country_flag = the_left_wing_reform
+
+			}
+			if = {
+				limit = {
+NOT={
+	check_variable = {  CPC_Right < CPC_Left}
+}
+
+					
+				}
+				set_country_flag = the_Right_wing_reform
 			}
 			set_temp_variable = { treasury_change = -50 }
 			modify_treasury_effect = yes
@@ -488,7 +527,9 @@ focus = {
 			AND={
 				has_country_flag = cjsl
 				NOT={has_country_flag=jingjizhuangtai}
+				NOT={has_country_flag=CPC_Rehabilitation_of_Zhao_Ziyang}
 			}
+
 
 		}
 		relative_position_id = CHI_kuodaneixu
@@ -503,6 +544,10 @@ focus = {
 		available_if_capitulated = no 
 		cancel_effect = { mark_focus_tree_layout_dirty = yes }
 		completion_reward = {
+
+
+	
+
 			set_variable = {
 				var = CHI_neizhanfengxian
 				value = 0.1
@@ -7202,13 +7247,16 @@ focus = {
 focus = {
 	id = CHI_return_to_ideal_heart
 	icon = PRC_left_china_front
-	x = -7
+	x = 0
 	y = 1
 	cost = 1
+	allow_branch = {
+		has_country_flag = the_left_wing_reform
+				has_country_flag=jingjizhuangtai
+	}
 	prerequisite = { focus = CHI_party_split }
 	relative_position_id = CHI_party_split
-	mutually_exclusive = { focus = CHI_persist_reform }
-	mutually_exclusive = { focus = CHI_believers_of_freedom }
+
 	ai_will_do = { factor = 50 }				
 	bypass = { }
 
@@ -7224,112 +7272,29 @@ focus = {
 	}
 }
 
-focus = {
-	id = CHI_persist_reform
-	icon = communist_china
-	x = 0
-	y = 1
-	cost = 1
-	prerequisite = { focus = CHI_party_split }
-	relative_position_id = CHI_party_split
-	mutually_exclusive = { focus = CHI_return_to_ideal_heart }
-	mutually_exclusive = { focus = CHI_believers_of_freedom }
-	ai_will_do = { factor = 50 }				
-	bypass = { }
 
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
-}
-
-focus = {
-	id = CHI_liwangkuanglan
-	icon = communist_china
-	x = 0
-	y = 1
-	cost = 1
-	prerequisite = { focus =  CHI_persist_reform}
-	relative_position_id = CHI_persist_reform
-	ai_will_do = { factor = 50 }				
-	bypass = { }
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
-}
-
-focus = {
-	id = CHI_dajijizuopai
-	icon = communist_china
-	x = -1
-	y = 2
-	cost = 1
-	prerequisite = { focus =  CHI_liwangkuanglan}
-	relative_position_id = CHI_persist_reform
-	ai_will_do = { factor = 50 }				
-	bypass = { }
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
-}
-
-focus = {
-	id = CHI_cujinggaigepai
-	icon = communist_china
-	x = 0
-	y = 3
-	cost = 1
-	prerequisite = { focus =  CHI_dajijizuopai}
-	prerequisite = {
-	focus=CHI_dajiyoupai}
-	relative_position_id = CHI_persist_reform
-	ai_will_do = { factor = 50 }				
-	bypass = { }
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
-}
-
-
-focus = {
-	id = CHI_dajiyoupai
-	icon = communist_china
-	x = 1
-	y = 2
-	cost = 1
-	prerequisite = { focus =  CHI_liwangkuanglan}
-	relative_position_id = CHI_persist_reform
-	ai_will_do = { factor = 50 }				
-	bypass = { }
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
-}
 focus = {
 	id = CHI_believers_of_freedom
 	icon = blue_democracy
-	x = 7
+	x = 0
 	y = 1
 	cost = 1
 	prerequisite = { focus = CHI_party_split }
 	relative_position_id = CHI_party_split
-	mutually_exclusive = { focus = CHI_return_to_ideal_heart }
-	mutually_exclusive = { focus = CHI_persist_reform }
+
 	ai_will_do = { factor = 50 }				
 	bypass = { }
-
+	allow_branch = {
+		has_country_flag = the_right_wing_reform
+				has_country_flag=jingjizhuangtai
+	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
-	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt }
+	completion_reward = { custom_effect_tooltip = CHI_party_split_effect_tt 
+country_event={id=prc1.96}
+clr_country_flag = jingjizhuangtai
+}
 }
 
 focus = {
@@ -7524,7 +7489,7 @@ focus = {
 }
 focus = {
 	id = CHI_great_raise_tax_of_proviences
-	icon = dollars_money
+	icon = Believe_in_market_economy
 	x = 0
 	y = 3
 	cost = 4
@@ -7537,6 +7502,24 @@ focus = {
 	continue_if_invalid = no
 	available_if_capitulated = no
 	completion_reward = { }
+}
+
+
+focus = {
+	id = CHI_new_born_of_cpp
+	icon = reaffirm_the_party_state
+	x = 0
+	y = 4
+	cost = 4
+	prerequisite = { focus = CHI_great_raise_tax_of_proviences }
+	relative_position_id = CHI_Military_issues
+	ai_will_do = { factor = 50 }				
+	bypass = { }
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	completion_reward = { country_event = { id = prc1.57 days = 3 }}
 }
 
 }
