@@ -1,57 +1,6 @@
 CHI_new_social_economy_decisions = {
 #调试决议
-CHI_new_social_economy_debug_decision = {
-	icon = GFX_decision_generic_construction
-	fire_only_once = yes
-	visible = {
-		is_debug = yes
-	}
-	available = { 
-		always = yes
-	}
-	cancel_trigger = {
-		always = no
-	}
-	complete_effect = {
 
-
-
-		CHI = { 
-			every_owned_state = {
-				add_core_of = DSC
-				remove_core_of = CHI
-				transfer_state_to = DSC 
-			} 
-		}
-		DSC = {
-			
-
-			create_country_leader = {
-				name = "毛远新"
-				picture = "Mao_Yuanxin.dds"
-				ideology = Chinese_Socialism_mao
-				traits = { }
-				}
-			start_politics_input = yes
-
-			add_to_array = { ruling_party = 5 } #social_democracy								
-			set_variable = { party_pop_array^5 = 0.40 } #social_democracy	
-			startup_politics = yes
-			set_politics = {
-				ruling_party = communism
-				elections_allowed = no
-			}
-			set_cosmetic_tag = DSC_GMG
-			load_focus_tree = communsim_PRC_focus
-			mark_focus_tree_layout_dirty = yes
-			complete_national_focus = CHI_Public_ownership_construction
-
-
-
-		}
-		DSC = { change_tag_from = CHI }
-	}
-}
 #通用重建
 	ruins_rebuild = {
 		icon = GFX_decision_generic_construction

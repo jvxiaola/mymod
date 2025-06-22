@@ -21,7 +21,9 @@ joint_trigger = {
 			
 	 allow_branch = {
 		has_country_flag = qygc
-
+NOT={
+	has_country_flag = changing_tag
+}
 	 }
 
 	ai_will_do = {
@@ -1071,7 +1073,9 @@ joint_focus = {
 	y = 6
 
 	cost = 5
-	
+	available = {
+
+	}
 	prerequisite = {
 		focus=DSC_people_army_nalodnayavoina
 	}

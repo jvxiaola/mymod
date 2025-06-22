@@ -1475,8 +1475,7 @@ allowed = {
 
 
 modifier = {
-	army_attack_factor=-0.1
-	army_defend_factor=-0.1
+	army_org_factor = -0.05
 }
 }
 
@@ -1489,8 +1488,10 @@ modifier = {
 			
  	
 			modifier = {
-army_attack_factor=-0.1
-army_defend_factor=-0.1
+				army_org_factor = -0.1
+				army_attack_factor=-0.05
+				army_defend_factor=-0.05
+			}
 			}
 
 		}

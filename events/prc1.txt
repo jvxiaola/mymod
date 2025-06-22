@@ -238,10 +238,33 @@ set_country_flag = clear_military_focus
 			factor = 50
 		}
 
-
+DSC={
+	set_country_flag = changing_tag
+	mark_focus_tree_layout_dirty = yes
+}
 			CHI={
 				change_tag_from = DSC
+				set_country_flag = changing_tag
+				mark_focus_tree_layout_dirty = yes
+				set_country_flag = manual_civil_war_debuff_removal
+remove_ideas = civil_war_disorganised_military_1
+remove_ideas = civil_war_disorganised_military_2_military
+remove_ideas = civil_war_disorganised_military_2_production
+remove_ideas = civil_war_disorganised_military_2_experience
+remove_ideas = civil_war_disorganised_military_3_military
+remove_ideas = civil_war_disorganised_military_3_production
+remove_ideas = civil_war_disorganised_military_3_experience
+remove_ideas = civil_war_disorganised_military_4_military
+remove_ideas = civil_war_disorganised_military_4_production
+remove_ideas = civil_war_disorganised_military_4_experience
+remove_ideas = civil_war_disorganised_military_5_military
+remove_ideas = civil_war_disorganised_military_5_production
+remove_ideas = civil_war_disorganised_military_5_experience
+clr_country_flag = manual_civil_war_debuff_removal
+
 			}
+
+
 				country_event={id = prc1.300 days=1}
 			country_event={id=prc1.7497}
 
@@ -287,7 +310,27 @@ hidden = yes
 is_triggered_only = yes
 
 	immediate = {
-		cancel_national_focus = yes
+		DSC={
+			cancel_national_focus = yes
+		}
+		CHI={
+			set_country_flag = manual_civil_war_debuff_removal
+			remove_ideas = civil_war_disorganised_military_1
+			remove_ideas = civil_war_disorganised_military_2_military
+			remove_ideas = civil_war_disorganised_military_2_production
+			remove_ideas = civil_war_disorganised_military_2_experience
+			remove_ideas = civil_war_disorganised_military_3_military
+			remove_ideas = civil_war_disorganised_military_3_production
+			remove_ideas = civil_war_disorganised_military_3_experience
+			remove_ideas = civil_war_disorganised_military_4_military
+			remove_ideas = civil_war_disorganised_military_4_production
+			remove_ideas = civil_war_disorganised_military_4_experience
+			remove_ideas = civil_war_disorganised_military_5_military
+			remove_ideas = civil_war_disorganised_military_5_production
+			remove_ideas = civil_war_disorganised_military_5_experience
+			clr_country_flag = manual_civil_war_debuff_removal
+		}
+
 
 }
 	option = {
@@ -318,11 +361,14 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 immediate = {
-	
+	DSC={
 		cancel_national_focus = yes
+	}
+
 	
 clr_country_flag = clear_military_focus
 CHI={
+	cancel_national_focus = yes
 	country_event={id=prc1.7497}
 annex_country = {
 	target = DSC
@@ -374,6 +420,7 @@ uncomplete_national_focus = {
 	focus = PRC_jjdz
 	uncomplete_children = yes
 }
+clr_country_flag = changing_tag
 		mark_focus_tree_layout_dirty = yes
 
 		 
