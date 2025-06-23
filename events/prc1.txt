@@ -286,7 +286,12 @@ remove_ideas =  red_weidui1
 
 
 				if={limit={DSC={has_country_flag = qygc}}CHI={set_country_flag = qygc}}
-				if={limit={DSC={has_idea=junfazuofeng}}CHI={add_ideas = junfazuofeng}}
+				if={limit={DSC={has_idea=junfazuofeng1}}CHI={add_ideas = junfazuofeng1}}
+				if={limit={DSC={has_idea=junfazuofeng2}}CHI={add_ideas = junfazuofeng2}}
+				if={limit={DSC={has_idea=junfazuofeng3}}CHI={add_ideas = junfazuofeng3}}
+				if={limit={DSC={has_idea=junxingbuwen1}}CHI={add_ideas = junxingbuwen1}}
+				if={limit={DSC={has_idea=junxingbuwen2}}CHI={add_ideas = junxingbuwen2}}
+				if={limit={DSC={has_idea=junxingbuwen3}}CHI={add_ideas = junxingbuwen3}}
 				if={limit={DSC={has_idea=people_army1}}CHI={add_ideas = people_army1}}
 				if={limit={DSC={has_idea=people_army2}}CHI={add_ideas = people_army2}}
 				if={limit={DSC={has_idea=people_army3}}CHI={add_ideas = people_army3}}

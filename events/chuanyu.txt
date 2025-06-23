@@ -965,8 +965,8 @@ set_country_flag = neizhanzhong
 			set_country_flag = qygc		
 
 			add_ideas = bcjzdjd
-add_ideas = junfazuofeng
-
+add_ideas = junfazuofeng1
+add_ideas = junxingbuwen1
 
 set_country_flag = manual_civil_war_debuff_removal
 remove_ideas = civil_war_disorganised_military_1

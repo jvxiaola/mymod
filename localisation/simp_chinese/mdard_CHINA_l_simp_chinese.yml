@@ -745,7 +745,7 @@ DSC_people_armyIII_desc: ""
 DSC_people_army_minbing: "动员赤卫队"
 DSC_people_army_minbing_desc: ""
 
-DSC_people_army_nalodnayavoina: "人民战争"
+DSC_people_army_nalodnayavoina: "人民军队"
 DSC_people_army_nalodnayavoina_desc: "战争不能只靠军队。我们将发动亿万人民，构建全民皆兵的抗战网络，让敌人在人民战争的汪洋大海中灭亡。"
 
 DSC_people_army_jdmzzy: "军队民主主义"
@@ -760,9 +760,8 @@ DSC_people_army_dangjun_desc: "党军"
 DSC_people_army_shibweiyuanhui: "士兵委员会"
 DSC_people_army_shibweiyuanhui_desc: ""
 
-DSC_DSC_civ_end: "人民的根基"
-DSC_DSC_civ_end_desc: "川渝革命胜利"
-
+DSC_DSC_civ_end: "人民解放军的重生"
+DSC_DSC_civ_end_desc: "人民解放军完成了他的改造，我们重新拥有了一支可以与过去的人民解放军媲美的人民的部队"军
 HKG_people_army:"建立红军"
 HKG_people_army_desc: "一支属于无产阶级的军队！"
 
@@ -1729,9 +1728,14 @@ DSC_MAOPAIJUECE_desc: "红旗卷起农奴戟，黑手高悬霸主鞭。为有牺
 DSC_maopaizhenghe: "发动革命"
 
 bcjzdjd: "建制混乱的军队"
-junfazuofeng: "军阀作风"
+junfazuofeng1: "较重的军阀作风"
+junfazuofeng2: "中度的军阀作风"
+junfazuofeng3: "轻微的军阀习气"
 
 
+junxingbuwen1: "阳奉阴违的部队"
+junxingbuwen2: "消极作战的部队"
+junxingbuwen3: "低主动性的部队"
 
 CHI_pre_civ_decitions: "动荡的局势"
 CHI_pre_civ_decitions_desc: "随着权力结构的剧变，那些曾被视为遥不可及的改革，如今似乎触手可及。旧秩序在动摇，新势力在崛起，风雨欲来之际，一个新时代的轮廓若隐若现。然而，这场变革究竟是通往希望的转折，还是通向混乱的起点？没有人能够给出答案——未来的命运，仍悬而未决。\n\n\n\n当前内战风险：[CHI_neizhanfengxian_text]（到达100%则会内战）"

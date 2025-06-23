@@ -1,25 +1,20 @@
 ideas = {
+country={
+	CHI_zzb = {
+		picture = vladimir_lenin
+	
+	allowed = {
+	}
+	
+	
+	modifier = {
+	
+	
+	communism_drift = 0.1
+	political_power_gain = -1
+	}
+	}
 
-	country = {	
-PRC_sy = {
-			picture = skull
-		allowed = {
-			}
-			
-allowed_civil_war = {
-always = yes
-}
-			modifier = {
-Chinese_people_support_to_china_government_modifier = 1.0
-power_balance_weekly = -1
-production_speed_buildings_factor = 10
-production_factory_efficiency_gain_factor = 1
-production_factory_max_efficiency_factor = 1
-research_speed_factor = 15
-consumer_goods_expected_value = -1
-production_factory_start_efficiency_factor = 1
-}
-}	
 		USA_Anti_Communist_china_Jihad = {
 			picture = democracy
 		allowed = {
@@ -1468,19 +1463,87 @@ power_balance_weekly = 0.003
 
 
 
-junfazuofeng={
+junfazuofeng1={
 picture = GFX_ideology_Nat_Autocracy
+
 allowed = {
 }
 
 
 modifier = {
-	army_org_factor = -0.05
+	army_org_factor = -0.09
 }
 }
 
+junfazuofeng2={
+	picture = GFX_ideology_Nat_Autocracy
+
+	allowed = {
+	}
+	
+	
+	modifier = {
+		army_org_factor = -0.06
+	}
+	}
+
+	junfazuofeng3={
+		picture = GFX_ideology_Nat_Autocracy
+
+		allowed = {
+		}
+		
+		
+		modifier = {
+			army_org_factor = -0.03
+		}
+		}
 
 
+
+		junxingbuwen1={
+		picture = GFX_ideology_Nat_Autocracy
+
+		allowed = {
+		}
+		
+		
+		modifier = {
+			army_leader_max_army_size = -3
+			army_org = -0.15
+			command_power_gain_mult = -0.3
+			army_experience_gain = -0.25
+			army_attack_factor = -0.05
+		}
+		}
+
+		junxingbuwen2={
+			picture = GFX_ideology_Nat_Autocracy
+	
+			allowed = {
+			}
+			
+			
+			modifier = {
+				army_leader_max_army_size = -2
+				army_org = -0.10
+				command_power_gain_mult = -0.2
+				army_experience_gain = -0.15
+			}
+			}
+			junxingbuwen3={
+				picture = GFX_ideology_Nat_Autocracy
+		
+				allowed = {
+				}
+				
+				
+				modifier = {
+					army_leader_max_army_size = -1
+					army_org = -0.05
+					command_power_gain_mult = -0.1
+				}
+				}
 		bcjzdjd={
 			picture = communism7
 			allowed = {
@@ -1494,7 +1557,7 @@ modifier = {
 			}
 			}
 
-		}
+		
 
 
 
@@ -1517,18 +1580,6 @@ modifier = {
 				stability = 0.05                          # 国家稳定度 +5%
 				resistance_to_ideology = 0.20             # 对敌意识形态抵抗 +20%
 				political_influence = 0.15                # 对己意识形态宣传 +15%
-
-			
-				# 负面（可选）
-				# land_attack = -0.05                     # 陆军攻击力 -5%
-			
-				# 经验加成（可选）
-				# army_experience_gain = -0.10           # 陆军经验获取 -10%
-			
-
-
-
-
 			stability_factor = 0.10
 		communism_drift = 0.05
 			}
@@ -4019,20 +4070,7 @@ modifier = {
 
 
 
-CHI_zzb = {
-	picture = vladimir_lenin
 
-allowed = {
-}
-
-
-modifier = {
-
-
-communism_drift = 0.1
-political_power_gain = -1
-}
-}
 
 
 DSC_gcd = {
@@ -4137,5 +4175,6 @@ fuel_gain_factor = 0.10
 				}
 				}	
 	}
+
 
 }

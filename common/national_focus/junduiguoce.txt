@@ -136,10 +136,7 @@ joint_focus = {
 			}
 			recalculate_party = yes
 		}
-if={
-	limit = {
-		tag = ROOT
-	}
+ROOT={
 	add_ideas = people_army1
 }
 
@@ -256,8 +253,42 @@ relative_position_id = DSC_people_armyI
 
 	}
 	completion_reward = {
-#add_
+		if={
+
+			limit = {
+				has_ideas = junfazuofeng1
+			}
+			ROOT={
+swap_ideas = {
+	remove_idea = junfazuofeng1
+	add_idea = junfazuofeng2 
+}
+			}
+
+		}
+
+		else_if = {
+			limit = { 	has_ideas = junfazuofeng2	}
+			ROOT={
+		swap_ideas = {
+			remove_idea = junfazuofeng2
+			add_idea = junfazuofeng3
+		}
 	}
+
+		}
+
+		else_if = {
+			limit = { 	has_ideas = junfazuofeng3	}
+			ROOT={
+
+			remove_idea = junfazuofeng3
+
+		
+	}
+
+		}
+}
 }
 joint_focus = {
 	id = DSC_people_army_junduizf
@@ -291,7 +322,41 @@ relative_position_id = DSC_people_armyI
 
 	}
 	completion_reward = {
-#add_
+		if={
+
+			limit = {
+				has_ideas = junfazuofeng1
+			}
+			ROOT={
+swap_ideas = {
+	remove_idea = junfazuofeng1
+	add_idea = junfazuofeng2 
+}
+			}
+
+		}
+
+		else_if = {
+			limit = { 	has_ideas = junfazuofeng2	}
+			ROOT={
+		swap_ideas = {
+			remove_idea = junfazuofeng2
+			add_idea = junfazuofeng3
+		}
+	}
+
+		}
+
+		else_if = {
+			limit = { 	has_ideas = junfazuofeng3	}
+			ROOT={
+
+			remove_idea = junfazuofeng3
+
+		
+	}
+
+		}
 	}
 }
 
@@ -328,14 +393,40 @@ relative_position_id = DSC_people_armyI
 	}
 	completion_reward = {
 		if={
-			limit={
-				tag=ROOT
+
+			limit = {
+				has_ideas = junfazuofeng1
 			}
-				remove_ideas = junfazuofeng
+			ROOT={
+swap_ideas = {
+	remove_idea = junfazuofeng1
+	add_idea = junfazuofeng2 
+}
+			}
+
 		}
 
+		else_if = {
+			limit = { 	has_ideas = junfazuofeng2	}
+			ROOT={
+		swap_ideas = {
+			remove_idea = junfazuofeng2
+			add_idea = junfazuofeng3
+		}
+	}
 
+		}
 
+		else_if = {
+			limit = { 	has_ideas = junfazuofeng3	}
+			ROOT={
+
+			remove_idea = junfazuofeng3
+
+		
+	}
+
+		}
 
 
 	}
@@ -374,37 +465,47 @@ relative_position_id = DSC_people_armyI
 
 	}
 	completion_reward = {
-		ROOT={
+
 		if={
 
 			limit = {
-				has_idea = people_army1
-						tag=ROOT
+				has_ideas = people_army1
 			}
-			remove_ideas = people_army1
-			add_ideas = people_army2 
+			ROOT={
+swap_ideas = {
+	remove_idea = people_army1
+	add_idea = people_army2 
+}
+			}
+
 		}
 
 		else_if = {
-			limit = { 	has_idea = people_army2
-		tag=ROOT
+			limit = { 	has_ideas = people_army2	}
+			ROOT={
+		swap_ideas = {
+			remove_idea = people_army2
+			add_idea = people_army3
 		}
-			remove_ideas = people_army2
-			add_ideas = people_army3
+	}
 
 		}
 		else_if = {
-			limit = { 	has_idea = people_army3
-				tag=ROOT
+			limit = { 	has_ideas = people_army3
+
 		}
-			remove_ideas = people_army3
-			add_ideas = people_army4
+		ROOT={
+		swap_ideas = {
+			remove_idea = people_army3
+			add_idea = people_army4
+		}
+	}
 
 		}
 
 
 army_experience =25
-	}
+	
 	}
 }
 
@@ -633,33 +734,44 @@ relative_position_id = DSC_people_armyI
 
 	}
 	completion_reward = {
+	
 		if={
 
 			limit = {
-				has_idea = people_army1
-				tag= ROOT
+				has_ideas = people_army1
 			}
-			remove_ideas = people_army1
-			add_ideas = people_army2 
+			ROOT={
+swap_ideas = {
+	remove_idea = people_army1
+	add_idea = people_army2 
+}
+			}
+
 		}
 
 		else_if = {
-			limit = { 	has_idea = people_army2
-						tag= ROOT
+			limit = { 	has_ideas = people_army2	}
+			ROOT={
+		swap_ideas = {
+			remove_idea = people_army2
+			add_idea = people_army3
 		}
-			remove_ideas = people_army2
-			add_ideas = people_army3
+	}
 
 		}
 		else_if = {
-			limit = { 	has_idea = people_army3
-						tag= ROOT
-		
-		}
-			remove_ideas = people_army3
-			add_ideas = people_army4
+			limit = { 	has_ideas = people_army3
 
 		}
+		ROOT={
+		swap_ideas = {
+			remove_idea = people_army3
+			add_idea = people_army4
+		}
+	}
+
+		}
+
 
 
 		add_army_experience = 25
@@ -698,7 +810,42 @@ relative_position_id = DSC_people_armyI
 
 	}
 	completion_reward = {
+		if={
 
+			limit = {
+				
+				has_ideas = junxingbuwen1
+			}
+			ROOT={
+swap_ideas = {
+	remove_idea = junxingbuwen1
+	add_idea = junxingbuwen2 
+}
+			}
+
+		}
+
+		else_if = {
+			limit = { 	has_ideas = junxingbuwen2	}
+			ROOT={
+		swap_ideas = {
+			remove_idea = junxingbuwen2
+			add_idea = junxingbuwen3
+		}
+	}
+
+		}
+
+		else_if = {
+			limit = { 	has_ideas = junxingbuwen3	}
+			ROOT={
+
+			remove_idea = junxingbuwen3
+
+		
+	}
+
+		}
 	}
 }
 
@@ -731,15 +878,15 @@ relative_position_id = DSC_people_armyI
 	available = {
 
 	}
-	completion_reward = {
-						if={
-							limit={
-							
-							tag= ROOT
+completion_reward={
+	ROOT={
+		add_ideas=CHI_zhengwei 
+	}
+
+
+
+
 					
-					}
-						add_ideas=CHI_zhengwei 
-					}
 
 	}
 }
@@ -785,32 +932,44 @@ joint_trigger = {
 
 	}
 	completion_reward = {
+	
 		if={
 
 			limit = {
-				has_idea = people_army1
-				tag=ROOT
+				has_ideas = people_army1
 			}
-			remove_ideas = people_army1
-			add_ideas = people_army2 
+			ROOT={
+swap_ideas = {
+	remove_idea = people_army1
+	add_idea = people_army2 
+}
+			}
+
 		}
 
 		else_if = {
-			limit = { 	has_idea = people_army2
-						tag=ROOT
+			limit = { 	has_ideas = people_army2	}
+			ROOT={
+		swap_ideas = {
+			remove_idea = people_army2
+			add_idea = people_army3
 		}
-			remove_ideas = people_army2
-			add_ideas = people_army3
+	}
 
 		}
 		else_if = {
-			limit = { 	has_idea = people_army3
-						tag=ROOT
-		}
-			remove_ideas = people_army3
-			add_ideas = people_army4
+			limit = { 	has_ideas = people_army3
 
 		}
+		ROOT={
+		swap_ideas = {
+			remove_idea = people_army3
+			add_idea = people_army4
+		}
+	}
+
+		}
+
 	}
 }
 joint_focus = {
@@ -847,7 +1006,42 @@ relative_position_id = DSC_people_armyI
 
 	}
 	completion_reward = {
+		if={
 
+			limit = {
+				
+				has_ideas = junxingbuwen1
+			}
+			ROOT={
+swap_ideas = {
+	remove_idea = junxingbuwen1
+	add_idea = junxingbuwen2 
+}
+			}
+
+		}
+
+		else_if = {
+			limit = { 	has_ideas = junxingbuwen2	}
+			ROOT={
+		swap_ideas = {
+			remove_idea = junxingbuwen2
+			add_idea = junxingbuwen3
+		}
+	}
+
+		}
+
+		else_if = {
+			limit = { 	has_ideas = junxingbuwen3	}
+			ROOT={
+
+			remove_idea = junxingbuwen3
+
+		
+	}
+
+		}
 	}
  
 }
@@ -883,7 +1077,42 @@ relative_position_id = DSC_people_armyI
 
 	}
 	completion_reward = {
+		if={
 
+			limit = {
+				
+				has_ideas = junxingbuwen1
+			}
+			ROOT={
+swap_ideas = {
+	remove_idea = junxingbuwen1
+	add_idea = junxingbuwen2 
+}
+			}
+
+		}
+
+		else_if = {
+			limit = { 	has_ideas = junxingbuwen2	}
+			ROOT={
+		swap_ideas = {
+			remove_idea = junxingbuwen2
+			add_idea = junxingbuwen3
+		}
+	}
+
+		}
+
+		else_if = {
+			limit = { 	has_ideas = junxingbuwen3	}
+			ROOT={
+
+			remove_idea = junxingbuwen3
+
+		
+	}
+
+		}
 	}
 }
 
@@ -926,10 +1155,10 @@ relative_position_id = DSC_people_armyI
 
 	}
 	completion_reward = {
-if={
-	limit={
-tag=ROOT
-	}
+
+
+ROOT={
+	
 	add_ideas = CHI_party_before_guns
 }
 
