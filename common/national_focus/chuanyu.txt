@@ -2415,7 +2415,11 @@ every_state = {
 
             
  
+CHI={
 
+	clr_country_flag = party5_banned
+
+}
 
 				
 				country_event = {id=prc1.211 days = 1}

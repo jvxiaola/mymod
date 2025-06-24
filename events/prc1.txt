@@ -304,9 +304,18 @@ remove_ideas =  red_weidui1
 				if={limit={DSC={has_idea=people_army4}}CHI={add_ideas = people_army4}}
 				if={limit={DSC={has_idea=CHI_zhengwei }}CHI={add_ideas = CHI_zhengwei }}
 				if={limit={DSC={has_idea=CHI_party_before_guns}}CHI={add_ideas = CHI_party_before_guns}}
+				if={limit={DSC={has_idea=bcjzdjd}}CHI={add_ideas = bcjzdjd}}
+				
 				
 					
-				
+				CHI={
+
+
+
+					set_variable = { party_pop_array^4 = 0.55 }
+					recalculate_party = yes
+				}
+
 
 	
 	}
@@ -406,7 +415,7 @@ annex_country = {
 			elections_allowed = no
 		}
 		add_to_array = { ruling_party = 4 } #social_democracy								
-		set_variable = { party_pop_array^5 = 0.40 } #social_democracy	
+		set_variable = { party_pop_array^4 = 0.40 } #social_democracy	
 		startup_politics = yes
 #云泽最新
 
