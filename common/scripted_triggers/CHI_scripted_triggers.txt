@@ -25,13 +25,9 @@ is_agriculture_state = {
 
 is_New_people_commune_state = {
 	OR = {
-		is_in_array = { global.guizhou_states = THIS }    is_in_array = { global.sichuan_states  = THIS } 
-		is_in_array = { global.hunan_states  = THIS }	    is_in_array = { global.hubei_states  = THIS }	
-		is_in_array = { global.jiangxi_states  = THIS }    is_in_array = { global.anhui_states  = THIS }	
-		is_in_array = { global.henan_states  = THIS }	    is_in_array = { global.jiangsu_states  = THIS }		
-		is_in_array = { global.hebei_states  = THIS }	    is_in_array = { global.shandong_states  = THIS }	
-		is_in_array = { global.neimenggu_states = THIS }	is_in_array = { global.liaoning_states  = THIS }	
-		is_in_array = { global.jilin_states = THIS }  is_in_array = { global.heilongjiang_states  = THIS }
+		state = 582		state = 586		state = 583		state = 572		state = 570		state = 562		state = 564		state = 567
+		state = 541		state = 536		state = 549		state = 434		state = 544		state = 556		state = 1095	state = 552
+		state = 554		state = 555
 	}
 }
 

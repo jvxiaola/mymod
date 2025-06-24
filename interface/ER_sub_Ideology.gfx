@@ -25,6 +25,11 @@ spriteType = {
 	}		
 
 	spriteType = {
+		name = "GFX_ideology_planned_eco_capitalism"
+		texturefile = "gfx/Ideology/NOR_planned_economy.png"
+	}		
+
+	spriteType = {
 		name = "GFX_ideology_trotskyism"
 		texturefile = "gfx/Ideology/trotskyism.png"
 	}

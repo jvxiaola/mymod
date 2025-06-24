@@ -761,7 +761,7 @@ DSC_people_army_shibweiyuanhui: "士兵委员会"
 DSC_people_army_shibweiyuanhui_desc: ""
 
 DSC_DSC_civ_end: "人民解放军的重生"
-DSC_DSC_civ_end_desc: "人民解放军完成了他的改造，我们重新拥有了一支可以与过去的人民解放军媲美的人民的部队"军
+DSC_DSC_civ_end_desc: "人民解放军完成了他的改造，我们重新拥有了一支可以与过去的人民解放军媲美的人民的军队"
 HKG_people_army:"建立红军"
 HKG_people_army_desc: "一支属于无产阶级的军队！"
 
@@ -2669,7 +2669,7 @@ CHI1.Autocracy_icon: "£CHI_pro_emerging_autocrat"
 CHI1.Autocracy_desc: " §0中国特色社会主义 (中间路线)§!、中国特色民主主义 - \n中国民主同盟，简称民盟，原称中国民主政团同盟，是中华人民共和国排名第二的民主党派，该党是现时中国全国人大常委会第二大党，盟员总人数在民主党派中排第一，在全国政党中排第二。民盟创立于1941年，成员最多时由中国青年党、国家社会党（后改称中国民主社会党）、中华民族解放行动委员会（后改为中国农工民主党）、中华职业教育社、中国乡村建设协会、全国各界救国联合会六个政治团体组成，形成“三党三派”的格局。"
 CHI1.Communist-State: "£CHI_communism 中国共产党 - §R毛主义§!"
 CHI1.Communist-State_icon: "£CHI_communism"
-CHI1.Communist-State_desc: " §R新毛泽东思想理论§!、§O中国特色社会主义 (左翼路线)§! - \n在毛泽东思想遭到政治与经济上的双重打击后，共产党内部分党员开始改变思路，将阶级斗争与生产力建设提到相同地位，经济上主张建设以国有企业为主体与支柱、合作社为补充，为数不多的小型私营经济为填充；在政治建设上充分吸收“文化革命”时期的部分优秀经验，践行以《鞍钢宪法》为代表的产业民主与人民民主相结合，利用民众监管与民主党派反向监督官僚腐败。"
+CHI1.Communist-State_desc: " §R毛泽东思想理论§!、§O革命派§! - \n在1976年后，共产党内部党员几乎没有继续支持毛泽东在后十年探索出的理论，但是，理解并且支持毛泽东在后十年的理论贡献，并且打算将其进行革命的实践的，仍存在于党的基层，或许一旦局势变化，他们就有机会重新实践他们的想法..."
 CHI1.Caliphate: "£CHI_salafist_jihadism 东突厥斯坦青年党"
 CHI1.Caliphate_icon: "£CHI_salafist_jihadism"
 CHI1.Caliphate_desc: ""

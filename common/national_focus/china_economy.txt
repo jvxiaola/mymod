@@ -971,7 +971,7 @@
 		available = {
 			OR = {
 				custom_trigger_tooltip = {
-					is_in_array = { ruling_party = 5 }
+					is_in_array = { ruling_party = 4 }
 					tooltip = has_anarchist_communism_government_TT
 				}
 				custom_trigger_tooltip = {
@@ -1312,17 +1312,14 @@
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = CHI_Launch_cooperation_initiatives_at_forums_tt
-				all_of_scopes = { array = global.guangdong_states has_state_flag = State_start_Collaboration }
-				all_of_scopes = { array = global.jiangsu_states has_state_flag = State_start_Collaboration }
-				all_of_scopes = { array = global.shandong_states has_state_flag = State_start_Collaboration }
-				all_of_scopes = { array = global.zhejiang_states has_state_flag = State_start_Collaboration }
-				all_of_scopes = { array = global.henan_states has_state_flag = State_start_Collaboration }
-				all_of_scopes = { array = global.liaoning_states has_state_flag = State_start_Collaboration }
-				all_of_scopes = { array = global.hebei_states has_state_flag = State_start_Collaboration }
-				all_of_scopes = { array = global.sichuan_states has_state_flag = State_start_Collaboration }
-				all_of_scopes = { array = global.fujian_states has_state_flag = State_start_Collaboration }
-				all_of_scopes = { array = global.hubei_states has_state_flag = State_start_Collaboration }
-				all_of_scopes = { array = global.shanghai_states has_state_flag = State_start_Collaboration }
+				534 = { has_state_flag = State_start_Collaboration } 532 = { has_state_flag = State_start_Collaboration } 541 = { has_state_flag = State_start_Collaboration }
+				536 = { has_state_flag = State_start_Collaboration } 435 = { has_state_flag = State_start_Collaboration } 544 = { has_state_flag = State_start_Collaboration }
+				538 = { has_state_flag = State_start_Collaboration } 567 = { has_state_flag = State_start_Collaboration } 1095 = { has_state_flag = State_start_Collaboration }
+				552 = { has_state_flag = State_start_Collaboration } 434 = { has_state_flag = State_start_Collaboration } 549 = { has_state_flag = State_start_Collaboration }
+				585 = { has_state_flag = State_start_Collaboration } 586 = { has_state_flag = State_start_Collaboration } 583 = { has_state_flag = State_start_Collaboration }
+				537 = { has_state_flag = State_start_Collaboration } 570 = { has_state_flag = State_start_Collaboration } 540 = { has_state_flag = State_start_Collaboration }
+				547 = { has_state_flag = State_start_Collaboration } 548 = { has_state_flag = State_start_Collaboration } 595 = { has_state_flag = State_start_Collaboration }
+				1106 = { has_state_flag = State_start_Collaboration }
 			}
 		}
 		completion_reward = {	

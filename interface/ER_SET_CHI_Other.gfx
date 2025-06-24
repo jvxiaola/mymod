@@ -15,4 +15,39 @@
 			name = "GFX_idea_Militarical_economy_remain"
 			texturefile = "gfx/interface/ideas/ER_ideas/Militarical_economy_remain.dds"
 		}
+
+
+
+
+
+		SpriteType = {
+			name = "GFX_idea_frontier_chaos"
+			texturefile = "gfx/interface/ideas/CW_idea/idea_LIB_frontier_chaos.png"			
+		}
+		SpriteType = {
+			name = "GFX_idea_republican_command_disorganized"
+			texturefile = "gfx/interface/ideas/CW_idea/SPR_republican_command_disorganized.png"			
+		}
+		SpriteType = {
+			name = "GFX_idea_army_slavic"
+			texturefile = "gfx/interface/ideas/CW_idea/army_slavic_idea.png"			
+		}
+		
+		SpriteType = {
+			name = "GFX_idea_political_officers_idea"
+			texturefile = "gfx/interface/ideas/CW_idea/political_officers.png"			  
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
 	}

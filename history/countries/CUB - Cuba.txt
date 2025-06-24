@@ -845,7 +845,7 @@
 	create_country_leader = {
 		name = "Fidel Castro"
 		picture = "fidel_castro.dds"
-		ideology = Chinese_Socialism_niaolong
+		ideology = planned_eco_capitalism
 		traits = {
 			emerging_Communist-State
 			emotional

@@ -183,6 +183,11 @@ SpriteType = {
 	name = "GFX_idea_maoism"
 	texturefile = "gfx/interface/ideas/maoism.dds"			
 	}
+
+
+
+
+
 SpriteType = {
 	name = "GFX_idea_historical_cycle"
 	texturefile = "gfx/interface/ideas/historical_cycle.png"			

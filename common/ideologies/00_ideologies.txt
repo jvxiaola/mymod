@@ -84,6 +84,11 @@ color = { 0 0 255}
 			can_be_randomly_selected = no
 
 			}
+
+			planned_eco_capitalism = {color = { 255 90 60 }
+			can_be_randomly_selected = no	
+		}
+
 			Conservative = { color = { 205 201 201	 } 
 			can_be_randomly_selected = no }
 			Chinese_Socialism_jiang = { color = { 255 127 80 }

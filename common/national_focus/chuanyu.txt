@@ -1439,7 +1439,7 @@ add_political_power = 100
 						limit = {
 							is_core_of = CHI
 								}					
-						#remove_core_of = CHI
+						remove_core_of = CHI
 							}
 						every_state = {		
 							limit = {
@@ -1458,7 +1458,7 @@ add_political_power = 100
 					set_cosmetic_tag = DSC_GMG
 				}
 				country_event = { id = Chuanyu.8 }
-				country_event = { id = chuanyu.9 }
+				country_event = { id = chuanyu.9 days=9}
 				set_capital = { state = 547 }
 
 			}
@@ -2370,16 +2370,16 @@ completion_reward = {
 			add_research_slot = 2
 			hidden_effect = {
 
-			if = {
-				limit = {
-					has_idea = CHI_economic_recovery_end
-					has_idea = Agricultural_restructuring_end
-					has_idea = Industrial_rebuild_end
-				}
+			#if = {
+				#limit = {
+					#has_idea = CHI_economic_recovery_end
+					#has_idea = Agricultural_restructuring_end
+					#has_idea = Industrial_rebuild_end
+				#}
 				remove_ideas = CHI_economic_recovery_end
 				remove_ideas = Agricultural_restructuring_end
 				remove_ideas = Industrial_rebuild_end
-			}
+			#}
 			clr_country_flag = rehabilitate_economy
 
 
@@ -2403,7 +2403,12 @@ CHI={
 	transfer_state = 526
 }
 
-
+every_state = {
+	limit = {
+		is_core_of = DSC
+	}
+	add_core_of = CHI
+}
 
 
 

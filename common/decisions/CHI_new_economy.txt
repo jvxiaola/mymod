@@ -412,22 +412,42 @@ CHI_Redemption_assets = {
 
 
 #合作化
+#云泽最新
 	#组织各地个体户“官方论坛”地图决议
+
 	Oofb_guangdong = { #(1)广东及珠江地区
 	icon = GFX_decision_hol_exchange_intelligence_data
 	visible = {
 		has_completed_focus = CHI_get_organized
-		all_of_scopes = { array = global.guangdong_states NOT = { has_state_flag = State_start_Collaboration } }
+		534 = { NOT = { has_state_flag = State_start_Collaboration } } 532 = { NOT = { has_state_flag = State_start_Collaboration } }
+		595 = { NOT = { has_state_flag = State_start_Collaboration } } 1106 = { NOT = { has_state_flag = State_start_Collaboration } }
+		1220 = { NOT = { has_state_flag = State_start_Collaboration } } 1221 = { NOT = { has_state_flag = State_start_Collaboration } }
+		1222 = { NOT = { has_state_flag = State_start_Collaboration } } 1223 = { NOT = { has_state_flag = State_start_Collaboration } }
+		1224 = { NOT = { has_state_flag = State_start_Collaboration } } 1225 = { NOT = { has_state_flag = State_start_Collaboration } }
+		1226 = { NOT = { has_state_flag = State_start_Collaboration } } 1227 = { NOT = { has_state_flag = State_start_Collaboration } }
 	}
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = CHI_Oofb_guangdong_trigger_tt
-			always = yes
+			#534 = { NOT = { has_state_flag = State_start_Collaboration } } 532 = { NOT = { has_state_flag = State_start_Collaboration } }
 		}
 	}
-	on_map_mode = map_only
+	#on_map_mode = map_only
 	highlight_states = {
-        highlight_states_trigger = { is_in_array = { global.guangdong_states = THIS } }
+        highlight_state_targets = {
+           state = 534 state = 532 state = 595 state = 1106
+
+		   state = 1220 
+		   state = 1221
+		   state = 1222 
+		   state = 1223 
+		   state = 1224 
+		   state = 1225 
+		   state = 1226 
+		   state = 1227 
+
+
+        }
     }
 	custom_cost_trigger = {
 		check_variable = { treasury > 10.0 }
@@ -439,9 +459,20 @@ CHI_Redemption_assets = {
 	}
 	days_remove = 60
 	remove_effect = {
-		custom_effect_tooltip = STATE_ADD_State_Collaboration_effect_tt 
-		for_each_scope_loop = { array = global.guangdong_states STATE_ADD_State_Collaboration = yes }
-	}	
+		534 = { STATE_ADD_State_Collaboration = yes } 532 = { STATE_ADD_State_Collaboration = yes } 595 = { STATE_ADD_State_Collaboration = yes }
+		1106 = { STATE_ADD_State_Collaboration = yes }
+
+		1220  = { STATE_ADD_State_Collaboration = yes } 
+		1221  = { STATE_ADD_State_Collaboration = yes } 
+		1222  = { STATE_ADD_State_Collaboration = yes } 
+		1223  = { STATE_ADD_State_Collaboration = yes } 
+		1224  = { STATE_ADD_State_Collaboration = yes } 
+		1225  = { STATE_ADD_State_Collaboration = yes } 
+		1226  = { STATE_ADD_State_Collaboration = yes } 
+		1227  = { STATE_ADD_State_Collaboration = yes } 
+
+
+	}
 	ai_will_do = { factor = 1 }
 	}
 
@@ -449,17 +480,19 @@ CHI_Redemption_assets = {
 	icon = GFX_decision_hol_exchange_intelligence_data
 	visible = {
 		has_completed_focus = CHI_get_organized
-		all_of_scopes = { array = global.jiangsu_states NOT = { has_state_flag = State_start_Collaboration } }
+		541 = { NOT = { has_state_flag = State_start_Collaboration } } 536 = { NOT = { has_state_flag = State_start_Collaboration } }
 	}
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = CHI_Oofb_jiangsu_trigger_tt
-			always = yes
+			541 = { NOT = { has_state_flag = State_start_Collaboration } } 536 = { NOT = { has_state_flag = State_start_Collaboration } }
 		}
 	}
-	on_map_mode = map_only
+	#on_map_mode = map_only
 	highlight_states = {
-		highlight_states_trigger = { is_in_array = { global.jiangsu_states = THIS } }
+        highlight_state_targets = {
+           state = 541 state = 536
+        }
     }
 	custom_cost_trigger = {
 		check_variable = { treasury > 10.0 }
@@ -471,8 +504,7 @@ CHI_Redemption_assets = {
 	}
 	days_remove = 60
 	remove_effect = {
-		custom_effect_tooltip = STATE_ADD_State_Collaboration_effect_tt 
-		for_each_scope_loop = { array = global.jiangsu_states STATE_ADD_State_Collaboration = yes }
+		541 = { STATE_ADD_State_Collaboration = yes } 536 = { STATE_ADD_State_Collaboration = yes }
 	}
 	ai_will_do = { factor = 1 }
 	}
@@ -481,17 +513,19 @@ CHI_Redemption_assets = {
 	icon = GFX_decision_hol_exchange_intelligence_data
 	visible = {
 		has_completed_focus = CHI_get_organized
-		all_of_scopes = { array = global.shandong_states NOT = { has_state_flag = State_start_Collaboration } }
+		435 = { NOT = { has_state_flag = State_start_Collaboration } } 435 = { NOT = { has_state_flag = State_start_Collaboration } }
 	}
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = CHI_Oofb_shandong_trigger_tt
-			always = yes
+			435 = { NOT = { has_state_flag = State_start_Collaboration } } 435 = { NOT = { has_state_flag = State_start_Collaboration } }
 		}
 	}
-	on_map_mode = map_only
+	#on_map_mode = map_only
 	highlight_states = {
-		highlight_states_trigger = { is_in_array = { global.shandong_states = THIS } }
+        highlight_state_targets = {
+           state = 435 state = 544
+        }
     }
 	custom_cost_trigger = {
 		check_variable = { treasury > 10.0 }
@@ -503,8 +537,7 @@ CHI_Redemption_assets = {
 	}
 	days_remove = 60
 	remove_effect = {
-		custom_effect_tooltip = STATE_ADD_State_Collaboration_effect_tt 
-		for_each_scope_loop = { array = global.shandong_states STATE_ADD_State_Collaboration = yes }
+		435 = { STATE_ADD_State_Collaboration = yes } 544 = { STATE_ADD_State_Collaboration = yes }
 	}
 	ai_will_do = { factor = 1 }
 	}
@@ -513,17 +546,19 @@ CHI_Redemption_assets = {
 	icon = GFX_decision_hol_exchange_intelligence_data
 	visible = {
 		has_completed_focus = CHI_get_organized
-		all_of_scopes = { array = global.zhejiang_states NOT = { has_state_flag = State_start_Collaboration } }
+		538 = { NOT = { has_state_flag = State_start_Collaboration } }
 	}
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = CHI_Oofb_zhejiang_trigger_tt
-			always = yes
+			538 = { NOT = { has_state_flag = State_start_Collaboration } }
 		}
 	}
-	on_map_mode = map_only
+	#on_map_mode = map_only
 	highlight_states = {
-		highlight_states_trigger = { is_in_array = { global.zhejiang_states = THIS } }
+        highlight_state_targets = {
+           state = 538
+        }
     }
 	custom_cost_trigger = {
 		check_variable = { treasury > 10.0 }
@@ -535,8 +570,7 @@ CHI_Redemption_assets = {
 	}
 	days_remove = 60
 	remove_effect = {
-		custom_effect_tooltip = STATE_ADD_State_Collaboration_effect_tt 
-		for_each_scope_loop = { array = global.zhejiang_states STATE_ADD_State_Collaboration = yes }
+		538 = { STATE_ADD_State_Collaboration = yes }
 	}
 	ai_will_do = { factor = 1 }
 	}
@@ -545,18 +579,19 @@ CHI_Redemption_assets = {
 	icon = GFX_decision_hol_exchange_intelligence_data
 	visible = {
 		has_completed_focus = CHI_get_organized
-		all_of_scopes = { array = global.henan_states NOT = { has_state_flag = State_start_Collaboration } }
+		567 = { NOT = { has_state_flag = State_start_Collaboration } }
 	}
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = CHI_Oofb_henan_trigger_tt
-			always = yes
+			567 = { NOT = { has_state_flag = State_start_Collaboration } }
 		}
 	}
-	on_map_mode = map_only
+	#on_map_mode = map_only
 	highlight_states = {
-		custom_effect_tooltip = STATE_ADD_State_Collaboration_effect_tt 
-		highlight_states_trigger = { is_in_array = { global.henan_states = THIS } }
+        highlight_state_targets = {
+           state = 567
+        }
     }
 	custom_cost_trigger = {
 		check_variable = { treasury > 10.0 }
@@ -568,7 +603,7 @@ CHI_Redemption_assets = {
 	}
 	days_remove = 60
 	remove_effect = {
-		for_each_scope_loop = { array = global.henan_states STATE_ADD_State_Collaboration = yes }
+		567 = { STATE_ADD_State_Collaboration = yes }
 	}
 	ai_will_do = { factor = 1 }
 	}
@@ -577,17 +612,19 @@ CHI_Redemption_assets = {
 	icon = GFX_decision_hol_exchange_intelligence_data
 	visible = {
 		has_completed_focus = CHI_get_organized
-		all_of_scopes = { array = global.liaoning_states NOT = { has_state_flag = State_start_Collaboration } }
+		1095 = { NOT = { has_state_flag = State_start_Collaboration } } 552 = { NOT = { has_state_flag = State_start_Collaboration } }
 	}
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = CHI_Oofb_liaoning_trigger_tt
-			always = yes
+			1095 = { NOT = { has_state_flag = State_start_Collaboration } } 552 = { NOT = { has_state_flag = State_start_Collaboration } }
 		}
 	}
-	on_map_mode = map_only
+	#on_map_mode = map_only
 	highlight_states = {
-        highlight_states_trigger = { is_in_array = { global.liaoning_states = THIS } }
+        highlight_state_targets = {
+           state = 1095 state = 552
+        }
     }
 	custom_cost_trigger = {
 		check_variable = { treasury > 10.0 }
@@ -599,8 +636,7 @@ CHI_Redemption_assets = {
 	}
 	days_remove = 60
 	remove_effect = {
-		custom_effect_tooltip = STATE_ADD_State_Collaboration_effect_tt 
-		for_each_scope_loop = { array = global.liaoning_states STATE_ADD_State_Collaboration = yes }
+		1095 = { STATE_ADD_State_Collaboration = yes } 552 = { STATE_ADD_State_Collaboration = yes }
 	}
 	ai_will_do = { factor = 1 }
 	}
@@ -609,17 +645,21 @@ CHI_Redemption_assets = {
 	icon = GFX_decision_hol_exchange_intelligence_data
 	visible = {
 		has_completed_focus = CHI_get_organized
-		all_of_scopes = { array = global.hebei_states NOT = { has_state_flag = State_start_Collaboration } }
+		434 = { NOT = { has_state_flag = State_start_Collaboration } } 549 = { NOT = { has_state_flag = State_start_Collaboration } }
+		547 = { NOT = { has_state_flag = State_start_Collaboration } } 548 = { NOT = { has_state_flag = State_start_Collaboration } } 
 	}
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = CHI_Oofb_hebei_trigger_tt
-			always = yes
+			434 = { NOT = { has_state_flag = State_start_Collaboration } } 549 = { NOT = { has_state_flag = State_start_Collaboration } }
+			547 = { NOT = { has_state_flag = State_start_Collaboration } } 548 = { NOT = { has_state_flag = State_start_Collaboration } }
 		}
 	}
-	on_map_mode = map_only
+	#on_map_mode = map_only
 	highlight_states = {
-		highlight_states_trigger = { is_in_array = { global.hebei_states = THIS } }
+        highlight_state_targets = {
+           state = 434 state = 549 state = 547 state = 548 
+        }
     }
 	custom_cost_trigger = {
 		check_variable = { treasury > 30.0 }
@@ -631,8 +671,8 @@ CHI_Redemption_assets = {
 	}
 	days_remove = 60
 	remove_effect = {
-		custom_effect_tooltip = STATE_ADD_State_Collaboration_effect_tt 
-		for_each_scope_loop = { array = global.hebei_states STATE_ADD_State_Collaboration = yes }
+		434 = { STATE_ADD_State_Collaboration = yes } 549 = { STATE_ADD_State_Collaboration = yes } 
+		547 = { STATE_ADD_State_Collaboration = yes } 548 = { STATE_ADD_State_Collaboration = yes }
 	}
 	ai_will_do = { factor = 1 }
 	}
@@ -641,17 +681,20 @@ CHI_Redemption_assets = {
 	icon = GFX_decision_hol_exchange_intelligence_data
 	visible = {
 		has_completed_focus = CHI_get_organized
-		all_of_scopes = { array = global.sichuan_states NOT = { has_state_flag = State_start_Collaboration } }
+		585 = { NOT = { has_state_flag = State_start_Collaboration } } 586 = { NOT = { has_state_flag = State_start_Collaboration } } 583 = { NOT = { has_state_flag = State_start_Collaboration } }
+		1218 = { NOT = { has_state_flag = State_start_Collaboration } } 1219 = { NOT = { has_state_flag = State_start_Collaboration } }
 	}
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = CHI_Oofb_sichuan_trigger_tt
-			always = yes
+			#585 = { NOT = { has_state_flag = State_start_Collaboration } } 586 = { NOT = { has_state_flag = State_start_Collaboration } } 583 = { NOT = { has_state_flag = State_start_Collaboration } }
 		}
 	}
-	on_map_mode = map_only
+	#on_map_mode = map_only
 	highlight_states = {
-        highlight_states_trigger = { is_in_array = { global.sichuan_states = THIS } }
+        highlight_state_targets = {
+           state = 585 state = 586 state = 583 state = 1218 state = 1219
+        }
     }
 	custom_cost_trigger = {
 		check_variable = { treasury > 20.0 }
@@ -663,8 +706,8 @@ CHI_Redemption_assets = {
 	}
 	days_remove = 60
 	remove_effect = {
-		custom_effect_tooltip = STATE_ADD_State_Collaboration_effect_tt 
-		for_each_scope_loop = { array = global.sichuan_states STATE_ADD_State_Collaboration = yes }
+		585 = { STATE_ADD_State_Collaboration = yes } 586 = { STATE_ADD_State_Collaboration = yes } 583 = { STATE_ADD_State_Collaboration = yes }
+		1218 = { STATE_ADD_State_Collaboration = yes } 1219 = { STATE_ADD_State_Collaboration = yes }
 	}
 	ai_will_do = { factor = 1 }
 	}
@@ -673,17 +716,19 @@ CHI_Redemption_assets = {
 	icon = GFX_decision_hol_exchange_intelligence_data
 	visible = {
 		has_completed_focus = CHI_get_organized
-		all_of_scopes = { array = global.fujian_states NOT = { has_state_flag = State_start_Collaboration } }
+		537 = { NOT = { has_state_flag = State_start_Collaboration } }
 	}
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = CHI_Oofb_fujian_trigger_tt
-			always = yes
+			537 = { NOT = { has_state_flag = State_start_Collaboration } }
 		}
 	}
-	on_map_mode = map_only
+	#on_map_mode = map_only
 	highlight_states = {
-        highlight_states_trigger = { is_in_array = { global.fujian_states = THIS } }
+        highlight_state_targets = {
+           state = 537
+        }
     }
 	custom_cost_trigger = {
 		check_variable = { treasury > 10.0 }
@@ -695,8 +740,7 @@ CHI_Redemption_assets = {
 	}
 	days_remove = 60
 	remove_effect = {
-		custom_effect_tooltip = STATE_ADD_State_Collaboration_effect_tt 
-		for_each_scope_loop = { array = global.fujian_states STATE_ADD_State_Collaboration = yes }
+		537 = { STATE_ADD_State_Collaboration = yes }
 	}
 	ai_will_do = { factor = 1 }
 	}
@@ -705,17 +749,19 @@ CHI_Redemption_assets = {
 	icon = GFX_decision_hol_exchange_intelligence_data
 	visible = {
 		has_completed_focus = CHI_get_organized
-		all_of_scopes = { array = global.hubei_states NOT = { has_state_flag = State_start_Collaboration } }
+		570 = { NOT = { has_state_flag = State_start_Collaboration } }
 	}
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = CHI_Oofb_hubei_trigger_tt
-			always = yes
+			570 = { NOT = { has_state_flag = State_start_Collaboration } }
 		}
 	}
-	on_map_mode = map_only
+	#on_map_mode = map_only
 	highlight_states = {
-        highlight_states_trigger = { is_in_array = { global.hubei_states = THIS } }
+        highlight_state_targets = {
+           state = 570
+        }
     }
 	custom_cost_trigger = {
 		check_variable = { treasury > 10.0 }
@@ -727,8 +773,7 @@ CHI_Redemption_assets = {
 	}
 	days_remove = 60
 	remove_effect = {
-		custom_effect_tooltip = STATE_ADD_State_Collaboration_effect_tt 
-		for_each_scope_loop = { array = global.hubei_states STATE_ADD_State_Collaboration = yes }
+		570 = { STATE_ADD_State_Collaboration = yes }
 	}
 	ai_will_do = { factor = 1 }
 	}
@@ -737,17 +782,19 @@ CHI_Redemption_assets = {
 	icon = GFX_decision_hol_exchange_intelligence_data
 	visible = {
 		has_completed_focus = CHI_get_organized
-		all_of_scopes = { array = global.shanghai_states NOT = { has_state_flag = State_start_Collaboration } }
+		540 = { NOT = { has_state_flag = State_start_Collaboration } }
 	}
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = CHI_Oofb_shanghai_trigger_tt
-			always = yes
+			540 = { NOT = { has_state_flag = State_start_Collaboration } }
 		}
 	}
-	on_map_mode = map_only
+	#on_map_mode = map_only
 	highlight_states = {
-        highlight_states_trigger = { is_in_array = { global.shanghai_states = THIS } }
+        highlight_state_targets = {
+           state = 540
+        }
     }
 	custom_cost_trigger = {
 		check_variable = { treasury > 10.0 }
@@ -759,10 +806,44 @@ CHI_Redemption_assets = {
 	}
 	days_remove = 60
 	remove_effect = {
-		custom_effect_tooltip = STATE_ADD_State_Collaboration_effect_tt 
-		for_each_scope_loop = { array = global.shanghai_states STATE_ADD_State_Collaboration = yes }
+		540 = { STATE_ADD_State_Collaboration = yes }
 	}
 	ai_will_do = { factor = 1 }
+	}
+
+	Launch_cooperation_initiatives_at_forums = { #在各地合作论坛发出合作倡议
+	icon = GFX_decision_ger_mefo_bills
+	visible = {
+		has_completed_focus = Launch_cooperation_initiatives_at_forums
+		NOT = { has_country_flag = Launch_cooperation_initiatives_at_forums }
+	}
+	available = {
+		always = yes
+	}
+	custom_cost_trigger = {
+		check_variable = { treasury > 50.0 }
+		has_political_power > 9
+	}
+	custom_cost_text = cost_50_0_AND_political_power_10
+	complete_effect = {
+		set_temp_variable = { treasury_change = -50 }
+		modify_treasury_effect = yes
+		add_political_power = -10
+	}
+	fire_only_once = yes
+	days_remove = 70
+	remove_effect = {
+		every_owned_state = {
+			limit = { has_state_flag = State_start_Collaboration }
+			set_temp_variable = { sc_spsic_add = 0.05 }  set_temp_variable = { sc_spg_add = 0.02 } 
+			custom_effect_tooltip = Launch_cooperation_initiatives_at_forums_effect_tt 
+			add_to_variable = { sc_spsic = sc_spsic_add } add_to_variable = { sc_spg = sc_spg_add } 
+		}
+		set_country_flag = Launch_cooperation_initiatives_at_forums
+	}
+	ai_will_do = {
+		factor = 1
+	}
 	}
 
 	Launch_cooperation_initiatives_at_forums = { #在各地合作论坛发出合作倡议

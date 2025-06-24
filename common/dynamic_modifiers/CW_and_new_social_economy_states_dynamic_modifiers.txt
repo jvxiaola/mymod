@@ -23,11 +23,12 @@ CW_youji3 = {
 	}
 	
 
-
+   
+	
 CHI_Organize_state_enterprises_modifier = {
 	enable = { always = yes }
 	icon = GFX_idea_economy_housing
-	political_power_factor = COSEM_pp#政治点:开始为0
+	political_power_factor = COSEM_pp #政治点:开始为0
 	global_building_slots_factor = COSEM_gbs #建筑槽:开始为-0.15
 	local_resources_factor = COSEM_lrs #资源:开始为-0.05
 	production_speed_buildings_factor = COSEM_sb #建造速度:开始为-0.05
@@ -57,6 +58,9 @@ State_Collaboration = {
 	local_supplies = sc_ls #地区补给
 	state_renewable_energy_generation_modifier = sc_regm #省份可再生能源系数
 }
+
+
+
 
 CHI_Collaboration_internet = {
 	enable = { always = yes }	

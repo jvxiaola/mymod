@@ -10191,7 +10191,7 @@ add_core_of = ROOT
 				set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.03 }
 				change_CHI_Socialist_Construction_dynamic1 = yes
 	add_stability = 0.05
-	set_country_flag = party5_banned
+	#set_country_flag = party5_banned
 	hidden_effect = {
 
 	}

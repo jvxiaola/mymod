@@ -1464,7 +1464,7 @@ power_balance_weekly = 0.003
 
 
 junfazuofeng1={
-picture = GFX_ideology_Nat_Autocracy
+picture = republican_command_disorganized
 
 allowed = {
 }
@@ -1476,7 +1476,7 @@ modifier = {
 }
 
 junfazuofeng2={
-	picture = GFX_ideology_Nat_Autocracy
+	picture = republican_command_disorganized
 
 	allowed = {
 	}
@@ -1488,7 +1488,7 @@ junfazuofeng2={
 	}
 
 	junfazuofeng3={
-		picture = GFX_ideology_Nat_Autocracy
+		picture = republican_command_disorganized
 
 		allowed = {
 		}
@@ -1502,7 +1502,7 @@ junfazuofeng2={
 
 
 		junxingbuwen1={
-		picture = GFX_ideology_Nat_Autocracy
+		picture = army_slavic
 
 		allowed = {
 		}
@@ -1518,7 +1518,7 @@ junfazuofeng2={
 		}
 
 		junxingbuwen2={
-			picture = GFX_ideology_Nat_Autocracy
+			picture = army_slavic
 	
 			allowed = {
 			}
@@ -1532,7 +1532,7 @@ junfazuofeng2={
 			}
 			}
 			junxingbuwen3={
-				picture = GFX_ideology_Nat_Autocracy
+				picture = army_slavic
 		
 				allowed = {
 				}
@@ -1545,7 +1545,7 @@ junfazuofeng2={
 				}
 				}
 		bcjzdjd={
-			picture = communism7
+			picture = frontier_chaos
 			allowed = {
 			}
 			
@@ -1568,7 +1568,7 @@ junfazuofeng2={
 
 
 		CHI_zhengwei = {
-			picture = idea_marxist_military
+			picture = political_officers_idea
 			allowed = {
 			}
 			
@@ -3453,7 +3453,7 @@ attrition = -0.1
 			}
 		}
 	people_army2 = {
-			picture = red_revolutionary_army
+			picture = pla
 			allowed = {
 			}
 			 				name = people_army
@@ -3473,7 +3473,7 @@ Chinese_people_support_to_china_government_modifier = 0.03
 			}
 		}
 	people_army3 = {
-			picture = red_revolutionary_army
+			picture = pla
 			allowed = {
 			}
 			 				name = people_army
@@ -3492,7 +3492,7 @@ Chinese_people_support_to_china_government_modifier = 0.03
 		people_army4={
 
 
-		picture = red_revolutionary_army
+			picture = pla
 		allowed = {
 		}
 			name = people_army
