@@ -292,7 +292,7 @@ add_ideas = PRC_fcjc
 }
 	shared_focus = {
 		id = PRC_xmfg
-		icon = sniper
+		icon = free_internet
 		x = 0
 		y = 7
 		cost = 10

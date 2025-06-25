@@ -3261,7 +3261,7 @@ Chinese_people_support_to_china_government_modifier = -0.03
 
 
 		PRC_gxdjhjj = {
-			picture = Big_Brother
+			picture = computer_server
 			allowed = {
 			}
 			
