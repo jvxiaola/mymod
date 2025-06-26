@@ -1110,8 +1110,8 @@ PRC_party_state_capitalism_desc: "资本必须要绝对服从党和国家的指�
 PRC_1984: "老大哥在看着你！"
 PRC_1984_desc: "老大哥无处不在——他始终为人民服务"
 
-PRC_OGAS: "经济自动化"
-PRC_OGAS_desc: "所有的经济数据都能够导入计算机，进行统一的规划"
+PRC_OGAS: "初步经济自动化"
+PRC_OGAS_desc: "所有的经济数据都能够导入计算机，进行统一的分析规划"
  
 PRC_fchb:0 "企业互联"
 PRC_fchb_desc:0 "通过计算机技术，企业可以更高效的发送与接受生产任务。"

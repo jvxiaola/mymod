@@ -3042,15 +3042,71 @@ PRC_computer_syetem1 = {
  				name = computer_syetem
 
 			modifier = {
-research_speed_factor = 0.10
+research_speed_factor = 0.04
 party_popularity_stability_factor = 0.2
 production_factory_efficiency_gain_factor = 0.2
-political_power_gain = -0.2
-monthly_population = 0.25
+political_power_gain = 0.2
+monthly_population = 0.05
+stability_factor = -0.1
+production_speed_buildings_factor = 0.05
+			}
+		}
+
+
+		PRC_computer_syetem2 = {
+			picture = Communist_ogas
+			allowed = {
+			}
+			
+ 				name = computer_syetem
+
+			modifier = {
+research_speed_factor = 0.08
+party_popularity_stability_factor = 0.2
+production_factory_efficiency_gain_factor = 0.2
+political_power_gain = 0.4
+monthly_population = 0.10
 stability_factor = -0.1
 production_speed_buildings_factor = 0.1
 			}
 		}
+
+		PRC_computer_syetem3 = {
+			picture = Communist_ogas
+			allowed = {
+			}
+			
+ 				name = computer_syetem
+
+			modifier = {
+research_speed_factor = 0.12
+party_popularity_stability_factor = 0.2
+production_factory_efficiency_gain_factor = 0.2
+political_power_gain = 0.6
+monthly_population = 0.15
+stability_factor = -0.1
+production_speed_buildings_factor = 0.15
+			}
+		}
+
+		PRC_computer_syetem_yunze_4 = {
+			picture = Communist_ogas
+			allowed = {
+			}
+			
+ 				name = computer_syetem
+
+			modifier = {
+research_speed_factor = 0.16
+party_popularity_stability_factor = 0.2
+production_factory_efficiency_gain_factor = 0.2
+political_power_gain = 0.8
+monthly_population = 0.20
+stability_factor = -0.1
+production_speed_buildings_factor = 0.20
+			}
+		}
+
 PRC_communsim_soc = {
 			picture = Communist_ogas
 			allowed = {
