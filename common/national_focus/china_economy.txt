@@ -1733,8 +1733,7 @@ shared_focus = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			CHI_ruin_economy_remove = yes
-			if = {
-				limit = { tag = DSC }
+
 				custom_effect_tooltip = DSC_Chinese_Industrial_Explosion21_tt
 				add_ideas = CHI_idea_Public_ownership_economy
 				CHI_Public_ownership_economy_end_effect = yes
@@ -1742,7 +1741,7 @@ shared_focus = {
 					id = economic_developing_direction_balance
 					set_value = 0.15
 				}
-			}
+			
 			mark_focus_tree_layout_dirty = yes
 			hidden_effect = {
 				CHI_remove_other_variable = yes
@@ -1804,8 +1803,8 @@ shared_focus = {
 		id = CHI_Chinese_Megaprojects
 		icon = communism19
 
-		x = 42
-		y = 18
+		x = 57
+		y = 15
 		
 		allow_branch = {
 			OR = {
@@ -1829,9 +1828,9 @@ shared_focus = {
 		}
 		offset = {
 			x = -20
-			y = 15
+			y = -5
 			trigger = {
-				tag = DSC
+						has_country_flag = chuanyumaopai
 			}
 		}
 
@@ -5978,8 +5977,8 @@ is_subject_of = CHI
 		id = CHI_Strategic_Industries
 		icon = communism18
 
-		x = 48
-		y = 18
+		x = 63
+		y = 15
 
 		cost = 5
 		allow_branch = {
@@ -6002,9 +6001,9 @@ is_subject_of = CHI
 		}
 		offset = {
 			x = -20
-			y = 15
+			y = -5
 			trigger = {
-				tag = DSC
+						has_country_flag = chuanyumaopai
 			}
 		}
 		search_filters = { FOCUS_FILTER_EXPENDITURE }

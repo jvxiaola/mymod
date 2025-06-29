@@ -12,6 +12,14 @@ shared_focus = {
 				has_country_flag = chuanyumaopai
 			}
 		}
+		offset = {
+			x = -5
+			y = 0
+			trigger = {
+				has_country_flag = laozuo
+			}
+		}
+
 		ai_will_do = {
 			factor = 5
 		}

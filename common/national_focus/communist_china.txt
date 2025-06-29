@@ -6261,6 +6261,21 @@ focus = {
 		ai_will_do = {
 			factor = 5
 		}
+
+
+
+
+
+		offset = {
+			x = 0
+			y = 4
+			trigger = {
+			has_idea=		CHI_idea_Public_ownership_economy
+
+			}
+		}
+
+
 		offset = {
 			x = -50
 			y = 18
@@ -10650,49 +10665,49 @@ add_idea=CHI_zzgs2
 #文革线
 
 
-focus = {
-	id = PRC_yunniang
-	icon = culturerev
-	x = 35
-	y = 0
-	allow_branch={
-		has_country_flag = jixuwenge
-	}
+#focus = {
+#	id = PRC_yunniang
+#	icon = culturerev
+#	x = 35
+#	y = 0
+#	allow_branch={
+#		has_country_flag = jixuwenge
+#	}
 
-	offset = {
-		x = -12
-		trigger = {
-			OR = { 
-				has_completed_focus = PRC_Proletarian_leader
-				has_completed_focus = PRC_jitilingdao
-			}
-		}
-	}
-	cost = 5
+#	offset = {
+#		x = -12
+#		trigger = {
+#			OR = { 
+#				has_completed_focus = PRC_Proletarian_leader
+#				has_completed_focus = PRC_jitilingdao
+#			}
+#		}
+#	}
+#	cost = 5
 
-	ai_will_do = {
-		factor = 10
-	}
+#	ai_will_do = {
+#		factor = 10
+#	}
 
-	available = {
+#	available = {
 
-	}
+#	}
 
-	bypass = {
-	}
+#	bypass = {
+#	}
 
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
+#	cancel_if_invalid = yes
+#	continue_if_invalid = no
+#	available_if_capitulated = no
 
-	completion_reward = {
+#	completion_reward = {
 
-add_stability = -0.20
+#add_stability = -0.20
 
 
 
-	}
-	}		
+#	}
+#	}		
 
 
 
@@ -10706,9 +10721,9 @@ add_stability = -0.20
 			has_country_flag = jixuwenge
 		}
 	prerequisite={
-		focus=PRC_yunniang
+		focus=PRC_Lasting_Cultural_Revolution
 	}
-			relative_position_id = PRC_yunniang
+			relative_position_id = PRC_Lasting_Cultural_Revolution
 		cost = 5
 	
 		ai_will_do = {
@@ -10741,7 +10756,7 @@ add_stability = -0.20
 	focus = {
 		id = PRC_wenyidaji
 		icon = China_Book_Burning
-		x = 1
+		x = 3
 		y = 2
 		allow_branch={
 			has_country_flag = jixuwenge
@@ -10750,7 +10765,7 @@ add_stability = -0.20
 	prerequisite={
 		focus=PRC_wengexiaozu
 	}
-			relative_position_id = PRC_yunniang
+			relative_position_id = PRC_Lasting_Cultural_Revolution
 		cost = 5
 	
 		ai_will_do = {
@@ -10780,7 +10795,7 @@ add_stability = -0.20
 		focus = {
 			id = PRC_baihuaqifang
 			icon = Let_a_hundred_flowers_bloom
-			x = -1
+			x = 1
 			y = 2
 			allow_branch={
 				has_country_flag = jixuwenge
@@ -10789,7 +10804,7 @@ add_stability = -0.20
 		prerequisite={
 			focus=PRC_wengexiaozu
 		}
-				relative_position_id = PRC_yunniang
+				relative_position_id = PRC_Lasting_Cultural_Revolution
 			cost = 5
 		
 			ai_will_do = {
@@ -10820,8 +10835,8 @@ add_stability = -0.20
 		focus = {
 			id = PRC_Lasting_Cultural_Revolution
 			icon = Continuous_Cultural_Revolution
-			x = 0
-			y = 3
+			x = 35
+			y = 0
 			allow_branch={
 				has_country_flag = jixuwenge
 			}
@@ -10831,7 +10846,7 @@ prerequisite={
 	focus=PRC_baihuaqifang
 }
 
-				relative_position_id = PRC_yunniang
+
 
 			cost = 5
 	
@@ -10866,11 +10881,11 @@ prerequisite={
 				focus = {
 					id = PRC_gongzuozu
 					icon = Japan_Workers_negotiate
-					x = 1
-					y = 4
-			prerequisite = {focus = PRC_Lasting_Cultural_Revolution }
+					x = -1
+					y = 2
+			prerequisite = {focus = PRC_wengexiaozu }
 			
-			relative_position_id = PRC_yunniang
+			relative_position_id = PRC_Lasting_Cultural_Revolution
 			mutually_exclusive = {focus = PRC_nogongzuozu  }
 					cost = 5
 			
@@ -10908,9 +10923,9 @@ prerequisite={
 					focus = {
 						id = PRC_nogongzuozu
 						icon = Socialist_freedom
-						x = -1
-						y = 1
-				prerequisite = {focus = PRC_Lasting_Cultural_Revolution }
+						x = -3
+						y = 2
+				prerequisite = {focus = PRC_wengexiaozu }
 				
 				relative_position_id = PRC_Lasting_Cultural_Revolution
 				mutually_exclusive = {focus = PRC_gongzuozu  }
@@ -10952,9 +10967,13 @@ prerequisite={
 				id = PRC_Mass_Movement
 				icon = Chinese_People_Front
 				x = 0
-				y = 2
+				y = 3
 		prerequisite = {focus = PRC_gongzuozu 
 		focus = PRC_nogongzuozu 
+
+		focus = PRC_baihuaqifang
+		focus = PRC_wenyidaji
+
 	}
 		
 		relative_position_id = PRC_Lasting_Cultural_Revolution
@@ -11029,7 +11048,7 @@ prerequisite={
 						id = PRC_guliduoquan
 						icon = gemingwuzui
 						x = -8
-						y = 3
+						y = 4
 						prerequisite = { focus = PRC_Mass_Movement }
 						mutually_exclusive = { focus = PRC_jingzhiduoquan }
 						relative_position_id = PRC_Lasting_Cultural_Revolution
@@ -11309,7 +11328,7 @@ prerequisite={
 						id = PRC_sidamingzhu
 						icon = four_basic_principles
 						x = 0
-						y = 4
+						y = 5
 						prerequisite = {
 							focus = PRC_jingzhiduoquan
 							focus = PRC_guliduoquan
