@@ -2365,21 +2365,41 @@ completion_reward = {
 
 		completion_reward = {
 			custom_effect_tooltip = Joint_production_system_tt
+			CHI={
+
+				create_country_leader = {
+					name = "毛远新"
+					picture = "Mao_Yuanxin.dds"
+					ideology = Chinese_Socialism_mao
+					traits = {
+							}
+					}
+				start_politics_input = yes
+				set_popularities = {
+					democratic = 0.0
+					communism = 100
+					fascism = 0.0
+					neutrality = 0.0
+					nationalist = 0.0
+				}
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+				}         
+				add_to_array = { ruling_party = 4 } #social_democracy								
+				set_variable = { party_pop_array^4 = 0.40 } #social_democracy	
+				startup_politics = yes
+			}
 			add_ideas = Joint_production_system
 			increase_economic_growth = yes
-			add_research_slot = 2
+			#add_research_slot = 2
 			hidden_effect = {
 
-			#if = {
-				#limit = {
-					#has_idea = CHI_economic_recovery_end
-					#has_idea = Agricultural_restructuring_end
-					#has_idea = Industrial_rebuild_end
-				#}
+
 				remove_ideas = CHI_economic_recovery_end
 				remove_ideas = Agricultural_restructuring_end
 				remove_ideas = Industrial_rebuild_end
-			#}
+
 			clr_country_flag = rehabilitate_economy
 
 

@@ -10262,6 +10262,11 @@ add_core_of = ROOT
 				set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.03 }
 				change_CHI_Socialist_Construction_dynamic1 = yes
 				CHI_MER_decresee_effect = yes
+				CHI_MER_decresee_effect = yes
+				CHI_MER_decresee_effect = yes
+				CHI_MER_decresee_effect = yes
+				CHI_MER_decresee_effect = yes
+
 				hidden_effect = {
 					country_event = { id = prc1.117 days = 7 }
 				}
@@ -10841,10 +10846,7 @@ add_idea=CHI_zzgs2
 				has_country_flag = jixuwenge
 			}
 
-prerequisite={	
-	focus=PRC_wenyidaji
-	focus=PRC_baihuaqifang
-}
+
 
 
 

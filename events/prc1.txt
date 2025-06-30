@@ -305,7 +305,7 @@ remove_ideas =  red_weidui1
 				if={limit={DSC={has_idea=CHI_zhengwei }}CHI={add_ideas = CHI_zhengwei }}
 				if={limit={DSC={has_idea=CHI_party_before_guns}}CHI={add_ideas = CHI_party_before_guns}}
 				if={limit={DSC={has_idea=bcjzdjd}}CHI={add_ideas = bcjzdjd}}
-				
+				if={limit={DSC={has_idea=Joint_production_system}}CHI={add_ideas = Joint_production_system}}	
 				
 					
 				CHI={
@@ -396,28 +396,7 @@ annex_country = {
 	transfer_troops = yes
 }
 
-		create_country_leader = {
-			name = "毛远新"
-			picture = "Mao_Yuanxin.dds"
-			ideology = Chinese_Socialism_mao
-			traits = {
-					}
-			}
-		start_politics_input = yes
-		set_popularities = {
-			democratic = 0.0
-			communism = 100
-			fascism = 0.0
-			neutrality = 0.0
-			nationalist = 0.0
-		}
-		set_politics = {
-			ruling_party = communism
-			elections_allowed = no
-		}
-		add_to_array = { ruling_party = 4 } #social_democracy								
-		set_variable = { party_pop_array^4 = 0.40 } #social_democracy	
-		startup_politics = yes
+
 #云泽最新
 
 
