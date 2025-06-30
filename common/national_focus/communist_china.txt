@@ -10790,7 +10790,13 @@ add_idea=CHI_zzgs2
 	
 		completion_reward = {
 	
-	add_stability = -0.20
+			custom_effect_tooltip = CHI_Socialist_Construction_dynamic_tt
+			set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.10 }
+			change_CHI_Socialist_Construction_dynamic20 = yes
+			set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = -0.15 }
+			change_CHI_Socialist_Construction_dynamic32 = yes
+			set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.2 }
+			change_CHI_Socialist_Construction_dynamic1 = yes
 	
 	
 	
@@ -10829,7 +10835,13 @@ add_idea=CHI_zzgs2
 		
 			completion_reward = {
 		
-		add_stability = -0.20
+				custom_effect_tooltip = CHI_Socialist_Construction_dynamic_tt
+			set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.10 }
+			change_CHI_Socialist_Construction_dynamic20 = yes
+			set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = -0.15 }
+			change_CHI_Socialist_Construction_dynamic32 = yes
+			set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.2 }
+			change_CHI_Socialist_Construction_dynamic1 = yes
 		
 		
 		
