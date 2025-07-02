@@ -3565,7 +3565,49 @@ Chinese_people_support_to_china_government_modifier = 0.03
 			}
 		}
 
+		people_amry1 = {
+			picture = red_revolutionary_army
+			allowed = {
+			}
+			 				name = people_amry
+ 	
+			modifier = {
+				conscription = 0.003
+				max_command_power = 50
+				command_power_gain_mult = 0.3
+				planning_speed = 0.10
 
+			}
+		}
+	people_amry2 = {
+			picture = red_revolutionary_army
+			allowed = {
+			}
+			 				name = people_amry
+ 	
+			modifier = {
+				conscription = 0.010
+				max_command_power = 50
+				command_power_gain_mult = 0.3
+				planning_speed = 0.15
+army_org_factor = 0.10
+			}
+		}
+	people_amry3 = {
+			picture = red_revolutionary_army
+			allowed = {
+			}
+			 				name = people_amry
+ 	
+			modifier = {
+			army_org_factor = 0.15
+				conscription = 0.015
+				max_command_power = 100
+				command_power_gain_mult = 0.5
+				planning_speed = 0.35
+
+			}
+		}
 
 		CHI_war_communism = {
 			allowed = { always = no }

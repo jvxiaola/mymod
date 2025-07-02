@@ -1,0 +1,16 @@
+npm_war_policies= {
+	priority = { base = 1000 }
+	allowed = { 
+
+	}
+	visible_when_empty = yes
+
+
+
+		icon = GFX_decision_CUB_train_chi
+
+	visible = {
+
+		tag=NPM
+	}
+}

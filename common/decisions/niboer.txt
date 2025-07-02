@@ -1,0 +1,47 @@
+npm_war_policies = {
+	tuichuyouji = {
+		#icon = GFX_decision_minotor_button
+		visible = {
+			tag=NPM
+			NOT={has_idea=NEP_youji}
+		}
+
+		available = {
+
+		}
+		complete_effect = {
+
+		}
+		days_remove = 20
+		remove_effect = {
+			remove_ideas = NEP_youji
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jingruyouji = {
+		#icon = GFX_decision_minotor_button
+		visible = {
+			tag=NPM
+			has_idea=NEP_youji
+		}
+
+		available = {
+
+		}
+		complete_effect = {
+
+		}
+		days_remove = 20
+		remove_effect = {
+			add_ideas = NEP_youji
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	
+}

@@ -42,4 +42,11 @@ spriteTypes = {
 		name = "GFX_idea_CW_ruin"
 		texturefile = "gfx/interface/ideas/CW_idea/idea_CW_ruin.png"
 	}
+
+
+	spriteType = {
+		name = "GFX_idea_youjitu"
+		texturefile = "gfx/interface/ideas/red_army_idea.png"
+	}
+	
 }

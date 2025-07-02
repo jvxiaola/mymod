@@ -82,6 +82,11 @@ CW_youji2_desc: "游击状态2"
 
 CW_youji3: "游击3"
 CW_youji3_desc: "游击状态3"
+
+NEP_youji: "游击状态"
+NEP_youji_desc: "在这个状态下，敌军很难击溃我军，当然，我军也很难击溃敌军"
+
+
 #事件
 prc1.159: "异相"
 prc1.159.t: "异相"

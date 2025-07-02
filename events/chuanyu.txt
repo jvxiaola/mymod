@@ -329,11 +329,7 @@ Militia_Bat = { x = 1 y = 3 }
 
 
 		#标记
-		583={
-			add_dynamic_modifier = {
-				 modifier = CW_youji3
-				}
-		}
+
 
 	}
 
@@ -358,11 +354,7 @@ Militia_Bat = { x = 1 y = 3 }
 
 
 		#标记
-		583={
-			add_dynamic_modifier = {
-				 modifier = CW_youji2
-			}
-		}
+
 
 
 		random_owned_controlled_state = {
@@ -408,11 +400,7 @@ Militia_Bat = { x = 1 y = 3 }
 
 
 		#标记
-		583={
-			add_dynamic_modifier = {
-				 modifier = CW_youji 
-				}
-		}
+
 
 	}
 
@@ -443,11 +431,7 @@ Militia_Bat = { x = 1 y = 3 }
 		}
 
 
-		1219={
-			add_dynamic_modifier = {
-				 modifier = CW_youji3
-				}
-		}
+
 		random_owned_controlled_state = {
 			prioritize = { 1219}
 			create_unit = {
@@ -505,11 +489,7 @@ Militia_Bat = { x = 1 y = 3 }
 		}
 
 
-		1217={
-			add_dynamic_modifier = {
-				 modifier = CW_youji2
-				}
-		}
+
 		random_owned_controlled_state = {
 			prioritize = { 1219}
 			create_unit = {
@@ -547,11 +527,7 @@ Militia_Bat = { x = 1 y = 3 }
 			}	
 		}
 		#标记
-		1219={
-			add_dynamic_modifier = {
-				 modifier = CW_youji 
-				}
-		}
+
 
 	}
 
@@ -579,11 +555,7 @@ Militia_Bat = { x = 1 y = 3 }
 		}
 
 
-		1217={
-			add_dynamic_modifier = {
-				 modifier = CW_youji3
-				}
-		}
+
 		random_owned_controlled_state = {
 			prioritize = { 586}
 			create_unit = {
@@ -641,11 +613,7 @@ Militia_Bat = { x = 1 y = 3 }
 		}
 
 
-		586={
-			add_dynamic_modifier = {
-				 modifier = CW_youji2
-				}
-		}
+
 		random_owned_controlled_state = {
 			prioritize = { 586}
 			create_unit = {
@@ -684,11 +652,7 @@ Militia_Bat = { x = 1 y = 3 }
 			}	
 		}
 		#标记
-		586={
-			add_dynamic_modifier = {
-				 modifier = CW_youji 
-				}
-		}
+
 
 	}
 
@@ -710,11 +674,7 @@ Militia_Bat = { x = 1 y = 3 }
 		}
 
 
-		585={
-			add_dynamic_modifier = {
-				 modifier = CW_youji3
-				}
-		}
+
 		random_owned_controlled_state = {
 			prioritize = { 585}
 			create_unit = {
@@ -772,11 +732,7 @@ Militia_Bat = { x = 1 y = 3 }
 		}
 
 
-		585={
-			add_dynamic_modifier = {
-				 modifier = CW_youji2
-				}
-		}
+
 		random_owned_controlled_state = {
 			prioritize = { 585}
 			create_unit = {
@@ -815,11 +771,7 @@ Militia_Bat = { x = 1 y = 3 }
 			}	
 		}
 		#标记
-		585={
-			add_dynamic_modifier = {
-				 modifier = CW_youji 
-				}
-		}
+
 
 	}
 

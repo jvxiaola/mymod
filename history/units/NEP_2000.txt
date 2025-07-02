@@ -1,0 +1,165 @@
+﻿division_template = {
+	name = "Special Force Brigade"
+
+	regiments = {
+		Special_Forces = { x = 0 y = 0 }
+		Special_Forces = { x = 0 y = 1 }
+		L_Air_Inf_Bat = { x = 0 y = 2 }
+
+		L_arm_Bat = { x = 1 y = 0 }
+	}
+	support = {
+		Arty_Battery = { x = 0 y = 0 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Infantry Division"
+
+	regiments = {
+		L_Inf_Bat = { x = 0 y = 0 }
+		L_Inf_Bat = { x = 0 y = 1 }
+		L_Inf_Bat = { x = 0 y = 2 }
+		L_Inf_Bat = { x = 0 y = 3 }
+
+		L_Inf_Bat = { x = 1 y = 0 }
+		L_Inf_Bat = { x = 1 y = 1 }
+		L_Inf_Bat = { x = 1 y = 2 }
+		L_Inf_Bat = { x = 1 y = 3 }
+
+		L_Inf_Bat = { x = 2 y = 0 }
+		L_Inf_Bat = { x = 2 y = 1 }
+		L_Inf_Bat = { x = 2 y = 2 }
+		L_Inf_Bat = { x = 2 y = 3 }
+		L_Inf_Bat = { x = 2 y = 4 }
+	}
+	support = {
+		L_Engi_Comp = { x = 0 y = 0 }
+	}
+}
+
+
+division_template = {
+	name = "police"
+
+	regiments = {
+		L_Inf_Bat = { x = 0 y = 0 }
+		L_Inf_Bat = { x = 0 y = 1 }
+		L_Inf_Bat = { x = 0 y = 2 }
+		L_Inf_Bat = { x = 0 y = 3 }
+
+
+	}
+	support = {
+		L_Engi_Comp = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "1st Infantry Division"
+		location = 6955
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.00
+	}
+	division = {
+		name = "2nd Infantry Division"
+		location = 7139
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.00
+	}
+	division = {
+		name = "3rd Infantry Division"
+		location = 7196
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.00
+	}
+	division = {
+		name = "4th Infantry Division"
+		location = 10910
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.00
+	}
+	division = {
+		name = "Special Force Brigade"
+		location = 7139
+		division_template = "Special Force Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.00
+	}
+
+	division = {
+		name = "Special Force Brigade"
+		location = 14506
+		division_template = "Special Force Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.00
+	}
+	division = {
+		name = "police1"
+		location = 4386
+		division_template = "police"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.00
+	}
+
+	division = {
+		name = "police2"
+		location = 7206
+		division_template = "police"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.00
+	}
+	division = {
+		name = "police3"
+		location = 4987
+		division_template = "police"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.00
+	}
+
+
+
+
+
+
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = infantry_weapons
+		amount = 850
+		producer = BEL
+	}
+	add_equipment_to_stockpile = {
+		type = command_control_equipment
+		amount = 95
+		producer = RAJ
+	}
+	add_equipment_to_stockpile = {
+		type = Anti_tank_0
+		amount = 40
+		producer = RAJ
+	}
+	add_equipment_to_stockpile = {
+		type = Anti_Air_0
+		amount = 30
+		producer = RAJ
+	}
+	add_equipment_to_stockpile = {
+		type = medium_tank_destroyer_chassis_0
+		amount = 4
+		producer = ENG
+		variant_name = "Ferret"
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_0 #OTO-Melara Mod 56
+		amount = 4
+		producer = ITA
+	}
+}

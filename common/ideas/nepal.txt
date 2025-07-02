@@ -1,0 +1,55 @@
+ideas = {
+	country = {
+		##Starting ideas
+		NEP_Himalayan_Rebellion_Struggle = {
+
+			allowed_civil_war = { always = yes }
+
+			picture = mountain_defence_red
+
+			modifier = {
+				surrender_limit = 1.00
+				conscription_factor = 0.2
+				winter_attrition = -0.15
+			}
+		}
+
+		NEP_youji = {
+
+			allowed_civil_war = { always = yes }
+icon=GFX_idea_youjitu
+			#picture = youjitu
+
+			modifier = {
+				army_defence_factor = 500.00
+				breakthrough_factor = -0.80
+				army_org_factor = 100.00
+				army_attack_factor = 1.0
+				
+
+			}
+		}
+
+		NEP_National_Unity_Campaign = {
+
+			allowed_civil_war = { always = yes }
+
+			picture = mountain_defence_red
+
+			modifier = {
+				max_planning = 0.20
+				surrender_limit = 0.50
+			}
+		}
+		NEP_The_National_vendetta = {
+			allowed_civil_war = { always = yes }
+
+			picture = mountain_defence_red
+
+			modifier = {
+				max_planning = 0.10
+				defence = 0.10
+			}
+		}
+	}
+}

@@ -7,7 +7,7 @@
 	#Starting
 	489 = {	add_dynamic_modifier = { modifier = NEP_guerrilla_conflict } }
 	485 = {	add_dynamic_modifier = { modifier = NEP_guerrilla_conflict } }
-	set_province_controller = 4987
+	set_province_controller = 14509
 	### for all nations # Don't get clever ideas with it
 	set_country_flag = dynamic_flag
 	set_cosmetic_tag = NPM
@@ -91,6 +91,7 @@
 		officer_advanced_training
 		consumption_economy
 		NEP_Himalayan_Rebellion_Struggle
+		NEP_youji
 		people_amry3
 	}
 
@@ -169,9 +170,9 @@
 	set_variable = { current_term = 2 }
 
 	every_controlled_state = {
-		set_variable = { productivity_state_var = 1095 }
+		set_variable = { productivity_state_var = 395 }
 	}
-	set_variable = { overall_productivity = 1095 }
+	set_variable = { overall_productivity = 395 }
 }
 
 2017.1.1 = {
