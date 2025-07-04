@@ -1,0 +1,24 @@
+guiTypes = {
+	containerWindowType = {
+		#标记
+		name = "CHI_CR_GUI"
+		size = { width = 900 height = 600 }
+		iconType = {
+			name = "CHI_quantu"
+			spriteType = "GFX_zhongguo_quantu"
+			position = { x = 0 y = 0 }
+		}
+		buttonType = {
+			name = "GFX_zhongguo_wuhan"
+			spriteType = "GFX_zhongguo_wuhan"
+			position = { x = 284 y = 164 }
+			clicksound = click_default
+			
+		}
+
+
+
+
+	
+	}
+}

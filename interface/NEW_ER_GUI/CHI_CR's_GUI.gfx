@@ -1,0 +1,15 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_zhongguo_quantu"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_graph.png"
+	}
+	spriteType = {
+		name = "GFX_zhongguo_wuhan"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_wuhan_graph.png"
+		transparencecheck = yes
+	}
+
+
+
+}
+

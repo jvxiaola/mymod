@@ -67,10 +67,11 @@ DSC_zuzhimaopai = {
 }
 
 
-DSC_CR_decisions = {
+CHI_CR_decisions = {
 
 	priority =  { base = 1999 }
 	visible_when_empty = yes
+	scripted_gui = CHI_CR_GUI
 	visible = {
 
 	has_country_flag = jixuwenge

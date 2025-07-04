@@ -1,0 +1,24 @@
+scripted_gui = {
+
+	CHI_CR_GUI = {
+		context_type = decision_category
+		window_name = "CHI_CR_GUI"
+
+		visible = {
+			always = yes
+		}
+		#云泽标记
+		triggers = {
+
+		
+
+
+		}
+		effects = {
+
+
+
+	}
+
+}
+}
