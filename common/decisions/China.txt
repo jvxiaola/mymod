@@ -2602,7 +2602,7 @@ if = {
 
 }
 
-if = {
+else_if = {
 	limit = { has_idea = CHI_gongchanguimuo1}
 	swap_ideas = {
 		remove_idea = CHI_gongchanguimuo1
@@ -2611,7 +2611,7 @@ if = {
 
 }
 
-if = {
+else_if = {
 	limit = { has_idea = CHI_gongchanguimuo2}
 	swap_ideas = {
 		remove_idea = CHI_gongchanguimuo2
@@ -2649,7 +2649,7 @@ if = {
 				
 				}
 				
-				if = {
+				else_if = {
 					limit = { has_idea = CHI_gongchanguimuo1}
 					swap_ideas = {
 						remove_idea = CHI_gongchanguimuo1
@@ -2658,7 +2658,7 @@ if = {
 				
 				}
 				
-				if = {
+				else_if = {
 					limit = { has_idea = CHI_gongchanguimuo2}
 					swap_ideas = {
 						remove_idea = CHI_gongchanguimuo2
@@ -2696,7 +2696,7 @@ if = {
 					
 					}
 					
-					if = {
+					else_if = {
 						limit = { has_idea = CHI_gongchanguimuo1}
 						swap_ideas = {
 							remove_idea = CHI_gongchanguimuo1
@@ -2705,7 +2705,7 @@ if = {
 					
 					}
 					
-					if = {
+					else_if = {
 						limit = { has_idea = CHI_gongchanguimuo2}
 						swap_ideas = {
 							remove_idea = CHI_gongchanguimuo2
