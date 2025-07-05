@@ -10,6 +10,212 @@ spriteTypes = {
 	}
 
 
+	spriteType = {
+		name = "GFX_zhongguo_xinjiang"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_xinjiang_graph.png"
+		transparencecheck = yes
+	}
 
+
+	spriteType = {
+		name = "GFX_zhongguo_chongqing"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_chongqing_graph.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_zhongguo_guangdong"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_guangdong_graph.png"
+		transparencecheck = yes
+	}
+
+
+	spriteType = {
+		name = "GFX_zhongguo_qinghai"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_qinghai_graph.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_zhongguo_hunan"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_hunan_graph.png"
+		transparencecheck = yes
+	}
+
+
+	spriteType = {
+		name = "GFX_zhongguo_shandong"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_shandong_graph.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_zhongguo_xizang"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_xizang_graph.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_zhongguo_sichuan"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_sichuan_graph.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_zhongguo_hainan"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_hainan_graph.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_zhongguo_gansu"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_gansu_graph.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_zhongguo_fujian"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_fujian_graph.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_zhongguo_henan"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_henan_graph.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_zhongguo_guangxi"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_guangxi_graph.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_zhongguo_yunnan"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_yunnan_graph.png"
+		transparencecheck = yes
+	}
+
+
+	spriteType = {
+		name = "GFX_zhongguo_guizhou"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_guizhou_graph.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_zhongguo_fujian"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_fujian_graph.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_zhongguo_zhejiang"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_zhejiang_graph.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_zhongguo_jiangsu"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_jiangsu_graph.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_zhongguo_anhui"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_anhui_graph.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_zhongguo_shanxi"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_shanxi_graph.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_zhongguo_shan3xi"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_shan3xi_graph.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_zhongguo_shan1xi"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_shan1xi_graph.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_zhongguo_neimeng"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_neimeng_graph.png"
+		transparencecheck = yes
+	}
+
+
+
+	spriteType = {
+		name = "GFX_zhongguo_jilin"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_jilin_graph.png"
+		transparencecheck = yes
+	}
+
+
+	spriteType = {
+		name = "GFX_zhongguo_heilongjiang"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_heilongjiang_graph.png"
+		transparencecheck = yes
+	}
+
+
+	spriteType = {
+		name = "GFX_zhongguo_liaoning"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_liaoning_graph.png"
+		transparencecheck = yes
+	}
+
+
+
+	spriteType = {
+		name = "GFX_zhongguo_jiangxi"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_jiangxi_graph.png"
+		transparencecheck = yes
+	}
+
+
+	spriteType = {
+		name = "GFX_zhongguo_hebei"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_hebei_graph.png"
+		transparencecheck = yes
+	}
+
+
+	spriteType = {
+		name = "GFX_zhongguo_ningxia"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_ningxia_graph.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_zhongguo_taiwan"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_taiwan_graph.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_zhongguo_shanghai"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_shanghai_graph.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_zhongguo_tianjin"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_tianjin_graph.png"
+		transparencecheck = yes
+	}
+
+
+	spriteType = {
+		name = "GFX_zhongguo_beijing"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_beijing_graph.png"
+		transparencecheck = yes
+	}
 }
 
