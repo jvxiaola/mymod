@@ -9,7 +9,7 @@ guiTypes = {
 		#	position = { x = 0 y = 0 }
 		#}
 		buttonType = {
-			name = "GFX_zhongguo_wuhan"
+			name = "zhongguo_wuhan"
 			spriteType = "GFX_zhongguo_wuhan"
 			position = { x = 0 y = 0 }
 			clicksound = click_default
@@ -17,7 +17,7 @@ guiTypes = {
 		}
 
 		buttonType = {
-			name = "GFX_zhongguo_xinjiang"
+			name = "zhongguo_xinjiang"
 			spriteType = "GFX_zhongguo_xinjiang"
 			position = { x = 0 y = 0 }
 			clicksound = click_default
@@ -27,7 +27,7 @@ guiTypes = {
 
 
 		buttonType = {
-			name = "GFX_zhongguo_chongqing"
+			name = "zhongguo_chongqing"
 			spriteType = "GFX_zhongguo_chongqing"
 			position = { x = 0 y = 0 }
 			clicksound = click_default
@@ -36,7 +36,7 @@ guiTypes = {
 
 
 		buttonType = {
-			name = "GFX_zhongguo_guangdong"
+			name = "zhongguo_guangdong"
 			spriteType = "GFX_zhongguo_guangdong"
 			position = { x = 0 y = 0 }
 			clicksound = click_default
@@ -46,7 +46,7 @@ guiTypes = {
 
 
 		buttonType = {
-			name = "GFX_zhongguo_qinghai"
+			name = "zhongguo_qinghai"
 			spriteType = "GFX_zhongguo_qinghai"
 			position = { x = 0 y = 0 }
 			clicksound = click_default
@@ -55,7 +55,7 @@ guiTypes = {
 
 
 		buttonType = {
-			name = "GFX_zhongguo_shandong"
+			name = "zhongguo_shandong"
 			spriteType = "GFX_zhongguo_shandong"
 			position = { x = 0 y = 0 }
 			clicksound = click_default
@@ -65,7 +65,7 @@ guiTypes = {
 
 
 		buttonType = {
-			name = "GFX_zhongguo_hunan"
+			name = "zhongguo_hunan"
 			spriteType = "GFX_zhongguo_hunan"
 			position = { x = 0 y = 0 }
 			clicksound = click_default
@@ -73,7 +73,7 @@ guiTypes = {
 		}
 
 		buttonType = {
-			name = "GFX_zhongguo_xizang"
+			name = "zhongguo_xizang"
 			spriteType = "GFX_zhongguo_xizang"
 			position = { x = 0 y = 0 }
 			clicksound = click_default
@@ -81,14 +81,14 @@ guiTypes = {
 		}
 
 		buttonType = {
-			name = "GFX_zhongguo_sichuan"
+			name = "zhongguo_sichuan"
 			spriteType = "GFX_zhongguo_sichuan"
 			position = { x = 0 y = 0 }
 			clicksound = click_default
 			
 		}
 		buttonType = {
-			name = "GFX_zhongguo_hainan"
+			name = "zhongguo_hainan"
 			spriteType = "GFX_zhongguo_hainan"
 			position = { x = 0 y = 0 }
 			clicksound = click_default
@@ -96,7 +96,7 @@ guiTypes = {
 		}
 
 		buttonType = {
-			name = "GFX_zhongguo_gansu"
+			name = "zhongguo_gansu"
 			spriteType = "GFX_zhongguo_gansu"
 			position = { x = 0 y = 0 }
 			clicksound = click_default
@@ -104,7 +104,7 @@ guiTypes = {
 		}
 
 		buttonType = {
-			name = "GFX_zhongguo_guangxi"
+			name = "zhongguo_guangxi"
 			spriteType = "GFX_zhongguo_guangxi"
 			position = { x = 0 y = 0 }
 			clicksound = click_default
@@ -113,7 +113,7 @@ guiTypes = {
 
 
 		buttonType = {
-			name = "GFX_zhongguo_guizhou"
+			name = "zhongguo_guizhou"
 			spriteType = "GFX_zhongguo_guizhou"
 			position = { x = 0 y = 0 }
 			clicksound = click_default
@@ -121,7 +121,7 @@ guiTypes = {
 		}
 
 		buttonType = {
-			name = "GFX_zhongguo_yunnan"
+			name = "zhongguo_yunnan"
 			spriteType = "GFX_zhongguo_yunnan"
 			position = { x = 0 y = 0 }
 			clicksound = click_default
@@ -129,7 +129,7 @@ guiTypes = {
 		}
 
 		buttonType = {
-			name = "GFX_zhongguo_henan"
+			name = "zhongguo_henan"
 			spriteType = "GFX_zhongguo_henan"
 			position = { x = 0 y = 0 }
 			clicksound = click_default
@@ -137,7 +137,7 @@ guiTypes = {
 		}
 
 		buttonType = {
-			name = "GFX_zhongguo_fujian"
+			name = "zhongguo_fujian"
 			spriteType = "GFX_zhongguo_fujian"
 			position = { x = 0 y = 0 }
 			clicksound = click_default
@@ -146,7 +146,7 @@ guiTypes = {
 
 
 		buttonType = {
-			name = "GFX_zhongguo_neimeng"
+			name = "zhongguo_neimeng"
 			spriteType = "GFX_zhongguo_neimeng"
 			position = { x = 0 y = 0 }
 			clicksound = click_default
@@ -154,7 +154,7 @@ guiTypes = {
 		}
 
 		buttonType = {
-			name = "GFX_zhongguo_shan1xi"
+			name = "zhongguo_shan1xi"
 			spriteType = "GFX_zhongguo_shan1xi"
 			position = { x = 0 y = 0 }
 			clicksound = click_default
@@ -163,7 +163,7 @@ guiTypes = {
 
 
 		buttonType = {
-			name = "GFX_zhongguo_shan3xi"
+			name = "zhongguo_shan3xi"
 			spriteType = "GFX_zhongguo_shan3xi"
 			position = { x = 0 y = 0 }
 			clicksound = click_default
@@ -171,7 +171,7 @@ guiTypes = {
 		}
 
 		buttonType = {
-			name = "GFX_zhongguo_anhui"
+			name = "zhongguo_anhui"
 			spriteType = "GFX_zhongguo_anhui"
 			position = { x = 0 y = 0 }
 			clicksound = click_default
@@ -179,7 +179,7 @@ guiTypes = {
 		}
 
 		buttonType = {
-			name = "GFX_zhongguo_zhejiang"
+			name = "zhongguo_zhejiang"
 			spriteType = "GFX_zhongguo_zhejiang"
 			position = { x = 0 y = 0 }
 			clicksound = click_default
@@ -187,7 +187,7 @@ guiTypes = {
 		}	
 
 		buttonType = {
-			name = "GFX_zhongguo_jiangsu"
+			name = "zhongguo_jiangsu"
 			spriteType = "GFX_zhongguo_jiangsu"
 			position = { x = 0 y = 0 }
 			clicksound = click_default
@@ -195,7 +195,7 @@ guiTypes = {
 		}	
 
 		buttonType = {
-			name = "GFX_zhongguo_hebei"
+			name = "zhongguo_hebei"
 			spriteType = "GFX_zhongguo_hebei"
 			position = { x = 0 y = 0 }
 			clicksound = click_default
@@ -204,7 +204,7 @@ guiTypes = {
 
 
 		buttonType = {
-			name = "GFX_zhongguo_jilin"
+			name = "zhongguo_jilin"
 			spriteType = "GFX_zhongguo_jilin"
 			position = { x = 0 y = 0 }
 			clicksound = click_default
@@ -212,7 +212,7 @@ guiTypes = {
 		}	
 
 		buttonType = {
-			name = "GFX_zhongguo_heilongjiang"
+			name = "zhongguo_heilongjiang"
 			spriteType = "GFX_zhongguo_heilongjiang"
 			position = { x = 0 y = 0 }
 			clicksound = click_default
@@ -223,7 +223,7 @@ guiTypes = {
 
 
 		buttonType = {
-			name = "GFX_zhongguo_liaoning"
+			name = "zhongguo_liaoning"
 			spriteType = "GFX_zhongguo_liaoning"
 			position = { x = 0 y = 0 }
 			clicksound = click_default
@@ -232,7 +232,7 @@ guiTypes = {
 
 
 		buttonType = {
-			name = "GFX_zhongguo_jiangxi"
+			name = "zhongguo_jiangxi"
 			spriteType = "GFX_zhongguo_jiangxi"
 			position = { x = 0 y = 0 }
 			clicksound = click_default
@@ -241,7 +241,7 @@ guiTypes = {
 
 
 		buttonType = {
-			name = "GFX_zhongguo_ningxia"
+			name = "zhongguo_ningxia"
 			spriteType = "GFX_zhongguo_ningxia"
 			position = { x = 0 y = 0 }
 			clicksound = click_default
@@ -250,7 +250,7 @@ guiTypes = {
 
 
 		buttonType = {
-			name = "GFX_zhongguo_taiwan"
+			name = "zhongguo_taiwan"
 			spriteType = "GFX_zhongguo_taiwan"
 			position = { x = 0 y = 0 }
 			clicksound = click_default
@@ -258,7 +258,7 @@ guiTypes = {
 		}	
 
 		buttonType = {
-			name = "GFX_zhongguo_tianjin"
+			name = "zhongguo_tianjin"
 			spriteType = "GFX_zhongguo_tianjin"
 			position = { x = 0 y = 0 }
 			clicksound = click_default
@@ -266,7 +266,7 @@ guiTypes = {
 		}	
 
 		buttonType = {
-			name = "GFX_zhongguo_shanghai"
+			name = "zhongguo_shanghai"
 			spriteType = "GFX_zhongguo_shanghai"
 			position = { x = 0 y = 0 }
 			clicksound = click_default
@@ -274,7 +274,7 @@ guiTypes = {
 		}	
 
 		buttonType = {
-			name = "GFX_zhongguo_beijing"
+			name = "zhongguo_beijing"
 			spriteType = "GFX_zhongguo_beijing"
 			position = { x = 0 y = 0 }
 			clicksound = click_default
