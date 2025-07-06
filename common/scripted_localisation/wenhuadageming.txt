@@ -1,0 +1,227 @@
+defined_text = {
+	name = CHI_wg_sheng
+
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_WUHAN_OPENED
+		}
+		localization_key = "武汉"
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_XINJIANG_OPENED
+		}
+		localization_key = "新疆"
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_CHONGQING_OPENED
+		}
+		localization_key = "重庆"
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_GUANGDONG_OPENED
+		}
+		localization_key = "广东"
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_QINGHAI_OPENED
+		}
+		localization_key = "青海"
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_SHANDONG_OPENED
+		}
+		localization_key = "山东"
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_HUNAN_OPENED
+		}
+		localization_key = "湖南"
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_XIZANG_OPENED
+		}
+		localization_key = "西藏"
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_SICHUAN_OPENED
+		}
+		localization_key = "四川"
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_HAINAN_OPENED
+		}
+		localization_key = "海南"
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_GANSU_OPENED
+		}
+		localization_key = "甘肃"
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_GUANGXI_OPENED
+		}
+		localization_key = "广西"
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_GUIZHOU_OPENED
+		}
+		localization_key = "贵州"
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_YUNNAN_OPENED
+		}
+		localization_key = "云南"
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_HENAN_OPENED
+		}
+		localization_key = "河南"
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_FUJIAN_OPENED
+		}
+		localization_key = "福建"
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_NEIMENG_OPENED
+		}
+		localization_key = "内蒙古"
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_SHAN1XI_OPENED
+		}
+		localization_key = "山西"
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_SHAN3XI_OPENED
+		}
+		localization_key = "陕西"
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_ANHUI_OPENED
+		}
+		localization_key = "安徽"
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_ZHEJIANG_OPENED
+		}
+		localization_key = "浙江"
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_JIANGSU_OPENED
+		}
+		localization_key = "江苏"
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_HEBEI_OPENED
+		}
+		localization_key = "河北"
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_JILIN_OPENED
+		}
+		localization_key = "吉林"
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_HEILONGJIANG_OPENED
+		}
+		localization_key = "黑龙江"
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
+		}
+		localization_key = "辽宁"
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
+		}
+		localization_key = "江西"
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
+		}
+		localization_key = "宁夏"
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+		}
+		localization_key = "台湾"
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
+		}
+		localization_key = "天津"
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
+		}
+		localization_key = "上海"
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
+		}
+		localization_key = "北京"
+	}
+}
