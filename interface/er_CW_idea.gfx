@@ -48,5 +48,11 @@ spriteTypes = {
 		name = "GFX_idea_youjitu"
 		texturefile = "gfx/interface/ideas/red_army_idea.png"
 	}
+
+	spriteType = {
+		name = "GFX_idea_hwbyundong"
+		texturefile = "gfx/interface/ER_province_modifer/hwbyundong.png"
+	}
+
 	
 }
