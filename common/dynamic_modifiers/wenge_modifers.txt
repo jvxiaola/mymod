@@ -5,5 +5,57 @@ CHI_hongweibing_yundong = {
     local_supplies = -0.05             
     state_production_speed_buildings_factor = -0.10
 	state_productivity_growth_modifier = -0.01
-
+    
 }
+
+
+CHI_hongweibing_yundong2 = {
+	enable = { always = yes }
+	icon = GFX_idea_hwbyundong
+    local_manpower = -0.02             
+    local_supplies = -0.05             
+    state_production_speed_buildings_factor = -0.10
+	state_productivity_growth_modifier = -0.01
+    
+}
+
+CHI_hongweibing_yundong3 = {
+	enable = { always = yes }
+	icon = GFX_idea_hwbyundong
+    local_manpower = -0.02             
+    local_supplies = -0.05             
+    state_production_speed_buildings_factor = -0.10
+	state_productivity_growth_modifier = -0.01
+    
+}
+
+CHI_hongweibing_yundong4 = {
+	enable = { always = yes }
+	icon = GFX_idea_hwbyundong
+    local_manpower = -0.02             
+    local_supplies = -0.05             
+    state_production_speed_buildings_factor = -0.10
+	state_productivity_growth_modifier = -0.01
+    
+}
+
+CHI_hongweibing_yundong5 = {
+	enable = { always = yes }
+	icon = GFX_idea_hwbyundong
+    local_manpower = -0.02             
+    local_supplies = -0.05             
+    state_production_speed_buildings_factor = -0.10
+	state_productivity_growth_modifier = -0.01
+    
+}
+
+CHI_gemingweiyuanhui = {
+	enable = { always = yes }
+	icon = GFX_idea_hwbyundong
+    local_manpower = -0.02             
+    local_supplies = -0.05             
+    state_production_speed_buildings_factor = -0.10
+	state_productivity_growth_modifier = -0.01
+    
+}
+
