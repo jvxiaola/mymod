@@ -11207,6 +11207,7 @@ every_owned_state = {
 						available_if_capitulated = no
 					
 						completion_reward = {
+							set_country_flag = allow_gmwyh
 							set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.01 }
 							change_CHI_Socialist_Construction_dynamic20 = yes
 							set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = -0.02 }

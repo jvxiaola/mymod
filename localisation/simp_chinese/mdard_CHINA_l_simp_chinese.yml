@@ -1741,7 +1741,7 @@ CHI_pre_civ_decitions: "动荡的局势"
 CHI_pre_civ_decitions_desc: "随着权力结构的剧变，那些曾被视为遥不可及的改革，如今似乎触手可及。旧秩序在动摇，新势力在崛起，风雨欲来之际，一个新时代的轮廓若隐若现。然而，这场变革究竟是通往希望的转折，还是通向混乱的起点？没有人能够给出答案——未来的命运，仍悬而未决。\n\n\n\n当前内战风险：[CHI_neizhanfengxian_text]（到达100%则会内战）"
 
 CHI_CR_decisions: "文化大革命"
-CHI_CR_decisions_desc: "文化大革命：[CHI_wg_sheng]"
+CHI_CR_decisions_desc: "[CHI_wg_sheng]:[CHI_wg_zfzt]"
 
 
 
