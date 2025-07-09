@@ -10,11 +10,18 @@ scripted_gui = {
 		#云泽标记
 		triggers = {
 
-		
+			zhongguo_taiwan_visible= { CHI={controls_state=598}}
+			zhongguo_taiwanbaijun_visible= { NOT={CHI={controls_state=598}}}
 
 
 		}
 		effects = {
+			#云泽最新
+
+
+
+
+
 
 			zhongguo_wuhan_click = {
 				set_country_flag = PROV_GUI_ZHONGGUO_WUHAN_OPENED
@@ -45,7 +52,7 @@ scripted_gui = {
 				clr_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
-				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED clr_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
@@ -80,7 +87,7 @@ scripted_gui = {
 				clr_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
-				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED clr_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
@@ -115,7 +122,7 @@ scripted_gui = {
 				clr_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
-				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED clr_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
@@ -150,7 +157,7 @@ scripted_gui = {
 				clr_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
-				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED clr_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
@@ -185,7 +192,7 @@ scripted_gui = {
 				clr_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
-				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED clr_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
@@ -220,7 +227,7 @@ scripted_gui = {
 				clr_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
-				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED clr_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
@@ -255,7 +262,7 @@ scripted_gui = {
 				clr_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
-				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED clr_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
@@ -290,7 +297,7 @@ scripted_gui = {
 				clr_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
-				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED clr_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
@@ -325,7 +332,7 @@ scripted_gui = {
 				clr_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
-				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED clr_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
@@ -360,7 +367,7 @@ scripted_gui = {
 				clr_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
-				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED clr_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
@@ -395,7 +402,7 @@ scripted_gui = {
 				clr_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
-				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED clr_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
@@ -430,7 +437,7 @@ scripted_gui = {
 				clr_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
-				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED clr_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
@@ -465,7 +472,7 @@ scripted_gui = {
 				clr_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
-				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED clr_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
@@ -500,7 +507,7 @@ scripted_gui = {
 				clr_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
-				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED clr_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
@@ -535,7 +542,7 @@ scripted_gui = {
 				clr_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
-				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED clr_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
@@ -570,7 +577,7 @@ scripted_gui = {
 				clr_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
-				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED clr_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
@@ -605,7 +612,7 @@ scripted_gui = {
 				clr_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
-				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED clr_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
@@ -640,7 +647,7 @@ scripted_gui = {
 				clr_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
-				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED clr_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
@@ -675,7 +682,7 @@ scripted_gui = {
 				clr_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
-				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED clr_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
@@ -710,7 +717,7 @@ scripted_gui = {
 				clr_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
-				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED clr_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
@@ -745,7 +752,7 @@ scripted_gui = {
 				clr_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
-				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED clr_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
@@ -780,7 +787,7 @@ scripted_gui = {
 				clr_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
-				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED clr_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
@@ -815,7 +822,7 @@ scripted_gui = {
 				clr_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
-				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED clr_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
@@ -850,7 +857,7 @@ scripted_gui = {
 				clr_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
-				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED clr_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
@@ -885,7 +892,7 @@ scripted_gui = {
 				clr_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
-				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED clr_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
@@ -920,7 +927,7 @@ scripted_gui = {
 				clr_country_flag = PROV_GUI_ZHONGGUO_HEILONGJIANG_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
-				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED clr_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
@@ -955,7 +962,7 @@ scripted_gui = {
 				clr_country_flag = PROV_GUI_ZHONGGUO_HEILONGJIANG_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
-				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED clr_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
@@ -990,7 +997,7 @@ scripted_gui = {
 				clr_country_flag = PROV_GUI_ZHONGGUO_HEILONGJIANG_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
-				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED clr_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
@@ -998,6 +1005,7 @@ scripted_gui = {
 			
 			zhongguo_taiwan_click = {
 				set_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_WUHAN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_XINJIANG_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_CHONGQING_OPENED
@@ -1030,6 +1038,46 @@ scripted_gui = {
 				clr_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
 			}
+
+
+			zhongguo_taiwanbaijun_click = {
+				set_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
+								clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_WUHAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_XINJIANG_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_CHONGQING_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_GUANGDONG_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_QINGHAI_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_SHANDONG_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_HUNAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_XIZANG_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_SICHUAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_HAINAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_GANSU_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_GUANGXI_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_GUIZHOU_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_YUNNAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_HENAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_FUJIAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_NEIMENG_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_SHAN1XI_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_SHAN3XI_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_ANHUI_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_ZHEJIANG_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_JIANGSU_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_HEBEI_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_JILIN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_HEILONGJIANG_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
+			}
+
+
+			
 			
 			zhongguo_tianjin_click = {
 				set_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
@@ -1061,7 +1109,7 @@ scripted_gui = {
 				clr_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
-				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED clr_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
 			}
@@ -1096,7 +1144,7 @@ scripted_gui = {
 				clr_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
-				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED clr_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
 			}
@@ -1131,7 +1179,7 @@ scripted_gui = {
 				clr_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
-				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+				clr_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED clr_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
 			}

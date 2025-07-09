@@ -224,6 +224,13 @@ defined_text = {
 		}
 		localization_key = "北京"
 	}
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
+
+		}
+		localization_key = "台湾"
+	}
 }
 
 
@@ -263,7 +270,7 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			has_country_flag = PROV_GUI_ZHONGGUO_SHANXI_OPENED
+			has_country_flag = PROV_GUI_ZHONGGUO_SHAN1XI_OPENED
 			558={
 				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
 			}
@@ -273,7 +280,7 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			has_country_flag = PROV_GUI_ZHONGGUO_NEIMENGGU_OPENED
+			has_country_flag = PROV_GUI_ZHONGGUO_NEIMENG_OPENED
 			556={
 				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
 			}
@@ -393,7 +400,7 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			has_country_flag = PROV_GUI_ZHONGGUO_HUBEI_OPENED
+			has_country_flag = PROV_GUI_ZHONGGUO_WUHAN_OPENED
 			570={
 				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
 			}
@@ -493,7 +500,7 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			has_country_flag = PROV_GUI_ZHONGGUO_SHAANXI_OPENED
+			has_country_flag = PROV_GUI_ZHONGGUO_SHAN3XI_OPENED
 			559={
 				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
 			}
@@ -550,4 +557,18 @@ defined_text = {
 		}
 		localization_key = "已建立革命委员会"
 	}
+
+
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
+			598={
+				NOT={has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}}
+				NOT={CHI={controls_state=598}}
+			}
+		}
+		localization_key = "未解放"
+	}
+
+
 }

@@ -137,15 +137,34 @@ every_owned_state = {
         limit = { has_dynamic_modifier = {modifier =  CHI_hongweibing_yundong}
 		NOT={has_dynamic_modifier = {modifier =  CHI_gemingweiyuanhui}}
 	} 
-		remove_dynamic_modifier = { modifier = CHI_hongweibing_yundong }
-		add_dynamic_modifier = {modifier = CHI_hongweibing_yundong2}
+	random_list = {
+		50 = {
+			remove_dynamic_modifier = { modifier = CHI_hongweibing_yundong }
+			add_dynamic_modifier = {modifier = CHI_hongweibing_yundong2}
+		}
+		50 = {
+
+		}
+	}
+
+
+
     }
     else_if = {
         limit = { has_dynamic_modifier = {modifier =  CHI_hongweibing_yundong2}
 		NOT={has_dynamic_modifier = {modifier =  CHI_gemingweiyuanhui}}
 	} 
+	random_list = {
+	50 = {
 		remove_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 }
 		add_dynamic_modifier = {modifier = CHI_hongweibing_yundong3}
+
+	}
+
+
+	}
+
+
     }
     else_if = {
         limit = { has_dynamic_modifier = {modifier =  CHI_hongweibing_yundong3} 

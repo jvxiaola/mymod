@@ -200,6 +200,13 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_zhongguo_taiwanbaijun"
+		texturefile = "gfx/interface/PRC_CR_GUI/CHI_taiwanbaijun_graph.png"
+		transparencecheck = yes
+	}
+
+
+	spriteType = {
 		name = "GFX_zhongguo_shanghai"
 		texturefile = "gfx/interface/PRC_CR_GUI/CHI_shanghai_graph.png"
 		transparencecheck = yes

@@ -17,3 +17,7 @@ CHI_MER_decresee_trigger = {
 		has_idea = Militarical_economy_remain5
 	}
 }
+
+
+
+
