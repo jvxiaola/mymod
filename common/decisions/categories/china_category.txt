@@ -61,7 +61,7 @@ has_country_flag = CHI_work_rev
 }
 CHI_World_Revolution = {
 	icon = GFX_decision_communism
-
+priority = 500
 	allowed = {
 		original_tag = CHI
 	}

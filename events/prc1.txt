@@ -7717,6 +7717,15 @@ value = 0.1
 	custom_effect_tooltip = influence_the_party_line_tt
 	add_5_western_liberalism = yes
 	add_5_emerging_reactionary = yes
+
+remove_ideas = CHI_dixiaoguoqi
+
+			add_timed_idea = {
+				idea=CHI_dixiaoguoqi
+				days = 700
+						}
+
+
 	add_to_variable = {
 		var = CPC_Right
 		value = 0.07
@@ -7747,6 +7756,13 @@ value = 0.1
 			custom_effect_tooltip = influence_the_party_line_tt
 			add_5_western_liberalism = yes
 			add_5_emerging_reactionary = yes
+
+
+add_timed_idea = {
+	idea = CHI_shock_therapy
+	days = 600
+}
+
 			add_to_variable = {
 				var = CPC_Right
 				value = 0.1
@@ -7794,7 +7810,9 @@ value = 0.1
 		option = { 
 			name = prc1.167.a.o1	
 		set_country_flag = CHI_zhunbeirudang
-	
+					add_to_variable = { CPC_Right = 0.03 }
+				add_to_variable = { CPC_Left = -0.02 }
+				add_to_variable = { CPC_Dengist = -0.01}
 		
 			ai_chance = { factor = 95 }
 		

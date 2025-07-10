@@ -329,12 +329,17 @@
 		CHI_jihuashengyu
 		Militarical_economy_remain1
 		CHI_big_layoff1
+
+CHI_not_shimao
+
 		CHINESE_agricultural_tax
 		CHI_Socialist_Market_Economy
 		CHI_shipinganquanwenti
 	
 		CHI_shaosuminzu1
-		CHI_overproduction1
+		CHI_overproduction5
+CHI_dixiaoguoqi
+
 		harsh_working_en_of_CHI4
 		int_investment_china
 

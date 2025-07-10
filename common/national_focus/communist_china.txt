@@ -12,7 +12,8 @@ focus_tree = {
 		shared_focus = CHI_Revitalize_the_countryside
 		shared_focus = CHI_Socialist_Reconstruction
 		shared_focus = DSC_DSC_civ_start
-
+#!gfx:interface\mdard_goals.gfx
+#!gfx:interface\krc_goals.gfx
 	focus = {
 		id = PRC_communist
 		icon = communist_party_of_china

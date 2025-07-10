@@ -559,9 +559,9 @@ NOT={
 				add_ideas = CHI_zibenjia
 				custom_effect_tooltip = influence_the_party_line_tt
 				add_10_western_liberalism = yes
-				add_to_variable = { CPC_Right = 0.15 }
+				add_to_variable = { CPC_Right = 0.05 }
 				add_to_variable = { CPC_Left = -0.03 }
-				add_to_variable = { CPC_Dengist = -0.12}
+				add_to_variable = { CPC_Dengist = -0.02}
 			}
 			custom_effect_tooltip = CHI_change_forward_tt
 		}

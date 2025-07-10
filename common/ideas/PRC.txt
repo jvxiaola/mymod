@@ -2358,6 +2358,38 @@ name = "CHI_big_layoff"
 				production_speed_industrial_complex_factor = 0.20				
 			}
 		}
+
+
+
+CHI_not_shimao = {
+
+			picture = great_depression2
+
+			modifier = {
+
+
+				production_speed_buildings_factor = -0.10
+	        research_speed = -0.20            # 科研速度 -20%
+        factory_output = -0.15             # 工厂产出 -15%
+			}
+		}
+
+
+CHI_shock_therapy = {
+    icon = GFX_idea_economic_crisis
+    allowed = { always = yes }
+    removal_cost = -1
+    modifier = {
+        consumer_goods_factor = 0.2       # 消费品工厂需求 +20%
+        political_power_gain = -0.2       # 政治点数获取 -20%
+        stability_factor = -0.15          # 稳定度 -15%
+        weekly_manpower = -100            # 每周人力 -100
+        industrial_capacity_factor = -0.1 # 工业产能效率 -10%
+        ideology_drift_defence = -0.3     # 意识形态防御 -30%
+    }
+}
+
+
 CHI_sars = {
 			picture = factory_strikes
 
