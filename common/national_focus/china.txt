@@ -370,7 +370,7 @@ check_variable = {  CPC_Right < CPC_Left}
 		#}
 		set_temp_variable = { treasury_change = 50 }
 		modify_treasury_effect = yes
-		remove_ideas = CHI_overproduction1
+		remove_ideas = CHI_overproduction5
 	}
 }
 
@@ -431,7 +431,7 @@ NOT={
 
 
 
-			remove_ideas = CHI_overproduction1
+			remove_ideas = CHI_overproduction5
 		}
 	}
 

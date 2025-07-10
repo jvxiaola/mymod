@@ -781,7 +781,7 @@ DSC_MAOPAIJUECE = {
 		fire_only_once = no
 		visible = {
 			check_variable = {
-				DSC_rmjd_wuqi_count < 6
+				DSC_rmjd_wuqi_count < 12
 			}
 		}
 		days_re_enable = 7
@@ -795,7 +795,7 @@ DSC_MAOPAIJUECE = {
 			if={
 				limit={
 					check_variable = {
-						DSC_rmjd_wuqi_count < 6
+						DSC_rmjd_wuqi_count < 12
 					}
 					
 				}

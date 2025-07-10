@@ -15,7 +15,7 @@ bookmarks = {
 			ideas = {
 				Militarical_economy_remain1
 				harsh_working_en_of_CHI4
-				CHI_overproduction1
+				CHI_overproduction5
 			}
 			focuses = {
 				CHI_chisosm
