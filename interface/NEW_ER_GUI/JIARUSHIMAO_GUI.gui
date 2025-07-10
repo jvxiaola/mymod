@@ -1,0 +1,14 @@
+guiTypes = {
+	containerWindowType = {
+		#标记
+		name = "JIARUSHIMAO_GUI"
+		size = { width = 900 height = 300 }
+
+			iconType = {
+			name = "WTO_GUI"
+			position = { x= 0 y = 0 }
+spriteType = "GFX_WTO_GUI"
+		}
+	}
+
+}

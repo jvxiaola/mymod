@@ -9,8 +9,12 @@
 		allow_branch = {
 			NOT = {
 				has_country_flag = xggm
-				tag = DSC
+				has_country_flag = chuanyumaopai
 				has_country_flag = laozuo
+				AND={
+					has_completed_focus = CHI_Factory_of_the_World
+										has_completed_focus = CHI_Liberalize_the_Market
+				}
 			}
 
 		}
@@ -27,101 +31,101 @@
 	}
 
 
-	shared_focus = {
-		id = CHI_Smash_the_Iron_Rice_Bowl
-		icon = coins
+	#shared_focus = {
+	#	id = CHI_Smash_the_Iron_Rice_Bowl
+	#	icon = coins
 
-		x = -3
-		y = 1
-		relative_position_id = CHI_The_Untapped_Market
+	#	x = -3
+	#	y = 1
+	#	relative_position_id = CHI_The_Untapped_Market
 
-		cost = 5
+	#	cost = 5
 
-		prerequisite = { focus = CHI_The_Untapped_Market }
-		search_filters = { FOCUS_FILTER_EXPENDITURE }
+	#	prerequisite = { focus = CHI_The_Untapped_Market }
+	#	search_filters = { FOCUS_FILTER_EXPENDITURE }
 
-		offset = {
-			x = 3
-			trigger = {
-				NOT={
-					OR={
-						has_country_flag = xggm
-						tag = DSC
-						has_country_flag = laozuo
-					}
-				}
-			}
-		}
-		available = {
-			NOT={
-				OR={
-					has_country_flag=xggm
-					has_country_flag=chuanyumaopai
-					has_country_flag = laozuo
-				}
-			}
+	#	offset = {
+	#		x = 3
+	#		trigger = {
+	#			NOT={
+	#				OR={
+	#					has_country_flag = xggm
+	#					tag = DSC
+	#					has_country_flag = laozuo
+	#				}
+	#			}
+	#		}
+	#	}
+	#	available = {
+	#		NOT={
+	#			OR={
+	#				has_country_flag=xggm
+	#				has_country_flag=chuanyumaopai
+	#				has_country_flag = laozuo
+	#			}
+	#		}
 
 
-		}
+	#	}
 
-		completion_reward = {
-			if = {
-				limit = { has_start_date < 2016.01.01 }
-				decrease_social_spending = yes
-			}
-			log = "[GetDateText]: [This.GetName]: focus CHI_Smash_the_Iron_Rice_Bowl executed"
-		}
+	#	completion_reward = {
+	#		if = {
+	#			limit = { has_start_date < 2016.01.01 }
+	#			decrease_social_spending = yes
+	#		}
+	#		log = "[GetDateText]: [This.GetName]: focus CHI_Smash_the_Iron_Rice_Bowl executed"
+	#	}
 
-		ai_will_do = {
-			base = 1
-		}
-	}
+	#	ai_will_do = {
+	#		base = 1
+	#	}
+	#}
 
-	shared_focus = {
-		id = CHI_Ratification_of_WTO
-		icon = wto
+	#shared_focus = {
+	#	id = CHI_Ratification_of_WTO
+	#	icon = wto
 
-		x = -3
-		y = 2
-		relative_position_id = CHI_The_Untapped_Market
-		offset = {
-			x = 3
-			trigger = {
-				NOT={
-					OR={
-						has_country_flag=xggm
-						has_country_flag = laozuo
-					}
-				}
-			}
-		}
-		cost = 5
+	#	x = -3
+	#	y = 2
+	#	relative_position_id = CHI_The_Untapped_Market
+	#	offset = {
+	#		x = 3
+	#		trigger = {
+	#			NOT={
+	#				OR={
+	#					has_country_flag=xggm
+	#					has_country_flag = laozuo
+	#				}
+	#			}
+	#		}
+	#	}
+	#	cost = 5
 
-		prerequisite = { focus = CHI_Smash_the_Iron_Rice_Bowl }
+	#	prerequisite = { focus = CHI_Smash_the_Iron_Rice_Bowl }
 
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+	#	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 
-		available = {
-			has_war = no
-		}
+	#	available = {
+	#		has_war = no
+	#	}
 
-		completion_reward = {
-			if = {
-				limit = { has_start_date < 2016.01.01 }
-				add_timed_idea = {
-					idea = recently_acceded_to_wto
-					days = 30
-				}
-				news_event = china_news.6
-			}
-			CHI_ruin_economy_remove = yes
-			log = "[GetDateText]: [This.GetName]: focus CHI_Ratification_of_WTO executed"
-		}
+	#	completion_reward = {
+	#		if = {
+	#			limit = { has_start_date < 2016.01.01 }
+	#			add_timed_idea = {
+	#				idea = recently_acceded_to_wto
+	#				days = 30
+	#			}
+	#			news_event = china_news.6
+	#		}
+	#		CHI_ruin_economy_remove = yes
+	#		log = "[GetDateText]: [This.GetName]: focus CHI_Ratification_of_WTO executed"
+	#	}
 
-		ai_will_do = {
-			base = 1
-		}
-	}
+	#	ai_will_do = {
+	#		base = 1
+	#	}
+	#}
 
 	shared_focus = {
 		id = CHI_Encourage_Foreign_Investment
@@ -143,7 +147,7 @@
 				}
 			}
 		}
-		prerequisite = { focus = CHI_Ratification_of_WTO }
+		prerequisite = { focus = CHI_The_Untapped_Market}
 		mutually_exclusive = { focus = CHI_Protect_State_Owned_Businesses }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
@@ -187,7 +191,7 @@
 				}
 			}
 		}
-		prerequisite = { focus = CHI_Ratification_of_WTO }
+		prerequisite = { focus = CHI_The_Untapped_Market }
 		mutually_exclusive = { focus = CHI_Encourage_Foreign_Investment }
 		search_filters = { FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_STABILITY }
 		completion_reward = {
@@ -1809,8 +1813,12 @@ shared_focus = {
 		allow_branch = {
 			OR = {
 				has_country_flag = laozuo
-				has_completed_focus = CHI_Chinese_NEW_MILLENNIUM				
+				has_completed_focus = CHI_Chinese_NEW_MILLENNIUM	
+				AND={
 				has_completed_focus = CHI_Factory_of_the_World
+				has_completed_focus = CHI_Liberalize_the_Market
+				}			
+
 				has_completed_focus = CHI_Chinese_Industrial_Explosion21
 			}
 		 }
@@ -1833,6 +1841,9 @@ shared_focus = {
 						has_country_flag = chuanyumaopai
 			}
 		}
+
+
+
 
 		search_filters = { FOCUS_FILTER_INTERNAL_FACTION }
 
@@ -2067,7 +2078,10 @@ shared_focus = {
 
 		cost = 5
 		allow_branch = {
+								AND={
 				has_completed_focus = CHI_Factory_of_the_World
+				has_completed_focus = CHI_Liberalize_the_Market
+				}			
 		 }
 		prerequisite = { focus = CHI_Korail focus = CHI_Deutsche_Bahn focus = CHI_Union_Pacific focus = CHI_Japan_Railway_Group }
 
@@ -5985,7 +5999,10 @@ is_subject_of = CHI
 			OR = {
 				has_country_flag = laozuo
 				has_completed_focus = CHI_Chinese_NEW_MILLENNIUM
+								AND={
 				has_completed_focus = CHI_Factory_of_the_World
+				has_completed_focus = CHI_Liberalize_the_Market
+				}			
 				has_completed_focus = CHI_Chinese_Industrial_Explosion21
 			}
 		 }
@@ -6006,6 +6023,8 @@ is_subject_of = CHI
 						has_country_flag = chuanyumaopai
 			}
 		}
+
+
 		search_filters = { FOCUS_FILTER_EXPENDITURE }
 
 		available = {
@@ -7219,7 +7238,10 @@ is_subject_of = CHI
 		cost = 5
 		allow_branch = {
 
-			has_completed_focus = CHI_Factory_of_the_World
+							AND={
+				has_completed_focus = CHI_Factory_of_the_World
+				has_completed_focus = CHI_Liberalize_the_Market
+				}			
 			
 			NOT = {
 				has_country_flag = xggm
@@ -7449,7 +7471,10 @@ is_subject_of = CHI
 		y = 1
 		relative_position_id = CHI_Strategic_Industries
 		allow_branch = {
-			has_completed_focus = CHI_Factory_of_the_World
+							AND={
+				has_completed_focus = CHI_Factory_of_the_World
+				has_completed_focus = CHI_Liberalize_the_Market
+				}			
 			
 			NOT = {
 				has_country_flag = xggm

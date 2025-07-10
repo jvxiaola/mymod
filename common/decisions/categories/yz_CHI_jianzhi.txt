@@ -1,0 +1,16 @@
+CHI_jiarushimao= {
+	priority = { base = 1000 }
+	allowed = { 
+
+	}
+	visible_when_empty = yes
+
+scripted_gui = JIARUSHIMAO_GUI
+
+		icon = GFX_decision_CUB_train_chi
+
+	visible = {
+
+		tag=CHI
+	}
+}

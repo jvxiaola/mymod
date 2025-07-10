@@ -1,0 +1,17 @@
+spriteTypes = {
+
+
+
+	#川渝内战部分的GUI
+	spriteType = {
+		name = "GFX_WTO_GUI"
+		texturefile = "gfx/interface/CHI_jianzhi_GUI/WTO_GUI.png"
+		transparencecheck = yes
+	}
+
+
+
+	
+
+}
+

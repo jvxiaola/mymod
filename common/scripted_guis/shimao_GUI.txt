@@ -1,0 +1,30 @@
+scripted_gui = {
+
+	JIARUSHIMAO_GUI = {
+		context_type = decision_category
+		window_name = "JIARUSHIMAO_GUI"
+
+		visible = {
+			always = yes
+		}
+		#云泽标记
+		triggers = {
+
+
+
+		}
+		effects = {
+			#云泽最新
+
+
+
+
+
+
+			
+			
+
+	}
+
+}
+}

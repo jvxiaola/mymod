@@ -1,0 +1,27 @@
+CHI_jiarushimao = {
+	CHI_shengqingjiaru = {
+		#icon = GFX_decision_minotor_button
+		visible = {
+			tag=CHI
+
+		}
+
+		available = {
+
+		}
+		complete_effect = {
+
+		}
+		days_remove = 20
+		remove_effect = {
+
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	
+
+	
+}
