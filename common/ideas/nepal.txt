@@ -17,8 +17,8 @@ ideas = {
 		NEP_youji = {
 
 			allowed_civil_war = { always = yes }
-icon=GFX_idea_youjitu
-			#picture = youjitu
+#icon=GFX_idea_youjitu
+			picture = youjitu
 
 			modifier = {
 				army_defence_factor = 500.00

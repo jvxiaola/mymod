@@ -111,7 +111,7 @@ CHI_jingxingsiyouhua = {
 			factor = 20
 		}
 visible = {
-
+has_completed_focus = CHI_china_wangluo
 }
 		days_remove = 30
 		days_re_enable = 30
@@ -136,9 +136,7 @@ CHI_zhaomuxiaganggongren = {
 			factor = 20
 		}
 visible = {
-NOT = {
-has_idea = CHI_big_layoff3
-}
+has_completed_focus = CHI_zuzhiguoqigaige
 }
 		days_remove = 30
 		days_re_enable = 30
@@ -164,9 +162,7 @@ remove_effect = {
 			factor = 20
 		}
 visible = {
-NOT = {
-has_idea = CHI_big_layoff3
-}
+has_completed_focus = CHI_china_wangluo
 }
 		days_remove = 30
 		days_re_enable = 30

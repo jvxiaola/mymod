@@ -314,7 +314,7 @@ ideas = {
 
 		CHI_dixiaoguoqi= {
 			allowed_civil_war = { always = yes }
-			picture = CHI_overproduction
+			picture =PTF_Low_Popular_Support_idea
 			cancel = { 
 				OR = { 
 					has_idea = Industrial_damage1 has_idea = Industrial_damage2 

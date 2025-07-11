@@ -16,7 +16,15 @@
 			texturefile = "gfx/interface/ideas/ER_ideas/Militarical_economy_remain.dds"
 		}
 
+		spriteType = {
+			name = "GFX_idea_laws_trade"
+			texturefile = "gfx/interface/ideas/ER_ideas/laws_trade.png"
+		}
 
+		spriteType = {
+			name = "GFX_idea_PTF_Low_Popular_Support_idea"
+			texturefile = "gfx/interface/ideas/ER_ideas/PTF_Low_Popular_Support_idea.png"
+		}
 
 
 
