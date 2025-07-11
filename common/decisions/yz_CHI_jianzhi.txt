@@ -5,7 +5,7 @@ CHI_jiarushimao = {
 			tag=CHI
 
 		}
-
+		cost = 100
 		available = {
 
 		}
