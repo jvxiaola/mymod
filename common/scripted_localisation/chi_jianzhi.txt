@@ -10,6 +10,14 @@ defined_text = {
 		localization_key = "紧张"
 	}
 
+	text = {
+		trigger = {
+			NOT={has_country_flag = dadaomeidi
+		}
+
+		}
+		localization_key = "良好"
+	}
 
 }
 

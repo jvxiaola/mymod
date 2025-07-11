@@ -7663,6 +7663,7 @@ value = 0.1
 			change_CHI_people_support = yes
 						custom_effect_tooltip = influence_the_party_line_tt
 		add_5_emerging_left_wing_radical = yes
+		set_country_flag = zaiyiciguoyou
 	add_to_variable = {
 	var = CPC_Right
 	value = -0.1

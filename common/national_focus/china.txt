@@ -264,10 +264,12 @@ focus = {
 
 		}
 		prerequisite = {
-			focus = CHI_gongpindejzhj
+				focus = CHI_daxiagang
 
 		}
-
+			prerequisite = {
+				focus = CHI_Three_represents
+				}
 		bypass = {	}
 	ai_will_do = {
 			factor = 100
@@ -568,37 +570,37 @@ NOT={
 	}
 
 
-focus = {
-		id = CHI_gongpindejzhj
-		icon = worker_negotiation
-		x = 3
-		y = 2
-		cost = 5
-		relative_position_id = CHI_zhengzhigaige		
+#focus = {
+#		id = CHI_gongpindejzhj
+#		icon = worker_negotiation
+#		x = 3
+#		y = 2
+#		cost = 5
+#		relative_position_id = CHI_zhengzhigaige		
 
 
 
-		prerequisite = {
-				focus=CHI_daxiagang
-			}
-		prerequisite = {
-			focus = CHI_Three_represents
-		}
+#		prerequisite = {
+#				focus=CHI_daxiagang
+#			}
+#		prerequisite = {
+#			focus = CHI_Three_represents
+#		}
 
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#		completion_reward = {
 		
 
-			add_stability = 0.01
-			set_temp_variable = { treasury_change = -12 }
-			modify_treasury_effect = yes
+#			add_stability = 0.01
+#			set_temp_variable = { treasury_change = -12 }
+#			modify_treasury_effect = yes
 
 
-			}
-}
+#			}
+#}
 
 
 		focus = {
@@ -615,11 +617,13 @@ focus = {
 
 
 			}
-	
+				prerequisite = {
+				focus = CHI_Three_represents
+				}
 	
 					prerequisite = {
 						
-			focus = CHI_gongpindejzhj
+			focus = CHI_daxiagang
 				
 				}
 	available = {

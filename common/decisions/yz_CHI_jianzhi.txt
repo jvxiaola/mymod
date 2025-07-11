@@ -14,7 +14,7 @@ CHI_jiarushimao = {
 		}
 		days_remove = 20
 		remove_effect = {
-
+news_event = china_news.6
 		}
 		ai_will_do = {
 			factor = 0
@@ -24,4 +24,193 @@ CHI_jiarushimao = {
 	
 
 	
+}
+
+
+
+
+
+CHI_Massive_layoffs = {
+CHI_Massive_layoffs_deterioration = {
+		icon = eng_trade_unions_demand
+
+		allowed = { always = no } #manually activated
+
+		available = {OR = {
+AND = {num_of_civilian_factories > 240
+offices >100
+has_completed_focus = CHI_Ratification_of_WTO}
+AND = {
+num_of_civilian_factories > 240
+offices >50
+has_idea = CHI_Planned_Economy
+}
+		}
+custom_trigger_tooltip = {
+check_variable = {
+     ROOT.total_unemployed_percentage_display <0.15
+}
+tooltip = "失业率低于15%"
+		}		
+		}
+
+		is_good = no
+		days_mission_timeout = 180
+
+		ai_will_do = { factor = 1000 }
+
+		complete_effect = {
+
+		custom_effect_tooltip = "消除大下岗"
+hidden_effect = {
+remove_ideas = CHI_big_layoff-1
+remove_ideas = CHI_big_layoff0
+remove_ideas = CHI_big_layoff1
+remove_ideas = CHI_big_layoff2
+remove_ideas = CHI_big_layoff3
+
+}
+		}
+
+		timeout_effect = {
+CHI_Massive_layoffs_deterioration = yes
+activate_mission = CHI_Massive_layoffs_deterioration
+		}
+	}
+CHI_Placement_of_workers = {
+		ai_will_do = {
+			factor = 20
+		}
+visible = {
+NOT = {
+has_idea = CHI_big_layoff3
+}
+}
+		days_remove = 60
+		days_re_enable = 30
+available = {
+OR = 
+{
+has_completed_focus = CHI_daxiagang
+
+}}
+		cost = 50
+
+		modifier = {
+	political_power_gain = -0.10	
+	communism_drift = 0.05
+		}
+remove_effect = {
+		set_temp_variable = { treasury_change = -50 }
+			modify_treasury_effect = yes
+			CHI_Massive_layoffs_improve = yes
+			}
+			}
+CHI_jingxingsiyouhua = {
+		ai_will_do = {
+			factor = 20
+		}
+visible = {
+
+}
+		days_remove = 30
+		days_re_enable = 30
+available = {
+has_completed_focus = CHI_china_wangluo
+}
+		cost = 50
+
+		modifier = {
+production_speed_buildings_factor = 0.1
+democratic_drift = 0.1
+		}
+remove_effect = {
+		set_temp_variable = { treasury_change = 10 }
+			modify_treasury_effect = yes
+			CHI_Massive_layoffs_improve = yes
+			}
+			}
+			
+CHI_zhaomuxiaganggongren = {
+		ai_will_do = {
+			factor = 20
+		}
+visible = {
+NOT = {
+has_idea = CHI_big_layoff3
+}
+}
+		days_remove = 30
+		days_re_enable = 30
+available = {
+has_completed_focus = CHI_zuzhiguoqigaige
+}
+		cost = 50
+
+		modifier = {
+production_speed_buildings_factor = 0.1
+democratic_drift = 0.1
+		}
+remove_effect = {
+		set_temp_variable = { treasury_change = 10 }
+			modify_treasury_effect = yes
+			CHI_Massive_layoffs_improve = yes
+			}
+			}
+
+
+			CHI_gaigeguoqi = {
+		ai_will_do = {
+			factor = 20
+		}
+visible = {
+NOT = {
+has_idea = CHI_big_layoff3
+}
+}
+		days_remove = 30
+		days_re_enable = 30
+available = {
+has_completed_focus = CHI_china_wangluo
+}
+		cost = 50
+
+		modifier = {
+production_speed_buildings_factor = 0.1
+democratic_drift = 0.1
+		}
+remove_effect = {
+		set_temp_variable = { treasury_change = 10 }
+			modify_treasury_effect = yes
+			CHI_Massive_layoffs_improve = yes
+			}
+			}
+
+
+
+
+			CHI_guoyouhuafeifasiqi = {
+		ai_will_do = {
+			factor = 20
+		}
+visible = {
+has_country_flag=zaiyiciguoyou
+}
+		days_remove = 30
+		days_re_enable = 30
+available = {
+has_country_flag=zaiyiciguoyou
+}
+		cost = 50
+
+		modifier = {
+production_speed_buildings_factor = 0.1
+democratic_drift = 0.1
+		}
+remove_effect = {
+		set_temp_variable = { treasury_change = 10 }
+			modify_treasury_effect = yes
+			CHI_Massive_layoffs_improve = yes
+			}
+			}			
 }

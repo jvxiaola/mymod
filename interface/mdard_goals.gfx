@@ -430,5 +430,8 @@ SpriteType = {
 	}
 
 
-
+		spriteType = {
+		name = "CHI_big_layoff_dec"
+		texturefile = "gfx/interface/decisions/CHI_big_layoff.dds"
+		}	
 }

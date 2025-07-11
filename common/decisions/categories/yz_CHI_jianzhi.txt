@@ -14,3 +14,23 @@ scripted_gui = JIARUSHIMAO_GUI
 		tag=CHI
 	}
 }
+
+
+CHI_Massive_layoffs = {
+		priority = { base = 1001 }
+	icon = GFX_decision_communism
+
+	allowed = {
+		original_tag = CHI
+	}
+	picture = CHI_big_layoff_dec
+	visible = {
+OR = {
+has_idea = CHI_big_layoff-1
+has_idea = CHI_big_layoff0
+has_idea = CHI_big_layoff1
+has_idea = CHI_big_layoff2
+has_idea = CHI_big_layoff3
+		}
+		}
+}
