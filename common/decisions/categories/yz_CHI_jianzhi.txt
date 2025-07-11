@@ -25,12 +25,6 @@ CHI_Massive_layoffs = {
 	}
 	picture = CHI_big_layoff_dec
 	visible = {
-OR = {
-has_idea = CHI_big_layoff-1
-has_idea = CHI_big_layoff0
-has_idea = CHI_big_layoff1
-has_idea = CHI_big_layoff2
-has_idea = CHI_big_layoff3
-		}
+NOT={has_country_flag=gaigejieshu }
 		}
 }

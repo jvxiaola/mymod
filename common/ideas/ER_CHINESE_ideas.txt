@@ -315,19 +315,16 @@ ideas = {
 		CHI_dixiaoguoqi= {
 			allowed_civil_war = { always = yes }
 			picture =PTF_Low_Popular_Support_idea
-			cancel = { 
-				OR = { 
-					has_idea = Industrial_damage1 has_idea = Industrial_damage2 
-					has_idea = Industrial_damage3 has_idea = Industrial_damage4
-				} 
-			}			
+		
 			modifier = {
-				consumer_goods_expected_value = 0.07
+				consumer_goods_expected_value = 0.05
 				corporate_tax_income_multiplier_modifier = -0.05
 				receiving_investment_cost_modifier = 0.10
 				production_factory_efficiency_gain_factor = -0.05
 				production_factory_max_efficiency_factor = -0.05
 				production_factory_start_efficiency_factor = -0.05
+				production_speed_buildings_factor=-0.05
+				stability_factor = 0.1
 			}
 		}
 

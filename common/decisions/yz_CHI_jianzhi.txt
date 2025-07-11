@@ -5,7 +5,7 @@ CHI_jiarushimao = {
 			tag=CHI
 
 		}
-		cost = 100
+		cost = 10
 		available = {
 
 		}
@@ -14,7 +14,31 @@ CHI_jiarushimao = {
 		}
 		days_remove = 20
 		remove_effect = {
-news_event = china_news.6
+			if={
+				limit = {
+
+					NOT={has_idea=CHI_dixiaoguoqi}
+					NOT={has_country_flag=dadaomeidi}
+					
+				}
+				hidden_effect = {
+				news_event = china_news.6	
+				remove_ideas = CHI_not_shimao				
+				}
+
+			}
+			else_if = {
+				limit = { 
+OR={
+						has_idea=CHI_dixiaoguoqi
+					has_country_flag=dadaomeidi
+}
+				}
+								hidden_effect = {
+				country_event = {id=prc1.400}
+			}
+		}
+
 		}
 		ai_will_do = {
 			factor = 0
@@ -127,7 +151,8 @@ democratic_drift = 0.1
 remove_effect = {
 		set_temp_variable = { treasury_change = 10 }
 			modify_treasury_effect = yes
-			CHI_Massive_layoffs_improve = yes
+			#CHI_Massive_layoffs_improve = yes
+			remove_ideas = CHI_dixiaoguoqi
 			}
 			}
 			

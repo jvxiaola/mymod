@@ -3874,7 +3874,18 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = prc1.400
+	title = prc1.400.t
+	desc = prc1.400.d
 
+	is_triggered_only = yes
+
+	option = { #War
+		name = prc1.400.o1
+
+	}
+}
 #Taiwan - China demands annexation under democracy
 country_event = {
 	id = prc1.41
@@ -7648,9 +7659,9 @@ add_to_variable = {
 var = CPC_Left
 value = 0.1
 }
-						set_temp_variable = { treasury_change = -50 }
+						set_temp_variable = { treasury_change = -25 }
 		modify_treasury_effect = yes
-	remove_ideas = CHI_big_layoff1
+CHI_Massive_layoffs_improve = yes
 	increase_social_spending = yes
 
 	ai_chance = { factor = 95 }
@@ -7676,9 +7687,10 @@ value = 0.1
 	var = CPC_Left
 	value = 0.2
 	}
-								set_temp_variable = { treasury_change = -100 }
+								set_temp_variable = { treasury_change = -50 }
 				modify_treasury_effect = yes
-			remove_ideas = CHI_big_layoff1
+			CHI_Massive_layoffs_improve = yes
+			CHI_Massive_layoffs_improve = yes
 			increase_social_spending = yes
 		ai_chance = { factor = 5 }																								
 		}
