@@ -6305,7 +6305,7 @@ focus = {
 		add_ideas = PRC_jjdz
 		}
 		}
-						focus = {
+focus = {
 		id = PRC_communist_inte
 		icon = fifth_international
 		x = 0
@@ -6330,13 +6330,6 @@ cost = 5
 		available = {
 					is_in_faction = no
 		has_civil_war = no
-		OR = {
-
-			has_country_leader = {  name = "毛远新" }
-						has_country_leader = {  name = "韩东方" }
-						has_country_leader = {  name = QuanGuoRenMinDaiBiaoDaHui }
-
-						}
 				custom_trigger_tooltip = {
 									has_idea = p5_member
 
@@ -6368,7 +6361,7 @@ has_idea = CHI_aftermath_of_the_civil_war_5
 add_ideas = CHI_Exporting_the_Revolution
 				}
 				}
-							focus = {
+focus = {
 		id = PRC_1co_communist
 		icon = communism10
 		x = 2
