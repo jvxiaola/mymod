@@ -28,3 +28,16 @@ CHI_Massive_layoffs = {
 NOT={has_country_flag=gaigejieshu }
 		}
 }
+
+CHI_zhongxiguanxi = {
+		priority = { base = 1001 }
+	icon = GFX_decision_communism
+
+	allowed = {
+		original_tag = CHI
+	}
+	picture = CHI_big_layoff_dec
+	visible = {
+NOT={has_country_flag=gaigejieshu }
+		}
+}

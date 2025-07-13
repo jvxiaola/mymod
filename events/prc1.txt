@@ -5997,6 +5997,11 @@ country_event = {
 	var = CPC_Left
 	value = 0.015
 	}
+add_to_variable = {
+var = zhongxijingzhangdu
+value = -2
+}
+
 	USA = {		
 		add_opinion_modifier = {
 				target = CHI
@@ -6017,6 +6022,11 @@ country_event = {
 				custom_effect_tooltip = influence_the_party_line_tt
 	add_5_emerging_left_wing_radical = yes
 	set_country_flag = dadaomeidi
+add_to_variable = {
+var = zhongxijingzhangdu
+value = -10
+}
+
 	add_to_variable = {
 	var = CPC_Right
 	value = -0.025

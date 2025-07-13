@@ -235,3 +235,82 @@ remove_effect = {
 			}
 			}			
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CHI_zhongxiguanxi = {
+CHI_jieshoumeiguo = {
+		icon = eng_trade_unions_demand
+
+		allowed = {  } #manually activated
+
+		available = {
+		
+	
+		}
+
+		#is_good = no
+		#days_mission_timeout = 180
+
+		ai_will_do = { factor = 1000 }
+
+		complete_effect = {
+
+		custom_effect_tooltip = ""
+
+		}
+
+		timeout_effect = {
+
+		}
+	}
+
+}

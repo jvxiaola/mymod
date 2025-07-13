@@ -129,6 +129,10 @@ focus_tree = {
 				continue_if_invalid = no
 				available_if_capitulated = no
 				completion_reward = {
+					add_to_variable = {
+var = zhongxijingzhangdu
+value = +5
+}
 					add_political_power = 100
 				}
 			}
