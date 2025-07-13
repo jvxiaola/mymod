@@ -6328,6 +6328,7 @@ cost = 5
 		}
 
 		available = {
+								has_country_flag = chuanyumaopai
 					is_in_faction = no
 		has_civil_war = no
 				custom_trigger_tooltip = {
