@@ -18,7 +18,7 @@ CHI_jiarushimao = {
 				limit = {
 
 					NOT={has_idea=CHI_dixiaoguoqi}
-					NOT={has_country_flag=dadaomeidi}
+					NOT={check_variable = { zhongxiguanxi   < 60.0 }}
 					
 				}
 				hidden_effect = {
@@ -31,7 +31,7 @@ CHI_jiarushimao = {
 				limit = { 
 OR={
 						has_idea=CHI_dixiaoguoqi
-					has_country_flag=dadaomeidi
+					check_variable = { zhongxiguanxi   < 60.0 }
 }
 				}
 								hidden_effect = {

@@ -5998,7 +5998,7 @@ country_event = {
 	value = 0.015
 	}
 add_to_variable = {
-var = zhongxijingzhangdu
+var = zhongxiguanxi
 value = -2
 }
 
@@ -6023,7 +6023,7 @@ value = -2
 	add_5_emerging_left_wing_radical = yes
 	set_country_flag = dadaomeidi
 add_to_variable = {
-var = zhongxijingzhangdu
+var = zhongxiguanxi
 value = -10
 }
 

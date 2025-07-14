@@ -1,6 +1,6 @@
 ﻿l_simp_chinese:
  CHI_jiarushimao: "加入世贸组织"
- CHI_jiarushimao_desc: "想要加入世贸组织，必须处理好和美国的关系，以及处理好经济改革，当前与美国关系 [CHI_meiguoguanxi_text] ， 经济运作   [CHI_jingjixingshi_text]  。"
+ CHI_jiarushimao_desc: "想要加入世贸组织，必须处理好和美国的关系，以及处理好经济改革，当前中西关系：[zhongxiguanxi] ， 经济运作   [CHI_jingjixingshi_text]  。"
  CHI_shengqingjiaru: "申请加入世贸组织"
  CHI_Massive_layoffs: "国企改革"
  CHI_Massive_layoffs_desc: "2000年，中国正经历着一场前所未有的经济变革。国有企业改革的浪潮席卷全国，数百万工人失去了他们曾经引以为傲的“铁饭碗”。这场大规模的下岗潮不仅改变了无数家庭的命运，也深刻影响了中国的社会结构和经济发展。\n在东北老工业基地，曾经繁忙的工厂如今变得寂静无声。工人们站在废弃的厂房前，回忆着过去的辉煌岁月。许多人不得不转行，从事小商贩、保洁员等低收入工作，甚至有些人为了生计背井离乡，前往南方打工。\n下岗不仅带来了经济上的困境，也引发了社会问题。家庭矛盾加剧，离婚率上升，甚至有些人因无法承受压力而选择极端手段"
@@ -13,6 +13,7 @@
 
 
  CHI_zhongxiguanxi: "中西关系"
+ CHI_zhongxiguanxi_desc: "中西关系：[zhongxiguanxi]"
  CHI_jieshoumeiguo: "接受美国道歉"
  prc1.400: "申请加入世贸组织失败"
  prc1.400.t: "申请加入世贸组织失败"
