@@ -118,6 +118,11 @@ focus_tree = {
 				x = -5
 				y = 4
 				cost = 4
+				allow_branch = {
+					NOT={
+						has_country_flag = dadaomeidi
+					}
+				}
 				relative_position_id = CHI_zhengzhigaige
 				prerequisite = {
 					focus = CHI_condemn_United_States
@@ -131,7 +136,7 @@ focus_tree = {
 				completion_reward = {
 					add_to_variable = {
 var = zhongxiguanxi
-value = +5
+value = 5
 }
 					add_political_power = 100
 				}

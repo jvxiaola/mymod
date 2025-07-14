@@ -313,4 +313,152 @@ CHI_jieshoumeiguo = {
 		}
 	}
 
+CHI_lixingaiguo={
+			icon = eng_trade_unions_demand
+visible = {
+	has_country_flag = putongaiguo
+}
+		allowed = {  } #manually activated
+
+		available = {
+		
+	
+		}
+
+		#is_good = no
+		#days_mission_timeout = 180
+
+		ai_will_do = { factor = 1000 }
+
+		complete_effect = {
+
+		custom_effect_tooltip = ""
+
+		}
+
+		timeout_effect = {
+
+		}
+}
+
+
+CHI_fanmeidexuanchuan={
+			icon = eng_trade_unions_demand
+visible = {
+has_country_flag = dadaomeidi
+}
+		allowed = {  } #manually activated
+
+		available = {
+		
+	
+		}
+
+		#is_good = no
+		#days_mission_timeout = 180
+
+		ai_will_do = { factor = 1000 }
+
+		complete_effect = {
+
+		custom_effect_tooltip = ""
+
+		}
+
+
+
+}
+CHI_hejiexuanchuan={
+			icon = eng_trade_unions_demand
+
+		allowed = {  } #manually activated
+visible = {
+	has_country_flag = putonghejie
+	has_country_flag = jiduanhejie
+}
+		available = {
+		
+	
+		}
+
+		#is_good = no
+		#days_mission_timeout = 180
+
+		ai_will_do = { factor = 1000 }
+
+		complete_effect = {
+
+		custom_effect_tooltip = ""
+
+		}
+
+		timeout_effect = {
+
+		}
+
+
+}
+
+
+
+CHI_zhengmianpingjia={
+			icon = eng_trade_unions_demand
+
+		allowed = {  } #manually activated
+visible = {
+	has_country_flag = jiduanhejie
+}
+		available = {
+		
+	
+		}
+
+		#is_good = no
+		#days_mission_timeout = 180
+
+		ai_will_do = { factor = 1000 }
+
+		complete_effect = {
+
+		custom_effect_tooltip = ""
+
+		}
+
+		timeout_effect = {
+
+		}
+
+
+}
+
+
+CHI_xianzhizifayundong={
+			icon = eng_trade_unions_demand
+
+		allowed = {  } #manually activated
+visible = {
+	has_country_flag = jiduanhejie
+}
+		available = {
+		
+	
+		}
+
+		#is_good = no
+		#days_mission_timeout = 180
+
+		ai_will_do = { factor = 1000 }
+
+		complete_effect = {
+
+
+
+		}
+
+
+
+
+
+
+}
 }

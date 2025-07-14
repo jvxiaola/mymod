@@ -13,8 +13,18 @@
 
 
  CHI_zhongxiguanxi: "中西关系"
- CHI_zhongxiguanxi_desc: "中西关系：[zhongxiguanxi]"
- CHI_jieshoumeiguo: "接受美国道歉"
+
+
+ CHI_zhongxiguanxi_desc: "中西关系：§Y[?zhongxiguanxi]§!"
+ CHI_jieshoumeiguo: "恢复与美正常外交"
+ CHI_lixingaiguo: "宣传理性爱国"
+ CHI_fanmeidexuanchuan: "反美宣传"
+ CHI_hejiexuanchuan: "和解宣传"
+ CHI_zhengmianpingjia: "正面评价科索沃战争"
+
+ CHI_xianzhizifayundong: "限制群众自发运动"
+
+
  prc1.400: "申请加入世贸组织失败"
  prc1.400.t: "申请加入世贸组织失败"
  prc1.400.d: "我们申请似乎没有很好的效果"

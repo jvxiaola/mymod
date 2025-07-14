@@ -5980,7 +5980,7 @@ country_event = {
 	name = prc1.98.o1	
 
 
-
+	set_country_flag = putongaiguo
 		set_temp_variable = { temp_opinion = 10 }
 		change_communist_cadres_opinion = yes
 		custom_effect_tooltip = influence_the_party_line_tt
@@ -6042,7 +6042,7 @@ value = -10
 			}
 	
 	}
-
+mark_focus_tree_layout_dirty = yes
 	
 	ai_chance = {factor = 5}
 	}
@@ -7574,6 +7574,7 @@ country_event = {
 
 	option = { 
 	name = prc1.164.a.o1	
+	set_country_flag = putonghejie
 	set_temp_variable = { treasury_change = 10 }
 	modify_treasury_effect = yes
 				custom_effect_tooltip = influence_the_party_line_tt
@@ -7605,7 +7606,7 @@ value = -0.1
 	}
 	option = { 
 		name = prc1.164.a.o2	
-
+	set_country_flag = jiduanhejie
 		set_temp_variable = { treasury_change = 10 }
 		modify_treasury_effect = yes
 		custom_effect_tooltip = influence_the_party_line_tt

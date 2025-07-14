@@ -88,7 +88,7 @@ China_gbrp_category = {
 cummunist_patry_of_china_faction_category = {
 	icon = GFX_decision_generic_china
 		visible_when_empty = yes
-
+priority = 900
 	allowed = {
 		original_tag = CHI
 	}

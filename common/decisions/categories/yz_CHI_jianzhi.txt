@@ -12,6 +12,7 @@ scripted_gui = JIARUSHIMAO_GUI
 	visible = {
 
 		tag=CHI
+		has_idea=CHI_not_shimao
 	}
 }
 
@@ -36,7 +37,7 @@ CHI_zhongxiguanxi = {
 	allowed = {
 		original_tag = CHI
 	}
-	picture = CHI_big_layoff_dec
+	#picture = CHI_big_layoff_dec
 	visible = {
 NOT={has_country_flag=gaigejieshu }
 		}
