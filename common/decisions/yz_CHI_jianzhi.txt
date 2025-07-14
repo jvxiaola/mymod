@@ -231,6 +231,7 @@ democratic_drift = 0.1
 remove_effect = {
 		set_temp_variable = { treasury_change = 10 }
 			modify_treasury_effect = yes
+			CHI_work_envir_up = yes
 			CHI_Massive_layoffs_improve = yes
 			}
 			}			
