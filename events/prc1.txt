@@ -7739,10 +7739,10 @@ CHI_Massive_layoffs_improve = yes
 	add_5_western_liberalism = yes
 	add_5_emerging_reactionary = yes
 
-remove_ideas = CHI_dixiaoguoqi
+remove_ideas = CHI_dixiaoguoqi_2
 
 			add_timed_idea = {
-				idea=CHI_dixiaoguoqi
+				idea=CHI_dixiaoguoqi_2
 				days = 700
 						}
 

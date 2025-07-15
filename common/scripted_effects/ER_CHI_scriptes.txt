@@ -517,3 +517,72 @@ CHI_MER_decresee_effect = {
     remove_ideas = Militarical_economy_remain5
   }
 }
+
+
+
+
+
+
+CHI_state_owned_reform_up = {
+	if = {
+		limit = { has_idea = CHI_dixiaoguoqi_4 }
+		swap_ideas = {
+			remove_idea = CHI_dixiaoguoqi_4
+			add_idea = CHI_dixiaoguoqi_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = CHI_dixiaoguoqi_3 }
+		swap_ideas = {
+			remove_idea = CHI_dixiaoguoqi_3
+			add_idea = CHI_dixiaoguoqi_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = CHI_dixiaoguoqi_2 }
+		swap_ideas = {
+			remove_idea = CHI_dixiaoguoqi_2
+			add_idea = CHI_dixiaoguoqi_1
+		}
+	}
+	else_if = {
+		limit = { has_idea = CHI_dixiaoguoqi_1 }
+		remove_ideas = CHI_dixiaoguoqi_1
+	}
+}
+
+
+CHI_state_owned_reform_down = {
+	if = {
+		limit = { has_idea = CHI_dixiaoguoqi_1 }
+		swap_ideas = {
+			remove_idea = CHI_dixiaoguoqi_1
+			add_idea = CHI_dixiaoguoqi_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = CHI_dixiaoguoqi_2 }
+		swap_ideas = {
+			remove_idea = CHI_dixiaoguoqi_2
+			add_idea = CHI_dixiaoguoqi_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = CHI_dixiaoguoqi_3 }
+		swap_ideas = {
+			remove_idea = CHI_dixiaoguoqi_3
+			add_idea = CHI_dixiaoguoqi_4
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_idea = CHI_dixiaoguoqi_1
+				has_idea = CHI_dixiaoguoqi_2
+				has_idea = CHI_dixiaoguoqi_3
+				has_idea = CHI_dixiaoguoqi_4
+			}
+		}
+		add_idea = CHI_dixiaoguoqi_1
+	}
+}

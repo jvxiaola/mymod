@@ -17,7 +17,7 @@ CHI_jiarushimao = {
 			if={
 				limit = {
 
-					NOT={has_idea=CHI_dixiaoguoqi}
+					NOT={has_idea=CHI_dixiaoguoqi_2}
 					NOT={check_variable = { zhongxiguanxi   < 60.0 }}
 					
 				}
@@ -30,7 +30,7 @@ CHI_jiarushimao = {
 			else_if = {
 				limit = { 
 OR={
-						has_idea=CHI_dixiaoguoqi
+						has_idea=CHI_dixiaoguoqi_2
 					check_variable = { zhongxiguanxi   < 60.0 }
 }
 				}
@@ -152,7 +152,7 @@ remove_effect = {
 		set_temp_variable = { treasury_change = 10 }
 			modify_treasury_effect = yes
 			#CHI_Massive_layoffs_improve = yes
-			remove_ideas = CHI_dixiaoguoqi
+			remove_ideas = CHI_dixiaoguoqi_2
 			}
 			}
 			
@@ -178,6 +178,8 @@ remove_effect = {
 		set_temp_variable = { treasury_change = 10 }
 			modify_treasury_effect = yes
 			CHI_Massive_layoffs_improve = yes
+CHI_state_owned_reform_down = yes
+
 			}
 			}
 
@@ -204,6 +206,7 @@ remove_effect = {
 		set_temp_variable = { treasury_change = 10 }
 			modify_treasury_effect = yes
 			CHI_Massive_layoffs_improve = yes
+			CHI_state_owned_reform_up = yes 
 			}
 			}
 
@@ -232,7 +235,10 @@ remove_effect = {
 		set_temp_variable = { treasury_change = 10 }
 			modify_treasury_effect = yes
 			CHI_work_envir_up = yes
+			CHI_state_owned_reform_down = yes
 			CHI_Massive_layoffs_improve = yes
+CHI_state_owned_reform_down = yes
+
 			}
 			}			
 }
@@ -292,7 +298,7 @@ CHI_jieshoumeiguo = {
 		icon = eng_trade_unions_demand
 
 		allowed = {  } #manually activated
-
+days_remove = 20
 		available = {
 		
 	
@@ -320,7 +326,7 @@ visible = {
 	has_country_flag = putongaiguo
 }
 		allowed = {  } #manually activated
-
+days_remove = 20
 		available = {
 		
 	
@@ -349,7 +355,7 @@ visible = {
 has_country_flag = dadaomeidi
 }
 		allowed = {  } #manually activated
-
+days_remove = 20
 		available = {
 		
 	
@@ -381,7 +387,7 @@ visible = {
 		
 	
 		}
-
+days_remove = 20
 		#is_good = no
 		#days_mission_timeout = 180
 
@@ -413,7 +419,7 @@ visible = {
 		
 	
 		}
-
+days_remove = 20
 		#is_good = no
 		#days_mission_timeout = 180
 
@@ -444,7 +450,7 @@ visible = {
 		
 	
 		}
-
+days_remove = 20
 		#is_good = no
 		#days_mission_timeout = 180
 
