@@ -92,7 +92,7 @@ remove_ideas = CHI_big_layoff0
 remove_ideas = CHI_big_layoff1
 remove_ideas = CHI_big_layoff2
 remove_ideas = CHI_big_layoff3
-
+remove_ideas = CHI_big_layoff4
 }
 		}
 
@@ -106,9 +106,20 @@ CHI_Placement_of_workers = {
 			factor = 20
 		}
 visible = {
-NOT = {
+	NOT={
+has_country_flag = CHI_Placement_of_workers_completed
+	}
+OR={
+
+	has_idea = CHI_big_layoff-1
+has_idea = CHI_big_layoff0
+has_idea = CHI_big_layoff1
+has_idea = CHI_big_layoff2
 has_idea = CHI_big_layoff3
+has_idea = CHI_big_layoff4
 }
+
+
 }
 		days_remove = 60
 		days_re_enable = 30
@@ -116,7 +127,7 @@ available = {
 OR = 
 {
 has_completed_focus = CHI_daxiagang
-
+has_country_flag = CHI_Placement_of_workers
 }}
 		cost = 50
 
@@ -125,6 +136,7 @@ has_completed_focus = CHI_daxiagang
 	communism_drift = 0.05
 		}
 remove_effect = {
+	set_country_flag = CHI_Placement_of_workers_completed
 		set_temp_variable = { treasury_change = -50 }
 			modify_treasury_effect = yes
 			CHI_Massive_layoffs_improve = yes
@@ -161,6 +173,7 @@ CHI_zhaomuxiaganggongren = {
 			factor = 20
 		}
 visible = {
+	has_country_flag=CHI_zhaomuxiaganggongren_completed
 has_completed_focus = CHI_zuzhiguoqigaige
 }
 		days_remove = 30
@@ -179,7 +192,7 @@ remove_effect = {
 			modify_treasury_effect = yes
 			CHI_Massive_layoffs_improve = yes
 CHI_state_owned_reform_down = yes
-
+set_country_flag=CHI_zhaomuxiaganggongren_completed
 			}
 			}
 
@@ -190,6 +203,7 @@ CHI_state_owned_reform_down = yes
 		}
 visible = {
 has_completed_focus = CHI_china_wangluo
+NOT={has_country_flag=CHI_gaigeguoqi_completed}
 }
 		days_remove = 30
 		days_re_enable = 30
@@ -207,10 +221,39 @@ remove_effect = {
 			modify_treasury_effect = yes
 			CHI_Massive_layoffs_improve = yes
 			CHI_state_owned_reform_up = yes 
+			set_country_flag=CHI_gaigeguoqi_completed
 			}
 			}
 
+			CHI_jianduguozi = {
+		ai_will_do = {
+			factor = 20
+		}
+visible = {
+has_completed_focus = CHI_china_wangluo
+NOT={has_country_flag=CHI_jianduguozi_completed}
+}
+		days_remove = 30
+		days_re_enable = 30
+available = {
+has_completed_focus = CHI_china_wangluo
+}
+		cost = 50
 
+		modifier = {
+production_speed_buildings_factor = 0.1
+democratic_drift = 0.1
+		}
+remove_effect = {
+
+set_country_flag=CHI_jianduguozi_completed
+
+		set_temp_variable = { treasury_change = 10 }
+			modify_treasury_effect = yes
+			CHI_Massive_layoffs_improve = yes
+			CHI_state_owned_reform_down = yes 
+			}
+			}
 
 
 			CHI_guoyouhuafeifasiqi = {

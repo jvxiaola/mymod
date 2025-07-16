@@ -43,7 +43,18 @@ else_if = {
 limit = {
 has_idea = CHI_big_layoff3
 }
-remove_ideas = CHI_big_layoff3
+swap_ideas = {
+add_idea = CHI_big_layoff4
+remove_idea = CHI_big_layoff3
+}
+}
+
+
+else_if = {
+limit = {
+has_idea = CHI_big_layoff4
+}
+remove_ideas = CHI_big_layoff4
 }
 }
   CHI_ruin_industry_add = {
