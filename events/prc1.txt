@@ -7846,6 +7846,41 @@ add_timed_idea = {
 			}
 
 
+
+
+
+
+
+
+		country_event = {
+			id = prc1.168
+			title = prc1.168.t
+			desc = prc1.168.d
+
+			is_triggered_only = yes
+			
+			trigger = {
+		
+				
+			}
+		
+		
+	
+		option = { 
+			name = prc1.168.a.o1	
+
+		
+			ai_chance = { factor = 95 }
+		
+			}
+
+			}
+
+
+
+
+
+
 			
 
 

@@ -49,7 +49,35 @@ on_actions = {
 
 on_monthly_CHI = {
 
-	effect = {                      
+	effect = {      
+		
+		
+
+			if = {
+				limit = {
+					check_variable = { global.year > 1999 }
+					check_variable = { global.month > 4 }
+					tag=CHI
+NOT={	has_country_flag = CHI_xianzhizifayundong_completed}
+				}
+
+
+
+				news_event = { id = prc1.168 days = 14 }
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
 		set_temp_variable = {
 			var=Final_Chinese_people_support_to_china_government_modifier
 			value=modifier@Chinese_people_support_to_china_government_modifier

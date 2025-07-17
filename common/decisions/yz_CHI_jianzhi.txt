@@ -487,13 +487,16 @@ CHI_xianzhizifayundong={
 
 		allowed = {  } #manually activated
 visible = {
-	has_country_flag = jiduanhejie
+	NOT={
+	has_country_flag = CHI_xianzhizifayundong_completed
+	}
+	has_country_flag = kaishichulidashiguan
 }
 		available = {
 		
 	
 		}
-days_remove = 20
+days_remove = 10
 		#is_good = no
 		#days_mission_timeout = 180
 
@@ -501,7 +504,7 @@ days_remove = 20
 
 		complete_effect = {
 
-
+set_country_flag = CHI_xianzhizifayundong_completed
 
 		}
 

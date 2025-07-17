@@ -107,6 +107,7 @@ focus_tree = {
 			continue_if_invalid = no
 			available_if_capitulated = no
 	completion_reward = {
+		set_country_flag = kaishichulidashiguan
 	add_political_power = 100
 
 			}
