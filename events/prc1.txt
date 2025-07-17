@@ -7739,14 +7739,9 @@ CHI_Massive_layoffs_improve = yes
 	add_5_western_liberalism = yes
 	add_5_emerging_reactionary = yes
 
-remove_ideas = CHI_dixiaoguoqi_2
-
-			add_timed_idea = {
-				idea=CHI_dixiaoguoqi_2
-				days = 700
-						}
 
 
+set_country_flag = wenhesiyouhua
 	add_to_variable = {
 		var = CPC_Right
 		value = 0.07
@@ -7760,11 +7755,7 @@ remove_ideas = CHI_dixiaoguoqi_2
 	value = -0.1
 	}
 	four_random_industrial_complex = yes
-	remove_ideas = CHI_big_layoff1
-	add_timed_idea = {
-		idea = CHI_big_layoff2
-		days = 365
-	}		
+
 
 	
 		ai_chance = { factor = 95 }
@@ -7778,7 +7769,7 @@ remove_ideas = CHI_dixiaoguoqi_2
 			add_5_western_liberalism = yes
 			add_5_emerging_reactionary = yes
 
-
+set_country_flag = jijingsiyouhua
 add_timed_idea = {
 	idea = CHI_shock_therapy
 	days = 600
@@ -7794,11 +7785,7 @@ add_timed_idea = {
 			value = -0.1
 			}
 			four_random_industrial_complex = yes
-			remove_ideas = CHI_big_layoff1
-			add_timed_idea = {
-				idea = CHI_big_layoff2
-				days = 365
-			}		
+
 		
 			ai_chance = { factor = 5 }																								
 			}
@@ -7864,7 +7851,12 @@ add_timed_idea = {
 				
 			}
 		
-		
+		immediate = {
+								add_to_variable = {
+var = zhongxiguanxi
+value = -5
+}
+		}
 	
 		option = { 
 			name = prc1.168.a.o1	

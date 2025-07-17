@@ -16,8 +16,12 @@ CHI_jiarushimao = {
 		remove_effect = {
 			if={
 				limit = {
-
+					#NOT={has_idea=CHI_dixiaoguoqi_1}
 					NOT={has_idea=CHI_dixiaoguoqi_2}
+					NOT={has_idea=CHI_dixiaoguoqi_3}
+					NOT={has_idea=CHI_dixiaoguoqi_4}
+					NOT={has_idea=CHI_dixiaoguoqi_5}
+
 					NOT={check_variable = { zhongxiguanxi   < 60.0 }}
 					
 				}
@@ -30,7 +34,16 @@ CHI_jiarushimao = {
 			else_if = {
 				limit = { 
 OR={
+
+
+
+							#has_idea=CHI_dixiaoguoqi_1
 						has_idea=CHI_dixiaoguoqi_2
+						has_idea=CHI_dixiaoguoqi_3
+						has_idea=CHI_dixiaoguoqi_4
+						has_idea=CHI_dixiaoguoqi_5
+
+
 					check_variable = { zhongxiguanxi   < 60.0 }
 }
 				}
@@ -148,6 +161,33 @@ CHI_jingxingsiyouhua = {
 		}
 visible = {
 has_completed_focus = CHI_china_wangluo
+OR={
+OR={
+#has_idea=CHI_dixiaoguoqi_1
+has_idea=CHI_dixiaoguoqi_2
+has_idea=CHI_dixiaoguoqi_3
+has_idea=CHI_dixiaoguoqi_4
+has_idea=CHI_dixiaoguoqi_5
+
+}
+AND={
+has_country_flag = jijingsiyouhua
+OR={
+has_idea=CHI_dixiaoguoqi_1
+has_idea=CHI_dixiaoguoqi_2
+has_idea=CHI_dixiaoguoqi_3
+has_idea=CHI_dixiaoguoqi_4
+has_idea=CHI_dixiaoguoqi_5
+}
+
+}
+
+
+}
+
+
+
+
 }
 		days_remove = 30
 		days_re_enable = 30
@@ -163,8 +203,10 @@ democratic_drift = 0.1
 remove_effect = {
 		set_temp_variable = { treasury_change = 10 }
 			modify_treasury_effect = yes
+			CHI_state_owned_reform_up =yes
+			CHI_harsh_working_down=yes
 			#CHI_Massive_layoffs_improve = yes
-			remove_ideas = CHI_dixiaoguoqi_2
+
 			}
 			}
 			
@@ -191,6 +233,7 @@ remove_effect = {
 		set_temp_variable = { treasury_change = 10 }
 			modify_treasury_effect = yes
 			CHI_Massive_layoffs_improve = yes
+			CHI_harsh_working_up=yes
 CHI_state_owned_reform_down = yes
 set_country_flag=CHI_zhaomuxiaganggongren_completed
 			}
@@ -219,8 +262,9 @@ democratic_drift = 0.1
 remove_effect = {
 		set_temp_variable = { treasury_change = 10 }
 			modify_treasury_effect = yes
-			CHI_Massive_layoffs_improve = yes
+			#CHI_Massive_layoffs_improve = yes
 			CHI_state_owned_reform_up = yes 
+			CHI_harsh_working_down=yes
 			set_country_flag=CHI_gaigeguoqi_completed
 			}
 			}
@@ -230,7 +274,7 @@ remove_effect = {
 			factor = 20
 		}
 visible = {
-has_completed_focus = CHI_china_wangluo
+has_completed_focus = CHI_zuzhiguoqigaige
 NOT={has_country_flag=CHI_jianduguozi_completed}
 }
 		days_remove = 30
@@ -252,6 +296,7 @@ set_country_flag=CHI_jianduguozi_completed
 			modify_treasury_effect = yes
 			CHI_Massive_layoffs_improve = yes
 			CHI_state_owned_reform_down = yes 
+			CHI_harsh_working_up=yes
 			}
 			}
 
@@ -260,8 +305,10 @@ set_country_flag=CHI_jianduguozi_completed
 		ai_will_do = {
 			factor = 20
 		}
+		
 visible = {
 has_country_flag=zaiyiciguoyou
+NOT={has_idea =CHI_dixiaoguoqi_4}
 }
 		days_remove = 30
 		days_re_enable = 30
@@ -280,6 +327,7 @@ remove_effect = {
 			CHI_work_envir_up = yes
 			CHI_state_owned_reform_down = yes
 			CHI_Massive_layoffs_improve = yes
+			CHI_harsh_working_up=yes
 CHI_state_owned_reform_down = yes
 
 			}
@@ -337,31 +385,31 @@ CHI_state_owned_reform_down = yes
 
 
 CHI_zhongxiguanxi = {
-CHI_jieshoumeiguo = {
-		icon = eng_trade_unions_demand
 
-		allowed = {  } #manually activated
-days_remove = 20
-		available = {
+#CHI_jieshoumeiguo = {
+#		icon = eng_trade_unions_demand
+
+#		allowed = {  } #manually activated
+#days_remove = 20
+#		available = {
 		
 	
-		}
+#		}
 
-		#is_good = no
-		#days_mission_timeout = 180
 
-		ai_will_do = { factor = 1000 }
 
-		complete_effect = {
+	#	ai_will_do = { factor = 1000 }
 
-		custom_effect_tooltip = ""
+	#	complete_effect = {
 
-		}
+	#	custom_effect_tooltip = ""
 
-		timeout_effect = {
+	#	}
 
-		}
-	}
+	#	timeout_effect = {
+
+	#	}
+	#}
 
 CHI_lixingaiguo={
 			icon = eng_trade_unions_demand
@@ -385,7 +433,9 @@ days_remove = 20
 		custom_effect_tooltip = ""
 
 		}
+		remove_effect = {
 
+		}
 		timeout_effect = {
 
 		}
@@ -411,8 +461,14 @@ days_remove = 20
 
 		complete_effect = {
 
-		custom_effect_tooltip = ""
 
+
+		}
+		remove_effect = {
+					add_to_variable = {
+var = zhongxiguanxi
+value = -3
+}
 		}
 
 
@@ -441,7 +497,12 @@ days_remove = 20
 		custom_effect_tooltip = ""
 
 		}
-
+		remove_effect = {
+					add_to_variable = {
+var = zhongxiguanxi
+value = 2
+}
+		}
 		timeout_effect = {
 
 		}
@@ -473,7 +534,12 @@ days_remove = 20
 		custom_effect_tooltip = ""
 
 		}
-
+		remove_effect = {
+					add_to_variable = {
+var = zhongxiguanxi
+value = 4
+}
+		}
 		timeout_effect = {
 
 		}
@@ -481,6 +547,21 @@ days_remove = 20
 
 }
 
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+CHI_dashiguanshijian = {
 
 CHI_xianzhizifayundong={
 			icon = eng_trade_unions_demand
@@ -514,4 +595,7 @@ set_country_flag = CHI_xianzhizifayundong_completed
 
 
 }
+
+
+
 }

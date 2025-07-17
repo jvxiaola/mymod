@@ -32,6 +32,7 @@ NOT={has_country_flag=gaigejieshu }
 
 CHI_zhongxiguanxi = {
 		priority = { base = 1001 }
+		visible_when_empty = yes
 	icon = GFX_decision_communism
 
 	allowed = {
@@ -39,6 +40,22 @@ CHI_zhongxiguanxi = {
 	}
 	#picture = CHI_big_layoff_dec
 	visible = {
-NOT={has_country_flag=gaigejieshu }
+
 		}
 }
+
+
+
+CHI_dashiguanshijian= {
+		priority = { base = 1001 }
+	icon = GFX_decision_communism
+
+	allowed = {
+		original_tag = CHI
+	}
+	#picture = CHI_big_layoff_dec
+	visible = {
+
+		}
+}
+

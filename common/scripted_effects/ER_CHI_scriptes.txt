@@ -535,7 +535,16 @@ CHI_MER_decresee_effect = {
 
 
 CHI_state_owned_reform_up = {
+
 	if = {
+		limit = { has_idea = CHI_dixiaoguoqi_5 }
+		swap_ideas = {
+			remove_idea = CHI_dixiaoguoqi_5
+			add_idea = CHI_dixiaoguoqi_4
+		}
+	}
+
+	else_if = {
 		limit = { has_idea = CHI_dixiaoguoqi_4 }
 		swap_ideas = {
 			remove_idea = CHI_dixiaoguoqi_4
@@ -585,6 +594,18 @@ CHI_state_owned_reform_down = {
 			add_idea = CHI_dixiaoguoqi_4
 		}
 	}
+
+	else_if = {
+		limit = { has_idea = CHI_dixiaoguoqi_4 }
+		swap_ideas = {
+			remove_idea = CHI_dixiaoguoqi_4
+			add_idea = CHI_dixiaoguoqi_5
+		}
+	}
+
+
+
+
 	else_if = {
 		limit = {
 			NOT = {
@@ -592,8 +613,120 @@ CHI_state_owned_reform_down = {
 				has_idea = CHI_dixiaoguoqi_2
 				has_idea = CHI_dixiaoguoqi_3
 				has_idea = CHI_dixiaoguoqi_4
+        				has_idea = CHI_dixiaoguoqi_5
 			}
 		}
 		add_idea = CHI_dixiaoguoqi_1
 	}
 }
+
+
+CHI_harsh_working_up = {
+	if = {
+		limit = { has_idea = harsh_working_en_of_CHI7 }
+		swap_ideas = {
+			remove_idea = harsh_working_en_of_CHI7
+			add_idea = harsh_working_en_of_CHI6
+		}
+	}
+	else_if = {
+		limit = { has_idea = harsh_working_en_of_CHI6 }
+		swap_ideas = {
+			remove_idea = harsh_working_en_of_CHI6
+			add_idea = harsh_working_en_of_CHI5
+		}
+	}
+	else_if = {
+		limit = { has_idea = harsh_working_en_of_CHI5 }
+		swap_ideas = {
+			remove_idea = harsh_working_en_of_CHI5
+			add_idea = harsh_working_en_of_CHI4
+		}
+	}
+	else_if = {
+		limit = { has_idea = harsh_working_en_of_CHI4 }
+		swap_ideas = {
+			remove_idea = harsh_working_en_of_CHI4
+			add_idea = harsh_working_en_of_CHI3
+		}
+	}
+	else_if = {
+		limit = { has_idea = harsh_working_en_of_CHI3 }
+		swap_ideas = {
+			remove_idea = harsh_working_en_of_CHI3
+			add_idea = harsh_working_en_of_CHI2
+		}
+	}
+	else_if = {
+		limit = { has_idea = harsh_working_en_of_CHI2 }
+		swap_ideas = {
+			remove_idea = harsh_working_en_of_CHI2
+			add_idea = harsh_working_en_of_CHI1
+		}
+	}
+	else_if = {
+		limit = { has_idea = harsh_working_en_of_CHI1 }
+		remove_ideas = harsh_working_en_of_CHI1
+	}
+}
+
+
+CHI_harsh_working_down = {
+	if = {
+		limit = { has_idea = harsh_working_en_of_CHI1 }
+		swap_ideas = {
+			remove_idea = harsh_working_en_of_CHI1
+			add_idea = harsh_working_en_of_CHI2
+		}
+	}
+	else_if = {
+		limit = { has_idea = harsh_working_en_of_CHI2 }
+		swap_ideas = {
+			remove_idea = harsh_working_en_of_CHI2
+			add_idea = harsh_working_en_of_CHI3
+		}
+	}
+	else_if = {
+		limit = { has_idea = harsh_working_en_of_CHI3 }
+		swap_ideas = {
+			remove_idea = harsh_working_en_of_CHI3
+			add_idea = harsh_working_en_of_CHI4
+		}
+	}
+	else_if = {
+		limit = { has_idea = harsh_working_en_of_CHI4 }
+		swap_ideas = {
+			remove_idea = harsh_working_en_of_CHI4
+			add_idea = harsh_working_en_of_CHI5
+		}
+	}
+	else_if = {
+		limit = { has_idea = harsh_working_en_of_CHI5 }
+		swap_ideas = {
+			remove_idea = harsh_working_en_of_CHI5
+			add_idea = harsh_working_en_of_CHI6
+		}
+	}
+	else_if = {
+		limit = { has_idea = harsh_working_en_of_CHI6 }
+		swap_ideas = {
+			remove_idea = harsh_working_en_of_CHI6
+			add_idea = harsh_working_en_of_CHI7
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_idea = harsh_working_en_of_CHI1
+				has_idea = harsh_working_en_of_CHI2
+				has_idea = harsh_working_en_of_CHI3
+				has_idea = harsh_working_en_of_CHI4
+				has_idea = harsh_working_en_of_CHI5
+				has_idea = harsh_working_en_of_CHI6
+				has_idea = harsh_working_en_of_CHI7
+			}
+		}
+		add_idea = harsh_working_en_of_CHI1
+	}
+}
+

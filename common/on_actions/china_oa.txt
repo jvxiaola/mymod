@@ -11,6 +11,15 @@
 
 
 on_actions = {
+
+
+
+
+
+
+
+
+
 	on_weekly_CHI = {
 		effect = {
 			# 条件一：如果内战风险变量大于等于1
@@ -50,16 +59,22 @@ on_actions = {
 on_monthly_CHI = {
 
 	effect = {      
-		
+		if = {
+			limit = {
+				check_variable = { global.month > 11 }
+
+			}
+			CHI_Massive_layoffs_improve = yes
+		}
 		
 
-			if = {
-				limit = {
-					check_variable = { global.year > 1999 }
-					check_variable = { global.month > 4 }
-					tag=CHI
-NOT={	has_country_flag = CHI_xianzhizifayundong_completed}
-				}
+		if = {
+			limit = {
+				check_variable = { global.year > 1999 }
+				check_variable = { global.month > 4 }
+				tag=CHI
+				NOT={has_country_flag = CHI_xianzhizifayundong_completed}
+			}
 
 
 

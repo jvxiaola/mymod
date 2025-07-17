@@ -341,7 +341,7 @@ CHI_not_shimao
 	
 		CHI_shaosuminzu1
 		CHI_overproduction5
-CHI_dixiaoguoqi_2
+CHI_dixiaoguoqi_3
 
 		harsh_working_en_of_CHI4
 		int_investment_china
