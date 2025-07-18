@@ -280,7 +280,8 @@ NOT={has_country_flag=CHI_jianduguozi_completed}
 		days_remove = 30
 		days_re_enable = 30
 available = {
-has_completed_focus = CHI_china_wangluo
+has_completed_focus = CHI_zuzhiguoqigaige
+NOT={has_country_flag=CHI_jianduguozi_completed}
 }
 		cost = 50
 
@@ -324,7 +325,7 @@ democratic_drift = 0.1
 remove_effect = {
 		set_temp_variable = { treasury_change = 10 }
 			modify_treasury_effect = yes
-			CHI_work_envir_up = yes
+
 			CHI_state_owned_reform_down = yes
 			CHI_Massive_layoffs_improve = yes
 			CHI_harsh_working_up=yes

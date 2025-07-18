@@ -378,7 +378,7 @@ CHI_dixiaoguoqi_4 = {
 		stability_factor = 0.15
 	}
 }
-CHI_dixiaoguoqi_4 = {
+CHI_dixiaoguoqi_5 = {
 	allowed_civil_war = { always = yes }
 	picture = PTF_Low_Popular_Support_idea
 
