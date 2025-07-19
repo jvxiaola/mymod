@@ -416,6 +416,7 @@ CHI_lixingaiguo={
 			icon = eng_trade_unions_demand
 visible = {
 	has_country_flag = putongaiguo
+	NOT={has_country_flag=zhuanbianguanxi}
 }
 		allowed = {  } #manually activated
 days_remove = 20
@@ -435,7 +436,7 @@ days_remove = 20
 
 		}
 		remove_effect = {
-
+set_country_flag=zhuanbianguanxi
 		}
 		timeout_effect = {
 
@@ -447,6 +448,7 @@ CHI_fanmeidexuanchuan={
 			icon = eng_trade_unions_demand
 visible = {
 has_country_flag = dadaomeidi
+NOT={has_country_flag=zhuanbianguanxi}
 }
 		allowed = {  } #manually activated
 days_remove = 20
@@ -466,6 +468,7 @@ days_remove = 20
 
 		}
 		remove_effect = {
+			set_country_flag=zhuanbianguanxi
 					add_to_variable = {
 var = zhongxiguanxi
 value = -3
@@ -481,7 +484,8 @@ CHI_hejiexuanchuan={
 		allowed = {  } #manually activated
 visible = {
 	has_country_flag = putonghejie
-	has_country_flag = jiduanhejie
+	
+	NOT={has_country_flag=zhuanbianguanxi}
 }
 		available = {
 		
@@ -499,6 +503,7 @@ days_remove = 20
 
 		}
 		remove_effect = {
+			set_country_flag=zhuanbianguanxi
 					add_to_variable = {
 var = zhongxiguanxi
 value = 2
@@ -519,6 +524,7 @@ CHI_zhengmianpingjia={
 		allowed = {  } #manually activated
 visible = {
 	has_country_flag = jiduanhejie
+	NOT={has_country_flag=zhuanbianguanxi}
 }
 		available = {
 		
@@ -536,6 +542,7 @@ days_remove = 20
 
 		}
 		remove_effect = {
+			set_country_flag=zhuanbianguanxi
 					add_to_variable = {
 var = zhongxiguanxi
 value = 4

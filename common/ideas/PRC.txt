@@ -2464,7 +2464,7 @@ CHI_not_shimao = {
 
 
 CHI_shock_therapy = {
-    icon = GFX_idea_economic_crisis
+	picture=ARG_argentine_shock_therapy
     allowed = { always = yes }
     removal_cost = -1
     modifier = {

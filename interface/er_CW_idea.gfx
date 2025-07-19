@@ -49,6 +49,13 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/red_army_idea.png"
 	}
 
+
+	spriteType = {
+		name = "GFX_idea_ARG_argentine_shock_therapy"
+		texturefile = "gfx/interface/ideas/ARG_argentine_shock_therapy.png"
+	}
+
+
 	spriteType = {
 		name = "GFX_idea_hwbyundong"
 		texturefile = "gfx/interface/ER_province_modifer/hwbyundong.png"
