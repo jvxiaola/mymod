@@ -163,63 +163,65 @@ on_monthly_CHI = {
 
 
 
-
-
-
-
-
-
-
-
-
-
 every_owned_state = {
     limit = { is_core_of = ROOT } 
     
     if = {
         limit = { has_dynamic_modifier = {modifier =  CHI_hongweibing_yundong}
-		NOT={has_dynamic_modifier = {modifier =  CHI_gemingweiyuanhui}}
-	} 
-	random_list = {
-		50 = {
-			remove_dynamic_modifier = { modifier = CHI_hongweibing_yundong }
-			add_dynamic_modifier = {modifier = CHI_hongweibing_yundong2}
+		NOT={				OR={
+			has_dynamic_modifier = {modifier =  CHI_gemingweiyuanhui}
+			has_dynamic_modifier = {modifier =  CHI_gongshe}
+			}}
+		} 
+		random_list = {
+			50 = {
+				remove_dynamic_modifier = { modifier = CHI_hongweibing_yundong }
+				add_dynamic_modifier = {modifier = CHI_hongweibing_yundong2}
+			}
+			50 = {
+				# 什么都不做，占位避免脚本崩溃
+			}
 		}
-		50 = {
-
-		}
-	}
-
-
-
     }
+
     else_if = {
         limit = { has_dynamic_modifier = {modifier =  CHI_hongweibing_yundong2}
-		NOT={has_dynamic_modifier = {modifier =  CHI_gemingweiyuanhui}}
-	} 
-	random_list = {
-	50 = {
-		remove_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 }
-		add_dynamic_modifier = {modifier = CHI_hongweibing_yundong3}
-
-	}
-
-
-	}
-
-
+		NOT={				OR={
+			has_dynamic_modifier = {modifier =  CHI_gemingweiyuanhui}
+			has_dynamic_modifier = {modifier =  CHI_gongshe}
+			}}
+		} 
+		random_list = {
+			50 = {
+				remove_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 }
+				add_dynamic_modifier = {modifier = CHI_hongweibing_yundong3}
+			}
+			50 = {
+				# 保留空行为
+			}
+		}
     }
+
     else_if = {
         limit = { has_dynamic_modifier = {modifier =  CHI_hongweibing_yundong3} 
-		NOT={has_dynamic_modifier = {modifier =  CHI_gemingweiyuanhui}}
-	} 
+		NOT={		
+			OR={
+				has_dynamic_modifier = {modifier =  CHI_gemingweiyuanhui}
+				has_dynamic_modifier = {modifier =  CHI_gongshe}
+			}
+		}
+		} 
 		remove_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 }
 		add_dynamic_modifier = {modifier = CHI_hongweibing_yundong4}
     }
+
     else_if = {
         limit = { has_dynamic_modifier = {modifier =  CHI_hongweibing_yundong4} 
-	NOT={has_dynamic_modifier = {modifier =  CHI_gemingweiyuanhui}}
-	} 
+		NOT={ OR={
+			has_dynamic_modifier = {modifier =  CHI_gemingweiyuanhui}
+			has_dynamic_modifier = {modifier =  CHI_gongshe}
+			}}
+		} 
 		remove_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 }
 		add_dynamic_modifier = {modifier = CHI_hongweibing_yundong5}
     }
@@ -228,48 +230,75 @@ every_owned_state = {
         limit = { 
 			has_dynamic_modifier = {modifier =  CHI_hongweibing_yundong4} 
 			CHI={
-				has_country_flag=   allow_gmwyh 
+				has_country_flag = allow_gmwyh 
 			}
-
-
-			NOT={has_dynamic_modifier = {modifier =  CHI_gemingweiyuanhui}
-			
-		}
-	} 
+			NOT={
+				has_dynamic_modifier = {modifier =  CHI_gemingweiyuanhui}
+			}
+		} 
 		add_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
     }
 
+    if = {
+        limit = { 
+			has_dynamic_modifier = {modifier =  CHI_hongweibing_yundong4} 
+			CHI={
+				has_country_flag = allow_gongshe
+			}
+			NOT={
+				has_dynamic_modifier = {modifier =  CHI_gongshe}
+			}
+		} 
+		add_dynamic_modifier = {modifier = CHI_gongshe}  # ✅ 修正逻辑错误：之前错误地添加了革命委员会
+    }
 
 	if = {
         limit = { 
 			has_dynamic_modifier = {modifier =  CHI_hongweibing_yundong5} 
-			has_dynamic_modifier = {modifier =  CHI_gemingweiyuanhui}
-	} 
-	remove_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 }
-	add_dynamic_modifier = {modifier = CHI_hongweibing_yundong4}
+			OR={
+				has_dynamic_modifier = {modifier =  CHI_gemingweiyuanhui}
+				has_dynamic_modifier = {modifier =  CHI_gongshe}
+			}
+		} 
+		remove_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 }
+		add_dynamic_modifier = {modifier = CHI_hongweibing_yundong4}
     }
+
     else_if = {
         limit = { 
 			has_dynamic_modifier = {modifier =  CHI_hongweibing_yundong4} 
-			has_dynamic_modifier = {modifier =  CHI_gemingweiyuanhui}
-	} 
-	remove_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 }
-	add_dynamic_modifier = {modifier = CHI_hongweibing_yundong3}
+			OR={
+				has_dynamic_modifier = {modifier =  CHI_gemingweiyuanhui}
+				has_dynamic_modifier = {modifier =  CHI_gongshe}
+			}
+		} 
+		remove_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 }
+		add_dynamic_modifier = {modifier = CHI_hongweibing_yundong3}
     }
 
     else_if = {
         limit = { 
 			has_dynamic_modifier = {modifier =  CHI_hongweibing_yundong3} 
-			has_dynamic_modifier = {modifier =  CHI_gemingweiyuanhui}
-	} 
-	remove_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 }
-	add_dynamic_modifier = {modifier = CHI_hongweibing_yundong2}
+			OR={
+				has_dynamic_modifier = {modifier =  CHI_gemingweiyuanhui}
+				has_dynamic_modifier = {modifier =  CHI_gongshe}
+			}
+		} 
+		remove_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 }
+		add_dynamic_modifier = {modifier = CHI_hongweibing_yundong2}
     }
+}
 
 
-	
 
-					}
+
+
+
+
+
+
+
+
 
 	}
 	

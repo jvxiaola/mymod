@@ -238,337 +238,559 @@ defined_text = {
 defined_text = {
 	name = CHI_wg_zfzt
 
+	# 北京 - 革命委员会
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
-			547={
-				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
-			}
+			547 = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
 		}
 		localization_key = "已建立革命委员会"
 	}
-	
+	# 北京 - 公社
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
+			547 = { has_dynamic_modifier = { modifier = CHI_gongshe } }
+		}
+		localization_key = "已建立公社"
+	}
+
+	# 天津 - 革命委员会
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
-			548={
-				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
-			}
+			548 = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
 		}
 		localization_key = "已建立革命委员会"
 	}
-	
+	# 天津 - 公社
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
+			548 = { has_dynamic_modifier = { modifier = CHI_gongshe } }
+		}
+		localization_key = "已建立公社"
+	}
+
+	# 河北 - 革命委员会
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_HEBEI_OPENED
-			549={
-				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
-			}
+			549 = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
 		}
 		localization_key = "已建立革命委员会"
 	}
-	
+	# 河北 - 公社
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_HEBEI_OPENED
+			549 = { has_dynamic_modifier = { modifier = CHI_gongshe } }
+		}
+		localization_key = "已建立公社"
+	}
+
+	# 山西 - 革命委员会
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_SHAN1XI_OPENED
-			558={
-				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
-			}
+			558 = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
 		}
 		localization_key = "已建立革命委员会"
 	}
-	
+	# 山西 - 公社
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_SHAN1XI_OPENED
+			558 = { has_dynamic_modifier = { modifier = CHI_gongshe } }
+		}
+		localization_key = "已建立公社"
+	}
+
+	# 内蒙古 - 革命委员会
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_NEIMENG_OPENED
-			556={
-				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
-			}
+			556 = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
 		}
 		localization_key = "已建立革命委员会"
 	}
-	
+	# 内蒙古 - 公社
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_NEIMENG_OPENED
+			556 = { has_dynamic_modifier = { modifier = CHI_gongshe } }
+		}
+		localization_key = "已建立公社"
+	}
+
+	# 辽宁 - 革命委员会
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
-			552={
-				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
-			}
+			552 = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
 		}
 		localization_key = "已建立革命委员会"
 	}
-	
+	# 辽宁 - 公社
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
+			552 = { has_dynamic_modifier = { modifier = CHI_gongshe } }
+		}
+		localization_key = "已建立公社"
+	}
+
+	# 吉林 - 革命委员会
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_JILIN_OPENED
-			554={
-				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
-			}
+			554 = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
 		}
 		localization_key = "已建立革命委员会"
 	}
-	
+	# 吉林 - 公社
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_JILIN_OPENED
+			554 = { has_dynamic_modifier = { modifier = CHI_gongshe } }
+		}
+		localization_key = "已建立公社"
+	}
+
+	# 黑龙江 - 革命委员会
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_HEILONGJIANG_OPENED
-			555={
-				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
-			}
+			555 = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
 		}
 		localization_key = "已建立革命委员会"
 	}
-	
+	# 黑龙江 - 公社
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_HEILONGJIANG_OPENED
+			555 = { has_dynamic_modifier = { modifier = CHI_gongshe } }
+		}
+		localization_key = "已建立公社"
+	}
+
+	# 上海 - 革命委员会
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
-			540={
-				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
-			}
+			540 = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
 		}
 		localization_key = "已建立革命委员会"
 	}
-	
+	# 上海 - 公社
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
+			540 = { has_dynamic_modifier = { modifier = CHI_gongshe } }
+		}
+		localization_key = "已建立公社"
+	}
+
+	# 江苏 - 革命委员会
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_JIANGSU_OPENED
-			541={
-				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
-			}
+			541 = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
 		}
 		localization_key = "已建立革命委员会"
 	}
-	
+	# 江苏 - 公社
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_JIANGSU_OPENED
+			541 = { has_dynamic_modifier = { modifier = CHI_gongshe } }
+		}
+		localization_key = "已建立公社"
+	}
+
+	# 浙江 - 革命委员会
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_ZHEJIANG_OPENED
-			538={
-				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
-			}
+			538 = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
 		}
 		localization_key = "已建立革命委员会"
 	}
-	
+	# 浙江 - 公社
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_ZHEJIANG_OPENED
+			538 = { has_dynamic_modifier = { modifier = CHI_gongshe } }
+		}
+		localization_key = "已建立公社"
+	}
+
+	# 安徽 - 革命委员会
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_ANHUI_OPENED
-			564={
-				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
-			}
+			564 = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
 		}
 		localization_key = "已建立革命委员会"
 	}
-	
+	# 安徽 - 公社
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_ANHUI_OPENED
+			564 = { has_dynamic_modifier = { modifier = CHI_gongshe } }
+		}
+		localization_key = "已建立公社"
+	}
+
+	# 福建 - 革命委员会
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_FUJIAN_OPENED
-			537={
-				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
-			}
+			537 = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
 		}
 		localization_key = "已建立革命委员会"
 	}
-	
+	# 福建 - 公社
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_FUJIAN_OPENED
+			537 = { has_dynamic_modifier = { modifier = CHI_gongshe } }
+		}
+		localization_key = "已建立公社"
+	}
+
+	# 江西 - 革命委员会
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
-			562={
-				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
-			}
+			562 = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
 		}
 		localization_key = "已建立革命委员会"
 	}
-	
+	# 江西 - 公社
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
+			562 = { has_dynamic_modifier = { modifier = CHI_gongshe } }
+		}
+		localization_key = "已建立公社"
+	}
+
+	# 山东 - 革命委员会
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_SHANDONG_OPENED
-			544={
-				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
-			}
+			544 = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
 		}
 		localization_key = "已建立革命委员会"
 	}
-	
+	# 山东 - 公社
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_SHANDONG_OPENED
+			544 = { has_dynamic_modifier = { modifier = CHI_gongshe } }
+		}
+		localization_key = "已建立公社"
+	}
+
+	# 河南 - 革命委员会
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_HENAN_OPENED
-			567={
-				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
-			}
+			567 = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
 		}
 		localization_key = "已建立革命委员会"
 	}
-	
+	# 河南 - 公社
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_HENAN_OPENED
+			567 = { has_dynamic_modifier = { modifier = CHI_gongshe } }
+		}
+		localization_key = "已建立公社"
+	}
+
+	# 武汉 - 革命委员会
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_WUHAN_OPENED
-			570={
-				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
-			}
+			570 = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
 		}
 		localization_key = "已建立革命委员会"
 	}
-	
+	# 武汉 - 公社
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_WUHAN_OPENED
+			570 = { has_dynamic_modifier = { modifier = CHI_gongshe } }
+		}
+		localization_key = "已建立公社"
+	}
+
+	# 湖南 - 革命委员会
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_HUNAN_OPENED
-			572={
-				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
-			}
+			572 = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
 		}
 		localization_key = "已建立革命委员会"
 	}
-	
+	# 湖南 - 公社
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_HUNAN_OPENED
+			572 = { has_dynamic_modifier = { modifier = CHI_gongshe } }
+		}
+		localization_key = "已建立公社"
+	}
+
+	# 广东 - 革命委员会
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_GUANGDONG_OPENED
-			534={
-				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
-			}
+			534 = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
 		}
 		localization_key = "已建立革命委员会"
 	}
-	
+	# 广东 - 公社
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_GUANGDONG_OPENED
+			534 = { has_dynamic_modifier = { modifier = CHI_gongshe } }
+		}
+		localization_key = "已建立公社"
+	}
+
+	# 广西 - 革命委员会
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_GUANGXI_OPENED
-			574={
-				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
-			}
+			574 = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
 		}
 		localization_key = "已建立革命委员会"
 	}
-	
+	# 广西 - 公社
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_GUANGXI_OPENED
+			574 = { has_dynamic_modifier = { modifier = CHI_gongshe } }
+		}
+		localization_key = "已建立公社"
+	}
+
+	# 海南 - 革命委员会
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_HAINAN_OPENED
-			531={
-				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
-			}
+			531 = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
 		}
 		localization_key = "已建立革命委员会"
 	}
-	
+	# 海南 - 公社
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_HAINAN_OPENED
+			531 = { has_dynamic_modifier = { modifier = CHI_gongshe } }
+		}
+		localization_key = "已建立公社"
+	}
+
+	# 重庆 - 革命委员会
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_CHONGQING_OPENED
-			583={
-				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
-			}
+			583 = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
 		}
 		localization_key = "已建立革命委员会"
 	}
-	
+	# 重庆 - 公社
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_CHONGQING_OPENED
+			583 = { has_dynamic_modifier = { modifier = CHI_gongshe } }
+		}
+		localization_key = "已建立公社"
+	}
+
+	# 四川 - 革命委员会
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_SICHUAN_OPENED
-			586={
-				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
-			}
+			586 = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
 		}
 		localization_key = "已建立革命委员会"
 	}
-	
+	# 四川 - 公社
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_SICHUAN_OPENED
+			586 = { has_dynamic_modifier = { modifier = CHI_gongshe } }
+		}
+		localization_key = "已建立公社"
+	}
+
+	# 贵州 - 革命委员会
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_GUIZHOU_OPENED
-			582={
-				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
-			}
+			582 = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
 		}
 		localization_key = "已建立革命委员会"
 	}
-	
+	# 贵州 - 公社
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_GUIZHOU_OPENED
+			582 = { has_dynamic_modifier = { modifier = CHI_gongshe } }
+		}
+		localization_key = "已建立公社"
+	}
+
+	# 云南 - 革命委员会
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_YUNNAN_OPENED
-			578={
-				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
-			}
+			578 = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
 		}
 		localization_key = "已建立革命委员会"
 	}
-	
+	# 云南 - 公社
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_YUNNAN_OPENED
+			578 = { has_dynamic_modifier = { modifier = CHI_gongshe } }
+		}
+		localization_key = "已建立公社"
+	}
+
+	# 西藏 - 革命委员会
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_XIZANG_OPENED
-			589={
-				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
-			}
+			589 = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
 		}
 		localization_key = "已建立革命委员会"
 	}
-	
+	# 西藏 - 公社
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_XIZANG_OPENED
+			589 = { has_dynamic_modifier = { modifier = CHI_gongshe } }
+		}
+		localization_key = "已建立公社"
+	}
+
+	# 陕西 - 革命委员会
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_SHAN3XI_OPENED
-			559={
-				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
-			}
+			559 = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
 		}
 		localization_key = "已建立革命委员会"
 	}
-	
+	# 陕西 - 公社
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_SHAN3XI_OPENED
+			559 = { has_dynamic_modifier = { modifier = CHI_gongshe } }
+		}
+		localization_key = "已建立公社"
+	}
+
+	# 甘肃 - 革命委员会
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_GANSU_OPENED
-			560={
-				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
-			}
+			560 = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
 		}
 		localization_key = "已建立革命委员会"
 	}
-	
+	# 甘肃 - 公社
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_GANSU_OPENED
+			560 = { has_dynamic_modifier = { modifier = CHI_gongshe } }
+		}
+		localization_key = "已建立公社"
+	}
+
+	# 青海 - 革命委员会
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_QINGHAI_OPENED
-			588={
-				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
-			}
+			588 = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
 		}
 		localization_key = "已建立革命委员会"
 	}
-	
+	# 青海 - 公社
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_QINGHAI_OPENED
+			588 = { has_dynamic_modifier = { modifier = CHI_gongshe } }
+		}
+		localization_key = "已建立公社"
+	}
+
+	# 宁夏 - 革命委员会
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
-			1072={
-				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
-			}
+			1072 = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
 		}
 		localization_key = "已建立革命委员会"
 	}
-	
+	# 宁夏 - 公社
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
+			1072 = { has_dynamic_modifier = { modifier = CHI_gongshe } }
+		}
+		localization_key = "已建立公社"
+	}
+
+	# 新疆 - 革命委员会
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_XINJIANG_OPENED
-			592={
-				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
-			}
+			592 = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
 		}
 		localization_key = "已建立革命委员会"
 	}
-	
+	# 新疆 - 公社
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_XINJIANG_OPENED
+			592 = { has_dynamic_modifier = { modifier = CHI_gongshe } }
+		}
+		localization_key = "已建立公社"
+	}
+
+	# 台湾 - 革命委员会
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
-			598={
-				has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
-			}
+			598 = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
 		}
 		localization_key = "已建立革命委员会"
 	}
+	# 台湾 - 公社
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+			598 = { has_dynamic_modifier = { modifier = CHI_gongshe } }
+		}
+		localization_key = "已建立公社"
+	}
 
-
+	# 台湾 - 特殊状态（未解放）
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_TAIWANBAIJUN_OPENED
-			598={
-				NOT={has_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}}
-				NOT={CHI={controls_state=598}}
+			598 = {
+				NOT = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
+				NOT = { CHI = { controls_state = 598 } }
 			}
 		}
 		localization_key = "未解放"
 	}
-
-
 }
