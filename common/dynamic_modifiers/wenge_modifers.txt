@@ -61,7 +61,7 @@ CHI_gemingweiyuanhui = {
 
 CHI_gongshe = {
 	enable = { always = yes }
-	icon = GFX_idea_rev_weiyuanhui
+	icon = GFX_idea_rev_gongshe
     local_manpower = -0.02             
 	local_manpower = 0.03                     # 群众积极参与政治，动员人口增加
 	local_resources_factor = 0.01              # 群众斗志高涨，资源开采更积极

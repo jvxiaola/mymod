@@ -1189,6 +1189,14 @@
 		}
 		completion_reward = {
 			remove_ideas = CHI_nationalizing
+
+#云泽脚手架
+remove_ideas = CHI_dixiaoguoqi_5
+remove_ideas = CHI_dixiaoguoqi_4
+remove_ideas = CHI_dixiaoguoqi_3
+remove_ideas = CHI_dixiaoguoqi_2
+remove_ideas = CHI_dixiaoguoqi_1
+
 			if = {
 				limit = { tag = DSC has_dynamic_modifier = { modifier = CHI_Organize_state_enterprises_modifier } }
 				CHI_remove_Organize_state_enterprises_modifier = yes

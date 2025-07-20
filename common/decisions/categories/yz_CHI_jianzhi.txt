@@ -23,6 +23,9 @@ CHI_Massive_layoffs = {
 
 	allowed = {
 		original_tag = CHI
+		NOT={
+			has_country_flag = chuanyumaopai
+		}
 	}
 	picture = CHI_big_layoff_dec
 	visible = {
