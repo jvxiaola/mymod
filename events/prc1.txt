@@ -313,8 +313,10 @@ remove_ideas =  red_weidui1
 					recalculate_party = yes
 					add_ideas = p5_member
 					remove_idea = patry_fenlie
-
-
+remove_ideas = CHI_capital_withdrawal1
+remove_ideas = CHI_capital_withdrawal2
+remove_ideas = CHI_capital_withdrawal3
+remove_ideas = CHI_capital_withdrawal4
 				}
 
 

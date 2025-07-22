@@ -1417,7 +1417,10 @@ ideas = {
 			OR = { tag = DSC tag = HKG original_tag = CHI } 
 		}
 		cancel = {
-			OR = { has_idea = CHI_capital_withdrawal2 has_idea = CHI_capital_withdrawal3 has_idea = CHI_capital_withdrawal4 }
+			OR = { has_idea = CHI_capital_withdrawal2 has_idea = CHI_capital_withdrawal3 has_idea = CHI_capital_withdrawal4
+
+		 }
+
 		}
 		allowed_civil_war = {
 			always = yes
@@ -1436,7 +1439,10 @@ ideas = {
 			OR = { tag = DSC tag = HKG original_tag = CHI } 
 		}
 		cancel = {
-			OR = { has_idea = CHI_capital_withdrawal3 has_idea = CHI_capital_withdrawal4 }
+			OR = { has_idea = CHI_capital_withdrawal3 has_idea = CHI_capital_withdrawal4 
+
+		
+		}
 		}
 		allowed_civil_war = {
 			always = yes
@@ -1455,7 +1461,9 @@ ideas = {
 			OR = { tag = DSC tag = HKG original_tag = CHI } 
 		}
 		cancel = {
-			OR = { has_idea = CHI_capital_withdrawal4 }
+			OR = { has_idea = CHI_capital_withdrawal4
+
+		}
 		}
 		allowed_civil_war = {
 			always = yes
@@ -1473,7 +1481,8 @@ ideas = {
 	CHI_capital_withdrawal4 = {
 		picture = arm_une_idea #icon要加“GFX_idea”前缀,picture不能加。
 		cancel = {
-			always = no
+
+
 		}
 		allowed_civil_war = {
 			always = yes
