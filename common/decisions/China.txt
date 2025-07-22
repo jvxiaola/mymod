@@ -2735,6 +2735,8 @@ CHI_Civil_war_decisions = {
 		available = { 
 			custom_trigger_tooltip = {
 				tooltip =  CHI_economic_deterioration_trigger_tt
+				OR={
+
 			NOT = {
 				OR = {
 					has_idea = CHI_capital_withdrawal2 
@@ -2742,6 +2744,11 @@ CHI_Civil_war_decisions = {
 				}
 			}
 			NOT = { has_global_flag = Ccw }
+
+
+
+				}
+
 			}
 		}
 

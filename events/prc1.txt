@@ -309,13 +309,12 @@ remove_ideas =  red_weidui1
 				
 					
 				CHI={
-
-
-
 					set_variable = { party_pop_array^4 = 0.55 }
 					recalculate_party = yes
 					add_ideas = p5_member
-					remove_ideas = patry_fenlie
+					remove_idea = patry_fenlie
+
+
 				}
 
 
