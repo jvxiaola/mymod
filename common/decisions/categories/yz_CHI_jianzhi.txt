@@ -30,6 +30,9 @@ CHI_Massive_layoffs = {
 	picture = CHI_big_layoff_dec
 	visible = {
 NOT={has_country_flag=gaigejieshu }
+		NOT={
+			has_country_flag = chuanyumaopai
+		}
 		}
 }
 

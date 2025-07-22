@@ -1191,11 +1191,15 @@
 			remove_ideas = CHI_nationalizing
 
 #云泽脚手架
-remove_ideas = CHI_dixiaoguoqi_5
-remove_ideas = CHI_dixiaoguoqi_4
-remove_ideas = CHI_dixiaoguoqi_3
-remove_ideas = CHI_dixiaoguoqi_2
-remove_ideas = CHI_dixiaoguoqi_1
+hidden_effect = {
+	CHI_state_owned_reform_up = yes
+	CHI_state_owned_reform_up = yes
+	CHI_state_owned_reform_up = yes
+	CHI_state_owned_reform_up = yes
+	CHI_state_owned_reform_up = yes
+	CHI_state_owned_reform_up = yes
+	CHI_state_owned_reform_up = yes
+}
 
 			if = {
 				limit = { tag = DSC has_dynamic_modifier = { modifier = CHI_Organize_state_enterprises_modifier } }
