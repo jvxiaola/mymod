@@ -265,7 +265,7 @@ DSC={
 
 
 	division_template = {
-		name = "川渝民兵"
+		name = "民兵部队"
 regiments = {
 Militia_Bat = { x = 0 y = 0 }
 Militia_Bat = { x = 0 y = 1 }
@@ -302,21 +302,21 @@ Militia_Bat = { x = 1 y = 3 }
 		random_owned_controlled_state = {
 			prioritize = { 583}
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 7240
 			}
 	
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 7240
 			}
 
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 14312
 			}
 				create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 14312
 			}
 
@@ -363,16 +363,16 @@ Militia_Bat = { x = 1 y = 3 }
 		random_owned_controlled_state = {
 			prioritize = { 583}
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 7240
 			}
 	
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 14312
 			}
 				create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 14312
 			}
 
@@ -420,12 +420,12 @@ Militia_Bat = { x = 1 y = 3 }
 		random_owned_controlled_state = {
 			prioritize = { 583}
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 7240
 			}
 	
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 14312
 			}
 	
@@ -472,21 +472,21 @@ Militia_Bat = { x = 1 y = 3 }
 		random_owned_controlled_state = {
 			prioritize = { 1219}
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 15842
 			}
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 15842
 			}
 	
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 3093
 			}
 	
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 3093
 			}
 		}
@@ -533,16 +533,16 @@ Militia_Bat = { x = 1 y = 3 }
 		random_owned_controlled_state = {
 			prioritize = { 1219}
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 15842
 			}
 	
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 3093
 			}
 				create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 3093
 			}
 
@@ -579,12 +579,12 @@ Militia_Bat = { x = 1 y = 3 }
 		random_owned_controlled_state = {
 			prioritize = { 1219}
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 15842
 			}
 	
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 3093
 			}
 	
@@ -628,20 +628,20 @@ Militia_Bat = { x = 1 y = 3 }
 		random_owned_controlled_state = {
 			prioritize = { 586}
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 3099
 			}
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 3099
 			}
 	
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 3096
 			}
 				create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 3096
 			}
 
@@ -689,17 +689,17 @@ Militia_Bat = { x = 1 y = 3 }
 		random_owned_controlled_state = {
 			prioritize = { 586}
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 3099
 			}
 
 	
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 3096
 			}
 				create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 3096
 			}
 
@@ -737,13 +737,13 @@ Militia_Bat = { x = 1 y = 3 }
 		random_owned_controlled_state = {
 			prioritize = { 586}
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 3099
 			}
 
 	
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 3096
 			}
 	
@@ -780,21 +780,21 @@ Militia_Bat = { x = 1 y = 3 }
 		random_owned_controlled_state = {
 			prioritize = { 585}
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 1918
 			}
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 1918
 			}
 
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 4999
 			}
 	
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 4999
 			}
 	
@@ -843,16 +843,16 @@ Militia_Bat = { x = 1 y = 3 }
 		random_owned_controlled_state = {
 			prioritize = { 585}
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 1918
 			}
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 1918
 			}
 	
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 4999
 			}
 	
@@ -890,12 +890,12 @@ Militia_Bat = { x = 1 y = 3 }
 		random_owned_controlled_state = {
 			prioritize = { 585}
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 1918
 			}
 
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 4999
 			}
 	
@@ -915,12 +915,12 @@ Militia_Bat = { x = 1 y = 3 }
 	random_owned_controlled_state = {
 		prioritize = { 1218}
 		create_unit = {
-			division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+			division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 			prioritize_location = 6999
 		}
 
 		create_unit = {
-			division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+			division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 			prioritize_location = 6999
 		}
 
@@ -937,12 +937,12 @@ Militia_Bat = { x = 1 y = 3 }
 		random_owned_controlled_state = {
 			prioritize = { 1218 }
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 11865
 			}
 	
 					create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 11865
 			}
 			
@@ -963,15 +963,15 @@ Militia_Bat = { x = 1 y = 3 }
 		random_owned_controlled_state = {
 			prioritize = { 1218 }
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 11865
 			}
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 11865
 			}
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 11865
 			}
 		}
@@ -994,19 +994,19 @@ Militia_Bat = { x = 1 y = 3 }
 	random_owned_controlled_state = {
 		prioritize = { 1218 }
 		create_unit = {
-			division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+			division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 			prioritize_location = 11865
 		}
 		create_unit = {
-			division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+			division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 			prioritize_location = 11865
 		}
 		create_unit = {
-			division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+			division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 			prioritize_location = 11865
 		}
 		create_unit = {
-			division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+			division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 			prioritize_location = 11865
 		}
 	

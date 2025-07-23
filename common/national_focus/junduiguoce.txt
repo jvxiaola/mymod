@@ -1246,7 +1246,7 @@ relative_position_id = DSC_people_armyI
 	}
 	completion_reward = {
 		division_template = {
-			name = "川渝民兵"
+			name = "民兵部队"
 regiments = {
 Militia_Bat = { x = 0 y = 0 }
 Militia_Bat = { x = 0 y = 1 }
@@ -1264,27 +1264,27 @@ Militia_Bat = { x = 1 y = 3 }
 		random_owned_controlled_state = {
 			prioritize = { 583 }
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 7948
 			}
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 7948
 			}
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 11865
 			}
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 11865
 			}
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 11865
 			}
 			create_unit = {
-				division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 11865
 			}
 
