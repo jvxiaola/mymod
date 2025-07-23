@@ -100,7 +100,7 @@ country_event = {
 
 				set_variable = {
 					var = DSC_rmjd_houbeijun
-					value = 1000
+					value = 10000
 				}
 
 
@@ -1300,7 +1300,7 @@ country_event = {
 		
 	
 			add_to_variable={
-				DSC_rmjd_houbeijun  = 1000
+				DSC_rmjd_houbeijun  = 10000
 			}
 						
 						

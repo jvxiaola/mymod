@@ -878,7 +878,7 @@ DSC_MAOPAIJUECE = {
 						DSC_wanzhou_shengtou = 1
 					}
 					add_to_variable={	
-						DSC_rmjd_houbeijun = -1000
+						DSC_rmjd_houbeijun = -10000
 					}
 					add_to_variable={		
 						DSC_rmjd_wuqi = -1
@@ -960,7 +960,7 @@ DSC_MAOPAIJUECE = {
 							DSC_wuling_shengtou = 1
 						}
 						add_to_variable={	
-							DSC_rmjd_houbeijun = -1000
+							DSC_rmjd_houbeijun = -10000
 						}
 						add_to_variable={		
 							DSC_rmjd_wuqi = -1
@@ -1044,7 +1044,7 @@ DSC_MAOPAIJUECE = {
 								DSC_dongsichuan_shengtou = 1
 							}
 							add_to_variable={	
-								DSC_rmjd_houbeijun = -1000
+								DSC_rmjd_houbeijun = -10000
 							}
 							add_to_variable={		
 								DSC_rmjd_wuqi = -1
@@ -1126,7 +1126,7 @@ DSC_MAOPAIJUECE = {
 									DSC_xisichuan_shengtou = 1
 								}
 								add_to_variable={	
-									DSC_rmjd_houbeijun = -1000
+									DSC_rmjd_houbeijun = -10000
 								}
 								add_to_variable={		
 									DSC_rmjd_wuqi = -1
@@ -1208,7 +1208,7 @@ DSC_MAOPAIJUECE = {
 								DSC_zhucheng_shengtou = 1
 							}
 							add_to_variable={	
-								DSC_rmjd_houbeijun = -1000
+								DSC_rmjd_houbeijun = -10000
 							}
 							add_to_variable={		
 								DSC_rmjd_wuqi = -1
@@ -1316,11 +1316,11 @@ DSC_MAOPAIJUECE = {
 				if = {
 					limit={
 					check_variable = {
-						DSC_rmjd_houbeijun < 20000
+						DSC_rmjd_houbeijun < 200000
 					}
 				}
 					add_to_variable={
-						DSC_rmjd_houbeijun = 1000
+						DSC_rmjd_houbeijun = 10000
 					}
 				country_event = {id=chuanyu.5}
 				country_event = {id=chuanyu.13}
