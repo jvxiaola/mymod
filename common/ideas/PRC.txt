@@ -11,9 +11,29 @@ country={
 	
 	
 	communism_drift = 0.1
-	political_power_gain = -1
+	political_power_gain = 1
+	political_power_factor = 0.2
 	}
 	}
+
+
+	CHI_cyrmzf = {
+		picture = vladimir_lenin
+	
+	allowed = {
+	}
+	
+	
+	modifier = {
+	
+	
+	communism_drift = 0.1
+	political_power_gain = 1
+	political_power_factor = 0.2
+	}
+	}
+
+
 
 		USA_Anti_Communist_china_Jihad = {
 			picture = democracy

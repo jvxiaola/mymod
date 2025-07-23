@@ -783,7 +783,7 @@ custom_effect_tooltip = "解锁相关决议"
 		}
 		completion_reward = {
 ############################
-
+add_ideas = CHI_cyrmzf
 set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.02 }
 change_DSC_Socialist_Construction_dynamic1 = yes
 add_political_power = 100

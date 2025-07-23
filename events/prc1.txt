@@ -3460,6 +3460,7 @@ country_event = {
 	
 	immediate = {
 		set_country_flag = CHI_congress_2012
+
 		mark_focus_tree_layout_dirty = yes
 
 	}

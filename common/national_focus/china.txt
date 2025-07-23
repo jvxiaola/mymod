@@ -123,6 +123,7 @@ focus_tree = {
 					NOT={
 						has_country_flag = dadaomeidi
 					}
+					has_country_leader = {name="江泽民"}
 				}
 				relative_position_id = CHI_zhengzhigaige
 				prerequisite = {
@@ -1061,6 +1062,7 @@ prerequisite = {focus = CHI_barongbachi}
 prerequisite = {focus = CHI_nongyesui}
 allow_branch = {
 has_country_flag = CHI_economic_crisis_2008
+NOT={has_country_flag=CHI_congress_2012}
 }
 			available = 
 			{
