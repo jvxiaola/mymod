@@ -166,34 +166,48 @@ focus_tree = {
 
 				}
 			}
+
+			division_template = {
+				name = "川渝机械化部队"
+	regiments = {
+	Mot_Inf_Bat = { x = 0 y = 0 }
+	Mot_Inf_Bat = { x = 0 y = 1 }
+	Mot_Inf_Bat = { x = 0 y = 2 }
+	Mot_Inf_Bat = { x = 0 y = 3 }
+ Armor_Bat = { x = 1 y = 0 }
+	Armor_Bat = { x = 1 y = 1 }
+Armor_Bat = { x = 1 y = 2 }
+				}
+			}
+
 			random_owned_controlled_state = {
 				prioritize = { 583 }
 				create_unit = {
-					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					division = "division_template = \"川渝机械化部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 					prioritize_location = 6999
 				}
 				create_unit = {
-					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					division = "division_template = \"川渝机械化部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 					prioritize_location = 6999
 				}
 				create_unit = {
-					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					division = "division_template = \"川渝机械化部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 					prioritize_location = 6999
 				}
 				create_unit = {
-					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					division = "division_template = \"川渝机械化部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 					prioritize_location = 6999
 				}
 				create_unit = {
-					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					division = "division_template = \"川渝机械化部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 					prioritize_location = 6999
 				}
 				create_unit = {
-					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					division = "division_template = \"川渝机械化部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 					prioritize_location = 6999
 				}
 				create_unit = {
-					division = "division_template = \"川渝民兵\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
+					division = "division_template = \"川渝机械化部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 					prioritize_location = 6999
 				}
 				create_unit = {
