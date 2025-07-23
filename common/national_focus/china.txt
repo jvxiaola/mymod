@@ -452,7 +452,7 @@ NOT={
 			icon = communist_party_of_china
 			x = 0
 			y = 7
-			cost = 2
+			cost = 4
 			relative_position_id = CHI_zhengzhigaige		
 				mutually_exclusive = { focus = CHI_break_term_limits}
 				available = {
