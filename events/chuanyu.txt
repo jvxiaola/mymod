@@ -941,7 +941,10 @@ Militia_Bat = { x = 1 y = 3 }
 				prioritize_location = 11865
 			}
 	
-		
+					create_unit = {
+				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				prioritize_location = 11865
+			}
 			
 		
 		}
@@ -967,7 +970,10 @@ Militia_Bat = { x = 1 y = 3 }
 				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 11865
 			}
-
+			create_unit = {
+				division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				prioritize_location = 11865
+			}
 		}
 	
 
@@ -999,7 +1005,10 @@ Militia_Bat = { x = 1 y = 3 }
 			division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 			prioritize_location = 11865
 		}
-
+		create_unit = {
+			division = "division_template = \"川渝民兵\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+			prioritize_location = 11865
+		}
 	
 	}
 
