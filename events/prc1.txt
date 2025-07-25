@@ -7934,40 +7934,12 @@ immediate = {
 				
 				
 			
-				option = { 
-					name = prc1.1234567.a.o1	
+		option = { 
+			name = prc1.123456.a.o1	
 	
 
-					ai_chance = { factor = 95 }
+			ai_chance = { factor = 95 }
 				
-					}
-	
-					}
-					country_event = {
-						id = prc1.1234567
-						title = prc1.123456.t
-						desc = prc1.123456.d
-						hidden = yes						
-						is_triggered_only = yes
-						
-		immediate = {
-			every_owned_state = {
-				remove_dynamic_modifier = { modifier = extrameal_islam_attack1 } remove_dynamic_modifier = { modifier = extrameal_islam_attack2 }
-				remove_dynamic_modifier = { modifier = extrameal_islam_attack3 } remove_dynamic_modifier = { modifier = extrameal_islam_attack4 } 
-				remove_dynamic_modifier = { modifier = extrameal_islam_attack5 }
 			}
-		
+
 		}
-					
-					
-				
-					option = { 
-						name = prc1.1234567.a.o1	
-		
-	
-						ai_chance = { factor = 95 }
-					
-						}
-		
-						}
-					

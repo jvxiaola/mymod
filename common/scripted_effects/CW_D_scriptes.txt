@@ -433,6 +433,7 @@ Set_ETK = {
 		} 
 	}
 		ETK = {
+			inherit_technology = XIN
 			division_template = {
 				name = "东突厥斯坦圣战军"
 				division_names_group = ETK_exis_01
@@ -442,60 +443,50 @@ Set_ETK = {
 					L_Inf_Bat = { x = 0 y = 2 } L_Inf_Bat = { x = 0 y = 3 }
 				}
 			}
-			random_owned_controlled_state = {
-				limit = { has_dynamic_modifier = { modifier = extrameal_islam_attack1 }}
+			create_country_leader = {
+				name = XIN_terriost
+				picture = "XIN_terriost.dds"
+				ideology = Caliphate
+				traits = { Non_governmental_riots WESTERN_freedom_fighter }
+			}
+
+			every_controlled_state = {
+				limit = { has_dynamic_modifier = { modifier = extrameal_islam_attack1 } }
 				create_unit = {
 					division = "name = \"东突厥斯坦圣战军\" division_template = \"东突厥斯坦圣战军\" start_experience_factor = 0.8"
 					owner = ETK
 				}
 			}
-			random_owned_controlled_state = {
-				limit = { has_dynamic_modifier = { modifier = extrameal_islam_attack2 }}
+			every_controlled_state = {
+				limit = { has_dynamic_modifier = { modifier = extrameal_islam_attack2 } }
 				create_unit = {
 					division = "name = \"东突厥斯坦圣战军\" division_template = \"东突厥斯坦圣战军\" start_experience_factor = 0.8"
 					owner = ETK
 				}
 			}
-			random_owned_controlled_state = {
-				limit = { has_dynamic_modifier = { modifier = extrameal_islam_attack3 }}
+			every_controlled_state = {
+				limit = { has_dynamic_modifier = { modifier = extrameal_islam_attack3 } }
 				create_unit = {
 					division = "name = \"东突厥斯坦圣战军\" division_template = \"东突厥斯坦圣战军\" start_experience_factor = 0.8"
 					owner = ETK
 					count = 2
 				}
 			}
-			random_owned_controlled_state = {
-				limit = { has_dynamic_modifier = { modifier = extrameal_islam_attack4 }}
+			every_controlled_state = {
+				limit = { has_dynamic_modifier = { modifier = extrameal_islam_attack4 } }
 				create_unit = {
 					division = "name = \"东突厥斯坦圣战军\" division_template = \"东突厥斯坦圣战军\" start_experience_factor = 0.8"
 					owner = ETK
 					count = 3
 				}
 			}
-			random_owned_controlled_state = {
-				limit = { has_dynamic_modifier = { modifier = extrameal_islam_attack5 }}
+			every_controlled_state = {
+				limit = { has_dynamic_modifier = { modifier = extrameal_islam_attack5 } }
 				create_unit = {
 					division = "name = \"东突厥斯坦圣战军\" division_template = \"东突厥斯坦圣战军\" start_experience_factor = 0.8"
 					owner = ETK
 					count = 4
 				}
 			}
-		country_event = { id = prc1.1234567 days = 1 }
-
-
-		create_country_leader = {
-			name = XIN_terriost
-			picture = "XIN_terriost.dds"
-			ideology = Caliphate
-			traits = { Non_governmental_riots WESTERN_freedom_fighter }
 		}
-		inherit_technology = XIN
-
-
-
-
-			
-
-		}
-
-		}
+}
