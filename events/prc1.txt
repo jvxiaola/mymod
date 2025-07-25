@@ -1734,7 +1734,8 @@ country_event = {
 				start_politics_input = yes
 
 				XIN = {
-					set_cosmetic_tag = XIN_CIVIL
+					clr_country_flag = XIN_attacked
+					set_country_flag = XIN_CIVIL
 				}
 				XIZ = {
 

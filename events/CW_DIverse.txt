@@ -176,6 +176,7 @@ country_event = {
 	trigger = {
 		tag = CHI
 		XIN = {
+			has_country_flag = XIN_attacked
 			any_controlled_state = {
 				will_be_attacked_by_islam = yes
 				is_sourth_XJ = yes NOT = { has_dynamic_modifier = { modifier = XIN_state_in_martial_law } }
