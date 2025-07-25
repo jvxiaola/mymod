@@ -6,30 +6,26 @@
 	add_dynamic_modifier = {
 		modifier = CHI_Legal_amendments_dynamic
 	}
-	set_power_balance = {
-		id = CHI_power_balance
-		set_default = no  # whether or not to reset the power balance to the initial value, default = no
-		}
 	clamp_variable  = {
 		var = CPC_Left
 		min = 0
 	max = 1
 	}
-		set_variable = { CPC_Left = 0.3	}
+	set_variable = { CPC_Left = 0.3	}
 	clamp_variable  = {
 		var = CPC_Dengist
 		min = 0
 	max = 1
 	}
-		set_variable = { CPC_Dengist = 0.4 }
+	set_variable = { CPC_Dengist = 0.4 }
 		
-		clamp_variable  = {
+	clamp_variable  = {
 		var = CPC_Right
 		min = 0
 	max = 1
 	}
-	  set_variable = { CPC_Right = 0.3 }
-		clamp_variable  = {
+	set_variable = { CPC_Right = 0.3 }
+	clamp_variable  = {
 		var = CHI_people_support
 		min = 0
 	max = 1
@@ -38,30 +34,16 @@
 
 
 	set_variable = { zhongxiguanxi = 75 }
-
-
-
-
-
-
-
-
-
-
-
 	set_cosmetic_tag = CHI_AUTH_S
 	set_country_flag = dynamic_flag
 	set_country_flag = dynamic_rebel_flag
 	set_country_flag = is_CHINA
 	set_variable = { gdp_per_capita = 3.452 }
-
-
 	set_country_flag = country_has_mbt_0_templates
 	set_country_flag = country_has_afv_0_templates
 	set_country_flag = country_has_mbt_1_templates
 	set_country_flag = country_has_afv_1_templates
 
-	# This is the PRC, not Taiwan. Taiwan is "TAI"
 	if = {
 		limit = { has_dlc = "No Step Back" }
 		create_equipment_variant = {
@@ -285,7 +267,7 @@
 			has_dlc = "La Resistance"
 		}
 		create_intelligence_agency = {
-			name = "Ministry of State Security (MSS)"
+			name = "国家安全局(MSS)"
 			icon = GFX_intelligence_agency_logo_prc
 		}
 
@@ -333,7 +315,7 @@
 		Militarical_economy_remain1
 		CHI_big_layoff1
 
-CHI_not_shimao
+		CHI_not_shimao
 
 		CHINESE_agricultural_tax
 		CHI_Socialist_Market_Economy
@@ -341,7 +323,7 @@ CHI_not_shimao
 	
 		CHI_shaosuminzu1
 		CHI_overproduction5
-CHI_dixiaoguoqi_3
+		CHI_dixiaoguoqi_3
 
 		harsh_working_en_of_CHI4
 		int_investment_china
@@ -387,10 +369,12 @@ CHI_dixiaoguoqi_3
 	1072 = { add_dynamic_modifier = { modifier = CHI_ningxia_hui_autonomous_region } }
 	556 = { add_dynamic_modifier = { modifier = CHI_inner_mongolia_autonomous_region } }
 	1097 = { add_dynamic_modifier = { modifier = CHI_inner_mongolia_autonomous_region } }
-	591 = { add_dynamic_modifier = { modifier = CHI_xinjiang_uygur_autonomous_region } }
-	592 = { add_dynamic_modifier = { modifier = CHI_xinjiang_uygur_autonomous_region } }
-
-
+	every_core_state = {
+		limit = {
+			is_core_of = ETK
+		}
+		add_dynamic_modifier = { modifier = CHI_xinjiang_uygur_autonomous_region }
+	}
 
 	589 = { add_dynamic_modifier = { modifier = CHI_tibet_autonomous_region } }
 	531 = { add_dynamic_modifier = { modifier = CHI_special_economic_zone } }
@@ -399,11 +383,6 @@ CHI_dixiaoguoqi_3
 	set_variable = { communist_cadres_opinion = 60 }
 	set_variable = { the_military_opinion = 60 }
 	set_variable = { industrial_conglomerates_opinion = 60 }
-
-	set_variable = { var = uighur_threat value = 40 }
-	set_variable = { var = uighur_opinion value = 35 }
-
-	set_variable = { chinese_aggression = 0 }
 
 	547 = { add_dynamic_modifier = { modifier = CHI_beijing_municipality } }
 	548 = { add_dynamic_modifier = { modifier = CHI_tianjin_municipality } }
