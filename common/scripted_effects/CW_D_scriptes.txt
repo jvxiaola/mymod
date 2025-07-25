@@ -424,15 +424,16 @@ else = {
 }
 
 Set_ETK = {
-	XIN = { 
-		every_owned_state = { 
-			limit = { has_state_flag = XIN_LOSE_states }
-			clr_state_flag = XIN_LOSE_states
-			set_demilitarized_zone = no
-			transfer_state_to = ETK
-		} 
-	}
-	ETK = {
+	hidden_effect = {
+		XIN = { 
+			every_owned_state = { 
+				limit = { has_state_flag = XIN_LOSE_states }
+				clr_state_flag = XIN_LOSE_states
+				set_demilitarized_zone = no
+				transfer_state_to = ETK
+			} 
+		}
+		ETK = {
 			inherit_technology = XIN
 			division_template = {
 				name = "东突厥斯坦圣战军"
@@ -449,49 +450,51 @@ Set_ETK = {
 				ideology = Caliphate
 				traits = { Non_governmental_riots WESTERN_freedom_fighter }
 			}
+		}
+		every_state = {
+			if = {
+				limit = { 
+					OR = { 
+						has_dynamic_modifier = { modifier = extrameal_islam_attack1 } 
+						has_dynamic_modifier = { modifier = extrameal_islam_attack2 }
+					} 
+				}
+				create_unit = {
+					division = "name = \"东突厥斯坦圣战军\" division_template = \"东突厥斯坦圣战军\" start_experience_factor = 0.8"
+					owner = ETK
+				}
+			}
+			else_if = {
+				limit = { 
+					has_dynamic_modifier = { modifier = extrameal_islam_attack3 } 
+				}
+				create_unit = {
+					division = "name = \"东突厥斯坦圣战军\" division_template = \"东突厥斯坦圣战军\" start_experience_factor = 0.8"
+					count = 2
+					owner = ETK
+				}
+			}
+			else_if = {
+				limit = { 
+					has_dynamic_modifier = { modifier = extrameal_islam_attack4 } 
+				}
+				create_unit = {
+					division = "name = \"东突厥斯坦圣战军\" division_template = \"东突厥斯坦圣战军\" start_experience_factor = 0.8"
+					count = 3
+					owner = ETK
+				}
+			}
+			else_if = {
+				limit = { 
+					has_dynamic_modifier = { modifier = extrameal_islam_attack5 } 
+				}
+				create_unit = {
+					division = "name = \"东突厥斯坦圣战军\" division_template = \"东突厥斯坦圣战军\" start_experience_factor = 0.8"
+					count = 4
+					owner = ETK
+				}
+			}
+		}
 	}
-	every_state = {
-		if = {
-			limit = { 
-				OR = { 
-					has_dynamic_modifier = { modifier = extrameal_islam_attack1 } 
-					has_dynamic_modifier = { modifier = extrameal_islam_attack2 }
-				} 
-			}
-			create_unit = {
-				division = "name = \"东突厥斯坦圣战军\" division_template = \"东突厥斯坦圣战军\" start_experience_factor = 0.8"
-				owner = ETK
-			}
-		}
-		else_if = {
-			limit = { 
-				has_dynamic_modifier = { modifier = extrameal_islam_attack3 } 
-			}
-			create_unit = {
-				division = "name = \"东突厥斯坦圣战军\" division_template = \"东突厥斯坦圣战军\" start_experience_factor = 0.8"
-				count = 2
-				owner = ETK
-			}
-		}
-		else_if = {
-			limit = { 
-				has_dynamic_modifier = { modifier = extrameal_islam_attack4 } 
-			}
-			create_unit = {
-				division = "name = \"东突厥斯坦圣战军\" division_template = \"东突厥斯坦圣战军\" start_experience_factor = 0.8"
-				count = 3
-				owner = ETK
-			}
-		}
-		else_if = {
-			limit = { 
-				has_dynamic_modifier = { modifier = extrameal_islam_attack5 } 
-			}
-			create_unit = {
-				division = "name = \"东突厥斯坦圣战军\" division_template = \"东突厥斯坦圣战军\" start_experience_factor = 0.8"
-				count = 4
-				owner = ETK
-			}
-		}
-	}
+
 }
