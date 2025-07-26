@@ -5981,48 +5981,43 @@ country_event = {
 	id = prc1.98
 	title = prc1.98.t
 	desc = prc1.98.d
-
-	
 	is_triggered_only = yes
-
-	immediate = {
-	}
-	
+	immediate = {}
 	option = {
-	name = prc1.98.o1	
+		name = prc1.98.o1	
 
 
-	set_country_flag = putongaiguo
+		set_country_flag = putongaiguo
 		set_temp_variable = { temp_opinion = 10 }
 		change_communist_cadres_opinion = yes
 		custom_effect_tooltip = influence_the_party_line_tt
-	add_5_emerging_left_wing_radical = yes
-	add_to_variable = {
-	var = CPC_Right
-	value = -0.025
-	}
-	add_to_variable = {
-	var = CPC_Dengist
-	value = 0.01
-	}
-	add_to_variable = {
-	var = CPC_Left
-	value = 0.015
-	}
-add_to_variable = {
-var = zhongxiguanxi
-value = -2
-}
+		add_5_emerging_left_wing_radical = yes
+		add_to_variable = {
+			var = CPC_Right
+			value = -0.025
+		}
+		add_to_variable = {
+			var = CPC_Dengist
+			value = 0.01
+		}
+		add_to_variable = {
+			var = CPC_Left
+			value = 0.015
+		}
+		add_to_variable = {
+			var = zhongxiguanxi
+			value = -2
+		}
 
-	USA = {		
-		add_opinion_modifier = {
+		USA = {		
+			add_opinion_modifier = {
 				target = CHI
 				modifier = diplomatic_distance
 			}
 	
-	}
-	ai_chance = {factor = 100}
-	}
+		}
+		ai_chance = {factor = 100}
+		}
 
 
 
