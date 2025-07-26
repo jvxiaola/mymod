@@ -552,8 +552,6 @@ NOT={
 				var = CHI_neizhanfengxian
 				value = 0.1
 			}
-			set_country_flag = jingjizhuangtai
-			mark_focus_tree_layout_dirty = yes
 			if = {
 				limit = { has_country_flag = CHI_zhunbeirudang }
 				add_ideas = CHI_zibenjia
@@ -563,6 +561,9 @@ NOT={
 				add_to_variable = { CPC_Left = -0.03 }
 				add_to_variable = { CPC_Dengist = -0.02}
 			}
+			set_country_flag = jingjizhuangtai
+			load_focus_tree = CHI_urgent_state_focus
+			mark_focus_tree_layout_dirty = yes
 			custom_effect_tooltip = CHI_change_forward_tt
 		}
 	}
