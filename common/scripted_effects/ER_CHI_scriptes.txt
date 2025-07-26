@@ -366,62 +366,33 @@ CHI_state_recognize_start = {
   CHI_add_State_jilin = yes     CHI_add_State_heilongjiang = yes
 }
 CHI_add_State_guangdong = {
-  state = 534
-  add_to_array = { array = global.guangdong_states }
-
-  state = 532
-  add_to_array = { array = global.guangdong_states }
-
-  state = 595
-  add_to_array = { array = global.guangdong_states }
-
-  state = 1106
-  add_to_array = { array = global.guangdong_states }
-
-  state = 1220
-  add_to_array = { array = global.guangdong_states }
-
-  state = 1221
-  add_to_array = { array = global.guangdong_states }
-
-  state = 1222
-  add_to_array = { array = global.guangdong_states }
-
-  state = 1223
-  add_to_array = { array = global.guangdong_states }
-
-  state = 1224
-  add_to_array = { array = global.guangdong_states }
-
-  state = 1225
-  add_to_array = { array = global.guangdong_states }
-
-  state = 1226
-  add_to_array = { array = global.guangdong_states }
-
-  state = 1227
-  add_to_array = { array = global.guangdong_states }
+  534 = { add_to_array = { array = global.guangdong_states } }
+  532 = { add_to_array = { array = global.guangdong_states } }
+  595 = { add_to_array = { array = global.guangdong_states } }
+  1106 = { add_to_array = { array = global.guangdong_states } }
+  1220 = { add_to_array = { array = global.guangdong_states } }
+  1221 = { add_to_array = { array = global.guangdong_states } }
+  1222 = { add_to_array = { array = global.guangdong_states } }
+  1223 = { add_to_array = { array = global.guangdong_states } }
+  1224 = { add_to_array = { array = global.guangdong_states } }
+  1225 = { add_to_array = { array = global.guangdong_states } }
+  1226 = { add_to_array = { array = global.guangdong_states } }
+  1227 = { add_to_array = { array = global.guangdong_states } }
 }
 CHI_add_State_jiangsu = {
-  state = 541
-  add_to_array = { array = global.jiangsu_states }
-  state = 536
-  add_to_array = { array = global.jiangsu_states }
+  541 = { add_to_array = { array = global.jiangsu_states } }
+  536 = { add_to_array = { array = global.jiangsu_states } }
 }
 CHI_add_State_shandong = {
-  state = 435
-  add_to_array = { array = global.shandong_states }
-  state = 544
-  add_to_array = { array = global.shandong_states }
+  435 = { add_to_array = { array = global.shandong_states } }
+  544 = { add_to_array = { array = global.shandong_states } }
 }
 CHI_add_State_zhejiang = {
-  state = 538
-  add_to_array = { array = global.zhejiang_states }
+  538 = { add_to_array = { array = global.zhejiang_states } }
 }
 CHI_add_State_henan = {
-  state = 567
-  add_to_array = { array = global.henan_states }
-  }
+  567 = { add_to_array = { array = global.henan_states } }
+}
 
 CHI_add_State_liaoning = {
   state = 1095
