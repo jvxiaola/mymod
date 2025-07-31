@@ -692,7 +692,7 @@ CHI_pre_civ_decitions = {
 		visible = {
 	has_completed_focus = CHI_return_Twowhatever
 		}
-		days_re_enable =20
+		days_re_enable =10
 		days_remove = 20
 		complete_effect = {
 
@@ -719,7 +719,7 @@ CHI_pre_civ_decitions = {
 			visible = {
 	has_completed_focus = CHI_return_Twowhatever
 			}
-		days_re_enable =20
+		days_re_enable =10
 		days_remove = 20
 			complete_effect = {
 	
@@ -747,7 +747,7 @@ CHI_pre_civ_decitions = {
 			visible = {
 		has_completed_focus = CHI_ban_military_business
 			}
-		days_re_enable =20
+		days_re_enable =10
 		days_remove = 20
 			complete_effect = {
 	
