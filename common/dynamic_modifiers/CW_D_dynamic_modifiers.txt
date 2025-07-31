@@ -88,7 +88,7 @@ XIN_state_in_martial_law = {
 
 
 CW_ruins = {
-	enable = {always = yes}
+	enable = { always = yes }
 	icon = GFX_idea_dpr_ruins
 	state_production_speed_buildings_factor = -0.15
 	state_productivity_growth_modifier = -0.25
