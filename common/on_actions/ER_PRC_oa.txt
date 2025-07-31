@@ -2,7 +2,9 @@
 on_actions = {
 	on_startup = {
 		effect = {
-			CHI_state_recognize_start = yes
+			CHI = {
+				CHI_state_recognize_start = yes
+			}
 		}
 	}
 }
