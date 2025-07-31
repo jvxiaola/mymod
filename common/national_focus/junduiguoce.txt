@@ -1210,7 +1210,18 @@ relative_position_id = DSC_people_armyI
 				army_ratio = 0.1
 				air_ratio = 0.1
 			}
+
+
+
+
 		}
+
+ROOT={
+		set_country_flag=quanxiangdijun
+}
+
+
+
 	}
 }
 
@@ -1245,7 +1256,9 @@ relative_position_id = DSC_people_armyI
 
 	}
 	completion_reward = {
-		division_template = {
+
+		ROOT={
+division_template = {
 			name = "民兵部队"
 regiments = {
 Militia_Bat = { x = 0 y = 0 }
@@ -1289,6 +1302,9 @@ Militia_Bat = { x = 1 y = 3 }
 			}
 
 }
+
+		}
+		
 	}
 }
 

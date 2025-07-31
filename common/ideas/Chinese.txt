@@ -1741,6 +1741,7 @@ Industrial_rebuild_end = {
 		}
 	}
 
+
 	CHI_NEW_people_war1 = {
 		
 		allowed = { 
