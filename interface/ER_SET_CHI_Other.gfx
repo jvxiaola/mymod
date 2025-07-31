@@ -46,7 +46,11 @@
 			texturefile = "gfx/interface/ideas/CW_idea/political_officers.png"			  
 		}
 
-
+		spriteType = {
+			name = "GFX_in_the_war"
+			texturefile = "gfx/interface/decisions/decision_war.dds"
+			legacy_lazy_load = no
+		}
 
 
 

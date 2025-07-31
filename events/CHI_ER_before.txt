@@ -318,8 +318,8 @@ country_event = {
 		name = CHI_ER_BEFORE_guang.06.a
 		#country_event = { id = CHI_ER_BEFORE.2 days = 35 }
 		add_manpower = -200
-		every_state = {
-			limit = { is_in_array = { array = global.guangdong_states } }
+		every_owned_state = {
+			limit = { is_in_array = { global.guangdong_states = THIS } }
 			transfer_state_to = PRG
 		}
 		give_guarantee = PRG

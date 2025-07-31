@@ -10,7 +10,7 @@ PGR_PLA_taobojun = {
 		}
 		country_leader = {
 			ideology = Nat_Autocracy
-			traits = { hasty_deployment hero_counterattack_Vietnam }
+			traits = { hasty_deployment hero_counterattack_Vietnam anti_food_hero }
 			expire = "2100.1.1.1"
 			id = -1
 		}
