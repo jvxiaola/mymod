@@ -8,5 +8,7 @@
  Central_Committee_of_the_Communist_Party_of_China: "§R中国共产党§! - §O中央委员会§!"
  Central_Committee_of_the_Chinese_Kuomintang: "§B中国国民党§! - §g中央委员会§!"
  QuanGuoRenMinDaiBiaoDaHui: "§R中国共产党§! - §C全国人民代表大会§!"
- PGR_TEMPOR_GOVERMENT: "广州临时军管区 - £CHI_military_junta 军区司令部"
+ PGR_PLA_taobojun: "陶伯钧"
  hasty_deployment: "§R紧急动员§!"
+ hero_counterattack_Vietnam: "£GFX_decision_war [VIE.GetFlag]对越自卫反击功臣"
+ anti_food_hero: "£GFX_decision_category_coms_cat 抗洪英雄"

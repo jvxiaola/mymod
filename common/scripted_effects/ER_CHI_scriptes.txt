@@ -395,31 +395,20 @@ CHI_add_State_henan = {
 }
 
 CHI_add_State_liaoning = {
-  state = 1095
-  add_to_array = { array = global.liaoning_states }
-  state = 552
-  add_to_array = { array = global.liaoning_states }
+  1095 = { add_to_array = { array = global.liaoning_states } }
+  552 = { add_to_array = { array = global.liaoning_states } }
 }
 CHI_add_State_hebei = {
-  add_to_array = { array = global.hebei_states }
-  state = 549
-  add_to_array = { array = global.hebei_states }
-  state = 547
-  add_to_array = { array = global.hebei_states }
-  state = 548
-  add_to_array = { array = global.hebei_states }
+  549 = { add_to_array = { array = global.hebei_states } }
+  547 = { add_to_array = { array = global.hebei_states } }
+  548 = { add_to_array = { array = global.hebei_states } }
 }
 CHI_add_State_sichuan = {
-  state = 583
-  add_to_array = { array = global.sichuan_states }
-  state = 586
-  add_to_array = { array = global.sichuan_states }
-  state = 585
-  add_to_array = { array = global.sichuan_states }
-  state = 1218
-  add_to_array = { array = global.sichuan_states }
-  state = 1219
-  add_to_array = { array = global.sichuan_states }
+  583 = { add_to_array = { array = global.sichuan_states } }
+  586 = { add_to_array = { array = global.sichuan_states } }
+  585 = { add_to_array = { array = global.sichuan_states } }
+  1218 = { add_to_array = { array = global.sichuan_states } }
+  1219 = { add_to_array = { array = global.sichuan_states } }
 }
 CHI_add_State_fujian = {
   state = 537

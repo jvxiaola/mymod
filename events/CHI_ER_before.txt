@@ -53,14 +53,13 @@ country_event = {
 		hidden_effect = {
 			country_event = { id = prc1.159 days = 25 }
 			country_event = { id = prc1.81 days = 30 } #左翼人士变动\
-
-			
-if={
-	limit={
-		has_country_flag = the_left_wing_reform
-	}
-	country_event = { id = CHI_ER_start.2 days = 4 }
-}
+		
+		if = {
+			limit={
+				has_country_flag = the_left_wing_reform
+			}
+			country_event = { id = CHI_ER_start.2 days = 4 }
+		}
 
 			#country_event = { id = prc1.57 days = 3 } 中超开赛
 			434 = { set_state_flag = CHI_Left_State }
@@ -315,13 +314,12 @@ country_event = {
 	#picture = GFX_event_pictures_CW_D_event1
 	is_triggered_only = yes
 	trigger = { tag = CHI }
-	
 	option = {	
 		name = CHI_ER_BEFORE_guang.06.a
 		#country_event = { id = CHI_ER_BEFORE.2 days = 35 }
-		#add_manpower = -200
+		add_manpower = -200
 		every_state = {
-			limit = { is_in_array = { global.guangdong_states = THIS } }
+			limit = { is_in_array = { array = global.guangdong_states } }
 			transfer_state_to = PRG
 		}
 		give_guarantee = PRG

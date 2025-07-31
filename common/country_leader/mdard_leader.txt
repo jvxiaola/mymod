@@ -1,5 +1,16 @@
 leader_traits = {
-	hasty_deployment = {
+	#广东特质
+	hero_counterattack_Vietnam = { #对越自卫反击功臣
+		random = no
+		army_org_factor = 0.02
+		army_artillery_attack_factor = 0.03
+		nationalist_drift = 0.02
+		communism_drift = 0.01
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	hasty_deployment = { #紧急动员
 		random = no
 		stability_factor = -0.1
 		political_power_factor = -0.05
@@ -11,13 +22,23 @@ leader_traits = {
 	}
 	political_vacuum = {
 		random = no
-		stability_factor = -0.1
+		stability_factor = -0.15
 		political_power_factor = -0.25
 		
 		ai_will_do = {
 			factor = 1
 		}
 	}
+	anti_food_hero = { #抗洪英雄
+		random = no
+		stability_factor = 0.05
+		political_power_cost = -0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#冻土特质
 	Non_governmental_riots = {
 		random = no
 		stability_factor = -0.3
@@ -38,6 +59,8 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
+
 	man_of_steel = {
 		random = no
 		stability_factor = 0.1

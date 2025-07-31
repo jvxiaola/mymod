@@ -5016,8 +5016,8 @@ name = prc1.79.o2
 						size = 0.5
 		states = all
 		states_filter = {
-				 has_state_flag = CHI_Left_State
-				is_fully_controlled_by = ROOT
+			has_state_flag = CHI_Left_State
+			is_fully_controlled_by = ROOT
 			}
 		}
 								random_other_country = {
