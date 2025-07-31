@@ -88,7 +88,7 @@ XIN_state_in_martial_law = {
 
 
 CW_ruins = {
-	enable = {always = yes}
+	enable = { always = yes }
 	icon = GFX_idea_dpr_ruins
 	army_speed_factor_for_controller = -0.1 
 	enemy_army_speed_factor = -0.1
