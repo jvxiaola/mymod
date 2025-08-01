@@ -10683,7 +10683,14 @@ defined_text = {
 	text = { trigger = { original_tag = YAK } localization_key = YAK.Communist-State }
 	text = { trigger = { original_tag = YAM } localization_key = YAM.Communist-State }
 	text = { trigger = { original_tag = ZIM } localization_key = ZIM.Communist-State }
+
+	text = { trigger = { original_tag = PCP } localization_key = PCP.Communist-State }
+
 	text = { localization_key = generic.Communist-State }
+
+
+
+
 }
 
 # Left-Wing Radicals
@@ -13358,7 +13365,10 @@ defined_text = {
 	text = { trigger = { original_tag = USB } localization_key = USB.Communist-State_desc }
 	text = { trigger = { original_tag = VEN } localization_key = VEN.Communist-State_desc }
 	text = { trigger = { original_tag = WAG } localization_key = SOV.Nat_Autocracy_wagner_desc }
+			text = { trigger = { original_tag = PCP } localization_key = PCP.Communist-State_desc }
 	text = { localization_key = generic.Communist-State_desc }
+
+
 }
 
 # Left-Wing Radicals
@@ -13433,6 +13443,7 @@ defined_text = {
 	text = { trigger = { original_tag = ZAM } localization_key = ZAM.anarchist_communism_desc }
 
 	text = { trigger = { original_tag = DSC } localization_key = DSC.anarchist_communism_desc }
+
 
 	text = { localization_key = generic.anarchist_communism_desc }
 }
@@ -14945,7 +14956,10 @@ defined_text = {
 	text = { trigger = { original_tag = YAK } localization_key = YAK.Communist-State_icon }
 	text = { trigger = { original_tag = YAM } localization_key = YAM.Communist-State_icon }
 	text = { trigger = { original_tag = ZIM } localization_key = ZIM.Communist-State_icon }
+
+	text = { trigger = { original_tag = PCP } localization_key = PCP.Communist-State_icon }
 	text = { localization_key = generic.Communist-State_icon }
+
 
 }
 
