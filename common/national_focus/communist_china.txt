@@ -8747,7 +8747,7 @@ add_ideas = PRC_wr
 				name = "阿维马埃尔·古斯曼"
 				picture = "Gonzalo.dds"
 				expire = "2020.1.1"
-				ideology = Communist-State
+				ideology = Chinese_Socialism_mao
 				
 				traits = {
 			emerging_Communist-State
