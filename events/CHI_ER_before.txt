@@ -220,17 +220,30 @@ country_event = {
 	id = CHI_ER_start.5
 	title = CHI_ER_start.5.t
 	desc = CHI_ER_start.5.d
-	#最新注释
-picture= GFX_maopaiyouxing
-
+	picture = GFX_maopaiyouxing
 	is_triggered_only = yes
-	
 	option = {	
 		name = CHI_ER_start.5.o1
 		ai_chance = {factor = 10 }
 	}
 }
 
+news_event = {
+	id = CHI_ER_start.6
+	title = CHI_ER_start.6.t
+	desc = CHI_ER_start.6.d
+	major = yes
+	immediate = { }
+	is_triggered_only = yes
+	option = {
+		name = CHI_ER_start.6.a 
+		hidden_effect = {
+			country_event = { id = CHI_ER_BEFORE_guang.2 days = 10 }
+		}
+	}	
+}
+
+#珠江——广东事件
 country_event = {
 	 id = CHI_ER_BEFORE_guang.01
 	title = CHI_ER_BEFORE_guang.01.t
