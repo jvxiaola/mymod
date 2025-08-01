@@ -36,7 +36,12 @@ country_event = {
 	title = CHI_ER_start.1.t
 	desc = CHI_ER_start.1.d
 
-	immediate = { hidden_effect = { country_event = { id = CW_Diverse.1 days = 50 } }}
+	immediate = { 
+		hidden_effect = { 
+			country_event = { id = CW_Diverse.1 days = 50 } 
+			news_event = { id = CHI_ER_start.6 days = 1 }
+		}
+	}
 	is_triggered_only = yes
 	option = {
 		name = CHI_ER_start.1.a 
