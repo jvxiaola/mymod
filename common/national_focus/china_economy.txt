@@ -1199,6 +1199,15 @@ hidden_effect = {
 	CHI_state_owned_reform_up = yes
 	CHI_state_owned_reform_up = yes
 	CHI_state_owned_reform_up = yes
+	CHI_Massive_layoffs_improve = yes
+	CHI_Massive_layoffs_improve = yes
+	CHI_Massive_layoffs_improve = yes
+	CHI_Massive_layoffs_improve = yes
+	CHI_Massive_layoffs_improve = yes
+	CHI_Massive_layoffs_improve = yes
+	CHI_Massive_layoffs_improve = yes
+	CHI_Massive_layoffs_improve = yes
+	CHI_Massive_layoffs_improve = yes
 }
 
 			if = {
