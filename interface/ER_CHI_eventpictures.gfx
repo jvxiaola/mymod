@@ -40,8 +40,10 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	
-	
+	spriteType = {
+		name = "GFX_news_event_pictures_CW_president_jiang_death"
+		texturefile = "gfx/event_pictures/CW_D/news_event_pictures_CW_president_jiang_death.dds"
+	}
 
 
 
