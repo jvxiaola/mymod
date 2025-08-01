@@ -1461,8 +1461,8 @@ XIN = {
 }
 
 PCP = {
-	color = rgb { 255 20 20 } #255 244 190
-	color_ui = rgb { 255 20 20 }
+	color = rgb { 210 140 140 } #255 244 190
+	color_ui = rgb { 210 140 140 }
 }
 PRG = {
 	color = rgb { 155 136 70 } 
