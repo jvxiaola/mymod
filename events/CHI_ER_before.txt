@@ -234,11 +234,12 @@ news_event = {
 	desc = CHI_ER_start.6.d
 	major = yes
 	immediate = { }
+	picture = GFX_news_event_chinese_soldiers
 	is_triggered_only = yes
 	option = {
 		name = CHI_ER_start.6.a 
 		hidden_effect = {
-			country_event = { id = CHI_ER_BEFORE_guang.2 days = 10 }
+			CHI = { country_event = { id = CHI_ER_BEFORE_guang.2 days = 10 } }
 		}
 	}	
 }
