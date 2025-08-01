@@ -2793,7 +2793,7 @@ CHI_Civil_war_decisions = {
 any_owned_state = {
   controller = {tag=ROOT}
   any_neighbor_state = {
-    controller = {tag=CHI}
+    controller = {has_cosmetic_tag=CHI_REB_SB}
   }
 }
 			has_war_with = CHI

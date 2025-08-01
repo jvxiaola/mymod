@@ -283,10 +283,26 @@ remove_ideas =  people_army2
 remove_ideas =  people_army3
 remove_ideas =  people_army4
 remove_ideas =  red_weidui1
+remove_ideas =  red_army
+remove_ideas =  red_army1
+remove_ideas =  red_army2
 }
 		
 
+				CHI={
 
+
+
+					set_variable = { party_pop_array^4 = 0.55 }
+					recalculate_party = yes
+					add_ideas = p5_member
+					remove_ideas = CHI_war_communism
+					remove_idea = patry_fenlie
+remove_ideas = CHI_capital_withdrawal1
+remove_ideas = CHI_capital_withdrawal2
+remove_ideas = CHI_capital_withdrawal3
+remove_ideas = CHI_capital_withdrawal4
+				}
 
 
 
@@ -314,20 +330,7 @@ remove_ideas =  red_weidui1
 			}
 				}
 		
-				CHI={
 
-
-
-					set_variable = { party_pop_array^4 = 0.55 }
-					recalculate_party = yes
-					add_ideas = p5_member
-					remove_ideas = CHI_war_communism
-					remove_idea = patry_fenlie
-remove_ideas = CHI_capital_withdrawal1
-remove_ideas = CHI_capital_withdrawal2
-remove_ideas = CHI_capital_withdrawal3
-remove_ideas = CHI_capital_withdrawal4
-				}
 
 
 	
@@ -4493,7 +4496,14 @@ name = prc1.77.o2
 		ai_chance = {factor = 60}
 set_temp_variable = { treasury_change = -10}
 			modify_treasury_effect = yes
-		remove_ideas = CHI_big_layoff1
+		CHI_Massive_layoffs_improve =yes
+		CHI_Massive_layoffs_improve =yes
+		CHI_Massive_layoffs_improve =yes
+		CHI_Massive_layoffs_improve =yes
+		CHI_Massive_layoffs_improve =yes
+		CHI_Massive_layoffs_improve =yes
+		CHI_Massive_layoffs_improve =yes
+		CHI_Massive_layoffs_improve =yes
 		increase_social_spending = yes
 
 		}
