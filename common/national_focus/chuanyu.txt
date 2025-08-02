@@ -1387,6 +1387,15 @@ Armor_Bat = { x = 1 y = 2 }
 				}	
 			}
 		if = {
+			limit = { country_exists = HKG }
+			create_wargoal = {
+				type = annex_everything
+				target = PRG
+			}	
+			}
+
+
+		if = {
 			limit = { country_exists = MAC }
 				create_wargoal = {
 					target = MAC

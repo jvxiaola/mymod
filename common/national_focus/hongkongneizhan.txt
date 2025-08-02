@@ -825,7 +825,10 @@ asian_crisis
 					target = MAC
 					type = annex_everything
 				}		
-
+			create_wargoal = {
+				type = annex_everything
+				target = PRG
+			}	
 	
 			}
 		}

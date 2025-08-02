@@ -842,7 +842,10 @@ add_ideas = CHI_aftermath_of_the_civil_war_1
 				type = annex_everything
 				target = HKG
 			}	
-
+			create_wargoal = {
+				type = annex_everything
+				target = PRG
+			}	
 			create_wargoal = {
 				type = annex_everything
 				target = MAC
