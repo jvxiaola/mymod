@@ -8808,7 +8808,7 @@ annex_country = {
 }
 	set_cosmetic_tag = PCP_b
 
-
+			remove_ideas = Non_State_Actor
 
 
 

@@ -30,6 +30,15 @@ DSC_GMG={
     color_ui = rgb { 255 20 20 }
 }
 
+niboer_rmghg={
+	color = rgb { 222  124  143 }
+	color_ui = rgb { 197  84  140 }
+}
+PCP_a={
+    color = rgb { 196  0  32 }
+	color_ui = rgb { 196  0  32 }
+}
+
 CHI_REB_SA={
 	color = rgb { 200 100 31 }
 	color_ui = rgb { 245 123 38 }
