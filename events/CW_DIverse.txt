@@ -109,10 +109,10 @@ country_event = {
 	trigger = { tag = CHI }
 	option = {
 		name = CW_Diverse.4.a
-		custom_effect_tooltip = CHI_military_region_XIN
+		custom_effect_tooltip = orgnize_xinjiang_military_TT
 		set_autonomy = {
 			target = XIN
-			autonomy_state = autonomy_special_administrative_region
+			autonomy_state = CHI_military_region_XIN
 		}
 		hidden_effect = {
 			591 = { transfer_state_to = XIN }
@@ -379,6 +379,9 @@ country_event = {
 		name = CW_Diverse.8.a
 		every_country = { limit = { is_ai = no } news_event = { id = CW_Diverse.9 days = 7 } }
 		custom_effect_tooltip = CW_Diverse_event8_effect_tt
+		hidden_effect = {
+			end_puppet = XIN
+		}
 	}
 }
 

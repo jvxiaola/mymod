@@ -349,7 +349,18 @@ country_event = {
 				remove_core_of = CHI
 			}
 			inherit_technology = CHI
-
+			random_owned_state = {
+				create_unit = {
+					division = "name = \"解放军师级火力支援单位\" division_template = \"解放军师级火力支援单位\" start_experience_factor = 1.5"
+					owner = PRG
+					count = 4
+				}
+				create_unit = {
+					division = "name = \"解放军师级机动火力单位\" division_template = \"解放军师级机动火力单位\" start_experience_factor = 1.5"
+					owner = PRG
+					count = 2
+				}
+			}
 			give_military_access = CHI
 		}
 	}

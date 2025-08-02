@@ -5,7 +5,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_CHI_military_region_XIN_icon"
-		texturefile = "gfx/interface/autonomy/PRC_XIN.png"
+		texturefile = "gfx/autonomy/PRC_XIN.png"
 	}
 
 	spriteType = {
