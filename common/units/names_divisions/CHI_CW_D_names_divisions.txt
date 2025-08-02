@@ -1,6 +1,6 @@
 ﻿PRC_XIZ_MOD_template = {
 	name = "解放军西藏军区机动师"
-	for_countries = { XIZ CHI DSC  }
+	for_countries = { XIZ CHI  }
 
 	division_types = { "Mot_Inf_Bat" }
 
@@ -12,7 +12,7 @@
 
 CHI_XIN_01 = {
 	name = "解放军师级机动单位"
-	for_countries = { XIN CHI DSC  }
+	for_countries = { XIN CHI }
 
 	division_types = { "Mot_Inf_Bat" }
 
@@ -24,7 +24,7 @@ CHI_XIN_01 = {
 
 CHI_XIN_02 = {
 	name = "解放军师级步战单位"
-	for_countries = { XIN CHI DSC }
+	for_countries = { XIN CHI }
 
 	division_types = { "L_Inf_Bat" }
 
@@ -36,7 +36,7 @@ CHI_XIN_02 = {
 
 CHI_XIN_03 = {
 	name = "解放军师级机械化单位"
-	for_countries = { XIN CHI DSC }
+	for_countries = { XIN CHI }
 
 	division_types = { "Mech_Inf_Bat" }
 
@@ -48,7 +48,7 @@ CHI_XIN_03 = {
 
 CHI_XIN_recruitment_01 = {
 	name = "解放军师级征招机动单位"
-	for_countries = { XIN CHI DSC }
+	for_countries = { XIN CHI }
 
 	division_types = { "Mot_Inf_Bat" }
 
@@ -63,7 +63,7 @@ CHI_XIN_recruitment_01 = {
 
 CHI_XIN_recruitment_02 = {
 	name = "解放军师级征招机械单位"
-	for_countries = { XIN CHI DSC }
+	for_countries = { XIN CHI }
 
 	division_types = { "Mech_Inf_Bat" }
 
@@ -80,7 +80,7 @@ CHI_XIN_recruitment_02 = {
 
 CHI_XIN_recruitment_03 = {
 	name = "解放军师级征招步战单位"
-	for_countries = { XIN CHI DSC }
+	for_countries = { XIN CHI }
 
 	division_types = { "Mech_Inf_Bat" }
 
@@ -92,6 +92,40 @@ CHI_XIN_recruitment_03 = {
 		5 = { "广东第%d动员征调步战师" }
 		6 = { "内蒙第%d动员征调步战师" }
 		7 = { "甘肃第%d动员征调步战师" }
+	}
+}
+
+CHI_PRG_recruitment_0 = {
+	name = "解放军师级火力支援单位"
+	for_countries = { PRG CHI }
+
+	division_types = { "Mech_Inf_Bat" }
+
+	ordered = {
+		1 = { "广州第%d火力支援师" }
+		2 = { "潮汕第%d火力支援师" }
+		3 = { "湛江第%d火力支援师" }
+		4 = { "茂名第%d火力支援师" }
+		5 = { "韶关第%d火力支援师" }
+		6 = { "雷州第%d火力支援师" }
+		7 = { "惠州第%d火力支援师" }
+	}
+}
+
+CHI_PRG_recruitment_01 = {
+	name = "解放军师级机动火力单位"
+	for_countries = { PRG CHI }
+
+	division_types = { "Mech_Inf_Bat" }
+
+	ordered = {
+		1 = { "广州第%d火力突击师" }
+		2 = { "潮汕第%d火力突击师" }
+		3 = { "湛江第%d火力突击师" }
+		4 = { "茂名第%d火力突击师" }
+		5 = { "韶关第%d火力突击师" }
+		6 = { "雷州第%d火力突击师" }
+		7 = { "惠州第%d火力突击师" }
 	}
 }
 
