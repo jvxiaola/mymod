@@ -8755,6 +8755,26 @@ add_ideas = PRC_wr
 				}
 			}
 		}
+
+		PCP = {
+			
+add_ideas = PRC_wr 
+		create_country_leader = {
+				name = "阿维马埃尔·古斯曼"
+				picture = "Gonzalo.dds"
+				expire = "2020.1.1"
+				ideology = Chinese_Socialism_mao
+				
+				traits = {
+			emerging_Communist-State
+			man_of_steel
+				}
+			}
+		}
+
+
+
+
 		}
 		}
 			focus = {
@@ -8781,28 +8801,30 @@ cost = 5
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-		PRU = {
-				 				set_politics = {
-					ruling_party = communism
-					elections_allowed = no
-				}
-				add_popularity = {
-						ideology = communism
-						popularity = 0.5
-				}
-				hidden_effect = {
-					start_politics_input = yes
-					add_to_array = { ruling_party = 4 } #communism
-					set_variable = { party_pop_array^4 = 0.9 } #generate the rest
-					startup_politics = yes
-				}
-									init_influence = yes
-	set_variable = { domestic_influence_amount = 500 }
-					add_to_array = { influence_array = CHI.id }
-	add_to_array = { influence_array_val = 600 }
-		startup_influence = yes
-				}
-						 add_to_faction = PRU
+			PCP={
+annex_country = {
+	target = PRU
+	transfer_troops = yes
+}
+	set_cosmetic_tag = PCP_b
+
+
+
+
+
+
+
+			inherit_technology = PRU
+
+
+		
+
+
+
+
+			}
+
+						 add_to_faction = PCP
 				}
 				}
 		focus = {

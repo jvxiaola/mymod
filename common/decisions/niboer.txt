@@ -3,7 +3,7 @@ npm_war_policies = {
 		#icon = GFX_decision_minotor_button
 		visible = {
 			tag=NPM
-			NOT={has_idea=NEP_youji}
+			has_idea=NEP_youji
 		}
 
 		available = {
@@ -25,7 +25,8 @@ npm_war_policies = {
 		#icon = GFX_decision_minotor_button
 		visible = {
 			tag=NPM
-			has_idea=NEP_youji
+						NOT={has_idea=NEP_youji}
+
 		}
 
 		available = {
@@ -43,5 +44,29 @@ npm_war_policies = {
 		}
 	}
 
-	
+		npm_rmghg = {
+		#icon = GFX_decision_minotor_button
+		visible = {
+			tag=NPM
+			has_war = no
+		}
+
+		available = {
+
+		}
+		complete_effect = {
+
+		}
+		days_remove = 20
+		remove_effect = {
+			set_cosmetic_tag = niboer_rmghg
+			remove_ideas = Non_State_Actor
+			set_capital = {
+				state = 485
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }
