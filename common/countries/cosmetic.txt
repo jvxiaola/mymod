@@ -42,9 +42,13 @@ NPA_a={
     color = rgb { 196  0  32 }
 	color_ui = rgb { 196  0  32 }
 }
+
+
+
+
 NPA_b={
-    color = rgb { 196  0  32 }
-	color_ui = rgb { 196  0  32 }
+	color = rgb { 125 25 112 }
+	color_ui = rgb {255  0  0 }
 }
 
 
