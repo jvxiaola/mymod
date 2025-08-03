@@ -3,32 +3,29 @@
 
 	set_country_flag = CHI_revisionism
 
-	add_dynamic_modifier = {
-		modifier = CHI_Legal_amendments_dynamic
-	}
 	clamp_variable  = {
 		var = CPC_Left
 		min = 0
-	max = 1
+		max = 1
 	}
 	set_variable = { CPC_Left = 0.3	}
 	clamp_variable  = {
 		var = CPC_Dengist
 		min = 0
-	max = 1
+		max = 1
 	}
 	set_variable = { CPC_Dengist = 0.4 }
 		
 	clamp_variable  = {
 		var = CPC_Right
 		min = 0
-	max = 1
+		max = 1
 	}
 	set_variable = { CPC_Right = 0.3 }
 	clamp_variable  = {
 		var = CHI_people_support
 		min = 0
-	max = 1
+		max = 1
 	}
 	
 
@@ -353,10 +350,6 @@
 		tac_and_strat_retaliation
 	}
 
-	add_timed_idea = {
-		idea = int_investment_china days = 1280
-	}
-
 	547 = { add_dynamic_modifier = { modifier = CHI_beijing_municipality } }
 	548 = { add_dynamic_modifier = { modifier = CHI_tianjin_municipality } }
 	540 = { add_dynamic_modifier = { modifier = CHI_shanghai_municipality } }
@@ -396,8 +389,6 @@
 	1072 = { add_dynamic_modifier = { modifier = CHI_ningxia_hui_autonomous_region } }
 	556 = { add_dynamic_modifier = { modifier = CHI_inner_mongolia_autonomous_region } }
 	1097 = { add_dynamic_modifier = { modifier = CHI_inner_mongolia_autonomous_region } }
-	591 = { add_dynamic_modifier = { modifier = CHI_xinjiang_uygur_autonomous_region } }
-	592 = { add_dynamic_modifier = { modifier = CHI_xinjiang_uygur_autonomous_region } }
 
 
 
