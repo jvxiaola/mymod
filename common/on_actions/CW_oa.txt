@@ -78,9 +78,11 @@ on_actions = {
 						FROM = { tag = DSC }
 						NOT = { country_exists = CHI }
 						ROOT = {
-								original_tag = CHI
+							original_tag = CHI
+							OR = {
 								has_cosmetic_tag = CHI_REB_SA
 								has_cosmetic_tag = CHI_REB_SB	
+							}	
 						}
 					}
 					FROM = {
@@ -97,9 +99,11 @@ on_actions = {
 						FROM = { OR = { tag = DSC tag = CHI } has_war_with = ROOT }
 						DSC = { has_war_with = ROOT } CHI = { has_war_with = ROOT }
 						ROOT = {
-								original_tag = CHI
+							original_tag = CHI
+							OR = {
 								has_cosmetic_tag = CHI_REB_SA
 								has_cosmetic_tag = CHI_REB_SB	
+							}	
 						}
 					}
 					DSC = {
@@ -122,9 +126,7 @@ on_actions = {
 			if = {
 					limit = {
 						FROM = { tag = XIN }
-						NOT = { country_exists = CHI }
 						ROOT = { tag = ETK }
-
 					}
 					every_country = { news_event = { id = CW_Diverse.10 days = 1 } }
 
@@ -144,7 +146,6 @@ on_actions = {
 
 					limit = {
 						FROM = { tag = ETK }
-						NOT = { country_exists = CHI }
 						ROOT = { tag = XIN }
 					}
 					FROM = {
