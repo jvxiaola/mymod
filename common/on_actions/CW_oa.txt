@@ -125,7 +125,12 @@ on_actions = {
 		effect = {
 			if = {
 					limit = {
-						FROM = { tag = XIN }
+						FROM = { 
+							OR = { 
+								tag = XIN 
+								tag = PAK
+							} 
+						}
 						ROOT = { tag = ETK }
 					}
 					every_country = { news_event = { id = CW_Diverse.10 days = 1 } }
@@ -134,6 +139,7 @@ on_actions = {
 						every_owned_state = { add_dynamic_modifier = { modifier = extrameal_islam_attack_escape } }
 					}
 					FROM = {
+						dismantle_faction = yes
 						every_owned_state = { extrameal_islam_leavel_down = yes extrameal_islam_leavel_down = yes }
 						annex_country = {
 							target = ROOT
@@ -143,20 +149,27 @@ on_actions = {
 
 			}
 			else_if = {
-
-					limit = {
-						FROM = { tag = ETK }
-						ROOT = { tag = XIN }
+				limit = {
+					FROM = { tag = ETK }
+					ROOT = { tag = XIN }
+				}
+				FROM = {
+					dismantle_faction = yes
+					annex_country = {
+						target = ROOT
+						transfer_troops = no
 					}
-					FROM = {
-						annex_country = {
-							target = ROOT
-							transfer_troops = no
-						}
-					}
-
+				}
 			}
-
+			else_if = {
+				limit = {
+					FROM = { tag = ETK }
+					ROOT = { tag = PAK }
+				}
+				ROOT = {
+					leave_faction = yes
+				}
+			}
 
 		}
 	}

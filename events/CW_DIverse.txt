@@ -405,6 +405,7 @@ news_event = {
 					remove_dynamic_modifier = { modifier = extrameal_islam_attack5 }
 				}
 			}
+			country_event = { id = CW_Diverse.16 days = 15 }
 		}	
 	}
 	option = {
@@ -701,5 +702,19 @@ news_event = {
 	option = {
 		name = CW_Diverse.15.a5
 		trigger = { OR = { has_government = fascism } }
+	}
+}
+
+country_event = {
+	id = CW_Diverse.16
+	title = CW_Diverse.16.t
+	desc = CW_Diverse.16.d
+	is_triggered_only = yes
+	option = {
+		name = CW_Diverse.16.a
+		XIN = [
+			create_faction = "中亚反恐维和行动"
+			add_to_faction = PAK
+		]
 	}
 }
