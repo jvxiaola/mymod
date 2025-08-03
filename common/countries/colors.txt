@@ -1464,6 +1464,12 @@ PCP = {
 	color = rgb { 210 140 140 } #255 244 190
 	color_ui = rgb { 210 140 140 }
 }
+NPA = {
+	color = rgb { 220 32 0 } #255 244 190
+	color_ui = rgb { 220 32 0 }
+}
+
+
 PRG = {
 	color = rgb { 155 136 70 } 
 	color_ui = rgb { 155 136 70 }
