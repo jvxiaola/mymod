@@ -1,10 +1,10 @@
 #冻土
 characters = {
-XIN_terriost = {
-		name = XIN_terriost
+HASAN_MAHSUM = {
+		name = HASAN_MAHSUM
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/ETK/XIN_terriost.dds"
+				large = "gfx/leaders/ETK/HASAN_MAHSUM.dds"
 			}
 
 		}
