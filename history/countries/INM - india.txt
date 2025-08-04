@@ -1,4 +1,4 @@
-capital = 736
+capital =  431
 2000.1.1 = {
 
 	clr_country_flag = dynamic_flag
@@ -6,7 +6,8 @@ capital = 736
 
 
 
-	set_cosmetic_tag = indu_youji
+	set_cosmetic_tag = indu_maopai
+	#set_cosmetic_tag = indu_renmingongheguo
 	set_technology = {
 		integrated_transportation_system = 1
 		post_conventional_rail = 1

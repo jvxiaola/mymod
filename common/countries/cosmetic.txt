@@ -43,11 +43,16 @@ NPA_a={
 	color_ui = rgb { 196  0  32 }
 }
 
-indu_youji={
+indu_maopai={
     color = rgb { 196  0  32 }
 	color_ui = rgb { 196  0  32 }
 }
 
+
+indu_renmingongheguo={
+    color = rgb { 225  76  41 }
+	color_ui = rgb { 218  50  16 }
+}
 
 NPA_b={
 	color = rgb { 125 25 112 }
