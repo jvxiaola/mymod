@@ -686,7 +686,7 @@ CHI_harsh_working_down = {
 				has_idea = harsh_working_en_of_CHI7
 			}
 		}
-		add_idea = harsh_working_en_of_CHI1
+		add_ideas = harsh_working_en_of_CHI1
 	}
 }
 

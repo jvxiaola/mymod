@@ -1,0 +1,18 @@
+#冻土
+characters = {
+XIN_terriost = {
+		name = XIN_terriost
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ETK/XIN_terriost.dds"
+			}
+
+		}
+		country_leader = {
+			ideology = Caliphate
+			traits = { Non_governmental_riots WESTERN_freedom_fighter }
+			expire = "2100.1.1.1"
+			id = -1
+		}
+	}
+}
