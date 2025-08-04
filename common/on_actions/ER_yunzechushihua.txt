@@ -1,0 +1,23 @@
+
+on_actions = {
+	on_startup = {
+		effect = {
+		
+
+				every_state = { 
+						limit = {
+
+							is_core_of = RAJ
+
+						}
+					add_core_of = INM
+					}
+
+
+
+
+
+
+		}
+	}
+}

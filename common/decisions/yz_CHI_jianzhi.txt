@@ -227,7 +227,7 @@ has_completed_focus = CHI_zuzhiguoqigaige
 
 		modifier = {
 production_speed_buildings_factor = 0.1
-democratic_drift = 0.1
+communism_drift = 0.1
 		}
 remove_effect = {
 		set_temp_variable = { treasury_change = 10 }
@@ -287,7 +287,7 @@ NOT={has_country_flag=CHI_jianduguozi_completed}
 
 		modifier = {
 production_speed_buildings_factor = 0.1
-democratic_drift = 0.1
+communism_drift = 0.1
 		}
 remove_effect = {
 
@@ -320,7 +320,8 @@ has_country_flag=zaiyiciguoyou
 
 		modifier = {
 production_speed_buildings_factor = 0.1
-democratic_drift = 0.1
+communism_drift = 0.1
+
 		}
 remove_effect = {
 		set_temp_variable = { treasury_change = 10 }

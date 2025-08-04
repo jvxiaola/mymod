@@ -10281,11 +10281,14 @@ add_core_of = ROOT
 			completion_reward = {
 				set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.03 }
 				change_CHI_Socialist_Construction_dynamic1 = yes
+				hidden_effect = {
 				CHI_MER_decresee_effect = yes
 				CHI_MER_decresee_effect = yes
 				CHI_MER_decresee_effect = yes
 				CHI_MER_decresee_effect = yes
-				CHI_MER_decresee_effect = yes
+				CHI_MER_decresee_effect = yes					
+				}
+
 
 				hidden_effect = {
 					country_event = { id = prc1.117 days = 7 }
