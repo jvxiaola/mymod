@@ -5,7 +5,7 @@ defined_text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_WUHAN_OPENED
 		}
-		localization_key = "武汉"
+		localization_key = "湖北"
 	}
 
 	text = {
@@ -510,7 +510,7 @@ defined_text = {
 		localization_key = "已建立公社"
 	}
 
-	# 武汉 - 革命委员会
+	# 湖北 - 革命委员会
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_WUHAN_OPENED
@@ -518,7 +518,7 @@ defined_text = {
 		}
 		localization_key = "已建立革命委员会"
 	}
-	# 武汉 - 公社
+	# 湖北 - 公社
 	text = {
 		trigger = {
 			has_country_flag = PROV_GUI_ZHONGGUO_WUHAN_OPENED
