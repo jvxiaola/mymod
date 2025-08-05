@@ -802,3 +802,1304 @@ defined_text = {
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+defined_text = {
+	name = CHI_wg_hwbguimo
+
+# 北京 - 红卫兵活动1
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
+			547 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }
+		}
+		localization_key = "初现组织"
+	}
+# 北京 - 红卫兵活动2
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
+			547 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 } }
+		}
+		localization_key = "广泛动员"
+	}
+# 北京 - 红卫兵活动3
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
+			547 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }
+		}
+		localization_key = "全面蔓延"
+	}
+# 北京 - 红卫兵活动4
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
+			547 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }
+		}
+		localization_key = "激进升级"
+	}
+# 北京 - 红卫兵活动5
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_BEIJING_OPENED
+			547 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }
+		}
+		localization_key = "全面失控"
+	}
+
+# 天津 - 红卫兵活动1
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
+			548 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }
+		}
+		localization_key = "初现组织"
+	}
+# 天津 - 红卫兵活动2
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
+			548 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 } }
+		}
+		localization_key = "广泛动员"
+	}
+# 天津 - 红卫兵活动3
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
+			548 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }
+		}
+		localization_key = "全面蔓延"
+	}
+# 天津 - 红卫兵活动4
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
+			548 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }
+		}
+		localization_key = "激进升级"
+	}
+# 天津 - 红卫兵活动5
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_TIANJIN_OPENED
+			548 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }
+		}
+		localization_key = "全面失控"
+	}
+
+# 上海 - 红卫兵活动1
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
+			547 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }
+		}
+		localization_key = "初现组织"
+	}
+# 上海 - 红卫兵活动2
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
+			541 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 } }
+		}
+		localization_key = "广泛动员"
+	}
+# 上海 - 红卫兵活动3
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
+			541 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }
+		}
+		localization_key = "全面蔓延"
+	}
+# 上海 - 红卫兵活动4
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
+			541 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }
+		}
+		localization_key = "激进升级"
+	}
+# 上海 - 红卫兵活动5
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_SHANGHAI_OPENED
+			541 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }
+		}
+		localization_key = "全面失控"
+	}
+
+# 重庆 - 红卫兵活动1
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_CHONGQING_OPENED
+			583 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }
+		}
+		localization_key = "初现组织"
+	}
+# 重庆 - 红卫兵活动2
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_CHONGQING_OPENED
+			583 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 } }
+		}
+		localization_key = "广泛动员"
+	}
+# 重庆 - 红卫兵活动3
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_CHONGQING_OPENED
+			583 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }
+		}
+		localization_key = "全面蔓延"
+	}
+# 重庆 - 红卫兵活动4
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_CHONGQING_OPENED
+			583 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }
+		}
+		localization_key = "激进升级"
+	}
+# 重庆 - 红卫兵活动5
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_CHONGQING_OPENED
+			583 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }
+		}
+		localization_key = "全面失控"
+	}
+# 河北 - 红卫兵活动1
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_HEBEI_OPENED
+			583 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }
+		}
+		localization_key = "初现组织"
+	}
+# 河北 - 红卫兵活动2
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_HEBEI_OPENED
+			549 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 } }
+		}
+		localization_key = "广泛动员"
+	}
+# 河北 - 红卫兵活动3
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_HEBEI_OPENED
+			549 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }
+		}
+		localization_key = "全面蔓延"
+	}
+# 河北 - 红卫兵活动4
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_HEBEI_OPENED
+			549 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }
+		}
+		localization_key = "激进升级"
+	}
+# 河北 - 红卫兵活动5
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_HEBEI_OPENED
+			549 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }
+		}
+		localization_key = "全面失控"
+	}
+
+# 山西 - 红卫兵活动1
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_SHAN1XI_OPENED
+			558 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }
+		}
+		localization_key = "初现组织"
+	}
+# 山西 - 红卫兵活动2
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_SHAN1XI_OPENED
+			558 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 } }
+		}
+		localization_key = "广泛动员"
+	}
+# 山西 - 红卫兵活动3
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_SHAN1XI_OPENED
+			558 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }
+		}
+		localization_key = "全面蔓延"
+	}
+# 山西 - 红卫兵活动4
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_SHAN1XI_OPENED
+			558 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }
+		}
+		localization_key = "激进升级"
+	}
+# 山西 - 红卫兵活动5
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_SHAN1XI_OPENED
+			558 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }
+		}
+		localization_key = "全面失控"
+	}
+
+
+# 内蒙古 - 红卫兵活动1
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_NEIMENG_OPENED
+			556 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }
+		}
+		localization_key = "初现组织"
+	}
+# 内蒙古 - 红卫兵活动2
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_NEIMENG_OPENED
+			556 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 } }
+		}
+		localization_key = "广泛动员"
+	}
+# 内蒙古 - 红卫兵活动3
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_NEIMENG_OPENED
+			556 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }
+		}
+		localization_key = "全面蔓延"
+	}
+# 内蒙古 - 红卫兵活动4
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_NEIMENG_OPENED
+			556 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }
+		}
+		localization_key = "激进升级"
+	}
+# 内蒙古 - 红卫兵活动5
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_NEIMENG_OPENED
+			556 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }
+		}
+		localization_key = "全面失控"
+	}
+
+# 辽宁 - 红卫兵活动1
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
+			552 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }
+		}
+		localization_key = "初现组织"
+	}
+# 辽宁 - 红卫兵活动2
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
+			552 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 } }
+		}
+		localization_key = "广泛动员"
+	}
+# 辽宁 - 红卫兵活动3
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
+			552 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }
+		}
+		localization_key = "全面蔓延"
+	}
+# 辽宁 - 红卫兵活动4
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
+			552 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }
+		}
+		localization_key = "激进升级"
+	}
+# 辽宁 - 红卫兵活动5
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_LIAONING_OPENED
+			552 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }
+		}
+		localization_key = "全面失控"
+	}
+# 吉林 - 红卫兵活动1
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_JILIN_OPENED
+			554 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }
+		}
+		localization_key = "初现组织"
+	}
+# 吉林 - 红卫兵活动2
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_JILIN_OPENED
+			554 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 } }
+		}
+		localization_key = "广泛动员"
+	}
+# 吉林 - 红卫兵活动3
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_JILIN_OPENED
+			554 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }
+		}
+		localization_key = "全面蔓延"
+	}
+# 吉林 - 红卫兵活动4
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_JILIN_OPENED
+			554 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }
+		}
+		localization_key = "激进升级"
+	}
+# 吉林 - 红卫兵活动5
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_JILIN_OPENED
+			554 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }
+		}
+		localization_key = "全面失控"
+	}
+
+# 黑龙江 - 红卫兵活动1
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_HEILONGJIANG_OPENED
+			555 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }
+		}
+		localization_key = "初现组织"
+	}
+# 黑龙江 - 红卫兵活动2
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_HEILONGJIANG_OPENED
+			555 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 } }
+		}
+		localization_key = "广泛动员"
+	}
+# 黑龙江 - 红卫兵活动3
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_HEILONGJIANG_OPENED
+			555 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }
+		}
+		localization_key = "全面蔓延"
+	}
+# 黑龙江 - 红卫兵活动4
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_HEILONGJIANG_OPENED
+			555 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }
+		}
+		localization_key = "激进升级"
+	}
+# 黑龙江 - 红卫兵活动5
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_HEILONGJIANG_OPENED
+			555 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }
+		}
+		localization_key = "全面失控"
+	}
+# 湖北 - 红卫兵活动1
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_WUHAN_OPENED
+			570 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }
+		}
+		localization_key = "初现组织"
+	}
+# 湖北 - 红卫兵活动2
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_WUHAN_OPENED
+			570 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 } }
+		}
+		localization_key = "广泛动员"
+	}
+# 湖北 - 红卫兵活动3
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_WUHAN_OPENED
+			570 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }
+		}
+		localization_key = "全面蔓延"
+	}
+# 湖北 - 红卫兵活动4
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_WUHAN_OPENED
+			570 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }
+		}
+		localization_key = "激进升级"
+	}
+# 湖北 - 红卫兵活动5
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_WUHAN_OPENED
+			570 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }
+		}
+		localization_key = "全面失控"
+	}
+
+# 湖南 - 红卫兵活动1
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_HUNAN_OPENED
+			572 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }
+		}
+		localization_key = "初现组织"
+	}
+# 湖南 - 红卫兵活动2
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_HUNAN_OPENED
+			572 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 } }
+		}
+		localization_key = "广泛动员"
+	}
+# 湖南 - 红卫兵活动3
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_HUNAN_OPENED
+			572 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }
+		}
+		localization_key = "全面蔓延"
+	}
+# 湖南 - 红卫兵活动4
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_HUNAN_OPENED
+			572 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }
+		}
+		localization_key = "激进升级"
+	}
+# 湖南 - 红卫兵活动5
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_HUNAN_OPENED
+			572 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }
+		}
+		localization_key = "全面失控"
+	}
+# 广东 - 红卫兵活动1
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_GUANGDONG_OPENED
+			534 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }
+		}
+		localization_key = "初现组织"
+	}
+# 广东 - 红卫兵活动2
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_GUANGDONG_OPENED
+			534 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 } }
+		}
+		localization_key = "广泛动员"
+	}
+# 广东 - 红卫兵活动3
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_GUANGDONG_OPENED
+			534 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }
+		}
+		localization_key = "全面蔓延"
+	}
+# 广东 - 红卫兵活动4
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_GUANGDONG_OPENED
+			534 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }
+		}
+		localization_key = "激进升级"
+	}
+# 广东 - 红卫兵活动5
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_GUANGDONG_OPENED
+			534 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }
+		}
+		localization_key = "全面失控"
+	}
+
+# 广西 - 红卫兵活动1
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_GUANGXI_OPENED
+			574 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }
+		}
+		localization_key = "初现组织"
+	}
+# 广西 - 红卫兵活动2
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_GUANGXI_OPENED
+			574 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 } }
+		}
+		localization_key = "广泛动员"
+	}
+# 广西 - 红卫兵活动3
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_GUANGXI_OPENED
+			574 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }
+		}
+		localization_key = "全面蔓延"
+	}
+# 广西 - 红卫兵活动4
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_GUANGXI_OPENED
+			574 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }
+		}
+		localization_key = "激进升级"
+	}
+# 广西 - 红卫兵活动5
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_GUANGXI_OPENED
+			574 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }
+		}
+		localization_key = "全面失控"
+	}
+# 海南 - 红卫兵活动1
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_HAINAN_OPENED
+			531 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }
+		}
+		localization_key = "初现组织"
+	}
+# 海南 - 红卫兵活动2
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_HAINAN_OPENED
+			531 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 } }
+		}
+		localization_key = "广泛动员"
+	}
+# 海南 - 红卫兵活动3
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_HAINAN_OPENED
+			531 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }
+		}
+		localization_key = "全面蔓延"
+	}
+# 海南 - 红卫兵活动4
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_HAINAN_OPENED
+			531 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }
+		}
+		localization_key = "激进升级"
+	}
+# 海南 - 红卫兵活动5
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_HAINAN_OPENED
+			531 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }
+		}
+		localization_key = "全面失控"
+	}
+
+# 福建 - 红卫兵活动1
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_FUJIAN_OPENED
+			537 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }
+		}
+		localization_key = "初现组织"
+	}
+# 福建 - 红卫兵活动2
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_FUJIAN_OPENED
+			537 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 } }
+		}
+		localization_key = "广泛动员"
+	}
+# 福建 - 红卫兵活动3
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_FUJIAN_OPENED
+			537 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }
+		}
+		localization_key = "全面蔓延"
+	}
+# 福建 - 红卫兵活动4
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_FUJIAN_OPENED
+			537 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }
+		}
+		localization_key = "激进升级"
+	}
+# 福建 - 红卫兵活动5
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_FUJIAN_OPENED
+			537 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }
+		}
+		localization_key = "全面失控"
+	}
+# 江西 - 红卫兵活动1
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
+			562 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }
+		}
+		localization_key = "初现组织"
+	}
+# 江西 - 红卫兵活动2
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
+			562 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 } }
+		}
+		localization_key = "广泛动员"
+	}
+# 江西 - 红卫兵活动3
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
+			562 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }
+		}
+		localization_key = "全面蔓延"
+	}
+# 江西 - 红卫兵活动4
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
+			562 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }
+		}
+		localization_key = "激进升级"
+	}
+# 江西 - 红卫兵活动5
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_JIANGXI_OPENED
+			562 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }
+		}
+		localization_key = "全面失控"
+	}
+
+# 云南 - 红卫兵活动1
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_YUNNAN_OPENED
+			578 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }
+		}
+		localization_key = "初现组织"
+	}
+# 云南 - 红卫兵活动2
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_YUNNAN_OPENED
+			578 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 } }
+		}
+		localization_key = "广泛动员"
+	}
+# 云南 - 红卫兵活动3
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_YUNNAN_OPENED
+			578 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }
+		}
+		localization_key = "全面蔓延"
+	}
+# 云南 - 红卫兵活动4
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_YUNNAN_OPENED
+			578 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }
+		}
+		localization_key = "激进升级"
+	}
+# 云南 - 红卫兵活动5
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_YUNNAN_OPENED
+			578 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }
+		}
+		localization_key = "全面失控"
+	}
+# 甘肃 - 红卫兵活动1
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_GANSU_OPENED
+			560 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }
+		}
+		localization_key = "初现组织"
+	}
+# 甘肃 - 红卫兵活动2
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_GANSU_OPENED
+			560 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 } }
+		}
+		localization_key = "广泛动员"
+	}
+# 甘肃 - 红卫兵活动3
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_GANSU_OPENED
+			560 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }
+		}
+		localization_key = "全面蔓延"
+	}
+# 甘肃 - 红卫兵活动4
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_GANSU_OPENED
+			560 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }
+		}
+		localization_key = "激进升级"
+	}
+# 甘肃 - 红卫兵活动5
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_GANSU_OPENED
+			560 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }
+		}
+		localization_key = "全面失控"
+	}
+
+# 青海 - 红卫兵活动1
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_QINGHAI_OPENED
+			588 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }
+		}
+		localization_key = "初现组织"
+	}
+# 青海 - 红卫兵活动2
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_QINGHAI_OPENED
+			588 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 } }
+		}
+		localization_key = "广泛动员"
+	}
+# 青海 - 红卫兵活动3
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_QINGHAI_OPENED
+			588 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }
+		}
+		localization_key = "全面蔓延"
+	}
+# 青海 - 红卫兵活动4
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_QINGHAI_OPENED
+			588 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }
+		}
+		localization_key = "激进升级"
+	}
+# 青海 - 红卫兵活动5
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_QINGHAI_OPENED
+			588 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }
+		}
+		localization_key = "全面失控"
+	}
+# 宁夏 - 红卫兵活动1
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
+			1072 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }
+		}
+		localization_key = "初现组织"
+	}
+# 宁夏 - 红卫兵活动2
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
+			1072= { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 } }
+		}
+		localization_key = "广泛动员"
+	}
+# 宁夏 - 红卫兵活动3
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
+			1072 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }
+		}
+		localization_key = "全面蔓延"
+	}
+# 宁夏 - 红卫兵活动4
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
+			1072 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }
+		}
+		localization_key = "激进升级"
+	}
+# 宁夏 - 红卫兵活动5
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_NINGXIA_OPENED
+			1072 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }
+		}
+		localization_key = "全面失控"
+	}
+
+# 四川 - 红卫兵活动1
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_SICHUAN_OPENED
+			586 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }
+		}
+		localization_key = "初现组织"
+	}
+# 四川 - 红卫兵活动2
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_SICHUAN_OPENED
+			586 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 } }
+		}
+		localization_key = "广泛动员"
+	}
+# 四川 - 红卫兵活动3
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_SICHUAN_OPENED
+			586 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }
+		}
+		localization_key = "全面蔓延"
+	}
+# 四川 - 红卫兵活动4
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_SICHUAN_OPENED
+			586 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }
+		}
+		localization_key = "激进升级"
+	}
+# 四川 - 红卫兵活动5
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_SICHUAN_OPENED
+			586 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }
+		}
+		localization_key = "全面失控"
+	}
+
+# 西藏 - 红卫兵活动1
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_XIZANG_OPENED
+			589 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }
+		}
+		localization_key = "初现组织"
+	}
+# 西藏 - 红卫兵活动2
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_XIZANG_OPENED
+			589 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 } }
+		}
+		localization_key = "广泛动员"
+	}
+# 西藏 - 红卫兵活动3
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_XIZANG_OPENED
+			589 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }
+		}
+		localization_key = "全面蔓延"
+	}
+# 西藏 - 红卫兵活动4
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_XIZANG_OPENED
+			589 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }
+		}
+		localization_key = "激进升级"
+	}
+# 西藏 - 红卫兵活动5
+	text = {
+		trigger = {
+			has_country_flag = PROV_GUI_ZHONGGUO_XIZANG_OPENED
+			589 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }
+		}
+		localization_key = "全面失控"
+	}
+
+
+
+
+
+# 新疆 - 红卫兵活动1
+	text = {
+		trigger = {
+			has_country_flag = 	PROV_GUI_ZHONGGUO_XINJIANG_OPENED
+			592 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }
+		}
+		localization_key = "初现组织"
+	}
+# 新疆 - 红卫兵活动2
+	text = {
+		trigger = {
+			has_country_flag = 	PROV_GUI_ZHONGGUO_XINJIANG_OPENED
+			592 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 } }
+		}
+		localization_key = "广泛动员"
+	}
+# 新疆 - 红卫兵活动3
+	text = {
+		trigger = {
+			has_country_flag = 	PROV_GUI_ZHONGGUO_XINJIANG_OPENED
+			592 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }
+		}
+		localization_key = "全面蔓延"
+	}
+# 新疆 - 红卫兵活动4
+	text = {
+		trigger = {
+			has_country_flag = 	PROV_GUI_ZHONGGUO_XINJIANG_OPENED
+			592 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }
+		}
+		localization_key = "激进升级"
+	}
+# 新疆 - 红卫兵活动5
+	text = {
+		trigger = {
+			has_country_flag = 	PROV_GUI_ZHONGGUO_XINJIANG_OPENED
+			592 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }
+		}
+		localization_key = "全面失控"
+	}
+
+# 陕西 - 红卫兵活动1
+	text = {
+		trigger = {
+			has_country_flag = 	PROV_GUI_ZHONGGUO_SHAN3XI_OPENED
+			559 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }
+		}
+		localization_key = "初现组织"
+	}
+# 陕西 - 红卫兵活动2
+	text = {
+		trigger = {
+			has_country_flag = 	PROV_GUI_ZHONGGUO_SHAN3XI_OPENED
+			559 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 } }
+		}
+		localization_key = "广泛动员"
+	}
+# 陕西 - 红卫兵活动3
+	text = {
+		trigger = {
+			has_country_flag = 	PROV_GUI_ZHONGGUO_SHAN3XI_OPENED
+			559 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }
+		}
+		localization_key = "全面蔓延"
+	}
+# 陕西 - 红卫兵活动4
+	text = {
+		trigger = {
+			has_country_flag = 	PROV_GUI_ZHONGGUO_SHAN3XI_OPENED
+			559 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }
+		}
+		localization_key = "激进升级"
+	}
+# 陕西 - 红卫兵活动5
+	text = {
+		trigger = {
+			has_country_flag = 	PROV_GUI_ZHONGGUO_SHAN3XI_OPENED
+			559 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }
+		}
+		localization_key = "全面失控"
+	}
+
+
+
+
+# 贵州 - 红卫兵活动1
+	text = {
+		trigger = {
+			has_country_flag = 	PROV_GUI_ZHONGGUO_GUIZHOU_OPENED
+			582 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }
+		}
+		localization_key = "初现组织"
+	}
+# 贵州 - 红卫兵活动2
+	text = {
+		trigger = {
+			has_country_flag = 	PROV_GUI_ZHONGGUO_GUIZHOU_OPENED
+			582 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 } }
+		}
+		localization_key = "广泛动员"
+	}
+# 贵州 - 红卫兵活动3
+	text = {
+		trigger = {
+			has_country_flag = 	PROV_GUI_ZHONGGUO_GUIZHOU_OPENED
+			582 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }
+		}
+		localization_key = "全面蔓延"
+	}
+# 贵州 - 红卫兵活动4
+	text = {
+		trigger = {
+			has_country_flag = 	PROV_GUI_ZHONGGUO_GUIZHOU_OPENED
+			582 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }
+		}
+		localization_key = "激进升级"
+	}
+# 贵州 - 红卫兵活动5
+	text = {
+		trigger = {
+			has_country_flag = 	PROV_GUI_ZHONGGUO_GUIZHOU_OPENED
+			582 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }
+		}
+		localization_key = "全面失控"
+	}
+
+
+# 安徽 - 红卫兵活动1
+	text = {
+		trigger = {
+			has_country_flag = 		PROV_GUI_ZHONGGUO_ANHUI_OPENED
+				564 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }
+		}
+		localization_key = "初现组织"
+	}
+# 安徽 - 红卫兵活动2
+	text = {
+		trigger = {
+			has_country_flag = 		PROV_GUI_ZHONGGUO_ANHUI_OPENED
+				564 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 } }
+		}
+		localization_key = "广泛动员"
+	}
+# 安徽 - 红卫兵活动3
+	text = {
+		trigger = {
+			has_country_flag = 		PROV_GUI_ZHONGGUO_ANHUI_OPENED
+				564 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }
+		}
+		localization_key = "全面蔓延"
+	}
+# 安徽 - 红卫兵活动4
+	text = {
+		trigger = {
+			has_country_flag = 		PROV_GUI_ZHONGGUO_ANHUI_OPENED
+				564 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }
+		}
+		localization_key = "激进升级"
+	}
+# 安徽 - 红卫兵活动5
+	text = {
+		trigger = {
+			has_country_flag = 		PROV_GUI_ZHONGGUO_ANHUI_OPENED
+				564= { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }
+		}
+		localization_key = "全面失控"
+	}
+
+# 山东 - 红卫兵活动1
+	text = {
+		trigger = {
+			has_country_flag = 		PROV_GUI_ZHONGGUO_SHANDONG_OPENED
+					544 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }
+		}
+		localization_key = "初现组织"
+	}
+# 山东 - 红卫兵活动2
+	text = {
+		trigger = {
+			has_country_flag = 		PROV_GUI_ZHONGGUO_SHANDONG_OPENED
+					544 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 } }
+		}
+		localization_key = "广泛动员"
+	}
+# 山东 - 红卫兵活动3
+	text = {
+		trigger = {
+			has_country_flag = 		PROV_GUI_ZHONGGUO_SHANDONG_OPENED
+					544 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }
+		}
+		localization_key = "全面蔓延"
+	}
+# 山东 - 红卫兵活动4
+	text = {
+		trigger = {
+			has_country_flag = 		PROV_GUI_ZHONGGUO_SHANDONG_OPENED
+					544 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }
+		}
+		localization_key = "激进升级"
+	}
+# 山东 - 红卫兵活动5
+	text = {
+		trigger = {
+			has_country_flag = 		PROV_GUI_ZHONGGUO_SHANDONG_OPENED
+					544= { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }
+		}
+		localization_key = "全面失控"
+	}
+
+# 江苏 - 红卫兵活动1
+	text = {
+		trigger = {
+			has_country_flag = 			PROV_GUI_ZHONGGUO_JIANGSU_OPENED
+						541 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }
+		}
+		localization_key = "初现组织"
+	}
+# 江苏 - 红卫兵活动2
+	text = {
+		trigger = {
+			has_country_flag = 			PROV_GUI_ZHONGGUO_JIANGSU_OPENED
+						541 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 } }
+		}
+		localization_key = "广泛动员"
+	}
+# 江苏 - 红卫兵活动3
+	text = {
+		trigger = {
+			has_country_flag = 			PROV_GUI_ZHONGGUO_JIANGSU_OPENED
+						541 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }
+		}
+		localization_key = "全面蔓延"
+	}
+# 江苏 - 红卫兵活动4
+	text = {
+		trigger = {
+			has_country_flag = 			PROV_GUI_ZHONGGUO_JIANGSU_OPENED
+						541 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }
+		}
+		localization_key = "激进升级"
+	}
+# 江苏 - 红卫兵活动5
+	text = {
+		trigger = {
+			has_country_flag = 			PROV_GUI_ZHONGGUO_JIANGSU_OPENED
+						541= { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }
+		}
+		localization_key = "全面失控"
+	}
+
+# 浙江 - 红卫兵活动1
+	text = {
+		trigger = {
+			has_country_flag = 			PROV_GUI_ZHONGGUO_ZHEJIANG_OPENED
+						538 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }
+		}
+		localization_key = "初现组织"
+	}
+# 浙江 - 红卫兵活动2
+	text = {
+		trigger = {
+			has_country_flag = 			PROV_GUI_ZHONGGUO_ZHEJIANG_OPENED
+						538 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 } }
+		}
+		localization_key = "广泛动员"
+	}
+# 浙江 - 红卫兵活动3
+	text = {
+		trigger = {
+			has_country_flag = 			PROV_GUI_ZHONGGUO_ZHEJIANG_OPENED
+						538 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }
+		}
+		localization_key = "全面蔓延"
+	}
+# 浙江 - 红卫兵活动4
+	text = {
+		trigger = {
+			has_country_flag = 			PROV_GUI_ZHONGGUO_ZHEJIANG_OPENED
+						538 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }
+		}
+		localization_key = "激进升级"
+	}
+# 浙江 - 红卫兵活动5
+	text = {
+		trigger = {
+			has_country_flag = 			PROV_GUI_ZHONGGUO_ZHEJIANG_OPENED
+						538= { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }
+		}
+		localization_key = "全面失控"
+	}
+# 台湾 - 红卫兵活动1
+	text = {
+		trigger = {
+			has_country_flag = 			PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+							598 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }
+		}
+		localization_key = "初现组织"
+	}
+# 台湾 - 红卫兵活动2
+	text = {
+		trigger = {
+			has_country_flag = 			PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+							598 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 } }
+		}
+		localization_key = "广泛动员"
+	}
+# 台湾 - 红卫兵活动3
+	text = {
+		trigger = {
+			has_country_flag = 			PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+							598 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }
+		}
+		localization_key = "全面蔓延"
+	}
+# 台湾 - 红卫兵活动4
+	text = {
+		trigger = {
+			has_country_flag = 			PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+							598 = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }
+		}
+		localization_key = "激进升级"
+	}
+# 台湾 - 红卫兵活动5
+	text = {
+		trigger = {
+			has_country_flag = 			PROV_GUI_ZHONGGUO_TAIWAN_OPENED
+							598= { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }
+		}
+		localization_key = "全面失控"
+	}
+
+
+
+		
+	text = {
+		trigger = {
+
+		}
+		localization_key = "暂无运动"
+	}
+
+}
