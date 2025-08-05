@@ -712,9 +712,9 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = CW_Diverse.16.a
-		XIN = [
+		XIN = {
 			create_faction = "中亚反恐维和行动"
 			add_to_faction = PAK
-		]
+		}
 	}
 }
