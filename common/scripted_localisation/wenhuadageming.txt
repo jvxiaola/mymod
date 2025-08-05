@@ -793,4 +793,12 @@ defined_text = {
 		}
 		localization_key = "未解放"
 	}
+
+	text = {
+		trigger = {
+
+		}
+		localization_key = "原人民政府"
+	}
+
 }
