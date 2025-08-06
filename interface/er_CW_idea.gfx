@@ -61,6 +61,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ER_province_modifer/hwbyundong.png"
 	}
 
+		spriteType = {
+		name = "GFX_idea_rev_jiangjv"
+		texturefile = "gfx/interface/ER_province_modifer/rev_jiangjv.png"
+	}
+
 	spriteType = {
 		name = "GFX_idea_rev_weiyuanhui"
 		texturefile = "gfx/interface/ER_province_modifer/rev_weiyuanhui.png"
