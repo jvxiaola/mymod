@@ -15,13 +15,16 @@
 #香港
  HKG_GMQ: "香港革命政府"
 #广东
- PRG: "广州临时军管区"
- PRG_ADJ: "广州军区"
- PRG_DEF: "广州军区"
- PRG_nationalist: "广州临时军管区"
- PRG_nationalist_ADJ: "广州军区"
- PRG_nationalist_DEF: "广州军区"
+ PRG: "广东临时军管区"
+ PRG_ADJ: "广东军区"
+ PRG_DEF: "广东军区"
+ PRG_nationalist: "广东临时军管区"
+ PRG_nationalist_ADJ: "广东军区"
+ PRG_nationalist_DEF: "广东军区"
 
+ GDS: "广东临时政府"
+ GDS_ADJ: "广东省"
+ GDS_DEF: "广东省"
 #西藏
  TIB_JUNQU: "驻西藏部队"
  TIB_JUNQU_ADJ: "西藏军区"
