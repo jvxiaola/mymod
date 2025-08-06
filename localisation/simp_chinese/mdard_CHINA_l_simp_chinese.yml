@@ -1765,7 +1765,7 @@
 
  CHI_CR_decisions: "文化大革命"
  CHI_faqihwb: "发动红卫兵运动"
- CHI_CR_decisions_desc: "[CHI_wg_sheng]:[CHI_wg_zfzt]\n红卫兵运动烈度:[CHI_wg_hwbguimo]"
+ CHI_CR_decisions_desc: "[CHI_wg_sheng]政权状态:[CHI_wg_zfzt]\n具体情况:[CHI_wg_paixi]\n红卫兵运动烈度:[CHI_wg_hwbguimo]"
 
 
 

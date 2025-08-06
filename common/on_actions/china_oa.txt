@@ -170,6 +170,8 @@ every_owned_state = {
         limit = { has_dynamic_modifier = {modifier =  CHI_hongweibing_yundong}
 		NOT={				OR={
 			has_dynamic_modifier = {modifier =  CHI_gemingweiyuanhui}
+						has_dynamic_modifier = {modifier =  CHI_gemingweiyuanhui_baoshou}
+			
 			has_dynamic_modifier = {modifier =  CHI_gongshe}
 			}}
 		} 
@@ -188,6 +190,7 @@ every_owned_state = {
         limit = { has_dynamic_modifier = {modifier =  CHI_hongweibing_yundong2}
 		NOT={				OR={
 			has_dynamic_modifier = {modifier =  CHI_gemingweiyuanhui}
+									has_dynamic_modifier = {modifier =  CHI_gemingweiyuanhui_baoshou}
 			has_dynamic_modifier = {modifier =  CHI_gongshe}
 			}}
 		} 
@@ -207,6 +210,7 @@ every_owned_state = {
 		NOT={		
 			OR={
 				has_dynamic_modifier = {modifier =  CHI_gemingweiyuanhui}
+										has_dynamic_modifier = {modifier =  CHI_gemingweiyuanhui_baoshou}
 				has_dynamic_modifier = {modifier =  CHI_gongshe}
 			}
 		}
@@ -219,6 +223,7 @@ every_owned_state = {
         limit = { has_dynamic_modifier = {modifier =  CHI_hongweibing_yundong4} 
 		NOT={ OR={
 			has_dynamic_modifier = {modifier =  CHI_gemingweiyuanhui}
+									has_dynamic_modifier = {modifier =  CHI_gemingweiyuanhui_baoshou}
 			has_dynamic_modifier = {modifier =  CHI_gongshe}
 			}}
 		} 
@@ -233,10 +238,30 @@ every_owned_state = {
 				has_country_flag = allow_gmwyh 
 			}
 			NOT={
+				OR={
+											has_dynamic_modifier = {modifier =  CHI_gemingweiyuanhui_baoshou}
+				
 				has_dynamic_modifier = {modifier =  CHI_gemingweiyuanhui}
+								has_dynamic_modifier = {modifier = CHI_wudouhunluan}
+				
+
+			}
 			}
 		} 
+
+random_list = {
+	60={
 		add_dynamic_modifier = {modifier = CHI_gemingweiyuanhui}
+	}
+	30={
+				add_dynamic_modifier = {modifier = CHI_gemingweiyuanhui_baoshou}
+	}
+10={
+					add_dynamic_modifier = {modifier = CHI_wudouhunluan}
+}
+}
+
+
     }
 
     if = {
@@ -257,6 +282,7 @@ every_owned_state = {
 			has_dynamic_modifier = {modifier =  CHI_hongweibing_yundong5} 
 			OR={
 				has_dynamic_modifier = {modifier =  CHI_gemingweiyuanhui}
+								has_dynamic_modifier = {modifier =  CHI_gemingweiyuanhui_baoshou}
 				has_dynamic_modifier = {modifier =  CHI_gongshe}
 			}
 		} 
@@ -269,6 +295,7 @@ every_owned_state = {
 			has_dynamic_modifier = {modifier =  CHI_hongweibing_yundong4} 
 			OR={
 				has_dynamic_modifier = {modifier =  CHI_gemingweiyuanhui}
+								has_dynamic_modifier = {modifier =  CHI_gemingweiyuanhui_baoshou}
 				has_dynamic_modifier = {modifier =  CHI_gongshe}
 			}
 		} 
@@ -281,6 +308,7 @@ every_owned_state = {
 			has_dynamic_modifier = {modifier =  CHI_hongweibing_yundong3} 
 			OR={
 				has_dynamic_modifier = {modifier =  CHI_gemingweiyuanhui}
+				has_dynamic_modifier = {modifier =  CHI_gemingweiyuanhui_baoshou}
 				has_dynamic_modifier = {modifier =  CHI_gongshe}
 			}
 		} 

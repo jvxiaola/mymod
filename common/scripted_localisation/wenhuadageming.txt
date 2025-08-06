@@ -241,11 +241,17 @@ defined_text = {
 	#  - 革命委员会
 	text = {
 		trigger = {
-
+OR={
+				var:wengedangqiansheng = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
+				var:wengedangqiansheng = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui_baoshou } }
+}
 			var:wengedangqiansheng = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
 		}
-		localization_key = "已建立革命委员会"
+		localization_key = "革命委员会已建立"
 	}
+
+
+
 	#  - 公社
 	text = {
 		trigger = {
@@ -256,7 +262,13 @@ defined_text = {
 	}
 
 
+	text = {
+		trigger = {
 
+			var:wengedangqiansheng = { has_dynamic_modifier = { modifier = CHI_wudouhunluan } }
+		}
+		localization_key = "武斗导致的政权真空"
+	}
 
 	# 台湾 - 特殊状态（未解放）
 	text = {
@@ -284,7 +296,65 @@ defined_text = {
 
 
 
+defined_text = {
+	name = CHI_wg_paixi
 
+	#  - 革命委员会
+	text = {
+		trigger = {
+
+				var:wengedangqiansheng = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
+
+		}
+		localization_key = "造反派主导"
+	}	
+
+	text = {
+		trigger = {
+
+				var:wengedangqiansheng = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui_baoshou } }
+		}
+		localization_key = "保守派主导"
+	}
+
+	#  - 公社
+	text = {
+		trigger = {
+
+			var:wengedangqiansheng = { has_dynamic_modifier = { modifier = CHI_gongshe } }
+		}
+		localization_key = "革命派主导"
+	}
+
+
+	text = {
+		trigger = {
+
+			var:wengedangqiansheng = { has_dynamic_modifier = { modifier = CHI_wudouhunluan } }
+		}
+		localization_key = "政权真空"
+	}
+
+	# 台湾 - 特殊状态（未解放）
+	text = {
+		trigger = {
+
+			var:wengedangqiansheng = {
+				NOT = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
+				NOT = { CHI = { controls_state = var:wengedangqiansheng } }
+			}
+		}
+		localization_key = "资产阶级政权"
+	}
+
+	text = {
+		trigger = {
+
+		}
+		localization_key = "纯粹的官僚政权"
+	}
+
+}
 
 
 
@@ -297,35 +367,35 @@ defined_text = {
 defined_text = {
 	name = CHI_wg_hwbguimo
 
-# 北京 - 红卫兵活动1
+#  - 红卫兵活动1
 	text = {
 		trigger = {
 			var:wengedangqiansheng = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }
 		}
 		localization_key = "初现组织"
 	}
-# 北京 - 红卫兵活动2
+#  - 红卫兵活动2
 	text = {
 		trigger = {
 			var:wengedangqiansheng = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2 } }
 		}
 		localization_key = "广泛动员"
 	}
-# 北京 - 红卫兵活动3
+#  - 红卫兵活动3
 	text = {
 		trigger = {
 			var:wengedangqiansheng= { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }
 		}
 		localization_key = "全面蔓延"
 	}
-# 北京 - 红卫兵活动4
+#  - 红卫兵活动4
 	text = {
 		trigger = {
 			var:wengedangqiansheng = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }
 		}
 		localization_key = "激进升级"
 	}
-# 北京 - 红卫兵活动5
+#  - 红卫兵活动5
 	text = {
 		trigger = {
 			var:wengedangqiansheng = { has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }
