@@ -129,6 +129,39 @@ CHI_PRG_recruitment_01 = {
 	}
 }
 
+GDS_recruitment_0 = {
+	name = "珠江联企联防队"
+	for_countries = { GDS }
+
+	division_types = { "Mech_Inf_Bat" }
+
+	ordered = {
+		1 = { "广州第%d联防队" }
+		2 = { "潮汕第%d联防队" }
+		3 = { "湛江第%d联防队" }
+		4 = { "茂名第%d联防队" }
+		5 = { "韶关第%d联防队" }
+		6 = { "雷州第%d联防队" }
+		7 = { "惠州第%d联防队" }
+	}
+}
+
+GDS_recruitment_01 = {
+	name = "珠江联企联防队机械师"
+	for_countries = { GDS }
+
+	division_types = { "Mech_Inf_Bat" }
+
+	ordered = {
+		1 = { "广州第%d联防队机械师" }
+		2 = { "潮汕第%d联防队机械师" }
+		3 = { "湛江第%d联防队机械师" }
+		4 = { "茂名第%d联防队机械师" }
+		5 = { "韶关第%d联防队机械师" }
+		6 = { "雷州第%d联防队机械师" }
+		7 = { "惠州第%d联防队机械师" }
+	}
+}
 ETK_exis_01 = {
 	name = "东突厥斯坦圣战军"
 	for_countries = { ETK }
