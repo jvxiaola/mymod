@@ -24,10 +24,10 @@ scripted_gui = {
 
 
 			zhongguo_wuhan_click = {
-					set_variable = {
-		name = wengedangqiansheng
-		value = 570
-	}
+				set_variable = {
+					name = wengedangqiansheng
+					value = 570
+				}
 				set_country_flag = PROV_GUI_ZHONGGUO_WUHAN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_XINJIANG_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_CHONGQING_OPENED
@@ -63,11 +63,10 @@ scripted_gui = {
 			}
 			
 			zhongguo_xinjiang_click = {
-									set_variable = {
-		name = wengedangqiansheng
-		value = 592
-	}
-
+				set_variable = {
+					name = wengedangqiansheng
+					value = 592
+				}
 				set_country_flag = PROV_GUI_ZHONGGUO_XINJIANG_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_WUHAN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_CHONGQING_OPENED
@@ -103,11 +102,10 @@ scripted_gui = {
 			}
 			
 			zhongguo_chongqing_click = {
-									set_variable = {
-		name = wengedangqiansheng
-		value = 583
-	}
-
+				set_variable = {
+					name = wengedangqiansheng
+					value = 583
+				}
 				set_country_flag = PROV_GUI_ZHONGGUO_CHONGQING_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_WUHAN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_XINJIANG_OPENED
@@ -143,7 +141,7 @@ scripted_gui = {
 			}
 			
 			zhongguo_guangdong_click = {
-									set_variable = { wengedangqiansheng =534 }			
+				set_variable = { wengedangqiansheng =534 }			
 				set_country_flag = PROV_GUI_ZHONGGUO_GUANGDONG_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_WUHAN_OPENED
 				clr_country_flag = PROV_GUI_ZHONGGUO_XINJIANG_OPENED
