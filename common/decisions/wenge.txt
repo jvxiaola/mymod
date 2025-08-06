@@ -6,9 +6,9 @@ CHI_faqihwb={
 
 			598 = { NOT={has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }}
 			598 = { NOT={has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2} }}
-						598 = { NOT={has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }}
-									598 = { NOT={has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }}
-												598 = { NOT={has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }}
+			598 = { NOT={has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }}
+			598 = { NOT={has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }}
+			598 = { NOT={has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }}
 			
 
 		}

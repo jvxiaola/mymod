@@ -1,0 +1,146 @@
+
+on_actions = {
+	on_startup = {
+		effect = {
+
+
+set_variable={
+	var=wengesuoyousheng
+}
+
+
+add_to_array = {
+	array = wengesuoyousheng
+	value = 547
+}
+add_to_array = {
+	array = wengesuoyousheng
+	value = 548
+}
+add_to_array = {
+	array = wengesuoyousheng
+	value = 549
+}
+add_to_array = {
+	array = wengesuoyousheng
+	value = 558
+}
+add_to_array = {
+	array = wengesuoyousheng
+	value = 556
+}
+add_to_array = {
+	array = wengesuoyousheng
+	value = 552
+}
+add_to_array = {
+	array = wengesuoyousheng
+	value = 554
+}
+add_to_array = {
+	array = wengesuoyousheng
+	value = 555
+}
+add_to_array = {
+	array = wengesuoyousheng
+	value = 540
+}
+add_to_array = {
+	array = wengesuoyousheng
+	value = 541
+}
+add_to_array = {
+	array = wengesuoyousheng
+	value = 538
+}
+add_to_array = {
+	array = wengesuoyousheng
+	value = 564
+}
+add_to_array = {
+	array = wengesuoyousheng
+	value = 537
+}
+add_to_array = {
+	array = wengesuoyousheng
+	value = 562
+}
+add_to_array = {
+	array = wengesuoyousheng
+	value = 544
+}
+add_to_array = {
+	array = wengesuoyousheng
+	value = 567
+}
+add_to_array = {
+	array = wengesuoyousheng
+	value = 570
+}
+add_to_array = {
+	array = wengesuoyousheng
+	value = 572
+}
+add_to_array = {
+	array = wengesuoyousheng
+	value = 534
+}
+add_to_array = {
+	array = wengesuoyousheng
+	value = 574
+}
+add_to_array = {
+	array = wengesuoyousheng
+	value = 531
+}
+add_to_array = {
+	array = wengesuoyousheng
+	value = 583
+}
+add_to_array = {
+	array = wengesuoyousheng
+	value = 586
+}
+add_to_array = {
+	array = wengesuoyousheng
+	value = 582
+}
+add_to_array = {
+	array = wengesuoyousheng
+	value = 578
+}
+add_to_array = {
+	array = wengesuoyousheng
+	value = 589
+}
+add_to_array = {
+	array = wengesuoyousheng
+	value = 559
+}
+add_to_array = {
+	array = wengesuoyousheng
+	value = 560
+}
+add_to_array = {
+	array = wengesuoyousheng
+	value = 588
+}
+add_to_array = {
+	array = wengesuoyousheng
+	value = 1072
+}
+add_to_array = {
+	array = wengesuoyousheng
+	value = 592
+}
+add_to_array = {
+	array = wengesuoyousheng
+	value = 598
+}
+
+
+
+			
+		}
+	}
+}

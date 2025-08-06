@@ -5,7 +5,10 @@ on_actions = {
 			CHI = {
 				CHI_state_recognize_start = yes
 			}
-
+			set_variable = {
+				name=wengedangqiansheng
+				value = -100
+			}
 		}
 	}
 }
