@@ -245,7 +245,7 @@ OR={
 				var:wengedangqiansheng = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
 				var:wengedangqiansheng = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui_baoshou } }
 }
-			var:wengedangqiansheng = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
+
 		}
 		localization_key = "革命委员会已建立"
 	}
