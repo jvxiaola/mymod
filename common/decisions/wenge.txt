@@ -4,11 +4,11 @@ CHI_faqihwb={
 		visible = {
 			has_country_flag = PROV_GUI_ZHONGGUO_TAIWAN_OPENED
 
-			598 = { NOT={has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }}
-			598 = { NOT={has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2} }}
-			598 = { NOT={has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }}
-			598 = { NOT={has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }}
-			598 = { NOT={has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }}
+			var:wengedangqiansheng = { NOT={has_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }}
+			var:wengedangqiansheng = { NOT={has_dynamic_modifier = { modifier = CHI_hongweibing_yundong2} }}
+			var:wengedangqiansheng = { NOT={has_dynamic_modifier = { modifier = CHI_hongweibing_yundong3 } }}
+			var:wengedangqiansheng = { NOT={has_dynamic_modifier = { modifier = CHI_hongweibing_yundong4 } }}
+			var:wengedangqiansheng = { NOT={has_dynamic_modifier = { modifier = CHI_hongweibing_yundong5 } }}
 			
 
 		}
@@ -21,7 +21,7 @@ CHI_faqihwb={
 		}
 		days_remove = 10
 		remove_effect = {
-			598 = { add_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }
+			var:wengedangqiansheng = { add_dynamic_modifier = { modifier = CHI_hongweibing_yundong } }
 		}
 		ai_will_do = {
 			factor = 1
