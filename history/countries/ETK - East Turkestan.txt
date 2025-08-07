@@ -91,6 +91,7 @@
 
 	recruit_character = ETK_hasan_mahsum
 	recruit_character = ETK_air_chief
+	recruit_character = HASAN_MAHSUM
 }
 2017.1.1 = {
 	set_technology = {
