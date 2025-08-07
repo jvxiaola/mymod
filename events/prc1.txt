@@ -1716,7 +1716,7 @@ country_event = {
 
 				country_event = { id = prc1.161 days = 3 }
 				CHI = { 
-					country_event = { id = CW_Diverse.6 days = 20 } 
+					country_event = { id = CHI_ER_BEFORE_xin.6 days = 20 } 
 					clr_country_flag = XIN_attacked
 					mark_focus_tree_layout_dirty = yes
 					add_ideas = patry_fenlie
@@ -2411,83 +2411,37 @@ division_template = {
 	}
 	}
 	
-	
-	
-				random_owned_controlled_state = {
-				prioritize = { 434 }
-				create_unit = {
-						name = "38th army"
-					division = "division_template = \"Zhuangjia Shi\" start_experience_factor = 1	start_equipment_factor = 1"
-					owner = CHI
-					prioritize_location = 9906
-				}
-				}
-				
-			
-							
+	random_owned_controlled_state = {
+		prioritize = { 434 }
+		create_unit = {
+			name = "38th army"
+			division = "division_template = \"Zhuangjia Shi\" start_experience_factor = 1	start_equipment_factor = 1"
+			owner = CHI
+			prioritize_location = 9906
+		}
+	}
 }		 
-
-	news_event = {
-			hours = 6
-			id = mdardchina_news.17
+	news_event = { id = mdardchina_news.17 }
+	HKG = { load_focus_tree = HKG_focus }
+	DSC = { country_event = {id = Chuanyu.1 days = 7} }
 		}
-
-HKG={
-load_focus_tree = HKG_focus
-}
-
-DSC={
-	country_event = {id=Chuanyu.1 days=7}
-
-}
-				
-			}
-		}
+	}
 	
-	option = { 
-
+	option = {
 		name = prc1.57.o1
-
-
-
-
-
+		custom_effect_tooltip = CHI_change_forward_cl_tt
 	}
 
-
-
-
-
-
-
-
-
-
-
-option = {
-
-	trigger={
-
-		has_country_flag = CHI_no_shanghaicommune
+	option = {
+		trigger = { has_country_flag = CHI_no_shanghaicommune }
+			name = prc1.57.o2
+			custom_effect_tooltip = CHI_change_forward_mao_tt
+			DSC = { change_tag_from = CHI }
 	}
-		name = prc1.57.o2
- 
-
-########################切换国家
-DSC={
-				change_tag_from = CHI
-}
-
-
-
-
-
-}
-option = {
-	trigger={
-
-		HKG={exists=yes}
-	}
+	option = {
+		trigger = {
+			HKG = {exists = yes}
+		}
 
 	name = prc1.57.o3
 

@@ -11,7 +11,7 @@ CHI_XIN_Terrorist_infiltration = {
 				limit = { all_owned_state = { NOT = { has_dynamic_modifier = { modifier = extrameal_islam_attack5 } } } }
 				random_owned_state = { extrameal_islam_leavel_up = yes }
 			}
-			else = { CHI = { country_event = { id = CW_Diverse.5 } } }
+			else = { CHI = { country_event = { id = CHI_ER_BEFORE_xin.5 } } }
 		}
 	}
 	activation = { 
@@ -48,7 +48,7 @@ CHI_Contact_to_attack_xin_terrist_KAZ = {
 	cost = 20
 	remove_effect = {
 		KAZ = {
-			country_event = { id = CW_Diverse.12 }
+			country_event = { id = CHI_ER_BEFORE_xin.12 }
 		}
 	}
 }
@@ -119,7 +119,7 @@ CHI_Contact_to_attack_xin_terrist_KYR  = {
 	cost = 20
 	remove_effect = {
 		KYR = {
-			country_event = { id = CW_Diverse.12 }
+			country_event = { id = CHI_ER_BEFORE_xin.12 }
 		}
 	}
 }
@@ -191,7 +191,7 @@ CHI_Contact_to_attack_xin_terrist_TAJ  = {
 	cost = 20
 	remove_effect = {
 		TAJ = {
-			country_event = { id = CW_Diverse.12 }
+			country_event = { id = CHI_ER_BEFORE_xin.12 }
 		}
 	}
 }
@@ -261,7 +261,7 @@ CHI_Contact_to_attack_xin_terrist_SOV = {
 	cost = 20
 	remove_effect = {
 		SOV = {
-			country_event = { id = CW_Diverse.12 }
+			country_event = { id = CHI_ER_BEFORE_xin.12 }
 		}
 	}
 }
@@ -653,7 +653,7 @@ CHI_Organize_antiterrorism_operations = {
 	days_remove = 5
 	days_re_enable = 2
 	remove_effect = {
-		country_event = { id = CW_Diverse.7 }
+		country_event = { id = CHI_ER_BEFORE_xin.7 }
 		XIN_anti_terrist_time_effect = yes
 	}
 	ai_will_do = {
