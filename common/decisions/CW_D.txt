@@ -1,5 +1,7 @@
 
-CW_D_category = { #边疆危机  
+CW_D_category = { 
+#边疆危机  
+#新疆
 #恐怖组织渗透
 CHI_XIN_Terrorist_infiltration = {
 	icon = GFX_decision_border_war
@@ -670,43 +672,24 @@ CHI_Organize_antiterrorism_operations = {
 
 
 
-
-
-
-
-
-
-
-
-
-
 CHI_pre_civ_decitions = {
 	CHI_anfuguanliao = {
 		icon = GFX_decision_generic_form_nation
-		available = {
-
-		}
-
+		available = {}
 		cost = 50
 		fire_only_once = no
-		visible = {
-	has_completed_focus = CHI_return_Twowhatever
-		}
+		visible = { has_completed_focus = CHI_return_Twowhatever }
 		days_re_enable =10
 		days_remove = 20
-		complete_effect = {
-
-
-		}
+		complete_effect = { }
 
 		remove_effect = {
 			add_to_variable = {
 				var = CHI_neizhanfengxian
 				value = -0.05
 			}
-
-			}
 		}
+	}
 
 		CHI_ysxtstxc = {
 			icon = GFX_decision_generic_form_nation

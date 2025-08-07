@@ -19,11 +19,10 @@ CHI_Civil_war_decisions = {
 }
 
 CHI_pre_civ_decitions = {
-	priority = {base=19999}
+	priority = { base = 19999 }
 	visible_when_empty = yes
 	visible = {
-		NOT={has_country_flag=neizhanzhihou}
-
+		NOT = { has_country_flag = neizhanzhihou }
 		has_country_flag = cjsl
 	}
 	
@@ -39,10 +38,7 @@ DSC_MAOPAIJUECE = {
 	}
 	visible_when_empty = yes
 	scripted_gui = DSC_CIV_GUI
-
-
-		icon = GFX_decision_CUB_train_chi
-
+	icon = GFX_decision_CUB_train_chi
 	visible = {
 
 		has_country_flag = gmxingdong
