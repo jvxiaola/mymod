@@ -59,5 +59,20 @@ leader_traits = {
 			factor = 1
 		}
 	}
-
+	#四川特质
+	Disaster_relief_heroes = { #抗灾英雄
+		random = no
+		political_power_factor = 0.05
+		stability_factor = 0.02
+		chuanyu_people_support_to_china_government_modifier = 0.01
+	}
+	military_engineer = { #军事工程师
+		random = no
+		production_speed_arms_factory_factor = 0.05
+		production_speed_anti_air_building_factor = 0.05
+		production_speed_radar_station_factor = 0.05
+		production_speed_supply_node_factor = 0.10
+		production_speed_rail_way_factor = 0.10
+		industrial_capacity_factory = 0.10
+	}
 }

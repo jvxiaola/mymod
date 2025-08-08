@@ -13,3 +13,6 @@
  hasty_deployment: "§R紧急动员§!"
  hero_counterattack_Vietnam: "\n£GFX_in_the_war [VIE.GetFlag]对越自卫反击功臣"
  anti_food_hero: "\n£GFX_SER_Neutral_Communism 抗洪英雄"
+ Mao_Yuanxin_desc: "§R毛远新§!,1941年2月14日生于新疆省迪化，祖籍湖南省湘潭县。毛泽东弟弟毛泽民与中共地下党员朱旦华之子，即§R毛泽东§!的侄儿,1960年以志愿书及准考证化名李实考入清华大学无线电系,后转学入哈尔滨军事工程学院导弹工程系雷达专业,1964年冬随全体毕业生去农村参与“四清”运动\n1966年组织“红色造反团”，并迅速壮大为§R“黑龙江省红色造反者革命委员会”§!。/n1968年5月任辽宁省革命委员会副主任，又任沈阳军区政治部副主任、军区政委。组织“海城大地震”避震转移\n1976年10月被§g“保护审查”§!,1993年10月刑满释放,于上海汽车工业质量检测研究所工作。"
+ Disaster_relief_heroes: "\n£GFX_SER_Neutral_Communism 救灾英雄"
+ military_engineer: "\n£construction_speed_texticon 军事工程师"
