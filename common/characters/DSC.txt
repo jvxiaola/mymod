@@ -1,22 +1,27 @@
 characters = {
 
 	#2000 Army Chiefs
-	DSC_Mao_Yuanxin = {
-		name = "毛远新"
-		portraits = {
-			army = {
-				small = "gfx/leaders/DSC/small/Mao_Yuanxin_small.dds"
-				large = "gfx/leaders/DSC/Mao_Yuanxin.dds"
-			}
-		}
-		corps_commander = {
-			traits = {}
-			skill = 3
-			attack_skill = 2
-			defense_skill = 4
-			planning_skill = 3
-			logistics_skill = 2
-		}
-	}
 
+
+    DSC_Mao_Yuanxin = {
+        name = "毛远新"
+        visible = { always = yes }
+        portraits = {
+            army = {
+                small = "gfx/leaders/DSC/small/Mao_Yuanxin_small.dds"
+                large = "gfx/leaders/DSC/Mao_Yuanxin.dds"
+            }
+        }
+        corps_commander = {
+            skill = 3
+            attack_skill = 2
+            defense_skill = 4
+            planning_skill = 3
+            logistics_skill = 2
+            traits = {}
+        }
+    }
+
+
+	
 }

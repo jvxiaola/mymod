@@ -1,5 +1,22 @@
 
 add_namespace = chuanyu
+namespace = chuanyu
+
+country_event = {
+    id = chuanyu.11111
+    title = "测试强制生成毛远新"
+    desc = "用 create_corps_commander 确保将领生成"
+    picture = GFX_report_event_generic
+
+    trigger = {
+        tag = DSC
+    }
+
+    option = {
+        name = "生成毛远新"
+        create_corps_commander = DSC_Mao_Yuanxin
+    }
+}
 
 
 country_event = {
@@ -1053,6 +1070,7 @@ set_country_flag = neizhanzhong
 			set_variable = { party_pop_array^5 = 0.40 } #social_democracy	
 			startup_politics = yes
 			set_country_flag = qygc		
+			        create_corps_commander = DSC_Mao_Yuanxin
 
 			add_ideas = bcjzdjd
 add_ideas = junfazuofeng1
