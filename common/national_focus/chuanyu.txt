@@ -2375,12 +2375,7 @@ completion_reward = {
 		completion_reward = {
 			custom_effect_tooltip = Joint_production_system_tt
 			CHI = {
-				create_country_leader = {
-					name = "毛远新"
-					picture = "Mao_Yuanxin.dds"
-					ideology = Chinese_Socialism_mao
-					traits = {}
-				}
+				promote_character = Mao_Yuanxin
 				start_politics_input = yes
 				set_popularities = {
 					democratic = 0.0

@@ -1,6 +1,8 @@
 ﻿capital = 547
 2000.1.1 = {
-
+#永革角色
+	recruit_character = Mao_Yuanxin
+	
 	set_country_flag = CHI_revisionism
 
 	clamp_variable  = {
@@ -15,7 +17,6 @@
 		max = 1
 	}
 	set_variable = { CPC_Dengist = 0.4 }
-		
 	clamp_variable  = {
 		var = CPC_Right
 		min = 0
@@ -28,8 +29,6 @@
 		max = 1
 	}
 	
-
-
 	set_variable = { zhongxiguanxi = 75 }
 	set_cosmetic_tag = CHI_AUTH_S
 	set_country_flag = dynamic_flag

@@ -202,27 +202,9 @@ set_variable = { DSC_Socialist_Construction_dynamic1 = -0.10}
 
 	### Ruling Party
 	add_to_array = { ruling_party = 22 }
-
-
-
-
-
-	
-
-
-
 	startup_politics = yes
-
-
-	create_country_leader = {
-		name = "川渝军政府"
-		picture = "NpcC.dds"
-		expire = "2222.1.1"
-		ideology = Nat_Autocracy
-		traits = {
-
-		}
-	}
+	recruit_character = Mao_Yuanxin
+	recruit_character = Sc_Cq_M_G
 
 }
 
