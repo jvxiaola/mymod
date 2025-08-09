@@ -1,23 +1,4 @@
-
 add_namespace = chuanyu
-namespace = chuanyu
-
-country_event = {
-    id = chuanyu.11111
-    title = "测试强制生成毛远新"
-    desc = "用 create_corps_commander 确保将领生成"
-    picture = GFX_report_event_generic
-
-    trigger = {
-        tag = DSC
-    }
-
-    option = {
-        name = "生成毛远新"
-        create_corps_commander = DSC_Mao_Yuanxin
-    }
-}
-
 
 country_event = {
 	id = Chuanyu.1
@@ -1046,14 +1027,7 @@ Militia_Bat = { x = 1 y = 3 }
 			}
 
 			set_cosmetic_tag = DSC_GMQ
-set_country_flag = neizhanzhong
-			create_country_leader = {
-				name = "毛远新"
-				picture = "Mao_Yuanxin.dds"
-				ideology = Chinese_Socialism_mao
-				traits = {
-						}
-				}
+			set_country_flag = neizhanzhong
 			start_politics_input = yes
 			set_popularities = {
 				democratic = 0.0
@@ -1066,15 +1040,14 @@ set_country_flag = neizhanzhong
 				ruling_party = communism
 				elections_allowed = no
 			}
-			add_to_array = { ruling_party = 5 } #social_democracy								
-			set_variable = { party_pop_array^5 = 0.40 } #social_democracy	
+			add_to_array = { ruling_party = 4 } #共产主义								
+			set_variable = { party_pop_array^4 = 0.40 } #共产主义	
 			startup_politics = yes
 			set_country_flag = qygc		
-			        create_corps_commander = DSC_Mao_Yuanxin
 
 			add_ideas = bcjzdjd
-add_ideas = junfazuofeng1
-add_ideas = junxingbuwen1
+			add_ideas = junfazuofeng1
+			add_ideas = junxingbuwen1
 
 set_country_flag = manual_civil_war_debuff_removal
 remove_ideas = civil_war_disorganised_military_1

@@ -37,8 +37,22 @@ characters = {
             defense_skill = 4
             planning_skill = 3
             logistics_skill = 2
-            traits = { }
+            traits = { trait_engineer }
         }
+        advisor = {
+			slot = army_chief
+			idea_token = Mao_Yuanxin
+			traits = {
+				army_chief_morale_3
+			}
+            available = {
+                is_in_array = { ruling_party = 4 }
+            }
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
     }
 
 
