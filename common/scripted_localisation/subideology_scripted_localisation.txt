@@ -10908,7 +10908,7 @@ defined_text = {
 	text = { trigger = { original_tag = ZAM } localization_key = ZAM.anarchist_communism }
 	text = { trigger = { original_tag = ZIM } localization_key = ZIM.anarchist_communism }
 
-	text = { trigger = { original_tag = DSC } localization_key = DSC.anarchist_communism }
+	text = { trigger = { original_tag = DSC } localization_key = DSC.Communist-State }
 
 
 
@@ -13447,7 +13447,7 @@ defined_text = {
 	text = { trigger = { original_tag = WAG } localization_key = SOV.Nat_Autocracy_wagner_desc }
 	text = { trigger = { original_tag = ZAM } localization_key = ZAM.anarchist_communism_desc }
 
-	text = { trigger = { original_tag = DSC } localization_key = DSC.anarchist_communism_desc }
+	text = { trigger = { original_tag = DSC } localization_key = DSC.Communist-State_desc }
 
 
 	text = { localization_key = generic.anarchist_communism_desc }
@@ -15347,7 +15347,7 @@ defined_text = {
 	text = { trigger = { original_tag = YAM date > 2006.1.1 } localization_key = YAM.anarchist_communism_1_icon }
 	text = { trigger = { original_tag = ZIM } localization_key = ZIM.anarchist_communism_icon }
 
-	text = { trigger = { original_tag = DSC } localization_key = DSC.anarchist_communism_icon }
+	text = { trigger = { original_tag = DSC } localization_key = DSC.Communist-State_icon }
 
 	text = { localization_key = generic.anarchist_communism_icon }
 }
