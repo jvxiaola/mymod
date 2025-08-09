@@ -1,0 +1,33 @@
+﻿l_simp_chinese:
+#四川
+ DSC.Nat_Autocracy: "£CHI_military_junta 人民解放军"
+ DSC.Nat_Autocracy_icon: "£CHI_military_junta"
+ DSC.Nat_Autocracy_desc: "军政府 - 人民解放军成立于1927年南昌起义。它是中华人民共和国及其创始政党的武装部队。"
+ DSC.anarchist_communism: "£CHI_neutral_communism 中国共产主义党"
+ DSC.anarchist_communism_icon: "£CHI_neutral_communism"
+ DSC.anarchist_communism_desc: "共产主义 - 中国共产主义党是中华人民共和国的一个地下毛主义的共产党，力图进行社会主义革命"
+#新疆
+ XIN.Nat_Autocracy: "£CHI_military_junta §R中国人民解放军§! - 新疆军区"
+ XIN.Nat_Autocracy_icon: "£CHI_military_junta"
+ XIN.Nat_Autocracy_desc: "§Y临时军区政府§! - 中国人民解放军在新疆的历史沿革可以追溯至上世纪40年代“三区革命”中的新疆民族军，解放后成为第一支解放军在疆改编部队。由于新疆在中国特殊的政治，文化，产业及战略地位，新疆军区也与其它军区有着相当独特的区别，如著名的“新疆生产建设兵团”。\n处在对抗极端伊斯兰恐怖主义的第一线，新疆军区的人民解放军为维护中国西部和平稳定——乃至全中亚的长治久安做出了重大贡献。"
+ XIN_MR: "£CHI_military_junta §R中国人民解放军§!军区"
+ XIN_MR_desc: "§Y临时军区政府§! - 中国人民解放军在新疆的历史沿革可以追溯至上世纪40年代“三区革命”中的新疆民族军，解放后成为第一支解放军在疆改编部队。由于新疆在中国特殊的政治，文化，产业及战略地位，新疆军区也与其它军区有着相当独特的区别，如著名的“新疆生产建设兵团”。\n处在对抗极端伊斯兰恐怖主义的第一线，新疆军区的人民解放军为维护中国西部和平稳定——乃至全中亚的长治久安做出了重大贡献。"
+ XIN.Communist-State: "£CHI_communism 中国共产党 - §R毛主义§! "
+ XIN.Communist-State_icon: "£CHI_communism"
+ XIN.Conservative: "£CHI_communism 中国共产党 - §1改革派§! "
+ XIN.Conservative_icon: "£CHI_communism"
+#新疆
+ PRG_the_military: "广州军管区-解放军军官"
+ PRG.Nat_Autocracy: "£CHI_military_junta §R中国人民解放军§! - 广州军区"
+ PRG.Nat_Autocracy_icon: "£CHI_military_junta"
+ PRG.Communist-State: "£CHI_communism 中国共产党 - §R毛主义§! "
+ PRG.Communist-State_icon: "£CHI_communism"
+ PRG.Conservative: "£CHI_communism 中国共产党 - §1改革派§! "
+ PRG.Conservative_icon: "£CHI_communism"
+
+ PCP.Communist-State: "£PRU_non_aligned_communism 秘鲁共产党（毛派）"
+ PCP.Communist-State_icon: "£PRU_non_aligned_communism"
+ PCP.Communist-State_desc: "共产主义 - 马列毛派"
+
+
+

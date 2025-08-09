@@ -8464,36 +8464,6 @@
  SOV.neutral_Social_1_desc: "（进步自由主义）新人\n\n新人党是由商人兼法布里克公司创始人阿列克谢·涅恰耶夫创建的政党。该党提倡市场改革、言论自由、公共管理数字化，并支持电子民主理念"
  SOV.Neutral_Muslim_Brotherhood_desc: "（穆斯林行动主义）俄罗斯穆斯林全国组织\n\n俄罗斯穆斯林是一个宗教组织，旨在代表信奉伊斯兰教的俄罗斯族人的利益。他们还倡导在俄罗斯人和其他土著民族中和平传播伊斯兰教及其价值观"
 
-
-
-
-
-
-
-
-
-
-
- DSC.Nat_Autocracy: "£CHI_military_junta 人民解放军"
- DSC.Nat_Autocracy_icon: "£CHI_military_junta"
- DSC.Nat_Autocracy_desc: "军政府 - 人民解放军成立于1927年南昌起义。它是中华人民共和国及其创始政党的武装部队。"
-
-
-
- DSC.anarchist_communism: "£CHI_neutral_communism 中国共产主义党"
- DSC.anarchist_communism_icon: "£CHI_neutral_communism"
- DSC.anarchist_communism_desc: "共产主义 - 中国共产主义党是中华人民共和国的一个地下反修正主义的共产党。他们力图进行社会主义革命"
-
-
-
- PCP.Communist-State: "£PRU_non_aligned_communism 秘鲁共产党（毛派）"
- PCP.Communist-State_icon: "£PRU_non_aligned_communism"
- PCP.Communist-State_desc: "共产主义 - 马列毛派"
-
-
-
-
-
  num_partypos_1_0: "[?party_pop_array^0|%1]"
  num_partypos_1_1: "[?party_pop_array^1|%1]"
  num_partypos_1_2: "[?party_pop_array^2|%1]"
