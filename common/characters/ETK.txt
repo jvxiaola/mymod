@@ -12,6 +12,7 @@ HASAN_MAHSUM = {
 			ideology = Caliphate
 			traits = { Non_governmental_riots WESTERN_freedom_fighter }
 			desc = HASAN_MAHSUM_desc
+			expire = "2100.1.1.1"
 		}
 	}
 }
