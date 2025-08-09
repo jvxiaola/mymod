@@ -5,7 +5,7 @@
  DSC.Nat_Autocracy_desc: "军政府 - 人民解放军成立于1927年南昌起义。它是中华人民共和国及其创始政党的武装部队。"
  DSC.Communist-State: "£CHI_neutral_communism 中国共产主义党"
  DSC.Communist-State_icon: "£CHI_neutral_communism"
- DSC.Communist-State_desc: "共产主义 - 中国共产主义党是中华人民共和国的一个地下毛主义的共产党，力图进行社会主义革命"
+ DSC.Communist-State_desc: "§R毛泽东思想§! - 中国共产主义党是中华人民共和国§R民间毛主义§!共产党，力图进行社会主义革命"
 #新疆
  XIN.Nat_Autocracy: "£CHI_military_junta §R中国人民解放军§! - 新疆军区"
  XIN.Nat_Autocracy_icon: "£CHI_military_junta"

@@ -1024,7 +1024,6 @@ Militia_Bat = { x = 1 y = 3 }
 			set_cosmetic_tag = DSC_GMQ
 			set_country_flag = neizhanzhong
 			start_politics_input = yes
-			promote_character = Mao_Yuanxin
 			set_popularities = {
 				democratic = 0.0
 				communism = 100

@@ -2374,53 +2374,51 @@ completion_reward = {
 
 		completion_reward = {
 			custom_effect_tooltip = Joint_production_system_tt
-			CHI = {
-				promote_character = Mao_Yuanxin
-				start_politics_input = yes
-				set_popularities = {
-					democratic = 0.0
-					communism = 100
-					fascism = 0.0
-					neutrality = 0.0
-					nationalist = 0.0
-				}
-				set_politics = {
-					ruling_party = communism
-					elections_allowed = no
-				}         
-				add_to_array = { ruling_party = 4 } #social_democracy								
-				set_variable = { party_pop_array^4 = 0.40 } #social_democracy	
-				startup_politics = yes
-				#独立性继承
-				recalculate_influence = yes
-				set_variable = { CHI.domestic_influence_amount = DSC.domestic_influence_amount }
-				set_variable = { CHI.influence_total = DSC.influence_total }
-				set_variable = { CHI.new_influence_scalar = DSC.new_influence_scalar }
-				for_each_loop = {
-					array = influence_array_val
-					value = v
-					index = i
-					set_variable = { CHI.influence_array_val^i = DSC.influence_array_val^i }
-					clamp_variable = { var = influence_array_val^i max = 100 min = 0 }
-				}
-				startup_influence = yes
-				#债务继承
-				set_variable = { var = CHI.debt value = DSC.debt }
-				set_variable = { var = CHI.int_investments value = DSC.int_investments }
-				set_variable = { var = CHI.treasury value = DSC.treasury }
-				set_variable = { var = CHI.corporate_tax_rate value = DSC.corporate_tax_rate }
-				set_variable = { var = CHI.population_tax_rate value = DSC.population_tax_rate }
-			}
-			add_ideas = Joint_production_system
-			increase_economic_growth = yes
-			#add_research_slot = 2
 			hidden_effect = {
+				CHI = {
+					Mao_Yuanxin = { set_nationality = CHI }
+					promote_character = Mao_Yuanxin
+					start_politics_input = yes
+					set_popularities = {
+						democratic = 0.0
+						communism = 100
+						fascism = 0.0
+						neutrality = 0.0
+						nationalist = 0.0
+					}
+					set_politics = {
+						ruling_party = communism
+						elections_allowed = no
+					}         
+					add_to_array = { ruling_party = 4 } #social_democracy								
+					set_variable = { party_pop_array^4 = 0.40 } #social_democracy	
+					startup_politics = yes
+					#独立性继承
+					recalculate_influence = yes
+					set_variable = { CHI.domestic_influence_amount = DSC.domestic_influence_amount }
+					set_variable = { CHI.influence_total = DSC.influence_total }
+					set_variable = { CHI.new_influence_scalar = DSC.new_influence_scalar }
+					for_each_loop = {
+						array = influence_array_val
+						value = v
+						index = i
+						set_variable = { CHI.influence_array_val^i = DSC.influence_array_val^i }
+						clamp_variable = { var = influence_array_val^i max = 100 min = 0 }
+					}
+					startup_influence = yes
+					#债务继承
+					set_variable = { var = CHI.debt value = DSC.debt }
+					set_variable = { var = CHI.int_investments value = DSC.int_investments }
+					set_variable = { var = CHI.treasury value = DSC.treasury }
+					set_variable = { var = CHI.corporate_tax_rate value = DSC.corporate_tax_rate }
+					set_variable = { var = CHI.population_tax_rate value = DSC.population_tax_rate }
+				}
+				add_ideas = Joint_production_system
+				increase_economic_growth = yes
 				remove_ideas = CHI_economic_recovery_end
 				remove_ideas = Agricultural_restructuring_end
 				remove_ideas = Industrial_rebuild_end
 				clr_country_flag = rehabilitate_economy
-			}
-
 			CHI = { 
 				transfer_state = 526 
 				clr_country_flag = party5_banned
@@ -2429,7 +2427,9 @@ completion_reward = {
 			every_state = {
 				limit = { is_core_of = DSC }
 				add_core_of = CHI
-			}		
+			}
+			add_research_slot = 1
+			}
 		}
 
 	}
