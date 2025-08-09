@@ -23,6 +23,7 @@
  CHI_military_region_XIN: "£CHI_military_junta 新疆军区政府"
  PRG_communist_cadres: "军管区政委"
  PRG_industrial_conglomerates: "国家资源委员会 - 广州区"
+ PRG_the_military: "广州军管区-解放军军官"
 #focus、决议
  XIN_troubled_times: "§R多事之秋§!"
  XIN_troubled_times_desc: "自党内§t老左派§!影响力逐渐增强以来，三种不同观点的分歧便逐渐扩大。内部的激烈矛盾掩盖了边疆地区的问题，直到乌鲁木齐遭受恐怖袭击。\n不管怎样，中央必须做些什么来度过这段困难时间。"
@@ -225,6 +226,5 @@
  CHI_ER_BEFORE_guang.05.a: "“已经不能再等了，派驻军队进行戒严！”"
  CHI_ER_BEFORE_guang.06: "《£CHI_military_junta 中央军委关于设立广东戒严军管区的决议》"
  CHI_ER_BEFORE_guang.06.t: "《£CHI_military_junta 中央军委关于设立广东戒严军管区的决议》"
-#下岗工人、失地农民有参与罢工、游行。
  CHI_ER_BEFORE_guang.06.d: "   ---机密文件---    \n[GetDate]\n£CHI_military_junta 中华人民解放军中央军委、中央政治局:鉴于珠江地区罢工潮愈演愈烈，有向广东全省扩散的趋势，同时考虑到广东省特殊位置，以及近期军队私自与企业串联行为，可能有境外势力参与其中。为保障地区稳定、人民安全，现决定对广东全省进行军管戒严，增派部队并采取宵禁措施，严格禁止群众非法集会、串联。"
  CHI_ER_BEFORE_guang.06.a: "“改革开放的心脏，如今将停止跳动”"
