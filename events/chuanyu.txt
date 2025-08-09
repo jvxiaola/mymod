@@ -162,28 +162,13 @@ set_capital = {
 	state = 1218
 }
 			start_civil_war = {
-
-
-
 					ideology = communism
 					size = DSC_rmjd_renyuan
-
 					states = all
-
-
 					states_filter = {
-							NOT = { state=1218 }
-
+						NOT = { state = 1218 }
 						}
-
-
-				
-
-			
-		
-		
-
-	set_cosmetic_tag = DSC_JGQ
+					set_cosmetic_tag = DSC_JGQ
 
 	set_popularities = {
 		democratic = 0.0
@@ -227,21 +212,8 @@ set_capital = {
 
 	### Ruling Party
 	add_to_array = { ruling_party = 22 }
-
-
-
-
 #最新更新
-	
-
-
-
-
-
-
 startup_politics = yes
-
-
 create_country_leader = {
 	name = "川渝军政府"
 	picture = "NpcC.dds"
@@ -278,20 +250,15 @@ Militia_Bat = { x = 1 y = 3 }
 	}
 
 
-	if={
-		limit={
+	if = {
+		limit = {
 			check_variable = {
 				var = DSC_zhucheng_shengtou
 				value = 3
 				compare = equals
 			}
-
-			
-		
-		
 		}
-		DSC={
-
+		DSC = {
 			transfer_state = 583
 		}
 
@@ -653,37 +620,19 @@ Militia_Bat = { x = 1 y = 3 }
 
 		}
 		#标记
-
-
 	}
-
-
-
-	else_if={
-		limit={
-
+	else_if = {
+		limit = {
 			check_variable = {
 				var = DSC_dongsichuan_shengtou
 				value = 2
 				compare = equals
 			}
-
-
-		
 		}
-
-
-
 		#标记
-
-
-
 		DSC={
 			transfer_state = 586
 		}
-
-
-
 		random_owned_controlled_state = {
 			prioritize = { 586}
 			create_unit = {
@@ -707,15 +656,8 @@ Militia_Bat = { x = 1 y = 3 }
 				has_cosmetic_tag = DSC_JGQ
 			}
 			transfer_state = 586
-
 		}
-
-
 	}
-
-
-
-
 	else_if={
 		limit={
 			check_variable = {
@@ -725,13 +667,9 @@ Militia_Bat = { x = 1 y = 3 }
 			}	
 		}
 		#标记
-
-		DSC={
+		DSC = {
 			transfer_state = 586
 		}
-
-
-
 		random_owned_controlled_state = {
 			prioritize = { 586}
 			create_unit = {
@@ -769,11 +707,9 @@ Militia_Bat = { x = 1 y = 3 }
 		}
 
 
-		DSC={
+		DSC = {
 			transfer_state = 585
 		}
-
-
 
 		random_owned_controlled_state = {
 			prioritize = { 585}
@@ -799,12 +735,10 @@ Militia_Bat = { x = 1 y = 3 }
 
 		}
 		random_country = {
-			limit={
+			limit = {
 				has_cosmetic_tag = DSC_JGQ
 			}
-
 			transfer_state = 585
-
 		}
 		#标记
 
@@ -813,31 +747,18 @@ Militia_Bat = { x = 1 y = 3 }
 
 
 
-	else_if={
-		limit={
-
+	else_if = {
+		limit = {
 			check_variable = {
 				var = DSC_xisichuan_shengtou
 				value = 2
 				compare = equals
 			}
-
-
-		
 		}
-
-
-
 		#标记
-
-
-
-		DSC={
+		DSC = {
 			transfer_state = 585
 		}
-
-
-
 		random_owned_controlled_state = {
 			prioritize = { 585}
 			create_unit = {
@@ -861,15 +782,8 @@ Militia_Bat = { x = 1 y = 3 }
 				has_cosmetic_tag = DSC_JGQ
 			}
 			transfer_state = 585
-
 		}
-
-
 	}
-
-
-
-
 	else_if={
 		limit={
 			check_variable = {
@@ -882,31 +796,23 @@ Militia_Bat = { x = 1 y = 3 }
 		DSC={
 			transfer_state = 585
 		}
-
-
-
 		random_owned_controlled_state = {
-			prioritize = { 585}
+			prioritize = { 585 }
 			create_unit = {
 				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 1918
 			}
-
 			create_unit = {
 				division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 4999
 			}
-	
-
 		}
 		random_country = {
-			limit={
+			limit = {
 				has_cosmetic_tag = DSC_JGQ
 			}
 			transfer_state = 585
-
 		}
-
 	}
 
 
@@ -957,7 +863,6 @@ Militia_Bat = { x = 1 y = 3 }
 				}
 	
 		}
-		
 		random_owned_controlled_state = {
 			prioritize = { 1218 }
 			create_unit = {
@@ -973,26 +878,21 @@ Militia_Bat = { x = 1 y = 3 }
 				prioritize_location = 11865
 			}
 		}
-	
-
-	
 	}
 	else_if = {
 		limit = { 
-			
 			check_variable = {
 				var = DSC_wanzhou_shengtou
 				value = 3
 				compare = equals
 			}
-	
-	
 	}
 	
 	random_owned_controlled_state = {
 		prioritize = { 1218 }
 		create_unit = {
-			division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+			division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					
+			owner = DSC
 			prioritize_location = 11865
 		}
 		create_unit = {
@@ -1007,22 +907,17 @@ Militia_Bat = { x = 1 y = 3 }
 			division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 			prioritize_location = 11865
 		}
-	
 	}
-
-
 
 }
 			remove_ideas = CHI_GGKF
 			remove_ideas = CHI_Socialist_Market_Economy
-			remove_dynamic_modifier = {
-			modifier = DSC_people_support_dynamic_right
-			}
-			add_dynamic_modifier = {
-				modifier = DSC_people_support_dynamic_left
-			}
+			remove_dynamic_modifier = { modifier = DSC_people_support_dynamic_right }
+			add_dynamic_modifier = { modifier = DSC_people_support_dynamic_left }
 			set_cosmetic_tag = DSC_GMQ
 			set_country_flag = neizhanzhong
+			Mao_Yuanxin = { set_nationality = DSC }
+			promote_character = Mao_Yuanxin
 			start_politics_input = yes
 			set_popularities = {
 				democratic = 0.0
