@@ -1013,28 +1013,18 @@ Militia_Bat = { x = 1 y = 3 }
 
 
 }
-
-
-
 			remove_ideas = CHI_GGKF
 			remove_ideas = CHI_Socialist_Market_Economy
 			remove_dynamic_modifier = {
 			modifier = DSC_people_support_dynamic_right
 			}
-
 			add_dynamic_modifier = {
 				modifier = DSC_people_support_dynamic_left
 			}
-
 			set_cosmetic_tag = DSC_GMQ
-
-
-
 			set_country_flag = neizhanzhong
 			start_politics_input = yes
-
-
-	recruit_character = Mao_Yuanxin
+			promote_character = Mao_Yuanxin
 			set_popularities = {
 				democratic = 0.0
 				communism = 100
