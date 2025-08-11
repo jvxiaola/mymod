@@ -1,0 +1,152 @@
+CHI_Civil_war_decisions = {
+	priority = { base = 1000 }
+	allowed = { 
+		OR = { 
+			original_tag = CHI 
+			tag = DSC
+			tag = HKG
+	}
+}
+		icon = GFX_decision_CUB_train_chi
+
+	visible = {
+		OR = { 
+			original_tag = CHI 
+			tag = DSC
+			tag = HKG
+		}
+	}
+}
+
+CHI_pre_civ_decitions = {
+	priority = { base = 19999 }
+	visible_when_empty = yes
+	visible = {
+		NOT = { has_country_flag = neizhanzhihou }
+		has_country_flag = cjsl
+	}
+	
+}
+
+
+
+
+DSC_MAOPAIJUECE = {
+	priority = { base = 1000 }
+	allowed = { 
+
+	}
+	visible_when_empty = yes
+	scripted_gui = DSC_CIV_GUI
+	icon = GFX_decision_CUB_train_chi
+	visible = {
+
+		has_country_flag = gmxingdong
+	}
+}
+
+
+DSC_zuzhimaopai = {
+	priority = { base = 2000 }
+	allowed = { 
+
+	}
+
+
+
+		icon = GFX_decision_CUB_train_chi
+
+	visible = {
+
+		has_country_flag = zuzhimaopai
+	}
+}
+
+
+CHI_CR_decisions = {
+
+	priority =  { base = 1999 }
+	visible_when_empty = yes
+	scripted_gui = CHI_CR_GUI
+	visible = {
+
+	has_country_flag = jixuwenge
+
+
+
+	}
+}
+
+China_erp_category = {
+	allowed = { 
+		OR = { 
+			original_tag = CHI 
+			tag = DSC
+			tag = HKG
+	}
+}
+		icon = GFX_decision_CUB_train_chi
+
+	visible = {
+		OR = { 
+			original_tag = CHI 
+			tag = DSC
+			tag = HKG
+		}
+	}
+}
+
+China_irp_category = {
+	allowed = { 
+		OR = { 
+			original_tag = CHI 
+			tag = DSC
+			tag = HKG
+	}
+}
+		icon = GFX_decision_CUB_train_chi
+
+	visible = {
+		OR = { 
+			original_tag = CHI 
+			tag = DSC
+			tag = HKG
+		}
+	}
+}
+
+China_arp_category = {
+	allowed = { 
+		OR = { 
+			original_tag = CHI 
+			tag = DSC
+			tag = HkG
+	}
+}
+		icon = GFX_decision_CUB_train_chi
+
+	visible = {
+		OR = { 
+			original_tag = CHI 
+			tag = DSC
+			tag = HkG
+		}
+	}
+}
+
+
+CW_D_category = {
+	allowed = { 
+		original_tag = CHI 
+	}
+	priority = { base = 30000 }
+	icon = GFX_decision_CUB_train_chi
+	visible_when_empty = yes
+	scripted_gui = CISC_main_GUI
+	visible = {
+		original_tag = CHI 
+		has_country_flag = XIN_attacked
+	}
+}
+
+

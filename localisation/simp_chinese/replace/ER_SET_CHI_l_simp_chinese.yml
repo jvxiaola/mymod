@@ -1,0 +1,135 @@
+﻿l_simp_chinese:
+#精神及游玩提示
+ CHI_change_forward_tt: "§R倘若在会议召开的一段时间内某些派系的党内支持率过高，则会带来严重后果！§!"
+ CHI_change_forward_mao_tt: "选择此项以在内战中游玩§R川渝毛派路线（部分完成）§!"
+ CHI_change_forward_cl_tt: "选择此项以在内战中游玩§t老左派/左翼统一战线§!路线§!（未完成）"
+ CHINESE_agricultural_tax: "§g农业税§!"
+ CHINESE_agricultural_tax_desc: "作为后发§G新兴国家§!，我国既没有§g殖民地§!以提供工业化资金，也无法在§g制裁中§!缓步实现工业化；因而在前三十年采用“剪刀差”的方式用农业补贴工业是一项基本国策。\n可在“改革开放”，原有的§R“大锅饭”§!式社会福利与§O“统购统销”§!以提高农民收入等政策也成为隐性“不正确”....\n农民的未来究竟如何？工业与农业能否实现“和解”？§R只有天知道。§!"
+ CHI_not_nongyesui_tt: "每1000万人额外收入$$§G0.1B§!"
+ CHINESE_agricultural_tax_tte: "$$[?additional_income_CHINESE_agricultural_tax|+3]来自§Y$CHINESE_agricultural_tax$§!\n"
+ harsh_working_en_of_CHI: "§g“廉价劳动力”§!"
+ harsh_working_en_of_CHI_desc: "改革开放以来，我国农村流出大量青壮年劳动力到§C东南沿海城市§!（即农民工），农民工居无定所，缺少各类§G社会福利§!与§C医疗保险§!，§O劳动时间§!通常达到§R10小时§!左右，甚至大于12小时，所得薪资§g仅能饱腹§!。\n 虽然这严重影响了§G政府声誉§!，但大量涌入市场的廉价劳动力也促使§B各国投资§!纷纷到来。"
+ Militarical_economy_remain1: "§g军队有偿服务§!影响：§R极度广泛§!"
+ Militarical_economy_remain2: "§g军队经商§!影响：§O较为广泛§!"
+ Militarical_economy_remain3: "§g军队经商§!影响：§Y一般影响§!"
+ Militarical_economy_remain4: "§g军队经商§!影响：§C部分影响§!"
+ Militarical_economy_remain5: "§g军队经商§!影响：§G微小影响§!"
+ Militarical_economy_remain1_desc: "§g军队经商政策§!是1985年为响应§0“以经济建设为中心”§!而采取的军队政策，该政策造成了一系列§R恶劣影响§!,并由§C江泽民§!同志于1998年明令禁止\n然而由于§C80-90年代§!我国对军队权力的一系列改革措施，禁止军队经商的政策在中央与地方都受到§R极大阻力§!，难以推行。以至于到今天仍有不少与军队关系“不清不楚”的企业享受§g“灰色优待”§!"
+ Militarical_economy_remain2_desc: "§g军队经商政策§!是1985年为响应§0“以经济建设为中心”§!而采取的军队政策，该政策造成了一系列§R恶劣影响§!,并由§C江泽民§!同志于1998年明令禁止\n然而由于§C80-90年代§!我国对军队权力的一系列改革措施，禁止军队经商的政策在中央与地方都受到§R极大阻力§!，难以推行。以至于到今天仍有不少与军队关系“不清不楚”的企业享受§g“灰色优待”§!"
+ Militarical_economy_remain3_desc: "§g军队经商政策§!是1985年为响应§0“以经济建设为中心”§!而采取的军队政策，该政策造成了一系列§R恶劣影响§!,并由§C江泽民§!同志于1998年明令禁止\n然而由于§C80-90年代§!我国对军队权力的一系列改革措施，禁止军队经商的政策在中央与地方都受到§R极大阻力§!，难以推行。以至于到今天仍有不少与军队关系“不清不楚”的企业享受§g“灰色优待”§!"
+ Militarical_economy_remain4_desc: "§g军队经商政策§!是1985年为响应§0“以经济建设为中心”§!而采取的军队政策，该政策造成了一系列§R恶劣影响§!,并由§C江泽民§!同志于1998年明令禁止\n然而由于§C80-90年代§!我国对军队权力的一系列改革措施，禁止军队经商的政策在中央与地方都受到§R极大阻力§!，难以推行。以至于到今天仍有不少与军队关系“不清不楚”的企业享受§g“灰色优待”§!"
+ Militarical_economy_remain5_desc: "§g军队经商政策§!是1985年为响应§0“以经济建设为中心”§!而采取的军队政策，该政策造成了一系列§R恶劣影响§!,并由§C江泽民§!同志于1998年明令禁止\n然而由于§C80-90年代§!我国对军队权力的一系列改革措施，禁止军队经商的政策在中央与地方都受到§R极大阻力§!，难以推行。以至于到今天仍有不少与军队关系“不清不楚”的企业享受§g“灰色优待”§!"
+ CHI_overproduction1: "§R相对生产过剩§!状况：§R极度严重§!"
+ CHI_overproduction2: "§R相对生产过剩§!状况：§O较为严重§!"
+ CHI_overproduction3: "§R相对生产过剩§!状况：§Y不容乐观§!"
+ CHI_overproduction4: "§R相对生产过剩§!状况：§C稍有好转§!"
+ CHI_overproduction5: "§R相对生产过剩§!状况：§G仍有影响§!"
+ CHI_overproduction1_desc: "§C2000年代初期§!，中国通过§C大规模固定资产投资§!拉动经济增长，迅速增加§O行业产能§!，但由于§G薪资待遇与普遍工时等原因§!，人民§Y消费能力§!§g较弱§!，以至于产能扩张长期超过需求增速，造成了严重的§R相对生产过剩§!"
+ CHI_overproduction2_desc: "§C2000年代初期§!，中国通过§C大规模固定资产投资§!拉动经济增长，迅速增加§O行业产能§!，但由于§G薪资待遇与普遍工时等原因§!，人民§Y消费能力§!§g较弱§!，以至于产能扩张长期超过需求增速，造成了严重的§R相对生产过剩§!"
+ CHI_overproduction3_desc: "§C2000年代初期§!，中国通过§C大规模固定资产投资§!拉动经济增长，迅速增加§O行业产能§!，但由于§G薪资待遇与普遍工时等原因§!，人民§Y消费能力§!§g较弱§!，以至于产能扩张长期超过需求增速，造成了严重的§R相对生产过剩§!"
+ CHI_overproduction4_desc: "§C2000年代初期§!，中国通过§C大规模固定资产投资§!拉动经济增长，迅速增加§O行业产能§!，但由于§G薪资待遇与普遍工时等原因§!，人民§Y消费能力§!§g较弱§!，以至于产能扩张长期超过需求增速，造成了严重的§R相对生产过剩§!"
+ CHI_overproduction5_desc: "§C2000年代初期§!，中国通过§C大规模固定资产投资§!拉动经济增长，迅速增加§O行业产能§!，但由于§G薪资待遇与普遍工时等原因§!，人民§Y消费能力§!§g较弱§!，以至于产能扩张长期超过需求增速，造成了严重的§R相对生产过剩§!"
+#事件
+ CHI_ER_start.0.t: "中国共产党第十六次全国代表大会"
+ CHI_ER_start.0.d: "江泽民的领导任期已经结束,中共代表们齐聚一堂,选举下一代党和国家领导人，不过，其实领导人早在邓小平时期就已经隔代指定好了，他就是——胡锦涛同志。"
+ CHI_ER_start.0.o1: "团结在以胡锦涛同志为核心的全体党中央周围。"
+ CHI_ER_start.1.t: "紧急内部文件"
+ CHI_ER_start.1.d: "【密级：绝密·仅限中央常委会内部传阅】  \n文件编号：CC-001号  \n\n摘录如下：  \n——— 以下内容经加密处理，非授权人员阅读将被追责 ———\n\n███████████ 机密 ███████████  \n███████████ 机密 ███████████\n███████████ 机密 ███████████\n特此通知，各级负责人务必严密封存，不得泄露."
+ CHI_ER_start.1.a: "控制流言，为江同志默哀"
+ CHI_urgent_focus: "紧急状态"
+ CHI_ER_start.2.t: "实施戒严令"
+ CHI_ER_start.2.d: "中央宣布戒严令后，士兵们便开始出现在了大街上，导致戒严的直接原因是，在江同志逝世后，权力真空所造成的动荡，加上社会中的一些动乱事件，使得军队被动员起来维护秩序。"
+ CHI_ER_start.2.o1: "我们将何去何从"
+
+ CHI_ER_start.3.t: "违规聚会"
+ CHI_ER_start.3.d: "四川某地工人在一起吃饭，欢送他们的老前辈退休，然而，因为好事者的举报，负责进行戒严的警察赶到了聚会场所，并尝试驱散他们，这一过程中，工人与警察发生了一些肢体冲突，最终几个工人被捕，几个工人受到不同程度的伤。"
+ CHI_ER_start.3.o1: "或许有些过火了"
+
+
+ CHI_ER_start.4.t: "川渝人民抗议戒严"
+ CHI_ER_start.4.d: "军方殴打并逮捕聚会工人后，川渝地区逐渐掀起了一场规模不小的抗议，许多人拒绝遵守禁止集会以及宵禁的规则，部分激进人士甚至开始上街喊口号，很难想象，再这么不加以限制的发展下去，会发生什么....."
+ CHI_ER_start.4.o1: "增派部队，实行军事化管理！"
+ CHI_ER_start.4.o2: "重新规范化戒严方案"
+
+ CHI_ER_start.5.t: "民间毛派在重庆聚集"
+ CHI_ER_start.5.d: "军管状态下的川渝地区一开始实际上几乎禁止了所有非必要人员出入川渝，但随着全国军管的放宽，川渝军管区也逐渐放松了管制，现在军队的任务变成了恢复秩序，而在这一时刻，民间毛派分子也到了川渝地区，进行交流讨论"
+ CHI_ER_start.5.o1: "他们对我们没有威胁"
+
+ CHI_ER_start.6.t: "中华人民共和国前主席江泽民逝世"
+ CHI_ER_start.6.d: "\n 据中华人民共和国外交部新闻发布会讣告，中华人民共和国前主席江泽民已于昨日下午3时突发心肌梗塞逝世。法医鉴定为长期劳累过度，熬夜造成的急性心肌梗塞，中共中央已组织追悼会并邀请各国代表参加。\n 但有关人士表示，前主席可能并非自然死亡，且涉及到中国高层的内部事务，并据可靠消息称，多地省市委有计划进行戒严或临时军管 \n据BBC新闻报导，中国多地大学有部分学生组织游行，其是否经过政府报备，游行目的、诉求还暂不可知。"
+ CHI_ER_start.6.a: "“阴谋论还是——”"
+#重置国策
+
+ CHI_16th_National_Congress: "第十六次全国代表大会"
+ CHI_16th_National_Congress_desc: "十六大召开了，本次代表大会将会决定我们的下一任主席人选"
+
+ CHI_break_term_limits: "中央政治局临时会议"
+ CHI_break_term_limits_desc: "一些紧急状况需要被处理。。。"
+ CHI_support_the_left: "全面戒严"
+ CHI_support_the_left_desc: "为了防止不实言论误导大众，以及维稳社会秩序，我们有必要暂时实行戒严"
+ CHI_paving_the_way_for_successors: "第十六次全国代表大会"
+ CHI_paving_the_way_for_successors_desc: "十六大召开了，这是次大会将会决定我们的下一任主席人选"
+#国策
+ CHI_CPB_Temporary_Meeting: "中央政治局临时会议"
+ CHI_CPB_Temporary_Meeting_desc: "局势动荡之际，中央政治局召开了罕见的临时会议。各派力量暗流涌动，关于国家未来方向的争论愈发激烈——是回归革命理想，还是坚持改革路线？一场政治风暴即将爆发。"
+
+ CHI_party_split: "§R分道扬镳§!"
+ CHI_party_split_desc: "曾经统一于同一旗帜下的各派，如今再难掩裂痕。矛盾的公开化意味着妥协的终结，未来将由斗争决定。"
+ CHI_party_split_effect_tt: "§R党内各派系的矛盾将公开化§!"
+
+ CHI_return_to_ideal_heart: "§t回归理想本心§!"
+ CHI_return_to_ideal_heart_desc: "“人民至上，革命到底。”在现实妥协与权贵腐败中，左翼重申革命初心，意图重塑理想主义的红色政纲。"
+ CHI_return_to_ideal_heart_effect_tt: "§t将扮演党内左翼势力§!"
+
+ CHI_persist_reform: "§1坚持改革开放§!"
+ CHI_persist_reform_desc: "尽管质疑不断，改革派仍相信市场与全球化能引导国家走向富强。“摸着石头过河”的逻辑，在他们眼中仍是唯一的出路。"
+
+ CHI_believers_of_freedom: "§B“自由”的信徒§!"
+ CHI_believers_of_freedom_desc: "一群知识分子、企业家和青年学子，憧憬自由市场与民主政治。他们不再满足于改良，而是追求更彻底的制度性转型。"
+
+ CHI_establish_left_united_front: "组建§t左翼统一战线§!"
+ CHI_establish_left_united_front_desc: "工人、学生、红色知识分子与基层党人集结于同一面旗帜下。新左翼试图以团结打破主流的沉默与冷漠。"
+
+ CHI_reconcile_with_maoist: "与§R毛派§!和解"
+ CHI_reconcile_with_maoist_desc: "毛派虽曾边缘化，仍拥有坚实的群众基础与斗争经验。左翼选择与之对话，而非斗争，以求汇聚更大的力量。"
+
+ CHI_authorize_mao_grassroots: "解禁§R毛派组织§!"
+ CHI_authorize_mao_grassroots_desc: "被压制多年的毛派基层组织重见天日。他们将再次活跃在工厂、学校与村镇，播撒反对资本主义复辟的种子。"
+
+ CHI_return_Twowhatever: "批判唯生产力论"
+ CHI_return_Twowhatever_desc: "多年来，一种狭隘的思维在国家发展中占据主导地位：只要生产力提高，任何代价都是值得的。人民被简化为数字，发展被等同于钢铁和产值，压迫、腐败与剥削被掩盖在增长的幻象之下，是时候做出改变了。"
+
+ CHI_ban_military_business: "打击军队经商"
+ CHI_ban_military_business_desc: "军队脱离人民，必然腐化堕落。左翼誓言铲除“枪杆子里的买卖经”，重建军民一体的革命传统。"
+
+ CHI_unity_left_liberal: "团结§t左翼自由派§!"
+ CHI_unity_left_liberal_desc: "虽有分歧，但在反腐与反官僚化上，新左与自由派找到了共识。一场横跨意识形态边界的临时联盟正在形成。"
+
+ CHI_anti_bureaucratic_corruption: "严查“官倒”现象"
+ CHI_anti_bureaucratic_corruption_desc: "官商勾结、权钱交易，是改革最深的毒瘤。左翼决心挥刀自宫，将“官倒”送上审判台。"
+
+ CHI_Military_issues: "§g军队问题§!"
+ CHI_Military_issues_desc: "军队是权力的支柱，也是分裂的隐患。谁能赢得士兵与军官的支持，谁就掌握了未来。"
+
+ CHI_co_opt_officer: "提拔新生代§R左翼军官§!"
+ CHI_co_opt_officer_desc: "一批受毛泽东思想熏陶、反感既得利益集团的青年军官，正在被提拔到关键岗位。军中的风向开始转变。"
+
+ CHI_enhance_political_commissars: "扩大§R政委§!权力"
+ CHI_enhance_political_commissars_desc: "政委制度曾确保军队忠于党，而今左翼试图赋予其新的使命——监督军官、教育士兵、巩固红色信仰。"
+
+ CHI_raise_soldier_salaries: "提高基层士兵待遇"
+ CHI_raise_soldier_salaries_desc: "革命不是靠口号，而要让士兵吃得饱、活得好。左翼政府加薪与保障同步推进，以赢得军心所向。"
+
+ CHI_great_raise_tax_of_proviences: "收缴财政权"
+
+ CHI_great_raise_tax_of_proviences_desc: "自从改革开放以来，财政权被很大程度的下放，应该说，这是极不健康的事情，应当被纠正。"
+
+ CHI_new_born_of_cpp: "党的新生"
+ CHI_new_born_of_cpp_desc: ""
+
+#GUI
+ CHI_CPC_poltical_GUI_open_TT: "§R打开中国政治界面§!"
+ CHI_poltical_GUI_button1_TT: "打开中央政治局界面"
+ CHI_poltical_GUI_button1_name_TT: "中共中央政治局"
+ CHI_poltical_GUI_button2_TT: "打开人民代表大会界面"
+ CHI_poltical_GUI_button2_name_TT: "人民代表大会界面"

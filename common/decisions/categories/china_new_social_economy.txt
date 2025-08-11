@@ -1,0 +1,70 @@
+CHI_new_social_economy_decisions = {
+	priority = { base = 1000 }
+	allowed = { 
+		OR = { 
+			original_tag = CHI 
+			tag = DSC
+			tag = HkG
+		}
+	}
+	visible_when_empty = yes
+	icon = GFX_decision_generic_china
+	on_map_area = {
+		targets = { 534	532	541	536	435	544	538	567 1095 552 434 549 585 586 583 537 570 540 547 548 595 1106 }
+			name = Organize_official_forums_individual_businesses
+			zoom = 250
+	
+		target_trigger = {
+			OR = {
+				original_tag = CHI
+				original_tag = DSC
+				original_tag = HKG
+				}
+			ROOT = { has_completed_focus = CHI_get_organized }
+			NOT = { has_idea = CHI_Collaboration_internet_end }
+			NOT = { has_dynamic_modifier = { modifier = CHI_Collaboration_internet } }
+		}
+	}
+
+	visible = {
+		OR = {
+			original_tag = CHI 
+			tag = DSC
+			tag = HkG
+		}
+		OR = {
+			AND = {
+				OR = { 
+					AND = {
+						NOT = { has_global_flag = Ccw }
+						any_controlled_state = { has_dynamic_modifier = { modifier = CW_ruins } } 
+					}
+					has_completed_focus = CHI_Public_ownership_construction
+				}
+				NOT = { has_completed_focus = CHI_Chinese_NEW_MILLENNIUM }
+			}
+			is_debug = yes
+		}
+	}
+}
+
+China_edd_category = {
+	allowed = { 
+		OR = { 
+			original_tag = CHI 
+			tag = DSC
+			tag = HKG
+	}
+}
+		icon = GFX_decision_CUB_train_chi
+
+	visible = {
+		OR = { 
+			original_tag = CHI 
+			tag = DSC
+			tag = HkG
+		}
+	}
+}
+
+
