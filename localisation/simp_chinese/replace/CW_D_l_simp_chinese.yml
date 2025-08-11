@@ -141,7 +141,7 @@
  CHI_ER_BEFORE_xin.4.d: "[GetDate]\n£CHI_military_junta 中华人民解放军中央军委、中央政治局:\n鉴于我国西北边疆近月来出现的恐怖袭击事件，为应对域外有关国家的相关行为，保证国家统一、人民安全，现决定扩大新疆军区建设，增派部队与增援相关物资，并决定促进新疆生产建设兵团从行政建设职能转变为军事职能。\n同时为提高新疆军区建设效率、中央决定在西北地区提高军事程度，计划扩大西北军区建设。"
  CHI_ER_BEFORE_xin.4.a: "防范于未然"
  CHI_ER_BEFORE_xin.5: "东突分子发动“圣战”恐怖袭击"
- CHI_ER_BEFORE_xinORE_xin.5.t: "东突分子发动“圣战”恐怖袭击"
+ CHI_ER_BEFORE_xin.5.t: "东突分子发动“圣战”恐怖袭击"
  CHI_ER_BEFORE_xin.5.d: "近几日，东突分子在南疆地区发动了一次恐怖袭击，可能运用了重武器，对应地区陷入无序状态。若不采取应对措施，该地区可能陷入恐怖分子之手。"
  CHI_ER_BEFORE_xin.5.a: "坚决抵抗，消灭恐怖分子。"
  orgnize_xinjiang_military_TT: "§R将组建£CHI_military_junta 新疆军区，并开启“边疆危机”决议"

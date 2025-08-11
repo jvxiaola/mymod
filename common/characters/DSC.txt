@@ -34,7 +34,7 @@ characters = {
         corps_commander = {
             visible = { is_in_array = { ruling_party = 4 } }
             skill = 3
-            attack_skill = 2
+            attack_skill = 4
             defense_skill = 4
             planning_skill = 3
             logistics_skill = 2

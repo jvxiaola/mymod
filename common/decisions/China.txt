@@ -2882,7 +2882,7 @@ fire_only_once = yes
 
 
 		CHI_CHI_NEW_people_war1 = {
-			icon = GFX_decision_generic_form_nation
+			picture = soviet_advisors
 			available = {
 				is_ai = no
 				OR = { 
@@ -2907,7 +2907,7 @@ fire_only_once = yes
 		}
 
 		CHI_CHI_NEW_people_war2 = {
-			icon = GFX_decision_generic_form_nation
+			picture = soviet_advisors
 			available = {
 				is_ai = no
 				has_idea = CHI_NEW_people_war1
@@ -2933,7 +2933,7 @@ fire_only_once = yes
 		}
 
 		CHI_NEW_people_war_final = {
-			icon = GFX_decision_generic_form_nation
+			picture = soviet_advisors
 			available = {
 				is_ai = no
 				has_idea = CHI_NEW_people_war2
