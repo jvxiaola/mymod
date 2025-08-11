@@ -1,5 +1,5 @@
 #这是广东，勿删！
-capital = 534
+capital = 532
 set_variable = { gdp_per_capita = 3.452 }
 set_technology = {}
 set_stability = 0.2

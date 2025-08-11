@@ -476,11 +476,11 @@ country_event = {
 		custom_effect_tooltip = orgnize_xinjiang_military_TT
 
 
-
 		set_autonomy = {
 			target = XIN
-			autonomy_state =  autonomy_special_administrative_region
+			autonomy_state = autonomy_special_administrative_region
 		}
+
 		hidden_effect = {
 			591 = { transfer_state_to = XIN }
 			592 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack2 } }
@@ -499,6 +499,7 @@ country_event = {
 
 
 			XIN = {
+				give_military_access = CHI
 	create_country_leader = {
 					name = "邱衍汉"
 					picture = "qiu_yanhan.dds"
@@ -523,6 +524,7 @@ country_event = {
 
 
 			CHI = {
+								give_military_access = XIN
 				complete_national_focus = XIN_troubled_times
 				add_equipment_to_stockpile = {
 					type = Inf_equipment
@@ -535,6 +537,9 @@ country_event = {
 				set_country_flag = XIN_attacked
 				mark_focus_tree_layout_dirty = yes
 			}
+
+
+
 	}
 	}
 }
@@ -746,10 +751,12 @@ country_event = {
 	desc = CHI_ER_BEFORE_xin.8.d
 	picture = GFX_iranian_civ_war_country
 	is_triggered_only = yes
+
 	immediate = { if = { limit = { tag = CHI } Set_ETK = yes } }
 	option = {
 		name = CHI_ER_BEFORE_xin.8.a
-		every_country = { limit = { is_ai = no } news_event = { id = CHI_ER_BEFORE_xin.9 days = 7 } }
+		every_country = { limit = { is_ai = no }
+		 news_event = { id = CHI_ER_BEFORE_xin.9 days = 7 } }
 		custom_effect_tooltip = CHI_ER_BEFORE_xin_event8_effect_tt
 		hidden_effect = {
 			end_puppet = XIN
@@ -758,10 +765,10 @@ country_event = {
 }
 
 news_event = {
-	id = CHI_ER_BEFORE_xinORE_xin.9
+	id = CHI_ER_BEFORE_xin.9
 	title = CHI_ER_BEFORE_xin.9.t
 	desc = CHI_ER_BEFORE_xin.9.d
-	picture = GFX_event_pictures_CW_D_ET_attack
+	picture = GFX_event_pictures_CW_D_ET_attack  
 	is_triggered_only = yes
 
 	immediate = { 
@@ -1082,11 +1089,15 @@ country_event = {
 	title = CHI_ER_BEFORE_xin.16.t
 	desc = CHI_ER_BEFORE_xin.16.d
 	is_triggered_only = yes
-	option = {
-		name = CHI_ER_BEFORE_xin.16.a
-		XIN = {
+	immediate = {
+				XIN = {
 			create_faction = "中亚反恐维和行动"
 			add_to_faction = PAK
 		}
+	}
+
+	option = {
+		name = CHI_ER_BEFORE_xin.16.a
+
 	}
 }
