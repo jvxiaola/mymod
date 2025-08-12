@@ -460,7 +460,10 @@ Set_ETK = {
 			}
 			else_if = {
 				limit = { 
-					has_dynamic_modifier = { modifier = extrameal_islam_attack3 } 
+										OR = { 
+						has_dynamic_modifier = { modifier = extrameal_islam_attack3 } 
+						has_dynamic_modifier = { modifier = extrameal_islam_attack4 }
+					} 
 				}
 				create_unit = {
 					division = "name = \"东突厥斯坦圣战军\" division_template = \"东突厥斯坦圣战军\" start_experience_factor = 0.8"
@@ -470,7 +473,7 @@ Set_ETK = {
 			}
 			else_if = {
 				limit = { 
-					has_dynamic_modifier = { modifier = extrameal_islam_attack4 } 
+					has_dynamic_modifier = { modifier = extrameal_islam_attack5 } 
 				}
 				create_unit = {
 					division = "name = \"东突厥斯坦圣战军\" division_template = \"东突厥斯坦圣战军\" start_experience_factor = 0.8"
@@ -478,16 +481,7 @@ Set_ETK = {
 					owner = ETK
 				}
 			}
-			else_if = {
-				limit = { 
-					has_dynamic_modifier = { modifier = extrameal_islam_attack5 } 
-				}
-				create_unit = {
-					division = "name = \"东突厥斯坦圣战军\" division_template = \"东突厥斯坦圣战军\" start_experience_factor = 0.8"
-					count = 4
-					owner = ETK
-				}
-			}
+
 		}
 	}
 

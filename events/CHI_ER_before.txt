@@ -756,7 +756,15 @@ country_event = {
 	option = {
 		name = CHI_ER_BEFORE_xin.8.a
 		every_country = { limit = { is_ai = no }
+
+        if = {
+            limit = { NOT = { has_global_flag = CHI_ER_BEFORE_xin.8_fired } }
+            # 第一次才显示新闻
 		 news_event = { id = CHI_ER_BEFORE_xin.9 days = 7 } }
+        }
+
+
+set_global_flag = CHI_ER_BEFORE_xin.8_fired 
 		custom_effect_tooltip = CHI_ER_BEFORE_xin_event8_effect_tt
 		hidden_effect = {
 			end_puppet = XIN
@@ -784,6 +792,9 @@ news_event = {
 					remove_dynamic_modifier = { modifier = extrameal_islam_attack5 }
 				}
 			}
+
+
+			
 			country_event = { id = CHI_ER_BEFORE_xin.16 days = 15 }
 		}	
 	}
@@ -1051,12 +1062,12 @@ news_event = {
 		592 = {
 			add_manpower = -8000
 		}
-		591 = {
-			transfer_state_to = RAJ
-		}
-		RAJ = {
-			give_guarantee = ETK
-		}
+		#591 = {
+		#	transfer_state_to = RAJ
+		#}
+		#RAJ = {
+		#	give_guarantee = ETK
+		#}
 	}
 	option = {
 		name = CHI_ER_BEFORE_xin.15.a1

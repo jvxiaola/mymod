@@ -133,7 +133,15 @@ on_actions = {
 						}
 						ROOT = { tag = ETK }
 					}
-					every_country = { news_event = { id = CHI_ER_BEFORE_xin.10 days = 1 } }
+					        if = {
+            limit = { NOT = { has_global_flag = CHI_ER_BEFORE_xin.10_fired } }
+            # 第一次才显示新闻
+		 every_country = { news_event = { id = CHI_ER_BEFORE_xin.10 days = 1 } }
+        }
+
+
+set_global_flag = CHI_ER_BEFORE_xin.10_fired 
+					
 
 					ROOT = {
 						every_owned_state = { add_dynamic_modifier = { modifier = extrameal_islam_attack_escape } }
@@ -160,16 +168,19 @@ on_actions = {
 						transfer_troops = no
 					}
 				}
-			}
-			else_if = {
-				limit = {
-					FROM = { tag = ETK }
-					ROOT = { tag = PAK }
-				}
-				ROOT = {
+									        if = {
+            limit = { NOT = { has_global_flag = CHI_ER_BEFORE_xin.15_fired } }
+            # 第一次才显示新闻
+		 every_country = { news_event = { id = CHI_ER_BEFORE_xin.15 days = 1 } }
+        }
+
+
+set_global_flag = CHI_ER_BEFORE_xin.15_fired 
+				PAK = {
 					leave_faction = yes
 				}
 			}
+
 
 		}
 	}
