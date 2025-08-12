@@ -142,7 +142,14 @@ country_event = {
 				army_ratio = 0.1
 				air_ratio = 0.1
 			}
-			random_army_leader = { set_nationality = DSC }
+random_army_leader = {
+    limit = {
+        NOT = { character = CHI_tao_bojun }   # 排除这个将领
+    }
+    set_nationality = DSC                   # 改国籍（转移到 PRG）
+}
+
+
 			DSC = {
 				set_variable = { civilian_factory_employment_var = 1 }
 				set_variable = { naval_factory_employment_var = 1 }
@@ -339,6 +346,11 @@ country_event = {
 			limit = { is_in_array = { global.guangdong_states = THIS } }
 			transfer_state_to = PRG
 		}
+
+CHI_tao_bojun = {
+    set_nationality = PRG
+}
+
 		give_guarantee = PRG
 		PRG = {
 			every_owned_state = {
