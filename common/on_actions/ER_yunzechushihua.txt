@@ -14,9 +14,23 @@ on_actions = {
 					}
 
 
+				every_state = { 
+						limit = {
 
+							is_core_of = PRU
 
+						}
+					add_core_of = PCP
+					}
 
+				every_state = { 
+						limit = {
+
+							is_core_of = PHI
+
+						}
+					add_core_of = NPA
+					}
 
 		}
 	}

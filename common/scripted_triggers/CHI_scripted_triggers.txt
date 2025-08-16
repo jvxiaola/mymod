@@ -33,7 +33,7 @@ is_New_people_commune_state = {
 
 is_sourth_XJ = {
 	OR = {
-		state = 1207		state = 1208		state = 1209	state = 1212		state = 1213		state = 1214	
+		state = 1215		state = 1216		state = 1217	state = 1220		state = 1221		state = 1222	
 	}
 }
 will_be_attacked_by_islam = {

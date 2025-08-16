@@ -5739,13 +5739,13 @@ initialize_state_provincial_images = {
 			province = { id = 3167 }
 		}
 	}
-	1207 = {#南克孜勒苏
+	1215 = {#南克孜勒苏
 		add_province_modifier = {
 			static_modifiers = { terrain_kashgar }
 			province = { id = 1766 }
 		}
 	}
-	1214 = {#巴音郭勒
+	1222 = {#巴音郭勒
 		add_province_modifier = {
 			static_modifiers = { terrain_korla }
 			province = { id = 7792 }
@@ -5807,7 +5807,7 @@ initialize_state_provincial_images = {
 			province = { id = 1069 }
 		}
 	}
-	1221 = { #汕头
+	1229 = { #汕头
 		add_province_modifier = {
 			static_modifiers = { terrain_shantou }
 			province = { id = 9978 }

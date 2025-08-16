@@ -1,31 +1,32 @@
 state = {
-	id = 1223
-	name = "STATE_1223"
+	id = 1230
+	name = "STATE_1230"
 	provinces = {
-		1087 1187 4092 
+		1202 4050 12095 14595 
 	}
-	manpower = 4075000
+	manpower = 3220000
 	buildings_max_level_factor = 1.000
 	local_supplies = 0.000
-	state_category = state_05
+	state_category = state_04
 
 	resources = {
-		oil = 9
-		rubber = 8
-		tungsten = 17
+		oil = 5
+		tungsten = 11
+		steel = 14
 	}
 	history = {
 		owner = CHI
 		victory_points = {
-			1187 1
+			1202 5
 		}
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
-			industrial_complex = 3
+			industrial_complex = 1
+			fuel_silo = 1
 			agriculture_district = 1
 		}
 		add_core_of = CHI
 		add_core_of = TAI
-	}
+		}
 }

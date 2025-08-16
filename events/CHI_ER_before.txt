@@ -128,8 +128,8 @@ country_event = {
 				transfer_state = 586
 				transfer_state = 585
 				transfer_state = 583
-				transfer_state = 1218
-				transfer_state = 1219
+				transfer_state = 1226
+				transfer_state = 1227
 				every_owned_state = {
 					add_core_of = DSC
 				}
@@ -496,17 +496,17 @@ country_event = {
 		hidden_effect = {
 			591 = { transfer_state_to = XIN }
 			592 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack2 } }
-			1207 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack5 } }
-			1208 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack5 } }
-			1209 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack4 } }
-			1210 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack1 } }
-			1211 = { transfer_state_to = XIN }
-			1212 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack3} }
-			1213 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack5} }
-			1214 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack2} }
-			1215 = { transfer_state_to = XIN }
-			1216 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack1} }
-			1217 = { transfer_state_to = XIN }
+			1215 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack5 } }
+			1216 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack5 } }
+			1217 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack4 } }
+			1218 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack1 } }
+			1219 = { transfer_state_to = XIN }
+			1220 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack3} }
+			1221 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack5} }
+			1222 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack2} }
+			1223 = { transfer_state_to = XIN }
+			1224 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack1} }
+			1225 = { transfer_state_to = XIN }
 
 
 

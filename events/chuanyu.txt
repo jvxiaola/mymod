@@ -159,14 +159,14 @@ country_event = {
 		custom_effect_tooltip = chuanyu_change_effect_tt
 
 set_capital = {
-	state = 1218
+	state = 1226
 }
 			start_civil_war = {
 					ideology = communism
 					size = DSC_rmjd_renyuan
 					states = all
 					states_filter = {
-						NOT = { state = 1218 }
+						NOT = { state =1226 }
 						}
 					set_cosmetic_tag = DSC_JGQ
 
@@ -227,7 +227,7 @@ create_country_leader = {
 DSC={
 
 	set_capital = {
-		state = 1218
+		state = 1226
 	}
 
 
@@ -429,13 +429,13 @@ Militia_Bat = { x = 1 y = 3 }
 
 
 		DSC={
-			transfer_state = 1219
+			transfer_state = 1227
 		}
 
 
 
 		random_owned_controlled_state = {
-			prioritize = { 1219}
+			prioritize = { 1227}
 			create_unit = {
 				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 15842
@@ -460,7 +460,7 @@ Militia_Bat = { x = 1 y = 3 }
 				has_cosmetic_tag = DSC_JGQ
 			}
 
-			transfer_state = 1219
+			transfer_state = 1227
 
 		}
 		#标记
@@ -490,13 +490,13 @@ Militia_Bat = { x = 1 y = 3 }
 
 
 		DSC={
-			transfer_state = 1219
+			transfer_state = 1227
 		}
 
 
 
 		random_owned_controlled_state = {
-			prioritize = { 1219}
+			prioritize = { 1227}
 			create_unit = {
 				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 15842
@@ -516,7 +516,7 @@ Militia_Bat = { x = 1 y = 3 }
 			limit={
 				has_cosmetic_tag = DSC_JGQ
 			}
-			transfer_state = 1219
+			transfer_state = 1227
 
 		}
 
@@ -536,13 +536,13 @@ Militia_Bat = { x = 1 y = 3 }
 		}
 		#标记
 		DSC={
-			transfer_state = 1219
+			transfer_state = 1227
 		}
 
 
 
 		random_owned_controlled_state = {
-			prioritize = { 1219}
+			prioritize = { 1227}
 			create_unit = {
 				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 15842
@@ -559,7 +559,7 @@ Militia_Bat = { x = 1 y = 3 }
 			limit={
 				has_cosmetic_tag = DSC_JGQ
 			}
-			transfer_state = 1219
+			transfer_state = 1227
 
 		}
 
@@ -817,7 +817,7 @@ Militia_Bat = { x = 1 y = 3 }
 
 
 	random_owned_controlled_state = {
-		prioritize = { 1218}
+		prioritize = { 1226}
 		create_unit = {
 			division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 			prioritize_location = 6999
@@ -839,7 +839,7 @@ Militia_Bat = { x = 1 y = 3 }
 			compare = equals
 		}}
 		random_owned_controlled_state = {
-			prioritize = { 1218 }
+			prioritize = { 1226 }
 			create_unit = {
 				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 11865
@@ -864,7 +864,7 @@ Militia_Bat = { x = 1 y = 3 }
 	
 		}
 		random_owned_controlled_state = {
-			prioritize = { 1218 }
+			prioritize = { 1226 }
 			create_unit = {
 				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 11865
@@ -889,7 +889,7 @@ Militia_Bat = { x = 1 y = 3 }
 	}
 	
 	random_owned_controlled_state = {
-		prioritize = { 1218 }
+		prioritize = {1226 }
 		create_unit = {
 			division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					
 			owner = DSC

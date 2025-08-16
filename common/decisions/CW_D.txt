@@ -72,7 +72,7 @@ CHI_orgnize_attack_xin_terrist_KAZ = {
 	days_re_enable = 7
 	days_remove = 23
 	highlight_states = {
-        highlight_state_targets = { state = 1214 state = 1208 }
+        highlight_state_targets = { state = 1222 state = 1216 }
     }
 	custom_cost_text = command_power_more_than_40
 	custom_cost_trigger = {
@@ -90,8 +90,8 @@ CHI_orgnize_attack_xin_terrist_KAZ = {
 		}
 	}
 	remove_effect = {
-		1214 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 10 } }
-		1208 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 10 } }
+		1222 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 10 } }
+		1216 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 10 } }
 		add_days_mission_timeout  = {
 			mission = CHI_XIN_Terrorist_infiltration
 			days = 10
@@ -143,7 +143,7 @@ CHI_orgnize_attack_xin_terrist_KAZ = {
 	days_re_enable = 7
 	days_remove = 23
 	highlight_states = {
-        highlight_state_targets = { state = 1207 state = 1208 state = 1214 state = 1213 }
+        highlight_state_targets = { state = 1215 state = 1216 state = 1222 state = 1221 }
     }
 	custom_cost_text = command_power_more_than_40
 	custom_cost_trigger = {
@@ -161,10 +161,10 @@ CHI_orgnize_attack_xin_terrist_KAZ = {
 		}
 	}
 	remove_effect = {
-		1207 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 10 } }
-		1209 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 10 } }
-		1214 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 5 } }
-		1211 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 5 } }
+		1215 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 10 } }
+		1218 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 10 } }
+		1222 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 5 } }
+		1219 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 5 } }
 		add_days_mission_timeout  = {
 			mission = CHI_XIN_Terrorist_infiltration
 			days = 15
@@ -234,7 +234,7 @@ CHI_orgnize_attack_xin_terrist_TAJ = {
 	}
 	remove_effect = {
 		722 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 10 } }
-		1207 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 10 } }
+	1215 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 10 } }
 		add_days_mission_timeout  = {
 			mission = CHI_XIN_Terrorist_infiltration
 			days = 10
@@ -285,7 +285,7 @@ CHI_orgnize_attack_xin_terrist_SOV = {
 	days_re_enable = 7
 	days_remove = 23
 	highlight_states = {
-        highlight_state_targets = { state = 1208 }
+        highlight_state_targets = { state = 1216 }
     }
 	custom_cost_text = command_power_more_than_20
 	custom_cost_trigger = {
@@ -303,7 +303,7 @@ CHI_orgnize_attack_xin_terrist_SOV = {
 		}
 	}
 	remove_effect = {
-		1208 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 10 } }
+		1216 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 10 } }
 		add_days_mission_timeout  = {
 			mission = CHI_XIN_Terrorist_infiltration
 			days = 5
@@ -342,7 +342,7 @@ blockade_Wakhan_Corridor = {
 		}
 	}
 	highlight_states = {
-        highlight_state_targets = { state = 411 state = 1207 }
+        highlight_state_targets = { state = 411 state = 1215 }
     }
 	days_remove = 15
 	fire_only_once = yes
@@ -392,7 +392,7 @@ CHI_orgnize_attack_xin_terrist_PAK = {
 	days_re_enable = 7
 	days_remove = 20
 	highlight_states = {
-        highlight_state_targets = { state = 1207 state = 421 }
+        highlight_state_targets = { state = 1215 state = 421 }
     }
 	custom_cost_text = command_power_more_than_20
 	custom_cost_trigger = {
@@ -410,7 +410,7 @@ CHI_orgnize_attack_xin_terrist_PAK = {
 		}
 	}
 	remove_effect = {
-		1207 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 10 } }
+		1215 = { add_dynamic_modifier = { modifier = XIN_state_in_martial_law days = 10 } }
 		add_days_mission_timeout  = {
 			mission = CHI_XIN_Terrorist_infiltration
 			days = 10
