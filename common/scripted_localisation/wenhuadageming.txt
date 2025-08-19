@@ -325,7 +325,13 @@ defined_text = {
 		}
 		localization_key = "革命派主导"
 	}
+	text = {
+		trigger = {
 
+			var:wengedangqiansheng = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui_minzhu1 } }
+		}
+		localization_key = "选举产生公职人员（小规模）"
+	}
 
 	text = {
 		trigger = {

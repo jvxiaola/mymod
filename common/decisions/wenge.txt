@@ -28,5 +28,93 @@ CHI_faqihwb={
 		}
 
 }
+CHI_CR_junduijieru={
+		icon = GFX_decision_minotor_button
+		visible = {
 
+
+			var:wengedangqiansheng = { has_dynamic_modifier = { modifier = CHI_wudouhunluan } }
+			
+
+		}
+		cost = 10
+available = {
+    state = var:wengedangqiansheng{
+num_units = {
+    tag = CHI
+    value > 5
+}
+    }
+}
+		complete_effect = {
+
+		}
+		days_remove = 10
+		remove_effect = {
+			var:wengedangqiansheng = { remove_dynamic_modifier = { modifier = CHI_wudouhunluan } }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+}
+
+
+CHI_CR_junduijieru={
+		icon = GFX_decision_minotor_button
+		visible = {
+
+
+			var:wengedangqiansheng = { has_dynamic_modifier = { modifier = CHI_wudouhunluan } }
+			
+
+		}
+		cost = 10
+available = {
+    state = var:wengedangqiansheng{
+num_units = {
+    tag = CHI
+    value > 5
+}
+    }
+}
+		complete_effect = {
+
+		}
+		days_remove = 10
+		remove_effect = {
+			var:wengedangqiansheng = { remove_dynamic_modifier = { modifier = CHI_wudouhunluan } }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+}
+
+
+CHI_CR_minzhuhua={
+		icon = GFX_decision_minotor_button
+		visible = {
+
+
+			var:wengedangqiansheng = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui } }
+			
+
+		}
+		cost = 10
+available = {
+
+}
+		complete_effect = {
+
+		}
+		days_remove = 10
+		remove_effect = {
+			var:wengedangqiansheng = { add_dynamic_modifier = { modifier = CHI_gemingweiyuanhui_minzhu1 } }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+}
 }

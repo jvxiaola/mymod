@@ -8,6 +8,18 @@ spriteTypes = {
 		name = "dazibao"
 		texturefile = "gfx/interface/goals/yunze_diyitubiao.png"
 	}	
+		SpriteType = {
+		name = "jiugonzalo"
+		texturefile = "gfx/interface/goals/yunze_gonzalo2.png"
+	}	
+			SpriteType = {
+		name = "rmzz"
+		texturefile = "gfx/interface/goals/ALB_Thousand_Voices.png"
+	}	
+			SpriteType = {
+		name = "indu_rmzz"
+		texturefile = "gfx/interface/goals/indu_rmzz.png"
+	}	
 
 
 		SpriteType = {

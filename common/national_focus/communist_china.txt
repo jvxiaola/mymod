@@ -14,6 +14,7 @@ focus_tree = {
 		shared_focus = DSC_DSC_civ_start
 #!gfx:interface\mdard_goals.gfx
 #!gfx:interface\krc_goals.gfx
+#!gfx:interface\goals.gfx
 	focus = {
 		id = PRC_communist
 		icon = communist_party_of_china
@@ -6842,7 +6843,8 @@ cost = 5
 			}
 						focus = {
 		id = PRC_rajcw
-		icon = attack_india
+		#icon = attack_india
+		icon = indu_rmzz
 		x = -6
 		y = 3
 relative_position_id = PRC_asian_rev
@@ -8715,7 +8717,7 @@ add_ideas = PRC_wr }
 		}
 	focus = {
 		id = PRC_pru
-		icon = demand_territory2
+		icon = jiugonzalo
 		x = 10
 		y = 3
 relative_position_id = PRC_communist_inte
@@ -8782,7 +8784,7 @@ add_ideas = PRC_wr
 		}
 			focus = {
 		id = PRC_pru_zb
-		icon = anti_fascist_diplomacy
+		icon = rmzz
 		x = 10
 		y = 4
 relative_position_id = PRC_communist_inte
@@ -11134,7 +11136,7 @@ every_owned_state = {
 						icon = CHI_mobilize_the_red_guard
 						x = 0
 						y = 4
-						prerequisite = { focus = PRC_baligongsheyuanze
+						prerequisite = { #focus = PRC_baligongsheyuanze
 						focus=PRC_sanjiehe
 					}
 						#mutually_exclusive = { focus = PRC_jingzhiwudou }

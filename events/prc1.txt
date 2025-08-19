@@ -334,7 +334,9 @@ remove_ideas = CHI_capital_withdrawal4
 
 
 
-	
+	CHI={
+		inherit_technology = DSC
+	}
 	}
 
 	
