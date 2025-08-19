@@ -694,25 +694,25 @@
  PRC_people_army_desc: "虽然我国当前不止一个“人民解放军”，但我们的军队才是全中国唯一担负的起这一称号的军队"
 
  DSC_DSC_civ_start: "打响第一枪"
- DSC_DSC_civ_start_desc: "川渝革命开始"
+ DSC_DSC_civ_start_desc: "几十年前，阿芙乐尔号巡洋舰的一声炮响为俄国人民轰开了十月革命的浪潮。1927年毛泽东同志领导下的秋收起义打开了中国轰轰烈烈几十年伟大革命征程。今天，在毛远新同志的领导下，整合了川渝地区马列毛主义革命的队伍将打响反对暴政的军政府，开启解放全国的伟大征程！"
 
  DSC_people_army_zzjj: "政治建军"
  DSC_people_army_zzjj_desc: ""
 
  DSC_people_army_junshixy: "军事学院"
- DSC_people_army_junshixy_desc: "军事学院"
+ DSC_people_army_junshixy_desc: "尽管在新生人民解放军中拥有不少前军政府的中层军官，但随着革命的发展越来越猛烈，队伍的扩大意味着指挥体系的越发庞大。随之而来的就是有经验指战员的缺乏。为此我们在以及解放的地区创立军事学院，从军队中选拔优秀的士兵与军官参与培训，将新生的人民解放军培养成专业化革命化的无产阶级武装力量。"
 
- DSC_people_army_czzzx: "从战争中学"
- DSC_people_army_czzzx_desc: ""
+ DSC_people_army_czzzx: "战争磨砺尖刀"
+ DSC_people_army_czzzx_desc: "历经革命战争的火与血，重获新生的人民解放军在残酷的国内阶级战争中成长为一只能打胜仗、作风优良的军队，其战术素养和实力可以媲美世界上任何一国的军队。若再假以时日，中国人民解放军这只历史悠久的人民武装必定再次掀起革命的狂潮！"
 
  DSC_people_army_zhbd: "整合部队"
- DSC_people_army_zhbd_desc: "整合部队"
+ DSC_people_army_zhbd_desc: "在革命开始以后，我方接受了大量先前的投诚部队，加之各种各样的民兵、赤卫队的动员，使得我们的部队编制与指挥体系及其混乱。因此，我们将着手开始解决军队的编制问题以及重新构建高效灵活的指挥体系。确保每一支部队都能发挥其最大实力。"
 
- DSC_people_army_wuqizengjia: "补充武器"
- DSC_people_army_wuqizengjia_desc: ""
+ DSC_people_army_wuqizengjia: "列装武器"
+ DSC_people_army_wuqizengjia_desc: "通过战场缴获和先前对地方武器库的夺取以及与其他地区的军阀的交易。我们获取了大量的军火装备，其中不乏当前阶段中国以及各国的高精尖装备。同时我们也将对部分装备进行逆向工程。而在已经解放的工业区，源源不断的武器将为我们淹没敌军最后的挣扎。"
 
  DSC_people_army_jsjj: "军事建军"
- DSC_people_army_jsjj_desc: "没有一支人民的军队，就没有人民的一切"
+ DSC_people_army_jsjj_desc: "在现代战争中，武器与先进的战术理论是必不可少的核心要素之一。过去的无产阶级革命与暴动除了缺乏一定的正确理论，而且没有自己武器装备与之抗衡。因此，我们将着手为新生的人民解放军更新与补充先进武器，同时精简军队的编制和安排军队干部学习相关理论。打造一只可以担任全国解放任务的铁军！"
 
  DSC_people_army_sxjj: "思想建军"
  DSC_people_army_sxjj_desc: ""
@@ -730,8 +730,8 @@
  DSC_people_army_rmdjd_desc: "人民的军队"
  
 
- DSC_people_armyI: "建立人民解放军"
- DSC_people_armyI_desc: "虽然我国当前不止一个“人民解放军”，但我们的军队才是全中国唯一担负的起这一称号的军队，因为我们真正代表了人民的利益"
+ DSC_people_armyI: "第二次三湾改编"
+ DSC_people_armyI_desc: "自1948年正式更名人民解放军，到1978年改革开放后军纪随军队经商问题的逐步扩大和深入社会而恶化。无形中中国人民解放军在经济政治领域俨然有国中之国之态。在具体的军事以及政治方面更是糜烂不堪。而在毛远新同志的主导下，我们将以全新的革命者的姿态重建这一支人民的武装，确保人民解放军在马列毛思想的指导下，向解放全中国前进。"
  DSC_people_armyII: "支部建在连上"
  DSC_people_armyII_desc: "党作为无产阶级的先锋队，应当完全的掌握无产阶级的武装力量"
 
@@ -740,10 +740,10 @@
 
 
  DSC_people_armyIII: "劝降敌军"
- DSC_people_armyIII_desc: ""
+ DSC_people_armyIII_desc: "尽管川渝军政府是我们的敌人。其中的高级将领和部分中层军官是铁杆的反革命分子。但下至士兵一级我们持枪对峙的敌军不一定全是我方的敌人。他们之中有人处于乱世中的生存困境，有人则是被强征而来。因此，通过一定的宣传工作，我们可以将部分动摇的士兵和中层军官拉拢到我方，为革命出力。"
 
  DSC_people_army_minbing: "动员赤卫队"
- DSC_people_army_minbing_desc: ""
+ DSC_people_army_minbing_desc: "正如毛泽东同志所言，红军所承担的不仅是单纯的军事任务，更要教育群众、发展群众，不能脱离人民群众。赤卫队虽然不算正式的军队，他们不一定拥有优越的军事素养和战术能力。但他们坚定的信念确保了对革命的忠诚。将其动员起来不仅能填补我方一定程度的人力缺口，且更好的稳固我方现有的革命根据地。"
 
  DSC_people_army_nalodnayavoina: "人民军队"
  DSC_people_army_nalodnayavoina_desc: "战争不能只靠军队。我们将发动亿万人民，构建全民皆兵的抗战网络，让敌人在人民战争的汪洋大海中灭亡。"
