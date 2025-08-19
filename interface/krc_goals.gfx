@@ -3,6 +3,13 @@ spriteTypes = {
 		name = "CPC_Rebuilding_Southeast_China"
 		texturefile = "gfx/interface/goals/lor/CPC/重建东南.png"
 	}		
+
+		SpriteType = {
+		name = "dazibao"
+		texturefile = "gfx/interface/goals/yunze_diyitubiao.png"
+	}	
+
+
 		SpriteType = {
 		name = "CPC_Transforming_Bureaucratic_Capitalist_Economy"
 		texturefile = "gfx/interface/goals/lor/CPC/改造官僚资本主义.png"
@@ -879,6 +886,9 @@ SpriteType = {
 		name = "the_cultural_revolution_end"
 		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/the_cultural_revolution_end.png"
 	}	
+
+
+
 			SpriteType = {
 		name = "abolish_president_of_state"
 		texturefile = "gfx/interface/goals/lor/CPC/Maozedong/Cultural_Revolution/abolish_president_of_state.png"

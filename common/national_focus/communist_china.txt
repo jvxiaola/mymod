@@ -11535,7 +11535,8 @@ every_owned_state = {
 
 focus = {
 	id = PRC_dazibao
-	icon = four_freedoms
+	#icon = four_freedoms
+	icon = dazibao
 	x = 1
 	y = 1
 	prerequisite = {focus = PRC_sidamingzhu}
