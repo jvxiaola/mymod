@@ -227,12 +227,7 @@ is_triggered_only = yes
 fire_only_once = yes
 	immediate = {
 		country_event={id=prc1.7497}
-		every_state = {
-			limit = {
-				is_core_of = DSC
-			}
-			remove_core_of = DSC
-		}
+
 set_country_flag = clear_military_focus
 }
 	option = {
@@ -245,13 +240,12 @@ set_country_flag = clear_military_focus
 		}
 
 DSC={
-	set_country_flag = changing_tag
 	mark_focus_tree_layout_dirty = yes
 }
 			CHI={
-				change_tag_from = DSC
-				set_country_flag = changing_tag
+
 				mark_focus_tree_layout_dirty = yes
+
 				set_country_flag = manual_civil_war_debuff_removal
 remove_ideas = civil_war_disorganised_military_1
 remove_ideas = civil_war_disorganised_military_2_military
@@ -271,7 +265,7 @@ clr_country_flag = manual_civil_war_debuff_removal
 			}
 
 
-				country_event={id = prc1.300 days=1}
+				country_event={id = prc1.300 }
 			country_event={id=prc1.7497}
 
 
@@ -291,7 +285,7 @@ remove_ideas = CHI_war_communism
 		
 
 				CHI={
-
+load_focus_tree = communsim_PRC_focus
 
 
 					set_variable = { party_pop_array^4 = 0.55 }
@@ -334,9 +328,8 @@ remove_ideas = CHI_capital_withdrawal4
 
 
 
-	CHI={
-		inherit_technology = DSC
-	}
+
+
 	}
 
 	
@@ -351,8 +344,10 @@ is_triggered_only = yes
 	immediate = {
 		DSC={
 			cancel_national_focus = yes
+
 		}
 		CHI={
+
 			set_country_flag = manual_civil_war_debuff_removal
 			remove_ideas = civil_war_disorganised_military_1
 			remove_ideas = civil_war_disorganised_military_2_military
@@ -400,23 +395,29 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 immediate = {
+			every_state = {
+			limit = {
+				is_core_of = DSC
+			}
+			remove_core_of = DSC
+		}
 	DSC={
+
 		cancel_national_focus = yes
 	}
 
 	
 clr_country_flag = clear_military_focus
 CHI={
+
+				#recruit_character = Mao_Yuanxin
+	#unlock_division_template = yes
 	cancel_national_focus = yes
 	country_event={id=prc1.7497}
 annex_country = {
-	target = DSC
-	transfer_troops = yes
+    target = DSC
+    transfer_troops = yes
 }
-
-
-
-
 
 
 
@@ -1721,7 +1722,7 @@ country_event = {
 					country_event = { id = CHI_ER_BEFORE_xin.6 days = 20 } 
 					clr_country_flag = XIN_attacked
 					mark_focus_tree_layout_dirty = yes
-					add_ideas = patry_fenlie
+					#add_ideas = patry_fenlie
 				}
 				every_country = {
 					limit = {
@@ -1729,6 +1730,7 @@ country_event = {
 						has_cosmetic_tag = CHI_REB_SA
 						has_cosmetic_tag = CHI_REB_SB
 					}
+					#remove_ideas = party_fenlie
 					country_event = { id = prc1.161 days = 3 }
 				}
 				DSC = {

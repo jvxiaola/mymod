@@ -2376,7 +2376,18 @@ completion_reward = {
 		completion_reward = {
 			custom_effect_tooltip = Joint_production_system_tt
 			hidden_effect = {
+
+
+
+			set_country_flag = changing_tag
+mark_focus_tree_layout_dirty = yes
 				CHI = {
+
+		inherit_technology = DSC
+			add_research_slot = 3
+		set_country_flag = changing_tag
+mark_focus_tree_layout_dirty = yes
+									country_event = { id = prc1.211 days = 1}
 			create_country_leader = {
 				name = "毛远新"
 				picture = "Mao_Yuanxin.dds"
@@ -2395,7 +2406,7 @@ completion_reward = {
 				neutrality = 0.0
 				nationalist = 0.0
 			}
-			recruit_character = Mao_Yuanxin
+
 			set_politics = {
 				ruling_party = communism
 				elections_allowed = no
@@ -2430,6 +2441,7 @@ completion_reward = {
 					set_variable = { var = CHI.corporate_tax_rate value = DSC.corporate_tax_rate }
 					set_variable = { var = CHI.population_tax_rate value = DSC.population_tax_rate }
 				}
+
 				add_ideas = Joint_production_system
 				increase_economic_growth = yes
 				remove_ideas = CHI_economic_recovery_end
@@ -2438,14 +2450,15 @@ completion_reward = {
 				clr_country_flag = rehabilitate_economy
 			CHI = { 
 				transfer_state = 526 
+							
+				change_tag_from = DSC
 				clr_country_flag = party5_banned
-				country_event = { id = prc1.211 days = 1 }
-			}
+
 			every_state = {
 				limit = { is_core_of = DSC }
 				add_core_of = CHI
 			}
-			add_research_slot = 1
+
 			}
 		}
 
@@ -2462,7 +2475,7 @@ completion_reward = {
 
 
 
-
+	}
 
 
 
