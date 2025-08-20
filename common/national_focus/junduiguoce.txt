@@ -5,7 +5,8 @@ joint_focus = {
 
 
 	id = DSC_DSC_civ_start
-	icon = worker_communist
+	#icon = worker_communist
+	icon =chuanyudiyiqiang
 	x = 7
 
 	y = 0
