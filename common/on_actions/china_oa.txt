@@ -26,7 +26,28 @@ on_daily_CHI = {
 
 	}
 clr_country_flag = neizhanzhong
+set_popularities = {
+		democratic = 10.0
+		communism = 70.0
+		fascism = 0.0
+		neutrality = 20.0
+		nationalist = 0.0
+	}
+				set_country_flag = CHI_left
 
+
+					start_politics_input = yes
+
+					set_politics = {ruling_party = communism elections_allowed = no }
+					add_to_array = { ruling_party = 5 } #CPC
+					set_variable = { party_pop_array^5 = 0.55 }
+					set_variable = { party_pop_array^4 = 0.15 }
+					set_variable = { party_pop_array^19 = 0.2 }
+					set_variable = { party_pop_array^2 = 0.10 }
+
+					#generate the rest
+add_to_array = { gov_coalition_array = 19 }
+				startup_politics = yes
 
 set_politics = {
 	ruling_party = communism
@@ -48,7 +69,7 @@ set_politics = {
 				limit = {
 					check_variable = {
 						var = CHI_neizhanfengxian
-						value = 1
+						value = 0.97
 						compare = greater_than_or_equals
 					}
 				}
