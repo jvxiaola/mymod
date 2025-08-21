@@ -15,8 +15,29 @@ on_actions = {
 
 
 
+on_daily_CHI = {
+	effect = {
+	if={
+	limit={
+	has_country_flag = neizhanzhong
+	has_civil_war = no
 
 
+
+	}
+clr_country_flag = neizhanzhong
+
+
+set_politics = {
+	ruling_party = communism
+	elections_allowed = no
+}
+
+
+}
+	
+	}
+}
 
 
 
@@ -32,10 +53,10 @@ on_actions = {
 					}
 				}
 				# 重置内战风险变量为极小值
-				set_variable = {
-					var = CHI_neizhanfengxian
-					value = -10000000
-				}
+				#set_variable = {
+				#	var = CHI_neizhanfengxian
+				#	value = -10000000
+				#}
 				# 触发内战相关事件
 				country_event = { id = prc1.57 days = 3 }
 			}

@@ -1703,7 +1703,7 @@ country_event = {
 		desc = prc1.57.d
 		
 		is_triggered_only = yes
-	
+	fire_only_once = yes
 	
 		immediate = {
 			hidden_effect = {
@@ -2380,6 +2380,8 @@ add_to_array = { gov_coalition_array = 19 }
 		var = CHI_neizhanfengxian
 		value = -10000000
 	}
+set_country_flag = neizhanzhong
+
 	create_country_leader = {
 		name = "邓力群"
 		picture = "Deng_liqun.dds"
