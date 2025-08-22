@@ -31,7 +31,7 @@ DSC_people_support_dynamic_right = {
 	army_org_factor =  DSC_people_support_dynamic27
 	}
 DSC_people_support_dynamic_left = {
-	enable = {always = yes}
+	enable = { always = yes }
 	icon = GFX_idea_communism5
 	
 	consumer_goods_factor = DSC_people_support_dynamic1 

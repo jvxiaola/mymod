@@ -239,13 +239,7 @@ set_country_flag = clear_military_focus
 			factor = 50
 		}
 
-DSC={
-	mark_focus_tree_layout_dirty = yes
-}
 			CHI={
-
-				mark_focus_tree_layout_dirty = yes
-
 				set_country_flag = manual_civil_war_debuff_removal
 remove_ideas = civil_war_disorganised_military_1
 remove_ideas = civil_war_disorganised_military_2_military
@@ -263,19 +257,8 @@ remove_ideas = civil_war_disorganised_military_5_experience
 clr_country_flag = manual_civil_war_debuff_removal
 
 			}
-
-
 				country_event={id = prc1.300 }
-			country_event={id=prc1.7497}
-
-
-
-
-CHI={remove_ideas =  CHI_party_before_guns
-remove_ideas =  people_army1
-remove_ideas =  people_army2
-remove_ideas =  people_army3
-remove_ideas =  people_army4
+CHI={
 remove_ideas =  red_weidui1
 remove_ideas =  red_army
 remove_ideas =  red_army1
@@ -439,10 +422,8 @@ uncomplete_national_focus = {
 	focus = PRC_jjdz
 	uncomplete_children = yes
 }
-clr_country_flag = changing_tag
-		mark_focus_tree_layout_dirty = yes
-
-		 
+	set_country_flag = got_millitry_is_finished
+	mark_focus_tree_layout_dirty = yes
 	}
 
 

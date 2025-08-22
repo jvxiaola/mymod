@@ -22,9 +22,7 @@ joint_trigger = {
 			
 	 allow_branch = {
 		has_country_flag = qygc
-NOT={
-	has_country_flag = changing_tag
-}
+		has_country_flag = got_millitry_is_finished
 	 }
 
 	ai_will_do = {

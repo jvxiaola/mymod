@@ -414,46 +414,35 @@ CHI_add_State_sichuan = {
   1227 = { add_to_array = { array = global.sichuan_states } }
 }
 CHI_add_State_fujian = {
-  state = 537
-  add_to_array = { array = global.fujian_states }
+  537 = { add_to_array = { array = global.fujian_states } }
 }
 CHI_add_State_hubei = {
-  state = 570
-  add_to_array = { array = global.hubei_states }
+  570 = { add_to_array = { array = global.hubei_states } }
 }
 CHI_add_State_shanghai = {
-  state = 540
-  add_to_array = { array = global.shanghai_states }
+  540 = { add_to_array = { array = global.shanghai_states } }
 }
 CHI_add_State_guizhou = {
-  state = 582
-  add_to_array = { array = global.guizhou_states }
+  582 = { add_to_array = { array = global.guizhou_states } }
 }
 CHI_add_State_hunan = {
-  state = 572
-  add_to_array = { array = global.hunan_states }
+  572 = { add_to_array = { array = global.hunan_states } }
 }
 CHI_add_State_jiangxi = {
-  state = 562
-  add_to_array = { array = global.jiangxi_states }
+  562 = { add_to_array = { array = global.jiangxi_states } }
 }
 CHI_add_State_anhui = {
-  state = 564
-  add_to_array = { array = global.anhui_states }
+  564 = { add_to_array = { array = global.anhui_states } }
 }
 CHI_add_State_neimenggu = {
-  state = 556
-  add_to_array = { array = global.neimenggu_states }
-  state = 1097
-  add_to_array = { array = global.neimenggu_states }
+  556 = { add_to_array = { array = global.neimenggu_states } }
+  1097 = { add_to_array = { array = global.neimenggu_states } }
 }
 CHI_add_State_jilin = {
-  state = 554
-  add_to_array = { array = global.jilin_states }
+  554 = { add_to_array = { array = global.jilin_states } }
 }
 CHI_add_State_heilongjiang = {
-  state = 555
-  add_to_array = { array = global.heilongjiang_states }
+  555 = { add_to_array = { array = global.heilongjiang_states } }
 }
 
 #军队经商残余影响缓解
