@@ -1297,15 +1297,6 @@
 
 
 #标记点2
-
-
-
-
-
-
-
-
-
  HKG_people_support_dynamic_left_desc: "\n\n\n\n\n£GFX_CHI_people_support_dynamic_dynamic_desc_left_picture \n\n\n\n\n\n\n中国革命群众经过各种斗争，最终掌握了中国的政权，不过，这并不是革命的结束，而仅仅是开始！中国人民必须考虑自身与外国无产阶级的联系，考虑自身的建设，万万不可重蹈无产阶级文化大革命后期人民对革命失望的覆辙，不然的话，资产阶级与官僚主义反革命极有可能再次推翻革命政权。\n\n §Y人民的革命热情为§!： £stability_texticon [?HKG_people_support|%+2]。\n受到民族精神或法律影响，每月变化(本mod已将变化缩小10倍)：[?Final_hongkong_people_support_to_china_government_modifier|%+2]"
  HKG_people_support_dynamic_right_desc: "\n\n£GFX_CHI_people_support_dynamic_dynamic_desc_right_pic \n\n\n\n中国人民自古以来就是不愿意做奴隶的人民，上千年的历史数千次起义，说明了中国的历史就是一部悲壮的阶级斗争史，如果政府不让人民活了，那么人民就会抛弃该政府。\n §R王侯将相，宁有种乎？§!\n\n §Y政府合法性为§!： £stability_texticon [?HKG_people_support|%+2]\n受到修正影响，每月变化(本mod已将变化缩小10倍)：[?Final_hongkong_people_support_to_china_government_modifier|%+2]"
  HKG_people_support_dynamic_left: "革命热情"
@@ -1313,11 +1304,6 @@
  hongkong_people_support_to_china_government_modifier: "£stability_texticon 政府合法性或革命热情每月变化"
 
  HKG_Revolutionary_Enthusiasm_tt: "§Y政府合法性§!动态修正将被替换为§Y革命热情§!。\n此动态修正与外交、政治、经济挂钩。"
-
-
-
-
-
 
 
  HKG_Socialist_Construction_dynamic: "红色之梦"
@@ -1364,12 +1350,10 @@
 
 
  USA_Anti_Communist_china_Jihad: "干涉中国内战"
-
  CHI_worker_cooperative: "工人合作社"
  PRC_World_Revolution_tt: "§H我们或我们的盟友§!§R必须§!控制§R华盛顿特区、伦敦、莫斯科、柏林、东京、巴黎、马德里§!"
  PRC_Xi_Jinping_Ambition: "在习主席的带领下，我们统一了东亚地区"
  CHI_selfemployed_small_cities: "受控的个体户"
-
  CHI_People_Commune_tt: "每1000万人额外收入$$§G0.2B§!"
  CHI_People_Commune_tte: "$$[?additional_income_CHI_People_Commune|+3]来自§Y$CHI_People_Commune$§!\n"
  CHI_state_farm_tt: "每1000万人额外收入$$§G0.15B§!"
@@ -1383,13 +1367,12 @@
  CHI_1900: "为庚子国难复仇"
  CHI_Bide: "韬光养晦"
  CHI_Bide_desc: "韬光养晦这个词出自于《旧唐书·宣宗记》，意思是说在我们没有把握击败敌人的时候，最好要隐忍。\n在现代中国的意思则是在经过毛泽东的输出革命政策以后，邓小平所提倡的放弃支持国际共产主义运动，并且在中国境内发展”中国特色社会主义“，与资本主义国家和平共处的政策。"
- patry_fenlie: "分裂的党政军领导机构"
- patry_fenlie_desc: "党中央已经公开分裂成俩派，一派主张继续改革，一派主张重视工人权力，并想倒退改革"
+
  cannot_train_units_tt: "§R禁止解散军队，改变军队编制§!"
  PRC_afcan_work: "非洲血汗工厂"
  PRC_afcan_work2: "社会主义国际分工"
  CHI_Socialist_Market_Economy: "中国特色社会主义市场经济"
- CHI_Socialist_Market_Economy_desc: "社会主义怎么可能会采用市场经济呢？在马克思，列宁的笔下，市场经济是与资本主义制度并列在一起的，所以很多教条主义分子认为市场经济不可能是社会主义。\n直到，1978年的那个春天，邓小平同志开启了一个新的理论体系——“中国特色社会主义”，它指出，中国的生产力过于落后，因此应该以经济建设为中心，不管黑猫白猫，只要能抓到老鼠就是好猫。。。但是，中国的市场经济并不是与西方国家一样。他不是为了资本，而是为了全体人民的福利运行。"
+ CHI_Socialist_Market_Economy_desc: "社会主义怎么可能会采用市场经济呢？在马克思，列宁的笔下，市场经济是与资本主义制度并列在一起的，所以很多教条主义分子认为市场经济不可能是社会主义。\n直到，1978年的那个春天，邓小平同志开启了一个新的理论体系——“中国特色社会主义”，它指出，中国的生产力过于落后，因此应该以经济建设为中心，不管黑猫白猫，只要能抓到老鼠就是好猫....但是，中国的市场经济并不是与西方国家一样。他不是为了资本，而是为了全体人民的福利运行。"
  CHI_Free_Market_Economy: "中国特色市场经济"
  CHI_Free_Market_Economy_desc: "中国的市场经济并不是与西方国家一样。他不是为了资本，而是在国家领导下为了全体人民的福利运行。"
  CHI_big_layoff: "大下岗"

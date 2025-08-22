@@ -124,17 +124,6 @@ on_monthly_CHI = {
 			}
 
 
-
-
-
-
-
-
-
-
-
-
-
 		set_temp_variable = {
 			var=Final_Chinese_people_support_to_china_government_modifier
 			value=modifier@Chinese_people_support_to_china_government_modifier
@@ -149,15 +138,11 @@ on_monthly_CHI = {
 	
 	if = {
 				limit = {
-				CHI = {
-	#OR = {			
+				CHI = {		
 	has_dynamic_modifier = {
 		modifier = CHI_people_support_dynamic_left
 	}
-	#has_dynamic_modifier = {
-	#modifier = CHI_people_support_dynamic_right
-	#}
-	#}
+
 	}
 	}
 	
@@ -398,10 +383,11 @@ has_dynamic_modifier = {
 }
 }
 }
-CHI = {clamp_variable  = {
-    var = CHI_people_support
-    min = 0
-max = 1
+CHI = {
+	clamp_variable  = {
+   		var = CHI_people_support
+    	min = 0
+		max = 1
 }
 CHI_people_support_dynamic_scriptes = yes
 
@@ -432,23 +418,7 @@ has_dynamic_modifier = {
 }
 CHI_people_support_dynamic_scriptes_left = yes
 }
-		if = {
-			limit = {
-				CHI = {
-					NOT = {
-						has_dynamic_modifier = {
-    					modifier = CHI_Socialist_Construction_dynamic
-						}
-					} 
-					OR = {
-						has_country_flag = chi_work_rev
-						has_country_flag = chi_left 
-						has_country_flag = CHI_trotskyism
-					}
-				}
-			}
-			add_dynamic_modifier = { modifier = CHI_Socialist_Construction_dynamic }
-		}
+
 }
 }
 }

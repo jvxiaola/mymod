@@ -63,7 +63,7 @@ DSC_people_support_dynamic_left = {
 	army_org_factor =  DSC_people_support_dynamic27
 	}
 DSC_Socialist_Construction_dynamic = {
-	enable = {always = yes}
+	enable = { always = yes }
 	icon = GFX_idea_communism10
 	
 chuanyu_people_support_to_china_government_modifier = DSC_Socialist_Construction_dynamic1
@@ -81,7 +81,7 @@ education_cost_multiplier_modifier= DSC_Socialist_Construction_dynamic12
 health_cost_multiplier_modifier= DSC_Socialist_Construction_dynamic13
 social_cost_multiplier_modifier= DSC_Socialist_Construction_dynamic14
 total_workforce_modifier= DSC_Socialist_Construction_dynamic15
-productivity_and_employment_modifier= DSC_Socialist_Construction_dynamic16
+productivity_and_employment_modifier = DSC_Socialist_Construction_dynamic16
 state_productivity_growth_modifier = DSC_Socialist_Construction_dynamic17
 high_unemployment_modifier= DSC_Socialist_Construction_dynamic18
 consumer_goods_expected_value = DSC_Socialist_Construction_dynamic19

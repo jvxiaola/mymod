@@ -1716,7 +1716,6 @@ country_event = {
 						tag = HKG
 					}
 				}
-
 				country_event = { id = prc1.161 days = 3 }
 				CHI = { 
 					country_event = { id = CHI_ER_BEFORE_xin.6 days = 20 } 
@@ -1730,7 +1729,6 @@ country_event = {
 						has_cosmetic_tag = CHI_REB_SA
 						has_cosmetic_tag = CHI_REB_SB
 					}
-					#remove_ideas = party_fenlie
 					country_event = { id = prc1.161 days = 3 }
 				}
 				DSC = {

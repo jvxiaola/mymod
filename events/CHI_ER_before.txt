@@ -68,11 +68,16 @@ country_event = {
 		}
 
 			#country_event = { id = prc1.57 days = 3 } 中超开赛
-			434 = { set_state_flag = CHI_Left_State }
-			548 = { set_state_flag = CHI_Left_State }
-			549 = { set_state_flag = CHI_Left_State }
-			1095 ={ set_state_flag = CHI_Left_State }
-			552 = { set_state_flag = CHI_Left_State }
+			every_owned_state = {
+			limit = { 
+				OR = { 
+					is_in_array = { global.shandong_states = THIS } 
+					is_in_array = { global.hebei_states = THIS } 
+					is_in_array = { global.shanxi_states = THIS } 
+				}
+			}
+			set_state_flag = CHI_Left_State
+		}
 		}
 		add_stability = -0.1
 		set_country_flag = cjsl

@@ -163,17 +163,16 @@ effect = {
 				CHI = {
 					OR = {			
 						has_dynamic_modifier = { modifier = CHI_people_support_dynamic_left }
-#has_dynamic_modifier = {
-#modifier = CHI_people_support_dynamic_right
-#}
+
 }
 }
 }
 
-CHI = {clamp_variable  = {
+CHI = {
+	clamp_variable  = {
     var = CHI_people_support
     min = 0
-max = 1
+	max = 1
 }
 CHI_people_support_dynamic_scriptes = yes
 
@@ -207,66 +206,6 @@ CHI_people_support_dynamic_scriptes_left = yes
 }
 
 }
-on_startup = {
-    effect = {
-            CHI = {
-				CHI_people_support_dynamic_scriptes = yes
-            }
-	}
 
-}
-on_monthly_CHI = {
-	effect = {
-		if = {
-			limit = {
-				NOT = { has_dynamic_modifier = { modifier = CHI_Socialist_Construction_dynamic } } 
-				OR = {
-					has_country_flag = chi_work_rev
-					has_country_flag = chi_left 
-					has_country_flag = CHI_trotskyism
-				}
-			}
-			add_dynamic_modifier = { modifier = CHI_Socialist_Construction_dynamic }
-		}
-		else_if = {
-			limit = {
-				NOT = { 
-					has_dynamic_modifier = { modifier = CHI_people_support_dynamic_left }
-					has_country_flag = PRC_World_Revolution
-				} 
-				OR = {
-					has_country_flag = chi_work_rev
-					has_country_flag = chi_left 
-					has_country_flag = CHI_trotskyism
-				}
-				OR = {
-					is_in_array = { ruling_party = 4 }
-					is_in_array = { ruling_party = 5 }
-					is_in_array = { ruling_party = 19 }
-				}
-			}
-			add_dynamic_modifier = { modifier = CHI_people_support_dynamic_left }
-		}
-		else_if = {
-			limit = {
-				NOT = { has_country_flag = PRC_World_Revolution } 
-				OR = {
-					has_country_flag = chi_work_rev
-					has_country_flag = chi_left 
-					has_country_flag = CHI_trotskyism
-				}
-				NOT = {
-					OR = {
-						is_in_array = { ruling_party = 4 }
-						is_in_array = { ruling_party = 5 }
-						is_in_array = { ruling_party = 19 }
-						is_in_array = { ruling_party = 21 }
-					}
-				}
-			}
-			remove_dynamic_modifier = { modifier = CHI_people_support_dynamic_left }		
-		}
-	}
-}
 
 }
