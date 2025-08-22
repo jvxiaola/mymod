@@ -2376,50 +2376,30 @@ completion_reward = {
 		completion_reward = {
 			custom_effect_tooltip = Joint_production_system_tt
 			hidden_effect = {
-
-
-
-			set_country_flag = changing_tag
-mark_focus_tree_layout_dirty = yes
-				CHI = {
-
-		inherit_technology = DSC
-			add_research_slot = 3
-		set_country_flag = changing_tag
-mark_focus_tree_layout_dirty = yes
-									country_event = { id = prc1.211 days = 1}
-			create_country_leader = {
-				name = "毛远新"
-				picture = "Mao_Yuanxin.dds"
-			ideology = Chinese_Socialism_mao
-			traits = {  Disaster_relief_heroes military_engineer }
-			desc = Mao_Yuanxin_desc
-				}
-
-
-
-			start_politics_input = yes
-			set_popularities = {
-				democratic = 0.0
-				communism = 100
-				fascism = 0.0
-				neutrality = 0.0
-				nationalist = 0.0
-			}
-
+				set_country_flag = changing_tag
+				mark_focus_tree_layout_dirty = yes
+					CHI = {
+						inherit_technology = DSC
+						add_research_slot = 3
+						set_country_flag = changing_tag
+						mark_focus_tree_layout_dirty = yes
+						country_event = { id = prc1.211 days = 1}
+						Mao_Yuanxin = { set_nationality = CHI }
+						promote_character = Mao_Yuanxin
+						start_politics_input = yes
+						set_popularities = {
+							democratic = 0.0
+							communism = 100
+							fascism = 0.0
+							neutrality = 0.0
+							nationalist = 0.0
+						}
 			set_politics = {
 				ruling_party = communism
 				elections_allowed = no
 			}
 			add_to_array = { ruling_party = 4 } #共产主义								
 			set_variable = { party_pop_array^4 = 0.40 } #共产主义	
-
-
-
-
-
-
-			
 					startup_politics = yes
 					#独立性继承
 					recalculate_influence = yes
@@ -2450,15 +2430,12 @@ mark_focus_tree_layout_dirty = yes
 				clr_country_flag = rehabilitate_economy
 			CHI = { 
 				transfer_state = 526 
-							
 				change_tag_from = DSC
 				clr_country_flag = party5_banned
-
 			every_state = {
 				limit = { is_core_of = DSC }
 				add_core_of = CHI
 			}
-
 			}
 		}
 
