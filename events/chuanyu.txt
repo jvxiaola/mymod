@@ -843,17 +843,16 @@ Militia_Bat = { x = 1 y = 3 }
 	}
 	else_if = {
 		limit = { check_variable = { DSC_wanzhou_shengtou = 3 } }
-	random_owned_controlled_state = {
-		prioritize = {1226 }
-		create_unit = {
-			division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					
-			owner = DSC
-			count = 4
-			prioritize_location = 11865
+		random_owned_controlled_state = {
+			prioritize = {1226 }
+			create_unit = {
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					
+				owner = DSC
+				count = 4
+				prioritize_location = 11865
+			}
 		}
 	}
-
-}
 			remove_ideas = CHI_GGKF
 			remove_ideas = CHI_Socialist_Market_Economy
 			remove_dynamic_modifier = { modifier = DSC_people_support_dynamic_right }
