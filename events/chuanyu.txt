@@ -748,13 +748,7 @@ Militia_Bat = { x = 1 y = 3 }
 
 
 	else_if = {
-		limit = {
-			check_variable = {
-				var = DSC_xisichuan_shengtou
-				value = 2
-				compare = equals
-			}
-		}
+		limit = { check_variable = { DSC_xisichuan_shengtou = 2 } }
 		#标记
 		DSC = {
 			transfer_state = 585
@@ -799,12 +793,10 @@ Militia_Bat = { x = 1 y = 3 }
 		random_owned_controlled_state = {
 			prioritize = { 585 }
 			create_unit = {
-				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					
+				owner = DSC
+				count = 2
 				prioritize_location = 1918
-			}
-			create_unit = {
-				division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
-				prioritize_location = 4999
 			}
 		}
 		random_country = {
@@ -817,94 +809,46 @@ Militia_Bat = { x = 1 y = 3 }
 
 
 	random_owned_controlled_state = {
-		prioritize = { 1226}
+		prioritize = { 1226 }
 		create_unit = {
-			division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+			division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					
+			owner = DSC
+			count = 2
 			prioritize_location = 6999
 		}
-
-		create_unit = {
-			division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
-			prioritize_location = 6999
-		}
-
-
 	}
 		if = { 
-			limit={ 				
-		check_variable = {
-
-			var = DSC_wanzhou_shengtou
-			value = 1
-			compare = equals
-		}}
+			limit = { check_variable = { DSC_wanzhou_shengtou = 1 } }
 		random_owned_controlled_state = {
 			prioritize = { 1226 }
 			create_unit = {
-				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					
+				owner = DSC
+				count = 2
 				prioritize_location = 11865
 			}
-	
-					create_unit = {
-				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
-				prioritize_location = 11865
-			}
-			
-		
 		}
 	}
 		else_if = {
-			limit = { 
-				
-				check_variable = {
-					var = DSC_wanzhou_shengtou
-					value = 2
-					compare = equals
-				}
-	
-		}
+			limit = { check_variable = { DSC_wanzhou_shengtou = 2 } }
 		random_owned_controlled_state = {
 			prioritize = { 1226 }
 			create_unit = {
-				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
-				prioritize_location = 11865
-			}
-			create_unit = {
-				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
-				prioritize_location = 11865
-			}
-			create_unit = {
-				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					
+				owner = DSC
+				count = 3
 				prioritize_location = 11865
 			}
 		}
 	}
 	else_if = {
-		limit = { 
-			check_variable = {
-				var = DSC_wanzhou_shengtou
-				value = 3
-				compare = equals
-			}
-	}
-	
+		limit = { check_variable = { DSC_wanzhou_shengtou = 3 } }
 	random_owned_controlled_state = {
 		prioritize = {1226 }
 		create_unit = {
 			division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					
 			owner = DSC
-			prioritize_location = 11865
-		}
-		create_unit = {
-			division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
-			prioritize_location = 11865
-		}
-		create_unit = {
-			division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
-			prioritize_location = 11865
-		}
-		create_unit = {
-			division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
+			count = 4
 			prioritize_location = 11865
 		}
 	}

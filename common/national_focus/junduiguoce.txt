@@ -2,91 +2,58 @@
 
 
 joint_focus = {
-
-
 	id = DSC_DSC_civ_start
-	#icon = worker_communist
-	icon =chuanyudiyiqiang
+	icon = chuanyudiyiqiang
 	x = 7
-
 	y = 0
-
 	cost = 5
-
-	prerequisite = {
-
-	 }
-joint_trigger = {
-	has_country_flag = qygc
-}
+	joint_trigger = {
+		OR = {
+			has_country_flag = qygc
+			AND = {
+				has_global_flag = DSC_is_CHI
+				tag = CHI
+			}
+		}
+	}
 			
-	 allow_branch = {
-		has_country_flag = qygc
-		has_country_flag = got_millitry_is_finished
+	allow_branch = {
+		OR = {
+			has_country_flag = qygc
+			has_country_flag = got_millitry_is_finished
+		}
 	 }
 
 	ai_will_do = {
 		factor = 10
 	}
-	bypass = {
-
-	}
-available = {
-
-}
+	bypass = {}
+	available = {}
 	offset = {
 		x = 10
 		trigger = {
-			OR={
+			OR = {
 				has_country_flag = qyxd
 			}
-			
 		}
+	}
+	offset = {
+		x = -14
+		trigger = {
+			OR = {
+				has_country_flag = rehabilitate_economy
+			}	
 		}
-
-
-		offset = {
-			x = -14
-			trigger = {
-				OR={
-					has_country_flag = rehabilitate_economy
-				}
-				
-			}
-			}
-
-			offset = {
-				x = -20
-				trigger = {
-tag=CHI
-					
-				}
-				}
-
-	
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-
-add_political_power = 100
 	}
 
+	offset = {
+		x = -20
+		trigger = { tag = CHI }
+	}
+	completion_reward = {
+		add_political_power = 100
+	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 joint_focus = {
 
@@ -99,10 +66,16 @@ joint_focus = {
 	cost = 5
 	relative_position_id = DSC_DSC_civ_start
 	prerequisite = {
-		focus=DSC_DSC_civ_start
+		focus = DSC_DSC_civ_start
 	 }
-	 joint_trigger = {
-		has_country_flag = qygc
+	joint_trigger = {
+		OR = {
+			has_country_flag = qygc
+			AND = {
+				has_global_flag = DSC_is_CHI
+				tag = CHI
+			}
+		}
 	}
 				
 	available = {
@@ -156,8 +129,14 @@ relative_position_id = DSC_people_armyI
 		focus=DSC_people_armyI
 	 }
 
-	 joint_trigger = {
-		has_country_flag = qygc
+	joint_trigger = {
+		OR = {
+			has_country_flag = qygc
+			AND = {
+				has_global_flag = DSC_is_CHI
+				tag = CHI
+			}
+		}
 	}
 	ai_will_do = {
 		factor = 10
@@ -196,7 +175,13 @@ relative_position_id = DSC_people_armyI
 		focus=DSC_people_armyI
 	 }
 	 joint_trigger = {
-		has_country_flag = qygc
+		OR = {
+			has_country_flag = qygc
+			AND = {
+				has_global_flag = DSC_is_CHI
+				tag = CHI
+			}
+		}
 	}
 
 	ai_will_do = {
@@ -234,7 +219,13 @@ relative_position_id = DSC_people_armyI
 	 }
 
 	 joint_trigger = {
-		has_country_flag = qygc
+		OR = {
+			has_country_flag = qygc
+			AND = {
+				has_global_flag = DSC_is_CHI
+				tag = CHI
+			}
+		}
 	}
 	ai_will_do = {
 		factor = 10
@@ -312,7 +303,13 @@ relative_position_id = DSC_people_armyI
 
 	}
 	joint_trigger = {
-		has_country_flag = qygc
+		OR = {
+			has_country_flag = qygc
+			AND = {
+				has_global_flag = DSC_is_CHI
+				tag = CHI
+			}
+		}
 	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
@@ -372,7 +369,13 @@ relative_position_id = DSC_people_armyI
 		focus=DSC_people_army_sixiangjy
 	 }
 	 joint_trigger = {
-		has_country_flag = qygc
+		OR = {
+			has_country_flag = qygc
+			AND = {
+				has_global_flag = DSC_is_CHI
+				tag = CHI
+			}
+		}
 	}
 	 prerequisite = {
 		focus=DSC_people_army_junduizf
@@ -445,7 +448,7 @@ joint_focus = {
 	cost = 5
 relative_position_id = DSC_people_armyI
 	prerequisite = {
-		focus=DSC_people_army_qunzhonglx
+		focus = DSC_people_army_qunzhonglx
 	}
 	ai_will_do = {
 		factor = 10
@@ -454,7 +457,13 @@ relative_position_id = DSC_people_armyI
 
 	}
 	joint_trigger = {
-		has_country_flag = qygc
+		OR = {
+			has_country_flag = qygc
+			AND = {
+				has_global_flag = DSC_is_CHI
+				tag = CHI
+			}
+		}
 	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
@@ -533,7 +542,13 @@ relative_position_id = DSC_people_armyI
 	}
 	cancel_if_invalid = yes
 	joint_trigger = {
-		has_country_flag = qygc
+		OR = {
+			has_country_flag = qygc
+			AND = {
+				has_global_flag = DSC_is_CHI
+				tag = CHI
+			}
+		}
 	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
@@ -574,7 +589,13 @@ relative_position_id = DSC_people_armyI
 
 	}
 	joint_trigger = {
-		has_country_flag = qygc
+		OR = {
+			has_country_flag = qygc
+			AND = {
+				has_global_flag = DSC_is_CHI
+				tag = CHI
+			}
+		}
 	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
@@ -635,7 +656,13 @@ relative_position_id = DSC_people_armyI
 
 	}
 	joint_trigger = {
-		has_country_flag = qygc
+		OR = {
+			has_country_flag = qygc
+			AND = {
+				has_global_flag = DSC_is_CHI
+				tag = CHI
+			}
+		}
 	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
@@ -686,7 +713,13 @@ focus=DSC_people_army_zhbd
 
 	}
 	joint_trigger = {
-		has_country_flag = qygc
+		OR = {
+			has_country_flag = qygc
+			AND = {
+				has_global_flag = DSC_is_CHI
+				tag = CHI
+			}
+		}
 	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
@@ -723,7 +756,13 @@ relative_position_id = DSC_people_armyI
 
 	}
 	joint_trigger = {
-		has_country_flag = qygc
+		OR = {
+			has_country_flag = qygc
+			AND = {
+				has_global_flag = DSC_is_CHI
+				tag = CHI
+			}
+		}
 	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
@@ -799,7 +838,13 @@ relative_position_id = DSC_people_armyI
 
 	}
 	joint_trigger = {
-		has_country_flag = qygc
+		OR = {
+			has_country_flag = qygc
+			AND = {
+				has_global_flag = DSC_is_CHI
+				tag = CHI
+			}
+		}
 	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
@@ -868,7 +913,13 @@ relative_position_id = DSC_people_armyI
 
 	}
 	joint_trigger = {
-		has_country_flag = qygc
+		OR = {
+			has_country_flag = qygc
+			AND = {
+				has_global_flag = DSC_is_CHI
+				tag = CHI
+			}
+		}
 	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
@@ -985,7 +1036,13 @@ joint_focus = {
 	 }
 
 	 joint_trigger = {
-		has_country_flag = qygc
+		OR = {
+			has_country_flag = qygc
+			AND = {
+				has_global_flag = DSC_is_CHI
+				tag = CHI
+			}
+		}
 	}
 
 
@@ -1066,7 +1123,13 @@ relative_position_id = DSC_people_armyI
 
 	}
 	joint_trigger = {
-		has_country_flag = qygc
+		OR = {
+			has_country_flag = qygc
+			AND = {
+				has_global_flag = DSC_is_CHI
+				tag = CHI
+			}
+		}
 	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
@@ -1144,7 +1207,13 @@ relative_position_id = DSC_people_armyI
 
 	}
 	joint_trigger = {
-		has_country_flag = qygc
+		OR = {
+			has_country_flag = qygc
+			AND = {
+				has_global_flag = DSC_is_CHI
+				tag = CHI
+			}
+		}
 	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
@@ -1189,7 +1258,13 @@ relative_position_id = DSC_people_armyI
 
 	}
 	joint_trigger = {
-		has_country_flag = qygc
+		OR = {
+			has_country_flag = qygc
+			AND = {
+				has_global_flag = DSC_is_CHI
+				tag = CHI
+			}
+		}
 	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
@@ -1246,7 +1321,13 @@ relative_position_id = DSC_people_armyI
 
 	}
 	joint_trigger = {
-		has_country_flag = qygc
+		OR = {
+			has_country_flag = qygc
+			AND = {
+				has_global_flag = DSC_is_CHI
+				tag = CHI
+			}
+		}
 	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
@@ -1332,7 +1413,13 @@ relative_position_id = DSC_people_armyI
 
 	}
 	joint_trigger = {
-		has_country_flag = qygc
+		OR = {
+			has_country_flag = qygc
+			AND = {
+				has_global_flag = DSC_is_CHI
+				tag = CHI
+			}
+		}
 	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
