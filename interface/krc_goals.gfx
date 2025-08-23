@@ -4,7 +4,13 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/lor/CPC/重建东南.png"
 	}		
 
+
 		SpriteType = {
+		name = "military_purge"
+		texturefile = "gfx/interface/goals/military_purge.png"
+	}	
+
+	SpriteType = {
 		name = "dazibao"
 		texturefile = "gfx/interface/goals/yunze_diyitubiao.png"
 	}	

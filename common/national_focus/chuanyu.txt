@@ -1,5 +1,5 @@
 #!gfx:interface\mdard_goals.gfx
-
+#!gfx:interface\krc_goals.gfx
 focus_tree = {
 	id = DSC_focus
 	
