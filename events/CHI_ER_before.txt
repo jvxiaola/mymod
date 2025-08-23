@@ -126,7 +126,6 @@ country_event = {
 		set_country_flag = CHI_no_shanghaicommune
 		hidden_effect = {
 			DSC = {
-
 				inherit_technology = CHI
 				set_variable = { gdp_capita = 90.415 }
 				set_variable = { gdp_per_capita = 3.415 }
@@ -147,14 +146,12 @@ country_event = {
 				army_ratio = 0.1
 				air_ratio = 0.1
 			}
-random_army_leader = {
-    limit = {
-        NOT = { character = CHI_tao_bojun }   # 排除这个将领
-    }
-    set_nationality = DSC                   # 改国籍（转移到 PRG）
-}
-
-
+			random_army_leader = {
+    			limit = {
+       				NOT = { character = PGR_PLA_taobojun }   # 排除这个将领
+    			}
+    			set_nationality = DSC  #转移tag
+			}
 			DSC = {
 				set_variable = { civilian_factory_employment_var = 1 }
 				set_variable = { naval_factory_employment_var = 1 }
@@ -213,14 +210,7 @@ random_army_leader = {
 				set_variable = { party_pop_array^22 = 0.99 } #Nat_Autocracy
 				set_variable = { party_pop_array^23 = 0 } #Monarchist
 				add_to_array = { ruling_party = 22 }
-				startup_politics = yes	
-				create_country_leader = {
-					name = "川渝军区司令部"
-					picture = "NpcC.dds"
-					expire = "2222.1.1"
-					ideology = Nat_Autocracy
-					traits = {}
-				}
+				startup_politics = yes
 			}
 		}
 	}
@@ -345,17 +335,14 @@ country_event = {
 	trigger = { tag = CHI }
 	option = {	
 		name = CHI_ER_BEFORE_guang.06.a
-		#country_event = { id = CHI_ER_BEFORE.2 days = 35 }
+		country_event = { id = CHI_ER_BEFORE.7 days = 35 }
 		add_manpower = -200
 		every_owned_state = {
 			limit = { is_in_array = { global.guangdong_states = THIS } }
 			transfer_state_to = PRG
 		}
-
-CHI_tao_bojun = {
-    set_nationality = PRG
-}
-
+		PGR_PLA_taobojun = { set_nationality = PRG }
+		promote_character = PGR_PLA_taobojun
 		give_guarantee = PRG
 		PRG = {
 			every_owned_state = {
@@ -377,6 +364,21 @@ CHI_tao_bojun = {
 			}
 			give_military_access = CHI
 		}
+	}
+}
+
+country_event = {
+	id = CHI_ER_BEFORE_guang.07
+	title = CHI_ER_BEFORE_guang.07.t
+	desc = CHI_ER_BEFORE_guang.07.d
+	#picture = GFX_event_pictures_CW_D_event1
+	is_triggered_only = yes
+	trigger = { tag = CHI }
+	option = {	
+		name = CHI_ER_BEFORE_guang.07.a
+		532 = { set_demilitarized_zone = yes }
+		add_political_power = -25
+		add_stability = -0.05
 	}
 }
 

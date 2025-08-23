@@ -85,37 +85,6 @@ characters = {
 			}
 		}
 	}
-	CHI_tao_bojun = {
-		name = "Tao Bojun"
-		portraits = {
-			army = {
-				small = "gfx/leaders/CHI/small/Tao_Bojun_small.dds"
-				large = "gfx/leaders/CHI/Tao_Bojun.dds"
-			}
-		}
-		field_marshal = {
-			traits = { artillery_leader fast_planner }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 4
-			logistics_skill = 2
-		}
-		advisor = {
-			slot = high_command
-			idea_token = tao_bojun
-			allowed = {
-				original_tag = CHI
-			}
-			traits = {
-				army_artillery_3
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
 	CHI_xing_shizhong = {
 		name = "Xing Shizhong"
 		portraits = {

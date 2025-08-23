@@ -3546,7 +3546,7 @@
 	recruit_character = CHI_li_xinliang
 	recruit_character = CHI_fu_quanyou
 	recruit_character = CHI_liang_guanglie
-	recruit_character = CHI_tao_bojun
+	recruit_character = PGR_PLA_taobojun #
 	recruit_character = CHI_xing_shizhong
 	recruit_character = CHI_yu_yongbo
 	recruit_character = CHI_zhang_wannian

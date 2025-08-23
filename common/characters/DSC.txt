@@ -1,6 +1,6 @@
 characters = {
     Sc_Cq_M_G = {
-		name = "川渝军政府"
+		name = "川渝军区司令部"
           portraits = {
             civilian = {
 				large = "gfx/leaders/DSC/NpcC.dds"
