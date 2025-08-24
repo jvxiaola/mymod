@@ -222,14 +222,13 @@ country_event = {
 	id = prc1.211
 	title = prc1.211.t
 	desc = prc1.211.d
-hidden = yes
-is_triggered_only = yes
-fire_only_once = yes
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
 	immediate = {
-		country_event={id=prc1.7497}
-
-set_country_flag = clear_military_focus
-}
+		country_event = { id = prc1.7497 }
+		set_country_flag = clear_military_focus
+	}
 	option = {
 		name = prc1.211.o1
 
@@ -241,28 +240,24 @@ set_country_flag = clear_military_focus
 
 			CHI={
 				set_country_flag = manual_civil_war_debuff_removal
-remove_ideas = civil_war_disorganised_military_1
-remove_ideas = civil_war_disorganised_military_2_military
-remove_ideas = civil_war_disorganised_military_2_production
-remove_ideas = civil_war_disorganised_military_2_experience
-remove_ideas = civil_war_disorganised_military_3_military
-remove_ideas = civil_war_disorganised_military_3_production
-remove_ideas = civil_war_disorganised_military_3_experience
-remove_ideas = civil_war_disorganised_military_4_military
-remove_ideas = civil_war_disorganised_military_4_production
-remove_ideas = civil_war_disorganised_military_4_experience
-remove_ideas = civil_war_disorganised_military_5_military
-remove_ideas = civil_war_disorganised_military_5_production
-remove_ideas = civil_war_disorganised_military_5_experience
-clr_country_flag = manual_civil_war_debuff_removal
+				remove_ideas = civil_war_disorganised_military_1
+				remove_ideas = civil_war_disorganised_military_2_military
+				remove_ideas = civil_war_disorganised_military_2_production
+				remove_ideas = civil_war_disorganised_military_2_experience
+				remove_ideas = civil_war_disorganised_military_3_military
+				remove_ideas = civil_war_disorganised_military_3_production
+				remove_ideas = civil_war_disorganised_military_3_experience
+				remove_ideas = civil_war_disorganised_military_4_military
+				remove_ideas = civil_war_disorganised_military_4_production
+				remove_ideas = civil_war_disorganised_military_4_experience
+				remove_ideas = civil_war_disorganised_military_5_military
+				remove_ideas = civil_war_disorganised_military_5_production
+				remove_ideas = civil_war_disorganised_military_5_experience
+				clr_country_flag = manual_civil_war_debuff_removal
 
 			}
 				country_event={id = prc1.300 }
 CHI={
-remove_ideas =  red_weidui1
-remove_ideas =  red_army
-remove_ideas =  red_army1
-remove_ideas =  red_army2
 remove_ideas = CHI_war_communism
 }
 		
@@ -425,9 +420,6 @@ uncomplete_national_focus = {
 	set_country_flag = got_millitry_is_finished
 	mark_focus_tree_layout_dirty = yes
 	}
-
-
-
 }
 	option = {
 		name = prc1.300.o1

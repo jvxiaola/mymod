@@ -2345,6 +2345,7 @@ completion_reward = {
 				remove_ideas = Agricultural_restructuring_end
 				remove_ideas = Industrial_rebuild_end
 				clr_country_flag = rehabilitate_economy
+				Mao_Yuanxin = { set_nationality = CHI }
 					CHI = {
 						inherit_technology = DSC
 						add_research_slot = 3
@@ -2354,10 +2355,10 @@ completion_reward = {
 						transfer_state = 526 
 						change_tag_from = DSC
 						clr_country_flag = party5_banned
-						every_state = {
+					}
+					every_state = {
 							limit = { is_core_of = DSC }
 							add_core_of = CHI
-						}
 					}
 			}
 		}

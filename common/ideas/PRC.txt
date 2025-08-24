@@ -3058,10 +3058,8 @@ nationalist_drift = 0.01
 
 	red_weidui1 = {
 			picture = soviet_advisors
-			allowed = {
-			}
-			
- 	
+			allowed = {}
+			cancel = { CHI_civil_war_end_trigger = yes }
 			modifier = {
 				conscription = 0.05
 				communism_drift = 0.1
@@ -3496,59 +3494,50 @@ production_speed_buildings_factor = 0.1
 			}
 		}					
 	red_army = {
-						picture = soviet_advisors
-			allowed = {
-			}
-			
- 	
-			modifier = {
-				conscription = 0.03
-				max_command_power = 30
-				command_power_gain_mult = 0.15
-				planning_speed = 0.05
-
+		picture = soviet_advisors
+		allowed = {}
+		cancel = { CHI_civil_war_end_trigger = yes }	
+		modifier = {
+			conscription = 0.03
+			max_command_power = 30
+			command_power_gain_mult = 0.15
+			planning_speed = 0.05
 			}
 		}
-		red_army1 = {
-						picture = soviet_advisors
-			allowed = {
-			}
-			
- 				name = red_army
-
-			modifier = {
-			Chinese_people_support_to_china_government_modifier = 0.03
-				conscription = 0.05
-				army_attack_factor = 0.05
-war_support_factor = 0.15
-				max_command_power = 40 
-				command_power_gain_mult = 0.3
-				planning_speed = 0.15
-
-			}
+	red_army1 = {
+		picture = soviet_advisors
+		allowed = {}
+		cancel = { CHI_civil_war_end_trigger = yes }	
+ 		name = red_army
+		modifier = {
+			conscription = 0.05
+			army_attack_factor = 0.05
+			war_support_factor = 0.15
+			max_command_power = 40 
+			command_power_gain_mult = 0.3
+			planning_speed = 0.15
 		}
-		red_army2 = {
-						picture = soviet_advisors
-			allowed = {
-			}
-			
- 				name = red_army
-
-			modifier = {
-				conscription = 0.05
-				conscription_factor = 0.25
-				army_attack_factor = 0.05
-                war_support_factor = 0.20
-				max_command_power = 50
-				training_time_army_factor = -0.15
-				command_power_gain_mult = 0.3
-				planning_speed = 0.15
-Chinese_people_support_to_china_government_modifier = 0.05
-army_armor_speed_factor = 0.10
-army_armor_attack_factor = 0.10
-breakthrough_factor	= 0.10
-			}
+	}
+	red_army2 = {
+		picture = soviet_advisors
+		allowed = {}
+ 		name = red_army
+		cancel = { CHI_civil_war_end_trigger = yes }	
+		modifier = {
+			conscription = 0.05
+			conscription_factor = 0.25
+			army_attack_factor = 0.05
+            war_support_factor = 0.20
+			max_command_power = 50
+			training_time_army_factor = -0.15
+			command_power_gain_mult = 0.3
+			planning_speed = 0.15
+			Chinese_people_support_to_china_government_modifier = 0.05
+			army_armor_speed_factor = 0.10
+			army_armor_attack_factor = 0.10
+			breakthrough_factor	= 0.10
 		}
+	}
 		PRC_gmwz = {
 						picture = soviet_advisors
 			allowed = {
@@ -3739,6 +3728,7 @@ army_org_factor = 0.10
 		CHI_war_communism = {
 			allowed = { always = no }
 			picture = morale_bonus
+			cancel = { CHI_civil_war_end_trigger = yes }	
 			modifier = {
 				industrial_capacity_factory = 0.1
 				consumer_goods_factor = -0.10
