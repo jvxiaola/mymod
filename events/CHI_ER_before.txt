@@ -375,7 +375,7 @@ country_event = {
 	trigger = { tag = CHI }
 	option = {
 		name = CHI_ER_BEFORE_guang.07.a
-		country_event = { id = CHI_ER_BEFORE.7 }
+		country_event = { id = CHI_ER_BEFORE.8 }
 	}
 }
 
@@ -387,6 +387,7 @@ country_event = {
 	trigger = { tag = CHI }
 	option = {	
 		name = CHI_ER_BEFORE_guang.08.a
+		country_event = { id = CHI_ER_BEFORE.9 }
 	}
 }
 
@@ -398,6 +399,18 @@ country_event = {
 	trigger = { tag = CHI }
 	option = {	
 		name = CHI_ER_BEFORE_guang.09.a
+		country_event = { id = CHI_ER_BEFORE.10 }
+	}
+}
+
+country_event = {
+	id = CHI_ER_BEFORE_guang.10
+	title = CHI_ER_BEFORE_guang.10.t
+	desc = CHI_ER_BEFORE_guang.10.d
+	is_triggered_only = yes
+	trigger = { tag = CHI }
+	option = {	
+		name = CHI_ER_BEFORE_guang.10.a
 		532 = { set_demilitarized_zone = yes }
 		add_political_power = -25
 		add_stability = -0.05
