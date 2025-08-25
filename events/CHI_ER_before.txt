@@ -347,7 +347,7 @@ country_event = {
 		PRG = {
 			every_owned_state = {
 				add_core_of = PRG
-
+				remove_core_of = CHI
 			}
 			inherit_technology = CHI
 			random_owned_state = {
@@ -371,26 +371,10 @@ country_event = {
 	id = CHI_ER_BEFORE_guang.07
 	title = CHI_ER_BEFORE_guang.07.t
 	desc = CHI_ER_BEFORE_guang.07.d
-	#picture = GFX_event_pictures_CW_D_event1
 	is_triggered_only = yes
 	trigger = { tag = CHI }
-	option = {	
+	option = {
 		name = CHI_ER_BEFORE_guang.07.a
-	}
-}
-
-country_event = {
-	id = CHI_ER_BEFORE_guang.07
-	title = CHI_ER_BEFORE_guang.07.t
-	desc = CHI_ER_BEFORE_guang.07.d
-	#picture = GFX_event_pictures_CW_D_event1
-	is_triggered_only = yes
-	trigger = { tag = CHI }
-	option = {	
-		name = CHI_ER_BEFORE_guang.07.a
-		532 = { set_demilitarized_zone = yes }
-		add_political_power = -25
-		add_stability = -0.05
 	}
 }
 
@@ -398,7 +382,6 @@ country_event = {
 	id = CHI_ER_BEFORE_guang.08
 	title = CHI_ER_BEFORE_guang.08.t
 	desc = CHI_ER_BEFORE_guang.08.d
-	#picture = GFX_event_pictures_CW_D_event1
 	is_triggered_only = yes
 	trigger = { tag = CHI }
 	option = {	
@@ -410,7 +393,6 @@ country_event = {
 	id = CHI_ER_BEFORE_guang.09
 	title = CHI_ER_BEFORE_guang.09.t
 	desc = CHI_ER_BEFORE_guang.09.d
-	#picture = GFX_event_pictures_CW_D_event1
 	is_triggered_only = yes
 	trigger = { tag = CHI }
 	option = {	
