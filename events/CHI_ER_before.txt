@@ -375,6 +375,7 @@ country_event = {
 	trigger = { tag = CHI }
 	option = {
 		name = CHI_ER_BEFORE_guang.07.a
+		country_event = { id = CHI_ER_BEFORE.7 }
 	}
 }
 
