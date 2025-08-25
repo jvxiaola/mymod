@@ -2347,18 +2347,19 @@ completion_reward = {
 				clr_country_flag = rehabilitate_economy
 				Mao_Yuanxin = { set_nationality = CHI }
 					CHI = {
+						transfer_state = 526 
 						inherit_technology = DSC
 						add_research_slot = 3
 						SET_TAG_DSC_to_CHI = yes
 					}
 					CHI = { 
-						transfer_state = 526 
 						change_tag_from = DSC
 						clr_country_flag = party5_banned
 					}
 					every_state = {
-							limit = { is_core_of = DSC }
-							add_core_of = CHI
+						limit = { is_core_of = DSC }
+						add_core_of = CHI
+						remove_core_of = DSC
 					}
 			}
 		}
