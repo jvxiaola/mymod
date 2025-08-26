@@ -1,7 +1,8 @@
 #转移tag--川渝至CHI
 SET_TAG_DSC_to_CHI = {
-  load_focus_tree = gentic_empoty_focus
 	mark_focus_tree_layout_dirty = yes
+  inherit_technology = DSC
+	add_research_slot = 3
 	country_event = { id = prc1.211 }
 	promote_character = Mao_Yuanxin
 	start_politics_input = yes
