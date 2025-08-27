@@ -2370,11 +2370,11 @@ completion_reward = {
 
 
 	focus = {
-		id = DSC_war_policies
+		id = DSC_temporary_policies
 		icon = focus_SMB_a_land_of_mountains
-		x = 1
+		x = 10
 	
-		y = 1
+		y = 4
 	
 		cost = 1
 
@@ -2406,9 +2406,9 @@ completion_reward = {
 		y = 1
 	
 		cost = 1
-		relative_position_id = DSC_war_policies
+		relative_position_id = DSC_temporary_policies
 prerequisite = {
-	focus=DSC_war_policies
+	focus=DSC_temporary_policies
 }
 		ai_will_do = {
 			factor = 10
@@ -2431,14 +2431,14 @@ prerequisite = {
 	}
 
 	focus = {
-		id = DSC_guoyouhuakuangshan
+		id = DSC_Nationalize_key_industries
 		icon = central_planned_economy
 		x = 0
 	
 		y = 2
 	
 		cost = 1
-		relative_position_id = DSC_war_policies
+		relative_position_id = DSC_temporary_policies
 prerequisite = {
 	focus=DSC_emergency_nationalization
 }
@@ -2462,16 +2462,16 @@ prerequisite = {
 		}
 	}
 	focus = {
-		id = DSC_liangshiwenti
+		id = DSC_resource_problems
 		icon = central_planned_economy
 		x = -2
 	
 		y = 1
 	
 		cost = 1
-		relative_position_id = DSC_war_policies
+		relative_position_id = DSC_temporary_policies
 prerequisite = {
-	focus=DSC_war_policies
+	focus=DSC_temporary_policies
 }
 		ai_will_do = {
 			factor = 10
@@ -2492,18 +2492,51 @@ prerequisite = {
 
 		}
 	}
+
+	focus = {
+		id = DSC_reduce_consumption_of_electricity
+		icon = central_planned_economy
+		x = -2
+	
+		y = 2
+	
+		cost = 1
+		relative_position_id = DSC_temporary_policies
+prerequisite = {
+	focus=DSC_resource_problems
+}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+
+		}
+	}
+
 		focus = {
 		id = DSC_cease_free_trade
 		icon = central_planned_economy
 		x = 2
 	
-		y = 1
+		y = 2
 	
 		cost = 1
-		relative_position_id = DSC_war_policies
+		relative_position_id = DSC_temporary_policies
 
 prerequisite = {
-	focus=DSC_war_policies
+	focus=DSC_temporary_policies
 }
 
 		mutually_exclusive = {
@@ -2536,9 +2569,9 @@ prerequisite = {
 		y = 1
 	
 		cost = 1
-		relative_position_id = DSC_war_policies
+		relative_position_id = DSC_temporary_policies
 prerequisite = {
-	focus=DSC_war_policies
+	focus=DSC_temporary_policies
 }
 		ai_will_do = {
 			factor = 10
@@ -2568,12 +2601,12 @@ prerequisite = {
 		icon = central_planned_economy
 		x = 4
 	
-		y = 1
+		y = 2
 	
 		cost = 1
-		relative_position_id = DSC_war_policies
+		relative_position_id = DSC_temporary_policies
 prerequisite = {
-	focus=DSC_war_policies
+	focus=DSC_temporary_policies
 }
 
 		mutually_exclusive = {
@@ -2604,10 +2637,10 @@ prerequisite = {
 		icon = central_planned_economy
 		x = 3
 	
-		y = 2
+		y = 3
 	
 		cost = 1
-		relative_position_id = DSC_war_policies
+		relative_position_id = DSC_temporary_policies
 prerequisite = {
 	focus=DSC_crack_down_on_speculation
 	focus=DSC_cease_free_trade
