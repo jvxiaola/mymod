@@ -2370,7 +2370,7 @@ completion_reward = {
 	focus = {
 		id = DSC_temporary_policies
 		icon = central_planned_economy
-		x = 10
+		x = 15
 	
 		y = 4
 	
@@ -2397,7 +2397,7 @@ completion_reward = {
 	}
 
 	focus = {
-		id = DSC_emergency_nationalization
+		id = DSC_emergency_economic_policies
 		icon = central_planned_economy
 		x = 0
 	
@@ -2429,7 +2429,7 @@ prerequisite = {
 	}
 
 	focus = {
-		id = DSC_Nationalize_key_industries
+		id = DSC_Nationalize_industries
 		icon = central_planned_economy
 		x = 0
 	
@@ -2438,7 +2438,7 @@ prerequisite = {
 		cost = 1
 		relative_position_id = DSC_temporary_policies
 prerequisite = {
-	focus=DSC_emergency_nationalization
+	focus=DSC_emergency_economic_policies
 }
 		ai_will_do = {
 			factor = 10
@@ -2462,14 +2462,15 @@ prerequisite = {
 	focus = {
 		id = DSC_resource_problems
 		icon = central_planned_economy
-		x = -3
+		x = -0
 	
-		y = 1
+		y = 5
 	
 		cost = 1
 		relative_position_id = DSC_temporary_policies
 prerequisite = {
-	focus=DSC_temporary_policies
+	focus=DSC_cease_free_trade
+	focus=DSC_crack_down_on_speculation
 }
 		ai_will_do = {
 			factor = 10
@@ -2494,9 +2495,40 @@ prerequisite = {
 	focus = {
 		id = DSC_reduce_consumption_of_electricity
 		icon = central_planned_economy
-		x = -3
+		x = -4
 	
-		y = 2
+		y = 3
+	
+		cost = 1
+		relative_position_id = DSC_temporary_policies
+prerequisite = {
+	focus=DSC_Nationalize_industries
+}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+
+		}
+	}
+		focus = {
+		id = DSC_Food_Appropriation_System
+		icon = central_planned_economy
+		x = 2
+	
+		y = 6
 	
 		cost = 1
 		relative_position_id = DSC_temporary_policies
@@ -2522,12 +2554,79 @@ prerequisite = {
 
 		}
 	}
-	focus = {
-		id = DSC_civ_for_front
+
+		focus = {
+		id = DSC_Food_Appropriation_System
 		icon = central_planned_economy
-		x = -3
+		x = 1
 	
-		y = 3
+		y = 6
+	
+		cost = 1
+		relative_position_id = DSC_temporary_policies
+prerequisite = {
+	focus=DSC_resource_problems
+}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+				mutually_exclusive = {
+			focus=DSC_additional_Agricultural_tex
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+
+		}
+	}
+		focus = {
+		id = DSC_additional_Agricultural_tex
+		icon = central_planned_economy
+		x = -1
+	
+		y = 6
+	
+		cost = 1
+		relative_position_id = DSC_temporary_policies
+prerequisite = {
+	focus=DSC_resource_problems
+}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+			mutually_exclusive = {
+			focus=DSC_Food_Appropriation_System
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = DSC_start_the_industries
+		icon = central_planned_economy
+		x = -4
+	
+		y = 4
 	
 		cost = 1
 		relative_position_id = DSC_temporary_policies
@@ -2553,18 +2652,153 @@ prerequisite = {
 
 		}
 	}
+
+	focus = {
+		id = DSC_democracy_in_factory
+		icon = central_planned_economy
+		x = -5
+	
+		y = 5
+	
+		cost = 1
+		relative_position_id = DSC_temporary_policies
+prerequisite = {
+	focus=DSC_start_the_industries
+}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+mutually_exclusive = {
+	focus=DSC_one_leader
+}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = DSC_empower_Workers
+		icon = central_planned_economy
+		x = -5
+	
+		y = 6
+	
+		cost = 1
+		relative_position_id = DSC_temporary_policies
+prerequisite = {
+	focus=DSC_democracy_in_factory
+}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+
+		}
+	}
+
+
+	focus = {
+		id = DSC_Strict_labor_discipline
+		icon = central_planned_economy
+		x = -3
+	
+		y = 6
+	
+		cost = 1
+		relative_position_id = DSC_temporary_policies
+prerequisite = {
+	focus=DSC_one_leader
+}
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+
+		}
+	}
+
+
+		focus = {
+		id = DSC_one_leader
+		icon = central_planned_economy
+		x = -3
+	
+		y = 5
+	
+		cost = 1
+		relative_position_id = DSC_temporary_policies
+prerequisite = {
+	focus=DSC_start_the_industries
+}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+mutually_exclusive = {
+	focus=DSC_democracy_in_factory
+}
+
+		completion_reward = {
+
+		}
+	}
 		focus = {
 		id = DSC_cease_free_trade
 		icon = central_planned_economy
-		x = 2
+		x = -1
 	
-		y = 2
+		y = 4
 	
 		cost = 1
 		relative_position_id = DSC_temporary_policies
 
 prerequisite = {
-	focus=DSC_temporary_policies
+	focus=DSC_Stabilize_economic_order
 }
 
 		mutually_exclusive = {
@@ -2627,14 +2861,14 @@ prerequisite = {
 				focus = {
 		id = DSC_crack_down_on_speculation
 		icon = central_planned_economy
-		x = 4
+		x = 1
 	
-		y = 2
+		y = 4
 	
 		cost = 1
 		relative_position_id = DSC_temporary_policies
 prerequisite = {
-	focus=DSC_temporary_policies
+	focus=DSC_Stabilize_economic_order
 }
 
 		mutually_exclusive = {
@@ -2663,15 +2897,14 @@ prerequisite = {
 					focus = {
 		id = DSC_Stabilize_economic_order
 		icon = central_planned_economy
-		x = 3
+		x = 0
 	
 		y = 3
 	
 		cost = 1
 		relative_position_id = DSC_temporary_policies
 prerequisite = {
-	focus=DSC_crack_down_on_speculation
-	focus=DSC_cease_free_trade
+	focus=DSC_Nationalize_industries
 }
 		ai_will_do = {
 			factor = 10
@@ -2696,17 +2929,19 @@ prerequisite = {
 	
 
 						focus = {
-		id = DSC_food_ration_classification
+		id = DSC_war_System
 		icon = central_planned_economy
-		x = 3
+		x = 0
 	
-		y = 4
+		y = 7
 	
 		cost = 1
 		relative_position_id = DSC_temporary_policies
 prerequisite = {
-	focus=DSC_Stabilize_economic_order
-
+	focus=DSC_additional_Agricultural_tex
+	focus=DSC_Food_Appropriation_System
+	focus=DSC_empower_Workers
+	focus=DSC_Strict_labor_discipline
 }
 		ai_will_do = {
 			factor = 10
