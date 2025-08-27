@@ -20,7 +20,6 @@ joint_focus = {
 	allow_branch = {
 		OR = {
 			has_country_flag = qygc
-			has_country_flag = got_millitry_is_finished
 		}
 	 }
 
@@ -902,7 +901,7 @@ joint_focus = {
 	cost = 5
 relative_position_id = DSC_people_armyI
 	prerequisite = {
-		focus= DSC_people_armyII
+		focus = DSC_people_armyII
 	 }
 
 
