@@ -1,15 +1,4 @@
 add_namespace = prc1
-
-###############
-#Contents:
-#National Focus Events
-#Historical Events
-#CCP Party Congress Events
-#News Events
-###############
-
-##National Focus Events
-#China Alliance Invitation
 country_event = {
 	id = prc1.1000
 	title = prc1.1000.t
@@ -78,7 +67,6 @@ country_event = {
 		name = prc1.201.o1
 CHI = {	add_to_faction = SOV
 add_ideas = SOV_china_COOP
-
 			}
 SOV = {
 give_resource_rights = { receiver = CHI state = 678 }
@@ -104,10 +92,6 @@ CHI = {			create_wargoal = {
 			}
 		ai_chance = {
 			factor = 20
-
-
-
-
 		}
 		}
 		
@@ -219,93 +203,29 @@ add_to_array = { gov_coalition_array = 19 }
 
 
 country_event = {
-	id = prc1.211
-	title = prc1.211.t
-	desc = prc1.211.d
-	hidden = yes
-	is_triggered_only = yes
-	fire_only_once = yes
-	immediate = { set_country_flag = clear_military_focus }
-	option = {
-		name = prc1.211.o1
-		ai_chance = { factor = 50 }
-		clr_country_flag = manual_civil_war_debuff_removal
-		DSC = { every_unit_leader = { set_nationality = CHI } }
-		CHI = {
-			set_country_flag = manual_civil_war_debuff_removal
-			remove_ideas = civil_war_disorganised_military_1
-			remove_ideas = civil_war_disorganised_military_2_military
-			remove_ideas = civil_war_disorganised_military_2_production
-			remove_ideas = civil_war_disorganised_military_2_experience
-			remove_ideas = civil_war_disorganised_military_3_military
-			remove_ideas = civil_war_disorganised_military_3_production
-			remove_ideas = civil_war_disorganised_military_3_experience
-			remove_ideas = civil_war_disorganised_military_4_military
-			remove_ideas = civil_war_disorganised_military_4_production
-			remove_ideas = civil_war_disorganised_military_4_experience
-			remove_ideas = civil_war_disorganised_military_5_military
-			remove_ideas = civil_war_disorganised_military_5_production
-			remove_ideas = civil_war_disorganised_military_5_experience
-			clr_country_flag = manual_civil_war_debuff_removal
-			load_focus_tree = communsim_PRC_focus
-			add_ideas = p5_member
-		}
-		if = { limit = { DSC = { has_country_flag = qygc } } CHI = { set_country_flag = qygc } }
-		if = { limit = { DSC = { has_idea = junfazuofeng1 } } CHI = { add_ideas = junfazuofeng1 } }
-		if = { limit = { DSC = { has_idea = junfazuofeng2 } } CHI = { add_ideas = junfazuofeng2 } }
-		if = { limit = { DSC = { has_idea = junfazuofeng3 } } CHI = { add_ideas = junfazuofeng3 } }
-		if = { limit = { DSC = { has_idea = junxingbuwen1 } } CHI = { add_ideas = junxingbuwen1 } }
-		if = { limit = { DSC = { has_idea = junxingbuwen2 } } CHI = { add_ideas = junxingbuwen2 } }
-		if = { limit = { DSC = { has_idea = junxingbuwen3 } } CHI = { add_ideas = junxingbuwen3 } }
-		if = { limit = { DSC = { has_idea = people_army1 } } CHI = { add_ideas = people_army1 } }
-		if = { limit = { DSC = { has_idea = people_army2 } } CHI = { add_ideas = people_army2 } }
-		if = { limit = { DSC = { has_idea = people_army3 } } CHI = { add_ideas = people_army3 } }
-		if={limit={DSC={has_idea=people_army4}}CHI={add_ideas = people_army4}}
-		if={limit={DSC={has_idea=CHI_zhengwei }}CHI={add_ideas = CHI_zhengwei }}
-		if={limit={DSC={has_idea=CHI_party_before_guns}}CHI={add_ideas = CHI_party_before_guns}}
-		if={limit={DSC={has_idea=bcjzdjd}}CHI={add_ideas = bcjzdjd}}
-		if={limit={DSC={has_idea=Joint_production_system}}CHI={add_ideas = Joint_production_system}}
-		country_event = { id = prc1.300 hours = 3 }
-	}
-}
-
-
-country_event = {
 	id = prc1.300
 	title = prc1.300.t
 	desc = prc1.300.d
 	hidden = yes
 	is_triggered_only = yes
 	fire_only_once = yes
-immediate = {
-clr_country_flag = clear_military_focus
-CHI = {
-annex_country = {
-    target = DSC
-    transfer_troops = yes
-}
-set_country_flag = chuanyumaopai
-set_cosmetic_tag = DSC_GMG
-remove_ideas = Militarical_economy_remain
-remove_ideas = CHI_jihuashengyu
-uncomplete_national_focus = {
-	focus = CHI_Chinese_Megaprojects
-	uncomplete_children = yes
-}
-
-uncomplete_national_focus = {
-	focus = PRC_jjdz
-	uncomplete_children = yes
-}
-	set_country_flag = got_millitry_is_finished
-	mark_focus_tree_layout_dirty = yes
+	immediate = { 
+		clr_country_flag = clear_military_focus
+		CHI = {
+			load_focus_tree = communsim_PRC_focus
+			annex_country = {
+    			target = DSC
+    			transfer_troops = yes
+			}
+			set_country_flag = chuanyumaopai
+			drop_cosmetic_tag = yes
+			mark_focus_tree_layout_dirty = yes
+		}
 	}
-}
 	option = {
 		name = prc1.300.o1
-		ai_chance = {
-			factor = 5
-		}
+		CHI = { change_tag_from = DSC }
+		ai_chance = { factor = 5 }
 	}
 }
 
@@ -1589,10 +1509,6 @@ country_event = {
 					set_country_flag = XIN_CIVIL
 				}
 				XIZ = {
-
-
-
-
 		create_country_leader = {
 			name = "Meng jinxi"
 			picture = "meng_jinxi.dds"
@@ -1683,7 +1599,6 @@ country_event = {
 				}
 			}
 			add_ideas = { denglegacy CHI_jdjs1 }
-			add_ideas = p5_member
 			set_temp_variable = { temp_democratic = PREV.party_popularity@democratic }
 			multiply_temp_variable = { temp_democratic = 100 }
 			set_temp_variable = { temp_total = temp_democratic }

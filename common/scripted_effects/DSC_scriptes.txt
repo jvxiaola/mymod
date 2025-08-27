@@ -1,10 +1,51 @@
 #转移tag--川渝至CHI
 SET_TAG_DSC_to_CHI = {
+  #精神继承
+  set_country_flag = manual_civil_war_debuff_removal
+	remove_ideas = civil_war_disorganised_military_1
+	remove_ideas = civil_war_disorganised_military_2_military
+	remove_ideas = civil_war_disorganised_military_2_production
+	remove_ideas = civil_war_disorganised_military_2_experience
+	remove_ideas = civil_war_disorganised_military_3_military
+	remove_ideas = civil_war_disorganised_military_3_production
+	remove_ideas = civil_war_disorganised_military_3_experience
+	remove_ideas = civil_war_disorganised_military_4_military
+	remove_ideas = civil_war_disorganised_military_4_production
+	remove_ideas = civil_war_disorganised_military_4_experience
+	remove_ideas = civil_war_disorganised_military_5_military
+	remove_ideas = civil_war_disorganised_military_5_production
+	remove_ideas = civil_war_disorganised_military_5_experience
+  if = { limit = { ROOT = { has_country_flag = qygc } } FROM = { set_country_flag = qygc } }
+	if = { limit = { ROOT = { has_idea = junfazuofeng1 } } FROM = { add_ideas = junfazuofeng1 } }
+	if = { limit = { ROOT = { has_idea = junfazuofeng2 } } FROM = { add_ideas = junfazuofeng2 } }
+	if = { limit = { ROOT = { has_idea = junfazuofeng3 } } FROM = { add_ideas = junfazuofeng3 } }
+	if = { limit = { ROOT = { has_idea = junxingbuwen1 } } FROM = { add_ideas = junxingbuwen1 } }
+	if = { limit = { ROOT = { has_idea = junxingbuwen2 } } FROM = { add_ideas = junxingbuwen2 } }
+	if = { limit = { ROOT = { has_idea = junxingbuwen3 } } FROM = { add_ideas = junxingbuwen3 } }
+	if = { limit = { ROOT = { has_idea = people_army1 } } FROM = { add_ideas = people_army1 } }
+	if = { limit = { ROOT = { has_idea = people_army2 } } FROM = { add_ideas = people_army2 } }
+	if = { limit = { ROOT = { has_idea = people_army3 } } FROM = { add_ideas = people_army3 } }
+	if = { limit = { ROOT = { has_idea = people_army4 } } FROM = { add_ideas = people_army4 } }
+	if = { limit = { ROOT = { has_idea = CHI_zhengwei } } FROM = { add_ideas = CHI_zhengwei } }
+	if = { limit = { ROOT = { has_idea = CHI_party_before_guns } } FROM = { add_ideas = CHI_party_before_guns } }
+	if = { limit = { ROOT = { has_idea = bcjzdjd } } FROM = { add_ideas = bcjzdjd } }
+	clr_country_flag = manual_civil_war_debuff_removal
   clr_country_flag = party5_banned
+  add_ideas = Joint_production_system
+	add_ideas = p5_member
+  remove_ideas = Militarical_economy_remain
+	remove_ideas = CHI_jihuashengyu
+  uncomplete_national_focus = {
+		focus = CHI_Chinese_Megaprojects
+		uncomplete_children = yes
+	}
+	uncomplete_national_focus = {
+		focus = PRC_jjdz
+		uncomplete_children = yes
+	}
 	mark_focus_tree_layout_dirty = yes
   inherit_technology = DSC
 	add_research_slot = 3
-	country_event = { id = prc1.211 }
 	promote_character = Mao_Yuanxin
 	start_politics_input = yes
 	set_popularities = {

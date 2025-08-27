@@ -1003,7 +1003,6 @@ country_event = {
 	}
 		CHI_ruin_agriculture_add = yes
 		clear_array = global.ruined_agriculture_state
-		add_ideas = p5_member
 		custom_effect_tooltip = change_rebuild_focus_tree_tt
 		hidden_effect = {
 			set_country_flag = rehabilitate_economy

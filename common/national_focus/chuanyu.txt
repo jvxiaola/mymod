@@ -471,11 +471,10 @@ Armor_Bat = { x = 1 y = 2 }
 		cost = 5
 		allow_branch = {
 			has_country_flag = chuanyumaopai
-
 			NOT = {
-							has_country_flag = qyxd
-							has_country_flag = qygc			
-							has_country_flag = rehabilitate_economy
+				has_country_flag = qyxd
+				has_country_flag = qygc			
+				has_country_flag = rehabilitate_economy
 			}
 		}
 		prerequisite = {
@@ -2352,15 +2351,14 @@ completion_reward = {
         				set_nationality = CHI
     				}
 				}
-					CHI = {
-						SET_TAG_DSC_to_CHI = yes
-					}
-					CHI = { change_tag_from = DSC }
-					every_state = {
-						limit = { is_core_of = DSC }
-						add_core_of = CHI
-						remove_core_of = DSC
-					}
+				DSC = { every_unit_leader = { set_nationality = CHI } }
+				CHI = { SET_TAG_DSC_to_CHI = yes }
+				every_state = {
+					limit = { is_core_of = DSC }
+					add_core_of = CHI
+					remove_core_of = DSC
+				}
+				country_event = { id = prc1.300 hours = 3 }
 			}
 		}
 	}
