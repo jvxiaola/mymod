@@ -2345,14 +2345,17 @@ completion_reward = {
 				remove_ideas = Agricultural_restructuring_end
 				remove_ideas = Industrial_rebuild_end
 				clr_country_flag = rehabilitate_economy
-				Mao_Yuanxin = { set_nationality = CHI }
+				every_country = {
+    				limit = { has_character = Mao_Yuanxin }
+    				random_character = {
+        				limit = { is_character = Mao_Yuanxin }
+        				set_nationality = CHI
+    				}
+				}
 					CHI = {
 						SET_TAG_DSC_to_CHI = yes
 					}
-					CHI = {
-						clr_country_flag = party5_banned
-						change_tag_from = DSC
-					}
+					CHI = { change_tag_from = DSC }
 					every_state = {
 						limit = { is_core_of = DSC }
 						add_core_of = CHI

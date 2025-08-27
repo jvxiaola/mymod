@@ -91,10 +91,24 @@ on_actions = {
 							transfer_troops = yes
 						}
 					}
-					CHI = { 
+					CHI = {
 						transfer_state = 526 
+						every_state = {
+							if = {
+								limit = { is_owned_by = CHI }
+								add_core_of = CHI
+							}
+							if = {
+								limit = { NOT = { is_owned_by = CHI } is_core_of = CHI }
+								remove_core_of = CHI
+							}
+						}
 						load_focus_tree = gentic_empoty_focus 
 						clr_country_flag = laozuo
+						every_country = {
+							limit = { has_war_with = CHI }
+							white_peace = CHI
+						}
 					}
 				}
 
@@ -124,10 +138,24 @@ on_actions = {
 					}
 					if = {
 						limit = { NOT = { country_exists = CHI } }
-						CHI = { 
+						CHI = {
 							transfer_state = 526 
+							every_state = {
+								if = {
+									limit = { is_owned_by = CHI }
+									add_core_of = CHI
+								}
+								if = {
+									limit = { NOT = { is_owned_by = CHI } is_core_of = CHI }
+									remove_core_of = CHI
+								}
+							}
 							load_focus_tree = gentic_empoty_focus 
 							clr_country_flag = laozuo
+							every_country = {
+								limit = { has_war_with = CHI }
+								white_peace = CHI
+							}
 						}
 					}
 				}

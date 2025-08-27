@@ -1669,7 +1669,7 @@ country_event = {
 			load_focus_tree = CHI_focus
 			set_capital = { state = 536 }
 			create_country_leader = {
-			name = "Deng Pufang"
+			name = "邓朴方"
 			picture = "jack_deng.dds"
 			expire = "2050.1.1"
 			ideology = Nat_Autocracy

@@ -1,5 +1,6 @@
 #转移tag--川渝至CHI
 SET_TAG_DSC_to_CHI = {
+  clr_country_flag = party5_banned
 	mark_focus_tree_layout_dirty = yes
   inherit_technology = DSC
 	add_research_slot = 3
