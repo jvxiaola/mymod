@@ -1,0 +1,30 @@
+l_simp_chinese:
+ DSC_temporary_policies: "紧急政策"
+ DSC_temporary_policies_desc: ""
+
+ DSC_emergency_nationalization: "紧急国有化"
+ DSC_emergency_nationalization_desc: ""
+
+ DSC_Nationalize_key_industries: "国有化战略企业"
+ DSC_Nationalize_key_industries_desc: ""
+
+ DSC_resource_problems: "资源问题"
+ DSC_resource_problems_desc: ""
+
+ DSC_reduce_consumption_of_electricity: "减少电力消耗"
+ DSC_reduce_consumption_of_electricity_desc: ""
+
+ DSC_civ_for_front: "一切为了前线"
+ DSC_civ_for_front_desc: ""
+
+ DSC_cease_free_trade: "终止自由贸易"
+ DSC_cease_free_trade_desc: ""
+
+ DSC_crack_down_on_speculation: "打击投机倒把"
+ DSC_crack_down_on_speculation_desc: ""
+
+
+
+ DSC_Stabilize_economic_order: "稳定经济秩序"
+ DSC_Stabilize_economic_order_desc: ""
+

@@ -2371,7 +2371,7 @@ completion_reward = {
 
 	focus = {
 		id = DSC_temporary_policies
-		icon = focus_SMB_a_land_of_mountains
+		icon = central_planned_economy
 		x = 10
 	
 		y = 4
@@ -2464,7 +2464,7 @@ prerequisite = {
 	focus = {
 		id = DSC_resource_problems
 		icon = central_planned_economy
-		x = -2
+		x = -3
 	
 		y = 1
 	
@@ -2496,7 +2496,7 @@ prerequisite = {
 	focus = {
 		id = DSC_reduce_consumption_of_electricity
 		icon = central_planned_economy
-		x = -2
+		x = -3
 	
 		y = 2
 	
@@ -2524,7 +2524,37 @@ prerequisite = {
 
 		}
 	}
+	focus = {
+		id = DSC_civ_for_front
+		icon = central_planned_economy
+		x = -3
+	
+		y = 3
+	
+		cost = 1
+		relative_position_id = DSC_temporary_policies
+prerequisite = {
+	focus=DSC_reduce_consumption_of_electricity
+}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
 
+		}
+
+
+		completion_reward = {
+
+		}
+	}
 		focus = {
 		id = DSC_cease_free_trade
 		icon = central_planned_economy
@@ -2644,6 +2674,41 @@ prerequisite = {
 prerequisite = {
 	focus=DSC_crack_down_on_speculation
 	focus=DSC_cease_free_trade
+}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+
+		}
+	}
+
+	
+
+						focus = {
+		id = DSC_food_ration_classification
+		icon = central_planned_economy
+		x = 3
+	
+		y = 4
+	
+		cost = 1
+		relative_position_id = DSC_temporary_policies
+prerequisite = {
+	focus=DSC_Stabilize_economic_order
+
 }
 		ai_will_do = {
 			factor = 10
