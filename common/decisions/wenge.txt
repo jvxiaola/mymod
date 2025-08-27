@@ -89,4 +89,30 @@ available = {
 		}
 
 }
+
+CHI_CR_ercifadong={
+		icon = GFX_decision_minotor_button
+		visible = {
+
+
+			var:wengedangqiansheng = { has_dynamic_modifier = { modifier = CHI_gemingweiyuanhui_baoshou } }
+			
+
+		}
+		cost = 10
+available = {
+
+}
+		complete_effect = {
+
+		}
+		days_remove = 10
+		remove_effect = {
+			var:wengedangqiansheng = { remove_dynamic_modifier = { modifier = CHI_gemingweiyuanhui_baoshou } }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+}
 }

@@ -2363,4 +2363,270 @@ completion_reward = {
 		}
 	}
 
+
+
+
+
+	focus = {
+		id = DSC_war_policies
+		icon = focus_SMB_a_land_of_mountains
+		x = 1
+	
+		y = 1
+	
+		cost = 1
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = DSC_emergency_nationalization
+		icon = central_planned_economy
+		x = 0
+	
+		y = 1
+	
+		cost = 1
+		relative_position_id = DSC_war_policies
+prerequisite = {
+	focus=DSC_war_policies
+}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = DSC_guoyouhuakuangshan
+		icon = central_planned_economy
+		x = 0
+	
+		y = 2
+	
+		cost = 1
+		relative_position_id = DSC_war_policies
+prerequisite = {
+	focus=DSC_emergency_nationalization
+}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = DSC_liangshiwenti
+		icon = central_planned_economy
+		x = -2
+	
+		y = 1
+	
+		cost = 1
+		relative_position_id = DSC_war_policies
+prerequisite = {
+	focus=DSC_war_policies
+}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+
+		}
+	}
+		focus = {
+		id = DSC_cease_free_trade
+		icon = central_planned_economy
+		x = 2
+	
+		y = 1
+	
+		cost = 1
+		relative_position_id = DSC_war_policies
+
+prerequisite = {
+	focus=DSC_war_policies
+}
+
+		mutually_exclusive = {
+			focus=DSC_crack_down_on_speculation
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+
+		}
+	}
+			focus = {
+		id = DSC_crack_down_on_speculation
+		icon = central_planned_economy
+		x = 3
+	
+		y = 1
+	
+		cost = 1
+		relative_position_id = DSC_war_policies
+prerequisite = {
+	focus=DSC_war_policies
+}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+
+		}
+	}
+
+
+
+
+				focus = {
+		id = DSC_crack_down_on_speculation
+		icon = central_planned_economy
+		x = 4
+	
+		y = 1
+	
+		cost = 1
+		relative_position_id = DSC_war_policies
+prerequisite = {
+	focus=DSC_war_policies
+}
+
+		mutually_exclusive = {
+			focus=DSC_cease_free_trade
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+
+		}
+	}
+	
+					focus = {
+		id = DSC_Stabilize_economic_order
+		icon = central_planned_economy
+		x = 3
+	
+		y = 2
+	
+		cost = 1
+		relative_position_id = DSC_war_policies
+prerequisite = {
+	focus=DSC_crack_down_on_speculation
+	focus=DSC_cease_free_trade
+}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+
+		}
+	}
 }
