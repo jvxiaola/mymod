@@ -1,0 +1,82 @@
+﻿l_simp_chinese:
+
+
+ DSC_emergency_policies: "紧急政策"
+ DSC_emergency_policies_desc: "我们需要紧急政策"
+
+ DSC_Nationalize_industries: "国有化战略企业"
+ DSC_Nationalize_industries_desc: "我们要接管关键的企业"
+
+ DSC_resource_problems: "资源问题"
+ DSC_resource_problems_desc: ""
+
+ DSC_reduce_consumption_of_electricity: "减少电力消耗"
+ DSC_reduce_consumption_of_electricity_desc: "我们需要减少电力的消耗，优先供应关键的企业"
+
+ DSC_civ_for_front: "一切为了前线"
+ DSC_civ_for_front_desc: ""
+
+ DSC_cease_free_trade: "终止自由贸易"
+ DSC_cease_free_trade_desc: ""
+
+ DSC_crack_down_on_speculation: "管控市场"
+ DSC_crack_down_on_speculation_desc: ""
+
+ DSC_Stabilize_economic_order: "稳定经济秩序"
+ DSC_Stabilize_economic_order_desc: ""
+
+ DSC_food_ration_classification: "粮食配给制"
+ DSC_food_ration_classification_desc: ""
+
+
+ DSC_war_system: "完善的战时体制"
+ DSC_war_system_desc: ""
+
+ DSC_military_mobilazation: "军事动员"
+ DSC_military_mobilazation_desc: ""
+
+ DSC_force_mobilazation: "强制动员"
+ DSC_force_mobilazation_desc: ""
+
+ DSC_peaceful_mobiliation: "和平动员"
+ DSC_peaceful_mobiliation_desc: ""
+
+ DSC_military_training: "军事训练"
+ DSC_military_training_desc: ""
+
+ DSC_strict_military_laws: "严格的军事纪律"
+ DSC_strict_military_laws_desc: ""
+
+ DSC_military_democracy: "继续军事民主"
+ DSC_military_democracy_desc: ""
+
+ DSC_additional_Agricultural_tex: "额外的农业税"
+ DSC_additional_Agricultural_tex_desc: ""
+
+ DSC_Food_Appropriation_System: "余粮征集制度"
+ DSC_Food_Appropriation_System_desc: ""
+
+ DSC_start_the_industries: "重启工业"
+ DSC_start_the_industries_desc: ""
+ 
+ DSC_democracy_in_factory: "赋权工厂委员会"
+ DSC_democracy_in_factory_desc: ""
+
+ DSC_one_leader: "一长制的管理"
+ DSC_one_leader_desc: ""
+
+ DSC_empower_Workers: "赋权工人"
+ DSC_empower_Workers_desc: ""
+
+ DSC_Strict_labor_discipline: "严格的劳动纪律"
+ DSC_Strict_labor_discipline_desc: ""
+
+
+ DSC_war_System: "战争状态"
+ DSC_war_System_desc: ""
+
+ DSC_Grain_Allocation_System: "实物配给制"
+ DSC_Grain_Allocation_System_desc: ""
+
+ DSC_supply_System: "供给制"
+ DSC_supply_System_desc: ""
