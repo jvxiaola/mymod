@@ -2526,38 +2526,6 @@ prerequisite = {
 		focus = {
 		id = DSC_Food_Appropriation_System
 		icon = central_planned_economy
-		x = 2
-	
-		y = 6
-	
-		cost = 1
-		relative_position_id = DSC_temporary_policies
-prerequisite = {
-	focus=DSC_resource_problems
-}
-		ai_will_do = {
-			factor = 10
-		}
-		bypass = {
-	
-		}
-	
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		available = {
-
-		}
-
-
-		completion_reward = {
-
-		}
-	}
-
-		focus = {
-		id = DSC_Food_Appropriation_System
-		icon = central_planned_economy
 		x = 1
 	
 		y = 6
@@ -2573,9 +2541,7 @@ prerequisite = {
 		bypass = {
 	
 		}
-				mutually_exclusive = {
-			focus=DSC_additional_Agricultural_tex
-		}
+	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2588,6 +2554,8 @@ prerequisite = {
 
 		}
 	}
+
+	
 		focus = {
 		id = DSC_additional_Agricultural_tex
 		icon = central_planned_economy
@@ -2823,42 +2791,10 @@ prerequisite = {
 
 		}
 	}
-			focus = {
-		id = DSC_crack_down_on_speculation
-		icon = central_planned_economy
-		x = 3
 	
-		y = 1
-	
-		cost = 1
-		relative_position_id = DSC_temporary_policies
-prerequisite = {
-	focus=DSC_temporary_policies
-}
-		ai_will_do = {
-			factor = 10
-		}
-		bypass = {
-	
-		}
-	
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		available = {
-
-		}
 
 
-		completion_reward = {
-
-		}
-	}
-
-
-
-
-				focus = {
+	focus = {
 		id = DSC_crack_down_on_speculation
 		icon = central_planned_economy
 		x = 1
