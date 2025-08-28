@@ -2397,7 +2397,7 @@ completion_reward = {
 	}
 
 	focus = {
-		id = DSC_emergency_economic_policies
+		id = DSC_emergency_policies
 		icon = central_planned_economy
 		x = 0
 	
@@ -2431,14 +2431,14 @@ prerequisite = {
 	focus = {
 		id = DSC_Nationalize_industries
 		icon = central_planned_economy
-		x = 0
+		x = -4
 	
 		y = 2
 	
 		cost = 1
 		relative_position_id = DSC_temporary_policies
 prerequisite = {
-	focus=DSC_emergency_economic_policies
+	focus=DSC_emergency_policies
 }
 		ai_will_do = {
 			factor = 10
@@ -2835,12 +2835,218 @@ prerequisite = {
 		icon = central_planned_economy
 		x = 0
 	
-		y = 3
+		y = 2
 	
 		cost = 1
 		relative_position_id = DSC_temporary_policies
 prerequisite = {
-	focus=DSC_Nationalize_industries
+	focus=DSC_emergency_policies
+}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+
+		}
+	}
+
+focus = {
+		id = DSC_military_mobilazation
+		icon = central_planned_economy
+		x = 4
+	
+		y = 2
+	
+		cost = 1
+		relative_position_id = DSC_temporary_policies
+prerequisite = {
+	focus=DSC_emergency_policies
+}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+
+		}
+	}
+
+
+focus = {
+
+		id = DSC_force_mobilazation
+		icon = central_planned_economy
+		x = 3
+	
+		y = 4
+	
+		cost = 1
+		relative_position_id = DSC_temporary_policies
+prerequisite = {
+	focus=DSC_military_mobilazation
+}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+mutually_exclusive = {
+	focus=DSC_peaceful_mobiliation
+}
+
+		completion_reward = {
+
+		}
+	}
+
+
+focus = {
+	
+		id = DSC_peaceful_mobiliation
+		icon = central_planned_economy
+		x = 5
+	
+		y = 4
+	
+		cost = 1
+		relative_position_id = DSC_temporary_policies
+prerequisite = {
+	focus=DSC_military_mobilazation
+}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	mutually_exclusive = {
+	focus=DSC_peaceful_mobiliation
+}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+
+		}
+	}
+
+focus = {
+		id = DSC_military_training
+		icon = central_planned_economy
+		x = 4
+	
+		y = 6
+	
+		cost = 1
+		relative_position_id = DSC_temporary_policies
+prerequisite = {
+	focus= DSC_military_mobilazation
+}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+
+		}
+	}
+
+focus = {
+		id = DSC_strict_military_laws
+		icon = central_planned_economy
+		x = 3
+	
+		y = 5
+	
+		cost = 1
+		relative_position_id = DSC_temporary_policies
+prerequisite = {
+	focus= DSC_force_mobilazation
+
+
+}
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+
+		}
+	}
+
+focus = {
+		id = DSC_military_democracy
+		icon = central_planned_economy
+		x = 5
+	
+		y = 5
+	
+		cost = 1
+		relative_position_id = DSC_temporary_policies
+prerequisite = {
+
+	focus= DSC_peaceful_mobiliation
+
 }
 		ai_will_do = {
 			factor = 10
@@ -2863,13 +3069,47 @@ prerequisite = {
 	}
 
 	
+focus = {
+		id = DSC_military_training
+		icon = central_planned_economy
+		x = 4
+	
+		y = 6
+	
+		cost = 1
+		relative_position_id = DSC_temporary_policies
+prerequisite = {
+	focus= DSC_strict_military_laws
+}
+prerequisite = {
+	focus= DSC_military_democracy
+}
 
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+
+		}
+	}
 						focus = {
 		id = DSC_war_System
 		icon = central_planned_economy
 		x = 0
 	
-		y = 7
+		y = 8
 	
 		cost = 1
 		relative_position_id = DSC_temporary_policies
@@ -2878,6 +3118,7 @@ prerequisite = {
 	focus=DSC_Food_Appropriation_System
 	focus=DSC_empower_Workers
 	focus=DSC_Strict_labor_discipline
+	focus=DSC_military_training
 }
 		ai_will_do = {
 			factor = 10
