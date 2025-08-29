@@ -2372,7 +2372,7 @@ completion_reward = {
 		icon = central_planned_economy
 		x = 30
 	
-		y = 4
+		y = 0
 	
 		cost = 1
 
@@ -2392,7 +2392,41 @@ completion_reward = {
 
 
 		completion_reward = {
+			        # 政治与稳定
+        set_variable = { DSC_war_policies_dynamic1 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic2 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic3 = 0.0 }
 
+        # 经济与工业
+        set_variable = { DSC_war_policies_dynamic4 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic5 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic6 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic7 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic8 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic9 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic10 = 0.0 }
+
+        # 农业与资源
+        set_variable = { DSC_war_policies_dynamic11 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic12 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic13 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic14 = 0.0 }
+
+        # 军事优先
+        set_variable = { DSC_war_policies_dynamic15 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic16 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic17 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic18 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic19 = 0.0 }
+
+        # 镇压与社会控制
+        set_variable = { DSC_war_policies_dynamic20 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic21 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic22 = 0.0 }
+        add_dynamic_modifier = {
+            modifier = DSC_war_policies
+            scope = DSC
+        }
 		}
 	}
 
@@ -2490,7 +2524,7 @@ prerequisite = {
 
 
 		completion_reward = {
-
+add_ideas = millennium_dawn_reduce_power
 		}
 	}
 		focus = {
@@ -2521,7 +2555,21 @@ prerequisite = {
 
 
 		completion_reward = {
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.05 }  
+change_DSC_war_policies_dynamic13 = yes        # 陆军燃料消耗减少 5%
+set_temp_variable = { temp_DSC_war_policies_dynamic = 100 }  
+change_DSC_war_policies_dynamic14 = yes        # 每周人力 +100
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.03 }  
+change_DSC_war_policies_dynamic5 = yes         # 工厂产出 +3%
+change_DSC_war_policies_dynamic6 = yes         # 造船厂产出 +3%
 
+# 缺点
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.08 }  
+change_DSC_war_policies_dynamic1 = yes         # 政治稳定下降 8%
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }  
+change_DSC_war_policies_dynamic20 = yes        # 占领地抵抗增长 +5%
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.03 }  
+change_DSC_war_policies_dynamic2 = yes         # 战争支持下降 3%
 		}
 	}
 
@@ -2556,7 +2604,26 @@ prerequisite = {
 
 
 		completion_reward = {
+# 优点
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.03 }
+change_DSC_war_policies_dynamic5 = yes
+change_DSC_war_policies_dynamic6 = yes
+change_DSC_war_policies_dynamic15 = yes
+change_DSC_war_policies_dynamic16 = yes
+change_DSC_war_policies_dynamic17 = yes
 
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }
+change_DSC_war_policies_dynamic12 = yes
+change_DSC_war_policies_dynamic14 = yes
+change_DSC_war_policies_dynamic13 = yes
+
+# 缺点
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.08 }
+change_DSC_war_policies_dynamic1 = yes
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.03 }
+change_DSC_war_policies_dynamic2 = yes
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }
+change_DSC_war_policies_dynamic20 = yes
 		}
 	}
 
@@ -2571,7 +2638,8 @@ prerequisite = {
 		cost = 1
 		relative_position_id = DSC_emergency_policies
 prerequisite = {
-	focus=DSC_resource_problems
+	focus=DSC_additional_Agricultural_tex
+		focus=DSC_Food_Appropriation_System
 }
 		ai_will_do = {
 			factor = 10
@@ -2591,7 +2659,40 @@ prerequisite = {
 
 
 		completion_reward = {
+# 优点
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }
+change_DSC_war_policies_dynamic5 = yes
+change_DSC_war_policies_dynamic6 = yes
+change_DSC_war_policies_dynamic7 = yes
+change_DSC_war_policies_dynamic9 = yes
+change_DSC_war_policies_dynamic15 = yes
+change_DSC_war_policies_dynamic16 = yes
+change_DSC_war_policies_dynamic17 = yes
 
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.08 }
+change_DSC_war_policies_dynamic13 = yes
+set_temp_variable = { temp_DSC_war_policies_dynamic = 150 }
+change_DSC_war_policies_dynamic14 = yes
+
+# 缺点
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.12 }
+change_DSC_war_policies_dynamic1 = yes
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.05 }
+change_DSC_war_policies_dynamic2 = yes
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.10 }
+change_DSC_war_policies_dynamic3 = yes
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.15 }
+change_DSC_war_policies_dynamic11 = yes
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.10 }
+change_DSC_war_policies_dynamic12 = yes
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.08 }
+change_DSC_war_policies_dynamic20 = yes
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.05 }
+change_DSC_war_policies_dynamic21 = yes
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.03 }
+change_DSC_war_policies_dynamic22 = yes
+
+#add_ideas = DSC_in_kind_rationing
 		}
 	}
 
@@ -2606,7 +2707,8 @@ prerequisite = {
 		cost = 1
 		relative_position_id = DSC_emergency_policies
 prerequisite = {
-	focus=DSC_resource_problems
+	focus=DSC_additional_Agricultural_tex
+		focus=DSC_Food_Appropriation_System
 }
 		ai_will_do = {
 			factor = 10
@@ -2624,10 +2726,40 @@ prerequisite = {
 
 		}
 			mutually_exclusive = {
-			focus=DSC_Supply_System
+			focus=DSC_supply_system
 		}
 
 		completion_reward = {
+# 优点
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }
+change_DSC_war_policies_dynamic1 = yes
+change_DSC_war_policies_dynamic2 = yes
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.02 }
+change_DSC_war_policies_dynamic3 = yes
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }
+change_DSC_war_policies_dynamic11 = yes
+set_temp_variable = { temp_DSC_war_policies_dynamic = 75 }
+change_DSC_war_policies_dynamic14 = yes
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.03 }
+change_DSC_war_policies_dynamic15 = yes
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.02 }
+change_DSC_war_policies_dynamic16 = yes
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }
+change_DSC_war_policies_dynamic17 = yes
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.03 }
+change_DSC_war_policies_dynamic18 = yes
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.05 }
+change_DSC_war_policies_dynamic20 = yes
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }
+change_DSC_war_policies_dynamic21 = yes
+
+# 缺点
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.08 }
+change_DSC_war_policies_dynamic12 = yes
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.05 }
+change_DSC_war_policies_dynamic5 = yes
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.10 }
+change_DSC_war_policies_dynamic6 = yes
 
 		}
 	}
@@ -2693,6 +2825,18 @@ mutually_exclusive = {
 	focus=DSC_one_leader
 }
 		completion_reward = {
+			set_temp_variable = { temp_DSC_war_policies_dynamic= 0.05 }
+			change_DSC_war_policies_dynamic1 = yes
+			set_temp_variable = { temp_DSC_war_policies_dynamic= 0.01 }
+			change_DSC_war_policies_dynamic3 = yes
+			set_temp_variable = { temp_DSC_war_policies_dynamic= -0.05 }
+			change_DSC_war_policies_dynamic9 = yes
+			set_temp_variable = { temp_DSC_war_policies_dynamic= -0.05 }
+			change_DSC_war_policies_dynamic7 = yes
+			set_temp_variable = { temp_DSC_war_policies_dynamic= -0.05 }
+			change_DSC_war_policies_dynamic5 = yes
+			set_temp_variable = { temp_DSC_war_policies_dynamic= -0.05 }
+			change_DSC_war_policies_dynamic5 = yes
 
 		}
 	}
@@ -2794,7 +2938,18 @@ mutually_exclusive = {
 }
 
 		completion_reward = {
-
+			set_temp_variable = { temp_DSC_war_policies_dynamic= -0.05 }
+			change_DSC_war_policies_dynamic1 = yes
+			set_temp_variable = { temp_DSC_war_policies_dynamic= -0.01 }
+			change_DSC_war_policies_dynamic3 = yes
+			set_temp_variable = { temp_DSC_war_policies_dynamic= 0.1 }
+			change_DSC_war_policies_dynamic9 = yes
+			set_temp_variable = { temp_DSC_war_policies_dynamic= 0.1 }
+			change_DSC_war_policies_dynamic7 = yes
+			set_temp_variable = { temp_DSC_war_policies_dynamic= 0.1 }
+			change_DSC_war_policies_dynamic5 = yes
+			set_temp_variable = { temp_DSC_war_policies_dynamic= 0.1 }
+			change_DSC_war_policies_dynamic5 = yes
 		}
 	}
 		focus = {
@@ -2830,7 +2985,13 @@ prerequisite = {
 
 
 		completion_reward = {
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }
+change_DSC_war_policies_dynamic5 = yes       # 工厂产出 +5%
+change_DSC_war_policies_dynamic6 = yes       # 造船厂产出 +5%
+change_DSC_war_policies_dynamic10 = yes      # 燃料产量 +5%
 
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.02 }
+change_DSC_war_policies_dynamic4 = yes       # 消费品工厂需求 -2%
 		}
 	}
 	
@@ -2868,7 +3029,15 @@ prerequisite = {
 
 
 		completion_reward = {
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.10 }
+change_DSC_war_policies_dynamic4 = yes       # 消费品工厂需求 +10%
 
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.05 }
+change_DSC_war_policies_dynamic5 = yes       # 工厂产出 -5%
+change_DSC_war_policies_dynamic6 = yes       # 造船厂产出 -5%
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.02 }
+change_DSC_war_policies_dynamic1 = yes       # 政治稳定 -2%
 		}
 	}
 	
@@ -2900,7 +3069,8 @@ prerequisite = {
 
 
 		completion_reward = {
-
+					set_temp_variable = { temp_DSC_war_policies_dynamic= 0.1 }
+					change_DSC_war_policies_dynamic1 = yes
 		}
 	}
 
@@ -2968,7 +3138,8 @@ mutually_exclusive = {
 }
 
 		completion_reward = {
-
+					set_temp_variable = { temp_DSC_war_policies_dynamic= 1000 }
+					change_DSC_war_policies_dynamic14 = yes
 		}
 	}
 
@@ -3005,7 +3176,8 @@ prerequisite = {
 
 
 		completion_reward = {
-
+					set_temp_variable = { temp_DSC_war_policies_dynamic= 500 }
+										change_DSC_war_policies_dynamic14  = yes
 		}
 	}
 
@@ -3075,7 +3247,10 @@ prerequisite = {
 
 
 		completion_reward = {
-
+					set_temp_variable = { temp_DSC_war_policies_dynamic= 0.1 }
+					change_DSC_war_policies_dynamic15 = yes
+										set_temp_variable = { temp_DSC_war_policies_dynamic= 0.1 }
+					change_DSC_war_policies_dynamic16 = yes
 		}
 	}
 
@@ -3109,7 +3284,12 @@ prerequisite = {
 
 
 		completion_reward = {
-
+					set_temp_variable = { temp_DSC_war_policies_dynamic= -0.03 }
+					change_DSC_war_policies_dynamic15 = yes
+					set_temp_variable = { temp_DSC_war_policies_dynamic= -0.03 }
+					change_DSC_war_policies_dynamic16 = yes
+					set_temp_variable = { temp_DSC_war_policies_dynamic= -0.05 }
+					change_DSC_war_policies_dynamic17 = yes
 		}
 	}
 

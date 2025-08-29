@@ -268,6 +268,156 @@ change_DSC_Socialist_Construction_dynamic35 = {
 custom_effect_tooltip = change_DSC_Socialist_Construction_dynamic35_tt
 #工厂产出
 }
+
+
+
+
+
+
+
+
+
+### 政治与稳定
+change_DSC_war_policies_dynamic1 = {
+    add_to_variable = { DSC_war_policies_dynamic1 = temp_DSC_war_policies_dynamic }
+    custom_effect_tooltip = change_DSC_war_policies_dynamic1_tt
+    # 稳定度修正
+}
+
+change_DSC_war_policies_dynamic2 = {
+    add_to_variable = { DSC_war_policies_dynamic2 = temp_DSC_war_policies_dynamic }
+    custom_effect_tooltip = change_DSC_war_policies_dynamic2_tt
+    # 战争支持率修正
+}
+
+change_DSC_war_policies_dynamic3 = {
+    add_to_variable = { DSC_war_policies_dynamic3 = temp_DSC_war_policies_dynamic }
+    custom_effect_tooltip = change_DSC_war_policies_dynamic3_tt
+    # 政治点修正
+}
+
+### 经济与工业
+change_DSC_war_policies_dynamic4 = {
+    add_to_variable = { DSC_war_policies_dynamic4 = temp_DSC_war_policies_dynamic }
+    custom_effect_tooltip = change_DSC_war_policies_dynamic4_tt
+    # 消费品工厂修正
+}
+
+change_DSC_war_policies_dynamic5 = {
+    add_to_variable = { DSC_war_policies_dynamic5 = temp_DSC_war_policies_dynamic }
+    custom_effect_tooltip = change_DSC_war_policies_dynamic5_tt
+    # 工厂产出修正
+}
+
+change_DSC_war_policies_dynamic6 = {
+    add_to_variable = { DSC_war_policies_dynamic6 = temp_DSC_war_policies_dynamic }
+    custom_effect_tooltip = change_DSC_war_policies_dynamic6_tt
+    # 造船厂产出修正
+}
+
+change_DSC_war_policies_dynamic7 = {
+    add_to_variable = { DSC_war_policies_dynamic7 = temp_DSC_war_policies_dynamic }
+    custom_effect_tooltip = change_DSC_war_policies_dynamic7_tt
+    # 初始生产效率修正
+}
+
+change_DSC_war_policies_dynamic8 = {
+    add_to_variable = { DSC_war_policies_dynamic8 = temp_DSC_war_policies_dynamic }
+    custom_effect_tooltip = change_DSC_war_policies_dynamic8_tt
+    # 最大生产效率修正
+}
+
+change_DSC_war_policies_dynamic9 = {
+    add_to_variable = { DSC_war_policies_dynamic9 = temp_DSC_war_policies_dynamic }
+    custom_effect_tooltip = change_DSC_war_policies_dynamic9_tt
+    # 建筑速度修正
+}
+
+change_DSC_war_policies_dynamic10 = {
+    add_to_variable = { DSC_war_policies_dynamic10 = temp_DSC_war_policies_dynamic }
+    custom_effect_tooltip = change_DSC_war_policies_dynamic10_tt
+    # 燃料获取修正
+}
+
+### 农业与资源
+change_DSC_war_policies_dynamic11 = {
+    add_to_variable = { DSC_war_policies_dynamic11 = temp_DSC_war_policies_dynamic }
+    custom_effect_tooltip = change_DSC_war_policies_dynamic11_tt
+    # 资源产出修正
+}
+
+change_DSC_war_policies_dynamic12 = {
+    add_to_variable = { DSC_war_policies_dynamic12 = temp_DSC_war_policies_dynamic }
+    custom_effect_tooltip = change_DSC_war_policies_dynamic12_tt
+    # 补给范围修正
+}
+
+change_DSC_war_policies_dynamic13 = {
+    add_to_variable = { DSC_war_policies_dynamic13 = temp_DSC_war_policies_dynamic }
+    custom_effect_tooltip = change_DSC_war_policies_dynamic13_tt
+    # 陆军燃料消耗修正
+}
+
+change_DSC_war_policies_dynamic14 = {
+    add_to_variable = { DSC_war_policies_dynamic14 = temp_DSC_war_policies_dynamic }
+    custom_effect_tooltip = change_DSC_war_policies_dynamic14_tt
+    # 每周人力修正
+}
+
+### 军事优先
+change_DSC_war_policies_dynamic15 = {
+    add_to_variable = { DSC_war_policies_dynamic15 = temp_DSC_war_policies_dynamic }
+    custom_effect_tooltip = change_DSC_war_policies_dynamic15_tt
+    # 陆军攻击修正
+}
+
+change_DSC_war_policies_dynamic16 = {
+    add_to_variable = { DSC_war_policies_dynamic16 = temp_DSC_war_policies_dynamic }
+    custom_effect_tooltip = change_DSC_war_policies_dynamic16_tt
+    # 陆军防御修正
+}
+
+change_DSC_war_policies_dynamic17 = {
+    add_to_variable = { DSC_war_policies_dynamic17 = temp_DSC_war_policies_dynamic }
+    custom_effect_tooltip = change_DSC_war_policies_dynamic17_tt
+    # 陆军组织度修正
+}
+
+change_DSC_war_policies_dynamic18 = {
+    add_to_variable = { DSC_war_policies_dynamic18 = temp_DSC_war_policies_dynamic }
+    custom_effect_tooltip = change_DSC_war_policies_dynamic18_tt
+    # 补员速度修正
+}
+
+change_DSC_war_policies_dynamic19 = {
+    add_to_variable = { DSC_war_policies_dynamic19 = temp_DSC_war_policies_dynamic }
+    custom_effect_tooltip = change_DSC_war_policies_dynamic19_tt
+    # 补给消耗修正
+}
+
+### 镇压与社会控制
+change_DSC_war_policies_dynamic20 = {
+    add_to_variable = { DSC_war_policies_dynamic20 = temp_DSC_war_policies_dynamic }
+    custom_effect_tooltip = change_DSC_war_policies_dynamic20_tt
+    # 占领地抵抗增长修正
+}
+
+change_DSC_war_policies_dynamic21 = {
+    add_to_variable = { DSC_war_policies_dynamic21 = temp_DSC_war_policies_dynamic }
+    custom_effect_tooltip = change_DSC_war_policies_dynamic21_tt
+    # 占领地顺从度增长修正
+}
+
+change_DSC_war_policies_dynamic22 = {
+    add_to_variable = { DSC_war_policies_dynamic22 = temp_DSC_war_policies_dynamic }
+    custom_effect_tooltip = change_DSC_war_policies_dynamic22_tt
+    # 外国颠覆活动修正
+}
+
+
+
+
+
 change_DSC_people_support = {
 		add_to_variable = { DSC_people_support = temp_DSC_people_support }
     clamp_variable  = {  var = DSC_people_support min = 0 max = 1 }		

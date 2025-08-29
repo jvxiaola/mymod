@@ -62,6 +62,51 @@ DSC_people_support_dynamic_left = {
 	army_defence_factor = DSC_people_support_dynamic26
 	army_org_factor =  DSC_people_support_dynamic27
 	}
+
+
+DSC_war_policies = {
+    enable = { always = yes }
+    icon = GFX_idea_communism5
+
+
+    # 政治与稳定
+    stability_factor = DSC_war_policies_dynamic1         # 政治不稳定
+    war_support_factor = DSC_war_policies_dynamic2       # 战争支持率
+    political_power_factor = DSC_war_policies_dynamic3   # 政治点获取
+
+    # 经济与工业
+    consumer_goods_factor = DSC_war_policies_dynamic4
+    industrial_capacity_factory = DSC_war_policies_dynamic5
+    industrial_capacity_dockyard = DSC_war_policies_dynamic6
+    production_factory_start_efficiency_factor = DSC_war_policies_dynamic7
+    #production_factory_max_efficiency = DSC_war_policies_dynamic8
+    production_speed_buildings_factor = DSC_war_policies_dynamic9
+    fuel_gain_factor = DSC_war_policies_dynamic10
+
+    # 农业与资源
+    local_resources_factor = DSC_war_policies_dynamic11
+    supply_node_range = DSC_war_policies_dynamic12
+    army_fuel_consumption_factor = DSC_war_policies_dynamic13
+    weekly_manpower = DSC_war_policies_dynamic14
+
+    # 军事优先
+    army_attack_factor = DSC_war_policies_dynamic15
+    army_defence_factor = DSC_war_policies_dynamic16
+    army_org_factor = DSC_war_policies_dynamic17
+    #reinforce_rate = DSC_war_policies_dynamic18
+    supply_consumption_factor = DSC_war_policies_dynamic19
+
+    # 镇压与社会控制
+    resistance_growth_on_our_occupied_states = DSC_war_policies_dynamic20
+    compliance_growth_on_our_occupied_states = DSC_war_policies_dynamic21
+    #foreign_subversive_activities = DSC_war_policies_dynamic22
+    
+}
+
+
+
+
+
 DSC_Socialist_Construction_dynamic = {
 	enable = { always = yes }
 	icon = GFX_idea_communism10

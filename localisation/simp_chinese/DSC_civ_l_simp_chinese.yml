@@ -75,8 +75,45 @@
  DSC_war_System: "战争状态"
  DSC_war_System_desc: ""
 
- DSC_Grain_Allocation_System: "实物配给制"
+ DSC_Grain_Allocation_System: "全面配给制"
  DSC_Grain_Allocation_System_desc: ""
 
- DSC_supply_System: "供给制"
- DSC_supply_System_desc: ""
+ DSC_Supply_System: "供给制"
+ DSC_Supply_System_desc: ""
+
+ DSC_grain_requisition: "余粮征集制度"
+ DSC_grain_requisition_desc: "在战时共产主义的背景下，政府直接向农民强行征收余粮以供养红军和城市工人。这一政策保障了战争供给，但激化了农村的不满。"
+
+ DSC_factory_nationalization: "工厂国有化"
+ DSC_factory_nationalization_desc: "几乎所有关键工业都被收归国有，由国家统一管理生产。"
+
+ DSC_forced_labor: "劳动义务制"
+ DSC_forced_labor_desc: "全民劳动被视作义务，工人和农民被强制分配到各类工作岗位。这一措施在短期内提高了产出，却损害了民众积极性。"
+
+ DSC_red_army_mobilization: "军队总动员"
+ DSC_red_army_mobilization_desc: "革命处于生死存亡的关头，号召人民踊跃参军。军队得以迅速扩张，但新兵训练不足，战斗素质参差不齐。"
+
+ DSC_revolutionary_propaganda: "革命宣传"
+ DSC_revolutionary_propaganda_desc: "布尔什维克的宣传机器大力强调阶级斗争与革命正义，增强了工农阶级的斗志，也进一步稳固了政权的政治权威。"
+
+ DSC_cheka_repression: "契卡镇压"
+ DSC_cheka_repression_desc: "全俄肃反委员会（契卡）对反对派与破坏分子实施严酷镇压。这种恐怖手段减少了反抗，但也抑制了社会的活力。"
+
+ DSC_one_man_management: "一长制"
+ DSC_one_man_management_desc: "为了提高生产效率，工厂由一名厂长或经理全权负责，减少工人委员会的干预。虽然削弱了工人自主管理，但有助于恢复秩序与提高产能。"
+
+ DSC_workers_factory_management: "民主管理工厂"
+ DSC_workers_factory_management_desc: "工厂由工人委员会直接管理，工人可以参与重大决策。这种制度激发了工人积极性和民主热情，但在实际生产中效率较低。"
+
+
+ DSC_in_kind_rationing: "实物配给制"
+ DSC_in_kind_rationing_desc: "在内战时期，苏维埃政权以物资直接分配取代货币工资，确保军队与工人得到生存必需品，但严重压缩了消费与社会活力。"
+
+ DSC_supply_system: "供给制"
+ DSC_supply_system_desc: "解放战争时期，部队主要依靠后方统一供给与地方筹措来维持作战，减少了市场依赖，提高了部队的持久作战能力。"
+
+ millennium_dawn_reduce_power: "减少电力消耗"
+ millennium_dawn_reduce_power_desc: "通过能源优化和工业改进，国家电力消耗按比例减少，提升整体效率。"
+
+
+ DSC_war_policies: "中国战时政策"

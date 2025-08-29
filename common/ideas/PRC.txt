@@ -1,5 +1,170 @@
 ideas = {
 country={
+millennium_dawn_reduce_power = {
+
+        picture = GFX_idea_generic_production2
+    modifier = {
+        energy_use = -0.10  # 减少10%的电力消耗
+    }
+
+}
+
+    ### 实物配给制（苏俄内战） ###
+    DSC_in_kind_rationing = {
+        picture = GFX_idea_generic_production2
+        allowed = { original_tag = SOV }
+        removal_cost = -1
+        modifier = {
+            consumer_goods_factor = 0.10
+            stability_factor = -0.05
+            war_support_factor = 0.05
+            supply_consumption_factor = -0.05
+        }
+    }
+
+    ### 供给制（解放战争时期） ###
+    DSC_supply_system = {
+        picture = GFX_idea_generic_logistics
+        allowed = { original_tag = CHI }
+        removal_cost = -1
+        modifier = {
+            consumer_goods_factor = -0.05
+            stability_factor = 0.05
+            division_attrition = -0.05
+            supply_node_range = 0.10
+        }
+    }
+
+
+    DSC_one_man_management = {
+        icon = GFX_idea_generic_industry
+
+        picture = SOV_one_man_management_pic
+
+        modifier = {
+            industrial_capacity_factory = 0.10
+            production_efficiency_cap_factor = 0.05
+            stability_factor = 0.05
+            political_power_gain = -0.05
+        }
+    }
+
+    DSC_workers_factory_management = {
+        icon = GFX_idea_generic_workers
+
+        picture = SOV_workers_factory_management_pic
+
+        modifier = {
+            industrial_capacity_factory = -0.05
+            production_efficiency_cap_factor = -0.10
+            stability_factor = 0.10
+            political_power_gain = 0.10
+        }
+    }
+
+ DSC_grain_requisition = {
+        icon = GFX_idea_generic_propaganda
+
+        picture = SOV_grain_requisition_pic
+
+        modifier = {
+            consumer_goods_factor = 0.10
+            stability_factor = -0.15
+            production_speed_buildings_factor = 0.10
+            supply_consumption_factor = -0.10
+        }
+    }
+
+    DSC_factory_nationalization = {
+        icon = GFX_idea_generic_industry
+
+        picture = SOV_factory_nationalization_pic
+
+        modifier = {
+            industrial_capacity_factory = 0.10
+            production_efficiency_cap_factor = -0.10
+            political_power_gain = -0.10
+        }
+    }
+
+    DSC_forced_labor = {
+        icon = GFX_idea_generic_labor
+
+        picture = SOV_forced_labor_pic
+
+        modifier = {
+            industrial_capacity_factory = 0.05
+            industrial_capacity_dockyard = 0.05
+            stability_factor = -0.05
+        }
+    }
+
+    DSC_red_army_mobilization = {
+        icon = GFX_idea_generic_army
+
+        picture = SOV_red_army_mobilization_pic
+
+        modifier = {
+            recruitable_population_factor = 0.15
+            army_org_factor = 0.05
+            training_time_factor = 0.10
+        }
+    }
+
+    DSC_revolutionary_propaganda = {
+        icon = GFX_idea_generic_propaganda
+
+        picture = SOV_revolutionary_propaganda_pic
+
+        modifier = {
+            war_support_factor = 0.15
+            political_power_gain = 0.15
+            stability_factor = 0.05
+        }
+    }
+
+    DSC_cheka_repression = {
+        icon = GFX_idea_generic_secret_police
+
+        picture = SOV_cheka_repression_pic
+
+        modifier = {
+            resistance_growth_on_our_occupied_states = -0.20
+            compliance_growth = -0.05
+            stability_factor = 0.05
+        }
+    }
+
+    DSC_war_communism = {
+        icon = GFX_idea_generic_communism
+
+        picture = SOV_war_communism_pic
+
+        modifier = {
+            consumer_goods_factor = 0.15
+            industrial_capacity_factory = 0.10
+            industrial_capacity_dockyard = 0.10
+            stability_factor = -0.10
+            war_support_factor = 0.20
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	CHI_zzb = {
 		picture = vladimir_lenin
 	
