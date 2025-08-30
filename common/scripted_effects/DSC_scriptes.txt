@@ -1,5 +1,6 @@
 #转移tag--川渝至CHI
 SET_TAG_DSC_to_CHI = {
+
   #精神继承
   set_country_flag = manual_civil_war_debuff_removal
 	remove_ideas = civil_war_disorganised_military_1
@@ -32,6 +33,7 @@ SET_TAG_DSC_to_CHI = {
 	clr_country_flag = manual_civil_war_debuff_removal
   clr_country_flag = party5_banned
   add_ideas = Joint_production_system
+    clr_country_flag = laozuo
 	add_ideas = p5_member
   remove_ideas = Militarical_economy_remain
 	remove_ideas = CHI_jihuashengyu

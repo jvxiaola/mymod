@@ -28,15 +28,15 @@
  XIN.Nat_Autocracy_desc: "§Y临时军区政府§! - 中国人民解放军在新疆的历史沿革可以追溯至上世纪40年代“三区革命”中的新疆民族军，解放后成为第一支解放军在疆改编部队。由于新疆在中国特殊的政治，文化，产业及战略地位，新疆军区也与其它军区有着相当独特的区别，如著名的“新疆生产建设兵团”。\n处在对抗极端伊斯兰恐怖主义的第一线，新疆军区的人民解放军为维护中国西部和平稳定——乃至全中亚的长治久安做出了重大贡献。"
  XIN_MR: "£CHI_military_junta §R中国人民解放军§!军区"
  XIN_MR_desc: "§Y临时军区政府§! - 中国人民解放军在新疆的历史沿革可以追溯至上世纪40年代“三区革命”中的新疆民族军，解放后成为第一支解放军在疆改编部队。由于新疆在中国特殊的政治，文化，产业及战略地位，新疆军区也与其它军区有着相当独特的区别，如著名的“新疆生产建设兵团”。\n处在对抗极端伊斯兰恐怖主义的第一线，新疆军区的人民解放军为维护中国西部和平稳定——乃至全中亚的长治久安做出了重大贡献。"
- XIN.Communist-State: "£CHI_communism 中国共产党 - §R毛主义§! "
- XIN.Communist-State_icon: "£CHI_communism"
+ XIN.Communist-State: "£CHI_left 中国共产党 - §R毛主义§! "
+ XIN.Communist-State_icon: "£CHI_left"
  XIN.Conservative: "£CHI_communism 中国共产党 - §1改革派§! "
  XIN.Conservative_icon: "£CHI_communism"
-#新疆
+#广东
  PRG.Nat_Autocracy: "£CHI_military_junta §R中国人民解放军§! - 广州军区"
  PRG.Nat_Autocracy_icon: "£CHI_military_junta"
- PRG.Communist-State: "£CHI_communism 中国共产党 - §R毛主义§! "
- PRG.Communist-State_icon: "£CHI_communism"
+ PRG.Communist-State: "£Communist_Party_of_Nepal 中国共产党 - §R毛主义§! "
+ PRG.Communist-State_icon: "£Communist_Party_of_Nepal"
  PRG.Conservative: "£CHI_communism 中国共产党 - §1改革派§! "
  PRG.Conservative_icon: "£CHI_communism"
 #世界舞台上的第三世界
