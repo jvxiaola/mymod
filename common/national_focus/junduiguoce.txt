@@ -7,22 +7,18 @@ joint_focus = {
 	x = 7
 	y = 0
 	cost = 5
-	joint_trigger = {
-		OR = {
-			has_country_flag = qygc
-			AND = {
-				has_global_flag = DSC_is_CHI
-				tag = CHI
-			}
-		}
-	}
+
 			
 	allow_branch = {
 		OR = {
 			has_country_flag = qygc
+			
 		}
+		NOT={has_global_flag=changing_tag_from_DSC_to_CHI}
 	 }
-
+joint_trigger = {
+	has_country_flag = qygc
+}
 	ai_will_do = {
 		factor = 10
 	}
@@ -67,15 +63,9 @@ joint_focus = {
 	prerequisite = {
 		focus = DSC_DSC_civ_start
 	 }
-	joint_trigger = {
-		OR = {
-			has_country_flag = qygc
-			AND = {
-				has_global_flag = DSC_is_CHI
-				tag = CHI
-			}
-		}
-	}
+joint_trigger = {
+	has_country_flag = qygc
+}
 				
 	available = {
 
@@ -128,15 +118,7 @@ relative_position_id = DSC_people_armyI
 		focus=DSC_people_armyI
 	 }
 
-	joint_trigger = {
-		OR = {
-			has_country_flag = qygc
-			AND = {
-				has_global_flag = DSC_is_CHI
-				tag = CHI
-			}
-		}
-	}
+
 	ai_will_do = {
 		factor = 10
 	}
@@ -173,15 +155,7 @@ relative_position_id = DSC_people_armyI
 	prerequisite = {
 		focus=DSC_people_armyI
 	 }
-	 joint_trigger = {
-		OR = {
-			has_country_flag = qygc
-			AND = {
-				has_global_flag = DSC_is_CHI
-				tag = CHI
-			}
-		}
-	}
+
 
 	ai_will_do = {
 		factor = 10
@@ -217,15 +191,7 @@ relative_position_id = DSC_people_armyI
 		focus=DSC_people_army_sxjj
 	 }
 
-	 joint_trigger = {
-		OR = {
-			has_country_flag = qygc
-			AND = {
-				has_global_flag = DSC_is_CHI
-				tag = CHI
-			}
-		}
-	}
+
 	ai_will_do = {
 		factor = 10
 	}
@@ -301,21 +267,17 @@ relative_position_id = DSC_people_armyI
 	bypass = {
 
 	}
-	joint_trigger = {
-		OR = {
-			has_country_flag = qygc
-			AND = {
-				has_global_flag = DSC_is_CHI
-				tag = CHI
-			}
-		}
-	}
+
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
 	available = {
 
 	}
+		joint_trigger = {
+
+	}
+
 	completion_reward = {
 		if={
 
@@ -367,15 +329,7 @@ relative_position_id = DSC_people_armyI
 	prerequisite = {
 		focus=DSC_people_army_sixiangjy
 	 }
-	 joint_trigger = {
-		OR = {
-			has_country_flag = qygc
-			AND = {
-				has_global_flag = DSC_is_CHI
-				tag = CHI
-			}
-		}
-	}
+
 	 prerequisite = {
 		focus=DSC_people_army_junduizf
 	 }
@@ -455,15 +409,7 @@ relative_position_id = DSC_people_armyI
 	bypass = {
 
 	}
-	joint_trigger = {
-		OR = {
-			has_country_flag = qygc
-			AND = {
-				has_global_flag = DSC_is_CHI
-				tag = CHI
-			}
-		}
-	}
+
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -540,15 +486,7 @@ relative_position_id = DSC_people_armyI
 
 	}
 	cancel_if_invalid = yes
-	joint_trigger = {
-		OR = {
-			has_country_flag = qygc
-			AND = {
-				has_global_flag = DSC_is_CHI
-				tag = CHI
-			}
-		}
-	}
+
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -587,15 +525,7 @@ relative_position_id = DSC_people_armyI
 	bypass = {
 
 	}
-	joint_trigger = {
-		OR = {
-			has_country_flag = qygc
-			AND = {
-				has_global_flag = DSC_is_CHI
-				tag = CHI
-			}
-		}
-	}
+
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -654,15 +584,7 @@ relative_position_id = DSC_people_armyI
 	bypass = {
 
 	}
-	joint_trigger = {
-		OR = {
-			has_country_flag = qygc
-			AND = {
-				has_global_flag = DSC_is_CHI
-				tag = CHI
-			}
-		}
-	}
+
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -711,15 +633,7 @@ focus=DSC_people_army_zhbd
 	bypass = {
 
 	}
-	joint_trigger = {
-		OR = {
-			has_country_flag = qygc
-			AND = {
-				has_global_flag = DSC_is_CHI
-				tag = CHI
-			}
-		}
-	}
+
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -754,15 +668,7 @@ relative_position_id = DSC_people_armyI
 	bypass = {
 
 	}
-	joint_trigger = {
-		OR = {
-			has_country_flag = qygc
-			AND = {
-				has_global_flag = DSC_is_CHI
-				tag = CHI
-			}
-		}
-	}
+
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -836,15 +742,7 @@ relative_position_id = DSC_people_armyI
 	bypass = {
 
 	}
-	joint_trigger = {
-		OR = {
-			has_country_flag = qygc
-			AND = {
-				has_global_flag = DSC_is_CHI
-				tag = CHI
-			}
-		}
-	}
+
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -911,15 +809,7 @@ relative_position_id = DSC_people_armyI
 	bypass = {
 
 	}
-	joint_trigger = {
-		OR = {
-			has_country_flag = qygc
-			AND = {
-				has_global_flag = DSC_is_CHI
-				tag = CHI
-			}
-		}
-	}
+
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -1034,15 +924,7 @@ joint_focus = {
 		focus= DSC_people_army_zzjj
 	 }
 
-	 joint_trigger = {
-		OR = {
-			has_country_flag = qygc
-			AND = {
-				has_global_flag = DSC_is_CHI
-				tag = CHI
-			}
-		}
-	}
+
 
 
 relative_position_id = DSC_people_armyI
@@ -1121,15 +1003,7 @@ relative_position_id = DSC_people_armyI
 	bypass = {
 
 	}
-	joint_trigger = {
-		OR = {
-			has_country_flag = qygc
-			AND = {
-				has_global_flag = DSC_is_CHI
-				tag = CHI
-			}
-		}
-	}
+
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -1205,15 +1079,7 @@ relative_position_id = DSC_people_armyI
 	bypass = {
 
 	}
-	joint_trigger = {
-		OR = {
-			has_country_flag = qygc
-			AND = {
-				has_global_flag = DSC_is_CHI
-				tag = CHI
-			}
-		}
-	}
+
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -1256,15 +1122,7 @@ relative_position_id = DSC_people_armyI
 	bypass = {
 
 	}
-	joint_trigger = {
-		OR = {
-			has_country_flag = qygc
-			AND = {
-				has_global_flag = DSC_is_CHI
-				tag = CHI
-			}
-		}
-	}
+
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -1319,15 +1177,7 @@ relative_position_id = DSC_people_armyI
 	bypass = {
 
 	}
-	joint_trigger = {
-		OR = {
-			has_country_flag = qygc
-			AND = {
-				has_global_flag = DSC_is_CHI
-				tag = CHI
-			}
-		}
-	}
+
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -1411,15 +1261,7 @@ relative_position_id = DSC_people_armyI
 	bypass = {
 
 	}
-	joint_trigger = {
-		OR = {
-			has_country_flag = qygc
-			AND = {
-				has_global_flag = DSC_is_CHI
-				tag = CHI
-			}
-		}
-	}
+
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no

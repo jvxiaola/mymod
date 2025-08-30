@@ -4,8 +4,10 @@ CHI_NEW_economy_income_effect = {
 			OR = { 
 				original_tag = CHI 
 				tag = DSC tag = HKG
+				tag = CHI 
 			}
 		}
+
 		set_variable = { additional_income_rate = 0 }
 		if = {
 			limit = { has_idea = CHINESE_agricultural_tax }

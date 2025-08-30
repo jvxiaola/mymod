@@ -210,7 +210,8 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	immediate = { 
-
+CHI={			  inherit_technology = DSC
+	add_research_slot = 3}
 		CHI = { change_tag_from = DSC }
 
 	}
@@ -233,18 +234,21 @@ country_event = {
 immediate = {
 		clr_country_flag = clear_military_focus
 		CHI = {
-			load_focus_tree = communsim_PRC_focus
+
 			annex_country = {
     			target = DSC
     			transfer_troops = yes
 			}
+			load_focus_tree = communsim_PRC_focus
 			set_country_flag = chuanyumaopai
-			drop_cosmetic_tag = yes
+			set_cosmetic_tag = DSC_GMG
+			#drop_cosmetic_tag = yes
+
 			mark_focus_tree_layout_dirty = yes
 
 		}
 
-
+				clr_global_flag = changing_tag_from_DSC_to_CHI
 }
 
 	option = {
