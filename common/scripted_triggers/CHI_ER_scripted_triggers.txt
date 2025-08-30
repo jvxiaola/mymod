@@ -23,7 +23,11 @@ CHI_civil_war_end_trigger = {
 	OR = {
 		AND = { 
 			has_global_flag = DSC_is_CHI #川渝胜利 
-			OR = { tag = CHI tag = DSC }
+			tag = DSC
+		}
+		AND = { 
+			NOT = { has_global_flag = DSC_is_CHI } #删除老左
+			tag = CHI
 		}
 	}
 }
