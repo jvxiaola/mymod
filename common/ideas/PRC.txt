@@ -4,7 +4,7 @@ millennium_dawn_reduce_power = {
 
         picture = GFX_idea_generic_production2
     modifier = {
-        energy_use = -0.10  # 减少10%的电力消耗
+        energy_use = -1.10  # 减少10%的电力消耗
     }
 
 }

@@ -2423,6 +2423,13 @@ completion_reward = {
         set_variable = { DSC_war_policies_dynamic20 = 0.0 }
         set_variable = { DSC_war_policies_dynamic21 = 0.0 }
         set_variable = { DSC_war_policies_dynamic22 = 0.0 }
+
+
+
+
+
+
+		        set_variable = { DSC_war_policies_dynamic23 = 0.0 }
         add_dynamic_modifier = {
             modifier = DSC_war_policies
             scope = DSC
@@ -2524,7 +2531,8 @@ prerequisite = {
 
 
 		completion_reward = {
-add_ideas = millennium_dawn_reduce_power
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.03 }
+change_DSC_war_policies_dynamic23 = yes
 		}
 	}
 		focus = {
@@ -2545,7 +2553,9 @@ prerequisite = {
 		bypass = {
 	
 		}
-	
+				mutually_exclusive = {
+			focus=DSC_additional_Agricultural_tex
+		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2604,26 +2614,31 @@ prerequisite = {
 
 
 		completion_reward = {
-# 优点
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.03 }
-change_DSC_war_policies_dynamic5 = yes
-change_DSC_war_policies_dynamic6 = yes
-change_DSC_war_policies_dynamic15 = yes
-change_DSC_war_policies_dynamic16 = yes
-change_DSC_war_policies_dynamic17 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }
-change_DSC_war_policies_dynamic12 = yes
-change_DSC_war_policies_dynamic14 = yes
-change_DSC_war_policies_dynamic13 = yes
-
-# 缺点
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.08 }
+### 全面动员
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.10 }   # 稳定 -10%
 change_DSC_war_policies_dynamic1 = yes
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.03 }
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.30 }    # 战争支持 +30%
 change_DSC_war_policies_dynamic2 = yes
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }
-change_DSC_war_policies_dynamic20 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.05 }   # 政治点 -5%
+change_DSC_war_policies_dynamic3 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }    # 民需工厂 +5%
+change_DSC_war_policies_dynamic4 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.10 }    # 工厂产能 +10%
+change_DSC_war_policies_dynamic5 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.10 }    # 建筑速度 +10%
+change_DSC_war_policies_dynamic9 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.01 }    # 每周人力 +1000
+change_DSC_war_policies_dynamic14 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.10 }    # 耗电 +10%
+change_DSC_war_policies_dynamic23 = yes
+
 		}
 	}
 
@@ -2659,38 +2674,33 @@ prerequisite = {
 
 
 		completion_reward = {
-# 优点
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }
-change_DSC_war_policies_dynamic5 = yes
-change_DSC_war_policies_dynamic6 = yes
-change_DSC_war_policies_dynamic7 = yes
-change_DSC_war_policies_dynamic9 = yes
-change_DSC_war_policies_dynamic15 = yes
-change_DSC_war_policies_dynamic16 = yes
-change_DSC_war_policies_dynamic17 = yes
+### 全民军事训练
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.05 }   # 稳定 -5%
+change_DSC_war_policies_dynamic1 = yes
 
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.08 }
-change_DSC_war_policies_dynamic13 = yes
-set_temp_variable = { temp_DSC_war_policies_dynamic = 150 }
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.15 }    # 战争支持 +15%
+change_DSC_war_policies_dynamic2 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.05 }   # 政治点 -5%
+change_DSC_war_policies_dynamic3 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.02 }    # 民需工厂 +2%
+change_DSC_war_policies_dynamic4 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.02 }    # 每周人力 +2000
 change_DSC_war_policies_dynamic14 = yes
 
-# 缺点
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.12 }
-change_DSC_war_policies_dynamic1 = yes
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.05 }
-change_DSC_war_policies_dynamic2 = yes
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.10 }
-change_DSC_war_policies_dynamic3 = yes
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.15 }
-change_DSC_war_policies_dynamic11 = yes
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.10 }
-change_DSC_war_policies_dynamic12 = yes
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.08 }
-change_DSC_war_policies_dynamic20 = yes
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.05 }
-change_DSC_war_policies_dynamic21 = yes
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.03 }
-change_DSC_war_policies_dynamic22 = yes
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }    # 组织度 +5%
+change_DSC_war_policies_dynamic17 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }    # 攻击 +5%
+change_DSC_war_policies_dynamic15 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }    # 防御 +5%
+change_DSC_war_policies_dynamic16 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }    # 耗电 +5%
+change_DSC_war_policies_dynamic23 = yes
 
 #add_ideas = DSC_in_kind_rationing
 		}
@@ -2791,7 +2801,8 @@ prerequisite = {
 
 
 		completion_reward = {
-
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.03 }
+change_DSC_war_policies_dynamic23 = yes
 		}
 	}
 
@@ -2869,7 +2880,18 @@ prerequisite = {
 
 
 		completion_reward = {
-
+			set_temp_variable = { temp_DSC_war_policies_dynamic= 0.05 }
+			change_DSC_war_policies_dynamic1 = yes
+			set_temp_variable = { temp_DSC_war_policies_dynamic= 0.01 }
+			change_DSC_war_policies_dynamic3 = yes
+			set_temp_variable = { temp_DSC_war_policies_dynamic= -0.05 }
+			change_DSC_war_policies_dynamic9 = yes
+			set_temp_variable = { temp_DSC_war_policies_dynamic= -0.05 }
+			change_DSC_war_policies_dynamic7 = yes
+			set_temp_variable = { temp_DSC_war_policies_dynamic= -0.05 }
+			change_DSC_war_policies_dynamic5 = yes
+			set_temp_variable = { temp_DSC_war_policies_dynamic= -0.05 }
+			change_DSC_war_policies_dynamic5 = yes
 		}
 	}
 
@@ -2903,7 +2925,18 @@ prerequisite = {
 
 
 		completion_reward = {
-
+			set_temp_variable = { temp_DSC_war_policies_dynamic= 0.05 }
+			change_DSC_war_policies_dynamic1 = yes
+			set_temp_variable = { temp_DSC_war_policies_dynamic= 0.01 }
+			change_DSC_war_policies_dynamic3 = yes
+			set_temp_variable = { temp_DSC_war_policies_dynamic= -0.05 }
+			change_DSC_war_policies_dynamic9 = yes
+			set_temp_variable = { temp_DSC_war_policies_dynamic= -0.05 }
+			change_DSC_war_policies_dynamic7 = yes
+			set_temp_variable = { temp_DSC_war_policies_dynamic= -0.05 }
+			change_DSC_war_policies_dynamic5 = yes
+			set_temp_variable = { temp_DSC_war_policies_dynamic= -0.05 }
+			change_DSC_war_policies_dynamic5 = yes
 		}
 	}
 
@@ -3138,8 +3171,31 @@ mutually_exclusive = {
 }
 
 		completion_reward = {
-					set_temp_variable = { temp_DSC_war_policies_dynamic= 1000 }
-					change_DSC_war_policies_dynamic14 = yes
+### 全面动员
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.10 }   # 稳定 -10%
+change_DSC_war_policies_dynamic1 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.30 }    # 战争支持 +30%
+change_DSC_war_policies_dynamic2 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.05 }   # 政治点 -5%
+change_DSC_war_policies_dynamic3 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }    # 民需工厂 +5%
+change_DSC_war_policies_dynamic4 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.10 }    # 工厂产能 +10%
+change_DSC_war_policies_dynamic5 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.10 }    # 建筑速度 +10%
+change_DSC_war_policies_dynamic9 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 1000 }    # 每周人力 +1000
+change_DSC_war_policies_dynamic14 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.10 }    # 耗电 +10%
+change_DSC_war_policies_dynamic23 = yes
+
 		}
 	}
 
@@ -3164,7 +3220,7 @@ prerequisite = {
 	
 		}
 	mutually_exclusive = {
-	focus=DSC_peaceful_mobiliation
+	focus=DSC_force_mobilazation
 }
 
 		cancel_if_invalid = yes
@@ -3176,8 +3232,27 @@ prerequisite = {
 
 
 		completion_reward = {
-					set_temp_variable = { temp_DSC_war_policies_dynamic= 500 }
-										change_DSC_war_policies_dynamic14  = yes
+### 轻微动员
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.02 }   # 稳定 -2%
+change_DSC_war_policies_dynamic1 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.10 }    # 战争支持 +10%
+change_DSC_war_policies_dynamic2 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.01 }   # 政治点 -1%
+change_DSC_war_policies_dynamic3 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.02 }    # 工厂产能 +2%
+change_DSC_war_policies_dynamic5 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.02 }    # 建设速度 +2%
+change_DSC_war_policies_dynamic9 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 500 }   # 每周人力 +500
+change_DSC_war_policies_dynamic14 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.02 }    # 耗电 +2%
+change_DSC_war_policies_dynamic23 = yes
 		}
 	}
 
@@ -3192,8 +3267,6 @@ focus = {
 		relative_position_id = DSC_emergency_policies
 prerequisite = {
 	focus= DSC_strict_military_laws
-}
-prerequisite = {
 	focus= DSC_military_democracy
 }
 		ai_will_do = {
@@ -3212,6 +3285,33 @@ prerequisite = {
 
 
 		completion_reward = {
+### 全民军事训练
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.05 }   # 稳定 -5%
+change_DSC_war_policies_dynamic1 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.15 }    # 战争支持 +15%
+change_DSC_war_policies_dynamic2 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.05 }   # 政治点 -5%
+change_DSC_war_policies_dynamic3 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.02 }    # 民需工厂 +2%
+change_DSC_war_policies_dynamic4 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.02 }    # 每周人力 +2000
+change_DSC_war_policies_dynamic14 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }    # 组织度 +5%
+change_DSC_war_policies_dynamic17 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }    # 攻击 +5%
+change_DSC_war_policies_dynamic15 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }    # 防御 +5%
+change_DSC_war_policies_dynamic16 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }    # 耗电 +5%
+change_DSC_war_policies_dynamic23 = yes
 
 		}
 	}
@@ -3247,10 +3347,31 @@ prerequisite = {
 
 
 		completion_reward = {
-					set_temp_variable = { temp_DSC_war_policies_dynamic= 0.1 }
-					change_DSC_war_policies_dynamic15 = yes
-										set_temp_variable = { temp_DSC_war_policies_dynamic= 0.1 }
-					change_DSC_war_policies_dynamic16 = yes
+### 严格军事纪律
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }   # 稳定 +5%
+change_DSC_war_policies_dynamic1 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.05 }  # 政治点 -5%
+change_DSC_war_policies_dynamic3 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }   # 攻击 +5%
+change_DSC_war_policies_dynamic15 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }   # 防御 +5%
+change_DSC_war_policies_dynamic16 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.10 }   # 组织度 +10%
+change_DSC_war_policies_dynamic17 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }   # 补给消耗 +5%
+change_DSC_war_policies_dynamic19 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.05 }  # 抵抗增长 -5%
+change_DSC_war_policies_dynamic20 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.02 }  # 顺从增长 -2%
+change_DSC_war_policies_dynamic21 = yes
+
 		}
 	}
 
@@ -3284,12 +3405,31 @@ prerequisite = {
 
 
 		completion_reward = {
-					set_temp_variable = { temp_DSC_war_policies_dynamic= -0.03 }
-					change_DSC_war_policies_dynamic15 = yes
-					set_temp_variable = { temp_DSC_war_policies_dynamic= -0.03 }
-					change_DSC_war_policies_dynamic16 = yes
-					set_temp_variable = { temp_DSC_war_policies_dynamic= -0.05 }
-					change_DSC_war_policies_dynamic17 = yes
+### 促进军事民主
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }    # 稳定 +5%
+change_DSC_war_policies_dynamic1 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }    # 战争支持 +5%
+change_DSC_war_policies_dynamic2 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.01 }    # 政治点 +1%
+change_DSC_war_policies_dynamic3 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.02 }   # 工厂产能 -2%（民主讨论效率低）
+change_DSC_war_policies_dynamic5 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = -0.01 }   # 建设速度 -1%
+change_DSC_war_policies_dynamic9 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.03 }    # 攻击 +3%
+change_DSC_war_policies_dynamic15 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.03 }    # 防御 +3%
+change_DSC_war_policies_dynamic16 = yes
+
+set_temp_variable = { temp_DSC_war_policies_dynamic = 0.02 }    # 组织度 +2%
+change_DSC_war_policies_dynamic17 = yes
+
 		}
 	}
 

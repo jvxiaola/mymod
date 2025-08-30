@@ -101,6 +101,9 @@ DSC_war_policies = {
     compliance_growth_on_our_occupied_states = DSC_war_policies_dynamic21
     #foreign_subversive_activities = DSC_war_policies_dynamic22
     
+
+
+	energy_use = DSC_war_policies_dynamic23
 }
 
 

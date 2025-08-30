@@ -1333,7 +1333,7 @@ change_DSC_war_policies_dynamic20_tt: "战时政策 - 占领地抵抗增长: [?t
 change_DSC_war_policies_dynamic21_tt: "战时政策 - 占领地顺从度增长: [?temp_DSC_war_policies_dynamic|-%]\n"
 change_DSC_war_policies_dynamic22_tt: "战时政策 - 外国颠覆活动: [?temp_DSC_war_policies_dynamic|-%]\n"
 
-
+change_DSC_war_policies_dynamic23_tt: "战时政策 - 限制电量: [?temp_DSC_war_policies_dynamic|-%]\n"
 
 
 

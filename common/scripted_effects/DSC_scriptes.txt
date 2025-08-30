@@ -414,6 +414,11 @@ change_DSC_war_policies_dynamic22 = {
     # 外国颠覆活动修正
 }
 
+change_DSC_war_policies_dynamic23 = {
+    add_to_variable = { DSC_war_policies_dynamic22 = temp_DSC_war_policies_dynamic }
+    custom_effect_tooltip = change_DSC_war_policies_dynamic23_tt
+    # 外国颠覆活动修正
+}
 
 
 
