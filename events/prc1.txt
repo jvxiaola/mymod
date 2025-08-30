@@ -210,21 +210,13 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	immediate = { 
-		clr_country_flag = clear_military_focus
-		CHI = {
-			load_focus_tree = communsim_PRC_focus
-			annex_country = {
-    			target = DSC
-    			transfer_troops = yes
-			}
-			set_country_flag = chuanyumaopai
-			drop_cosmetic_tag = yes
-			mark_focus_tree_layout_dirty = yes
-		}
+
+		CHI = { change_tag_from = DSC }
+
 	}
 	option = {
 		name = prc1.300.o1
-		CHI = { change_tag_from = DSC }
+
 		ai_chance = { factor = 5 }
 	}
 }
@@ -235,11 +227,22 @@ country_event = {
 	id = prc1.301
 	title = prc1.301.t
 	desc = prc1.301.d
-	
+	hidden = yes
 	is_triggered_only = yes
 	fire_only_once = yes
 immediate = {
+		clr_country_flag = clear_military_focus
+		CHI = {
+			load_focus_tree = communsim_PRC_focus
+			annex_country = {
+    			target = DSC
+    			transfer_troops = yes
+			}
+			set_country_flag = chuanyumaopai
+			drop_cosmetic_tag = yes
+			mark_focus_tree_layout_dirty = yes
 
+		}
 
 
 }

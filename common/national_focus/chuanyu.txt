@@ -2343,22 +2343,11 @@ completion_reward = {
 				remove_ideas = CHI_economic_recovery_end
 				remove_ideas = Agricultural_restructuring_end
 				remove_ideas = Industrial_rebuild_end
+                add_ideas = Joint_production_system
 				clr_country_flag = rehabilitate_economy
-				every_country = {
-    				limit = { has_character = Mao_Yuanxin }
-    				random_character = {
-        				limit = { is_character = Mao_Yuanxin }
-        				set_nationality = CHI
-    				}
-				}
-				DSC = { every_unit_leader = { set_nationality = CHI } }
 				CHI = { SET_TAG_DSC_to_CHI = yes }
-				every_state = {
-					limit = { is_core_of = DSC }
-					add_core_of = CHI
-					remove_core_of = DSC
-				}
-				country_event = { id = prc1.300 hours = 3 }
+
+
 			}
 		}
 	}
