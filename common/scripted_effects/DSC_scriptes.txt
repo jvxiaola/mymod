@@ -126,9 +126,16 @@ remove_ideas = CHI_capital_withdrawal4
 	add_ideas = Joint_production_system
 	increase_economic_growth = yes
 	#继承革热
+  
 	add_dynamic_modifier = { modifier = DSC_people_support_dynamic_left }
-	add_dynamic_modifier = { modifier = DSC_Socialist_Construction_dynamic }
+  set_variable = {
+  DSC_people_support=0.5    
+  }
 
+	add_dynamic_modifier = { modifier = DSC_Socialist_Construction_dynamic }
+  set_variable = {
+DSC_Socialist_Construction_dynamic1=-0.2
+  }
   				every_state = {
 					limit = { is_core_of = DSC }
 					add_core_of = CHI

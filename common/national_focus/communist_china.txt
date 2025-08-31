@@ -10225,8 +10225,9 @@ add_core_of = ROOT
 			available_if_capitulated = no
 	
 			completion_reward = {
-				set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.03 }
-				change_CHI_Socialist_Construction_dynamic1 = yes
+						custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
+				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.03 }
+				change_DSC_Socialist_Construction_dynamic1 = yes
 	add_stability = 0.05
 	#set_country_flag = party5_banned
 	hidden_effect = {
@@ -10261,8 +10262,9 @@ add_core_of = ROOT
 			available_if_capitulated = no
 	
 			completion_reward = {
-				set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.03 }
-				change_CHI_Socialist_Construction_dynamic1 = yes
+						custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
+				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.03 }
+				change_DSC_Socialist_Construction_dynamic1 = yes
 	hidden_effect = {
 	country_event = {id = prc1.116 days = 7 }
 			}
@@ -10281,8 +10283,9 @@ add_core_of = ROOT
 			available = {}
 			bypass = {}
 			completion_reward = {
-				set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.03 }
-				change_CHI_Socialist_Construction_dynamic1 = yes
+						custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
+				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.03 }
+				change_DSC_Socialist_Construction_dynamic1 = yes
 				hidden_effect = {
 				CHI_MER_decresee_effect = yes
 				CHI_MER_decresee_effect = yes
@@ -10367,14 +10370,14 @@ add_core_of = ROOT
 			completion_reward = {
 				set_country_flag=jixuwenge
 				mark_focus_tree_layout_dirty = yes
-	custom_effect_tooltip = CHI_Socialist_Construction_dynamic_tt
-	set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.10 }
-	change_CHI_Socialist_Construction_dynamic20 = yes
-	set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = -0.05 }
-	change_CHI_Socialist_Construction_dynamic23 = yes
-	change_CHI_Socialist_Construction21_dynamic = yes
-	change_CHI_SHocialist_Construction_dynamic22 = yes
-	change_CHI_Socialist_Construction_dynamic32 = yes
+	custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
+	set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.10 }
+	change_DSC_Socialist_Construction_dynamic20 = yes
+	set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.05 }
+	change_DSC_Socialist_Construction_dynamic23 = yes
+	change_DSC_Socialist_Construction21_dynamic = yes
+	change_DSC_SHocialist_Construction_dynamic22 = yes
+	change_DSC_Socialist_Construction_dynamic32 = yes
 	
 			}
 			}
@@ -10647,8 +10650,9 @@ add_idea=CHI_zzgs2
 			continue_if_invalid = no
 			available_if_capitulated = no
 			completion_reward = {
-				set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.03 }
-				change_CHI_Socialist_Construction_dynamic1 = yes
+						custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
+				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.03 }
+				change_DSC_Socialist_Construction_dynamic1 = yes
 				add_stability = 0.05
 				custom_effect_tooltip = DSC_allotment_economy_effect_tt
 				hidden_effect = {
@@ -10685,8 +10689,9 @@ add_idea=CHI_zzgs2
 			continue_if_invalid = no
 			available_if_capitulated = no
 			completion_reward = {
-				set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.03 }
-				change_CHI_Socialist_Construction_dynamic1 = yes
+						custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
+				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.03 }
+				change_DSC_Socialist_Construction_dynamic1 = yes
 				}
 			}
 			
@@ -10815,13 +10820,13 @@ add_idea=CHI_zzgs2
 	
 		completion_reward = {
 	
-			custom_effect_tooltip = CHI_Socialist_Construction_dynamic_tt
-			set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.02 }
-			change_CHI_Socialist_Construction_dynamic20 = yes
-			set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = -0.05 }
-			change_CHI_Socialist_Construction_dynamic32 = yes
-			set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.02 }
-			change_CHI_Socialist_Construction_dynamic1 = yes
+			custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
+			set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.02 }
+			change_DSC_Socialist_Construction_dynamic20 = yes
+			set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.05 }
+			change_DSC_Socialist_Construction_dynamic32 = yes
+			set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.02 }
+			change_DSC_Socialist_Construction_dynamic1 = yes
 	
 	
 	
@@ -10860,13 +10865,13 @@ add_idea=CHI_zzgs2
 		
 			completion_reward = {
 		
-				custom_effect_tooltip = CHI_Socialist_Construction_dynamic_tt
-			set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.02 }
-			change_CHI_Socialist_Construction_dynamic20 = yes
-			set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = -0.05 }
-			change_CHI_Socialist_Construction_dynamic32 = yes
-			set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.02 }
-			change_CHI_Socialist_Construction_dynamic1 = yes
+				custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
+			set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.02 }
+			change_DSC_Socialist_Construction_dynamic20 = yes
+			set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.05 }
+			change_DSC_Socialist_Construction_dynamic32 = yes
+			set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.02 }
+			change_DSC_Socialist_Construction_dynamic1 = yes
 		
 		
 		
@@ -10944,13 +10949,13 @@ add_idea=CHI_zzgs2
 					available_if_capitulated = no
 			
 					completion_reward = {
-			custom_effect_tooltip = CHI_Socialist_Construction_dynamic_tt
-			set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.02 }
-			change_CHI_Socialist_Construction_dynamic20 = yes
-			set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = -0.05 }
-			change_CHI_Socialist_Construction_dynamic32 = yes
-			set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.02 }
-			change_CHI_Socialist_Construction_dynamic1 = yes
+			custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
+			set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.02 }
+			change_DSC_Socialist_Construction_dynamic20 = yes
+			set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.05 }
+			change_DSC_Socialist_Construction_dynamic32 = yes
+			set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.02 }
+			change_DSC_Socialist_Construction_dynamic1 = yes
 		
 			hidden_effect = {
 			country_event = {id = prc1.120 days = 14 }
@@ -10986,13 +10991,13 @@ add_idea=CHI_zzgs2
 						available_if_capitulated = no
 				
 						completion_reward = {
-				custom_effect_tooltip = CHI_Socialist_Construction_dynamic_tt
-				set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.02 }
-				change_CHI_Socialist_Construction_dynamic20 = yes
-				set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = -0.05 }
-				change_CHI_Socialist_Construction_dynamic32 = yes
-				set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.02 }
-				change_CHI_Socialist_Construction_dynamic1 = yes
+				custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
+				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.02 }
+				change_DSC_Socialist_Construction_dynamic20 = yes
+				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.05 }
+				change_DSC_Socialist_Construction_dynamic32 = yes
+				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.02 }
+				change_DSC_Socialist_Construction_dynamic1 = yes
 			
 				hidden_effect = {
 				country_event = {id = prc1.120 days = 14 }
@@ -11035,13 +11040,13 @@ add_idea=CHI_zzgs2
 				available_if_capitulated = no
 		
 				completion_reward = {
-		custom_effect_tooltip = CHI_Socialist_Construction_dynamic_tt
+		custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
 		set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.01 }
-		change_CHI_Socialist_Construction_dynamic20 = yes
+		change_DSC_Socialist_Construction_dynamic20 = yes
 		set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = -0.02 }
-		change_CHI_Socialist_Construction_dynamic32 = yes
+		change_DSC_Socialist_Construction_dynamic32 = yes
 		set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.05 }
-		change_CHI_Socialist_Construction_dynamic1 = yes
+		change_DSC_Socialist_Construction_dynamic1 = yes
 	
 
 every_owned_state = {
@@ -11122,12 +11127,13 @@ every_owned_state = {
 						available_if_capitulated = no
 					
 						completion_reward = {
-							set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.01 }
-							change_CHI_Socialist_Construction_dynamic20 = yes
-							set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = -0.02 }
-							change_CHI_Socialist_Construction_dynamic32 = yes
-							set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.05 }
-							change_CHI_Socialist_Construction_dynamic1 = yes
+									custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
+							set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.01 }
+							change_DSC_Socialist_Construction_dynamic20 = yes
+							set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.02 }
+							change_DSC_Socialist_Construction_dynamic32 = yes
+							set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.05 }
+							change_DSC_Socialist_Construction_dynamic1 = yes
 						}
 					}
 					
@@ -11159,12 +11165,13 @@ every_owned_state = {
 						available_if_capitulated = no
 					
 						completion_reward = {
-							set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.01 }
-							change_CHI_Socialist_Construction_dynamic20 = yes
-							set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = -0.02 }
-							change_CHI_Socialist_Construction_dynamic32 = yes
-							set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.01 }
-							change_CHI_Socialist_Construction_dynamic1 = yes
+									custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
+							set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.01 }
+							change_DSC_Socialist_Construction_dynamic20 = yes
+							set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.02 }
+							change_DSC_Socialist_Construction_dynamic32 = yes
+							set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.01 }
+							change_DSC_Socialist_Construction_dynamic1 = yes
 						}
 					}
 
@@ -11197,12 +11204,13 @@ every_owned_state = {
 						available_if_capitulated = no
 					
 						completion_reward = {
-							set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.01 }
-							change_CHI_Socialist_Construction_dynamic20 = yes
-							set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = -0.02 }
-							change_CHI_Socialist_Construction_dynamic32 = yes
-							set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.01 }
-							change_CHI_Socialist_Construction_dynamic1 = yes
+									custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
+							set_temp_variable = { temp_DCS_Socialist_Construction_dynamic = 0.01 }
+							change_DSC_Socialist_Construction_dynamic20 = yes
+							set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.02 }
+							change_DSC_Socialist_Construction_dynamic32 = yes
+							set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.01 }
+							change_DSC_Socialist_Construction_dynamic1 = yes
 						}
 					}
 					focus = {
@@ -11233,12 +11241,13 @@ every_owned_state = {
 					
 						completion_reward = {
 							set_country_flag = allow_gmwyh
-							set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.01 }
-							change_CHI_Socialist_Construction_dynamic20 = yes
-							set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = -0.02 }
-							change_CHI_Socialist_Construction_dynamic32 = yes
-							set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.01 }
-							change_CHI_Socialist_Construction_dynamic1 = yes
+									custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
+							set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.01 }
+							change_DSC_Socialist_Construction_dynamic20 = yes
+							set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.02 }
+							change_DSC_Socialist_Construction_dynamic32 = yes
+							set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.01 }
+							change_DSC_Socialist_Construction_dynamic1 = yes
 						}
 
 					}
@@ -11273,12 +11282,12 @@ every_owned_state = {
 						available_if_capitulated = no
 					
 						completion_reward = {
-							set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.01 }
-							change_CHI_Socialist_Construction_dynamic20 = yes
-							set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = -0.02 }
-							change_CHI_Socialist_Construction_dynamic32 = yes
-							set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.01 }
-							change_CHI_Socialist_Construction_dynamic1 = yes
+							set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.01 }
+							change_DSC_Socialist_Construction_dynamic20 = yes
+							set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.02 }
+							change_DSC_Socialist_Construction_dynamic32 = yes
+							set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.01 }
+							change_DSC_Socialist_Construction_dynamic1 = yes
 						}
 					}
 
@@ -11374,12 +11383,13 @@ every_owned_state = {
 						available_if_capitulated = no
 					
 						completion_reward = {
-							set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.01 }
-							change_CHI_Socialist_Construction_dynamic20 = yes
-							set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = -0.02 }
-							change_CHI_Socialist_Construction_dynamic32 = yes
-							set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.01 }
-							change_CHI_Socialist_Construction_dynamic1 = yes
+									custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
+							set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.01 }
+							change_DSC_Socialist_Construction_dynamic20 = yes
+							set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.02 }
+							change_DSC_Socialist_Construction_dynamic32 = yes
+							set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.01 }
+							change_DSC_Socialist_Construction_dynamic1 = yes
 						}
 					}
 					
@@ -11408,12 +11418,13 @@ every_owned_state = {
 						available_if_capitulated = no
 					
 						completion_reward = {
-							set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.01 }
-							change_CHI_Socialist_Construction_dynamic20 = yes
-							set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = -0.02 }
-							change_CHI_Socialist_Construction_dynamic32 = yes
-							set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.01 }
-							change_CHI_Socialist_Construction_dynamic1 = yes
+									custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
+							set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.01 }
+							change_DSC_Socialist_Construction_dynamic20 = yes
+							set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.02 }
+							change_DSC_Socialist_Construction_dynamic32 = yes
+							set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.01 }
+							change_DSC_Socialist_Construction_dynamic1 = yes
 						}
 					}
 					
@@ -11446,12 +11457,13 @@ focus = {
 	available_if_capitulated = no
 									
 	completion_reward = {
-		set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.01 }
-		change_CHI_Socialist_Construction_dynamic20 = yes
-		set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = -0.02 }
-		change_CHI_Socialist_Construction_dynamic32 = yes
-		set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.01 }
-		change_CHI_Socialist_Construction_dynamic1 = yes		
+				custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
+		set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.01 }
+		change_DSC_Socialist_Construction_dynamic20 = yes
+		set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.02 }
+		change_DSC_Socialist_Construction_dynamic32 = yes
+		set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.01 }
+		change_DSC_Socialist_Construction_dynamic1 = yes		
 	}
 	}	
 
@@ -11480,12 +11492,13 @@ focus = {
 		available_if_capitulated = no
 										
 		completion_reward = {
-			set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.01 }
-			change_CHI_Socialist_Construction_dynamic20 = yes
-			set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = -0.02 }
-			change_CHI_Socialist_Construction_dynamic32 = yes
-			set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.01 }
-			change_CHI_Socialist_Construction_dynamic1 = yes				
+					custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
+			set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.01 }
+			change_DSC_Socialist_Construction_dynamic20 = yes
+			set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.02 }
+			change_DSC_Socialist_Construction_dynamic32 = yes
+			set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.01 }
+			change_DSC_Socialist_Construction_dynamic1 = yes				
 		}
 		}	
 

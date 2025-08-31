@@ -4292,13 +4292,13 @@ CHI_water_shortages_decrease = yes
 limit = {
 has_resources_amount = {
     resource = oil
-    amount > 1
+    amount > 2
     delivered = yes
 }
 }
 add_resource = {
     type = oil
-    amount = 50
+    amount = 3
 }
 }
 			add_ideas = CHI_coal

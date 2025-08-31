@@ -2338,11 +2338,12 @@ completion_reward = {
 
 		completion_reward = {
 			custom_effect_tooltip = Joint_production_system_tt
+			add_ideas = Joint_production_system
 			hidden_effect = {
 				remove_ideas = CHI_economic_recovery_end
 				remove_ideas = Agricultural_restructuring_end
 				remove_ideas = Industrial_rebuild_end
-                add_ideas = Joint_production_system
+
 				clr_country_flag = rehabilitate_economy
 				CHI = { SET_TAG_DSC_to_CHI = yes }
 			}
