@@ -20,8 +20,10 @@ CHI_Civil_war_decisions = {
 
 CHI_pre_civ_decitions = {
 	priority = { base = 19999 }
+
 	visible_when_empty = yes
 	visible = {
+		has_country_flag = jingjizhuangtai
 		NOT = { has_country_flag = neizhanzhihou }
 		has_country_flag = cjsl
 	}

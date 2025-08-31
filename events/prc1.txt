@@ -1478,6 +1478,10 @@ country_event = {
 	
 		immediate = {
 			hidden_effect = {
+clr_country_flag = 	jingjizhuangtai
+set_variable = {
+	CHI_neizhanfengxian = 0
+}
 				set_global_flag = Ccw #军事冲突状态
 				every_country = { 
 				limit = { 
@@ -5594,10 +5598,8 @@ country_event = {
 		name = prc1.96.o1
 				ai_chance = {factor = 60}
 			remove_ideas = patry_fenlie
-			
-			set_country_flag = CPC_Rehabilitation_of_Zhao_Ziyang
-	mark_focus_tree_layout_dirty = yes
-		
+
+
 	create_country_leader = {
 		name = "Li Ruihuan"
 		picture = "Li_Ruihuan.dds"
@@ -5627,7 +5629,13 @@ CHI_Democratic_Communists
 					set_variable = { party_pop_array^2 = 0.50 } #generate the rest
 					startup_politics = yes
 	}
-
+	clr_country_flag = jingjizhuangtai
+	set_variable = {
+	CHI_neizhanfengxian = 0
+}
+    set_country_flag = CPC_Rehabilitation_of_Zhao_Ziyang
+	load_focus_tree = CHI_focus
+	mark_focus_tree_layout_dirty = yes
 		}
 		}
 country_event = {
@@ -6008,6 +6016,7 @@ create_country_leader = {
 			NOT = { TAG = CHI }
 					}
 set_country_flag = CPC_Rehabilitation_of_Zhao_Ziyang
+
 load_focus_tree = CHI_focus
 complete_national_focus = CHI_kmt1
 complete_national_focus = CHI_kmt2

@@ -5291,7 +5291,7 @@ prerequisite = { focus = CHI_decx }
 		}
 
 		available = {
-			has_completed_focus = CHI_zibenjia-dang
+			#has_completed_focus = CHI_zibenjia-dang
 		}
 
 		bypass = {

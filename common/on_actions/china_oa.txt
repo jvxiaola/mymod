@@ -209,7 +209,14 @@ set_politics = {
 			# 条件二：如果国家有 "cjsl" 标志，就每周增加内战风险
 			if = {
 				limit = {
-					has_country_flag = cjsl
+					AND={
+							has_country_flag = jingjizhuangtai
+		NOT = { has_country_flag = neizhanzhihou }
+		has_country_flag = cjsl
+					}
+
+
+
 				}
 				add_to_variable = {
 					var = CHI_neizhanfengxian
