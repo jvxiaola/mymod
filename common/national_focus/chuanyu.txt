@@ -2368,7 +2368,9 @@ completion_reward = {
 		bypass = {
 	
 		}
-	
+	allow_branch = {
+		has_country_flag = test_DEP
+	}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
