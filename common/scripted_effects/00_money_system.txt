@@ -495,7 +495,7 @@ calculate_additional_income_rate = {
 		set_variable = { additional_income_agrarian_economy = weekly_harvest_billion }
 		add_to_variable = { additional_income_rate = additional_income_agrarian_economy }
 	}
-	#永恒革命
+	#永恒革命经济系统
 if = {
 			limit = { has_idea = CHINESE_agricultural_tax }
 			set_variable = { additional_income_CHINESE_agricultural_tax = population_total }
@@ -528,6 +528,28 @@ if = {
 			multiply_variable = { additional_income_CHI_state_farm = 0.50 }	#weekly
 			add_to_variable = { additional_income_rate = additional_income_CHI_state_farm }
 		}
+	if = {
+		limit = { 
+			OR = {
+				original_tag = CHI 
+				tag = DSC tag = HKG
+			}
+		}
+		if = {
+			limit = { 
+				OR = { has_idea = CHI_Collaboration_internet_end 
+					has_dynamic_modifier = {
+						modifier = CHI_Collaboration_internet
+					}
+				}
+			}
+			set_variable = { additional_expense_CHI_Collaboration_internet = population_total }
+			divide_variable = { additional_expense_CHI_Collaboration_internet = 10 }	#Millions of people
+			multiply_variable = { additional_expense_CHI_Collaboration_internet = 0.10 } #per million
+			multiply_variable = { additional_expense_CHI_Collaboration_internet = 0.50 }	#weekly
+			add_to_variable = { additional_expenses_rate = additional_expense_CHI_Collaboration_internet}
+		}
+	}
 	# EU
 	if = {
 		limit = {
