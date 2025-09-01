@@ -101,7 +101,7 @@ remove_ideas = CHI_capital_withdrawal4
 		elections_allowed = no
 	}
 	add_to_array = { ruling_party = 4 } #共产主义								
-	set_variable = { party_pop_array^3 = 1.0 } #共产主义	
+	set_variable = { party_pop_array^4 = 1.0 } #共产主义	
 	startup_politics = yes
 	#独立性继承
 	recalculate_influence = yes
