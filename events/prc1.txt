@@ -245,7 +245,21 @@ immediate = {
 			#drop_cosmetic_tag = yes
 
 			mark_focus_tree_layout_dirty = yes
-
+start_politics_input = yes
+	set_popularities = {
+		democratic = 0.0
+		communism = 100
+		fascism = 0.0
+		neutrality = 0.0
+		nationalist = 0.0
+	}
+	set_politics = {
+		ruling_party = communism
+		elections_allowed = no
+	}
+	add_to_array = { ruling_party = 4 } #共产主义								
+	set_variable = { party_pop_array^3 = 1.0 } #共产主义	
+	startup_politics = yes
 		}
 
 				clr_global_flag = changing_tag_from_DSC_to_CHI

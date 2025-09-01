@@ -68,7 +68,6 @@ remove_ideas = CHI_capital_withdrawal4
 	if = { limit = { DSC = { has_idea = bcjzdjd } } CHI = { add_ideas = bcjzdjd } }
 
 
-
   clr_country_flag = party5_banned
   add_ideas = Joint_production_system
     clr_country_flag = laozuo
@@ -102,7 +101,7 @@ remove_ideas = CHI_capital_withdrawal4
 		elections_allowed = no
 	}
 	add_to_array = { ruling_party = 4 } #共产主义								
-	set_variable = { party_pop_array^4 = 1.0 } #共产主义	
+	set_variable = { party_pop_array^3 = 1.0 } #共产主义	
 	startup_politics = yes
 	#独立性继承
 	recalculate_influence = yes
@@ -136,6 +135,9 @@ remove_ideas = CHI_capital_withdrawal4
   set_variable = {
 DSC_Socialist_Construction_dynamic1=-0.2
   }
+
+
+
   				every_state = {
 					limit = { is_core_of = DSC }
 					add_core_of = CHI
