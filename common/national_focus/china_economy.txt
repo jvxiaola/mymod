@@ -976,7 +976,7 @@
 			OR = {
 				custom_trigger_tooltip = {
 					is_in_array = { ruling_party = 4 }
-					tooltip = has_anarchist_communism_government_TT
+					tooltip = has_communist_state_government_TT
 				}
 				custom_trigger_tooltip = {
 					is_in_array = { ruling_party = 19 }

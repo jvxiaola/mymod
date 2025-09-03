@@ -2127,11 +2127,8 @@ mutually_exclusive = {focus = PRC_no_lgbt }
 		}
 
 		available = {custom_trigger_tooltip = {
-			OR = {
-				has_country_leader_with_trait = jiti
-			has_country_flag = xggm
-			}
-					tooltip = "政府支持性少数解放"
+NOT={is_in_array = { ruling_party = 5 }}
+					tooltip = "政府不反对性少数解放"
 				}
 		}
 

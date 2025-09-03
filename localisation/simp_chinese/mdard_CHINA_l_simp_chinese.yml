@@ -1825,7 +1825,7 @@ change_DSC_war_policies_dynamic23_tt: "战时政策 - 限制电量: [?temp_DSC_w
  CPC_Socialism_with_Chinese_Characteristics: "§0中国特色社会主义 (中间路线)§!"
  CPC_democracy: "§B中国特色社会主义 (西方自由主义，新自由主义)§!"
  CPC_Marxism_Leninism: "§R马克思列宁主义、毛泽东思想§!、§O中国特色社会主义 (左翼路线)§!"
- CPC_communist_mao: "§O斯大林主义§!或§R毛泽东主义§!政党执政中"
+ CPC_communist_mao: "§R正统马列主义§!政党执政中"
  CHI_Appointment_Deng_Liqun: "赋权邓力群"
  CHI_Jiangzemin_continue: "江泽民连任"
  CHI_left4: " £CHI_communism 中国共产党 - §t老左派§!的§Y党内影响力§!大于40%"
