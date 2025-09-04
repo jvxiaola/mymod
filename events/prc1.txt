@@ -3925,7 +3925,6 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 	clr_country_flag = CHI_revisionism
-	set_country_flag = chi_work_rev
 	}
 	option = {
 		name = prc1.79.o1
@@ -4417,7 +4416,6 @@ limit = {
 			NOT = { TAG = CHI }
 					}
 	load_focus_tree = communsim_PRC_focus
-set_country_flag = chi_work_rev
 set_politics = {
 					ruling_party = communism
 					elections_allowed = no
@@ -5769,50 +5767,8 @@ option = {	#We accept!
 			ai_chance = {factor = 20}
 			}
 			}
-	country_event = {
-		id = prc1.113
-		title = prc1.113.t
-		desc = prc1.113.d
-		
-		is_triggered_only = yes
-		
-		option = {	
-			name = prc1.113.o1
-			add_manpower = -1
-	set_temp_variable = { temp_DSC_people_support = -0.01 }
-	change_DSC_people_support = yes
-			ai_chance = {factor = 20}
-			}
-			}		
-			country_event = {
-		id = prc1.114
-		title = prc1.114.t
-		desc = prc1.114.d
-		
-		is_triggered_only = yes
-		
-		option = {	
-			name = prc1.114.o1
-			add_manpower = -1
-	set_temp_variable = { temp_DSC_people_support = 0.01 }
-	change_CHI_people_support = yes
-			ai_chance = {factor = 20}
-			}
-			}		
-					country_event = {
-		id = prc1.115
-		title = prc1.115.t
-		desc = prc1.115.d
-		
-		is_triggered_only = yes
-		
-		option = {	
-			name = prc1.115.o1
-	set_temp_variable = { temp_DSC_people_support = 0.01 }
-	change_DSC_people_support = yes
-			ai_chance = {factor = 20}
-			}
-			}		
+	
+			
 	country_event = {
 		id = prc1.116
 		title = prc1.116.t
@@ -5882,10 +5838,7 @@ option = {	#We accept!
 	change_DSC_people_support = yes
 			ai_chance = {factor = 20}
 			}
-			}					
-
-
-								
+			}										
 											
 			country_event = {
 				id = prc1.123
@@ -5899,184 +5852,8 @@ option = {	#We accept!
 			add_political_power = 10
 					ai_chance = {factor = 20}
 					}
-					}				
-			country_event = {
-				id = prc1.124
-				title = prc1.124.t
-				desc = prc1.124.d
-				
-				is_triggered_only = yes
-				
-				option = {	
-					name = prc1.124.o1
-			set_temp_variable = { temp_CHI_people_support = 0.1 }
-			change_CHI_people_support = yes
-					ai_chance = {factor = 20}
-					}
-					}														
-											
-			country_event = {
-				id = prc1.128
-				title = prc1.128.t
-				desc = prc1.128.d
-				
-				is_triggered_only = yes
-				
-				option = {	
-					name = prc1.128.o1
-			set_temp_variable = { temp_CHI_people_support = 0.1 }
-			change_CHI_people_support = yes
-					ai_chance = {factor = 20}
-					}
-					}								
-			country_event = {
-				id = prc1.129
-				title = prc1.129.t
-				desc = prc1.129.d
-				
-				is_triggered_only = yes
-				
-				option = {	
-					name = prc1.129.o1
-					country_event = {id = prc1.133 days = 7 }
-			
-					ai_chance = {factor = 20}
-					}
-					}								
-			country_event = {
-				id = prc1.130
-				title = prc1.130.t
-				desc = prc1.130.d
-				
-				is_triggered_only = yes
-				
-				option = {	
-					name = prc1.130.o1
-			add_political_power = 50
-					ai_chance = {factor = 20}
-					}
-					}								
-			country_event = {
-				id = prc1.131
-				title = prc1.131.t
-				desc = prc1.131.d
-				
-				is_triggered_only = yes
-				
-				option = {	
-					name = prc1.131.o1
-			set_temp_variable = { temp_CHI_people_support = 0.1 }
-			change_CHI_people_support = yes
-					ai_chance = {factor = 20}
-					}
-					}								
-			country_event = {
-				id = prc1.132
-				title = prc1.132.t
-				desc = prc1.132.d
-				
-				is_triggered_only = yes
-				
-				option = {	
-					name = prc1.132.o1
-					country_event = {id = prc1.129 days = 7 }
-			
-					ai_chance = {factor = 20}
-					}
-					}								
-			country_event = {
-				id = prc1.133
-				title = prc1.133.t
-				desc = prc1.133.d
-				
-				is_triggered_only = yes
-				
-				option = {	
-					name = prc1.133.o1
-			add_political_power = 50
-					ai_chance = {factor = 20}
-					}
-					}								
-			country_event = {
-				id = prc1.134
-				title = prc1.134.t
-				desc = prc1.134.d
-				
-				is_triggered_only = yes
-				
-				option = {	
-					name = prc1.134.o1
-			
-					ai_chance = {factor = 20}
-					}
-					}	
-			country_event = {
-				id = prc1.135
-				title = prc1.135.t
-				desc = prc1.135.d
-				
-				is_triggered_only = yes
-				
-				option = {	
-					name = prc1.135.o1
-			
-					ai_chance = {factor = 20}
-					}
-					}		
-			country_event = {
-				id = prc1.136
-				title = prc1.136.t
-				desc = prc1.136.d
-				
-				is_triggered_only = yes
-				
-				option = {	
-					name = prc1.136.o1
-									add_to_variable = { party_pop_array^6= 0.1 } 
-			
-					create_country_leader = {
-							name = "Hu Jintao"
-							desc = "hujintao_desc"
-							picture = "Hu_jintao.dds"
-							expire = "2012.10.1"
-							ideology = Chinese_Socialism
-							
-							traits = {
-							Socialism_with_Chinese_characteristics_ideology
-			ggkfdjcr
-							}
-						}
-					ai_chance = {factor = 20}
-					}
-					}		
-			country_event = {
-				id = prc1.137
-				title = prc1.137.t
-				desc = prc1.137.d
-				
-				is_triggered_only = yes
-				
-				option = {	
-					name = prc1.137.o1
-			
-					ai_chance = {factor = 20}
-					}
-					}				
-																										
-										
-					country_event = {
-				id = prc1.153
-				title = prc1.153.t
-				desc = prc1.153.d
-				
-				is_triggered_only = yes
-				
-				option = {	
-					name = prc1.153.o1
-			add_political_power = 100
-					ai_chance = {factor = 10 }
-					}
-					}		
+					}																													
+																																
 																		
 	country_event = {
 	id = prc1.159
@@ -6204,21 +5981,13 @@ country_event = {
 	}
 }			
 
-
-
-
 country_event = {
 	id = prc1.164
 	title = prc1.164.t
 	desc = prc1.164.d
 	#CW							
 	is_triggered_only = yes
-	
-	trigger = {
-
-		
-	}
-
+	trigger = {}
 
 	option = { 
 	name = prc1.164.a.o1	
@@ -6351,20 +6120,6 @@ CHI_Massive_layoffs_improve = yes
 		}
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	country_event = {
 		id = prc1.166
 		title = prc1.166.t
@@ -6439,30 +6194,13 @@ add_timed_idea = {
 			}
 		}
 
-
-
-
-
-
-
-
-
-
-
 		country_event = {
 			id = prc1.167
 			title = prc1.167.t
 			desc = prc1.167.d
 
 			is_triggered_only = yes
-			
-			trigger = {
-		
-				
-			}
-		
-		
-	
+			trigger = {}
 		option = { 
 			name = prc1.167.a.o1	
 		set_country_flag = CHI_zhunbeirudang
@@ -6479,13 +6217,6 @@ add_timed_idea = {
 				ai_chance = { factor = 5 }																								
 				}
 			}
-
-
-
-
-
-
-
 
 		country_event = {
 			id = prc1.168
@@ -6515,13 +6246,6 @@ value = -5
 			}
 
 			}
-
-
-
-
-
-
-			
 
 
 			country_event = {

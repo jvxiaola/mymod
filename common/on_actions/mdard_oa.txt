@@ -118,11 +118,10 @@ on_actions = {
 	}
 	} 
 	OR = {
-		has_country_flag = chi_work_rev
 		has_country_flag = chi_left 
 		has_country_flag = CHI_trotskyism
 		has_cosmetic_tag = DSC_GMQ
-			has_cosmetic_tag = DSC_GMG
+		has_cosmetic_tag = DSC_GMG
 	}
 	
 	}

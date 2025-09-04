@@ -53,11 +53,8 @@ CHI_Revolutionary_Enthusiasm = {
 	
 	visible = {
 		country_exists = CHI
-OR = {
-has_country_flag = chi_left
-has_country_flag = CHI_work_rev
-}
-		}
+		has_country_flag = chi_left
+	}
 }
 CHI_World_Revolution = {
 	icon = GFX_decision_communism
@@ -68,11 +65,8 @@ priority = 500
 	
 	visible = {
 		country_exists = CHI
-OR = {
-has_country_flag = chi_left
-has_country_flag = CHI_work_rev
-}
-		}
+		has_country_flag = chi_left
+	}
 }
 China_gbrp_category = {
 	icon = GFX_decision_hol_exchange_intelligence_data

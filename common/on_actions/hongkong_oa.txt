@@ -113,7 +113,6 @@ has_country_flag=xggm
 	}
 	} 
 	OR = {
-		has_country_flag = chi_work_rev
 		has_country_flag = chi_left 
 		has_country_flag = CHI_trotskyism
 		has_country_flag=xggm
