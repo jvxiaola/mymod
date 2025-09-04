@@ -1558,22 +1558,6 @@ news_event = {
 		
 	}
 	}
-news_event = { 
-	id = mdardchina_news.51
-	title = mdardchina_news.51.t
-	desc = mdardchina_news.51.d
-	picture = Bury_Mao_Zedong
-	
-	major = yes
-	
-	is_triggered_only = yes
-		option = { #Outrageous
-		name = mdardchina_news.51.o1
-		CHI = {
-		remove_ideas = maolegacy
-	}
-	}
-	}
 
 	
 		news_event = { 

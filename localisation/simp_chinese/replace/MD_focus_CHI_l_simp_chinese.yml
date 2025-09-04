@@ -1136,8 +1136,7 @@
  anti_infiltration_bill_desc: "中国并不是不屑于使用混合战争来影响我们的民主，以支持亲中国的力量。我们应该尽我们所能限制中国这样做。"
  show_countries_that_recognize_the_ROC: "显示已经承认中华民国的国家"
  show_countries_that_recognize_the_ROC_desc: "虽然大多数国家几十年前就已经从与中华民国建交转向与中华人民共和国建交，但仍有一些国家没有这样做。由于中华人民共和国的魅力攻势，与中华民国建交的国家数量正在稳步减少。中华人民共和国以政治和经济利益来争取这些中华民国的剩余支持者。就中华民国而言，它在很大程度上无法阻止这种情况的发生。被别的国家承认是由许多因素决定的，包括影响力、舆论、观点和政府形式。"
- declare_independence_taiwan: "宣布独立"
- declare_independence_taiwan_desc: "台湾不是中国。这意味着它既不是中国共产党所宣称的中华人民共和国的一部分，也不是国民党及其盟友所宣称的中华民国的临时据点。因此，我们应该宣布独立，并寻求国际上对我们作为世界上最新国家地位的支持。"
+
  recalculate_coalition_support_taiwan: "更新总支持度"
  southwest_hydroelectricity_dev_category: "开发西南水电工程"
  southwest_hydroelectricity_dev_category_desc: "由于地区经济发展相对滞后，中国西南能源资源总体上尚未得到充分开发，特别是丰富的水电资源。"

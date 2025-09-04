@@ -283,64 +283,6 @@ war_support_factor = 0.5
 
 }
 }						
-	PRC_Dual_track_military_system_1 = {
-			picture = communist_army
-		allowed = {
-			}
-			
- 	
-			modifier = {
-                war_support_factor = 0.20
-				max_command_power = 50
-				training_time_army_factor = -0.15
-				command_power_gain_mult = 0.3
-				planning_speed = 0.15			
-army_attack_factor = 0.10
-army_org_factor = -0.05
-army_defence_factor = 0.10
-Chinese_people_support_to_china_government_modifier = 0.01
-}
-}	
-
-PRC_Dual_track_military_system_2 = {
-			picture = communist_army
-		allowed = {
-			}
-			
- 	
-			modifier = {
-                war_support_factor = 0.30
-				max_command_power = 50
-				training_time_army_factor = -0.15
-				command_power_gain_mult = 0.3
-				planning_speed = 0.15			
-army_attack_factor = 0.20
-army_org_factor = -0.10
-conscription_factor = 0.10
-army_defence_factor = 0.20
-Chinese_people_support_to_china_government_modifier = 0.05
-}
-}	
-PRC_Dual_track_military_system_3 = {
-			picture = communist_army
-		allowed = {
-			}
-			
- 	
-			modifier = {
-                war_support_factor = 0.4
-				max_command_power = 50
-				training_time_army_factor = -0.15
-				command_power_gain_mult = 0.3
-				planning_speed = 0.15	
-army_org_regain = 0.10				
-army_attack_factor = 0.3
-army_org_factor = -0.20
-conscription_factor = 0.15
-army_defence_factor = 0.30
-Chinese_people_support_to_china_government_modifier = 0.08
-}
-}	
 	USA_Anti_Communist_Jihad = {
 			picture = generic_purge
 		allowed = {
@@ -3283,16 +3225,6 @@ production_speed_buildings_factor = -0.5
 stability_factor = -0.10
 			}
 		}
-			PRC_lading = {
-			picture = land_of_the_free
-			allowed = {
-			}
-			
-			modifier = {
-				research_speed_factor = 0.05
-				stability_factor = -0.30
-			}
-		}
 PRC_computer_syetem1 = {
 			picture = Communist_ogas
 			allowed = {
@@ -3848,26 +3780,8 @@ army_org_factor = 0.10
 			}
 		}
 
-		CHI_war_communism = {
+			CHI_aftermath_of_the_civil_war = {
 			allowed = { always = no }
-			picture = morale_bonus
-			cancel = { CHI_civil_war_end_trigger = yes }	
-			modifier = {
-				industrial_capacity_factory = 0.1
-				consumer_goods_factor = -0.10
-				local_resources_factor = 0.2
-				political_power_gain = -1.0
-				production_speed_arms_factory_factor = 0.1
-				stability_factor = -0.15
-				war_support_factor = -0.1
-				monthly_population = -0.4
-				Chinese_people_support_to_china_government_modifier = 0.25
-				communism_drift = 0.1
-			}
-		}
-			CHI_aftermath_of_the_civil_war_1 = {
-			allowed = { always = no }
-			name = CHI_aftermath_of_the_civil_war
 			picture = great_depression
 			modifier = {
 				conscription_factor = -0.30
@@ -3875,63 +3789,8 @@ army_org_factor = 0.10
 				war_support_factor = -0.30
 				stability_factor = -0.30
 				industrial_capacity_factory = -0.30
-				Chinese_people_support_to_china_government_modifier = -0.05
 			}
 		}
-		CHI_aftermath_of_the_civil_war_2 = {
-			allowed = { always = no }
-			name = CHI_aftermath_of_the_civil_war
-			picture = great_depression
-			modifier = {
-				conscription_factor = -0.25
-				consumer_goods_factor = 0.20
-				war_support_factor = -0.25
-				stability_factor = -0.25
-				industrial_capacity_factory = -0.25
-								Chinese_people_support_to_china_government_modifier = -0.05
-
-			}
-		}
-		CHI_aftermath_of_the_civil_war_3 = {
-			allowed = { always = no }
-			name = CHI_aftermath_of_the_civil_war
-			picture = great_depression
-			modifier = {
-				conscription_factor = -0.20
-				consumer_goods_factor = 0.15
-				war_support_factor = -0.20
-				stability_factor = -0.20
-				industrial_capacity_factory = -0.20
-				Chinese_people_support_to_china_government_modifier = -0.03
-
-			}
-		}
-		CHI_aftermath_of_the_civil_war_4 = {
-			allowed = { always = no }
-			name = CHI_aftermath_of_the_civil_war
-			picture = great_depression
-			modifier = {
-				conscription_factor = -0.15
-				consumer_goods_factor = 0.10
-				war_support_factor = -0.15
-				stability_factor = -0.15
-				industrial_capacity_factory = -0.15
-								Chinese_people_support_to_china_government_modifier = -0.025
-			}
-		}
-		CHI_aftermath_of_the_civil_war_5 = {
-			allowed = { always = no }
-			name = CHI_aftermath_of_the_civil_war
-			picture = great_depression
-			modifier = {
-				conscription_factor = -0.10
-				consumer_goods_factor = 0.05
-				war_support_factor = -0.10
-				stability_factor = -0.10
-				industrial_capacity_factory = -0.10
-								Chinese_people_support_to_china_government_modifier = -0.01
-			}
-		}	
 		
 china_maozedongsim = {
 						picture = maoism

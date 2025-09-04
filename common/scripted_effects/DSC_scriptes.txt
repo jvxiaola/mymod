@@ -44,7 +44,6 @@ remove_ideas =  red_weidui1
 remove_ideas =  red_army
 remove_ideas =  red_army1
 remove_ideas =  red_army2
-remove_ideas = CHI_war_communism
 remove_ideas = CHI_capital_withdrawal1
 remove_ideas = CHI_capital_withdrawal2
 remove_ideas = CHI_capital_withdrawal3

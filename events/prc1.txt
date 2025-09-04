@@ -2485,50 +2485,7 @@ country_event = { #Paracel Negotiation - CHI
 
 #####################################################################################################################
 
-country_event = { #2008 Melamine Scandal
-	id = prc1.24
-	title = prc1.24.t
-	desc = prc1.24.d
-	picture = GFX_melamine_scandal
-	
-	fire_only_once = yes
 
-	trigger = {
-		tag = CHI
-		has_government = communism
-		date > 2008.9.1
-		date < 2008.9.30
-		not = { has_country_flag = CHI_Melamine }
-		not = { has_country_flag = shipinganquan }
-
-	}
-	
-	immediate = {
-		set_country_flag = CHI_Melamine
-	}
-	option = {	
-		name = prc1.24.o1
-		ai_chance = {
-			factor = 10
-			}
-		
-		add_political_power = -100
-
-		add_stability = -0.10
-
-	}
-	option = {	
-		name = prc1.24.o2
-		ai_chance = {
-			factor = 50
-			}
-		
-		add_political_power = -10
-
-		add_stability = -0.20
-
-	}
-}
 
 country_event = { #2008 512sichuan
 	id = prc1.44
@@ -3582,83 +3539,15 @@ news_event = {
 	id = prc1.56
 	title = prc1.56.t
 	desc = prc1.56.d
-
 	picture = GFX_china_19th_national_congress
-
 	is_triggered_only = yes
-
 	option = {
-		name = prc1.56.a #Communism is once again a force to be reckoned with...
+		name = prc1.56.a 
 		add_political_power = 100
 		add_stability = -0.01
 	}
 }
-news_event = {
-	id = prc1.60
-	title = prc1.60.t
-	desc = prc1.60.d
 
-	picture = GFX_china_19th_national_congress
-
-	is_triggered_only = yes
-
-	option = {
-	
-		name = prc1.60.a 
-		trigger = {
-			original_tag = CHI 
-		}
-		add_political_power = 100
-								set_variable = { party_pop_array^5 = 0.1 } 
-									add_to_array = { gov_coalition_array = 5 } 
-
-		add_stability = 0.1
-		add_manpower = 10000
-		log = "[GetDateText]: [This.GetName]: prc1.55.a executed"
-	}
-		option = {
-	name = prc1.60.b
-			trigger = {
-			NOT = { is_in_faction_with = CHI
-			original_tag = CHI 
-			}
-		}
-
-	}
-}
-country_event = {
-	id = prc1.61
-	title = prc1.61.t
-	desc = prc1.61.d
-	picture = GFX_report_event_mon_navy
-
-	is_triggered_only = yes
-
-	option = { 
-		name = prc1.61.a
-
-		
-
-		ai_chance = {
-		factor = 95 }
-
-		news_event = {
-			hours = 6
-			id = prc1.60
-		}
-	}
-	
-	option = { 
-		name = prc1.61.b
-set_country_flag = not_tuo
-		
-
-		ai_chance = {
-		factor = 10 }
-
-
-	}
-}
 
 	country_event = {
 	id = prc1.71
@@ -5646,7 +5535,7 @@ transfer_state = 591
 			ETK = {
 transfer_state = 592
 }
-	set_cosmetic_tag = CHI_FEB
+
 532 = {
 set_state_flag = CHI_Left_State
 }
@@ -5996,36 +5885,8 @@ option = {	#We accept!
 			}					
 
 
-
-			country_event = {
-				id = prc1.121
-				title = prc1.121.t
-				desc = prc1.121.d
-				
-				is_triggered_only = yes
-				
-				option = {	
-					name = prc1.121.o1
-			hidden_effect = {
-			country_event = {id = prc1.123 days = 7 }
-			}				
-					ai_chance = {factor = 20}
-					}
-					}									
-			country_event = {
-				id = prc1.122
-				title = prc1.122.t
-				desc = prc1.122.d
-				
-				is_triggered_only = yes
-				
-				option = {	
-					name = prc1.122.o1
-			set_temp_variable = { temp_CHI_people_support = 0.1 }
-			change_CHI_people_support = yes
-					ai_chance = {factor = 20}
-					}
-					}											
+								
+											
 			country_event = {
 				id = prc1.123
 				title = prc1.123.t
@@ -6052,35 +5913,8 @@ option = {	#We accept!
 			change_CHI_people_support = yes
 					ai_chance = {factor = 20}
 					}
-					}						
-			country_event = {
-				id = prc1.125
-				title = prc1.125.t
-				desc = prc1.125.d
-				
-				is_triggered_only = yes
-				
-				option = {	
-					name = prc1.125.o1
-			set_temp_variable = { temp_CHI_people_support = 0.1 }
-			change_CHI_people_support = yes
-					ai_chance = {factor = 20}
-					}
-					}								
-			country_event = {
-				id = prc1.126
-				title = prc1.126.t
-				desc = prc1.126.d
-				
-				is_triggered_only = yes
-				
-				option = {	
-					name = prc1.126.o1
-			set_temp_variable = { temp_CHI_people_support = 0.1 }
-			change_CHI_people_support = yes
-					ai_chance = {factor = 20}
-					}
-					}												
+					}														
+											
 			country_event = {
 				id = prc1.128
 				title = prc1.128.t
@@ -6228,191 +6062,8 @@ option = {	#We accept!
 					ai_chance = {factor = 20}
 					}
 					}				
-			country_event = {
-				id = prc1.138
-				title = prc1.138.t
-				desc = prc1.138.d
-				
-				is_triggered_only = yes
-				
-				option = {	
-					name = prc1.138.o1
-			hidden_effect = {
-			country_event = {id = prc1.139 days = 7 }
-			}
-					ai_chance = {factor = 20}
-					}
-					}
-			country_event = {
-				id = prc1.139
-				title = prc1.139.t
-				desc = prc1.139.d
-				
-				is_triggered_only = yes
-				
-				option = {	
-					name = prc1.139.o1
-			hidden_effect = {
-			country_event = {id = prc1.140 days = 7 }
-			}
-					ai_chance = {factor = 20}
-					}
-					}						
-			country_event = {
-				id = prc1.140
-				title = prc1.140.t
-				desc = prc1.140.d
-				
-				is_triggered_only = yes
-				
-				option = {	
-					name = prc1.140.o1
-			hidden_effect = {
-			country_event = {id = prc1.141 days = 7 }
-			}
-			595 = {
-						set_state_flag = CHI_Left_State 
-			
-			}
-					ai_chance = {factor = 20}
-					}
-					}						
-			country_event = {
-				id = prc1.141
-				title = prc1.141.t
-				desc = prc1.141.d
-				
-				is_triggered_only = yes
-				
-				option = {	
-					name = prc1.141.o1
-			hidden_effect = {
-			country_event = {id = prc1.142 days = 7 }
-			}
-			
-					ai_chance = {factor = 20}
-					}
-					}						
-			country_event = {
-				id = prc1.142
-				title = prc1.142.t
-				desc = prc1.142.d
-				
-				is_triggered_only = yes
-				
-				option = {	
-					name = prc1.142.o1
-			hidden_effect = {
-			country_event = {id = prc1.143 days = 7 }
-			}
-			532 = {
-						set_state_flag = CHI_Left_State 
-			
-			}
-			534 = {
-						set_state_flag = CHI_Left_State 
-			
-			}
-			574 = {
-						set_state_flag = CHI_Left_State 
-			
-			}
-					ai_chance = {factor = 20}
-					}
-					}						
-			country_event = {
-				id = prc1.143
-				title = prc1.143.t
-				desc = prc1.143.d
-				
-				is_triggered_only = yes
-				
-				option = {	
-					name = prc1.143.o1
-			hidden_effect = {
-			country_event = {id = prc1.144 days = 7 }
-			}
-					ai_chance = {factor = 20}
-					}
-					}						
-			country_event = {
-				id = prc1.144
-				title = prc1.144.t
-				desc = prc1.144.d
-				
-				is_triggered_only = yes
-				
-				option = {	
-					name = prc1.144.o1
-			572 = {
-						set_state_flag = CHI_Left_State 
-			
-			}
-			562 = {
-						set_state_flag = CHI_Left_State 
-			
-			}
-			537 = {
-						set_state_flag = CHI_Left_State 
-			
-			}
-			570 = {
-						set_state_flag = CHI_Left_State 
-			
-			}
-			595 = {
-						set_state_flag = CHI_Left_State 
-			
-			}
-			578 = {
-						set_state_flag = CHI_Left_State 
-			
-			}
-					ai_chance = {factor = 20}
-					}
-					}						
-			country_event = {
-				id = prc1.145
-				title = prc1.145.t
-				desc = prc1.145.d
-				
-				is_triggered_only = yes
-				
-				option = {	
-					name = prc1.145.o1
-			
-					ai_chance = {factor = 20}
-					}
-					}						
-					country_event = {
-				id = prc1.150
-				title = prc1.150.t
-				desc = prc1.150.d
-				
-				is_triggered_only = yes
-				
-				option = {	
-					name = prc1.150.o1
-					hidden_effect = {
-					news_event = {id = mdardchina_news.58 days = 7 }
-			}
-					ai_chance = {factor = 10 }
-					}
-					}
-
-					country_event = {
-				id = prc1.152
-				title = prc1.152.t
-				desc = prc1.152.d
-				
-				is_triggered_only = yes
-				
-				option = {	
-					name = prc1.152.o1
-			add_political_power = 100
-					ai_chance = {factor = 10 }
-					}
-					}
+																										
+										
 					country_event = {
 				id = prc1.153
 				title = prc1.153.t
@@ -6423,48 +6074,6 @@ option = {	#We accept!
 				option = {	
 					name = prc1.153.o1
 			add_political_power = 100
-					ai_chance = {factor = 10 }
-					}
-					}		
-							country_event = {
-				id = prc1.154
-				title = prc1.154.t
-				desc = prc1.154.d
-				
-				is_triggered_only = yes
-				
-				option = {	
-					name = prc1.154.o1
-			add_political_power = 100
-			add_stability = 0.10
-					ai_chance = {factor = 10 }
-					}
-					}		
-					country_event = {
-				id = prc1.155
-				title = prc1.155.t
-				desc = prc1.155.d
-				picture = Trotsky_and_wife
-				is_triggered_only = yes
-				
-				option = {	
-					name = prc1.155.o1
-			custom_effect_tooltip = 155_tt
-					create_country_leader = {
-							name = "People's Committee"
-							desc = "Congress_of_Soviets"
-							picture = "Great_Hall_of_People.dds"
-							expire = "2012.10.1"
-							ideology = Communist-State
-							
-							traits = { }
-						}
-						hidden_effect = {
-								set_politics = {
-								ruling_party = communism
-								elections_allowed = no
-					}
-						}
 					ai_chance = {factor = 10 }
 					}
 					}		
