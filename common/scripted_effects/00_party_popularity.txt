@@ -3585,14 +3585,7 @@ add_10_neutrality_libertarians = {
 	custom_effect_tooltip = 10_increase_16_TT
 	recalculate_party = yes
 }
-add_15_neutrality_libertarians = {
-	add_to_variable =  {
-		var = party_pop_array^16
-		value = 0.15
-	}
-	custom_effect_tooltip = 15_increase_16_TT
-	recalculate_party = yes
-}
+
 add_20_neutrality_libertarians = {
 	add_to_variable =  {
 		var = party_pop_array^16

@@ -998,43 +998,7 @@ party_popularity_stability_factor = 0.3
 power_balance_weekly = -0.005
 Chinese_people_support_to_china_government_modifier = 0.15
 		}
-		}		
-CHI_dppgov1 = {
-allowed = { original_tag = CHI }
-allowed_civil_war = {
-always = yes
-}
-			picture = democratic_socialism
-
-			modifier = {
-political_power_gain = 0.5
-production_factory_efficiency_gain_factor = 0.10
-production_factory_start_efficiency_factor = 0.10
-neutrality_drift = 0.10
-power_balance_weekly = -0.005
-		}
-		}		
-CHI_dppgov2 = {
-allowed = { original_tag = CHI }
-allowed_civil_war = {
-always = yes
-}
-name = CHI_dppgov1
-			picture = democratic_socialism
-
-			modifier = {
-political_power_gain = 0.5
-production_factory_efficiency_gain_factor = 0.10
-production_factory_start_efficiency_factor = 0.10
-conscription_factor = 0.10
-production_speed_buildings_factor = 0.1
-monthly_population = -0.20
-neutrality_drift = 0.10
-party_popularity_stability_factor = 0.15
-power_balance_weekly = -0.005
-Chinese_people_support_to_china_government_modifier = 0.05
-		}
-		}		
+		}				
 CHI_eight= {
 allowed = { original_tag = CHI }
 allowed_civil_war = {

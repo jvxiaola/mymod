@@ -212,10 +212,6 @@ texturefile = "gfx/interface/goals/cyber_lenin.png"
 name = "complete_world_revolution"
 texturefile = "gfx/interface/goals/complete_world_revolution.png"			
 }		
-	SpriteType = {
-name = "Silicon_based_Civilization_Pangu"
-texturefile = "gfx/interface/goals/Silicon_based_Civilization_Pangu.png"			
-}		
 		SpriteType = {
 name = "usa_chinaroc"
 texturefile = "gfx/interface/goals/usa_chinaroc.dds"			

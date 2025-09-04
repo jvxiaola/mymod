@@ -1,34 +1,4 @@
 ﻿add_namespace = mdardchina_news
-news_event = { 
-	id = mdardchina_news.47
-	title = mdardchina_news.47.t
-	desc = mdardchina_news.47.d
-	picture = GFX_CAN_cptpp_trade_agreement
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = { #Where does this end?
-		name = mdardchina_news.47.o1
-		trigger = { 
-			OR = {
-				original_tag = CHI 
-				is_in_faction_with = CHI 
-			}
-		}
-	}
-
-	
-	option = { #Incredible!
-		name = mdardchina_news.47.o2
-		trigger = {
-			NOT = { is_in_faction_with = USA }
-			NOT = { is_in_faction_with = CHI }
-		}
-	}
-	
-}
 #Taiwan Puppet
 news_event = { 
 	id = mdardchina_news.1
@@ -1604,64 +1574,8 @@ news_event = {
 	}
 	}
 	}
-	news_event = { 
-	id = mdardchina_news.52
-	title = mdardchina_news.52.t
-	desc = mdardchina_news.52.d
-	picture = news_american_zombie
+
 	
-	major = yes
-	
-	is_triggered_only = yes
-		option = { 
-		name = mdardchina_news.52.o1
-			trigger = {
-			OR = {
-				is_in_faction_with = CHI
-				original_tag = CHI
-			}
-		}
-	}
-			option = { 
-		name = mdardchina_news.52.o2
-			trigger = {
-NOT = {			OR = {
-				is_in_faction_with = CHI
-				original_tag = CHI
-			}
-		}
-		}
-	}
-	}
-	news_event = { 
-	id = mdardchina_news.53
-	title = mdardchina_news.53.t
-	desc = mdardchina_news.53.d
-	picture = GFX_china_19th_national_congress
-	
-	major = yes
-	
-	is_triggered_only = yes
-		option = { 
-		name = mdardchina_news.53.o1
-			trigger = {
-			OR = {
-				is_in_faction_with = CHI
-				original_tag = CHI
-			}
-		}
-	}
-			option = { 
-		name = mdardchina_news.53.o2
-			trigger = {
-NOT = {			OR = {
-				is_in_faction_with = CHI
-				original_tag = CHI
-			}
-		}
-		}
-	}
-	}	
 		news_event = { 
 	id = mdardchina_news.54
 	title = mdardchina_news.54.t

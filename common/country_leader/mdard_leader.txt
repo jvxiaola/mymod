@@ -45,19 +45,6 @@ leader_traits = {
 			factor = 1
 		}
 	}
-	 PRC_genius_of_the_people_cl = {
-		random = no
-		production_speed_buildings_factor = 0.15
-		research_speed_factor = 0.15
-		production_factory_max_efficiency_factor = 0.15
-		army_attack_factor = 0.10
-		army_defence_factor = 0.1
-				command_power_gain_mult = 0.3
-
-		ai_will_do = {
-			factor = 1
-		}
-	}	
 	  CHI_Democratic_Communists = {
 		random = no
 political_power_factor = 0.15
@@ -87,16 +74,6 @@ stability_factor = -0.15
 communism_drift = 0.10
 Chinese_people_support_to_china_government_modifier = 0.10
 send_volunteer_size = 5
-		ai_will_do = {
-			factor = 1
-		}
-	}	
-	pangu = {
-		random = no
-		stability_factor = 0.25
-		political_power_factor = 0.25
-		war_support_factor = 0.1
-		
 		ai_will_do = {
 			factor = 1
 		}
@@ -215,21 +192,6 @@ political_power_factor = 0.2
 stability_factor = 0.15
 production_speed_buildings_factor = 0.1
 consumer_goods_factor = 0.03
-		ai_will_do = {
-			factor = 1
-		}
-	
-	}
-cyber_immortal = {
-			random = no
-political_power_factor = 1
-stability_factor = -0.25
-production_speed_buildings_factor = 0.1
-consumer_goods_factor = -0.05
-		opinion_gain_monthly_factor = -0.15
-		economic_cycles_cost_factor = -0.1
-		econ_cycle_upg_cost_multiplier_modifier = -0.1
-		interest_rate_multiplier_modifier = -1
 		ai_will_do = {
 			factor = 1
 		}
