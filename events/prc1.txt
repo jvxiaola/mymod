@@ -2187,7 +2187,7 @@ division_template = {
 	}
 
 	option = {
-		trigger = { has_country_flag = chuanyu_no_junguan }
+		trigger = { has_country_flag = chuanyu_is_junguan }
 			name = prc1.57.o2
 			custom_effect_tooltip = CHI_change_forward_mao_tt
 			DSC = { change_tag_from = CHI }
