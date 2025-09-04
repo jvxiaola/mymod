@@ -123,7 +123,7 @@ country_event = {
 		name = CHI_ER_start.4.o1
 		ai_chance = { factor = 60 }
 		custom_effect_tooltip = CHI_change_forward_mao_tt
-		set_country_flag = CHI_no_shanghaicommune
+		set_country_flag = chuanyu_no_junguan
 		hidden_effect = {
 			DSC = {
 				inherit_technology = CHI

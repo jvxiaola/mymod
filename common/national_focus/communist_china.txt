@@ -2127,7 +2127,7 @@ mutually_exclusive = {focus = PRC_no_lgbt }
 		}
 
 		available = {custom_trigger_tooltip = {
-NOT={is_in_array = { ruling_party = 5 }}
+NOT={ is_in_array = { ruling_party = 5 }}
 					tooltip = "政府不反对性少数解放"
 				}
 		}
@@ -2156,9 +2156,9 @@ mutually_exclusive = {focus = PRC_lgbt }
 		ai_will_do = {
 			factor = 5
 		}
-
+#
 		available = {custom_trigger_tooltip = {
-					is_in_array = { ruling_party = 5 }
+					 is_in_array = { ruling_party = 5 }
 					tooltip = has_anarchist_communism_government_TT
 				}
 		}
