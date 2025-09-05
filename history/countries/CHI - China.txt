@@ -3875,7 +3875,6 @@
 
 	remove_ideas = {
 		int_investment_china
-		CHI_PLA_Business_Ventures2
 	}
 
 	add_political_power = -700

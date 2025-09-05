@@ -2691,7 +2691,6 @@ change_DSC_war_policies_dynamic16 = yes
 set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }    # 耗电 +5%
 change_DSC_war_policies_dynamic23 = yes
 
-#add_ideas = DSC_in_kind_rationing
 		}
 	}
 

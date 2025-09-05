@@ -4436,7 +4436,7 @@ set_temp_variable = { debt_change = 1 }
 		search_filters = {FOCUS_FILTER_CHI_AGGRESSION}
 
 		available = {
-			OR = { has_idea = CHI_solar_power has_idea = CHI_nuclear_power has_idea = fusion_power_1 has_idea = fusion_power_2 has_idea = fusion_power_3 }
+			OR = { has_idea = CHI_solar_power has_idea = CHI_nuclear_power }
 		}
 
 		completion_reward = {

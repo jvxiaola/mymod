@@ -484,104 +484,10 @@ always = yes
 			}
 		}
 
-PRC_Hack_Internet= {
-allowed = { original_tag = CHI }
-allowed_civil_war = {
-always = yes
-}
-			picture = com_armenia
+	
 
-			modifier = {
-operative_slot	 = 30
-own_operative_detection_chance = -10
-decryption_factor = 0.70
-intel_network_gain = 2
-subversive_activites_upkeep = -0.5
-			}
-		}		
-PRC_aigov= {
-allowed = { original_tag = CHI }
-allowed_civil_war = {
-always = yes
-}
-			picture = puppet_master
-
-			modifier = {
-production_speed_buildings_factor = 0.3
-consumer_goods_factor = -0.3			}
-		}		
-		PRC_totalitarian_government = {
-allowed = { original_tag = CHI }
-allowed_civil_war = {
-always = yes
-}
-			picture = political_censorship
-
-			modifier = {
-communism_drift = 1
-stability_factor = 0.1
-party_popularity_stability_factor = 0.2
-war_support_factor = 0.15
-political_power_gain = -0.20
-			}
-		}	
-		PRC_reboot = {
-allowed = { original_tag = CHI }
-allowed_civil_war = {
-always = yes
-}
-			picture = cartels
-
-			modifier = {
-monthly_population = -4
-army_attack_factor = 1
-war_support_factor = -0.5
-stability_factor = -1
-army_org_factor = 1
-army_defence_factor = 1
-production_speed_buildings_factor = 0.4
-			}
-		}	
-		PRC_reboot2 = {
-allowed = { original_tag = CHI }
-allowed_civil_war = {
-always = yes
-}
-			picture = cartels
-
-			modifier = {
-monthly_population = 2
-army_attack_factor = 1
-army_org_factor = 1
-army_defence_factor = 1
-production_speed_buildings_factor = 1
-			}
-		}		
-		PRC_Dafang_satellite = {
-allowed = { original_tag = CHI }
-allowed_civil_war = {
-always = yes
-}
-			picture = chabuduo
-
-			modifier = {
-consumer_goods_factor = -0.2
-production_speed_buildings_factor = -0.3
-
-			}
-		}	
-		PRC_Virus_weapons = {
-allowed = { original_tag = CHI }
-allowed_civil_war = {
-always = yes
-}
-			picture = opium
-
-			modifier = {
-monthly_population = -2
-production_speed_buildings_factor = -0.5
-			}
-		}				
+		
+		
 
 
 CHI_CPC_left1 = {
@@ -705,7 +611,7 @@ always = yes
 
 		}	
 CHI_CPC_left5 = {
-name = "chongqing_model"
+name = "重庆模式"
 			allowed = { original_tag = CHI }
 allowed_civil_war = {
 always = yes
@@ -4237,19 +4143,7 @@ fuel_gain_factor = 0.10
 			
 
 		}
-	}					
-	CHI_Controlled_nuclear_fusion_reactor = {
-		allowed_civil_war = {
-		always = yes
-		}
-		picture = nuclear_power
-					allowed = { original_tag = CHI }
-					modifier = {
-				nuclear_energy_generation_modifier = 2.0
-				nuclear_fuel_consumption_modifier = -1.5
-			
-			}
-		}		
+	}						
 		
 				CHI_Controlled_nuclear_fusion_idea = {
 				allowed_civil_war = {
