@@ -2053,14 +2053,6 @@ relative_position_id = PRC_Chairman_Deng_Liqun
 		ai_will_do = {
 			factor = 10
 		}
-
-		available = {
-
-		}
-
-		bypass = {
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2074,7 +2066,6 @@ relative_position_id = PRC_Chairman_Deng_Liqun
 				}
 			}	
 custom_effect_tooltip = CHI_Socialist_Construction_dynamic_tt
-
 set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.10 }
 change_CHI_Socialist_Construction_dynamic20 = yes
 change_CHI_Socialist_Construction_dynamic6 = yes
@@ -2094,25 +2085,11 @@ relative_position_id = PRC_Chairman_Deng_Liqun
 		ai_will_do = {
 			factor = 10
 		}
-
-		available = {
-
-		}
-
-		bypass = {
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
-
-
 			add_political_power=100
-
-
-
 		}
 		}	
 	focus = {
@@ -2128,14 +2105,6 @@ relative_position_id = PRC_Chairman_Deng_Liqun
 		ai_will_do = {
 			factor = 10
 		}
-
-		available = {
-
-		}
-
-		bypass = {
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2157,14 +2126,6 @@ relative_position_id = PRC_Chairman_Deng_Liqun
 		ai_will_do = {
 			factor = 10
 		}
-
-		available = {
-
-		}
-
-		bypass = {
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2194,14 +2155,6 @@ relative_position_id = PRC_Chairman_Deng_Liqun
 		ai_will_do = {
 			factor = 10
 		}
-
-		available = {
-
-		}
-
-		bypass = {
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2227,14 +2180,6 @@ relative_position_id = PRC_Chairman_Deng_Liqun
 		ai_will_do = {
 			factor = 10
 		}
-
-		available = {
-
-		}
-
-		bypass = {
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2272,13 +2217,6 @@ relative_position_id = PRC_Chairman_Deng_Liqun
 			factor = 10
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2306,13 +2244,6 @@ relative_position_id = PRC_Chairman_Deng_Liqun
 
 		ai_will_do = {
 			factor = 10
-		}
-
-		available = {
-
-		}
-
-		bypass = {
 		}
 
 		cancel_if_invalid = yes
@@ -2372,679 +2303,7 @@ change_CHI_Socialist_Construction_dynamic18 = yes
 
 		}
 		}		
-	
-	#正统托洛茨基主义
-				focus = {
-		id = PRC_Chairman_Shi_Yongqin
-		icon = Generic_Trotsky
-		x = 34
-		y = 0
-cost = 5
-		ai_will_do = {
-			factor = 5
-		}
-		allow_branch = {
-has_country_leader = {name = "Shi Yongqin"  }
-}
-		available = {
-		}
-				bypass = {
-		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-		set_cosmetic_tag = SOC
-add_political_power = 100
-
-
-		}
-	}
-		focus = {
-		id = PRC_Redressing_the_Trotskyists
-		icon = oppose_Mao
-		x = -2
-		y = 1
-prerequisite = {focus = PRC_Chairman_Shi_Yongqin }
-
-relative_position_id = PRC_Chairman_Shi_Yongqin
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-add_stability = 0.10
-add_political_power = 100
-country_event =  mdardchina_news.51
-		}
-		}
-focus = {
-		id = PRC_worker_state
-		icon = blr_collectivism
-		x = 0
-		y = 1
-prerequisite = {focus = PRC_Chairman_Shi_Yongqin }
-
-relative_position_id = PRC_Chairman_Shi_Yongqin
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-custom_effect_tooltip = HKG_Socialist_Construction_dynamic_tt
-set_temp_variable = { temp_HKG_Socialist_Construction_dynamic = 0.10 }
-change_HKG_Socialist_Construction_dynamic1 = yes
-set_temp_variable = { temp_HKG_Socialist_Construction_dynamic = 0.10 }
-change_HKG_Socialist_Construction_dynamic20 = yes
-set_temp_variable = { temp_HKG_Socialist_Construction_dynamic = -0.05 }
-change_HKG_Socialist_Construction_dynamic22 = yes
-change_HKG_Socialist_Construction_dynamic23 = yes
-set_temp_variable = { temp_HKG_people_support = -0.10 }
-change_HKG_people_support = yes
-		}
-		}
-focus = {
-		id = PRC_Revolutionary_Pillars
-		icon = communist_purge
-		x = 2
-		y = 1
-prerequisite = {focus = PRC_Chairman_Shi_Yongqin }
-
-relative_position_id = PRC_Chairman_Shi_Yongqin
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-decrease_corruption = yes
-		}
-		}
-focus = {
-		id = PRC_Building_socialism
-		icon = Generic_Workers_Democracy
-		x = 0
-		y = 2
-prerequisite = {focus = PRC_Redressing_the_Trotskyists }
-prerequisite = {focus = PRC_worker_state}
-prerequisite = {focus = PRC_Revolutionary_Pillars}
-relative_position_id = PRC_Chairman_Shi_Yongqin
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-custom_effect_tooltip = HKG_Socialist_Construction_dynamic_tt
-set_temp_variable = { temp_HKG_Socialist_Construction_dynamic = 0.10 }
-change_HKG_Socialist_Construction_dynamic6 = yes
-change_HKG_Socialist_Construction_dynamic35 = yes
-
-		}
-		}
-focus = {
-		id = PRC_The_principle_of_unbalanced_development
-		icon = generic_communism_focus
-		x = -3
-		y = 3
-prerequisite = {focus = PRC_Building_socialism }
-
-relative_position_id = PRC_Chairman_Shi_Yongqin
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-custom_effect_tooltip = HKG_Socialist_Construction_dynamic_tt
-
-set_temp_variable = { temp_HKG_Socialist_Construction_dynamic = 0.20 }
-change_HKG_Socialist_Construction_dynamic13 = yes
-change_HKG_Socialist_Construction_dynamic14 = yes
-change_HKG_Socialist_Construction_dynamic12 = yes
-set_temp_variable = { temp_HKG_Socialist_Construction_dynamic = 0.10 }
-change_HKG_Socialist_Construction_dynamic1 = yes
-		}
-		}
-focus = {
-		id = PRC_Factory_Committee
-		icon = chinese_licenses
-		x = -4
-		y = 4
-prerequisite = {focus = PRC_The_principle_of_unbalanced_development }
-
-relative_position_id = PRC_Chairman_Shi_Yongqin
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-							if = {
-					limit = { has_idea = the_military }
-					swap_ideas = {
-						remove_idea = the_military
-						add_idea = labour_unions
-					}
-					}		
-custom_effect_tooltip = CHI_Socialist_Construction_dynamic_tt
-
-set_temp_variable = { temp_HKG_Socialist_Construction_dynamic = 0.10 }	
-change_HKG_Socialist_Construction_dynamic4 = yes
-change_HKG_Socialist_Construction_dynamic3 = yes
-change_HKG_Socialist_Construction_dynamic5 = yes
-set_temp_variable = { temp_HKG_Socialist_Construction_dynamic = 0.05 }	
-change_HKG_Socialist_Construction_dynamic1 = yes
-set_temp_variable = { temp_HKG_Socialist_Construction_dynamic = -0.10 }	
-change_HKG_Socialist_Construction_dynamic35 = yes
-		}
-		}
-focus = {
-		id = PRC_Real_infrastructure
-		icon = goal_generic_soviet_construction
-		x = -2
-		y = 4
-prerequisite = {focus = PRC_The_principle_of_unbalanced_development }
-
-relative_position_id = PRC_Chairman_Shi_Yongqin
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-custom_effect_tooltip = HKG_Socialist_Construction_dynamic_tt
-
-set_temp_variable = { temp_HKG_Socialist_Construction_dynamic = 0.03 }
-change_HKG_Socialist_Construction_dynamic1 = yes
-set_temp_variable = { temp_HKG_Socialist_Construction_dynamic = 0.20 }
-change_HKG_Socialist_Construction_dynamic6 = yes
-change_HKG_Socialist_Construction_dynamic7 = yes
-change_HKG_Socialist_Construction_dynamic9 = yes
-
-		}
-		}
-focus = {
-		id = PRC_Leading_technological_innovation
-		icon = socialist_science
-		x = -3
-		y = 5
-prerequisite = {focus = PRC_Real_infrastructure }
-prerequisite = {focus = PRC_Factory_Committee}
-relative_position_id = PRC_Chairman_Shi_Yongqin
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-custom_effect_tooltip = HKG_Socialist_Construction_dynamic_tt
-
-set_temp_variable = { temp_HKG_Socialist_Construction_dynamic = 0.10 }
-change_HKG_Socialist_Construction_dynamic34 = yes
-change_HKG_Socialist_Construction_dynamic17 = yes
-set_temp_variable = { temp_HKG_Socialist_Construction_dynamic = 0.05 }
-
-change_HKG_Socialist_Construction_dynamic19 = yes
-
-		}
-		}	
-focus = {
-		id = PRC_Criticism_of_proletarian_culture
-		icon = communist_propaganda
-		x = -3
-		y = 6
-prerequisite = {focus = PRC_Leading_technological_innovation}
-relative_position_id = PRC_Chairman_Shi_Yongqin
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {		
-		custom_effect_tooltip = HKG_Socialist_Construction_dynamic_tt
-
-set_temp_variable = { temp_HKG_Socialist_Construction_dynamic = 0.10 }
-change_HKG_Socialist_Construction_dynamic23 = yes
-change_HKG_Socialist_Construction_dynamic20 = yes
-change_HKG_Socialist_Construction_dynamic32 = yes
-change_HKG_Socialist_Construction_dynamic34 = yes
-set_temp_variable = { temp_HKG_Socialist_Construction_dynamic = 0.03 }
-change_HKG_Socialist_Construction_dynamic1 = yes
-
-		}
-		}
-	focus = {
-		id = PRC_Theory_of_revolutionary_enthusiasm
-		icon = communism17
-		x = 0
-		y = 3
-prerequisite = {focus = PRC_Building_socialism }
-relative_position_id = PRC_Chairman_Shi_Yongqin
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-custom_effect_tooltip = HKG_Socialist_Construction_dynamic_tt
-set_temp_variable = { temp_HKG_Socialist_Construction_dynamic = 0.03 }
-change_HKG_Socialist_Construction_dynamic1 = yes
-add_political_power = -100
-		}
-		}	
-	focus = {
-		id = PRC_Soviet_democracy
-		icon = communism20
-		x = 0
-		y = 4
-prerequisite = {focus = PRC_Theory_of_revolutionary_enthusiasm }
-relative_position_id = PRC_Chairman_Shi_Yongqin
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-set_politics = {
-					ruling_party = communism
-					elections_allowed = yes
-				}		
-custom_effect_tooltip = HKG_Socialist_Construction_dynamic_tt
-set_temp_variable = { temp_HKG_Socialist_Construction_dynamic = 0.03 }
-change_HKG_Socialist_Construction_dynamic1 = yes
-change_HKG_Socialist_Construction_dynamic22 = yes
-change_HKG_Socialist_Construction_dynamic20 = yes
-add_political_power = -100	
-	}
-		}	
-			focus = {
-		id = PRC_Paris_Commune_Principles
-		icon = blr_soviet_academy_of_sciences
-		x = 0
-		y = 5
-prerequisite = {focus = PRC_Soviet_democracy }
-relative_position_id = PRC_Chairman_Shi_Yongqin
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-custom_effect_tooltip = HKG_Socialist_Construction_dynamic_tt
-set_temp_variable = { temp_HKG_Socialist_Construction_dynamic = 0.1 }
-change_HKG_Socialist_Construction_dynamic5 = yes
-change_HKG_Socialist_Construction_dynamic3 = yes
-
-change_HKG_Socialist_Construction_dynamic6 = yes
-set_temp_variable = { temp_HKG_Socialist_Construction_dynamic = -0.20 }
-change_HKG_Socialist_Construction_dynamic10 =yes
-set_temp_variable = { temp_HKG_Socialist_Construction_dynamic = -0.15 }
-change_HKG_Socialist_Construction_dynamic19 = yes
-
-decrease_centralization = yes
-add_stability = -0.10
-		}
-		}	
-			focus = {
-		id = PRC_Dual_track_military_system
-		icon = army_officers_communist
-		x = 0
-		y = 6
-prerequisite = {focus = PRC_Paris_Commune_Principles }
-relative_position_id = PRC_Chairman_Shi_Yongqin
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {		
-		custom_effect_tooltip = "解锁军队双轨制改革的决议"
-		}
-		}
-	focus = {
-		id = PRC_Comprehensive_socialization
-		icon = blr_support_of_the_worker
-		x = 3
-		y = 3
-prerequisite = {focus = PRC_Building_socialism }
-relative_position_id = PRC_Chairman_Shi_Yongqin
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-		custom_effect_tooltip = HKG_Socialist_Construction_dynamic_tt
-set_temp_variable = { temp_HKG_Socialist_Construction_dynamic = 0.03 }
-change_HKG_Socialist_Construction_dynamic1 =yes
-set_temp_variable = { temp_HKG_Socialist_Construction_dynamic = 0.15 }
-change_HKG_Socialist_Construction_dynamic6 = yes
-change_HKG_Socialist_Construction_dynamic5 = yes
-change_HKG_Socialist_Construction_dynamic4 = yes
-change_HKG_Socialist_Construction_dynamic3 = yes
-change_HKG_Socialist_Construction_dynamic9 = yes
-change_HKG_Socialist_Construction_dynamic15 = yes
-add_political_power = -120
-add_stability = -0.10		
-		
-		}
-		}			
-	focus = {
-		id = PRC_Community_City
-		icon = Generic_Communist_Propaganda02
-		x = 2
-		y = 4
-prerequisite = {focus = PRC_Comprehensive_socialization }
-relative_position_id = PRC_Chairman_Shi_Yongqin
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-has_completed_focus = PRC_Real_infrastructure
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-custom_effect_tooltip = HKG_Socialist_Construction_dynamic_tt
-set_temp_variable = { temp_HKG_Socialist_Construction_dynamic = 0.03 }
-change_HKG_Socialist_Construction_dynamic1 =yes
-set_temp_variable = { temp_HKG_Socialist_Construction_dynamic = 0.15 }
-
-change_HKG_Socialist_Construction_dynamic33 = yes
-add_political_power = -120
-		}
-		}	
-	focus = {
-		id = PRC_Agricultural_city
-		icon = GEO_Colectivize_the_farms
-		x = 4
-		y = 4
-prerequisite = {focus = PRC_Comprehensive_socialization }
-relative_position_id = PRC_Chairman_Shi_Yongqin
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-		custom_effect_tooltip = HKG_Socialist_Construction_dynamic_tt
-set_temp_variable = { temp_HKG_Socialist_Construction_dynamic = 0.03 }
-change_HKG_Socialist_Construction_dynamic19 =yes
-set_temp_variable = { temp_HKG_Socialist_Construction_dynamic = 0.15 }
-change_HKG_Socialist_Construction_dynamic6 = yes
-set_temp_variable = { change_HKG_Socialist_Construction_dynamic = 0.10 }
-change_HKG_Socialist_Construction_dynamic17 = yes
-		}
-		}			
-focus = {
-		id = PRC_two_Between
-		icon = worker_paradise
-		x = 3
-		y = 5
-prerequisite = {focus = PRC_Community_City }
-prerequisite = {focus = PRC_Agricultural_city}
-relative_position_id = PRC_Chairman_Shi_Yongqin
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-		custom_effect_tooltip = "解锁消费品分配的决议"
-		}
-		}	
-focus = {
-		id = PRC_democratic_centralism
-		icon = communism7
-		x = 3
-		y = 6
-prerequisite = {focus = PRC_two_Between}
-relative_position_id = PRC_Chairman_Shi_Yongqin
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-		custom_effect_tooltip = "在战争时期我们将可以停止选举，实行12小时工作制，代价是革命热情的大幅度降低。"
-}
-}		
 #世界革命#
 focus = {
 		id = PRC_jjdz
@@ -6932,16 +6191,6 @@ add_core_of = ROOT
 
 		}
 		}	
-
-
-
-
-	
-
-
-
-
-			
 		focus = {
 			id = PRC_Chairman_Mao_Yuanxin
 			icon = focus_Mao_Yuanxin
@@ -8303,7 +7552,6 @@ focus = {
 	custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
 	set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.05 }
 	change_DSC_Socialist_Construction_dynamic1 = yes
-	
 	set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.3 }
 	change_DSC_Socialist_Construction_dynamic6 = yes
 	change_DSC_Socialist_Construction_dynamic35 = yes
@@ -8311,17 +7559,7 @@ focus = {
 	set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.1 }
 	change_DSC_Socialist_Construction_dynamic34 = yes
 	
-	
-	
 			}
 			}	
 
-
-
-
-
-		
-
-				
-	
 		}#/* PRC_dazibao */

@@ -1666,32 +1666,7 @@ remove_effect = {set_temp_variable = { temp_CHI_people_support = -0.15 }
 change_CHI_people_support = yes
 }		
 }		
-CHI_Distributing_consumer_goods_to_the_military = {
-		ai_will_do = {
-			factor = 20
-		}
-visible = {
-#has_war = yes
-}
-		days_remove = 180
-		days_re_enable = 120
-available = {
-has_war = yes
-has_completed_focus = PRC_two_Between
-}
-		cost = 50
 
-		modifier = {
-	political_power_gain = -0.10	
-	production_speed_buildings_factor = 0.1
-	consumer_goods_factor = 0.25
-industrial_capacity_factory = 0.15
-
-		}
-remove_effect = {set_temp_variable = { temp_CHI_people_support = -0.15 }
-change_CHI_people_support = yes
-}		
-}		
 
 }
 
