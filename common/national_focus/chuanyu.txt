@@ -8,7 +8,7 @@ focus_tree = {
 		modifier = {
 			add = 10
 			tag = DSC
-	}
+		}
 		}
 		
 	default = no
@@ -32,7 +32,7 @@ focus_tree = {
 		}
 		allow_branch={
 			NOT={
-				has_country_flag = chuanyumaopai
+				has_country_flag = Maoist_from_DSC
 				has_country_flag = qygc
 				has_country_flag = rehabilitate_economy
 			}
@@ -470,7 +470,7 @@ Armor_Bat = { x = 1 y = 2 }
 
 		cost = 5
 		allow_branch = {
-			has_country_flag = chuanyumaopai
+			has_country_flag = Maoist_from_DSC
 			NOT = {
 				has_country_flag = qyxd
 				has_country_flag = qygc			

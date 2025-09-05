@@ -9,7 +9,7 @@ shared_focus = {
 			x = -18
 			y = -10
 			trigger = {
-				has_country_flag = chuanyumaopai
+				has_country_flag = Maoist_from_DSC
 			}
 		}
 		offset = {
@@ -159,7 +159,7 @@ prerequisite = { focus = PRC_computer3 }
 		}
 		allow_branch = {
 			OR = {
-				has_country_flag = chuanyumaopai
+				has_country_flag = Maoist_from_DSC
 				has_country_flag = xggm
 				has_country_flag = laozuo
 			}
@@ -169,7 +169,7 @@ prerequisite = { focus = PRC_computer3 }
 			trigger = {
 				OR = {
 					has_country_flag = xggm
-					has_country_flag = chuanyumaopai
+					has_country_flag = Maoist_from_DSC
 					has_country_flag = laozuo
 					}
 			}
@@ -198,7 +198,7 @@ add_political_power = 100
 
 		allow_branch = {
 			OR = {
-				has_country_flag = chuanyumaopai
+				has_country_flag = Maoist_from_DSC
 				has_country_flag = laozuo
 				has_country_flag = xggm
 				}
@@ -208,7 +208,7 @@ add_political_power = 100
 			trigger = {
 				OR = {
 										has_country_flag = xggm
-					has_country_flag = chuanyumaopai
+					has_country_flag = Maoist_from_DSC
 					has_country_flag = laozuo
 					}
 			}
@@ -216,7 +216,7 @@ add_political_power = 100
 		available = {							
 			custom_trigger_tooltip = {	
 				OR = {
-					has_country_flag = chuanyumaopai
+					has_country_flag = Maoist_from_DSC
 					has_country_flag = laozuo
 					has_country_flag = xggm
 					}
@@ -437,7 +437,7 @@ prerequisite = { focus = PRC_fcjc }
 		allow_branch = {
 			NOT = {
 				OR = {
-					has_country_flag = chuanyumaopai
+					has_country_flag = Maoist_from_DSC
 					has_country_flag = xggm
 					has_country_flag = laozuo
 				}
@@ -449,7 +449,7 @@ prerequisite = { focus = PRC_fcjc }
 				NOT = {
 					has_country_flag = xggm
 					has_country_flag = laozuo
-					has_country_flag = chuanyumaopai
+					has_country_flag = Maoist_from_DSC
 				}
 			}
 		}

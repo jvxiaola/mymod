@@ -9811,7 +9811,7 @@ defined_text = {
 # Conservationism
 defined_text = {
 	name = conservatism_L
-	text = { trigger = { original_tag = CHI } localization_key = CHI1.conservatism }
+	text = { trigger = { original_tag = CHI } localization_key = ER_CHI.conservatism }
 
 	text = { trigger = { has_country_flag = USoE_political_parties date < 2017.1.1 } localization_key = USoE.conservatism }
 	text = { trigger = { has_country_flag = USoE_political_parties date > 2017.1.1 } localization_key = USoE.conservatism_2017 }
@@ -10078,7 +10078,7 @@ defined_text = {
 	text = { trigger = { original_tag = CAT } localization_key = CAT.liberalism }
 	text = { trigger = { original_tag = CHA } localization_key = CHA.liberalism }
 	text = { trigger = { original_tag = CHE } localization_key = CHE.liberalism }
-	text = { trigger = { original_tag = CHI } localization_key = CHI1.liberalism }
+	text = { trigger = { original_tag = CHI } localization_key = ER_CHI.liberalism }
 	text = { trigger = { original_tag = CHL } localization_key = CHL.liberalism }
 	text = { trigger = { original_tag = CHU } localization_key = CHU.liberalism }
 	text = { trigger = { original_tag = CKK } localization_key = CKK.liberalism }
@@ -10314,7 +10314,7 @@ defined_text = {
 	text = { trigger = { original_tag = CAT } localization_key = CAT.socialism }
 	text = { trigger = { original_tag = CHA } localization_key = CHA.socialism }
 	text = { trigger = { original_tag = CHE } localization_key = CHE.socialism }
-	text = { trigger = { original_tag = CHI } localization_key = CHI1.socialism }
+	text = { trigger = { original_tag = CHI } localization_key = ER_CHI.socialism }
 	text = { trigger = { original_tag = CHL } localization_key = CHL.socialism }
 	text = { trigger = { original_tag = CHU date < 2007.1.1 } localization_key = CHU.socialism }
 	text = { trigger = { original_tag = CHU date > 2007.1.1 } localization_key = CHU.socialism_1 }
@@ -10528,7 +10528,7 @@ defined_text = {
 	text = { trigger = { original_tag = BUL } localization_key = BUL.Communist-State }
 	text = { trigger = { original_tag = CAN } localization_key = CAN.Communist-State }
 	text = { trigger = { original_tag = CHE } localization_key = CHE.Communist-State }
-	text = { trigger = { original_tag = CHI } localization_key = CHI1.Communist-State }
+	text = { trigger = { original_tag = CHI } localization_key = ER_CHI.Communist-State }
 	text = { trigger = { original_tag = XIN } localization_key = XIN.Communist-State }
 	text = { trigger = { original_tag = PRG } localization_key = PRG.Communist-State }
 	text = { trigger = { original_tag = CHL } localization_key = CHL.Communist-State }
@@ -10735,7 +10735,7 @@ defined_text = {
 	text = { trigger = { original_tag = CAT } localization_key = CAT.anarchist_communism }
 	text = { trigger = { original_tag = CHE date < 2006.1.1 } localization_key = CHE.anarchist_communism }
 	text = { trigger = { original_tag = CHE date > 2006.1.1 } localization_key = CHE.anarchist_communism_1 }
-	text = { trigger = { original_tag = CHI } localization_key = CHI1.communist_conservatives }
+	text = { trigger = { original_tag = CHI } localization_key = ER_CHI.communist_conservatives }
 
 	text = { trigger = { original_tag = CHL } localization_key = CHL.anarchist_communism }
 	text = { trigger = { original_tag = CHU date < 2006.1.1 } localization_key = CHU.anarchist_communism }
@@ -10917,7 +10917,7 @@ defined_text = {
 # Reactionary
 defined_text = {
 	name = Conservative_L
-	text = { trigger = { original_tag = CHI } localization_key = CHI1.Conservative }
+	text = { trigger = { original_tag = CHI } localization_key = ER_CHI.Conservative }
 	text = { trigger = { original_tag = XIN } localization_key = XIN.Conservative }
 	text = { trigger = { original_tag = PRG } localization_key = PRG.Conservative }
 
@@ -11079,8 +11079,8 @@ defined_text = {
 	text = { trigger = { original_tag = CBD } localization_key = CBD.Autocracy }
 	text = { trigger = { original_tag = CHA } localization_key = CHA.Autocracy }
 	text = { trigger = { original_tag = CHE } localization_key = CHE.Autocracy }
-	text = { trigger = { original_tag = CHI NOT = { has_country_leader = { name = "习近平" } }} localization_key = CHI1.Autocracy }
-	text = { trigger = { original_tag = CHI has_country_leader = { name = "习近平" }} localization_key = CHI1.cpc_xi }
+	text = { trigger = { original_tag = CHI NOT = { has_country_leader = { name = "习近平" } }} localization_key = ER_CHI.Autocracy }
+	text = { trigger = { original_tag = CHI has_country_leader = { name = "习近平" }} localization_key = ER_CHI.cpc_xi }
 
 	text = { trigger = { original_tag = CHU } localization_key = CHU.Autocracy }
 	text = { trigger = { original_tag = CKK } localization_key = CKK.Autocracy }
@@ -11246,7 +11246,7 @@ defined_text = {
 	text = { trigger = { original_tag = BHR date > 2009.01.01 } localization_key = SAU.Caliphate_2009 }
 	text = { trigger = { original_tag = BOS } localization_key = BOS.Caliphate }
 	text = { trigger = { original_tag = CHE } localization_key = CHE.Caliphate }
-	text = { trigger = { original_tag = CHI } localization_key = CHI1.Caliphate }
+	text = { trigger = { original_tag = CHI } localization_key = ER_CHI.Caliphate }
 	text = { trigger = { original_tag = CSA } localization_key = CSA.Caliphate }
 	text = { trigger = { original_tag = DAG } localization_key = DAG.Caliphate }
 	text = { trigger = { original_tag = DJI } localization_key = DJI.Caliphate }
@@ -11641,7 +11641,7 @@ defined_text = {
 	text = { trigger = { original_tag = CBD } localization_key = CBD.neutral_Social }
 	text = { trigger = { original_tag = CHE date < 2020.1.1 } localization_key = CHE.neutral_Social }
 	text = { trigger = { original_tag = CHE date > 2020.1.1 } localization_key = CHE.neutral_Social_1 }
-	text = { trigger = { original_tag = CHI } localization_key = CHI1.neutral_Social }
+	text = { trigger = { original_tag = CHI } localization_key = ER_CHI.neutral_Social }
 	text = { trigger = { original_tag = CHL } localization_key = CHL.neutral_Social }
 	text = { trigger = { original_tag = CHU date < 2020.1.1 } localization_key = CHU.neutral_Social }
 	text = { trigger = { original_tag = CHU date > 2020.1.1 } localization_key = CHU.neutral_Social_1 }
@@ -11830,7 +11830,7 @@ defined_text = {
 # Libertarian
 defined_text = {
 	name = Neutral_Libertarian_L
-		text = { trigger = { original_tag = CHI has_country_flag = CHI_ddp } localization_key = CHI.Neutral_Libertarian }
+		text = { trigger = { original_tag = CHI has_country_flag = CHI_ddp } localization_key = ER_CHI.Neutral_Libertarian }
 
 	text = { trigger = { has_country_flag = USoE_political_parties date < 2017.1.1 } localization_key = USoE.Neutral_Libertarian }
 	text = { trigger = { has_country_flag = USoE_political_parties date > 2017.1.1 } localization_key = USoE.Neutral_Libertarian_2017 }
@@ -12054,7 +12054,7 @@ defined_text = {
 	text = { trigger = { original_tag = CAN } localization_key = CAN.Neutral_Communism }
 	text = { trigger = { original_tag = CAT } localization_key = CAT.Neutral_Communism }
 	text = { trigger = { original_tag = CHE } localization_key = CHE.Neutral_Communism }
-	text = { trigger = { original_tag = CHI } localization_key = CHI1.Neutral_Communism }
+	text = { trigger = { original_tag = CHI } localization_key = ER_CHI.Neutral_Communism }
 	text = { trigger = { original_tag = CHL } localization_key = CHL.Neutral_Communism }
 	text = { trigger = { original_tag = CHU date < 2012.1.1 } localization_key = CHU.Neutral_Communism }
 	text = { trigger = { original_tag = CHU date > 2012.1.1 } localization_key = CHU.Neutral_Communism_1 }
@@ -12568,7 +12568,7 @@ defined_text = {
 # Fascists
 defined_text = {
 	name = Nat_Fascism_L
-			text = { trigger = { original_tag = CHI } localization_key = CHI.Nat_Fascism }
+			text = { trigger = { original_tag = CHI } localization_key = ER_CHI.Nat_Fascism }
 
 	text = { trigger = { has_country_flag = USoE_political_parties date < 2017.1.1 } localization_key = USoE.Nat_Fascism }
 	text = { trigger = { has_country_flag = USoE_political_parties date > 2017.1.1 } localization_key = USoE.Nat_Fascism_2017 }
@@ -12739,7 +12739,7 @@ defined_text = {
 	text = { trigger = { original_tag = CBD } localization_key = CBD.Nat_Autocracy }
 	text = { trigger = { original_tag = CHA } localization_key = CHA.Nat_Autocracy }
 	text = { trigger = { original_tag = CHE } localization_key = CHE.Nat_Autocracy }
-	text = { trigger = { original_tag = CHI } localization_key = CHI1.Nat_Autocracy }
+	text = { trigger = { original_tag = CHI } localization_key = ER_CHI.Nat_Autocracy }
 	text = { trigger = { original_tag = XIN } localization_key = XIN.Nat_Autocracy }
 	text = { trigger = { original_tag = PRG } localization_key = PRG.Nat_Autocracy }
 	text = { trigger = { original_tag = CHL } localization_key = CHL.Nat_Autocracy }
@@ -12925,7 +12925,7 @@ defined_text = {
 	text = { trigger = { original_tag = BUR } localization_key = BUR.Monarchist }
 	text = { trigger = { original_tag = CAN } localization_key = CAN.Monarchist }
 	text = { trigger = { original_tag = CAR } localization_key = CAR.Monarchist }
-	text = { trigger = { original_tag = CHI } localization_key = CHI1.Monarchist }
+	text = { trigger = { original_tag = CHI } localization_key = ER_CHI.Monarchist }
 	text = { trigger = { original_tag = CHL } localization_key = CHL.Monarchist }
 	text = { trigger = { original_tag = COM } localization_key = COM.Monarchist }
 	text = { trigger = { original_tag = CRM } localization_key = CRM.Monarchist }
@@ -13082,7 +13082,7 @@ defined_text = {
 	text = { trigger = { original_tag = BLR } localization_key = BLR.conservatism_desc }
 	text = { trigger = { original_tag = BOS has_country_flag = Bosnia_sbih } localization_key = BOS.conservatism_sbih_desc }
 	text = { trigger = { original_tag = BOS has_country_flag = Bosnia_SDA } localization_key = BOS.conservatism_desc }
-	text = { trigger = { original_tag = CHI } localization_key = CHI1.conservatism_desc }
+	text = { trigger = { original_tag = CHI } localization_key = ER_CHI.conservatism_desc }
 	text = { trigger = { original_tag = CSA } localization_key = CSA.conservatism_desc }
 	text = { trigger = { original_tag = DEN } localization_key = DEN.conservatism_desc }
 	text = { trigger = { original_tag = DON } localization_key = DON.conservatism_desc }
@@ -13152,7 +13152,7 @@ defined_text = {
 	text = { trigger = { original_tag = CAR has_country_flag = CAR_liberalism_2013_formed } localization_key = CAR.liberalism_2013_desc }
 	text = { trigger = { original_tag = CAR NOT = { has_country_flag = CAR_liberalism_2013_formed } } localization_key = CAR.liberalism_desc }
 	text = { trigger = { original_tag = CDI } localization_key = CDI.liberalism_desc }
-	text = { trigger = { original_tag = CHI } localization_key = CHI1.liberalism_desc }
+	text = { trigger = { original_tag = CHI } localization_key = ER_CHI.liberalism_desc }
 	text = { trigger = { original_tag = CSA } localization_key = CSA.liberalism_desc }
 	text = { trigger = { original_tag = DEN } localization_key = DEN.liberalism_desc }
 	text = { trigger = { original_tag = DON } localization_key = DON.liberalism_desc }
@@ -13240,7 +13240,7 @@ defined_text = {
 	text = { trigger = { original_tag = BSH } localization_key = BSH.socialism_desc }
 	text = { trigger = { original_tag = CAR } localization_key = CAR.socialism_desc }
 	text = { trigger = { original_tag = CDI } localization_key = CDI.socialism_desc }
-	text = { trigger = { original_tag = CHI } localization_key = CHI1.socialism_desc }
+	text = { trigger = { original_tag = CHI } localization_key = ER_CHI.socialism_desc }
 	text = { trigger = { original_tag = CSA } localization_key = CSA.socialism_desc }
 	text = { trigger = { original_tag = DEN } localization_key = DEN.socialism_desc }
 	text = { trigger = { original_tag = DON } localization_key = DON.socialism_desc }
@@ -13318,7 +13318,7 @@ defined_text = {
 	text = { trigger = { original_tag = BOS } localization_key = BOS.Communist-State_desc }
 	text = { trigger = { original_tag = BOT NOT = { has_country_flag = MELS_joined_UDC } } localization_key = BOT.Communist-State_desc }
 	text = { trigger = { original_tag = BSH } localization_key = BSH.Communist-State_desc }
-	text = { trigger = { original_tag = CHI } localization_key = CHI1.Communist-State_desc }
+	text = { trigger = { original_tag = CHI } localization_key = ER_CHI.Communist-State_desc }
 	text = { trigger = { original_tag = CSA } localization_key = CSA.Communist-State_desc }
 	text = { trigger = { original_tag = DEN } localization_key = DEN.Communist-State_desc }
 	text = { trigger = { original_tag = DON } localization_key = DON.Communist-State_desc }
@@ -13387,7 +13387,7 @@ defined_text = {
 	text = { trigger = { original_tag = AUS } localization_key = AUS.anarchist_communism_desc }
 	text = { trigger = { original_tag = BOT NOT = { has_country_flag = BPP_joined_UDC } } localization_key = BOT.anarchist_communism_desc }
 	text = { trigger = { original_tag = CAR } localization_key = CAR.anarchist_communism_desc }
-	text = { trigger = { original_tag = CHI has_country_flag = CHI_revisionism } localization_key = CHI1.communist_conservatives_desc }	
+	text = { trigger = { original_tag = CHI has_country_flag = CHI_revisionism } localization_key = ER_CHI.communist_conservatives_desc }	
 	text = { trigger = { original_tag = CSA } localization_key = CSA.anarchist_communism_desc }
 	text = { trigger = { original_tag = DEN } localization_key = DEN.anarchist_communism_desc }
 	text = { trigger = { original_tag = DON } localization_key = DON.anarchist_communism_desc }
@@ -13454,8 +13454,8 @@ defined_text = {
 # Reactionary
 defined_text = {
 	name = Conservative_L_desc
-	text = { trigger = { original_tag = CHI } localization_key = CHI1.Conservative_desc }
-	text = { trigger = { original_tag = XIN } localization_key = CHI1.Conservative_desc }
+	text = { trigger = { original_tag = CHI } localization_key = ER_CHI.Conservative_desc }
+	text = { trigger = { original_tag = XIN } localization_key = ER_CHI.Conservative_desc }
 
 	text = { trigger = { has_country_flag = USoE_political_parties date < 2017.1.1 } localization_key = USoE.Conservative_desc }
 	text = { trigger = { has_country_flag = USoE_political_parties date > 2017.1.1 } localization_key = USoE.Conservative_2017_desc }
@@ -13513,8 +13513,8 @@ defined_text = {
 	text = { trigger = { original_tag = ARG } localization_key = ARG.Autocracy_desc }
 	text = { trigger = { original_tag = BLR } localization_key = BLR.Autocracy_desc }
 	text = { trigger = { original_tag = BSH } localization_key = BSH.Autocracy_desc }
-	text = { trigger = { original_tag = CHI NOT = { OR = {has_country_leader = {name = "习近平"  } has_country_leader = {name = "Xi I"  } } }} localization_key = CHI1.Autocracy_desc }
-	text = { trigger = { original_tag = CHI OR = {has_country_leader = {name = "习近平"  } has_country_leader = {name = "Xi I"  } }} localization_key = CHI1.cpc_xi_desc }
+	text = { trigger = { original_tag = CHI NOT = { OR = {has_country_leader = {name = "习近平"  } has_country_leader = {name = "Xi I"  } } }} localization_key = ER_CHI.Autocracy_desc }
+	text = { trigger = { original_tag = CHI OR = {has_country_leader = {name = "习近平"  } has_country_leader = {name = "Xi I"  } }} localization_key = ER_CHI.cpc_xi_desc }
 
 	text = { trigger = { original_tag = CSA } localization_key = CSA.Autocracy_desc }
 	text = { trigger = { original_tag = DPR } localization_key = DPR.Autocracy_desc }
@@ -13749,7 +13749,7 @@ defined_text = {
 	text = { trigger = { original_tag = BOT NOT = { has_country_flag = UDC_formed } } localization_key = BOT.neutral_Social_desc }
 	text = { trigger = { original_tag = BRM } localization_key = BRM.neutral_Social_desc }
 	text = { trigger = { original_tag = CAR } localization_key = CAR.neutral_Social_desc }
-	text = { trigger = { original_tag = CHI } localization_key = CHI1.neutral_Social_desc }
+	text = { trigger = { original_tag = CHI } localization_key = ER_CHI.neutral_Social_desc }
 	text = { trigger = { original_tag = CSA } localization_key = CSA.neutral_Social_desc }
 	text = { trigger = { original_tag = DEN } localization_key = DEN.neutral_Social_desc }
 	text = { trigger = { original_tag = DON } localization_key = DON.neutral_Social_desc }
@@ -13806,7 +13806,7 @@ defined_text = {
 # Libertarian
 defined_text = {
 	name = Neutral_Libertarian_L_desc
-			text = { trigger = { original_tag = CHI has_country_flag = CHI_ddp } localization_key = CHI.Neutral_Libertarian_desc }
+			text = { trigger = { original_tag = CHI has_country_flag = CHI_ddp } localization_key = ER_CHI.Neutral_Libertarian_desc }
 
 	text = { trigger = { has_country_flag = USoE_political_parties date < 2017.1.1 } localization_key = USoE.Neutral_Libertarian_desc }
 	text = { trigger = { has_country_flag = USoE_political_parties date > 2017.1.1 } localization_key = USoE.Neutral_Libertarian_2017_desc }
@@ -13904,7 +13904,7 @@ defined_text = {
 	text = { trigger = { original_tag = BLR } localization_key = BLR.Neutral_Communism_desc }
 	text = { trigger = { original_tag = BOT NOT = { has_country_flag = ISBO_joined_UDC } } localization_key = BOT.Neutral_Communism_desc }
 	text = { trigger = { original_tag = BRM } localization_key = BRM.Neutral_Communism_desc }
-	text = { trigger = { original_tag = CHI } localization_key = CHI1.Neutral_Communism_desc }
+	text = { trigger = { original_tag = CHI } localization_key = ER_CHI.Neutral_Communism_desc }
 	text = { trigger = { original_tag = CSA } localization_key = CSA.Neutral_Communism_desc }
 	text = { trigger = { original_tag = DON } localization_key = DON.Neutral_Communism_desc }
 	text = { trigger = { original_tag = EGY } localization_key = EGY.Neutral_Communism_desc }
@@ -14104,7 +14104,7 @@ defined_text = {
 # Fascists
 defined_text = {
 	name = Nat_Fascism_L_desc
-			text = { trigger = { original_tag = CHI } localization_key = CHI.Nat_Fascism_desc }
+			text = { trigger = { original_tag = CHI } localization_key = ER_CHI.Nat_Fascism_desc }
 
 	text = { trigger = { has_country_flag = USoE_political_parties date < 2017.1.1 } localization_key = USoE.Nat_Fascism_desc }
 	text = { trigger = { has_country_flag = USoE_political_parties date > 2017.1.1 } localization_key = USoE.Nat_Fascism_2017_desc }
@@ -14171,7 +14171,7 @@ defined_text = {
 	text = { trigger = { original_tag = BRM } localization_key = BRM.Nat_Autocracy_desc }
 	text = { trigger = { original_tag = CAR } localization_key = CAR.Nat_Autocracy_desc }
 	text = { trigger = { original_tag = CHE } localization_key = CHE.Nat_Autocracy_desc }
-	text = { trigger = { original_tag = CHI } localization_key = CHI1.Nat_Autocracy_desc }
+	text = { trigger = { original_tag = CHI } localization_key = ER_CHI.Nat_Autocracy_desc }
 	text = { trigger = { original_tag = XIN } localization_key = XIN.Nat_Autocracy_desc }
 	text = { trigger = { original_tag = PRG } localization_key = PRG.Nat_Autocracy_desc }
 	text = { trigger = { original_tag = CSA } localization_key = CSA.Nat_Autocracy_desc }
@@ -14225,7 +14225,7 @@ defined_text = {
 	text = { trigger = { original_tag = AUS } localization_key = AUS.Monarchist_desc }
 	text = { trigger = { original_tag = BOT } localization_key = BOT.Monarchist_desc }
 	text = { trigger = { original_tag = CAR } localization_key = CAR.Monarchist_desc }
-	text = { trigger = { original_tag = CHI } localization_key = CHI1.Monarchist_desc }
+	text = { trigger = { original_tag = CHI } localization_key = ER_CHI.Monarchist_desc }
 	text = { trigger = { original_tag = CRM } localization_key = CRM.Monarchist_desc }
 	text = { trigger = { original_tag = CSA } localization_key = CSA.Monarchist_desc }
 	text = { trigger = { original_tag = DEN } localization_key = DEN.Monarchist_desc }
@@ -14353,7 +14353,7 @@ defined_text = {
 	text = { trigger = { original_tag = CAN } localization_key = CAN.conservatism_icon }
 	text = { trigger = { original_tag = CHE date < 2010.1.1 } localization_key = CHE.conservatism_icon }
 	text = { trigger = { original_tag = CHE date > 2010.1.1 } localization_key = CHE.conservatism_1_icon }
-	text = { trigger = { original_tag = CHI } localization_key = CHI1.conservatism_icon }
+	text = { trigger = { original_tag = CHI } localization_key = ER_CHI.conservatism_icon }
 	text = { trigger = { original_tag = CHL } localization_key = CHL.conservatism_icon }
 	text = { trigger = { original_tag = CHU date < 2016.1.1 } localization_key = CHU.conservatism_icon }
 	text = { trigger = { original_tag = CHU date > 2016.1.1 } localization_key = CHU.conservatism_1_icon }
@@ -14519,7 +14519,7 @@ defined_text = {
 	text = { trigger = { original_tag = CAR has_country_flag = CAR_liberalism_2013_formed } localization_key = CAR.liberalism_2013_icon }
 	text = { trigger = { original_tag = CAR NOT = { has_country_flag = CAR_liberalism_2013_formed } } localization_key = CAR.liberalism_icon }
 	text = { trigger = { original_tag = CHE } localization_key = CHE.liberalism_icon }
-	text = { trigger = { original_tag = CHI } localization_key = CHI1.liberalism_icon }
+	text = { trigger = { original_tag = CHI } localization_key = ER_CHI.liberalism_icon }
 	text = { trigger = { original_tag = CHL } localization_key = CHL.liberalism_icon }
 	text = { trigger = { original_tag = CHU } localization_key = CHU.liberalism_icon }
 	text = { trigger = { original_tag = CKK } localization_key = CKK.liberalism_icon }
@@ -14685,7 +14685,7 @@ defined_text = {
 	text = { trigger = { original_tag = CAN } localization_key = CAN.socialism_icon }
 	text = { trigger = { original_tag = CAR } localization_key = CAR.socialism_icon }
 	text = { trigger = { original_tag = CHE } localization_key = CHE.socialism_icon }
-	text = { trigger = { original_tag = CHI } localization_key = CHI1.socialism_icon }
+	text = { trigger = { original_tag = CHI } localization_key = ER_CHI.socialism_icon }
 	text = { trigger = { original_tag = CHL } localization_key = CHL.socialism_icon }
 	text = { trigger = { original_tag = CHU date < 2007.1.1 } localization_key = CHU.socialism_icon }
 	text = { trigger = { original_tag = CHU date > 2007.1.1 } localization_key = CHU.socialism_1_icon }
@@ -14839,7 +14839,7 @@ defined_text = {
 	text = { trigger = { original_tag = BUL } localization_key = BUL.Communist-State_icon }
 	text = { trigger = { original_tag = CAN } localization_key = CAN.Communist-State_icon }
 	text = { trigger = { original_tag = CHE } localization_key = CHE.Communist-State_icon }
-	text = { trigger = { original_tag = CHI } localization_key = CHI1.Communist-State_icon }
+	text = { trigger = { original_tag = CHI } localization_key = ER_CHI.Communist-State_icon }
 	text = { trigger = { original_tag = XIN } localization_key = XIN.Communist-State_icon }
 	text = { trigger = { original_tag = PRG } localization_key = PRG.Communist-State_icon }
 	text = { trigger = { original_tag = CHL } localization_key = CHL.Communist-State_icon }
@@ -14967,7 +14967,7 @@ defined_text = {
 
 defined_text = {
 	name = Conservative_L_icon
-	text = { trigger = { original_tag = CHI } localization_key = CHI1.Conservative_icon }
+	text = { trigger = { original_tag = CHI } localization_key = ER_CHI.Conservative_icon }
 	text = { trigger = { original_tag = XIN } localization_key = XIN.Conservative_icon }
 	text = { trigger = { original_tag = PRG } localization_key = PRG.Conservative_icon }
 
@@ -15096,8 +15096,8 @@ defined_text = {
 	text = { trigger = { original_tag = BSH } localization_key = BSH.Autocracy_icon }
 	text = { trigger = { original_tag = BUL } localization_key = BUL.Autocracy_icon }
 	text = { trigger = { original_tag = CHE } localization_key = CHE.Autocracy_icon }
-	text = { trigger = { original_tag = CHI NOT = { has_country_leader = { name = "习近平" }  } } localization_key = CHI1.Autocracy_icon }
-	text = { trigger = { original_tag = CHI OR = {  has_country_leader = { name = "习近平"  } } } localization_key = CHI1.cpc_xi_icon }
+	text = { trigger = { original_tag = CHI NOT = { has_country_leader = { name = "习近平" }  } } localization_key = ER_CHI.Autocracy_icon }
+	text = { trigger = { original_tag = CHI OR = {  has_country_leader = { name = "习近平"  } } } localization_key = ER_CHI.cpc_xi_icon }
 
 	text = { trigger = { original_tag = CHU } localization_key = CHU.Autocracy_icon }
 	text = { trigger = { original_tag = CKK } localization_key = CKK.Autocracy_icon }
@@ -15208,7 +15208,7 @@ defined_text = {
 	text = { trigger = { original_tag = CAR } localization_key = CAR.anarchist_communism_icon }
 	text = { trigger = { original_tag = CHE date < 2006.1.1 } localization_key = CHE.anarchist_communism_icon }
 	text = { trigger = { original_tag = CHE date > 2006.1.1 } localization_key = CHE.anarchist_communism_1_icon }
-	text = { trigger = { original_tag = CHI has_country_flag = CHI_revisionism } localization_key = CHI1.communist_conservatives_icon }	
+	text = { trigger = { original_tag = CHI has_country_flag = CHI_revisionism } localization_key = ER_CHI.communist_conservatives_icon }	
 	text = { trigger = { original_tag = CHL } localization_key = CHL.anarchist_communism_icon }
 	text = { trigger = { original_tag = CHU date < 2006.1.1 } localization_key = CHU.anarchist_communism_icon }
 	text = { trigger = { original_tag = CHU date > 2006.1.1 } localization_key = CHU.anarchist_communism_1_icon }
@@ -15363,7 +15363,7 @@ defined_text = {
 	name = Caliphate_L_icon
 	text = { trigger = { OR = { original_tag = SYR original_tag = FSA original_tag = NUS } } localization_key = SYR.Caliphate_icon }
 	text = { trigger = { original_tag = BHR } localization_key = SAU.Caliphate_icon }
-	text = { trigger = { original_tag = CHI } localization_key = CHI1.Caliphate_icon }
+	text = { trigger = { original_tag = CHI } localization_key = ER_CHI.Caliphate_icon }
 	text = { trigger = { original_tag = ENG } localization_key = ENG.Caliphate_icon }
 	text = { trigger = { original_tag = ERI } localization_key = ERI.Caliphate_icon }
 	text = { trigger = { original_tag = GEO } localization_key = GEO.Caliphate_icon }
@@ -15607,7 +15607,7 @@ defined_text = {
 	text = { trigger = { original_tag = CAR } localization_key = CAR.neutral_Social_icon }
 	text = { trigger = { original_tag = CHE date < 2020.1.1 } localization_key = CHE.neutral_Social_icon }
 	text = { trigger = { original_tag = CHE date > 2020.1.1 } localization_key = CHE.neutral_Social_1_icon }
-	text = { trigger = { original_tag = CHI } localization_key = CHI1.neutral_Social_icon }
+	text = { trigger = { original_tag = CHI } localization_key = ER_CHI.neutral_Social_icon }
 	text = { trigger = { original_tag = CHL } localization_key = CHL.neutral_Social_icon }
 	text = { trigger = { original_tag = CHU date < 2020.1.1 } localization_key = CHU.neutral_Social_icon }
 	text = { trigger = { original_tag = CHU date > 2020.1.1 } localization_key = CHU.neutral_Social_1_icon }
@@ -15753,7 +15753,7 @@ defined_text = {
 
 defined_text = {
 	name = Neutral_Libertarian_L_icon
-			text = { trigger = { original_tag = CHI has_country_flag = CHI_ddp } localization_key = CHI.Neutral_Libertarian_icon }
+			text = { trigger = { original_tag = CHI has_country_flag = CHI_ddp } localization_key = ER_CHI.Neutral_Libertarian_icon }
 
 	text = { trigger = { OR = { original_tag = CDI original_tag = FNC } } localization_key = CDI.Neutral_Libertarian_icon }
 	text = { trigger = { original_tag = ALT } localization_key = ALT.Neutral_Libertarian_icon }
@@ -15895,7 +15895,7 @@ defined_text = {
 	text = { trigger = { original_tag = BSH } localization_key = BSH.Neutral_Communism_icon }
 	text = { trigger = { original_tag = CAN } localization_key = CAN.Neutral_Communism_icon }
 	text = { trigger = { original_tag = CHE } localization_key = CHE.Neutral_Communism_icon }
-	text = { trigger = { original_tag = CHI } localization_key = CHI1.Neutral_Communism_icon }
+	text = { trigger = { original_tag = CHI } localization_key = ER_CHI.Neutral_Communism_icon }
 	text = { trigger = { original_tag = CHL } localization_key = CHL.Neutral_Communism_icon }
 	text = { trigger = { original_tag = CHU date < 2012.1.1 } localization_key = CHU.Neutral_Communism_icon }
 	text = { trigger = { original_tag = CHU date > 2012.1.1 } localization_key = CHU.Neutral_Communism_1_icon }
@@ -16146,7 +16146,7 @@ defined_text = {
 	text = { trigger = { original_tag = BUL } localization_key = BUL.Nat_Autocracy_icon }
 	text = { trigger = { original_tag = CAN } localization_key = CAN.Nat_Autocracy_icon }
 	text = { trigger = { original_tag = CAR } localization_key = CAR.Nat_Autocracy_icon }
-	text = { trigger = { original_tag = CHI } localization_key = CHI1.Nat_Autocracy_icon }
+	text = { trigger = { original_tag = CHI } localization_key = ER_CHI.Nat_Autocracy_icon }
 	text = { trigger = { original_tag = XIN } localization_key = XIN.Nat_Autocracy_icon }
 	text = { trigger = { original_tag = PRG } localization_key = PRG.Nat_Autocracy_icon }
 	text = { trigger = { original_tag = CHL } localization_key = CHL.Nat_Autocracy_icon }
@@ -16264,7 +16264,7 @@ defined_text = {
 
 defined_text = {
 	name = Nat_Fascism_L_icon	
-	text = { trigger = { original_tag = CHI } localization_key = CHI.Nat_Fascism_icon }
+	text = { trigger = { original_tag = CHI } localization_key =ER_CHI.Nat_Fascism_icon }
 
 	text = { trigger = { original_tag = ADY } localization_key = ADY.Nat_Fascism_icon }
 	text = { trigger = { original_tag = ALT } localization_key = ALT.Nat_Fascism_icon }
@@ -16502,7 +16502,7 @@ defined_text = {
 	text = { trigger = { original_tag = BUL } localization_key = BUL.Monarchist_icon }
 	text = { trigger = { original_tag = CAN } localization_key = CAN.Monarchist_icon }
 	text = { trigger = { original_tag = CAR } localization_key = CAR.Monarchist_icon }
-	text = { trigger = { original_tag = CHI } localization_key = CHI1.Monarchist_icon }
+	text = { trigger = { original_tag = CHI } localization_key = ER_CHI.Monarchist_icon }
 	text = { trigger = { original_tag = CHL } localization_key = CHL.Monarchist_icon }
 	text = { trigger = { original_tag = COM } localization_key = COM.Monarchist_icon }
 	text = { trigger = { original_tag = CRM } localization_key = CRM.Monarchist_icon }

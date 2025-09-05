@@ -169,7 +169,7 @@ immediate = {
     			transfer_troops = yes
 			}
 			load_focus_tree = communsim_PRC_focus
-			set_country_flag = chuanyumaopai
+			set_country_flag = Maoist_from_DSC
 			set_cosmetic_tag = DSC_GMG
 			#drop_cosmetic_tag = yes
 
@@ -1430,7 +1430,7 @@ set_variable = {
 				limit = { 
 					OR = {
 						original_tag = CHI
-						tag = DSC
+						has_country_flag = Maoist_from_DSC
 						tag = HKG
 					}
 				}

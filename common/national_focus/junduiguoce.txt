@@ -1132,7 +1132,7 @@ relative_position_id = DSC_people_armyI
 	completion_reward = {
 		random_country={
 			limit = {
-				 has_cosmetic_tag = DSC_JGQ
+				has_cosmetic_tag = DSC_JGQ
 			}
 			transfer_units_fraction= {
 				target = DSC

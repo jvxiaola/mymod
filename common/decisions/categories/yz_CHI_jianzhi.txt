@@ -24,14 +24,14 @@ CHI_Massive_layoffs = {
 	allowed = {
 		original_tag = CHI
 		NOT={
-			has_country_flag = chuanyumaopai
+			has_country_flag = Maoist_from_DSC
 		}
 	}
 	picture = CHI_big_layoff_dec
 	visible = {
 NOT={has_country_flag=gaigejieshu }
 		NOT={
-			has_country_flag = chuanyumaopai
+			has_country_flag = Maoist_from_DSC
 		}
 		}
 }

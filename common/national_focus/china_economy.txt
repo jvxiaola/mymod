@@ -9,7 +9,7 @@
 		allow_branch = {
 			NOT = {
 				has_country_flag = xggm
-				has_country_flag = chuanyumaopai
+				has_country_flag = Maoist_from_DSC
 				has_country_flag = laozuo
 				AND={
 					has_completed_focus = CHI_Factory_of_the_World
@@ -42,7 +42,7 @@
 				OR = {
 					has_country_flag = xggm
 					has_country_flag = laozuo
-					has_country_flag = chuanyumaopai
+					has_country_flag = Maoist_from_DSC
 				}
 			}
 		}
@@ -714,14 +714,14 @@
 		cost = 2
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		allow_branch = {
-			has_country_flag = chuanyumaopai
+			has_country_flag = Maoist_from_DSC
 			NOT = { 
 				has_completed_focus = CHI_Chinese_NEW_MILLENNIUM 
 			}
 		 }
 		available = {
 			has_government = communism
-			has_country_flag = chuanyumaopai
+			has_country_flag = Maoist_from_DSC
 		}
 
 		completion_reward = {
@@ -751,9 +751,9 @@
 		available = {
 			has_government = communism
 			OR = {
-				has_country_flag=xggm
-				tag = DSC
-				has_country_flag=PRC_left_cpc
+				has_country_flag = xggm
+				has_country_flag = Maoist_from_DSC
+				has_country_flag = PRC_left_cpc
 				}
 		}
 
@@ -788,7 +788,7 @@
 		offset = {
 			x = -2
 			trigger = {
-			has_country_flag = chuanyumaopai
+			has_country_flag = Maoist_from_DSC
 			}
 		}
 		available = {
@@ -1050,7 +1050,7 @@
 		cost = 4
 		prerequisite = { focus = Organize_breakthroughs_food_industry focus = Raise_worker_salaries_benefits  focus = CHI_worker_ownership }
 		allow_branch = {
-			OR = { has_country_flag = chuanyumaopai has_country_flag = xggm }
+			OR = { has_country_flag = Maoist_from_DSC has_country_flag = xggm }
 			NOT = { has_completed_focus = CHI_Chinese_NEW_MILLENNIUM }
 		}
 		offset = {
@@ -1109,7 +1109,7 @@ hidden_effect = {
 }
 
 			if = {
-				limit = { tag = DSC has_dynamic_modifier = { modifier = CHI_Organize_state_enterprises_modifier } }
+				limit = { has_country_flag = Maoist_from_DSC has_dynamic_modifier = { modifier = CHI_Organize_state_enterprises_modifier } }
 				CHI_remove_Organize_state_enterprises_modifier = yes
 				add_ideas = CHI_nationalizing_end
 				increase_economic_growth = yes
@@ -1341,7 +1341,7 @@ hidden_effect = {
 			trigger = { has_country_flag = xggm }
 		}
 		allow_branch = {
-			OR = { has_country_flag = chuanyumaopai has_country_flag = xggm }
+			OR = { has_country_flag = Maoist_from_DSC has_country_flag = xggm }
 			NOT = { has_completed_focus = CHI_Chinese_NEW_MILLENNIUM }
 		}
 		cost = 4
@@ -1358,7 +1358,7 @@ hidden_effect = {
 
 		completion_reward = {
 			if = {
-				limit = { tag = DSC has_dynamic_modifier = { modifier = CHI_Collaboration_internet } }
+				limit = { has_country_flag = Maoist_from_DSC has_dynamic_modifier = { modifier = CHI_Collaboration_internet } }
 				CHI_remove_Collaboration_internet_modifier = yes
 				add_ideas = CHI_Collaboration_internet_end
 				increase_economic_growth = yes
@@ -1590,7 +1590,7 @@ shared_focus = {
 			trigger = { has_country_flag = xggm }
 		}
 		allow_branch = {
-			OR = { has_country_flag = chuanyumaopai has_country_flag = xggm }
+			OR = { has_country_flag = Maoist_from_DSC has_country_flag = xggm }
 			NOT = { has_completed_focus = CHI_Chinese_NEW_MILLENNIUM }
 		}
 		prerequisite = { focus = CHI_Raise_grainal_purchase_price focus = CHI_state_farm focus = CHI_Purchase_agricultural_supplies focus = CHI_Organize_learning_mechanized_agricultural_tools }
@@ -1606,7 +1606,7 @@ shared_focus = {
 		}
 		completion_reward = {
 			if = {
-				limit = { tag = DSC has_dynamic_modifier = { modifier = CHI_restart_people_commune } }
+				limit = { has_country_flag = Maoist_from_DSC has_dynamic_modifier = { modifier = CHI_restart_people_commune } }
 				CHI_remove_modifier_restart_people_commune = yes
 				add_ideas = CHI_idea_People_Commune
 				increase_economic_growth = yes
@@ -1645,7 +1645,7 @@ shared_focus = {
 		y = 7
 		relative_position_id = CHI_Public_ownership_construction
 		allow_branch = {
-			has_country_flag = chuanyumaopai
+			has_country_flag = Maoist_from_DSC
 			NOT = { has_completed_focus = CHI_Chinese_NEW_MILLENNIUM }
 		}
 		cost = 5
@@ -1709,12 +1709,12 @@ shared_focus = {
 			CHI_ruin_economy_remove = yes
 			if = {
 				limit = {
-					has_idea = CHI_worker_cooperative NOT = { tag = DSC }
+					has_idea = CHI_worker_cooperative NOT = { has_country_flag = Maoist_from_DSC }
 				}
 				add_ideas = CHI_new_socialist_economy
 			}
 			if = {
-				limit = { NOT = { tag = DSC } }
+				limit = { NOT = { has_country_flag = Maoist_from_DSC } }
 				custom_effect_tooltip = CHI_Chinese_Industrial_Explosion21_tt
 			}
 			mark_focus_tree_layout_dirty = yes
@@ -1747,7 +1747,7 @@ shared_focus = {
 			trigger = {
 					OR = { 
 						has_country_flag = xggm
-						has_country_flag = chuanyumaopai
+						has_country_flag = Maoist_from_DSC
 						has_country_flag = laozuo
 					}
 			}
@@ -1756,7 +1756,7 @@ shared_focus = {
 			x = -20
 			y = -5
 			trigger = {
-						has_country_flag = chuanyumaopai
+						has_country_flag = Maoist_from_DSC
 			}
 		}
 
@@ -5929,7 +5929,7 @@ is_subject_of = CHI
 			trigger = {
 					OR = { 
 						has_country_flag = xggm
-						has_country_flag = chuanyumaopai
+						has_country_flag = Maoist_from_DSC
 						has_country_flag = laozuo
 					}
 			}
@@ -5938,7 +5938,7 @@ is_subject_of = CHI
 			x = -20
 			y = -5
 			trigger = {
-						has_country_flag = chuanyumaopai
+						has_country_flag = Maoist_from_DSC
 			}
 		}
 
@@ -7052,7 +7052,7 @@ is_subject_of = CHI
 			trigger = {
 					OR = { 
 						has_country_flag = xggm
-						tag = DSC
+						has_country_flag = Maoist_from_DSC
 						has_country_flag = laozuo
 					}
 			}
@@ -7163,7 +7163,7 @@ is_subject_of = CHI
 			
 			NOT = {
 				has_country_flag = xggm
-				has_country_flag = chuanyumaopai
+				has_country_flag = Maoist_from_DSC
 				has_country_flag = laozuo
 			}
 		}
@@ -7396,7 +7396,7 @@ is_subject_of = CHI
 			
 			NOT = {
 				has_country_flag = xggm
-				has_country_flag = chuanyumaopai
+				has_country_flag = Maoist_from_DSC
 				has_country_flag = laozuo
 			}
 		}

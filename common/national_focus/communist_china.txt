@@ -28,7 +28,7 @@ focus = {
 		offset = {
 			x = -18
 			trigger = {
-			has_country_flag = chuanyumaopai
+			has_country_flag = Maoist_from_DSC
 			}
 		}
 		available = {
@@ -68,13 +68,6 @@ has_idea = CHI_aftermath_of_the_civil_war_4
 
 		ai_will_do = {
 			factor = 5
-		}
-
-		available = {
-		}
-
-		bypass = {
-
 		}
 		
 		cancel_if_invalid = yes
@@ -605,36 +598,13 @@ set_temp_variable = { temp_opinion = 10 }
 mutually_exclusive = {focus = PRC_guoyouhua focus = PRC_Workersdemocracy focus = PRC_gyqy focus = PRC_Socialist_market }
 
 		available = {
-
-
-
-
-
-
-
-
-										has_country_flag = querenshixingangangxianfa
-
-
-
-
-
-		
-	
-
+			has_country_flag = querenshixingangangxianfa
 		}
-
-		bypass = {
-
-		}
-		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		completion_reward = {
-		add_ideas = CHI_angangxfa
-		}
+		completion_reward = { add_ideas = CHI_angangxfa }
 		}
 		focus = { id= PRC_grjd
 		icon = literacy_rate_improvment
@@ -930,14 +900,6 @@ cost = 5
 		ai_will_do = {
 			factor = 5
 		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
 		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -961,14 +923,6 @@ cost = 5
 				factor = 5
 			}
 			mutually_exclusive = {focus = PRC_hero_mother }
-
-		available = {
-		}
-
-		bypass = {
-
-		}
-		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -990,15 +944,6 @@ mutually_exclusive = {focus = PRC_nvquan  }
 		ai_will_do = {
 			factor = 5
 		}
-
-		available = {
-		
-		}
-
-		bypass = {
-
-		}
-		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -1024,10 +969,11 @@ mutually_exclusive = {focus = PRC_no_lgbt }
 			factor = 5
 		}
 
-		available = {custom_trigger_tooltip = {
-NOT={ is_in_array = { ruling_party = 5 }}
-					tooltip = "政府不反对性少数解放"
-				}
+		available = {
+			custom_trigger_tooltip = {
+				NOT = { has_country_flag = laozuo }
+				tooltip = "政府不反对性少数解放"
+			}
 		}
 
 		bypass = {
@@ -1042,21 +988,23 @@ NOT={ is_in_array = { ruling_party = 5 }}
 			add_ideas = PRC_lgbt		
 		}
 		}
-		focus = { id= PRC_no_lgbt
-		icon = anti_lgbt
+		focus = { 
+			id = PRC_no_lgbt
+			icon = anti_lgbt
 		x = 13
 		y = 3
 		prerequisite = {focus = PRC_nvquan focus =PRC_hero_mother  }
 		relative_position_id = PRC_shzygg	
-cost = 5
-mutually_exclusive = {focus = PRC_lgbt }
+		cost = 5
+		mutually_exclusive = { focus = PRC_lgbt }
 
 		ai_will_do = {
 			factor = 5
 		}
 #
-		available = {custom_trigger_tooltip = {
-					 is_in_array = { ruling_party = 5 }
+		available = {
+			custom_trigger_tooltip = {
+					has_country_flag = laozuo
 					tooltip = has_anarchist_communism_government_TT
 				}
 		}
@@ -1087,13 +1035,6 @@ add_stability = 0.10
 		ai_will_do = {
 			factor = 5
 		}
-
-		available = {
-		}
-
-		bypass = {
-
-		}
 		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1109,27 +1050,19 @@ add_stability = 0.10
 		y = 4
 		prerequisite = {focus = PRC_lgbt focus = PRC_no_lgbt   }
 		relative_position_id = PRC_shzygg	
-cost = 5
-mutually_exclusive = {focus = PRC_socfuy }
+		cost = 5
+		mutually_exclusive = {focus = PRC_socfuy }
 
 		ai_will_do = {
 			factor = 5
 		}
-
-		available = {
-		}
-
-		bypass = {
-
-		}
-		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-add_stability = 0.1
-}
+			add_stability = 0.1
+		}
 		}
 		focus = { id= PRC_hunyin
 		icon = blue_democracy
@@ -3131,8 +3064,7 @@ focus = {
 			x = 0
 			y = 4
 			trigger = {
-			has_idea=		CHI_idea_Public_ownership_economy
-
+			has_idea =	CHI_idea_Public_ownership_economy
 			}
 		}
 
@@ -3141,21 +3073,19 @@ focus = {
 			x = -50
 			y = 18
 			trigger = {
-			has_country_flag = chuanyumaopai
+			has_country_flag = Maoist_from_DSC
 			}
 		}
 		offset = {
 			x = -10
 			trigger = {
-				has_country_flag=xggm
+				has_country_flag = xggm
 			}
 		}
 		available = {
 			is_in_faction = no
 
 		}
-
-		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3175,7 +3105,7 @@ focus = {
 			x = -2
 			trigger = {
 				OR = {
-					has_country_flag = chuanyumaopai
+					has_country_flag = Maoist_from_DSC
 					has_country_flag = laozuo
 					}
 			}
@@ -3188,7 +3118,7 @@ cost = 5
 		}
 
 		available = {
-								has_country_flag = chuanyumaopai
+								has_country_flag = Maoist_from_DSC
 					is_in_faction = no
 		has_civil_war = no
 				custom_trigger_tooltip = {
@@ -3284,7 +3214,7 @@ prerequisite = {  focus = PRC_jjdz }
 allow_branch = {
 	NOT = {
 		OR = {
-			has_country_flag = chuanyumaopai
+			has_country_flag = Maoist_from_DSC
 			has_country_flag = laozuo
 			}
 	 }
@@ -7018,15 +6948,12 @@ add_core_of = ROOT
 			x = 18
 			y = 0
 
-
-
-
-	cost = 5
+			cost = 0.2
 			ai_will_do = {
 				factor = 5
 			}
 			allow_branch = {
-				has_country_flag = chuanyumaopai
+				has_country_flag = Maoist_from_DSC
 				NOT = {
 					OR = { 
 						has_completed_focus = PRC_Proletarian_leader
@@ -7034,20 +6961,12 @@ add_core_of = ROOT
 					}
 				}
 			}
-			available = {
-				has_country_leader = { name = "毛远新"  }
-			}
-					bypass = {}
-	
+			available = { has_country_leader = { name = "毛远新"  } }
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
 	
-			completion_reward = {
-	add_political_power = 100
-	
-	
-			}
+			completion_reward = { add_political_power = 100 }
 		}
 	focus = {
 			id = PRC_Purge_of_revisionists
