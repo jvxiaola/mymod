@@ -5121,7 +5121,6 @@ country_event = {
 		ideology = trotskyism
 		traits = {
 		tuolsim
-		CHI_Revolutionary_Marxism
 		emerging_Communist-State
 		}
 	}
@@ -5508,7 +5507,6 @@ create_country_leader = {
 		ideology = trotskyism
 		traits = {
 		tuolsim
-		CHI_Revolutionary_Marxism
 		emerging_Communist-State
 		}
 	}
@@ -5566,7 +5564,6 @@ create_country_leader = {
 		ideology = trotskyism
 		traits = {
 		tuolsim
-		CHI_Revolutionary_Marxism
 		emerging_Communist-State
 		}
 	}

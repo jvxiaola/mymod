@@ -606,30 +606,6 @@ NOT={
 
 			}
 			}
-
-	focus = {
-		id = CHI_16th_National_Congress
-		icon = communist_party_of_china
-		x = 15
-		y = 0
-		cost = 3
-		available = {}
-		bypass = {}
-		allow_branch = {
-			has_country_leader = { name = "" }
-		}
-		ai_will_do = { factor = 500 }
-		completion_reward = {
-			if = {
-				custom_effect_tooltip = influence_the_party_line_tt
-				add_10_western_liberalism = yes
-				add_to_variable = { CPC_Right = 0.15 }
-				add_to_variable = { CPC_Left = -0.03 }
-				add_to_variable = { CPC_Dengist = -0.12}
-			}	
-		}
-	}
-
 		
 	focus = {
 		id = CHI_Hujingtao

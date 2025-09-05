@@ -33,24 +33,20 @@
 	shared_focus = {
 		id = CHI_Encourage_Foreign_Investment
 		icon = united_states_dollar
-
-		x = -4
-		y = 3
+		x = -1
+		y = 1
 		relative_position_id = CHI_The_Untapped_Market
-
-		cost = 5
-		offset = {
-			x = 3
-			trigger = {
-				NOT={
-					OR={
-						has_country_flag=xggm
-						has_country_flag = laozuo
-					}
+		cost = 0.2
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_country_flag = xggm
+					has_country_flag = laozuo
+					has_country_flag = chuanyumaopai
 				}
 			}
 		}
-		prerequisite = { focus = CHI_The_Untapped_Market}
+		prerequisite = { focus = CHI_The_Untapped_Market }
 		mutually_exclusive = { focus = CHI_Protect_State_Owned_Businesses }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
@@ -79,7 +75,7 @@
 		icon = defense
 
 		x = -2
-		y = 3
+		y = 1
 		relative_position_id = CHI_The_Untapped_Market
 
 		cost = 5
@@ -114,7 +110,7 @@
 		icon = USA_CHI_research_treaty
 
 		x = -6
-		y = 4
+		y = 2
 		relative_position_id = CHI_The_Untapped_Market
 		offset = {
 			x = 3
@@ -162,7 +158,7 @@
 		icon = intelligence_exchange
 
 		x = -6
-		y = 5
+		y = 3
 		relative_position_id = CHI_The_Untapped_Market
 
 		cost = 5
@@ -210,7 +206,7 @@
 		icon = generic_banks
 
 		x = -6
-		y = 6
+		y = 4
 		relative_position_id = CHI_The_Untapped_Market
 
 		cost = 5
@@ -250,8 +246,8 @@
 		id = CHI_Expand_the_Special_Economic_Zones
 		icon = industry
 
-		x = -10
-		y = 7
+		x = -7
+		y = 5
 		relative_position_id = CHI_The_Untapped_Market
 
 		cost = 5
@@ -321,8 +317,8 @@
 		id = CHI_Promote_Innovation
 		icon = research3
 
-		x = -8
-		y = 7
+		x = -5
+		y = 5
 		relative_position_id = CHI_The_Untapped_Market
 		offset = {
 			x = 3
@@ -360,8 +356,8 @@
 		id = CHI_Liberalize_the_Market
 		icon = economic_prosperity2
 
-		x = -9
-		y = 8
+		x = -6
+		y = 6
 		relative_position_id = CHI_The_Untapped_Market
 
 		cost = 5
@@ -404,7 +400,7 @@
 		icon = industry_communism
 
 		x = -3
-		y = 4
+		y = 2
 		relative_position_id = CHI_The_Untapped_Market
 
 		cost = 5
@@ -440,7 +436,7 @@
 		icon = align_to_south_korea
 
 		x = -4
-		y = 5
+		y = 3
 		relative_position_id = CHI_The_Untapped_Market
 
 		cost = 5
@@ -489,7 +485,7 @@
 		icon = align_to_germany
 
 		x = -2
-		y = 5
+		y = 3
 		relative_position_id = CHI_The_Untapped_Market
 
 		cost = 5
@@ -538,7 +534,7 @@
 		icon = align_to_america
 
 		x = 0
-		y = 5
+		y = 3
 		relative_position_id = CHI_The_Untapped_Market
 
 		cost = 5
@@ -587,7 +583,7 @@
 		icon = align_to_japan
 
 		x = 2
-		y = 5
+		y = 3
 		relative_position_id = CHI_The_Untapped_Market
 
 		cost = 5
@@ -640,7 +636,7 @@
 		icon = trade
 
 		x = -3
-		y = 6
+		y = 4
 		relative_position_id = CHI_The_Untapped_Market
 
 		cost = 5
@@ -673,7 +669,7 @@
 		icon = prc_industrialization
 
 		x = -3
-		y = 7
+		y = 5
 		relative_position_id = CHI_The_Untapped_Market
 
 		cost = 5
@@ -751,8 +747,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		allow_branch = {
 			has_country_flag = xggm
-			NOT = { has_completed_focus = CHI_Chinese_Industrial_Explosion }
-		 }
+		}
 		available = {
 			has_government = communism
 			OR = {
@@ -1738,11 +1733,10 @@ shared_focus = {
 			OR = {
 				has_country_flag = laozuo
 				has_completed_focus = CHI_Chinese_NEW_MILLENNIUM	
-				AND={
-				has_completed_focus = CHI_Factory_of_the_World
-				has_completed_focus = CHI_Liberalize_the_Market
+				AND = {
+					has_completed_focus = CHI_Factory_of_the_World
+					has_completed_focus = CHI_Liberalize_the_Market
 				}			
-
 				has_completed_focus = CHI_Chinese_Industrial_Explosion21
 			}
 		 }
@@ -5923,9 +5917,9 @@ is_subject_of = CHI
 			OR = {
 				has_country_flag = laozuo
 				has_completed_focus = CHI_Chinese_NEW_MILLENNIUM
-								AND={
-				has_completed_focus = CHI_Factory_of_the_World
-				has_completed_focus = CHI_Liberalize_the_Market
+				AND = {
+					has_completed_focus = CHI_Factory_of_the_World
+					has_completed_focus = CHI_Liberalize_the_Market
 				}			
 				has_completed_focus = CHI_Chinese_Industrial_Explosion21
 			}

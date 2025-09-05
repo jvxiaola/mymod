@@ -159,27 +159,20 @@ prerequisite = { focus = PRC_computer3 }
 		}
 		allow_branch = {
 			OR = {
+				has_country_flag = chuanyumaopai
 				has_country_flag = xggm
-				tag = DSC
 				has_country_flag = laozuo
-				}
-		 }
+			}
+		}
 		 offset = {
 			x = 4
 			trigger = {
 				OR = {
 					has_country_flag = xggm
-					tag = DSC
+					has_country_flag = chuanyumaopai
 					has_country_flag = laozuo
 					}
 			}
-		}
-		available = {
-
-	}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -196,10 +189,9 @@ add_political_power = 100
 		y = 5
 		cost = 10
 		relative_position_id = PRC_computer
-		prerequisite = { focus = PRC_computer5
-	
-	focus = PRC_computer4
-	}
+		prerequisite = { 
+			focus = PRC_computer4
+		}
 		ai_will_do = {
 			factor = 5
 		}
@@ -429,144 +421,8 @@ prerequisite = { focus = PRC_fcjc }
 
 }
 }
-	shared_focus = {
-		id = PRC_communsim_soc
-		icon = communist_factories
-		x = 2
-		y = 5
-		cost = 10
-relative_position_id = PRC_computer
-prerequisite = { focus = PRC_computer4}
-		ai_will_do = {
-			factor = 5
-		}
-		allow_branch = { has_country_flag = zanshimeiyou }
-
-			offset = {
-				x = -2
-				trigger = {
-			has_country_flag = xggm
-				}
-			}
-
-		available = {
-NOT = {
-
-has_active_mission = CHI_Yangheping_corp
-}		
-	custom_trigger_tooltip = {
-		OR = {	
-				is_in_array = { ruling_party = 4 }
-				has_country_leader = {  name = "毛远新" }
-				has_country_leader = {  name = "张春桥" }
-				has_country_leader = {  name = "薄熙来" }
-				has_country_leader = {  name = QuanGuoRenMinDaiBiaoDaHui }
-				}		
-		tooltip = CHI_communist_marx
-
-	}
-	}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {			
-add_ideas = PRC_communsim_soc
-
-}
-}
-	shared_focus = {
-		id = PRC_communist_society
-		icon = crush_the_revolution
-		x = -1
-		y = 6
-		cost = 10
-relative_position_id = PRC_computer
-prerequisite = { focus = PRC_communsim_soc }
-		ai_will_do = {
-			factor = 5
-		}
-
-		available = {
-	}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {			
-add_ideas = PRC_communist_society
-}
-}
-	shared_focus = {
-		id = PRC_Paris_Commune_system
-		icon = blr_collectivism
-		x = 1
-		y = 6
-		cost = 10
-relative_position_id = PRC_computer
-prerequisite = { focus = PRC_communsim_soc }
-		ai_will_do = {
-			factor = 5
-		}
-
-		available = {
-	}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {			
-		if = {
- limit ={ has_idea = red_army2}
-		remove_ideas = red_army2
-		}	
-else_if = {
- limit ={ has_idea = people_army3 }
-		remove_ideas = people_army3
-		}
-add_ideas = PRC_gmwz}
-}
-	shared_focus = {
-		id = PRC_working_life
-		icon = Focus_Socialist_Worker
-		x = 0
-		y = 7
-		cost = 10
-relative_position_id = PRC_computer
-prerequisite = { focus = PRC_communist_society}
-prerequisite = { focus = PRC_Paris_Commune_system }
-		ai_will_do = {
-			factor = 5
-		}
-
-		available = {
-	}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {			
-add_ideas = PRC_working_life
 
 
-}
-}
 	shared_focus = {
 		id = PRC_computer5
 		icon = factory_planning
@@ -579,13 +435,13 @@ add_ideas = PRC_working_life
 			factor = 5
 		}
 		allow_branch = {
-		NOT = {
-			OR = {
-				has_country_flag = xggm
-				tag = DSC
-				has_country_flag = laozuo
+			NOT = {
+				OR = {
+					has_country_flag = chuanyumaopai
+					has_country_flag = xggm
+					has_country_flag = laozuo
 				}
-		 }
+			}
 		}
 		offset = {
 			x = -4
@@ -593,7 +449,7 @@ add_ideas = PRC_working_life
 				NOT = {
 					has_country_flag = xggm
 					has_country_flag = laozuo
-					tag = DSC
+					has_country_flag = chuanyumaopai
 				}
 			}
 		}

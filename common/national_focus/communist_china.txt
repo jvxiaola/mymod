@@ -7026,20 +7026,18 @@ add_core_of = ROOT
 				factor = 5
 			}
 			allow_branch = {
-				tag=CHI
 				has_country_flag = chuanyumaopai
-			NOT = {
-				OR = { 
-					has_completed_focus = PRC_Proletarian_leader
-					has_completed_focus = PRC_jitilingdao
+				NOT = {
+					OR = { 
+						has_completed_focus = PRC_Proletarian_leader
+						has_completed_focus = PRC_jitilingdao
+					}
 				}
 			}
-	}
 			available = {
-	has_country_leader = {name = "毛远新"  }
+				has_country_leader = { name = "毛远新"  }
 			}
-					bypass = {
-			}
+					bypass = {}
 	
 			cancel_if_invalid = yes
 			continue_if_invalid = no
