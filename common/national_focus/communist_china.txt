@@ -95,10 +95,10 @@ CHI_gosplan
 		mutually_exclusive = {focus = PRC_Workersdemocracy focus = PRC_gyqy focus = PRC_angangxfa focus = PRC_Socialist_market }
 		available = {
 		OR = {
-			and = {
-				has_completed_focus = PRC_decentralized_economy
+			#and = {
+				#has_completed_focus = PRC_decentralized_economy
 				has_country_leader = {name = "Wang Xizhe" }
-				}
+			#	}
 			has_country_leader = {  name = "韩东方" }
 		}
 		
@@ -422,21 +422,21 @@ mutually_exclusive = {focus = PRC_guoyouhua focus = PRC_Workersdemocracy focus =
 		available = {
 
 
-	has_completed_focus = CHI_Organize_state_enterprises
 
-	OR ={
-		has_country_leader = {  name = "江泽民" }
-		has_country_leader = {  name = "习近平" }
-		AND = {
-		has_country_leader = {  name = "薄熙来" }
-		has_completed_focus = PRC_Strengthening_Party_State
+
+		custom_trigger_tooltip = {
+		has_country_leader = {  name = "暂无" }
+
+			tooltip = "政府中有该计划的支持者"
 		}
+
+		
 
 
 
 
 }
-	}
+	
 		
 
 		bypass = {

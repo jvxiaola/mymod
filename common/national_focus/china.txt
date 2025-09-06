@@ -6352,6 +6352,12 @@ mutually_exclusive = {focus = CHI_lkmt1 }
 		set_province_name = { id = 11761 name = "北平" }
 
 		set_cosmetic_tag = CHI_roc
+    every_state = {
+            limit = {
+                is_core_of = TAI   # 把 GER 换成你要移除核心的 TAG（例：USA、SOV 等）
+            }
+            remove_core_of = TAI   # 与上面一致的 TAG
+        }
 		IF = {
 		limit = {
 		TAI = {
