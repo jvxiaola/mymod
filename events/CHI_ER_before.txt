@@ -39,7 +39,17 @@ country_event = {
 
 	immediate = { 
 		hidden_effect = { 
+			if={
+				limit = {
+					not={
+
+						has_country_flag =the_Right_wing_reform 
+					}
+				}
 			country_event = { id = CHI_ER_BEFORE_xin.1 days = 50 } 
+			}
+
+
 			news_event = { id = CHI_ER_start.6 days = 1 }
 		}
 	}
@@ -247,7 +257,17 @@ news_event = {
 	option = {
 		name = CHI_ER_start.6.a 
 		hidden_effect = {
+			if={
+				limit = {
+					not={
+
+						has_country_flag =the_Right_wing_reform 
+					}
+				}
 			CHI = { country_event = { id = CHI_ER_BEFORE_guang.2 days = 10 } }
+			}
+			
+
 		}
 	}	
 }
