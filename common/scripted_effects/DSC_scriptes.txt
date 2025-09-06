@@ -66,7 +66,7 @@ remove_ideas = CHI_capital_withdrawal4
 	if = { limit = { DSC = { has_idea = CHI_party_before_guns } } CHI = { add_ideas = CHI_party_before_guns } }
 	if = { limit = { DSC = { has_idea = bcjzdjd } } CHI = { add_ideas = bcjzdjd } }
 
-
+add_ideas = Maoist_from_DSC
   clr_country_flag = party5_banned
   add_ideas = Joint_production_system
     clr_country_flag = laozuo
@@ -152,6 +152,9 @@ DSC_Socialist_Construction_dynamic1=-0.2
 
 				country_event = { id = prc1.300 hours = 1 }
         country_event = { id = prc1.301 hours = 2 }
+        country_event = { id = prc1.302 hours = 3 }
+        country_event = { id = prc1.302 hours = 4 }   
+        
 }
 
 

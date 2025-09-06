@@ -1003,9 +1003,13 @@ mutually_exclusive = {focus = PRC_no_lgbt }
 		}
 #
 		available = {
+
 			custom_trigger_tooltip = {
+				OR={
 					has_country_flag = laozuo
-					tooltip = has_anarchist_communism_government_TT
+					has_country_flag = Maoist_from_DSC
+				}
+					tooltip = "政府内部反对性少数解放或对性少数态度暂时不清晰"
 				}
 		}
 

@@ -139,7 +139,13 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	immediate = { 
-CHI={			  inherit_technology = DSC
+CHI={		
+	
+	
+	
+	
+	
+	inherit_technology = DSC
 	add_research_slot = 3}
 		CHI = { change_tag_from = DSC }
 
@@ -209,6 +215,74 @@ start_politics_input = yes
 	}
 	
 
+}
+
+country_event = {
+	id = prc1.302
+	title = prc1.302.t
+	desc = prc1.302.d
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+immediate = {
+	CHI={
+
+
+
+start_politics_input = yes
+	set_popularities = {
+		democratic = 0.0
+		communism = 100
+		fascism = 0.0
+		neutrality = 0.0
+		nationalist = 0.0
+	}
+	set_politics = {
+		ruling_party = communism
+		elections_allowed = no
+	}
+	add_to_array = { ruling_party = 4 } #共产主义								
+	set_variable = { party_pop_array^4 = 1.0 } #共产主义	
+	startup_politics = yes
+	}
+
+		}
+
+
+
+
+	option = {
+		name = prc1.301.o1
+	CHI={
+
+
+
+start_politics_input = yes
+	set_popularities = {
+		democratic = 0.0
+		communism = 100
+		fascism = 0.0
+		neutrality = 0.0
+		nationalist = 0.0
+	}
+	set_politics = {
+		ruling_party = communism
+		elections_allowed = no
+	}
+	add_to_array = { ruling_party = 4 } #共产主义								
+	set_variable = { party_pop_array^4 = 1.0 } #共产主义	
+	startup_politics = yes
+	}
+	
+
+		ai_chance = {
+			factor = 50
+
+
+
+
+		}
+	}
 }
 
 
