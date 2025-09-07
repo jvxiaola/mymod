@@ -428,7 +428,7 @@
  PRC_Cleaning_corruption: "清理腐败"
  PRC_Cleaning_corruption_desc: "八十年代以来党和国家出现了令人触目惊心的贪腐习气，每一任领导人都会强调治理贪腐。群众已经厌倦了口号，他们迫切想看到党的行动。\n总书记下定决心，要以壮士断腕的魄力治理腐败问题。"
  PRC_Socialist_Reform_and_Opening_Up: "社会主义的改革开放"
- PRC_Socialist_Reform_and_Opening_Up_desc: "与大众印象里打算重新走完全的计划经济的保守顽固的老左派不同，邓力群总书记是主张陈云式改革的开明左派。他指出，改革开放的本意是好的，都是混进党内的走资派执行坏了。\n这一次，总书记将亲自掌舵，确保中国不会再次走上两极分化的邪路。"
+ PRC_Socialist_Reform_and_Opening_Up_desc: "与大众印象里打算重新走完全的计划经济的保守派不同，邓力群总书记是主张陈云式改革的开明左派。他指出，改革开放的本意是好的，都是混进党内的走资派执行坏了。\n这一次，总书记将亲自掌舵，确保中国不会再次走上两极分化的邪路。"
  PRC_Movement_to_eliminate_spiritual_pollution: "清除精神污染"
  PRC_Movement_to_eliminate_spiritual_pollution_desc: "资产阶级的黄赌毒和腐朽堕落的思想已经从方方面面污染毒害了群众，这种精神污染的实质是资产阶级散布对于共产党领导和社会主义事业的不信任情绪。\n总书记要求即刻清除思想战线上的污染，纯洁群众的精神。"
  PRC_Second_crackdown: "第二次严打运动"
@@ -491,109 +491,57 @@
  PRC_surveillance_bourgeoisie_desc: "出于经济因素的考虑，我们并没有彻底消灭国内的资产阶级，而是宽宏大量地允许他们在工人阶级专政下继续经营自己的产业。\n但这不代表我们对他们放弃了戒心！对外开放政策势必导致国内外资产阶级的勾结，我们要加强警惕，严密地监督那些鬼鬼祟祟的反动分子。"
  PRC_workers_paradise: "工人天堂"
  PRC_workers_paradise_desc: "经过我们的不懈努力，中国真正地成为了社会主义国家。工人的理想已经在中华大地上生根发芽，茁壮成长。\n这里是工人的热土！劳动者的家园！"
-#阳和平
- PRC_Yangheping: "毛主义者的政变"
- PRC_Yangheping_desc: "毛主义者再也忍受不了老左派对马列毛主义的曲解了，他们将进行政变"
- PRC_maoism_communist: "重新评价毛时代"
- PRC_maoism_communist_desc: "阳和平同志将马列毛主义者对毛时代的看法通过各种宣传手段告诉了群众，并且希望他们能以更全面的角度辩证看待毛泽东与毛时代"
- PRC_anti_trotskyism: "肃清托洛茨基主义"
- PRC_anti_trotskyism_desc: "中国的托洛茨基分子在抗日战争时期就有过“联日反蒋”的前科，他们现在又联合帝国主义代理人——各国假共产党和安托西修反对毛主义，这足以证明托派一贯是反动的。\n我们已经搜集到托派领导人之一梁国雄领取美国赞助，生活糜烂，天天开淫乱派对，非法从上海电子厂弄了一块摩尔线程mtt s80和龙芯芯片玩修正主义国家瑞典开发的“钢铁雄心4”“群星”等游戏、还从事港独、台独、疆独、藏独、内蒙独，甚至他打算实行所谓的民族自决，把中国分为二十七国的铁证，阳主席将学习毛主席进行伟大的“肃托”斗争。"
- PRC_Oppose_book_worship: "反对本本主义"
- PRC_Oppose_book_worship_desc: "阳主席上台以后，党内出现了一种“言必称毛选”的潮流，这是毛主席早就已经批评过的本本主义。\n我们有必要重新学习毛主席的著作：“我们需要“本本”，但是一定要纠正脱离实际情况的本本主义。”"
- PRC_Criticism_of_militarism: "否定军国主义"
- PRC_Criticism_of_militarism_desc: "刘少奇的儿子刘源声称，军队应当去政治化，专业化，在国家事务决策中拥有更多权力，以保卫无产阶级国家，推动世界革命。阳和平主席认为军队控制国家是资产阶级军国主义的典型特征，肯定是军头们开始打算第二次怀仁堂政变了\n阳主席将坚定维护党指挥枪的革命原则，无论代价。"
- PRC_Destroy_the_Four_Olds: "破四旧运动"
- PRC_Destroy_the_Four_Olds_desc: "无产阶级想要建设一个新世界，就要彻底破除几千年来一切剥削阶级所造成的毒害人民的旧思想、旧文化、旧风俗、旧习惯。\n“破四旧”是毛主席没有完成的事业，就由他的好学生阳主席来完成。"
- PRC_The_religion_of_communism: "共产主义宗教化"
- PRC_The_religion_of_communism_desc: "阳主席认为共产主义是世界上唯一的真理，毛主席则是唯一掌握真理的人，列宁和斯大林都没有理解唯物主义辩证法，因此群众必须全身心的信仰毛主席，在政策推动下大量毛主席纪念堂开始兴建，人民必须每天早起去纪念堂请示，晚上则要到纪念堂汇报，同时芒果则被奉为“无产阶级健康水果”，据“无产阶级文化所”研究，每天吃五个芒果可以永保红色无产阶级思想，自动理解唯物主义辩证法，最终达到长生不老，可以看见共产主义社会建成的那一天。"
- PRC_No_material_stimulation: "禁止物质享受"
- PRC_No_material_stimulation_desc: "长期以来，许多共产党人对追求物质享受的兴趣远超过发扬革命精神的兴趣，而追求物质享受实际上是资产阶级的享乐主义。\n阳和平主席主张革命的禁欲主义，取消一切物质享受，他还认为，性交必须以繁衍为目的，不然的话就是小资产阶级淫乐，因此人们做爱也必须向当地党委机关请示，否则就是资产阶级反革命。"
- PRC_Socialist_bureaucracy: "社会主义官僚"
- PRC_Socialist_bureaucracy_desc: "阳主席认为，托派对官僚的看法是形左实右的，铁托主义的、冒进主义的。他指出官僚也有社会主义和资本主义之分，没有官僚来组织生产，那么就会变成无政府主义，导致生产和社会崩溃，不过官僚内部也有走资派，但是官僚不能消灭，因为毛主席经常讲“惩前毖后，治病救人”，因此我们要改造官僚，让他们充当党和人民的“孺子牛”。"
- PRC_Chairman_Mao_worship: "毛主席崇拜"
- PRC_Chairman_Mao_worship_desc: "个人崇拜也分好坏，对于毛主席，我们必须崇拜，永远崇拜，不崇拜不得了。真理就在他手里，为什么不崇拜呢？我们相信真理，崇拜真理。毛主席是我们心中永远不落的红太阳，毛泽东思想是我们的命根子。不论什么时候，不管什么样的‘权威’ ，谁反对毛泽东思想，我们都要全党共讨之，全国共诛之。\n我们必须要把毛主席崇拜变成每个人的出厂设置，让每个人都认为毛主席是父亲，江青同志则是母亲。"
- PRC_Second_time_going_to_the_countryside: "第二次上山下乡"
- PRC_Second_time_going_to_the_countryside_desc: "为什么中国的年轻人越来越喜欢享乐？整天就只知道打游戏，躺平，也不喜欢生育后代了？\n阳和平主席有独特的毛派看法，他认为年轻人脱离了农业生产，失去了革命精神。他决定要让青年学生离开城市，到农村去接受贫下中农再教育，他还听说江西那边有个叫董志民的贫农，他就非常勤劳，和他老婆生了8个孩子，还自力更生养活了他们，阳和平认为青年学生应该向他学习，为祖国，世界革命的未来而奋斗。\n不管怎么说，广阔天地，大有作为嘛。"
- PRC_Marx_in_the_New_Era: "新时代的马克思"
- PRC_Marx_in_the_New_Era_desc: "伟大的阳和平主席就是二十一世纪的马克思，他的思想是我们的指南针，为我们指明了革命斗争的前进方向，引领我们走向共产主义的光明未来，世界上每一个地方的人都必须沐浴在阳和平思想的光芒之下。\n马恩列斯毛阳万岁！伟大的中国共产党万岁！社会主义万岁！"
-
  PRC_red_weidui: "动员赤卫队"
  PRC_red_weidui_desc: "城市一直以来都是革命的心脏和诞生地。我们必须在城市组建民兵来推进和传播革命，如果我们不这样做，革命就会被镇压。"
  PRC_nmbd: "动员农民"
  PRC_nmbd_desc: "在中国，农民一直是比较进步的，上个世纪的革命就是依靠农村包围城市才胜利的。"
-
  DSC_DSC_civ_start: "打响第一枪"
  DSC_DSC_civ_start_desc: "几十年前，阿芙乐尔号巡洋舰的一声炮响为俄国人民轰开了十月革命的浪潮。1927年毛泽东同志领导下的秋收起义打开了中国轰轰烈烈几十年伟大革命征程。今天，在毛远新同志的领导下，整合了川渝地区马列毛主义革命的队伍将打响反对暴政的军政府，开启解放全国的伟大征程！"
-
  DSC_people_army_zzjj: "政治建军"
  DSC_people_army_zzjj_desc: "自川渝革命伊始，毛远新主席就明确了新生的人民解放军在政治上为一支无产阶级的战斗队伍。通过党的领导与军事民主的结合我们将重新完成政治人民解放军的重建。我们将扫清革命队伍中的败类蛀虫，以铁的纪律和基层士兵的民主保证革命的胜利。"
-
  DSC_people_army_junshixy: "军事学院"
  DSC_people_army_junshixy_desc: "尽管在新生人民解放军中拥有不少前军政府的中层军官，但随着革命的发展越来越猛烈，队伍的扩大意味着指挥体系的越发庞大。随之而来的就是有经验指战员的缺乏。为此我们在以及解放的地区创立军事学院，从军队中选拔优秀的士兵与军官参与培训，将新生的人民解放军培养成专业化革命化的无产阶级武装力量。"
-
  DSC_people_army_czzzx: "战争磨砺尖刀"
  DSC_people_army_czzzx_desc: "历经革命战争的火与血，重获新生的人民解放军在残酷的国内阶级战争中成长为一只能打胜仗、作风优良的军队，“从战争中学习战争”，是一条宝贵经验。对此，毛泽东同志也有精辟论述：“读书是学习，使用也是学习，而且是更重要的学习。从战争中学习战争——这是我们的主要方法。”"
-
  DSC_people_army_zhbd: "整合部队"
  DSC_people_army_zhbd_desc: "在革命开始以后，我方接受了大量先前的投诚部队，加之各种各样的民兵、赤卫队的动员，使得我们的部队编制与指挥体系及其混乱。因此，我们将着手开始解决军队的编制问题以及重新构建高效灵活的指挥体系。确保每一支部队都能发挥其最大实力。"
-
  DSC_people_army_wuqizengjia: "列装武器"
  DSC_people_army_wuqizengjia_desc: "通过战场缴获和先前对地方武器库的夺取以及与其他地区的势力的交易。我们获取了大量的军火装备，其中不乏当前阶段中国以及各国的高精尖装备。同时我们也将对部分装备进行逆向工程。而在已经解放的工业区，源源不断的武器将为我们淹没敌军最后的挣扎。"
-
  DSC_people_army_jsjj: "军事建军"
  DSC_people_army_jsjj_desc: "在现代战争中，武器与先进的战术理论是必不可少的核心要素之一。过去的无产阶级革命与暴动除了缺乏一定的正确理论，而且没有自己武器装备与之抗衡。因此，我们将着手为新生的人民解放军更新与补充先进武器，同时精简军队的编制和安排军队干部学习相关理论。打造一只可以担任全国解放任务的铁军！"
-
  DSC_people_army_sxjj: "思想建军"
  DSC_people_army_sxjj_desc: "不同于军事以及政治建军，思想建军主要针对于人民解放军头脑中的“敌人”自川渝革命以来，人民解放军进一步的扩大的同时，队伍中思想上‘良莠不齐’的情况越发严重。我们将在军中开启一场思想上的建军，重新用马列毛主义武装革命的队伍。将其培养为新时代的革命之军"
-
  DSC_people_army_sixiangjy: "思想教育"
  DSC_people_army_sixiangjy_desc: "川渝革命以来，重建的解放军思想上堪称大杂烩。除却本来川渝革命者就存在思想上的不同外，还有一些新加入的我们的前军政府士兵以及农业的无产阶级士兵。这也造成了队伍思想上的问题。因此，我们将在各级各单位对现有官兵进行一定的考核与教育。构建马列毛思想在军中的认同，保持军队的纯洁性与先进性。"
-
  DSC_people_army_junduizf: "军队整风"
  DSC_people_army_junduizf_desc: "内战以来，虽然新生的人民解放军在各条战线上表现优异。但指挥部却经常收到打劫群众、欺凌下级等恶劣的军阀土匪行径。这不仅将败坏新生的人民解放军在群众中的基础，而且会导致人民解放军在思想上的变质。为此，毛远新同志在最新的军事会议上，决定再次开展军队的整风运动，以此彻底重塑解放军铁的纪律，完成思想上的革命化。"
-
  DSC_people_army_qunzhonglx: "三大纪律八项注意"
  DSC_people_army_qunzhonglx_desc: "三大纪律八项注意可谓人民解放军思想行动上的总结。它的存在体现了解放军是一支人民的武装。我们将重拾这一纪律并结合时代将其改进并推广，继承毛泽东时代革命军队的优良传统。"
-
  DSC_people_army_rmdjd: "人民子弟兵"
  DSC_people_army_rmdjd_desc: "“人民子弟兵是什么？”毛远新同志曾在军事会议上发问。“它来源于广大的无产阶级，是无产阶级的革命武装，是革命刺向敌人的利刃”“它对待敌人如尖刀，对待人民如春风”“它即是无产阶级的保护者和革命者，又为无产阶级所支持，这才是人民的弟子兵”"
- 
-
  DSC_people_armyI: "重建人民解放军"
  DSC_people_armyI_desc: "自1948年正式更名人民解放军，到1978年改革开放后军纪随军队经商问题的逐步扩大和深入社会而恶化。无形中中国人民解放军在经济政治领域俨然有国中之国之态。在具体的军事以及政治方面更是糜烂不堪。而在毛远新同志的主导下，我们将以全新的革命者的姿态重建这一支人民的武装，确保人民解放军在马列毛思想的指导下，向解放全中国前进。"
  DSC_people_armyII: "支部建在连上"
  DSC_people_armyII_desc: "支部建在连上”是毛泽东同志提出的一项基本原则。如今它将再次确保党对军队的绝对领导。我们将再次在各级单位构建党的组织，为掌握部队和革命提供组织保证。有效发挥党组织的在基层的影响和组织，确保革命军队为人民为革命而奋斗。"
-
-
  CHI_zhengwei: "政治委员"
-
  DSC_people_armyIII: "劝降敌军"
  DSC_people_armyIII_desc: "尽管川渝军政府是我们的敌人。其中的高级将领和部分中层军官是铁杆的反革命分子。但下至士兵一级我们持枪对峙的敌军不一定全是我方的敌人。他们之中有人处于乱世中的生存困境，有人则是被强征而来。因此，通过一定的宣传工作，我们可以将部分动摇的士兵和中层军官拉拢到我方，为革命出力。"
-
  DSC_people_army_minbing: "动员赤卫队"
  DSC_people_army_minbing_desc: "正如毛泽东同志所言，红军所承担的不仅是单纯的军事任务，更要教育群众、发展群众，不能脱离人民群众。赤卫队虽然不算正式的军队，他们不一定拥有优越的军事素养和战术能力。但他们坚定的信念确保了对革命的忠诚。将其动员起来不仅能填补我方一定程度的人力缺口，且更好的稳固我方现有的革命根据地。"
-
  DSC_people_army_nalodnayavoina: "人民军队"
  DSC_people_army_nalodnayavoina_desc: "在毛远新同志的领导下，人民解放军完成了三大建军的目标。从一支幼稚的混乱的军队成长为一支能打胜仗、作风优良为无产阶级解放而无限奋斗的革命铁军。"
-
  DSC_people_army_jdmzzy: "军队民主主义"
  DSC_people_army_jdmzzy_desc: "军事民主制早在1927年三湾改编时期便在人民解放军的前身——红军中产生。其核心在于官兵平等、民主协商等方式。这些民主的举措不仅有利于重新构建革命中的身份认同，也为具体的战术战法上的提供创新。其将确保了中国人民解放军内部的平等，将保证人民军队内部的不变质"
-
  DSC_people_army_zzwy: "政治委员"
  DSC_people_army_zzwy_desc: "政治委员作为党在军队的政治代表，是“支部建在连上”原则的主要部分。通过各级政委对本级军队的政治领导，确保各级人民军队的无产阶级政治底色不变色的同时，加深各级人民军队官兵对无产阶级革命使命的认同与理论学习。从而保证人民军队从普通雇佣军队到无产阶级革命军队的巨变。"
-
  DSC_people_army_dangjun: "党指挥枪"
  DSC_people_army_dangjun_desc: "党指挥枪的原则是人民军队的根本原则。毛泽东在长期的革命战争中确立这一项根本性的原则，从而保证了革命之胜利。在川渝革命及第二次解放战争的背景下。毛远新同志进一步强调了这一原则。“党指挥枪，就是要将人民解放军这支枪，对准它的敌人，也就是无产阶级的敌人，为革命而流血而牺牲。”"
-
  DSC_people_army_shibweiyuanhui: "士兵委员会"
  DSC_people_army_shibweiyuanhui_desc: "士兵委员会的重建，通过官兵参与、全员平等的方式，参与管理和监督。其有利于保证军事民主的贯彻落实，而且破除1978年改开以后军队商业化、内战以后军阀化的恶劣影响，肃清不良之风的同时破除雇佣思想。以确保全军鲜明的无产阶级属性，保证革命武装的纯洁。"
-
  DSC_DSC_civ_end: "人民解放军的重生"
  DSC_DSC_civ_end_desc: "“向前！向前！向前！”成功了！成功了！历经革命战争的火与血，重获新生的人民解放军在残酷的国内阶级战争中成长为一只能打胜仗、作风优良的军队，其战术素养和实力可以媲美世界上任何一国的军队。人民解放军完成了它的新生，它将高举马列毛的伟大旗帜，在广大无产阶级的簇拥下，完成它的革命使命，向全世界的反革命阶级发动一场史无前例的无产阶级解放战争！"
  HKG_people_army: "建立红军"
  HKG_people_army_desc: "一支属于无产阶级的军队！"
-
-
  PRC_socgg: "社会改革"
  PRC_socgg_desc: ""
  PRC_nvquan: "支持女权运动"
@@ -709,26 +657,9 @@
  PRC_lysjsc: "利用世界市场"
  PRC_lysjsc_desc: "世界市场是一片蓝海，在我们社会主义制度的优越性面前，一切资本主义国家的商品都不可能竞争过我们。"
 
- PRC_communist_inte4: "团结国际托洛茨基主义者"
- PRC_communist_inte4_desc: "第四国际是世界最大的共产主义政党的国际组织，我们要团结第四国际，解放世界。"
  PRC_1co_communist: "一国建成社会主义"
  PRC_1co_communist_desc: "苏联和中国之所以修正是因为内部的叛徒出卖，而不是斯大林的一国建成社会主义的理论错误，我们相信我们可以不依靠国际革命就可以在中国建成社会主义社会，完全不需要听托洛茨基反革命分子说的要世界革命，不过我们还是需要势力范围的，整个亚洲都是我们的势力范围。"
- PRC_anti_you: "重视统一战线"
- PRC_anti_you_desc: "爱国统一战线是毛泽东同志的重要发明之一，只要经过合适的手段，不是我们朋友的人也会变成我们的朋友。"
- PRC_wenhuadageming: "继续革命论"
- PRC_wenhuadageming_desc: "第一次文化大革命有诸多的问题，这一次我们将会注意防止群众互相打派仗，也不鼓励胡乱批斗，不会让造反派在最后被屠杀，当然，革命不是美好的画卷"
- PRC_communist_dengta: "共产主义的新灯塔"
- PRC_communist_dengta_desc: "中国是新时代的共产主义运动的中心，我们被各国真正的共产党称为”共产主义灯塔“，照亮了这个被资本主义与修正主义统治的黑暗的世界。"
- PRC_deccommunsim: "无产阶级民主"
- PRC_deccommunsim_desc: "马克思说过，无产阶级是一个阶级的专政。应该是无产阶级来统治而不是某一个党来统治，而且民主和专政并不对立，民主就是专政，专政就是民主。（因为国家是阶级统治的工具，必然是一个阶级拥有统治权）"
- PRC_gongyouhuayundong: "社会革命"
- PRC_gongyouhuayundong_desc: "无产阶级一旦取得政权，下一步就是对生产资料收归社会所有，消灭生产资料私有制。并且打破旧有的资产阶级统治机器，建立服务大多数人的国家机器。并且在道德上革新，解放妇女。"
- PRC_buduangeming: "不断革命"
- PRC_buduangeming_desc: "我们要对社会、分配方式、文化进行不断的改造，这样才能准备好进入社会主义的条件。"
- PRC_communist_democracy: "构建阶级主义"
- PRC_communist_democracy_desc: "民族主义国家是资本主义来欺骗无产者来保卫国内一小部分人的利益的，我们工人国家不能建在资产阶级民族主义之上，所以我们得构建阶级主义（即首先是无产阶级的国家，然后才是中华民族的国家）"
- PRC_anti_democracy: "支援革命"
- PRC_anti_democracy_desc: "我们得抓紧时间来支持各国共产党夺取政权，以推动世界革命。"
+
  PRC_World_Revolution: "世界革命"
  PRC_World_Revolution_desc: "无产阶级，联合起来！"
  PRC_communist_inte: "建立工人国际"
@@ -1043,7 +974,6 @@
  change_DSC_war_policies_dynamic20_tt: "战时政策 - 占领地抵抗增长: [?temp_DSC_war_policies_dynamic|-%]\n"
  change_DSC_war_policies_dynamic21_tt: "战时政策 - 占领地顺从度增长: [?temp_DSC_war_policies_dynamic|-%]\n"
  change_DSC_war_policies_dynamic22_tt: "战时政策 - 外国颠覆活动: [?temp_DSC_war_policies_dynamic|-%]\n"
-
  change_DSC_war_policies_dynamic23_tt: "战时政策 - 限制电量: [?temp_DSC_war_policies_dynamic|-%]\n"
 
 
@@ -1058,7 +988,6 @@
  hongkong_people_support_to_china_government_modifier: "£stability_texticon 政府合法性或革命热情每月变化"
 
  HKG_Revolutionary_Enthusiasm_tt: "§Y政府合法性§!动态修正将被替换为§Y革命热情§!。\n此动态修正与外交、政治、经济挂钩。"
-
 
  HKG_Socialist_Construction_dynamic: "红色之梦"
  HKG_Socialist_Construction_dynamic_desc: "\n\n\n\n\n£CHI_Socialist_Construction_dynamic_desc_pic \n\n\n\n\n\n\n在中国左派重新获得政权之后，必须领导革命群众进行社会主义建设，与官僚主义作斗争，防止资产阶级复辟。\n§R这是最后的斗争，团结起来到明天，英特纳雄奈尔，就一定要实现！§!"
@@ -1100,8 +1029,6 @@
  change_HKG_Socialist_Construction_dynamic35_tt: "工厂产出：[?temp_HKG_Socialist_Construction_dynamic|+%]\n"
  change_HKG_Socialist_Construction_dynamic36_tt: "贫富分化每周变化：[?temp_HKG_Socialist_Construction_dynamic|-%]\n"
  change_HKG_people_support_tt: "[HKG_people_support_dynamic_name]变化：[?temp_HKG_people_support|+%]\n"
-
-
 
  USA_Anti_Communist_china_Jihad: "干涉中国内战"
  CHI_worker_cooperative: "工人合作社"
@@ -1145,10 +1072,6 @@
  CHI_dixiaoguoqi_5: "低效的国有企业"
  CHI_dixiaoguoqi_5_desc: "“大锅饭养懒汉”是许多人对现行国企制度的批评，但有左派观点认为，之所以国企低效是因为工人在国企当家作主的权力被剥夺，以及对工人相较于一般私企更好的待遇造成了更高的劳动力再生产成本，使得其的利润也就是剩余价值获得较少"
 
-
-
-
-
  CHI_shock_therapy: "休克疗法"
  CHI_not_shimao: "贸易不便"
  CHI_big_layoff_desc: "从1997年朱镕基政府全面开始进行国有企业改革以来，非常多的原国有企业的员工被迫下岗，他们甚至连最基础的生活保障都没有，因此，他们经常走上街头抗议，这严重的影响了我国政府的合法性。"
@@ -1174,7 +1097,7 @@
  niaolong: "鸟笼经济"
  niaolong_desc: "鸟笼经济的概念来自于中国共产党元老之一的陈云，他认为：“搞活经济是在计划指导下搞活，不是离开计划的指导搞活。就像鸟和笼子的关系一样，鸟不能捏在手里，捏在手里会死，要让它飞，但只能让它在笼子里飞。没有笼子，它就飞跑了。如果说鸟是搞活经济的话，那末，笼子就是国家计划”。"
  CHI_communist_cadres: "共产党党员干部"
- zhonghuaweida: "中华民族的伟大复兴"
+ zhonghuaweida: "中华民族伟大复兴"
  red_weidui1: "赤卫队民兵" 
  houqing: "人民后勤部队"
  people_army: "人民解放军"
@@ -1211,7 +1134,6 @@
 
  CHI_zzb: "政治报"
  CHI_cyrmzf: "革命政府"
-
  DSC_gcd: "重组§R共产党§!"
  CHI_gongchanguimuo: "§R社会主义§!§C基层组织§!状况：§g亟待组建§!"
  CHI_gongchanguimuo_desc: "政治生活是党的生命线，而§C基层组织§!又是政治生活的生命线。自上世纪70年代末期§B自由化§!浪潮袭来时，我国的基层组织便一再被§g忽视、退步§!，以至于在今天几乎要靠§O地区教会§!与§g新乡贤§!的“治理”，要改变这一现状，就要让干部重下基层，重新建立一套基层治理的社会体系。"
@@ -1485,8 +1407,8 @@
  gjldf: "改进劳动法"
  CHI_MER_decresee: "消除军队经商残余影响"
  cummunist_patry_of_china_faction_category: "中国共产党内部方针"
- cummunist_patry_of_china_faction_category_desc: "虽然£CHI_communism 中国共产党一直以来是一个相对团结的党，但是再团结的党，内部也存在各种各样的意见，采取政策会影响党的团结和派系影响力，§Y谨慎决定§!各种政策，否则可能§R损害党内团结§!，甚至发展到§g党内恶性斗争！§!\n\n\n      £CHI_left 中国共产党 - §t老左派§!\n\n自华国锋退休后中国共产党内的左翼派系逐渐式微，以至于党内左翼缺乏主流派系。党内影响力最大的左翼兼职派被改革派及自由派称为“保守派”，其反对邓小平的市场经济改革与思想自由化，认为改革开放的实质就是走资本主义道路，抛弃社会主义。\n同时也存在如毛派、左翼自由派、以及其它影响力微小的派系\n§t老左派§!党内总影响力为[?CPC_Left|%+]。\n\n  £CHI_communism 中国共产党 - §1改革派§!  \n\n£CHI_communism 中国共产党 - §1改革派§!认为邓小平同志所开创的中国特色社会主义是中国唯一正确的道路，他们认为计划经济落后于时代，中国绝不能再次走上计划经济道路；同时也反对西式宪政民主，认为宪政民主是西方产物，不适用于中国。\n影响力为：[?CPC_Dengist|%+]。\n\n    £CHI_communism 中国共产党 - §P自由派§!\n\n£CHI_communism 中国共产党 - §P自由派§!认为改革开放尚未完成，80年代开始的政治经济改革仅仅完成了经济改革，而政治改革被迫在89政治风波之后停滞，自由派觉得必须在中国建立宪政民主的法治的公民国家。\n影响力为：[?CPC_Right|%+]。\n\n\n党的路线：[Communist_Party_of_china_Line]."
- CPC_Left_support: "支持§t老左派§!政策"
+ cummunist_patry_of_china_faction_category_desc: "虽然£CHI_communism 中国共产党一直以来是一个相对团结的党，但是再团结的党，内部也存在各种各样的意见，采取政策会影响党的团结和派系影响力，§Y谨慎决定§!各种政策，否则可能§R损害党内团结§!，甚至发展到§g党内恶性斗争！§!\n\n\n      £CHI_left 中国共产党 - §t保守派§!\n\n自华国锋退休后在中国共产党内逐渐式微，但仍是党内影响力最大的左倾派系，被改革派及自由派称为“保守派”，其反对邓小平的市场经济改革与思想自由化，认为改革开放的实质就是走资本主义道路，抛弃社会主义。\n§t保守派§!党内总影响力为[?CPC_Left|%+]。\n\n  £CHI_communism 中国共产党 - §1改革派§!  \n\n£CHI_communism 中国共产党 - §1改革派§!认为邓小平同志所开创的中国特色社会主义是中国唯一正确的道路，他们认为计划经济落后于时代，中国绝不能再次走上计划经济道路；同时也反对西式宪政民主，认为宪政民主是西方产物，不适用于中国。\n影响力为：[?CPC_Dengist|%+]。\n\n    £CHI_communism 中国共产党 - §P自由派§!\n\n£CHI_communism 中国共产党 - §P自由派§!认为改革开放尚未完成，80年代开始的政治经济改革仅仅完成了经济改革，而政治改革被迫在89政治风波之后停滞，自由派觉得必须在中国建立宪政民主的法治的公民国家。\n影响力为：[?CPC_Right|%+]。\n\n\n党的路线：[Communist_Party_of_china_Line]."
+ CPC_Left_support: "支持§t保守派§!政策"
  CPC_dengist_support: "支持§1改革派§!政策"
  CPC_Right_support: "支持§P自由派§!政策"
  CPC_Rehabilitation_of_Zhao_Ziyang: "平反赵紫阳"
@@ -1496,7 +1418,7 @@
  CPC_communist_mao: "§R正统马列主义§!政党执政中"
  CHI_Appointment_Deng_Liqun: "赋权邓力群"
  CHI_Jiangzemin_continue: "江泽民连任"
- CHI_left4: " £CHI_communism 中国共产党 - §t老左派§!的§Y党内影响力§!大于40%"
+ CHI_left4: " £CHI_communism 中国共产党 - §t保守派§!的§Y党内影响力§!大于40%"
  CHI_right4: "£CHI_communism 中国共产党 - §P自由派§!的§Y党内影响力§!大于40%"
  CHI_communist_marx: "执政党是一个§R激进马克思主义政党§!"
  CHI_economic_model_socialist_economy_tt: "没有§R社会主义§!经济模式"
@@ -2068,8 +1990,8 @@
  DSC_duijunzhengfu: "消灭军政府"
  DSC_duijunzhengfu_desc: "军政府的反动性质川渝人民深有体会，我们将拯救处于军政府黑暗统治下的人民"
 
- DSC_duilaozuopai: "进攻§t老左派§!"
- DSC_duilaozuopai_desc: "§t老左派§!自称社会主义者，实际上推行的却是实实在在的资产阶级专政，为了完成中国的无产阶级革命，是马虎不得的"
+ DSC_duilaozuopai: "进攻§t保守派§!"
+ DSC_duilaozuopai_desc: "§t保守派§!自称社会主义者，实际上推行的却是实实在在的资产阶级专政，为了完成中国的无产阶级革命，是马虎不得的"
 
 
  DSC_fanjunfaxuanchuan: "唤醒阶级意志"
@@ -2301,24 +2223,20 @@
  HKG_duijunzhengfu: "消灭军政府"
  HKG_duijunzhengfu_desc: "军政府的反动性质川渝人民深有体会，我们将拯救处于军政府黑暗统治下的人民"
 
- HKG_duilaozuopai: "进攻§t老左派统一战线§!"
- HKG_duilaozuopai_desc: "§t老左派统一战线§!自称社会主义者，实际上推行的却是实实在在的资产阶级专政，为了完成中国的无产阶级革命，是马虎不得的"
+ HKG_duilaozuopai: "进攻§t保守派统一战线§!"
+ HKG_duilaozuopai_desc: "§t保守派统一战线§!自称社会主义者，实际上推行的却是实实在在的资产阶级专政，为了完成中国的无产阶级革命，是马虎不得的"
 
  HKG_xggm: "左派的进军"
  HKG_xggm_desc: "局势发生了变化"
-
 
  HKG_people_army: "中国红军"
  HKG_people_army_desc: "中国红军"
 
  xggm: "香港托派执政中"
- laozuo: "§t老左派§!执政中"
+ laozuo: "§t保守派§!执政中"
  qyxd: "川渝左翼政府执政中"
  Maoist_from_DSC: "§R川渝毛主义者§!正在掌权"
-
  NKO_AUTH_S: "朝鲜民主主义人民共和国"
-
-
  ER_CHI.Western_Autocracy: "£generic_Western_Autocracy_small §1中国民主党§!"
  ER_CHI.Western_Autocracy_icon: "£generic_Western_Autocracy_small"
  ER_CHI.Western_Autocracy_desc: " §1中国特色自由主义§! - \n中国民主党在中华人民共和国是被取缔的政党。西式改良主义和西方自由主义是其核心价值观。据大多数西方消息来源称，该组织由民主活动人士和天安门广场抗议活动的前学生领袖组成。"
