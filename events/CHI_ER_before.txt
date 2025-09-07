@@ -39,14 +39,13 @@ country_event = {
 
 	immediate = { 
 		hidden_effect = { 
-			if={
+			if = {
 				limit = {
-					not={
-
-						has_country_flag =the_Right_wing_reform 
+					not = {
+						has_country_flag = the_Right_wing_reform 
 					}
 				}
-			country_event = { id = CHI_ER_BEFORE_xin.1 days = 50 } 
+				country_event = { id = CHI_ER_BEFORE_xin.1 days = 50 } 
 			}
 
 
