@@ -412,7 +412,6 @@ CHI_Redemption_assets = {
 
 
 #合作化
-#云泽最新
 	#组织各地个体户“官方论坛”地图决议
 
 	Oofb_guangdong = { #(1)广东及珠江地区

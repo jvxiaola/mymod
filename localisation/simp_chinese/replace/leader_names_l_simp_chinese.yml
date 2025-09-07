@@ -10,6 +10,8 @@
  Central_Committee_of_the_Chinese_Kuomintang: "§B中国国民党§! - §g中央委员会§!"
  QuanGuoRenMinDaiBiaoDaHui: "§R中国共产党§! - §C全国人民代表大会§!"
  PGR_PLA_taobojun: "陶伯钧"
+ GDS_huoyindong: "霍英东"
+ GDS_huoyindong_desc: "§B霍英东§!（1923年5月10日生），原名官泰，祖籍广东番禺，生于香港，7岁丧父，12岁进§g香港皇仁英文书院§!，因§R抗日战争§!爆发而辍学。§1杰出的社会活动家§!，§8著名的爱国人士§!，§B香港知名实业家§!，§4中国共产党的亲密朋友§!，曾任§Y第八、九、十届全国政协副主席§!，§B香港中华总商会永远名誉会长§!。 \n1985年任§0香港特区基本法起草委员会委员§!。1993年3月当选为§1第八届全国政协副主席§!。1998年3月当选为§1第九届全国政协副主席§!。"
  hasty_deployment: "§R紧急动员§!"
  hero_counterattack_Vietnam: "\n£GFX_in_the_war [VIE.GetFlag]对越自卫反击功臣"
  anti_food_hero: "\n£GFX_SER_Neutral_Communism 抗洪英雄"
