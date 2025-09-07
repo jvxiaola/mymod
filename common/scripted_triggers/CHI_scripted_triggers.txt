@@ -42,3 +42,4 @@ will_be_attacked_by_islam = {
 		has_dynamic_modifier = { modifier = extrameal_islam_attack4 } has_dynamic_modifier = { modifier = extrameal_islam_attack5 }
 	}
 }
+
