@@ -6,7 +6,7 @@ guiTypes = {
 		buttonType = {
 			name = "DSC_button_OPEN4"
 			spriteType = "GFX_DSC_FRG_4_GUI_icon"
-			position = { x = 92 y = 28 }
+			position = { x = -30 y = 0 }
 			clicksound = click_default
 			#pdx_tooltip = "XIN_button_desc_TT"
 			#pdx_tooltip_delayed = "XIN_button_more_desc_loc_TT"
@@ -14,7 +14,7 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "DSC_button_OPEN5"
-			position = { x = 20 y = 0 }  # 这个偏移值决定碰撞框在哪
+			position = { x = -30 y = 0 }  # 这个偏移值决定碰撞框在哪
 			spriteType = "GFX_DSC_FRG_5_GUI_icon"
 			clicksound = click_default
 			#pdx_tooltip = "XIN_button_desc_TT"
@@ -24,7 +24,7 @@ guiTypes = {
 		buttonType = {
 			name = "DSC_button_OPEN2"
 			spriteType = "GFX_DSC_FRG_2_GUI_icon"
-			position = { x = 355 y = 81 }
+			position = { x = -30 y = 0 }
 			clicksound = click_default
 			#pdx_tooltip = "XIN_button_desc_TT"
 			#pdx_tooltip_delayed = "XIN_button_more_desc_loc_TT"
@@ -33,7 +33,7 @@ guiTypes = {
 		buttonType = {
 			name = "DSC_button_OPEN3"
 			spriteType = "GFX_DSC_FRG_3_GUI_icon"
-			position = { x = 362 y = 136 }
+			position = { x = -30 y = 0 }
 			clicksound = click_default
 			#pdx_tooltip = "XIN_button_desc_TT"
 			#pdx_tooltip_delayed = "XIN_button_more_desc_loc_TT"
@@ -42,7 +42,7 @@ guiTypes = {
 		buttonType = {
 			name = "DSC_button_OPEN1"
 			spriteType = "GFX_DSC_FRG_1_GUI_icon"
-			position = { x = 295 y = 136 }
+			position = { x = -30 y = 0 }
 
 			clicksound = click_default
 			#pdx_tooltip = "XIN_button_desc_TT"
