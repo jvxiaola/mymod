@@ -14,50 +14,5 @@ characters = {
 		}
 	}
 
-    Mao_Yuanxin = {
-        name = "毛远新"
-        portraits = {
-            army = {
-                small = "gfx/leaders/DSC/small/Mao_Yuanxin_small.dds"
-                large = "gfx/leaders/DSC/Mao_Yuanxin.dds"
-            }
-            civilian = {
-				large = "gfx/leaders/DSC/Mao_Yuanxin.dds"
-			}
-        }
-        country_leader = {
-			ideology = Chinese_Socialism_mao
-		    traits = {  Disaster_relief_heroes military_engineer }
-			desc = Mao_Yuanxin_desc
-            expire = "2100.1.1.1"
-		}
-
-        advisor = {
-			slot = army_chief
-			idea_token = Mao_Yuanxin
-			traits = {
-				army_chief_morale_3
-			}
-            available = {
-                is_in_array = { ruling_party = 4 }
-            }
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-
-        corps_commander = {
-            visible = { is_in_array = { ruling_party = 4 } }
-            skill = 3
-            attack_skill = 4
-            defense_skill = 4
-            planning_skill = 3
-            logistics_skill = 2
-            traits = { trait_engineer }
-        }
-    }
-
-
 	
 }
