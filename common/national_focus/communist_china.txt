@@ -2451,14 +2451,74 @@ add_stability = 0.10
 				}
 				}
 						
-				
+focus = {
+		id = PRC_communist_inte4
+		icon = fourth_international
+		x = -2
+		y = 1
+relative_position_id = PRC_jjdz
+prerequisite = {  focus = PRC_jjdz }
+allow_branch = {
+	NOT = {
+		OR = {
+			has_country_flag = Maoist_from_DSC
+			has_country_flag = laozuo
+			}
+	 }
+	}
+cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+				custom_trigger_tooltip = {
+					has_country_flag=xggm
+				}
+				is_in_faction = no
+		has_civil_war = no
+				custom_trigger_tooltip = {
+					tooltip = cwideas_tt
+										has_idea = p5_member
+
+					NOT = {
+OR = {
+has_idea = CHI_aftermath_of_the_civil_war_1
+has_idea = CHI_aftermath_of_the_civil_war_2
+has_idea = CHI_aftermath_of_the_civil_war_3
+has_idea = CHI_aftermath_of_the_civil_war_4
+}
+					}
+				}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+				create_faction = "第四国际"
+		CHI = { country_event = { id = prc1.55 }}
+add_ideas = CHI_Exporting_the_Revolution
+every_other_country = {
+generic_grant_3_percent_influence_of_CHI = yes
+add_5_emerging_left_wing_radical = yes
+add_5_emerging_communist = yes
+}
+
+				}
+				}				
 focus = {
 		id = PRC_asian_rev
 		icon = asia
 		x = -6
 		y = 1
 relative_position_id = PRC_communist_inte
-prerequisite = { focus = PRC_communist_inte focus = PRC_1co_communist }
+prerequisite = { focus = PRC_communist_inte focus = PRC_communist_inte4 focus = PRC_1co_communist }
 		cost = 5
 
 		ai_will_do = {
@@ -4052,7 +4112,7 @@ cost = 5
 		x = 3
 		y = 1
 relative_position_id = PRC_communist_inte
-prerequisite = { focus = PRC_communist_inte }
+prerequisite = { focus = PRC_communist_inte focus = PRC_communist_inte4  }
 cost = 5
 		ai_will_do = {
 			factor = 5
@@ -4616,7 +4676,7 @@ focus = {
 		x = 7
 		y = 1
 relative_position_id = PRC_communist_inte
-prerequisite = { focus = PRC_communist_inte }
+prerequisite = { focus = PRC_communist_inte focus = PRC_communist_inte4  }
 cost = 5
 		ai_will_do = {
 			factor = 5
@@ -5290,7 +5350,7 @@ focus = {
 		x = 16
 		y = 1
 relative_position_id = PRC_communist_inte
-prerequisite = { focus = PRC_communist_inte }
+prerequisite = { focus = PRC_communist_inte focus = PRC_communist_inte4  }
 cost = 5
 		ai_will_do = {
 			factor = 5
@@ -6129,12 +6189,12 @@ add_core_of = ROOT
 			}
 			allow_branch = {
 				has_country_flag = Maoist_from_DSC
-				NOT = {
-					OR = { 
-						has_completed_focus = PRC_Proletarian_leader
-						has_completed_focus = PRC_jitilingdao
-					}
-				}
+				#NOT = {
+				#	OR = { 
+				#		has_completed_focus = PRC_Proletarian_leader
+				#		has_completed_focus = PRC_jitilingdao
+				#	}
+				#}
 			}
 			available = { has_country_leader = { name = "毛远新"  } }
 			cancel_if_invalid = yes
