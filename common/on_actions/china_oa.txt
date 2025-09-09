@@ -147,7 +147,7 @@ on_daily_CHI = {
 	has_country_flag = laozuo
 	has_civil_war = no
 
-
+#测试
 
 	}
 clr_country_flag = neizhanzhong
