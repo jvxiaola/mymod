@@ -1,0 +1,68 @@
+guiTypes = {
+	containerWindowType = {#开启按钮窗口
+		name = "CHI_CPC_poltical_GUI_open_button_main"
+		size = { width = 50 height = 50 }
+		position = { x = 120 y = 387 }
+		buttonType = {
+			name = "CPC_poltical_GUI_open_button" #开启按钮
+			position = { x = 0 y = 0 }
+			quadTextureSprite ="GFX_chinese_political_system_open_button_icon"
+			clicksound = click_default
+			pdx_tooltip = "CHI_CPC_poltical_GUI_open_TT"
+		}
+	}
+	containerWindowType = {#主界面
+		name = "CHI_CPC_poltical_GUI_main"
+		moveable = yes
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		size = { width = 900 height = 460 }
+		position = { x = 700 y = 300 }
+		show_position = { x = 700 y = 300 }
+		background = {
+			name = "CHI_CPC_poltical_GUI_background_main" 
+			quadTextureSprite = "GFX_CHI_CPC_poltical_GUI_background_main_icon"
+		}
+		buttonType = {
+			name = "CHI_poltical_GUI_button1" #上页按钮1：中央政治局界面
+			position = { x = 30 y = 20 }
+			quadTextureSprite ="GFX_poltical_GUI_button1_icon"
+			clicksound = click_default
+			pdx_tooltip = "CHI_poltical_GUI_button1_TT"
+		}
+		instantTextboxType = {
+			name = "CHI_poltical_GUI_button1_name" #上页按钮1页标：中央政治局
+			position = { x = 34 y = 37 }
+			font = "hoi_16mbs"
+			text = "CHI_poltical_GUI_button1_name_TT"
+			maxWidth = 100 maxHeight = 50 
+			borderSize = {x = 0 y = 0}
+			format = center
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "CHI_poltical_GUI_button2" #上页按钮2：全国人民代表大会界面
+			position = { x = 665 y = 20 }
+			quadTextureSprite ="GFX_poltical_GUI_button1_icon"
+			clicksound = click_default
+			pdx_tooltip = "CHI_poltical_GUI_button2_TT"
+		}
+		instantTextboxType = {
+			name = "CHI_poltical_GUI_button2_name" #上页按钮2页标：全国人民代表大会界面
+			position = { x = 669 y = 37 }
+			font = "hoi_16mbs"
+			text = "CHI_poltical_GUI_button2_name_TT"
+			maxWidth = 100 maxHeight = 50 
+			borderSize = {x = 0 y = 0}
+			format = center
+			alwaystransparent = yes
+		}
+	}
+	containerWindowType = {#上页按钮框
+		name = "CHI_CPC_poltical_GUI_front_button"
+		size = { width = 900 height = 50 }
+		position = { x = 700 y = 300 }
+		
+		
+	}
+}

@@ -9,3 +9,26 @@ CHI_difference_ROAD_trigger = {
 	has_country_leader = { name = "江泽民" }
 }
 
+#降低军队经商残余影响
+CHI_MER_decresee_trigger = {
+	OR = {
+		has_idea = Militarical_economy_remain1 has_idea = Militarical_economy_remain2 
+		has_idea = Militarical_economy_remain3 has_idea = Militarical_economy_remain4
+		has_idea = Militarical_economy_remain5
+	}
+}
+
+#内战结束
+CHI_civil_war_end_trigger = {
+	OR = {
+		AND = { 
+			has_global_flag = DSC_is_CHI #川渝胜利 
+			tag = DSC
+		}
+		AND = { 
+			NOT = { has_global_flag = DSC_is_CHI } #删除老左
+			tag = CHI
+		}
+	}
+}
+

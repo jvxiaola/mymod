@@ -1,0 +1,101 @@
+
+CW_youji = {
+	enable = {always = yes}
+	icon = GFX_idea_CW_ruin
+
+
+	  
+}
+
+CW_youji2 = {
+	enable = {always = yes}
+	icon = GFX_idea_CW_ruin
+	  
+}
+
+
+
+
+CW_youji3 = {  
+	enable = {always = yes}
+	icon = GFX_idea_CW_ruin
+		  
+	}
+	
+
+   
+	
+CHI_Organize_state_enterprises_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_economy_housing
+	political_power_factor = COSEM_pp #政治点:开始为0
+	global_building_slots_factor = COSEM_gbs #建筑槽:开始为-0.15
+	local_resources_factor = COSEM_lrs #资源:开始为-0.05
+	production_speed_buildings_factor = COSEM_sb #建造速度:开始为-0.05
+	production_speed_infrastructure_factor = COSEM_otsb #其它建造速度:开始为0
+	production_speed_offices_factor = COSEM_otsb
+	production_speed_industrial_complex_factor = COSEM_otsb
+	production_speed_arms_factory_factor = COSEM_otsb
+	production_speed_supply_node_factor = COSEM_otsb
+	production_speed_rail_way_factor = COSEM_otsb
+	productivity_growth_modifier = COSEM_gm #生产力:开始为-0.05
+	energy_gain_multiplier = COSEM_egm #能源获取:开始为0
+	industrial_capacity_factory = COSEM_icf #军事工业产出:开始为0
+	civ_facs_worker_requirement_modifier = COSEM_iwr #所有工业建筑劳动力需求:开始为0
+	mil_facs_worker_requirement_modifier = COSEM_iwr
+	total_workforce_modifier = COSEM_twm #生产规模加成:开始为0
+}
+
+State_Collaboration = {
+	enable = { always = yes }
+	icon = GFX_idea_economy_housing
+	state_production_speed_industrial_complex_factor = sc_spsic #地区民用工厂建筑速度
+	state_production_speed_offices_factor = sc_spsic #地区办公园区建筑速度
+	state_production_synthetic_refinery_factor = sc_spsrf #地区可再生能源建造速度
+	local_building_slots_factor = sc_lbs #地区建筑槽
+	state_production_speed_buildings_factor = sc_spsbf #地区建造速度
+	state_productivity_growth_modifier = sc_spg #地区生产力
+	local_supplies = sc_ls #地区补给
+	state_renewable_energy_generation_modifier = sc_regm #省份可再生能源系数
+}
+
+
+
+
+CHI_Collaboration_internet = {
+	enable = { always = yes }	
+	icon = GFX_idea_recovering_from_the_civil_war
+	tax_gain_multiplier_modifier = CI_tg
+	production_speed_offices_factor = CI_pso #办公园区建设速度
+	Chinese_people_support_to_china_government_modifier = CI_cpstc
+	hidden_modifier = {
+		civ_facs_worker_requirement_modifier = CI_cmowr
+		mil_facs_worker_requirement_modifier = CI_cmowr
+		offices_worker_requirement_modifier = CI_cmowr
+	}
+	custom_modifier_tooltip = CHI_Collaboration_internet_end_other_modifier_tt
+}
+
+CHI_New_people_commune = {
+	enable = { always = yes }	
+	icon = GFX_idea_agricultural_reforms
+	local_resources_factor = Npc_lrf
+	local_supplies = Npc_ls 
+	local_org_regain = Npc_lor
+	state_production_speed_infrastructure_factor = Npc_ps
+	state_production_speed_supply_node_factor = Npc_ps
+	state_renewable_capacity_factor_modifier = Npc_rfpg
+	state_productivity_growth_modifier = Npc_rfpg
+}
+
+CHI_restart_people_commune = {
+	enable = { always = yes }	
+	icon = GFX_idea_agricultural_reforms
+	communism_drift = rpc_cd #新兴变化
+	political_power_cost = rpc_ppc
+	production_speed_infrastructure_factor = rpc_psof 
+	production_speed_agriculture_district_factor = rpc_psof
+	agriculture_tax_modifier = rpc_atm
+	agriculture_district_worker_requirement_modifier = rpc_dw_p
+	agricolture_productivity_modifier = rpc_dw_p
+}

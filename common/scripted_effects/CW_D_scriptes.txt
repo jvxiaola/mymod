@@ -1,0 +1,488 @@
+XIN_anti_terrist_time_effect = {
+	custom_effect_tooltip = CHI_Organize_antiterrorism_operations_effect_tt
+	if = {
+		limit = { XIN = { check_variable = { ps_4 > -0.06 } } }
+		add_days_mission_timeout  = {
+			mission = CHI_XIN_Terrorist_infiltration
+			days = 5
+		}
+	}
+	else_if = {
+		limit = { XIN = { check_variable = { ps_4 > 0 } } }
+		add_days_mission_timeout  = {
+			mission = CHI_XIN_Terrorist_infiltration
+			days = 10
+		}
+	}
+}
+
+extrameal_islam_leavel_up = {
+	custom_effect_tooltip = extrameal_islam_leavel_up_tt
+	hidden_effect = {
+		if = {
+			limit = { has_dynamic_modifier = { modifier = extrameal_islam_attack1 } }
+			remove_dynamic_modifier = { modifier = extrameal_islam_attack1 }
+			add_dynamic_modifier = { modifier = extrameal_islam_attack2 }
+		}
+		else_if = {
+			limit = { has_dynamic_modifier = { modifier = extrameal_islam_attack2 } }
+			remove_dynamic_modifier = { modifier = extrameal_islam_attack2 }
+			add_dynamic_modifier = { modifier = extrameal_islam_attack3 }
+		}
+		else_if = {
+			limit = { has_dynamic_modifier = { modifier = extrameal_islam_attack3 } }
+			remove_dynamic_modifier = { modifier = extrameal_islam_attack3 }
+			add_dynamic_modifier = { modifier = extrameal_islam_attack4 }
+		}
+		else_if = {
+			limit = { has_dynamic_modifier = { modifier = extrameal_islam_attack4 } }
+			remove_dynamic_modifier = { modifier = extrameal_islam_attack4 }
+			add_dynamic_modifier = { modifier = extrameal_islam_attack5 }
+		}
+	}
+}
+
+extrameal_islam_leavel_down = {
+	custom_effect_tooltip = extrameal_islam_leavel_down_tt
+	hidden_effect = {
+		if = {
+			limit = { has_dynamic_modifier = { modifier = extrameal_islam_attack5 } }
+			remove_dynamic_modifier = { modifier = extrameal_islam_attack5 }
+			add_dynamic_modifier = { modifier = extrameal_islam_attack4 }
+		}
+		else_if = {
+			limit = { has_dynamic_modifier = { modifier = extrameal_islam_attack4 } }
+			remove_dynamic_modifier = { modifier = extrameal_islam_attack4 }
+			add_dynamic_modifier = { modifier = extrameal_islam_attack3 }
+		}
+		else_if = {
+			limit = { has_dynamic_modifier = { modifier = extrameal_islam_attack3 } }
+			remove_dynamic_modifier = { modifier = extrameal_islam_attack3 }
+			add_dynamic_modifier = { modifier = extrameal_islam_attack2 }
+		}
+		else_if = {
+			limit = { has_dynamic_modifier = { modifier = extrameal_islam_attack2 } }
+			remove_dynamic_modifier = { modifier = extrameal_islam_attack2 }
+			add_dynamic_modifier = { modifier = extrameal_islam_attack1 }
+		}
+		else_if = {
+			limit = { has_dynamic_modifier = { modifier = extrameal_islam_attack1 } }
+			remove_dynamic_modifier = { modifier = extrameal_islam_attack1 }
+		}
+	}
+}
+
+transfer_cf_to_mf = {
+	if = {
+		limit = {
+			any_owned_state = {
+				NOT = { will_be_attacked_by_islam = yes }
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+				}
+			}
+			any_owned_state = {
+				will_be_attacked_by_islam = yes
+				industrial_complex > 0
+			}
+		}
+		random_owned_state = {
+			limit = {
+				NOT = { will_be_attacked_by_islam = yes }
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+				}
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = { 
+				will_be_attacked_by_islam = yes
+				industrial_complex > 0
+			}
+			remove_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+	}
+}
+
+
+
+max_XIN_millatry = {
+	clamp_variable = { var = ps_3 min = -0.05 max = 0.05 }
+	clamp_variable = { var = ps_4 min = -0.10 max = 0.10 }
+	clamp_variable = { var = ps_5 min = 0 max = 0.15 }
+}
+
+XIN_military_qualities_effect = {
+	custom_effect_tooltip = XIN_military_qualities_effect_tt
+	set_temp_variable = { mq_c = 1 } multiply_temp_variable = { mq_c = 0.01 } add_to_variable = { ps_3 = mq_c }
+	set_temp_variable = { mq_c = 1 } multiply_temp_variable = { mq_c = 0.02 } add_to_variable = { ps_4 = mq_c }
+	set_temp_variable = { mq_c = 1 } multiply_temp_variable = { mq_c = 0.02 } add_to_variable = { ps_5 = mq_c }
+	max_XIN_millatry = yes
+}
+
+XIN_Expand_conscription = {
+	custom_effect_tooltip = XIN_Expand_conscription_effect_tt
+	set_temp_variable = { mq_c = -0.75 } multiply_temp_variable = { mq_c = 0.01 } add_to_variable = { ps_3 = mq_c }
+	set_temp_variable = { mq_c = -0.75 } multiply_temp_variable = { mq_c = 0.02 } add_to_variable = { ps_4 = mq_c }
+	set_temp_variable = { mq_c = -0.75 } multiply_temp_variable = { mq_c = 0.02 } add_to_variable = { ps_5 = mq_c }
+	max_XIN_millatry = yes
+}
+
+XIN_Temporary_training = {
+	custom_effect_tooltip = XIN_Temporary_training_effect_tt
+	set_temp_variable = { mq_c = 0.5 } multiply_temp_variable = { mq_c = 0.01 } add_to_variable = { ps_3 = mq_c }
+	set_temp_variable = { mq_c = 0.5 } multiply_temp_variable = { mq_c = 0.02 } add_to_variable = { ps_4 = mq_c }
+	set_temp_variable = { mq_c = 0.5 } multiply_temp_variable = { mq_c = 0.02 } add_to_variable = { ps_5 = mq_c }
+	max_XIN_millatry = yes
+}
+
+max_XIN_political_modifier = {
+	clamp_variable = { var = ps_1 min = 0 max = 0.20 }
+	clamp_variable = { var = ps_2 min = 0 max = 5 }
+}
+XIN_political_assign_effect = {
+	custom_effect_tooltip = XIN_political_assign_effect_tt
+	set_temp_variable = { mq_c = 1 } multiply_temp_variable = { mq_c = 0.02 } add_to_variable = { ps_1 = mq_c }
+	set_temp_variable = { mq_c = 1 } multiply_temp_variable = { mq_c = 0.5 } add_to_variable = { ps_2 = mq_c }
+	max_XIN_political_modifier = yes
+}
+
+max_XIN_military_equipment = {
+	clamp_variable = { var = ps_6 min = -0.10 max = 0.15 }
+	clamp_variable = { var = ps_7 min = -0.05 max = 0.20 }
+	clamp_variable = { var = ps_8 min = -0.05 max = 0.20 }
+	clamp_variable = { var = ps_9 min = -0.05 max = 0.20 }
+	clamp_variable = { var = ps_10 min = 0 max = 0.25 }
+	clamp_variable = { var = ps_11 min = 0 max = 0.25 }
+	clamp_variable = { var = ps_12 min = -0.15 max = 0 }
+}
+XIN_military_equipment_effect = {
+	custom_effect_tooltip = XIN_military_equipment_effect_tt
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_6 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_7 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_8 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_9 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_10 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_11 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = -0.03 } add_to_variable = { ps_12 = mq_c }
+	max_XIN_military_equipment = yes
+}
+
+XIN_Militarize_productical_corps = {
+	custom_effect_tooltip = XIN_Militarize_productical_corps_effect_tt
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.01 } add_to_variable = { ps_3 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.02 } add_to_variable = { ps_4 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.02 } add_to_variable = { ps_5 = mq_c }
+	max_XIN_millatry = yes
+
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_6 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_7 = mq_c }
+	max_XIN_military_equipment = yes
+}
+Enhance_military_production = {
+	custom_effect_tooltip = XIN_Enhance_military_production_effect_tt
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_8 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_9 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_10 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_11 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = -0.03 } add_to_variable = { ps_12 = mq_c }
+	max_XIN_military_equipment = yes
+}
+Accelerate_construct_m_i = {
+	custom_effect_tooltip = XIN_Accelerate_construct_m_i_effect_tt
+	set_temp_variable = { mq_c = 0.50 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_6 = mq_c }
+	set_temp_variable = { mq_c = 0.50 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_7 = mq_c }
+	max_XIN_military_equipment = yes
+	random_owned_state = {
+		limit = {
+			NOT = { will_be_attacked_by_islam = yes }
+			free_building_slots = {
+				building = arms_factory
+				size > 0
+			}
+		}
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes
+		}
+	}
+	random_owned_state = {
+		limit = {
+			NOT = { will_be_attacked_by_islam = yes }
+			free_building_slots = {
+				building = arms_factory
+				size > 0
+			}
+		}
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes
+		}
+	}
+}
+
+
+XIN_martial_to_production_effect = {
+	custom_effect_tooltip = XIN_martial_to_production_effect_tt
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_8 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_9 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_10 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = 0.05 } add_to_variable = { ps_11 = mq_c }
+	set_temp_variable = { mq_c = 0.25 } multiply_temp_variable = { mq_c = -0.03 } add_to_variable = { ps_12 = mq_c }
+	max_XIN_military_equipment = yes
+}
+
+XIN_Nsem_10_5_num = {
+	clamp_variable = {
+		var = Nationalist_sentiment_military
+		min = 0
+		max = 10
+	}
+	set_temp_variable = { Nsm_5_10 = Nationalist_sentiment_military } 
+	add_to_temp_variable = { temp_Nsm_5_10 = -5 }
+}
+XIN_Nationalist_sentiment_military_10_5_effect = {
+	XIN_Nsem_10_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = 0.10 } set_variable = { ps_13 = temp_Nsm_5_10 }
+	XIN_Nsem_10_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = 0.10 } set_variable = { ps_14 = temp_Nsm_5_10 }
+	XIN_Nsem_10_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = -0.06 } set_variable = { ps_15 = temp_Nsm_5_10 }
+	XIN_Nsem_10_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = -0.03 } set_variable = { ps_16 = temp_Nsm_5_10 }
+	XIN_Nsem_10_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = 0.02 } set_variable = { ps_17 = temp_Nsm_5_10 }
+	set_variable = { ps_3_and_ps_16 = ps_3 } add_to_variable = { ps_3_and_ps_16 = ps_16 } 
+	set_variable = { ps_4_and_ps_17 = ps_4 } add_to_variable = { ps_4_and_ps_17 = ps_17 } 
+}
+
+XIN_Nsem_0_5_num = {
+	clamp_variable = {
+		var = Nationalist_sentiment_military
+		min = 0
+		max = 10
+	}
+	set_temp_variable = { Nsm_5_10 = Nationalist_sentiment_military } 
+	add_to_temp_variable = { temp_Nsm_5_10 = -5 }
+	multiply_temp_variable = { temp_Nsm_5_10 = -1 }
+}
+
+XIN_Nationalist_sentiment_military_0_5_effect = {
+	XIN_Nsem_0_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = -0.05 } set_variable = { ps_13 = temp_Nsm_5_10 }
+	XIN_Nsem_0_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = 0.02 } set_variable = { ps_14 = temp_Nsm_5_10 }
+	XIN_Nsem_0_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = 0.03 } set_variable = { ps_15 = temp_Nsm_5_10 }
+	XIN_Nsem_0_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = 0.02 } set_variable = { ps_16 = temp_Nsm_5_10 }
+	XIN_Nsem_0_5_num = yes multiply_temp_variable = { temp_Nsm_5_10 = 0.01 } set_variable = { ps_17 = temp_Nsm_5_10 }
+	set_variable = { ps_3_and_ps_16 = ps_3 } add_to_variable = { ps_3_and_ps_16 = ps_16 } 
+	set_variable = { ps_4_and_ps_17 = ps_4 } add_to_variable = { ps_4_and_ps_17 = ps_17 } 
+}
+
+XIN_Nationalist_sentiment_military_effect = {
+	if = { 
+		limit = {
+			check_variable = { Nationalist_sentiment_military < 5 }
+		}
+		XIN_Nationalist_sentiment_military_0_5_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = { Nationalist_sentiment_military > 5 }
+		}
+		XIN_Nationalist_sentiment_military_10_5_effect = yes
+	}
+	
+}
+
+civl_start_xin_or_effect = {
+	hidden_effect = {
+		XIN = {
+			every_owned_state = {
+				if = {
+					limit = { OR = { has_dynamic_modifier = { modifier = extrameal_islam_attack3 } has_dynamic_modifier = { modifier = extrameal_islam_attack4 } has_dynamic_modifier = { modifier = extrameal_islam_attack5 } } }
+					set_demilitarized_zone = yes
+					set_state_flag = XIN_LOSE_states
+				}
+				else = {
+					set_demilitarized_zone = no
+				}
+			}
+		}
+	}
+}
+
+Dispatch_MDE_recruitment = {
+	if = {
+		limit = { has_template = "解放军师级征招机动单位" }
+		random_owned_state = {
+			create_unit = {
+				division = "name = \"解放军师级征招机动单位\" division_template = \"解放军师级征招机动单位\" start_experience_factor = 0.8"
+				owner = XIN
+				count = 2
+			}
+		}
+	}
+	else = {
+		division_template = {
+			name = "解放军师级征招机动单位"
+			division_names_group = CHI_XIN_recruitment_01
+			is_locked = yes
+			regiments = {
+				Mot_Inf_Bat = { x = 0 y = 0 } Mot_Inf_Bat = { x = 0 y = 1 }
+				Mot_Inf_Bat = { x = 0 y = 2 } Mot_Inf_Bat = { x = 0 y = 3 }
+				Mot_Inf_Bat = { x = 1 y = 0 } Mot_Inf_Bat = { x = 1 y = 1 }
+			}
+			support = {
+				Mech_Recce_Comp = { x = 0 y = 0 }
+			}
+		}
+		random_owned_state = {
+			create_unit = {
+				division = "name = \"解放军师级征招机动单位\" division_template = \"解放军师级征招机动单位\" start_experience_factor = 0.8"
+				owner = XIN
+				count = 2
+			}
+		}
+	}
+}
+
+
+Dispatch_MU_recruitment = {
+	if = {
+		limit = { has_template = "解放军师级征招机械化单位" }
+		random_owned_state = {
+			create_unit = {
+				division = "name = \"解放军师级征招机械化单位\" division_template = \"解放军师级征招机械化单位\" start_experience_factor = 0.8"
+				owner = XIN
+				count = 2
+			}
+		}
+	}
+	else = {
+		division_template = {
+			name = "解放军师级征招机械单位"
+			division_names_group = CHI_XIN_recruitment_02
+			is_locked = yes
+			regiments = {
+				Mech_Inf_Bat = { x = 0 y = 0 } Mech_Inf_Bat = { x = 0 y = 1 }
+				Mech_Inf_Bat = { x = 0 y = 2 } Mech_Inf_Bat = { x = 0 y = 3 }
+			}
+			support = {
+				Mech_Recce_Comp = { x = 0 y = 0 }
+			}
+		}
+		random_owned_state = {
+			create_unit = {
+				division = "name = \"解放军师级征招机械化单位\" division_template = \"解放军师级征招机械化单位\" start_experience_factor = 0.8"
+				owner = XIN
+				count = 2
+			}
+		}
+	}
+}
+
+Dispatch_ID_recruitment = {
+if = {
+	limit = { has_template = "解放军师级征招步战单位" }
+	random_owned_state = {
+		create_unit = {
+			division = "name = \"解放军师级征招步战单位\" division_template = \"解放军师级征招步战单位\" start_experience_factor = 0.8"
+			owner = XIN
+			count = 4
+		}
+	}
+}
+else = {
+	division_template = {
+		name = "解放军师级征招步战单位"
+		division_names_group = CHI_XIN_recruitment_03
+		is_locked = yes
+		support = {
+			L_Engi_Comp = { x = 0 y = 0 } Arty_Battery = { x = 0 y = 1 }
+		}
+		regiments = {
+			L_Inf_Bat = { x = 0 y = 0 } L_Inf_Bat = { x = 0 y = 1 }
+			L_Inf_Bat = { x = 0 y = 2 } L_Inf_Bat = { x = 0 y = 3 }
+			L_Inf_Bat = { x = 1 y = 0 } L_Inf_Bat = { x = 1 y = 1 }
+		}
+		priority = 0
+	}
+	random_owned_state = {
+		create_unit = {
+			division = "name = \"解放军师级征招步战单位\" division_template = \"解放军师级征招步战单位\" start_experience_factor = 0.8"
+			owner = XIN
+			count = 4
+		}
+	}
+}
+}
+
+Set_ETK = {
+	hidden_effect = {
+		XIN = { 
+			every_owned_state = { 
+				limit = { has_state_flag = XIN_LOSE_states }
+				clr_state_flag = XIN_LOSE_states
+				set_demilitarized_zone = no
+				transfer_state_to = ETK
+			} 
+		}
+		ETK = {
+			inherit_technology = XIN
+			division_template = {
+				name = "东突厥斯坦圣战军"
+				division_names_group = ETK_exis_01
+				is_locked = yes
+				regiments = {
+					L_Inf_Bat = { x = 0 y = 0 } L_Inf_Bat = { x = 0 y = 1 }
+					L_Inf_Bat = { x = 0 y = 2 } L_Inf_Bat = { x = 0 y = 3 }
+				}
+			}
+		}
+		every_state = {
+			if = {
+				limit = { 
+					OR = { 
+						has_dynamic_modifier = { modifier = extrameal_islam_attack1 } 
+						has_dynamic_modifier = { modifier = extrameal_islam_attack2 }
+					} 
+				}
+				create_unit = {
+					division = "name = \"东突厥斯坦圣战军\" division_template = \"东突厥斯坦圣战军\" start_experience_factor = 0.8"
+					owner = ETK
+				}
+			}
+			else_if = {
+				limit = { 
+										OR = { 
+						has_dynamic_modifier = { modifier = extrameal_islam_attack3 } 
+						has_dynamic_modifier = { modifier = extrameal_islam_attack4 }
+					} 
+				}
+				create_unit = {
+					division = "name = \"东突厥斯坦圣战军\" division_template = \"东突厥斯坦圣战军\" start_experience_factor = 0.8"
+					count = 2
+					owner = ETK
+				}
+			}
+			else_if = {
+				limit = { 
+					has_dynamic_modifier = { modifier = extrameal_islam_attack5 } 
+				}
+				create_unit = {
+					division = "name = \"东突厥斯坦圣战军\" division_template = \"东突厥斯坦圣战军\" start_experience_factor = 0.8"
+					count = 3
+					owner = ETK
+				}
+			}
+
+		}
+	}
+
+}

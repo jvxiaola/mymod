@@ -1,0 +1,193 @@
+China_edd_category = {
+	Acquisition_Cooperative_Equity = {
+		icon = GFX_decision_political_discourse
+		visible = {
+			has_idea = CHI_idea_Public_ownership_economy
+		}
+		custom_cost_trigger = {
+			check_variable = { treasury > 5.0 }
+		}
+		custom_cost_text = cost_5_0
+		complete_effect = {
+			hidden_effect = { set_temp_variable = { treasury_change = -5 } modify_treasury_effect = yes }
+		}
+		available = {
+			always = yes
+		}
+		days_remove = 60
+		days_re_enable = 30
+		modifier = {
+            industrial_capacity_factory = 0.05
+			production_factory_efficiency_gain_factor = 0.05
+        }
+		remove_effect = {
+			add_political_power = 100
+			add_power_balance_value = {
+				id = economic_developing_direction_balance
+				value = -0.05
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	Sell_cooperative_equity = {
+		icon = GFX_decision_pmr_cobasna_button
+		visible = {
+			has_idea = CHI_idea_Public_ownership_economy
+		}
+		available = {
+			always = yes
+		}
+		cost = 50
+		days_remove = 30
+		days_re_enable = 20
+		modifier = {
+			consumer_goods_expected_value = -0.05
+			production_factory_max_efficiency_factor = 0.10
+        }
+		remove_effect = {
+			set_temp_variable = { treasury_change = 2 } modify_treasury_effect = yes
+			add_political_power = 100
+			add_power_balance_value = {
+				id = economic_developing_direction_balance
+				value = 0.05
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Combating_Smuggling = {
+		icon = GFX_decision_generic_brainwash
+		visible = {
+			has_idea = CHI_idea_Public_ownership_economy
+			has_country_flag = CHI_allotment_end
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = CHI_allotment_trigger_tt
+				always = yes
+			}
+		}
+		cost = 50
+		days_remove = 90
+		days_re_enable = 30
+		modifier = {
+			consumer_goods_expected_value = -0.10
+			political_power_cost = 0.10
+			tax_gain_multiplier_modifier = 0.03
+			power_balance_weekly = -0.015
+        }
+		remove_effect = {
+			set_temp_variable = { treasury_change = 0.1 } modify_treasury_effect = yes
+			add_power_balance_value = {
+				id = economic_developing_direction_balance
+				value = -0.075
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Organize_exports = {
+		icon = GFX_decision_generic_decision
+		visible = {
+			has_idea = CHI_idea_Public_ownership_economy
+			has_country_flag = CHI_allotment_end
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = CHI_allotment_trigger_tt
+				always = yes
+			}
+		}
+		cost = 50
+		days_remove = 90
+		days_re_enable = 30
+		modifier = {
+			consumer_goods_expected_value = -0.10
+			foreign_influence_defense_modifier = -0.15
+			power_balance_weekly = 0.015
+			democratic_drift = 0.03
+			fascism_drift = 0.01
+			neutrality_drift = 0.02
+			nationalist_drift = 0.02
+        }
+		remove_effect = {
+			set_temp_variable = { treasury_change = 1.5 } modify_treasury_effect = yes
+			add_power_balance_value = {
+				id = economic_developing_direction_balance
+				value = 0.075
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Increase_distribute_materials_to_workers = {
+		icon = GFX_decision_eng_trade_unions_support
+		visible = {
+			has_idea = CHI_idea_Public_ownership_economy
+			has_country_flag = CHI_allotment_end
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = CHI_allotment_trigger_tt
+				always = yes
+			}
+		}
+		custom_cost_trigger = {
+			check_variable = { treasury > 10.0 }
+		}
+		custom_cost_text = cost_10_0
+		complete_effect = {
+			hidden_effect = { set_temp_variable = { treasury_change = -10 } modify_treasury_effect = yes }
+		}
+		days_remove = 90
+		days_re_enable = 30
+		modifier = {
+			consumer_goods_expected_value = 0.10
+			communism_drift = 0.15
+			chuanyu_people_support_to_china_government_modifier = 0.05
+        }
+		remove_effect = {
+			set_temp_variable = { treasury_change = 1.5 } modify_treasury_effect = yes
+			custom_effect_tooltip = IDMTW_effect_TT
+			hidden_effect = {
+				if = {
+					limit = {
+						is_power_balance_in_range = {
+							id = economic_developing_direction_balance
+							range > Local_planned_economy
+						}
+					}
+					add_power_balance_value = {
+						id = economic_developing_direction_balance
+						value = -0.15
+					}
+				}
+				else_if = {
+					limit = {
+						is_power_balance_in_range = {
+							id = economic_developing_direction_balance
+							range < Local_planned_economy
+						}
+					}
+					add_power_balance_value = {
+						id = economic_developing_direction_balance
+						value = 0.15
+					}
+				}
+			}
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

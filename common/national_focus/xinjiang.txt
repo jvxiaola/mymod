@@ -1,0 +1,15 @@
+
+focus_tree = {
+	id = XIN_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = XIN
+		}
+	}
+	shared_focus = XIN_troubled_times
+	default = no
+
+	}

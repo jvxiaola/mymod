@@ -1316,5 +1316,645 @@ ideas = {
 			army_org_factor = -0.05
 		}
 	}
+#经济损伤
+	CHI_capital_withdrawal1 = {
+		picture = poor_economy
+		allowed = { 
+			OR = { tag = DSC tag = HKG original_tag = CHI } 
+		}
+		cancel = {
+			OR = { 
+				has_idea = CHI_capital_withdrawal2 has_idea = CHI_capital_withdrawal3 has_idea = CHI_capital_withdrawal4 
+				CHI_civil_war_end_trigger = yes
+			}
+		}
+		allowed_civil_war = { always = yes }
+		modifier = {
+			consumer_goods_factor = 0.05
+			production_speed_buildings_factor = -0.03
+			productivity_growth_modifier = -0.01
+			energy_gain_multiplier = -0.01
+			corporate_tax_income_multiplier_modifier = -0.01
+		}
+	}
+	CHI_capital_withdrawal2 = {
+		picture = poor_economy
+		allowed = { 
+			OR = { tag = DSC tag = HKG original_tag = CHI } 
+		}
+		cancel = {
+			OR = { 
+				has_idea = CHI_capital_withdrawal3 has_idea = CHI_capital_withdrawal4 
+				CHI_civil_war_end_trigger = yes
+			}
+		}
+		allowed_civil_war = { always = yes }
+		modifier = {
+			consumer_goods_factor = 0.10
+			production_speed_buildings_factor = -0.05
+			productivity_growth_modifier = -0.05
+			energy_gain_multiplier = -0.05
+			corporate_tax_income_multiplier_modifier = -0.05
+		}
+	}
+	CHI_capital_withdrawal3 = {
+		picture = arm_une_idea
+		allowed = { 
+			OR = { tag = DSC tag = HKG original_tag = CHI } 
+		}
+		cancel = {
+			OR = { 
+				has_idea = CHI_capital_withdrawal4
+				CHI_civil_war_end_trigger = yes
+			}
+		}
+		allowed_civil_war = { always = yes }
+		modifier = {
+			consumer_goods_factor = 0.20
+			production_speed_buildings_factor = -0.15
+			productivity_growth_modifier = -0.10
+			energy_gain_multiplier = -0.10
+			corporate_tax_income_multiplier_modifier = -0.15
+			industry_free_repair_factor = -0.15
+			interest_rate_multiplier_modifier = 0.25
+		}
+	}
+	CHI_capital_withdrawal4 = {
+		picture = arm_une_idea #icon要加“GFX_idea”前缀,picture不能加。
+		cancel = {
+			CHI_civil_war_end_trigger = yes
+		}
+		allowed_civil_war = { always = yes }
+		modifier = {
+			consumer_goods_factor = 0.40
+			production_speed_buildings_factor = -0.25
+			productivity_growth_modifier = -0.15
+			energy_gain_multiplier = -0.15
+			corporate_tax_income_multiplier_modifier = -0.35
+			army_org_factor = -0.05
+			industry_free_repair_factor = -0.75
+			interest_rate_multiplier_modifier = 0.75
+		}
+	}
+#经济恢复
+	CHI_economic_recovery1  = {
+		picture = economic_increase #icon要加“GFX_idea”前缀,picture不能加。
+		cancel = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+			}
+		modifier = {
+			consumer_goods_factor = 0.35
+			production_speed_buildings_factor = -0.20
+			productivity_growth_modifier = -0.10
+			energy_gain_multiplier = -0.05
+			corporate_tax_income_multiplier_modifier = -0.20
+			interest_rate_multiplier_modifier = 0.25
+		}
+	}
+
+	CHI_economic_recovery2  = {
+		picture = economic_increase #icon要加“GFX_idea”前缀,picture不能加。
+		cancel = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+			}
+		modifier = {
+			consumer_goods_factor = 0.20
+			production_speed_buildings_factor = -0.10
+			productivity_growth_modifier = -0.05
+			corporate_tax_income_multiplier_modifier = -0.20
+		}
+	}
+
+	CHI_economic_recovery3  = {
+		picture = economic_increase #icon要加“GFX_idea”前缀,picture不能加。
+		cancel = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+			}
+		modifier = {
+			consumer_goods_factor = 0.25
+			corporate_tax_income_multiplier_modifier = -0.05
+			interest_rate_multiplier_modifier = -0.02
+		}
+	}
+
+	CHI_economic_recovery_end  = {
+		picture = pmr_china_economic_idea #icon要加“GFX_idea”前缀,picture不能加。
+		cancel = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+			}
+		modifier = {
+			consumer_goods_factor = 0.05
+			production_speed_buildings_factor = 0.05
+			productivity_growth_modifier = 0.05
+			energy_gain_multiplier = 0.05
+			interest_rate_multiplier_modifier = -0.05
+		}
+	}
+
+#工业损伤
+	Industrial_damage1 = {
+		picture = ineffecient_industry #icon要加“GFX_idea”前缀,picture不能加。
+		cancel = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+			}
+		modifier = {
+			production_speed_buildings_factor = -0.15
+			productivity_growth_modifier = -0.10
+			energy_gain_multiplier = -0.05
+			global_building_slots_factor = -0.05
+			local_resources_factor = -0.05
+			industrial_capacity_factory = -0.10
+			corporate_tax_income_multiplier_modifier = -0.05
+		}
+	}
+
+	Industrial_damage2 = {
+		picture = ineffecient_industry #icon要加“GFX_idea”前缀,picture不能加。
+		cancel = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+			}
+			modifier = {
+				production_speed_buildings_factor = -0.25
+				productivity_growth_modifier = -0.15
+				energy_gain_multiplier = -0.10
+				global_building_slots_factor = -0.15
+				local_resources_factor = -0.10
+				industrial_capacity_factory = -0.15
+				corporate_tax_income_multiplier_modifier = -0.15
+			}
+	}
+
+	Industrial_damage3 = {
+		picture = dpr_ruins #icon要加“GFX_idea”前缀,picture不能加。
+		cancel = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+			}
+			modifier = {
+				production_speed_buildings_factor = -0.45
+				productivity_growth_modifier = -0.35
+				energy_gain_multiplier = -0.25
+				global_building_slots_factor = -0.20
+				local_resources_factor = -0.15
+				industrial_capacity_factory = -0.20
+				corporate_tax_income_multiplier_modifier = -0.20
+			}
+	}
+
+	Industrial_damage4 = {
+		picture = dpr_ruins #icon要加“GFX_idea”前缀,picture不能加。
+		cancel = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+			}
+			modifier = {
+				production_speed_buildings_factor = -0.80
+				productivity_growth_modifier = -0.50
+				energy_gain_multiplier = -0.50
+				global_building_slots_factor = -0.50
+				local_resources_factor = -0.35
+				industrial_capacity_factory = -0.35
+				corporate_tax_income_multiplier_modifier = -0.45
+			}
+	}
+
+#工业重建
+Industrial_rebuild1 = {
+	picture = blr_good_agroindustry #icon要加“GFX_idea”前缀,picture不能加。
+	cancel = {
+		always = no
+	}
+	allowed_civil_war = {
+		always = yes
+		}
+		modifier = {
+			production_speed_buildings_factor = -0.40
+			productivity_growth_modifier = -0.15
+			energy_gain_multiplier = -0.10
+			global_building_slots_factor = -0.15
+			local_resources_factor = -0.35
+			industrial_capacity_factory = -0.35
+			corporate_tax_income_multiplier_modifier = -0.25
+		}
 }
+
+Industrial_rebuild2 = {
+	picture = blr_good_agroindustry #icon要加“GFX_idea”前缀,picture不能加。
+	cancel = {
+		always = no
+	}
+	allowed_civil_war = {
+		always = yes
+		}
+		modifier = {
+			production_speed_buildings_factor = -0.15
+			local_resources_factor = -0.15
+			industrial_capacity_factory = -0.10
+			corporate_tax_income_multiplier_modifier = -0.05
+		}
+}
+
+Industrial_rebuild3 = {
+	picture = blr_good_agroindustry #icon要加“GFX_idea”前缀,picture不能加。
+	cancel = {
+		always = no
+	}
+	allowed_civil_war = {
+		always = yes
+		}
+		modifier = {
+			local_resources_factor = -0.05
+			corporate_tax_income_multiplier_modifier = 0.05
+		}
+}
+
+Industrial_rebuild_end = {
+	picture = GENERIC_public_works #icon要加“GFX_idea”前缀,picture不能加。
+	cancel = {
+		always = no
+	}
+	allowed_civil_war = {
+		always = yes
+		}
+		modifier = {
+			production_speed_buildings_factor = 0.10
+			local_resources_factor = 0.05
+			industrial_capacity_factory = 0.10
+			corporate_tax_income_multiplier_modifier = 0.05
+		}
+}
+
+
+	CHI_Strict_military_control = {
+		picture = un_intervention
+		cancel = {
+			always = no
+		}
+		modifier = {
+			conscription_factor = -0.15
+			political_power_gain = 0.1
+			experience_gain_army = -0.1
+			army_attack_factor = -0.10
+			army_defence_factor = 0.15 
+			army_org_factor = -0.05
+		}
+	}
+	CHI_No_guns_cannons_ask_enemy_for_us = {
+		
+		allowed = { 
+			OR = { tag = DSC tag = HKG } 
+			NOT = {
+				OR = {
+					has_completed_focus = DSC_NEIZHANJIESHU
+					has_completed_focus = HKG_NEIZHANJIESHU
+				}
+			}
+		}
+		picture = army_corruptions
+		modifier = {
+			equipment_capture = 0.10
+			unit_upkeep_attrition_factor = -0.30
+		}
+	}
+
+
+	CHI_NEW_people_war1 = {
+		
+		allowed = { 
+			OR = { tag = DSC tag = HKG tag = CHI } 
+		}
+		picture = GFX_idea_marxist_military
+		modifier = {
+			army_org_factor = 0.05
+			army_speed_factor = 0.10
+			supply_consumption_factor = -0.15
+			supply_factor = 0.05
+			supply_node_range = 0.10
+		}
+	}
+
+	CHI_NEW_people_war2 = {
+		
+		allowed = { 
+			OR = { tag = DSC tag = HKG tag = CHI } 
+		}
+		picture = GFX_idea_marxist_military
+		modifier = {
+			army_org_factor = 0.05
+			breakthrough_factor = 0.03
+			experience_loss_factor = -0.07
+			cas_damage_reduction = 0.60
+			army_speed_factor = 0.15
+			supply_consumption_factor = -0.15
+			supply_factor = 0.05
+			supply_node_range = 0.10
+		}
+	}
+
+	CHI_NEW_people_war_final = {
+		
+		allowed = { 
+			tag = DSC
+		}
+		picture = marxist_military_strengthened
+		modifier = {
+			army_org_factor = 0.05
+			experience_loss_factor = -0.07
+			cas_damage_reduction = 0.60
+			army_speed_factor = 0.05
+			supply_consumption_factor = -0.15
+			supply_factor = 0.05
+			supply_node_range = 0.10
+		}
+		targeted_modifier = {
+			tag = CHI
+			attack_bonus_against = 0.30
+			defense_bonus_against = 0.30
+			breakthrough_bonus_against = 0.15
+		}
+	}
+#农业损伤
+	Poor_agriculture1 = {
+		
+		allowed = { 
+			OR = { tag = DSC tag = HKG tag = CHI } 
+		}
+		picture = risk_of_famine
+		modifier = {
+			agriculture_district_worker_requirement_modifier = -0.03
+			production_speed_agriculture_district_factor = -0.05
+			supply_factor = -0.02
+			supply_node_range = -0.02
+		}
+	}
+
+	Poor_agriculture2 = {
+		
+		allowed = { 
+			OR = { tag = DSC tag = HKG tag = CHI } 
+		}
+		picture = risk_of_famine
+		modifier = {
+			agriculture_district_income_tax_modifier = -0.01
+			agriculture_district_worker_requirement_modifier = -0.05
+			production_speed_agriculture_district_factor = -0.20
+			supply_factor = -0.04
+			supply_node_range = -0.04
+		}
+	}
+
+	Poor_agriculture3 = {
+		
+		allowed = { 
+			OR = { tag = DSC tag = HKG tag = CHI } 
+		}
+		picture = looming_famine
+		modifier = {
+			army_org_factor = -0.02
+			army_speed_factor = -0.05
+			agriculture_district_income_tax_modifier = -0.05
+			agriculture_district_worker_requirement_modifier = -0.10
+			production_speed_agriculture_district_factor = -0.45
+			supply_factor = -0.05
+			supply_node_range = -0.10
+		}
+	}
+
+	Poor_agriculture4 = {
+		
+		allowed = { 
+			OR = { tag = DSC tag = HKG tag = CHI } 
+		}
+		picture = famine
+		modifier = {
+			army_org_factor = -0.10
+			army_speed_factor = -0.25
+			agriculture_district_income_tax_modifier = -0.15
+			agriculture_district_worker_requirement_modifier = -0.25
+			production_speed_agriculture_district_factor = -0.75
+			supply_factor = -0.20
+			supply_node_range = -0.30
+			}
+		}
+
+#农业重整
+Agricultural_restructuring1 = {
+		
+	allowed = { 
+		OR = { tag = DSC tag = HKG tag = CHI } 
+	}
+	picture = CUB_revived_agro
+	modifier = {
+		army_org_factor = -0.05
+		army_speed_factor = -0.10
+		agriculture_district_worker_requirement_modifier = -0.10
+		production_speed_agriculture_district_factor = -0.75
+		supply_node_range = -0.10
+		}
+	}
+
+	Agricultural_restructuring2 = {
+		
+		allowed = { 
+			OR = { tag = DSC tag = HKG tag = CHI } 
+		}
+		picture = CUB_revived_agro
+		modifier = {
+			agriculture_district_worker_requirement_modifier = 0.05
+			production_speed_agriculture_district_factor = -0.30
+			}
+		}
+
+	Agricultural_restructuring3 = {
+		
+		allowed = { 
+			OR = { tag = DSC tag = HKG tag = CHI } 
+		}
+		picture = CUB_revived_agro
+		modifier = {
+			army_speed_factor = 0.02
+			agriculture_district_worker_requirement_modifier = 0.05
+			production_speed_agriculture_district_factor = -0.10
+			supply_node_range = 0.05
+			}
+		}
+
+	Agricultural_restructuring_end = {
+		
+		allowed = { 
+			OR = { tag = DSC tag = HKG tag = CHI } 
+		}
+		picture = agrarian_economy_idea
+		modifier = {
+			army_speed_factor = 0.05
+			agriculture_district_worker_requirement_modifier = 0.10
+			production_speed_agriculture_district_factor = 0.10
+			supply_node_range = 0.10
+			supply_factor = 0.05
+			}
+		}	
+
+	#恢复奖励
+	Joint_production_system= {
+		
+		allowed = { 
+			OR = { tag = DSC tag = HKG tag = CHI } 
+		}
+		picture = mixed_economy
+		modifier = {
+			consumer_goods_factor = 0.10
+			army_speed_factor = 0.025
+			supply_node_range = 0.025
+			supply_factor = 0.025
+			buildings_worker_requirement_modifier = 0.20
+			industry_repair_factor = 0.45
+			repair_speed_arms_factory_factor = 0.45
+			industry_free_repair_factor = 0.45
+			production_speed_buildings_factor = 0.10
+			production_cost_industrial_complex_factor = -0.04
+			production_cost_offices_factor = -0.04
+			local_resources_factor = 0.10
+			industrial_capacity_factory = 0.05
+			production_factory_start_efficiency_factor = 0.05
+			production_factory_efficiency_gain_factor = 0.05
+			production_factory_max_efficiency_factor = 0.05
+			corporate_tax_income_multiplier_modifier = 0.05
+			productivity_growth_modifier = 0.10
+			energy_gain_multiplier = 0.025
+			interest_rate_multiplier_modifier = -0.06
+			social_cost_multiplier_modifier = -0.03
+			Chinese_people_support_to_china_government_modifier = 0.03
+			}
+		}	
+	}
+
+	hidden_ideas = {
+		#经济恢复
+		DSC_material_control = {
+			
+			cancel = {
+				has_completed_focus = DSC_economic_stability
+			}
+			
+			modifier = {
+				political_power_gain = -0.03
+				power_balance_daily = 0.01
+			}
+		}
+
+		DSC_Imported_essential_goods = {
+			
+			cancel = {
+				has_completed_focus = DSC_economic_stability
+			}
+			
+			modifier = {
+				
+				power_balance_daily = 0.01
+			}
+		}
+
+		DSC_Crack_speculation = {
+			
+			cancel = {
+				has_completed_focus = DSC_economic_stability
+			}
+			
+			modifier = {
+				stability_weekly_factor = 0.001
+				political_power_gain = -0.05
+				power_balance_daily = 0.005
+			}
+		}
+
+		DSC_Confiscate_stolen_funds = {
+			
+			cancel = {
+				has_completed_focus = DSC_economic_stability
+			}
+			
+			modifier = {
+				tax_gain_multiplier_modifier = 0.10
+				political_power_gain = -0.05
+				power_balance_daily = 0.005
+			}
+		}
+		#工业恢复
+		DSC_Organize_emergency_repairs = {
+			
+			cancel = {
+				has_completed_focus = DSC_Factory_lighting
+			}
+			
+			modifier = {
+				conscription_factor = -0.50
+				political_power_gain = -0.05
+				power_balance_daily = 0.005
+				industry_free_repair_factor = 2
+				industry_repair_factor = 1.25
+			}
+		}
+
+		DSC_Nationalized_bureaucratic_capital = {
+			
+			cancel = {
+				has_completed_focus = DSC_Factory_lighting
+			}
+			
+			modifier = {
+				production_speed_buildings_factor = 0.45
+				tax_gain_multiplier_modifier = 0.25
+				political_power_gain = -0.10
+				power_balance_daily = 0.015
+			}
+		}
+		#农业恢复
+		DSC_Temporary_agricultural_subsidies = {
+			
+			cancel = {
+				has_completed_focus = DSC_wheat_waves
+			}
+			
+			modifier = {
+				production_speed_agriculture_district_factor = 0.25
+				agriculture_tax_modifier = -0.10
+				power_balance_daily = 0.03
+			}
+		}
+
+		DSC_Hiring_refugees = {
+			
+			cancel = {
+				has_completed_focus = DSC_wheat_waves
+			}
+			
+			modifier = {
+				conscription_factor = -0.50
+				power_balance_daily = 0.02
+			}
+		}
+
+	}
 }

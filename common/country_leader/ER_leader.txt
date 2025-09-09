@@ -1,0 +1,78 @@
+leader_traits = {
+	#广东特质
+	hero_counterattack_Vietnam = { #对越自卫反击功臣
+		random = no
+		army_org_factor = 0.02
+		army_artillery_attack_factor = 0.03
+		nationalist_drift = 0.02
+		communism_drift = 0.01
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	hasty_deployment = { #紧急动员
+		random = no
+		stability_factor = -0.1
+		political_power_factor = -0.05
+		army_org_factor = -0.05
+		army_attack_factor = -0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	political_vacuum = {
+		random = no
+		stability_factor = -0.15
+		political_power_factor = -0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	anti_food_hero = { #抗洪英雄
+		random = no
+		stability_factor = 0.05
+		political_power_cost = -0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#冻土特质
+	Non_governmental_riots = {
+		random = no
+		stability_factor = -0.3
+		political_power_factor = -0.40
+		experience_gain_army = -0.75
+		popularity_attack_modifier = 0.10
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	WESTERN_freedom_fighter = {
+		random = no
+		political_power_factor = -0.10
+		democratic_acceptance = 50
+		communism_acceptance = -100
+		neutrality_acceptance = -100
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#四川特质
+	Disaster_relief_heroes = { #抗灾英雄
+		random = no
+		political_power_factor = 0.05
+		stability_factor = 0.02
+		chuanyu_people_support_to_china_government_modifier = 0.01
+	}
+	military_engineer = { #军事工程师
+		random = no
+		production_speed_arms_factory_factor = 0.05
+		production_speed_anti_air_building_factor = 0.05
+		production_speed_radar_station_factor = 0.05
+		production_speed_supply_node_factor = 0.10
+		production_speed_rail_way_factor = 0.10
+		industrial_capacity_factory = 0.10
+	}
+}
