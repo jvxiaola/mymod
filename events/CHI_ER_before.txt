@@ -366,7 +366,7 @@ country_event = {
 		PRG = {
 			every_owned_state = {
 				add_core_of = PRG
-				remove_core_of = CHI
+				#remove_core_of = CHI
 			}
 			inherit_technology = CHI
 			random_owned_state = {
