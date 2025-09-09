@@ -1,0 +1,40 @@
+state = {
+	id = 592
+	name = "STATE_592"
+	manpower = 1817000
+	state_category = state_03
+
+	resources = {
+		steel = 1
+		oil = 2
+		chromium = 3
+	}
+
+	history = {
+		owner = CHI
+
+
+		victory_points = {
+			3167 10
+		}
+		
+
+		buildings = {
+			infrastructure = 3
+			internet_station = 0
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 10
+			fuel_silo = 2
+		}
+		add_dynamic_modifier = { modifier = renewable_capacity_factor_dyn_mod }
+		set_variable = { state_renewable_capacity_factor_modifier_var = 0.35 }
+		add_core_of = CHI
+		add_core_of = TAI
+		add_core_of = ETK
+	}
+
+	provinces = {
+		 3167
+		}
+}

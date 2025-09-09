@@ -1,0 +1,37 @@
+state={
+	id=1221
+	name="STATE_1221"
+	state_category = state_04
+	resources = {
+		steel = 5
+		aluminium = 20
+		chromium = 7
+		oil = 8
+	}
+	history = {
+		owner = CHI
+		victory_points = { 4682 2 } #Aksu
+		victory_points = { 7702 2 } #Kuqa
+		add_dynamic_modifier = { modifier = renewable_capacity_factor_dyn_mod }
+		set_variable = { state_renewable_capacity_factor_modifier_var = 0.05 }
+		add_core_of = CHI
+		add_core_of = TAI
+		add_core_of = ETK
+		buildings = {
+			infrastructure = 2
+			internet_station = 0
+			industrial_complex = 1
+			agriculture_district = 1
+			offices = 1
+			arms_factory = 0
+			air_base = 0
+			fuel_silo = 0
+		}
+	}
+	provinces={
+		1703 4682 4770 7702 
+	}
+	manpower=2050000#资料数据
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

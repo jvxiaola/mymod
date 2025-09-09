@@ -1,0 +1,29 @@
+state = {
+	id = 1235
+	name = "STATE_1235"
+	provinces = {
+		11941 10121 10080 1120 9970 1162 14389
+	}
+	resources = {
+		rubber = 2
+		oil = 6
+	}
+	history = {
+		owner = CHI
+		victory_points = { 11941 5 }
+		victory_points = { 9970 5 }
+
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 3
+			agriculture_district = 4
+			offices = 1
+		}
+		add_core_of = CHI
+		add_core_of = TAI
+	}
+	state_category = state_09
+	manpower = 11830000
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.000
+}

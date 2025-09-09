@@ -1,0 +1,28 @@
+state = {
+	id = 1233
+	name = "STATE_1233"
+	provinces = {
+		4160 7135 
+	}
+	resources = {
+		rubber = 12
+	}
+	history = {
+		owner = CHI
+		victory_points = {
+			7135 1
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			dockyard = 1
+			fuel_silo = 1
+		}
+		add_core_of = CHI
+		add_core_of = TAI
+	}
+	state_category = state_05
+	manpower = 4230000
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.000
+}

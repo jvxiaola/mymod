@@ -1,0 +1,35 @@
+state = {
+	id = 1229
+	name = "STATE_1229"
+	provinces = {
+		9978 
+	}
+	manpower = 4677800
+	state_category = state_05
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.000
+	resources = {
+		rubber = 1
+		tungsten = 4
+		steel = 2
+		chromium = 2
+	}
+
+	history = {
+		owner = CHI
+		victory_points = {
+			9978 1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			dockyard = 2
+			9978 = {
+				naval_base = 6
+			}
+		}
+		add_core_of = CHI
+		add_core_of = TAI
+	}
+
+}
