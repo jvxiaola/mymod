@@ -6705,50 +6705,6 @@ add_idea=CHI_zzgs2
 #文革线
 
 
-#focus = {
-#	id = PRC_yunniang
-#	icon = culturerev
-#	x = 35
-#	y = 0
-#	allow_branch={
-#		has_country_flag = jixuwenge
-#	}
-
-#	offset = {
-#		x = -12
-#		trigger = {
-#			OR = { 
-#				has_completed_focus = PRC_Proletarian_leader
-#				has_completed_focus = PRC_jitilingdao
-#			}
-#		}
-#	}
-#	cost = 5
-
-#	ai_will_do = {
-#		factor = 10
-#	}
-
-#	available = {
-
-#	}
-
-#	bypass = {
-#	}
-
-#	cancel_if_invalid = yes
-#	continue_if_invalid = no
-#	available_if_capitulated = no
-
-#	completion_reward = {
-
-#add_stability = -0.20
-
-
-
-#	}
-#	}		
-
 
 
 
