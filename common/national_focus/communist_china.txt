@@ -7069,47 +7069,12 @@ every_owned_state = {
 				}	
 
 
-				focus = {
-					id = PRC_jingzhiduoquan
-					icon = Chinese_People_Front
-					x = 6
-					y = 1
-			prerequisite = {focus = PRC_Mass_Movement }
-			mutually_exclusive = {focus=PRC_guliduoquan }
-			relative_position_id = PRC_Mass_Movement
-
-					cost = 5
-			
-					ai_will_do = {
-						factor = 10
-					}
-			
-					available = {
-			
-					}
-			
-					bypass = {
-					}
-			
-					cancel_if_invalid = yes
-					continue_if_invalid = no
-					available_if_capitulated = no
-			
-					completion_reward = {
-						set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.04 }
-						change_CHI_Socialist_Construction_dynamic20 = yes
-						set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = -0.02 }
-						change_CHI_Socialist_Construction_dynamic32 = yes
-						set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.01 }
-						change_CHI_Socialist_Construction_dynamic1 = yes
-			}
-					}	
-
+		
 
 					focus = {
 						id = PRC_guliduoquan
 						icon = gemingwuzui
-						x = -6
+						x = -0
 						y = 4
 						prerequisite = { focus = PRC_Mass_Movement }
 						mutually_exclusive = { focus = PRC_jingzhiduoquan }
@@ -7146,7 +7111,7 @@ every_owned_state = {
 						id = PRC_wengongwuwei
 						icon = CHI_mobilize_the_red_guard
 						x = 0
-						y = 4
+						y = 5
 						prerequisite = { #focus = PRC_baligongsheyuanze
 						focus=PRC_sanjiehe
 					}
@@ -7185,9 +7150,9 @@ every_owned_state = {
 						id = PRC_hongweibingdaibiao
 						icon = launch_the_cultural_revolution
 						x = 0
-						y = 2
+						y = 3
 						prerequisite = { 
-						focus = PRC_gemingweiyuanhui
+						focus = PRC_dazibao
 					}
 
 						relative_position_id = PRC_guliduoquan
@@ -7262,7 +7227,7 @@ every_owned_state = {
 						id = PRC_sanjiehe
 						icon = PRC_communist_vanguard_restored
 						x = 0
-						y = 3
+						y = 4
 						prerequisite = { 				
 
 							focus = PRC_hongweibingdaibiao
@@ -7296,154 +7261,17 @@ every_owned_state = {
 						}
 					}
 
-					#focus = {
-					#	id = PRC_qzqqz
-					#	icon = Poor_Peasant_Culture
-					#	x = -2
-					#	y = 2
-					#	prerequisite = { 
-					#		focus=PRC_gongshe
-					#}
 
-					#	relative_position_id = PRC_guliduoquan
-					
-					#	cost = 5
-					
-					#	ai_will_do = {
-					#		factor = 10
-					#	}
-					
-					#	available = {
-					#	}
-					
-					#	bypass = {
-					#	}
-					
-					#	cancel_if_invalid = yes
-					#	continue_if_invalid = no
-					#	available_if_capitulated = no
-					
-					#	completion_reward = {
-					#		set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.01 }
-					#		change_CHI_Socialist_Construction_dynamic20 = yes
-					#		set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = -0.02 }
-					#		change_CHI_Socialist_Construction_dynamic32 = yes
-					#		set_temp_variable = { temp_CHI_Socialist_Construction_dynamic = 0.02 }
-					#		change_CHI_Socialist_Construction_dynamic1 = yes
-					#	}
-					#}					
-					focus = {
-						id = PRC_sidamingzhu
-						icon = four_basic_principles
-						x = 0
-						y = 5
-						prerequisite = {
-							focus = PRC_jingzhiduoquan
-							focus = PRC_guliduoquan
-						}
-						relative_position_id = PRC_Lasting_Cultural_Revolution
-					
-						cost = 5
-					
-						ai_will_do = {
-							factor = 10
-						}
-					
-						available = {
-						}
-					
-						bypass = {
-						}
-					
-						cancel_if_invalid = yes
-						continue_if_invalid = no
-						available_if_capitulated = no
-					
-						completion_reward = {
-						}
-					}
-					
-					focus = {
-						id = PRC_daming
-						icon = proletarian_legalist_thought
-						x = -3
-						y = 1
-						prerequisite = { focus = PRC_sidamingzhu }
-						relative_position_id = PRC_sidamingzhu
-					
-						cost = 5
-					
-						ai_will_do = {
-							factor = 10
-						}
-					
-						available = {
-						}
-					
-						bypass = {
-						}
-					
-						cancel_if_invalid = yes
-						continue_if_invalid = no
-						available_if_capitulated = no
-					
-						completion_reward = {
-									custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
-							set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.01 }
-							change_DSC_Socialist_Construction_dynamic20 = yes
-							set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.02 }
-							change_DSC_Socialist_Construction_dynamic32 = yes
-							set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.01 }
-							change_DSC_Socialist_Construction_dynamic1 = yes
-						}
-					}
-					
-					focus = {
-						id = PRC_dafang
-						icon = focus_red_propaganda
-						x = -1
-						y = 1
-						prerequisite = { focus = PRC_sidamingzhu }
-						relative_position_id = PRC_sidamingzhu
-					
-						cost = 5
-					
-						ai_will_do = {
-							factor = 10
-						}
-					
-						available = {
-						}
-					
-						bypass = {
-						}
-					
-						cancel_if_invalid = yes
-						continue_if_invalid = no
-						available_if_capitulated = no
-					
-						completion_reward = {
-									custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
-							set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.01 }
-							change_DSC_Socialist_Construction_dynamic20 = yes
-							set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.02 }
-							change_DSC_Socialist_Construction_dynamic32 = yes
-							set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.01 }
-							change_DSC_Socialist_Construction_dynamic1 = yes
-						}
-					}
-					
-					
+						
 
 
 focus = {
 	id = PRC_dazibao
-	#icon = four_freedoms
 	icon = dazibao
-	x = 1
-	y = 1
-	prerequisite = {focus = PRC_sidamingzhu}
-	relative_position_id = PRC_sidamingzhu
+	x = 0
+	y = 3
+	prerequisite = {					focus = PRC_gemingweiyuanhui}
+	relative_position_id = PRC_Mass_Movement
 	cost = 5
 									
 	ai_will_do = {
@@ -7472,40 +7300,7 @@ focus = {
 	}
 	}	
 
-	focus = {
-		id = PRC_dabianlun
-		icon = dabianlun
-		x = 3
-		y = 1
-		prerequisite = {focus = PRC_sidamingzhu}
-		relative_position_id = PRC_sidamingzhu
-		cost = 5
-										
-		ai_will_do = {
-		factor = 10
-		}
-						
-		available = {
-										
-		}
-										
-		bypass = {
-		}
-										
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-										
-		completion_reward = {
-					custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
-			set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.01 }
-			change_DSC_Socialist_Construction_dynamic20 = yes
-			set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.02 }
-			change_DSC_Socialist_Construction_dynamic32 = yes
-			set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.01 }
-			change_DSC_Socialist_Construction_dynamic1 = yes				
-		}
-		}	
+	
 
 	focus = {
 			id = PRC_Spiritual_Atomic_Bomb
