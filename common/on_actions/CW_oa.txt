@@ -210,4 +210,72 @@ on_actions = {
 
 		}
 	}
+
+
+
+
+		on_capitulation_immediate = {
+		effect = {
+			if = {
+					limit = {
+						FROM = { 
+							OR = { 
+								tag = NKO
+							} 
+						}
+						ROOT = { tag = KOR }
+					}
+		 			#every_country = { limit = { is_ai = no } news_event = { id = CHI_ER_BEFORE_xin.10 days = 1 } }
+
+					FROM = {
+						#dismantle_faction = yes
+						annex_country = {
+							target = ROOT
+							transfer_troops = no
+						}
+					}
+
+			}
+			else_if = {
+					limit = {
+						FROM = { 
+							OR = { 
+								tag = KOR
+							} 
+						}
+						ROOT = { tag = NKO }
+					}
+		 			#every_country = { limit = { is_ai = no } news_event = { id = CHI_ER_BEFORE_xin.10 days = 1 } }
+
+
+						#dismantle_faction = yes
+								
+						NKO={
+
+
+	white_peace =KOR
+every_owned_state = {
+    limit = { NOT = { state = 1236 } }
+    KOR = { transfer_state = PREV }
 }
+	#transfer_state = 1236
+	#add_state_core = 1236
+						}
+
+
+				KOR={
+country_event = {id=prc1.321 days=2}
+					}
+
+
+					}
+
+
+
+
+
+			}
+
+
+		}
+	}

@@ -409,5 +409,7 @@ NPA = "countries/feilvbinggong.txt"
 INM = "countries/indumaopai.txt"
 PRG = "countries/PLA region of guangdong.txt"
 GDS = "countries/guangdong state.txt"
+YUN = "countries/yunnan state.txt"
+JIL = "countries/jiling state.txt"
 #Custom, they don't have any cores and territory, but need to exist (ghost nations)
 C01 = "countries/Custom_01.txt"

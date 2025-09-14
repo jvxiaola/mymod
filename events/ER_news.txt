@@ -1,0 +1,39 @@
+add_namespace = ER_global_news
+
+news_event = { 
+	id = ER_global_news.1
+	title = ER_global_news.1.t
+	desc = ER_global_news.1.d
+	picture = GFX_chinese_flag
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Where does this end?
+		name = ER_global_news.1.o1
+		trigger = { 
+			OR = {
+				original_tag = USA 
+				is_in_faction_with = USA 
+			}
+		}
+	}
+	
+	option = { #One China on the horizon!
+		name = ER_global_news.1.o2
+		trigger = {
+			is_in_faction_with = CHI
+			original_tag = CHI
+		}
+	}
+	
+	option = { #Incredible!
+		name = ER_global_news.1.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = CHI }
+		}
+	}
+	
+}

@@ -35,8 +35,8 @@
 #广东
  PRG.Nat_Autocracy: "£CHI_military_junta §R中国人民解放军§! - 广州军区"
  PRG.Nat_Autocracy_icon: "£CHI_military_junta"
- PRG.Communist-State: "£Communist_Party_of_Nepal 中国共产党 - §R毛主义§! "
- PRG.Communist-State_icon: "£Communist_Party_of_Nepal"
+ PRG.Communist-State: "£CHI_left 中国共产党 - §R毛主义§! "
+ PRG.Communist-State_icon: "£CHI_left"
  PRG.Conservative: "£CHI_communism 中国共产党 - §1改革派§! "
  PRG.Conservative_icon: "£CHI_communism"
 #世界舞台上的第三世界

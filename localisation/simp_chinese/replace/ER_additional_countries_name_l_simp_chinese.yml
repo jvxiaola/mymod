@@ -18,6 +18,7 @@
  PRG: "广东临时军管区"
  PRG_ADJ: "广东军区"
  PRG_DEF: "广东军区"
+ PRG_GOV: "广东省"
  PRG_nationalist: "广东临时军管区"
  PRG_nationalist_ADJ: "广东军区"
  PRG_nationalist_DEF: "广东军区"
@@ -34,3 +35,8 @@
  XIN: "中国新疆军区"
  XIN_ADH: "新疆军区"
  XIN_DEF: "新疆军区"
+#云南
+ YUN_GOV: "云南省"
+
+#吉林
+ JIL_GOV: "吉林省"

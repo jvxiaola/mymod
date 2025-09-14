@@ -23,8 +23,19 @@ set_popularities = {
 	neutrality = 7
 	nationalist = 50
 }
+	create_country_leader = {
+		name = "李长春"
+		picture = "PRG_GOV_lichangchun.dds"
+		expire = "2222.1.1"
+		ideology = Chinese_Socialism
+		traits = {
+		#emerging_anarchist_communism
+		#man_of_steel
+		}
+	}
+
 set_politics = {
-	ruling_party = nationalist
+	ruling_party = communism
 	last_election = "1996.12.11"
 	election_frequency = 60
 	elections_allowed = no

@@ -159,6 +159,7 @@ CHI={
 
 
 
+
 country_event = {
 	id = prc1.301
 	title = prc1.301.t
@@ -219,8 +220,146 @@ start_politics_input = yes
 
 
 
+country_event = {
+	id = prc1.320
+	title = prc1.320.t
+	desc = prc1.320.d
+	#hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = { 
 
 
+
+	}
+	option = {
+		name = prc1.320.o1
+
+		ai_chance = { factor = 10 }
+			KOR={		
+	
+	
+	declare_war_on = {
+		
+		target = NKO
+		type = annex_everything
+	}
+
+}
+	news_event = ER_global_news.1
+	}
+	
+	option = {
+		name = prc1.320.o2
+
+		ai_chance = { factor = 90 }
+			
+	}
+
+
+}
+country_event = {
+	id = prc1.321
+	title = prc1.321.t
+	desc = prc1.321.d
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = { 
+			NKO={		
+	transfer_state = 1236
+	add_state_core = 1236
+
+		NKO = {
+			division_template = {
+				name = "赤卫队"
+	regiments = {
+	Militia_Bat = { x = 0 y = 0 }
+	Militia_Bat = { x = 0 y = 1 }
+	Militia_Bat = { x = 0 y = 2 }
+	Militia_Bat = { x = 0 y = 3 }
+	Militia_Bat = { x = 1 y = 0 }
+	Militia_Bat = { x = 1 y = 1 }
+	Militia_Bat = { x = 1 y = 2 }
+	Militia_Bat = { x = 1 y = 3 }
+
+				}
+			}
+
+			division_template = {
+				name = "机械化部队"
+	regiments = {
+	Mot_Inf_Bat = { x = 0 y = 0 }
+	Mot_Inf_Bat = { x = 0 y = 1 }
+	Mot_Inf_Bat = { x = 0 y = 2 }
+	Mot_Inf_Bat = { x = 0 y = 3 }
+ Armor_Bat = { x = 1 y = 0 }
+	Armor_Bat = { x = 1 y = 1 }
+Armor_Bat = { x = 1 y = 2 }
+				}
+			}
+			division_template = {
+	name = "步兵部队"
+
+	regiments = {
+		L_Inf_Bat = { x = 0 y = 0 }
+		L_Inf_Bat = { x = 0 y = 1 }
+		L_Inf_Bat = { x = 0 y = 2 }
+		L_Inf_Bat = { x = 0 y = 3 }
+
+		L_Inf_Bat = { x = 1 y = 0 }
+		L_Inf_Bat = { x = 1 y = 1 }
+		L_Inf_Bat = { x = 1 y = 2 }
+		L_Inf_Bat = { x = 1 y = 3 }
+
+		L_Inf_Bat = { x = 2 y = 0 }
+		L_Inf_Bat = { x = 2 y = 1 }
+		L_Inf_Bat = { x = 2 y = 2 }
+		L_Inf_Bat = { x = 2 y = 3 }
+		L_Inf_Bat = { x = 2 y = 4 }
+	}
+	support = {
+		L_Engi_Comp = { x = 0 y = 0 }
+	}
+}
+
+remove_dynamic_modifier = { modifier = arduous_march_modifiers }
+NKO = { clr_capitulated = yes }
+			random_owned_state = {
+				create_unit = {
+					division = "name = \"朝鲜赤卫队\" division_template = \"赤卫队\" start_experience_factor = 0.4"
+					owner = NKO
+					count = 2
+				}
+				create_unit = {
+					division = "name = \"朝鲜人民军步兵\" division_template = \"步兵部队\" start_experience_factor = 0.6"
+					owner = NKO
+					count = 2
+				}
+				create_unit = {
+					division = "name = \"朝鲜人民军机械化部队\" division_template = \"机械化部队\" start_experience_factor = 0.6"
+					owner = NKO
+					count = 2
+				}
+
+			}
+
+		}
+}
+
+
+	}
+	option = {
+		name = prc1.321.o1
+
+		ai_chance = { factor = 10 }
+
+	}
+	
+
+
+
+}
 #China Alliance Accepted
 
 country_event = {	#They accept!
@@ -2077,6 +2216,258 @@ set_country_flag = neizhanzhong
 		man_of_steel
 		}
 	}
+
+
+
+
+	add_manpower = -200
+		every_state = {
+			limit = { is_in_array = { global.guangdong_states = THIS } }
+			transfer_state_to = PRG
+		}
+				PRG = {
+
+start_politics_input = yes
+### Party Popularities
+set_variable = { party_pop_array^0 = 0 } #Western_Autocracy
+set_variable = { party_pop_array^1 = 0 } #conservatism
+set_variable = { party_pop_array^2 = 0 } #liberalism
+set_variable = { party_pop_array^3 = 0 } #socialism
+set_variable = { party_pop_array^4 = 0 } #Communist-State
+set_variable = { party_pop_array^5 = 0 } #anarchist_communism
+set_variable = { party_pop_array^6 = 0.75 } #Conservative
+set_variable = { party_pop_array^7 = 0 } #Autocracy
+set_variable = { party_pop_array^8 = 0 } #Mod_Vilayat_e_Faqih
+set_variable = { party_pop_array^9 = 0 } #Vilayat_e_Faqih
+set_variable = { party_pop_array^10 = 0 } #Kingdom
+set_variable = { party_pop_array^11 = 0 } #Caliphate
+set_variable = { party_pop_array^12 = 0 } #Neutral_Muslim_Brotherhood
+set_variable = { party_pop_array^13 = 0 } #Neutral_Autocracy
+set_variable = { party_pop_array^14 = 0 } #Neutral_conservatism
+set_variable = { party_pop_array^15 = 0 } #oligarchism
+set_variable = { party_pop_array^16 = 0 } #Neutral_Libertarian
+set_variable = { party_pop_array^17 = 0 } #Neutral_green
+set_variable = { party_pop_array^18 = 0 } #neutral_Social
+set_variable = { party_pop_array^19 = 0 } #Neutral_Communism
+set_variable = { party_pop_array^20 = 0 } #Nat_Populism
+set_variable = { party_pop_array^21 = 0 } #Nat_Fascism
+set_variable = { party_pop_array^22 = 0.25 } #Nat_Autocracy
+set_variable = { party_pop_array^23 = 0 } #Monarchist
+
+### Ruling Party
+add_to_array = { ruling_party = 6}
+add_to_array = { gov_coalition_array = 22 }
+startup_politics = yes
+
+	create_country_leader = {
+		name = "李长春"
+		picture = "PRG_GOV_lichangchun.dds"
+		expire = "2222.1.1"
+		ideology = Chinese_Socialism
+		traits = {
+		#emerging_anarchist_communism
+		#man_of_steel
+		}
+	}
+	set_politics = {
+		ruling_party = communism
+		last_election = "1996.12.11"
+		election_frequency = 60
+		elections_allowed = no
+	}
+	set_cosmetic_tag  = PRG_GOV
+
+			every_owned_state = {
+				add_core_of = PRG
+				#remove_core_of = CHI
+			}
+			inherit_technology = CHI
+			random_owned_state = {
+				create_unit = {
+					division = "name = \"解放军师级火力支援单位\" division_template = \"解放军师级火力支援单位\" start_experience_factor = 1.5"
+					owner = PRG
+					count = 4
+				}
+				create_unit = {
+					division = "name = \"解放军师级机动火力单位\" division_template = \"解放军师级机动火力单位\" start_experience_factor = 1.5"
+					owner = PRG
+					count = 2
+				}
+			}
+		}
+
+		every_state = {
+			limit = { is_in_array = { global.jilin_states = THIS } }
+			transfer_state_to = JIL
+		}
+
+		JIL = {
+
+start_politics_input = yes
+### Party Popularities
+set_variable = { party_pop_array^0 = 0 } #Western_Autocracy
+set_variable = { party_pop_array^1 = 0 } #conservatism
+set_variable = { party_pop_array^2 = 0 } #liberalism
+set_variable = { party_pop_array^3 = 0 } #socialism
+set_variable = { party_pop_array^4 = 0 } #Communist-State
+set_variable = { party_pop_array^5 = 0 } #anarchist_communism
+set_variable = { party_pop_array^6 = 0.75 } #Conservative
+set_variable = { party_pop_array^7 = 0 } #Autocracy
+set_variable = { party_pop_array^8 = 0 } #Mod_Vilayat_e_Faqih
+set_variable = { party_pop_array^9 = 0 } #Vilayat_e_Faqih
+set_variable = { party_pop_array^10 = 0 } #Kingdom
+set_variable = { party_pop_array^11 = 0 } #Caliphate
+set_variable = { party_pop_array^12 = 0 } #Neutral_Muslim_Brotherhood
+set_variable = { party_pop_array^13 = 0 } #Neutral_Autocracy
+set_variable = { party_pop_array^14 = 0 } #Neutral_conservatism
+set_variable = { party_pop_array^15 = 0 } #oligarchism
+set_variable = { party_pop_array^16 = 0 } #Neutral_Libertarian
+set_variable = { party_pop_array^17 = 0 } #Neutral_green
+set_variable = { party_pop_array^18 = 0 } #neutral_Social
+set_variable = { party_pop_array^19 = 0 } #Neutral_Communism
+set_variable = { party_pop_array^20 = 0 } #Nat_Populism
+set_variable = { party_pop_array^21 = 0 } #Nat_Fascism
+set_variable = { party_pop_array^22 = 0.25 } #Nat_Autocracy
+set_variable = { party_pop_array^23 = 0 } #Monarchist
+
+### Ruling Party
+add_to_array = { ruling_party = 6}
+add_to_array = { gov_coalition_array = 22 }
+startup_politics = yes
+
+		create_country_leader = {
+		name = "王云坤"
+		picture = "JIL_GOV_wangyunkun.dds"
+		expire = "2222.1.1"
+		ideology = Chinese_Socialism
+		traits = {
+		#emerging_anarchist_communism
+		#man_of_steel
+		}
+	}
+	set_politics = {
+		ruling_party = communism
+		last_election = "1996.12.11"
+		election_frequency = 60
+		elections_allowed = no
+	}
+	set_cosmetic_tag  = JIL_GOV
+
+			every_owned_state = {
+				add_core_of = JIL
+				#remove_core_of = CHI
+			}
+			inherit_technology = CHI
+			random_owned_state = {
+				create_unit = {
+					division = "name = \"解放军师级火力支援单位\" division_template = \"解放军师级火力支援单位\" start_experience_factor = 1.5"
+					owner = JIL
+					count = 4
+				}
+				create_unit = {
+					division = "name = \"解放军师级机动火力单位\" division_template = \"解放军师级机动火力单位\" start_experience_factor = 1.5"
+					owner = JIL
+					count = 2
+				}
+			}
+		}
+
+							every_state = {
+			limit = { is_in_array = { global.yunnan_states = THIS } }
+			transfer_state_to = YUN
+		}
+
+		YUN = {
+
+start_politics_input = yes
+### Party Popularities
+set_variable = { party_pop_array^0 = 0 } #Western_Autocracy
+set_variable = { party_pop_array^1 = 0 } #conservatism
+set_variable = { party_pop_array^2 = 0 } #liberalism
+set_variable = { party_pop_array^3 = 0 } #socialism
+set_variable = { party_pop_array^4 = 0 } #Communist-State
+set_variable = { party_pop_array^5 = 0 } #anarchist_communism
+set_variable = { party_pop_array^6 = 0.75 } #Conservative
+set_variable = { party_pop_array^7 = 0 } #Autocracy
+set_variable = { party_pop_array^8 = 0 } #Mod_Vilayat_e_Faqih
+set_variable = { party_pop_array^9 = 0 } #Vilayat_e_Faqih
+set_variable = { party_pop_array^10 = 0 } #Kingdom
+set_variable = { party_pop_array^11 = 0 } #Caliphate
+set_variable = { party_pop_array^12 = 0 } #Neutral_Muslim_Brotherhood
+set_variable = { party_pop_array^13 = 0 } #Neutral_Autocracy
+set_variable = { party_pop_array^14 = 0 } #Neutral_conservatism
+set_variable = { party_pop_array^15 = 0 } #oligarchism
+set_variable = { party_pop_array^16 = 0 } #Neutral_Libertarian
+set_variable = { party_pop_array^17 = 0 } #Neutral_green
+set_variable = { party_pop_array^18 = 0 } #neutral_Social
+set_variable = { party_pop_array^19 = 0 } #Neutral_Communism
+set_variable = { party_pop_array^20 = 0 } #Nat_Populism
+set_variable = { party_pop_array^21 = 0 } #Nat_Fascism
+set_variable = { party_pop_array^22 = 0.25 } #Nat_Autocracy
+set_variable = { party_pop_array^23 = 0 } #Monarchist
+
+### Ruling Party
+add_to_array = { ruling_party = 6}
+add_to_array = { gov_coalition_array = 22 }
+startup_politics = yes
+
+		create_country_leader = {
+		name = "白恩培"
+		picture = "YUN_GOV_baienpei.dds"
+		expire = "2222.1.1"
+		ideology = Chinese_Socialism
+		traits = {
+		#emerging_anarchist_communism
+		#man_of_steel
+		}
+	}
+	set_politics = {
+		ruling_party = communism
+		last_election = "1996.12.11"
+		election_frequency = 60
+		elections_allowed = no
+	}
+	set_cosmetic_tag  = YUN_GOV
+
+			every_owned_state = {
+				add_core_of = YUN
+				#remove_core_of = CHI
+			}
+			inherit_technology = CHI
+			random_owned_state = {
+				create_unit = {
+					division = "name = \"解放军师级火力支援单位\" division_template = \"解放军师级火力支援单位\" start_experience_factor = 1.5"
+					owner = YUN
+					count = 4
+				}
+				create_unit = {
+					division = "name = \"解放军师级机动火力单位\" division_template = \"解放军师级机动火力单位\" start_experience_factor = 1.5"
+					owner = YUN
+					count = 2
+				}
+			}
+
+		}
+
+
+		PGR_PLA_taobojun = { set_nationality = PRG }
+		#promote_character = PGR_PLA_taobojun
+		#give_guarantee = PRG
+
+				every_state = {
+			limit = { is_in_array = { global.guangdong_states = THIS } }
+			transfer_state_to = PRG
+		}
+KOR={
+	country_event = {id=prc1.320 days=1}
+
+}
+
+
+
+
+
+
 	set_country_flag = laozuo
 mark_focus_tree_layout_dirty = yes
 if = {

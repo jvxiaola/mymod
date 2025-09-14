@@ -364,6 +364,7 @@ CHI_state_recognize_start = {
 	CHI_add_State_hubei = yes     CHI_add_State_shanghai = yes      CHI_add_State_guizhou = yes
   CHI_add_State_hunan = yes     CHI_add_State_jiangxi = yes       CHI_add_State_neimenggu = yes
   CHI_add_State_jilin = yes     CHI_add_State_heilongjiang = yes  CHI_add_State_shanxi = yes
+  CHI_add_State_yunnan = yes
 }
 CHI_add_State_guangdong = {
   534 = { add_to_array = { array = global.guangdong_states } }
@@ -440,10 +441,15 @@ CHI_add_State_neimenggu = {
 }
 CHI_add_State_jilin = {
   554 = { add_to_array = { array = global.jilin_states } }
+    1236 = { add_to_array = { array = global.jilin_states } }
 }
 CHI_add_State_heilongjiang = {
   555 = { add_to_array = { array = global.heilongjiang_states } }
 }
+CHI_add_State_yunnan = {
+  578 = { add_to_array = { array = global.yunnan_states } }
+}
+
 
 #军队经商残余影响缓解
 CHI_MER_decresee_effect = {

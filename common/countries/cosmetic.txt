@@ -29,6 +29,19 @@ DSC_GMG={
     color = rgb { 255  20  20 }
     color_ui = rgb { 255 20 20 }
 }
+PRG_GOV={
+	    color = rgb { 210 66 16 }
+	color_ui = rgb { 233 78 19 }
+}
+JIL_GOV={
+	    color = rgb { 210 66 16 }
+	color_ui = rgb { 233 78 19 }
+}
+YUN_GOV={
+	    color = rgb { 210 66 16 }
+	color_ui = rgb { 233 78 19 }
+}
+
 
 niboer_rmghg={
 	color = rgb { 222  124  143 }

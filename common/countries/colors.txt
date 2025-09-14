@@ -1479,3 +1479,13 @@ PRG = {
 	color = rgb { 155 136 70 } 
 	color_ui = rgb { 155 136 70 }
 }
+
+JIL = {
+	color = rgb { 155 136 70 } 
+	color_ui = rgb { 155 136 70 }
+}
+
+YUN = {
+	color = rgb { 155 136 70 } 
+	color_ui = rgb { 155 136 70 }
+}

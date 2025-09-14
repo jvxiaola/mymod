@@ -4,7 +4,17 @@ set_variable = { gdp_per_capita = 3.452 }
 set_technology = {}
 set_stability = 0.2
 set_war_support = 0.7
-recruit_character = PGR_PLA_taobojun
+#recruit_character = PGR_PLA_taobojun
+	create_country_leader = {
+		name = "李长春"
+		picture = "PRG_GOV_lichangchun.dds"
+		expire = "2222.1.1"
+		ideology = Chinese_Socialism_jiang
+		traits = {
+		#emerging_anarchist_communism
+		#man_of_steel
+		}
+	}
 init_influence = yes
 set_variable = { domestic_influence_amount = 50 }
 add_to_array = { influence_array = CHI.id }
