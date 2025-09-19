@@ -364,7 +364,8 @@ CHI_state_recognize_start = {
 	CHI_add_State_hubei = yes     CHI_add_State_shanghai = yes      CHI_add_State_guizhou = yes
   CHI_add_State_hunan = yes     CHI_add_State_jiangxi = yes       CHI_add_State_neimenggu = yes
   CHI_add_State_jilin = yes     CHI_add_State_heilongjiang = yes  CHI_add_State_shanxi = yes
-  CHI_add_State_yunnan = yes
+  CHI_add_State_yunnan = yes  CHI_add_State_anhui = yes
+
 }
 CHI_add_State_guangdong = {
   534 = { add_to_array = { array = global.guangdong_states } }
@@ -383,6 +384,10 @@ CHI_add_State_guangdong = {
 CHI_add_State_jiangsu = {
   541 = { add_to_array = { array = global.jiangsu_states } }
   536 = { add_to_array = { array = global.jiangsu_states } }
+}
+CHI_add_State_nanjing = {
+  536 = { add_to_array = { array = global.nanjing_states } }
+
 }
 CHI_add_State_shanxi = {
   558 = { add_to_array = { array = global.shanxi_states } }

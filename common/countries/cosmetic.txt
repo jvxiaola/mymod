@@ -41,7 +41,10 @@ YUN_GOV={
 	    color = rgb { 210 66 16 }
 	color_ui = rgb { 233 78 19 }
 }
-
+NAJ_GOV={
+	    color = rgb { 210 66 16 }
+	color_ui = rgb { 233 78 19 }
+}
 
 niboer_rmghg={
 	color = rgb { 222  124  143 }

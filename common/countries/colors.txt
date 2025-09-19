@@ -1489,3 +1489,9 @@ YUN = {
 	color = rgb { 155 136 70 } 
 	color_ui = rgb { 155 136 70 }
 }
+
+NAJ = {
+	color = rgb { 155 136 70 } 
+	color_ui = rgb { 155 136 70 }
+}
+
