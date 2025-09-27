@@ -1485,7 +1485,13 @@ JIL = {
 	color_ui = rgb { 155 136 70 }
 }
 
+
 YUN = {
+	color = rgb { 155 136 70 } 
+	color_ui = rgb { 155 136 70 }
+}
+
+GUZ = {
 	color = rgb { 155 136 70 } 
 	color_ui = rgb { 155 136 70 }
 }

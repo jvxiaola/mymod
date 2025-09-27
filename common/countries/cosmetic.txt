@@ -41,6 +41,13 @@ YUN_GOV={
 	    color = rgb { 210 66 16 }
 	color_ui = rgb { 233 78 19 }
 }
+
+GUZ_GOV={
+	    color = rgb { 210 66 16 }
+	color_ui = rgb { 233 78 19 }
+}
+
+
 NAJ_GOV={
 	    color = rgb { 210 66 16 }
 	color_ui = rgb { 233 78 19 }

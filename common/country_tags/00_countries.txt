@@ -410,6 +410,7 @@ INM = "countries/indumaopai.txt"
 PRG = "countries/PLA region of guangdong.txt"
 GDS = "countries/guangdong state.txt"
 YUN = "countries/yunnan state.txt"
+GUZ = "countries/guizhou state.txt"
 JIL = "countries/jiling state.txt"
 NAJ = "countries/nanjingjunqu.txt"
 #Custom, they don't have any cores and territory, but need to exist (ghost nations)

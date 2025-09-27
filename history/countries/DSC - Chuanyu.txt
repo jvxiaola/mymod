@@ -1,4 +1,4 @@
-capital = 583
+capital = 586
 2000.1.1 = {
 	set_cosmetic_tag = DSC_JGQ
 	if = {
@@ -171,7 +171,16 @@ set_variable = { DSC_Socialist_Construction_dynamic1 = -0.10}
 	add_to_array = { ruling_party = 22 }
 	startup_politics = yes
 	recruit_character = Mao_Yuanxin
-	recruit_character = Sc_Cq_M_G
+		create_country_leader = {
+		name = "廖锡龙"
+		picture = "DSC_liaoxilong.dds"
+		expire = "2222.1.1"
+		ideology = Nat_Autocracy
+		traits = {
+		#emerging_anarchist_communism
+		#man_of_steel
+		}
+	}
 
 	### DSC ###
 	#Influence system

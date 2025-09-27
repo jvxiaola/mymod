@@ -1464,6 +1464,19 @@ modifier = {
 }
 }
 
+unstabled_control={
+picture = republican_command_disorganized
+
+allowed = 
+}
+
+
+modifier = {
+		surrender_limit = -0.50
+}
+}
+
+
 junfazuofeng2={
 	picture = republican_command_disorganized
 

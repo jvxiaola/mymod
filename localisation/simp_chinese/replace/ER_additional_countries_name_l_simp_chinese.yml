@@ -1,8 +1,8 @@
 ﻿l_simp_chinese:
 
-#川渝军管区
- DSC: "川渝军管区"
- DSC_JGQ: "川渝军管区"
+#成都主军区
+ DSC: "成都主军区"
+ DSC_JGQ: "成都主军区"
  DSC_JGQ_ADJ: "川渝"
  DSC_JGQ_DEF: "川渝"
  DSC_GMQ: "川渝革命政府"
@@ -37,6 +37,10 @@
  XIN_DEF: "新疆军区"
 #云南
  YUN_GOV: "云南省"
+
+#贵州
+ GUZ_GOV: "贵州省"
+
 
 #吉林
  JIL_GOV: "吉林省"
