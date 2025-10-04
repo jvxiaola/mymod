@@ -2551,7 +2551,7 @@ fire_only_once = yes
 			picture = soviet_advisors
 			fire_only_once = yes
 			visible = {
-				NOT={has_cosmetic_tag=GUZ_GMQ}
+				GUZ={NOT={has_cosmetic_tag=GUZ_GMQ}}
 				has_completed_focus = DSC_chuli_guizhou
 				NOT={
 
@@ -2561,7 +2561,7 @@ fire_only_once = yes
 			}
 			}
 			available = {
-				NOT={has_cosmetic_tag=GUZ_GMQ}
+				GUZ={NOT={has_cosmetic_tag=GUZ_GMQ}}
 				has_completed_focus = DSC_chuli_guizhou
 				NOT={
 
@@ -2591,12 +2591,12 @@ set_country_flag = GUZ_is_puppet_of_DSC
 		DSC_tongyiguizhou_two = {
 			picture = soviet_advisors
 			visible = {
-				NOT={has_cosmetic_tag=GUZ_GMQ}
+				NOT={GUZ={has_cosmetic_tag=GUZ_GMQ}}
 									has_country_flag = GUZ_is_puppet_of_DSC
 
 			}
 			available = {
-
+				NOT={GUZ={has_cosmetic_tag=GUZ_GMQ}}
 									has_country_flag = GUZ_is_puppet_of_DSC
 
 			}
@@ -2640,13 +2640,20 @@ start_politics_input = yes
 			picture = soviet_advisors
 			visible = {
 				country_exists = GUZ
-				has_cosmetic_tag=GUZ_GMQ
+				GUZ={
+								has_cosmetic_tag=GUZ_GMQ
+}
+
 									has_country_flag = GUZ_is_puppet_of_DSC
 
 			}
 			available = {
 				country_exists = GUZ
+GUZ={
 								has_cosmetic_tag=GUZ_GMQ
+}
+
+
 									has_country_flag = GUZ_is_puppet_of_DSC
 
 			}
@@ -2669,7 +2676,7 @@ transfer_troops = yes}
 		DSC_tongyiyunnan = {
 			picture = soviet_advisors
 			visible = {
-				NOT={has_cosmetic_tag=YUN_GMQ}
+				YUN={NOT={has_cosmetic_tag=YUN_GMQ}}
 								has_completed_focus = DSC_chuli_yunnan						
 																	NOT={has_country_flag = YUN_is_puppet_of_DSC}
 			}
@@ -2694,7 +2701,7 @@ puppet = YUN
 	DSC_tongyiyunnan_two = {
 			picture = soviet_advisors
 			visible = {
-NOT={has_cosmetic_tag=YUN_GMQ}
+				YUN={NOT={has_cosmetic_tag=YUN_GMQ}}
 									has_country_flag = YUN_is_puppet_of_DSC
 
 			}
@@ -2742,11 +2749,17 @@ start_politics_input = yes
 			picture = soviet_advisors
 			visible = {
 				country_exists=YUN
+				YUN={
 has_cosmetic_tag=YUN_GMQ
+				}
+
 									has_country_flag = YUN_is_puppet_of_DSC
 
 			}
 			available = {
+								YUN={
+has_cosmetic_tag=YUN_GMQ
+				}
 
 									has_country_flag = YUN_is_puppet_of_DSC
 
@@ -2810,12 +2823,12 @@ create_country_leader = {
 	DSC_tongyixizang_two = {
 			picture = soviet_advisors
 			visible = {
-NOT={has_cosmetic_tag = XIZ_GMQ}
+XIZ={NOT={has_cosmetic_tag = XIZ_GMQ}}
 									has_country_flag = XIZ_is_puppet_of_DSC
 
 			}
 			available = {
-NOT={has_cosmetic_tag = XIZ_GMQ}
+XIZ={NOT={has_cosmetic_tag = XIZ_GMQ}}
 									has_country_flag = XIZ_is_puppet_of_DSC
 
 			}
@@ -2856,13 +2869,18 @@ start_politics_input = yes
 			picture = soviet_advisors
 			visible = {
 								country_exists=XIZ
+
+												XIZ={
 has_cosmetic_tag = XIZ_GMQ
-									has_country_flag = XIZ_is_puppet_of_DSC
+												}
 
 			}
 			available = {
 												country_exists=XIZ
+												XIZ={
 has_cosmetic_tag = XIZ_GMQ
+												}
+
 									has_country_flag = XIZ_is_puppet_of_DSC
 
 			}
