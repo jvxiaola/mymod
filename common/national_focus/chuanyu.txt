@@ -1182,14 +1182,10 @@ Armor_Bat = { x = 1 y = 2 }
 					}
 				}
 			}
-
-
-
-
 		focus = {
-			id = DSC_duijunzhengfu
+			id = DSC_chuli_yunnan
 			icon = PRC_army_modernization
-			x = -1
+			x = -2
 	
 			y = 4
 	
@@ -1200,6 +1196,140 @@ Armor_Bat = { x = 1 y = 2 }
 	
 			}
 
+				relative_position_id = DSC_QIYI
+			ai_will_do = {
+				factor = 10
+			}
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			available = {
+	
+			}
+			completion_reward = {
+	
+	
+	
+
+
+	
+	custom_effect_tooltip = "云南处理事项将在决议中可用"
+	
+	
+	
+			}
+
+		}
+
+	focus = {
+			id = DSC_chuli_guizhou
+			icon = PRC_army_modernization
+			x = 0
+	
+			y = 4
+	
+			cost = 1
+	
+			prerequisite = {
+				focus = DSC_JIEFNQUANZHONGGUO
+	
+			}
+
+				relative_position_id = DSC_QIYI
+			ai_will_do = {
+				factor = 10
+			}
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			available = {
+	
+			}
+			completion_reward = {
+	
+	
+	
+
+
+	
+	custom_effect_tooltip = "贵州处理事项将在决议中可用"
+	
+	
+	
+			}
+
+		}
+	focus = {
+			id = DSC_chuli_xizang
+			icon = PRC_army_modernization
+			x = 2
+	
+			y = 4
+	
+			cost = 1
+	
+			prerequisite = {
+				focus = DSC_JIEFNQUANZHONGGUO
+	
+			}
+
+				relative_position_id = DSC_QIYI
+			ai_will_do = {
+				factor = 10
+			}
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			available = {
+	
+			}
+			completion_reward = {
+	
+	
+	
+
+
+	
+	custom_effect_tooltip = "西藏处理事项将在决议中可用"
+	
+	
+	
+			}
+
+		}
+		focus = {
+			id = DSC_duijunzhengfu
+			icon = PRC_army_modernization
+			x = -1
+	
+			y = 5
+	
+			cost = 1
+	
+			prerequisite = {
+				focus = DSC_chuli_xizang
+	
+			}
+			prerequisite = {
+				focus = DSC_chuli_guizhou
+	
+			}
+						prerequisite = {
+				focus = DSC_chuli_yunnan
+	
+			}
 				relative_position_id = DSC_QIYI
 			ai_will_do = {
 				factor = 10
@@ -1243,14 +1373,22 @@ Armor_Bat = { x = 1 y = 2 }
 				icon = focus_Deng_Liqun
 				x = 1
 		
-				y = 4
+				y = 5
 		
 				cost = 1
 		
-				prerequisite = {
-					focus = DSC_JIEFNQUANZHONGGUO
-		
-				}
+		prerequisite = {
+				focus = DSC_chuli_xizang
+	
+			}
+			prerequisite = {
+				focus = DSC_chuli_guizhou
+	
+			}
+						prerequisite = {
+				focus = DSC_chuli_yunnan
+	
+			}
 				relative_position_id = DSC_QIYI
 		
 				ai_will_do = {
@@ -1287,7 +1425,7 @@ Armor_Bat = { x = 1 y = 2 }
 			icon = islamophobia2
 			x = 0
 	
-			y = 5
+			y = 6
 	
 			cost = 5
 			available = {
@@ -1322,6 +1460,20 @@ Armor_Bat = { x = 1 y = 2 }
 				}
 			}
 			completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = PRG
+			}	
+				create_wargoal = {
+				type = annex_everything
+				target = NAJ
+			}	
+							create_wargoal = {
+				type = annex_everything
+				target = JIL
+			}	
+
+
 		if = {
 			limit = { country_exists = ETK }
 				create_wargoal = {
@@ -1376,7 +1528,7 @@ Armor_Bat = { x = 1 y = 2 }
 			icon = peace
 			x = 0
 	
-			y = 6
+			y = 7
 	
 			cost = 5
 						relative_position_id = DSC_QIYI
@@ -1384,8 +1536,12 @@ Armor_Bat = { x = 1 y = 2 }
 				custom_trigger_tooltip = {
 					tooltip = "中国已重归一统"
 
-
+										GUZ = { exists = no }
 					XIN = { exists = no }
+										YUN = { exists = no }
+										JIL = { exists = no }
+										PRG = { exists = no }
+										NAJ = { exists = no }
 					XIZ = { exists = no }
 					MAC = { exists = no }
 					HKG = { exists = no }
@@ -1431,12 +1587,16 @@ Armor_Bat = { x = 1 y = 2 }
 					set_cosmetic_tag = DSC_GMG
 				}
 				#country_event = { id = Chuanyu.8 }
-				country_event = { id = chuanyu.9 days=9}
-				set_capital = { state = 547 }
 
+				set_capital = { state = 547 }
+hidden_effect = {
 			clr_global_flag = Ccw
 			clr_country_flag = qyxd
-				CHI = { SET_TAG_DSC_to_CHI = yes }
+				CHI = { SET_TAG_DSC_to_CHI = yes
+							country_event = { id = chuanyu.9 days=9}
+			}	
+}
+
 			}
 		}
 

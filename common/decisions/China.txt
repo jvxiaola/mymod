@@ -2540,6 +2540,264 @@ fire_only_once = yes
 			}
 		}
 
+
+
+
+
+
+
+
+		DSC_tongyiguizhou = {
+			picture = soviet_advisors
+			fire_only_once = yes
+			visible = {
+				NOT={has_cosmetic_tag=GUZ_GMQ}
+				has_completed_focus = DSC_chuli_guizhou
+				NOT={
+
+									has_country_flag = GUZ_is_puppet_of_DSC
+								
+
+			}
+			}
+			available = {
+				NOT={has_cosmetic_tag=GUZ_GMQ}
+				has_completed_focus = DSC_chuli_guizhou
+				NOT={
+
+																		has_country_flag = GUZ_is_puppet_of_DSC
+								
+
+			}
+		}
+			cost = 100
+					days_remove = 20
+
+
+	
+			fire_only_once = yes
+			visible = {
+
+			}
+	
+			remove_effect = {
+puppet = GUZ
+set_country_flag = GUZ_is_puppet_of_DSC
+			}
+		}
+
+
+
+		DSC_tongyiguizhou_two = {
+			picture = soviet_advisors
+			visible = {
+				NOT={has_cosmetic_tag=GUZ_GMQ}
+									has_country_flag = GUZ_is_puppet_of_DSC
+
+			}
+			available = {
+
+									has_country_flag = GUZ_is_puppet_of_DSC
+
+			}
+			cost = 100
+					days_remove = 20
+
+
+	
+			fire_only_once = yes
+
+	
+			remove_effect = {
+				GUZ={
+
+
+set_cosmetic_tag = GUZ_GMQ
+start_politics_input = yes
+	set_politics = {
+		ruling_party = communism
+		elections_allowed = no
+	}
+	add_to_array = { ruling_party = 4 } #共产主义	
+		set_variable = { party_pop_array^4 = 0.55 } #Communist-State	
+			create_country_leader = {
+		name = "刘方仁"
+		picture = "GUZ_GOV_liufangren.dds"
+		expire = "2222.1.1"
+		ideology = Chinese_Socialism_mao
+		traits = {
+		#emerging_anarchist_communism
+		#man_of_steel
+		}
+	}
+					startup_politics = yes
+				}
+
+			}
+		}
+
+
+
+		DSC_tongyiyunnan = {
+			picture = soviet_advisors
+			visible = {
+				NOT={has_cosmetic_tag=YUN_GMQ}
+								has_completed_focus = DSC_chuli_yunnan						
+																	NOT={has_country_flag = YUN_is_puppet_of_DSC}
+			}
+			cost = 100
+			available = {
+				has_completed_focus = DSC_chuli_yunnan
+			}
+					days_remove = 20
+
+
+	
+			fire_only_once = yes
+			visible = {
+
+			}
+	
+			remove_effect = {
+				set_country_flag = YUN_is_puppet_of_DSC
+puppet = YUN
+			}
+		}
+	DSC_tongyiyunnan_two = {
+			picture = soviet_advisors
+			visible = {
+NOT={has_cosmetic_tag=YUN_GMQ}
+									has_country_flag = YUN_is_puppet_of_DSC
+
+			}
+			available = {
+
+									has_country_flag = YUN_is_puppet_of_DSC
+
+			}
+			cost = 100
+					days_remove = 20
+
+
+	
+			fire_only_once = yes
+
+	
+			remove_effect = {
+				YUN={
+
+
+set_cosmetic_tag = YUN_GMQ
+start_politics_input = yes
+	set_politics = {
+		ruling_party = communism
+		elections_allowed = no
+	}
+	add_to_array = { ruling_party = 4 } #共产主义	
+			set_variable = { party_pop_array^4 = 0.55 } #Communist-State		
+			create_country_leader = {
+		name = "白恩培"
+		picture = "YUN_GOV_baienpei.dds"
+		expire = "2222.1.1"
+		ideology = Chinese_Socialism_mao
+		traits = {
+		#emerging_anarchist_communism
+		#man_of_steel
+		}
+	}
+					startup_politics = yes
+				}
+
+			}
+		}
+
+		DSC_tongyixizang = {
+			picture = soviet_advisors
+			visible = {
+								has_completed_focus = DSC_chuli_xizang
+								NOT={has_country_flag = XIZ_is_puppet_of_DSC}
+			}
+			available = {
+				has_completed_focus = DSC_chuli_xizang
+								NOT={has_country_flag = XIZ_is_puppet_of_DSC}
+			}
+					days_remove = 20
+cost = 100
+
+	
+			fire_only_once = yes
+			visible = {
+
+			}
+	
+			remove_effect = {
+				set_country_flag = XIZ_is_puppet_of_DSC
+puppet = XIZ
+XIZ={
+create_country_leader = {
+		name = "蒙进喜"
+		picture = "meng_jinxi.dds"
+		expire = "2222.1.1"
+		ideology = Chinese_Socialism
+		traits = {
+		#emerging_anarchist_communism
+		#man_of_steel
+		}
+}
+}
+
+			}
+		}
+
+
+	DSC_tongyixizang_two = {
+			picture = soviet_advisors
+			visible = {
+NOT={has_cosmetic_tag = XIZ_GMQ}
+									has_country_flag = XIZ_is_puppet_of_DSC
+
+			}
+			available = {
+NOT={has_cosmetic_tag = XIZ_GMQ}
+									has_country_flag = XIZ_is_puppet_of_DSC
+
+			}
+			cost = 100
+					days_remove = 20
+
+
+	
+			fire_only_once = yes
+
+	
+			remove_effect = {
+				XIZ={
+
+
+set_cosmetic_tag = XIZ_GMQ
+start_politics_input = yes
+	set_politics = {
+		ruling_party = communism
+		elections_allowed = no
+	}
+	add_to_array = { ruling_party = 4 } #共产主义
+			set_variable = { party_pop_array^4 = 0.55 } #Communist-State	
+			
+		create_country_leader = {
+			name = "蒙进喜"
+			picture = "meng_jinxi.dds"
+			expire = "2222.1.1"
+			ideology = Chinese_Socialism_mao
+				}		
+					startup_politics = yes
+				}
+
+			}
+		}
+
+
+
+
 CHI_difangredarmy = {
 		icon = GFX_decision_generic_form_nation
 		available = {

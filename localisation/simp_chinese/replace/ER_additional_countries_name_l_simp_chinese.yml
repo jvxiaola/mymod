@@ -27,19 +27,22 @@
  GDS_ADJ: "广东省"
  GDS_DEF: "广东省"
  GDS_worker_committee: "广州工人自治委员会"
+
 #西藏
- TIB_JUNQU: "驻西藏部队"
+ TIB_JUNQU: "西藏军区"
  TIB_JUNQU_ADJ: "西藏军区"
  TIB_JUNQU_DEF: "西藏军区"
+ XIZ_GMQ: "西藏革命政府"
 #新疆
  XIN: "新疆军区"
  XIN_ADH: "新疆军区"
  XIN_DEF: "新疆军区"
 #云南
  YUN_GOV: "云南省"
-
+ YUN_GMQ: "云南革命政府"
 #贵州
  GUZ_GOV: "贵州省"
+ GUZ_GMQ: "贵州革命政府"
 
 
 #吉林

@@ -41,13 +41,22 @@ YUN_GOV={
 	    color = rgb { 210 66 16 }
 	color_ui = rgb { 233 78 19 }
 }
-
+YUN_GMQ={
+    color = rgb { 255 20 20 }
+    color_ui = rgb { 255 20 20 }
+}
 GUZ_GOV={
 	    color = rgb { 210 66 16 }
 	color_ui = rgb { 233 78 19 }
 }
-
-
+GUZ_GMQ={
+    color = rgb { 255 20 20 }
+    color_ui = rgb { 255 20 20 }
+}
+XIZ_GMQ={
+    color = rgb { 255 20 20 }
+    color_ui = rgb { 255 20 20 }
+}
 NAJ_GOV={
 	    color = rgb { 210 66 16 }
 	color_ui = rgb { 233 78 19 }

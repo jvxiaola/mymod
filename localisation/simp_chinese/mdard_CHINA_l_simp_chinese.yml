@@ -1976,6 +1976,30 @@
  DSC_JIEFNQUANZHONGGUO: "宣称全中国"
  DSC_JIEFNQUANZHONGGUO_desc: "无产阶级将会拿回他们的国家"
 
+ DSC_chuli_yunnan: "处理云南"
+ DSC_chuli_yunnan_desc: "处理云南"
+ DSC_chuli_guizhou: "处理贵州"
+ DSC_chuli_guizhou_desc: "处理贵州"
+ DSC_chuli_xizang: "处理西藏"
+ DSC_chuli_xizang_desc: "处理西藏"
+
+ DSC_tongyiguizhou: "处理贵州"
+ DSC_tongyiguizhou_two: "贵州革命化"
+
+ GUZ_is_puppet_of_DSC: "贵州在川渝的控制下"
+ XIZ_is_puppet_of_DSC: "西藏在川渝的控制下"
+ YUN_is_puppet_of_DSC: "云南在川渝的控制下"
+
+ DSC_tongyiyunnan: "处理云南"
+ DSC_tongyiyunnan_two: "云南革命化"
+
+
+
+ DSC_tongyixizang: "处理西藏"
+ DSC_tongyixizang_two: "西藏革命化"
+
+
+
  DSC_NEIZHANJIESHU: "内战结束"
  DSC_NEIZHANJIESHU_desc: "经过长时间的军事冲突，自川渝而来的革命者取得了最终的胜利，他们的故事也就此开始....."
 

@@ -2825,6 +2825,7 @@ has_cosmetic_tag = CHI_REB_SA
 					add_to_faction = YUN	
 										add_to_faction = GUZ
 										puppet = GUZ
+										puppet=XIZ
 										GUZ={
 start_politics_input = yes
 ### Party Popularities

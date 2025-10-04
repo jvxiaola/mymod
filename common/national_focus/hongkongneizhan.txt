@@ -828,7 +828,14 @@ asian_crisis
 				type = annex_everything
 				target = PRG
 			}	
-	
+				create_wargoal = {
+				type = annex_everything
+				target = NAJ
+			}	
+							create_wargoal = {
+				type = annex_everything
+				target = JIL
+			}	
 			}
 		}
 	

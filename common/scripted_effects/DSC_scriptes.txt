@@ -68,7 +68,7 @@ remove_ideas = CHI_capital_withdrawal4
 
 add_ideas = Maoist_from_DSC
   clr_country_flag = party5_banned
-  add_ideas = Joint_production_system
+  #add_ideas = Joint_production_system
     clr_country_flag = laozuo
     set_capitulate = no
 	add_ideas = p5_member
@@ -123,7 +123,7 @@ add_ideas = Maoist_from_DSC
 	set_variable = { var = CHI.treasury value = DSC.treasury }
 	set_variable = { var = CHI.corporate_tax_rate value = DSC.corporate_tax_rate }
 	set_variable = { var = CHI.population_tax_rate value = DSC.population_tax_rate }
-	add_ideas = Joint_production_system
+	#add_ideas = Joint_production_system
 	increase_economic_growth = yes
 	#继承革热
   
