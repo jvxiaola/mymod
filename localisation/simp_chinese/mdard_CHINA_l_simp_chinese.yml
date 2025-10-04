@@ -689,8 +689,8 @@
  PRC_tai_rep_desc: "尽管台湾统治阶级非常反动，但是借此去炮击金门是完全错误的，这样只会恐吓台湾人民，让他们远离共产主义和中国，因此我们应该采取和平演变的策略去争取台湾人民。"
  PRC_Support_Marxists: "支持马克思主义者"
  PRC_Support_Marxists_desc: "在台湾，解严后可以成立马克思主义团体，我们将支持马克思主义者夺权"
- PRC_Recognize_Taiwans_independence: "承认台湾独立"
- PRC_Recognize_Taiwans_independence_desc: "如果台湾人民想要独立，那么我们应该给他们独立，来换取他们对社会主义的好感，而不是非要去吞并他们。"
+ PRC_Recognize_Taiwans_independence: "和平宣传"
+ PRC_Recognize_Taiwans_independence_desc: "如果台湾人民不想要一场彻底的战争，我们可以承诺不用武力进行进攻"
  PRC_Pacific_Naval_Bases: "太平洋基地"
  PRC_Pacific_Naval_Bases_desc: "宝岛台湾孤悬海外数十年，现今终于回到了社会主义中国的怀抱。两岸统一标志着我国成功突破了美国人的第一岛链封锁。\n军委已经同意在台湾列岛上建设新的海军基地，广袤的太平洋海域正等待人民海军去探索。"
  PRC_Supporting_the_pro-China_faction_in_Vietnam: "越南的亲华派"
@@ -1985,6 +1985,7 @@
 
  DSC_tongyiguizhou: "处理贵州"
  DSC_tongyiguizhou_two: "贵州革命化"
+ DSC_tongyiguizhou_three: "整合贵州"
 
  GUZ_is_puppet_of_DSC: "贵州在川渝的控制下"
  XIZ_is_puppet_of_DSC: "西藏在川渝的控制下"
@@ -1992,12 +1993,12 @@
 
  DSC_tongyiyunnan: "处理云南"
  DSC_tongyiyunnan_two: "云南革命化"
-
+ DSC_tongyiyunnan_three: "整合云南"
 
 
  DSC_tongyixizang: "处理西藏"
  DSC_tongyixizang_two: "西藏革命化"
-
+ DSC_tongyixizang_three: "整合西藏"
 
 
  DSC_NEIZHANJIESHU: "内战结束"

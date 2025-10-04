@@ -1184,7 +1184,7 @@ Armor_Bat = { x = 1 y = 2 }
 			}
 		focus = {
 			id = DSC_chuli_yunnan
-			icon = PRC_army_modernization
+			icon = CHI_yunnan
 			x = -2
 	
 			y = 4
@@ -1227,7 +1227,7 @@ Armor_Bat = { x = 1 y = 2 }
 
 	focus = {
 			id = DSC_chuli_guizhou
-			icon = PRC_army_modernization
+			icon = CHI_guizhou
 			x = 0
 	
 			y = 4
@@ -1269,7 +1269,7 @@ Armor_Bat = { x = 1 y = 2 }
 		}
 	focus = {
 			id = DSC_chuli_xizang
-			icon = PRC_army_modernization
+			icon = CHI_xizang
 			x = 2
 	
 			y = 4

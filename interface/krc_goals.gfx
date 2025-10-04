@@ -23,6 +23,27 @@ spriteTypes = {
 		name = "jiugonzalo"
 		texturefile = "gfx/interface/goals/yunze_gonzalo2.png"
 	}	
+
+
+		SpriteType = {
+		name = "CHI_yunnan"
+		texturefile = "gfx/interface/goals/CHI_yunnan.png"
+	}	
+
+
+		SpriteType = {
+		name = "CHI_guizhou"
+		texturefile = "gfx/interface/goals/CHI_guizhou.png"
+	}	
+
+		SpriteType = {
+		name = "CHI_xizang"
+		texturefile = "gfx/interface/goals/CHI_xizang.png"
+	}	
+
+
+
+
 			SpriteType = {
 		name = "rmzz"
 		texturefile = "gfx/interface/goals/ALB_Thousand_Voices.png"

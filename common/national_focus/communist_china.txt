@@ -3276,7 +3276,7 @@ generic_grant_3_percent_influence_of_CHI = yes
 }						
 focus = {
 		id = PRC_Recognize_Taiwans_independence
-		icon = ind_taiwan
+		icon = peace
 		x = -1
 		y = 4
 relative_position_id = PRC_asian_rev
@@ -4148,10 +4148,10 @@ prerequisite = { focus = PRC_eu }
 		}
 
 		available = {
-	network_national_coverage = {
-    target = SOV
-    value > 50
-}
+	#network_national_coverage = {
+  #  target = SOV
+ #   value > 50
+#}
 SOV = {
 NOT = {	
 custom_trigger_tooltip = {
