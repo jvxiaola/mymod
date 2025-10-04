@@ -1430,10 +1430,13 @@ Armor_Bat = { x = 1 y = 2 }
 					change_DSC_Socialist_Construction_dynamic1 = yes
 					set_cosmetic_tag = DSC_GMG
 				}
-				country_event = { id = Chuanyu.8 }
+				#country_event = { id = Chuanyu.8 }
 				country_event = { id = chuanyu.9 days=9}
 				set_capital = { state = 547 }
 
+			clr_global_flag = Ccw
+			clr_country_flag = qyxd
+				CHI = { SET_TAG_DSC_to_CHI = yes }
 			}
 		}
 

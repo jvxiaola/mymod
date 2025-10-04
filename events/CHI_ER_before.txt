@@ -45,7 +45,7 @@ country_event = {
 						has_country_flag = the_Right_wing_reform 
 					}
 				}
-				country_event = { id = CHI_ER_BEFORE_xin.1 days = 50 } 
+				#country_event = { id = CHI_ER_BEFORE_xin.1 days = 50 } 
 			}
 
 
@@ -183,170 +183,6 @@ news_event = {
 	}	
 }
 
-#珠江——广东事件
-country_event = {
-	 id = CHI_ER_BEFORE_guang.01
-	title = CHI_ER_BEFORE_guang.01.t
-	desc = CHI_ER_BEFORE_guang.01.d
-	picture = GFX_event_pictures_CW_D_event1
-	#trigger = { tag = CHI has_completed_focus = CHI_Three_represents }
-	fire_only_once = yes
-
-	option = {	
-		name = CHI_ER_BEFORE_guang.01.a
-		add_stability = -0.001
-	}
-}
-
-country_event = {
-	id = CHI_ER_BEFORE_guang.02
-	title = CHI_ER_BEFORE_guang.02.t
-	desc = CHI_ER_BEFORE_guang.02.d
-	#picture = GFX_event_pictures_CW_D_event1
-	is_triggered_only = yes
-	option = {	
-		name = CHI_ER_BEFORE_guang.02.a
-		add_stability = -0.005
-		country_event = { id = CHI_ER_BEFORE_guang.03 days = 15 }
-	}
-}
-
-country_event = {
-	id = CHI_ER_BEFORE_guang.03
-	title = CHI_ER_BEFORE_guang.03.t
-	desc = CHI_ER_BEFORE_guang.03.d
-	#picture = GFX_event_pictures_CW_D_event1
-	is_triggered_only = yes
-	option = {	
-		name = CHI_ER_BEFORE_guang.03.a
-		add_stability = -0.005
-		country_event = { id = CHI_ER_BEFORE_guang.04 days = 7 }
-	}
-}
-
-country_event = {
-	id = CHI_ER_BEFORE_guang.04
-	title = CHI_ER_BEFORE_guang.04.t
-	desc = CHI_ER_BEFORE_guang.04.d
-	#picture = GFX_event_pictures_CW_D_event1
-	is_triggered_only = yes
-	option = {	
-		name = CHI_ER_BEFORE_guang.04.a
-		add_stability = -0.005
-		532 = { set_demilitarized_zone = yes }
-		country_event = { id = CHI_ER_BEFORE_guang.05 days = 3 }
-	}
-}
-
-country_event = {
-	id = CHI_ER_BEFORE_guang.05
-	title = CHI_ER_BEFORE_guang.05.t
-	desc = CHI_ER_BEFORE_guang.05.d
-	#picture = GFX_event_pictures_CW_D_event1
-	is_triggered_only = yes
-	option = {	
-		name = CHI_ER_BEFORE_guang.05.a
-		add_stability = -0.010
-		532 = { set_demilitarized_zone = no add_manpower = -500 }
-		add_equipment_to_stockpile = {
-			type = Inf_equipment
-			amount = -100
-			producer = CHI
-		}
-		country_event = { id = CHI_ER_BEFORE_guang.06 days = 15 }
-	}
-}
-
-country_event = {
-	id = CHI_ER_BEFORE_guang.06
-	title = CHI_ER_BEFORE_guang.06.t
-	desc = CHI_ER_BEFORE_guang.06.d
-	#picture = GFX_event_pictures_CW_D_event1
-	is_triggered_only = yes
-	trigger = { tag = CHI }
-	option = {	
-		name = CHI_ER_BEFORE_guang.06.a
-		country_event = { id = CHI_ER_BEFORE.7 days = 35 }
-		add_manpower = -200
-		every_owned_state = {
-			limit = { is_in_array = { global.guangdong_states = THIS } }
-			transfer_state_to = PRG
-		}
-		PGR_PLA_taobojun = { set_nationality = PRG }
-		promote_character = PGR_PLA_taobojun
-		give_guarantee = PRG
-		PRG = {
-			every_owned_state = {
-				add_core_of = PRG
-				#remove_core_of = CHI
-			}
-			inherit_technology = CHI
-			random_owned_state = {
-				create_unit = {
-					division = "name = \"解放军师级火力支援单位\" division_template = \"解放军师级火力支援单位\" start_experience_factor = 1.5"
-					owner = PRG
-					count = 4
-				}
-				create_unit = {
-					division = "name = \"解放军师级机动火力单位\" division_template = \"解放军师级机动火力单位\" start_experience_factor = 1.5"
-					owner = PRG
-					count = 2
-				}
-			}
-			give_military_access = CHI
-		}
-	}
-}
-
-country_event = {
-	id = CHI_ER_BEFORE_guang.07
-	title = CHI_ER_BEFORE_guang.07.t
-	desc = CHI_ER_BEFORE_guang.07.d
-	is_triggered_only = yes
-	trigger = { tag = CHI }
-	option = {
-		name = CHI_ER_BEFORE_guang.07.a
-		country_event = { id = CHI_ER_BEFORE.8 }
-	}
-}
-
-country_event = {
-	id = CHI_ER_BEFORE_guang.08
-	title = CHI_ER_BEFORE_guang.08.t
-	desc = CHI_ER_BEFORE_guang.08.d
-	is_triggered_only = yes
-	trigger = { tag = CHI }
-	option = {	
-		name = CHI_ER_BEFORE_guang.08.a
-		country_event = { id = CHI_ER_BEFORE.9 }
-	}
-}
-
-country_event = {
-	id = CHI_ER_BEFORE_guang.09
-	title = CHI_ER_BEFORE_guang.09.t
-	desc = CHI_ER_BEFORE_guang.09.d
-	is_triggered_only = yes
-	trigger = { tag = CHI }
-	option = {	
-		name = CHI_ER_BEFORE_guang.09.a
-		country_event = { id = CHI_ER_BEFORE.10 }
-	}
-}
-
-country_event = {
-	id = CHI_ER_BEFORE_guang.10
-	title = CHI_ER_BEFORE_guang.10.t
-	desc = CHI_ER_BEFORE_guang.10.d
-	is_triggered_only = yes
-	trigger = { tag = CHI }
-	option = {	
-		name = CHI_ER_BEFORE_guang.10.a
-		532 = { set_demilitarized_zone = yes }
-		add_political_power = -25
-		add_stability = -0.05
-	}
-}
 
 #新疆危机事件
 country_event = {
@@ -359,7 +195,7 @@ country_event = {
 	immediate = { RAJ = { set_country_flag = CAN_NOT_input_is_reb } }
 	option = {	
 		name = CHI_ER_BEFORE_xin.1.a
-		country_event = { id = CHI_ER_BEFORE_xin.2 days = 35 }
+		#country_event = { id = CHI_ER_BEFORE_xin.2 days = 35 }
 		add_manpower = -200
 		add_equipment_to_stockpile = {
 			type = Inf_equipment
@@ -369,85 +205,8 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = CHI_ER_BEFORE_xin.2
-	title = CHI_ER_BEFORE_xin.2.t
-	desc = CHI_ER_BEFORE_xin.2.d
-	picture = GFX_event_pictures_CW_D_event2
-	trigger = { tag = CHI }
-	is_triggered_only = yes
-	option = {	
-		name = CHI_ER_BEFORE_xin.2.a
 
-		country_event = { id = CHI_ER_BEFORE_xin.3 days = 3 }
-		add_equipment_to_stockpile = {
-			type = Inf_equipment
-			amount = -3200
-			producer = CHI
-		}
-		592 = {
-			set_demilitarized_zone = yes
-			add_manpower = -1000
-			damage_building = {
-				type = offices
-				damage = 0.65
-			}
-			damage_building = {
-				type = infrastructure
-				damage = 0.45
-			}
-			damage_building = {
-				type = industrial_complex
-				damage = 0.75
-			}
-		}
-		1201 = { 
-			set_demilitarized_zone = yes
-			set_state_flag = In_Chaos_by_terrist_attck_XIN
-			add_manpower = -150
-		}
-		1198 = { 
-			set_demilitarized_zone = yes
-			set_state_flag = In_Chaos_by_terrist_attck_XIN
-			add_manpower = -200
-		}
-	}
-}
 
-country_event = {
-	id = CHI_ER_BEFORE_xin.3
-	title = CHI_ER_BEFORE_xin.3.t
-	desc = CHI_ER_BEFORE_xin.3.d
-	picture = GFX_event_pictures_CW_D_event3
-	is_triggered_only = yes
-	trigger = { tag = CHI }
-	option = {	
-		name = CHI_ER_BEFORE_xin.3.a
-		army_experience = 5
-		country_event = { id = CHI_ER_BEFORE_xin.4 days = 2 }
-		add_equipment_to_stockpile = {
-			type = Inf_equipment
-			amount = -100
-			producer = CHI
-		}
-		592 = {
-			set_demilitarized_zone = no
-			add_manpower = -150
-			damage_building = {
-				type = offices
-				damage = 0.10
-			}
-			damage_building = {
-				type = infrastructure
-				damage = 0.05
-			}
-			damage_building = {
-				type = industrial_complex
-				damage = 0.25
-			}
-		}
-	}
-}
 
 country_event = {
 	id = CHI_ER_BEFORE_xin.4
@@ -664,15 +423,15 @@ country_event = {
 	option = {
 		name = CHI_ER_BEFORE_xin.6.a
 		civl_start_xin_or_effect = yes
-		country_event = { id = CHI_ER_BEFORE_xin.8 days = 15 }
+		#country_event = { id = CHI_ER_BEFORE_xin.8 days = 15 }
 		hidden_effect = {
 			if = {
 				limit = { country_exists = DSC }
-				DSC = { country_event = { id = CHI_ER_BEFORE_xin.8 days = 15 } }
+				#DSC = { country_event = { id = CHI_ER_BEFORE_xin.8 days = 15 } }
 			}
 			if = {
 				limit = { country_exists = HKG }
-				HKG = { country_event = { id = CHI_ER_BEFORE_xin.8 days = 15 } }
+				#HKG = { country_event = { id = CHI_ER_BEFORE_xin.8 days = 15 } }
 			}
 		}
 	}
@@ -737,7 +496,86 @@ country_event = {
 	picture = GFX_iranian_civ_war_country
 	is_triggered_only = yes
 
-	immediate = { if = { limit = { tag = CHI } Set_ETK = yes } }
+	immediate = {
+ETK={
+inherit_technology = CHI
+			division_template = {
+				name = "民兵部队"
+	regiments = {
+	Militia_Bat = { x = 0 y = 0 }
+	Militia_Bat = { x = 0 y = 1 }
+	Militia_Bat = { x = 0 y = 2 }
+	Militia_Bat = { x = 0 y = 3 }
+	Militia_Bat = { x = 1 y = 0 }
+	Militia_Bat = { x = 1 y = 1 }
+	Militia_Bat = { x = 1 y = 2 }
+	Militia_Bat = { x = 1 y = 3 }
+
+				}
+			}
+
+	transfer_state = 1215
+	transfer_state = 1217
+declare_war_on = {
+	target = XIN
+	type = annex_everything 
+}
+		add_equipment_to_stockpile = {
+			type = Inf_equipment
+			amount = 2000
+			producer = CHI
+		}
+				random_owned_controlled_state={
+				prioritize = { 1217 }
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = ETK
+					prioritize_location = 7790
+				}
+
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = ETK
+					prioritize_location = 7790
+				}
+
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = ETK
+					prioritize_location = 7790
+				}
+			
+			}
+
+	transfer_state = 1222
+
+				random_owned_controlled_state = {
+				prioritize = { 1222 }
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = ETK
+					prioritize_location = 12864
+				}
+
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = ETK
+					prioritize_location = 5736
+				}
+
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = ETK
+					prioritize_location = 5736
+				}
+			
+			}
+XIN={
+	transfer_state = 1222
+}
+country_event = {id=CHI_ER_BEFORE_xin.9 hours=1}
+} 
+
+
+
+
+
+
+}
 	option = {
 		name = CHI_ER_BEFORE_xin.8.a
 		every_country = { limit = { is_ai = no }
@@ -745,67 +583,96 @@ country_event = {
         if = {
             limit = { NOT = { has_global_flag = CHI_ER_BEFORE_xin.8_fired } }
             # 第一次才显示新闻
-		 news_event = { id = CHI_ER_BEFORE_xin.9 days = 7 } }
+
+		}
         }
 
 
 set_global_flag = CHI_ER_BEFORE_xin.8_fired 
 		custom_effect_tooltip = CHI_ER_BEFORE_xin_event8_effect_tt
-		hidden_effect = {
-			end_puppet = XIN
-		}
+
 	}
 }
 
-news_event = {
+
+country_event = {
 	id = CHI_ER_BEFORE_xin.9
 	title = CHI_ER_BEFORE_xin.9.t
 	desc = CHI_ER_BEFORE_xin.9.d
-	picture = GFX_event_pictures_CW_D_ET_attack  
+	picture = GFX_iranian_civ_war_country
 	is_triggered_only = yes
+hidden = yes
+	immediate = {
+ETK={
 
-	immediate = { 
-		hidden_effect = {
-			ETK = {
-				declare_war_on = {
-					target = XIN
-					type = annex_everything
+
+
+				random_owned_controlled_state={
+				prioritize = { 1217 }
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = ETK
+					prioritize_location = 7790
 				}
-				every_owned_state = {
-					remove_dynamic_modifier = { modifier = extrameal_islam_attack1 } remove_dynamic_modifier = { modifier = extrameal_islam_attack2 }
-					remove_dynamic_modifier = { modifier = extrameal_islam_attack3 } remove_dynamic_modifier = { modifier = extrameal_islam_attack4 } 
-					remove_dynamic_modifier = { modifier = extrameal_islam_attack5 }
+
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = ETK
+					prioritize_location = 7790
 				}
+
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = ETK
+					prioritize_location = 7790
+				}
+			
 			}
 
+	transfer_state = 1222
 
+				random_owned_controlled_state = {
+				prioritize = { 1222 }
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = ETK
+					prioritize_location = 12864
+				}
+
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = ETK
+					prioritize_location = 5736
+				}
+
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = ETK
+					prioritize_location = 5736
+				}
 			
-			country_event = { id = CHI_ER_BEFORE_xin.16 days = 15 }
-		}	
-	}
+			}
+XIN={
+	transfer_state = 1222
+}
+
+} 
+
+
+
+
+
+
+}
 	option = {
-		name = CHI_ER_BEFORE_xin.9.a1
-		trigger = { OR = { tag = CHI tag = DSC tag = HKG tag = XIZ tag = XIN } }
-		custom_effect_tooltip = NOT_completed_tt
-	}
-	option = {
-		name = CHI_ER_BEFORE_xin.9.a2
-		trigger = {
-			NOT = { tag = CHI tag = DSC tag = HKG tag = XIZ tag = XIN }
-			has_government = communism 
+		name = CHI_ER_BEFORE_xin.8.a
+		every_country = { limit = { is_ai = no }
+
+        if = {
+            limit = { NOT = { has_global_flag = CHI_ER_BEFORE_xin.8_fired } }
+            # 第一次才显示新闻
+
 		}
-	}
-	option = {
-		name = CHI_ER_BEFORE_xin.9.a3
-		trigger = { has_government = democratic }
-	}
-	option = {
-		name = CHI_ER_BEFORE_xin.9.a4
-		trigger = { OR = { has_government = neutrality has_government = nationalist } }
-	}
-	option = {
-		name = CHI_ER_BEFORE_xin.9.a5
-		trigger = { OR = { has_government = fascism } }
+        }
+
+
+set_global_flag = CHI_ER_BEFORE_xin.8_fired 
+		custom_effect_tooltip = CHI_ER_BEFORE_xin_event8_effect_tt
+
 	}
 }
 
@@ -928,7 +795,7 @@ country_event = {
 			limit = { tag = SOV }
 			CHI = { set_country_flag = Contact_SOV_successs set_country_flag = SOV_name_anti_teriost }
 		}
-		CHI = { country_event = { id = CHI_ER_BEFORE_xin.13 } }
+		#CHI = { country_event = { id = CHI_ER_BEFORE_xin.13 } }
 
 		ai_chance = {
 			base = 1
@@ -960,7 +827,7 @@ country_event = {
 			limit = { tag = SOV } 
 			CHI = { set_country_flag = Contact_SOV_failed set_country_flag = SOV_name_anti_teriost }
 		}
-		CHI = { country_event = { id = CHI_ER_BEFORE_xin.14 } }
+		#CHI = { country_event = { id = CHI_ER_BEFORE_xin.14 } }
 
 		ai_chance = {
 			base = 0
@@ -1080,20 +947,4 @@ news_event = {
 	}
 }
 
-country_event = {
-	id = CHI_ER_BEFORE_xin.16
-	title = CHI_ER_BEFORE_xin.16.t
-	desc = CHI_ER_BEFORE_xin.16.d
-	is_triggered_only = yes
-	immediate = {
-				XIN = {
-			create_faction = "中亚反恐维和行动"
-			add_to_faction = PAK
-		}
-	}
 
-	option = {
-		name = CHI_ER_BEFORE_xin.16.a
-
-	}
-}

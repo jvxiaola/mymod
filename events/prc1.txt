@@ -1557,7 +1557,7 @@ country_event = {
 	
 		}
 	}
-	
+
 	country_event = {	
 		id = prc1.57
 		title = prc1.57.t
@@ -1583,7 +1583,7 @@ set_variable = {
 				}
 				country_event = { id = prc1.161 days = 3 }
 				CHI = { 
-					country_event = { id = CHI_ER_BEFORE_xin.6 days = 20 } 
+					#country_event = { id = CHI_ER_BEFORE_xin.6 days = 20 } 
 					clr_country_flag = XIN_attacked
 					mark_focus_tree_layout_dirty = yes
 					#add_ideas = patry_fenlie
@@ -2576,6 +2576,63 @@ random_country={
 			air_ratio = 0.2
 		}
 }
+
+
+
+XIN={
+
+
+
+country_event = {id=CHI_ER_BEFORE_xin.8 days = 1}
+	create_country_leader = {
+					name = "邱衍汉"
+					picture = "qiu_yanhan.dds"
+					ideology = XIN_MR
+					traits = {}
+				}
+
+				inherit_technology = CHI							
+
+
+			
+	#xxxx
+	every_state={
+		limit={
+			is_core_of=ETK
+	}
+	transfer_state_to=XIN
+add_core_of = XIN
+
+
+}
+
+
+
+
+
+
+
+
+
+}
+
+
+random_country={
+	limit={
+	has_cosmetic_tag=CHI_REB_SB
+	}
+
+			transfer_units_fraction= {
+			target = XIN
+			size = 0.1
+			stockpile_ratio = 0.1
+			army_ratio = 0.1
+	
+			air_ratio = 0.1
+		}
+}
+
+
 		NAJ = {
 
 start_politics_input = yes
@@ -2685,14 +2742,20 @@ startup_politics = yes
 					add_core_of = DSC
 				}
 			}
+
+	if={
+		limit={
+			DSC={
+			has_country_flag = chuanyu_is_junguan
+			}
+
+		}
 random_country = {
 	limit={
 has_cosmetic_tag = CHI_REB_SA
 	}
-	if={
-		limit={
-			has_country_flag = chuanyu_is_junguan
-		}
+
+
 					transfer_units_fraction= {
 				target = DSC
 				size = 0.05
@@ -2701,14 +2764,61 @@ has_cosmetic_tag = CHI_REB_SA
 				air_ratio = 0.05
 			}
 	}
-			transfer_units_fraction= {
+	}
+
+
+random_country = {
+	limit={
+has_cosmetic_tag = CHI_REB_SA
+	}
+
+
+					transfer_units_fraction= {
 				target = DSC
+				size = 0.1
+				stockpile_ratio = 0.1
+				army_ratio = 0.1
+				air_ratio = 0.1
+			}
+
+
+}
+
+random_country = {
+	limit={
+has_cosmetic_tag = CHI_REB_SA
+	}
+
+
+					transfer_units_fraction= {
+				target = YUN
 				size = 0.05
 				stockpile_ratio = 0.05
 				army_ratio = 0.05
 				air_ratio = 0.05
 			}
+	
+
 }
+random_country = {
+	limit={
+has_cosmetic_tag = CHI_REB_SA
+	}
+
+
+					transfer_units_fraction= {
+				target = GUZ
+				size = 0.05
+				stockpile_ratio = 0.05
+				army_ratio = 0.05
+				air_ratio = 0.05
+			}
+	
+
+}
+
+
+
 				DSC = {
 			create_faction = "成都军区"
 			add_to_faction = XIZ

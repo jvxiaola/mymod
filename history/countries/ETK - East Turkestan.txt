@@ -42,9 +42,9 @@
 	startup_influence = yes
 
 	set_popularities = {
-		democratic = 49
+		democratic = 9
 		communism = 0
-		fascism = 50
+		fascism = 90
 		neutrality = 0
 		nationalist = 1
 	}
