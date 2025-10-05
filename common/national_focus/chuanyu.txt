@@ -571,7 +571,7 @@ add_ideas = DSC_gcd
 
 	focus = {
 		id = DSC_shiyicidaibiaodahui
-		icon = CPC_convene_National_People_Congress
+		icon = communist_party_of_china_congress
 		x = 5
 
 		y = 3

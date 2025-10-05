@@ -2318,7 +2318,7 @@ focus = {
 
 		offset = {
 			x = -50
-			y = 18
+			y = 20
 			trigger = {
 			has_country_flag = Maoist_from_DSC
 			}
@@ -6180,7 +6180,7 @@ add_core_of = ROOT
 		focus = {
 			id = PRC_Chairman_Mao_Yuanxin
 			icon = focus_Mao_Yuanxin
-			x = 18
+			x = 23
 			y = 0
 
 			cost = 0.2
@@ -6205,7 +6205,7 @@ add_core_of = ROOT
 		}
 	focus = {
 			id = PRC_Purge_of_revisionists
-			icon = anti_trotskyism
+			icon = picture2
 			x = -2
 			y = 1
 	prerequisite = {focus = PRC_Chairman_Mao_Yuanxin }
@@ -6242,7 +6242,7 @@ add_core_of = ROOT
 			}
 	focus = {
 			id = PRC_Workers_Propaganda_Team
-			icon = laborcollective
+			icon = Peasants_and_Workers_Republic
 			x = 0
 			y = 1
 	prerequisite = {focus = PRC_Chairman_Mao_Yuanxin }
@@ -6349,7 +6349,7 @@ add_core_of = ROOT
 			id = PRC_Continue_the_Cultural_Revolution
 			icon = maoism2
 			x = 0
-			y = 8
+			y = 12
 
 			prerequisite = { focus = PRC_Spiritual_Atomic_Bomb }
 
@@ -6395,7 +6395,7 @@ add_core_of = ROOT
 			id = PRC_Proletarian_leader
 			icon = Neo_Marxism
 			x = -1
-			y = 9
+			y =13
 
 	prerequisite = {focus = PRC_Continue_the_Cultural_Revolution}
 
@@ -6432,7 +6432,7 @@ add_core_of = ROOT
 				id = PRC_jitilingdao
 				icon = revolutionary_government
 				x = 1
-				y = 9
+				y = 13
 	
 		prerequisite = {focus = PRC_Continue_the_Cultural_Revolution}
 	
@@ -6469,13 +6469,153 @@ add_core_of = ROOT
 					mark_focus_tree_layout_dirty = yes
 				}	
 				}
+		 focus= {
+			id = PRC_zhixianhuiyi
+			icon = Parliamentary_administration_unity
+			x = 0
+			y = 4
+	prerequisite = {focus = PRC_advices_of_masses }
+	prerequisite = {focus = PRC_guojimaopaideyijian }
 
 
+
+
+	relative_position_id = PRC_Chairman_Mao_Yuanxin
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 10
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			completion_reward = {
+
+				add_ideas=CHI_zzgs
+				remove_ideas=CHI_jiefangsixiang
+	hidden_effect = {
+	country_event = {id = prc1.118 days = 14 }
+	
+	}		
+			}
+			}	
+
+
+	 focus= {
+			id = PRC_advices_of_masses
+			icon = participatory_democracy
+			x = -2
+			y = 3
+	prerequisite = {focus = PRC_The_real_two_whatevers }
+	relative_position_id = PRC_Chairman_Mao_Yuanxin
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 10
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			completion_reward = {
+
+				add_ideas=CHI_zzgs
+				remove_ideas=CHI_jiefangsixiang
+	hidden_effect = {
+	country_event = {id = prc1.118 days = 14 }
+	
+	}		
+			}
+			}	
+ focus= {
+			id = advice_of_maoists
+						icon = Mao_Zedongtalented
+			x = 0
+			y = 3
+	prerequisite = {focus = PRC_The_real_two_whatevers }
+	relative_position_id = PRC_Chairman_Mao_Yuanxin
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 10
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			completion_reward = {
+
+
+			}
+			}	
+	 focus= {
+			id = PRC_guojimaopaideyijian
+			icon = abolish_state_apparatus
+			x = 2
+			y = 3
+	prerequisite = {focus = PRC_The_real_two_whatevers }
+	relative_position_id = PRC_Chairman_Mao_Yuanxin
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 10
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			completion_reward = {
+
+				add_ideas=CHI_zzgs
+				remove_ideas=CHI_jiefangsixiang
+	hidden_effect = {
+	country_event = {id = prc1.118 days = 14 }
+	
+	}		
+			}
+			}	
 		focus = {
 			id = PRC_Politics_in_everyday_life
 			icon = fraternity_classes
 			x = 0
-			y = 3
+			y = 5
 	prerequisite = {focus = PRC_The_real_two_whatevers }
 	relative_position_id = PRC_Chairman_Mao_Yuanxin
 	
@@ -6510,7 +6650,7 @@ add_core_of = ROOT
 			id = PRC_Study_the_People_Liberation_Army_Movement
 			icon = Rectification_Movement
 			x = -3
-			y = 5
+			y = 7
 	prerequisite = {focus = PRC_Politics_in_everyday_life }
 	relative_position_id = PRC_Chairman_Mao_Yuanxin
 	
@@ -6554,12 +6694,121 @@ add_core_of = ROOT
 			}
 			}
 			}	
+
+		focus = {
+			id = PRC_cultural_line
+			icon = reverse_history_again
+			x = 3
+			y = 6
+	prerequisite = {focus = PRC_Politics_in_everyday_life}
+	relative_position_id = PRC_Chairman_Mao_Yuanxin
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 10
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			completion_reward = {
+
+			}
+			}	
+	focus	 = {
+			id = PRC_learn_maoism
+			icon = mao_book
+			x = 3
+			y = 8
+	prerequisite = {focus = PRC_Proletarian_Legalist_Thought}
+		prerequisite = {focus = PRC_re-explain_history}
+	relative_position_id = PRC_Chairman_Mao_Yuanxin
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 10
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			completion_reward = {
+	if={
+		limit={
+			has_idea= CHI_zzgs
+		}
+	swap_ideas={
+remove_idea=CHI_zzgs
+add_idea=CHI_zzgs1
+	}
+
+}
+else_if={
+	limit={
+		has_idea= CHI_zzgs1
+	}
+swap_ideas={
+remove_idea=CHI_zzgs1
+add_idea=CHI_zzgs2
+}
+
+}
+			}
+			}	
+
+	focus	 = {
+			id = PRC_re-explain_history
+			icon = tot_Maozedong_chairman
+			x = 4
+			y = 7
+	prerequisite = {focus = PRC_cultural_line}
+	relative_position_id = PRC_Chairman_Mao_Yuanxin
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 10
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			completion_reward = {
+
+			}
+			}	
 				focus = {
 			id = PRC_Proletarian_Legalist_Thought
-			icon = total_dictatorship_of_the_proletariat
-			x = 3
-			y = 5
-	prerequisite = {focus = PRC_Politics_in_everyday_life}
+			icon = Criticize_Confucius
+			x = 2
+			y = 7
+	prerequisite = {focus = PRC_cultural_line}
 	relative_position_id = PRC_Chairman_Mao_Yuanxin
 	
 			cost = 5
@@ -6583,26 +6832,7 @@ add_core_of = ROOT
 
 
 
-	if={
-		limit={
-			has_idea= CHI_zzgs
-		}
-	swap_ideas={
-remove_idea=CHI_zzgs
-add_idea=CHI_zzgs1
-	}
 
-}
-else_if={
-	limit={
-		has_idea= CHI_zzgs1
-	}
-swap_ideas={
-remove_idea=CHI_zzgs1
-add_idea=CHI_zzgs2
-}
-
-}
 	hidden_effect = {
 	country_event = {id = prc1.119 days = 14 }
 	
@@ -6613,7 +6843,7 @@ add_idea=CHI_zzgs2
 			id = PRC_Implementing_the_Anshan_Constitution
 			icon = party_state
 			x = 0
-			y = 4
+			y = 6
 	prerequisite = { focus = PRC_Politics_in_everyday_life }
 	relative_position_id = PRC_Chairman_Mao_Yuanxin
 	
@@ -6644,7 +6874,7 @@ add_idea=CHI_zzgs2
 			id = PRC_allotment_system
 			icon = Believe_in_market_economy
 			x = 0
-			y = 5
+			y = 7
 			prerequisite = { focus = PRC_Implementing_the_Anshan_Constitution }
 			relative_position_id = PRC_Chairman_Mao_Yuanxin
 			cost = 3
@@ -6678,11 +6908,11 @@ add_idea=CHI_zzgs2
 			id = PRC_xianzhizcjjfaquan
 			icon = xianzhifaquan
 			x = 0
-			y = 6
+			y = 10
 			prerequisite = {focus = PRC_allotment_system }
 
 			prerequisite = {focus = PRC_Study_the_People_Liberation_Army_Movement}
-			prerequisite = {focus = PRC_Proletarian_Legalist_Thought}
+			prerequisite = {focus = PRC_learn_maoism}
 
 
 			relative_position_id = PRC_Chairman_Mao_Yuanxin
@@ -7262,7 +7492,7 @@ focus = {
 			id = PRC_Spiritual_Atomic_Bomb
 			icon = ziligengsheng
 			x = 0
-			y = 7
+			y = 11
 			prerequisite = {focus = PRC_xianzhizcjjfaquan }
 
 

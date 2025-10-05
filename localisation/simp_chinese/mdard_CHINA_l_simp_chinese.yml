@@ -2076,14 +2076,29 @@
 #毛远新
  PRC_Chairman_Mao_Yuanxin: "毛远新主席"
  PRC_Chairman_Mao_Yuanxin_desc: "毛泽东的侄儿子，毛远新同志成功在党内斗争中击败了被毛泽东批判为毒草之一的邓力群，他准备实现真正的毛主义纲领。"
- PRC_Purge_of_revisionists: "清洗反革命分子"
- PRC_Purge_of_revisionists_desc: "我们将把修正主义分子清洗出党。"
+ PRC_Purge_of_revisionists: "清洗反革命"
+ PRC_Purge_of_revisionists_desc: "我们的政权刚刚建立，反革命的行动烈度较大，我们需要采取雷霆手段肃清反革命"
  PRC_Workers_Propaganda_Team: "组织工人纠察队"
  PRC_Workers_Propaganda_Team_desc: "在进行公有化改造之前，我们将先限制资本家在工厂中的权力，使其处于工人的监督之下"
- PRC_Revolutionizing_the_Army: "军队革命化"
- PRC_Revolutionizing_the_Army_desc: "人民解放军在过去的改革开放时期大范围的堕落了，我们要重新破除军队内的资产阶级法权思想，最终实现军队的革命化"
- PRC_The_real_two_whatevers: "恢复七五体制"
- PRC_The_real_two_whatevers_desc: "我们将会开始恢复1975年的体制，我们将从恢复75宪法开始"
+ PRC_Revolutionizing_the_Army: "整顿军队"
+ PRC_Revolutionizing_the_Army_desc: "我们的军队中，继承了过去很多不好的习惯，我们要逐步破除军队内的不良风气，资产阶级法权思想，最终实现军队的革命化"
+ PRC_The_real_two_whatevers: "七五宪法的基础"
+ PRC_The_real_two_whatevers_desc: "我们将以七五宪法为蓝本，开始建立"
+
+ PRC_zhixianhuiyi: "拟定新宪法"
+ PRC_zhixianhuiyi_desc: "在新的时代，我们必须根据实际状况制定一部真正属于人民的宪法，保障劳动人民的权利，并限制资产阶级势力的复辟。"
+
+ advice_of_maoists: "接触中国毛派"
+ advice_of_maoists_desc: "毛主义者强调继续革命，反对官僚主义与资本主义复辟。他们要求宪法必须体现无产阶级专政的原则。"
+
+ PRC_guojimaopaideyijian: "接触国际共产组织"
+ PRC_guojimaopaideyijian_desc: "来自国际共产主义组织的同志们也表达了意见，他们呼吁中国要承担起新的革命中心角色。"
+
+ PRC_advices_of_masses: "群众意见"
+ PRC_advices_of_masses_desc: "群众通过各种形式表达了他们的诉求：反腐败、反官僚、反贫富分化。他们希望宪法能真正体现人民的利益。"
+
+
+
  PRC_Continue_the_Cultural_Revolution: "二次文化大革命"
  PRC_Continue_the_Cultural_Revolution_desc: "第一次文化大革命的成果基本上已经恢复，毛远新宣布发动“第二次文化大革命”，号召全国人民继续批判和斗争。他强调，社会主义下仍然有阶级斗争，必须进行继续革命。"
  PRC_kill_capitalist: "§R杀光资产阶级反革命§!"
@@ -2128,8 +2143,17 @@
  PRC_jitilingdao_desc: "我们应该废除国家主席制度，赋权人大"
  PRC_Politics_in_everyday_life: "政治挂帅"
  PRC_Politics_in_everyday_life_desc: "思想和政治是统帅，是灵魂，这是一个重大的问题。现在实行的一些奖金制度等，是不符合政治挂帅精神的。我们调动广大人民群众的积极性不是靠工资、工分以外的物质奖励，而是靠毛泽东思想，靠政治挂帅，靠多快好省地建设社会主义的总路线，总之是靠人们的政治觉悟的不断的提高。"
- PRC_Proletarian_Legalist_Thought: "评法批儒"
- PRC_Proletarian_Legalist_Thought_desc: "在第一次无产阶级文化大革命后期，党通过“评法批儒”，赞扬推动历史前进，批判倒退复辟，批判资本主义复辟，鼓舞人民继续革命，我们将继续这一工作"
+ PRC_cultural_line: "恢复历史"
+ PRC_cultural_line_desc: ""
+ PRC_learn_maoism: "学习毛主义"
+ PRC_learn_maoism_desc: ""
+
+ PRC_Proletarian_Legalist_Thought: "建国前的历史"
+ PRC_Proletarian_Legalist_Thought_desc: "在第一次无产阶级文化大革命后期，党通过“评法批儒”，赞扬推动历史前进，批判倒退复辟，批判资本主义复辟，鼓舞人民继续革命，我们将以此为榜样，重新编篡教科书，还原历史"
+
+ PRC_re-explain_history: "建国后历史"
+ PRC_re-explain_history_desc: "党史再解释"
+
  PRC_Study_the_People_Liberation_Army_Movement: "整风运动"
  PRC_Study_the_People_Liberation_Army_Movement_desc: "整顿党的作风，克服官僚主义、宗派主义和主观主义，正确处理人民内部矛盾，找到正确的政治路线" 
  PRC_Implementing_the_Anshan_Constitution: "实行鞍钢宪法"

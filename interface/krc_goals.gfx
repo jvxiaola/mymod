@@ -2507,10 +2507,76 @@ SpriteType = {
 	
 	
 	
+					SpriteType = {
+		name = "picture1"
+		texturefile = "gfx/interface/goals/ER_new_focus/图片1.png"
+	}		
 	
 	
+						SpriteType = {
+		name = "picture2"
+		texturefile = "gfx/interface/goals/ER_new_focus/图片2.png"
+	}		
 	
+						SpriteType = {
+		name = "picture3"
+		texturefile = "gfx/interface/goals/ER_new_focus/图片3.png"
+	}		
 	
+						SpriteType = {
+		name = "picture4"
+		texturefile = "gfx/interface/goals/ER_new_focus/图片4.png"
+	}		
+	
+						SpriteType = {
+		name = "picture5"
+		texturefile = "gfx/interface/goals/ER_new_focus/图片5.png"
+	}		
+	
+							SpriteType = {
+		name = "picture6"
+		texturefile = "gfx/interface/goals/ER_new_focus/图片6.png"
+	}		
+	
+						SpriteType = {
+		name = "picture7"
+		texturefile = "gfx/interface/goals/ER_new_focus/图片7.png"
+	}		
+	
+						SpriteType = {
+		name = "picture8"
+		texturefile = "gfx/interface/goals/ER_new_focus/图片8.png"
+	}		
+							SpriteType = {
+		name = "picture9"
+		texturefile = "gfx/interface/goals/ER_new_focus/图片9.png"
+	}		
+	
+						SpriteType = {
+		name = "picture10"
+		texturefile = "gfx/interface/goals/ER_new_focus/图片10.png"
+	}		
+	
+						SpriteType = {
+		name = "picture11"
+		texturefile = "gfx/interface/goals/ER_new_focus/图片11.png"
+	}		
+
+						SpriteType = {
+		name = "mao_book"
+		texturefile = "gfx/interface/goals/ER_new_focus/mao_book.png"
+	}		
+						SpriteType = {
+		name = "people_army_daiding"
+		texturefile = "gfx/interface/goals/ER_new_focus/people_army_daiding.png"
+	}		
+
+						SpriteType = {
+		name = "reverse_history_again"
+		texturefile = "gfx/interface/goals/ER_new_focus/reverse_history_again.png"
+	}		
+
+
 	
 	
 	}
