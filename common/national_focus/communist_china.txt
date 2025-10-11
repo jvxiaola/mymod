@@ -3275,7 +3275,7 @@ generic_grant_3_percent_influence_of_CHI = yes
 }}
 }						
 focus = {
-		id = PRC_Recognize_Taiwans_independence
+		id = PRC_Recognize_Taiwan
 		icon = peace
 		x = -1
 		y = 4
@@ -3302,80 +3302,8 @@ NOT = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		completion_reward = {			custom_effect_tooltip = CHI_recognize_TAI_tt
-			set_country_flag = Recognised_@TAI
-			set_temp_variable = { temp_opinion = -10 }
-			change_communist_cadres_opinion = yes
-			TAI = {
-			generic_grant_3_percent_influence_of_CHI = yes
-
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = recognises_us
-				}
-			}
-			add_to_variable = {
-				var = TAI.Granted_Recognition
-				value = 1
-			}
-			TAI = {
-		set_cosmetic_tag = TAI_REB
-					custom_effect_tooltip = TAI_loses_cores_tt
-				hidden_effect = {	
-				remove_state_core = 430
-						remove_state_core = 434
-						remove_state_core = 435
-						remove_state_core = 475
-						remove_state_core = 526
-						remove_state_core = 531
-						remove_state_core = 532
-						remove_state_core = 534
-						remove_state_core = 536
-						remove_state_core = 537
-						remove_state_core = 538
-						remove_state_core = 540
-						remove_state_core = 541
-						remove_state_core = 544
-						remove_state_core = 547
-						remove_state_core = 548
-						remove_state_core = 549
-						remove_state_core = 552
-						remove_state_core = 554
-						remove_state_core = 555
-						remove_state_core = 556
-						remove_state_core = 558
-						remove_state_core = 559
-						remove_state_core = 560
-						remove_state_core = 562
-						remove_state_core = 564
-						remove_state_core = 567
-						remove_state_core = 570
-						remove_state_core = 572
-						remove_state_core = 574
-						remove_state_core = 578
-						remove_state_core = 582
-						remove_state_core = 583
-						remove_state_core = 585
-						remove_state_core = 586
-						remove_state_core = 588
-						remove_state_core = 589
-						remove_state_core = 592
-						remove_state_core = 592
-						remove_state_core = 595
-						remove_state_core = 596
-						remove_state_core = 597
-						remove_state_core = 801
-						remove_state_core = 802
-						remove_state_core = 813
-						remove_state_core = 816
-						remove_state_core = 1096
-						remove_state_core = 1097
-						remove_state_core = 1106
-						remove_state_core = 1095
-						remove_state_core = 1072
-					}
-		}
-		remove_ideas = legacy_of_1949_1
+		completion_reward = {	
+			
 }
 }						
 focus = {
@@ -3384,7 +3312,7 @@ focus = {
 		x = -2
 		y = 5
 relative_position_id = PRC_asian_rev
-prerequisite = { focus = PRC_Recognize_Taiwans_independence focus = PRC_Ultimatum_to_Taiwan }
+prerequisite = { focus = PRC_Recognize_Taiwan focus = PRC_Ultimatum_to_Taiwan }
 cost = 5		ai_will_do = {
 			factor = 5
 		}
@@ -6349,7 +6277,7 @@ add_core_of = ROOT
 			id = PRC_Continue_the_Cultural_Revolution
 			icon = maoism2
 			x = 0
-			y = 12
+			y = 13
 
 			prerequisite = { focus = PRC_Spiritual_Atomic_Bomb }
 
@@ -6395,7 +6323,7 @@ add_core_of = ROOT
 			id = PRC_Proletarian_leader
 			icon = Neo_Marxism
 			x = -1
-			y =13
+			y =14
 
 	prerequisite = {focus = PRC_Continue_the_Cultural_Revolution}
 
@@ -6432,7 +6360,7 @@ add_core_of = ROOT
 				id = PRC_jitilingdao
 				icon = revolutionary_government
 				x = 1
-				y = 13
+				y = 14
 	
 		prerequisite = {focus = PRC_Continue_the_Cultural_Revolution}
 	
@@ -6649,8 +6577,8 @@ add_core_of = ROOT
 		focus = {
 			id = PRC_Study_the_People_Liberation_Army_Movement
 			icon = Rectification_Movement
-			x = -3
-			y = 7
+			x = -6
+			y = 10
 	prerequisite = {focus = PRC_Politics_in_everyday_life }
 	relative_position_id = PRC_Chairman_Mao_Yuanxin
 	
@@ -6695,10 +6623,11 @@ add_core_of = ROOT
 			}
 			}	
 
+
 		focus = {
-			id = PRC_cultural_line
-			icon = reverse_history_again
-			x = 3
+			id = PRC_Public_opinion_front
+			icon = Cultivate_people_management_ability
+			x = 8
 			y = 6
 	prerequisite = {focus = PRC_Politics_in_everyday_life}
 	relative_position_id = PRC_Chairman_Mao_Yuanxin
@@ -6724,14 +6653,166 @@ add_core_of = ROOT
 
 			}
 			}	
+
+		focus = {
+			id = PRC_comment_on_history
+						icon = comment_on_history
+
+			x = -2
+			y = 1
+	prerequisite = {focus = PRC_Public_opinion_front}
+	relative_position_id = PRC_Public_opinion_front
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 10
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			completion_reward = {
+
+			}
+			}	
+
+		focus = {
+			id = PRC_battlefield_on_the_literature_and_art
+			icon = wenyiluxian
+			x = 2
+			y = 1
+	prerequisite = {focus = PRC_Public_opinion_front}
+	relative_position_id = PRC_Public_opinion_front
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 10
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			completion_reward = {
+
+			}
+			}	
+
+	focus = {
+			id = PRC_new_arts
+			icon = jiangwen
+			x = 1
+			y = 2
+	prerequisite = {focus = PRC_battlefield_on_the_literature_and_art}
+	relative_position_id = PRC_Public_opinion_front
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 10
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			completion_reward = {
+
+			}
+			}	
+
+	focus = {
+			id = PRC_old_arts
+			icon = geming_wenyi
+			x = 3
+			y = 2
+	prerequisite = {focus = PRC_battlefield_on_the_literature_and_art}
+	relative_position_id = PRC_Public_opinion_front
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 10
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			completion_reward = {
+
+			}
+			}	
+
+focus = {
+			id = PRC_W-P-S_literature_and_art
+			icon = Public_opinion_front
+			x = 2
+			y = 3
+	prerequisite = {focus = PRC_new_arts}
+		prerequisite = {focus = PRC_old_arts}
+	relative_position_id = PRC_Public_opinion_front
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 10
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			completion_reward = {
+
+			}
+			}	
 	focus	 = {
 			id = PRC_learn_maoism
 			icon = mao_book
-			x = 3
-			y = 8
-	prerequisite = {focus = PRC_Proletarian_Legalist_Thought}
-		prerequisite = {focus = PRC_re-explain_history}
-	relative_position_id = PRC_Chairman_Mao_Yuanxin
+			x = 0
+			y = 4
+	prerequisite = {focus = PRC_reverse_the_reversed_history}
+		prerequisite = {focus = PRC_W-P-S_literature_and_art}
+	relative_position_id = PRC_Public_opinion_front
 	
 			cost = 5
 	
@@ -6777,10 +6858,10 @@ add_idea=CHI_zzgs2
 	focus	 = {
 			id = PRC_re-explain_history
 			icon = tot_Maozedong_chairman
-			x = 4
-			y = 7
-	prerequisite = {focus = PRC_cultural_line}
-	relative_position_id = PRC_Chairman_Mao_Yuanxin
+			x = -1
+			y = 2
+	prerequisite = {focus = PRC_comment_on_history}
+	relative_position_id = PRC_Public_opinion_front
 	
 			cost = 5
 	
@@ -6803,13 +6884,48 @@ add_idea=CHI_zzgs2
 
 			}
 			}	
+
+
+	focus	 = {
+			id = PRC_reverse_the_reversed_history
+			icon = reverse_history_again
+			x = -2
+			y = 3
+	prerequisite = {focus = PRC_Proletarian_Legalist_Thought}
+	prerequisite = {focus = PRC_re-explain_history}
+
+	relative_position_id = PRC_Public_opinion_front
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 10
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			completion_reward = {
+
+			}
+			}	
+
+
 				focus = {
 			id = PRC_Proletarian_Legalist_Thought
 			icon = Criticize_Confucius
-			x = 2
-			y = 7
-	prerequisite = {focus = PRC_cultural_line}
-	relative_position_id = PRC_Chairman_Mao_Yuanxin
+			x = -3
+			y = 2
+	prerequisite = {focus = PRC_comment_on_history}
+	relative_position_id = PRC_Public_opinion_front
 	
 			cost = 5
 	
@@ -6839,9 +6955,12 @@ add_idea=CHI_zzgs2
 	}		
 			}
 			}	
+
+
+
 		focus = {
-			id = PRC_Implementing_the_Anshan_Constitution
-			icon = party_state
+			id = PRC_politic_guide_economy
+			icon = Politburo_of_Communist_Party
 			x = 0
 			y = 6
 	prerequisite = { focus = PRC_Politics_in_everyday_life }
@@ -6868,14 +6987,265 @@ add_idea=CHI_zzgs2
 				set_country_flag = querenshixingangangxianfa
 				custom_effect_tooltip = "鞍钢宪法将会被重新启用"
 }
+			}	
+
+		focus = {
+			id = PRC_democracy_in_factory
+			icon = legal_referendum
+			x = -2
+			y = 7
+	prerequisite = { focus = PRC_politic_guide_economy }
+	relative_position_id = PRC_Chairman_Mao_Yuanxin
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 10
+			}
+	
+			available = {
+					has_idea = CHI_idea_Public_ownership_economy
+			}
+	
+			bypass = {
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			completion_reward = {
+				set_country_flag = querenshixingangangxianfa
+				custom_effect_tooltip = "鞍钢宪法将会被重新启用"
+}
+			}	
+
+	focus = {
+			id = PRC_reduce_bourgeois_rights_in_economy
+			icon = dictatorship_of_working_class
+			x = 2
+			y = 7
+	prerequisite = { focus = PRC_politic_guide_economy }
+	relative_position_id = PRC_Chairman_Mao_Yuanxin
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 10
+			}
+	
+			available = {
+					has_idea = CHI_idea_Public_ownership_economy
+			}
+	
+			bypass = {
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			completion_reward = {
+				set_country_flag = querenshixingangangxianfa
+				custom_effect_tooltip = "鞍钢宪法将会被重新启用"
+}
+			}	
+
+	focus = {
+			id = PRC_reduce_privilege
+			icon = Anti_bureaucracy
+			x = 1
+			y = 8
+	prerequisite = { focus = PRC_reduce_bourgeois_rights_in_economy }
+	relative_position_id = PRC_Chairman_Mao_Yuanxin
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 10
+			}
+	
+			available = {
+					has_idea = CHI_idea_Public_ownership_economy
+			}
+	
+			bypass = {
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			completion_reward = {
+				set_country_flag = querenshixingangangxianfa
+				custom_effect_tooltip = "鞍钢宪法将会被重新启用"
+}
+			}
+
+	focus = {
+			id = PRC_reduce_three_differences
+			icon = economic_equality
+			x = 3
+			y = 8
+	prerequisite = { focus = PRC_reduce_bourgeois_rights_in_economy }
+	relative_position_id = PRC_Chairman_Mao_Yuanxin
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 10
+			}
+	
+			available = {
+					has_idea = CHI_idea_Public_ownership_economy
+			}
+	
+			bypass = {
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			completion_reward = {
+				set_country_flag = querenshixingangangxianfa
+				custom_effect_tooltip = "鞍钢宪法将会被重新启用"
+}
+			}
+
+		focus = {
+			id = PRC_Implementing_the_Anshan_Constitution
+			icon = party_state
+			x = -3
+			y = 8
+	prerequisite = { focus = PRC_democracy_in_factory }
+	relative_position_id = PRC_Chairman_Mao_Yuanxin
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 10
+			}
+	
+			available = {
+					has_idea = CHI_idea_Public_ownership_economy
+			}
+	
+			bypass = {
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			completion_reward = {
+				set_country_flag = querenshixingangangxianfa
+				custom_effect_tooltip = "鞍钢宪法将会被重新启用"
+}
 			}			
 
 		focus = {
+			id = PRC_soviets_in_factory
+			icon = organized_workers_militia
+			x = -1
+			y = 8
+	prerequisite = { focus = PRC_democracy_in_factory }
+	relative_position_id = PRC_Chairman_Mao_Yuanxin
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 10
+			}
+	
+			available = {
+					has_idea = CHI_idea_Public_ownership_economy
+			}
+	
+			bypass = {
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			completion_reward = {
+				set_country_flag = querenshixingangangxianfa
+				custom_effect_tooltip = "鞍钢宪法将会被重新启用"
+}
+			}	
+
+
+		focus = {
+			id = PRC_improve_allocation_for_need
+			icon = picture5
+			x = 2
+			y = 9
+	prerequisite = { focus = PRC_reduce_privilege }
+		prerequisite = { focus = PRC_reduce_three_differences }
+	relative_position_id = PRC_Chairman_Mao_Yuanxin
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 10
+			}
+	
+			available = {
+					has_idea = CHI_idea_Public_ownership_economy
+			}
+	
+			bypass = {
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			completion_reward = {
+				set_country_flag = querenshixingangangxianfa
+				custom_effect_tooltip = "鞍钢宪法将会被重新启用"
+}
+			}	
+		focus = {
+			id = PRC_promote_strike
+			icon = CPC_workers_strike
+			x = -2
+			y = 9
+	prerequisite = { focus = PRC_Implementing_the_Anshan_Constitution }
+		prerequisite = { focus = PRC_soviets_in_factory }
+	relative_position_id = PRC_Chairman_Mao_Yuanxin
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 10
+			}
+	
+			available = {
+					has_idea = CHI_idea_Public_ownership_economy
+			}
+	
+			bypass = {
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			completion_reward = {
+				set_country_flag = querenshixingangangxianfa
+				custom_effect_tooltip = "鞍钢宪法将会被重新启用"
+}
+			}	
+
+		focus = {
 			id = PRC_allotment_system
-			icon = Believe_in_market_economy
+			icon = socialism_welfare
 			x = 0
-			y = 7
-			prerequisite = { focus = PRC_Implementing_the_Anshan_Constitution }
+			y = 10
+			prerequisite = { focus = PRC_promote_strike }
+						prerequisite = { focus = PRC_improve_allocation_for_need }
 			relative_position_id = PRC_Chairman_Mao_Yuanxin
 			cost = 3
 			ai_will_do = { factor = 10 }
@@ -6908,7 +7278,7 @@ add_idea=CHI_zzgs2
 			id = PRC_xianzhizcjjfaquan
 			icon = xianzhifaquan
 			x = 0
-			y = 10
+			y = 11
 			prerequisite = {focus = PRC_allotment_system }
 
 			prerequisite = {focus = PRC_Study_the_People_Liberation_Army_Movement}
@@ -7073,7 +7443,7 @@ add_idea=CHI_zzgs2
 		focus = {
 			id = PRC_Lasting_Cultural_Revolution
 			icon = Continuous_Cultural_Revolution
-			x = 35
+			x = 39
 			y = 0
 			allow_branch={
 				has_country_flag = jixuwenge
@@ -7492,7 +7862,7 @@ focus = {
 			id = PRC_Spiritual_Atomic_Bomb
 			icon = ziligengsheng
 			x = 0
-			y = 11
+			y = 12
 			prerequisite = {focus = PRC_xianzhizcjjfaquan }
 
 

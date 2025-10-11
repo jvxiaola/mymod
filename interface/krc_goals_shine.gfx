@@ -18762,4 +18762,134 @@ spriteType = {
     }
     legacy_lazy_load = no
 }
+
+
+spriteType = {
+    name = "jiangwen_shine"
+    texturefile = "gfx/interface/goals/ER_new_focus/jiangwen.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/jiangwen.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no  # yes or no ;)
+        animationtime = 0.75  # in seconds
+        animationdelay = 0  # in seconds
+        animationblendmode = "add"  # add, multiply, overlay
+        animationtype = "scrolling"  # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    animation = {
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/jiangwen.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0  # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no  # yes or no ;)
+        animationtime = 0.75  # in seconds
+        animationdelay = 0  # in seconds
+        animationblendmode = "add"  # add, multiply, overlay
+        animationtype = "scrolling"  # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "PRC_Public_opinion_front_shine"
+    texturefile = "gfx/interface/goals/ER_new_focus/PRC_Public_opinion_front.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/PRC_Public_opinion_front.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no  # yes or no ;)
+        animationtime = 0.75  # in seconds
+        animationdelay = 0  # in seconds
+        animationblendmode = "add"  # add, multiply, overlay
+        animationtype = "scrolling"  # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    animation = {
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/PRC_Public_opinion_front.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0  # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no  # yes or no ;)
+        animationtime = 0.75  # in seconds
+        animationdelay = 0  # in seconds
+        animationblendmode = "add"  # add, multiply, overlay
+        animationtype = "scrolling"  # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+spriteType = {
+    name = "geming_wenyi_shine"
+    texturefile = "gfx/interface/goals/ER_new_focus/geming_wenyi.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/jgeming_wenyi.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no  # yes or no ;)
+        animationtime = 0.75  # in seconds
+        animationdelay = 0  # in seconds
+        animationblendmode = "add"  # add, multiply, overlay
+        animationtype = "scrolling"  # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    animation = {
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/geming_wenyi.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0  # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no  # yes or no ;)
+        animationtime = 0.75  # in seconds
+        animationdelay = 0  # in seconds
+        animationblendmode = "add"  # add, multiply, overlay
+        animationtype = "scrolling"  # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+
+spriteType = {
+    name = "wenyiluxian_shine"
+    texturefile = "gfx/interface/goals/ER_new_focus/wenyiluxian.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/wenyiluxian.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no  # yes or no ;)
+        animationtime = 0.75  # in seconds
+        animationdelay = 0  # in seconds
+        animationblendmode = "add"  # add, multiply, overlay
+        animationtype = "scrolling"  # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    animation = {
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/wenyiluxian.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0  # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no  # yes or no ;)
+        animationtime = 0.75  # in seconds
+        animationdelay = 0  # in seconds
+        animationblendmode = "add"  # add, multiply, overlay
+        animationtype = "scrolling"  # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
 	}

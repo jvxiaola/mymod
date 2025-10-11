@@ -689,8 +689,8 @@
  PRC_tai_rep_desc: "尽管台湾统治阶级非常反动，但是借此去炮击金门是完全错误的，这样只会恐吓台湾人民，让他们远离共产主义和中国，因此我们应该采取和平演变的策略去争取台湾人民。"
  PRC_Support_Marxists: "支持马克思主义者"
  PRC_Support_Marxists_desc: "在台湾，解严后可以成立马克思主义团体，我们将支持马克思主义者夺权"
- PRC_Recognize_Taiwans_independence: "和平宣传"
- PRC_Recognize_Taiwans_independence_desc: "如果台湾人民不想要一场彻底的战争，我们可以承诺不用武力进行进攻"
+ PRC_Recognize_Taiwan: "和平宣传"
+ PRC_Recognize_Taiwan_desc: "两岸人民不想要一场彻底的战争，我们可以承诺不用武力进行进攻"
  PRC_Pacific_Naval_Bases: "太平洋基地"
  PRC_Pacific_Naval_Bases_desc: "宝岛台湾孤悬海外数十年，现今终于回到了社会主义中国的怀抱。两岸统一标志着我国成功突破了美国人的第一岛链封锁。\n军委已经同意在台湾列岛上建设新的海军基地，广袤的太平洋海域正等待人民海军去探索。"
  PRC_Supporting_the_pro-China_faction_in_Vietnam: "越南的亲华派"
@@ -2145,7 +2145,7 @@
  PRC_Politics_in_everyday_life_desc: "思想和政治是统帅，是灵魂，这是一个重大的问题。现在实行的一些奖金制度等，是不符合政治挂帅精神的。我们调动广大人民群众的积极性不是靠工资、工分以外的物质奖励，而是靠毛泽东思想，靠政治挂帅，靠多快好省地建设社会主义的总路线，总之是靠人们的政治觉悟的不断的提高。"
  PRC_cultural_line: "恢复历史"
  PRC_cultural_line_desc: ""
- PRC_learn_maoism: "学习毛主义"
+ PRC_learn_maoism: "宣传马列毛主义"
  PRC_learn_maoism_desc: ""
 
  PRC_Proletarian_Legalist_Thought: "建国前的历史"
@@ -2153,6 +2153,26 @@
 
  PRC_re-explain_history: "建国后历史"
  PRC_re-explain_history_desc: "党史再解释"
+ PRC_reverse_the_reversed_history: "还原历史"
+ PRC_reverse_the_reversed_history_desc: ""
+ PRC_Public_opinion_front: "意识形态的斗争"
+ PRC_Public_opinion_front_desc: ""
+ PRC_politic_guide_economy: "政治指导经济"
+ PRC_politic_guide_economy_desc: ""
+
+ PRC_reduce_bourgeois_rights_in_economy: "经济中的资产阶级法权"
+ PRC_reduce_bourgeois_rights_in_economy_desc: ""
+
+ PRC_comment_on_history: "千秋功罪"
+ PRC_comment_on_history_desc: ""
+ PRC_battlefield_on_the_literature_and_art: "文艺战线"
+ PRC_battlefield_on_the_literature_and_art_desc: ""
+ PRC_new_arts: "新时代艺术"
+ PRC_new_arts_desc: ""
+ PRC_old_arts: "经典艺术手法"
+ PRC_old_arts_desc: ""
+ PRC_W-P-S_literature_and_art: "丰富的工农兵艺术"
+ PRC_W-P-S_literature_and_art_desc: ""
 
  PRC_Study_the_People_Liberation_Army_Movement: "整风运动"
  PRC_Study_the_People_Liberation_Army_Movement_desc: "整顿党的作风，克服官僚主义、宗派主义和主观主义，正确处理人民内部矛盾，找到正确的政治路线" 
@@ -2160,11 +2180,31 @@
  PRC_Implementing_the_Anshan_Constitution_desc: "鞍钢宪法是先进的社会主义企业管理原则，它通过党委厂长责任制来取代资本主义的剥削，同时又可以控制社会生产使工人的生产所得在极大程度上为我们的社会主义建设事业和社会主义官员服务。因此我们要落实鞍钢宪法，大搞群众运动、开展技术革命，实行两参一改三结合，坚持工厂的政治挂帅，我们要恢复它"
  PRC_Freeze_wages: "冻结工资"
  PRC_Freeze_wages_desc: "我们应当学习毛主席的经验，不该再上涨工资和物价了。这种上涨工资和物价的方法实质上是物质挂帅，通过物质和功利主义来刺激生产积极性，这是资本主义的。我们社会主义国家的工人应当自主进行生产劳动，每个人都应当为了祖国的建设和发展劳动，而不是为了自己的个人利益劳动。"
- PRC_allotment_system: "限制特权"
+ PRC_allotment_system: "经济为建设社会主义"
  PRC_allotment_system_desc: "很多人当官后，经济利益于政治利益挂钩了，导致很多机会主义者混进党，我们要限制干部的特权，让他们更好的为人民服务"
+
+ PRC_reduce_three_differences: "减少三大差别"
+ PRC_reduce_three_differences_desc: ""
+
+ PRC_promote_strike: "促进罢工"
+ PRC_promote_strike_desc: ""
+
+
+ PRC_reduce_privilege: "限制特权"
+ PRC_reduce_privilege_desc: ""
+
+ PRC_improve_allocation_for_need: "扩大按需分配"
+ PRC_improve_allocation_for_need_desc: ""
+
+ PRC_democracy_in_factory: "基层经济民主"
+ PRC_democracy_in_factory_desc: ""
+
+ PRC_soviets_in_factory: "工人委员会"
+ PRC_soviets_in_factory_desc: "工人委员会"
+
  PRC_Spiritual_Atomic_Bomb: "自力更生"
  PRC_Spiritual_Atomic_Bomb_desc: "自力更生为主，争取外援为辅，破除迷信，独立自主地干工业、干农业，干技术革命和文化革命，打倒奴隶思想，埋葬教条主义，认真学习外国的好经验，也一定研究外国的坏经验——引以为戒，这就是我们的路线。"
- PRC_xianzhizcjjfaquan: "减少资产阶级法权"
+ PRC_xianzhizcjjfaquan: "§R继续革命!§!"
  PRC_xianzhizcjjfaquan_desc: "社会主义条件下仍然会存在着资产阶级法权，但是我们仍然要依靠我们的主观能动性去主动消减它，"
  PRC_yunniang: "山雨欲来"
  PRC_yunniang_desc: "在进一步的推动前，我们应该对即将到来的第二次文化大革命做好准备"

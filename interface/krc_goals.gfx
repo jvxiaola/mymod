@@ -2577,6 +2577,33 @@ SpriteType = {
 	}		
 
 
+							SpriteType = {
+		name = "reverse_history_again"
+		texturefile = "gfx/interface/goals/ER_new_focus/reverse_history_again.png"
+	}	
+
+							SpriteType = {
+		name = "jiangwen"
+		texturefile = "gfx/interface/goals/ER_new_focus/jiangwen.png"
+	}	
+
+							SpriteType = {
+		name = "geming_wenyi"
+		texturefile = "gfx/interface/goals/ER_new_focus/geming_wenyi.png"
+	}	
+
+							SpriteType = {
+		name = "wenyiluxian"
+		texturefile = "gfx/interface/goals/ER_new_focus/wenyiluxian.png"
+	}	
 	
-	
+								SpriteType = {
+		name = "Public_opinion_front"
+		texturefile = "gfx/interface/goals/ER_new_focus/Public_opinion_front.png"
+	}	
+
+									SpriteType = {
+		name = "comment_on_history"
+		texturefile = "gfx/interface/goals/ER_new_focus/comment_on_history.png"
+	}	
 	}

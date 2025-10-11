@@ -1426,7 +1426,7 @@ hidden_effect = {
 
 	shared_focus = {		
 		id = CHI_People_Commune
-		icon = generic_embrace_agrarian_society
+		icon = proletariat_first
 		x = 0
 		y = 2
 		relative_position_id = CHI_agricultural_issues
