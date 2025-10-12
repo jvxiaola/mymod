@@ -2144,35 +2144,35 @@
  PRC_Politics_in_everyday_life: "政治挂帅"
  PRC_Politics_in_everyday_life_desc: "思想和政治是统帅，是灵魂，这是一个重大的问题。现在实行的一些奖金制度等，是不符合政治挂帅精神的。我们调动广大人民群众的积极性不是靠工资、工分以外的物质奖励，而是靠毛泽东思想，靠政治挂帅，靠多快好省地建设社会主义的总路线，总之是靠人们的政治觉悟的不断的提高。"
  PRC_cultural_line: "恢复历史"
- PRC_cultural_line_desc: ""
+ PRC_cultural_line_desc: "历史是人民的历史，是阶级斗争的历史。我们要打破修正主义篡改历史的迷雾，让人民重新认识自己的过去，从而掌握改造未来的力量。"
  PRC_learn_maoism: "宣传马列毛主义"
- PRC_learn_maoism_desc: ""
+ PRC_learn_maoism_desc: "重新系统学习马克思列宁主义、毛泽东思想，用科学的世界观和方法论武装全党、全军和全国人民，使群众从思想上彻底摆脱资产阶级影响，确立无产阶级的世界观。"
 
  PRC_Proletarian_Legalist_Thought: "建国前的历史"
  PRC_Proletarian_Legalist_Thought_desc: "在第一次无产阶级文化大革命后期，党通过“评法批儒”，赞扬推动历史前进，批判倒退复辟，批判资本主义复辟，鼓舞人民继续革命，我们将以此为榜样，重新编篡教科书，还原历史"
 
  PRC_re-explain_history: "建国后历史"
- PRC_re-explain_history_desc: "党史再解释"
+ PRC_re-explain_history_desc: "重新解释共和国历史，将过去被抹杀或歪曲的人民运动、路线斗争与革命精神重新呈现，明确无产阶级在社会主义建设中的主体地位。"
  PRC_reverse_the_reversed_history: "还原历史"
- PRC_reverse_the_reversed_history_desc: ""
+ PRC_reverse_the_reversed_history_desc: "历史是人民的历史，是阶级斗争的历史。我们要打破修正主义篡改历史的迷雾，让人民重新认识自己的过去，从而掌握改造未来的力量。"
  PRC_Public_opinion_front: "意识形态的斗争"
- PRC_Public_opinion_front_desc: ""
+ PRC_Public_opinion_front_desc: "舆论阵地不可能中立。要坚决夺回被资产阶级与修正主义控制的宣传工具，使报纸、电视、网络重新成为人民的喉舌，宣传正确，革命的文化"
  PRC_politic_guide_economy: "政治指导经济"
- PRC_politic_guide_economy_desc: ""
+ PRC_politic_guide_economy_desc: "政治是经济的集中表现。我们要坚持政治挂帅，用无产阶级政治指导一切经济活动，使生产真正服务于社会主义建设和人民需要。"
 
  PRC_reduce_bourgeois_rights_in_economy: "经济中的资产阶级法权"
- PRC_reduce_bourgeois_rights_in_economy_desc: ""
+ PRC_reduce_bourgeois_rights_in_economy_desc: "在分配、管理和交换领域仍存在着资产阶级法权，我们必须逐步削弱这种不平等，防止劳动成果重新被特权集团占有。"
 
  PRC_comment_on_history: "千秋功罪"
- PRC_comment_on_history_desc: ""
+ PRC_comment_on_history_desc: "对历史人物和路线的评价，不是个人恩怨，而是阶级立场的选择。我们要以无产阶级的观点评功摆过，清算修正主义的错误，捍卫革命先烈的荣誉。"
  PRC_battlefield_on_the_literature_and_art: "文艺战线"
- PRC_battlefield_on_the_literature_and_art_desc: ""
+ PRC_battlefield_on_the_literature_and_art_desc: "文艺是意识形态的战场。我们要重申文艺为工农兵服务，为社会主义政治服务，彻底清除文艺领域的资产阶级毒草。"
  PRC_new_arts: "新时代艺术"
- PRC_new_arts_desc: ""
+ PRC_new_arts_desc: "在新的革命形势下，艺术必须表现新时代的劳动者、战士和革命者，反映人民群众的斗争与希望，成为推动社会进步的力量。"
  PRC_old_arts: "经典艺术手法"
- PRC_old_arts_desc: ""
+ PRC_old_arts_desc: "继承民族与革命传统的优秀艺术形式，把古典艺术手法同社会主义现实主义结合起来，形成群众喜闻乐见的革命文艺风格。"
  PRC_W-P-S_literature_and_art: "丰富的工农兵艺术"
- PRC_W-P-S_literature_and_art_desc: ""
+ PRC_W-P-S_literature_and_art_desc: "继承民族与革命传统的优秀艺术形式，把古典艺术手法同社会主义现实主义结合起来，形成群众喜闻乐见的革命文艺风格。"
 
  PRC_Study_the_People_Liberation_Army_Movement: "整风运动"
  PRC_Study_the_People_Liberation_Army_Movement_desc: "整顿党的作风，克服官僚主义、宗派主义和主观主义，正确处理人民内部矛盾，找到正确的政治路线" 
@@ -2181,7 +2181,7 @@
  PRC_Freeze_wages: "冻结工资"
  PRC_Freeze_wages_desc: "我们应当学习毛主席的经验，不该再上涨工资和物价了。这种上涨工资和物价的方法实质上是物质挂帅，通过物质和功利主义来刺激生产积极性，这是资本主义的。我们社会主义国家的工人应当自主进行生产劳动，每个人都应当为了祖国的建设和发展劳动，而不是为了自己的个人利益劳动。"
  PRC_allotment_system: "经济为建设社会主义"
- PRC_allotment_system_desc: "很多人当官后，经济利益于政治利益挂钩了，导致很多机会主义者混进党，我们要限制干部的特权，让他们更好的为人民服务"
+ PRC_allotment_system_desc: ""
 
  PRC_reduce_three_differences: "减少三大差别"
  PRC_reduce_three_differences_desc: ""
@@ -2191,7 +2191,7 @@
 
 
  PRC_reduce_privilege: "限制特权"
- PRC_reduce_privilege_desc: ""
+ PRC_reduce_privilege_desc: "夺取政权后，经济利益于政治地位挂钩了，导致很多党员变质，我们要限制干部的特权，现在部分特权只是权宜之计，我们要逐渐让经济利益和政治地位脱钩，第一步，做到升官不发财，罢官不破财。"
 
  PRC_improve_allocation_for_need: "扩大按需分配"
  PRC_improve_allocation_for_need_desc: ""
@@ -2200,7 +2200,7 @@
  PRC_democracy_in_factory_desc: ""
 
  PRC_soviets_in_factory: "工人委员会"
- PRC_soviets_in_factory_desc: "工人委员会"
+ PRC_soviets_in_factory_desc: ""
 
  PRC_Spiritual_Atomic_Bomb: "自力更生"
  PRC_Spiritual_Atomic_Bomb_desc: "自力更生为主，争取外援为辅，破除迷信，独立自主地干工业、干农业，干技术革命和文化革命，打倒奴隶思想，埋葬教条主义，认真学习外国的好经验，也一定研究外国的坏经验——引以为戒，这就是我们的路线。"
