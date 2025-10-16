@@ -6429,12 +6429,14 @@ add_core_of = ROOT
 	
 			completion_reward = {
 
-				add_ideas=CHI_zzgs
-				remove_ideas=CHI_jiefangsixiang
+						custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
+				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.03 }
+				change_DSC_Socialist_Construction_dynamic1 = yes
+	add_stability = 0.05
+	#set_country_flag = party5_banned
 	hidden_effect = {
-	country_event = {id = prc1.118 days = 14 }
-	
-	}		
+
+	}
 			}
 			}	
 
@@ -6465,13 +6467,14 @@ add_core_of = ROOT
 			available_if_capitulated = no
 	
 			completion_reward = {
-
-				add_ideas=CHI_zzgs
-				remove_ideas=CHI_jiefangsixiang
+						custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
+				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.03 }
+				change_DSC_Socialist_Construction_dynamic1 = yes
+	add_stability = 0.05
+	#set_country_flag = party5_banned
 	hidden_effect = {
-	country_event = {id = prc1.118 days = 14 }
-	
-	}		
+
+	}
 			}
 			}	
  focus= {
@@ -6500,7 +6503,14 @@ add_core_of = ROOT
 			available_if_capitulated = no
 	
 			completion_reward = {
+						custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
+				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.03 }
+				change_DSC_Socialist_Construction_dynamic1 = yes
+	add_stability = 0.05
+	#set_country_flag = party5_banned
+	hidden_effect = {
 
+	}
 
 			}
 			}	
@@ -6530,13 +6540,14 @@ add_core_of = ROOT
 			available_if_capitulated = no
 	
 			completion_reward = {
-
-				add_ideas=CHI_zzgs
-				remove_ideas=CHI_jiefangsixiang
+						custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
+				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.03 }
+				change_DSC_Socialist_Construction_dynamic1 = yes
+	add_stability = 0.05
+	#set_country_flag = party5_banned
 	hidden_effect = {
-	country_event = {id = prc1.118 days = 14 }
-	
-	}		
+
+	}
 			}
 			}	
 		focus = {
@@ -6654,7 +6665,18 @@ add_core_of = ROOT
 			available_if_capitulated = no
 	
 			completion_reward = {
-
+        add_dynamic_modifier = {
+            modifier = DSC_WHDZ
+            scope = CHI
+        }
+# 加强舆论控制和宣传
+custom_effect_tooltip =DSC_WHDZ_dynamic_tt
+set_temp_variable = { temp_DSC_WHDZ_dynamic1 = 0.08 }    # 稳定性 +8%
+set_temp_variable = { temp_DSC_WHDZ_dynamic2 = 0.12 }    # 战争支持率 +12%
+set_temp_variable = { temp_DSC_WHDZ_dynamic21 = 0.15 }   # 顺从度增长 +15%
+change_DSC_WHDZ_dynamic1 = yes
+change_DSC_WHDZ_dynamic2 = yes
+change_DSC_WHDZ_dynamic21 = yes
 			}
 			}	
 
@@ -6685,7 +6707,14 @@ add_core_of = ROOT
 			available_if_capitulated = no
 	
 			completion_reward = {
-
+				custom_effect_tooltip =DSC_WHDZ_dynamic_tt
+# 历史解释权，增强意识形态控制
+set_temp_variable = { temp_DSC_WHDZ_dynamic3 = 0.10 }    # 政治点获取 +10%
+set_temp_variable = { temp_DSC_WHDZ_dynamic20 = -0.20 }  # 抵抗增长 -20%
+set_temp_variable = { temp_DSC_WHDZ_dynamic1 = 0.05 }    # 稳定性 +5%
+change_DSC_WHDZ_dynamic3 = yes
+change_DSC_WHDZ_dynamic20 = yes
+change_DSC_WHDZ_dynamic1 = yes
 			}
 			}	
 
@@ -6715,7 +6744,14 @@ add_core_of = ROOT
 			available_if_capitulated = no
 	
 			completion_reward = {
-
+				custom_effect_tooltip =DSC_WHDZ_dynamic_tt
+# 文艺作为斗争工具，提升士气和动员能力
+set_temp_variable = { temp_DSC_WHDZ_dynamic17 = 0.08 }   # 陆军组织度 +8%
+set_temp_variable = { temp_DSC_WHDZ_dynamic2 = 0.10 }    # 战争支持率 +10%
+set_temp_variable = { temp_DSC_WHDZ_dynamic14 = 200 }    # 每周人力 +200
+change_DSC_WHDZ_dynamic17 = yes
+change_DSC_WHDZ_dynamic2 = yes
+change_DSC_WHDZ_dynamic14 = yes
 			}
 			}	
 
@@ -6745,7 +6781,14 @@ add_core_of = ROOT
 			available_if_capitulated = no
 	
 			completion_reward = {
-
+				custom_effect_tooltip =DSC_WHDZ_dynamic_tt
+# 文艺创新，提升生产效率但可能带来不稳定
+set_temp_variable = { temp_DSC_WHDZ_dynamic7 = 0.20 }    # 工厂起始效率 +20%
+set_temp_variable = { temp_DSC_WHDZ_dynamic5 = 0.08 }    # 工厂产能 +8%
+set_temp_variable = { temp_DSC_WHDZ_dynamic1 = -0.05 }   # 稳定性 -5%（改革阵痛）
+change_DSC_WHDZ_dynamic7 = yes
+change_DSC_WHDZ_dynamic5 = yes
+change_DSC_WHDZ_dynamic1 = yes
 			}
 			}	
 
@@ -6775,7 +6818,14 @@ add_core_of = ROOT
 			available_if_capitulated = no
 	
 			completion_reward = {
-
+				custom_effect_tooltip =DSC_WHDZ_dynamic_tt
+# 传统文化保护，增强社会稳定
+set_temp_variable = { temp_DSC_WHDZ_dynamic1 = 0.12 }    # 稳定性 +12%
+set_temp_variable = { temp_DSC_WHDZ_dynamic14 = 300 }    # 每周人力 +300
+set_temp_variable = { temp_DSC_WHDZ_dynamic4 = 0.05 }    # 消费品工厂 +5%（文化消费增加）
+change_DSC_WHDZ_dynamic1 = yes
+change_DSC_WHDZ_dynamic14 = yes
+change_DSC_WHDZ_dynamic4 = yes
 			}
 			}	
 
@@ -6806,7 +6856,14 @@ focus = {
 			available_if_capitulated = no
 	
 			completion_reward = {
-
+				custom_effect_tooltip =DSC_WHDZ_dynamic_tt
+# 面向工农兵的文艺，增强工业基础和军队士气
+set_temp_variable = { temp_DSC_WHDZ_dynamic5 = 0.15 }    # 工厂产能 +15%
+set_temp_variable = { temp_DSC_WHDZ_dynamic17 = 0.12 }   # 陆军组织度 +12%
+set_temp_variable = { temp_DSC_WHDZ_dynamic11 = 0.10 }   # 本地资源 +10%
+change_DSC_WHDZ_dynamic5 = yes
+change_DSC_WHDZ_dynamic17 = yes
+change_DSC_WHDZ_dynamic11 = yes
 			}
 			}	
 	focus	 = {
@@ -6836,26 +6893,16 @@ focus = {
 			available_if_capitulated = no
 	
 			completion_reward = {
-	if={
-		limit={
-			has_idea= CHI_zzgs
-		}
-	swap_ideas={
-remove_idea=CHI_zzgs
-add_idea=CHI_zzgs1
-	}
-
-}
-else_if={
-	limit={
-		has_idea= CHI_zzgs1
-	}
-swap_ideas={
-remove_idea=CHI_zzgs1
-add_idea=CHI_zzgs2
-}
-
-}
+				custom_effect_tooltip =DSC_WHDZ_dynamic_tt
+# 思想统一和教育，全面提升国家能力
+set_temp_variable = { temp_DSC_WHDZ_dynamic1 = 0.05 }    # 稳定性 +10%
+set_temp_variable = { temp_DSC_WHDZ_dynamic2 = 0.07 }    # 战争支持率 +15%
+set_temp_variable = { temp_DSC_WHDZ_dynamic15 = 0.05 }   # 陆军攻击 +15%
+set_temp_variable = { temp_DSC_WHDZ_dynamic21 = 0.05 }   # 顺从度增长 +20%
+change_DSC_WHDZ_dynamic1 = yes
+change_DSC_WHDZ_dynamic2 = yes
+change_DSC_WHDZ_dynamic15 = yes
+change_DSC_WHDZ_dynamic21 = yes
 			}
 			}	
 
@@ -6885,7 +6932,14 @@ add_idea=CHI_zzgs2
 			available_if_capitulated = no
 	
 			completion_reward = {
-
+				custom_effect_tooltip =DSC_WHDZ_dynamic_tt
+# 重构历史叙事，强化统治合法性
+set_temp_variable = { temp_DSC_WHDZ_dynamic21 = 0.25 }   # 顺从度增长 +25%
+set_temp_variable = { temp_DSC_WHDZ_dynamic20 = -0.15 }  # 抵抗增长 -15%
+set_temp_variable = { temp_DSC_WHDZ_dynamic3 = 0.08 }    # 政治点获取 +8%
+change_DSC_WHDZ_dynamic21 = yes
+change_DSC_WHDZ_dynamic20 = yes
+change_DSC_WHDZ_dynamic3 = yes
 			}
 			}	
 
@@ -6918,7 +6972,14 @@ add_idea=CHI_zzgs2
 			available_if_capitulated = no
 	
 			completion_reward = {
-
+				custom_effect_tooltip =DSC_WHDZ_dynamic_tt
+# 纠正历史错误，恢复秩序
+set_temp_variable = { temp_DSC_WHDZ_dynamic1 = 0.15 }    # 稳定性 +15%
+set_temp_variable = { temp_DSC_WHDZ_dynamic20 = -0.30 }  # 抵抗增长 -30%
+set_temp_variable = { temp_DSC_WHDZ_dynamic16 = 0.10 }   # 陆军防御 +10%
+change_DSC_WHDZ_dynamic1 = yes
+change_DSC_WHDZ_dynamic20 = yes
+change_DSC_WHDZ_dynamic16 = yes
 			}
 			}	
 
@@ -6949,9 +7010,15 @@ add_idea=CHI_zzgs2
 			available_if_capitulated = no
 	
 			completion_reward = {
+custom_effect_tooltip =DSC_WHDZ_dynamic_tt
 
-
-
+# 法治与效率，减少内耗
+set_temp_variable = { temp_DSC_WHDZ_dynamic19 = -0.15 }  # 补给消耗 -15%
+set_temp_variable = { temp_DSC_WHDZ_dynamic9 = 0.12 }    # 建筑速度 +12%
+set_temp_variable = { temp_DSC_WHDZ_dynamic4 = -0.03 }   # 消费品工厂 -3%
+change_DSC_WHDZ_dynamic19 = yes
+change_DSC_WHDZ_dynamic9 = yes
+change_DSC_WHDZ_dynamic4 = yes
 
 	hidden_effect = {
 	country_event = {id = prc1.119 days = 14 }
@@ -6988,8 +7055,20 @@ add_idea=CHI_zzgs2
 			available_if_capitulated = no
 	
 			completion_reward = {
-				set_country_flag = querenshixingangangxianfa
-				custom_effect_tooltip = "鞍钢宪法将会被重新启用"
+        add_dynamic_modifier = {
+            modifier = DSC_ZZZDJJ
+            scope = CHI
+        }
+# PRC_politic_guide_economy（政治指导经济）
+						custom_effect_tooltip = DSC_ZZZDJJ_dynamic_tt
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic1 = 0.10 }    # 稳定性 +10%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic3 = 0.15 }    # 政治点获取 +15%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic5 = 0.12 }    # 工厂产能 +12%
+change_DSC_ZZZDJJ_dynamic1 = yes
+change_DSC_ZZZDJJ_dynamic3 = yes
+change_DSC_ZZZDJJ_dynamic5 = yes
+
+
 }
 			}	
 
@@ -7019,8 +7098,13 @@ add_idea=CHI_zzgs2
 			available_if_capitulated = no
 	
 			completion_reward = {
-				set_country_flag = querenshixingangangxianfa
-				custom_effect_tooltip = "鞍钢宪法将会被重新启用"
+										custom_effect_tooltip = DSC_ZZZDJJ_dynamic_tt
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic7 = 0.25 }    # 工厂起始效率 +25%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic9 = 0.15 }    # 建筑速度 +15%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic1 = 0.08 }    # 稳定性 +8%
+change_DSC_ZZZDJJ_dynamic7 = yes
+change_DSC_ZZZDJJ_dynamic9 = yes
+change_DSC_ZZZDJJ_dynamic1 = yes
 }
 			}	
 
@@ -7050,8 +7134,13 @@ add_idea=CHI_zzgs2
 			available_if_capitulated = no
 	
 			completion_reward = {
-				set_country_flag = querenshixingangangxianfa
-				custom_effect_tooltip = "鞍钢宪法将会被重新启用"
+										custom_effect_tooltip = DSC_ZZZDJJ_dynamic_tt
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic4 = -0.20 }   # 消费品工厂 -20%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic5 = 0.18 }    # 工厂产能 +18%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic21 = 0.15 }   # 顺从度增长 +15%
+change_DSC_ZZZDJJ_dynamic4 = yes
+change_DSC_ZZZDJJ_dynamic5 = yes
+change_DSC_ZZZDJJ_dynamic21 = yes
 }
 			}	
 
@@ -7081,8 +7170,13 @@ add_idea=CHI_zzgs2
 			available_if_capitulated = no
 	
 			completion_reward = {
-				set_country_flag = querenshixingangangxianfa
-				custom_effect_tooltip = "鞍钢宪法将会被重新启用"
+										custom_effect_tooltip = DSC_ZZZDJJ_dynamic_tt
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic4 = -0.15 }   # 消费品工厂 -15%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic19 = -0.20 }  # 补给消耗 -20%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic1 = 0.12 }    # 稳定性 +12%
+change_DSC_ZZZDJJ_dynamic4 = yes
+change_DSC_ZZZDJJ_dynamic19 = yes
+change_DSC_ZZZDJJ_dynamic1 = yes
 }
 			}
 
@@ -7112,8 +7206,13 @@ add_idea=CHI_zzgs2
 			available_if_capitulated = no
 	
 			completion_reward = {
-				set_country_flag = querenshixingangangxianfa
-				custom_effect_tooltip = "鞍钢宪法将会被重新启用"
+										custom_effect_tooltip = DSC_ZZZDJJ_dynamic_tt
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic14 = 800 }    # 每周人力 +800
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic12 = 2.0 }    # 补给范围 +2
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic21 = 0.20 }   # 顺从度增长 +20%
+change_DSC_ZZZDJJ_dynamic14 = yes
+change_DSC_ZZZDJJ_dynamic12 = yes
+change_DSC_ZZZDJJ_dynamic21 = yes
 }
 			}
 
@@ -7174,8 +7273,13 @@ add_idea=CHI_zzgs2
 			available_if_capitulated = no
 	
 			completion_reward = {
-				set_country_flag = querenshixingangangxianfa
-				custom_effect_tooltip = "鞍钢宪法将会被重新启用"
+										custom_effect_tooltip = DSC_ZZZDJJ_dynamic_tt
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic14 = 500 }    # 每周人力 +500
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic17 = 0.10 }   # 陆军组织度 +10%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic2 = 0.12 }    # 战争支持率 +12%
+change_DSC_ZZZDJJ_dynamic14 = yes
+change_DSC_ZZZDJJ_dynamic17 = yes
+change_DSC_ZZZDJJ_dynamic2 = yes
 }
 			}	
 
@@ -7207,8 +7311,13 @@ add_idea=CHI_zzgs2
 			available_if_capitulated = no
 	
 			completion_reward = {
-				set_country_flag = querenshixingangangxianfa
-				custom_effect_tooltip = "鞍钢宪法将会被重新启用"
+										custom_effect_tooltip = DSC_ZZZDJJ_dynamic_tt
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic4 = -0.25 }   # 消费品工厂 -25%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic19 = -0.30 }  # 补给消耗 -30%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic1 = 0.18 }    # 稳定性 +18%
+change_DSC_ZZZDJJ_dynamic4 = yes
+change_DSC_ZZZDJJ_dynamic19 = yes
+change_DSC_ZZZDJJ_dynamic1 = yes
 }
 			}	
 		focus = {
@@ -7238,8 +7347,13 @@ add_idea=CHI_zzgs2
 			available_if_capitulated = no
 	
 			completion_reward = {
-				set_country_flag = querenshixingangangxianfa
-				custom_effect_tooltip = "鞍钢宪法将会被重新启用"
+										custom_effect_tooltip = DSC_ZZZDJJ_dynamic_tt
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic1 = -0.15 }   # 稳定性 -15%（罢工影响）
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic5 = 0.20 }    # 工厂产能 +20%（工人积极性提高）
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic2 = 0.10 }    # 战争支持率 +10%
+change_DSC_ZZZDJJ_dynamic1 = yes
+change_DSC_ZZZDJJ_dynamic5 = yes
+change_DSC_ZZZDJJ_dynamic2 = yes
 }
 			}	
 
@@ -7259,11 +7373,15 @@ add_idea=CHI_zzgs2
 			continue_if_invalid = no
 			available_if_capitulated = no
 			completion_reward = {
-						custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
-				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.03 }
-				change_DSC_Socialist_Construction_dynamic1 = yes
-				add_stability = 0.05
-				custom_effect_tooltip = DSC_allotment_economy_effect_tt
+										custom_effect_tooltip = DSC_ZZZDJJ_dynamic_tt
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic4 = -0.30 }   # 消费品工厂 -30%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic19 = -0.35 }  # 补给消耗 -35%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic5 = 0.15 }    # 工厂产能 +15%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic14 = 600 }    # 每周人力 +600
+change_DSC_ZZZDJJ_dynamic4 = yes
+change_DSC_ZZZDJJ_dynamic19 = yes
+change_DSC_ZZZDJJ_dynamic5 = yes
+change_DSC_ZZZDJJ_dynamic14 = yes
 				hidden_effect = {
 					set_country_flag = CHI_allotment_end
 				}
@@ -7280,7 +7398,7 @@ add_idea=CHI_zzgs2
 
 		focus = {
 			id = PRC_xianzhizcjjfaquan
-			icon = xianzhifaquan
+			icon = culturerev
 			x = 0
 			y = 12
 

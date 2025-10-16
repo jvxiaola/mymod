@@ -945,42 +945,77 @@
  change_DSC_Socialist_Construction_dynamic35_tt: "$MODIFIER_INDUSTRIAL_CAPACITY_FACTOR$:[?temp_DSC_Socialist_Construction_dynamic|+%]\n"
  change_DSC_Socialist_Construction_dynamic36_tt: "当前分歧事务及发展方向：[?temp_DSC_Socialist_Construction_dynamic|-%]\n"
  change_DSC_people_support_tt: "[DSC_people_support_dynamic_name]变化：[?temp_DSC_people_support|+%]\n"
+
+
+ DSC_ZZZDJJ_dynamic_tt: "§R政治指导经济§!追加效果：\n"
 ### 政治与稳定 ###
- change_DSC_war_policies_dynamic1_tt: "战时政策 - 稳定度: [?temp_DSC_war_policies_dynamic|+%]\n"
- change_DSC_war_policies_dynamic2_tt: "战时政策 - 战争支持率: [?temp_DSC_war_policies_dynamic|+%]\n"
- change_DSC_war_policies_dynamic3_tt: "战时政策 - 政治点获取: [?temp_DSC_war_policies_dynamic|+%]\n"
+ change_DSC_ZZZDJJ_dynamic1_tt: " §R政治指导经济§! - 稳定度: §Y[?temp_DSC_ZZZDJJ_dynamic1|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic2_tt: " §R政治指导经济§! - 战争支持率: §Y[?temp_DSC_ZZZDJJ_dynamic2|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic3_tt: " §R政治指导经济§! - 政治点获取: §Y[?temp_DSC_ZZZDJJ_dynamic3|%]§!\n"
 
 ### 经济与工业 ###
- change_DSC_war_policies_dynamic4_tt: "战时政策 - 消费品工厂需求: [?temp_DSC_war_policies_dynamic|-%]\n"
- change_DSC_war_policies_dynamic5_tt: "战时政策 - 工厂产出: [?temp_DSC_war_policies_dynamic|+%]\n"
- change_DSC_war_policies_dynamic6_tt: "战时政策 - 造船厂产出: [?temp_DSC_war_policies_dynamic|+%]\n"
- change_DSC_war_policies_dynamic7_tt: "战时政策 - 初始生产效率: [?temp_DSC_war_policies_dynamic|+%]\n"
- change_DSC_war_policies_dynamic8_tt: "战时政策 - 最大生产效率: [?temp_DSC_war_policies_dynamic|+%]\n"
- change_DSC_war_policies_dynamic9_tt: "战时政策 - 建筑速度: [?temp_DSC_war_policies_dynamic|+%]\n"
- change_DSC_war_policies_dynamic10_tt: "战时政策 - 燃料产量: [?temp_DSC_war_policies_dynamic|+%]\n"
+ change_DSC_ZZZDJJ_dynamic4_tt: " §R政治指导经济§! - 消费品工厂需求: §Y[?temp_DSC_ZZZDJJ_dynamic4|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic5_tt: " §R政治指导经济§! - 工厂产出: §Y[?temp_DSC_ZZZDJJ_dynamic5|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic6_tt: " §R政治指导经济§! - 造船厂产出: §Y[?temp_DSC_ZZZDJJ_dynamic6|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic7_tt: " §R政治指导经济§! - 初始生产效率: §Y[?temp_DSC_ZZZDJJ_dynamic7|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic8_tt: " §R政治指导经济§! - 最大生产效率: §Y[?temp_DSC_ZZZDJJ_dynamic8|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic9_tt: " §R政治指导经济§! - 建筑速度: §Y[?temp_DSC_ZZZDJJ_dynamic9|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic10_tt: " §R政治指导经济§! - 燃料产量: §Y[?temp_DSC_ZZZDJJ_dynamic10|%]§!\n"
 
 ### 农业与资源 ###
- change_DSC_war_policies_dynamic11_tt: "战时政策 - 资源产量: [?temp_DSC_war_policies_dynamic|+%]\n"
- change_DSC_war_policies_dynamic12_tt: "战时政策 - 补给范围: [?temp_DSC_war_policies_dynamic|+%]\n"
- change_DSC_war_policies_dynamic13_tt: "战时政策 - 陆军燃料消耗: [?temp_DSC_war_policies_dynamic|-%]\n"
- change_DSC_war_policies_dynamic14_tt: "战时政策 - 每周人力: [?temp_DSC_war_policies_dynamic|+]\n"
+ change_DSC_ZZZDJJ_dynamic11_tt: " §R政治指导经济§! - 资源产量: §Y[?temp_DSC_ZZZDJJ_dynamic11|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic12_tt: " §R政治指导经济§! - 补给范围: §Y[?temp_DSC_ZZZDJJ_dynamic12]§!\n"
+ change_DSC_ZZZDJJ_dynamic13_tt: " §R政治指导经济§! - 陆军燃料消耗: §Y[?temp_DSC_ZZZDJJ_dynamic13|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic14_tt: " §R政治指导经济§! - 每周人力: §Y[?temp_DSC_ZZZDJJ_dynamic14]§!\n"
 
 ### 军事优先 ###
- change_DSC_war_policies_dynamic15_tt: "战时政策 - 陆军攻击: [?temp_DSC_war_policies_dynamic|+%]\n"
- change_DSC_war_policies_dynamic16_tt: "战时政策 - 陆军防御: [?temp_DSC_war_policies_dynamic|+%]\n"
- change_DSC_war_policies_dynamic17_tt: "战时政策 - 陆军组织度: [?temp_DSC_war_policies_dynamic|+%]\n"
- change_DSC_war_policies_dynamic18_tt: "战时政策 - 补员速度: [?temp_DSC_war_policies_dynamic|+%]\n"
- change_DSC_war_policies_dynamic19_tt: "战时政策 - 补给消耗: [?temp_DSC_war_policies_dynamic|-%]\n"
+ change_DSC_ZZZDJJ_dynamic15_tt: " §R政治指导经济§! - 陆军攻击: §Y[?temp_DSC_ZZZDJJ_dynamic15|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic16_tt: " §R政治指导经济§! - 陆军防御: §Y[?temp_DSC_ZZZDJJ_dynamic16|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic17_tt: " §R政治指导经济§! - 陆军组织度: §Y[?temp_DSC_ZZZDJJ_dynamic17|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic18_tt: " §R政治指导经济§! - 补员速度: §Y[?temp_DSC_ZZZDJJ_dynamic18|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic19_tt: " §R政治指导经济§! - 补给消耗: §Y[?temp_DSC_ZZZDJJ_dynamic19|%]§!\n"
 
 ### 镇压与社会控制 ###
- change_DSC_war_policies_dynamic20_tt: "战时政策 - 占领地抵抗增长: [?temp_DSC_war_policies_dynamic|-%]\n"
- change_DSC_war_policies_dynamic21_tt: "战时政策 - 占领地顺从度增长: [?temp_DSC_war_policies_dynamic|-%]\n"
- change_DSC_war_policies_dynamic22_tt: "战时政策 - 外国颠覆活动: [?temp_DSC_war_policies_dynamic|-%]\n"
- change_DSC_war_policies_dynamic23_tt: "战时政策 - 限制电量: [?temp_DSC_war_policies_dynamic|-%]\n"
+ change_DSC_ZZZDJJ_dynamic20_tt: " §R政治指导经济§! - 占领地抵抗增长: §Y[?temp_DSC_ZZZDJJ_dynamic20|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic21_tt: " §R政治指导经济§! - 占领地顺从度增长: §Y[?temp_DSC_ZZZDJJ_dynamic21|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic22_tt: " §R政治指导经济§! - 外国颠覆活动: §Y[?temp_DSC_ZZZDJJ_dynamic22|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic23_tt: " §R政治指导经济§! - 限制电量: §Y[?temp_DSC_ZZZDJJ_dynamic23|%]§!\n"
 
 
+ DSC_WHDZ_dynamic_tt: " §R舆论宣传§!追加效果：\n"
 
+### 政治与稳定 ###
+ change_DSC_WHDZ_dynamic1_tt: " §R舆论宣传§! - 稳定度: §Y[?temp_DSC_WHDZ_dynamic1|%]§!\n"
+ change_DSC_WHDZ_dynamic2_tt: " §R舆论宣传§! - 战争支持率: §Y[?temp_DSC_WHDZ_dynamic2|%]§!\n"
+ change_DSC_WHDZ_dynamic3_tt: " §R舆论宣传§! - 政治点获取: §Y[?temp_DSC_WHDZ_dynamic3|%]§!\n"
 
+### 经济与工业 ###
+ change_DSC_WHDZ_dynamic4_tt: " §R舆论宣传§! - 消费品工厂需求: §Y[?temp_DSC_WHDZ_dynamic4|%]§!\n"
+ change_DSC_WHDZ_dynamic5_tt: " §R舆论宣传§! - 工厂产出: §Y[?temp_DSC_WHDZ_dynamic5|%]§!\n"
+ change_DSC_WHDZ_dynamic6_tt: " §R舆论宣传§! - 造船厂产出: §Y[?temp_DSC_WHDZ_dynamic6|%]§!\n"
+ change_DSC_WHDZ_dynamic7_tt: " §R舆论宣传§! - 初始生产效率: §Y[?temp_DSC_WHDZ_dynamic7|%]§!\n"
+ change_DSC_WHDZ_dynamic8_tt: " §R舆论宣传§! - 最大生产效率: §Y[?temp_DSC_WHDZ_dynamic8|%]§!\n"
+ change_DSC_WHDZ_dynamic9_tt: " §R舆论宣传§! - 建筑速度: §Y[?temp_DSC_WHDZ_dynamic9|%]§!\n"
+ change_DSC_WHDZ_dynamic10_tt: " §R舆论宣传§! - 燃料产量: §Y[?temp_DSC_WHDZ_dynamic10|%]§!\n"
+
+### 农业与资源 ###
+ change_DSC_WHDZ_dynamic11_tt: " §R舆论宣传§! - 资源产量: §Y[?temp_DSC_WHDZ_dynamic11|%]§!\n"
+ change_DSC_WHDZ_dynamic12_tt: " §R舆论宣传§! - 补给范围: §Y[?temp_DSC_WHDZ_dynamic12]§!\n"
+ change_DSC_WHDZ_dynamic13_tt: " §R舆论宣传§! - 陆军燃料消耗: §Y[?temp_DSC_WHDZ_dynamic13|%]§!\n"
+ change_DSC_WHDZ_dynamic14_tt: " §R舆论宣传§! - 每周人力: §Y[?temp_DSC_WHDZ_dynamic14]§!\n"
+
+### 军事优先 ###
+ change_DSC_WHDZ_dynamic15_tt: " §R舆论宣传§! - 陆军攻击: §Y[?temp_DSC_WHDZ_dynamic15|%]§!\n"
+ change_DSC_WHDZ_dynamic16_tt: " §R舆论宣传§! - 陆军防御: §Y[?temp_DSC_WHDZ_dynamic16|%]§!\n"
+ change_DSC_WHDZ_dynamic17_tt: " §R舆论宣传§! - 陆军组织度: §Y[?temp_DSC_WHDZ_dynamic17|%]§!\n"
+ change_DSC_WHDZ_dynamic18_tt: " §R舆论宣传§! - 补员速度: §Y[?temp_DSC_WHDZ_dynamic18|%]§!\n"
+ change_DSC_WHDZ_dynamic19_tt: " §R舆论宣传§! - 补给消耗: §Y[?temp_DSC_WHDZ_dynamic19|%]§!\n"
+
+### 镇压与社会控制 ###
+ change_DSC_WHDZ_dynamic20_tt: " §R舆论宣传§! - 占领地抵抗增长: §Y[?temp_DSC_WHDZ_dynamic20|%]§!\n"
+ change_DSC_WHDZ_dynamic21_tt: " §R舆论宣传§! - 占领地顺从度增长: §Y[?temp_DSC_WHDZ_dynamic21|%]§!\n"
+ change_DSC_WHDZ_dynamic22_tt: " §R舆论宣传§! - 外国颠覆活动: §Y[?temp_DSC_WHDZ_dynamic22|%]§!\n"
+ change_DSC_WHDZ_dynamic23_tt: " §R舆论宣传§! - 限制电量: §Y[?temp_DSC_WHDZ_dynamic23|%]§!\n"
 
 #标记点2
  HKG_people_support_dynamic_left_desc: "\n\n\n\n\n£GFX_CHI_people_support_dynamic_dynamic_desc_left_picture \n\n\n\n\n\n\n中国革命群众经过各种斗争，最终掌握了中国的政权，不过，这并不是革命的结束，而仅仅是开始！中国人民必须考虑自身与外国无产阶级的联系，考虑自身的建设，万万不可重蹈无产阶级文化大革命后期人民对革命失望的覆辙，不然的话，资产阶级与官僚主义反革命极有可能再次推翻革命政权。\n\n §Y人民的革命热情为§!： £stability_texticon [?HKG_people_support|%+2]。\n受到民族精神或法律影响，每月变化(本mod已将变化缩小10倍)：[?Final_hongkong_people_support_to_china_government_modifier|%+2]"

@@ -170,3 +170,96 @@ weekly_manpower = Shanghai_Cooperation_Organization_dynamic12
 research_speed_factor = Shanghai_Cooperation_Organization_dynamic13	
 operative_slot = Shanghai_Cooperation_Organization_dynamic14
 	}
+
+
+
+
+
+
+
+
+
+
+DSC_ZZZDJJ_dynamic = {
+    enable = { always = yes }
+    icon = GFX_idea_communism5
+
+# 政治与稳定
+    stability_factor = DSC_ZZZDJJ_dynamic1         # 政治不稳定
+    war_support_factor = DSC_ZZZDJJ_dynamic2       # 战争支持率
+    political_power_factor = DSC_ZZZDJJ_dynamic3   # 政治点获取
+
+    # 经济与工业
+    consumer_goods_factor = DSC_ZZZDJJ_dynamic4
+    industrial_capacity_factory = DSC_ZZZDJJ_dynamic5
+    industrial_capacity_dockyard = DSC_ZZZDJJ_dynamic6
+    production_factory_start_efficiency_factor = DSC_ZZZDJJ_dynamic7
+    #production_factory_max_efficiency = DSC_ZZZDJJ_dynamic8
+    production_speed_buildings_factor = DSC_ZZZDJJ_dynamic9
+    fuel_gain_factor = DSC_ZZZDJJ_dynamic10
+
+    # 农业与资源
+    local_resources_factor = DSC_ZZZDJJ_dynamic11
+    supply_node_range = DSC_ZZZDJJ_dynamic12
+    army_fuel_consumption_factor = DSC_ZZZDJJ_dynamic13
+    weekly_manpower = DSC_ZZZDJJ_dynamic14
+
+    # 军事优先
+    army_attack_factor = DSC_ZZZDJJ_dynamic15
+    army_defence_factor = DSC_ZZZDJJ_dynamic16
+    army_org_factor = DSC_ZZZDJJ_dynamic17
+    #reinforce_rate = DSC_ZZZDJJ_dynamic18
+    supply_consumption_factor = DSC_ZZZDJJ_dynamic19
+
+    # 镇压与社会控制
+    resistance_growth_on_our_occupied_states = DSC_ZZZDJJ_dynamic20
+    compliance_growth_on_our_occupied_states = DSC_ZZZDJJ_dynamic21
+    #foreign_subversive_activities = DSC_ZZZDJJ_dynamic22
+    
+
+
+	energy_use = DSC_ZZZDJJ_dynamic23
+}
+
+
+
+DSC_WHDZ_dynamic = {
+    enable = { always = yes }
+    icon = GFX_idea_communism5
+
+# 政治与稳定
+    stability_factor = DSC_WHDZ_dynamic1         # 政治不稳定
+    war_support_factor = DSC_WHDZ_dynamic2       # 战争支持率
+    political_power_factor = DSC_WHDZ_dynamic3   # 政治点获取
+
+    # 经济与工业
+    consumer_goods_factor = DSC_WHDZ_dynamic4
+    industrial_capacity_factory = DSC_WHDZ_dynamic5
+    industrial_capacity_dockyard = DSC_WHDZ_dynamic6
+    production_factory_start_efficiency_factor = DSC_WHDZ_dynamic7
+    #production_factory_max_efficiency = DSC_WHDZ_dynamic8
+    production_speed_buildings_factor = DSC_WHDZ_dynamic9
+    fuel_gain_factor = DSC_WHDZ_dynamic10
+
+    # 农业与资源
+    local_resources_factor = DSC_WHDZ_dynamic11
+    supply_node_range = DSC_WHDZ_dynamic12
+    army_fuel_consumption_factor = DSC_WHDZ_dynamic13
+    weekly_manpower = DSC_WHDZ_dynamic14
+
+    # 军事优先
+    army_attack_factor = DSC_WHDZ_dynamic15
+    army_defence_factor = DSC_WHDZ_dynamic16
+    army_org_factor = DSC_WHDZ_dynamic17
+    #reinforce_rate = DSC_WHDZ_dynamic18
+    supply_consumption_factor = DSC_WHDZ_dynamic19
+
+    # 镇压与社会控制
+    resistance_growth_on_our_occupied_states = DSC_WHDZ_dynamic20
+    compliance_growth_on_our_occupied_states = DSC_WHDZ_dynamic21
+    #foreign_subversive_activities = DSC_WHDZ_dynamic22
+    
+
+
+	energy_use = DSC_WHDZ_dynamic23
+}
