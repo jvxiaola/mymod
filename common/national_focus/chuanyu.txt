@@ -1201,7 +1201,10 @@ Armor_Bat = { x = 1 y = 2 }
 				factor = 10
 			}
 			bypass = {
-	
+				
+			YUN={
+		exists = no
+	}
 			}
 	
 			cancel_if_invalid = yes
@@ -1244,7 +1247,9 @@ Armor_Bat = { x = 1 y = 2 }
 				factor = 10
 			}
 			bypass = {
-	
+	GUZ={
+		exists = no
+	}
 			}
 	
 			cancel_if_invalid = yes
@@ -1286,7 +1291,9 @@ Armor_Bat = { x = 1 y = 2 }
 				factor = 10
 			}
 			bypass = {
-	
+		XIZ={
+		exists = no
+	}
 			}
 	
 			cancel_if_invalid = yes
@@ -2593,10 +2600,10 @@ completion_reward = {
 
 	focus = {
 		id = DSC_Nationalize_industries
-		icon = central_planned_economy
+		icon = full_nationalization
 		x = -4
 	
-		y = 2
+		y = 1
 	
 		cost = 1
 		relative_position_id = DSC_emergency_policies

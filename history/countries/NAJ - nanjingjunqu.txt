@@ -2,16 +2,12 @@ capital = 536
 2000.1.1 = {
 	set_variable = { gdp_per_capita = 3.452 }
 	add_ideas = {
-		Military_region_government
-		Militarical_economy_remain3
-		extreme_islam
 		pluralist
 		unrestrained_corruption
 		communist_cadres
 		industrial_conglomerates
 		the_military
 		multi_ethnic_state_idea
-		Preparing_war_mobilizing_economy
 		defence_09
 		edu_01
 		health_01
@@ -21,9 +17,7 @@ capital = 536
 		volunteer_army
 		no_women_in_military
 	}
-	add_dynamic_modifier = {
-		modifier = Preparation_status
-	}
+
 	set_variable = { var = corporate_tax_rate value = 15 } set_variable = { var = population_tax_rate value = 45 }
 
 	set_variable = { ps_1 = 0 } set_variable = { ps_2 = 0 } 

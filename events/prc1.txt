@@ -2583,7 +2583,7 @@ XIN={
 
 
 
-country_event = {id=CHI_ER_BEFORE_xin.8 days = 1}
+country_event = {id=CHI_ER_BEFORE_xin.8 days = 40}
 	create_country_leader = {
 					name = "邱衍汉"
 					picture = "qiu_yanhan.dds"

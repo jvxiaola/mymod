@@ -948,6 +948,8 @@
 
 
  DSC_ZZZDJJ_dynamic_tt: "§R政治指导经济§!追加效果：\n"
+ DSC_ZZZDJJ_dynamic: "§R政治指导经济§!"
+
 ### 政治与稳定 ###
  change_DSC_ZZZDJJ_dynamic1_tt: " §R政治指导经济§! - 稳定度: §Y[?temp_DSC_ZZZDJJ_dynamic1|%]§!\n"
  change_DSC_ZZZDJJ_dynamic2_tt: " §R政治指导经济§! - 战争支持率: §Y[?temp_DSC_ZZZDJJ_dynamic2|%]§!\n"
@@ -983,6 +985,7 @@
 
 
  DSC_WHDZ_dynamic_tt: " §R舆论宣传§!追加效果：\n"
+ DSC_WHDZ_dynamic: " §R舆论宣传§!"
 
 ### 政治与稳定 ###
  change_DSC_WHDZ_dynamic1_tt: " §R舆论宣传§! - 稳定度: §Y[?temp_DSC_WHDZ_dynamic1|%]§!\n"

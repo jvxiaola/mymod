@@ -6555,7 +6555,7 @@ add_core_of = ROOT
 			icon = fraternity_classes
 			x = 0
 			y = 5
-	prerequisite = {focus = PRC_The_real_two_whatevers }
+	prerequisite = {focus = PRC_zhixianhuiyi }
 	relative_position_id = PRC_Chairman_Mao_Yuanxin
 	
 			cost = 5
@@ -6666,8 +6666,8 @@ add_core_of = ROOT
 	
 			completion_reward = {
         add_dynamic_modifier = {
-            modifier = DSC_WHDZ
-            scope = CHI
+            modifier = DSC_WHDZ_dynamic
+            #scope = CHI
         }
 # 加强舆论控制和宣传
 custom_effect_tooltip =DSC_WHDZ_dynamic_tt
@@ -7056,8 +7056,8 @@ change_DSC_WHDZ_dynamic4 = yes
 	
 			completion_reward = {
         add_dynamic_modifier = {
-            modifier = DSC_ZZZDJJ
-            scope = CHI
+            modifier = DSC_ZZZDJJ_dynamic
+            #scope = CHI
         }
 # PRC_politic_guide_economy（政治指导经济）
 						custom_effect_tooltip = DSC_ZZZDJJ_dynamic_tt

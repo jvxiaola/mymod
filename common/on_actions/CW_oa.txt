@@ -278,4 +278,126 @@ country_event = {id=prc1.321 days=2}
 
 
 		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+					limit = {
+						FROM = { 
+							OR = { 
+								tag = DSC 
+							} 
+						}
+						ROOT = { tag = YUN }
+					}
+
+
+					ROOT = {
+						#every_owned_state = { add_dynamic_modifier = { modifier = extrameal_islam_attack_escape } }
+					}
+					FROM = {
+
+						puppet =  ROOT
+						set_country_flag = YUN_is_puppet_of_DSC
+]
+						
+					}
+
+			}
+
+		}
+	}
+
+
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+					limit = {
+						FROM = { 
+							OR = { 
+								tag = DSC 
+							} 
+						}
+						ROOT = { tag = GUZ }
+					}
+
+
+					ROOT = {
+						#every_owned_state = { add_dynamic_modifier = { modifier = extrameal_islam_attack_escape } }
+					}
+					FROM = {
+
+						puppet =  ROOT
+						set_country_flag = GUZ_is_puppet_of_DSC
+]
+						
+					}
+
+			}
+
+		}
+	}
+
+
+
+
+
+
+
+
+		on_capitulation_immediate = {
+		effect = {
+			if = {
+					limit = {
+						FROM = { 
+							OR = { 
+								tag = DSC 
+							} 
+						}
+						ROOT = { tag = XIZ }
+					}
+
+
+					ROOT = {
+						#every_owned_state = { add_dynamic_modifier = { modifier = extrameal_islam_attack_escape } }
+					}
+					FROM = {
+
+						puppet =  ROOT
+						set_country_flag = XIZ_is_puppet_of_DSC
+]
+						
+					}
+
+			}
+
+		}
+	}
+
 	}

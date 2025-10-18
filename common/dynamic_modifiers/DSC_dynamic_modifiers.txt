@@ -182,7 +182,7 @@ operative_slot = Shanghai_Cooperation_Organization_dynamic14
 
 DSC_ZZZDJJ_dynamic = {
     enable = { always = yes }
-    icon = GFX_idea_communism5
+    icon = GFX_idea_politic_guide_economy
 
 # 政治与稳定
     stability_factor = DSC_ZZZDJJ_dynamic1         # 政治不稳定
@@ -225,7 +225,7 @@ DSC_ZZZDJJ_dynamic = {
 
 DSC_WHDZ_dynamic = {
     enable = { always = yes }
-    icon = GFX_idea_communism5
+    icon = GFX_idea_literature-art
 
 # 政治与稳定
     stability_factor = DSC_WHDZ_dynamic1         # 政治不稳定
