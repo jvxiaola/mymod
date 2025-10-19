@@ -25,12 +25,12 @@ characters = {
 				large = "gfx/leaders/DSC/Mao_Yuanxin.dds"
 			}
         }
-        country_leader = {
-			ideology = Chinese_Socialism_mao
-		    traits = {  Disaster_relief_heroes military_engineer }
-			desc = Mao_Yuanxin_desc
-            expire = "2100.1.1.1"
-		}
+        #country_leader = {
+		#	ideology = Chinese_Socialism_mao
+		#    traits = {  Disaster_relief_heroes military_engineer }
+		#	desc = Mao_Yuanxin_desc
+        #    expire = "2100.1.1.1"
+		#}
 
         advisor = {
 			slot = army_chief

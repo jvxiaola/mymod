@@ -1768,7 +1768,9 @@ shared_focus = {
 
 		search_filters = { FOCUS_FILTER_INTERNAL_FACTION }
 
-		available = { num_of_civilian_factories > 75 }
+		available = { num_of_civilian_factories > 75
+	has_civil_war = no
+	}
 
 		completion_reward = {
 			set_temp_variable = { treasury_change = -10 }
@@ -5955,6 +5957,7 @@ is_subject_of = CHI
 				tooltip = 7_total_gdp_tt
 				check_variable = { gdp_total > 6999 }
 			}
+			has_civil_war = no
 		}
 
 		completion_reward = {

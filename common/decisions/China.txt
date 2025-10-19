@@ -2583,8 +2583,20 @@ fire_only_once = yes
 			}
 	
 			remove_effect = {
-puppet = GUZ
-set_country_flag = GUZ_is_puppet_of_DSC
+								random_list = {
+					90 = { 				
+						
+						set_country_flag = GUZ_is_puppet_of_DSC
+puppet = GUZ	
+}
+					10 = { GUZ={
+						declare_war_on = {
+							target = DSC
+				type = annex_everything
+						}
+					}
+				 }
+				}
 			}
 		}
 
@@ -2807,6 +2819,7 @@ transfer_troops = yes}
 		DSC_tongyixizang = {
 			picture = soviet_advisors
 			visible = {
+								country_exists = XIZ
 								has_completed_focus = DSC_chuli_xizang
 								NOT={has_country_flag = XIZ_is_puppet_of_DSC}
 			}
@@ -2824,8 +2837,22 @@ cost = 100
 			}
 	
 			remove_effect = {
-				set_country_flag = XIZ_is_puppet_of_DSC
+								random_list = {
+					90 = { 				
+						
+						set_country_flag = XIZ_is_puppet_of_DSC
 puppet = XIZ
+}
+					10 = { XIZ={
+						declare_war_on = {
+							target = DSC
+				type = annex_everything
+						}
+					}
+				 }
+				}
+
+
 XIZ={
 create_country_leader = {
 		name = "蒙进喜"
@@ -2846,6 +2873,7 @@ create_country_leader = {
 	DSC_tongyixizang_two = {
 			picture = soviet_advisors
 			visible = {
+												country_exists = XIZ
 XIZ={NOT={has_cosmetic_tag = XIZ_GMQ}}
 									has_country_flag = XIZ_is_puppet_of_DSC
 

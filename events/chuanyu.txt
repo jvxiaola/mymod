@@ -881,6 +881,19 @@ Militia_Bat = { x = 1 y = 3 }
 			set_country_flag = neizhanzhong
 			Mao_Yuanxin = { set_nationality = DSC }
 			promote_character = Mao_Yuanxin
+
+			#yyw
+
+	create_country_leader = {
+		name = "毛远新"
+		picture = "gfx/leaders/DSC/Mao_Yuanxin.dds"
+		expire = "2222.1.1"
+		ideology = Chinese_Socialism_mao
+		desc = Mao_Yuanxin_desc
+		traits = {  Disaster_relief_heroes military_engineer }
+	}
+
+
 			start_politics_input = yes
 			set_popularities = {
 				democratic = 0.0

@@ -1130,6 +1130,7 @@ relative_position_id = DSC_people_armyI
 
 	}
 	completion_reward = {
+		custom_effect_tooltip = "劝降决议将会解锁"
 		random_country={
 			limit = {
 				has_cosmetic_tag = DSC_JGQ

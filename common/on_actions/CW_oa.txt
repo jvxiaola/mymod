@@ -261,11 +261,16 @@ every_owned_state = {
 	#transfer_state = 1236
 	#add_state_core = 1236
 						}
-
-
-				KOR={
+if={
+	limit={
+country_exists = JIL
+	}
+					KOR={
 country_event = {id=prc1.321 days=2}
 					}
+}
+
+
 
 
 					}
@@ -322,7 +327,7 @@ country_event = {id=prc1.321 days=2}
 						#every_owned_state = { add_dynamic_modifier = { modifier = extrameal_islam_attack_escape } }
 					}
 					FROM = {
-
+white_peace = ROOT
 						puppet =  ROOT
 						set_country_flag = YUN_is_puppet_of_DSC
 ]
@@ -352,7 +357,7 @@ country_event = {id=prc1.321 days=2}
 						#every_owned_state = { add_dynamic_modifier = { modifier = extrameal_islam_attack_escape } }
 					}
 					FROM = {
-
+white_peace = ROOT
 						puppet =  ROOT
 						set_country_flag = GUZ_is_puppet_of_DSC
 ]
@@ -388,7 +393,7 @@ country_event = {id=prc1.321 days=2}
 						#every_owned_state = { add_dynamic_modifier = { modifier = extrameal_islam_attack_escape } }
 					}
 					FROM = {
-
+white_peace = ROOT
 						puppet =  ROOT
 						set_country_flag = XIZ_is_puppet_of_DSC
 ]

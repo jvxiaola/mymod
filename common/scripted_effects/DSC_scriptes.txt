@@ -19,7 +19,7 @@ SET_TAG_DSC_to_CHI = {
 
 
 CHI={
-  
+
     set_country_flag = manual_civil_war_debuff_removal
 	remove_ideas = civil_war_disorganised_military_1
 	remove_ideas = civil_war_disorganised_military_2_military
@@ -87,6 +87,7 @@ add_ideas = Maoist_from_DSC
   #inherit_technology = DSC
 	#add_research_slot = 3
 	promote_character = Mao_Yuanxin
+
 	start_politics_input = yes
   	add_to_array = { ruling_party = 4 } #共产主义								
 	set_variable = { party_pop_array^4 = 1.0 } #共产主义	
@@ -168,6 +169,16 @@ CHI={
 	add_to_array = { ruling_party = 4 } #共产主义								
 	set_variable = { party_pop_array^4 = 1.0 } #共产主义	
 	startup_politics = yes
+}
+DSC={
+		create_country_leader = {
+		name = "毛远新"
+		picture = "gfx/leaders/DSC/Mao_Yuanxin.dds"
+		expire = "2222.1.1"
+		ideology = Chinese_Socialism_mao
+		desc = Mao_Yuanxin_desc
+		traits = {  Disaster_relief_heroes military_engineer }
+	}
 }
 
 

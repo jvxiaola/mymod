@@ -1479,8 +1479,14 @@ Armor_Bat = { x = 1 y = 2 }
 				type = annex_everything
 				target = JIL
 			}	
-
-
+if = {
+	limit = {
+		NKO = {
+			controls_state = 1236
+		}
+	}
+transfer_state = 1236
+}
 		if = {
 			limit = { country_exists = ETK }
 				create_wargoal = {

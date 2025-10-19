@@ -142,7 +142,15 @@ country_event = {
 CHI={		
 	
 	
-	
+		create_country_leader = {
+		name = "毛远新"
+		picture = "gfx/leaders/DSC/Mao_Yuanxin.dds"
+		expire = "2222.1.1"
+		ideology = Chinese_Socialism_mao
+		desc = Mao_Yuanxin_desc
+		traits = {  Disaster_relief_heroes military_engineer }
+	}
+
 	
 	
 	inherit_technology = DSC
@@ -228,14 +236,8 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	immediate = { 
-
-
-
-	}
-	option = {
-		name = prc1.320.o1
-
-		ai_chance = { factor = 10 }
+random_list = {
+	10={
 			KOR={		
 	
 	
@@ -247,6 +249,19 @@ country_event = {
 
 }
 	news_event = ER_global_news.1
+	}
+	90={
+
+	}
+}
+
+
+	}
+	option = {
+		name = prc1.320.o1
+
+		ai_chance = { factor = 10 }
+
 	}
 	
 	option = {
@@ -2745,7 +2760,7 @@ startup_politics = yes
 
 	if={
 		limit={
-			DSC={
+			CHI = {
 			has_country_flag = chuanyu_is_junguan
 			}
 
@@ -2758,10 +2773,10 @@ has_cosmetic_tag = CHI_REB_SA
 
 					transfer_units_fraction= {
 				target = DSC
-				size = 0.05
-				stockpile_ratio = 0.05
-				army_ratio = 0.05
-				air_ratio = 0.05
+				size = 0.1
+				stockpile_ratio = 0.1
+				army_ratio = 0.1
+				air_ratio = 0.1
 			}
 	}
 	}
@@ -2959,7 +2974,7 @@ random_country = {
 
 
 KOR={
-	country_event = {id=prc1.320 days=1}
+	country_event = {id=prc1.320 days=30}
 
 }
 
