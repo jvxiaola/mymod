@@ -10920,6 +10920,9 @@ defined_text = {
 	text = { trigger = { original_tag = CHI } localization_key = ER_CHI.Conservative }
 	text = { trigger = { original_tag = XIN } localization_key = XIN.Conservative }
 	text = { trigger = { original_tag = PRG } localization_key = PRG.Conservative }
+	text = { trigger = { original_tag = JIL } localization_key = JIL.Conservative }
+	text = { trigger = { original_tag = YUN } localization_key = YUN.Conservative }
+	text = { trigger = { original_tag = GUZ } localization_key = GUZ.Conservative }
 
 	text = { trigger = { has_country_flag = USoE_political_parties date < 2017.1.1 } localization_key = USoE.Conservative }
 	text = { trigger = { has_country_flag = USoE_political_parties date > 2017.1.1 } localization_key = USoE.Conservative_2017 }
@@ -12898,7 +12901,8 @@ defined_text = {
 
 
 	 text = { trigger = { original_tag = DSC } localization_key = DSC.Nat_Autocracy }
-
+	 text = { trigger = { original_tag = NAJ } localization_key = NAJ.Nat_Autocracy }
+	 text = { trigger = { original_tag = XIZ } localization_key = XIZ.Nat_Autocracy }
 
 
 	text = { localization_key = generic.Nat_Autocracy }
@@ -14211,7 +14215,8 @@ defined_text = {
 	text = { trigger = { original_tag = WAG } localization_key = SOV.Nat_Autocracy_wagner_desc }
 
 	text = { trigger = { original_tag = DSC } localization_key = DSC.Nat_Autocracy_desc }
-
+	text = { trigger = { original_tag = NAJ } localization_key = NAJ.Nat_Autocracy_desc }
+	text = { trigger = { original_tag = XIZ } localization_key = XIZ.Nat_Autocracy_desc }
 
 	text = { localization_key = generic.Nat_Autocracy_desc }
 }
@@ -14970,7 +14975,9 @@ defined_text = {
 	text = { trigger = { original_tag = CHI } localization_key = ER_CHI.Conservative_icon }
 	text = { trigger = { original_tag = XIN } localization_key = XIN.Conservative_icon }
 	text = { trigger = { original_tag = PRG } localization_key = PRG.Conservative_icon }
-
+	text = { trigger = { original_tag = YUN } localization_key = PRG.Conservative_icon }
+	text = { trigger = { original_tag = GUZ } localization_key =  PRG.Conservative_icon }
+	text = { trigger = { original_tag = JIL } localization_key = JIL.Conservative_icon }
 	text = { trigger = { original_tag = ABK } localization_key = ABK.Conservative_icon }
 	text = { trigger = { original_tag = ADY has_country_flag = SUB_united_russia } localization_key = ADY.Conservative_icon }
 	text = { trigger = { original_tag = ADY NOT = { has_country_flag = SUB_united_russia } } localization_key = SOV.oligarchism_icon }
@@ -16257,8 +16264,8 @@ defined_text = {
  	text = { trigger = { original_tag = SOV has_country_flag = SOV_wagner_parties } localization_key = SOV.Nat_Autocracy_wagner_icon }
 
 	 text = { trigger = { original_tag = DSC } localization_key = DSC.Nat_Autocracy_icon }
-
-
+	 text = { trigger = { original_tag = NAJ } localization_key = NAJ.Nat_Autocracy_icon }
+	 text = { trigger = { original_tag = XIZ } localization_key = XIZ.Nat_Autocracy_icon }
 	text = { localization_key = generic.Nat_Autocracy }
 }
 

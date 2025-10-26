@@ -3528,7 +3528,7 @@
 	set_country_flag = party24_banned
 
 	create_country_leader = {
-		name = "江泽民"
+		name = Jiang_Zemin
 		desc = JIANG_ZEMIN_LEADER_DESC
 		picture = "Jiang_Zemin.dds"
 		expire = "2030.1.1"

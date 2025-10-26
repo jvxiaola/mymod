@@ -172,14 +172,11 @@ set_variable = { DSC_Socialist_Construction_dynamic1 = -0.10}
 	startup_politics = yes
 	recruit_character = Mao_Yuanxin
 		create_country_leader = {
-		name = "廖锡龙"
-		picture = "DSC_liaoxilong.dds"
+		name = "军区司令部"
+		picture = "NpcC.dds"
 		expire = "2222.1.1"
 		ideology = Nat_Autocracy
-		traits = {
-		#emerging_anarchist_communism
-		#man_of_steel
-		}
+		traits = {}
 	}
 
 	### DSC ###

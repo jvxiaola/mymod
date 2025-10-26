@@ -39,10 +39,33 @@
  PRG.Communist-State_icon: "£CHI_left"
  PRG.Conservative: "£CHI_communism 中国共产党 - §1改革派§! "
  PRG.Conservative_icon: "£CHI_communism"
+
+#吉林
+ JIL.Conservative: "£CHI_communism 中国共产党 - §1改革派§! "
+ JIL.Conservative_icon: "£CHI_communism"
+
+#云南
+ YUN.Conservative: "£CHI_communism 中国共产党 - §1改革派§! "
+ YUN.Conservative_icon: "£CHI_communism"
+
+#贵州
+ GUZ.Conservative: "£CHI_communism 中国共产党 - §1改革派§! "
+ GUZ.Conservative_icon: "£CHI_communism"
+
+#南京军区
+ NAJ.Nat_Autocracy: "£CHI_military_junta §R中国人民解放军§! - 新疆军区"
+ NAJ.Nat_Autocracy_icon: "£CHI_military_junta"
+ NAJ.Nat_Autocracy: "£CHI_military_junta §R中国人民解放军§! - 南京军区"
+ NAJ.Nat_Autocracy_icon: "£CHI_military_junta"
+ NAJ.Nat_Autocracy_desc: "§Y军区政府§! - "
 #世界舞台上的第三世界
  PCP.Communist-State: "£PRU_non_aligned_communism 秘鲁共产党（毛派）"
  PCP.Communist-State_icon: "£PRU_non_aligned_communism"
  PCP.Communist-State_desc: "共产主义 - 马列毛派"
 
+ #西藏
+ XIZ.Nat_Autocracy: "£CHI_military_junta §R中国人民解放军§! - 西藏军区"
+ XIZ.Nat_Autocracy_icon: "£CHI_military_junta"
+ XIZ.Nat_Autocracy_desc: "§Y军区政府§! - "
 
-
+ Jiang_Zemin: "江泽民"
