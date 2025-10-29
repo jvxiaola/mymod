@@ -2304,7 +2304,13 @@ focus = {
 		}
 
 
-
+		offset = {
+			x = 0
+			y = 6
+			trigger = {
+			has_completed_focus = CHI_Chinese_NEW_MILLENNIUM
+			}
+		}
 
 
 		offset = {
@@ -6277,7 +6283,7 @@ add_core_of = ROOT
 			id = PRC_Continue_the_Cultural_Revolution
 			icon = maoism2
 			x = 0
-			y = 14
+			y = 17
 
 			prerequisite = { focus = PRC_Spiritual_Atomic_Bomb }
 
@@ -6323,7 +6329,7 @@ add_core_of = ROOT
 			id = PRC_Proletarian_leader
 			icon = Neo_Marxism
 			x = -1
-			y =15
+			y =18
 
 	prerequisite = {focus = PRC_Continue_the_Cultural_Revolution}
 
@@ -6360,7 +6366,7 @@ add_core_of = ROOT
 				id = PRC_jitilingdao
 				icon = revolutionary_government
 				x = 1
-				y = 15
+				y = 18
 	
 		prerequisite = {focus = PRC_Continue_the_Cultural_Revolution}
 	
@@ -6585,8 +6591,10 @@ add_core_of = ROOT
 	}		
 			}
 			}	
+
+
 		focus = {
-			id = PRC_Study_the_People_Liberation_Army_Movement
+			id = PRC_politic_progress
 			icon = Rectification_Movement
 			x = 0
 			y = 11
@@ -6637,6 +6645,432 @@ add_core_of = ROOT
 			}
 			}
 			}	
+
+
+
+
+
+
+
+
+
+		focus = {
+			id = PRC_Rectification_movement
+			icon  = encourage_civic_groups
+			x = -2
+			y = 1
+
+				prerequisite = {focus = PRC_politic_progress}
+				
+
+	relative_position_id = PRC_politic_progress
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 10
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			completion_reward = {
+				if={
+					limit={
+						has_idea= CHI_zzgs
+					}
+				swap_ideas={
+		remove_idea=CHI_zzgs
+		add_idea=CHI_zzgs1
+				}
+			
+			}
+			else_if={
+				limit={
+					has_idea= CHI_zzgs1
+				}
+			swap_ideas={
+	remove_idea=CHI_zzgs1
+	add_idea=CHI_zzgs2
+			}
+
+			}
+			}
+			}	
+
+		focus = {
+			id = PRC_Speak_is_ok
+			icon = Socialist_freedom
+			x = -3
+			y = 2
+
+				prerequisite = {focus = PRC_Rectification_movement}
+				
+
+	relative_position_id = PRC_politic_progress
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 10
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			completion_reward = {
+				if={
+					limit={
+						has_idea= CHI_zzgs
+					}
+				swap_ideas={
+		remove_idea=CHI_zzgs
+		add_idea=CHI_zzgs1
+				}
+			
+			}
+			else_if={
+				limit={
+					has_idea= CHI_zzgs1
+				}
+			swap_ideas={
+	remove_idea=CHI_zzgs1
+	add_idea=CHI_zzgs2
+			}
+
+			}
+			}
+			}	
+
+
+		focus = {
+			id = PRC_basic_election
+			icon = china_socialist_democracy
+			x = -1
+			y = 2
+
+				prerequisite = {focus = PRC_Rectification_movement}
+				
+
+	relative_position_id = PRC_politic_progress
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 10
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			completion_reward = {
+				if={
+					limit={
+						has_idea= CHI_zzgs
+					}
+				swap_ideas={
+		remove_idea=CHI_zzgs
+		add_idea=CHI_zzgs1
+				}
+			
+			}
+			else_if={
+				limit={
+					has_idea= CHI_zzgs1
+				}
+			swap_ideas={
+	remove_idea=CHI_zzgs1
+	add_idea=CHI_zzgs2
+			}
+
+			}
+			}
+			}	
+
+
+		focus = {
+			id = PRC_the_prototype_of_democracy
+			icon = Great_unity
+			x = -2
+			y = 3
+
+				prerequisite = {focus = PRC_Speak_is_ok}
+						prerequisite = {focus = PRC_basic_election}		
+
+	relative_position_id = PRC_politic_progress
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 10
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			completion_reward = {
+				if={
+					limit={
+						has_idea= CHI_zzgs
+					}
+				swap_ideas={
+		remove_idea=CHI_zzgs
+		add_idea=CHI_zzgs1
+				}
+			
+			}
+			else_if={
+				limit={
+					has_idea= CHI_zzgs1
+				}
+			swap_ideas={
+	remove_idea=CHI_zzgs1
+	add_idea=CHI_zzgs2
+			}
+
+			}
+			}
+			}	
+
+focus = {
+			id = PRC_upper_agency
+			icon = Socialist_transformation
+			x = 2
+			y = 1
+
+				prerequisite = {focus = PRC_politic_progress}
+
+	relative_position_id = PRC_politic_progress
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 10
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			completion_reward = {
+				if={
+					limit={
+						has_idea= CHI_zzgs
+					}
+				swap_ideas={
+		remove_idea=CHI_zzgs
+		add_idea=CHI_zzgs1
+				}
+			
+			}
+			else_if={
+				limit={
+					has_idea= CHI_zzgs1
+				}
+			swap_ideas={
+	remove_idea=CHI_zzgs1
+	add_idea=CHI_zzgs2
+			}
+
+			}
+			}
+			}	
+focus = {
+			id = PRC_term_limit
+			icon = Enterprise_self_management
+			x = 1
+			y = 2
+
+				prerequisite = {focus = PRC_upper_agency}
+
+	relative_position_id = PRC_politic_progress
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 10
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			completion_reward = {
+				if={
+					limit={
+						has_idea= CHI_zzgs
+					}
+				swap_ideas={
+		remove_idea=CHI_zzgs
+		add_idea=CHI_zzgs1
+				}
+			
+			}
+			else_if={
+				limit={
+					has_idea= CHI_zzgs1
+				}
+			swap_ideas={
+	remove_idea=CHI_zzgs1
+	add_idea=CHI_zzgs2
+			}
+
+			}
+			}
+			}	
+
+
+
+focus = {
+			id = PRC_democracy_in_party
+			icon = Socialist_democracy
+			x = 3
+			y = 2
+
+				prerequisite = {focus = PRC_upper_agency}
+
+	relative_position_id = PRC_politic_progress
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 10
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			completion_reward = {
+				if={
+					limit={
+						has_idea= CHI_zzgs
+					}
+				swap_ideas={
+		remove_idea=CHI_zzgs
+		add_idea=CHI_zzgs1
+				}
+			
+			}
+			else_if={
+				limit={
+					has_idea= CHI_zzgs1
+				}
+			swap_ideas={
+	remove_idea=CHI_zzgs1
+	add_idea=CHI_zzgs2
+			}
+
+			}
+			}
+			}	
+
+
+
+focus = {
+			id = PRC_transparent_party
+			icon = control_of_the_national_government
+			x = 2
+			y = 3
+
+				prerequisite = {focus = PRC_term_limit}
+				prerequisite = {focus = PRC_democracy_in_party}
+	relative_position_id = PRC_politic_progress
+	
+			cost = 5
+	
+			ai_will_do = {
+				factor = 10
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			completion_reward = {
+				if={
+					limit={
+						has_idea= CHI_zzgs
+					}
+				swap_ideas={
+		remove_idea=CHI_zzgs
+		add_idea=CHI_zzgs1
+				}
+			
+			}
+			else_if={
+				limit={
+					has_idea= CHI_zzgs1
+				}
+			swap_ideas={
+	remove_idea=CHI_zzgs1
+	add_idea=CHI_zzgs2
+			}
+
+			}
+			}
+			}	
+
 
 
 		focus = {
@@ -7397,16 +7831,16 @@ change_DSC_ZZZDJJ_dynamic14 = yes
 
 
 		focus = {
-			id = PRC_xianzhizcjjfaquan
+			id = PRC_continue_the_revolution
 			icon = culturerev
 			x = 0
-			y = 12
+			y = 15
 
 
 
 
-			prerequisite = {focus = PRC_Study_the_People_Liberation_Army_Movement}
-
+			prerequisite = {focus = PRC_transparent_party}
+			prerequisite = {focus = PRC_the_prototype_of_democracy}
 
 
 			relative_position_id = PRC_Chairman_Mao_Yuanxin
@@ -7986,8 +8420,8 @@ focus = {
 			id = PRC_Spiritual_Atomic_Bomb
 			icon = ziligengsheng
 			x = 0
-			y = 13
-			prerequisite = {focus = PRC_xianzhizcjjfaquan }
+			y = 16
+			prerequisite = {focus = PRC_continue_the_revolution }
 
 
 	relative_position_id = PRC_Chairman_Mao_Yuanxin

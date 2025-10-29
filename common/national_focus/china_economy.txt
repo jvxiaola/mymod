@@ -1745,6 +1745,17 @@ shared_focus = {
 		 }
 
 		cost = 4
+
+		offset = {
+			x = -6
+			y = 9
+			trigger = {
+					OR = { 
+						has_completed_focus = CHI_Chinese_NEW_MILLENNIUM
+					}
+			}
+		}
+
 		offset = {
 			x = -3
 			trigger = {
@@ -5918,6 +5929,9 @@ is_subject_of = CHI
 		y = 15
 
 		cost = 5
+
+
+
 		allow_branch = {
 			OR = {
 				has_country_flag = laozuo
@@ -5936,6 +5950,16 @@ is_subject_of = CHI
 						has_country_flag = xggm
 						has_country_flag = Maoist_from_DSC
 						has_country_flag = laozuo
+					}
+			}
+		}
+
+				offset = {
+			x = -6
+			y = 9
+			trigger = {
+					OR = { 
+						has_completed_focus = CHI_Chinese_NEW_MILLENNIUM
 					}
 			}
 		}
