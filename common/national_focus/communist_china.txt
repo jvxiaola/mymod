@@ -6283,9 +6283,9 @@ add_core_of = ROOT
 			id = PRC_Continue_the_Cultural_Revolution
 			icon = maoism2
 			x = 0
-			y = 17
+			y = 16
 
-			prerequisite = { focus = PRC_Spiritual_Atomic_Bomb }
+			prerequisite = { focus = PRC_continue_the_revolution }
 
 	relative_position_id = PRC_Chairman_Mao_Yuanxin
 	
@@ -6329,7 +6329,7 @@ add_core_of = ROOT
 			id = PRC_Proletarian_leader
 			icon = Neo_Marxism
 			x = -1
-			y =18
+			y =17
 
 	prerequisite = {focus = PRC_Continue_the_Cultural_Revolution}
 
@@ -6366,7 +6366,7 @@ add_core_of = ROOT
 				id = PRC_jitilingdao
 				icon = revolutionary_government
 				x = 1
-				y = 18
+				y = 17
 	
 		prerequisite = {focus = PRC_Continue_the_Cultural_Revolution}
 	
@@ -6594,7 +6594,7 @@ add_core_of = ROOT
 
 
 		focus = {
-			id = PRC_politic_progress
+			id = PRC_Rectification_movement
 			icon = Rectification_Movement
 			x = 0
 			y = 11
@@ -6655,15 +6655,15 @@ add_core_of = ROOT
 
 
 		focus = {
-			id = PRC_Rectification_movement
+			id = PRC_mass_line
 			icon  = encourage_civic_groups
 			x = -2
 			y = 1
 
-				prerequisite = {focus = PRC_politic_progress}
+				prerequisite = {focus = PRC_Rectification_movement}
 				
 
-	relative_position_id = PRC_politic_progress
+	relative_position_id = PRC_Rectification_movement
 	
 			cost = 5
 	
@@ -6712,10 +6712,10 @@ add_core_of = ROOT
 			x = -3
 			y = 2
 
-				prerequisite = {focus = PRC_Rectification_movement}
+				prerequisite = {focus = PRC_mass_line}
 				
 
-	relative_position_id = PRC_politic_progress
+	relative_position_id = PRC_Rectification_movement
 	
 			cost = 5
 	
@@ -6765,10 +6765,10 @@ add_core_of = ROOT
 			x = -1
 			y = 2
 
-				prerequisite = {focus = PRC_Rectification_movement}
+				prerequisite = {focus = PRC_mass_line}
 				
 
-	relative_position_id = PRC_politic_progress
+	relative_position_id = PRC_Rectification_movement
 	
 			cost = 5
 	
@@ -6813,7 +6813,7 @@ add_core_of = ROOT
 
 
 		focus = {
-			id = PRC_the_prototype_of_democracy
+			id = PRC_mass_organization
 			icon = Great_unity
 			x = -2
 			y = 3
@@ -6821,7 +6821,7 @@ add_core_of = ROOT
 				prerequisite = {focus = PRC_Speak_is_ok}
 						prerequisite = {focus = PRC_basic_election}		
 
-	relative_position_id = PRC_politic_progress
+	relative_position_id = PRC_Rectification_movement
 	
 			cost = 5
 	
@@ -6870,9 +6870,9 @@ focus = {
 			x = 2
 			y = 1
 
-				prerequisite = {focus = PRC_politic_progress}
+				prerequisite = {focus = PRC_Rectification_movement}
 
-	relative_position_id = PRC_politic_progress
+	relative_position_id = PRC_Rectification_movement
 	
 			cost = 5
 	
@@ -6922,7 +6922,7 @@ focus = {
 
 				prerequisite = {focus = PRC_upper_agency}
 
-	relative_position_id = PRC_politic_progress
+	relative_position_id = PRC_Rectification_movement
 	
 			cost = 5
 	
@@ -6975,7 +6975,7 @@ focus = {
 
 				prerequisite = {focus = PRC_upper_agency}
 
-	relative_position_id = PRC_politic_progress
+	relative_position_id = PRC_Rectification_movement
 	
 			cost = 5
 	
@@ -7028,7 +7028,7 @@ focus = {
 
 				prerequisite = {focus = PRC_term_limit}
 				prerequisite = {focus = PRC_democracy_in_party}
-	relative_position_id = PRC_politic_progress
+	relative_position_id = PRC_Rectification_movement
 	
 			cost = 5
 	
@@ -7840,7 +7840,7 @@ change_DSC_ZZZDJJ_dynamic14 = yes
 
 
 			prerequisite = {focus = PRC_transparent_party}
-			prerequisite = {focus = PRC_the_prototype_of_democracy}
+			prerequisite = {focus = PRC_mass_organization}
 
 
 			relative_position_id = PRC_Chairman_Mao_Yuanxin
@@ -8416,45 +8416,45 @@ focus = {
 
 	
 
-	focus = {
-			id = PRC_Spiritual_Atomic_Bomb
-			icon = ziligengsheng
-			x = 0
-			y = 16
-			prerequisite = {focus = PRC_continue_the_revolution }
+	#focus = {
+	#		id = PRC_Spiritual_Atomic_Bomb
+	#		icon = ziligengsheng
+	#		x = 0
+	#		y = 16
+	#		prerequisite = {focus = PRC_continue_the_revolution }
 
 
-	relative_position_id = PRC_Chairman_Mao_Yuanxin
+	#relative_position_id = PRC_Chairman_Mao_Yuanxin
 	
-			cost = 5
+	#		cost = 5
 	
-			ai_will_do = {
-				factor = 10
-			}
+	#		ai_will_do = {
+	#			factor = 10
+	#		}
 	
-			available = {
+	#		available = {
 	
-			}
+	#		}
 	
-			bypass = {
-			}
+	#		bypass = {
+	#		}
 	
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+	#		cancel_if_invalid = yes
+	#		continue_if_invalid = no
+	#		available_if_capitulated = no
 	
-			completion_reward = {
-	custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
-	set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.05 }
-	change_DSC_Socialist_Construction_dynamic1 = yes
-	set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.3 }
-	change_DSC_Socialist_Construction_dynamic6 = yes
-	change_DSC_Socialist_Construction_dynamic35 = yes
-	change_DSC_Socialist_Construction_dynamic7= yes
-	set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.1 }
-	change_DSC_Socialist_Construction_dynamic34 = yes
+	#		completion_reward = {
+	#custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
+	#set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.05 }
+	#change_DSC_Socialist_Construction_dynamic1 = yes
+	#set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.3 }
+	#change_DSC_Socialist_Construction_dynamic6 = yes
+	#change_DSC_Socialist_Construction_dynamic35 = yes
+	#change_DSC_Socialist_Construction_dynamic7= yes
+	#set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = -0.1 }
+	#change_DSC_Socialist_Construction_dynamic34 = yes
 	
-			}
-			}	
+	#		}
+	#		}	
 
 		}#/* PRC_dazibao */
