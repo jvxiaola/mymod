@@ -3115,7 +3115,9 @@ cost = 5
 			factor = 5
 		}
 
-		available = {			has_navy_size = { unit = carrier size > 2 }
+		available = {		
+			
+			#has_navy_size = { unit = carrier size > 2 }
 
 												      TAI = { exists = yes }
 NOT = {
@@ -3692,7 +3694,10 @@ cost = 5
 		available = {
 						NKO = { OR = {is_in_faction_with = ROOT
 						is_subject_of = ROOT
-}						}
+									     exists = NO 
+
+}		
+				}
 
 		}
 
@@ -3742,6 +3747,7 @@ cost = 5
 		available = {
 						NKO = { OR = {is_in_faction_with = ROOT
 						is_subject_of = ROOT
+															     exists = NO 
 }						}
 
 		}
@@ -6441,7 +6447,10 @@ add_core_of = ROOT
 	add_stability = 0.05
 	#set_country_flag = party5_banned
 	hidden_effect = {
-
+        add_dynamic_modifier = {
+            modifier = DSC_WCJJZZ_dynamic
+            #scope = CHI
+        }
 	}
 			}
 			}	
@@ -6623,26 +6632,11 @@ add_core_of = ROOT
 			available_if_capitulated = no
 	
 			completion_reward = {
-				if={
-					limit={
-						has_idea= CHI_zzgs
-					}
-				swap_ideas={
-		remove_idea=CHI_zzgs
-		add_idea=CHI_zzgs1
-				}
-			
-			}
-			else_if={
-				limit={
-					has_idea= CHI_zzgs1
-				}
-			swap_ideas={
-	remove_idea=CHI_zzgs1
-	add_idea=CHI_zzgs2
-			}
-
-			}
+								custom_effect_tooltip =DSC_WCJJZZ_dynamic_tt
+        set_temp_variable = { temp_DSC_WCJJZZ_dynamic1 = 0.20 }  # 稳定度 +20%
+        set_temp_variable = { temp_DSC_WCJJZZ_dynamic20 = -0.40 }  # 占领地抵抗增长 -40%
+        change_DSC_WCJJZZ_dynamic1 = yes
+        change_DSC_WCJJZZ_dynamic20 = yes
 			}
 			}	
 
@@ -6683,26 +6677,11 @@ add_core_of = ROOT
 			available_if_capitulated = no
 	
 			completion_reward = {
-				if={
-					limit={
-						has_idea= CHI_zzgs
-					}
-				swap_ideas={
-		remove_idea=CHI_zzgs
-		add_idea=CHI_zzgs1
-				}
-			
-			}
-			else_if={
-				limit={
-					has_idea= CHI_zzgs1
-				}
-			swap_ideas={
-	remove_idea=CHI_zzgs1
-	add_idea=CHI_zzgs2
-			}
-
-			}
+          custom_effect_tooltip =DSC_WCJJZZ_dynamic_tt
+		        set_temp_variable = { temp_DSC_WCJJZZ_dynamic14 = 0.15 }  # 每周人力 +15%
+        set_temp_variable = { temp_DSC_WCJJZZ_dynamic3 = 0.10 }   # 政治点获取 +10%
+        change_DSC_WCJJZZ_dynamic14 = yes
+        change_DSC_WCJJZZ_dynamic3 = yes
 			}
 			}	
 
@@ -6735,26 +6714,9 @@ add_core_of = ROOT
 			available_if_capitulated = no
 	
 			completion_reward = {
-				if={
-					limit={
-						has_idea= CHI_zzgs
-					}
-				swap_ideas={
-		remove_idea=CHI_zzgs
-		add_idea=CHI_zzgs1
-				}
-			
-			}
-			else_if={
-				limit={
-					has_idea= CHI_zzgs1
-				}
-			swap_ideas={
-	remove_idea=CHI_zzgs1
-	add_idea=CHI_zzgs2
-			}
-
-			}
+custom_effect_tooltip =DSC_WCJJZZ_dynamic_tt
+		        set_temp_variable = { temp_DSC_WCJJZZ_dynamic1 = 0.15 }  # 稳定度 +15%
+        change_DSC_WCJJZZ_dynamic1 = yes
 			}
 			}	
 
@@ -6788,26 +6750,9 @@ add_core_of = ROOT
 			available_if_capitulated = no
 	
 			completion_reward = {
-				if={
-					limit={
-						has_idea= CHI_zzgs
-					}
-				swap_ideas={
-		remove_idea=CHI_zzgs
-		add_idea=CHI_zzgs1
-				}
-			
-			}
-			else_if={
-				limit={
-					has_idea= CHI_zzgs1
-				}
-			swap_ideas={
-	remove_idea=CHI_zzgs1
-	add_idea=CHI_zzgs2
-			}
-
-			}
+				custom_effect_tooltip =DSC_WCJJZZ_dynamic_tt
+			        set_temp_variable = { temp_DSC_WCJJZZ_dynamic21 = 0.25 }  # 占领地顺从度增长 +25%
+        change_DSC_WCJJZZ_dynamic21 = yes
 			}
 			}	
 
@@ -6841,26 +6786,14 @@ add_core_of = ROOT
 			available_if_capitulated = no
 	
 			completion_reward = {
-				if={
-					limit={
-						has_idea= CHI_zzgs
-					}
-				swap_ideas={
-		remove_idea=CHI_zzgs
-		add_idea=CHI_zzgs1
-				}
-			
-			}
-			else_if={
-				limit={
-					has_idea= CHI_zzgs1
-				}
-			swap_ideas={
-	remove_idea=CHI_zzgs1
-	add_idea=CHI_zzgs2
-			}
+			custom_effect_tooltip =DSC_WCJJZZ_dynamic_tt
 
-			}
+        set_temp_variable = { temp_DSC_WCJJZZ_dynamic11 = 0.20 }  # 资源产量 +20%
+        set_temp_variable = { temp_DSC_WCJJZZ_dynamic1 = 0.10 }   # 稳定度 +10%
+        change_DSC_WCJJZZ_dynamic11 = yes
+        change_DSC_WCJJZZ_dynamic1 = yes
+
+
 			}
 			}	
 
@@ -6892,26 +6825,9 @@ focus = {
 			available_if_capitulated = no
 	
 			completion_reward = {
-				if={
-					limit={
-						has_idea= CHI_zzgs
-					}
-				swap_ideas={
-		remove_idea=CHI_zzgs
-		add_idea=CHI_zzgs1
-				}
-			
-			}
-			else_if={
-				limit={
-					has_idea= CHI_zzgs1
-				}
-			swap_ideas={
-	remove_idea=CHI_zzgs1
-	add_idea=CHI_zzgs2
-			}
-
-			}
+			custom_effect_tooltip =DSC_WCJJZZ_dynamic_tt
+						        set_temp_variable = { temp_DSC_WCJJZZ_dynamic3 = 0.05 }  # 政治点获取 +15%
+        change_DSC_WCJJZZ_dynamic3 = yes
 			}
 			}	
 focus = {
@@ -6942,26 +6858,9 @@ focus = {
 			available_if_capitulated = no
 	
 			completion_reward = {
-				if={
-					limit={
-						has_idea= CHI_zzgs
-					}
-				swap_ideas={
-		remove_idea=CHI_zzgs
-		add_idea=CHI_zzgs1
-				}
-			
-			}
-			else_if={
-				limit={
-					has_idea= CHI_zzgs1
-				}
-			swap_ideas={
-	remove_idea=CHI_zzgs1
-	add_idea=CHI_zzgs2
-			}
-
-			}
+		custom_effect_tooltip =DSC_WCJJZZ_dynamic_tt
+		        set_temp_variable = { temp_DSC_WCJJZZ_dynamic3 = 0.05 }  # 政治点获取 +15%
+        change_DSC_WCJJZZ_dynamic3 = yes
 			}
 			}	
 
@@ -6995,26 +6894,9 @@ focus = {
 			available_if_capitulated = no
 	
 			completion_reward = {
-				if={
-					limit={
-						has_idea= CHI_zzgs
-					}
-				swap_ideas={
-		remove_idea=CHI_zzgs
-		add_idea=CHI_zzgs1
-				}
-			
-			}
-			else_if={
-				limit={
-					has_idea= CHI_zzgs1
-				}
-			swap_ideas={
-	remove_idea=CHI_zzgs1
-	add_idea=CHI_zzgs2
-			}
-
-			}
+		custom_effect_tooltip =DSC_WCJJZZ_dynamic_tt
+		        set_temp_variable = { temp_DSC_WCJJZZ_dynamic1 = 0.15 }  # 稳定度 +15%
+        change_DSC_WCJJZZ_dynamic1 = yes
 			}
 			}	
 
@@ -7022,7 +6904,7 @@ focus = {
 
 focus = {
 			id = PRC_transparent_party
-			icon = control_of_the_national_government
+			icon = picture16
 			x = 2
 			y = 3
 
@@ -7048,26 +6930,11 @@ focus = {
 			available_if_capitulated = no
 	
 			completion_reward = {
-				if={
-					limit={
-						has_idea= CHI_zzgs
-					}
-				swap_ideas={
-		remove_idea=CHI_zzgs
-		add_idea=CHI_zzgs1
-				}
-			
-			}
-			else_if={
-				limit={
-					has_idea= CHI_zzgs1
-				}
-			swap_ideas={
-	remove_idea=CHI_zzgs1
-	add_idea=CHI_zzgs2
-			}
-
-			}
+		custom_effect_tooltip =DSC_WCJJZZ_dynamic_tt
+		        set_temp_variable = { temp_DSC_WCJJZZ_dynamic20 = -0.30 }  # 占领地抵抗增长 -30%
+        set_temp_variable = { temp_DSC_WCJJZZ_dynamic22 = -0.25 }  # 外国颠覆活动 -25%
+        change_DSC_WCJJZZ_dynamic20 = yes
+        change_DSC_WCJJZZ_dynamic22 = yes
 			}
 			}	
 
@@ -7154,7 +7021,7 @@ change_DSC_WHDZ_dynamic1 = yes
 
 		focus = {
 			id = PRC_battlefield_on_the_literature_and_art
-			icon = wenyiluxian
+			icon = picture17
 			x = 2
 			y = 1
 	prerequisite = {focus = PRC_Public_opinion_front}
@@ -7228,7 +7095,7 @@ change_DSC_WHDZ_dynamic1 = yes
 
 	focus = {
 			id = PRC_old_arts
-			icon = geming_wenyi
+			icon = picture15
 			x = 3
 			y = 2
 	prerequisite = {focus = PRC_battlefield_on_the_literature_and_art}

@@ -2562,6 +2562,41 @@ SpriteType = {
 		texturefile = "gfx/interface/goals/ER_new_focus/图片11.png"
 	}		
 
+
+						SpriteType = {
+		name = "picture12"
+		texturefile = "gfx/interface/goals/ER_new_focus/图片12.png"
+	}		
+
+						SpriteType = {
+		name = "picture13"
+		texturefile = "gfx/interface/goals/ER_new_focus/图片13.png"
+	}		
+
+						SpriteType = {
+		name = "picture14"
+		texturefile = "gfx/interface/goals/ER_new_focus/图片14.png"
+	}		
+
+						SpriteType = {
+		name = "picture15"
+		texturefile = "gfx/interface/goals/ER_new_focus/图片15.png"
+	}		
+
+
+						SpriteType = {
+		name = "picture16"
+		texturefile = "gfx/interface/goals/ER_new_focus/图片16.png"
+	}		
+						SpriteType = {
+		name = "picture17"
+		texturefile = "gfx/interface/goals/ER_new_focus/图片17.png"
+	}		
+
+
+
+
+
 						SpriteType = {
 		name = "mao_book"
 		texturefile = "gfx/interface/goals/ER_new_focus/mao_book.png"

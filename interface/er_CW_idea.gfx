@@ -85,5 +85,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/ER_province_modifer/rev_gongshe.png"
 	}
 
+	spriteType = {
+		name = "GFX_idea_anarcho_marxist_economy"
+		texturefile = "gfx/interface/ideas/ER_ideas/anarcho_marxist_economy.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_dictatorship_of_proletariat"
+		texturefile = "gfx/interface/ideas/ER_ideas/CAN_radsoc_cpc_idea.png"
+	}
 
 }

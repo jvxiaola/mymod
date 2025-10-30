@@ -1665,7 +1665,7 @@ NOT = {	OR = {
 	operatives = 1
 
 	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
-	network_strength = 30
+	#network_strength = 30
 
 	requirements = { #SCOPE_COUNTRY
 	}
@@ -1790,7 +1790,7 @@ NOT = {	OR = {
 	operatives = 2
 
 	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
-	network_strength = 50
+	#network_strength = 50
 
 	requirements = { #SCOPE_COUNTRY
 	}
@@ -2718,19 +2718,19 @@ CHI_Support_the_Communist_Party_of_japan = { ### 1/25
 	}
 	visible = {
 	has_completed_focus = PRC_jap_rev 
-		FROM = {
-			original_tag = JAP
-NOT = {	OR = {
-					is_in_array = { ruling_party = 5 }
-					is_in_array = { ruling_party = 4 }
-					is_in_array = { ruling_party = 19 }
- }		}	
-		}			
+		#FROM = {
+			#original_tag = JAP
+#NOT = {	OR = {
+#					is_in_array = { ruling_party = 5 }
+#					is_in_array = { ruling_party = 4 }
+#					is_in_array = { ruling_party = 19 }
+ #}		}	
+	#	}			
 	}
-	operatives = 1
+	#operatives = 1
 
 	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
-	network_strength = 30
+	#network_strength = 30
 
 	requirements = { #SCOPE_COUNTRY
 	}
@@ -2843,14 +2843,14 @@ CHI_Support_the_Communist_Party_of_japan_coups = { ### 1/25
 	}
 	visible = {
 	has_completed_focus = PRC_jap_rev 
-		FROM = {
-			original_tag = JAP
-NOT = {	OR = {
-					is_in_array = { ruling_party = 5 }
-					is_in_array = { ruling_party = 4 }
-					is_in_array = { ruling_party = 19 }
- }		}	
-		}			
+#		FROM = {
+#			original_tag = JAP
+#NOT = {	OR = {
+#					is_in_array = { ruling_party = 5 }
+#					is_in_array = { ruling_party = 4 }
+#					is_in_array = { ruling_party = 19 }
+ #}		}	
+		#}			
 	}
 	operatives = 1
 

@@ -1758,13 +1758,13 @@ CHI_Central_Asia_expedition = {
 	}
 		visible = {
 	has_completed_focus = PRC_Central_Asian_Revolution
-			is_subject = no
-			FROM = {
-			NOT = {
-			OR = {
-is_puppet_of = ROOT
-is_in_faction_with = ROOT}			}
-			}
+		#	is_subject = no
+		#	FROM = {
+		#	NOT = {
+		#	OR = {
+#is_puppet_of = ROOT
+#is_in_faction_with = ROOT}			}
+			#}
 		}
 		available = {
 			is_neighbor_of = FROM
@@ -1837,13 +1837,13 @@ has_completed_focus = PRC_Afghanistan_Revolution
 	}
 		visible = {
 has_completed_focus = PRC_Afghanistan_Revolution
-is_subject = no		
-	FROM = {
-			NOT = {
-			OR = {
-is_puppet_of = ROOT
-is_in_faction_with = ROOT}			}
-			}
+#is_subject = no		
+#	FROM = {
+#			NOT = {
+#			OR = {
+#is_puppet_of = ROOT
+#is_in_faction_with = ROOT}			}
+#			}
 		}
 		available = {
 			is_neighbor_of = FROM
@@ -1915,11 +1915,11 @@ has_completed_focus = PRC_Socialist_World_Republic
 	}
 		visible = {
 has_completed_focus = PRC_Socialist_World_Republic
-is_subject = no		
-	FROM = {
-			OR = {
-is_puppet_of = ROOT
-is_in_faction_with = ROOT}			}
+#is_subject = no		
+#	FROM = {
+#			OR = {
+#is_puppet_of = ROOT
+#is_in_faction_with = ROOT}			}
 		}
 		available = {
 			is_neighbor_of = FROM

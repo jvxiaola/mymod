@@ -1020,6 +1020,43 @@
  change_DSC_WHDZ_dynamic22_tt: " §R舆论宣传§! - 外国颠覆活动: §Y[?temp_DSC_WHDZ_dynamic22|%]§!\n"
  change_DSC_WHDZ_dynamic23_tt: " §R舆论宣传§! - 限制电量: §Y[?temp_DSC_WHDZ_dynamic23|%]§!\n"
 
+
+ DSC_WCJJZZ_dynamic_tt: " §R无产阶级专政§!追加效果：\n"
+ DSC_WCJJZZ_dynamic: " §R无产阶级专政§!"
+
+### 政治与稳定 ###
+ change_DSC_WCJJZZ_dynamic1_tt: " §R无产阶级专政§! - 稳定度: §Y[?temp_DSC_WCJJZZ_dynamic1|%]§!\n"
+ change_DSC_WCJJZZ_dynamic2_tt: " §R无产阶级专政§! - 战争支持率: §Y[?temp_DSC_WCJJZZ_dynamic2|%]§!\n"
+ change_DSC_WCJJZZ_dynamic3_tt: " §R无产阶级专政§! - 政治点获取: §Y[?temp_DSC_WCJJZZ_dynamic3|%]§!\n"
+
+### 经济与工业 ###
+ change_DSC_WCJJZZ_dynamic4_tt: " §R无产阶级专政§! - 消费品工厂需求: §Y[?temp_DSC_WCJJZZ_dynamic4|%]§!\n"
+ change_DSC_WCJJZZ_dynamic5_tt: " §R无产阶级专政§! - 工厂产出: §Y[?temp_DSC_WCJJZZ_dynamic5|%]§!\n"
+ change_DSC_WCJJZZ_dynamic6_tt: " §R无产阶级专政§! - 造船厂产出: §Y[?temp_DSC_WCJJZZ_dynamic6|%]§!\n"
+ change_DSC_WCJJZZ_dynamic7_tt: " §R无产阶级专政§! - 初始生产效率: §Y[?temp_DSC_WCJJZZ_dynamic7|%]§!\n"
+ change_DSC_WCJJZZ_dynamic8_tt: " §R无产阶级专政§! - 最大生产效率: §Y[?temp_DSC_WCJJZZ_dynamic8|%]§!\n"
+ change_DSC_WCJJZZ_dynamic9_tt: " §R无产阶级专政§! - 建筑速度: §Y[?temp_DSC_WCJJZZ_dynamic9|%]§!\n"
+ change_DSC_WCJJZZ_dynamic10_tt: " §R无产阶级专政§! - 燃料产量: §Y[?temp_DSC_WCJJZZ_dynamic10|%]§!\n"
+
+### 农业与资源 ###
+ change_DSC_WCJJZZ_dynamic11_tt: " §R无产阶级专政§! - 资源产量: §Y[?temp_DSC_WCJJZZ_dynamic11|%]§!\n"
+ change_DSC_WCJJZZ_dynamic12_tt: " §R无产阶级专政§! - 补给范围: §Y[?temp_DSC_WCJJZZ_dynamic12]§!\n"
+ change_DSC_WCJJZZ_dynamic13_tt: " §R无产阶级专政§! - 陆军燃料消耗: §Y[?temp_DSC_WCJJZZ_dynamic13|%]§!\n"
+ change_DSC_WCJJZZ_dynamic14_tt: " §R无产阶级专政§! - 每周人力: §Y[?temp_DSC_WCJJZZ_dynamic14]§!\n"
+
+### 军事优先 ###
+ change_DSC_WCJJZZ_dynamic15_tt: " §R无产阶级专政§! - 陆军攻击: §Y[?temp_DSC_WCJJZZ_dynamic15|%]§!\n"
+ change_DSC_WCJJZZ_dynamic16_tt: " §R无产阶级专政§! - 陆军防御: §Y[?temp_DSC_WCJJZZ_dynamic16|%]§!\n"
+ change_DSC_WCJJZZ_dynamic17_tt: " §R无产阶级专政§! - 陆军组织度: §Y[?temp_DSC_WCJJZZ_dynamic17|%]§!\n"
+ change_DSC_WCJJZZ_dynamic18_tt: " §R无产阶级专政§! - 补员速度: §Y[?temp_DSC_WCJJZZ_dynamic18|%]§!\n"
+ change_DSC_WCJJZZ_dynamic19_tt: " §R无产阶级专政§! - 补给消耗: §Y[?temp_DSC_WCJJZZ_dynamic19|%]§!\n"
+
+ ### 镇压与社会控制 ###
+ change_DSC_WCJJZZ_dynamic20_tt: " §R无产阶级专政§! - 占领地抵抗增长: §Y[?temp_DSC_WCJJZZ_dynamic20|%]§!\n"
+ change_DSC_WCJJZZ_dynamic21_tt: " §R无产阶级专政§! - 占领地顺从度增长: §Y[?temp_DSC_WCJJZZ_dynamic21|%]§!\n"
+ change_DSC_WCJJZZ_dynamic22_tt: " §R无产阶级专政§! - 外国颠覆活动: §Y[?temp_DSC_WCJJZZ_dynamic22|%]§!\n"
+ change_DSC_WCJJZZ_dynamic23_tt: " §R无产阶级专政§! - 限制电量: §Y[?temp_DSC_WCJJZZ_dynamic23|%]§!\n"
+
 #标记点2
  HKG_people_support_dynamic_left_desc: "\n\n\n\n\n£GFX_CHI_people_support_dynamic_dynamic_desc_left_picture \n\n\n\n\n\n\n中国革命群众经过各种斗争，最终掌握了中国的政权，不过，这并不是革命的结束，而仅仅是开始！中国人民必须考虑自身与外国无产阶级的联系，考虑自身的建设，万万不可重蹈无产阶级文化大革命后期人民对革命失望的覆辙，不然的话，资产阶级与官僚主义反革命极有可能再次推翻革命政权。\n\n §Y人民的革命热情为§!： £stability_texticon [?HKG_people_support|%+2]。\n受到民族精神或法律影响，每月变化(本mod已将变化缩小10倍)：[?Final_hongkong_people_support_to_china_government_modifier|%+2]"
  HKG_people_support_dynamic_right_desc: "\n\n£GFX_CHI_people_support_dynamic_dynamic_desc_right_pic \n\n\n\n中国人民自古以来就是不愿意做奴隶的人民，上千年的历史数千次起义，说明了中国的历史就是一部悲壮的阶级斗争史，如果政府不让人民活了，那么人民就会抛弃该政府。\n §R王侯将相，宁有种乎？§!\n\n §Y政府合法性为§!： £stability_texticon [?HKG_people_support|%+2]\n受到修正影响，每月变化(本mod已将变化缩小10倍)：[?Final_hongkong_people_support_to_china_government_modifier|%+2]"
@@ -2198,6 +2235,8 @@
  PRC_politic_guide_economy: "政治指导经济"
  PRC_politic_guide_economy_desc: "政治是经济的集中表现。我们要坚持政治挂帅，用无产阶级政治指导一切经济活动，使生产真正服务于社会主义建设和人民需要。"
 
+
+
  PRC_reduce_bourgeois_rights_in_economy: "经济中的资产阶级法权"
  PRC_reduce_bourgeois_rights_in_economy_desc: "在分配、管理和交换领域仍存在着资产阶级法权，我们必须逐步削弱这种不平等，防止劳动成果重新被特权集团占有。"
 
@@ -2228,8 +2267,8 @@
  PRC_promote_strike: "促进罢工"
  PRC_promote_strike_desc: "工人罢工并非动乱的象征，而是劳动阶级行使权利的正当手段。通过建立合法罢工机制和劳动仲裁制度，我们将让工人的声音重新被听见，使劳动者能够以组织化、制度化的方式维护自身权益——让社会主义的根基再次稳固。"
 
-PRC_mass_line: "群众路线"
-PRC_mass_line_desc: "群众是真正的英雄，而我们自己则往往是幼稚可笑的。\n群众路线，就是一切从群众中来，到群众中去。党的干部必须深入工厂、农村、社区，倾听群众的意见，学习群众的经验，再把这些意见上升为政策，再回到群众中去宣传和执行，让政策在群众实践中得到检验与修正。\n只有依靠群众、相信群众、发动群众，才能防止官僚主义、主观主义和脱离群众的危险。群众路线不仅是一种工作方法，更是一种政治路线——它保证了社会主义事业永远植根于人民的力量之中。\n群众路线，是我们区别于一切剥削阶级政党的根本标志。"
+ PRC_mass_line: "群众路线"
+ PRC_mass_line_desc: "群众是真正的英雄，而我们自己则往往是幼稚可笑的。\n群众路线，就是一切从群众中来，到群众中去。党的干部必须深入工厂、农村、社区，倾听群众的意见，学习群众的经验，再把这些意见上升为政策，再回到群众中去宣传和执行，让政策在群众实践中得到检验与修正。\n只有依靠群众、相信群众、发动群众，才能防止官僚主义、主观主义和脱离群众的危险。群众路线不仅是一种工作方法，更是一种政治路线——它保证了社会主义事业永远植根于人民的力量之中。\n群众路线，是我们区别于一切剥削阶级政党的根本标志。"
 
 
  PRC_Rectification_movement: "整风运动"
@@ -2244,8 +2283,8 @@ PRC_mass_line_desc: "群众是真正的英雄，而我们自己则往往是幼�
  PRC_mass_organization: "群众组织"
  PRC_mass_organization_desc: "只有发动群众，组织群众，才能真正实现人民当家作主。革命的胜利并不意味着群众斗争的结束，而是群众权力的新起点。我们有了一些小范围的委员会，但我们将不止步于此，我们要在工厂、农村、学校和机关中建立起广泛的，大规模的群众组织，让工人有工会，农民有合作社，青年有团体，妇女有联合会，学生有社团，人人都有表达与监督的阵地。\n这些组织不是摆设，而是群众直接行使民主权力的工具，是联系党与人民的桥梁。通过它们，群众可以讨论政策，批评干部，选举代表，乃至发动革命行动。只有让群众真正组织起来，革命的成果才能巩固，新的官僚主义才能被制止。\n群众组织是人民监督的根本保障，是无产阶级专政下继续革命的有力武器。"
 
- PRC_upper_agency: "设立最高监督机关"
- PRC_upper_agency_desc: "建立独立于行政体系的最高监督机构，对权力运行实行全程监督。它将成为反腐、防滥权的核心力量，让所有公职人员在制度的阳光下履职。"
+ PRC_upper_agency: "党内改革"
+ PRC_upper_agency_desc: "建立独立于行政体系的最高监督机构，对权力运行实行全程监督。它将成为反腐、防滥权的核心力量，让所有公职人员在制度的阳光下履职，并且逐步让党的运行方式更加制度化，规范化，民主化"
 
  PRC_term_limit: "任期制度化"
  PRC_term_limit_desc: "权力必须受到时间的约束。我们将确立严格的任期制度，防止个人长期把持权力，使领导层不断得到更新与净化。这不仅是制度建设，更是一种历史自觉。"

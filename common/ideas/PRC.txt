@@ -1850,7 +1850,7 @@ communism_drift = -0.10
 			}
 		}
 CHI_angangxfa = {
-			picture = communism8
+			picture = politic_guide_economy
 name = angangxianfa	
 		allowed = {
 			}
@@ -1868,7 +1868,7 @@ research_speed_factor = 0.01
 			}
 		}
 CHI_angangxfa1 = {
-			picture = communism8
+			picture = politic_guide_economy
 name = angangxianfa	
 		allowed = {
 			}
@@ -1885,7 +1885,7 @@ research_speed_factor = 0.02
 			}
 		}
 CHI_angangxfa2 = {
-			picture = communism8
+			picture = politic_guide_economy
 name = angangxianfa	
 		allowed = {
 			}
@@ -1902,7 +1902,7 @@ research_speed_factor = 0.04
 			}
 		}
 CHI_angangxfa3 = {
-			picture = communism8
+			picture = politic_guide_economy
 name = angangxianfa	
 		allowed = {
 			}
@@ -1920,7 +1920,7 @@ research_speed_factor = 0.07
 			}
 		}
 		CHI_angangxfa4 = {
-			picture = communism8
+			picture = politic_guide_economy
 name = angangxianfa	
 		allowed = {
 			}
