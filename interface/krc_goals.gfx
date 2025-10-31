@@ -2593,7 +2593,10 @@ SpriteType = {
 		texturefile = "gfx/interface/goals/ER_new_focus/图片17.png"
 	}		
 
-
+						SpriteType = {
+		name = "picture18"
+		texturefile = "gfx/interface/goals/ER_new_focus/图片18.png"
+	}		
 
 
 

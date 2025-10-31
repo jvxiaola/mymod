@@ -2521,7 +2521,7 @@ add_5_emerging_communist = yes
 focus = {
 		id = PRC_asian_rev
 		icon = asia
-		x = -6
+		x = -8
 		y = 1
 relative_position_id = PRC_communist_inte
 prerequisite = { focus = PRC_communist_inte focus = PRC_communist_inte4 focus = PRC_1co_communist }
@@ -2891,9 +2891,9 @@ prerequisite = {focus = PRC_pak_rev }
 		}
 
 		available = {
-RAJ = {
-communism > 0.4
-}
+#RAJ = {
+#communism > 0.4
+#}
 		}
 
 		bypass = {
@@ -2907,6 +2907,61 @@ communism > 0.4
 		completion_reward = {
 
 custom_effect_tooltip = "解锁在印度发动无产阶级革命的行动"
+INM={
+	transfer_state = 991
+		division_template = {
+				name = "民兵部队"
+	regiments = {
+	Militia_Bat = { x = 0 y = 0 }
+	Militia_Bat = { x = 0 y = 1 }
+	Militia_Bat = { x = 0 y = 2 }
+	Militia_Bat = { x = 0 y = 3 }
+	Militia_Bat = { x = 1 y = 0 }
+	Militia_Bat = { x = 1 y = 1 }
+	Militia_Bat = { x = 1 y = 2 }
+	Militia_Bat = { x = 1 y = 3 }
+
+				}
+			}
+		random_owned_controlled_state = {
+				prioritize = { 991 }
+
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = INM
+					prioritize_location = 6999
+				}
+
+
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = INM
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = INM
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = INM
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = INM
+					prioritize_location = 6999
+				}
+
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = INM
+					prioritize_location = 6999
+				}
+
+	}
+	declare_war_on = {
+		target = RAJ
+		type = annex_everything
+	}
+}
+
+
 }
 }
 focus = {
@@ -4046,6 +4101,90 @@ cost = 5
 			add_state_core = 1011
 		}
 		}
+
+
+
+focus = {
+		id = PRC_philipine_rev
+		icon = outer_mongolia_sar
+		x = -3
+		y = 3
+relative_position_id = PRC_communist_inte
+prerequisite = { focus = PRC_asian_rev }
+cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		NPA={
+	transfer_state = 735
+		division_template = {
+				name = "民兵部队"
+	regiments = {
+	Militia_Bat = { x = 0 y = 0 }
+	Militia_Bat = { x = 0 y = 1 }
+	Militia_Bat = { x = 0 y = 2 }
+	Militia_Bat = { x = 0 y = 3 }
+	Militia_Bat = { x = 1 y = 0 }
+	Militia_Bat = { x = 1 y = 1 }
+	Militia_Bat = { x = 1 y = 2 }
+	Militia_Bat = { x = 1 y = 3 }
+
+				}
+			}
+		random_owned_controlled_state = {
+				prioritize = { 735 }
+
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = NPA
+					prioritize_location = 6999
+				}
+
+
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = NPA
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = NPA
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = NPA
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = NPA
+					prioritize_location = 6999
+				}
+
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = NPA
+					prioritize_location = 6999
+				}
+
+	}
+	declare_war_on = {
+		target = PHI
+		type=annex_everything
+	}
+
+		}
+		}
+	}
+
+
 						focus = {
 		id = PRC_eu
 		icon = europe
@@ -4240,48 +4379,7 @@ prerequisite = { focus = PRC_eu }
 		}
 
 		available = {
-UKR = {OR = {
-AND = {
-exists = yes	
-	has_civil_war = no
-OR = {
-				custom_trigger_tooltip = {
-					is_in_array = { ruling_party = 4 }
-					tooltip = has_communist_state_government_TT
-				}
-				custom_trigger_tooltip = {
-					is_in_array = { ruling_party = 19 }
-					tooltip = has_neutral_communism_government_TT
-				}
 
-is_puppet_of = ROOT
-is_in_faction_with = ROOT
-
-}}
-exists = no
-}
-}
-BLR = {OR = {
-AND = {
-exists = yes	
-	has_civil_war = no
-OR = {
-				custom_trigger_tooltip = {
-					is_in_array = { ruling_party = 4 }
-					tooltip = has_communist_state_government_TT
-				}
-				custom_trigger_tooltip = {
-					is_in_array = { ruling_party = 19 }
-					tooltip = has_neutral_communism_government_TT
-				}
-
-is_puppet_of = ROOT
-is_in_faction_with = ROOT
-
-}}
-exists = no
-}
-}
 }
 		bypass = {
 
@@ -5175,74 +5273,7 @@ has_completed_focus = PRC_pugre_musilin
 				ratio > 1.5
 			}
 			has_idea = superpower
-				custom_trigger_tooltip = {
-					tooltip = USA_influence_lower_than_CHI_tt
-					NOT = {
-						any_country = {
-							NOT = {
-								has_idea = Non_State_Actor
-								has_idea = Lacks_International_Recognition
-								has_idea = rival_government
-							}
-							OR = {
-								is_african_nation = yes
-								is_asian_nation = yes
-							}
-							OR = {
-								AND = {
-									check_variable = { influence_array^0 = USA }
-									check_variable = { influence_array^1 = ROOT }
-								}
-								AND = {
-									OR = {
-										check_variable = { influence_array^0 = USA }
-										check_variable = { influence_array^1 = USA }
-									}
-									check_variable = { influence_array^2 = ROOT }
-								}
-								AND = {
-									OR = {
-										check_variable = { influence_array^0 = USA }
-										check_variable = { influence_array^1 = USA }
-										check_variable = { influence_array^2 = USA }
-									}
-									check_variable = { influence_array^3 = ROOT }
-								}
-								AND = {
-									OR = {
-										check_variable = { influence_array^0 = USA }
-										check_variable = { influence_array^1 = USA }
-										check_variable = { influence_array^2 = USA }
-										check_variable = { influence_array^3 = USA }
-									}
-									check_variable = { influence_array^4 = ROOT }
-								}
-								AND = {
-									OR = {
-										check_variable = { influence_array^0 = USA }
-										check_variable = { influence_array^1 = USA }
-										check_variable = { influence_array^2 = USA }
-										check_variable = { influence_array^3 = USA }
-										check_variable = { influence_array^4 = USA }
-									}
-									check_variable = { influence_array^5 = ROOT }
-								}
-								AND = {
-									OR = {
-										check_variable = { influence_array^0 = USA }
-										check_variable = { influence_array^1 = USA }
-										check_variable = { influence_array^2 = USA }
-										check_variable = { influence_array^3 = USA }
-										check_variable = { influence_array^4 = USA }
-										check_variable = { influence_array^5 = USA }
-									}
-									check_variable = { influence_array^6 = ROOT }
-								}
-								is_influencer = no
-							}
-						}
-					}
-				}
+
 		}
 
 		bypass = {
@@ -5934,31 +5965,30 @@ cost = 5
 		}
 			else = {
 				custom_trigger_tooltip = {
-					tooltip = "非洲所有国家都是左翼国家"
-						all_other_country = {
-							OR = {
-								is_african_nation = yes
-							}
-							NOT = {
-								has_idea = Non_State_Actor
-								has_idea = Lacks_International_Recognition
-								has_idea = rival_government
-							}
-			OR = {
-				custom_trigger_tooltip = {
-					is_in_array = { ruling_party = 4 }
-					tooltip = has_communist_state_government_TT
-				}
-								custom_trigger_tooltip = {
-					is_in_array = { ruling_party = 5 }
-					tooltip = has_anarchist_communism_government_TT
-				}
-				custom_trigger_tooltip = {
-					is_in_array = { ruling_party = 19 }
-					tooltip = has_neutral_communism_government_TT
-				}
-			}						}
+					tooltip = "非洲反共阵线被粉碎"
+					AND={
+					OR={
+					NOT={EGY={is_in_faction_with = LBA}}
+					EGY={is_in_faction_with = CHI}
+					NOT={country_exists = EGY}
 					}
+
+
+
+							OR={
+					NOT={NIG={is_in_faction_with = CHA}}
+					NIG={is_in_faction_with = CHI}
+										NOT={country_exists = NIG}
+					}			
+
+}
+					}
+
+
+
+
+
+
 				}		
 }
 		bypass = {
@@ -8166,7 +8196,7 @@ every_owned_state = {
 					}
 					focus = {
 						id = PRC_gemingweiyuanhui
-						icon = gmwyh
+						icon = picture18
 						x = 0
 						y = 1
 						prerequisite = { focus = PRC_guliduoquan
@@ -8206,7 +8236,7 @@ every_owned_state = {
 
 					focus = {
 						id = PRC_sanjiehe
-						icon = PRC_communist_vanguard_restored
+						icon = picture12
 						x = 0
 						y = 4
 						prerequisite = { 				
