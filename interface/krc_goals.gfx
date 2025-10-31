@@ -2509,95 +2509,98 @@ SpriteType = {
 	
 					SpriteType = {
 		name = "picture1"
-		texturefile = "gfx/interface/goals/ER_new_focus/图片1.png"
+		texturefile = "gfx/interface/goals/ER_new_focus/picture1.png"
 	}		
 	
 	
 						SpriteType = {
 		name = "picture2"
-		texturefile = "gfx/interface/goals/ER_new_focus/图片2.png"
+		texturefile = "gfx/interface/goals/ER_new_focus/picture2.png"
 	}		
 	
 						SpriteType = {
 		name = "picture3"
-		texturefile = "gfx/interface/goals/ER_new_focus/图片3.png"
+		texturefile = "gfx/interface/goals/ER_new_focus/picture3.png"
 	}		
 	
 						SpriteType = {
 		name = "picture4"
-		texturefile = "gfx/interface/goals/ER_new_focus/图片4.png"
+		texturefile = "gfx/interface/goals/ER_new_focus/picture4.png"
 	}		
 	
 						SpriteType = {
 		name = "picture5"
-		texturefile = "gfx/interface/goals/ER_new_focus/图片5.png"
+		texturefile = "gfx/interface/goals/ER_new_focus/picture5.png"
 	}		
 	
 							SpriteType = {
 		name = "picture6"
-		texturefile = "gfx/interface/goals/ER_new_focus/图片6.png"
+		texturefile = "gfx/interface/goals/ER_new_focus/picture6.png"
 	}		
 	
 						SpriteType = {
 		name = "picture7"
-		texturefile = "gfx/interface/goals/ER_new_focus/图片7.png"
+		texturefile = "gfx/interface/goals/ER_new_focus/picture7.png"
 	}		
 	
 						SpriteType = {
 		name = "picture8"
-		texturefile = "gfx/interface/goals/ER_new_focus/图片8.png"
+		texturefile = "gfx/interface/goals/ER_new_focus/picture8.png"
 	}		
 							SpriteType = {
 		name = "picture9"
-		texturefile = "gfx/interface/goals/ER_new_focus/图片9.png"
+		texturefile = "gfx/interface/goals/ER_new_focus/picture9.png"
 	}		
 	
 						SpriteType = {
 		name = "picture10"
-		texturefile = "gfx/interface/goals/ER_new_focus/图片10.png"
+		texturefile = "gfx/interface/goals/ER_new_focus/picture10.png"
 	}		
 	
 						SpriteType = {
 		name = "picture11"
-		texturefile = "gfx/interface/goals/ER_new_focus/图片11.png"
+		texturefile = "gfx/interface/goals/ER_new_focus/picture11.png"
 	}		
 
 
 						SpriteType = {
 		name = "picture12"
-		texturefile = "gfx/interface/goals/ER_new_focus/图片12.png"
+		texturefile = "gfx/interface/goals/ER_new_focus/picture12.png"
 	}		
 
 						SpriteType = {
 		name = "picture13"
-		texturefile = "gfx/interface/goals/ER_new_focus/图片13.png"
+		texturefile = "gfx/interface/goals/ER_new_focus/picture13.png"
 	}		
 
 						SpriteType = {
 		name = "picture14"
-		texturefile = "gfx/interface/goals/ER_new_focus/图片14.png"
+		texturefile = "gfx/interface/goals/ER_new_focus/picture14.png"
 	}		
 
 						SpriteType = {
 		name = "picture15"
-		texturefile = "gfx/interface/goals/ER_new_focus/图片15.png"
+		texturefile = "gfx/interface/goals/ER_new_focus/picture15.png"
 	}		
 
 
 						SpriteType = {
 		name = "picture16"
-		texturefile = "gfx/interface/goals/ER_new_focus/图片16.png"
+		texturefile = "gfx/interface/goals/ER_new_focus/picture16.png"
 	}		
 						SpriteType = {
 		name = "picture17"
-		texturefile = "gfx/interface/goals/ER_new_focus/图片17.png"
+		texturefile = "gfx/interface/goals/ER_new_focus/picture17.png"
 	}		
 
 						SpriteType = {
 		name = "picture18"
-		texturefile = "gfx/interface/goals/ER_new_focus/图片18.png"
+		texturefile = "gfx/interface/goals/ER_new_focus/picture18.png"
 	}		
-
+						SpriteType = {
+		name = "picture19"
+		texturefile = "gfx/interface/goals/ER_new_focus/picture19.png"
+	}		
 
 
 						SpriteType = {

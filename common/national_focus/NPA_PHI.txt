@@ -1,0 +1,78 @@
+# Author(s): BirdyBoi, Vadim, SKevin, Fire
+focus_tree = {
+	id = NPA_focus
+
+	country = {
+		factor = 0
+		modifier = { original_tag = NPA add = 20 }
+	}
+
+	continuous_focus_position = { x = 50 y = 1500 }
+
+	#Winning Against Taliban
+
+	focus = {
+		id = NPA_build_the_nation
+		icon = attack_taliban
+
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+
+		x = 5
+		y = 0
+
+		cost = 5
+
+		available = {
+			735={
+				is_controlled_by =  NPA
+			}
+			736={
+				is_controlled_by =  NPA
+			}
+		}
+
+		bypass = {
+
+		}
+
+		completion_reward = {
+set_cosmetic_tag = NPA_b
+remove_ideas = Non_State_Actor
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = NPA_sison_is_back
+		icon = attack_taliban
+
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+
+		x = 5
+		y = 1
+
+		cost = 5
+prerequisite = {
+	focus = NPA_build_the_nation
+}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

@@ -18358,11 +18358,11 @@ spriteType = {
 
 
 spriteType = {
-    name = "GFX_policy_1_shine"
-    texturefile = "gfx/interface/goals/ER_new_focus/图片1.png"
+    name = "picture1_shine"
+    texturefile = "gfx/interface/goals/ER_new_focus/picture1.png"
     effectFile = "gfx/FX/buttonstate.lua"
     animation = {
-        animationmaskfile = "gfx/interface/goals/ER_new_focus/图片1.png"
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture1.png"
         animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
         animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
         animationlooping = no  # yes or no ;)
@@ -18374,7 +18374,7 @@ spriteType = {
         animationtexturescale = { x = 1.0 y = 1.0 }
     }
     animation = {
-        animationmaskfile = "gfx/interface/goals/ER_new_focus/图片1.png"
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture1.png"
         animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
         animationrotation = 90.0  # -90 clockwise 90 counterclockwise(by default)
         animationlooping = no  # yes or no ;)
@@ -18389,11 +18389,11 @@ spriteType = {
 }
 
 spriteType = {
-    name = "GFX_policy_2_shine"
-    texturefile = "gfx/interface/goals/ER_new_focus/图片2.png"
+    name = "picture2_shine"
+    texturefile = "gfx/interface/goals/ER_new_focus/picture2.png"
     effectFile = "gfx/FX/buttonstate.lua"
     animation = {
-        animationmaskfile = "gfx/interface/goals/ER_new_focus/图片2.png"
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture2.png"
         animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
         animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
         animationlooping = no  # yes or no ;)
@@ -18405,7 +18405,7 @@ spriteType = {
         animationtexturescale = { x = 1.0 y = 1.0 }
     }
     animation = {
-        animationmaskfile = "gfx/interface/goals/ER_new_focus/图片2.png"
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture2.png"
         animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
         animationrotation = 90.0  # -90 clockwise 90 counterclockwise(by default)
         animationlooping = no  # yes or no ;)
@@ -18420,11 +18420,11 @@ spriteType = {
 }
 
 spriteType = {
-    name = "GFX_policy_3_shine"
-    texturefile = "gfx/interface/goals/ER_new_focus/图片3.png"
+    name = "picture3_shine"
+    texturefile = "gfx/interface/goals/ER_new_focus/picture3.png"
     effectFile = "gfx/FX/buttonstate.lua"
     animation = {
-        animationmaskfile = "gfx/interface/goals/ER_new_focus/图片3.png"
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture3.png"
         animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
         animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
         animationlooping = no  # yes or no ;)
@@ -18436,7 +18436,7 @@ spriteType = {
         animationtexturescale = { x = 1.0 y = 1.0 }
     }
     animation = {
-        animationmaskfile = "gfx/interface/goals/ER_new_focus/图片3.png"
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture3.png"
         animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
         animationrotation = 90.0  # -90 clockwise 90 counterclockwise(by default)
         animationlooping = no  # yes or no ;)
@@ -18451,11 +18451,11 @@ spriteType = {
 }
 
 spriteType = {
-    name = "GFX_policy_4_shine"
-    texturefile = "gfx/interface/goals/ER_new_focus/图片4.png"
+    name = "picture4_shine"
+    texturefile = "gfx/interface/goals/ER_new_focus/picture4.png"
     effectFile = "gfx/FX/buttonstate.lua"
     animation = {
-        animationmaskfile = "gfx/interface/goals/ER_new_focus/图片4.png"
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture4.png"
         animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
         animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
         animationlooping = no  # yes or no ;)
@@ -18467,7 +18467,7 @@ spriteType = {
         animationtexturescale = { x = 1.0 y = 1.0 }
     }
     animation = {
-        animationmaskfile = "gfx/interface/goals/ER_new_focus/图片4.png"
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture4.png"
         animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
         animationrotation = 90.0  # -90 clockwise 90 counterclockwise(by default)
         animationlooping = no  # yes or no ;)
@@ -18482,11 +18482,11 @@ spriteType = {
 }
 
 spriteType = {
-    name = "GFX_policy_5_shine"
-    texturefile = "gfx/interface/goals/ER_new_focus/图片5.png"
+    name = "picture5_shine"
+    texturefile = "gfx/interface/goals/ER_new_focus/picture5.png"
     effectFile = "gfx/FX/buttonstate.lua"
     animation = {
-        animationmaskfile = "gfx/interface/goals/ER_new_focus/图片5.png"
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture5.png"
         animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
         animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
         animationlooping = no  # yes or no ;)
@@ -18498,7 +18498,7 @@ spriteType = {
         animationtexturescale = { x = 1.0 y = 1.0 }
     }
     animation = {
-        animationmaskfile = "gfx/interface/goals/ER_new_focus/图片5.png"
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture5.png"
         animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
         animationrotation = 90.0  # -90 clockwise 90 counterclockwise(by default)
         animationlooping = no  # yes or no ;)
@@ -18513,11 +18513,11 @@ spriteType = {
 }
 
 spriteType = {
-    name = "GFX_policy_6_shine"
-    texturefile = "gfx/interface/goals/ER_new_focus/图片6.png"
+    name = "picture6_shine"
+    texturefile = "gfx/interface/goals/ER_new_focus/picture6.png"
     effectFile = "gfx/FX/buttonstate.lua"
     animation = {
-        animationmaskfile = "gfx/interface/goals/ER_new_focus/图片6.png"
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture6.png"
         animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
         animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
         animationlooping = no  # yes or no ;)
@@ -18529,7 +18529,7 @@ spriteType = {
         animationtexturescale = { x = 1.0 y = 1.0 }
     }
     animation = {
-        animationmaskfile = "gfx/interface/goals/ER_new_focus/图片6.png"
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture6.png"
         animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
         animationrotation = 90.0  # -90 clockwise 90 counterclockwise(by default)
         animationlooping = no  # yes or no ;)
@@ -18544,11 +18544,11 @@ spriteType = {
 }
 
 spriteType = {
-    name = "GFX_policy_7_shine"
-    texturefile = "gfx/interface/goals/ER_new_focus/图片7.png"
+    name = "picture7_shine"
+    texturefile = "gfx/interface/goals/ER_new_focus/picture7.png"
     effectFile = "gfx/FX/buttonstate.lua"
     animation = {
-        animationmaskfile = "gfx/interface/goals/ER_new_focus/图片7.png"
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture7.png"
         animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
         animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
         animationlooping = no  # yes or no ;)
@@ -18560,7 +18560,7 @@ spriteType = {
         animationtexturescale = { x = 1.0 y = 1.0 }
     }
     animation = {
-        animationmaskfile = "gfx/interface/goals/ER_new_focus/图片7.png"
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture7.png"
         animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
         animationrotation = 90.0  # -90 clockwise 90 counterclockwise(by default)
         animationlooping = no  # yes or no ;)
@@ -18575,11 +18575,11 @@ spriteType = {
 }
 
 spriteType = {
-    name = "GFX_policy_8_shine"
-    texturefile = "gfx/interface/goals/ER_new_focus/图片8.png"
+    name = "picture8_shine"
+    texturefile = "gfx/interface/goals/ER_new_focus/picture8.png"
     effectFile = "gfx/FX/buttonstate.lua"
     animation = {
-        animationmaskfile = "gfx/interface/goals/ER_new_focus/图片8.png"
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture8.png"
         animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
         animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
         animationlooping = no  # yes or no ;)
@@ -18591,7 +18591,7 @@ spriteType = {
         animationtexturescale = { x = 1.0 y = 1.0 }
     }
     animation = {
-        animationmaskfile = "gfx/interface/goals/ER_new_focus/图片8.png"
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture8.png"
         animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
         animationrotation = 90.0  # -90 clockwise 90 counterclockwise(by default)
         animationlooping = no  # yes or no ;)
@@ -18606,11 +18606,11 @@ spriteType = {
 }
 
 spriteType = {
-    name = "GFX_policy_9_shine"
-    texturefile = "gfx/interface/goals/ER_new_focus/图片9.png"
+    name = "picture9_shine"
+    texturefile = "gfx/interface/goals/ER_new_focus/picture9.png"
     effectFile = "gfx/FX/buttonstate.lua"
     animation = {
-        animationmaskfile = "gfx/interface/goals/ER_new_focus/图片9.png"
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture9.png"
         animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
         animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
         animationlooping = no  # yes or no ;)
@@ -18622,7 +18622,7 @@ spriteType = {
         animationtexturescale = { x = 1.0 y = 1.0 }
     }
     animation = {
-        animationmaskfile = "gfx/interface/goals/ER_new_focus/图片9.png"
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture9.png"
         animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
         animationrotation = 90.0  # -90 clockwise 90 counterclockwise(by default)
         animationlooping = no  # yes or no ;)
@@ -18637,11 +18637,11 @@ spriteType = {
 }
 
 spriteType = {
-    name = "GFX_policy_10_shine"
-    texturefile = "gfx/interface/goals/ER_new_focus/图片10.png"
+    name = "picture10_shine"
+    texturefile = "gfx/interface/goals/ER_new_focus/picture10.png"
     effectFile = "gfx/FX/buttonstate.lua"
     animation = {
-        animationmaskfile = "gfx/interface/goals/ER_new_focus/图片10.png"
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture10.png"
         animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
         animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
         animationlooping = no  # yes or no ;)
@@ -18653,7 +18653,7 @@ spriteType = {
         animationtexturescale = { x = 1.0 y = 1.0 }
     }
     animation = {
-        animationmaskfile = "gfx/interface/goals/ER_new_focus/图片10.png"
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture10.png"
         animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
         animationrotation = 90.0  # -90 clockwise 90 counterclockwise(by default)
         animationlooping = no  # yes or no ;)
@@ -18668,7 +18668,314 @@ spriteType = {
 }
 
 
+spriteType = {
+    name = "picture11_shine"
+    texturefile = "gfx/interface/goals/ER_new_focus/picture11.png"
+    effectFile = "gfx/FX/buttonstate.lua"
 
+    animation = {
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture11.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture11.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "picture12_shine"
+    texturefile = "gfx/interface/goals/ER_new_focus/picture12.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture12.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no  # yes or no ;)
+        animationtime = 0.75  # in seconds
+        animationdelay = 0  # in seconds
+        animationblendmode = "add"  # add, multiply, overlay
+        animationtype = "scrolling"  # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    animation = {
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture12.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0  # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no  # yes or no ;)
+        animationtime = 0.75  # in seconds
+        animationdelay = 0  # in seconds
+        animationblendmode = "add"  # add, multiply, overlay
+        animationtype = "scrolling"  # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "picture13_shine"
+    texturefile = "gfx/interface/goals/ER_new_focus/picture13.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+
+    animation = {
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture13.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture13.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "picture14_shine"
+    texturefile = "gfx/interface/goals/ER_new_focus/picture14.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+
+    animation = {
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture14.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture14.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "picture15_shine"
+    texturefile = "gfx/interface/goals/ER_new_focus/picture15.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+
+    animation = {
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture15.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture15.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "picture16_shine"
+    texturefile = "gfx/interface/goals/ER_new_focus/picture16.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+
+    animation = {
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture16.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture16.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "picture17_shine"
+    texturefile = "gfx/interface/goals/ER_new_focus/picture17.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+
+    animation = {
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture17.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture17.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+
+    legacy_lazy_load = no
+}
+
+spriteType = {
+    name = "picture18_shine"
+    texturefile = "gfx/interface/goals/ER_new_focus/picture18.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+
+    animation = {
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture18.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture18.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+
+    legacy_lazy_load = no
+}
+
+spriteType = {
+    name = "picture19_shine"
+    texturefile = "gfx/interface/goals/ER_new_focus/picture19.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+
+    animation = {
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture19.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/interface/goals/ER_new_focus/picture19.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+
+    legacy_lazy_load = no
+}
 spriteType = {
     name = "mao_book_shine"
     texturefile = "gfx/interface/goals/ER_new_focus/mao_book.png"

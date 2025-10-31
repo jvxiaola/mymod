@@ -2553,7 +2553,7 @@ add_political_power = 200
 						focus = {
 		id = PRC_Central_Asian_Revolution
 		icon = raise_from_ash
-		x = -10
+		x = -12
 		y = 1
 relative_position_id = PRC_asian_rev
 prerequisite = { focus = PRC_asian_rev }
@@ -2584,7 +2584,7 @@ custom_effect_tooltip = "解锁在中亚发起革命的行动"
 focus = {
 		id = PRC_Afghanistan_Revolution
 		icon = Peoples_Republic_of_Afghanistan
-		x = -9
+		x = -11
 		y = 2
 relative_position_id = PRC_asian_rev
 prerequisite = { focus = PRC_Central_Asian_Revolution }
@@ -2614,7 +2614,7 @@ custom_effect_tooltip = "解锁在阿富汗发起革命的行动"
 focus = {
 		id = PRC_Overthrow_of_theocracy
 		icon = iran_new_revol
-		x = -11
+		x = -13
 		y = 2
 relative_position_id = PRC_asian_rev
 prerequisite = { focus = PRC_Central_Asian_Revolution }
@@ -2644,7 +2644,7 @@ custom_effect_tooltip = "解锁在伊朗发起革命的行动"
 focus = {
 		id = PRC_pugre_musilin
 		icon = the_last_purge
-		x = -10
+		x = -12
 		y = 3
 relative_position_id = PRC_asian_rev
 prerequisite = { focus = PRC_Overthrow_of_theocracy }
@@ -3451,7 +3451,7 @@ cost = 5		ai_will_do = {
 		available_if_capitulated = no
 
 		completion_reward = {
-		custom_effect_tooltip = "解锁支持越南的亲华派的行动"
+puppet = VIE
 }
 }		
 focus = {
@@ -3466,17 +3466,17 @@ cost = 5		ai_will_do = {
 		}
 
 		available = {
-												      VIE = { exists = yes
-				custom_trigger_tooltip = {
-					is_in_array = { ruling_party = 5 }
-					tooltip = has_anarchist_communism_government_TT 
-				}
-													  }
+			#									      VIE = { exists = yes
+			#	custom_trigger_tooltip = {
+			#		is_in_array = { ruling_party = 5 }
+			#		tooltip = has_anarchist_communism_government_TT 
+			#	}
+			#										  }
 			custom_trigger_tooltip = {
 				tooltip = "中国在越南、柬埔寨、老挝拥有最大的影响力"
-				VIE = { check_variable = { influence_array^0 = CHI } }
+
 							LAO = { check_variable = { influence_array^0 = CHI } }
-					CBD = { check_variable = { influence_array^0 = CHI } }
+
 
 			}													  
 
@@ -3492,29 +3492,7 @@ cost = 5		ai_will_do = {
 		available_if_capitulated = no
 
 		completion_reward = {
-VIE = {	
-set_cosmetic_tag = VIE_Indochina_Federation
-	annex_country = {
-			    target = LAO
-			    transfer_troops = yes
-			}
-						every_state = {		
-		limit = {
-									is_core_of = LAO
-				}					
-						add_core_of = VIE
-						}
-						annex_country = {
-			    target = CBD
-			    transfer_troops = yes
-			}
-						every_state = {		
-		limit = {
-									is_core_of = CBD
-				}					
-						add_core_of = VIE
-						}
-}
+puppet = LAO
 }
 }		
 focus = {
@@ -3548,7 +3526,10 @@ cost = 5		ai_will_do = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		completion_reward = {		add_to_faction = WAA
+		completion_reward = {		
+			
+			add_to_faction = WAA
+
 WAA = {
 		set_cosmetic_tag = WAA_BRM_communst
 							every_state = {		
@@ -3578,7 +3559,40 @@ WAA = {
 						target = BRM
 						type = annex_everything
 					}			
+
+
+
+
+
+
+clr_country_flag = dynamic_flag
+	start_politics_input = yes
+
+
+	set_variable = { party_pop_array^4 = 0.8 } #Communist-State
+add_to_array ={ ruling_party = 4}		
+	startup_politics = yes
+
+	create_country_leader = {
+		name = "Bao Youxiang"
+		picture = "Bao_Youxiang.dds"
+		ideology = Chinese_Socialism_mao
+		traits = {
+			emerging_Autocracy
+			legendary_guerrilla_leader
+			pro_china
 		}
+	}
+
+
+
+
+		}
+
+
+
+
+
 }
 }		
 focus = {
@@ -3607,25 +3621,29 @@ cost = 5		ai_will_do = {
 		available_if_capitulated = no
 
 		completion_reward = {		every_other_country = {
-limit = {
-is_SE_Asia = yes
-NOT = {
-is_puppet_of = ROOT
-is_in_faction_with = ROOT
+    limit = {
+        is_SE_Asia = yes
+        NOT = {
+            is_puppet_of = ROOT
+            is_in_faction_with = ROOT
+        }
+    }
+    effect = {
+        ROOT = {
+            add_ai_strategy = {
+                type = declare_war
+                #id = "declare_war_on_SEA_country"
+                value = 500
+            }
+
+            create_wargoal = {
+                target = PREV
+                type = topple_government
+            }
+        }
+    }
 }
-}
-				ROOT = {
-					add_ai_strategy = {
-						type = declare_war
-						id = PREV
-						value = 500
-					}
-					create_wargoal = {
-						target = PREV
-						type = topple_government
-					}
-				}
-}
+
 }
 }		
 focus = {
@@ -3988,7 +4006,7 @@ JAP = {
 focus = {
 		id = PRC_moglina_rev
 		icon = attack_mongolia
-		x = -1
+		x = -2
 		y = 2
 relative_position_id = PRC_communist_inte
 prerequisite = { focus = PRC_asian_rev }
@@ -4021,7 +4039,7 @@ cost = 5
 focus = {
 		id = PRC_moglina
 		icon = align_to_mongolia
-		x = -1
+		x = -2
 		y = 3
 relative_position_id = PRC_communist_inte
 prerequisite = { focus = PRC_moglina_rev }
@@ -4068,7 +4086,7 @@ MON = {
 focus = {
 		id = PRC_moglina_sar
 		icon = outer_mongolia_sar
-		x = -1
+		x = -2
 		y = 4
 relative_position_id = PRC_communist_inte
 prerequisite = { focus = PRC_moglina }
@@ -4106,9 +4124,9 @@ cost = 5
 
 focus = {
 		id = PRC_philipine_rev
-		icon = outer_mongolia_sar
-		x = -3
-		y = 3
+		icon = picture19
+		x = -17
+		y = 2
 relative_position_id = PRC_communist_inte
 prerequisite = { focus = PRC_asian_rev }
 cost = 5
