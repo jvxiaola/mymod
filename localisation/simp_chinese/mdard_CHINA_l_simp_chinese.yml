@@ -592,7 +592,7 @@
  PRC_ven_zb: "推翻查韦斯"
  PRC_ven_zb_desc: "查韦斯那一套是可笑的资产阶级改良主义，本质上还是资产阶级专政，在我们的经济和政治影响力渗透进委内瑞拉以后，我们应当帮助“红旗”推翻查韦斯的统治，建立无产阶级专政。"
 
- PRC_anti_usa: "终结美国霸权"
+ PRC_anti_usa: "直面美国霸权"
  PRC_anti_usa_desc: "在整个拉丁美洲和中东地区被我们所控制后，我们可以终结美国所主导的帝国主义剥削秩序，支持美国的共产主义者，让美帝国主义者发抖去吧！"
 
  PRC_shzygg: "社会主义建设"
@@ -907,9 +907,9 @@
 
 
 
- DSC_Socialist_Construction_dynamic: "§O未竟之事§!"
+ DSC_Socialist_Construction_dynamic: "§R继续革命§!"
  DSC_Socialist_Construction_dynamic_desc: "\n\n\n\n\n£CHI_Socialist_Construction_dynamic_desc_pic \n\n\n\n\n\n\n在经过§O近二十年的兜兜转转§!之后，中国人民发现他们回到了§R起点§!。这条已经§C走过而还未走完§!的路究竟会§7通向何方§!，还是一个§Y未知数§!.....\n驶向何方，掌握在§G每个人§!手中。"
- DSC_Socialist_Construction_dynamic_tt: "§O未竟之事§!追加效果：\n"
+ DSC_Socialist_Construction_dynamic_tt: "§R继续革命§!追加效果：\n"
  change_DSC_Socialist_Construction_dynamic1_tt: "$chuanyu_people_support_to_china_government_modifier$：[?temp_DSC_Socialist_Construction_dynamic|+]\n"
  change_DSC_Socialist_Construction_dynamic2_tt: "$MODIFIER_JUSTIFY_WAR_GOAL_TIME$：[?temp_DSC_Socialist_Construction_dynamic|-%]\n"
  change_DSC_Socialist_Construction_dynamic3_tt: "$MODIFIER_PRODUCTION_FACTORY_EFFICIENCY_GAIN_FACTOR$:[?temp_DSC_Socialist_Construction_dynamic|+%]\n"
@@ -1030,34 +1030,66 @@
  change_DSC_WCJJZZ_dynamic1_tt: " §R无产阶级专政§! - 稳定度: §Y[?temp_DSC_WCJJZZ_dynamic1|%]§!\n"
  change_DSC_WCJJZZ_dynamic2_tt: " §R无产阶级专政§! - 战争支持率: §Y[?temp_DSC_WCJJZZ_dynamic2|%]§!\n"
  change_DSC_WCJJZZ_dynamic3_tt: " §R无产阶级专政§! - 政治点获取: §Y[?temp_DSC_WCJJZZ_dynamic3|%]§!\n"
+ change_DSC_WCJJZZ_dynamic4_tt: " §R无产阶级专政§! - 宣战理由时间: §Y[?temp_DSC_WCJJZZ_dynamic4|%]§!\n"
+ change_DSC_WCJJZZ_dynamic5_tt: " §R无产阶级专政§! - 共产主义倾向: §Y[?temp_DSC_WCJJZZ_dynamic5|%]§!\n"
+ change_DSC_WCJJZZ_dynamic6_tt: " §R无产阶级专政§! - 民族主义倾向: §Y[?temp_DSC_WCJJZZ_dynamic6|%]§!\n"
+ change_DSC_WCJJZZ_dynamic7_tt: " §R无产阶级专政§! - 威权主义倾向: §Y[?temp_DSC_WCJJZZ_dynamic7|%]§!\n"
+ change_DSC_WCJJZZ_dynamic8_tt: " §R无产阶级专政§! - 自由主义倾向: §Y[?temp_DSC_WCJJZZ_dynamic8|%]§!\n"
+ change_DSC_WCJJZZ_dynamic9_tt: " §R无产阶级专政§! - 吞并代价: §Y[?temp_DSC_WCJJZZ_dynamic9|%]§!\n"
+ change_DSC_WCJJZZ_dynamic10_tt: " §R无产阶级专政§! - 外国影响: §Y[?temp_DSC_WCJJZZ_dynamic10|%]§!\n"
+ change_DSC_WCJJZZ_dynamic11_tt: " §R无产阶级专政§! - 外国影响防御: §Y[?temp_DSC_WCJJZZ_dynamic11|%]§!\n"
+ change_DSC_WCJJZZ_dynamic12_tt: " §R无产阶级专政§! - 颠覆活动维持费用: §Y[?temp_DSC_WCJJZZ_dynamic12|%]§!\n"
+ change_DSC_WCJJZZ_dynamic13_tt: " §R无产阶级专政§! - 群众积极性: §Y[?temp_DSC_WCJJZZ_dynamic13|%]§!\n"
 
 ### 经济与工业 ###
- change_DSC_WCJJZZ_dynamic4_tt: " §R无产阶级专政§! - 消费品工厂需求: §Y[?temp_DSC_WCJJZZ_dynamic4|%]§!\n"
- change_DSC_WCJJZZ_dynamic5_tt: " §R无产阶级专政§! - 工厂产出: §Y[?temp_DSC_WCJJZZ_dynamic5|%]§!\n"
- change_DSC_WCJJZZ_dynamic6_tt: " §R无产阶级专政§! - 造船厂产出: §Y[?temp_DSC_WCJJZZ_dynamic6|%]§!\n"
- change_DSC_WCJJZZ_dynamic7_tt: " §R无产阶级专政§! - 初始生产效率: §Y[?temp_DSC_WCJJZZ_dynamic7|%]§!\n"
- change_DSC_WCJJZZ_dynamic8_tt: " §R无产阶级专政§! - 最大生产效率: §Y[?temp_DSC_WCJJZZ_dynamic8|%]§!\n"
- change_DSC_WCJJZZ_dynamic9_tt: " §R无产阶级专政§! - 建筑速度: §Y[?temp_DSC_WCJJZZ_dynamic9|%]§!\n"
- change_DSC_WCJJZZ_dynamic10_tt: " §R无产阶级专政§! - 燃料产量: §Y[?temp_DSC_WCJJZZ_dynamic10|%]§!\n"
+ change_DSC_WCJJZZ_dynamic14_tt: " §R无产阶级专政§! - 消费品工厂比例: §Y[?temp_DSC_WCJJZZ_dynamic14|%]§!\n"
+ change_DSC_WCJJZZ_dynamic15_tt: " §R无产阶级专政§! - 预期消费品需求: §Y[?temp_DSC_WCJJZZ_dynamic15|%]§!\n"
+ change_DSC_WCJJZZ_dynamic16_tt: " §R无产阶级专政§! - 工厂产能: §Y[?temp_DSC_WCJJZZ_dynamic16|%]§!\n"
+ change_DSC_WCJJZZ_dynamic17_tt: " §R无产阶级专政§! - 造船厂产能: §Y[?temp_DSC_WCJJZZ_dynamic17|%]§!\n"
+ change_DSC_WCJJZZ_dynamic18_tt: " §R无产阶级专政§! - 工厂效率增长: §Y[?temp_DSC_WCJJZZ_dynamic18|%]§!\n"
+ change_DSC_WCJJZZ_dynamic19_tt: " §R无产阶级专政§! - 工厂最大效率: §Y[?temp_DSC_WCJJZZ_dynamic19|%]§!\n"
+ change_DSC_WCJJZZ_dynamic20_tt: " §R无产阶级专政§! - 初始生产效率: §Y[?temp_DSC_WCJJZZ_dynamic20|%]§!\n"
+ change_DSC_WCJJZZ_dynamic21_tt: " §R无产阶级专政§! - 建筑速度: §Y[?temp_DSC_WCJJZZ_dynamic21|%]§!\n"
+ change_DSC_WCJJZZ_dynamic22_tt: " §R无产阶级专政§! - 燃料产量: §Y[?temp_DSC_WCJJZZ_dynamic22|%]§!\n"
+ change_DSC_WCJJZZ_dynamic23_tt: " §R无产阶级专政§! - 资源产量: §Y[?temp_DSC_WCJJZZ_dynamic23|%]§!\n"
+ change_DSC_WCJJZZ_dynamic24_tt: " §R无产阶级专政§! - 州生产率增长: §Y[?temp_DSC_WCJJZZ_dynamic24|%]§!\n"
+ change_DSC_WCJJZZ_dynamic25_tt: " §R无产阶级专政§! - 生产率与就业率: §Y[?temp_DSC_WCJJZZ_dynamic25|%]§!\n"
+ change_DSC_WCJJZZ_dynamic26_tt: " §R无产阶级专政§! - 总劳动力规模: §Y[?temp_DSC_WCJJZZ_dynamic26|%]§!\n"
+ change_DSC_WCJJZZ_dynamic27_tt: " §R无产阶级专政§! - 高失业率惩罚: §Y[?temp_DSC_WCJJZZ_dynamic27|%]§!\n"
+ change_DSC_WCJJZZ_dynamic28_tt: " §R无产阶级专政§! - 民工厂劳动需求: §Y[?temp_DSC_WCJJZZ_dynamic28|%]§!\n"
+ change_DSC_WCJJZZ_dynamic29_tt: " §R无产阶级专政§! - 军工厂劳动需求: §Y[?temp_DSC_WCJJZZ_dynamic29|%]§!\n"
+ change_DSC_WCJJZZ_dynamic30_tt: " §R无产阶级专政§! - 行政机关劳动需求: §Y[?temp_DSC_WCJJZZ_dynamic30|%]§!\n"
+ change_DSC_WCJJZZ_dynamic31_tt: " §R无产阶级专政§! - 官僚体系成本: §Y[?temp_DSC_WCJJZZ_dynamic31|%]§!\n"
+ change_DSC_WCJJZZ_dynamic32_tt: " §R无产阶级专政§! - 公安成本: §Y[?temp_DSC_WCJJZZ_dynamic32|%]§!\n"
+ change_DSC_WCJJZZ_dynamic33_tt: " §R无产阶级专政§! - 教育支出: §Y[?temp_DSC_WCJJZZ_dynamic33|%]§!\n"
+ change_DSC_WCJJZZ_dynamic34_tt: " §R无产阶级专政§! - 医疗支出: §Y[?temp_DSC_WCJJZZ_dynamic34|%]§!\n"
+ change_DSC_WCJJZZ_dynamic35_tt: " §R无产阶级专政§! - 社会保障支出: §Y[?temp_DSC_WCJJZZ_dynamic35|%]§!\n"
+ change_DSC_WCJJZZ_dynamic36_tt: " §R无产阶级专政§! - 能源消耗: §Y[?temp_DSC_WCJJZZ_dynamic36|%]§!\n"
 
 ### 农业与资源 ###
- change_DSC_WCJJZZ_dynamic11_tt: " §R无产阶级专政§! - 资源产量: §Y[?temp_DSC_WCJJZZ_dynamic11|%]§!\n"
- change_DSC_WCJJZZ_dynamic12_tt: " §R无产阶级专政§! - 补给范围: §Y[?temp_DSC_WCJJZZ_dynamic12]§!\n"
- change_DSC_WCJJZZ_dynamic13_tt: " §R无产阶级专政§! - 陆军燃料消耗: §Y[?temp_DSC_WCJJZZ_dynamic13|%]§!\n"
- change_DSC_WCJJZZ_dynamic14_tt: " §R无产阶级专政§! - 每周人力: §Y[?temp_DSC_WCJJZZ_dynamic14]§!\n"
+ change_DSC_WCJJZZ_dynamic37_tt: " §R无产阶级专政§! - 每周人力增长: §Y[?temp_DSC_WCJJZZ_dynamic37]§!\n"
+ change_DSC_WCJJZZ_dynamic38_tt: " §R无产阶级专政§! - 每月人口增长: §Y[?temp_DSC_WCJJZZ_dynamic38]§!\n"
+ change_DSC_WCJJZZ_dynamic39_tt: " §R无产阶级专政§! - 补给节点范围: §Y[?temp_DSC_WCJJZZ_dynamic39]§!\n"
+ change_DSC_WCJJZZ_dynamic40_tt: " §R无产阶级专政§! - 陆军燃料消耗: §Y[?temp_DSC_WCJJZZ_dynamic40|%]§!\n"
+ change_DSC_WCJJZZ_dynamic41_tt: " §R无产阶级专政§! - 总补给消耗: §Y[?temp_DSC_WCJJZZ_dynamic41|%]§!\n"
 
-### 军事优先 ###
- change_DSC_WCJJZZ_dynamic15_tt: " §R无产阶级专政§! - 陆军攻击: §Y[?temp_DSC_WCJJZZ_dynamic15|%]§!\n"
- change_DSC_WCJJZZ_dynamic16_tt: " §R无产阶级专政§! - 陆军防御: §Y[?temp_DSC_WCJJZZ_dynamic16|%]§!\n"
- change_DSC_WCJJZZ_dynamic17_tt: " §R无产阶级专政§! - 陆军组织度: §Y[?temp_DSC_WCJJZZ_dynamic17|%]§!\n"
- change_DSC_WCJJZZ_dynamic18_tt: " §R无产阶级专政§! - 补员速度: §Y[?temp_DSC_WCJJZZ_dynamic18|%]§!\n"
- change_DSC_WCJJZZ_dynamic19_tt: " §R无产阶级专政§! - 补给消耗: §Y[?temp_DSC_WCJJZZ_dynamic19|%]§!\n"
+### 军事与国际派遣 ###
+ change_DSC_WCJJZZ_dynamic42_tt: " §R无产阶级专政§! - 陆军攻击: §Y[?temp_DSC_WCJJZZ_dynamic42|%]§!\n"
+ change_DSC_WCJJZZ_dynamic43_tt: " §R无产阶级专政§! - 陆军防御: §Y[?temp_DSC_WCJJZZ_dynamic43|%]§!\n"
+ change_DSC_WCJJZZ_dynamic44_tt: " §R无产阶级专政§! - 陆军组织度: §Y[?temp_DSC_WCJJZZ_dynamic44|%]§!\n"
+ change_DSC_WCJJZZ_dynamic45_tt: " §R无产阶级专政§! - 补员速度: §Y[?temp_DSC_WCJJZZ_dynamic45|%]§!\n"
+ change_DSC_WCJJZZ_dynamic46_tt: " §R无产阶级专政§! - 志愿军规模: §Y[?temp_DSC_WCJJZZ_dynamic46|%]§!\n"
+ change_DSC_WCJJZZ_dynamic47_tt: " §R无产阶级专政§! - 志愿军派遣加成: §Y[?temp_DSC_WCJJZZ_dynamic47|%]§!\n"
+ change_DSC_WCJJZZ_dynamic48_tt: " §R无产阶级专政§! - 志愿军引发紧张度: §Y[?temp_DSC_WCJJZZ_dynamic48|%]§!\n"
+ change_DSC_WCJJZZ_dynamic49_tt: " §R无产阶级专政§! - 志愿军所需编制: §Y[?temp_DSC_WCJJZZ_dynamic49]§!\n"
 
- ### 镇压与社会控制 ###
- change_DSC_WCJJZZ_dynamic20_tt: " §R无产阶级专政§! - 占领地抵抗增长: §Y[?temp_DSC_WCJJZZ_dynamic20|%]§!\n"
- change_DSC_WCJJZZ_dynamic21_tt: " §R无产阶级专政§! - 占领地顺从度增长: §Y[?temp_DSC_WCJJZZ_dynamic21|%]§!\n"
- change_DSC_WCJJZZ_dynamic22_tt: " §R无产阶级专政§! - 外国颠覆活动: §Y[?temp_DSC_WCJJZZ_dynamic22|%]§!\n"
- change_DSC_WCJJZZ_dynamic23_tt: " §R无产阶级专政§! - 限制电量: §Y[?temp_DSC_WCJJZZ_dynamic23|%]§!\n"
+### 镇压与社会控制 ###
+ change_DSC_WCJJZZ_dynamic50_tt: " §R无产阶级专政§! - 占领地抵抗增长: §Y[?temp_DSC_WCJJZZ_dynamic50|%]§!\n"
+ change_DSC_WCJJZZ_dynamic51_tt: " §R无产阶级专政§! - 占领地顺从增长: §Y[?temp_DSC_WCJJZZ_dynamic51|%]§!\n"
+ change_DSC_WCJJZZ_dynamic52_tt: " §R无产阶级专政§! - 外国颠覆活动强度: §Y[?temp_DSC_WCJJZZ_dynamic52|%]§!\n"
+
+### 科研与技术 ###
+ change_DSC_WCJJZZ_dynamic53_tt: " §R无产阶级专政§! - 科研速度: §Y[?temp_DSC_WCJJZZ_dynamic53|%]§!\n"
 
 #标记点2
  HKG_people_support_dynamic_left_desc: "\n\n\n\n\n£GFX_CHI_people_support_dynamic_dynamic_desc_left_picture \n\n\n\n\n\n\n中国革命群众经过各种斗争，最终掌握了中国的政权，不过，这并不是革命的结束，而仅仅是开始！中国人民必须考虑自身与外国无产阶级的联系，考虑自身的建设，万万不可重蹈无产阶级文化大革命后期人民对革命失望的覆辙，不然的话，资产阶级与官僚主义反革命极有可能再次推翻革命政权。\n\n §Y人民的革命热情为§!： £stability_texticon [?HKG_people_support|%+2]。\n受到民族精神或法律影响，每月变化(本mod已将变化缩小10倍)：[?Final_hongkong_people_support_to_china_government_modifier|%+2]"

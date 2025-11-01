@@ -267,44 +267,83 @@ DSC_WHDZ_dynamic = {
 
 
 
-
 DSC_WCJJZZ_dynamic = {
     enable = { always = yes }
     icon = GFX_idea_dictatorship_of_proletariat
+    ########################################
+    # 政治与稳定
+    ########################################
+    stability_factor = DSC_WCJJZZ_dynamic1                # 国家稳定度
+    war_support_factor = DSC_WCJJZZ_dynamic2              # 战争支持率
+    political_power_factor = DSC_WCJJZZ_dynamic3          # 政治点获取
+    justify_war_goal_time = DSC_WCJJZZ_dynamic4           # 宣战理由时间
+    communism_drift = DSC_WCJJZZ_dynamic5                 # 共产主义倾向
+    nationalist_drift = DSC_WCJJZZ_dynamic6               # 民族主义倾向
+    neutrality_drift = DSC_WCJJZZ_dynamic7                # 威权/中立倾向
+    democratic_drift = DSC_WCJJZZ_dynamic8                # 自由主义倾向
+    annex_cost_factor = DSC_WCJJZZ_dynamic9               # 吞并代价
+    foreign_influence_modifier = DSC_WCJJZZ_dynamic10     # 外国影响（渗透）
+    foreign_influence_defense_modifier = DSC_WCJJZZ_dynamic11  # 外国影响防御
+    subversive_activites_upkeep = DSC_WCJJZZ_dynamic12    # 颠覆活动维持费用
+    chuanyu_people_support_to_china_government_modifier = DSC_WCJJZZ_dynamic13 # 对中央政府支持度修正（川渝特有）
 
-# 政治与稳定
-    stability_factor = DSC_WCJJZZ_dynamic1         # 政治不稳定
-    war_support_factor = DSC_WCJJZZ_dynamic2       # 战争支持率
-    political_power_factor = DSC_WCJJZZ_dynamic3   # 政治点获取
-
+    ########################################
     # 经济与工业
-    consumer_goods_factor = DSC_WCJJZZ_dynamic4
-    industrial_capacity_factory = DSC_WCJJZZ_dynamic5
-    industrial_capacity_dockyard = DSC_WCJJZZ_dynamic6
-    production_factory_start_efficiency_factor = DSC_WCJJZZ_dynamic7
-    #production_factory_max_efficiency = DSC_WCJJZZ_dynamic8
-    production_speed_buildings_factor = DSC_WCJJZZ_dynamic9
-    fuel_gain_factor = DSC_WCJJZZ_dynamic10
+    ########################################
+    consumer_goods_factor = DSC_WCJJZZ_dynamic14          # 消费品工厂比例
+    consumer_goods_expected_value = DSC_WCJJZZ_dynamic15  # 预期消费品需求
+    industrial_capacity_factory = DSC_WCJJZZ_dynamic16    # 工厂产能
+    industrial_capacity_dockyard = DSC_WCJJZZ_dynamic17   # 造船厂产能
+    production_factory_efficiency_gain_factor = DSC_WCJJZZ_dynamic18  # 工厂效率提升速度
+    production_factory_max_efficiency_factor = DSC_WCJJZZ_dynamic19   # 工厂最大效率
+    production_factory_start_efficiency_factor = DSC_WCJJZZ_dynamic20 # 初始生产效率
+    production_speed_buildings_factor = DSC_WCJJZZ_dynamic21          # 建筑速度
+    fuel_gain_factor = DSC_WCJJZZ_dynamic22                # 燃料产出
+    local_resources_factor = DSC_WCJJZZ_dynamic23          # 资源产量
+    state_productivity_growth_modifier = DSC_WCJJZZ_dynamic24  # 各州生产率增长
+    productivity_and_employment_modifier = DSC_WCJJZZ_dynamic25     # 整体劳动生产率与就业率
+    total_workforce_modifier = DSC_WCJJZZ_dynamic26        # 总劳动力规模
+    high_unemployment_modifier = DSC_WCJJZZ_dynamic27      # 高失业率惩罚
+    civ_facs_worker_requirement_modifier = DSC_WCJJZZ_dynamic28   # 民工厂劳动需求
+    mil_facs_worker_requirement_modifier = DSC_WCJJZZ_dynamic29   # 军工厂劳动需求
+    offices_worker_requirement_modifier = DSC_WCJJZZ_dynamic30    # 政府机构劳动需求
+    bureaucracy_cost_multiplier_modifier = DSC_WCJJZZ_dynamic31   # 官僚体系成本
+    police_cost_multiplier_modifier = DSC_WCJJZZ_dynamic32        # 公安维稳成本
+    education_cost_multiplier_modifier = DSC_WCJJZZ_dynamic33     # 教育支出
+    health_cost_multiplier_modifier = DSC_WCJJZZ_dynamic34        # 医疗支出
+    social_cost_multiplier_modifier = DSC_WCJJZZ_dynamic35        # 社保支出
+    energy_use = DSC_WCJJZZ_dynamic36                              # 能源消耗（自定义）
 
-    # 农业与资源
-    local_resources_factor = DSC_WCJJZZ_dynamic11
-    supply_node_range = DSC_WCJJZZ_dynamic12
-    army_fuel_consumption_factor = DSC_WCJJZZ_dynamic13
-    weekly_manpower = DSC_WCJJZZ_dynamic14
+    ########################################
+    # 农业与资源、人口
+    ########################################
+    weekly_manpower = DSC_WCJJZZ_dynamic37             # 每周动员人口
+    monthly_population = DSC_WCJJZZ_dynamic38          # 每月人口增长
+    supply_node_range = DSC_WCJJZZ_dynamic39           # 补给节点范围
+    army_fuel_consumption_factor = DSC_WCJJZZ_dynamic40 # 陆军燃料消耗
+    supply_consumption_factor = DSC_WCJJZZ_dynamic41    # 总补给消耗
 
-    # 军事优先
-    army_attack_factor = DSC_WCJJZZ_dynamic15
-    army_defence_factor = DSC_WCJJZZ_dynamic16
-    army_org_factor = DSC_WCJJZZ_dynamic17
-    #reinforce_rate = DSC_WCJJZZ_dynamic18
-    supply_consumption_factor = DSC_WCJJZZ_dynamic19
+    ########################################
+    # 军事与国际派遣
+    ########################################
+    army_attack_factor = DSC_WCJJZZ_dynamic42           # 陆军攻击
+    army_defence_factor = DSC_WCJJZZ_dynamic43          # 陆军防御
+    army_org_factor = DSC_WCJJZZ_dynamic44              # 陆军组织度
+    reinforce_rate = DSC_WCJJZZ_dynamic45               # 补员速度
+    send_volunteer_size = DSC_WCJJZZ_dynamic46          # 志愿军规模
+    send_volunteer_factor = DSC_WCJJZZ_dynamic47        # 志愿军派遣加成
+    send_volunteers_tension = DSC_WCJJZZ_dynamic48      # 志愿军导致的紧张度
+    send_volunteer_divisions_required = DSC_WCJJZZ_dynamic49 # 志愿军最低所需师数量
 
+    ########################################
     # 镇压与社会控制
-    resistance_growth_on_our_occupied_states = DSC_WCJJZZ_dynamic20
-    compliance_growth_on_our_occupied_states = DSC_WCJJZZ_dynamic21
-    #foreign_subversive_activities = DSC_WCJJZZ_dynamic22
-    
+    ########################################
+    resistance_growth_on_our_occupied_states = DSC_WCJJZZ_dynamic50  # 占领区抵抗增长
+    compliance_growth_on_our_occupied_states = DSC_WCJJZZ_dynamic51  # 占领区服从增长
+    foreign_subversive_activities = DSC_WCJJZZ_dynamic52             # 外国颠覆活动强度
 
-
-	energy_use = DSC_WCJJZZ_dynamic23
+    ########################################
+    # 科研与技术
+    ########################################
+    research_speed_factor = DSC_WCJJZZ_dynamic53         # 科研速度
 }

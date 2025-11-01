@@ -2905,7 +2905,10 @@ prerequisite = {focus = PRC_pak_rev }
 		available_if_capitulated = no
 
 		completion_reward = {
-
+create_wargoal = {
+	target = RAJ
+	type = annex_everything
+}
 custom_effect_tooltip = "解锁在印度发动无产阶级革命的行动"
 INM={
 	transfer_state = 991
@@ -2953,6 +2956,75 @@ INM={
 					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = INM
 					prioritize_location = 6999
 				}
+
+
+					create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = INM
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = INM
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = INM
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = INM
+					prioritize_location = 6999
+				}
+
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = INM
+					prioritize_location = 6999
+				}
+	create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = INM
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = INM
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = INM
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = INM
+					prioritize_location = 6999
+				}
+
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = INM
+					prioritize_location = 6999
+				}
+
+
+	create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = INM
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = INM
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = INM
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = INM
+					prioritize_location = 6999
+				}
+
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = INM
+					prioritize_location = 6999
+				}
+
+
 
 	}
 	declare_war_on = {
@@ -3437,7 +3509,13 @@ cost = 5		ai_will_do = {
 		}
 
 		available = {
-												      VIE = { exists = yes													  }
+			custom_trigger_tooltip = {
+				tooltip = "中国在越南拥有最大的影响力"
+
+							VIE = { check_variable = { influence_array^0 = CHI } }
+
+
+			}	
 
 		}
 
@@ -3473,7 +3551,7 @@ cost = 5		ai_will_do = {
 			#	}
 			#										  }
 			custom_trigger_tooltip = {
-				tooltip = "中国在越南、柬埔寨、老挝拥有最大的影响力"
+				tooltip = "中国在老挝拥有最大的影响力"
 
 							LAO = { check_variable = { influence_array^0 = CHI } }
 
@@ -3508,17 +3586,17 @@ cost = 5		ai_will_do = {
 
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = "中国在缅甸各军阀拥有最大的影响力"
-				KAC = { check_variable = { influence_array^0 = CHI } }
+				tooltip = "中国在佤邦拥有最大的影响力"
 				WAA = { check_variable = { influence_array^0 = CHI } }
-				SHN = { check_variable = { influence_array^0 = CHI } }
-				KAR = { check_variable = { influence_array^0 = CHI } }
+
 
 			}													  
 		}
 
 		bypass = {
-
+			NOT={
+				country_exists = WAA
+			}
 
 		}
 
@@ -3542,14 +3620,7 @@ WAA = {
 			    target = KAC
 			    transfer_troops = yes
 			}				
-								annex_country = {
-			    target = SHN
-			    transfer_troops = yes
-			}
-								annex_country = {
-			    target = KAR
-			    transfer_troops = yes
-			}
+			
 					add_ai_strategy = {
 						type = declare_war
 						id = BRM
@@ -3561,9 +3632,15 @@ WAA = {
 					}			
 
 
+					create_wargoal = {
+						target = SHN
+						type = annex_everything
+					}			
 
-
-
+					create_wargoal = {
+						target = KAR
+						type = annex_everything
+					}	
 
 clr_country_flag = dynamic_flag
 	start_politics_input = yes
@@ -3620,30 +3697,41 @@ cost = 5		ai_will_do = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		completion_reward = {		every_other_country = {
-    limit = {
-        is_SE_Asia = yes
-        NOT = {
-            is_puppet_of = ROOT
-            is_in_faction_with = ROOT
-        }
-    }
-    effect = {
-        ROOT = {
-            add_ai_strategy = {
-                type = declare_war
-                #id = "declare_war_on_SEA_country"
-                value = 500
-            }
+		completion_reward = {	
+    					create_wargoal = {
+						target = BRM
+						type = annex_everything
+					}			
 
-            create_wargoal = {
-                target = PREV
-                type = topple_government
-            }
-        }
-    }
-}
 
+					create_wargoal = {
+						target = SHN
+						type = annex_everything
+					}			
+
+					create_wargoal = {
+						target = KAR
+						type = annex_everything
+					}	
+					create_wargoal = {
+						target = CBD
+						type = annex_everything
+					}	
+
+
+										create_wargoal = {
+						target = MAY
+						type = annex_everything
+					}	
+										create_wargoal = {
+						target = SIA
+						type = annex_everything
+					}	
+
+															create_wargoal = {
+						target = IND
+						type = annex_everything
+					}	
 }
 }		
 focus = {
@@ -4145,7 +4233,14 @@ cost = 5
 		available_if_capitulated = no
 
 		completion_reward = {
+create_wargoal = {
+	target = PHI
+	type = annex_everything
+}
+
+
 		NPA={
+			
 	transfer_state = 735
 		division_template = {
 				name = "民兵部队"
@@ -4191,6 +4286,122 @@ cost = 5
 					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = NPA
 					prioritize_location = 6999
 				}
+
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = NPA
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = NPA
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = NPA
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = NPA
+					prioritize_location = 6999
+				}
+
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = NPA
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = NPA
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = NPA
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = NPA
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = NPA
+					prioritize_location = 6999
+				}
+
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = NPA
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = NPA
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = NPA
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = NPA
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = NPA
+					prioritize_location = 6999
+				}
+
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = NPA
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = NPA
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = NPA
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = NPA
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = NPA
+					prioritize_location = 6999
+				}
+
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = NPA
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = NPA
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = NPA
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = NPA
+					prioritize_location = 6999
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = NPA
+					prioritize_location = 6999
+				}
+
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = NPA
+					prioritize_location = 6999
+				}
+
+
+
+
+
+
+
+
+
+
 
 	}
 	declare_war_on = {
@@ -4562,11 +4773,12 @@ add_to_variable = { Shanghai_Cooperation_Organization_dynamic14 = temp_Shanghai_
 		id = PRC_Dramatic_changes_in_Central_and_Western_Europe
 		icon = sovetspecops
 		x = 2
-		y = 6
+		y = 7
 relative_position_id = PRC_communist_inte
 mutually_exclusive = {focus = PRC_War_with_NATO}
 
 prerequisite = { focus = PRC_Shanghai_Economic_Cooperation_Organization_established }
+prerequisite = { focus = PRC_anti_usa }
 		cost = 5
 
 		ai_will_do = {
@@ -4687,10 +4899,11 @@ add_ideas = PRC_wr }
 		id = PRC_War_with_NATO
 		icon = NATO_on_fire_new5
 		x = 4
-		y = 6
+		y = 7
 relative_position_id = PRC_communist_inte
 mutually_exclusive = {focus = PRC_Dramatic_changes_in_Central_and_Western_Europe}
 prerequisite = { focus = PRC_Shanghai_Economic_Cooperation_Organization_established }
+prerequisite = { focus = PRC_anti_usa }
 		cost = 5
 
 		ai_will_do = {
@@ -5284,53 +5497,20 @@ prerequisite = { focus = PRC_bra_zb }
 		}
 
 		available = {
-has_completed_focus = PRC_jap_rev
-has_completed_focus = PRC_pugre_musilin
-			ic_ratio = {
-				tag = USA
-				ratio > 1.5
-			}
-			has_idea = superpower
+
 
 		}
 
 		bypass = {
-		USA = {
-			OR = {
-				custom_trigger_tooltip = {
-					is_in_array = { ruling_party = 4 }
-					tooltip = has_communist_state_government_TT
-				}
-								custom_trigger_tooltip = {
-					is_in_array = { ruling_party = 5 }
-					tooltip = has_anarchist_communism_government_TT
-				}
-				custom_trigger_tooltip = {
-					is_in_array = { ruling_party = 19 }
-					tooltip = has_neutral_communism_government_TT
-				}
-			exists = no
-			is_in_faction_with = CHI
-			is_puppet_of = CHI
-			}
-			}
+
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-USA = {
-add_ideas = PRC_wr
-add_ideas = usa_sl
-remove_ideas = NATO_member
-leave_faction = yes
+add_political_power = 100
 
-}
-				create_wargoal = {
-				type = topple_government
-				target = USA
-			}
 }
 }
 focus = {
@@ -6122,7 +6302,40 @@ has_idea = superpower
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		completion_reward = {					
+		completion_reward = {		
+			
+			
+
+
+every_country = {
+
+
+        ROOT = {
+            add_ai_strategy = {
+                type = declare_war
+                #id = "declare_war_on_SEA_country"
+                value = 500
+            }
+
+            create_wargoal = {
+                target = PREV
+                type = topple_government
+            }
+        }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
 add_ideas = CHI_World_Revolution
 add_named_threat = { threat = 50 name = PRC_World_Revolution }
 add_ideas = PRC_terminator_of_capitalism
@@ -6177,19 +6390,24 @@ add_core_of = ROOT
 			}
 			allow_branch = {
 				has_country_flag = Maoist_from_DSC
-				#NOT = {
-				#	OR = { 
-				#		has_completed_focus = PRC_Proletarian_leader
-				#		has_completed_focus = PRC_jitilingdao
-				#	}
-				#}
+
 			}
 			available = { has_country_leader = { name = "毛远新"  } }
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
 	
-			completion_reward = { add_political_power = 100 }
+			completion_reward = { add_political_power = 100
+				#hidden_effect = {
+        add_dynamic_modifier = {
+            modifier = DSC_WCJJZZ_dynamic
+            #scope = CHI
+       # }
+	}		
+		
+		
+		}
+
 		}
 	focus = {
 			id = PRC_Purge_of_revisionists
@@ -6218,14 +6436,16 @@ add_core_of = ROOT
 			available_if_capitulated = no
 	
 			completion_reward = {
-						custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
-				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.03 }
-				change_DSC_Socialist_Construction_dynamic1 = yes
+						custom_effect_tooltip = DSC_WCJJZZ_dynamic_tt
+				set_temp_variable = { temp_DSC_WCJJZZ_dynamic13 = 0.03 }
+				change_DSC_WCJJZZ_dynamic13 = yes
+
+
+
+
 	add_stability = 0.05
 	#set_country_flag = party5_banned
-	hidden_effect = {
 
-	}
 			}
 			}
 	focus = {
@@ -6255,9 +6475,9 @@ add_core_of = ROOT
 			available_if_capitulated = no
 	
 			completion_reward = {
-						custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
-				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.03 }
-				change_DSC_Socialist_Construction_dynamic1 = yes
+						custom_effect_tooltip = DSC_WCJJZZ_dynamic_tt
+				set_temp_variable = { temp_DSC_WCJJZZ_dynamic13 = 0.03 }
+				change_DSC_WCJJZZ_dynamic13 = yes
 	hidden_effect = {
 	country_event = {id = prc1.116 days = 7 }
 			}
@@ -6276,9 +6496,9 @@ add_core_of = ROOT
 			available = {}
 			bypass = {}
 			completion_reward = {
-						custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
-				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.03 }
-				change_DSC_Socialist_Construction_dynamic1 = yes
+						custom_effect_tooltip = DSC_WCJJZZ_dynamic_tt
+				set_temp_variable = { temp_DSC_WCJJZZ_dynamic13 = 0.03 }
+				change_DSC_WCJJZZ_dynamic13 = yes
 				hidden_effect = {
 				CHI_MER_decresee_effect = yes
 				CHI_MER_decresee_effect = yes
@@ -6488,18 +6708,13 @@ add_core_of = ROOT
 			available_if_capitulated = no
 	
 			completion_reward = {
+						custom_effect_tooltip = DSC_WCJJZZ_dynamic_tt
+				set_temp_variable = { temp_DSC_WCJJZZ_dynamic13 = 0.01 }
+				change_DSC_WCJJZZ_dynamic13 = yes
 
-						custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
-				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.03 }
-				change_DSC_Socialist_Construction_dynamic1 = yes
 	add_stability = 0.05
 	#set_country_flag = party5_banned
-	hidden_effect = {
-        add_dynamic_modifier = {
-            modifier = DSC_WCJJZZ_dynamic
-            #scope = CHI
-        }
-	}
+
 			}
 			}	
 
@@ -6530,9 +6745,9 @@ add_core_of = ROOT
 			available_if_capitulated = no
 	
 			completion_reward = {
-						custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
-				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.03 }
-				change_DSC_Socialist_Construction_dynamic1 = yes
+						custom_effect_tooltip = DSC_WCJJZZ_dynamic_tt
+				set_temp_variable = { temp_DSC_WCJJZZ_dynamic13 = 0.01 }
+				change_DSC_WCJJZZ_dynamic13 = yes
 	add_stability = 0.05
 	#set_country_flag = party5_banned
 	hidden_effect = {
@@ -6566,9 +6781,9 @@ add_core_of = ROOT
 			available_if_capitulated = no
 	
 			completion_reward = {
-						custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
-				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.03 }
-				change_DSC_Socialist_Construction_dynamic1 = yes
+						custom_effect_tooltip = DSC_WCJJZZ_dynamic_tt
+				set_temp_variable = { temp_DSC_WCJJZZ_dynamic13 = 0.01 }
+				change_DSC_WCJJZZ_dynamic13 = yes
 	add_stability = 0.05
 	#set_country_flag = party5_banned
 	hidden_effect = {
@@ -6603,9 +6818,9 @@ add_core_of = ROOT
 			available_if_capitulated = no
 	
 			completion_reward = {
-						custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
-				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.03 }
-				change_DSC_Socialist_Construction_dynamic1 = yes
+						custom_effect_tooltip = DSC_WCJJZZ_dynamic_tt
+				set_temp_variable = { temp_DSC_WCJJZZ_dynamic13 = 0.01 }
+				change_DSC_WCJJZZ_dynamic13 = yes
 	add_stability = 0.05
 	#set_country_flag = party5_banned
 	hidden_effect = {
@@ -6640,7 +6855,7 @@ add_core_of = ROOT
 	
 			completion_reward = {
 
-				add_ideas=CHI_zzgs
+				add_political_power = 100
 				remove_ideas=CHI_jiefangsixiang
 	hidden_effect = {
 	country_event = {id = prc1.118 days = 14 }
@@ -6681,10 +6896,14 @@ add_core_of = ROOT
 	
 			completion_reward = {
 								custom_effect_tooltip =DSC_WCJJZZ_dynamic_tt
-        set_temp_variable = { temp_DSC_WCJJZZ_dynamic1 = 0.20 }  # 稳定度 +20%
-        set_temp_variable = { temp_DSC_WCJJZZ_dynamic20 = -0.40 }  # 占领地抵抗增长 -40%
-        change_DSC_WCJJZZ_dynamic1 = yes
-        change_DSC_WCJJZZ_dynamic20 = yes
+        set_temp_variable = { temp_DSC_WCJJZZ_dynamic13 = 0.03 }    # 党内支持度 +3%
+        set_temp_variable = { temp_DSC_WCJJZZ_dynamic14 = 0.05 }    # 民众支持度 +5%
+        set_temp_variable = { temp_DSC_WCJJZZ_dynamic15 = -0.02 }   # 保守派影响 -2%
+        set_temp_variable = { temp_DSC_WCJJZZ_dynamic16 = 0.04 }    # 改革派团结度 +4%
+        change_DSC_WCJJZZ_dynamic13 = yes
+        change_DSC_WCJJZZ_dynamic14 = yes
+        change_DSC_WCJJZZ_dynamic15 = yes
+        change_DSC_WCJJZZ_dynamic16 = yes
 			}
 			}	
 
@@ -6726,10 +6945,21 @@ add_core_of = ROOT
 	
 			completion_reward = {
           custom_effect_tooltip =DSC_WCJJZZ_dynamic_tt
-		        set_temp_variable = { temp_DSC_WCJJZZ_dynamic14 = 0.15 }  # 每周人力 +15%
-        set_temp_variable = { temp_DSC_WCJJZZ_dynamic3 = 0.10 }   # 政治点获取 +10%
-        change_DSC_WCJJZZ_dynamic14 = yes
-        change_DSC_WCJJZZ_dynamic3 = yes
+set_temp_variable = { temp_DSC_WCJJZZ_dynamic13 = 0.10 }# 群众积极性 +10%
+
+set_temp_variable = { temp_DSC_WCJJZZ_dynamic1 = 0.05} # 稳定度 +5%
+
+set_temp_variable = { temp_DSC_WCJJZZ_dynamic31 = -0.10} # 官僚体系成本 -10%
+
+set_temp_variable = { temp_DSC_WCJJZZ_dynamic51 = 0.05} # 占领地顺从增长 +5%（群众路线可能提高对占领区的管理能力）
+
+set_temp_variable = { temp_DSC_WCJJZZ_dynamic3 = 0.05} # 政治点获取 +5%
+
+        change_DSC_WCJJZZ_dynamic13 = yes
+		        change_DSC_WCJJZZ_dynamic1 = yes
+				        change_DSC_WCJJZZ_dynamic31 = yes
+						        change_DSC_WCJJZZ_dynamic51 = yes
+								        change_DSC_WCJJZZ_dynamic3 = yes
 			}
 			}	
 
@@ -6763,8 +6993,21 @@ add_core_of = ROOT
 	
 			completion_reward = {
 custom_effect_tooltip =DSC_WCJJZZ_dynamic_tt
-		        set_temp_variable = { temp_DSC_WCJJZZ_dynamic1 = 0.15 }  # 稳定度 +15%
+
+set_temp_variable = { temp_DSC_WCJJZZ_dynamic3 = 0.10 }# 政治点获取 +10%
+
+set_temp_variable = { temp_DSC_WCJJZZ_dynamic1 = -0.03 }# 稳定度 -3%（因为言论自由可能带来一些争议）
+
+set_temp_variable = { temp_DSC_WCJJZZ_dynamic13 = 0.05} # 群众积极性 +5%
+
+set_temp_variable = { temp_DSC_WCJJZZ_dynamic53 = 0.05} # 科研速度 +5%（言论自由可能促进创新）
+
+        change_DSC_WCJJZZ_dynamic3 = yes
         change_DSC_WCJJZZ_dynamic1 = yes
+
+        change_DSC_WCJJZZ_dynamic13 = yes
+
+        change_DSC_WCJJZZ_dynamic53 = yes
 			}
 			}	
 
@@ -6799,8 +7042,17 @@ custom_effect_tooltip =DSC_WCJJZZ_dynamic_tt
 	
 			completion_reward = {
 				custom_effect_tooltip =DSC_WCJJZZ_dynamic_tt
-			        set_temp_variable = { temp_DSC_WCJJZZ_dynamic21 = 0.25 }  # 占领地顺从度增长 +25%
-        change_DSC_WCJJZZ_dynamic21 = yes
+set_temp_variable = { temp_DSC_WCJJZZ_dynamic13 = 0.08} # 群众积极性 +8%
+
+set_temp_variable = { temp_DSC_WCJJZZ_dynamic1 = 0.04 }# 稳定度 +4%
+
+set_temp_variable = { temp_DSC_WCJJZZ_dynamic3 = 0.06 }# 政治点获取 +6%
+
+set_temp_variable = { temp_DSC_WCJJZZ_dynamic31 = -0.08} # 官僚体系成本 -8%
+        change_DSC_WCJJZZ_dynamic13 = yes
+				        change_DSC_WCJJZZ_dynamic1 = yes
+						        change_DSC_WCJJZZ_dynamic3 = yes
+								        change_DSC_WCJJZZ_dynamic31 = yes
 			}
 			}	
 
@@ -6836,12 +7088,20 @@ custom_effect_tooltip =DSC_WCJJZZ_dynamic_tt
 			completion_reward = {
 			custom_effect_tooltip =DSC_WCJJZZ_dynamic_tt
 
-        set_temp_variable = { temp_DSC_WCJJZZ_dynamic11 = 0.20 }  # 资源产量 +20%
-        set_temp_variable = { temp_DSC_WCJJZZ_dynamic1 = 0.10 }   # 稳定度 +10%
-        change_DSC_WCJJZZ_dynamic11 = yes
+set_temp_variable = { temp_DSC_WCJJZZ_dynamic13 = 0.12 }# 群众积极性 +12%
+
+set_temp_variable = { temp_DSC_WCJJZZ_dynamic31 = -0.12} # 官僚体系成本 -12%
+
+set_temp_variable = { temp_DSC_WCJJZZ_dynamic1 = 0.06} # 稳定度 +6%
+
+set_temp_variable = { temp_DSC_WCJJZZ_dynamic51 = 0.08} # 占领地顺从增长 +8%
+
+set_temp_variable = { temp_DSC_WCJJZZ_dynamic46 = 0.10 }# 志愿军规模 +10%（群众组织可能增强动员能力）
+        change_DSC_WCJJZZ_dynamic13 = yes
+        change_DSC_WCJJZZ_dynamic31 = yes
         change_DSC_WCJJZZ_dynamic1 = yes
-
-
+        change_DSC_WCJJZZ_dynamic51 = yes
+		        change_DSC_WCJJZZ_dynamic46 = yes
 			}
 			}	
 
@@ -6979,10 +7239,16 @@ focus = {
 	
 			completion_reward = {
 		custom_effect_tooltip =DSC_WCJJZZ_dynamic_tt
-		        set_temp_variable = { temp_DSC_WCJJZZ_dynamic20 = -0.30 }  # 占领地抵抗增长 -30%
-        set_temp_variable = { temp_DSC_WCJJZZ_dynamic22 = -0.25 }  # 外国颠覆活动 -25%
-        change_DSC_WCJJZZ_dynamic20 = yes
-        change_DSC_WCJJZZ_dynamic22 = yes
+set_temp_variable = { temp_DSC_WCJJZZ_dynamic1 = 0.05 }
+set_temp_variable = { temp_DSC_WCJJZZ_dynamic3 = 0.06 }
+set_temp_variable = { temp_DSC_WCJJZZ_dynamic13 = 0.08 }
+set_temp_variable = { temp_DSC_WCJJZZ_dynamic16 = 0.04 }
+set_temp_variable = { temp_DSC_WCJJZZ_dynamic31 = -0.10 }
+change_DSC_WCJJZZ_dynamic1 = yes
+change_DSC_WCJJZZ_dynamic3 = yes
+change_DSC_WCJJZZ_dynamic13 = yes
+change_DSC_WCJJZZ_dynamic16 = yes
+change_DSC_WCJJZZ_dynamic31 = yes
 			}
 			}	
 
