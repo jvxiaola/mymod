@@ -890,7 +890,7 @@ Militia_Bat = { x = 1 y = 3 }
 		expire = "2222.1.1"
 		ideology = Chinese_Socialism_mao
 		desc = Mao_Yuanxin_desc
-		traits = {  Disaster_relief_heroes military_engineer }
+		traits = {  well_known_mao the_hero_at_dusk }
 	}
 
 

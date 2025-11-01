@@ -27,7 +27,7 @@ characters = {
         }
         #country_leader = {
 		#	ideology = Chinese_Socialism_mao
-		#    traits = {  Disaster_relief_heroes military_engineer }
+		#    traits = {  well_known_mao the_hero_at_dusk }
 		#	desc = Mao_Yuanxin_desc
         #    expire = "2100.1.1.1"
 		#}
