@@ -6437,7 +6437,7 @@ add_core_of = ROOT
 	
 			completion_reward = {
 						custom_effect_tooltip = DSC_WCJJZZ_dynamic_tt
-				set_temp_variable = { temp_DSC_WCJJZZ_dynamic13 = 0.03 }
+				set_temp_variable = { temp_DSC_WCJJZZ_dynamic13 = 0.01 }
 				change_DSC_WCJJZZ_dynamic13 = yes
 
 
@@ -6497,7 +6497,7 @@ add_core_of = ROOT
 			bypass = {}
 			completion_reward = {
 						custom_effect_tooltip = DSC_WCJJZZ_dynamic_tt
-				set_temp_variable = { temp_DSC_WCJJZZ_dynamic13 = 0.03 }
+				set_temp_variable = { temp_DSC_WCJJZZ_dynamic13 = 0.01 }
 				change_DSC_WCJJZZ_dynamic13 = yes
 				hidden_effect = {
 				CHI_MER_decresee_effect = yes
@@ -6945,11 +6945,11 @@ add_core_of = ROOT
 	
 			completion_reward = {
           custom_effect_tooltip =DSC_WCJJZZ_dynamic_tt
-set_temp_variable = { temp_DSC_WCJJZZ_dynamic13 = 0.10 }# 群众积极性 +10%
+set_temp_variable = { temp_DSC_WCJJZZ_dynamic13 = 0.04 }# 群众积极性 +4%
 
 set_temp_variable = { temp_DSC_WCJJZZ_dynamic1 = 0.05} # 稳定度 +5%
 
-set_temp_variable = { temp_DSC_WCJJZZ_dynamic31 = -0.10} # 官僚体系成本 -10%
+set_temp_variable = { temp_DSC_WCJJZZ_dynamic31 = -0.05} # 官僚体系成本 -5%
 
 set_temp_variable = { temp_DSC_WCJJZZ_dynamic51 = 0.05} # 占领地顺从增长 +5%（群众路线可能提高对占领区的管理能力）
 
@@ -7042,13 +7042,13 @@ set_temp_variable = { temp_DSC_WCJJZZ_dynamic53 = 0.05} # 科研速度 +5%（言
 	
 			completion_reward = {
 				custom_effect_tooltip =DSC_WCJJZZ_dynamic_tt
-set_temp_variable = { temp_DSC_WCJJZZ_dynamic13 = 0.08} # 群众积极性 +8%
+set_temp_variable = { temp_DSC_WCJJZZ_dynamic13 = 0.02} # 群众积极性 +2%
 
 set_temp_variable = { temp_DSC_WCJJZZ_dynamic1 = 0.04 }# 稳定度 +4%
 
 set_temp_variable = { temp_DSC_WCJJZZ_dynamic3 = 0.06 }# 政治点获取 +6%
 
-set_temp_variable = { temp_DSC_WCJJZZ_dynamic31 = -0.08} # 官僚体系成本 -8%
+set_temp_variable = { temp_DSC_WCJJZZ_dynamic31 = -0.04} # 官僚体系成本 -4%
         change_DSC_WCJJZZ_dynamic13 = yes
 				        change_DSC_WCJJZZ_dynamic1 = yes
 						        change_DSC_WCJJZZ_dynamic3 = yes
@@ -7088,9 +7088,9 @@ set_temp_variable = { temp_DSC_WCJJZZ_dynamic31 = -0.08} # 官僚体系成本 -8
 			completion_reward = {
 			custom_effect_tooltip =DSC_WCJJZZ_dynamic_tt
 
-set_temp_variable = { temp_DSC_WCJJZZ_dynamic13 = 0.12 }# 群众积极性 +12%
+set_temp_variable = { temp_DSC_WCJJZZ_dynamic13 = 0.03 }# 群众积极性 +3%
 
-set_temp_variable = { temp_DSC_WCJJZZ_dynamic31 = -0.12} # 官僚体系成本 -12%
+set_temp_variable = { temp_DSC_WCJJZZ_dynamic31 = -0.06} # 官僚体系成本 -6%
 
 set_temp_variable = { temp_DSC_WCJJZZ_dynamic1 = 0.06} # 稳定度 +6%
 
@@ -7241,9 +7241,9 @@ focus = {
 		custom_effect_tooltip =DSC_WCJJZZ_dynamic_tt
 set_temp_variable = { temp_DSC_WCJJZZ_dynamic1 = 0.05 }
 set_temp_variable = { temp_DSC_WCJJZZ_dynamic3 = 0.06 }
-set_temp_variable = { temp_DSC_WCJJZZ_dynamic13 = 0.08 }
+set_temp_variable = { temp_DSC_WCJJZZ_dynamic13 = 0.04 }#群众积极性
 set_temp_variable = { temp_DSC_WCJJZZ_dynamic16 = 0.04 }
-set_temp_variable = { temp_DSC_WCJJZZ_dynamic31 = -0.10 }
+set_temp_variable = { temp_DSC_WCJJZZ_dynamic31 = -0.05 }#官僚成本
 change_DSC_WCJJZZ_dynamic1 = yes
 change_DSC_WCJJZZ_dynamic3 = yes
 change_DSC_WCJJZZ_dynamic13 = yes
