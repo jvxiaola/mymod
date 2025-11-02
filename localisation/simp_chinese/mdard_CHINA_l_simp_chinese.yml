@@ -956,34 +956,67 @@
  change_DSC_ZZZDJJ_dynamic1_tt: " §R政治指导经济§! - 稳定度: §Y[?temp_DSC_ZZZDJJ_dynamic1|%]§!\n"
  change_DSC_ZZZDJJ_dynamic2_tt: " §R政治指导经济§! - 战争支持率: §Y[?temp_DSC_ZZZDJJ_dynamic2|%]§!\n"
  change_DSC_ZZZDJJ_dynamic3_tt: " §R政治指导经济§! - 政治点获取: §Y[?temp_DSC_ZZZDJJ_dynamic3|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic4_tt: " §R政治指导经济§! - 宣战理由时间: §Y[?temp_DSC_ZZZDJJ_dynamic4|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic5_tt: " §R政治指导经济§! - 共产主义倾向: §Y[?temp_DSC_ZZZDJJ_dynamic5|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic6_tt: " §R政治指导经济§! - 民族主义倾向: §Y[?temp_DSC_ZZZDJJ_dynamic6|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic7_tt: " §R政治指导经济§! - 威权主义倾向: §Y[?temp_DSC_ZZZDJJ_dynamic7|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic8_tt: " §R政治指导经济§! - 自由主义倾向: §Y[?temp_DSC_ZZZDJJ_dynamic8|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic9_tt: " §R政治指导经济§! - 吞并代价: §Y[?temp_DSC_ZZZDJJ_dynamic9|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic10_tt: " §R政治指导经济§! - 外国影响: §Y[?temp_DSC_ZZZDJJ_dynamic10|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic11_tt: " §R政治指导经济§! - 外国影响防御: §Y[?temp_DSC_ZZZDJJ_dynamic11|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic12_tt: " §R政治指导经济§! - 颠覆活动维持费用: §Y[?temp_DSC_ZZZDJJ_dynamic12|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic13_tt: " §R政治指导经济§! - 群众积极性: §Y[?temp_DSC_ZZZDJJ_dynamic13|%]§!\n"
 
-### 经济与工业 ###
- change_DSC_ZZZDJJ_dynamic4_tt: " §R政治指导经济§! - 消费品工厂需求: §Y[?temp_DSC_ZZZDJJ_dynamic4|%]§!\n"
- change_DSC_ZZZDJJ_dynamic5_tt: " §R政治指导经济§! - 工厂产出: §Y[?temp_DSC_ZZZDJJ_dynamic5|%]§!\n"
- change_DSC_ZZZDJJ_dynamic6_tt: " §R政治指导经济§! - 造船厂产出: §Y[?temp_DSC_ZZZDJJ_dynamic6|%]§!\n"
- change_DSC_ZZZDJJ_dynamic7_tt: " §R政治指导经济§! - 初始生产效率: §Y[?temp_DSC_ZZZDJJ_dynamic7|%]§!\n"
- change_DSC_ZZZDJJ_dynamic8_tt: " §R政治指导经济§! - 最大生产效率: §Y[?temp_DSC_ZZZDJJ_dynamic8|%]§!\n"
- change_DSC_ZZZDJJ_dynamic9_tt: " §R政治指导经济§! - 建筑速度: §Y[?temp_DSC_ZZZDJJ_dynamic9|%]§!\n"
- change_DSC_ZZZDJJ_dynamic10_tt: " §R政治指导经济§! - 燃料产量: §Y[?temp_DSC_ZZZDJJ_dynamic10|%]§!\n"
+ ### 经济与工业 ###
+ change_DSC_ZZZDJJ_dynamic14_tt: " §R政治指导经济§! - 消费品工厂比例: §Y[?temp_DSC_ZZZDJJ_dynamic14|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic15_tt: " §R政治指导经济§! - 预期消费品需求: §Y[?temp_DSC_ZZZDJJ_dynamic15|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic16_tt: " §R政治指导经济§! - 工厂产能: §Y[?temp_DSC_ZZZDJJ_dynamic16|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic17_tt: " §R政治指导经济§! - 造船厂产能: §Y[?temp_DSC_ZZZDJJ_dynamic17|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic18_tt: " §R政治指导经济§! - 工厂效率增长: §Y[?temp_DSC_ZZZDJJ_dynamic18|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic19_tt: " §R政治指导经济§! - 工厂最大效率: §Y[?temp_DSC_ZZZDJJ_dynamic19|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic20_tt: " §R政治指导经济§! - 初始生产效率: §Y[?temp_DSC_ZZZDJJ_dynamic20|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic21_tt: " §R政治指导经济§! - 建筑速度: §Y[?temp_DSC_ZZZDJJ_dynamic21|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic22_tt: " §R政治指导经济§! - 燃料产量: §Y[?temp_DSC_ZZZDJJ_dynamic22|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic23_tt: " §R政治指导经济§! - 资源产量: §Y[?temp_DSC_ZZZDJJ_dynamic23|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic24_tt: " §R政治指导经济§! - 州生产率增长: §Y[?temp_DSC_ZZZDJJ_dynamic24|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic25_tt: " §R政治指导经济§! - 生产率与就业率: §Y[?temp_DSC_ZZZDJJ_dynamic25|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic26_tt: " §R政治指导经济§! - 总劳动力规模: §Y[?temp_DSC_ZZZDJJ_dynamic26|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic27_tt: " §R政治指导经济§! - 高失业率惩罚: §Y[?temp_DSC_ZZZDJJ_dynamic27|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic28_tt: " §R政治指导经济§! - 民工厂劳动需求: §Y[?temp_DSC_ZZZDJJ_dynamic28|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic29_tt: " §R政治指导经济§! - 军工厂劳动需求: §Y[?temp_DSC_ZZZDJJ_dynamic29|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic30_tt: " §R政治指导经济§! - 行政机关劳动需求: §Y[?temp_DSC_ZZZDJJ_dynamic30|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic31_tt: " §R政治指导经济§! - 官僚体系成本: §Y[?temp_DSC_ZZZDJJ_dynamic31|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic32_tt: " §R政治指导经济§! - 公安成本: §Y[?temp_DSC_ZZZDJJ_dynamic32|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic33_tt: " §R政治指导经济§! - 教育支出: §Y[?temp_DSC_ZZZDJJ_dynamic33|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic34_tt: " §R政治指导经济§! - 医疗支出: §Y[?temp_DSC_ZZZDJJ_dynamic34|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic35_tt: " §R政治指导经济§! - 社会保障支出: §Y[?temp_DSC_ZZZDJJ_dynamic35|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic36_tt: " §R政治指导经济§! - 能源消耗: §Y[?temp_DSC_ZZZDJJ_dynamic36|%]§!\n"
 
 ### 农业与资源 ###
- change_DSC_ZZZDJJ_dynamic11_tt: " §R政治指导经济§! - 资源产量: §Y[?temp_DSC_ZZZDJJ_dynamic11|%]§!\n"
- change_DSC_ZZZDJJ_dynamic12_tt: " §R政治指导经济§! - 补给范围: §Y[?temp_DSC_ZZZDJJ_dynamic12]§!\n"
- change_DSC_ZZZDJJ_dynamic13_tt: " §R政治指导经济§! - 陆军燃料消耗: §Y[?temp_DSC_ZZZDJJ_dynamic13|%]§!\n"
- change_DSC_ZZZDJJ_dynamic14_tt: " §R政治指导经济§! - 每周人力: §Y[?temp_DSC_ZZZDJJ_dynamic14]§!\n"
+ change_DSC_ZZZDJJ_dynamic37_tt: " §R政治指导经济§! - 每周人力增长: §Y[?temp_DSC_ZZZDJJ_dynamic37]§!\n"
+ change_DSC_ZZZDJJ_dynamic38_tt: " §R政治指导经济§! - 每月人口增长: §Y[?temp_DSC_ZZZDJJ_dynamic38]§!\n"
+ change_DSC_ZZZDJJ_dynamic39_tt: " §R政治指导经济§! - 补给节点范围: §Y[?temp_DSC_ZZZDJJ_dynamic39]§!\n"
+ change_DSC_ZZZDJJ_dynamic40_tt: " §R政治指导经济§! - 陆军燃料消耗: §Y[?temp_DSC_ZZZDJJ_dynamic40|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic41_tt: " §R政治指导经济§! - 总补给消耗: §Y[?temp_DSC_ZZZDJJ_dynamic41|%]§!\n"
 
-### 军事优先 ###
- change_DSC_ZZZDJJ_dynamic15_tt: " §R政治指导经济§! - 陆军攻击: §Y[?temp_DSC_ZZZDJJ_dynamic15|%]§!\n"
- change_DSC_ZZZDJJ_dynamic16_tt: " §R政治指导经济§! - 陆军防御: §Y[?temp_DSC_ZZZDJJ_dynamic16|%]§!\n"
- change_DSC_ZZZDJJ_dynamic17_tt: " §R政治指导经济§! - 陆军组织度: §Y[?temp_DSC_ZZZDJJ_dynamic17|%]§!\n"
- change_DSC_ZZZDJJ_dynamic18_tt: " §R政治指导经济§! - 补员速度: §Y[?temp_DSC_ZZZDJJ_dynamic18|%]§!\n"
- change_DSC_ZZZDJJ_dynamic19_tt: " §R政治指导经济§! - 补给消耗: §Y[?temp_DSC_ZZZDJJ_dynamic19|%]§!\n"
+### 军事与国际派遣 ###
+ change_DSC_ZZZDJJ_dynamic42_tt: " §R政治指导经济§! - 陆军攻击: §Y[?temp_DSC_ZZZDJJ_dynamic42|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic43_tt: " §R政治指导经济§! - 陆军防御: §Y[?temp_DSC_ZZZDJJ_dynamic43|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic44_tt: " §R政治指导经济§! - 陆军组织度: §Y[?temp_DSC_ZZZDJJ_dynamic44|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic45_tt: " §R政治指导经济§! - 补员速度: §Y[?temp_DSC_ZZZDJJ_dynamic45|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic46_tt: " §R政治指导经济§! - 志愿军规模: §Y[?temp_DSC_ZZZDJJ_dynamic46|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic47_tt: " §R政治指导经济§! - 志愿军派遣加成: §Y[?temp_DSC_ZZZDJJ_dynamic47|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic48_tt: " §R政治指导经济§! - 志愿军引发紧张度: §Y[?temp_DSC_ZZZDJJ_dynamic48|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic49_tt: " §R政治指导经济§! - 志愿军所需编制: §Y[?temp_DSC_ZZZDJJ_dynamic49]§!\n"
 
 ### 镇压与社会控制 ###
- change_DSC_ZZZDJJ_dynamic20_tt: " §R政治指导经济§! - 占领地抵抗增长: §Y[?temp_DSC_ZZZDJJ_dynamic20|%]§!\n"
- change_DSC_ZZZDJJ_dynamic21_tt: " §R政治指导经济§! - 占领地顺从度增长: §Y[?temp_DSC_ZZZDJJ_dynamic21|%]§!\n"
- change_DSC_ZZZDJJ_dynamic22_tt: " §R政治指导经济§! - 外国颠覆活动: §Y[?temp_DSC_ZZZDJJ_dynamic22|%]§!\n"
- change_DSC_ZZZDJJ_dynamic23_tt: " §R政治指导经济§! - 限制电量: §Y[?temp_DSC_ZZZDJJ_dynamic23|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic50_tt: " §R政治指导经济§! - 占领地抵抗增长: §Y[?temp_DSC_ZZZDJJ_dynamic50|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic51_tt: " §R政治指导经济§! - 占领地顺从增长: §Y[?temp_DSC_ZZZDJJ_dynamic51|%]§!\n"
+ change_DSC_ZZZDJJ_dynamic52_tt: " §R政治指导经济§! - 外国颠覆活动强度: §Y[?temp_DSC_ZZZDJJ_dynamic52|%]§!\n"
+
+### 科研与技术 ###
+ change_DSC_ZZZDJJ_dynamic53_tt: " §R政治指导经济§! - 科研速度: §Y[?temp_DSC_ZZZDJJ_dynamic53|%]§!\n"
+
 
 
  DSC_WHDZ_dynamic_tt: " §R舆论宣传§!追加效果：\n"
@@ -2266,10 +2299,11 @@
  PRC_reverse_the_reversed_history_desc: "历史是人民的历史，是阶级斗争的历史。我们要打破修正主义篡改历史的迷雾，让人民重新认识自己的过去，从而掌握改造未来的力量。"
  PRC_Public_opinion_front: "意识形态的斗争"
  PRC_Public_opinion_front_desc: "舆论阵地不可能中立。要坚决夺回被资产阶级与修正主义控制的宣传工具，使报纸、电视、网络重新成为人民的喉舌，宣传正确，革命的文化"
+
+
+
  PRC_politic_guide_economy: "政治指导经济"
  PRC_politic_guide_economy_desc: "政治是经济的集中表现。我们要坚持政治挂帅，用无产阶级政治指导一切经济活动，使生产真正服务于社会主义建设和人民需要。"
-
-
 
  PRC_reduce_bourgeois_rights_in_economy: "经济中的资产阶级法权"
  PRC_reduce_bourgeois_rights_in_economy_desc: "在分配、管理和交换领域仍存在着资产阶级法权，我们必须逐步削弱这种不平等，防止劳动成果重新被特权集团占有。"
@@ -2303,6 +2337,11 @@
 
  PRC_mass_line: "群众路线"
  PRC_mass_line_desc: "群众是真正的英雄，而我们自己则往往是幼稚可笑的。\n群众路线，就是一切从群众中来，到群众中去。党的干部必须深入工厂、农村、社区，倾听群众的意见，学习群众的经验，再把这些意见上升为政策，再回到群众中去宣传和执行，让政策在群众实践中得到检验与修正。\n只有依靠群众、相信群众、发动群众，才能防止官僚主义、主观主义和脱离群众的危险。群众路线不仅是一种工作方法，更是一种政治路线——它保证了社会主义事业永远植根于人民的力量之中。\n群众路线，是我们区别于一切剥削阶级政党的根本标志。"
+
+
+
+ PRC_soviets_in_factory: "工人委员会"
+ PRC_soviets_in_factory_desc: "工人委员会是无产阶级掌握生产权力的核心形式，是实现工人民主管理的政治保障。委员会成员由全体工人选举产生，对工厂的生产计划、物资分配、干部任免拥有决定权，并定期向群众汇报。\n工人委员会不仅是经济机构，更是社会主义新型国家政权的细胞。通过它，劳动群众直接行使权力，监督干部，防止新资产阶级的滋生。\n当工人委员会遍布全国，人民的国家就不再停留在纸面上，而成为现实之中的群众国家。"
 
 
  PRC_Rectification_movement: "整风运动"
@@ -2340,8 +2379,7 @@
  PRC_democracy_in_factory: "基层经济民主"
  PRC_democracy_in_factory_desc: "工厂不是资本的城堡，而是工人的家园。我们要在每一个生产单位中实行真正的民主，让劳动者自己讨论计划、监督管理、决定方向。工人的智慧和创造力，是社会主义经济最可靠的源泉。\n基层经济民主意味着打破管理层的垄断，废除官僚化的生产指令，让工人通过会议、代表大会和群众评议直接参与决策。这样，企业不再是行政机器，而是群众自我管理、自我教育、自我服务的组织。"
 
- PRC_soviets_in_factory: "工人委员会"
- PRC_soviets_in_factory_desc: "工人委员会是无产阶级掌握生产权力的核心形式，是实现工人民主管理的政治保障。委员会成员由全体工人选举产生，对工厂的生产计划、物资分配、干部任免拥有决定权，并定期向群众汇报。\n工人委员会不仅是经济机构，更是社会主义新型国家政权的细胞。通过它，劳动群众直接行使权力，监督干部，防止新资产阶级的滋生。\n当工人委员会遍布全国，人民的国家就不再停留在纸面上，而成为现实之中的群众国家。"
+
 
 
  PRC_Spiritual_Atomic_Bomb: "自力更生"
