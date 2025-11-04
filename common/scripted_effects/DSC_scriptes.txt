@@ -601,148 +601,74 @@ change_DSC_ZZZDJJ_dynamic53 = { add_to_variable = { DSC_ZZZDJJ_dynamic53 = temp_
 
 
 
-### 政治与稳定
-change_DSC_WHDZ_dynamic1 = {
-    add_to_variable = { DSC_WHDZ_dynamic1 = temp_DSC_WHDZ_dynamic1 }
-    custom_effect_tooltip = change_DSC_WHDZ_dynamic1_tt
-    # 稳定度修正
-}
+### 政治与稳定 ###
+change_DSC_WHDZ_dynamic1 = { add_to_variable = { DSC_WHDZ_dynamic1 = temp_DSC_WHDZ_dynamic1 } custom_effect_tooltip = change_DSC_WHDZ_dynamic1_tt }   # 稳定度
+change_DSC_WHDZ_dynamic2 = { add_to_variable = { DSC_WHDZ_dynamic2 = temp_DSC_WHDZ_dynamic2 } custom_effect_tooltip = change_DSC_WHDZ_dynamic2_tt }   # 战争支持率
+change_DSC_WHDZ_dynamic3 = { add_to_variable = { DSC_WHDZ_dynamic3 = temp_DSC_WHDZ_dynamic3 } custom_effect_tooltip = change_DSC_WHDZ_dynamic3_tt }   # 政治点修正
+change_DSC_WHDZ_dynamic4 = { add_to_variable = { DSC_WHDZ_dynamic4 = temp_DSC_WHDZ_dynamic4 } custom_effect_tooltip = change_DSC_WHDZ_dynamic4_tt }   # 意识形态防御
+change_DSC_WHDZ_dynamic5 = { add_to_variable = { DSC_WHDZ_dynamic5 = temp_DSC_WHDZ_dynamic5 } custom_effect_tooltip = change_DSC_WHDZ_dynamic5_tt }   # 顾问成本
 
-change_DSC_WHDZ_dynamic2 = {
-    add_to_variable = { DSC_WHDZ_dynamic2 = temp_DSC_WHDZ_dynamic2 }
-    custom_effect_tooltip = change_DSC_WHDZ_dynamic2_tt
-    # 战争支持率修正
-}
+### 经济与工业 ###
+change_DSC_WHDZ_dynamic6 = { add_to_variable = { DSC_WHDZ_dynamic6 = temp_DSC_WHDZ_dynamic6 } custom_effect_tooltip = change_DSC_WHDZ_dynamic6_tt }   # 消费品比例
+change_DSC_WHDZ_dynamic7 = { add_to_variable = { DSC_WHDZ_dynamic7 = temp_DSC_WHDZ_dynamic7 } custom_effect_tooltip = change_DSC_WHDZ_dynamic7_tt }   # 工厂产能
+change_DSC_WHDZ_dynamic8 = { add_to_variable = { DSC_WHDZ_dynamic8 = temp_DSC_WHDZ_dynamic8 } custom_effect_tooltip = change_DSC_WHDZ_dynamic8_tt }   # 造船厂产能
+change_DSC_WHDZ_dynamic9 = { add_to_variable = { DSC_WHDZ_dynamic9 = temp_DSC_WHDZ_dynamic9 } custom_effect_tooltip = change_DSC_WHDZ_dynamic9_tt }   # 初始生产效率
+change_DSC_WHDZ_dynamic10 = { add_to_variable = { DSC_WHDZ_dynamic10 = temp_DSC_WHDZ_dynamic10 } custom_effect_tooltip = change_DSC_WHDZ_dynamic10_tt }   # 生产效率增长
+change_DSC_WHDZ_dynamic11 = { add_to_variable = { DSC_WHDZ_dynamic11 = temp_DSC_WHDZ_dynamic11 } custom_effect_tooltip = change_DSC_WHDZ_dynamic11_tt }   # 建筑速度
+change_DSC_WHDZ_dynamic12 = { add_to_variable = { DSC_WHDZ_dynamic12 = temp_DSC_WHDZ_dynamic12 } custom_effect_tooltip = change_DSC_WHDZ_dynamic12_tt }   # 工厂输出
+change_DSC_WHDZ_dynamic13 = { add_to_variable = { DSC_WHDZ_dynamic13 = temp_DSC_WHDZ_dynamic13 } custom_effect_tooltip = change_DSC_WHDZ_dynamic13_tt }   # 贸易关系
+change_DSC_WHDZ_dynamic14 = { add_to_variable = { DSC_WHDZ_dynamic14 = temp_DSC_WHDZ_dynamic14 } custom_effect_tooltip = change_DSC_WHDZ_dynamic14_tt }   # 燃料产出
+change_DSC_WHDZ_dynamic15 = { add_to_variable = { DSC_WHDZ_dynamic15 = temp_DSC_WHDZ_dynamic15 } custom_effect_tooltip = change_DSC_WHDZ_dynamic15_tt }   # 能源使用效率
+change_DSC_WHDZ_dynamic16 = { add_to_variable = { DSC_WHDZ_dynamic16 = temp_DSC_WHDZ_dynamic16 } custom_effect_tooltip = change_DSC_WHDZ_dynamic16_tt }   # 基建建设速度
+change_DSC_WHDZ_dynamic17 = { add_to_variable = { DSC_WHDZ_dynamic17 = temp_DSC_WHDZ_dynamic17 } custom_effect_tooltip = change_DSC_WHDZ_dynamic17_tt }   # 军工厂建设速度
+change_DSC_WHDZ_dynamic18 = { add_to_variable = { DSC_WHDZ_dynamic18 = temp_DSC_WHDZ_dynamic18 } custom_effect_tooltip = change_DSC_WHDZ_dynamic18_tt }   # 民工厂建设速度
 
-change_DSC_WHDZ_dynamic3 = {
-    add_to_variable = { DSC_WHDZ_dynamic3 = temp_DSC_WHDZ_dynamic3 }
-    custom_effect_tooltip = change_DSC_WHDZ_dynamic3_tt
-    # 政治点修正
-}
+### 农业与资源 ###
+change_DSC_WHDZ_dynamic19 = { add_to_variable = { DSC_WHDZ_dynamic19 = temp_DSC_WHDZ_dynamic19 } custom_effect_tooltip = change_DSC_WHDZ_dynamic19_tt }   # 资源采集
+change_DSC_WHDZ_dynamic20 = { add_to_variable = { DSC_WHDZ_dynamic20 = temp_DSC_WHDZ_dynamic20 } custom_effect_tooltip = change_DSC_WHDZ_dynamic20_tt }   # 补给节点范围
+change_DSC_WHDZ_dynamic21 = { add_to_variable = { DSC_WHDZ_dynamic21 = temp_DSC_WHDZ_dynamic21 } custom_effect_tooltip = change_DSC_WHDZ_dynamic21_tt }   # 每周人力
+change_DSC_WHDZ_dynamic22 = { add_to_variable = { DSC_WHDZ_dynamic22 = temp_DSC_WHDZ_dynamic22 } custom_effect_tooltip = change_DSC_WHDZ_dynamic22_tt }   # 可征兵人口
+change_DSC_WHDZ_dynamic23 = { add_to_variable = { DSC_WHDZ_dynamic23 = temp_DSC_WHDZ_dynamic23 } custom_effect_tooltip = change_DSC_WHDZ_dynamic23_tt }   # 本地建筑位
+change_DSC_WHDZ_dynamic24 = { add_to_variable = { DSC_WHDZ_dynamic24 = temp_DSC_WHDZ_dynamic24 } custom_effect_tooltip = change_DSC_WHDZ_dynamic24_tt }   # 补给效率
 
-### 经济与工业
-change_DSC_WHDZ_dynamic4 = {
-    add_to_variable = { DSC_WHDZ_dynamic4 = temp_DSC_WHDZ_dynamic4 }
-    custom_effect_tooltip = change_DSC_WHDZ_dynamic4_tt
-    # 消费品工厂修正
-}
+### 军事与国防 ###
+change_DSC_WHDZ_dynamic25 = { add_to_variable = { DSC_WHDZ_dynamic25 = temp_DSC_WHDZ_dynamic25 } custom_effect_tooltip = change_DSC_WHDZ_dynamic25_tt }   # 陆军攻击
+change_DSC_WHDZ_dynamic26 = { add_to_variable = { DSC_WHDZ_dynamic26 = temp_DSC_WHDZ_dynamic26 } custom_effect_tooltip = change_DSC_WHDZ_dynamic26_tt }   # 陆军防御
+change_DSC_WHDZ_dynamic27 = { add_to_variable = { DSC_WHDZ_dynamic27 = temp_DSC_WHDZ_dynamic27 } custom_effect_tooltip = change_DSC_WHDZ_dynamic27_tt }   # 陆军组织度
+change_DSC_WHDZ_dynamic28 = { add_to_variable = { DSC_WHDZ_dynamic28 = temp_DSC_WHDZ_dynamic28 } custom_effect_tooltip = change_DSC_WHDZ_dynamic28_tt }   # 陆军恢复速度
+change_DSC_WHDZ_dynamic29 = { add_to_variable = { DSC_WHDZ_dynamic29 = temp_DSC_WHDZ_dynamic29 } custom_effect_tooltip = change_DSC_WHDZ_dynamic29_tt }   # 陆军补给消耗
+change_DSC_WHDZ_dynamic30 = { add_to_variable = { DSC_WHDZ_dynamic30 = temp_DSC_WHDZ_dynamic30 } custom_effect_tooltip = change_DSC_WHDZ_dynamic30_tt }   # 海军攻击
+change_DSC_WHDZ_dynamic31 = { add_to_variable = { DSC_WHDZ_dynamic31 = temp_DSC_WHDZ_dynamic31 } custom_effect_tooltip = change_DSC_WHDZ_dynamic31_tt }   # 海军防御
+change_DSC_WHDZ_dynamic32 = { add_to_variable = { DSC_WHDZ_dynamic32 = temp_DSC_WHDZ_dynamic32 } custom_effect_tooltip = change_DSC_WHDZ_dynamic32_tt }   # 海军组织度
+change_DSC_WHDZ_dynamic33 = { add_to_variable = { DSC_WHDZ_dynamic33 = temp_DSC_WHDZ_dynamic33 } custom_effect_tooltip = change_DSC_WHDZ_dynamic33_tt }   # 空军攻击
+change_DSC_WHDZ_dynamic34 = { add_to_variable = { DSC_WHDZ_dynamic34 = temp_DSC_WHDZ_dynamic34 } custom_effect_tooltip = change_DSC_WHDZ_dynamic34_tt }   # 空军防御
+change_DSC_WHDZ_dynamic35 = { add_to_variable = { DSC_WHDZ_dynamic35 = temp_DSC_WHDZ_dynamic35 } custom_effect_tooltip = change_DSC_WHDZ_dynamic35_tt }   # 空军任务效率
+change_DSC_WHDZ_dynamic36 = { add_to_variable = { DSC_WHDZ_dynamic36 = temp_DSC_WHDZ_dynamic36 } custom_effect_tooltip = change_DSC_WHDZ_dynamic36_tt }   # 陆军训练时间
 
-change_DSC_WHDZ_dynamic5 = {
-    add_to_variable = { DSC_WHDZ_dynamic5 = temp_DSC_WHDZ_dynamic5 }
-    custom_effect_tooltip = change_DSC_WHDZ_dynamic5_tt
-    # 工厂产出修正
-}
+### 镇压与社会控制 ###
+change_DSC_WHDZ_dynamic37 = { add_to_variable = { DSC_WHDZ_dynamic37 = temp_DSC_WHDZ_dynamic37 } custom_effect_tooltip = change_DSC_WHDZ_dynamic37_tt }   # 抵抗增长
+change_DSC_WHDZ_dynamic38 = { add_to_variable = { DSC_WHDZ_dynamic38 = temp_DSC_WHDZ_dynamic38 } custom_effect_tooltip = change_DSC_WHDZ_dynamic38_tt }   # 顺从增长
+change_DSC_WHDZ_dynamic39 = { add_to_variable = { DSC_WHDZ_dynamic39 = temp_DSC_WHDZ_dynamic39 } custom_effect_tooltip = change_DSC_WHDZ_dynamic39_tt }   # 抵抗目标
+change_DSC_WHDZ_dynamic40 = { add_to_variable = { DSC_WHDZ_dynamic40 = temp_DSC_WHDZ_dynamic40 } custom_effect_tooltip = change_DSC_WHDZ_dynamic40_tt }   # 外国颠覆活动
+change_DSC_WHDZ_dynamic41 = { add_to_variable = { DSC_WHDZ_dynamic41 = temp_DSC_WHDZ_dynamic41 } custom_effect_tooltip = change_DSC_WHDZ_dynamic41_tt }   # 敌方游击影响
+change_DSC_WHDZ_dynamic42 = { add_to_variable = { DSC_WHDZ_dynamic42 = temp_DSC_WHDZ_dynamic42 } custom_effect_tooltip = change_DSC_WHDZ_dynamic42_tt }   # 驻军损耗
+change_DSC_WHDZ_dynamic43 = { add_to_variable = { DSC_WHDZ_dynamic43 = temp_DSC_WHDZ_dynamic43 } custom_effect_tooltip = change_DSC_WHDZ_dynamic43_tt }   # 特工侦测率
+change_DSC_WHDZ_dynamic44 = { add_to_variable = { DSC_WHDZ_dynamic44 = temp_DSC_WHDZ_dynamic44 } custom_effect_tooltip = change_DSC_WHDZ_dynamic44_tt }   # 特工数量
 
-change_DSC_WHDZ_dynamic6 = {
-    add_to_variable = { DSC_WHDZ_dynamic6 = temp_DSC_WHDZ_dynamic6 }
-    custom_effect_tooltip = change_DSC_WHDZ_dynamic6_tt
-    # 造船厂产出修正
-}
+### 科技与教育 ###
+change_DSC_WHDZ_dynamic45 = { add_to_variable = { DSC_WHDZ_dynamic45 = temp_DSC_WHDZ_dynamic45 } custom_effect_tooltip = change_DSC_WHDZ_dynamic45_tt }   # 科研速度
+change_DSC_WHDZ_dynamic46 = { add_to_variable = { DSC_WHDZ_dynamic46 = temp_DSC_WHDZ_dynamic46 } custom_effect_tooltip = change_DSC_WHDZ_dynamic46_tt }   # 科研加成
+change_DSC_WHDZ_dynamic47 = { add_to_variable = { DSC_WHDZ_dynamic47 = temp_DSC_WHDZ_dynamic47 } custom_effect_tooltip = change_DSC_WHDZ_dynamic47_tt }   # 陆军经验获取
+change_DSC_WHDZ_dynamic48 = { add_to_variable = { DSC_WHDZ_dynamic48 = temp_DSC_WHDZ_dynamic48 } custom_effect_tooltip = change_DSC_WHDZ_dynamic48_tt }   # 海军经验获取
+change_DSC_WHDZ_dynamic49 = { add_to_variable = { DSC_WHDZ_dynamic49 = temp_DSC_WHDZ_dynamic49 } custom_effect_tooltip = change_DSC_WHDZ_dynamic49_tt }   # 空军经验获取
+change_DSC_WHDZ_dynamic50 = { add_to_variable = { DSC_WHDZ_dynamic50 = temp_DSC_WHDZ_dynamic50 } custom_effect_tooltip = change_DSC_WHDZ_dynamic50_tt }   # 教义花费
+change_DSC_WHDZ_dynamic51 = { add_to_variable = { DSC_WHDZ_dynamic51 = temp_DSC_WHDZ_dynamic51 } custom_effect_tooltip = change_DSC_WHDZ_dynamic51_tt }   # 总体经验增长
 
-change_DSC_WHDZ_dynamic7 = {
-    add_to_variable = { DSC_WHDZ_dynamic7 = temp_DSC_WHDZ_dynamic7 }
-    custom_effect_tooltip = change_DSC_WHDZ_dynamic7_tt
-    # 初始生产效率修正
-}
+### 外交与国际 ###
+change_DSC_WHDZ_dynamic52 = { add_to_variable = { DSC_WHDZ_dynamic52 = temp_DSC_WHDZ_dynamic52 } custom_effect_tooltip = change_DSC_WHDZ_dynamic52_tt }   # 改善关系成本
+change_DSC_WHDZ_dynamic53 = { add_to_variable = { DSC_WHDZ_dynamic53 = var:temp_DSC_WHDZ_dynamic53 } custom_effect_tooltip = change_DSC_WHDZ_dynamic53_tt }   # 贸易影响力
 
-change_DSC_WHDZ_dynamic8 = {
-    add_to_variable = { DSC_WHDZ_dynamic8 = temp_DSC_WHDZ_dynamic8 }
-    custom_effect_tooltip = change_DSC_WHDZ_dynamic8_tt
-    # 最大生产效率修正
-}
 
-change_DSC_WHDZ_dynamic9 = {
-    add_to_variable = { DSC_WHDZ_dynamic9 = temp_DSC_WHDZ_dynamic9 }
-    custom_effect_tooltip = change_DSC_WHDZ_dynamic9_tt
-    # 建筑速度修正
-}
-
-change_DSC_WHDZ_dynamic10 = {
-    add_to_variable = { DSC_WHDZ_dynamic10 = temp_DSC_WHDZ_dynamic10 }
-    custom_effect_tooltip = change_DSC_WHDZ_dynamic10_tt
-    # 燃料获取修正
-}
-
-### 农业与资源
-change_DSC_WHDZ_dynamic11 = {
-    add_to_variable = { DSC_WHDZ_dynamic11 = temp_DSC_WHDZ_dynamic11 }
-    custom_effect_tooltip = change_DSC_WHDZ_dynamic11_tt
-    # 资源产出修正
-}
-
-change_DSC_WHDZ_dynamic12 = {
-    add_to_variable = { DSC_WHDZ_dynamic12 = temp_DSC_WHDZ_dynamic12 }
-    custom_effect_tooltip = change_DSC_WHDZ_dynamic12_tt
-    # 补给范围修正
-}
-
-change_DSC_WHDZ_dynamic13 = {
-    add_to_variable = { DSC_WHDZ_dynamic13 = temp_DSC_WHDZ_dynamic13 }
-    custom_effect_tooltip = change_DSC_WHDZ_dynamic13_tt
-    # 陆军燃料消耗修正
-}
-
-change_DSC_WHDZ_dynamic14 = {
-    add_to_variable = { DSC_WHDZ_dynamic14 = temp_DSC_WHDZ_dynamic14 }
-    custom_effect_tooltip = change_DSC_WHDZ_dynamic14_tt
-    # 每周人力修正
-}
-
-### 军事优先
-change_DSC_WHDZ_dynamic15 = {
-    add_to_variable = { DSC_WHDZ_dynamic15 = temp_DSC_WHDZ_dynamic15 }
-    custom_effect_tooltip = change_DSC_WHDZ_dynamic15_tt
-    # 陆军攻击修正
-}
-
-change_DSC_WHDZ_dynamic16 = {
-    add_to_variable = { DSC_WHDZ_dynamic16 = temp_DSC_WHDZ_dynamic16 }
-    custom_effect_tooltip = change_DSC_WHDZ_dynamic16_tt
-    # 陆军防御修正
-}
-
-change_DSC_WHDZ_dynamic17 = {
-    add_to_variable = { DSC_WHDZ_dynamic17 = temp_DSC_WHDZ_dynamic17 }
-    custom_effect_tooltip = change_DSC_WHDZ_dynamic17_tt
-    # 陆军组织度修正
-}
-
-change_DSC_WHDZ_dynamic18 = {
-    add_to_variable = { DSC_WHDZ_dynamic18 = temp_DSC_WHDZ_dynamic18 }
-    custom_effect_tooltip = change_DSC_WHDZ_dynamic18_tt
-    # 补员速度修正
-}
-
-change_DSC_WHDZ_dynamic19 = {
-    add_to_variable = { DSC_WHDZ_dynamic19 = temp_DSC_WHDZ_dynamic19 }
-    custom_effect_tooltip = change_DSC_WHDZ_dynamic19_tt
-    # 补给消耗修正
-}
-
-### 镇压与社会控制
-change_DSC_WHDZ_dynamic20 = {
-    add_to_variable = { DSC_WHDZ_dynamic20 = temp_DSC_WHDZ_dynamic20 }
-    custom_effect_tooltip = change_DSC_WHDZ_dynamic20_tt
-    # 占领地抵抗增长修正
-}
-
-change_DSC_WHDZ_dynamic21 = {
-    add_to_variable = { DSC_WHDZ_dynamic21 = temp_DSC_WHDZ_dynamic21 }
-    custom_effect_tooltip = change_DSC_WHDZ_dynamic21_tt
-    # 占领地顺从度增长修正
-}
-
-change_DSC_WHDZ_dynamic22 = {
-    add_to_variable = { DSC_WHDZ_dynamic22 = temp_DSC_WHDZ_dynamic22 }
-    custom_effect_tooltip = change_DSC_WHDZ_dynamic22_tt
-    # 外国颠覆活动修正
-}
-
-change_DSC_WHDZ_dynamic23 = {
-    add_to_variable = { DSC_WHDZ_dynamic23 = temp_DSC_WHDZ_dynamic23 }
-    custom_effect_tooltip = change_DSC_WHDZ_dynamic23_tt
-    # 外国颠覆活动修正
-}
 
 
 

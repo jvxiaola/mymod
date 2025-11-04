@@ -636,7 +636,7 @@
  PRC_gjjw_desc: "由一个专业官僚组成的国家计划委员会将是我们社会主义经济计划的可靠基石，一切经济权力必归国家计划委员会"
  PRC_taile: "自上而下"
  PRC_taile_desc: "强调行政命令，依靠少数专家制定标准化规章制度，在技术上也只认同专业精英"
- PRC_angangxfa: "鞍钢宪法"
+ PRC_angangxfa: "§R鞍钢宪法§!"
  PRC_angangxfa_desc: "鞍钢宪法指中华人民共和国辽宁省鞍山市鞍山钢铁公司于1960年代初总结出来的一套企业管理基本经验。基本内涵是：“坚持政治挂帅，加强党的领导，大搞群众运动，实行两参一改三结合（干部参加劳动，工人参加管理，改革不合理的规章制度，工人、干部和技术人员三结合），开展技术革命。”其中“两参一改三结合”最为出名。"
  PRC_grjd: "工人监督"
  PRC_grjd_desc: "工人参加管理，改革不合理的规章制度，开展技术革命。"
@@ -1026,34 +1026,67 @@
  change_DSC_WHDZ_dynamic1_tt: " §R舆论宣传§! - 稳定度: §Y[?temp_DSC_WHDZ_dynamic1|%]§!\n"
  change_DSC_WHDZ_dynamic2_tt: " §R舆论宣传§! - 战争支持率: §Y[?temp_DSC_WHDZ_dynamic2|%]§!\n"
  change_DSC_WHDZ_dynamic3_tt: " §R舆论宣传§! - 政治点获取: §Y[?temp_DSC_WHDZ_dynamic3|%]§!\n"
+ change_DSC_WHDZ_dynamic4_tt: " §R舆论宣传§! - 宣战理由时间: §Y[?temp_DSC_WHDZ_dynamic4|%]§!\n"
+ change_DSC_WHDZ_dynamic5_tt: " §R舆论宣传§! - 共产主义倾向: §Y[?temp_DSC_WHDZ_dynamic5|%]§!\n"
+ change_DSC_WHDZ_dynamic6_tt: " §R舆论宣传§! - 民族主义倾向: §Y[?temp_DSC_WHDZ_dynamic6|%]§!\n"
+ change_DSC_WHDZ_dynamic7_tt: " §R舆论宣传§! - 威权主义倾向: §Y[?temp_DSC_WHDZ_dynamic7|%]§!\n"
+ change_DSC_WHDZ_dynamic8_tt: " §R舆论宣传§! - 自由主义倾向: §Y[?temp_DSC_WHDZ_dynamic8|%]§!\n"
+ change_DSC_WHDZ_dynamic9_tt: " §R舆论宣传§! - 吞并代价: §Y[?temp_DSC_WHDZ_dynamic9|%]§!\n"
+ change_DSC_WHDZ_dynamic10_tt: " §R舆论宣传§! - 外国影响: §Y[?temp_DSC_WHDZ_dynamic10|%]§!\n"
+ change_DSC_WHDZ_dynamic11_tt: " §R舆论宣传§! - 外国影响防御: §Y[?temp_DSC_WHDZ_dynamic11|%]§!\n"
+ change_DSC_WHDZ_dynamic12_tt: " §R舆论宣传§! - 颠覆活动维持费用: §Y[?temp_DSC_WHDZ_dynamic12|%]§!\n"
+ change_DSC_WHDZ_dynamic13_tt: " §R舆论宣传§! - 群众积极性: §Y[?temp_DSC_WHDZ_dynamic13|%]§!\n"
 
 ### 经济与工业 ###
- change_DSC_WHDZ_dynamic4_tt: " §R舆论宣传§! - 消费品工厂需求: §Y[?temp_DSC_WHDZ_dynamic4|%]§!\n"
- change_DSC_WHDZ_dynamic5_tt: " §R舆论宣传§! - 工厂产出: §Y[?temp_DSC_WHDZ_dynamic5|%]§!\n"
- change_DSC_WHDZ_dynamic6_tt: " §R舆论宣传§! - 造船厂产出: §Y[?temp_DSC_WHDZ_dynamic6|%]§!\n"
- change_DSC_WHDZ_dynamic7_tt: " §R舆论宣传§! - 初始生产效率: §Y[?temp_DSC_WHDZ_dynamic7|%]§!\n"
- change_DSC_WHDZ_dynamic8_tt: " §R舆论宣传§! - 最大生产效率: §Y[?temp_DSC_WHDZ_dynamic8|%]§!\n"
- change_DSC_WHDZ_dynamic9_tt: " §R舆论宣传§! - 建筑速度: §Y[?temp_DSC_WHDZ_dynamic9|%]§!\n"
- change_DSC_WHDZ_dynamic10_tt: " §R舆论宣传§! - 燃料产量: §Y[?temp_DSC_WHDZ_dynamic10|%]§!\n"
+ change_DSC_WHDZ_dynamic14_tt: " §R舆论宣传§! - 消费品工厂比例: §Y[?temp_DSC_WHDZ_dynamic14|%]§!\n"
+ change_DSC_WHDZ_dynamic15_tt: " §R舆论宣传§! - 预期消费品需求: §Y[?temp_DSC_WHDZ_dynamic15|%]§!\n"
+ change_DSC_WHDZ_dynamic16_tt: " §R舆论宣传§! - 工厂产能: §Y[?temp_DSC_WHDZ_dynamic16|%]§!\n"
+ change_DSC_WHDZ_dynamic17_tt: " §R舆论宣传§! - 造船厂产能: §Y[?temp_DSC_WHDZ_dynamic17|%]§!\n"
+ change_DSC_WHDZ_dynamic18_tt: " §R舆论宣传§! - 工厂效率增长: §Y[?temp_DSC_WHDZ_dynamic18|%]§!\n"
+ change_DSC_WHDZ_dynamic19_tt: " §R舆论宣传§! - 工厂最大效率: §Y[?temp_DSC_WHDZ_dynamic19|%]§!\n"
+ change_DSC_WHDZ_dynamic20_tt: " §R舆论宣传§! - 初始生产效率: §Y[?temp_DSC_WHDZ_dynamic20|%]§!\n"
+ change_DSC_WHDZ_dynamic21_tt: " §R舆论宣传§! - 建筑速度: §Y[?temp_DSC_WHDZ_dynamic21|%]§!\n"
+ change_DSC_WHDZ_dynamic22_tt: " §R舆论宣传§! - 燃料产量: §Y[?temp_DSC_WHDZ_dynamic22|%]§!\n"
+ change_DSC_WHDZ_dynamic23_tt: " §R舆论宣传§! - 资源产量: §Y[?temp_DSC_WHDZ_dynamic23|%]§!\n"
+ change_DSC_WHDZ_dynamic24_tt: " §R舆论宣传§! - 州生产率增长: §Y[?temp_DSC_WHDZ_dynamic24|%]§!\n"
+ change_DSC_WHDZ_dynamic25_tt: " §R舆论宣传§! - 生产率与就业率: §Y[?temp_DSC_WHDZ_dynamic25|%]§!\n"
+ change_DSC_WHDZ_dynamic26_tt: " §R舆论宣传§! - 总劳动力规模: §Y[?temp_DSC_WHDZ_dynamic26|%]§!\n"
+ change_DSC_WHDZ_dynamic27_tt: " §R舆论宣传§! - 高失业率惩罚: §Y[?temp_DSC_WHDZ_dynamic27|%]§!\n"
+ change_DSC_WHDZ_dynamic28_tt: " §R舆论宣传§! - 民工厂劳动需求: §Y[?temp_DSC_WHDZ_dynamic28|%]§!\n"
+ change_DSC_WHDZ_dynamic29_tt: " §R舆论宣传§! - 军工厂劳动需求: §Y[?temp_DSC_WHDZ_dynamic29|%]§!\n"
+ change_DSC_WHDZ_dynamic30_tt: " §R舆论宣传§! - 行政机关劳动需求: §Y[?temp_DSC_WHDZ_dynamic30|%]§!\n"
+ change_DSC_WHDZ_dynamic31_tt: " §R舆论宣传§! - 官僚体系成本: §Y[?temp_DSC_WHDZ_dynamic31|%]§!\n"
+ change_DSC_WHDZ_dynamic32_tt: " §R舆论宣传§! - 公安成本: §Y[?temp_DSC_WHDZ_dynamic32|%]§!\n"
+ change_DSC_WHDZ_dynamic33_tt: " §R舆论宣传§! - 教育支出: §Y[?temp_DSC_WHDZ_dynamic33|%]§!\n"
+ change_DSC_WHDZ_dynamic34_tt: " §R舆论宣传§! - 医疗支出: §Y[?temp_DSC_WHDZ_dynamic34|%]§!\n"
+ change_DSC_WHDZ_dynamic35_tt: " §R舆论宣传§! - 社会保障支出: §Y[?temp_DSC_WHDZ_dynamic35|%]§!\n"
+ change_DSC_WHDZ_dynamic36_tt: " §R舆论宣传§! - 能源消耗: §Y[?temp_DSC_WHDZ_dynamic36|%]§!\n"
 
 ### 农业与资源 ###
- change_DSC_WHDZ_dynamic11_tt: " §R舆论宣传§! - 资源产量: §Y[?temp_DSC_WHDZ_dynamic11|%]§!\n"
- change_DSC_WHDZ_dynamic12_tt: " §R舆论宣传§! - 补给范围: §Y[?temp_DSC_WHDZ_dynamic12]§!\n"
- change_DSC_WHDZ_dynamic13_tt: " §R舆论宣传§! - 陆军燃料消耗: §Y[?temp_DSC_WHDZ_dynamic13|%]§!\n"
- change_DSC_WHDZ_dynamic14_tt: " §R舆论宣传§! - 每周人力: §Y[?temp_DSC_WHDZ_dynamic14]§!\n"
+ change_DSC_WHDZ_dynamic37_tt: " §R舆论宣传§! - 每周人力增长: §Y[?temp_DSC_WHDZ_dynamic37]§!\n"
+ change_DSC_WHDZ_dynamic38_tt: " §R舆论宣传§! - 每月人口增长: §Y[?temp_DSC_WHDZ_dynamic38]§!\n"
+ change_DSC_WHDZ_dynamic39_tt: " §R舆论宣传§! - 补给节点范围: §Y[?temp_DSC_WHDZ_dynamic39]§!\n"
+ change_DSC_WHDZ_dynamic40_tt: " §R舆论宣传§! - 陆军燃料消耗: §Y[?temp_DSC_WHDZ_dynamic40|%]§!\n"
+ change_DSC_WHDZ_dynamic41_tt: " §R舆论宣传§! - 总补给消耗: §Y[?temp_DSC_WHDZ_dynamic41|%]§!\n"
 
-### 军事优先 ###
- change_DSC_WHDZ_dynamic15_tt: " §R舆论宣传§! - 陆军攻击: §Y[?temp_DSC_WHDZ_dynamic15|%]§!\n"
- change_DSC_WHDZ_dynamic16_tt: " §R舆论宣传§! - 陆军防御: §Y[?temp_DSC_WHDZ_dynamic16|%]§!\n"
- change_DSC_WHDZ_dynamic17_tt: " §R舆论宣传§! - 陆军组织度: §Y[?temp_DSC_WHDZ_dynamic17|%]§!\n"
- change_DSC_WHDZ_dynamic18_tt: " §R舆论宣传§! - 补员速度: §Y[?temp_DSC_WHDZ_dynamic18|%]§!\n"
- change_DSC_WHDZ_dynamic19_tt: " §R舆论宣传§! - 补给消耗: §Y[?temp_DSC_WHDZ_dynamic19|%]§!\n"
+### 军事与国际派遣 ###
+ change_DSC_WHDZ_dynamic42_tt: " §R舆论宣传§! - 陆军攻击: §Y[?temp_DSC_WHDZ_dynamic42|%]§!\n"
+ change_DSC_WHDZ_dynamic43_tt: " §R舆论宣传§! - 陆军防御: §Y[?temp_DSC_WHDZ_dynamic43|%]§!\n"
+ change_DSC_WHDZ_dynamic44_tt: " §R舆论宣传§! - 陆军组织度: §Y[?temp_DSC_WHDZ_dynamic44|%]§!\n"
+ change_DSC_WHDZ_dynamic45_tt: " §R舆论宣传§! - 补员速度: §Y[?temp_DSC_WHDZ_dynamic45|%]§!\n"
+ change_DSC_WHDZ_dynamic46_tt: " §R舆论宣传§! - 志愿军规模: §Y[?temp_DSC_WHDZ_dynamic46|%]§!\n"
+ change_DSC_WHDZ_dynamic47_tt: " §R舆论宣传§! - 志愿军派遣加成: §Y[?temp_DSC_WHDZ_dynamic47|%]§!\n"
+ change_DSC_WHDZ_dynamic48_tt: " §R舆论宣传§! - 志愿军引发紧张度: §Y[?temp_DSC_WHDZ_dynamic48|%]§!\n"
+ change_DSC_WHDZ_dynamic49_tt: " §R舆论宣传§! - 志愿军所需编制: §Y[?temp_DSC_WHDZ_dynamic49]§!\n"
 
 ### 镇压与社会控制 ###
- change_DSC_WHDZ_dynamic20_tt: " §R舆论宣传§! - 占领地抵抗增长: §Y[?temp_DSC_WHDZ_dynamic20|%]§!\n"
- change_DSC_WHDZ_dynamic21_tt: " §R舆论宣传§! - 占领地顺从度增长: §Y[?temp_DSC_WHDZ_dynamic21|%]§!\n"
- change_DSC_WHDZ_dynamic22_tt: " §R舆论宣传§! - 外国颠覆活动: §Y[?temp_DSC_WHDZ_dynamic22|%]§!\n"
- change_DSC_WHDZ_dynamic23_tt: " §R舆论宣传§! - 限制电量: §Y[?temp_DSC_WHDZ_dynamic23|%]§!\n"
+ change_DSC_WHDZ_dynamic50_tt: " §R舆论宣传§! - 占领地抵抗增长: §Y[?temp_DSC_WHDZ_dynamic50|%]§!\n"
+ change_DSC_WHDZ_dynamic51_tt: " §R舆论宣传§! - 占领地顺从增长: §Y[?temp_DSC_WHDZ_dynamic51|%]§!\n"
+ change_DSC_WHDZ_dynamic52_tt: " §R舆论宣传§! - 外国颠覆活动强度: §Y[?temp_DSC_WHDZ_dynamic52|%]§!\n"
+
+### 科研与技术 ###
+ change_DSC_WHDZ_dynamic53_tt: " §R舆论宣传§! - 科研速度: §Y[?temp_DSC_WHDZ_dynamic53|%]§!\n"
+
 
 
  DSC_WCJJZZ_dynamic_tt: " §R无产阶级专政§!追加效果：\n"
@@ -1098,7 +1131,6 @@
  change_DSC_WCJJZZ_dynamic34_tt: " §R无产阶级专政§! - 医疗支出: §Y[?temp_DSC_WCJJZZ_dynamic34|%]§!\n"
  change_DSC_WCJJZZ_dynamic35_tt: " §R无产阶级专政§! - 社会保障支出: §Y[?temp_DSC_WCJJZZ_dynamic35|%]§!\n"
  change_DSC_WCJJZZ_dynamic36_tt: " §R无产阶级专政§! - 能源消耗: §Y[?temp_DSC_WCJJZZ_dynamic36|%]§!\n"
-
 ### 农业与资源 ###
  change_DSC_WCJJZZ_dynamic37_tt: " §R无产阶级专政§! - 每周人力增长: §Y[?temp_DSC_WCJJZZ_dynamic37]§!\n"
  change_DSC_WCJJZZ_dynamic38_tt: " §R无产阶级专政§! - 每月人口增长: §Y[?temp_DSC_WCJJZZ_dynamic38]§!\n"
@@ -1116,13 +1148,16 @@
  change_DSC_WCJJZZ_dynamic48_tt: " §R无产阶级专政§! - 志愿军引发紧张度: §Y[?temp_DSC_WCJJZZ_dynamic48|%]§!\n"
  change_DSC_WCJJZZ_dynamic49_tt: " §R无产阶级专政§! - 志愿军所需编制: §Y[?temp_DSC_WCJJZZ_dynamic49]§!\n"
 
+
+
 ### 镇压与社会控制 ###
  change_DSC_WCJJZZ_dynamic50_tt: " §R无产阶级专政§! - 占领地抵抗增长: §Y[?temp_DSC_WCJJZZ_dynamic50|%]§!\n"
  change_DSC_WCJJZZ_dynamic51_tt: " §R无产阶级专政§! - 占领地顺从增长: §Y[?temp_DSC_WCJJZZ_dynamic51|%]§!\n"
  change_DSC_WCJJZZ_dynamic52_tt: " §R无产阶级专政§! - 外国颠覆活动强度: §Y[?temp_DSC_WCJJZZ_dynamic52|%]§!\n"
 
-### 科研与技术 ###
+ ### 科研与技术 ###
  change_DSC_WCJJZZ_dynamic53_tt: " §R无产阶级专政§! - 科研速度: §Y[?temp_DSC_WCJJZZ_dynamic53|%]§!\n"
+
 
 #标记点2
  HKG_people_support_dynamic_left_desc: "\n\n\n\n\n£GFX_CHI_people_support_dynamic_dynamic_desc_left_picture \n\n\n\n\n\n\n中国革命群众经过各种斗争，最终掌握了中国的政权，不过，这并不是革命的结束，而仅仅是开始！中国人民必须考虑自身与外国无产阶级的联系，考虑自身的建设，万万不可重蹈无产阶级文化大革命后期人民对革命失望的覆辙，不然的话，资产阶级与官僚主义反革命极有可能再次推翻革命政权。\n\n §Y人民的革命热情为§!： £stability_texticon [?HKG_people_support|%+2]。\n受到民族精神或法律影响，每月变化(本mod已将变化缩小10倍)：[?Final_hongkong_people_support_to_china_government_modifier|%+2]"
@@ -1330,7 +1365,7 @@
  china_gyz: "公社经济"
  Workers_democracy: "工人民主"
  State_economy: "马钢宪法"
- angangxianfa: "鞍钢宪法"
+ angangxianfa: "§R鞍钢宪法§!"
  querenshixingangangxianfa: "确认实行鞍钢宪法"
  Socialist_Market: "社会主义市场"
  ETH_Socialism_with_Ethiopian_characteristics_idea: "埃塞俄比亚特色社会主义"
