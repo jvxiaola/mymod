@@ -6950,7 +6950,7 @@ set_temp_variable = { temp_DSC_WCJJZZ_dynamic1 = 0.05} # 稳定度 +5%
 
 set_temp_variable = { temp_DSC_WCJJZZ_dynamic31 = -0.05} # 官僚体系成本 -5%
 
-set_temp_variable = { temp_DSC_WCJJZZ_dynamic51 = 0.05} # 占领地顺从增长 +5%（群众路线可能提高对占领区的管理能力）
+set_temp_variable = { temp_DSC_WCJJZZ_dynamic51 = -0.05} # 占领地顺从增长 -5%（群众路线可能提高对占领区的管理能力）
 
 set_temp_variable = { temp_DSC_WCJJZZ_dynamic3 = 0.05} # 政治点获取 +5%
 
@@ -7093,7 +7093,7 @@ set_temp_variable = { temp_DSC_WCJJZZ_dynamic31 = -0.06} # 官僚体系成本 -6
 
 set_temp_variable = { temp_DSC_WCJJZZ_dynamic1 = 0.06} # 稳定度 +6%
 
-set_temp_variable = { temp_DSC_WCJJZZ_dynamic51 = 0.08} # 占领地顺从增长 +8%
+set_temp_variable = { temp_DSC_WCJJZZ_dynamic51 = -0.08} # 占领地顺从增长 +8%
 
 set_temp_variable = { temp_DSC_WCJJZZ_dynamic46 = 0.10 }# 志愿军规模 +10%（群众组织可能增强动员能力）
         change_DSC_WCJJZZ_dynamic13 = yes
@@ -7298,12 +7298,9 @@ change_DSC_WCJJZZ_dynamic31 = yes
         }
 # 加强舆论控制和宣传
 custom_effect_tooltip = DSC_WHDZ_dynamic_tt
-set_temp_variable = { temp_DSC_WHDZ_dynamic12 = 0.10 }  # 工厂输出效率提升
+set_temp_variable = { temp_DSC_WHDZ_dynamic12 = -0.10 }  # 工厂输出效率提升
 change_DSC_WHDZ_dynamic12 = yes
-
-
-set_temp_variable = { temp_DSC_WHDZ_dynamic53 = 0.09 }  # 科研速度加成
-change_DSC_WHDZ_dynamic53 = yes
+add_political_power = 100
 			}
 			}	
 
@@ -7337,7 +7334,7 @@ change_DSC_WHDZ_dynamic53 = yes
 custom_effect_tooltip = DSC_WHDZ_dynamic_tt
 set_temp_variable = { temp_DSC_WHDZ_dynamic1 = 0.07 }    # 稳定度提升
 set_temp_variable = { temp_DSC_WHDZ_dynamic38 = 0.05 }   # 顺从增长
-set_temp_variable = { temp_DSC_WHDZ_dynamic4 = 0.05 }    # 意识形态防御提升
+set_temp_variable = { temp_DSC_WHDZ_dynamic4 = -0.05 }    # 
 change_DSC_WHDZ_dynamic1 = yes
 change_DSC_WHDZ_dynamic38 = yes
 change_DSC_WHDZ_dynamic4 = yes
@@ -7374,11 +7371,11 @@ custom_effect_tooltip = DSC_WHDZ_dynamic_tt
 set_temp_variable = { temp_DSC_WHDZ_dynamic1 = 0.06 }    # 稳定度提升
 set_temp_variable = { temp_DSC_WHDZ_dynamic38 = 0.06 }   # 顺从增长
 set_temp_variable = { temp_DSC_WHDZ_dynamic45 = 0.07 }   # 科研/文化产出加成
-set_temp_variable = { temp_DSC_WHDZ_dynamic4 = 0.06 }    # 意识形态防御提升
+set_temp_variable = { temp_DSC_WHDZ_dynamic11 = 0.06 }    # 意识形态防御提升
 change_DSC_WHDZ_dynamic1 = yes
 change_DSC_WHDZ_dynamic38 = yes
 change_DSC_WHDZ_dynamic45 = yes
-change_DSC_WHDZ_dynamic4 = yes
+change_DSC_WHDZ_dynamic11 = yes
 			}
 			}	
 
@@ -7410,10 +7407,10 @@ change_DSC_WHDZ_dynamic4 = yes
 			completion_reward = {
 custom_effect_tooltip = DSC_WHDZ_dynamic_tt
 set_temp_variable = { temp_DSC_WHDZ_dynamic1 = 0.08 }   # 稳定度提升
-set_temp_variable = { temp_DSC_WHDZ_dynamic45 = 0.05 }  # 科研/文化产出加成
+set_temp_variable = { temp_DSC_WHDZ_dynamic13 = 0.02 }  # 科研/文化产出加成
 set_temp_variable = { temp_DSC_WHDZ_dynamic38 = 0.05 }  # 顺从增长
 change_DSC_WHDZ_dynamic1 = yes
-change_DSC_WHDZ_dynamic45 = yes
+change_DSC_WHDZ_dynamic13 = yes
 change_DSC_WHDZ_dynamic38 = yes
 			}
 			}	
@@ -7446,11 +7443,11 @@ change_DSC_WHDZ_dynamic38 = yes
 			completion_reward = {
 custom_effect_tooltip = DSC_WHDZ_dynamic_tt
 set_temp_variable = { temp_DSC_WHDZ_dynamic1 = 0.05 }   # 稳定度提升
-set_temp_variable = { temp_DSC_WHDZ_dynamic28 = 0.05 }  # 陆军恢复速度/军民信心提升
-set_temp_variable = { temp_DSC_WHDZ_dynamic45 = 0.08 }  # 科研/文化产出加成
+set_temp_variable = { temp_DSC_WHDZ_dynamic15 = 0.05 }  # 陆军恢复速度/军民信心提升
+set_temp_variable = { temp_DSC_WHDZ_dynamic13 = 0.01 }  # 群众积极性
 change_DSC_WHDZ_dynamic1 = yes
-change_DSC_WHDZ_dynamic28 = yes
-change_DSC_WHDZ_dynamic45 = yes
+change_DSC_WHDZ_dynamic15 = yes
+change_DSC_WHDZ_dynamic13 = yes
 			}
 			}	
 
@@ -7484,11 +7481,9 @@ focus = {
 custom_effect_tooltip = DSC_WHDZ_dynamic_tt
 set_temp_variable = { temp_DSC_WHDZ_dynamic1 = 0.10 }   # 政治稳定度提升
 set_temp_variable = { temp_DSC_WHDZ_dynamic38 = 0.08 }  # 顺从增长提升
-set_temp_variable = { temp_DSC_WHDZ_dynamic45 = 0.10 }  # 科研/文化产出加成
 set_temp_variable = { temp_DSC_WHDZ_dynamic12 = 0.05 }  # 工厂输出效率略微提升（象征群众生产力）
 change_DSC_WHDZ_dynamic1 = yes
 change_DSC_WHDZ_dynamic38 = yes
-change_DSC_WHDZ_dynamic45 = yes
 change_DSC_WHDZ_dynamic12 = yes
 			}
 			}	
@@ -7520,10 +7515,15 @@ change_DSC_WHDZ_dynamic12 = yes
 	
 			completion_reward = {
 custom_effect_tooltip = DSC_WHDZ_dynamic_tt
-set_temp_variable = { temp_DSC_WHDZ_dynamic5 = -0.05 }  # 顾问成本降低
-set_temp_variable = { temp_DSC_WHDZ_dynamic6 = 0.12 }   # 消费品比例优化
+set_temp_variable = { temp_DSC_WHDZ_dynamic5 = 0.05 }  # 共产主义倾向
+set_temp_variable = { temp_DSC_WHDZ_dynamic6 = -0.09 }  # 民族主义倾向
+set_temp_variable = { temp_DSC_WHDZ_dynamic7 = -0.02 }  # 中立主义倾向
+set_temp_variable = { temp_DSC_WHDZ_dynamic8 = -0.04 }  # 自由主义倾向
 change_DSC_WHDZ_dynamic5 = yes
 change_DSC_WHDZ_dynamic6 = yes
+change_DSC_WHDZ_dynamic7 = yes
+change_DSC_WHDZ_dynamic8 = yes
+
 			}
 			}	
 
@@ -7554,10 +7554,12 @@ change_DSC_WHDZ_dynamic6 = yes
 	
 			completion_reward = {
 custom_effect_tooltip = DSC_WHDZ_dynamic_tt
-set_temp_variable = { temp_DSC_WHDZ_dynamic25 = 0.05 }  # 陆军攻击加成
-set_temp_variable = { temp_DSC_WHDZ_dynamic28 = 0.07 }  # 陆军恢复速度提升
-change_DSC_WHDZ_dynamic25 = yes
-change_DSC_WHDZ_dynamic28 = yes
+set_temp_variable = { temp_DSC_WHDZ_dynamic5 = 0.05 }   # 共产主义倾向
+set_temp_variable = { temp_DSC_WHDZ_dynamic10 = 0.02 }  # 外国渗透
+set_temp_variable = { temp_DSC_WHDZ_dynamic11 = 0.02 }  # 外国影响防御
+change_DSC_WHDZ_dynamic5 = yes
+change_DSC_WHDZ_dynamic10 = yes
+change_DSC_WHDZ_dynamic11 = yes
 			}
 			}	
 
@@ -7591,7 +7593,7 @@ change_DSC_WHDZ_dynamic28 = yes
 	
 			completion_reward = {
 custom_effect_tooltip = DSC_WHDZ_dynamic_tt
-set_temp_variable = { temp_DSC_WHDZ_dynamic13 = 0.02 }  # 顺从增长提升
+set_temp_variable = { temp_DSC_WHDZ_dynamic13 = 0.02 }  #群众支持度
 change_DSC_WHDZ_dynamic13 = yes
 			}
 			}	
@@ -7624,10 +7626,12 @@ change_DSC_WHDZ_dynamic13 = yes
 	
 			completion_reward = {
 custom_effect_tooltip = DSC_WHDZ_dynamic_tt
-set_temp_variable = { temp_DSC_WHDZ_dynamic7 = 0.10 }   # 工厂产能提升
-set_temp_variable = { temp_DSC_WHDZ_dynamic21 = 0.08 }  # 每周人力增加
-change_DSC_WHDZ_dynamic7 = yes
-change_DSC_WHDZ_dynamic21 = yes
+set_temp_variable = { temp_DSC_WHDZ_dynamic5 = 0.05 }   # 共产主义倾向
+set_temp_variable = { temp_DSC_WHDZ_dynamic13 = 0.01 }   # 群众积极程度
+set_temp_variable = { temp_DSC_WHDZ_dynamic53 = 0.08 }  # 建筑速度
+change_DSC_WHDZ_dynamic5 = yes
+change_DSC_WHDZ_dynamic13 = yes
+change_DSC_WHDZ_dynamic53 = yes
 
 	hidden_effect = {
 	country_event = {id = prc1.119 days = 14 }
