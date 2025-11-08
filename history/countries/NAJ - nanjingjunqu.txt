@@ -68,7 +68,7 @@ capital = 536
 		name = "梁光烈"
 		picture = "NAJ_GOV_liangguanglie.dds"
 		expire = "2222.1.1"
-		ideology = Chinese_Socialism
+		ideology = Nat_Autocracy
 		traits = {
 		#emerging_anarchist_communism
 		#man_of_steel

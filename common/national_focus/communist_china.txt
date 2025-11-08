@@ -7670,19 +7670,23 @@ change_DSC_WHDZ_dynamic53 = yes
 			completion_reward = {
         add_dynamic_modifier = {
             modifier = DSC_ZZZDJJ_dynamic
-            #scope = CHI
         }
 # PRC_politic_guide_economy（政治指导经济）
 custom_effect_tooltip = DSC_ZZZDJJ_dynamic_tt
 set_temp_variable = { temp_DSC_ZZZDJJ_dynamic3 = 0.10 }    # 政治点获取 +10%
 set_temp_variable = { temp_DSC_ZZZDJJ_dynamic18 = 0.05 }   # 工厂效率提升速度 +5%
 set_temp_variable = { temp_DSC_ZZZDJJ_dynamic24 = 0.03 }   # 各州生产率增长 +3%
-set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25 = 0.02 }   # 劳动生产率与就业率 +2%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_1 = 0.02 }   # 劳动生产率与就业率 +2%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_2 = 0.02 }   # 劳动生产率与就业率 +2%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_3 = 0.02 }   # 劳动生产率与就业率 +2%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_4 = 0.02 }   # 劳动生产率与就业率 +2%
 change_DSC_ZZZDJJ_dynamic3 = yes
 change_DSC_ZZZDJJ_dynamic18 = yes
 change_DSC_ZZZDJJ_dynamic24 = yes
-change_DSC_ZZZDJJ_dynamic25 = yes
-
+change_DSC_ZZZDJJ_dynamic25_1 = yes
+change_DSC_ZZZDJJ_dynamic25_2 = yes
+change_DSC_ZZZDJJ_dynamic25_3 = yes
+change_DSC_ZZZDJJ_dynamic25_4 = yes
 
 
 }
@@ -7715,11 +7719,17 @@ change_DSC_ZZZDJJ_dynamic25 = yes
 	
 			completion_reward = {
 custom_effect_tooltip = DSC_ZZZDJJ_dynamic_tt
-set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25 = 0.05 }   # 劳动生产率与就业率 +5%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_1 = 0.05 }   # 劳动生产率与就业率 +5%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_2= 0.05 }   # 劳动生产率与就业率 +5%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_3 = 0.05 }   # 劳动生产率与就业率 +5%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_4 = 0.05 }   # 劳动生产率与就业率 +5%
 set_temp_variable = { temp_DSC_ZZZDJJ_dynamic3 = 0.05 }    # 政治点获取 +5%
 set_temp_variable = { temp_DSC_ZZZDJJ_dynamic31 = -0.03 }  # 官僚体系成本下降 -3%
-set_temp_variable = { temp_DSC_ZZZDJJ_dynamic6 = 0.03 }    # 民族主义倾向 +3%
-change_DSC_ZZZDJJ_dynamic25 = yes
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic13 = 0.01 }    # 民族主义倾向 +3%
+change_DSC_ZZZDJJ_dynamic25_1 = yes
+change_DSC_ZZZDJJ_dynamic25_2 = yes
+change_DSC_ZZZDJJ_dynamic25_3 = yes
+change_DSC_ZZZDJJ_dynamic25_4 = yes
 change_DSC_ZZZDJJ_dynamic3 = yes
 change_DSC_ZZZDJJ_dynamic31 = yes
 change_DSC_ZZZDJJ_dynamic6 = yes
@@ -7755,10 +7765,16 @@ change_DSC_ZZZDJJ_dynamic6 = yes
 			completion_reward = {
 custom_effect_tooltip = DSC_ZZZDJJ_dynamic_tt
 set_temp_variable = { temp_DSC_ZZZDJJ_dynamic5 = 0.05 }    # 共产主义倾向 +5%
-set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25 = 0.02 }   # 劳动生产率与就业率 +2%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_1 = 0.02 }   # 劳动生产率与就业率 +2%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_2 = 0.02 }   # 劳动生产率与就业率 +2%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_3 = 0.02 }   # 劳动生产率与就业率 +2%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_4 = 0.02 }   # 劳动生产率与就业率 +2%
 set_temp_variable = { temp_DSC_ZZZDJJ_dynamic31 = -0.02 }  # 官僚体系成本下降 -2%
 change_DSC_ZZZDJJ_dynamic5 = yes
-change_DSC_ZZZDJJ_dynamic25 = yes
+change_DSC_ZZZDJJ_dynamic25_1 = yes
+change_DSC_ZZZDJJ_dynamic25_2 = yes
+change_DSC_ZZZDJJ_dynamic25_3 = yes
+change_DSC_ZZZDJJ_dynamic25_4 = yes
 change_DSC_ZZZDJJ_dynamic31 = yes
 
 }
@@ -7792,10 +7808,16 @@ change_DSC_ZZZDJJ_dynamic31 = yes
 			completion_reward = {
 custom_effect_tooltip = DSC_ZZZDJJ_dynamic_tt
 set_temp_variable = { temp_DSC_ZZZDJJ_dynamic31 = -0.05 }  # 官僚体系成本下降 -5%
-set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25 = 0.02 }   # 劳动生产率与就业率 +2%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_1 = 0.02 }   # 劳动生产率与就业率 +2%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_2 = 0.02 }   # 劳动生产率与就业率 +2%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_3 = 0.02 }   # 劳动生产率与就业率 +2%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_4 = 0.02 }   # 劳动生产率与就业率 +2%
 set_temp_variable = { temp_DSC_ZZZDJJ_dynamic5 = 0.03 }    # 共产主义倾向 +3%
 change_DSC_ZZZDJJ_dynamic31 = yes
-change_DSC_ZZZDJJ_dynamic25 = yes
+change_DSC_ZZZDJJ_dynamic25_1 = yes
+change_DSC_ZZZDJJ_dynamic25_2 = yes
+change_DSC_ZZZDJJ_dynamic25_3 = yes
+change_DSC_ZZZDJJ_dynamic25_4 = yes
 change_DSC_ZZZDJJ_dynamic5 = yes
 
 }
@@ -7828,10 +7850,16 @@ change_DSC_ZZZDJJ_dynamic5 = yes
 	
 			completion_reward = {
 custom_effect_tooltip = DSC_ZZZDJJ_dynamic_tt
-set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25 = 0.04 }   # 劳动生产率与就业率 +4%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_1 = 0.04 }   # 劳动生产率与就业率 +4%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_2 = 0.04 }   # 劳动生产率与就业率 +4%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_3 = 0.04 }   # 劳动生产率与就业率 +4%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_4 = 0.04 }   # 劳动生产率与就业率 +4%
 set_temp_variable = { temp_DSC_ZZZDJJ_dynamic14 = -0.05 }  # 消费品工厂比例下降 -5%（资源重新配置）
 set_temp_variable = { temp_DSC_ZZZDJJ_dynamic24 = 0.03 }   # 各州生产率增长 +3%
-change_DSC_ZZZDJJ_dynamic25 = yes
+change_DSC_ZZZDJJ_dynamic25_1 = yes
+change_DSC_ZZZDJJ_dynamic25_2 = yes
+change_DSC_ZZZDJJ_dynamic25_3 = yes
+change_DSC_ZZZDJJ_dynamic25_4 = yes
 change_DSC_ZZZDJJ_dynamic14 = yes
 change_DSC_ZZZDJJ_dynamic24 = yes
 
@@ -7896,10 +7924,16 @@ change_DSC_ZZZDJJ_dynamic24 = yes
 	
 			completion_reward = {
 custom_effect_tooltip = DSC_ZZZDJJ_dynamic_tt
-set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25 = 0.06 }   # 劳动生产率与就业率 +6%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_1 = 0.06 }   # 劳动生产率与就业率 +6%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_2 = 0.06 }   # 劳动生产率与就业率 +6%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_3 = 0.06 }   # 劳动生产率与就业率 +6%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_4 = 0.06 }   # 劳动生产率与就业率 +6%
 set_temp_variable = { temp_DSC_ZZZDJJ_dynamic3 = 0.05 }    # 政治点获取 +5%
 set_temp_variable = { temp_DSC_ZZZDJJ_dynamic5 = 0.04 }    # 共产主义倾向 +4%
-change_DSC_ZZZDJJ_dynamic25 = yes
+change_DSC_ZZZDJJ_dynamic25_1 = yes
+change_DSC_ZZZDJJ_dynamic25_2 = yes
+change_DSC_ZZZDJJ_dynamic25_3 = yes
+change_DSC_ZZZDJJ_dynamic25_4 = yes
 change_DSC_ZZZDJJ_dynamic3 = yes
 change_DSC_ZZZDJJ_dynamic5 = yes
 
@@ -7938,11 +7972,17 @@ custom_effect_tooltip = DSC_ZZZDJJ_dynamic_tt
 set_temp_variable = { temp_DSC_ZZZDJJ_dynamic14 = -0.10 }  # 消费品工厂比例 -10%
 set_temp_variable = { temp_DSC_ZZZDJJ_dynamic15 = 0.15 }   # 预期消费品需求 +15%
 set_temp_variable = { temp_DSC_ZZZDJJ_dynamic5 = 0.05 }    # 共产主义倾向 +5%
-set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25 = 0.03 }   # 劳动生产率与就业率 +3%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_1 = 0.03 }   # 劳动生产率与就业率 +3%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_2 = 0.03 }   # 劳动生产率与就业率 +3%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_3 = 0.03 }   # 劳动生产率与就业率 +3%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_4 = 0.03 }   # 劳动生产率与就业率 +3%
 change_DSC_ZZZDJJ_dynamic14 = yes
 change_DSC_ZZZDJJ_dynamic15 = yes
 change_DSC_ZZZDJJ_dynamic5 = yes
-change_DSC_ZZZDJJ_dynamic25 = yes
+change_DSC_ZZZDJJ_dynamic25_1 = yes
+change_DSC_ZZZDJJ_dynamic25_2 = yes
+change_DSC_ZZZDJJ_dynamic25_3 = yes
+change_DSC_ZZZDJJ_dynamic25_4 = yes
 
 }
 			}	
@@ -7974,10 +8014,16 @@ change_DSC_ZZZDJJ_dynamic25 = yes
 	
 			completion_reward = {
 custom_effect_tooltip = DSC_ZZZDJJ_dynamic_tt
-set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25 = 0.03 }   # 劳动生产率与就业率 +3%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_1 = 0.03 }   # 劳动生产率与就业率 +6%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_2 = 0.03 }   # 劳动生产率与就业率 +6%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_3 = 0.03 }   # 劳动生产率与就业率 +6%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_4 = 0.03 }   # 劳动生产率与就业率 +6%
 set_temp_variable = { temp_DSC_ZZZDJJ_dynamic12 = -0.05 }  # 颠覆活动维持费用下降 -5%
 set_temp_variable = { temp_DSC_ZZZDJJ_dynamic5 = 0.02 }    # 共产主义倾向 +2%
-change_DSC_ZZZDJJ_dynamic25 = yes
+change_DSC_ZZZDJJ_dynamic25_1 = yes
+change_DSC_ZZZDJJ_dynamic25_2 = yes
+change_DSC_ZZZDJJ_dynamic25_3 = yes
+change_DSC_ZZZDJJ_dynamic25_4 = yes
 change_DSC_ZZZDJJ_dynamic12 = yes
 change_DSC_ZZZDJJ_dynamic5 = yes
 
@@ -8003,10 +8049,17 @@ change_DSC_ZZZDJJ_dynamic5 = yes
 custom_effect_tooltip = DSC_ZZZDJJ_dynamic_tt
 set_temp_variable = { temp_DSC_ZZZDJJ_dynamic16 = 0.05 }   # 工厂产能 +5%
 set_temp_variable = { temp_DSC_ZZZDJJ_dynamic20 = 0.03 }   # 初始生产效率 +3%
-set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25 = 0.04 }   # 劳动生产率与就业率 +4%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_1 = 0.04 }   # 劳动生产率与就业率 +4%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_3 = 0.04 }   # 劳动生产率与就业率 +4%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_3 = 0.04 }   # 劳动生产率与就业率 +4%
+set_temp_variable = { temp_DSC_ZZZDJJ_dynamic25_4 = 0.04 }   # 劳动生产率与就业率 +4%
+
 change_DSC_ZZZDJJ_dynamic16 = yes
 change_DSC_ZZZDJJ_dynamic20 = yes
-change_DSC_ZZZDJJ_dynamic25 = yes
+change_DSC_ZZZDJJ_dynamic25_1 = yes
+change_DSC_ZZZDJJ_dynamic25_2 = yes
+change_DSC_ZZZDJJ_dynamic25_3 = yes
+change_DSC_ZZZDJJ_dynamic25_4 = yes
 
 				hidden_effect = {
 					set_country_flag = CHI_allotment_end

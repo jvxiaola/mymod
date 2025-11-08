@@ -2686,7 +2686,7 @@ startup_politics = yes
 		name = "梁光烈"
 		picture = "NAJ_GOV_liangguanglie.dds"
 		expire = "2222.1.1"
-		ideology = Chinese_Socialism
+		ideology = Nat_Autocracy
 		traits = {
 		#emerging_anarchist_communism
 		#man_of_steel
@@ -3020,7 +3020,7 @@ division_template = {
 }		 
 	news_event = { id = mdardchina_news.17 }
 	HKG = { load_focus_tree = HKG_focus }
-	DSC = { country_event = {id = Chuanyu.1 days = 7} }
+	#DSC = { country_event = {id = Chuanyu.1 days = 7} }
 		}
 	}
 	

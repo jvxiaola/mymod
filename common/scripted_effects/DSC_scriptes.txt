@@ -552,7 +552,10 @@ change_DSC_ZZZDJJ_dynamic21 = { add_to_variable = { DSC_ZZZDJJ_dynamic21 = temp_
 change_DSC_ZZZDJJ_dynamic22 = { add_to_variable = { DSC_ZZZDJJ_dynamic22 = temp_DSC_ZZZDJJ_dynamic22 } custom_effect_tooltip = change_DSC_ZZZDJJ_dynamic22_tt } # 燃料产出
 change_DSC_ZZZDJJ_dynamic23 = { add_to_variable = { DSC_ZZZDJJ_dynamic23 = temp_DSC_ZZZDJJ_dynamic23 } custom_effect_tooltip = change_DSC_ZZZDJJ_dynamic23_tt } # 资源产量
 change_DSC_ZZZDJJ_dynamic24 = { add_to_variable = { DSC_ZZZDJJ_dynamic24 = temp_DSC_ZZZDJJ_dynamic24 } custom_effect_tooltip = change_DSC_ZZZDJJ_dynamic24_tt } # 各州生产率增长
-change_DSC_ZZZDJJ_dynamic25 = { add_to_variable = { DSC_ZZZDJJ_dynamic25 = temp_DSC_ZZZDJJ_dynamic25 } custom_effect_tooltip = change_DSC_ZZZDJJ_dynamic25_tt } # 劳动生产率与就业率
+change_DSC_ZZZDJJ_dynamic25_1 = { add_to_variable = { DSC_ZZZDJJ_dynamic25_1 = temp_DSC_ZZZDJJ_dynamic25_1 } custom_effect_tooltip = change_DSC_ZZZDJJ_dynamic25_1_tt } # 工厂产能（军民工厂的总体生产效率）
+change_DSC_ZZZDJJ_dynamic25_2 = { add_to_variable = { DSC_ZZZDJJ_dynamic25_2 = temp_DSC_ZZZDJJ_dynamic25_2 } custom_effect_tooltip = change_DSC_ZZZDJJ_dynamic25_2_tt } # 船坞产能（造船厂的生产效率）
+change_DSC_ZZZDJJ_dynamic25_3 = { add_to_variable = { DSC_ZZZDJJ_dynamic25_3 = temp_DSC_ZZZDJJ_dynamic25_3 } custom_effect_tooltip = change_DSC_ZZZDJJ_dynamic25_3_tt } # 建筑建造速度（所有建筑的建造速度加成）
+change_DSC_ZZZDJJ_dynamic25_4 = { add_to_variable = { DSC_ZZZDJJ_dynamic25_4 = temp_DSC_ZZZDJJ_dynamic25_4 } custom_effect_tooltip = change_DSC_ZZZDJJ_dynamic25_4_tt } # 农业区建设速度（自定义建筑类别“农业区”的建造速度）
 change_DSC_ZZZDJJ_dynamic26 = { add_to_variable = { DSC_ZZZDJJ_dynamic26 = temp_DSC_ZZZDJJ_dynamic26 } custom_effect_tooltip = change_DSC_ZZZDJJ_dynamic26_tt } # 总劳动力
 change_DSC_ZZZDJJ_dynamic27 = { add_to_variable = { DSC_ZZZDJJ_dynamic27 = temp_DSC_ZZZDJJ_dynamic27 } custom_effect_tooltip = change_DSC_ZZZDJJ_dynamic27_tt } # 高失业率惩罚
 change_DSC_ZZZDJJ_dynamic28 = { add_to_variable = { DSC_ZZZDJJ_dynamic28 = temp_DSC_ZZZDJJ_dynamic28 } custom_effect_tooltip = change_DSC_ZZZDJJ_dynamic28_tt } # 民工厂劳动需求
