@@ -72,7 +72,7 @@ division_template = {
 division_template = {
 	name = "解放军师级火力支援单位"
 	division_names_group = CHI_PRG_recruitment_0
-	is_locked = yes
+	#is_locked = yes
 	support = {
 		L_Engi_Comp = { x = 0 y = 0 } Arty_Battery = { x = 0 y = 1 }
 	}
@@ -88,7 +88,7 @@ division_template = {
 division_template = {
 	name = "解放军师级机动火力单位"
 	division_names_group = CHI_PRG_recruitment_01
-	is_locked = yes
+	#is_locked = yes
 	support = {
 		L_Engi_Comp = { x = 0 y = 0 } Arty_Battery = { x = 0 y = 1 }
 	}
