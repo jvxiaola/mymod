@@ -25,8 +25,8 @@ npm_war_policies = {
 		#icon = GFX_decision_minotor_button
 		visible = {
 			tag=NPM
-						NOT={has_idea=NEP_youji}
-
+			NOT={has_idea=NEP_youji}
+			country_exists = NEP
 		}
 
 		available = {
@@ -47,6 +47,7 @@ npm_war_policies = {
 		npm_rmghg = {
 		#icon = GFX_decision_minotor_button
 		visible = {
+			NOT={has_cosmetic_tag = niboer_rmghg}	
 			tag=NPM
 			has_war = no
 		}
@@ -64,6 +65,8 @@ npm_war_policies = {
 			set_capital = {
 				state = 485
 			}
+				clr_country_flag = dynamic_flag
+	clr_country_flag = dynamic_rebel_flag
 		}
 		ai_will_do = {
 			factor = 0

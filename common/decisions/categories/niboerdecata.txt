@@ -3,7 +3,7 @@ npm_war_policies= {
 	allowed = { 
 
 	}
-	visible_when_empty = yes
+	visible_when_empty = no
 
 
 

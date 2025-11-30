@@ -15,7 +15,10 @@ ideas = {
 		}
 
 		NEP_youji = {
-
+available={
+	has_idea=Non_State_Actor
+	country_exists=NEP
+}
 			allowed_civil_war = { always = yes }
 #icon=GFX_idea_youjitu
 			picture = youjitu
