@@ -1,5 +1,11 @@
 ﻿l_simp_chinese:
 #国策
+ CHENGDU_FACTION_name: "成都军区"
+ maoist_international_name: "工人国际"
+ EAC_name: "东亚共同体"
+ fourth_international_name: "共产国际"
+ asia_union_name: "亚洲联盟"
+ Africa_anti_communism_union_name: "非洲反共联盟"
  CHI_political_reform: "政治宣传"
  CHI_political_reform_desc: "随着进入21世纪，我们的国家也走入了新时代，让我们歌颂这太平盛世吧！"
  CHI_peaceful_rise: "和平崛起"

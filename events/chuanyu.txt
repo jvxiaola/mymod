@@ -184,7 +184,7 @@ random_country = {
 
 		}	
 	}
-			create_faction = "成都军区"
+			create_faction_from_template = faction_template_CHENGDU_FACTION
 			add_to_faction = XIZ
 										add_to_faction = GUZ
 

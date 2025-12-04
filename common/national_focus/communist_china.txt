@@ -2398,7 +2398,7 @@ has_idea = CHI_aftermath_of_the_civil_war_4
 		available_if_capitulated = no
 
 		completion_reward = {
-				create_faction = "工人国际"
+			create_faction_from_template = faction_template_maoist_international
 		CHI = { country_event = { id = prc1.55 }}
 
 add_ideas = CHI_Exporting_the_Revolution
@@ -2507,7 +2507,9 @@ has_idea = CHI_aftermath_of_the_civil_war_4
 		available_if_capitulated = no
 
 		completion_reward = {
-				create_faction = "第四国际"
+				#create_faction = "第四国际"
+				create_faction_from_template = faction_template_fourth_international
+				
 		CHI = { country_event = { id = prc1.55 }}
 add_ideas = CHI_Exporting_the_Revolution
 every_other_country = {
@@ -6031,7 +6033,8 @@ cost = 5
 		custom_effect_tooltip = "所有非共产主义，左翼激进主义的非洲国家将会加入非洲反共阵线，北约将会干预。"
 hidden_effect = {	
 	NGR = {
-		create_faction =  "非洲反共阵线"
+		create_faction_from_template = faction_template_Africa_anti_communism_union
+		#create_faction =  "非洲反共阵线"
 remove_ideas = MDARD_npc		
 		every_other_country = {
 		limit = {

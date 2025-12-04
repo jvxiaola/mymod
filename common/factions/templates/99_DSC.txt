@@ -1,0 +1,15 @@
+faction_template_CHENGDU_FACTION = {
+	name = CHENGDU_FACTION_name
+	icon = GFX_faction_logo_generic_13
+	manifest = faction_logo_generic_13
+
+	can_leader_join_other_factions = yes
+
+	goals = {
+
+	}
+
+	default_rules = {
+
+	}
+}

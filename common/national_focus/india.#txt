@@ -8837,7 +8837,8 @@ focus_tree = {
 					CHI = { add_to_faction = RAJ }
 				}
 				else = {
-					create_faction = SHANGHAI_PACT
+					create_faction_from_template = faction_template_sco
+					#create_faction = SHANGHAI_PACT
 					CHI = { add_to_faction = RAJ }
 				}
 			}

@@ -4139,7 +4139,8 @@ exists = no }	 	  }
 		completion_reward = {
 			if = {
 				limit = { is_in_faction = no }
-				create_faction = SHANGHAI_PACT
+				create_faction_from_template = faction_template_sco
+				#create_faction = SHANGHAI_PACT
 			}
 			if = {
 				limit = { AFG = { OR = { has_idea = sco_member has_idea = sco_member_pol has_idea = sco_member_mil } NOT = { is_in_faction_with = CHI } } }
@@ -5178,7 +5179,8 @@ is_puppet = no
 	  limit = {
 	  is_in_faction = no
 	  }
-	  create_faction = "东亚共同体"
+	  create_faction_from_template = faction_template_EAC
+	  #create_faction = "东亚共同体"
 }	
 	add_to_faction = CHI
 	  add_to_faction = KOR
@@ -6770,7 +6772,8 @@ prerequisite = { focus = CHI_lkmt4  }
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {	
-		create_faction = "亚细亚联盟"
+		#create_faction = "亚细亚联盟"
+		create_faction_from_template = faction_template_asia_union
 							set_temp_variable = { treasury_change = -100 }
 			modify_treasury_effect = yes	
 	every_other_country = {

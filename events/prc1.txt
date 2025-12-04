@@ -2027,6 +2027,8 @@ set_variable = {
 						}
 						add_ideas = iranian_quds_force
 					}
+
+
 					if = {
 						limit = {
 							PREV = {
@@ -2070,6 +2072,7 @@ set_variable = {
 				}
 					}
 
+
 					#if = { limit = { PREV = { has_idea = isi_pakistan } }
 					#	add_ideas = isi_pakistan
 					#}
@@ -2085,6 +2088,7 @@ set_variable = {
 					setup_init_factions = yes 	#flags for int. factions
 					update_neighbors_effects = yes # Updates Neighbor Effects
 					economic_cycle_drift_popularity = yes #drift from neighbor
+
 
 					country_event = { id = brotherhood.0 } #Sets muslim_brotherhood relations
 					country_event = { id = brotherhood.2 }
@@ -2714,7 +2718,6 @@ random_country={
 
 
 
-
 		hidden_effect = {
 			DSC = {
 				inherit_technology = CHI
@@ -2793,7 +2796,7 @@ has_cosmetic_tag = CHI_REB_SA
 	}
 
 
-					transfer_units_fraction= {
+			transfer_units_fraction= {
 				target = GUZ
 				size = 0.05
 				stockpile_ratio = 0.05
@@ -2805,15 +2808,16 @@ has_cosmetic_tag = CHI_REB_SA
 }
 
 
-
-				DSC = {
-			create_faction = "成都军区"
-			add_to_faction = XIZ
-					add_to_faction = YUN	
-										add_to_faction = GUZ
-										puppet = GUZ
-										puppet=XIZ
-										GUZ={
+	DSC = {
+		#set_rule = { can_create_factions = yes }
+		create_faction_from_template = faction_template_CHENGDU_FACTION
+		add_to_faction = XIZ
+		add_to_faction = YUN	
+		add_to_faction = GUZ
+		puppet = GUZ
+		puppet=XIZ
+	}
+GUZ={
 start_politics_input = yes
 ### Party Popularities
 set_variable = { party_pop_array^0 = 0 } #Western_Autocracy
@@ -2864,7 +2868,7 @@ startup_politics = yes
 	}
 		}
 	
-	}
+	
 
 			random_army_leader = {
     			limit = {
@@ -2932,6 +2936,9 @@ startup_politics = yes
 				add_to_array = { ruling_party = 22 }
 				startup_politics = yes
 			}
+
+
+
 		}
 
 random_country = {
@@ -2992,6 +2999,7 @@ division_template = {
 }		 
 	news_event = { id = mdardchina_news.17 }
 	HKG = { load_focus_tree = HKG_focus }
+
 	#DSC = { country_event = {id = Chuanyu.1 days = 7} }
 		}
 	}

@@ -1,0 +1,15 @@
+faction_template_Africa_anti_communism_union = {
+	name = Africa_anti_communism_union_name
+	icon = GFX_faction_logo_generic_10
+	manifest = faction_logo_generic_10
+
+	can_leader_join_other_factions = yes
+
+	goals = {
+
+	}
+
+	default_rules = {
+
+	}
+}
