@@ -1,0 +1,751 @@
+			
+			focus_tree = {
+	id = chi_civilwar_old_left
+
+	country = {
+		factor = 0
+		#modifier = { original_tag = AFG add = 20 }
+	}
+
+	continuous_focus_position = { x = 50 y = 1500 }
+
+	#Winning Against Taliban
+
+			
+			
+			focus = {
+		id = PRC_communist
+		icon = communist_party_of_china
+		x = 4
+		y = 0
+
+		cost = 4
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+has_civil_war = yes
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+select_effect = {
+
+}
+		completion_reward = {
+		remove_ideas = patry_fenlie
+
+		}
+			
+		}
+  			focus = {
+		id = PRC_red_weidui
+		icon = army_officers_communist
+		x = -2
+		y = 1
+prerequisite ={ focus =  PRC_communist}
+relative_position_id = PRC_communist
+		cost = 4
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+				has_war = yes
+
+		}
+
+		bypass = {
+				has_war = no
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+add_ideas = red_weidui1
+			division_template = {
+				name = "china"
+	regiments = {
+	Mot_Inf_Bat = { x = 0 y = 0 }
+	Mot_Inf_Bat = { x = 0 y = 1 }
+	Mot_Inf_Bat = { x = 0 y = 2 }
+	Mot_Inf_Bat = { x = 0 y = 3 }
+ Mot_Inf_Bat = { x = 1 y = 0 }
+	Mot_Inf_Bat = { x = 1 y = 1 }
+Mot_Inf_Bat = { x = 1 y = 2 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 547 }
+				create_unit = {
+					division = "division_template = \"china\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+				create_unit = {
+					division = "division_template = \"china\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+				create_unit = {
+					division = "division_template = \"china\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+						create_unit = {
+					division = "division_template = \"china\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+								create_unit = {
+					division = "division_template = \"china\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+								create_unit = {
+					division = "division_template = \"china\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+								create_unit = {
+					division = "division_template = \"china\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+								create_unit = {
+					division = "division_template = \"china\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+								create_unit = {
+					division = "division_template = \"china\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+					create_unit = {
+					division = "division_template = \"china\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+									create_unit = {
+					division = "division_template = \"china\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+									create_unit = {
+					division = "division_template = \"china\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+									create_unit = {
+					division = "division_template = \"china\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+									create_unit = {
+					division = "division_template = \"china\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+									create_unit = {
+					division = "division_template = \"china\" start_experience_factor = 0.1	start_equipment_factor = 1"
+					owner = CHI
+					prioritize_location = 11761
+				}
+									create_unit = {
+					division = "division_template = \"china\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+													create_unit = {
+					division = "division_template = \"china\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+													create_unit = {
+					division = "division_template = \"china\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+													create_unit = {
+					division = "division_template = \"china\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+													create_unit = {
+					division = "division_template = \"china\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+													create_unit = {
+					division = "division_template = \"china\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+													create_unit = {
+					division = "division_template = \"china\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+																	create_unit = {
+					division = "division_template = \"china\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+																	create_unit = {
+					division = "division_template = \"china\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+
+
+			}
+}
+}
+				focus = {
+		id = PRC_nmbd
+		icon = conscription
+		x = 0
+		y = 1
+prerequisite ={ focus =  PRC_communist}
+relative_position_id = PRC_communist
+		cost = 5
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+				has_civil_war = yes
+
+		}
+
+		bypass = {
+				has_civil_war = no
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			division_template = {
+				name = "china2"
+	regiments = {
+	Mot_Inf_Bat = { x = 0 y = 0 }
+	Mot_Inf_Bat = { x = 0 y = 1 }
+	Mot_Inf_Bat = { x = 0 y = 2 }
+	Mot_Inf_Bat = { x = 0 y = 3 }
+ Mot_Inf_Bat = { x = 1 y = 0 }
+	Mot_Inf_Bat = { x = 1 y = 1 }
+Mot_Inf_Bat = { x = 1 y = 2 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 547 }
+				create_unit = {
+					division = "division_template = \"china2\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+				create_unit = {
+					division = "division_template = \"china2\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+				create_unit = {
+					division = "division_template = \"china2\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+				create_unit = {
+					division = "division_template = \"china2\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+													create_unit = {
+					division = "division_template = \"china2\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+				
+													create_unit = {
+					division = "division_template = \"china2\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+													create_unit = {
+					division = "division_template = \"china2\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+													create_unit = {
+					division = "division_template = \"china2\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+													create_unit = {
+					division = "division_template = \"china2\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+													create_unit = {
+					division = "division_template = \"china2\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+													create_unit = {
+					division = "division_template = \"china2\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+						create_unit = {
+					division = "division_template = \"china2\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+								create_unit = {
+					division = "division_template = \"china2\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+								create_unit = {
+					division = "division_template = \"china2\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+								create_unit = {
+					division = "division_template = \"china2\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+								create_unit = {
+					division = "division_template = \"china2\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+								create_unit = {
+					division = "division_template = \"china2\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+					create_unit = {
+					division = "division_template = \"china2\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = CHI
+					prioritize_location = 11761
+				}
+			}
+
+
+}
+}
+				focus = {
+		id = PRC_panjun
+		icon = general_staff
+		x = 2
+		y = 1
+		relative_position_id = PRC_communist
+prerequisite ={ focus =  PRC_communist}
+		cost = 5
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+				has_civil_war = yes
+
+		}
+
+		bypass = {
+				has_civil_war = no
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+custom_effect_tooltip = "一定数量的叛军将会到我们这边。"
+				random_other_country = {
+
+			limit = {
+			original_tag = CHI
+			NOT = { TAG = CHI }
+					}
+			transfer_units_fraction= {
+    target = CHI
+    size = 0.20
+    stockpile_ratio = 0.1
+    army_ratio = 0.1
+    navy_ratio = 0.2
+    air_ratio = 0.1
+}
+			random_army_leader = {
+			set_nationality = CHI
+			}
+					}
+}
+}
+				focus = {
+		id = PRC_gyh
+		icon = industry_communism
+		x = 0
+		y = 2
+prerequisite ={ focus =  PRC_red_weidui} 
+prerequisite = {focus = PRC_nmbd }
+prerequisite = { focus = PRC_panjun}
+relative_position_id = PRC_communist
+		cost = 5
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+				has_civil_war = yes
+
+		}
+
+		bypass = {
+				has_civil_war = no
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_ideas = CHI_war_communism
+						country_lock_all_division_template = no
+
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+
+			}
+				random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+
+			}
+		
+		}
+		}
+		
+
+								focus = {
+		id = PRC_houq
+		icon = gurkhas
+		x = 0
+		y = 4
+		prerequisite = {focus = PRC_people_amry}
+		relative_position_id = PRC_communist
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		add_ideas = houqing
+		}
+		}
+						focus = {
+		id = PRC_people_amry
+		icon = peoples_liberation_army
+		x = 0
+		y = 3
+		prerequisite = {focus = PRC_gyh}
+		mutually_exclusive = {focus = PRC_red_amry1}
+		relative_position_id = PRC_communist
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		hidden_effect = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+				add_to_variable = {
+					var = party_pop_array^5
+					value = 0.05
+				}
+				recalculate_party = yes
+			}
+add_ideas = CHI_party_before_guns
+add_ideas = people_amry1
+remove_ideas = red_weidui1
+		}
+		}
+focus = {
+		id = PRC_jieji
+		icon = entente
+		x = -1
+		y = 5
+		prerequisite = {focus = PRC_houq}
+		relative_position_id = PRC_communist
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#custom_effect_tooltip = 毛派支持率上升5%。
+		hidden_effect = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+				add_to_variable = {
+					var = party_pop_array^5
+					value = 0.05
+				}
+				recalculate_party = yes
+			}			swap_ideas = {		
+		remove_idea = people_amry1
+		add_idea = people_amry2 
+		}
+		}
+		}
+focus = {
+		id = PRC_junguan
+		icon = military_academy
+		x = 1
+		y = 5
+		prerequisite = {focus = PRC_houq}
+		relative_position_id = PRC_communist
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+					#custom_effect_tooltip = 毛派支持率上升5%。
+			hidden_effect = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+				add_to_variable = {
+					var = party_pop_array^5
+					value = 0.05
+				}
+				recalculate_party = yes
+			}
+			swap_ideas = {		
+		remove_idea = people_amry2
+		add_idea = people_amry3
+		}
+		}
+		}
+		focus = {
+		id = PRC_chenai
+		icon = industry_democratic3
+		x = 0
+		y = 6
+		prerequisite = {focus = PRC_jieji }
+		prerequisite = {focus = PRC_junguan }
+		
+		relative_position_id = PRC_communist
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+has_war = no		}
+
+		bypass = {
+ 
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+news_event = mdardchina_news.60		
+hidden_effect = {		
+	set_cosmetic_tag = CHI_AUTH_S
+
+every_other_country ={
+remove_ideas = USA_Anti_Communist_china_Jihad
+}
+				country_lock_all_division_template = no
+
+}
+add_stability = 0.10
+add_ideas = p5_member
+add_ideas = CHI_aftermath_of_the_civil_war_1
+			create_wargoal = {
+				type = annex_everything
+				target = PRG
+			}	
+				create_wargoal = {
+				type = annex_everything
+				target = NAJ
+			}	
+							create_wargoal = {
+				type = annex_everything
+				target = DSC
+			}	
+
+							create_wargoal = {
+				type = annex_everything
+				target = YUN
+			}	
+
+							create_wargoal = {
+				type = annex_everything
+				target = GUZ
+			}	
+
+							create_wargoal = {
+				type = annex_everything
+				target = JIL
+			}	
+if = {
+	limit = {
+		NKO = {
+			controls_state = 1236
+		}
+	}
+transfer_state = 1236
+}
+		if = {
+			limit = { country_exists = ETK }
+				create_wargoal = {
+					target = ETK
+					type = annex_everything
+				}	
+		}
+		if = {
+			limit = { country_exists = XIN }
+				create_wargoal = {
+					target = XIN
+					type = annex_everything
+				}	
+			}
+		if = {
+			limit = { country_exists = XIZ }
+				create_wargoal = {
+					target = XIZ
+					type = annex_everything
+				}	
+			}		
+		if = {
+			limit = { country_exists = HKG }
+				create_wargoal = {
+					target = HKG
+					type = annex_everything
+				}	
+			}
+		if = {
+			limit = { country_exists = PRG }
+			create_wargoal = {
+				type = annex_everything
+				target = PRG
+			}	
+			}
+
+
+		if = {
+			limit = { country_exists = MAC }
+				create_wargoal = {
+					target = MAC
+					type = annex_everything
+				}	
+			}		
+remove_ideas = CHI_war_communism
+		}
+		}
+	
+
+		focus = {
+		id=PRC_gjjhwth
+		icon = communist_scientists
+		x = 0
+		y = 1
+		prerequisite = {focus = PRC_chenai }
+		relative_position_id = PRC_chenai
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+			DSC={exists = no}
+			NAJ={exists = no}
+
+		}
+
+		bypass = {
+
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		remove_ideas = CHI_aftermath_of_the_civil_war_5
+		add_resource = { type = tungsten amount = 5 state = 572 }
+		add_resource = { type = aluminium amount = 8 state = 562 }
+		if = {
+		limit = {
+		NOT = {
+		has_country_flag = chi_work_rev
+		}
+		}
+country_event = prc1.58
+		}
+		
+		}
+		}
+
+	}

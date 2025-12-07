@@ -43,34 +43,6 @@ remove_ideas = Non_State_Actor
 		}
 	}
 
-	focus = {
-		id = NPA_sison_is_back
-		icon = attack_talibanwww
 
-		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
-
-		x = 5
-		y = 1
-
-		cost = 5
-prerequisite = {
-	focus = NPA_build_the_nation
-}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		completion_reward = {
-
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
 
 }

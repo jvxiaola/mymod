@@ -1079,12 +1079,8 @@ country_event = {
 	
 	option = {
 		name = prc1.58.o1
-	hidden_effect = {
-					add_stability = 0.10
-
-
-			}
-
+load_focus_tree = communsim_PRC_focus
+mark_focus_tree_layout_dirty = yes
 	set_country_flag = PRC_left_cpc		
 		}
 
@@ -1677,7 +1673,7 @@ set_variable = {
 						set_nationality = XIZ
 						}
 								
-			load_focus_tree = communsim_PRC_focus		
+			load_focus_tree = chi_civilwar_old_left	
 					start_civil_war = {
 						ideology = nationalist
 						size = 0.5
@@ -2654,6 +2650,13 @@ random_country={
 
 		NAJ = {
 
+every_state = {
+    limit = { is_core_of = CHI }
+    add_core_of = NAJ
+}
+
+
+country_event = {id=CHI_naj_civil.1 days = 60}
 					start_politics_input = yes
 					add_to_array = { ruling_party = 22 } 
 					set_variable = { party_pop_array^22 = 0.9 } 
@@ -2720,6 +2723,7 @@ random_country={
 
 		hidden_effect = {
 			DSC = {
+				set_rule = { can_receive_volunteers = no }
 				inherit_technology = CHI
 				set_variable = { gdp_capita = 90.415 }
 				set_variable = { gdp_per_capita = 3.415 }

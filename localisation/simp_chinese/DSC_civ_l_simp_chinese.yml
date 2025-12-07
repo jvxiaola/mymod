@@ -10,8 +10,8 @@
  DSC_resource_problems: "资源问题"
  DSC_resource_problems_desc: ""
 
- DSC_reduce_consumption_of_electricity: "减少电力消耗"
- DSC_reduce_consumption_of_electricity_desc: "我们需要减少电力的消耗，优先供应关键的企业"
+ DSC_reduce_consumptions: "减少消费品占比"
+ DSC_reduce_consumptions_desc: "我们需要减少电力的消耗，优先供应关键的企业"
 
  DSC_civ_for_front: "一切为了前线"
  DSC_civ_for_front_desc: ""
@@ -112,7 +112,7 @@
  DSC_supply_system: "供给制"
  DSC_supply_system_desc: "解放战争时期，部队主要依靠后方统一供给与地方筹措来维持作战，减少了市场依赖，提高了部队的持久作战能力。"
 
- millennium_dawn_reduce_power: "减少电力消耗"
+ millennium_dawn_reduce_power: "减少消费品占比"
  millennium_dawn_reduce_power_desc: "通过能源优化和工业改进，国家电力消耗按比例减少，提升整体效率。"
 
 

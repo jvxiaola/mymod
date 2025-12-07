@@ -2669,7 +2669,7 @@ prerequisite = {
 	}
 
 	focus = {
-		id = DSC_reduce_consumption_of_electricity
+		id = DSC_reduce_consumptions
 		icon = central_planned_economy
 		x = -4
 	
@@ -2947,7 +2947,7 @@ change_DSC_war_policies_dynamic6 = yes
 		cost = 1
 		relative_position_id = DSC_emergency_policies
 prerequisite = {
-	focus=DSC_reduce_consumption_of_electricity
+	focus=DSC_reduce_consumptions
 }
 		ai_will_do = {
 			factor = 10
@@ -3271,12 +3271,13 @@ prerequisite = {
 		}
 	}
 
+
 focus = {
-		id = DSC_military_mobilazation
+		id = DSC_open_the_stocked_weapons
 		icon = central_planned_economy
 		x = 4
 	
-		y = 2
+		y = 1
 	
 		cost = 1
 		relative_position_id = DSC_emergency_policies
@@ -3299,11 +3300,63 @@ prerequisite = {
 
 
 		completion_reward = {
+				add_equipment_to_stockpile = {
+					type = infantry_weapons1 #1975
+					amount = 90000
+				}
+			
+				add_equipment_to_stockpile = {
+					type = infantry_weapons2 #1995
+					amount = 7500
+				}
 
+				add_equipment_to_stockpile = {
+					type = medium_tank_chassis_1
+					amount = 800
+				}
+				add_equipment_to_stockpile = {
+					type = command_control_equipment1 #C3
+					amount = 2500
+				}
 		}
 	}
 
 
+
+
+focus = {
+		id = DSC_military_mobilazation
+		icon = central_planned_economy
+		x = 4
+	
+		y = 2
+	
+		cost = 1
+		relative_position_id = DSC_emergency_policies
+prerequisite = {
+	focus=DSC_open_the_stocked_weapons
+}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+
+		}
+	}
+
+#暂时还在隐藏状态
 focus = {
 
 		id = DSC_force_mobilazation
@@ -3634,4 +3687,41 @@ prerequisite = {
 
 		}
 	}
+
+
+
+	focus = {
+		id = DSC_zhengquan
+		icon = central_planned_economy
+		x = -12
+	
+		y = 0
+	
+		cost = 1
+		relative_position_id = DSC_emergency_policies
+prerequisite = {
+
+}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+		allow_branch = {
+		has_country_flag = test_DEP
+	}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+
+		}
+	}
+
 }

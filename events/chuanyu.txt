@@ -160,10 +160,10 @@ country_event = {
 		
 
 DSC={
-
-leave_faction = yes
 end_puppet=GUZ
 end_puppet=XIZ
+leave_faction = yes
+
 }
 
 set_capital = {
@@ -177,19 +177,7 @@ set_capital = {
 						NOT = { state =1226 }
 						}
 					set_cosmetic_tag = DSC_JGQ
-random_country = {
-	limit = {
-		OR={
-	has_cosmetic_tag = DSC_JGQ	
 
-		}	
-	}
-			create_faction_from_template = faction_template_CHENGDU_FACTION
-			add_to_faction = XIZ
-										add_to_faction = GUZ
-
-
-}
 	set_popularities = {
 		democratic = 0.0
 		communism = 0.0
@@ -893,7 +881,63 @@ Militia_Bat = { x = 1 y = 3 }
 		traits = {  well_known_mao the_hero_at_dusk }
 	}
 
+random_country = {
+	limit = {
 
+	has_cosmetic_tag = DSC_JGQ	
+
+		
+	}
+	division_template = {
+		name = "民兵部队"
+regiments = {
+Militia_Bat = { x = 0 y = 0 }
+Militia_Bat = { x = 0 y = 1 }
+Militia_Bat = { x = 0 y = 2 }
+Militia_Bat = { x = 0 y = 3 }
+Militia_Bat = { x = 1 y = 0 }
+Militia_Bat = { x = 1 y = 1 }
+Militia_Bat = { x = 1 y = 2 }
+Militia_Bat = { x = 1 y = 3 }
+
+		}
+	}
+			random_owned_controlled_state = {
+				prioritize = { 586 }
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = PREV
+					prioritize_location = 8026
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = PREV
+					prioritize_location = 4925
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = PREV
+					prioritize_location = 8026
+				}
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = PREV
+					prioritize_location = 4925
+				}
+
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = PREV
+					prioritize_location = 8026
+				}
+
+				create_unit = {
+					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = PREV
+					prioritize_location = 4925
+				}
+
+			}
+			create_faction_from_template = faction_template_CHENGDU_FACTION
+			add_to_faction = XIZ
+										add_to_faction = GUZ
+
+
+}
 			start_politics_input = yes
 			set_popularities = {
 				democratic = 0.0

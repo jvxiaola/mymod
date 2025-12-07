@@ -1,0 +1,107 @@
+# Author(s): BirdyBoi, Vadim, SKevin, Fire
+focus_tree = {
+	id = war_focus
+
+	#country = {
+	#	factor = 0
+	#	modifier = { original_tag =  add = 20 }
+	#}
+
+	continuous_focus_position = { x = 50 y = 1500 }
+
+
+
+	focus = {
+		id = CHI_war_start
+		icon = attack_talibanwww
+
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+
+		x = 5
+		y = 0
+
+		cost = 5
+
+		available = {
+			431={
+				is_controlled_by =  INM
+			}
+
+		}
+
+		bypass = {
+
+		}
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = unify_the_peasants
+		icon = attack_talibanwww
+
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+
+		x = 4
+		y = 1
+
+		cost = 5
+prerequisite = {
+	focus = CHI_war_start
+}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	focus = {
+		id = unify_the_workers
+		icon = attack_talibanwww
+
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+
+		x = 6
+		y = 1
+
+		cost = 5
+prerequisite = {
+	focus = CHI_war_start
+}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+}

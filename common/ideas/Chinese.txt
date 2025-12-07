@@ -1311,9 +1311,10 @@ ideas = {
 			conscription_factor = -0.15
 			political_power_gain = 0.1
 			experience_gain_army = -0.1
-			army_attack_factor = -0.10
-			army_defence_factor = 0.15 
+			army_attack_factor = -0.05
+			army_defence_factor = 0.10 
 			army_org_factor = -0.05
+			        surrender_limit = 0.60 
 		}
 	}
 #经济损伤
@@ -1616,9 +1617,10 @@ Industrial_rebuild_end = {
 			conscription_factor = -0.15
 			political_power_gain = 0.1
 			experience_gain_army = -0.1
-			army_attack_factor = -0.10
-			army_defence_factor = 0.15 
+			army_attack_factor = -0.05
+			army_defence_factor = 0.10 
 			army_org_factor = -0.05
+			        surrender_limit = 0.60 
 		}
 	}
 	CHI_No_guns_cannons_ask_enemy_for_us = {
