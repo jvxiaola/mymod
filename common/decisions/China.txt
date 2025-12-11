@@ -2121,7 +2121,36 @@ value = 0.05
 
 
 
+DSC_jingjijueyi = {
 
+	DSC_jingjiguoyouhua = {
+		icon = GFX_decision_generic_form_nation
+		available = {
+            check_variable = { DSC_total_nation_civ_factories < DSC_total_civ_factories }
+		}
+
+		cost=50
+		fire_only_once = yes
+		visible = {
+
+		}
+		custom_cost_trigger = {
+
+
+		}
+		days_remove = 10
+		remove_effect = {
+add_to_variable = {
+DSC_total_nation_civ_factories=1	
+}
+
+
+
+		}
+		}
+
+		 
+}
 
 
 

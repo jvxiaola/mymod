@@ -537,14 +537,10 @@ relative_position_id = DSC_people_armyI
 
 
 			ROOT={
-				add_equipment_to_stockpile = {
-					type = infantry_weapons1 #1975
-					amount = 9000
-				}
 			
 				add_equipment_to_stockpile = {
 					type = infantry_weapons3 #1995
-					amount = 750
+					amount = 10000
 				}
 
 				add_equipment_to_stockpile = {

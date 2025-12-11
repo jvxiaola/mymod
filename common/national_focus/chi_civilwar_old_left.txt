@@ -26,7 +26,7 @@
 		}
 
 		available = {
-has_civil_war = yes
+
 		}
 
 		bypass = {
@@ -40,7 +40,10 @@ select_effect = {
 
 }
 		completion_reward = {
-		remove_ideas = patry_fenlie
+			hidden_effect = {
+		remove_ideas = patry_fenlie				
+			}
+
 
 		}
 			
@@ -607,7 +610,7 @@ has_war = no		}
 		available_if_capitulated = no
 
 		completion_reward = {
-news_event = mdardchina_news.60		
+#news_event = mdardchina_news.60		
 hidden_effect = {		
 	set_cosmetic_tag = CHI_AUTH_S
 
@@ -719,8 +722,18 @@ remove_ideas = CHI_war_communism
 
 		available = {
 
-			DSC={exists = no}
-			NAJ={exists = no}
+				custom_trigger_tooltip = {
+					tooltip = "中国已重归一统"
+					GUZ = { exists = no }
+					XIN = { exists = no }
+					YUN = { exists = no }
+					JIL = { exists = no }
+					PRG = { exists = no }
+					NAJ = { exists = no }
+					XIZ = { exists = no }
+					MAC = { exists = no }
+					HKG = { exists = no }
+				}	
 
 		}
 
@@ -733,6 +746,34 @@ remove_ideas = CHI_war_communism
 		available_if_capitulated = no
 
 		completion_reward = {
+
+hidden_effect = {
+	every_state = {
+	limit = {
+		is_core_of = CHI
+				is_core_of = NKO
+	}
+				remove_core_of = NKO
+				transfer_state_to = CHI
+}
+
+			every_state = {
+				remove_core_of = NAJ
+				remove_core_of = DSC	
+				remove_core_of = XIN
+				remove_core_of = XIZ
+				remove_core_of = JIL
+				remove_core_of = YUN
+				remove_core_of = GUZ
+				remove_core_of = PRG
+
+			}
+}
+
+
+
+
+
 		remove_ideas = CHI_aftermath_of_the_civil_war_5
 		add_resource = { type = tungsten amount = 5 state = 572 }
 		add_resource = { type = aluminium amount = 8 state = 562 }

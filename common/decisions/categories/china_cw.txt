@@ -63,7 +63,21 @@ DSC_zuzhimaopai = {
 		has_country_flag = zuzhimaopai
 	}
 }
+DSC_jingjijueyi = {
+	priority = { base = 2000 }
+	allowed = { 
 
+	}
+
+
+
+		icon = GFX_decision_CUB_train_chi
+visible_when_empty = yes
+	visible = {
+
+		#has_country_flag = zuzhimaopai
+	}
+}
 
 CHI_CR_decisions = {
 

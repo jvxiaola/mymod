@@ -88,6 +88,15 @@
  NEP_youji: "游击状态"
  NEP_youji_desc: "在这个状态下，敌军很难击溃我军，当然，我军也很难击溃敌军"
 
+ DSC_Nationalize: "国有化"
+ DSC_Nationalize_desc: "国有化[?DSC_total_civ_factories] [?DSC_total_nation_civ_factories]"
+
+ DSC_jingjijueyi: "经济决议"
+ DSC_jingjiguoyouhua: "国有化工厂"
+
+ DSC_open_the_stocked_weapons: "解封封存武器"
+ DSC_open_the_stocked_weapons_desc: "川渝地区在三线工程时期封存的武器，随着革命胜利重新启用，用于装备新成立的革命部队。"
+
 
 #事件
  prc1.159: "异相"

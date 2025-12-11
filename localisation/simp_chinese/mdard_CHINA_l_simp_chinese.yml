@@ -540,7 +540,7 @@
  DSC_people_army_czzzx_desc: "历经革命战争的火与血，重获新生的人民解放军在残酷的国内阶级战争中成长为一只能打胜仗、作风优良的军队，“从战争中学习战争”，是一条宝贵经验。对此，毛泽东同志也有精辟论述：“读书是学习，使用也是学习，而且是更重要的学习。从战争中学习战争——这是我们的主要方法。”"
  DSC_people_army_zhbd: "整合部队"
  DSC_people_army_zhbd_desc: "在革命开始以后，我方接受了大量先前的投诚部队，加之各种各样的民兵、赤卫队的动员，使得我们的部队编制与指挥体系及其混乱。因此，我们将着手开始解决军队的编制问题以及重新构建高效灵活的指挥体系。确保每一支部队都能发挥其最大实力。"
- DSC_people_army_wuqizengjia: "列装武器"
+ DSC_people_army_wuqizengjia: "列装先进武器"
  DSC_people_army_wuqizengjia_desc: "通过战场缴获和先前对地方武器库的夺取以及与其他地区的势力的交易。我们获取了大量的军火装备，其中不乏当前阶段中国以及各国的高精尖装备。同时我们也将对部分装备进行逆向工程。而在已经解放的工业区，源源不断的武器将为我们淹没敌军最后的挣扎。"
  DSC_people_army_jsjj: "军事建军"
  DSC_people_army_jsjj_desc: "在现代战争中，武器与先进的战术理论是必不可少的核心要素之一。过去的无产阶级革命与暴动除了缺乏一定的正确理论，而且没有自己武器装备与之抗衡。因此，我们将着手为新生的人民解放军更新与补充先进武器，同时精简军队的编制和安排军队干部学习相关理论。打造一只可以担任全国解放任务的铁军！"
@@ -2183,10 +2183,18 @@
  people_amry: "人民解放军"
 
 
- DSC_QIYI: "接管政府"
+ DSC_QIYI: "§t革命胜利§!"
  DSC_QIYI_desc: "前军管区政府已经垮台，川渝正陷入无政府状态。接管并组建一个能正常运转的新地区政府，是我们遇到的第一个问题。"
- DSC_zuzhishengchan: "组织生产"
- DSC_zuzhishengchan_desc: "同志们！快快动起来！成功不会自己到来！城区的工厂，农村的水田，街边的商店，都还等着我们组织工作呢！"
+
+ DSC_zuzhishengchan: "组织政权"
+ DSC_zuzhishengchan_desc: "我们要重新组织原政权"
+
+ DSC_zuzhihuiyi: "党内会议"
+ DSC_zuzhihuiyi_desc: "胜利后，党开会"
+
+
+ #DSC_zuzhishengchan: "组织生产"
+ #DSC_zuzhishengchan_desc: "同志们！快快动起来！成功不会自己到来！城区的工厂，农村的水田，街边的商店，都还等着我们组织工作呢！"
 
  DSC_JIEFNQUANZHONGGUO: "宣称全中国"
  DSC_JIEFNQUANZHONGGUO_desc: "无产阶级将会拿回他们的国家"

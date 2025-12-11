@@ -198,7 +198,12 @@ millennium_dawn_reduce_power = {
 	}
 	}
 
+DSC_Nationalize={
+	enable = {always = yes}
+	icon = GFX_idea_CW_ruin
 
+
+}
 
 		USA_Anti_Communist_china_Jihad = {
 			picture = democracy
