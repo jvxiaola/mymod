@@ -75,7 +75,7 @@ DSC_jingjijueyi = {
 visible_when_empty = yes
 	visible = {
 
-		#has_country_flag = zuzhimaopai
+		has_country_flag = DSC_kaishiguoyouhua
 	}
 }
 

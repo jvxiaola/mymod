@@ -830,6 +830,7 @@ add_political_power = 100
 
 		completion_reward = {
 			add_political_power = 100
+			#set_country_flag = chuanyuzhengquan
 mark_focus_tree_layout_dirty = yes
 		}
 	}
@@ -838,7 +839,8 @@ mark_focus_tree_layout_dirty = yes
 
 	focus = {
 		id = DSC_zuzhihuiyi
-		icon = central_planned_economy
+		icon=communist_party_of_china_congress
+		#icon = central_planned_economy
 		x = 0
 		y = 1
 		prerequisite = {focus = DSC_QIYI}
@@ -3752,7 +3754,7 @@ prerequisite = {
 	
 		}
 		allow_branch = {
-			has_completed_focus = DSC_zuzhishengchan
+			has_country_flag = chuanyuzhengquan
 	}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3978,7 +3980,7 @@ focus = {
 
 
 		completion_reward = {
- 
+ set_country_flag = DSC_kaishiguoyouhua
 
 		}
 	}
