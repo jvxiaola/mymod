@@ -40,6 +40,11 @@ remove_ideas =  people_army1
 remove_ideas =  people_army2
 remove_ideas =  people_army3
 remove_ideas =  people_army4
+
+remove_ideas =  people_amry1
+remove_ideas =  people_amry2
+remove_ideas =  people_amry3
+
 remove_ideas =  red_weidui1
 remove_ideas =  red_army
 remove_ideas =  red_army1

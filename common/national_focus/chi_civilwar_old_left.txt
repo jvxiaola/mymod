@@ -492,7 +492,7 @@ relative_position_id = PRC_communist
 				recalculate_party = yes
 			}
 add_ideas = CHI_party_before_guns
-add_ideas = people_amry1
+add_ideas = people_army1
 remove_ideas = red_weidui1
 		}
 		}
@@ -533,9 +533,44 @@ focus = {
 					value = 0.05
 				}
 				recalculate_party = yes
-			}			swap_ideas = {		
-		remove_idea = people_amry1
-		add_idea = people_amry2 
+			}			
+			
+			
+		if={
+
+			limit = {
+				has_idea = people_army1
+			}
+			ROOT={
+swap_ideas = {
+	remove_idea = people_army1
+	add_idea = people_army2 
+}
+			}
+
+		}
+
+		else_if = {
+			limit = { 	has_idea = people_army2	}
+			ROOT={
+		swap_ideas = {
+			remove_idea = people_army2
+			add_idea = people_army3
+		}
+	}
+
+		}
+		else_if = {
+			limit = { 	has_idea = people_army3
+
+		}
+		ROOT={
+		swap_ideas = {
+			remove_idea = people_army3
+			add_idea = people_army4
+		}
+	}
+
 		}
 		}
 		}
@@ -577,9 +612,41 @@ focus = {
 				}
 				recalculate_party = yes
 			}
-			swap_ideas = {		
-		remove_idea = people_amry2
-		add_idea = people_amry3
+		if={
+
+			limit = {
+				has_idea = people_army1
+			}
+			ROOT={
+swap_ideas = {
+	remove_idea = people_army1
+	add_idea = people_army2 
+}
+			}
+
+		}
+
+		else_if = {
+			limit = { 	has_idea = people_army2	}
+			ROOT={
+		swap_ideas = {
+			remove_idea = people_army2
+			add_idea = people_army3
+		}
+	}
+
+		}
+		else_if = {
+			limit = { 	has_idea = people_army3
+
+		}
+		ROOT={
+		swap_ideas = {
+			remove_idea = people_army3
+			add_idea = people_army4
+		}
+	}
+
 		}
 		}
 		}

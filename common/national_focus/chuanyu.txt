@@ -760,7 +760,7 @@ custom_effect_tooltip = "解锁相关决议"
 
 		y = 0
 
-		cost = 5
+		cost = 1
 
 		prerequisite = {
 
@@ -810,7 +810,7 @@ add_political_power = 100
 			 }
 
 
-		cost = 3
+		cost = 1
 
 		ai_will_do = {
 			factor = 5
@@ -830,7 +830,7 @@ add_political_power = 100
 
 		completion_reward = {
 			add_political_power = 100
-			#set_country_flag = chuanyuzhengquan
+			set_country_flag = chuanyuzhengquan
 mark_focus_tree_layout_dirty = yes
 		}
 	}
@@ -846,7 +846,7 @@ mark_focus_tree_layout_dirty = yes
 		prerequisite = {focus = DSC_QIYI}
 
 
-		cost = 3
+		cost = 1
 
 		ai_will_do = {
 			factor = 5
@@ -3017,7 +3017,7 @@ change_DSC_war_policies_dynamic23 = yes
 
 	focus = {
 		id = DSC_democracy_in_factory
-		icon = central_planned_economy
+		icon = encourage_civic_groups
 		x = -5
 	
 		y = 5
@@ -3063,7 +3063,7 @@ mutually_exclusive = {
 
 	focus = {
 		id = DSC_empower_Workers
-		icon = central_planned_economy
+		icon = proletarian_vanguard_party
 		x = -5
 	
 		y = 6
@@ -3107,7 +3107,7 @@ prerequisite = {
 
 	focus = {
 		id = DSC_Strict_labor_discipline
-		icon = central_planned_economy
+		icon = PRC_make_ammunition
 		x = -3
 	
 		y = 6
@@ -3152,7 +3152,7 @@ prerequisite = {
 
 		focus = {
 		id = DSC_one_leader
-		icon = central_planned_economy
+		icon = planning_committee
 		x = -3
 	
 		y = 5
@@ -3196,7 +3196,7 @@ mutually_exclusive = {
 	}
 		focus = {
 		id = DSC_cease_free_trade
-		icon = central_planned_economy
+		icon = Believe_in_market_economy
 		x = -1
 	
 		y = 3
@@ -3241,7 +3241,7 @@ change_DSC_war_policies_dynamic4 = yes       # 消费品工厂需求 -2%
 
 	focus = {
 		id = DSC_crack_down_on_speculation
-		icon = central_planned_economy
+		icon = Market_socialism
 		x = 1
 	
 		y = 3
@@ -3319,7 +3319,7 @@ prerequisite = {
 
 focus = {
 		id = DSC_open_the_stocked_weapons
-		icon = central_planned_economy
+		icon = PRC_equipment_for_soldiers
 		x = 4
 	
 		y = 1
@@ -3371,7 +3371,7 @@ prerequisite = {
 
 focus = {
 		id = DSC_military_mobilazation
-		icon = central_planned_economy
+		icon = PRC_red_army
 		x = 4
 	
 		y = 2
@@ -3405,7 +3405,7 @@ prerequisite = {
 focus = {
 
 		id = DSC_force_mobilazation
-		icon = central_planned_economy
+		icon = PRC_confiscation_of_private_merchant_ships
 		x = 3
 	
 		y = 4
@@ -3736,8 +3736,8 @@ prerequisite = {
 
 
 	focus = {
-		id = DSC_zhengquan
-		icon = central_planned_economy
+		id = DSC_establish_regime
+		icon = transitional_phase
 		x = -19
 	
 		y = 0
@@ -3769,17 +3769,128 @@ prerequisite = {
 		}
 	}
 
+
 	focus = {
-		id = DSC_start_war_system
-		icon = central_planned_economy
-		x = 1
+		id = DSC_build_central_organs
+		icon = Politburo_of_Communist_Party
+		x = -19
 	
 		y = 1
 	
 		cost = 1
-		relative_position_id = DSC_zhengquan
+		relative_position_id = DSC_emergency_policies
 prerequisite = {
-focus = DSC_zhengquan
+focus = DSC_establish_regime
+}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+		allow_branch = {
+			has_country_flag = chuanyuzhengquan
+	}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+
+		}
+	}
+
+
+
+	focus = {
+		id = DSC_build_judicial_security_system
+		icon = Reorganization_of_Central_Special_Branch
+		x = -19
+	
+		y = 2
+	
+		cost = 1
+		relative_position_id = DSC_emergency_policies
+prerequisite = {
+focus = DSC_build_central_organs
+}
+
+
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+		allow_branch = {
+			has_country_flag = chuanyuzhengquan
+	}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = DSC_connect_to_grassroots_civil_servants
+		icon = CPCchinese
+		x = -19
+	
+		y = 3
+	
+		cost = 1
+		relative_position_id = DSC_emergency_policies
+prerequisite = {
+focus = DSC_build_judicial_security_system
+}
+
+
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+		allow_branch = {
+			has_country_flag = chuanyuzhengquan
+	}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = DSC_start_war_system
+		icon = Chinese_military_government
+		x = 1
+	
+		y = 4
+	
+		cost = 1
+		relative_position_id = DSC_establish_regime
+prerequisite = {
+focus =  DSC_connect_to_grassroots_civil_servants
 }
 		ai_will_do = {
 			factor = 10
@@ -3806,15 +3917,15 @@ mark_focus_tree_layout_dirty = yes
 
 	focus = {
 		id = DSC_start_economic_transformation
-		icon = central_planned_economy
+		icon = planned_economy
 		x = -1
 	
-		y = 1
+		y = 4
 	
 		cost = 1
-		relative_position_id = DSC_zhengquan
+		relative_position_id = DSC_establish_regime
 prerequisite = {
-focus = DSC_zhengquan
+focus = DSC_connect_to_grassroots_civil_servants
 }
 		ai_will_do = {
 			factor = 10
@@ -3843,7 +3954,7 @@ mark_focus_tree_layout_dirty = yes
 
 focus = {
 		id = DSC_economic_transformation
-		icon = full_nationalization
+		icon = planning_committee
 		x = 1
 	
 		y = 0
@@ -3881,7 +3992,7 @@ set_variable = { DSC_total_nation_civ_factories = 0 }
 
 focus = {
 		id = DSC_Agricultural_change
-		icon = full_nationalization
+		icon = Cooperation_between_workers_peasants
 		x = 0
 	
 		y = 1
@@ -3914,21 +4025,21 @@ focus = {
 		}
 	}
 
-focus = {
-		id = DSC_people_Livelihood
-		icon = full_nationalization
-		x = -2
+
+	focus = {
+		id = DSC_Agricultural_cooperation
+		icon = CPC_agricultural_cooperative
+		x = 0
 	
-		y = 1
+		y = 3
 	
 		cost = 1
 
-
+		prerequisite = {
+			focus=DSC_Agricultural_change
+		}
 		ai_will_do = {
 			factor = 10
-		}
-		prerequisite = {
-			focus=DSC_economic_transformation
 		}
 		bypass = {
 	
@@ -3950,10 +4061,95 @@ focus = {
 		}
 	}
 
+
+focus = {
+		id = DSC_market_policies
+		icon = Mixed_economy
+		x = 2
+	
+		y = 4
+	
+		cost = 1
+
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus=DSC_Agricultural_cooperation
+		}
+
+		prerequisite = {
+			focus=DSC_industrial_transformation
+		}
+
+		prerequisite = {
+			focus=DSC_financial_control
+		}
+
+
+
+		bypass = {
+	
+		}
+		allow_branch = {
+		has_completed_focus = DSC_start_economic_transformation
+	}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+ 
+
+		}
+	}
+
+focus = {
+		id = DSC_people_coupon
+		icon = socialism_welfare
+		x = 2
+	
+		y = 5
+	
+		cost = 1
+
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus=DSC_market_policies
+		}
+		bypass = {
+	
+		}
+		allow_branch = {
+		has_completed_focus = DSC_start_economic_transformation
+	}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+ 
+
+		}
+	}
+
+
 focus = {
 		id = DSC_industrial_transformation
 		icon = full_nationalization
-		x = 2
+		x = 3
 	
 		y = 1
 	
@@ -3986,16 +4182,89 @@ focus = {
 	}
 
 focus = {
-		id = DSC_financial_transformation
-		icon = full_nationalization
-		x = 4
+		id = DSC_Nationalize_key_industries
+		icon = rapid_industrialization
+		x = 2
 	
-		y = 1
+		y = 2
 	
 		cost = 1
 
 		prerequisite = {
-			focus=DSC_economic_transformation
+			focus=DSC_industrial_transformation
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+		allow_branch = {
+		has_completed_focus = DSC_start_economic_transformation
+	}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+ set_country_flag = DSC_kaishiguoyouhua
+
+		}
+	}
+
+focus = {
+		id = DSC_Nationalize_factories
+		
+		icon = Socialist_primitive_accumulation
+		x = 2
+	
+		y = 3
+	
+		cost = 1
+
+		prerequisite = {
+			focus=DSC_industrial_transformation
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+		allow_branch = {
+		has_completed_focus = DSC_start_economic_transformation
+	}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+ set_country_flag = DSC_kaishiguoyouhua
+
+		}
+	}
+
+
+
+focus = {
+		id = DSC_financial_control
+		icon = Pay_attention_to_production
+		x = 4
+	
+		y = 3
+	
+		cost = 1
+
+		prerequisite = {
+			focus=DSC_industrial_transformation
 		}
 		ai_will_do = {
 			factor = 10
@@ -4019,5 +4288,8 @@ focus = {
 
 		}
 	}
+
+
+
 
 }

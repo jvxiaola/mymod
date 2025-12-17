@@ -529,7 +529,42 @@
  PRC_gjjhwth: "尘埃落定"
  PRC_gjjhwth_desc: "战火的硝烟逐渐散去，纷乱的局面终于迎来终结。随着革命取得最终胜利，我们可以开始思考国家的重建与新的未来。"
 
+ DSC_establish_regime: "宣布建立政权"
+ DSC_establish_regime_desc: "宣布建立政权"
 
+ DSC_build_central_organs: "建立中央指挥系统"
+ DSC_build_central_organs_desc: "建立中央指挥系统"
+
+ DSC_build_judicial_security_system: "接管公检法系统"
+ DSC_build_judicial_security_system_desc: ""
+
+ DSC_start_economic_transformation: "开始经济转化"
+ DSC_start_economic_transformation_desc: ""
+
+ DSC_connect_to_grassroots_civil_servants: "接收旧的公务员"
+ DSC_connect_to_grassroots_civil_servants_desc: "接收旧的公务员"
+
+ DSC_start_war_system: "战时状态"
+ DSC_start_war_system_desc: ""
+
+ DSC_economic_transformation: "经济改造"
+ DSC_economic_transformation_desc: "经济改造"
+ DSC_Agricultural_change: "农业改造"
+ DSC_Agricultural_change_desc: "农业改造"
+ DSC_industrial_transformation: "工业改造"
+ DSC_industrial_transformation_desc: "工业改造"
+ DSC_Nationalize_key_industries: "国有化关键工业"
+ DSC_Nationalize_key_industries_desc: "国有化关键工业"
+ DSC_Agricultural_cooperation: "农业合作社"
+ DSC_Agricultural_cooperation_desc: "农业合作社"
+ DSC_Nationalize_factories: "更彻底的国有化"
+ DSC_Nationalize_factories_desc: "更彻底的国有化"
+ DSC_financial_control: "金融管控"
+ DSC_financial_control_desc: "金融管控"
+ DSC_market_policies: "市场政策"
+ DSC_market_policies_desc: "市场政策"
+ DSC_people_coupon: "凭票供应"
+ DSC_people_coupon_desc: "凭票供应"
  DSC_DSC_civ_start: "打响第一枪"
  DSC_DSC_civ_start_desc: "几十年前，阿芙乐尔号巡洋舰的一声炮响为俄国人民轰开了十月革命的浪潮。1927年毛泽东同志领导下的秋收起义打开了中国轰轰烈烈几十年伟大革命征程。今天，在毛远新同志的领导下，整合了川渝地区马列毛主义革命的队伍将打响反对暴政的军政府，开启解放全国的伟大征程！"
  DSC_people_army_zzjj: "政治建军"

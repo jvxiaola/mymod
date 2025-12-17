@@ -40,7 +40,12 @@ joint_trigger = {
 			}	
 		}
 	}
-
+offset = {
+	x=2
+	trigger = {
+		has_country_flag=chuanyuzhengquan
+	}
+}
 	offset = {
 		x = -20
 		trigger = { tag = CHI }
@@ -507,7 +512,8 @@ ROOT={
 
 joint_focus = {
 	id = DSC_people_army_wuqizengjia
-	icon = PRC_equipment_for_soldiers
+	#icon = PRC_equipment_for_soldiers
+	icon = PRC_lessons_from_Type_99
 	x = 3
 
 	y = 2
