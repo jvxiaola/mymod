@@ -72,7 +72,23 @@ defined_text = {
 
 
 
+defined_text = {
+	name = Revolution_name
 
+		text = {
+		trigger={
+			NOT={has_country_flag=jixugeming}
+		}
+			localization_key = DSC_gmrq
+		}
+
+				text = {
+		trigger={
+			has_country_flag=jixugeming
+		}
+			localization_key = DSC_jxgm
+		}
+}
 
 
 

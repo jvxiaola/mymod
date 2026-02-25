@@ -228,17 +228,17 @@ country_event = {
 		hidden_effect = {
 			591 = { transfer_state_to = XIN }
 			592 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack2 } }
-			1215 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack5 } }
-			1216 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack5 } }
-			1217 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack4 } }
-			1218 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack1 } }
-			1219 = { transfer_state_to = XIN }
-			1220 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack3} }
-			1221 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack5} }
-			1222 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack2} }
-			1223 = { transfer_state_to = XIN }
-			1224 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack1} }
-			1225 = { transfer_state_to = XIN }
+			1222 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack5 } }
+			1223 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack5 } }
+			1224 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack4 } }
+			1225 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack1 } }
+			1226 = { transfer_state_to = XIN }
+			1227 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack3} }
+			1228 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack5} }
+			1229 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack2} }
+			1230 = { transfer_state_to = XIN }
+			1231 = { transfer_state_to = XIN add_dynamic_modifier = { modifier = extrameal_islam_attack1} }
+			1232 = { transfer_state_to = XIN }
 
 
 
@@ -544,10 +544,10 @@ declare_war_on = {
 			
 			}
 
-	transfer_state = 1222
+	transfer_state = 1229
 
 				random_owned_controlled_state = {
-				prioritize = { 1222 }
+				prioritize = { 1229 }
 				create_unit = {
 					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = ETK
 					prioritize_location = 12864
@@ -565,7 +565,7 @@ declare_war_on = {
 			
 			}
 XIN={
-	transfer_state = 1222
+	transfer_state = 1229
 }
 
 } 

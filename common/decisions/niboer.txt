@@ -46,6 +46,9 @@ npm_war_policies = {
 
 		npm_rmghg = {
 		#icon = GFX_decision_minotor_button
+		ai_will_do = {
+			factor = 100
+		}
 		visible = {
 			NOT={has_cosmetic_tag = niboer_rmghg}	
 			tag=NPM
@@ -68,8 +71,6 @@ npm_war_policies = {
 				clr_country_flag = dynamic_flag
 	clr_country_flag = dynamic_rebel_flag
 		}
-		ai_will_do = {
-			factor = 0
-		}
+
 	}
 }

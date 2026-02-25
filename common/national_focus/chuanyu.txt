@@ -1,4 +1,5 @@
 #!gfx:interface\mdard_goals.gfx
+#!gfx:interface\PRC_goals.gfx
 #!gfx:interface\krc_goals.gfx
 focus_tree = {
 	id = DSC_focus
@@ -756,7 +757,7 @@ custom_effect_tooltip = "解锁相关决议"
 	focus = {
 		id = DSC_QIYI
 		icon = communist_factories
-		x = 7
+		x = 4
 
 		y = 0
 
@@ -878,9 +879,9 @@ mark_focus_tree_layout_dirty = yes
 			icon = PRC_Second_time_going_to_the_countryside
 			x = 1
 			y = 2
-						 			 prerequisite = {
+			prerequisite = {
 				focus = DSC_zuzhihuiyi
-			 }
+			}
 	
 	
 			cost = 3
@@ -964,26 +965,7 @@ Armor_Bat = { x = 1 y = 2 }
 
 			random_owned_controlled_state = {
 				prioritize = { 583 }
-				create_unit = {
-					division = "division_template = \"解放军机械化部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
-					prioritize_location = 6999
-				}
-				create_unit = {
-					division = "division_template = \"解放军机械化部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
-					prioritize_location = 6999
-				}
-				create_unit = {
-					division = "division_template = \"解放军机械化部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
-					prioritize_location = 6999
-				}
-				create_unit = {
-					division = "division_template = \"解放军机械化部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
-					prioritize_location = 6999
-				}
-				create_unit = {
-					division = "division_template = \"解放军机械化部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
-					prioritize_location = 6999
-				}
+		
 				create_unit = {
 					division = "division_template = \"解放军机械化部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 					prioritize_location = 6999
@@ -1010,65 +992,7 @@ Armor_Bat = { x = 1 y = 2 }
 					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 					prioritize_location = 6999
 				}
-				create_unit = {
-					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
-					prioritize_location = 6999
-				}
-
-				create_unit = {
-					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
-					prioritize_location = 6999
-				}
-				create_unit = {
-					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
-					prioritize_location = 6999
-				}
-				create_unit = {
-					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
-					prioritize_location = 6999
-				}
-				create_unit = {
-					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
-					prioritize_location = 6999
-				}
-				create_unit = {
-					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
-					prioritize_location = 6999
-				}
-				create_unit = {
-					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
-					prioritize_location = 6999
-				}
-				create_unit = {
-					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
-					prioritize_location = 6999
-				}
-				create_unit = {
-					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
-					prioritize_location = 6999
-				}
-				create_unit = {
-					division = "division_template = \"民兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
-					prioritize_location = 6999
-				}
-				create_unit = {
-					division = "division_template = \"解放军步兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
-					prioritize_location = 4925
-				}
-				create_unit = {
-					division = "division_template = \"解放军步兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
-					prioritize_location = 4925
-				}
-				create_unit = {
-					division = "division_template = \"解放军步兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
-					prioritize_location = 4925
-				}
-
-
-				create_unit = {
-					division = "division_template = \"解放军步兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
-					prioritize_location = 4925
-				}
+	
 				create_unit = {
 					division = "division_template = \"解放军步兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 					prioritize_location = 4925
@@ -1094,10 +1018,7 @@ Armor_Bat = { x = 1 y = 2 }
 					division = "division_template = \"解放军步兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
 					prioritize_location = 4925
 				}
-				create_unit = {
-					division = "division_template = \"解放军步兵部队\" start_experience_factor = 0.1	start_equipment_factor = 1"					owner = DSC
-					prioritize_location = 4925
-				}
+
 	
 								}
 
@@ -1213,17 +1134,17 @@ Armor_Bat = { x = 1 y = 2 }
 					add_state_core = 1106
 					add_state_core = 591
 					add_state_core = 592
-					add_state_core = 1215
-					add_state_core = 1216
-					add_state_core = 1217
-					add_state_core = 1218
-					add_state_core = 1219
-					add_state_core = 1220
-					add_state_core = 1221
 					add_state_core = 1222
 					add_state_core = 1223
 					add_state_core = 1224
 					add_state_core = 1225
+					add_state_core = 1226
+					add_state_core = 1227
+					add_state_core = 1228
+					add_state_core = 1229
+					add_state_core = 1230
+					add_state_core = 1231
+					add_state_core = 1232
 					}
 				}
 			}
@@ -1527,10 +1448,10 @@ Armor_Bat = { x = 1 y = 2 }
 if = {
 	limit = {
 		NKO = {
-			controls_state = 1236
+			controls_state = 1243
 		}
 	}
-transfer_state = 1236
+transfer_state = 1243
 }
 		if = {
 			limit = { country_exists = ETK }
@@ -2577,8 +2498,8 @@ completion_reward = {
 
 	focus = {
 		id = DSC_emergency_policies
-		icon = central_planned_economy
-		x = 30
+		icon = CPC_trust
+		x = 31
 	
 		y = 0
 	
@@ -2596,18 +2517,17 @@ completion_reward = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		available = {
-
-		}
+available = {
+check_variable = {DSC_nationalized_civ_ratio >0.6}
+custom_trigger_tooltip= {tooltip="国有化比例大于60%"}
+}
 
 
 		completion_reward = {
-			        # 政治与稳定
+
         set_variable = { DSC_war_policies_dynamic1 = 0.0 }
         set_variable = { DSC_war_policies_dynamic2 = 0.0 }
         set_variable = { DSC_war_policies_dynamic3 = 0.0 }
-
-        # 经济与工业
         set_variable = { DSC_war_policies_dynamic4 = 0.0 }
         set_variable = { DSC_war_policies_dynamic5 = 0.0 }
         set_variable = { DSC_war_policies_dynamic6 = 0.0 }
@@ -2615,34 +2535,62 @@ completion_reward = {
         set_variable = { DSC_war_policies_dynamic8 = 0.0 }
         set_variable = { DSC_war_policies_dynamic9 = 0.0 }
         set_variable = { DSC_war_policies_dynamic10 = 0.0 }
-
-        # 农业与资源
         set_variable = { DSC_war_policies_dynamic11 = 0.0 }
         set_variable = { DSC_war_policies_dynamic12 = 0.0 }
         set_variable = { DSC_war_policies_dynamic13 = 0.0 }
         set_variable = { DSC_war_policies_dynamic14 = 0.0 }
-
-        # 军事优先
         set_variable = { DSC_war_policies_dynamic15 = 0.0 }
         set_variable = { DSC_war_policies_dynamic16 = 0.0 }
         set_variable = { DSC_war_policies_dynamic17 = 0.0 }
         set_variable = { DSC_war_policies_dynamic18 = 0.0 }
         set_variable = { DSC_war_policies_dynamic19 = 0.0 }
-
-        # 镇压与社会控制
         set_variable = { DSC_war_policies_dynamic20 = 0.0 }
         set_variable = { DSC_war_policies_dynamic21 = 0.0 }
         set_variable = { DSC_war_policies_dynamic22 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic23 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic24 = 0.0 }
+
+        set_variable = { DSC_war_policies_dynamic25_1 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic25_2 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic25_3 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic25_4 = 0.0 }
+
+
+        set_variable = { DSC_war_policies_dynamic26 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic27 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic28 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic29 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic30 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic31 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic32 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic33 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic34 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic35 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic36 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic37 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic38 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic39 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic40 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic41 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic42 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic43 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic44 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic45 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic46 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic47 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic48 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic49 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic50 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic51 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic52 = 0.0 }
+        set_variable = { DSC_war_policies_dynamic53 = 0.0 }
 
 
 
 
 
-
-		        set_variable = { DSC_war_policies_dynamic23 = 0.0 }
         add_dynamic_modifier = {
-            modifier = DSC_war_policies
-            scope = DSC
+            modifier = DSC_war_policies_dynamic
         }
 		}
 	}
@@ -2650,7 +2598,7 @@ completion_reward = {
 
 
 	focus = {
-		id = DSC_Nationalize_industries
+		id = DSC_transform_industries
 		icon = full_nationalization
 		x = -4
 	
@@ -2682,10 +2630,10 @@ prerequisite = {
 	}
 	focus = {
 		id = DSC_resource_problems
-		icon = central_planned_economy
+		icon = PRC_the_farmers
 		x = -0
 	
-		y = 4
+		y = 3
 	
 		cost = 1
 		relative_position_id = DSC_emergency_policies
@@ -2709,21 +2657,24 @@ prerequisite = {
 
 
 		completion_reward = {
-
+add_political_power = 100
 		}
 	}
 
 	focus = {
-		id = DSC_reduce_consumptions
-		icon = central_planned_economy
-		x = -4
+		id = DSC_honer_of_working
+		icon = proletarian_hegemony
+		x = -5
 	
 		y = 3
 	
 		cost = 1
+		mutually_exclusive = {
+			focus = DSC_duty_of_working
+		}
 		relative_position_id = DSC_emergency_policies
 prerequisite = {
-	focus=DSC_Nationalize_industries
+	focus=DSC_reduce_consumptions
 }
 		ai_will_do = {
 			factor = 10
@@ -2741,16 +2692,246 @@ prerequisite = {
 
 
 		completion_reward = {
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.03 }
-change_DSC_war_policies_dynamic23 = yes
+# 每周动员人口 ↑（工人直接进入战争体系）
+set_temp_variable = { temp_DSC_war_policies_dynamic37 = 0.03 }
+change_DSC_war_policies_dynamic37 = yes
+
+# 战争支持率 ↑（阶级动员叙事）
+set_temp_variable = { temp_DSC_war_policies_dynamic2 = 0.04 }
+change_DSC_war_policies_dynamic2 = yes
+
+# 工厂效率增长速度 ↑（高度动员状态）
+set_temp_variable = { temp_DSC_war_policies_dynamic18 = 0.04 }
+change_DSC_war_policies_dynamic18 = yes
+
+# 总劳动力规模 ↓（过度动员导致结构性紧张）
+set_temp_variable = { temp_DSC_war_policies_dynamic26 = -0.02 }
+change_DSC_war_policies_dynamic26 = yes
+
+# 稳定度 ↓（家庭、民生被牺牲）
+set_temp_variable = { temp_DSC_war_policies_dynamic1 = -0.02 }
+change_DSC_war_policies_dynamic1 = yes
+
 		}
 	}
+
+
+	focus = {
+		id = DSC_duty_of_working
+		icon = efficiency_is_life
+		x = -3
+	
+		y = 3
+	
+		cost = 1
+				mutually_exclusive = {
+			focus = DSC_honer_of_working
+		}
+		relative_position_id = DSC_emergency_policies
+prerequisite = {
+	focus=DSC_reduce_consumptions
+}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+# 工厂效率增长速度 ↑
+set_temp_variable = { temp_DSC_war_policies_dynamic18 = 0.05 }
+change_DSC_war_policies_dynamic18 = yes
+
+# 陆军组织度 ↑
+set_temp_variable = { temp_DSC_war_policies_dynamic44 = 0.03 }
+change_DSC_war_policies_dynamic44 = yes
+
+# 稳定度 ↓
+set_temp_variable = { temp_DSC_war_policies_dynamic1 = -0.02 }
+change_DSC_war_policies_dynamic1 = yes
+
+# 军工厂劳动需求 ↑
+set_temp_variable = { temp_DSC_war_policies_dynamic29 = 0.03 }
+change_DSC_war_policies_dynamic29 = yes
+
+		}
+	}
+
+
+	focus = {
+		id = DSC_reduce_consumptions
+		icon = PRC_balanced_development
+		x = -4
+	
+		y = 2
+	
+		cost = 1
+		relative_position_id = DSC_emergency_policies
+prerequisite = {
+	focus=DSC_transform_industries
+}
+
+
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+# 每周动员人口 ↑（工人直接进入战争体系）
+set_temp_variable = { temp_DSC_war_policies_dynamic37 = 0.03 }
+change_DSC_war_policies_dynamic37 = yes
+
+# 战争支持率 ↑（阶级动员叙事）
+set_temp_variable = { temp_DSC_war_policies_dynamic2 = 0.04 }
+change_DSC_war_policies_dynamic2 = yes
+
+# 工厂效率增长速度 ↑（高度动员状态）
+set_temp_variable = { temp_DSC_war_policies_dynamic18 = 0.04 }
+change_DSC_war_policies_dynamic18 = yes
+
+# 总劳动力规模 ↓（过度动员导致结构性紧张）
+set_temp_variable = { temp_DSC_war_policies_dynamic26 = -0.02 }
+change_DSC_war_policies_dynamic26 = yes
+
+# 稳定度 ↓（家庭、民生被牺牲）
+set_temp_variable = { temp_DSC_war_policies_dynamic1 = -0.02 }
+change_DSC_war_policies_dynamic1 = yes
+
+		}
+	}
+
+	focus = {
+		id = DSC_military_work
+		icon = blood_theory
+		x = -3
+	
+		y = 4
+	
+		cost = 1
+		relative_position_id = DSC_emergency_policies
+prerequisite = {
+	focus=DSC_duty_of_working
+}
+
+
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+# 工厂效率增长速度 ↑
+set_temp_variable = { temp_DSC_war_policies_dynamic18 = 0.05 }
+change_DSC_war_policies_dynamic18 = yes
+
+# 陆军组织度 ↑
+set_temp_variable = { temp_DSC_war_policies_dynamic44 = 0.03 }
+change_DSC_war_policies_dynamic44 = yes
+
+# 稳定度 ↓
+set_temp_variable = { temp_DSC_war_policies_dynamic1 = -0.02 }
+change_DSC_war_policies_dynamic1 = yes
+
+# 军工厂劳动需求 ↑
+set_temp_variable = { temp_DSC_war_policies_dynamic29 = 0.03 }
+change_DSC_war_policies_dynamic29 = yes
+
+
+		}
+	}
+
+	focus = {
+		id = DSC_political_propaganda
+		icon = Political_consultation
+		x = -5
+	
+		y = 4
+	
+		cost = 1
+		relative_position_id = DSC_emergency_policies
+prerequisite = {
+	focus=DSC_honer_of_working
+}
+
+
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+# 战争支持率 ↑（意识形态与政治号召）
+set_temp_variable = { temp_DSC_war_policies_dynamic2 = 0.06 }
+change_DSC_war_policies_dynamic2 = yes
+
+# 政治点获取 ↑（高度政治化社会）
+set_temp_variable = { temp_DSC_war_policies_dynamic3 = 0.04 }
+change_DSC_war_policies_dynamic3 = yes
+
+# 稳定度 ↑（共识型动员）
+set_temp_variable = { temp_DSC_war_policies_dynamic1 = 0.03 }
+change_DSC_war_policies_dynamic1 = yes
+
+# 共产主义倾向 ↑（阶级/政治叙事主导）
+set_temp_variable = { temp_DSC_war_policies_dynamic5 = 0.04 }
+change_DSC_war_policies_dynamic5 = yes
+
+# 公安维稳成本 ↑（政治高压的隐性代价）
+set_temp_variable = { temp_DSC_war_policies_dynamic32 = 0.02 }
+change_DSC_war_policies_dynamic32 = yes
+
+		}
+	}
+
 		focus = {
 		id = DSC_Food_Appropriation_System
-		icon = central_planned_economy
+		icon = PRC_abolition_of_the_hukou
 		x = 1
 	
-		y = 5
+		y = 4
 	
 		cost = 1
 		relative_position_id = DSC_emergency_policies
@@ -2775,31 +2956,32 @@ prerequisite = {
 
 
 		completion_reward = {
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.05 }  
-change_DSC_war_policies_dynamic13 = yes        # 陆军燃料消耗减少 5%
-set_temp_variable = { temp_DSC_war_policies_dynamic = 100 }  
-change_DSC_war_policies_dynamic14 = yes        # 每周人力 +100
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.03 }  
-change_DSC_war_policies_dynamic5 = yes         # 工厂产出 +3%
-change_DSC_war_policies_dynamic6 = yes         # 造船厂产出 +3%
+# 补给消耗 ↓（供给效率提升）
+set_temp_variable = { temp_DSC_war_policies_dynamic41 = -0.05 }
+change_DSC_war_policies_dynamic41 = yes
 
-# 缺点
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.08 }  
-change_DSC_war_policies_dynamic1 = yes         # 政治稳定下降 8%
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }  
-change_DSC_war_policies_dynamic20 = yes        # 占领地抵抗增长 +5%
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.03 }  
-change_DSC_war_policies_dynamic2 = yes         # 战争支持下降 3%
+# 每周动员人口 ↑（城市/军队保障）
+set_temp_variable = { temp_DSC_war_policies_dynamic37 = 0.02 }
+change_DSC_war_policies_dynamic37 = yes
+
+# 稳定度 ↓
+set_temp_variable = { temp_DSC_war_policies_dynamic1 = -0.04 }
+change_DSC_war_policies_dynamic1 = yes
+
+# 公安维稳成本 ↑（征粮冲突）
+set_temp_variable = { temp_DSC_war_policies_dynamic32 = 0.03 }
+change_DSC_war_policies_dynamic32 = yes
+
 		}
 	}
 
 	
 		focus = {
 		id = DSC_additional_Agricultural_tex
-		icon = central_planned_economy
+		icon = Cooperation_between_workers_peasants
 		x = -1
 	
-		y = 5
+		y = 4
 	
 		cost = 1
 		relative_position_id = DSC_emergency_policies
@@ -2824,104 +3006,36 @@ prerequisite = {
 
 
 		completion_reward = {
-### 全面动员
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.10 }   # 稳定 -10%
+# 本地资源产量 ↑（粮食/农业剩余集中）
+set_temp_variable = { temp_DSC_war_policies_dynamic23 = 0.04 }
+change_DSC_war_policies_dynamic23 = yes
+
+# 稳定度 ↓（农村不满）
+set_temp_variable = { temp_DSC_war_policies_dynamic1 = -0.03 }
 change_DSC_war_policies_dynamic1 = yes
 
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.30 }    # 战争支持 +30%
-change_DSC_war_policies_dynamic2 = yes
+# 每月人口增长 ↓（农业透支）
+set_temp_variable = { temp_DSC_war_policies_dynamic38 = -0.02 }
+change_DSC_war_policies_dynamic38 = yes
 
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.05 }   # 政治点 -5%
-change_DSC_war_policies_dynamic3 = yes
+# 官僚体系成本 ↑
+set_temp_variable = { temp_DSC_war_policies_dynamic31 = 0.02 }
+change_DSC_war_policies_dynamic31 = yes
 
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }    # 民需工厂 +5%
-change_DSC_war_policies_dynamic4 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.10 }    # 工厂产能 +10%
-change_DSC_war_policies_dynamic5 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.10 }    # 建筑速度 +10%
-change_DSC_war_policies_dynamic9 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.01 }    # 每周人力 +1000
-change_DSC_war_policies_dynamic14 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.10 }    # 耗电 +10%
-change_DSC_war_policies_dynamic23 = yes
 
 		}
 	}
 
 	
-		focus = {
-		id = DSC_Grain_Allocation_System
-		icon = central_planned_economy
-		x = -1
 	
-		y = 6
-	
-		cost = 1
-		relative_position_id = DSC_emergency_policies
-prerequisite = {
-	focus=DSC_additional_Agricultural_tex
-		focus=DSC_Food_Appropriation_System
-}
-		ai_will_do = {
-			factor = 10
-		}
-		bypass = {
-	
-		}
-			mutually_exclusive = {
-			focus=DSC_Supply_System
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		available = {
-
-		}
-
-
-		completion_reward = {
-### 全民军事训练
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.05 }   # 稳定 -5%
-change_DSC_war_policies_dynamic1 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.15 }    # 战争支持 +15%
-change_DSC_war_policies_dynamic2 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.05 }   # 政治点 -5%
-change_DSC_war_policies_dynamic3 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.02 }    # 民需工厂 +2%
-change_DSC_war_policies_dynamic4 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.02 }    # 每周人力 +2000
-change_DSC_war_policies_dynamic14 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }    # 组织度 +5%
-change_DSC_war_policies_dynamic17 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }    # 攻击 +5%
-change_DSC_war_policies_dynamic15 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }    # 防御 +5%
-change_DSC_war_policies_dynamic16 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }    # 耗电 +5%
-change_DSC_war_policies_dynamic23 = yes
-
-		}
-	}
 
 
 			focus = {
 		id = DSC_Supply_System
-		icon = central_planned_economy
-		x = 1
+		icon = market_planned_economy
+		x = 0
 	
-		y = 6
+		y = 5
 	
 		cost = 1
 		relative_position_id = DSC_emergency_policies
@@ -2949,51 +3063,42 @@ prerequisite = {
 		}
 
 		completion_reward = {
-# 优点
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }
+# 稳定度 ↑（基本生活保障，社会预期稳定）
+set_temp_variable = { temp_DSC_war_policies_dynamic1 = 0.05 }
 change_DSC_war_policies_dynamic1 = yes
-change_DSC_war_policies_dynamic2 = yes
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.02 }
-change_DSC_war_policies_dynamic3 = yes
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }
-change_DSC_war_policies_dynamic11 = yes
-set_temp_variable = { temp_DSC_war_policies_dynamic = 75 }
-change_DSC_war_policies_dynamic14 = yes
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.03 }
-change_DSC_war_policies_dynamic15 = yes
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.02 }
-change_DSC_war_policies_dynamic16 = yes
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }
-change_DSC_war_policies_dynamic17 = yes
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.03 }
-change_DSC_war_policies_dynamic18 = yes
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.05 }
-change_DSC_war_policies_dynamic20 = yes
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }
-change_DSC_war_policies_dynamic21 = yes
 
-# 缺点
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.08 }
-change_DSC_war_policies_dynamic12 = yes
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.05 }
-change_DSC_war_policies_dynamic5 = yes
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.10 }
-change_DSC_war_policies_dynamic6 = yes
+# 消费品比例 ↓（非市场化供给，压缩民用需求）
+set_temp_variable = { temp_DSC_war_policies_dynamic14 = -0.05 }
+change_DSC_war_policies_dynamic14 = yes
+
+# 战争支持率 ↑（供给绑定战争体制）
+set_temp_variable = { temp_DSC_war_policies_dynamic2 = 0.03 }
+change_DSC_war_policies_dynamic2 = yes
+
+# 官僚体系成本 ↑（配给、登记、分配系统）
+set_temp_variable = { temp_DSC_war_policies_dynamic31 = 0.04 }
+change_DSC_war_policies_dynamic31 = yes
+
+# 政治点获取 ↓（制度僵化，调整空间受限）
+set_temp_variable = { temp_DSC_war_policies_dynamic3 = -0.02 }
+change_DSC_war_policies_dynamic3 = yes
 
 		}
 	}
 	focus = {
-		id = DSC_start_the_industries
-		icon = central_planned_economy
+		id = DSC_Militarization_of_Civilian_Industry
+		icon = PRC_getting_rich_first
 		x = -4
 	
-		y = 4
+		y = 5
 	
 		cost = 1
 		relative_position_id = DSC_emergency_policies
 prerequisite = {
-	focus=DSC_reduce_consumptions
+	focus=DSC_political_propaganda
+	focus=DSC_military_work
 }
+
 		ai_will_do = {
 			factor = 10
 		}
@@ -3010,22 +3115,36 @@ prerequisite = {
 
 
 		completion_reward = {
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.03 }
-change_DSC_war_policies_dynamic23 = yes
+# 军工厂产能 ↑
+set_temp_variable = { temp_DSC_war_policies_dynamic16 = 0.05 }
+change_DSC_war_policies_dynamic16 = yes
+
+# 工厂效率增长速度 ↑
+set_temp_variable = { temp_DSC_war_policies_dynamic18 = 0.04 }
+change_DSC_war_policies_dynamic18 = yes
+
+# 民工厂劳动需求 ↑
+set_temp_variable = { temp_DSC_war_policies_dynamic28 = 0.03 }
+change_DSC_war_policies_dynamic28 = yes
+
+# 消费品比例 ↓
+set_temp_variable = { temp_DSC_war_policies_dynamic14 = -0.04 }
+change_DSC_war_policies_dynamic14 = yes
+
 		}
 	}
 
 	focus = {
 		id = DSC_democracy_in_factory
 		icon = encourage_civic_groups
-		x = -5
+		x = -3
 	
-		y = 5
+		y = 6
 	
 		cost = 1
-		relative_position_id = DSC_emergency_policies
+relative_position_id = DSC_establish_regime
 prerequisite = {
-	focus=DSC_start_the_industries
+	focus=DSC_manage_Nationalized_factory
 }
 		ai_will_do = {
 			factor = 10
@@ -3064,12 +3183,12 @@ mutually_exclusive = {
 	focus = {
 		id = DSC_empower_Workers
 		icon = proletarian_vanguard_party
-		x = -5
+		x =  -3
 	
-		y = 6
+		y = 7
 	
 		cost = 1
-		relative_position_id = DSC_emergency_policies
+relative_position_id = DSC_establish_regime
 prerequisite = {
 	focus=DSC_democracy_in_factory
 }
@@ -3108,12 +3227,12 @@ prerequisite = {
 	focus = {
 		id = DSC_Strict_labor_discipline
 		icon = PRC_make_ammunition
-		x = -3
+		x = -1
 	
-		y = 6
+		y = 7
 	
 		cost = 1
-		relative_position_id = DSC_emergency_policies
+relative_position_id = DSC_establish_regime
 prerequisite = {
 	focus=DSC_one_leader
 }
@@ -3153,14 +3272,14 @@ prerequisite = {
 		focus = {
 		id = DSC_one_leader
 		icon = planning_committee
-		x = -3
+		x = -1
 	
-		y = 5
+		y = 6
 	
 		cost = 1
-		relative_position_id = DSC_emergency_policies
+relative_position_id = DSC_establish_regime
 prerequisite = {
-	focus=DSC_start_the_industries
+	focus=DSC_manage_Nationalized_factory
 }
 		ai_will_do = {
 			factor = 10
@@ -3180,17 +3299,17 @@ mutually_exclusive = {
 }
 
 		completion_reward = {
-			set_temp_variable = { temp_DSC_war_policies_dynamic= -0.05 }
+			set_temp_variable = { temp_DSC_war_policies_dynamic1= -0.05 }
 			change_DSC_war_policies_dynamic1 = yes
-			set_temp_variable = { temp_DSC_war_policies_dynamic= -0.01 }
+			set_temp_variable = { temp_DSC_war_policies_dynamic3= -0.01 }
 			change_DSC_war_policies_dynamic3 = yes
-			set_temp_variable = { temp_DSC_war_policies_dynamic= 0.1 }
+			set_temp_variable = { temp_DSC_war_policies_dynamic9= 0.1 }
 			change_DSC_war_policies_dynamic9 = yes
-			set_temp_variable = { temp_DSC_war_policies_dynamic= 0.1 }
+			set_temp_variable = { temp_DSC_war_policies_dynamic7= 0.1 }
 			change_DSC_war_policies_dynamic7 = yes
-			set_temp_variable = { temp_DSC_war_policies_dynamic= 0.1 }
+			set_temp_variable = { temp_DSC_war_policies_dynamic5= 0.1 }
 			change_DSC_war_policies_dynamic5 = yes
-			set_temp_variable = { temp_DSC_war_policies_dynamic= 0.1 }
+			set_temp_variable = { temp_DSC_war_policies_dynamic5= 0.1 }
 			change_DSC_war_policies_dynamic5 = yes
 		}
 	}
@@ -3199,7 +3318,7 @@ mutually_exclusive = {
 		icon = Believe_in_market_economy
 		x = -1
 	
-		y = 3
+		y = 2
 	
 		cost = 1
 		relative_position_id = DSC_emergency_policies
@@ -3227,13 +3346,22 @@ prerequisite = {
 
 
 		completion_reward = {
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }
-change_DSC_war_policies_dynamic5 = yes       # 工厂产出 +5%
-change_DSC_war_policies_dynamic6 = yes       # 造船厂产出 +5%
-change_DSC_war_policies_dynamic10 = yes      # 燃料产量 +5%
+# 本地资源产量 ↑
+set_temp_variable = { temp_DSC_war_policies_dynamic23 = 0.05 }
+change_DSC_war_policies_dynamic23 = yes
 
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.02 }
-change_DSC_war_policies_dynamic4 = yes       # 消费品工厂需求 -2%
+# 外国影响 ↓
+set_temp_variable = { temp_DSC_war_policies_dynamic10 = -0.05 }
+change_DSC_war_policies_dynamic10 = yes
+
+# 政治点获取 ↓
+set_temp_variable = { temp_DSC_war_policies_dynamic3 = -0.02 }
+change_DSC_war_policies_dynamic3 = yes
+
+# 官僚体系成本 ↑
+set_temp_variable = { temp_DSC_war_policies_dynamic31 = 0.02 }
+change_DSC_war_policies_dynamic31 = yes
+
 		}
 	}
 	
@@ -3244,7 +3372,7 @@ change_DSC_war_policies_dynamic4 = yes       # 消费品工厂需求 -2%
 		icon = Market_socialism
 		x = 1
 	
-		y = 3
+		y = 2
 	
 		cost = 1
 		relative_position_id = DSC_emergency_policies
@@ -3271,24 +3399,31 @@ prerequisite = {
 
 
 		completion_reward = {
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.10 }
-change_DSC_war_policies_dynamic4 = yes       # 消费品工厂需求 +10%
+# 稳定度 ↑
+set_temp_variable = { temp_DSC_war_policies_dynamic1 = 0.03 }
+change_DSC_war_policies_dynamic1 = yes
 
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.05 }
-change_DSC_war_policies_dynamic5 = yes       # 工厂产出 -5%
-change_DSC_war_policies_dynamic6 = yes       # 造船厂产出 -5%
+# 高失业率惩罚 ↓
+set_temp_variable = { temp_DSC_war_policies_dynamic27 = -0.03 }
+change_DSC_war_policies_dynamic27 = yes
 
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.02 }
-change_DSC_war_policies_dynamic1 = yes       # 政治稳定 -2%
+# 公安维稳成本 ↑
+set_temp_variable = { temp_DSC_war_policies_dynamic32 = 0.03 }
+change_DSC_war_policies_dynamic32 = yes
+
+# 官僚体系成本 ↑
+set_temp_variable = { temp_DSC_war_policies_dynamic31 = 0.02 }
+change_DSC_war_policies_dynamic31 = yes
+
 		}
 	}
 	
 					focus = {
 		id = DSC_Stabilize_economic_order
-		icon = central_planned_economy
+		icon = Mixed_economy
 		x = 0
 	
-		y = 2
+		y = 1
 	
 		cost = 1
 		relative_position_id = DSC_emergency_policies
@@ -3311,8 +3446,8 @@ prerequisite = {
 
 
 		completion_reward = {
-					set_temp_variable = { temp_DSC_war_policies_dynamic= 0.1 }
-					change_DSC_war_policies_dynamic1 = yes
+add_stability = 0.03
+add_political_power = 50
 		}
 	}
 
@@ -3320,14 +3455,14 @@ prerequisite = {
 focus = {
 		id = DSC_open_the_stocked_weapons
 		icon = PRC_equipment_for_soldiers
-		x = 4
+		x = 3
 	
-		y = 1
+		y = 7
 	
 		cost = 1
-		relative_position_id = DSC_emergency_policies
+		relative_position_id = DSC_establish_regime
 prerequisite = {
-	focus=DSC_emergency_policies
+	focus=DSC_three_line
 }
 		ai_will_do = {
 			factor = 10
@@ -3374,12 +3509,12 @@ focus = {
 		icon = PRC_red_army
 		x = 4
 	
-		y = 2
+		y = 1
 	
 		cost = 1
 		relative_position_id = DSC_emergency_policies
 prerequisite = {
-	focus=DSC_open_the_stocked_weapons
+	focus=DSC_emergency_policies
 }
 		ai_will_do = {
 			factor = 10
@@ -3397,9 +3532,81 @@ prerequisite = {
 
 
 		completion_reward = {
+# 战争支持率 ↑
+set_temp_variable = { temp_DSC_war_policies_dynamic2 = 0.05 }
+change_DSC_war_policies_dynamic2 = yes
+
+# 每周动员人口 ↑
+set_temp_variable = { temp_DSC_war_policies_dynamic37 = 0.04 }
+change_DSC_war_policies_dynamic37 = yes
+
+# 稳定度 ↓
+set_temp_variable = { temp_DSC_war_policies_dynamic1 = -0.03 }
+change_DSC_war_policies_dynamic1 = yes
+
+# 公安维稳成本 ↑
+set_temp_variable = { temp_DSC_war_policies_dynamic32 = 0.03 }
+change_DSC_war_policies_dynamic32 = yes
 
 		}
 	}
+
+
+
+focus = {
+		id = DSC_deal_with_bombs
+		icon = strat_bombers
+		x = 4
+	
+		y = 2
+	
+		cost = 1
+		relative_position_id = DSC_emergency_policies
+prerequisite = {
+	focus=DSC_emergency_policies
+}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+# 稳定度 ↑（社会适应战争）
+set_temp_variable = { temp_DSC_war_policies_dynamic1 = 0.03 }
+change_DSC_war_policies_dynamic1 = yes
+
+# 战争支持率 ↑（接受长期战争现实）
+set_temp_variable = { temp_DSC_war_policies_dynamic2 = 0.02 }
+change_DSC_war_policies_dynamic2 = yes
+
+# 公安维稳成本 ↑（防空、管制、巡逻）
+set_temp_variable = { temp_DSC_war_policies_dynamic32 = 0.04 }
+change_DSC_war_policies_dynamic32 = yes
+
+# 官僚体系成本 ↑（协调、防灾、应急管理）
+set_temp_variable = { temp_DSC_war_policies_dynamic31 = 0.02 }
+change_DSC_war_policies_dynamic31 = yes
+
+# 政治点获取 ↓（危机状态下行政效率受限）
+set_temp_variable = { temp_DSC_war_policies_dynamic3 = -0.02 }
+change_DSC_war_policies_dynamic3 = yes
+
+# 占领区抵抗增长 ↓（战争恐惧的威慑效应）
+set_temp_variable = { temp_DSC_war_policies_dynamic50 = -0.02 }
+change_DSC_war_policies_dynamic50 = yes
+		}
+	}
+
 
 #暂时还在隐藏状态
 focus = {
@@ -3408,12 +3615,12 @@ focus = {
 		icon = PRC_confiscation_of_private_merchant_ships
 		x = 3
 	
-		y = 4
+		y = 3
 	
 		cost = 1
 		relative_position_id = DSC_emergency_policies
 prerequisite = {
-	focus=DSC_military_mobilazation
+	focus=DSC_deal_with_bombs
 }
 		ai_will_do = {
 			factor = 10
@@ -3433,30 +3640,29 @@ mutually_exclusive = {
 }
 
 		completion_reward = {
-### 全面动员
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.10 }   # 稳定 -10%
+# 每周动员人口 ↑↑
+set_temp_variable = { temp_DSC_war_policies_dynamic37 = 0.07 }
+change_DSC_war_policies_dynamic37 = yes
+
+# 总劳动力规模 ↑
+set_temp_variable = { temp_DSC_war_policies_dynamic26 = 0.05 }
+change_DSC_war_policies_dynamic26 = yes
+
+# 稳定度 ↓↓
+set_temp_variable = { temp_DSC_war_policies_dynamic1 = -0.06 }
 change_DSC_war_policies_dynamic1 = yes
 
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.30 }    # 战争支持 +30%
-change_DSC_war_policies_dynamic2 = yes
+# 高失业率惩罚 ↓（被强行吸收）
+set_temp_variable = { temp_DSC_war_policies_dynamic27 = -0.05 }
+change_DSC_war_policies_dynamic27 = yes
 
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.05 }   # 政治点 -5%
-change_DSC_war_policies_dynamic3 = yes
+# 公安维稳成本 ↑↑
+set_temp_variable = { temp_DSC_war_policies_dynamic32 = 0.06 }
+change_DSC_war_policies_dynamic32 = yes
 
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }    # 民需工厂 +5%
-change_DSC_war_policies_dynamic4 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.10 }    # 工厂产能 +10%
-change_DSC_war_policies_dynamic5 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.10 }    # 建筑速度 +10%
-change_DSC_war_policies_dynamic9 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = 1000 }    # 每周人力 +1000
-change_DSC_war_policies_dynamic14 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.10 }    # 耗电 +10%
-change_DSC_war_policies_dynamic23 = yes
+# 官僚体系成本 ↑
+set_temp_variable = { temp_DSC_war_policies_dynamic31 = 0.03 }
+change_DSC_war_policies_dynamic31 = yes
 
 		}
 	}
@@ -3465,15 +3671,15 @@ change_DSC_war_policies_dynamic23 = yes
 focus = {
 	
 		id = DSC_peaceful_mobiliation
-		icon = central_planned_economy
+		icon = CPC_socialist_realism
 		x = 5
 	
-		y = 4
+		y = 3
 	
 		cost = 1
 		relative_position_id = DSC_emergency_policies
 prerequisite = {
-	focus=DSC_military_mobilazation
+	focus=DSC_deal_with_bombs
 }
 		ai_will_do = {
 			factor = 10
@@ -3494,42 +3700,36 @@ prerequisite = {
 
 
 		completion_reward = {
-### 轻微动员
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.02 }   # 稳定 -2%
+# 稳定度 ↑
+set_temp_variable = { temp_DSC_war_policies_dynamic1 = 0.04 }
 change_DSC_war_policies_dynamic1 = yes
 
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.10 }    # 战争支持 +10%
+# 战争支持率 ↑
+set_temp_variable = { temp_DSC_war_policies_dynamic2 = 0.04 }
 change_DSC_war_policies_dynamic2 = yes
 
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.01 }   # 政治点 -1%
-change_DSC_war_policies_dynamic3 = yes
+# 每周动员人口 ↑（但不爆发）
+set_temp_variable = { temp_DSC_war_policies_dynamic37 = 0.02 }
+change_DSC_war_policies_dynamic37 = yes
 
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.02 }    # 工厂产能 +2%
-change_DSC_war_policies_dynamic5 = yes
+# 官僚体系成本 ↑（宣传、组织）
+set_temp_variable = { temp_DSC_war_policies_dynamic31 = 0.02 }
+change_DSC_war_policies_dynamic31 = yes
 
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.02 }    # 建设速度 +2%
-change_DSC_war_policies_dynamic9 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = 500 }   # 每周人力 +500
-change_DSC_war_policies_dynamic14 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.02 }    # 耗电 +2%
-change_DSC_war_policies_dynamic23 = yes
 		}
 	}
 
 focus = {
 		id = DSC_military_training
-		icon = central_planned_economy
+		icon = PRC_army_in_defence
 		x = 4
 	
-		y = 6
+		y = 5
 	
 		cost = 1
 		relative_position_id = DSC_emergency_policies
 prerequisite = {
-	focus= DSC_strict_military_laws
-	focus= DSC_military_democracy
+	focus= DSC_military_transport
 }
 		ai_will_do = {
 			factor = 10
@@ -3547,107 +3747,35 @@ prerequisite = {
 
 
 		completion_reward = {
-### 全民军事训练
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.05 }   # 稳定 -5%
-change_DSC_war_policies_dynamic1 = yes
+# 陆军组织度 ↑
+set_temp_variable = { temp_DSC_war_policies_dynamic44 = 0.04 }
+change_DSC_war_policies_dynamic44 = yes
 
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.15 }    # 战争支持 +15%
-change_DSC_war_policies_dynamic2 = yes
+# 补员速度 ↑
+set_temp_variable = { temp_DSC_war_policies_dynamic45 = 0.03 }
+change_DSC_war_policies_dynamic45 = yes
 
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.05 }   # 政治点 -5%
-change_DSC_war_policies_dynamic3 = yes
+# 官僚体系成本 ↑（训练体系）
+set_temp_variable = { temp_DSC_war_policies_dynamic31 = 0.01 }
+change_DSC_war_policies_dynamic31 = yes
 
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.02 }    # 民需工厂 +2%
-change_DSC_war_policies_dynamic4 = yes
 
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.02 }    # 每周人力 +2000
-change_DSC_war_policies_dynamic14 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }    # 组织度 +5%
-change_DSC_war_policies_dynamic17 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }    # 攻击 +5%
-change_DSC_war_policies_dynamic15 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }    # 防御 +5%
-change_DSC_war_policies_dynamic16 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }    # 耗电 +5%
-change_DSC_war_policies_dynamic23 = yes
 
 		}
 	}
 
+
 focus = {
-		id = DSC_strict_military_laws
-		icon = central_planned_economy
-		x = 3
+		id = DSC_military_transport
+		icon = PRC_mechanized_enhancement
+		x = 4
 	
-		y = 5
+		y = 4
 	
 		cost = 1
 		relative_position_id = DSC_emergency_policies
 prerequisite = {
-	focus= DSC_force_mobilazation
-
-
-}
-
-		ai_will_do = {
-			factor = 10
-		}
-		bypass = {
-	
-		}
-	
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		available = {
-
-		}
-
-
-		completion_reward = {
-### 严格军事纪律
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }   # 稳定 +5%
-change_DSC_war_policies_dynamic1 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.05 }  # 政治点 -5%
-change_DSC_war_policies_dynamic3 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }   # 攻击 +5%
-change_DSC_war_policies_dynamic15 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }   # 防御 +5%
-change_DSC_war_policies_dynamic16 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.10 }   # 组织度 +10%
-change_DSC_war_policies_dynamic17 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }   # 补给消耗 +5%
-change_DSC_war_policies_dynamic19 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.05 }  # 抵抗增长 -5%
-change_DSC_war_policies_dynamic20 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.02 }  # 顺从增长 -2%
-change_DSC_war_policies_dynamic21 = yes
-
-		}
-	}
-
-focus = {
-		id = DSC_military_democracy
-		icon = central_planned_economy
-		x = 5
-	
-		y = 5
-	
-		cost = 1
-		relative_position_id = DSC_emergency_policies
-prerequisite = {
-
+	focus = DSC_force_mobilazation
 	focus= DSC_peaceful_mobiliation
 
 }
@@ -3667,30 +3795,17 @@ prerequisite = {
 
 
 		completion_reward = {
-### 促进军事民主
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }    # 稳定 +5%
-change_DSC_war_policies_dynamic1 = yes
+# 补给节点范围 ↑
+set_temp_variable = { temp_DSC_war_policies_dynamic39 = 0.04 }
+change_DSC_war_policies_dynamic39 = yes
 
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.05 }    # 战争支持 +5%
-change_DSC_war_policies_dynamic2 = yes
+# 总补给消耗 ↓（运输效率）
+set_temp_variable = { temp_DSC_war_policies_dynamic41 = -0.03 }
+change_DSC_war_policies_dynamic41 = yes
 
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.01 }    # 政治点 +1%
-change_DSC_war_policies_dynamic3 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.02 }   # 工厂产能 -2%（民主讨论效率低）
-change_DSC_war_policies_dynamic5 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = -0.01 }   # 建设速度 -1%
-change_DSC_war_policies_dynamic9 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.03 }    # 攻击 +3%
-change_DSC_war_policies_dynamic15 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.03 }    # 防御 +3%
-change_DSC_war_policies_dynamic16 = yes
-
-set_temp_variable = { temp_DSC_war_policies_dynamic = 0.02 }    # 组织度 +2%
-change_DSC_war_policies_dynamic17 = yes
+# 能源消耗 ↑
+set_temp_variable = { temp_DSC_war_policies_dynamic36 = 0.03 }
+change_DSC_war_policies_dynamic36 = yes
 
 		}
 	}
@@ -3699,20 +3814,27 @@ change_DSC_war_policies_dynamic17 = yes
 
 						focus = {
 		id = DSC_war_System
-		icon = central_planned_economy
+		icon = PRC_chinese_naval_1
 		x = 0
 	
-		y = 8
+		y = 6
 	
 		cost = 1
 		relative_position_id = DSC_emergency_policies
 prerequisite = {
-	focus=DSC_Grain_Allocation_System
+
 	focus=DSC_Supply_System
-	focus=DSC_empower_Workers
-	focus=DSC_Strict_labor_discipline
+}
+prerequisite = {
+	focus=DSC_Militarization_of_Civilian_Industry
+
+						}
+prerequisite = {
 	focus=DSC_military_training
 }
+
+
+
 		ai_will_do = {
 			factor = 10
 		}
@@ -3729,6 +3851,21 @@ prerequisite = {
 
 
 		completion_reward = {
+# 消费品比例 ↓
+set_temp_variable = { temp_DSC_war_policies_dynamic14 = -0.06 }
+change_DSC_war_policies_dynamic14 = yes
+
+# 工厂产能 ↑
+set_temp_variable = { temp_DSC_war_policies_dynamic16 = 0.05 }
+change_DSC_war_policies_dynamic16 = yes
+
+# 总补给消耗 ↓（效率提升）
+set_temp_variable = { temp_DSC_war_policies_dynamic41 = -0.04 }
+change_DSC_war_policies_dynamic41 = yes
+
+# 稳定度 ↓
+set_temp_variable = { temp_DSC_war_policies_dynamic1 = -0.03 }
+change_DSC_war_policies_dynamic1 = yes
 
 		}
 	}
@@ -3738,7 +3875,7 @@ prerequisite = {
 	focus = {
 		id = DSC_establish_regime
 		icon = transitional_phase
-		x = -19
+		x = -21
 	
 		y = 0
 	
@@ -3765,7 +3902,7 @@ prerequisite = {
 
 
 		completion_reward = {
-
+add_political_power = 100
 		}
 	}
 
@@ -3773,12 +3910,14 @@ prerequisite = {
 	focus = {
 		id = DSC_build_central_organs
 		icon = Politburo_of_Communist_Party
-		x = -19
+		x = -0
 	
 		y = 1
 	
 		cost = 1
-		relative_position_id = DSC_emergency_policies
+
+
+		relative_position_id = DSC_establish_regime
 prerequisite = {
 focus = DSC_establish_regime
 }
@@ -3800,7 +3939,7 @@ focus = DSC_establish_regime
 
 
 		completion_reward = {
-
+add_stability = 0.03
 		}
 	}
 
@@ -3808,13 +3947,51 @@ focus = DSC_establish_regime
 
 	focus = {
 		id = DSC_build_judicial_security_system
-		icon = Reorganization_of_Central_Special_Branch
-		x = -19
+		icon = Dictatorship_of_the_Vanguard_Party
+		x = 0
 	
 		y = 2
 	
 		cost = 1
 		relative_position_id = DSC_emergency_policies
+prerequisite = {
+focus = DSC_build_central_organs
+}
+
+		relative_position_id = DSC_establish_regime
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+		allow_branch = {
+			has_country_flag = chuanyuzhengquan
+	}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = DSC_connect_to_grassroots_civil_servants
+		icon = CPCchinese
+		x = -2
+	
+		y = 2
+	
+		cost = 1
+				relative_position_id = DSC_establish_regime
+
 prerequisite = {
 focus = DSC_build_central_organs
 }
@@ -3839,21 +4016,22 @@ focus = DSC_build_central_organs
 
 
 		completion_reward = {
-
+add_stability = 0.03
 		}
 	}
 
 	focus = {
-		id = DSC_connect_to_grassroots_civil_servants
-		icon = CPCchinese
-		x = -19
+		id = DSC_connect_to_grassroots_revolutionary_soviet
+		icon = Great_unity
+		x = 2
 	
-		y = 3
+		y = 2
 	
 		cost = 1
-		relative_position_id = DSC_emergency_policies
+				relative_position_id = DSC_establish_regime
+
 prerequisite = {
-focus = DSC_build_judicial_security_system
+focus = DSC_build_central_organs
 }
 
 
@@ -3876,6 +4054,314 @@ focus = DSC_build_judicial_security_system
 
 
 		completion_reward = {
+add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = DSC_new_hope
+		icon = proletariat_cpc
+		x = 0
+	
+		y = 3
+	
+		cost = 1
+				relative_position_id = DSC_establish_regime
+
+prerequisite = {
+focus = DSC_connect_to_grassroots_revolutionary_soviet
+}
+prerequisite = {
+focus = DSC_connect_to_grassroots_civil_servants
+}
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+		allow_branch = {
+			has_country_flag = chuanyuzhengquan
+	}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+			remove_ideas = DSC_hunluanzhengquan
+		}
+	}
+
+	focus = {
+		id = DSC_punch_of_proletariat
+		icon = Monopoly_power
+		x = 2
+	
+		y = 4
+	
+		cost = 1
+		relative_position_id = DSC_establish_regime
+prerequisite = {
+focus =  DSC_new_hope
+}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+		allow_branch = {
+		#has_country_flag = test_DEP
+	}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+			
+if={
+	limit={
+	has_idea=DSC_fangeming3
+	}
+swap_ideas = {
+	remove_idea = DSC_fangeming3
+	add_idea = DSC_fangeming2
+}
+
+}
+else_if ={
+	limit={
+	has_idea=DSC_fangeming2
+	}
+swap_ideas = {
+	remove_idea = DSC_fangeming2
+	add_idea = DSC_fangeming1
+}
+
+}
+
+else_if ={
+	limit={
+	has_idea=DSC_fangeming1
+	}
+
+	remove_idea = DSC_fangeming1
+
+
+}
+		}
+	}
+
+
+	focus = {
+		id = DSC_chiweidui
+		icon = People_Guard
+		x = 3
+	
+		y = 5
+	
+		cost = 1
+		relative_position_id = DSC_establish_regime
+prerequisite = {
+focus =  DSC_punch_of_proletariat
+}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+		allow_branch = {
+		#has_country_flag = test_DEP
+	}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+if={
+	limit={
+	has_idea=DSC_fangeming3
+	}
+swap_ideas = {
+	remove_idea = DSC_fangeming3
+	add_idea = DSC_fangeming2
+}
+
+}
+else_if ={
+	limit={
+	has_idea=DSC_fangeming2
+	}
+swap_ideas = {
+	remove_idea = DSC_fangeming2
+	add_idea = DSC_fangeming1
+}
+
+}
+
+else_if ={
+	limit={
+	has_idea=DSC_fangeming1
+	}
+
+	remove_ideas  = DSC_fangeming1
+
+
+}
+		}
+	}
+
+
+
+
+		focus = {
+		id = DSC_three_line
+		icon = PRC_chinese_naval_2
+		x = 2
+	
+		y = 6
+	
+		cost = 1
+		relative_position_id = DSC_establish_regime
+prerequisite = {
+focus =  DSC_State_Security
+}
+prerequisite = {
+focus = DSC_chiweidui
+}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+		allow_branch = {
+		#has_country_flag = test_DEP
+	}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+
+		}
+	}
+
+
+
+			focus = {
+		id = DSC_prepare_food 
+		icon = Food_safety
+		x = 1
+	
+		y = 7
+	
+		cost = 1
+		relative_position_id = DSC_establish_regime
+prerequisite = {
+focus =  DSC_three_line
+}
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+		allow_branch = {
+		#has_country_flag = test_DEP
+	}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = DSC_State_Security
+		icon = Reorganization_of_Central_Special_Branch
+		x = 1
+	
+		y = 5
+	
+		cost = 1
+		relative_position_id = DSC_establish_regime
+prerequisite = {
+focus = DSC_punch_of_proletariat
+}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+		allow_branch = {
+		#has_country_flag = test_DEP
+	}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+if={
+	limit={
+	has_idea=DSC_fangeming3
+	}
+swap_ideas = {
+	remove_idea = DSC_fangeming3
+	add_idea = DSC_fangeming2
+}
+
+}
+else_if ={
+	limit={
+	has_idea=DSC_fangeming2
+	}
+swap_ideas = {
+	remove_idea = DSC_fangeming2
+	add_idea = DSC_fangeming1
+}
+
+}
+
+else_if ={
+	limit={
+	has_idea=DSC_fangeming1
+	}
+
+	remove_idea = DSC_fangeming1
+
+
+}
 
 		}
 	}
@@ -3883,15 +4369,21 @@ focus = DSC_build_judicial_security_system
 	focus = {
 		id = DSC_start_war_system
 		icon = Chinese_military_government
-		x = 1
+		#Dictatorship_of_the_Vanguard_Party
+		x = 2
 	
-		y = 4
+		y = 8
 	
 		cost = 1
 		relative_position_id = DSC_establish_regime
 prerequisite = {
-focus =  DSC_connect_to_grassroots_civil_servants
+focus =  DSC_prepare_food
 }
+
+prerequisite = {
+focus =  DSC_open_the_stocked_weapons
+}
+
 		ai_will_do = {
 			factor = 10
 		}
@@ -3918,14 +4410,14 @@ mark_focus_tree_layout_dirty = yes
 	focus = {
 		id = DSC_start_economic_transformation
 		icon = planned_economy
-		x = -1
+		x = -2
 	
 		y = 4
 	
 		cost = 1
 		relative_position_id = DSC_establish_regime
 prerequisite = {
-focus = DSC_connect_to_grassroots_civil_servants
+focus = DSC_new_hope
 }
 		ai_will_do = {
 			factor = 10
@@ -3955,7 +4447,7 @@ mark_focus_tree_layout_dirty = yes
 focus = {
 		id = DSC_economic_transformation
 		icon = planning_committee
-		x = 1
+		x = -2
 	
 		y = 0
 	
@@ -3992,8 +4484,10 @@ set_variable = { DSC_total_nation_civ_factories = 0 }
 
 focus = {
 		id = DSC_Agricultural_change
-		icon = Cooperation_between_workers_peasants
-		x = 0
+		#icon=Agricultural_mechanization
+		#icon = Cooperation_between_workers_peasants
+				icon = farmers_association
+		x = -5
 	
 		y = 1
 	
@@ -4028,8 +4522,9 @@ focus = {
 
 	focus = {
 		id = DSC_Agricultural_cooperation
-		icon = CPC_agricultural_cooperative
-		x = 0
+				icon=Agricultural_mechanization
+		#icon = CPC_agricultural_cooperative
+		x = -5
 	
 		y = 3
 	
@@ -4065,36 +4560,29 @@ focus = {
 focus = {
 		id = DSC_market_policies
 		icon = Mixed_economy
-		x = 2
+		x = -2
 	
-		y = 4
+		y = 8
 	
 		cost = 1
 
-
+relative_position_id = DSC_establish_regime
 		ai_will_do = {
 			factor = 10
 		}
 		prerequisite = {
-			focus=DSC_Agricultural_cooperation
+			focus=DSC_empower_Workers
+			focus=DSC_Strict_labor_discipline
 		}
 
-		prerequisite = {
-			focus=DSC_industrial_transformation
-		}
 
-		prerequisite = {
-			focus=DSC_financial_control
-		}
 
 
 
 		bypass = {
 	
 		}
-		allow_branch = {
-		has_completed_focus = DSC_start_economic_transformation
-	}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -4112,18 +4600,51 @@ focus = {
 focus = {
 		id = DSC_people_coupon
 		icon = socialism_welfare
-		x = 2
+		x = -2
 	
-		y = 5
+		y = 9
 	
 		cost = 1
 
-
+relative_position_id = DSC_establish_regime
 		ai_will_do = {
 			factor = 10
 		}
 		prerequisite = {
 			focus=DSC_market_policies
+		}
+		bypass = {
+	
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+ 
+
+		}
+	}
+
+focus = {
+		id = DSC_registration_of_individuals
+		icon = democratization_of_social_organizations
+		x = -2
+	
+		y = 1
+	
+		cost = 1
+
+		prerequisite = {
+			focus=DSC_economic_transformation
+		}
+		ai_will_do = {
+			factor = 10
 		}
 		bypass = {
 	
@@ -4140,16 +4661,96 @@ focus = {
 
 
 		completion_reward = {
- 
+
 
 		}
 	}
 
 
+
+
+focus = {
+		id = DSC_outlaw_individual_proprietorships
+		icon = encourage_private_enterprise
+		#icon = Smallandmicroenterprises
+		x = -3
+	
+		y = 2
+	
+		cost = 1
+mutually_exclusive = {
+	focus = DSC_open_national_shops
+}
+		prerequisite = {
+			focus=DSC_registration_of_individuals
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+		allow_branch = {
+		has_completed_focus = DSC_start_economic_transformation
+	}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+
+
+		}
+	}	
+
+
+focus = {
+		id = DSC_open_national_shops
+		icon =  Smallandmicroenterprises
+		x = -1
+	
+		y = 2
+	
+		cost = 1
+mutually_exclusive = {
+	focus = DSC_outlaw_individual_proprietorships
+}
+
+		prerequisite = {
+			focus=DSC_registration_of_individuals
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+		allow_branch = {
+		has_completed_focus = DSC_start_economic_transformation
+	}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+
+		}
+
+
+		completion_reward = {
+
+
+		}
+	}	
+
+
 focus = {
 		id = DSC_industrial_transformation
 		icon = full_nationalization
-		x = 3
+		x = 1
 	
 		y = 1
 	
@@ -4186,12 +4787,14 @@ focus = {
 		icon = rapid_industrialization
 		x = 2
 	
-		y = 2
+		y = 3
 	
 		cost = 1
-
+mutually_exclusive = {
+	focus = DSC_Nationalize_factories
+}
 		prerequisite = {
-			focus=DSC_industrial_transformation
+			focus=DSC_financial_control
 		}
 		ai_will_do = {
 			factor = 10
@@ -4211,7 +4814,7 @@ focus = {
 
 
 		completion_reward = {
- set_country_flag = DSC_kaishiguoyouhua
+
 
 		}
 	}
@@ -4220,14 +4823,16 @@ focus = {
 		id = DSC_Nationalize_factories
 		
 		icon = Socialist_primitive_accumulation
-		x = 2
+		x = 0
 	
 		y = 3
 	
 		cost = 1
-
+mutually_exclusive = {
+	focus = DSC_Nationalize_key_industries
+}
 		prerequisite = {
-			focus=DSC_industrial_transformation
+			focus=DSC_financial_control
 		}
 		ai_will_do = {
 			factor = 10
@@ -4247,19 +4852,54 @@ focus = {
 
 
 		completion_reward = {
- set_country_flag = DSC_kaishiguoyouhua
+
 
 		}
 	}
 
+focus = {
+		id = DSC_manage_Nationalized_factory
+		
+		icon = Socialist_primitive_accumulation
+		x = -2
+	
+		y = 5
+	
+		cost = 1
 
+		prerequisite = {
+			focus=DSC_start_economic_transformation
+		}
+relative_position_id = DSC_establish_regime
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+	
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+available = {
+check_variable = {DSC_nationalized_civ_ratio >0.5}
+custom_trigger_tooltip= {tooltip="国有化比例大于50%"}
+}
+
+
+
+		completion_reward = {
+
+
+		}
+	}
 
 focus = {
 		id = DSC_financial_control
 		icon = Pay_attention_to_production
-		x = 4
-	
-		y = 3
+		x = 1
+
+		y = 2
 	
 		cost = 1
 

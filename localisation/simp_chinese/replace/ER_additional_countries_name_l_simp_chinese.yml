@@ -51,3 +51,43 @@
 
 #南京军区
  NAJ_GOV: "南京军区"
+
+
+#苏联
+ SOV_STA: "苏维埃社会主义共和国联盟"
+
+ GEO_AUTH_S_communism: "格鲁吉亚苏维埃社会主义共和国"
+
+ EXC_SOV: "外高加索苏维埃社会主义共和国联盟"
+
+ SOV_stalin: "苏维埃社会主义共和国联盟"
+
+ GEO_unify_of_geogia: "打击分裂势力"
+
+ GEO_leadership_of_party: "党的领导"
+
+ # 国策核心名称
+ RGEO_unification2: "外高加索苏维埃社会主义共和国联盟"
+ RGEO_WGJS: "世界革命"
+  
+  # 武装路线国策
+ RGEO_JF_WGJS: "武装推进外高加索解放"
+ RGEO_promote_WGJS: "和平推进外高加索解放"
+ RGEO_attack_AZE: "解放阿塞拜疆"
+ RGEO_attack_ARM: "解放亚美尼亚"
+  
+  # 和平合作路线国策
+ RGEO_cooperation_AZE: "与阿塞拜疆合作"
+ RGEO_cooperation_ARM: "与亚美尼亚合作"
+  
+  # 可选：补充国策描述前缀（如需完善可扩展）
+ RGEO_unification2_desc: "我们将整合外高加索各民族，建立统一的苏维埃共和国，为世界革命奠定坚实基础。"
+ RGEO_JF_WGJS_desc: "唯有通过武装力量，才能将革命的火种播撒到世界的每一个角落，推翻帝国主义的统治。"
+
+ 
+  # 国策：苏维埃的民警
+ RGEO_milicia: "苏维埃的民警"
+ RGEO_milicia_desc: "在苏维埃政权的领导下，我们将组建一支兼具治安维持与基础国防职能的民警部队。他们不仅会肃清境内的土匪与反动残余，保障地方生产与民生稳定，更能在战时快速补充正规军缺口，成为捍卫苏维埃领土的第一道防线。"
+  
+ RGEO_NKVD: "重组NKVD"
+ RGEO_NKVD_desc: "为肃清国内反动势力、防范外国间谍渗透，我们将整顿并强化秘密警察机构，保障苏维埃政权的稳固与安全。"

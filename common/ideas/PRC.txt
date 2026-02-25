@@ -4114,6 +4114,64 @@ modifier = {
 
 
 
+DSC_hunluanzhengquan = {
+	picture = vladimir_lenin
+
+allowed = {
+}
+
+
+modifier = {
+
+
+
+political_power_gain= -0.5
+}
+}
+
+
+DSC_fangeming3 = {
+	icon = GFX_RUS_unfinished_land_reform
+name= fanggeminghuodong
+allowed = {
+}
+
+
+modifier = {
+
+
+
+political_power_gain= -0.9
+}
+}
+DSC_fangeming2 = {
+	icon = GFX_RUS_unfinished_land_reform
+name= fanggeminghuodong
+allowed = {
+}
+
+
+modifier = {
+
+
+
+political_power_gain= -0.6
+}
+}
+DSC_fangeming1 = {
+	icon = GFX_RUS_unfinished_land_reform
+name= fanggeminghuodong
+allowed = {
+}
+
+
+modifier = {
+
+
+
+political_power_gain= -0.3
+}
+}
 DSC_gcd = {
 	picture = vladimir_lenin
 
@@ -4128,6 +4186,7 @@ communism_drift = 0.1
 political_power_gain= 0.5
 }
 }
+
 #新加
 CHI_Free_electricity = {
 	allowed_civil_war = {

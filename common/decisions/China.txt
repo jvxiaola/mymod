@@ -2130,7 +2130,7 @@ DSC_jingjijueyi = {
 		}
 
 		cost=50
-		fire_only_once = yes
+		#fire_only_once = yes
 		visible = {
 
 		}

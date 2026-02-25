@@ -1,6 +1,6 @@
 state={
-	id=1221
-	name="STATE_1221"
+	id=1228
+	name="STATE_1228"
 	state_category = state_04
 	resources = {
 		steel = 5

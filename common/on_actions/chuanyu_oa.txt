@@ -100,7 +100,9 @@ set_politics = {
 	ruling_party = communism
 	elections_allowed = no
 }
-
+add_ideas = DSC_hunluanzhengquan
+add_ideas = DSC_fangeming3
+add_stability = -0.1
 mark_focus_tree_layout_dirty = yes
 }
 

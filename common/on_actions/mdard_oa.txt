@@ -74,6 +74,77 @@ on_actions = {
 	}
 	on_daily_DSC = {
 	effect = {
+
+
+        # ===== 仅在两个变量都存在时，才计算国有比例 =====
+        if = {
+            limit = {
+				has_variable = DSC_total_civ_factories
+                has_variable = DSC_total_nation_civ_factories
+            }
+
+if = {
+	limit = {
+		NOT={has_variable=DSC_nationalized_civ_ratio}
+	}
+			set_variable = {
+				name=DSC_nationalized_civ_ratio
+				value = 0
+			}
+}
+
+
+
+
+
+			set_variable = {
+                temp_DSC_total_nation_civ_factories=DSC_total_nation_civ_factories
+			}
+
+			 			set_variable = {
+				temp_DSC_total_civ_factories	=DSC_total_civ_factories	
+			}
+
+			
+
+
+divide_variable = {
+     temp_DSC_total_nation_civ_factories = temp_DSC_total_civ_factories
+}
+
+
+
+set_variable = {
+	DSC_nationalized_civ_ratio=temp_DSC_total_nation_civ_factories
+}
+
+
+
+
+
+
+            
+        }
+
+        # ⚠ 如果变量不存在，这个月什么都不做
+
+#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 			if = {
 				limit = {
 				DSC = {

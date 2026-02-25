@@ -4,8 +4,8 @@
  DSC_emergency_policies: "紧急政策"
  DSC_emergency_policies_desc: "我们需要紧急政策"
 
- DSC_Nationalize_industries: "国有化战略企业"
- DSC_Nationalize_industries_desc: "我们要接管关键的企业"
+ DSC_transform_industries: "动员企业"
+ DSC_transform_industries_desc: "我们要接管关键的企业"
 
  DSC_resource_problems: "资源问题"
  DSC_resource_problems_desc: ""
@@ -13,73 +13,100 @@
  DSC_reduce_consumptions: "减少消费品占比"
  DSC_reduce_consumptions_desc: "我们需要减少电力的消耗，优先供应关键的企业"
 
+ DSC_honer_of_working: "§t动员工人§!"
+ DSC_honer_of_working_desc: ""
+
+ DSC_outlaw_individual_proprietorships: "取缔城市个体户"
+ DSC_outlaw_individual_proprietorships_desc: "取缔城市个体户"
+
+ DSC_registration_of_individuals: "个体户登记"
+ DSC_registration_of_individuals_desc: ""
+
+ DSC_Agricultural_cooperation: "农业合作"
+ DSC_Agricultural_cooperation_desc: "农业合作"
+
+ DSC_duty_of_working: "义务劳动"
+ DSC_duty_of_working_desc: "在无产阶级政权最艰难的时刻，劳动不仅是一种义务，更是一种责任。通过组织化的义务劳动，动员社会闲置人力，支撑基础建设与后方生产。"
+
+ DSC_political_propaganda: "劳动最光荣"
+ DSC_political_propaganda_desc: "通过宣传与动员，将劳动在资产阶级专政下被剥夺的荣誉还给劳动人民"
+
+ DSC_military_work: "劳动纪律化"
+ DSC_military_work_desc: "将生产与劳动纳入统一纪律体系，使劳动组织具备准军事化特征，以效率与服从保障战争需求。"
+
  DSC_civ_for_front: "一切为了前线"
- DSC_civ_for_front_desc: ""
+ DSC_civ_for_front_desc: "国家的一切资源都必须围绕战争展开，后方生产将优先保障前线的补给与装备需求。"
 
  DSC_cease_free_trade: "终止自由贸易"
- DSC_cease_free_trade_desc: ""
+ DSC_cease_free_trade_desc: "在战时条件下，自由贸易将被暂时中止，国家接管关键物资流通，以防止资源外流与市场失控。"
 
  DSC_crack_down_on_speculation: "管控市场"
- DSC_crack_down_on_speculation_desc: ""
+ DSC_crack_down_on_speculation_desc: "加强对市场的监管，打击囤积居奇与投机倒把行为，确保物资按国家计划合理分配。"
 
  DSC_Stabilize_economic_order: "稳定经济秩序"
- DSC_Stabilize_economic_order_desc: ""
+ DSC_Stabilize_economic_order_desc: "通过行政干预与计划手段，遏制经济混乱，恢复基本的生产与分配秩序。"
 
  DSC_food_ration_classification: "粮食配给制"
- DSC_food_ration_classification_desc: ""
+ DSC_food_ration_classification_desc: "根据不同群体与岗位的重要性实行分级粮食配给，优先保障生产与战斗人员的基本需求。"
 
 
  DSC_war_system: "完善的战时体制"
- DSC_war_system_desc: ""
+ DSC_war_system_desc: "建立覆盖政治、经济与军事领域的完整战时体制，使国家能够在长期冲突中持续运转。"
 
  DSC_military_mobilazation: "军事动员"
- DSC_military_mobilazation_desc: ""
+ DSC_military_mobilazation_desc: "扩大征召范围，将可用人力快速转化为军事力量，以应对不断升级的战争压力。"
 
  DSC_force_mobilazation: "强制动员"
- DSC_force_mobilazation_desc: ""
+ DSC_force_mobilazation_desc: "在紧急情况下，国家将采取强制手段征用人力与资源，确保战争机器不因动员不足而停滞。"
 
  DSC_peaceful_mobiliation: "和平动员"
- DSC_peaceful_mobiliation_desc: ""
+ DSC_peaceful_mobiliation_desc: "通过宣传与组织工作，引导群众自愿参与国家动员，在相对稳定的社会环境下积蓄力量。"
 
  DSC_military_training: "军事训练"
- DSC_military_training_desc: ""
+ DSC_military_training_desc: "系统性地开展军事训练，使动员人员具备基本作战能力与组织纪律。"
 
  DSC_strict_military_laws: "严格的军事纪律"
- DSC_strict_military_laws_desc: ""
+ DSC_strict_military_laws_desc: "以严格的法律与纪律维持军队秩序，防止溃散与腐败现象蔓延。"
 
- DSC_military_democracy: "继续军事民主"
- DSC_military_democracy_desc: ""
+ DSC_military_transport: "保障运输"
+ DSC_military_transport_desc: "优先保障军事运输体系，确保人员、物资与装备能够快速、安全地抵达前线。"
 
  DSC_additional_Agricultural_tex: "额外的农业税"
- DSC_additional_Agricultural_tex_desc: ""
+ DSC_additional_Agricultural_tex_desc: "在原有征收基础上增加农业负担，以集中更多粮食资源支撑国家战争与工业需求。"
 
  DSC_Food_Appropriation_System: "余粮征集制度"
- DSC_Food_Appropriation_System_desc: ""
+ DSC_Food_Appropriation_System_desc: "由国家统一征集农村余粮，集中调配用于城市供给与军队保障。"
 
- DSC_start_the_industries: "重启工业"
- DSC_start_the_industries_desc: ""
+ DSC_Militarization_of_Civilian_Industry: "民用工业军事化"
+ DSC_Militarization_of_Civilian_Industry_desc: "将民用工业纳入军事生产体系，调整生产方向以优先制造军需物资。"
  
  DSC_democracy_in_factory: "赋权工厂委员会"
- DSC_democracy_in_factory_desc: ""
+ DSC_democracy_in_factory_desc: "通过工厂委员会参与管理，激发工人积极性，使生产决策更贴近一线实际。"
 
  DSC_one_leader: "一长制的管理"
- DSC_one_leader_desc: ""
+ DSC_one_leader_desc: "实行集中统一的管理制度，以明确责任与指挥链条，避免多头决策造成效率损失。"
 
  DSC_empower_Workers: "赋权工人"
- DSC_empower_Workers_desc: ""
+ DSC_empower_Workers_desc: "赋予工人在生产与管理中的更大话语权，使其成为国家工业体系的真正主体。
 
  DSC_Strict_labor_discipline: "严格的劳动纪律"
- DSC_Strict_labor_discipline_desc: ""
+ DSC_Strict_labor_discipline_desc: "通过制度化约束强化劳动纪律，减少怠工与浪费现象，确保生产计划落实。"
 
+
+ DSC_manage_Nationalized_factory: "管理国有化工厂"
+ DSC_manage_Nationalized_factory_desc: "对国有化工厂实施统一管理与调度，提高整体工业效率与战略协调能力。"
+
+ DSC_open_national_shops: "大规模开设供销社"
+ DSC_open_national_shops_desc: "依托国家力量建立供销体系，直接向群众提供生活必需品，削弱市场波动的影响。"
 
  DSC_war_System: "战争状态"
- DSC_war_System_desc: ""
+ DSC_war_System_desc: "国家正式进入战争状态，和平时期的制度将让位于全面的战时管理体系。"
 
  DSC_Grain_Allocation_System: "全面配给制"
- DSC_Grain_Allocation_System_desc: ""
+ DSC_Grain_Allocation_System_desc: "在全国范围内实施统一的粮食分配政策，以计划方式满足基本生存与生产需求。"
 
  DSC_Supply_System: "供给制"
- DSC_Supply_System_desc: ""
+ DSC_Supply_System_desc: "取消货币交换在部分领域的作用，由国家直接按标准向特定群体供给生活物资。"
 
  DSC_grain_requisition: "余粮征集制度"
  DSC_grain_requisition_desc: "在战时共产主义的背景下，政府直接向农民强行征收余粮以供养红军和城市工人。这一政策保障了战争供给，但激化了农村的不满。"
@@ -116,4 +143,4 @@
  millennium_dawn_reduce_power_desc: "通过能源优化和工业改进，国家电力消耗按比例减少，提升整体效率。"
 
 
- DSC_war_policies: "中国战时政策"
+ DSC_war_policies_dynamic: "中国战时政策"

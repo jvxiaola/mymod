@@ -6,7 +6,7 @@ spriteTypes = {
 
 
 		SpriteType = {
-		name = "military_purge"
+		name = "CHI_military_purge"
 		texturefile = "gfx/interface/goals/military_purge.png"
 	}	
 

@@ -1,0 +1,915 @@
+focus_tree = {
+	#规划：开明老左（王照国） 保守老左（邓力群）
+	id = communsim_geogia_focus
+	country = {}
+		default = no
+
+
+focus = { 
+	id= RGEO_red_path
+		icon = focus_SWE_refuge_for_revolutionaries
+		x = 16
+		y = 0
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+}
+
+		bypass = {
+
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_stability = 0.05
+		}
+		}
+#ukr_kgb_bad
+		focus = { 
+	id= RGEO_milicia
+		icon = Focus_Communist_Spy02
+		x = 15
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+}
+prerequisite = {
+	focus = RGEO_red_path
+}
+		bypass = {
+
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		remove_ideas = GEO_police_chaos_idea
+		}
+		}
+
+		focus = { 
+	id= RGEO_NKVD
+		icon = ukr_kgb_bad
+		x = 17
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+}
+prerequisite = {
+	focus = RGEO_red_path
+}
+		bypass = {
+
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		remove_ideas = GEO_russian_spies_idea
+		}
+		}
+
+				focus = { 
+	id= RGEO_economic_decision
+		icon = planned_economy
+		x = 20
+		y = 0
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+}
+
+		bypass = {
+
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+		}
+
+				focus = { 
+	id= RGEO_fast_industrialization
+		icon = rapid_industrialization
+		x = 19
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+prerequisite = {
+	focus = RGEO_economic_decision
+}
+		available = {
+}
+
+		bypass = {
+
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_ideas = UKR_fast_inc
+		}
+		}
+
+				focus = { 
+	id= RGEO_colle_of_agri
+		icon = Agriculture_mechanization
+		x = 21
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+prerequisite = {
+	focus = RGEO_economic_decision
+}
+		available = {
+}
+
+		bypass = {
+
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_ideas = UKR_nyjth
+		}
+		}
+
+focus = { 
+	id= RGEO_unification
+		icon = GEO_Expanding_the_States_Capabilities
+		x = 6
+		y = 0
+		cost = 5
+allow_branch = {
+	NOT={
+		OR={
+		has_country_flag = uni2
+		has_country_flag = uni3
+		}
+
+	}
+}
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+}
+
+		bypass = {
+
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_stability = 0.05
+		}
+		}
+
+		focus = { 
+	id= RGEO_armed_attack
+		icon = soc_tank_blr
+		x = -2
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = RGEO_unification
+		}
+relative_position_id = RGEO_unification
+		available = {
+}
+
+		bypass = {
+
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+		}
+
+		focus = { 
+	id= RGEO_attack_SOO
+		icon = ossetian_communism
+		x = -1
+		y = 2
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = RGEO_armed_attack
+		}
+relative_position_id = RGEO_unification
+		available = {
+}
+
+		bypass = {
+
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+create_wargoal = {
+	target = SOO
+	type = annex_everything
+}
+		}
+		}
+
+		focus = { 
+	id= RGEO_attack_ABK
+		icon = Abkhaz_Fight_For_Our_Freedom
+		x = -3
+		y = 2
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = RGEO_armed_attack
+		}
+relative_position_id = RGEO_unification
+		available = {
+}
+
+		bypass = {
+
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+create_wargoal = {
+	target = ABK
+	type = annex_everything
+}
+		}
+		}
+
+
+				focus = { 
+	id= RGEO_coperation_with_SEP
+		icon = judiciary
+		x = 2
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = RGEO_unification
+		}
+relative_position_id = RGEO_unification
+		available = {
+}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+		}
+
+				focus = { 
+	id= RGEO_coperation_with_SOO
+		icon = align_to_south_ossetia
+		x = 1
+		y = 2
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = RGEO_coperation_with_SEP
+		}
+relative_position_id = RGEO_unification
+		available = {
+}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+if={
+	limit={
+
+		SOO={
+
+					OR={
+
+is_in_array = {
+		ruling_party = 4
+}
+
+is_in_array = {
+		ruling_party = 19
+}
+		}
+
+
+
+		}
+
+	}
+
+						annex_country = {
+							target = SOO
+							transfer_troops = yes
+						}
+}
+		}
+		}
+
+
+				focus = { 
+	id= RGEO_coperation_with_ABK
+		icon = align_to_abkhazia
+		x = 3
+		y = 2
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = RGEO_coperation_with_SEP
+		}
+relative_position_id = RGEO_unification
+		available = {
+}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+if={
+	limit={
+
+		ABK={
+
+					OR={
+
+is_in_array = {
+		ruling_party = 4
+}
+
+is_in_array = {
+		ruling_party = 19
+}
+		}
+
+
+
+		}
+
+	}
+
+						annex_country = {
+							target = ABK
+							transfer_troops = yes
+						}
+}
+		}
+		}
+
+
+		focus = { 
+	id= RGEO_united
+		icon = GEO_Expanding_the_Motherland
+		x = 0
+		y = 3
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = RGEO_attack_ABK
+			focus = RGEO_attack_SOO
+			focus = RGEO_coperation_with_SOO
+			focus = RGEO_coperation_with_ABK
+
+		}
+relative_position_id = RGEO_unification
+		available = {
+			SOO={
+exists = no
+			}
+			
+			ABK={
+exists = no
+			}
+}
+
+		bypass = {
+
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+set_country_flag = uni2
+mark_focus_tree_layout_dirty = yes
+		}
+		}
+
+		focus = { 
+	id= RGEO_unification2
+		icon = focus_ZSFSR
+		x = 6
+		y = 0
+		cost = 5
+allow_branch = {
+
+		has_country_flag = uni2
+		
+
+}
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+}
+
+		bypass = {
+
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_stability = 0.05
+		}
+		}
+
+		focus = { 
+	id= RGEO_attack_ARM
+		icon = attack_armenia
+		x = 5
+		y = 2
+		cost = 5
+
+prerequisite = {
+	focus = RGEO_JF_WGJS
+}
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+}
+
+		bypass = {
+
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		create_wargoal = {
+			target = ARM
+			type = annex_everything
+		}
+		}
+		}
+
+				focus = { 
+	id= RGEO_promote_WGJS
+		icon = GEO_Transcaucasian_Union
+		x = 8
+		y = 1
+		cost = 5
+
+prerequisite = {
+	focus = RGEO_unification2
+}
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+}
+
+		bypass = {
+
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		create_wargoal = {
+			target = AZE
+			type = annex_everything
+		}
+		}
+		}
+
+
+				focus = { 
+	id= RGEO_cooperation_AZE
+		icon = align_to_azerbaijan
+		x = 7
+		y = 2
+		cost = 5
+
+prerequisite = {
+	focus = RGEO_promote_WGJS
+}
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+}
+
+		bypass = {
+
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+		}
+				focus = { 
+	id= RGEO_cooperation_ARM
+		icon = align_to_armenia
+		x = 9
+		y = 2
+		cost = 5
+
+prerequisite = {
+	focus = RGEO_promote_WGJS
+}
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+}
+
+		bypass = {
+
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+		}
+				focus = { 
+	id= RGEO_JF_WGJS
+		icon = local_geopolitics
+		x = 4
+		y = 1
+		cost = 5
+
+prerequisite = {
+	focus = RGEO_unification2
+}
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+}
+
+		bypass = {
+
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		create_wargoal = {
+			target = AZE
+			type = annex_everything
+		}
+		}
+		}
+				focus = { 
+	id= RGEO_attack_AZE
+		icon = bring_back_south_aze
+		x = 3
+		y = 2
+		cost = 5
+
+prerequisite = {
+	focus = RGEO_JF_WGJS
+}
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+}
+
+		bypass = {
+
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		create_wargoal = {
+			target = AZE
+			type = annex_everything
+		}
+		}
+		}
+
+
+
+					focus = { 
+	id= RGEO_WGJS
+		icon = sov_ssg_announce
+		x = 6
+		y = 3
+		cost = 5
+
+prerequisite = {
+	focus = RGEO_attack_AZE
+	focus = RGEO_attack_ARM
+	focus = RGEO_cooperation_AZE
+	focus = RGEO_cooperation_ARM
+
+}
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+}
+
+		bypass = {
+
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			set_cosmetic_tag = EXC_SOV
+set_country_flag = uni3
+clr_country_flag = uni2
+mark_focus_tree_layout_dirty = yes
+every_state = {
+	limit={
+		OR={
+		is_core_of = ARM
+				is_core_of = AZE
+		}
+
+	}
+	add_core_of = GEO
+}
+
+		}
+
+
+		}
+
+
+						focus = { 
+	id= RGEO_light_tower
+		icon = Russian_civil_war
+
+		x = 6
+		y = 0
+		cost = 5
+
+prerequisite = {
+
+}
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+}
+
+		bypass = {
+
+		}
+		allow_branch = {
+			has_country_flag = uni3
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+	
+
+		}
+
+
+		}	
+
+						focus = { 
+	id= RGEO_become_SOV
+		icon = ussr
+		x = 4
+		y = 1
+		cost = 5
+
+prerequisite = {
+focus = RGEO_light_tower
+}
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+}
+
+		bypass = {
+
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+                
+set_cosmetic_tag = SOV_stalin
+				every_state = { #add core for Soviet Union
+					limit = {
+						is_soviet_union_state = yes
+					}
+					add_core_of = GEO
+				}
+		}
+
+
+		}	
+
+
+
+						focus = { 
+	id= RGEO_attack_RUS
+		icon = ukr_russia_revoult
+		x = 3
+		y = 2
+		cost = 5
+
+prerequisite = {
+focus = RGEO_become_SOV
+}
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+}
+
+		bypass = {
+
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+
+
+		}			
+
+ 
+						focus = { 
+	id= RGEO_qiandu_MOS
+		icon = soldier_holding_flag_focus_2
+		x = 2
+		y = 3
+		cost = 5
+
+prerequisite = {
+focus = RGEO_attack_RUS
+}
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+}
+
+		bypass = {
+
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		set_capital = {
+			state = 652
+		}
+		}
+
+
+		}	
+
+	}

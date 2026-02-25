@@ -167,14 +167,14 @@ leave_faction = yes
 }
 
 set_capital = {
-	state = 1226
+	state = 1233
 }
 			start_civil_war = {
 					ideology = communism
 					size = DSC_rmjd_renyuan
 					states = all
 					states_filter = {
-						NOT = { state =1226 }
+						NOT = { state = 1233 }
 						}
 					set_cosmetic_tag = DSC_JGQ
 
@@ -235,7 +235,7 @@ create_country_leader = {
 DSC={
 
 	set_capital = {
-		state = 1226
+		state = 1233
 	}
 
 
@@ -437,13 +437,13 @@ Militia_Bat = { x = 1 y = 3 }
 
 
 		DSC={
-			transfer_state = 1227
+			transfer_state = 1234
 		}
 
 
 
 		random_owned_controlled_state = {
-			prioritize = { 1227}
+			prioritize = { 1234}
 			create_unit = {
 				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 15842
@@ -468,7 +468,7 @@ Militia_Bat = { x = 1 y = 3 }
 				has_cosmetic_tag = DSC_JGQ
 			}
 
-			transfer_state = 1227
+			transfer_state = 1234
 
 		}
 		#标记
@@ -498,13 +498,13 @@ Militia_Bat = { x = 1 y = 3 }
 
 
 		DSC={
-			transfer_state = 1227
+			transfer_state = 1234
 		}
 
 
 
 		random_owned_controlled_state = {
-			prioritize = { 1227}
+			prioritize = { 1234}
 			create_unit = {
 				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 15842
@@ -524,7 +524,7 @@ Militia_Bat = { x = 1 y = 3 }
 			limit={
 				has_cosmetic_tag = DSC_JGQ
 			}
-			transfer_state = 1227
+			transfer_state = 1234
 
 		}
 
@@ -544,13 +544,13 @@ Militia_Bat = { x = 1 y = 3 }
 		}
 		#标记
 		DSC={
-			transfer_state = 1227
+			transfer_state = 1234
 		}
 
 
 
 		random_owned_controlled_state = {
-			prioritize = { 1227}
+			prioritize = { 1234}
 			create_unit = {
 				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					owner = DSC
 				prioritize_location = 15842
@@ -567,7 +567,7 @@ Militia_Bat = { x = 1 y = 3 }
 			limit={
 				has_cosmetic_tag = DSC_JGQ
 			}
-			transfer_state = 1227
+			transfer_state = 1234
 
 		}
 
@@ -817,7 +817,7 @@ Militia_Bat = { x = 1 y = 3 }
 
 
 	random_owned_controlled_state = {
-		prioritize = { 1226 }
+		prioritize = { 1233 }
 		create_unit = {
 			division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					
 			owner = DSC
@@ -828,7 +828,7 @@ Militia_Bat = { x = 1 y = 3 }
 		if = { 
 			limit = { check_variable = { DSC_wanzhou_shengtou = 1 } }
 		random_owned_controlled_state = {
-			prioritize = { 1226 }
+			prioritize = { 1233 }
 			create_unit = {
 				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					
 				owner = DSC
@@ -840,7 +840,7 @@ Militia_Bat = { x = 1 y = 3 }
 		else_if = {
 			limit = { check_variable = { DSC_wanzhou_shengtou = 2 } }
 		random_owned_controlled_state = {
-			prioritize = { 1226 }
+			prioritize = { 1233 }
 			create_unit = {
 				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					
 				owner = DSC
@@ -852,7 +852,7 @@ Militia_Bat = { x = 1 y = 3 }
 	else_if = {
 		limit = { check_variable = { DSC_wanzhou_shengtou = 3 } }
 		random_owned_controlled_state = {
-			prioritize = {1226 }
+			prioritize = {1233 }
 			create_unit = {
 				division = "division_template = \"民兵部队\" start_experience_factor = 0.6	start_equipment_factor = 1"					
 				owner = DSC

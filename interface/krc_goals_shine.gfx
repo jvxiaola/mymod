@@ -6863,7 +6863,7 @@ spriteType = {
 
 
 spriteType = {
-		name = "military_purge_shine"
+		name = "CHI_military_purge_shine"
 		texturefile = "gfx/interface/goals/military_purge.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {

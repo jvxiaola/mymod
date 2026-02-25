@@ -420,10 +420,10 @@ CHI_Redemption_assets = {
 		has_completed_focus = CHI_get_organized
 		534 = { NOT = { has_state_flag = State_start_Collaboration } } 532 = { NOT = { has_state_flag = State_start_Collaboration } }
 		595 = { NOT = { has_state_flag = State_start_Collaboration } } 1106 = { NOT = { has_state_flag = State_start_Collaboration } }
-		1228 = { NOT = { has_state_flag = State_start_Collaboration } } 1229 = { NOT = { has_state_flag = State_start_Collaboration } }
-		1230 = { NOT = { has_state_flag = State_start_Collaboration } } 1231 = { NOT = { has_state_flag = State_start_Collaboration } }
-		1232 = { NOT = { has_state_flag = State_start_Collaboration } } 1233 = { NOT = { has_state_flag = State_start_Collaboration } }
-		1234 = { NOT = { has_state_flag = State_start_Collaboration } } 1235 = { NOT = { has_state_flag = State_start_Collaboration } }
+		1235 = { NOT = { has_state_flag = State_start_Collaboration } } 1236 = { NOT = { has_state_flag = State_start_Collaboration } }
+		1237 = { NOT = { has_state_flag = State_start_Collaboration } } 1238 = { NOT = { has_state_flag = State_start_Collaboration } }
+		1239 = { NOT = { has_state_flag = State_start_Collaboration } } 1240 = { NOT = { has_state_flag = State_start_Collaboration } }
+		1241 = { NOT = { has_state_flag = State_start_Collaboration } } 1242 = { NOT = { has_state_flag = State_start_Collaboration } }
 	}
 	available = {
 		custom_trigger_tooltip = {
@@ -436,14 +436,14 @@ CHI_Redemption_assets = {
         highlight_state_targets = {
            state = 534 state = 532 state = 595 state = 1106
 
-		   state = 1228 
-		   state = 1229
-		   state = 1230 
-		   state = 1231 
-		   state = 1232 
-		   state = 1233 
-		   state = 1234 
 		   state = 1235 
+		   state = 1236
+		   state = 1237 
+		   state = 1238 
+		   state = 1239 
+		   state = 1240 
+		   state = 1241 
+		   state = 1242 
 
 
         }
@@ -461,14 +461,14 @@ CHI_Redemption_assets = {
 		534 = { STATE_ADD_State_Collaboration = yes } 532 = { STATE_ADD_State_Collaboration = yes } 595 = { STATE_ADD_State_Collaboration = yes }
 		1106 = { STATE_ADD_State_Collaboration = yes }
 
-		1228  = { STATE_ADD_State_Collaboration = yes } 
-		1229  = { STATE_ADD_State_Collaboration = yes } 
-		1230  = { STATE_ADD_State_Collaboration = yes } 
-		1231  = { STATE_ADD_State_Collaboration = yes } 
-		1232  = { STATE_ADD_State_Collaboration = yes } 
-		1233  = { STATE_ADD_State_Collaboration = yes } 
-		1234  = { STATE_ADD_State_Collaboration = yes } 
 		1235  = { STATE_ADD_State_Collaboration = yes } 
+		1236  = { STATE_ADD_State_Collaboration = yes } 
+		1237  = { STATE_ADD_State_Collaboration = yes } 
+		1238  = { STATE_ADD_State_Collaboration = yes } 
+		1239  = { STATE_ADD_State_Collaboration = yes } 
+		1240  = { STATE_ADD_State_Collaboration = yes } 
+		1241  = { STATE_ADD_State_Collaboration = yes } 
+		1242  = { STATE_ADD_State_Collaboration = yes } 
 
 
 	}
@@ -681,7 +681,7 @@ CHI_Redemption_assets = {
 	visible = {
 		has_completed_focus = CHI_get_organized
 		585 = { NOT = { has_state_flag = State_start_Collaboration } } 586 = { NOT = { has_state_flag = State_start_Collaboration } } 583 = { NOT = { has_state_flag = State_start_Collaboration } }
-		1226 = { NOT = { has_state_flag = State_start_Collaboration } } 1227 = { NOT = { has_state_flag = State_start_Collaboration } }
+		1233 = { NOT = { has_state_flag = State_start_Collaboration } } 1234 = { NOT = { has_state_flag = State_start_Collaboration } }
 	}
 	available = {
 		custom_trigger_tooltip = {
@@ -692,7 +692,7 @@ CHI_Redemption_assets = {
 	#on_map_mode = map_only
 	highlight_states = {
         highlight_state_targets = {
-           state = 585 state = 586 state = 583 state = 1226 state = 1227
+           state = 585 state = 586 state = 583 state = 1233 state = 1234
         }
     }
 	custom_cost_trigger = {
@@ -706,7 +706,7 @@ CHI_Redemption_assets = {
 	days_remove = 60
 	remove_effect = {
 		585 = { STATE_ADD_State_Collaboration = yes } 586 = { STATE_ADD_State_Collaboration = yes } 583 = { STATE_ADD_State_Collaboration = yes }
-		1226 = { STATE_ADD_State_Collaboration = yes } 1227 = { STATE_ADD_State_Collaboration = yes }
+		1233 = { STATE_ADD_State_Collaboration = yes } 1234 = { STATE_ADD_State_Collaboration = yes }
 	}
 	ai_will_do = { factor = 1 }
 	}

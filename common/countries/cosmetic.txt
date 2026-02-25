@@ -61,6 +61,28 @@ NAJ_GOV={
 	    color = rgb { 210 66 16 }
 	color_ui = rgb { 233 78 19 }
 }
+SOV_STA={
+	color = rgb { 196  0  32 }
+	color_ui = rgb { 196  0  32 }
+}
+
+
+GEO_AUTH_S_communism={
+
+		color = rgb { 255  180  180 }
+	color_ui = rgb { 255  180  180 }
+}
+
+EXC_SOV={
+
+    color = rgb { 196  0  32 }
+	color_ui = rgb { 196  0  32 }
+}
+
+SOV_stalin={
+	    color = rgb { 155 17 30 }
+	color_ui = rgb { 155 17 30 }
+}
 
 niboer_rmghg={
 	color = rgb { 222  124  143 }

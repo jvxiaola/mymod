@@ -8101,6 +8101,7 @@ change_DSC_ZZZDJJ_dynamic25_4 = yes
 			available_if_capitulated = no
 			completion_reward = {
 						custom_effect_tooltip = DSC_Socialist_Construction_dynamic_tt
+						set_country_flag = jixugeming
 				set_temp_variable = { temp_DSC_Socialist_Construction_dynamic = 0.03 }
 				change_DSC_Socialist_Construction_dynamic1 = yes
 				}

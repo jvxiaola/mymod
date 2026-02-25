@@ -72,7 +72,6 @@ DSC_people_support_dynamic_left = {
 DSC_Socialist_Construction_dynamic = {
 	enable = { always = yes }
 	icon = GFX_idea_communism10
-	
 chuanyu_people_support_to_china_government_modifier = DSC_Socialist_Construction_dynamic1
 justify_war_goal_time = DSC_Socialist_Construction_dynamic2
 production_factory_efficiency_gain_factor = DSC_Socialist_Construction_dynamic3
@@ -399,89 +398,89 @@ research_speed_factor = var:DSC_WCJJZZ_dynamic53              # 科研速度
 
 
 
-DSC_war_policies = {
+DSC_war_policies_dynamic = {
     enable = { always = yes }
-    icon = GFX_idea_communism5
+    icon = GFX_idea_Preparing_war_mobilizing_economy
 
 ########################################
 # 政治与稳定
 ########################################
-stability_factor = DSC_war_policies_dynamic1                # 国家稳定度
-war_support_factor = DSC_war_policies_dynamic2              # 战争支持率
-political_power_factor = DSC_war_policies_dynamic3          # 政治点获取
-justify_war_goal_time = DSC_war_policies_dynamic4           # 宣战理由时间
-communism_drift = DSC_war_policies_dynamic5                 # 共产主义倾向
-nationalist_drift = DSC_war_policies_dynamic6               # 民族主义倾向
-neutrality_drift = DSC_war_policies_dynamic7                # 威权/中立倾向
-democratic_drift = DSC_war_policies_dynamic8                # 自由主义倾向
-annex_cost_factor = DSC_war_policies_dynamic9               # 吞并代价
-foreign_influence_modifier = DSC_war_policies_dynamic10     # 外国影响（渗透）
-foreign_influence_defense_modifier = DSC_war_policies_dynamic11  # 外国影响防御
-subversive_activites_upkeep = DSC_war_policies_dynamic12    # 颠覆活动维持费用
-chuanyu_people_support_to_china_government_modifier = DSC_war_policies_dynamic13 # 对中央政府支持度修正（川渝特有）
+stability_factor = var:DSC_war_policies_dynamic1                # 国家稳定度
+war_support_factor = var:DSC_war_policies_dynamic2              # 战争支持率
+political_power_factor = var:DSC_war_policies_dynamic3          # 政治点获取
+justify_war_goal_time = var:DSC_war_policies_dynamic4           # 宣战理由时间
+communism_drift = var:DSC_war_policies_dynamic5                 # 共产主义倾向
+nationalist_drift = var:DSC_war_policies_dynamic6               # 民族主义倾向
+neutrality_drift = var:DSC_war_policies_dynamic7                # 威权/中立倾向
+democratic_drift = var:DSC_war_policies_dynamic8                # 自由主义倾向
+annex_cost_factor = var:DSC_war_policies_dynamic9               # 吞并代价
+foreign_influence_modifier = var:DSC_war_policies_dynamic10     # 外国影响（渗透）
+foreign_influence_defense_modifier = var:DSC_war_policies_dynamic11  # 外国影响防御
+subversive_activites_upkeep = var:DSC_war_policies_dynamic12    # 颠覆活动维持费用
+chuanyu_people_support_to_china_government_modifier = var:DSC_war_policies_dynamic13 # 对中央政府支持度修正（川渝特有）
 
 ########################################
 # 经济与工业
 ########################################
-consumer_goods_factor = DSC_war_policies_dynamic14          # 消费品工厂比例
-consumer_goods_expected_value = DSC_war_policies_dynamic15  # 预期消费品需求
-industrial_capacity_factory = DSC_war_policies_dynamic16    # 工厂产能
-industrial_capacity_dockyard = DSC_war_policies_dynamic17   # 造船厂产能
-production_factory_efficiency_gain_factor = DSC_war_policies_dynamic18  # 工厂效率提升速度
-production_factory_max_efficiency_factor = DSC_war_policies_dynamic19   # 工厂最大效率
-production_factory_start_efficiency_factor = DSC_war_policies_dynamic20 # 初始生产效率
-production_speed_buildings_factor = DSC_war_policies_dynamic21          # 建筑速度
-fuel_gain_factor = DSC_war_policies_dynamic22                # 燃料产出
-local_resources_factor = DSC_war_policies_dynamic23          # 资源产量
-state_productivity_growth_modifier = DSC_war_policies_dynamic24  # 各州生产率增长
-#productivity_and_employment_modifier = DSC_war_policies_dynamic25     # 整体劳动生产率与就业率
-industrial_capacity_factory = DSC_war_policies_dynamic25_1           # 工厂产能（军民工厂的总体生产效率）
-industrial_capacity_dockyard = DSC_war_policies_dynamic25_2          # 船坞产能（造船厂的生产效率）
-production_speed_buildings_factor = DSC_war_policies_dynamic25_3     # 建筑建造速度（所有建筑的建造速度加成）
-production_speed_agriculture_district_factor = DSC_war_policies_dynamic25_4  # 农业区建设速度（自定义建筑类别“农业区”的建造速度）
-total_workforce_modifier = DSC_war_policies_dynamic26        # 总劳动力规模
-high_unemployment_modifier = DSC_war_policies_dynamic27      # 高失业率惩罚
-civ_facs_worker_requirement_modifier = DSC_war_policies_dynamic28   # 民工厂劳动需求
-mil_facs_worker_requirement_modifier = DSC_war_policies_dynamic29   # 军工厂劳动需求
-offices_worker_requirement_modifier = DSC_war_policies_dynamic30    # 政府机构劳动需求
-bureaucracy_cost_multiplier_modifier = DSC_war_policies_dynamic31   # 官僚体系成本
-police_cost_multiplier_modifier = DSC_war_policies_dynamic32        # 公安维稳成本
-education_cost_multiplier_modifier = DSC_war_policies_dynamic33     # 教育支出
-health_cost_multiplier_modifier = DSC_war_policies_dynamic34        # 医疗支出
-social_cost_multiplier_modifier = DSC_war_policies_dynamic35        # 社保支出
-energy_use = DSC_war_policies_dynamic36                              # 能源消耗（自定义）
+consumer_goods_factor = var:DSC_war_policies_dynamic14          # 消费品工厂比例
+consumer_goods_expected_value = var:DSC_war_policies_dynamic15  # 预期消费品需求
+industrial_capacity_factory = var:DSC_war_policies_dynamic16    # 工厂产能
+industrial_capacity_dockyard = var:DSC_war_policies_dynamic17   # 造船厂产能
+production_factory_efficiency_gain_factor = var:DSC_war_policies_dynamic18  # 工厂效率提升速度
+production_factory_max_efficiency_factor = var:DSC_war_policies_dynamic19   # 工厂最大效率
+production_factory_start_efficiency_factor = var:DSC_war_policies_dynamic20 # 初始生产效率
+production_speed_buildings_factor = var:DSC_war_policies_dynamic21          # 建筑速度
+fuel_gain_factor = var:DSC_war_policies_dynamic22                # 燃料产出
+local_resources_factor = var:DSC_war_policies_dynamic23          # 资源产量
+state_productivity_growth_modifier = var:DSC_war_policies_dynamic24  # 各州生产率增长
+#productivity_and_employment_modifier = var:DSC_war_policies_dynamic25     # 整体劳动生产率与就业率
+industrial_capacity_factory_2 = var:DSC_war_policies_dynamic25_1           # 工厂产能（军民工厂的总体生产效率）
+industrial_capacity_dockyard_2 = var:DSC_war_policies_dynamic25_2          # 船坞产能（造船厂的生产效率）
+production_speed_buildings_factor_2 = var:DSC_war_policies_dynamic25_3     # 建筑建造速度（所有建筑的建造速度加成）
+production_speed_agriculture_district_factor = var:DSC_war_policies_dynamic25_4  # 农业区建设速度（自定义建筑类别“农业区”的建造速度）
+total_workforce_modifier = var:DSC_war_policies_dynamic26        # 总劳动力规模
+high_unemployment_modifier = var:DSC_war_policies_dynamic27      # 高失业率惩罚
+civ_facs_worker_requirement_modifier = var:DSC_war_policies_dynamic28   # 民工厂劳动需求
+mil_facs_worker_requirement_modifier = var:DSC_war_policies_dynamic29   # 军工厂劳动需求
+offices_worker_requirement_modifier = var:DSC_war_policies_dynamic30    # 政府机构劳动需求
+bureaucracy_cost_multiplier_modifier = var:DSC_war_policies_dynamic31   # 官僚体系成本
+police_cost_multiplier_modifier = var:DSC_war_policies_dynamic32        # 公安维稳成本
+education_cost_multiplier_modifier = var:DSC_war_policies_dynamic33     # 教育支出
+health_cost_multiplier_modifier = var:DSC_war_policies_dynamic34        # 医疗支出
+social_cost_multiplier_modifier = var:DSC_war_policies_dynamic35        # 社保支出
+energy_use = var:DSC_war_policies_dynamic36                              # 能源消耗（自定义）
 
 ########################################
 # 农业与资源、人口
 ########################################
-weekly_manpower = DSC_war_policies_dynamic37             # 每周动员人口
-monthly_population = DSC_war_policies_dynamic38          # 每月人口增长
-supply_node_range = DSC_war_policies_dynamic39           # 补给节点范围
-army_fuel_consumption_factor = DSC_war_policies_dynamic40 # 陆军燃料消耗
-supply_consumption_factor = DSC_war_policies_dynamic41    # 总补给消耗
+weekly_manpower = var:DSC_war_policies_dynamic37             # 每周动员人口
+monthly_population = var:DSC_war_policies_dynamic38          # 每月人口增长
+supply_node_range = var:DSC_war_policies_dynamic39           # 补给节点范围
+army_fuel_consumption_factor = var:DSC_war_policies_dynamic40 # 陆军燃料消耗
+supply_consumption_factor = var:DSC_war_policies_dynamic41    # 总补给消耗
 
 ########################################
 # 军事与国际派遣
 ########################################
-army_attack_factor = DSC_war_policies_dynamic42           # 陆军攻击
-army_defence_factor = DSC_war_policies_dynamic43          # 陆军防御
-army_org_factor = DSC_war_policies_dynamic44              # 陆军组织度
-reinforce_rate = DSC_war_policies_dynamic45               # 补员速度
-send_volunteer_size = DSC_war_policies_dynamic46          # 志愿军规模
-send_volunteer_factor = DSC_war_policies_dynamic47        # 志愿军派遣加成
-send_volunteers_tension = DSC_war_policies_dynamic48      # 志愿军导致的紧张度
-send_volunteer_divisions_required = DSC_war_policies_dynamic49 # 志愿军最低所需师数量
+army_attack_factor = var:DSC_war_policies_dynamic42           # 陆军攻击
+army_defence_factor = var:DSC_war_policies_dynamic43          # 陆军防御
+army_org_factor = var:DSC_war_policies_dynamic44              # 陆军组织度
+reinforce_rate = var:DSC_war_policies_dynamic45               # 补员速度
+send_volunteer_size = var:DSC_war_policies_dynamic46          # 志愿军规模
+send_volunteer_factor = var:DSC_war_policies_dynamic47        # 志愿军派遣加成
+send_volunteers_tension = var:DSC_war_policies_dynamic48      # 志愿军导致的紧张度
+send_volunteer_divisions_required = var:DSC_war_policies_dynamic49 # 志愿军最低所需师数量
 
 ########################################
 # 镇压与社会控制
 ########################################
-resistance_growth_on_our_occupied_states = DSC_war_policies_dynamic50  # 占领区抵抗增长
-compliance_growth_on_our_occupied_states = DSC_war_policies_dynamic51  # 占领区服从增长
-foreign_subversive_activities = DSC_war_policies_dynamic52             # 外国颠覆活动强度
+resistance_growth_on_our_occupied_states = var:DSC_war_policies_dynamic50  # 占领区抵抗增长
+compliance_growth_on_our_occupied_states = var:DSC_war_policies_dynamic51  # 占领区服从增长
+foreign_subversive_activities = var:DSC_war_policies_dynamic52             # 外国颠覆活动强度
 
 ########################################
 # 科研与技术
 ########################################
-research_speed_factor = DSC_war_policies_dynamic53         # 科研速度
+research_speed_factor = var:DSC_war_policies_dynamic53         # 科研速度
 
 }

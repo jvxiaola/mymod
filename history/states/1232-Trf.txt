@@ -1,28 +1,18 @@
 state={
-	id=1224
-	name="STATE_1224"
-	state_category = state_03
+	id=1232
+	name="STATE_1232"
+	state_category = state_01
 	resources = {
-		chromium = 5
-		oil = 16
+		chromium = 3
+		oil = 12
 	}
 	history = {
 		owner = CHI
-		victory_points = { 12601 5 } #Gulja
 		victory_points = {
-			1844 2
-		}
-		victory_points = {
-			1783 1
-		}
-		victory_points = {
-			7866 1
-		}
-		victory_points = {
-			14743 1
+			7732 1
 		}
 		add_dynamic_modifier = { modifier = renewable_capacity_factor_dyn_mod }
-		set_variable = { state_renewable_capacity_factor_modifier_var = 0.07 }
+		set_variable = { state_renewable_capacity_factor_modifier_var = 0.10 }
 		add_core_of = CHI
 		add_core_of = TAI
 		add_core_of = ETK
@@ -37,9 +27,9 @@ state={
 		}
 	}
 	provinces={
-		1708 1783 1844 7850 7866 10691 12526 12601 14741 14743 
+		7732 12524 14040 
 	}
-	manpower=1490000#资料数据
+	manpower=540000#资料数据
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

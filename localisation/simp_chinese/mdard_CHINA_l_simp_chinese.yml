@@ -538,6 +538,28 @@
  DSC_build_judicial_security_system: "接管公检法系统"
  DSC_build_judicial_security_system_desc: ""
 
+ DSC_new_hope: "无产阶级的希望"
+ DSC_new_hope_desc: ""
+
+ DSC_three_line: "三线工程的遗产"
+ DSC_three_line_desc: ""
+
+ DSC_punch_of_proletariat: "打击反革命势力"
+ DSC_punch_of_proletariat_desc: ""
+
+
+ DSC_deal_with_bombs: "应对战争冲击"
+ DSC_deal_with_bombs_desc: "随着战争规模扩大，空袭、破坏与前线消息不断冲击社会。国家必须通过组织防护、宣传引导与秩序维持，避免恐慌蔓延，将战争压力控制在可承受范围之内。"
+
+ 
+ DSC_chiweidui: "工人自卫队"
+ DSC_chiweidui_desc: "工人自卫队"
+ DSC_State_Security: "情报部门"
+ DSC_State_Security_desc: ""
+ DSC_prepare_food: "储存食物"
+ DSC_prepare_food_desc: ""
+
+
  DSC_start_economic_transformation: "开始经济转化"
  DSC_start_economic_transformation_desc: ""
 
@@ -976,8 +998,12 @@
 
 
 
+ DSC_Socialist_Construction_dynamic: "[Revolution_name]"
+ DSC_gmrq: "§R革命热情§!"
+ DSC_jxgm: "§R继续革命§!"
+ #DSC_Socialist_Construction_dynamic: "§R继续革命§!"
 
- DSC_Socialist_Construction_dynamic: "§R继续革命§!"
+
  DSC_Socialist_Construction_dynamic_desc: "\n\n\n\n\n£CHI_Socialist_Construction_dynamic_desc_pic \n\n\n\n\n\n\n在经过§O近二十年的兜兜转转§!之后，中国人民发现他们回到了§R起点§!。这条已经§C走过而还未走完§!的路究竟会§7通向何方§!，还是一个§Y未知数§!.....\n驶向何方，掌握在§G每个人§!手中。"
  DSC_Socialist_Construction_dynamic_tt: "§R继续革命§!追加效果：\n"
  change_DSC_Socialist_Construction_dynamic1_tt: "$chuanyu_people_support_to_china_government_modifier$：[?temp_DSC_Socialist_Construction_dynamic|+]\n"
@@ -1231,6 +1257,81 @@
  ### 科研与技术 ###
  change_DSC_WCJJZZ_dynamic53_tt: " §R无产阶级专政§! - 科研速度: §Y[?temp_DSC_WCJJZZ_dynamic53|%]§!\n"
 
+
+
+
+
+
+
+
+#更改战时政策
+
+ DSC_war_policies_dynamic_tt: " §R战时政策§!追加效果：\n"
+ DSC_war_policies_dynamic: " §R战时政策§!"
+
+### 政治与稳定 ###
+ change_DSC_war_policies_dynamic1_tt: " §R战时政策§! - 稳定度: §Y[?temp_DSC_war_policies_dynamic1|%]§!\n"
+ change_DSC_war_policies_dynamic2_tt: " §R战时政策§! - 战争支持率: §Y[?temp_DSC_war_policies_dynamic2|%]§!\n"
+ change_DSC_war_policies_dynamic3_tt: " §R战时政策§! - 政治点获取: §Y[?temp_DSC_war_policies_dynamic3|%]§!\n"
+ change_DSC_war_policies_dynamic4_tt: " §R战时政策§! - 宣战理由时间: §Y[?temp_DSC_war_policies_dynamic4|%]§!\n"
+ change_DSC_war_policies_dynamic5_tt: " §R战时政策§! - 共产主义倾向: §Y[?temp_DSC_war_policies_dynamic5|%]§!\n"
+ change_DSC_war_policies_dynamic6_tt: " §R战时政策§! - 民族主义倾向: §Y[?temp_DSC_war_policies_dynamic6|%]§!\n"
+ change_DSC_war_policies_dynamic7_tt: " §R战时政策§! - 威权主义倾向: §Y[?temp_DSC_war_policies_dynamic7|%]§!\n"
+ change_DSC_war_policies_dynamic8_tt: " §R战时政策§! - 自由主义倾向: §Y[?temp_DSC_war_policies_dynamic8|%]§!\n"
+ change_DSC_war_policies_dynamic9_tt: " §R战时政策§! - 吞并代价: §Y[?temp_DSC_war_policies_dynamic9|%]§!\n"
+ change_DSC_war_policies_dynamic10_tt: " §R战时政策§! - 外国影响: §Y[?temp_DSC_war_policies_dynamic10|%]§!\n"
+ change_DSC_war_policies_dynamic11_tt: " §R战时政策§! - 外国影响防御: §Y[?temp_DSC_war_policies_dynamic11|%]§!\n"
+ change_DSC_war_policies_dynamic12_tt: " §R战时政策§! - 颠覆活动维持费用: §Y[?temp_DSC_war_policies_dynamic12|%]§!\n"
+ change_DSC_war_policies_dynamic13_tt: " §R战时政策§! - 群众积极性: §Y[?temp_DSC_war_policies_dynamic13|%]§!\n"
+
+### 经济与工业 ###
+ change_DSC_war_policies_dynamic14_tt: " §R战时政策§! - 消费品工厂比例: §Y[?temp_DSC_war_policies_dynamic14|%]§!\n"
+ change_DSC_war_policies_dynamic15_tt: " §R战时政策§! - 预期消费品需求: §Y[?temp_DSC_war_policies_dynamic15|%]§!\n"
+ change_DSC_war_policies_dynamic16_tt: " §R战时政策§! - 工厂产能: §Y[?temp_DSC_war_policies_dynamic16|%]§!\n"
+ change_DSC_war_policies_dynamic17_tt: " §R战时政策§! - 造船厂产能: §Y[?temp_DSC_war_policies_dynamic17|%]§!\n"
+ change_DSC_war_policies_dynamic18_tt: " §R战时政策§! - 工厂效率增长: §Y[?temp_DSC_war_policies_dynamic18|%]§!\n"
+ change_DSC_war_policies_dynamic19_tt: " §R战时政策§! - 工厂最大效率: §Y[?temp_DSC_war_policies_dynamic19|%]§!\n"
+ change_DSC_war_policies_dynamic20_tt: " §R战时政策§! - 初始生产效率: §Y[?temp_DSC_war_policies_dynamic20|%]§!\n"
+ change_DSC_war_policies_dynamic21_tt: " §R战时政策§! - 建筑速度: §Y[?temp_DSC_war_policies_dynamic21|%]§!\n"
+ change_DSC_war_policies_dynamic22_tt: " §R战时政策§! - 燃料产量: §Y[?temp_DSC_war_policies_dynamic22|%]§!\n"
+ change_DSC_war_policies_dynamic23_tt: " §R战时政策§! - 资源产量: §Y[?temp_DSC_war_policies_dynamic23|%]§!\n"
+ change_DSC_war_policies_dynamic24_tt: " §R战时政策§! - 州生产率增长: §Y[?temp_DSC_war_policies_dynamic24|%]§!\n"
+ change_DSC_war_policies_dynamic25_tt: " §R战时政策§! - 生产率与就业率: §Y[?temp_DSC_war_policies_dynamic25|%]§!\n"
+ change_DSC_war_policies_dynamic26_tt: " §R战时政策§! - 总劳动力规模: §Y[?temp_DSC_war_policies_dynamic26|%]§!\n"
+ change_DSC_war_policies_dynamic27_tt: " §R战时政策§! - 高失业率惩罚: §Y[?temp_DSC_war_policies_dynamic27|%]§!\n"
+ change_DSC_war_policies_dynamic28_tt: " §R战时政策§! - 民工厂劳动需求: §Y[?temp_DSC_war_policies_dynamic28|%]§!\n"
+ change_DSC_war_policies_dynamic29_tt: " §R战时政策§! - 军工厂劳动需求: §Y[?temp_DSC_war_policies_dynamic29|%]§!\n"
+ change_DSC_war_policies_dynamic30_tt: " §R战时政策§! - 行政机关劳动需求: §Y[?temp_DSC_war_policies_dynamic30|%]§!\n"
+ change_DSC_war_policies_dynamic31_tt: " §R战时政策§! - 官僚体系成本: §Y[?temp_DSC_war_policies_dynamic31|%]§!\n"
+ change_DSC_war_policies_dynamic32_tt: " §R战时政策§! - 公安成本: §Y[?temp_DSC_war_policies_dynamic32|%]§!\n"
+ change_DSC_war_policies_dynamic33_tt: " §R战时政策§! - 教育支出: §Y[?temp_DSC_war_policies_dynamic33|%]§!\n"
+ change_DSC_war_policies_dynamic34_tt: " §R战时政策§! - 医疗支出: §Y[?temp_DSC_war_policies_dynamic34|%]§!\n"
+ change_DSC_war_policies_dynamic35_tt: " §R战时政策§! - 社会保障支出: §Y[?temp_DSC_war_policies_dynamic35|%]§!\n"
+ change_DSC_war_policies_dynamic36_tt: " §R战时政策§! - 能源消耗: §Y[?temp_DSC_war_policies_dynamic36|%]§!\n"
+### 农业与资源 ###
+ change_DSC_war_policies_dynamic37_tt: " §R战时政策§! - 每周人力增长: §Y[?temp_DSC_war_policies_dynamic37]§!\n"
+ change_DSC_war_policies_dynamic38_tt: " §R战时政策§! - 每月人口增长: §Y[?temp_DSC_war_policies_dynamic38]§!\n"
+ change_DSC_war_policies_dynamic39_tt: " §R战时政策§! - 补给节点范围: §Y[?temp_DSC_war_policies_dynamic39]§!\n"
+ change_DSC_war_policies_dynamic40_tt: " §R战时政策§! - 陆军燃料消耗: §Y[?temp_DSC_war_policies_dynamic40|%]§!\n"
+ change_DSC_war_policies_dynamic41_tt: " §R战时政策§! - 总补给消耗: §Y[?temp_DSC_war_policies_dynamic41|%]§!\n"
+
+### 军事与国际派遣 ###
+ change_DSC_war_policies_dynamic42_tt: " §R战时政策§! - 陆军攻击: §Y[?temp_DSC_war_policies_dynamic42|%]§!\n"
+ change_DSC_war_policies_dynamic43_tt: " §R战时政策§! - 陆军防御: §Y[?temp_DSC_war_policies_dynamic43|%]§!\n"
+ change_DSC_war_policies_dynamic44_tt: " §R战时政策§! - 陆军组织度: §Y[?temp_DSC_war_policies_dynamic44|%]§!\n"
+ change_DSC_war_policies_dynamic45_tt: " §R战时政策§! - 补员速度: §Y[?temp_DSC_war_policies_dynamic45|%]§!\n"
+ change_DSC_war_policies_dynamic46_tt: " §R战时政策§! - 志愿军规模: §Y[?temp_DSC_war_policies_dynamic46|%]§!\n"
+ change_DSC_war_policies_dynamic47_tt: " §R战时政策§! - 志愿军派遣加成: §Y[?temp_DSC_war_policies_dynamic47|%]§!\n"
+ change_DSC_war_policies_dynamic48_tt: " §R战时政策§! - 志愿军引发紧张度: §Y[?temp_DSC_war_policies_dynamic48|%]§!\n"
+ change_DSC_war_policies_dynamic49_tt: " §R战时政策§! - 志愿军所需编制: §Y[?temp_DSC_war_policies_dynamic49]§!\n"
+
+### 镇压与社会控制 ###
+ change_DSC_war_policies_dynamic50_tt: " §R战时政策§! - 占领地抵抗增长: §Y[?temp_DSC_war_policies_dynamic50|%]§!\n"
+ change_DSC_war_policies_dynamic51_tt: " §R战时政策§! - 占领地顺从增长: §Y[?temp_DSC_war_policies_dynamic51|%]§!\n"
+ change_DSC_war_policies_dynamic52_tt: " §R战时政策§! - 外国颠覆活动强度: §Y[?temp_DSC_war_policies_dynamic52|%]§!\n"
+
+ ### 科研与技术 ###
+ change_DSC_war_policies_dynamic53_tt: " §R战时政策§! - 科研速度: §Y[?temp_DSC_war_policies_dynamic53|%]§!\n"
 
 #标记点2
  HKG_people_support_dynamic_left_desc: "\n\n\n\n\n£GFX_CHI_people_support_dynamic_dynamic_desc_left_picture \n\n\n\n\n\n\n中国革命群众经过各种斗争，最终掌握了中国的政权，不过，这并不是革命的结束，而仅仅是开始！中国人民必须考虑自身与外国无产阶级的联系，考虑自身的建设，万万不可重蹈无产阶级文化大革命后期人民对革命失望的覆辙，不然的话，资产阶级与官僚主义反革命极有可能再次推翻革命政权。\n\n §Y人民的革命热情为§!： £stability_texticon [?HKG_people_support|%+2]。\n受到民族精神或法律影响，每月变化(本mod已将变化缩小10倍)：[?Final_hongkong_people_support_to_china_government_modifier|%+2]"
@@ -2268,12 +2369,14 @@
 
 
 
- DSC_ANFURENMIN: "联系群众"
- DSC_ANFURENMIN_desc: "我们将紧密的与群众联系在一起，尝试带给他们更好的生活"
+ DSC_ANFURENMIN: "解除军管状态"
+ DSC_ANFURENMIN_desc: "随着川渝革命的胜利，旧军阀势力已被彻底清除。其为了维护统治的军管制度，也可能阻碍革命政权的长期稳定。现在，是时候结束临时军管体制，将地方治理权移交给人民政权，使群众更广泛的参与进来。"
+
 
 
  DSC_dongyuanrenmin: "革命宣传"
- DSC_dongyuanrenmin_desc: "我们的事业是正义的"
+ DSC_dongyuanrenmin_desc: "革命的胜利不仅依赖于枪杆子，更依赖于群众的理解与支持。通过系统性的革命宣传，我们将阐明革命的目标、成果与未来方向，巩固群众基础，瓦解残余反动思想，为新生的人民政权奠定稳固的社会基础。"
+
 
  DSC_duijunzhengfu: "消灭军政府"
  DSC_duijunzhengfu_desc: "军政府的反动性质川渝人民深有体会，我们将拯救处于军政府黑暗统治下的人民"

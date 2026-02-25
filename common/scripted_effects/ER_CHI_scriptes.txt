@@ -372,14 +372,14 @@ CHI_add_State_guangdong = {
   532 = { add_to_array = { array = global.guangdong_states } }
   595 = { add_to_array = { array = global.guangdong_states } }
   1106 = { add_to_array = { array = global.guangdong_states } }
-  1228 = { add_to_array = { array = global.guangdong_states } }
-  1229 = { add_to_array = { array = global.guangdong_states } }
-  1230 = { add_to_array = { array = global.guangdong_states } }
-  1231 = { add_to_array = { array = global.guangdong_states } }
-  1232 = { add_to_array = { array = global.guangdong_states } }
-  1233 = { add_to_array = { array = global.guangdong_states } }
-  1234 = { add_to_array = { array = global.guangdong_states } }
   1235 = { add_to_array = { array = global.guangdong_states } }
+  1236 = { add_to_array = { array = global.guangdong_states } }
+  1237 = { add_to_array = { array = global.guangdong_states } }
+  1238 = { add_to_array = { array = global.guangdong_states } }
+  1239 = { add_to_array = { array = global.guangdong_states } }
+  1240 = { add_to_array = { array = global.guangdong_states } }
+  1241 = { add_to_array = { array = global.guangdong_states } }
+  1242 = { add_to_array = { array = global.guangdong_states } }
 }
 CHI_add_State_jiangsu = {
   541 = { add_to_array = { array = global.jiangsu_states } }
@@ -416,8 +416,8 @@ CHI_add_State_sichuan = {
   583 = { add_to_array = { array = global.sichuan_states } }
   586 = { add_to_array = { array = global.sichuan_states } }
   585 = { add_to_array = { array = global.sichuan_states } }
-  1226 = { add_to_array = { array = global.sichuan_states } }
-  1227 = { add_to_array = { array = global.sichuan_states } }
+  1233 = { add_to_array = { array = global.sichuan_states } }
+  1234 = { add_to_array = { array = global.sichuan_states } }
 }
 CHI_add_State_fujian = {
   537 = { add_to_array = { array = global.fujian_states } }
@@ -446,7 +446,7 @@ CHI_add_State_neimenggu = {
 }
 CHI_add_State_jilin = {
   554 = { add_to_array = { array = global.jilin_states } }
-    1236 = { add_to_array = { array = global.jilin_states } }
+    1243 = { add_to_array = { array = global.jilin_states } }
 }
 CHI_add_State_heilongjiang = {
   555 = { add_to_array = { array = global.heilongjiang_states } }

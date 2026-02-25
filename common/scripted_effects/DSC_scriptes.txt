@@ -411,7 +411,7 @@ change_DSC_war_policies_dynamic19 = { add_to_variable = { DSC_war_policies_dynam
 change_DSC_war_policies_dynamic20 = { add_to_variable = { DSC_war_policies_dynamic20 = temp_DSC_war_policies_dynamic20 } custom_effect_tooltip = change_DSC_war_policies_dynamic20_tt } # 初始生产效率
 change_DSC_war_policies_dynamic21 = { add_to_variable = { DSC_war_policies_dynamic21 = temp_DSC_war_policies_dynamic21 } custom_effect_tooltip = change_DSC_war_policies_dynamic21_tt } # 建筑速度
 change_DSC_war_policies_dynamic22 = { add_to_variable = { DSC_war_policies_dynamic22 = temp_DSC_war_policies_dynamic22 } custom_effect_tooltip = change_DSC_war_policies_dynamic22_tt } # 燃料产出
-change_DSC_war_policies_dynamic23 = { add_to_variable = { DSC_war_policies_dynamic23 = temp_DSC_war_policies_dynamic23 } custom_effect_tooltip = change_DSC_war_policies_dynamic23_tt } # 资源产量
+change_DSC_war_policies_dynamic23 = { add_to_variable = { DSC_war_policies_dynamic23 = temp_DSC_war_policies_dynamic23 } } # 资源产量
 change_DSC_war_policies_dynamic24 = { add_to_variable = { DSC_war_policies_dynamic24 = temp_DSC_war_policies_dynamic24 } custom_effect_tooltip = change_DSC_war_policies_dynamic24_tt } # 各州生产率增长
 change_DSC_war_policies_dynamic25_1 = { add_to_variable = { DSC_war_policies_dynamic25_1 = temp_DSC_war_policies_dynamic25_1 } custom_effect_tooltip = change_DSC_war_policies_dynamic25_1_tt } # 工厂产能（军民工厂的总体生产效率）
 change_DSC_war_policies_dynamic25_2 = { add_to_variable = { DSC_war_policies_dynamic25_2 = temp_DSC_war_policies_dynamic25_2 } custom_effect_tooltip = change_DSC_war_policies_dynamic25_2_tt } # 船坞产能（造船厂的生产效率）

@@ -255,11 +255,11 @@ on_actions = {
 
 	white_peace =KOR
 every_owned_state = {
-    limit = { NOT = { state = 1236 } }
+    limit = { NOT = { state = 1243 } }
     KOR = { transfer_state = PREV }
 }
-	#transfer_state = 1236
-	#add_state_core = 1236
+	#transfer_state = 1243
+	#add_state_core = 1243
 						}
 if={
 	limit={

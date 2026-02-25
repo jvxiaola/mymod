@@ -12,10 +12,14 @@
  CHI_zhaomuxiaganggongren: "重新招募下岗工人"
  CHI_guoyouhuafeifasiqi: "再国有化前国企"
  zaiyiciguoyou: "再国有化政策"
-
-
+ DSC_connect_to_grassroots_revolutionary_soviet: "链接基层革命委员会"
+ DSC_connect_to_grassroots_revolutionary_soviet_desc: "链接基层革命委员会"
  CHI_zhongxiguanxi: "中西关系"
+ DSC_manage_Nationalized_factory: "管理国有化工厂"
+ DSC_manage_Nationalized_factory_desc: ""
 
+ DSC_open_National_shop: "国营商店"
+ DSC_open_National_shop_desc: "国营商店"
 
  CHI_zhongxiguanxi_desc: "中西关系：§Y[?zhongxiguanxi]§!"
  CHI_jieshoumeiguo: "恢复与美正常外交"
@@ -35,3 +39,5 @@
  prc1.400.d: "我们申请似乎没有很好的效果"
  prc1.400.o1: "好吧，或许我们应该准备的更充分"
 
+ fanggeminghuodong: "反革命运动"
+ DSC_hunluanzhengquan: "组织混乱的政权"

@@ -506,3 +506,55 @@
  SOV_jueyi: "解锁更多§Y决议§!"
  SOV_yqalb: "邀请[From.GetNameDef]"
  SOV_ussr: "成立苏联"
+
+
+
+ GEO_become_SOV: "成为苏联"
+
+ GEO_help_richer: "恢复经济"
+
+ RGEO_red_path: "红色道路"
+
+ RGEO_unification: "促进统一"
+
+ RGEO_armed_attack: "武装解放"
+
+ RGEO_attack_ABK: "解放阿布哈兹"
+
+
+ RGEO_attack_SOO: "解放南奥塞梯"
+
+ RGEO_coperation_with_SEP: "与分裂势力对话"
+
+ RGEO_coperation_with_SOO: "与南奥塞梯对话"
+
+ RGEO_coperation_with_ABK: "与阿布哈兹对话"
+
+ RGEO_united: "新革命的始源地"
+
+
+  # 国策：迁都莫斯科
+ RGEO_qiandu_MOS: "迁都莫斯科"
+ RGEO_qiandu_MOS_desc: "我们将把苏维埃政权的首都迁至革命的心脏——莫斯科。这不仅能整合俄罗斯核心地带的工业与人力，还于旧都，更能向全世界宣告苏维埃力量的彻底重生。"
+  
+  # 国策：进军俄罗斯
+ RGEO_attack_RUS: "进军俄罗斯"
+ RGEO_attack_RUS_desc: "俄罗斯大地正被反动势力所蹂躏，我们有责任解放那里的无产阶级同胞。我军将越过边境，向反动势力发起雷霆一击，在俄罗斯的废墟上建立起崭新的苏维埃秩序。"
+  
+  # 国策：建立苏维埃联盟
+ RGEO_become_SOV: "合并前加盟国"
+ RGEO_become_SOV_desc: "随着革命在各地区的胜利，我们将联合所有苏维埃政权，组建统一的苏维埃社会主义共和国联盟。这一伟大联盟将汇聚各民族的力量，成为世界革命最坚固的堡垒。"
+  
+  # 国策：世界革命的灯塔
+ RGEO_light_tower: "世界革命的灯塔"
+ RGEO_light_tower_desc: "我们的苏维埃不仅是一个国家，更是照亮全球无产阶级解放道路的灯塔。我们将向世界各地的革命者提供援助，输出革命理论与武装力量，让红旗插遍世界的每一个角落。"
+
+
+ RGEO_economic_decision: "经济发展方向"
+ RGEO_economic_decision_desc: "我们必须为国家经济选择一条明确的道路，以确保我们的未来。"
+
+ RGEO_fast_industrialization: "快速工业化"
+ RGEO_fast_industrialization_desc: "优先建设工厂与基础设施，以牺牲农村发展为代价，快速实现工业基础现代化。"
+
+ RGEO_colle_of_agri: "农业集体化"
+ RGEO_colle_of_agri_desc: "将农田合并为集体农庄，以提高粮食产量，并为我们不断增长的工业提供剩余劳动力。"

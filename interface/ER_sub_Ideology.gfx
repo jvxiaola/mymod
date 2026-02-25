@@ -33,6 +33,11 @@ spriteType = {
 		name = "GFX_ideology_trotskyism"
 		texturefile = "gfx/Ideology/trotskyism.png"
 	}
+
+		spriteType = {
+		name = "GFX_ideology_stalinism"
+		texturefile = "gfx/Ideology/stalinism_group.dds"
+	}
 		spriteType = {
 		name = "GFX_ideology_Communist-State"
 		texturefile = "gfx/Ideology/communism.dds"

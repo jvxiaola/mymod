@@ -720,10 +720,10 @@ add_ideas = CHI_aftermath_of_the_civil_war_1
 if = {
 	limit = {
 		NKO = {
-			controls_state = 1236
+			controls_state = 1243
 		}
 	}
-transfer_state = 1236
+transfer_state = 1243
 }
 		if = {
 			limit = { country_exists = ETK }
